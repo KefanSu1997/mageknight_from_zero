@@ -1,0 +1,378 @@
+[
+  {
+    "id": "basic_card_000",
+    "set": "basic_card",
+    "set_idx": 0,
+    "image": "cards\\basic_card_000.png",
+    "en_image": "cards\\basic_card_en_000.png",
+    "card_name": "行进",
+    "base_effect": "移动力2。",
+    "required_crystals": "绿",
+    "enhanced_effect": "移动力4。",
+    "wiki": {
+      "wiki_text": "Green mana"
+    }
+  },
+  {
+    "id": "basic_card_001",
+    "set": "basic_card",
+    "set_idx": 1,
+    "image": "cards\\basic_card_001.png",
+    "en_image": "cards\\basic_card_en_001.png",
+    "card_name": "宁静",
+    "base_effect": "治疗1或抽取一张卡牌。",
+    "required_crystals": "绿",
+    "enhanced_effect": "治疗2或抽取两张卡牌。",
+    "wiki": {
+      "wiki_text": "Since this is a healing card, its not allowed to use it once a combat has started (e.g. you've chosen to enter a dungeon and revealed the monster tokens)"
+    }
+  },
+  {
+    "id": "basic_card_002",
+    "set": "basic_card",
+    "set_idx": 2,
+    "image": "cards\\basic_card_002.png",
+    "en_image": "cards\\basic_card_en_002.png",
+    "card_name": "凝结",
+    "base_effect": "获得一个蓝色，白色或红色魔力标记。",
+    "required_crystals": "绿",
+    "enhanced_effect": "打出本卡牌时，同时打出另一张行动卡牌。免费获得该卡牌的强力效果。如果该效果给予你移动力、影响力、格挡或任何类型的攻击，该效果数值+2。",
+    "wiki": {
+      "wiki_text": "Nothing to say for the normal effect."
+    }
+  },
+  {
+    "id": "basic_card_003",
+    "set": "basic_card",
+    "set_idx": 3,
+    "image": "cards\\basic_card_003.png",
+    "en_image": "cards\\basic_card_en_003.png",
+    "card_name": "野蛮收获",
+    "base_effect": "移动力2。本回合一次，你移动一格时，你可以弃掉一张卡牌，获得一颗同色魔晶。如果你弃掉一件神器，你可以选择任意颜色。",
+    "required_crystals": "绿",
+    "enhanced_effect": "移动力4。本回合中你每次移动一格时，你可以弃掉一张卡牌，获得一颗同色魔晶。如果你弃掉一件神器，你可以选择任意颜色。",
+    "wiki": {
+      "wiki_text": ""
+    }
+  },
+  {
+    "id": "basic_card_004",
+    "set": "basic_card",
+    "set_idx": 4,
+    "image": "cards\\basic_card_004.png",
+    "en_image": "cards\\basic_card_en_004.png",
+    "card_name": "大地之子",
+    "base_effect": "移动力2，治疗1或格挡2。",
+    "required_crystals": "绿",
+    "enhanced_effect": "移动力4，治疗2或格挡，格挡数值等于你所在格未修正的移动费用（山脉5、湖泊2）。白昼时为火焰格挡，黑夜中为寒冰格挡。",
+    "wiki": {}
+  },
+  {
+    "id": "basic_card_005",
+    "set": "basic_card",
+    "set_idx": 5,
+    "image": "cards\\basic_card_005.png",
+    "en_image": "cards\\basic_card_en_005.png",
+    "card_name": "活力焕发",
+    "base_effect": "治疗1，抽取一张卡牌，获得一个绿色魔力标记，或重整一支1级或2级部队。",
+    "required_crystals": "绿",
+    "enhanced_effect": "治疗2，抽取两张卡牌，获得一颗绿色魔晶放入物品栏，或重整一支1级、2级或3级部队。",
+    "wiki": {
+      "wiki_text": ""
+    }
+  },
+  {
+    "id": "basic_card_006",
+    "set": "basic_card",
+    "set_idx": 6,
+    "image": "cards\\basic_card_006.png",
+    "en_image": "cards\\basic_card_en_006.png",
+    "card_name": "全神贯注",
+    "base_effect": "获得一个蓝色，白色或红色魔力标记，或获得一颗绿色魔晶，放入物品栏。",
+    "required_crystals": "绿",
+    "enhanced_effect": "打出本卡牌时，同时打出另一张行动卡牌。免费获得该卡牌的强力效果。如果该效果给予你移动力、影响力、格挡或任何类型的攻击，该效果数值+3。",
+    "wiki": {
+      "wiki_text": "Only Action cards are allowed to play with Will Focus (not spells, units or artifacts)."
+    }
+  },
+  {
+    "id": "basic_card_007",
+    "set": "basic_card",
+    "set_idx": 7,
+    "image": "cards\\basic_card_007.png",
+    "en_image": "cards\\basic_card_en_007.png",
+    "card_name": "敏捷",
+    "base_effect": "移动力2。",
+    "required_crystals": "白",
+    "enhanced_effect": "远程攻击3。",
+    "wiki": {
+      "wiki_text": "Card Image on BGG"
+    }
+  },
+  {
+    "id": "basic_card_008",
+    "set": "basic_card",
+    "set_idx": 8,
+    "image": "cards\\basic_card_008.png",
+    "en_image": "cards\\basic_card_en_008.png",
+    "card_name": "承诺",
+    "base_effect": "影响力2。",
+    "required_crystals": "白",
+    "enhanced_effect": "影响力4。",
+    "wiki": {}
+  },
+  {
+    "id": "basic_card_009",
+    "set": "basic_card",
+    "set_idx": 9,
+    "image": "cards\\basic_card_009.png",
+    "en_image": "cards\\basic_card_en_009.png",
+    "wiki": {
+      "wiki_text": "Card Image on BGG"
+    },
+    "card_name": "魔力汲取",
+    "base_effect": "本回合中你可以使用魔力源中的额外一颗魔力骰子。",
+    "required_crystals": "蓝",
+    "enhanced_effect": "从魔力源中拿取一颗魔力骰子，转化成除金色外任意颜色。获得两个该颜色的魔力标记。这颗骰子放回魔力源时不要重掷。"
+  },
+  {
+    "id": "basic_card_010",
+    "set": "basic_card",
+    "set_idx": 10,
+    "image": "cards\\basic_card_010.png",
+    "en_image": "cards\\basic_card_en_010.png",
+    "wiki": {},
+    "card_name": "迅捷反应",
+    "base_effect": "移动力2，远程攻击1，或者一次敌人的攻击降低1点。",
+    "required_crystals": "蓝",
+    "enhanced_effect": "移动力4，远程攻击3，或者一次敌人的攻击降低2点。"
+  },
+  {
+    "id": "basic_card_011",
+    "set": "basic_card",
+    "set_idx": 11,
+    "image": "cards\\basic_card_011.png",
+    "en_image": "cards\\basic_card_en_011.png",
+    "wiki": {},
+    "card_name": "利斧投掷",
+    "base_effect": "移动力2或远程攻击1",
+    "required_crystals": "蓝",
+    "enhanced_effect": "远程攻击3 若用这次攻击至少击败了一个敌人 则声望+1"
+  },
+  {
+    "id": "basic_card_012",
+    "set": "basic_card",
+    "set_idx": 12,
+    "image": "cards\\basic_card_012.png",
+    "en_image": "cards\\basic_card_en_012.png",
+    "wiki": {
+      "wiki_text": "No notes for this card yet."
+    },
+    "card_name": "高贵气质",
+    "base_effect": "影响力2。交涉中打出本卡牌，名望+1。",
+    "required_crystals": "白",
+    "enhanced_effect": "影响力4。交涉中打出本卡牌，名望+1并且声誉+1。"
+  },
+  {
+    "id": "basic_card_013",
+    "set": "basic_card",
+    "set_idx": 13,
+    "image": "cards\\basic_card_013.png",
+    "en_image": "cards\\basic_card_en_013.png",
+    "card_name": "魔力征引",
+    "base_effect": "本回合中你可以使用魔力源中的额外一颗魔力骰子。如果该骰子为黑色，可以用来产生任意颜色的魔力。",
+    "required_crystals": "白",
+    "enhanced_effect": "从魔力源中拿取两颗魔力骰子，转化成除金色外任意颜色。获得这些颜色的魔力标记。这些骰子放回魔力源时不要重掷。",
+    "wiki": {
+      "wiki_text": ""
+    }
+  },
+  {
+    "id": "basic_card_014",
+    "set": "basic_card",
+    "set_idx": 14,
+    "image": "cards\\basic_card_014.png",
+    "en_image": "cards\\basic_card_en_014.png",
+    "card_name": "耐力",
+    "base_effect": "移动力2。",
+    "required_crystals": "蓝",
+    "enhanced_effect": "移动力4。",
+    "wiki": {
+      "wiki_text": "No notes for this card yet."
+    }
+  },
+  {
+    "id": "basic_card_015",
+    "set": "basic_card",
+    "set_idx": 15,
+    "image": "cards\\basic_card_015.png",
+    "en_image": "cards\\basic_card_en_015.png",
+    "wiki": {
+      "wiki_text": "Really simple: Turns mana into a crystal of the same color. If your mana is blue (advanced action), pick any regular color crystal."
+    },
+    "card_name": "晶化",
+    "base_effect": "打出本卡牌时，同时支付一点基本色魔力。获得一颗同色魔晶，放入物品栏。",
+    "required_crystals": "蓝",
+    "enhanced_effect": "获得一颗任意颜色的魔晶，放入物品栏。"
+  },
+  {
+    "id": "basic_card_016",
+    "set": "basic_card",
+    "set_idx": 16,
+    "image": "cards\\basic_card_016.png",
+    "en_image": "cards\\basic_card_en_016.png",
+    "wiki": {
+      "wiki_text": "No notes for this card yet."
+    },
+    "card_name": "决心",
+    "base_effect": "攻击或格挡2。",
+    "required_crystals": "蓝",
+    "enhanced_effect": "格挡5。"
+  },
+  {
+    "id": "basic_card_017",
+    "set": "basic_card",
+    "set_idx": 17,
+    "image": "cards\\basic_card_017.png",
+    "en_image": "cards\\basic_card_en_017.png",
+    "wiki": {
+      "wiki_text": ""
+    },
+    "card_name": "永不止步",
+    "base_effect": "移动力2。本回合中下一张提供移动力（包括横置打出的卡牌）的卡牌获得额外1点移动力。",
+    "required_crystals": "蓝",
+    "enhanced_effect": "移动力4。本回合中其它每张提供移动力（包括横置打出的卡牌）的卡牌获得额外1点移动力。"
+  },
+  {
+    "id": "basic_card_018",
+    "set": "basic_card",
+    "set_idx": 18,
+    "image": "cards\\basic_card_018.png",
+    "en_image": "cards\\basic_card_en_018.png",
+    "wiki": {
+      "wiki_text": "No notes for this card yet."
+    },
+    "card_name": "德鲁伊之道",
+    "base_effect": "移动力2。本回合中一个六角格的移动费用降低1点，最低至2。",
+    "required_crystals": "蓝",
+    "enhanced_effect": "移动力4。本回合中一种地形的移动费用降低1点，最低至2。"
+  },
+  {
+    "id": "basic_card_019",
+    "set": "basic_card",
+    "set_idx": 19,
+    "image": "cards\\basic_card_019.png",
+    "en_image": "cards\\basic_card_en_019.png",
+    "card_name": "欢悦魔晶",
+    "base_effect": "支付一点任意基本色魔力，以获得一颗同色魔晶，放入物品栏。你回合结束时，可以弃掉另一张非创伤卡牌，将本卡牌收回手牌。",
+    "required_crystals": "蓝",
+    "enhanced_effect": "获得一颗任意基本色魔晶，放入物品栏。你回合结束时，可以弃掉另一张包括创伤在内的卡牌，将本卡牌收回手牌。",
+    "wiki": {
+      "wiki_text": ""
+    }
+  },
+  {
+    "id": "basic_card_020",
+    "set": "basic_card",
+    "set_idx": 20,
+    "image": "cards\\basic_card_020.png",
+    "en_image": "cards\\basic_card_en_020.png",
+    "card_name": "寒冰护体",
+    "base_effect": "攻击2或寒冰格挡3。",
+    "required_crystals": "蓝",
+    "enhanced_effect": "寒冰格挡5。你格挡的敌人标记上每有一个能力或攻击的颜色，+1寒冰格挡（除非敌人具有奥术免疫），或对手攻击时每支付一点魔力+1寒冰格挡。",
+    "wiki": {
+      "wiki_text": ""
+    }
+  },
+  {
+    "id": "basic_card_021",
+    "set": "basic_card",
+    "set_idx": 21,
+    "image": "cards\\basic_card_021.png",
+    "en_image": "cards\\basic_card_en_021.png",
+    "wiki": {
+      "wiki_text": "Card Image on BGG"
+    },
+    "card_name": "狂怒",
+    "base_effect": "攻击或格挡2。",
+    "required_crystals": "红",
+    "enhanced_effect": "攻击4。"
+  },
+  {
+    "id": "basic_card_022",
+    "set": "basic_card",
+    "set_idx": 22,
+    "image": "cards\\basic_card_022.png",
+    "en_image": "cards\\basic_card_en_022.png",
+    "card_name": "威胁",
+    "base_effect": "影响力2。",
+    "required_crystals": "红",
+    "enhanced_effect": "影响力5。声誉-1。",
+    "wiki": {
+      "wiki_text": "No notes for this card yet."
+    }
+  },
+  {
+    "id": "basic_card_023",
+    "set": "basic_card",
+    "set_idx": 23,
+    "image": "cards\\basic_card_023.png",
+    "en_image": "cards\\basic_card_en_023.png",
+    "wiki": {
+      "wiki_text": "As usual, it's not allowed to discard a wound."
+    },
+    "card_name": "随机应变",
+    "base_effect": "从手牌中弃掉另一张卡牌，以获得移动力3，影响力3，攻击3或格挡3。",
+    "required_crystals": "红",
+    "enhanced_effect": "从手牌中弃掉另一张卡牌，以获得移动力5，影响力5，攻击5或格挡5。"
+  },
+  {
+    "id": "basic_card_024",
+    "set": "basic_card",
+    "set_idx": 24,
+    "image": "cards\\basic_card_024.png",
+    "en_image": "cards\\basic_card_en_024.png",
+    "wiki": {
+      "wiki_text": "No notes for this card yet."
+    },
+    "card_name": "灵活战斗",
+    "base_effect": "攻击2，格挡2，或远程攻击1。",
+    "required_crystals": "红",
+    "enhanced_effect": "攻击4，格挡4，火焰攻击3，火焰格挡3，远程攻击3，或攻城攻击2。"
+  },
+  {
+    "id": "basic_card_025",
+    "set": "basic_card",
+    "set_idx": 25,
+    "image": "cards\\basic_card_025.png",
+    "en_image": "cards\\basic_card_en_025.png",
+    "wiki": {},
+    "card_name": "战斗之怒",
+    "base_effect": "攻击2；如果你在这场战斗中收到一张伤害卡，则加1点攻击力",
+    "required_crystals": "红",
+    "enhanced_effect": "攻击4；在这场战斗中，每收到一张伤害卡，你就可以增加1点攻击力（最多4点）"
+  },
+  {
+    "id": "basic_card_026",
+    "set": "basic_card",
+    "set_idx": 26,
+    "image": "cards\\basic_card_026.png",
+    "en_image": "cards\\basic_card_en_026.png",
+    "wiki": {
+      "wiki_text": "No notes for this card yet."
+    },
+    "card_name": "无情威压",
+    "base_effect": "影响力2。你可以在招募一支部队时减少其2点招募费用，如果本回合你以此法招募该部队，则声誉-1。",
+    "required_crystals": "红",
+    "enhanced_effect": "影响力6。声誉-1。你可以支付部队等级2倍的影响力，重整你控制的1级和2级部队。"
+  },
+  {
+    "id": "basic_card_027",
+    "set": "basic_card",
+    "set_idx": 27,
+    "image": "cards\\basic_card_027.png",
+    "en_image": "cards\\basic_card_en_027.png",
+    "wiki": {}
+  }
+]

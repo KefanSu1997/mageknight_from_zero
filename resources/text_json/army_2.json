@@ -1,0 +1,440 @@
+[
+  {
+    "id": "army_2_000",
+    "set": "army_2",
+    "set_idx": 0,
+    "image": "cards\\army_2_000.png",
+    "en_image": "cards\\army_2_en_000.png",
+    "card_name_cn": "护林人",
+    "level": "I",
+    "influence_cost": "5",
+    "armor": "4",
+    "resistances": "",
+    "recruit_location": "村庄",
+    "abilities": [
+      {
+        "mana_cost": "None",
+        "effect": "移动力2。本回合中森林、丘陵和沼泽的移动费用降低1点，最低至0。"
+      },
+      {
+        "mana_cost": "None",
+        "effect": "格挡3。"
+      }
+    ],
+    "en_card_name": "FORESTERS",
+    "wiki": {
+      "wiki_text": "Level: I"
+    },
+    "card_name": "护林人"
+  },
+  {
+    "id": "army_2_001",
+    "set": "army_2",
+    "set_idx": 1,
+    "image": "cards\\army_2_001.png",
+    "en_image": "cards\\army_2_en_001.png",
+    "card_name_cn": "守护者魔像",
+    "level": "II",
+    "influence_cost": "7",
+    "armor": "3",
+    "resistances": "",
+    "recruit_location": "城堡",
+    "abilities": [
+      {
+        "mana_cost": "None",
+        "effect": "攻击或格挡2。"
+      },
+      {
+        "mana_cost": "红",
+        "effect": "火焰格挡4。"
+      },
+      {
+        "mana_cost": "蓝",
+        "effect": "寒冰格挡4。"
+      }
+    ],
+    "en_card_name": "GUARDIAN GOLEMS",
+    "wiki": {
+      "wiki_text": "Level: II"
+    },
+    "card_name": "守护者魔像"
+  },
+  {
+    "id": "army_2_002",
+    "set": "army_2",
+    "set_idx": 2,
+    "image": "cards\\army_2_002.png",
+    "en_image": "cards\\army_2_en_002.png",
+    "card_name_cn": "药草师",
+    "level": "I",
+    "influence_cost": "3",
+    "armor": "2",
+    "resistances": "",
+    "recruit_location": "村庄",
+    "abilities": [
+      {
+        "mana_cost": "绿",
+        "effect": "治疗2。"
+      },
+      {
+        "mana_cost": "None",
+        "effect": "重整一支1或2级部队。"
+      },
+      {
+        "mana_cost": "绿",
+        "effect": "获得一个绿色魔力标记。"
+      }
+    ],
+    "en_card_name": "HERBALISTS",
+    "card_name": "药草师",
+    "wiki": {
+      "wiki_text": "Level: I"
+    }
+  },
+  {
+    "id": "army_2_003",
+    "set": "army_2",
+    "set_idx": 3,
+    "image": "cards\\army_2_003.png",
+    "en_image": "cards\\army_2_en_003.png",
+    "card_name_cn": "幻术师",
+    "level": "II",
+    "influence_cost": "7",
+    "armor": "2",
+    "resistances": "",
+    "recruit_location": "魔法塔",
+    "abilities": [
+      {
+        "mana_cost": "黑",
+        "effect": "影响力4。"
+      },
+      {
+        "mana_cost": "白",
+        "effect": "本次战斗中无城防的目标敌人不攻击。"
+      },
+      {
+        "mana_cost": "白",
+        "effect": "获得一颗白色魔晶，放入物品栏。"
+      }
+    ],
+    "en_card_name": "ILLUSIONISTS",
+    "wiki": {
+      "wiki_text": "Level: II"
+    },
+    "card_name": "幻术师"
+  },
+  {
+    "id": "army_2_004",
+    "set": "army_2",
+    "set_idx": 4,
+    "image": "cards\\army_2_004.png",
+    "en_image": "cards\\army_2_en_004.png",
+    "card_name_cn": "魔宠",
+    "level": "II",
+    "influence_cost": "6",
+    "armor": "5",
+    "resistances": "",
+    "recruit_location": "高地",
+    "abilities": [
+      {
+        "mana_cost": "红",
+        "effect": "攻击3 (红 +2)"
+      },
+      {
+        "mana_cost": "蓝",
+        "effect": "格挡4 (蓝 +3)"
+      },
+      {
+        "mana_cost": "白",
+        "effect": "移动力或影响力3 (白 +2)"
+      },
+      {
+        "mana_cost": "绿",
+        "effect": "治疗2 (绿 +1)"
+      },
+      {
+        "mana_cost": "None",
+        "effect": "招募时支付一点基本色魔力，并将一个魔力标记放在部队该颜色能力上。对应的能力获得提升。每轮开始时，使用你物品栏中一颗任意颜色的魔晶替换该标记，或去除这支部队。"
+      }
+    ],
+    "en_card_name": "MAGIC FAMILIARS",
+    "wiki": {
+      "wiki_text": "Level: II"
+    },
+    "card_name": "魔宠"
+  },
+  {
+    "id": "army_2_005",
+    "set": "army_2",
+    "set_idx": 5,
+    "image": "cards\\army_2_005.png",
+    "en_image": "cards\\army_2_en_005.png",
+    "card_name_cn": "北地僧侣",
+    "level": "II",
+    "influence_cost": "7",
+    "armor": "4",
+    "resistances": "",
+    "recruit_location": "城市",
+    "abilities": [
+      {
+        "mana_cost": "None",
+        "effect": "攻击或格挡3。"
+      },
+      {
+        "mana_cost": "蓝",
+        "effect": "寒冰攻击或寒冰格挡4。"
+      }
+    ],
+    "en_card_name": "NORTHERN MONKS",
+    "wiki": {
+      "wiki_text": "Level: II"
+    },
+    "card_name": "北地僧侣"
+  },
+  {
+    "id": "army_2_006",
+    "set": "army_2",
+    "set_idx": 6,
+    "image": "cards\\army_2_006.png",
+    "en_image": "cards\\army_2_en_006.png",
+    "card_name_cn": "农民",
+    "level": "I",
+    "influence_cost": "4",
+    "armor": "3",
+    "resistances": "",
+    "recruit_location": "村庄",
+    "abilities": [
+      {
+        "mana_cost": "None",
+        "effect": "攻击或格挡2。"
+      },
+      {
+        "mana_cost": "None",
+        "effect": "影响力2。"
+      },
+      {
+        "mana_cost": "None",
+        "effect": "移动力2。"
+      }
+    ],
+    "en_card_name": "PEASANTS",
+    "wiki": {
+      "wiki_text": "Level: I"
+    },
+    "card_name": "农民"
+  },
+  {
+    "id": "army_2_007",
+    "set": "army_2",
+    "set_idx": 7,
+    "image": "cards\\army_2_007.png",
+    "en_image": "cards\\army_2_en_007.png",
+    "card_name_cn": "赤袍僧侣",
+    "level": "II",
+    "influence_cost": "7",
+    "armor": "4",
+    "resistances": "",
+    "recruit_location": "法师塔",
+    "abilities": [
+      {
+        "mana_cost": "None",
+        "effect": "攻击或格挡3"
+      },
+      {
+        "mana_cost": "红",
+        "effect": "火焰攻击或火焰格挡4"
+      }
+    ],
+    "en_card_name": "RED CAPE MONKS",
+    "card_name": "赤袍僧侣",
+    "wiki": {
+      "wiki_text": "Level: II"
+    }
+  },
+  {
+    "id": "army_2_008",
+    "set": "army_2",
+    "set_idx": 8,
+    "image": "cards\\army_2_008.png",
+    "en_image": "cards\\army_2_en_008.png",
+    "card_name_cn": "凶蛮僧侣",
+    "level": "II",
+    "influence_cost": "7",
+    "armor": "4",
+    "resistances": "",
+    "recruit_location": "城堡",
+    "abilities": [
+      {
+        "mana_cost": "None",
+        "effect": "攻击或格挡3。"
+      },
+      {
+        "mana_cost": "绿",
+        "effect": "攻城攻击4。"
+      }
+    ],
+    "en_card_name": "SAVAGE MONKS",
+    "wiki": {
+      "wiki_text": "Level: II"
+    },
+    "card_name": "凶蛮僧侣"
+  },
+  {
+    "id": "army_2_009",
+    "set": "army_2",
+    "set_idx": 9,
+    "image": "cards\\army_2_009.png",
+    "en_image": "cards\\army_2_en_009.png",
+    "card_name_cn": "斥候",
+    "level": "I",
+    "influence_cost": "4",
+    "armor": "2",
+    "resistances": "",
+    "recruit_location": "城市",
+    "abilities": [
+      {
+        "mana_cost": "None",
+        "effect": "攻城攻击1。"
+      },
+      {
+        "mana_cost": "None",
+        "effect": "查看地图上3格之内一个正面朝下的标记，或者任何敌人标记堆顶部的一个标记。如果本回合中击败该标记，获得名望+1。"
+      },
+      {
+        "mana_cost": "None",
+        "effect": "移动力2。你可以在2格距离翻开一块新的板块。"
+      }
+    ],
+    "en_card_name": "SCOUTS",
+    "wiki": {
+      "wiki_text": "Level: I"
+    },
+    "card_name": "斥候"
+  },
+  {
+    "id": "army_2_010",
+    "set": "army_2",
+    "set_idx": 10,
+    "image": "cards\\army_2_010.png",
+    "en_image": "cards\\army_2_en_010.png",
+    "card_name_cn": "奇袭队",
+    "level": "II",
+    "influence_cost": "6",
+    "armor": "3",
+    "resistances": "",
+    "recruit_location": "要塞",
+    "abilities": [
+      {
+        "mana_cost": "None",
+        "effect": "远程攻击1。本回合中你所有其他部队的所有攻击+1。"
+      },
+      {
+        "mana_cost": "None",
+        "effect": "使一个敌人的护甲和一次攻击降低1点。"
+      },
+      {
+        "mana_cost": "None",
+        "effect": "使一次敌人的攻击降低3点。即使敌人具有刺杀，此次攻击造成的伤害必须先分配给这支部队。"
+      }
+    ],
+    "en_card_name": "SHOCKTROOPS",
+    "card_name": "奇袭队",
+    "wiki": {
+      "wiki_text": "Level: II"
+    }
+  },
+  {
+    "id": "army_2_011",
+    "set": "army_2",
+    "set_idx": 11,
+    "image": "cards\\army_2_011.png",
+    "en_image": "cards\\army_2_en_011.png",
+    "card_name_cn": "暴徒",
+    "level": "I",
+    "influence_cost": "5",
+    "armor": "5",
+    "resistances": "",
+    "recruit_location": "城市",
+    "abilities": [
+      {
+        "mana_cost": "None",
+        "effect": "格挡3"
+      },
+      {
+        "mana_cost": "None",
+        "effect": "攻击3，声誉-1"
+      },
+      {
+        "mana_cost": "None",
+        "effect": "影响力4，声誉-1"
+      }
+    ],
+    "en_card_name": "THUGS",
+    "wiki": {
+      "wiki_text": "Level: I"
+    },
+    "card_name": "暴徒"
+  },
+  {
+    "id": "army_2_012",
+    "set": "army_2",
+    "set_idx": 12,
+    "image": "cards\\army_2_012.png",
+    "en_image": "cards\\army_2_en_012.png",
+    "card_name_cn": "乌顿弩手",
+    "level": "II",
+    "influence_cost": "6",
+    "armor": "4",
+    "resistances": "",
+    "recruit_location": "城堡、城镇",
+    "abilities": [
+      "攻击或格挡3。",
+      "远程攻击2。"
+    ],
+    "en_card_name": "Ns"
+  },
+  {
+    "id": "army_2_013",
+    "set": "army_2",
+    "set_idx": 13,
+    "image": "cards\\army_2_013.png",
+    "en_image": "cards\\army_2_en_013.png",
+    "card_name_cn": "乌顿守卫",
+    "level": "II",
+    "influence_cost": "5",
+    "armor": "5",
+    "resistances": "",
+    "recruit_location": "城堡、城镇",
+    "abilities": [
+      "攻击2。",
+      "格挡4。对抗迅捷攻击时计算两次。"
+    ],
+    "en_card_name": "Py Utem Guardsmen",
+    "wiki": {}
+  },
+  {
+    "id": "army_2_014",
+    "set": "army_2",
+    "set_idx": 14,
+    "image": "cards\\army_2_014.png",
+    "en_image": "cards\\army_2_en_014.png",
+    "card_name_cn": "乌顿剑士",
+    "level": "II",
+    "influence_cost": "6",
+    "armor": "4",
+    "resistances": "",
+    "recruit_location": "城堡",
+    "abilities": [
+      "攻击或格挡3。",
+      "攻击或格挡6。这支队伍受到一点创伤。"
+    ],
+    "en_card_name": "  B Attack Or Block "
+  },
+  {
+    "id": "army_2_015",
+    "set": "army_2",
+    "set_idx": 15,
+    "image": "cards\\army_2_015.png",
+    "en_image": "cards\\army_2_en_015.png"
+  }
+]

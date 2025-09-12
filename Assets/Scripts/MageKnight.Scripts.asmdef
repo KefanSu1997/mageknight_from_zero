@@ -1,0 +1,22 @@
+{
+  "name": "MageKnight.Scripts",
+  "rootNamespace": "",  
+  "references": [
+    "MageKnight.Logic",
+    "Unity.TextMeshPro",
+    "Unity.Addressables",
+    "Unity.ResourceManager",
+    "UnityEngine.TestRunner",
+    "UnityEditor.TestRunner"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [
+    "UNITY_INCLUDE_TESTS"
+  ],
+  "versionDefines": []
+}

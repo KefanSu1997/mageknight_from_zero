@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12e6684daa6bf044d8f150537e171e7c, type: 3}
+  m_Name: advanced_card_026
+  m_EditorClassIdentifier: 
+  Id: advanced_card_026
+  NameCn: "\u5B66\u4E60"
+  Set: 1
+  ImagePath: cards/advanced_card_026
+  EnImagePath: cards/advanced_card_en_026.png
+  BaseEffect: "\u5F71\u54CD\u529B2\u3002\u4F60\u53EF\u4EE5\u652F\u4ED86\u70B9\u5F71\u54CD\u529B\uFF0C\u4EE5\u4ECE\u9AD8\u7EA7\u884C\u52A8\u4F9B\u5E94\u533A\u4E2D\u83B7\u5F97\u4E00\u5F20\u9AD8\u7EA7\u884C\u52A8\u5361\u724C\uFF0C\u653E\u5165\u4F60\u7684\u5F03\u724C\u5806\uFF1B\u672C\u56DE\u5408\u53EA\u80FD\u4F7F\u7528\u4E00\u6B21\u3002"
+  EnhancedEffect: "\u5F71\u54CD\u529B4\u3002\u4F60\u53EF\u4EE5\u652F\u4ED89\u70B9\u5F71\u54CD\u529B\uFF0C\u4EE5\u4ECE\u9AD8\u7EA7\u884C\u52A8\u4F9B\u5E94\u533A\u4E2D\u83B7\u5F97\u4E00\u5F20\u9AD8\u7EA7\u884C\u52A8\u5361\u724C\uFF0C\u52A0\u5165\u4F60\u7684\u624B\u724C\uFF1B\u672C\u56DE\u5408\u53EA\u80FD\u4F7F\u7528\u4E00\u6B21\u3002"
+  RequiredCrystals: 03000000

@@ -1,0 +1,428 @@
+[
+  {
+    "id": "magic_000",
+    "set": "magic",
+    "set_idx": 0,
+    "image": "cards\\magic_000.png",
+    "en_image": "cards\\magic_en_000.png",
+    "mana_color": "绿色",
+    "spell_top": {
+      "name": "能量流转",
+      "effect": "重整一支部队。如果这么做，你可以使每位其他玩家部队区域中一支最高2级的部队精力耗尽。",
+      "mana_cost": "绿"
+    },
+    "spell_bottom": {
+      "name": "能量窃取",
+      "effect": "重整一支部队。如果这么做，该部队同时获得治疗，且你可以使每位其他玩家部队区域中一支最高3级的部队精力耗尽。",
+      "mana_cost": "绿,黑"
+    }
+  },
+  {
+    "id": "magic_001",
+    "set": "magic",
+    "set_idx": 1,
+    "image": "cards\\magic_001.png",
+    "en_image": "cards\\magic_en_001.png",
+    "mana_color": "绿色",
+    "spell_top": {
+      "name": "痊愈",
+      "effect": "治疗2。本回合每治疗手牌中一张创伤卡牌，抽取一张卡牌，并且重整本回合治疗的所有部队。",
+      "mana_cost": "绿"
+    },
+    "spell_bottom": {
+      "name": "感染",
+      "effect": "格挡阶段所有被格挡的敌人护甲降至1点。",
+      "mana_cost": "绿"
+    }
+  },
+  {
+    "id": "magic_002",
+    "set": "magic",
+    "set_idx": 2,
+    "image": "cards\\magic_002.png",
+    "en_image": "cards\\magic_en_002.png",
+    "mana_color": "绿色",
+    "spell_top": {
+      "name": "冥想",
+      "effect": "从你的弃牌堆中随机选取两张卡牌，将它们放在你的功能牌库顶部或底部。下一次你抽取卡牌时，手牌上限增加2张。",
+      "mana_cost": "绿"
+    },
+    "spell_bottom": {
+      "name": "神游",
+      "effect": "与基本效果相同，但由你选择卡牌，而不是随机选取。",
+      "mana_cost": "绿"
+    }
+  },
+  {
+    "id": "magic_003",
+    "set": "magic",
+    "set_idx": 3,
+    "image": "cards\\magic_003.png",
+    "en_image": "cards\\magic_en_003.png",
+    "mana_color": "绿色",
+    "spell_top": {
+      "name": "地脉震颤",
+      "effect": "目标敌人受到护甲-3，或所有敌人受到护甲-2。护甲无法降低至1以下。",
+      "mana_cost": "绿"
+    },
+    "spell_bottom": {
+      "name": "地动山摇",
+      "effect": "目标敌人受到护甲-3（具有城防时-6），或所有敌人受到护甲-2（具有城防时-4）。护甲无法降低至1以下。",
+      "mana_cost": "绿,黑"
+    }
+  },
+  {
+    "id": "magic_004",
+    "set": "magic",
+    "set_idx": 4,
+    "image": "cards\\magic_004.png",
+    "en_image": "cards\\magic_en_004.png",
+    "mana_color": "绿色",
+    "spell_top": {
+      "name": "地道穿行",
+      "effect": "在翻开的地图上移动最多3格。你不能以此方式穿越或移动至沼泽或湖泊，且你移动结束必须停留在安全格上。以此方式移动不会激怒肆虐的敌人。",
+      "mana_cost": "绿"
+    },
+    "spell_bottom": {
+      "name": "地道攻击",
+      "effect": "与基本效果相同，但你移动结束必须停留在城防地点上（或其他玩家占据的格子中）。移动结束后视为突袭（或攻击该玩家）。忽略地点城防。如果战斗后撤离，返回出发地点。",
+      "mana_cost": "绿"
+    }
+  },
+  {
+    "id": "magic_005",
+    "set": "magic",
+    "set_idx": 5,
+    "image": "cards\\magic_005.png",
+    "en_image": "cards\\magic_en_005.png",
+    "mana_color": "绿色",
+    "spell_top": {
+      "name": "复原",
+      "effect": "治疗3。如果处于森林中，则改为治疗5。",
+      "mana_cost": "绿"
+    },
+    "spell_bottom": {
+      "name": "重生",
+      "effect": "治疗3。如果处于森林中，则改为治疗5。重整一支或多支部队，总计等级数最多3级。如果处于森林中，总计等级数改为最多5级。",
+      "mana_cost": "绿,黑"
+    }
+  },
+  {
+    "id": "magic_006",
+    "set": "magic",
+    "set_idx": 6,
+    "image": "cards\\magic_006.png",
+    "en_image": "cards\\magic_en_006.png",
+    "mana_color": "红色",
+    "spell_top": {
+      "name": "魔力熔毁",
+      "effect": "每位其他玩家必须随机选择并失去自己物品栏中的一颗魔晶。你可以将以此方式失去的一颗魔晶放入你的物品栏。你打出本卡牌时，所有物品栏中没有魔晶的玩家受到一点创伤。",
+      "mana_cost": "红"
+    },
+    "spell_bottom": {
+      "name": "魔力辐射",
+      "effect": "打出本卡牌时，选择一种魔力基本色。包括你在内的每位玩家，每拥有一颗同色魔晶，受到一点创伤。你获得两颗同色魔晶，放入物品栏。",
+      "mana_cost": "红,黑"
+    }
+  },
+  {
+    "id": "magic_007",
+    "set": "magic",
+    "set_idx": 7,
+    "image": "cards\\magic_007.png",
+    "en_image": "cards\\magic_en_007.png",
+    "mana_color": "红色",
+    "spell_top": {
+      "name": "拆毁",
+      "effect": "本回合中忽略地点城防。敌人受到护甲-1(最低至1)。",
+      "mana_cost": "红"
+    },
+    "spell_bottom": {
+      "name": "解离",
+      "effect": "本卡牌只能在战斗攻击阶段打出。消灭目标敌人。其他敌人受到护甲-1(最低至1)。",
+      "mana_cost": "红,黑"
+    }
+  },
+  {
+    "id": "magic_008",
+    "set": "magic",
+    "set_idx": 8,
+    "image": "cards\\magic_008.png",
+    "en_image": "cards\\magic_en_008.png",
+    "mana_color": "红色",
+    "spell_top": {
+      "name": "燃烧护盾",
+      "effect": "火焰格挡4。如果本卡牌用于一次成功的格挡，你可以在攻击阶段作为火焰攻击4使用。",
+      "mana_cost": "红"
+    },
+    "spell_bottom": {
+      "name": "爆破护盾",
+      "effect": "火焰格挡4。如果本卡牌用于一次成功的格挡，消灭被格挡的敌人。",
+      "mana_cost": "红,黑"
+    }
+  },
+  {
+    "id": "magic_009",
+    "set": "magic",
+    "set_idx": 9,
+    "image": "cards\\magic_009.png",
+    "en_image": "cards\\magic_en_009.png",
+    "mana_color": "红色",
+    "spell_top": {
+      "name": "火焰魔球",
+      "effect": "远程火焰攻击5。",
+      "mana_cost": "红"
+    },
+    "spell_bottom": {
+      "name": "火焰风暴",
+      "effect": "受到一点创伤。攻城火焰攻击8。",
+      "mana_cost": "红,黑"
+    }
+  },
+  {
+    "id": "magic_010",
+    "set": "magic",
+    "set_idx": 10,
+    "image": "cards\\magic_010.png",
+    "en_image": "cards\\magic_en_010.png",
+    "mana_color": "红色",
+    "spell_top": {
+      "name": "烈焰之墙",
+      "effect": "火焰攻击5或火焰格挡7。",
+      "mana_cost": "红"
+    },
+    "spell_bottom": {
+      "name": "烈焰浪涌",
+      "effect": "火焰攻击5或火焰格挡7。每个你交战的敌人标记可以使本次攻击或格挡提升2。",
+      "mana_cost": "红,黑"
+    }
+  },
+  {
+    "id": "magic_011",
+    "set": "magic",
+    "set_idx": 11,
+    "image": "cards\\magic_011.png",
+    "en_image": "cards\\magic_en_011.png",
+    "mana_color": "红",
+    "spell_top": {
+      "name": "献祭",
+      "effect": "获得一颗红色魔晶，放入物品栏。你可以从手牌中弃掉最多3张非创伤卡牌。每弃掉一张卡牌，获得一颗同色魔晶，放入物品栏（弃掉神器时任选颜色）。",
+      "mana_cost": "红"
+    },
+    "spell_bottom": {
+      "name": "牺牲",
+      "effect": "选择绿色或白色，随后选择红色或蓝色。你物品栏中每有一对魔晶（所选颜色各一），获得攻城攻击4（如果选择了绿色）或远程攻击6（如果选择了白色）。此次攻击为火焰攻击（如果选择了红色）或寒冰攻击（如果选择了蓝色）。随后，将所有配对的魔晶转化为魔力。",
+      "mana_cost": "红,黑"
+    }
+  },
+  {
+    "id": "magic_012",
+    "set": "magic",
+    "set_idx": 12,
+    "image": "cards\\magic_012.png",
+    "en_image": "cards\\magic_en_012.png",
+    "mana_color": "蓝色",
+    "spell_top": {
+      "name": "魔力宣夺",
+      "effect": "从魔力源中拿取一颗基本色魔力骰子，放入你的游戏区域直到本轮结束。你可以在本回合中获得3个同色魔力标记，或者在本轮中接下来的（从你下回合开始）每个回合获得一个同色魔力标记。",
+      "mana_cost": "蓝"
+    },
+    "spell_bottom": {
+      "name": "魔力诅咒",
+      "effect": "与基本效果相同。此外，在本轮结束前：每次其他玩家在自己回合（从任意来源）使用一点或更多同色魔力，该玩家受到一点创伤。每位玩家每回合只会以此方式受到一点创伤。",
+      "mana_cost": "蓝,黑"
+    }
+  },
+  {
+    "id": "magic_013",
+    "set": "magic",
+    "set_idx": 13,
+    "image": "cards\\magic_013.png",
+    "en_image": "cards\\magic_en_013.png",
+    "mana_color": "蓝色",
+    "spell_top": {
+      "name": "冰冻",
+      "effect": "本次战斗中目标敌人不攻击。如果该敌人具有火焰抗性，则在本回合剩余时间内失去火焰抗性。",
+      "mana_cost": "蓝"
+    },
+    "spell_bottom": {
+      "name": "致命冰冻",
+      "effect": "本次战斗中目标敌人不攻击，且本回合剩余时间内受到护甲-4（最低至1）。",
+      "mana_cost": "蓝,黑"
+    }
+  },
+  {
+    "id": "magic_014",
+    "set": "magic",
+    "set_idx": 14,
+    "image": "cards\\magic_014.png",
+    "en_image": "cards\\magic_en_014.png",
+    "mana_color": "蓝色",
+    "spell_top": {
+      "name": "迷雾形态",
+      "effect": "移动力4。所有地形，包括湖泊的移动费用变为2。本回合剩余时间内，你不能进入丘陵和山脉。",
+      "mana_cost": "蓝"
+    },
+    "spell_bottom": {
+      "name": "迷雾帷幕",
+      "effect": "你的所有部队获得所有抗性。本回合中你的英雄忽略敌人造成的第一点创伤。同时忽略该创伤的所有附加效果。",
+      "mana_cost": "蓝,黑"
+    }
+  },
+  {
+    "id": "magic_015",
+    "set": "magic",
+    "set_idx": 15,
+    "image": "cards\\magic_015.png",
+    "en_image": "cards\\magic_en_015.png",
+    "mana_color": "蓝色",
+    "spell_top": {
+      "name": "风雪交加",
+      "effect": "远程寒冰攻击5。",
+      "mana_cost": "蓝"
+    },
+    "spell_bottom": {
+      "name": "狂风暴雪",
+      "effect": "受到一点创伤。攻城寒冰攻击8。",
+      "mana_cost": "蓝,黑"
+    }
+  },
+  {
+    "id": "magic_016",
+    "set": "magic",
+    "set_idx": 16,
+    "image": "cards\\magic_016.png",
+    "en_image": "cards\\magic_en_016.png",
+    "mana_color": "蓝色",
+    "spell_top": {
+      "name": "空间扭曲",
+      "effect": "本回合中，你移动和探索新板块时，可以将距离自己2格的六角格视为相邻格。忽略以此方式跳过的六角格。本回合中，你的移动不会激怒肆虐的敌人。",
+      "mana_cost": "蓝"
+    },
+    "spell_bottom": {
+      "name": "时间扭曲",
+      "effect": "你回合结束时，将本卡牌单独放在一边，留到本轮结束。将你本回合打出过的所有其它（不包括弃掉和去除的）卡牌放回手牌。回合结束时跳过“抽取新的卡牌”部分。立即再进行一个回合。",
+      "mana_cost": "蓝,黑"
+    }
+  },
+  {
+    "id": "magic_017",
+    "set": "magic",
+    "set_idx": 17,
+    "image": "cards\\magic_017.png",
+    "en_image": "cards\\magic_en_017.png",
+    "mana_color": "蓝色",
+    "spell_top": {
+      "name": "魔力箭矢",
+      "effect": "打出本卡牌时，支付一点魔力。如果支付蓝色魔力，获得寒冰攻击8。如果支付红色魔力，获得冰火攻击7。如果支付白色魔力，获得远程寒冰攻击6。如果支付绿色魔力，获得攻城寒冰攻击5。",
+      "mana_cost": "蓝"
+    },
+    "spell_bottom": {
+      "name": "魔力雷矢",
+      "effect": "打出本卡牌时，支付一点魔力。如果支付蓝色魔力，获得寒冰攻击11。如果支付红色魔力，获得冰火攻击10。如果支付白色魔力，获得远程寒冰攻击9。如果支付绿色魔力，获得攻城寒冰攻击8。",
+      "mana_cost": "蓝,黑"
+    }
+  },
+  {
+    "id": "magic_018",
+    "set": "magic",
+    "set_idx": 18,
+    "image": "cards\\magic_018.png",
+    "en_image": "cards\\magic_en_018.png",
+    "mana_color": "紫",
+    "spell_top": {
+      "name": "思维读取",
+      "effect": "选择一个颜色。获得一颗同色魔晶，放入物品栏。每位其他玩家必须从手牌中弃掉一张同色法术或行动卡牌，或者展示手牌表示没有此颜色卡牌。",
+      "mana_cost": "蓝"
+    },
+    "spell_bottom": {
+      "name": "思维窃取",
+      "effect": "与基本效果相同。此外，你可以决定永久性偷取一张以此方式弃掉的行动卡牌（不能是法术）并加入你的手牌。",
+      "mana_cost": "蓝,黑"
+    }
+  },
+  {
+    "id": "magic_019",
+    "set": "magic",
+    "set_idx": 19,
+    "image": "cards\\magic_019.png",
+    "en_image": "cards\\magic_en_019.png",
+    "mana_color": "紫色",
+    "spell_top": {
+      "name": "暴露",
+      "effect": "本次战斗中目标敌人失去所有城防和抗性。远程攻击2。",
+      "mana_cost": "蓝"
+    },
+    "spell_bottom": {
+      "name": "群体暴露",
+      "effect": "本次战斗中所有敌人或失去所有城防，或失去所有抗性。远程攻击3。",
+      "mana_cost": "蓝,黑"
+    }
+  },
+  {
+    "id": "magic_020",
+    "set": "magic",
+    "set_idx": 20,
+    "image": "cards\\magic_020.png",
+    "en_image": "cards\\magic_en_020.png",
+    "mana_color": "无色",
+    "spell_top": {
+      "name": "战斗号召",
+      "effect": "本回合中你可以使用部队供应区中一支部队的一个能力，将该部队视为你已招募的部队。你不能对这支部队分配伤害。",
+      "mana_cost": "蓝"
+    },
+    "spell_bottom": {
+      "name": "荣誉号召",
+      "effect": "从部队供应区免费招募任意一支部队。(如果你已经达到指挥上限，你必须先解散你的一支部队。)",
+      "mana_cost": "蓝,黑"
+    }
+  },
+  {
+    "id": "magic_021",
+    "set": "magic",
+    "set_idx": 21,
+    "image": "cards\\magic_021.png",
+    "en_image": "cards\\magic_en_021.png",
+    "mana_color": "白",
+    "spell_top": {
+      "name": "魅惑",
+      "effect": "影响力4。如果你在交涉中打出本卡牌，或者获得一颗任意颜色的魔晶，放入物品栏，或者使一支部队的招募费用-3。"
+    },
+    "spell_bottom": {
+      "name": "附身",
+      "effect": "一个敌人不攻击。攻击阶段中你获得等同于其攻击（包括元素属性）的攻击，但忽略特殊能力。此次攻击你只能选择其他敌人作为目标。"
+    }
+  },
+  {
+    "id": "magic_022",
+    "set": "magic",
+    "set_idx": 22,
+    "image": "cards\\magic_022.png",
+    "en_image": "cards\\magic_en_022.png",
+    "mana_color": "蓝色",
+    "spell_top": {
+      "name": "旋風",
+      "effect": "本次战斗中目标敌人不攻击。"
+    },
+    "spell_bottom": {
+      "name": "颶風",
+      "effect": "本卡牌只能在战斗攻击阶段打出。消灭目标敌人。"
+    }
+  },
+  {
+    "id": "magic_023",
+    "set": "magic",
+    "set_idx": 23,
+    "image": "cards\\magic_023.png",
+    "en_image": "cards\\magic_en_023.png",
+    "mana_color": "蓝",
+    "spell_top": {
+      "name": "清风之翼",
+      "effect": "打出本卡牌时，支付1-5点移动力点数，每支付1点在翻开的地图上移动一格。你移动结束必须停留在安全格上。以此方式移动不会激怒肆虐的敌人。"
+    },
+    "spell_bottom": {
+      "name": "黑夜之翼",
+      "effect": "本次战斗中目标敌人不攻击。你可以将额外数量的敌人作为目标：支付1点移动力点数选择第二个敌人，支付2点移动力点数选择第三个敌人，以此类推。"
+    }
+  }
+]

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12e6684daa6bf044d8f150537e171e7c, type: 3}
+  m_Name: basic_card_015
+  m_EditorClassIdentifier: 
+  Id: basic_card_015
+  NameCn: "\u6676\u5316"
+  Set: 0
+  ImagePath: cards/basic_card_015
+  EnImagePath: cards/basic_card_en_015.png
+  BaseEffect: "\u6253\u51FA\u672C\u5361\u724C\u65F6\uFF0C\u540C\u65F6\u652F\u4ED8\u4E00\u70B9\u57FA\u672C\u8272\u9B54\u529B\u3002\u83B7\u5F97\u4E00\u9897\u540C\u8272\u9B54\u6676\uFF0C\u653E\u5165\u7269\u54C1\u680F\u3002"
+  EnhancedEffect: "\u83B7\u5F97\u4E00\u9897\u4EFB\u610F\u989C\u8272\u7684\u9B54\u6676\uFF0C\u653E\u5165\u7269\u54C1\u680F\u3002"
+  RequiredCrystals: 01000000

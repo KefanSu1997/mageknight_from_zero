@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12e6684daa6bf044d8f150537e171e7c, type: 3}
+  m_Name: advanced_card_008
+  m_EditorClassIdentifier: 
+  Id: advanced_card_008
+  NameCn: "\u80C1\u8FEB"
+  Set: 1
+  ImagePath: cards/advanced_card_008
+  EnImagePath: cards/advanced_card_en_008.png
+  BaseEffect: "\u5F71\u54CD\u529B4\u6216\u653B\u51FB3\u3002\u58F0\u8A89-1\u3002"
+  EnhancedEffect: "\u5F71\u54CD\u529B8\u6216\u653B\u51FB7\u3002\u58F0\u8A89-2\u3002"
+  RequiredCrystals: 00000000

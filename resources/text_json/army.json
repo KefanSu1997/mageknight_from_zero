@@ -1,0 +1,294 @@
+[
+  {
+    "id": "army_000",
+    "set": "army",
+    "set_idx": 0,
+    "image": "cards\\army_000.png",
+    "en_image": "cards\\army_en_000.png",
+    "card_name_cn": "阿尔蒂姆守护者",
+    "level": "IV",
+    "influence_cost": "11",
+    "armor": "7",
+    "resistances": "",
+    "recruit_location": "城市",
+    "abilities": [
+      "攻击5。",
+      "格挡8。对抗迅捷攻击时计算两次。",
+      "本回合中你所有的部队获得所有抗性。"
+    ],
+    "en_card_name": "F A ",
+    "wiki": {}
+  },
+  {
+    "id": "army_001",
+    "set": "army",
+    "set_idx": 1,
+    "image": "cards\\army_001.png",
+    "en_image": "cards\\army_en_001.png",
+    "card_name_cn": "阿尔蒂姆法师",
+    "level": "IV",
+    "influence_cost": "12",
+    "armor": "5",
+    "resistances": "火,冰",
+    "recruit_location": "城堡",
+    "abilities": [
+      "获得两个任意颜色的魔力标记。",
+      "黑夜：冰火攻击或冰火格挡5。你可以支付一点蓝色或红色魔力将此数值提升至7，或支付蓝红各一点提升至9。",
+      "选择一项：本次战斗中你所有的攻击变为冰火攻击，或所有攻击附加攻城属性。"
+    ],
+    "en_card_name": "To O Gain Two Mana Tokens Of Any Colors",
+    "wiki": {}
+  },
+  {
+    "id": "army_002",
+    "set": "army",
+    "set_idx": 2,
+    "image": "cards\\army_002.png",
+    "en_image": "cards\\army_en_002.png",
+    "card_name_cn": "埃莫提普冰霜剑士",
+    "level": "III",
+    "influence_cost": "8",
+    "armor": "6",
+    "resistances": "",
+    "recruit_location": "城堡与城市",
+    "abilities": [
+      "攻击或格挡5。",
+      "本次战斗中目标敌人不攻击，且受到护甲-3（最低至1）。"
+    ],
+    "en_card_name": " X Attack Or Block "
+  },
+  {
+    "id": "army_003",
+    "set": "army",
+    "set_idx": 3,
+    "image": "cards\\army_003.png",
+    "en_image": "cards\\army_en_003.png"
+  },
+  {
+    "id": "army_004",
+    "set": "army",
+    "set_idx": 4,
+    "image": "cards\\army_004.png",
+    "en_image": "cards\\army_en_004.png",
+    "card_name_cn": "投石车",
+    "level": "III",
+    "influence_cost": "9",
+    "armor": "4",
+    "resistances": "",
+    "recruit_location": "城市与城堡",
+    "abilities": [
+      "攻城攻击3。",
+      "强化魔晶：攻城火焰攻击5。",
+      "强化魔晶：攻城寒冰攻击5。"
+    ],
+    "en_card_name": " Lit Siege Attack "
+  },
+  {
+    "id": "army_005",
+    "set": "army",
+    "set_idx": 5,
+    "image": "cards\\army_005.png",
+    "en_image": "cards\\army_en_005.png",
+    "card_name_cn": "黛尔法纳大师",
+    "level": "IV",
+    "influence_cost": "13",
+    "armor": "3",
+    "resistances": "火焰,冰,冲击",
+    "recruit_location": "城市",
+    "abilities": [
+      "激活这支部队时，你可以对同一个或不同的目标使用多个不同的能力。",
+      "目标敌人不攻击。",
+      "如果目标敌人被格挡，消灭目标敌人。",
+      "目标敌人护甲降低5点（最低至1）。",
+      "目标敌人失去所有城防和抗性。"
+    ],
+    "en_card_name": "Sy Delphana Masters Sm",
+    "wiki": {}
+  },
+  {
+    "id": "army_006",
+    "set": "army",
+    "set_idx": 6,
+    "image": "cards\\army_006.png",
+    "en_image": "cards\\army_en_006.png",
+    "card_name_cn": "火焰魔像",
+    "level": "III",
+    "influence_cost": "8",
+    "armor": "4",
+    "resistances": "火焰",
+    "recruit_location": "城堡",
+    "abilities": [
+      "攻击或格挡3",
+      "强化魔晶，黑夜时可使用：远程火焰攻击4"
+    ],
+    "en_card_name": "Spire Golems",
+    "wiki": {}
+  },
+  {
+    "id": "army_007",
+    "set": "army",
+    "set_idx": 7,
+    "image": "cards\\army_007.png",
+    "en_image": "cards\\army_en_007.png",
+    "card_name_cn": "火焰法师",
+    "level": "IV",
+    "influence_cost": "9",
+    "armor": "4",
+    "resistances": "火焰",
+    "recruit_location": "高地,法师塔",
+    "abilities": [
+      "远程火焰攻击3。",
+      "[强化魔晶] 火焰攻击或火焰格挡6。",
+      "获得一个红色魔力标记和一颗红色魔晶。将魔晶放入物品栏。"
+    ],
+    "en_card_name": "  "
+  },
+  {
+    "id": "army_008",
+    "set": "army",
+    "set_idx": 8,
+    "image": "cards\\army_008.png",
+    "en_image": "cards\\army_en_008.png",
+    "card_name_cn": "勇者",
+    "level": "III",
+    "influence_cost": "9",
+    "armor": "4",
+    "resistances": "神圣",
+    "recruit_location": "村庄、城堡、城市",
+    "abilities": [
+      "在任何突袭或攻击其他玩家时，你必须支付2点影响力才能激活这支部队。",
+      "攻击或格挡5。",
+      "冰火格挡8。",
+      "影响力5。如果用于交涉，声誉+1。"
+    ],
+    "en_card_name": "F Heroes ",
+    "wiki": {}
+  },
+  {
+    "id": "army_009",
+    "set": "army",
+    "set_idx": 9,
+    "image": "cards\\army_009.png",
+    "en_image": "cards\\army_en_009.png",
+    "card_name_cn": "勇者",
+    "level": "III",
+    "influence_cost": "9",
+    "armor": "4",
+    "resistances": "火焰",
+    "recruit_location": "村庄、城堡、都市",
+    "abilities": [
+      "在任何突袭或攻击其他玩家时，你必须支付2点影响力才能激活这支部队。",
+      "攻击或格挡5。",
+      "冰火攻击6。",
+      "影响力5。如果用于交涉，声誉+1。"
+    ],
+    "en_card_name": "You Have To Pay  Influence To Activate This Unit",
+    "wiki": {}
+  },
+  {
+    "id": "army_010",
+    "set": "army",
+    "set_idx": 10,
+    "image": "cards\\army_010.png",
+    "en_image": "cards\\army_en_010.png",
+    "card_name_cn": "勇者",
+    "level": "III",
+    "influence_cost": "9",
+    "armor": "3",
+    "resistances": "",
+    "recruit_location": "城堡",
+    "abilities": [
+      "在任何突袭或攻击其他玩家时，你必须支付2点影响力才能激活这支部队。",
+      "攻击或格挡5。",
+      "治疗4。",
+      "影响力5。如果用于交涉，声誉+1。"
+    ],
+    "en_card_name": " Youhave To Pay  Influence To Activate This Unit"
+  },
+  {
+    "id": "army_011",
+    "set": "army",
+    "set_idx": 11,
+    "image": "cards\\army_011.png",
+    "en_image": "cards\\army_en_011.png",
+    "card_name_cn": "勇者",
+    "level": "III",
+    "influence_cost": "9",
+    "armor": "6",
+    "resistances": "",
+    "recruit_location": "城市",
+    "abilities": [
+      "在任何突袭或攻击其他玩家时，你必须支付2点影响力才能激活这支部队。",
+      "攻击或格挡5。",
+      "远程攻击7。",
+      "影响力5。如果用于交涉，声誉+1。"
+    ],
+    "en_card_name": "Nly Mi Yorroeeseggnatliiertatn Einen Tines On Iep ",
+    "wiki": {}
+  },
+  {
+    "id": "army_012",
+    "set": "army",
+    "set_idx": 12,
+    "image": "cards\\army_012.png",
+    "en_image": "cards\\army_en_012.png",
+    "card_name_cn": "寒冰魔像",
+    "level": "III",
+    "influence_cost": "8",
+    "armor": "4",
+    "resistances": "寒冰,钝击",
+    "recruit_location": "城堡",
+    "abilities": [
+      "攻击或格挡3",
+      "寒冰攻击6"
+    ],
+    "en_card_name": "R D Attack Or Block ",
+    "wiki": {}
+  },
+  {
+    "id": "army_013",
+    "set": "army",
+    "set_idx": 13,
+    "image": "cards\\army_013.png",
+    "en_image": "cards\\army_en_013.png",
+    "card_name_cn": "寒冰法师",
+    "level": "III",
+    "influence_cost": "9",
+    "armor": "4",
+    "resistances": "寒冰",
+    "recruit_location": "魔法塔",
+    "abilities": [
+      "寒冰攻击或寒冰格挡4",
+      "[强化魔晶] 攻城寒冰攻击4",
+      "获得一个蓝色魔力标记和一颗蓝色魔晶。将魔晶放入物品栏。"
+    ],
+    "en_card_name": "Ee A",
+    "wiki": {}
+  },
+  {
+    "id": "army_014",
+    "set": "army",
+    "set_idx": 14,
+    "image": "cards\\army_014.png",
+    "en_image": "cards\\army_en_014.png",
+    "card_name_cn": "巫师",
+    "level": "III",
+    "influence_cost": "9",
+    "armor": "4",
+    "resistances": "火, 冰",
+    "recruit_location": "高地, 城市",
+    "abilities": [
+      "远程攻击3",
+      "[强化魔晶] 目标敌人失去所有城防。远程攻击3",
+      "[强化魔晶][黑夜] 目标敌人失去所有抗性。远程攻击3"
+    ],
+    "en_card_name": "  "
+  },
+  {
+    "id": "army_015",
+    "set": "army",
+    "set_idx": 15,
+    "image": "cards\\army_015.png",
+    "en_image": "cards\\army_en_015.png"
+  }
+]

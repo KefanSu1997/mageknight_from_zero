@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bee6330f4eff80349b774ed13f0b0362, type: 3}
+  m_Name: magic_005
+  m_EditorClassIdentifier: 
+  Id: magic_005
+  NameCn: "\u590D\u539F"
+  Set: 3
+  ImagePath: cards/magic_005
+  EnImagePath: cards/magic_en_005.png
+  ManaColor: 2
+  Top:
+    Name: "\u590D\u539F"
+    Effect: "\u6CBB\u75973\u3002\u5982\u679C\u5904\u4E8E\u68EE\u6797\u4E2D\uFF0C\u5219\u6539\u4E3A\u6CBB\u75975\u3002"
+    ManaCost: 02000000
+  Bottom:
+    Name: "\u91CD\u751F"
+    Effect: "\u6CBB\u75973\u3002\u5982\u679C\u5904\u4E8E\u68EE\u6797\u4E2D\uFF0C\u5219\u6539\u4E3A\u6CBB\u75975\u3002\u91CD\u6574\u4E00\u652F\u6216\u591A\u652F\u90E8\u961F\uFF0C\u603B\u8BA1\u7B49\u7EA7\u6570\u6700\u591A3\u7EA7\u3002\u5982\u679C\u5904\u4E8E\u68EE\u6797\u4E2D\uFF0C\u603B\u8BA1\u7B49\u7EA7\u6570\u6539\u4E3A\u6700\u591A5\u7EA7\u3002"
+    ManaCost: 0200000005000000

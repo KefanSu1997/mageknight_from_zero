@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12e6684daa6bf044d8f150537e171e7c, type: 3}
+  m_Name: basic_card_002
+  m_EditorClassIdentifier: 
+  Id: basic_card_002
+  NameCn: "\u51DD\u7ED3"
+  Set: 0
+  ImagePath: cards/basic_card_002
+  EnImagePath: cards/basic_card_en_002.png
+  BaseEffect: "\u83B7\u5F97\u4E00\u4E2A\u84DD\u8272\uFF0C\u767D\u8272\u6216\u7EA2\u8272\u9B54\u529B\u6807\u8BB0\u3002"
+  EnhancedEffect: "\u6253\u51FA\u672C\u5361\u724C\u65F6\uFF0C\u540C\u65F6\u6253\u51FA\u53E6\u4E00\u5F20\u884C\u52A8\u5361\u724C\u3002\u514D\u8D39\u83B7\u5F97\u8BE5\u5361\u724C\u7684\u5F3A\u529B\u6548\u679C\u3002\u5982\u679C\u8BE5\u6548\u679C\u7ED9\u4E88\u4F60\u79FB\u52A8\u529B\u3001\u5F71\u54CD\u529B\u3001\u683C\u6321\u6216\u4EFB\u4F55\u7C7B\u578B\u7684\u653B\u51FB\uFF0C\u8BE5\u6548\u679C\u6570\u503C+2\u3002"
+  RequiredCrystals: 02000000

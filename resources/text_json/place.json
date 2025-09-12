@@ -1,0 +1,243 @@
+[
+  {
+    "id": "place_000",
+    "set": "place",
+    "set_idx": 0,
+    "image": "cards\\place_000.png",
+    "en_image": null,
+    "site_name": "兽人劫掠队",
+    "flip_effect": "将一个绿色兽人敌人标记正面朝上放在本格上。",
+    "ongoing_effect": "无法进入被兽人敌人标记占据的六角格。玩家从其相邻一格移动到其相邻另一格时，会激怒兽人，进入战斗。",
+    "action": "你可以使用回合行动，从兽人的相邻格向其发起挑战。",
+    "reward": "如果你击败兽人，弃掉其标记并获得声誉+1。"
+  },
+  {
+    "id": "place_001",
+    "set": "place",
+    "set_idx": 1,
+    "image": "cards\\place_001.png",
+    "en_image": null,
+    "site_name": "龙族",
+    "flip_effect": "将一个红色龙族敌人标记正面朝上放在本格上。",
+    "ongoing_effect": "无法进入被龙族敌人标记占据的六角格。玩家从其相邻一格移动到其相邻另一格时，会激怒龙族，进入战斗。",
+    "action": "你可以使用回合行动，从龙族的相邻格向其发起挑战。",
+    "reward": "如果你击败龙族，弃掉其标记并获得声誉+2。"
+  },
+  {
+    "id": "place_002",
+    "set": "place",
+    "set_idx": 2,
+    "image": "cards\\place_002.png",
+    "en_image": null,
+    "site_name": "修道院",
+    "flip_effect": "翻开修道院时，将高级行动牌库顶的一张卡牌正面朝上放到部队供应区中。",
+    "ongoing_effect": "招募：可以在此处招募具有修道院图标的部队。治疗：你可以支付2点影响力购买1点治疗。在任何修道院中均可购买部队供应区中的高级行动卡牌，每张需支付6点影响力。",
+    "action": "焚毁修道院：你可以使用回合行动，尝试焚毁修道院。如果你这么做，你的声誉-3。随机抽取一个紫色敌人标记进行战斗。本次战斗中不能使用你的部队。无论你是否击败敌人，战斗后将其弃掉（下一次将抽取新的标记）。",
+    "reward": "获得一件神器"
+  },
+  {
+    "id": "place_003",
+    "set": "place",
+    "set_idx": 3,
+    "image": "cards\\place_003.png",
+    "en_image": null,
+    "site_name": "村庄",
+    "flip_effect": "",
+    "ongoing_effect": "招募: 可以在此处招募具有村庄图标的部队。",
+    "action": "治疗: 你可以支付3点影响力购买1点治疗。洗劫: 你可以在其他玩家的回合中洗劫村庄。你每两个回合之间只能洗劫一次村庄。如果你这么做，抽取两张卡牌，并且你的声誉-1。",
+    "reward": ""
+  },
+  {
+    "id": "place_004",
+    "set": "place",
+    "set_idx": 4,
+    "image": "cards\\place_004.png",
+    "en_image": null,
+    "site_name": "城墙",
+    "flip_effect": "",
+    "ongoing_effect": "移动：穿越地图上的城墙时，你必须支付额外1点移动力点数。地形费用降低不会影响这一点额外费用。城墙对效果直接产生的移动（比如飞行）无效。战斗：挑战城墙对面的肆虐的敌人时，其视为具有城防（城墙视为城防地点）。攻击城墙对面的其他玩家或沃卡里时，目标视为具有城防。突袭城墙对面的城防地点时，守军视为具有双重城防。激怒：如果移动的目标格和敌人之间有城墙隔离，你的移动不会激怒肆虐的敌人（也就是说肆虐的敌人永远不会穿越城墙攻击你）。",
+    "action": "",
+    "reward": ""
+  },
+  {
+    "id": "place_005",
+    "set": "place",
+    "set_idx": 5,
+    "image": "cards\\place_005.png",
+    "en_image": null,
+    "site_name": "远古遗迹",
+    "flip_effect": "将一个黄色标记放在本格中，白昼时正面朝上，黑夜中正面朝下。下一次白昼轮开始，或有人进入该格时，翻开正面朝下的标记。",
+    "ongoing_effect": "未征服：你可以使用回合行动，进入远古遗迹。这里或存在一个祭坛，或出现敌人，进入战斗。",
+    "action": "祭坛：你可以支付黄色标记上指定的3点魔力进行献祭。如果你这么做，用你的盾徽标记该格，并且获得7点名望作为奖励。敌人：抽取黄色标记上指定的敌人，进入战斗。未被击败的敌人保留在该格上，留待以后交战。如果你击败了最后一个敌人，用你的盾徽标记该格，并且获得黄色标记上指定的奖励。",
+    "reward": "获得7点名望作为奖励；获得黄色标记上指定的奖励"
+  },
+  {
+    "id": "place_006",
+    "set": "place",
+    "set_idx": 6,
+    "image": "cards\\place_006.png",
+    "en_image": null,
+    "site_name": "魔晶矿山",
+    "flip_effect": "",
+    "ongoing_effect": "采矿：如果你的回合结束停留在矿山上，获得一颗与该矿山同色的魔晶，放入物品栏。",
+    "action": "",
+    "reward": ""
+  },
+  {
+    "id": "place_007",
+    "set": "place",
+    "set_idx": 7,
+    "image": "cards\\place_007.png",
+    "en_image": null,
+    "site_name": "深层矿山",
+    "flip_effect": "",
+    "ongoing_effect": "",
+    "action": "采矿：如果你回合结束停留在矿山上，获得一颗与该矿山一种颜色同色的魔晶，放入物品栏。",
+    "reward": ""
+  },
+  {
+    "id": "place_008",
+    "set": "place",
+    "set_idx": 8,
+    "image": "cards\\place_008.png",
+    "en_image": null,
+    "site_name": "地下城",
+    "flip_effect": "",
+    "ongoing_effect": "未征服：本次战斗使用黑夜规则，并且无法使用部队。无论你是否击败敌人，战斗后将其弃掉（下一次将抽取新的标记）。已征服：你可以进入已征服的地下城，使用以上同样的限制（黑夜且无部队）与一个随机棕色敌人标记进行战斗。此时击败敌人后，不会获得（除名望以外的）奖励，也不使用盾徽进行标记。",
+    "action": "未征服：你可以使用回合行动，进入地下城。如果这么做，抽取一个棕色敌人标记，进入战斗。",
+    "reward": "如果你击败敌人，使用你的盾徽标记该格，并且投掷一颗魔力骰子，决定奖励。掷到金色或黑色时，获得一张法术；其他情况下，获得一件神器。"
+  },
+  {
+    "id": "place_009",
+    "set": "place",
+    "set_idx": 9,
+    "image": "cards\\place_009.png",
+    "en_image": null
+  },
+  {
+    "id": "place_010",
+    "set": "place",
+    "set_idx": 10,
+    "image": "cards\\place_010.png",
+    "en_image": null
+  },
+  {
+    "id": "place_011",
+    "set": "place",
+    "set_idx": 11,
+    "image": "cards\\place_011.png",
+    "en_image": null
+  },
+  {
+    "id": "place_012",
+    "set": "place",
+    "set_idx": 12,
+    "image": "cards\\place_012.png",
+    "en_image": null
+  },
+  {
+    "id": "place_013",
+    "set": "place",
+    "set_idx": 13,
+    "image": "cards\\place_013.png",
+    "en_image": null
+  },
+  {
+    "id": "place_014",
+    "set": "place",
+    "set_idx": 14,
+    "image": "cards\\place_014.png",
+    "en_image": null
+  },
+  {
+    "id": "place_015",
+    "set": "place",
+    "set_idx": 15,
+    "image": "cards\\place_015.png",
+    "en_image": null
+  },
+  {
+    "id": "place_016",
+    "set": "place",
+    "set_idx": 16,
+    "image": "cards\\place_016.png",
+    "en_image": null
+  },
+  {
+    "id": "place_017",
+    "set": "place",
+    "set_idx": 17,
+    "image": "cards\\place_017.png",
+    "en_image": null
+  },
+  {
+    "id": "place_018",
+    "set": "place",
+    "set_idx": 18,
+    "image": "cards\\place_018.png",
+    "en_image": null
+  },
+  {
+    "id": "place_019",
+    "set": "place",
+    "set_idx": 19,
+    "image": "cards\\place_019.png",
+    "en_image": null
+  },
+  {
+    "id": "place_020",
+    "set": "place",
+    "set_idx": 20,
+    "image": "cards\\place_020.png",
+    "en_image": null
+  },
+  {
+    "id": "place_021",
+    "set": "place",
+    "set_idx": 21,
+    "image": "cards\\place_021.png",
+    "en_image": null
+  },
+  {
+    "id": "place_022",
+    "set": "place",
+    "set_idx": 22,
+    "image": "cards\\place_022.png",
+    "en_image": null
+  },
+  {
+    "id": "place_023",
+    "set": "place",
+    "set_idx": 23,
+    "image": "cards\\place_023.png",
+    "en_image": null
+  },
+  {
+    "id": "place_024",
+    "set": "place",
+    "set_idx": 24,
+    "image": "cards\\place_024.png",
+    "en_image": null
+  },
+  {
+    "id": "place_025",
+    "set": "place",
+    "set_idx": 25,
+    "image": "cards\\place_025.png",
+    "en_image": null
+  },
+  {
+    "id": "place_026",
+    "set": "place",
+    "set_idx": 26,
+    "image": "cards\\place_026.png",
+    "en_image": null
+  },
+  {
+    "id": "place_027",
+    "set": "place",
+    "set_idx": 27,
+    "image": "cards\\place_027.png",
+    "en_image": null
+  }
+]

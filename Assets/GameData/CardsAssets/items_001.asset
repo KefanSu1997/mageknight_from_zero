@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10c5945aeb7e98b4bb239ce7b9ec308e, type: 3}
+  m_Name: items_001
+  m_EditorClassIdentifier: 
+  Id: items_001
+  NameCn: "\u6050\u60E7\u65CC\u65D7"
+  Set: 2
+  ImagePath: cards/items_001
+  EnImagePath: cards/items_en_001.png
+  ItemType: "\u795E\u5668/\u7269\u54C1"
+  AssignEffect: "\u5C06\u672C\u5361\u724C\u5206\u914D\u7ED9\u4E00\u652F\u4F60\u63A7\u5236\u7684\u90E8\u961F\u3002\u5728\u6218\u6597\u683C\u6321\u9636\u6BB5\uFF0C\u4F60\u53EF\u4EE5\u8BA9\u8BE5\u90E8\u961F\u7CBE\u529B\u8017\u5C3D\uFF0C\u4EE5\u53D6\u6D88\u4E00\u6B21\u654C\u4EBA\u7684\u653B\u51FB\u3002\u5982\u679C\u8FD9\u4E48\u505A\uFF0C\u540D\u671B+1\u3002"
+  OncePerRound: "\u672C\u6B21\u6218\u6597\u4E2D\u6700\u591A3\u4E2A\u654C\u4EBA\u4E0D\u653B\u51FB\u3002"

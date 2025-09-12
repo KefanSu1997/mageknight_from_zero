@@ -1,0 +1,1745 @@
+[
+  {
+    "id": "monster_001",
+    "set": "monster",
+    "set_idx": 1,
+    "image": "cards\\monster (1).jpg",
+    "en_image": null,
+    "monster_type": "Draconum",
+    "attack": [
+      {
+        "value": 6,
+        "element": "Fire"
+      }
+    ],
+    "armor": {
+      "value": 8,
+      "fortified": true,
+      "resist": [
+        "Fire"
+      ]
+    },
+    "abilities": [
+      "poison"
+    ],
+    "fame": 8,
+    "monster_name": "火龙"
+  },
+  {
+    "id": "monster_002",
+    "set": "monster",
+    "set_idx": 2,
+    "image": "cards\\monster (2).jpg",
+    "en_image": null,
+    "monster_type": "Humanoid",
+    "attack": [
+      {
+        "value": 5,
+        "element": "Physical"
+      }
+    ],
+    "armor": {
+      "value": 5,
+      "fortified": false,
+      "resist": []
+    },
+    "abilities": [
+      "poison"
+    ],
+    "fame": 4,
+    "monster_name": "毒巫师"
+  },
+  {
+    "id": "monster_003",
+    "set": "monster",
+    "set_idx": 3,
+    "image": "cards\\monster (3).jpg",
+    "en_image": null,
+    "monster_type": "Undead",
+    "attack": [
+      {
+        "value": 5,
+        "element": "Cold Fire"
+      }
+    ],
+    "armor": {
+      "value": 3,
+      "fortified": true,
+      "resist": [
+        "Cold Fire"
+      ]
+    },
+    "abilities": [
+      "magic resist"
+    ],
+    "fame": 4,
+    "monster_name": "巫妖"
+  },
+  {
+    "id": "monster_004",
+    "set": "monster",
+    "set_idx": 4,
+    "image": "cards\\monster (4).jpg",
+    "en_image": null,
+    "monster_type": "Undead",
+    "attack": [
+      {
+        "value": 2,
+        "element": "Ice"
+      }
+    ],
+    "armor": {
+      "value": 4,
+      "fortified": false,
+      "resist": [
+        "Ice",
+        "Cold Fire"
+      ]
+    },
+    "abilities": [],
+    "fame": 5,
+    "monster_name": "寒冰巫妖"
+  },
+  {
+    "id": "monster_005",
+    "set": "monster",
+    "set_idx": 5,
+    "image": "cards\\monster (5).jpg",
+    "en_image": null,
+    "monster_type": "Orc",
+    "attack": [
+      {
+        "value": 3,
+        "element": "Physical"
+      }
+    ],
+    "armor": {
+      "value": 5,
+      "fortified": false,
+      "resist": []
+    },
+    "abilities": [
+      "poison"
+    ],
+    "fame": 3,
+    "monster_name": "兽人萨满"
+  },
+  {
+    "id": "monster_006",
+    "set": "monster",
+    "set_idx": 6,
+    "image": "cards\\monster (6).jpg",
+    "en_image": null,
+    "monster_type": "Orc",
+    "attack": [
+      {
+        "value": 4,
+        "element": "Physical"
+      }
+    ],
+    "armor": {
+      "value": 3,
+      "fortified": false,
+      "resist": []
+    },
+    "abilities": [
+      "poison"
+    ],
+    "fame": 4,
+    "monster_name": "兽人战士"
+  },
+  {
+    "id": "monster_007",
+    "set": "monster",
+    "set_idx": 7,
+    "image": "cards\\monster (7).jpg",
+    "en_image": null,
+    "monster_type": "Orc",
+    "attack": [
+      {
+        "value": 3,
+        "element": "Physical"
+      }
+    ],
+    "armor": {
+      "value": 4,
+      "fortified": false,
+      "resist": []
+    },
+    "abilities": [
+      "swift"
+    ],
+    "fame": 3,
+    "monster_name": "兽人狼骑兵"
+  },
+  {
+    "id": "monster_008",
+    "set": "monster",
+    "set_idx": 8,
+    "image": "cards\\monster (8).jpg",
+    "en_image": null,
+    "monster_type": "Humanoid",
+    "attack": [
+      {
+        "value": 4,
+        "element": "Ice"
+      }
+    ],
+    "armor": {
+      "value": 8,
+      "fortified": true,
+      "resist": []
+    },
+    "abilities": [
+      "poison",
+      "poison"
+    ],
+    "fame": 8,
+    "monster_name": "巫妖"
+  },
+  {
+    "id": "monster_009",
+    "set": "monster",
+    "set_idx": 9,
+    "image": "cards\\monster (9).jpg",
+    "en_image": null,
+    "monster_type": "Draconum",
+    "attack": [
+      {
+        "value": 5,
+        "element": "Physical"
+      }
+    ],
+    "armor": {
+      "value": 9,
+      "fortified": false,
+      "resist": []
+    },
+    "abilities": [
+      "poison",
+      "swift"
+    ],
+    "fame": 7,
+    "monster_name": "迅捷毒龙"
+  },
+  {
+    "id": "monster_010",
+    "set": "monster",
+    "set_idx": 10,
+    "image": "cards\\monster (10).jpg",
+    "en_image": null,
+    "monster_type": "Draconum",
+    "attack": [
+      {
+        "value": 6,
+        "element": "Ice"
+      }
+    ],
+    "armor": {
+      "value": 7,
+      "fortified": false,
+      "resist": [
+        "Ice"
+      ]
+    },
+    "abilities": [
+      "paralyze"
+    ],
+    "fame": 8,
+    "monster_name": "冰龙"
+  },
+  {
+    "id": "monster_011",
+    "set": "monster",
+    "set_idx": 11,
+    "image": "cards\\monster (11).jpg",
+    "en_image": null,
+    "monster_type": "Beast",
+    "attack": [
+      {
+        "value": 6,
+        "element": "Physical"
+      }
+    ],
+    "armor": {
+      "value": 4,
+      "fortified": false,
+      "resist": []
+    },
+    "abilities": [],
+    "fame": 5,
+    "monster_name": "九头蛇"
+  },
+  {
+    "id": "monster_012",
+    "set": "monster",
+    "set_idx": 12,
+    "image": "cards\\monster (12).jpg",
+    "en_image": null,
+    "monster_type": "Humanoid",
+    "attack": [
+      {
+        "value": 4,
+        "element": "Ice"
+      }
+    ],
+    "armor": {
+      "value": 5,
+      "fortified": false,
+      "resist": []
+    },
+    "abilities": [],
+    "fame": 3,
+    "monster_name": "冰霜法师"
+  },
+  {
+    "id": "monster_013",
+    "set": "monster",
+    "set_idx": 13,
+    "image": "cards\\monster (13).jpg",
+    "en_image": null,
+    "monster_type": "Orc",
+    "attack": [
+      {
+        "value": 4,
+        "element": "Physical"
+      }
+    ],
+    "armor": {
+      "value": 4,
+      "fortified": false,
+      "resist": []
+    },
+    "abilities": [],
+    "fame": 2,
+    "monster_name": "Goblin"
+  },
+  {
+    "id": "monster_014",
+    "set": "monster",
+    "set_idx": 14,
+    "image": "cards\\monster (14).jpg",
+    "en_image": null,
+    "monster_type": "Elemental",
+    "attack": [
+      {
+        "value": 7,
+        "element": "Fire"
+      }
+    ],
+    "armor": {
+      "value": 6,
+      "fortified": false,
+      "resist": [
+        "Fire"
+      ]
+    },
+    "abilities": [
+      "magic resist"
+    ],
+    "fame": 4,
+    "monster_name": "火焰元素"
+  },
+  {
+    "id": "monster_015",
+    "set": "monster",
+    "set_idx": 15,
+    "image": "cards\\monster (15).jpg",
+    "en_image": null,
+    "monster_type": "Beast",
+    "attack": [
+      {
+        "value": 3,
+        "element": "Fire"
+      },
+      {
+        "value": 3,
+        "element": "Ice"
+      }
+    ],
+    "armor": {
+      "value": 4,
+      "fortified": false,
+      "resist": [
+        "Fire",
+        "Ice"
+      ]
+    },
+    "abilities": [
+      "regenerate"
+    ],
+    "fame": 3,
+    "monster_name": "幽魂女巫"
+  },
+  {
+    "id": "monster_016",
+    "set": "monster",
+    "set_idx": 16,
+    "image": "cards\\monster (16).jpg",
+    "en_image": null,
+    "monster_type": "Beast",
+    "attack": [
+      {
+        "value": 3,
+        "element": "Physical"
+      }
+    ],
+    "armor": {
+      "value": 5,
+      "fortified": false,
+      "resist": []
+    },
+    "abilities": [
+      "swift"
+    ],
+    "fame": 2,
+    "monster_name": "半人马战士"
+  },
+  {
+    "id": "monster_017",
+    "set": "monster",
+    "set_idx": 17,
+    "image": "cards\\monster (17).jpg",
+    "en_image": null,
+    "monster_type": "Beast",
+    "attack": [
+      {
+        "value": 4,
+        "element": "Physical"
+      }
+    ],
+    "armor": {
+      "value": 4,
+      "fortified": true,
+      "resist": []
+    },
+    "abilities": [
+      "swift"
+    ],
+    "fame": 3,
+    "monster_name": "巨鹰"
+  },
+  {
+    "id": "monster_018",
+    "set": "monster",
+    "set_idx": 18,
+    "image": "cards\\monster (18).jpg",
+    "en_image": null,
+    "monster_type": "Beast",
+    "attack": [
+      {
+        "value": 3,
+        "element": "Physical"
+      }
+    ],
+    "armor": {
+      "value": 5,
+      "fortified": false,
+      "resist": [
+        "Fire",
+        "Ice"
+      ]
+    },
+    "abilities": [
+      "poison"
+    ],
+    "fame": 3,
+    "monster_name": "毒爪野兽"
+  },
+  {
+    "id": "monster_019",
+    "set": "monster",
+    "set_idx": 19,
+    "image": "cards\\monster (19).jpg",
+    "en_image": null,
+    "monster_type": "Humanoid",
+    "attack": [
+      {
+        "value": 3,
+        "element": "Physical"
+      }
+    ],
+    "armor": {
+      "value": 5,
+      "fortified": false,
+      "resist": []
+    },
+    "abilities": [
+      "poison"
+    ],
+    "fame": 2,
+    "monster_name": "村民暴徒"
+  },
+  {
+    "id": "monster_020",
+    "set": "monster",
+    "set_idx": 20,
+    "image": "cards\\monster (20).jpg",
+    "en_image": null,
+    "monster_type": "Demon",
+    "attack": [
+      {
+        "value": 3,
+        "element": "Physical"
+      },
+      {
+        "value": 3,
+        "element": "Physical"
+      }
+    ],
+    "armor": {
+      "value": 7,
+      "fortified": false,
+      "resist": []
+    },
+    "abilities": [
+      "brutal",
+      "poison"
+    ],
+    "fame": 5,
+    "monster_name": "剧毒恶魔"
+  },
+  {
+    "id": "monster_021",
+    "set": "monster",
+    "set_idx": 21,
+    "image": "cards\\monster (21).jpg",
+    "en_image": null,
+    "monster_type": "Beast",
+    "attack": [
+      {
+        "value": 4,
+        "element": "Physical"
+      }
+    ],
+    "armor": {
+      "value": 6,
+      "fortified": false,
+      "resist": [
+        "Fire"
+      ]
+    },
+    "abilities": [
+      "poison"
+    ],
+    "fame": 5,
+    "monster_name": "狮鹫"
+  },
+  {
+    "id": "monster_022",
+    "set": "monster",
+    "set_idx": 22,
+    "image": "cards\\monster (22).jpg",
+    "en_image": null,
+    "monster_type": "Orc",
+    "attack": [
+      {
+        "value": 4,
+        "element": "Ice"
+      }
+    ],
+    "armor": {
+      "value": 8,
+      "fortified": false,
+      "resist": [
+        "Cold Fire"
+      ]
+    },
+    "abilities": [],
+    "fame": 4,
+    "monster_name": "兽人冰战士"
+  },
+  {
+    "id": "monster_023",
+    "set": "monster",
+    "set_idx": 23,
+    "image": "cards\\monster (23).jpg",
+    "en_image": null,
+    "monster_type": "Draconum",
+    "attack": [
+      {
+        "value": 5,
+        "element": "Physical"
+      },
+      {
+        "value": 5,
+        "element": "Physical"
+      }
+    ],
+    "armor": {
+      "value": 8,
+      "fortified": true,
+      "resist": [
+        "Cold Fire"
+      ]
+    },
+    "abilities": [],
+    "fame": 9,
+    "monster_name": "利爪龙"
+  },
+  {
+    "id": "monster_024",
+    "set": "monster",
+    "set_idx": 24,
+    "image": "cards\\monster (24).jpg",
+    "en_image": null,
+    "monster_type": "Draconum",
+    "attack": [
+      {
+        "value": 4,
+        "element": "Ice"
+      }
+    ],
+    "armor": {
+      "value": 7,
+      "fortified": false,
+      "resist": [
+        "Ice"
+      ]
+    },
+    "abilities": [
+      "paralyze"
+    ],
+    "fame": 7,
+    "monster_name": "冰龙"
+  },
+  {
+    "id": "monster_025",
+    "set": "monster",
+    "set_idx": 25,
+    "image": "cards\\monster (25).jpg",
+    "en_image": null,
+    "monster_type": "Humanoid",
+    "attack": [
+      {
+        "value": 3,
+        "element": "Physical"
+      }
+    ],
+    "armor": {
+      "value": 7,
+      "fortified": true,
+      "resist": []
+    },
+    "abilities": [],
+    "fame": 3,
+    "monster_name": "铁甲战士"
+  },
+  {
+    "id": "monster_026",
+    "set": "monster",
+    "set_idx": 26,
+    "image": "cards\\monster (26).jpg",
+    "en_image": null,
+    "monster_type": "Beast",
+    "attack": [
+      {
+        "value": 2,
+        "element": "Physical"
+      }
+    ],
+    "armor": {
+      "value": 5,
+      "fortified": false,
+      "resist": []
+    },
+    "abilities": [],
+    "fame": 4,
+    "monster_name": "甲壳兽"
+  },
+  {
+    "id": "monster_027",
+    "set": "monster",
+    "set_idx": 27,
+    "image": "cards\\monster (27).jpg",
+    "en_image": null,
+    "monster_type": "Humanoid",
+    "attack": [
+      {
+        "value": 6,
+        "element": "Physical"
+      }
+    ],
+    "armor": {
+      "value": 5,
+      "fortified": false,
+      "resist": []
+    },
+    "abilities": [],
+    "fame": 4,
+    "monster_name": "人类战士"
+  },
+  {
+    "id": "monster_028",
+    "set": "monster",
+    "set_idx": 28,
+    "image": "cards\\monster (28).jpg",
+    "en_image": null,
+    "monster_type": "Undead",
+    "attack": [
+      {
+        "value": 5,
+        "element": "Ice"
+      }
+    ],
+    "armor": {
+      "value": 6,
+      "fortified": false,
+      "resist": [
+        "Ice"
+      ]
+    },
+    "abilities": [],
+    "fame": 5,
+    "monster_name": "冰巫妖"
+  },
+  {
+    "id": "monster_029",
+    "set": "monster",
+    "set_idx": 29,
+    "image": "cards\\monster (29).jpg",
+    "en_image": null,
+    "monster_type": "Undead",
+    "attack": [
+      {
+        "value": 3,
+        "element": "Fire"
+      }
+    ],
+    "armor": {
+      "value": 4,
+      "fortified": false,
+      "resist": [
+        "Fire"
+      ]
+    },
+    "abilities": [
+      "poison"
+    ],
+    "fame": 5,
+    "monster_name": "火焰骷髅"
+  },
+  {
+    "id": "monster_030",
+    "set": "monster",
+    "set_idx": 30,
+    "image": "cards\\monster (30).jpg",
+    "en_image": null,
+    "monster_type": "Demon",
+    "attack": [
+      {
+        "value": 6,
+        "element": "Fire"
+      }
+    ],
+    "armor": {
+      "value": 5,
+      "fortified": false,
+      "resist": [
+        "Fire"
+      ]
+    },
+    "abilities": [],
+    "fame": 5,
+    "monster_name": "火焰恶魔"
+  },
+  {
+    "id": "monster_031",
+    "set": "monster",
+    "set_idx": 31,
+    "image": "cards\\monster (31).jpg",
+    "en_image": null,
+    "monster_type": "Orc",
+    "attack": [
+      {
+        "value": 1,
+        "element": "Ice"
+      }
+    ],
+    "armor": {
+      "value": 4,
+      "fortified": false,
+      "resist": []
+    },
+    "abilities": [],
+    "fame": 4,
+    "monster_name": "兽人冰术士"
+  },
+  {
+    "id": "monster_032",
+    "set": "monster",
+    "set_idx": 32,
+    "image": "cards\\monster (32).jpg",
+    "en_image": null,
+    "monster_type": "Orc",
+    "attack": [
+      {
+        "value": 4,
+        "element": "Physical"
+      }
+    ],
+    "armor": {
+      "value": 3,
+      "fortified": false,
+      "resist": []
+    },
+    "abilities": [],
+    "fame": 2,
+    "monster_name": "兽人骷髅战士"
+  },
+  {
+    "id": "monster_033",
+    "set": "monster",
+    "set_idx": 33,
+    "image": "cards\\monster (33).jpg",
+    "en_image": null,
+    "monster_type": "Golem",
+    "attack": [
+      {
+        "value": 5,
+        "element": "Physical"
+      }
+    ],
+    "armor": {
+      "value": 7,
+      "fortified": true,
+      "resist": [
+        "Fire",
+        "Ice",
+        "Cold Fire"
+      ]
+    },
+    "abilities": [],
+    "fame": 8,
+    "monster_name": "钢铁魔像"
+  },
+  {
+    "id": "monster_034",
+    "set": "monster",
+    "set_idx": 34,
+    "image": "cards\\monster (34).jpg",
+    "en_image": null,
+    "monster_type": "Humanoid",
+    "attack": [
+      {
+        "value": 3,
+        "element": "Ice"
+      }
+    ],
+    "armor": {
+      "value": 7,
+      "fortified": false,
+      "resist": [
+        "Fire"
+      ]
+    },
+    "abilities": [
+      "paralyze"
+    ],
+    "fame": 7,
+    "monster_name": "寒冰卫士"
+  },
+  {
+    "id": "monster_035",
+    "set": "monster",
+    "set_idx": 35,
+    "image": "cards\\monster (35).jpg",
+    "en_image": null,
+    "monster_type": "Humanoid",
+    "attack": [
+      {
+        "value": 6,
+        "element": "Fire"
+      }
+    ],
+    "armor": {
+      "value": 6,
+      "fortified": false,
+      "resist": [
+        "Ice"
+      ]
+    },
+    "abilities": [
+      "poison"
+    ],
+    "fame": 7,
+    "monster_name": "装甲战士"
+  },
+  {
+    "id": "monster_036",
+    "set": "monster",
+    "set_idx": 36,
+    "image": "cards\\monster (36).jpg",
+    "en_image": null,
+    "monster_type": "Draconum",
+    "attack": [
+      {
+        "value": 9,
+        "element": "Fire"
+      }
+    ],
+    "armor": {
+      "value": 7,
+      "fortified": false,
+      "resist": [
+        "Fire"
+      ]
+    },
+    "abilities": [],
+    "fame": 8,
+    "monster_name": "红龙"
+  },
+  {
+    "id": "monster_037",
+    "set": "monster",
+    "set_idx": 37,
+    "image": "cards\\monster (37).jpg",
+    "en_image": null,
+    "monster_type": "Draconum",
+    "attack": [
+      {
+        "value": 6,
+        "element": "Ice"
+      }
+    ],
+    "armor": {
+      "value": 9,
+      "fortified": false,
+      "resist": [
+        "Fire",
+        "Ice"
+      ]
+    },
+    "abilities": [
+      "poison"
+    ],
+    "fame": 9,
+    "monster_name": "黄金龙"
+  },
+  {
+    "id": "monster_038",
+    "set": "monster",
+    "set_idx": 38,
+    "image": "cards\\monster (38).jpg",
+    "en_image": null,
+    "monster_type": "Orc",
+    "attack": [
+      {
+        "value": 5,
+        "element": "Physical"
+      }
+    ],
+    "armor": {
+      "value": 4,
+      "fortified": true,
+      "resist": []
+    },
+    "abilities": [
+      "swift"
+    ],
+    "fame": 4,
+    "monster_name": "飞天兽人"
+  },
+  {
+    "id": "monster_039",
+    "set": "monster",
+    "set_idx": 39,
+    "image": "cards\\monster (39).jpg",
+    "en_image": null,
+    "monster_type": "Beast",
+    "attack": [
+      {
+        "value": 6,
+        "element": "Physical"
+      }
+    ],
+    "armor": {
+      "value": 6,
+      "fortified": true,
+      "resist": []
+    },
+    "abilities": [],
+    "fame": 5,
+    "monster_name": "巨牙蠕虫"
+  },
+  {
+    "id": "monster_040",
+    "set": "monster",
+    "set_idx": 40,
+    "image": "cards\\monster (40).jpg",
+    "en_image": null,
+    "monster_type": "Beast",
+    "attack": [
+      {
+        "value": 5,
+        "element": "Physical"
+      }
+    ],
+    "armor": {
+      "value": 5,
+      "fortified": false,
+      "resist": []
+    },
+    "abilities": [
+      "poison"
+    ],
+    "fame": 4,
+    "monster_name": "牛头怪"
+  },
+  {
+    "id": "monster_041",
+    "set": "monster",
+    "set_idx": 41,
+    "image": "cards\\monster (41).jpg",
+    "en_image": null,
+    "monster_type": "Beast",
+    "attack": [
+      {
+        "value": 7,
+        "element": "Physical"
+      }
+    ],
+    "armor": {
+      "value": 5,
+      "fortified": false,
+      "resist": []
+    },
+    "abilities": [
+      "swift"
+    ],
+    "fame": 5,
+    "monster_name": "狼人"
+  },
+  {
+    "id": "monster_042",
+    "set": "monster",
+    "set_idx": 42,
+    "image": "cards\\monster (42).jpg",
+    "en_image": null,
+    "monster_type": "Draconum",
+    "attack": [
+      {
+        "value": 7,
+        "element": "Physical"
+      }
+    ],
+    "armor": {
+      "value": 9,
+      "fortified": false,
+      "resist": []
+    },
+    "abilities": [
+      "poison"
+    ],
+    "fame": 6,
+    "monster_name": "骨龙"
+  },
+  {
+    "id": "monster_043",
+    "set": "monster",
+    "set_idx": 43,
+    "image": "cards\\monster (43).jpg",
+    "en_image": null,
+    "monster_type": "Draconum",
+    "attack": [
+      {
+        "value": 8,
+        "element": "Physical"
+      }
+    ],
+    "armor": {
+      "value": 8,
+      "fortified": false,
+      "resist": []
+    },
+    "abilities": [
+      "paralyze"
+    ],
+    "fame": 7,
+    "monster_name": "骨龙"
+  },
+  {
+    "id": "monster_044",
+    "set": "monster",
+    "set_idx": 44,
+    "image": "cards\\monster (44).jpg",
+    "en_image": null,
+    "monster_type": "Undead",
+    "attack": [
+      {
+        "value": 4,
+        "element": "Physical"
+      }
+    ],
+    "armor": {
+      "value": 5,
+      "fortified": false,
+      "resist": [
+        "Ice"
+      ]
+    },
+    "abilities": [
+      "poison"
+    ],
+    "fame": 4,
+    "monster_name": "木乃伊"
+  },
+  {
+    "id": "monster_045",
+    "set": "monster",
+    "set_idx": 45,
+    "image": "cards\\monster (45).jpg",
+    "en_image": null,
+    "monster_type": "Humanoid",
+    "attack": [
+      {
+        "value": 5,
+        "element": "Physical"
+      }
+    ],
+    "armor": {
+      "value": 5,
+      "fortified": true,
+      "resist": []
+    },
+    "abilities": [],
+    "fame": 4,
+    "monster_name": "巫妖"
+  },
+  {
+    "id": "monster_046",
+    "set": "monster",
+    "set_idx": 46,
+    "image": "cards\\monster (46).jpg",
+    "en_image": null,
+    "monster_type": "Draconum",
+    "attack": [
+      {
+        "value": 6,
+        "element": "Physical"
+      }
+    ],
+    "armor": {
+      "value": 6,
+      "fortified": false,
+      "resist": [
+        "Cold Fire"
+      ]
+    },
+    "abilities": [
+      "poison"
+    ],
+    "fame": 5,
+    "monster_name": "血爪恶魔"
+  },
+  {
+    "id": "monster_047",
+    "set": "monster",
+    "set_idx": 47,
+    "image": "cards\\monster (47).jpg",
+    "en_image": null,
+    "monster_type": "Undead",
+    "attack": [
+      {
+        "value": 4,
+        "element": "Physical"
+      }
+    ],
+    "armor": {
+      "value": 4,
+      "fortified": false,
+      "resist": []
+    },
+    "abilities": [
+      "poison"
+    ],
+    "fame": 3,
+    "monster_name": "巫妖"
+  },
+  {
+    "id": "monster_048",
+    "set": "monster",
+    "set_idx": 48,
+    "image": "cards\\monster (48).jpg",
+    "en_image": null,
+    "monster_type": "Humanoid",
+    "attack": [
+      {
+        "value": 1,
+        "element": "Physical"
+      },
+      {
+        "value": 1,
+        "element": "Physical"
+      },
+      {
+        "value": 1,
+        "element": "Physical"
+      }
+    ],
+    "armor": {
+      "value": 5,
+      "fortified": false,
+      "resist": [
+        "Ice"
+      ]
+    },
+    "abilities": [
+      "poison"
+    ],
+    "fame": 2,
+    "monster_name": "僵尸村民"
+  },
+  {
+    "id": "monster_049",
+    "set": "monster",
+    "set_idx": 49,
+    "image": "cards\\monster (49).jpg",
+    "en_image": null,
+    "monster_type": "Humanoid",
+    "attack": [
+      {
+        "value": 0,
+        "element": "Ice"
+      },
+      {
+        "value": 0,
+        "element": "Fire"
+      }
+    ],
+    "armor": {
+      "value": 5,
+      "fortified": true,
+      "resist": []
+    },
+    "abilities": [],
+    "fame": 3,
+    "monster_name": "巫妖"
+  },
+  {
+    "id": "monster_050",
+    "set": "monster",
+    "set_idx": 50,
+    "image": "cards\\monster (50).jpg",
+    "en_image": null,
+    "monster_type": "Undead",
+    "attack": [
+      {
+        "value": 3,
+        "element": "Physical"
+      }
+    ],
+    "armor": {
+      "value": 4,
+      "fortified": false,
+      "resist": [
+        "Fire"
+      ]
+    },
+    "abilities": [],
+    "fame": 1,
+    "monster_name": "骷髅战士"
+  },
+  {
+    "id": "monster_051",
+    "set": "monster",
+    "set_idx": 51,
+    "image": "cards\\monster (51).jpg",
+    "en_image": null,
+    "monster_type": "Draconum",
+    "attack": [
+      {
+        "value": 5,
+        "element": "Physical"
+      }
+    ],
+    "armor": {
+      "value": 7,
+      "fortified": false,
+      "resist": []
+    },
+    "abilities": [
+      "poison"
+    ],
+    "fame": 6,
+    "monster_name": "紫龙"
+  },
+  {
+    "id": "monster_052",
+    "set": "monster",
+    "set_idx": 52,
+    "image": "cards\\monster (52).jpg",
+    "en_image": null,
+    "monster_type": "Beast",
+    "attack": [
+      {
+        "value": 6,
+        "element": "Ice"
+      }
+    ],
+    "armor": {
+      "value": 7,
+      "fortified": false,
+      "resist": [
+        "Fire",
+        "Ice"
+      ]
+    },
+    "abilities": [
+      "magic resist"
+    ],
+    "fame": 7,
+    "monster_name": "紫电冰蛇"
+  },
+  {
+    "id": "monster_053",
+    "set": "monster",
+    "set_idx": 53,
+    "image": "cards\\monster (53).jpg",
+    "en_image": null,
+    "monster_type": "Golem",
+    "attack": [
+      {
+        "value": 4,
+        "element": "Physical"
+      }
+    ],
+    "armor": {
+      "value": 5,
+      "fortified": true,
+      "resist": []
+    },
+    "abilities": [
+      "poison",
+      "magic resist"
+    ],
+    "fame": 4,
+    "monster_name": "石魔像"
+  },
+  {
+    "id": "monster_054",
+    "set": "monster",
+    "set_idx": 54,
+    "image": "cards\\monster (54).jpg",
+    "en_image": null,
+    "monster_type": "Golem",
+    "attack": [
+      {
+        "value": 6,
+        "element": "Ice"
+      }
+    ],
+    "armor": {
+      "value": 7,
+      "fortified": false,
+      "resist": [
+        "Ice"
+      ]
+    },
+    "abilities": [
+      "regenerate"
+    ],
+    "fame": 4,
+    "monster_name": "冰傀儡"
+  },
+  {
+    "id": "monster_055",
+    "set": "monster",
+    "set_idx": 55,
+    "image": "cards\\monster (55).jpg",
+    "en_image": null,
+    "monster_type": "Elemental",
+    "attack": [
+      {
+        "value": 3,
+        "element": "Fire"
+      },
+      {
+        "value": 3,
+        "element": "Ice"
+      }
+    ],
+    "armor": {
+      "value": 4,
+      "fortified": false,
+      "resist": [
+        "Fire",
+        "Ice"
+      ]
+    },
+    "abilities": [
+      "swift"
+    ],
+    "fame": 4,
+    "monster_name": "风暴元素"
+  },
+  {
+    "id": "monster_056",
+    "set": "monster",
+    "set_idx": 56,
+    "image": "cards\\monster (56).jpg",
+    "en_image": null,
+    "monster_type": "Orc",
+    "attack": [
+      {
+        "value": 3,
+        "element": "Physical"
+      }
+    ],
+    "armor": {
+      "value": 4,
+      "fortified": false,
+      "resist": [
+        "Fire"
+      ]
+    },
+    "abilities": [
+      "magic resist"
+    ],
+    "fame": 2,
+    "monster_name": "兽人弓箭手"
+  },
+  {
+    "id": "monster_057",
+    "set": "monster",
+    "set_idx": 57,
+    "image": "cards\\monster (57).jpg",
+    "en_image": null,
+    "monster_type": "Beast",
+    "attack": [
+      {
+        "value": 1,
+        "element": "Ice"
+      },
+      {
+        "value": 1,
+        "element": "Ice"
+      }
+    ],
+    "armor": {
+      "value": 1,
+      "fortified": false,
+      "resist": [
+        "Ice"
+      ]
+    },
+    "abilities": [
+      "regenerate"
+    ],
+    "fame": 1,
+    "monster_name": "冰蝠"
+  },
+  {
+    "id": "monster_058",
+    "set": "monster",
+    "set_idx": 58,
+    "image": "cards\\monster (58).jpg",
+    "en_image": null,
+    "monster_type": "Orc",
+    "attack": [
+      {
+        "value": 1,
+        "element": "Physical"
+      },
+      {
+        "value": 1,
+        "element": "Physical"
+      }
+    ],
+    "armor": {
+      "value": 4,
+      "fortified": false,
+      "resist": []
+    },
+    "abilities": [],
+    "fame": 2,
+    "monster_name": "Orc Warriors"
+  },
+  {
+    "id": "monster_059",
+    "set": "monster",
+    "set_idx": 59,
+    "image": "cards\\monster (59).jpg",
+    "en_image": null,
+    "monster_type": "Orc",
+    "attack": [
+      {
+        "value": 4,
+        "element": "Physical"
+      }
+    ],
+    "armor": {
+      "value": 3,
+      "fortified": false,
+      "resist": []
+    },
+    "abilities": [
+      "poison"
+    ],
+    "fame": 3,
+    "monster_name": "兽人骷髅"
+  },
+  {
+    "id": "monster_060",
+    "set": "monster",
+    "set_idx": 60,
+    "image": "cards\\monster (60).jpg",
+    "en_image": null,
+    "monster_type": "Orc",
+    "attack": [
+      {
+        "value": 7,
+        "element": "Physical"
+      }
+    ],
+    "armor": {
+      "value": 2,
+      "fortified": true,
+      "resist": []
+    },
+    "abilities": [
+      "poison"
+    ],
+    "fame": 4,
+    "monster_name": "兽人攻城兵"
+  },
+  {
+    "id": "monster_061",
+    "set": "monster",
+    "set_idx": 61,
+    "image": "cards\\monster (61).jpg",
+    "en_image": null,
+    "monster_type": "Humanoid",
+    "attack": [
+      {
+        "value": 3,
+        "element": "Physical"
+      },
+      {
+        "value": 5,
+        "element": "Physical"
+      }
+    ],
+    "armor": {
+      "value": 6,
+      "fortified": false,
+      "resist": []
+    },
+    "abilities": [
+      "brutal"
+    ],
+    "fame": 3,
+    "monster_name": "叛乱村民"
+  },
+  {
+    "id": "monster_062",
+    "set": "monster",
+    "set_idx": 62,
+    "image": "cards\\monster (62).jpg",
+    "en_image": null,
+    "monster_type": "Humanoid",
+    "attack": [
+      {
+        "value": 3,
+        "element": "Physical"
+      },
+      {
+        "value": 2,
+        "element": "Physical"
+      }
+    ],
+    "armor": {
+      "value": 5,
+      "fortified": false,
+      "resist": []
+    },
+    "abilities": [
+      "swift"
+    ],
+    "fame": 5,
+    "monster_name": "Human Guard"
+  },
+  {
+    "id": "monster_063",
+    "set": "monster",
+    "set_idx": 63,
+    "image": "cards\\monster (63).jpg",
+    "en_image": null,
+    "monster_type": "Humanoid",
+    "attack": [
+      {
+        "value": 4,
+        "element": "Physical"
+      },
+      {
+        "value": 2,
+        "element": "Fire"
+      }
+    ],
+    "armor": {
+      "value": 4,
+      "fortified": false,
+      "resist": [
+        "Fire"
+      ]
+    },
+    "abilities": [],
+    "fame": 5,
+    "monster_name": "火焰刺客"
+  },
+  {
+    "id": "monster_064",
+    "set": "monster",
+    "set_idx": 64,
+    "image": "cards\\monster (64).jpg",
+    "en_image": null,
+    "monster_type": "Humanoid",
+    "attack": [
+      {
+        "value": 3,
+        "element": "Physical"
+      },
+      {
+        "value": 3,
+        "element": "Ice"
+      }
+    ],
+    "armor": {
+      "value": 4,
+      "fortified": false,
+      "resist": [
+        "Ice"
+      ]
+    },
+    "abilities": [],
+    "fame": 5,
+    "monster_name": "冰霜法师"
+  },
+  {
+    "id": "monster_065",
+    "set": "monster",
+    "set_idx": 65,
+    "image": "cards\\monster (65).jpg",
+    "en_image": null,
+    "monster_type": "Humanoid",
+    "attack": [
+      {
+        "value": 6,
+        "element": "Physical"
+      }
+    ],
+    "armor": {
+      "value": 6,
+      "fortified": false,
+      "resist": [
+        "Cold Fire"
+      ]
+    },
+    "abilities": [
+      "poison"
+    ],
+    "fame": 5,
+    "monster_name": "毒刃刺客"
+  },
+  {
+    "id": "monster_066",
+    "set": "monster",
+    "set_idx": 66,
+    "image": "cards\\monster (66).jpg",
+    "en_image": null,
+    "monster_type": "Beast",
+    "attack": [
+      {
+        "value": 2,
+        "element": "Physical"
+      },
+      {
+        "value": 2,
+        "element": "Physical"
+      },
+      {
+        "value": 2,
+        "element": "Physical"
+      }
+    ],
+    "armor": {
+      "value": 6,
+      "fortified": false,
+      "resist": [
+        "Ice"
+      ]
+    },
+    "abilities": [],
+    "fame": 5,
+    "monster_name": "九头蛇"
+  },
+  {
+    "id": "monster_067",
+    "set": "monster",
+    "set_idx": 67,
+    "image": "cards\\monster (67).jpg",
+    "en_image": null,
+    "monster_type": "Golem",
+    "attack": [
+      {
+        "value": 8,
+        "element": "Fire"
+      }
+    ],
+    "armor": {
+      "value": 7,
+      "fortified": true,
+      "resist": []
+    },
+    "abilities": [],
+    "fame": 7,
+    "monster_name": "火焰投石魔像"
+  },
+  {
+    "id": "monster_068",
+    "set": "monster",
+    "set_idx": 68,
+    "image": "cards\\monster (68).jpg",
+    "en_image": null,
+    "monster_type": "Golem",
+    "attack": [
+      {
+        "value": 9,
+        "element": "Ice"
+      }
+    ],
+    "armor": {
+      "value": 6,
+      "fortified": true,
+      "resist": []
+    },
+    "abilities": [],
+    "fame": 7,
+    "monster_name": "寒冰投石机"
+  },
+  {
+    "id": "monster_069",
+    "set": "monster",
+    "set_idx": 69,
+    "image": "cards\\monster (69).jpg",
+    "en_image": null,
+    "monster_type": "Humanoid",
+    "attack": [
+      {
+        "value": 5,
+        "element": "Ice"
+      }
+    ],
+    "armor": {
+      "value": 8,
+      "fortified": false,
+      "resist": [
+        "Fire",
+        "Ice"
+      ]
+    },
+    "abilities": [],
+    "fame": 9,
+    "monster_name": "元素法师"
+  }
+]

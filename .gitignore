@@ -1,0 +1,64 @@
+# Unity project .gitignore
+
+# Core Unity generated folders
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+[Uu]ser[Ss]ettings/
+
+# Unity caches and DBs
+*.pidb
+*.suo
+*.user
+*.userprefs
+*.opendb
+*.VC.db
+*.mdb
+*.pdb
+*.tmp
+
+# Editor/IDE specific
+.vs/
+.vscode/
+.idea/
+*.sln.iml
+
+# Unity generated project/solution files
+*.csproj
+*.unityproj
+*.sln
+*.booproj
+*.svd
+
+# Platform / export related (Android/Gradle etc.)
+[Gg]radle/
+.gradle/
+gradlew
+gradlew.bat
+ExportedObj/
+
+# Build artifacts
+*.apk
+*.aab
+*.unitypackage
+
+# OS files
+.DS_Store
+Thumbs.db
+nul
+
+# Test outputs
+TestResults.xml
+
+# Tooling folders (local-only)
+vibe_coding_tools/
+.ccr_bridge/
+.claude/
+
+# Project-specific: do NOT ignore Assets/, ProjectSettings/, Packages/
+# Keep Packages/manifest.json and packages-lock.json tracked
+

@@ -1,0 +1,9 @@
+{
+	"name": "MageKnight.Logic",
+	"references": [
+		"Newtonsoft.Json"
+	],
+	"overrideReferences": false,
+	"autoReferenced": true,
+	"defineConstraints": []
+}

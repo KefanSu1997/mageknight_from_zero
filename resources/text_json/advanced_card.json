@@ -1,0 +1,632 @@
+[
+  {
+    "id": "advanced_card_000",
+    "set": "advanced_card",
+    "set_idx": 0,
+    "image": "cards\\advanced_card_000.png",
+    "en_image": "cards\\advanced_card_en_000.png",
+    "card_name": "火焰箭矢",
+    "base_effect": "获得一颗红色魔晶，放入物品栏。",
+    "required_crystals": "红",
+    "enhanced_effect": "远程火焰攻击3。",
+    "wiki": {
+      "wiki_text": "Card Image on BGG"
+    }
+  },
+  {
+    "id": "advanced_card_001",
+    "set": "advanced_card",
+    "set_idx": 1,
+    "image": "cards\\advanced_card_001.png",
+    "en_image": "cards\\advanced_card_en_001.png",
+    "card_name": "寒冰箭矢",
+    "base_effect": "获得一颗蓝色魔晶，放入物品栏。",
+    "required_crystals": "蓝",
+    "enhanced_effect": "远程寒冰攻击3。",
+    "wiki": {
+      "wiki_text": "Card Image on BGG"
+    }
+  },
+  {
+    "id": "advanced_card_002",
+    "set": "advanced_card",
+    "set_idx": 2,
+    "image": "cards\\advanced_card_002.png",
+    "en_image": "cards\\advanced_card_en_002.png",
+    "card_name": "迅捷箭矢",
+    "base_effect": "获得一颗白色魔晶，放入物品栏。",
+    "required_crystals": "白",
+    "enhanced_effect": "远程攻击4。",
+    "wiki": {
+      "wiki_text": "No notes for this card yet."
+    }
+  },
+  {
+    "id": "advanced_card_003",
+    "set": "advanced_card",
+    "set_idx": 3,
+    "image": "cards\\advanced_card_003.png",
+    "en_image": "cards\\advanced_card_en_003.png",
+    "card_name": "粉碎箭矢",
+    "base_effect": "获得一颗绿色魔晶，放入物品栏。",
+    "required_crystals": "绿",
+    "enhanced_effect": "攻城攻击3。",
+    "wiki": {
+      "wiki_text": "No notes for this card yet."
+    }
+  },
+  {
+    "id": "advanced_card_004",
+    "set": "advanced_card",
+    "set_idx": 4,
+    "image": "cards\\advanced_card_004.png",
+    "en_image": "cards\\advanced_card_en_004.png",
+    "card_name": "血色狂怒",
+    "base_effect": "攻击2。你可以受到一点创伤，以将本卡牌提升至攻击5。",
+    "required_crystals": "红",
+    "enhanced_effect": "攻击4。你可以受到一点创伤，以将本卡牌提升至攻击9。",
+    "wiki": {
+      "wiki_text": "No notes for this card yet."
+    }
+  },
+  {
+    "id": "advanced_card_005",
+    "set": "advanced_card",
+    "set_idx": 5,
+    "image": "cards\\advanced_card_005.png",
+    "en_image": "cards\\advanced_card_en_005.png",
+    "card_name": "寒冰之盾",
+    "base_effect": "寒冰格挡3。",
+    "required_crystals": "蓝",
+    "enhanced_effect": "寒冰格挡3。被本卡牌格挡的一个敌人护甲降低3。护甲无法降低至1以下。",
+    "wiki": {
+      "wiki_text": "https://boardgamegeek.com/article/10657079#10657079"
+    }
+  },
+  {
+    "id": "advanced_card_006",
+    "set": "advanced_card",
+    "set_idx": 6,
+    "image": "cards\\advanced_card_006.png",
+    "en_image": "cards\\advanced_card_en_006.png",
+    "card_name": "灵动",
+    "base_effect": "移动力2。本回合战斗中，你可以支付移动力点数，每支付1点获得攻击1。",
+    "required_crystals": "白",
+    "enhanced_effect": "移动力4。本回合战斗中，你可以支付任意数量的移动力点数：支付1点获得攻击1，和/或支付2点获得远程攻击1。",
+    "wiki": {
+      "wiki_text": "new Version from Lost Legions:"
+    }
+  },
+  {
+    "id": "advanced_card_007",
+    "set": "advanced_card",
+    "set_idx": 7,
+    "image": "cards\\advanced_card_007.png",
+    "en_image": "cards\\advanced_card_en_007.png",
+    "card_name": "提神漫步",
+    "base_effect": "移动力2和治疗1。如果你在战斗中打出本卡牌，只获得移动力2。",
+    "required_crystals": "绿",
+    "enhanced_effect": "移动力4和治疗2。如果你在战斗中打出本卡牌，只获得移动力4。",
+    "wiki": {
+      "wiki_text": "new Version from Lost Legions:"
+    }
+  },
+  {
+    "id": "advanced_card_008",
+    "set": "advanced_card",
+    "set_idx": 8,
+    "image": "cards\\advanced_card_008.png",
+    "en_image": "cards\\advanced_card_en_008.png",
+    "card_name": "胁迫",
+    "base_effect": "影响力4或攻击3。声誉-1。",
+    "required_crystals": "红",
+    "enhanced_effect": "影响力8或攻击7。声誉-2。",
+    "wiki": {
+      "wiki_text": "Card Image on BGG"
+    }
+  },
+  {
+    "id": "advanced_card_009",
+    "set": "advanced_card",
+    "set_idx": 9,
+    "image": "cards\\advanced_card_009.png",
+    "en_image": "cards\\advanced_card_en_009.png",
+    "card_name": "冰霜之桥",
+    "base_effect": "移动力2。本回合中沼泽的移动费用降低至1。",
+    "required_crystals": "蓝",
+    "enhanced_effect": "移动力4。本回合中你可以穿越湖泊，且湖泊和沼泽的移动费用降低至1。",
+    "wiki": {
+      "wiki_text": "No notes for this card yet."
+    }
+  },
+  {
+    "id": "advanced_card_010",
+    "set": "advanced_card",
+    "set_idx": 10,
+    "image": "cards\\advanced_card_010.png",
+    "en_image": "cards\\advanced_card_en_010.png",
+    "card_name": "清风之歌",
+    "base_effect": "移动力2。本回合中平原、沙漠和荒原的移动费用降低1点，最低至0。",
+    "required_crystals": "蓝",
+    "enhanced_effect": "移动力2。本回合中平原、沙漠和荒原的移动费用降低2点，最低至0。本回合中，你可以支付一点蓝色魔力穿越湖泊，湖泊的移动费用为0。",
+    "wiki": {}
+  },
+  {
+    "id": "advanced_card_011",
+    "set": "advanced_card",
+    "set_idx": 11,
+    "image": "cards\\advanced_card_011.png",
+    "en_image": "cards\\advanced_card_en_011.png",
+    "card_name": "迷途寻踪",
+    "base_effect": "移动力2。本回合中所有地形的移动费用降低1点，最低至2。",
+    "required_crystals": "绿",
+    "enhanced_effect": "移动力4。本回合中所有地形的移动费用降低至2。",
+    "wiki": {
+      "wiki_text": "No notes for this card yet."
+    }
+  },
+  {
+    "id": "advanced_card_012",
+    "set": "advanced_card",
+    "set_idx": 12,
+    "image": "cards\\advanced_card_012.png",
+    "en_image": "cards\\advanced_card_en_012.png",
+    "card_name": "鲜血仪式",
+    "base_effect": "受到一点创伤。获得一颗红色魔晶，放入物品栏；并且获得一个任意颜色的魔力标记（包括非基本色）。",
+    "required_crystals": "红",
+    "enhanced_effect": "受到一点创伤。获得三个任意颜色的魔力标记（包括非基本色）。你可以支付一点任意基本色的魔力，以获得一颗同色魔晶，放入物品栏。",
+    "wiki": {
+      "wiki_text": "new Version from Lost Legions:"
+    }
+  },
+  {
+    "id": "advanced_card_013",
+    "set": "advanced_card",
+    "set_idx": 13,
+    "image": "cards\\advanced_card_013.png",
+    "en_image": "cards\\advanced_card_en_013.png",
+    "card_name": "纯净魔法",
+    "base_effect": "打出本卡牌时，支付一点魔力。如果支付绿色魔力，获得移动力4。如果支付白色魔力，获得影响力4。如果支付蓝色魔力，获得格挡4。如果支付红色魔力，获得攻击4。",
+    "required_crystals": "蓝",
+    "enhanced_effect": "打出本卡牌时，支付一点魔力。如果支付绿色魔力，获得移动力7。如果支付白色魔力，获得影响力7。如果支付蓝色魔力，获得格挡7。如果支付红色魔力，获得攻击7。",
+    "wiki": {
+      "wiki_text": "No notes for this card yet."
+    }
+  },
+  {
+    "id": "advanced_card_014",
+    "set": "advanced_card",
+    "set_idx": 14,
+    "image": "cards\\advanced_card_014.png",
+    "en_image": "cards\\advanced_card_en_014.png",
+    "card_name": "英雄事迹",
+    "base_effect": "影响力3。本回合中每招募一支部队，声誉+1。",
+    "required_crystals": "白",
+    "enhanced_effect": "影响力6。本回合中每招募一支部队，名望+1且声誉+1。",
+    "wiki": {
+      "wiki_text": "No notes for this card yet."
+    }
+  },
+  {
+    "id": "advanced_card_015",
+    "set": "advanced_card",
+    "set_idx": 15,
+    "image": "cards\\advanced_card_015.png",
+    "en_image": "cards\\advanced_card_en_015.png",
+    "card_name": "再生",
+    "base_effect": "治疗1。重整一支你控制的1或2级部队。",
+    "required_crystals": "绿",
+    "enhanced_effect": "治疗2。重整一支你控制的1、2或3级部队。",
+    "wiki": {
+      "wiki_text": "No notes for this card yet."
+    }
+  },
+  {
+    "id": "advanced_card_016",
+    "set": "advanced_card",
+    "set_idx": 16,
+    "image": "cards\\advanced_card_016.png",
+    "en_image": "cards\\advanced_card_en_016.png",
+    "card_name": "冲锋陷阵",
+    "base_effect": "战斗开始时打出本卡牌。本次战斗中你所有部队的攻击和格挡数值提升2。本回合你不能对你的部队分配伤害。",
+    "required_crystals": "红",
+    "enhanced_effect": "战斗开始时打出本卡牌。本次战斗中你所有部队的攻击和格挡数值提升3。本回合你不能对你的部队分配伤害。",
+    "wiki": {
+      "wiki_text": "No notes for this card yet."
+    }
+  },
+  {
+    "id": "advanced_card_017",
+    "set": "advanced_card",
+    "set_idx": 17,
+    "image": "cards\\advanced_card_017.png",
+    "en_image": "cards\\advanced_card_en_017.png",
+    "card_name": "稳步前进",
+    "base_effect": "移动力2。你回合结束时，如果功能牌库不为空，你可以将本卡牌放到功能牌库底，而无需放入弃牌堆。",
+    "required_crystals": "蓝",
+    "enhanced_effect": "移动力4。你回合结束时，可以将本卡牌放到功能牌库顶，而无需放入弃牌堆。",
+    "wiki": {
+      "wiki_text": "Card Image on BGG"
+    }
+  },
+  {
+    "id": "advanced_card_018",
+    "set": "advanced_card",
+    "set_idx": 18,
+    "image": "cards\\advanced_card_018.png",
+    "en_image": "cards\\advanced_card_en_018.png",
+    "card_name": "外交",
+    "base_effect": "影响力2。本回合中你可以将影响力作为格挡使用。",
+    "required_crystals": "白",
+    "enhanced_effect": "影响力4。选择寒冰或火焰。本回合中你可以将影响力作为该元素属性的格挡使用。",
+    "wiki": {}
+  },
+  {
+    "id": "advanced_card_019",
+    "set": "advanced_card",
+    "set_idx": 19,
+    "image": "cards\\advanced_card_019.png",
+    "en_image": "cards\\advanced_card_en_019.png",
+    "card_name": "求援",
+    "base_effect": "影响力3。你手牌中和控制的部队上每有一张创伤卡牌获得额外影响力1。",
+    "required_crystals": "绿",
+    "enhanced_effect": "影响力5。你手牌中和控制的部队上每有一张创伤卡牌获得额外影响力2。",
+    "wiki": {
+      "wiki_text": "new Version from Lost Legions:"
+    }
+  },
+  {
+    "id": "advanced_card_020",
+    "set": "advanced_card",
+    "set_idx": 20,
+    "image": "cards\\advanced_card_020.png",
+    "en_image": "cards\\advanced_card_en_020.png",
+    "card_name": "分解",
+    "base_effect": "打出本卡牌时，从手牌中去除一张行动卡牌。获得两颗与去除卡牌同色的魔晶，加入物品栏。",
+    "required_crystals": "红",
+    "enhanced_effect": "打出本卡牌时，从手牌中去除一张行动卡牌。获得与去除卡牌不同色的基本色魔晶，每种颜色一颗，加入物品栏。",
+    "wiki": {
+      "wiki_text": "No notes for this card yet."
+    }
+  },
+  {
+    "id": "advanced_card_021",
+    "set": "advanced_card",
+    "set_idx": 21,
+    "image": "cards\\advanced_card_021.png",
+    "en_image": "cards\\advanced_card_en_021.png",
+    "card_name": "魔晶精通",
+    "base_effect": "获得一颗你已拥有魔晶的同色魔晶，加入物品栏。",
+    "required_crystals": "绿、蓝、红",
+    "enhanced_effect": "回合结束时，本回合你支付的所有魔晶返回你的物品栏。",
+    "wiki": {
+      "wiki_text": "nothing to say for the normal effect"
+    }
+  },
+  {
+    "id": "advanced_card_022",
+    "set": "advanced_card",
+    "set_idx": 22,
+    "image": "cards\\advanced_card_022.png",
+    "en_image": "cards\\advanced_card_en_022.png",
+    "card_name": "魔力风暴",
+    "base_effect": "选择魔力源中一颗基本色魔力骰子。获得一颗同色魔晶，放入物品栏，随后立即重掷该骰子并放回魔力源。",
+    "required_crystals": "白",
+    "enhanced_effect": "重掷魔力源中的所有骰子。你可以使用魔力源中的额外三颗魔力骰子，并且你可以无视白昼黑夜，将黑色或金色骰子作为任意基本色魔力使用。",
+    "wiki": {
+      "wiki_text": "Unpowered: The mana die you take does not count toward the one source die a turn, as it will be immediately rerolled and returned to the source undepleted. Otherwise, it would be the same as crystallize but only works with mana dice."
+    }
+  },
+  {
+    "id": "advanced_card_023",
+    "set": "advanced_card",
+    "set_idx": 23,
+    "image": "cards\\advanced_card_023.png",
+    "en_image": "cards\\advanced_card_en_023.png",
+    "card_name": "伏击",
+    "base_effect": "移动力2。你打出的第一张用于攻击的任意类型卡牌数值+1或你打出的第一张用于格挡的任意类型卡牌数值+2，以本回合中先打出的效果为准。",
+    "required_crystals": "绿",
+    "enhanced_effect": "移动力4。你打出的第一张用于攻击的任意类型卡牌数值+2或你打出的第一张用于格挡的任意类型卡牌数值+4，以本回合中先打出的效果为准。",
+    "wiki": {
+      "wiki_text": "Attack and Block of \"any type\" includes Ice, Fire, Coldfire, Ranged and Siege"
+    }
+  },
+  {
+    "id": "advanced_card_024",
+    "set": "advanced_card",
+    "set_idx": 24,
+    "image": "cards\\advanced_card_024.png",
+    "en_image": "cards\\advanced_card_en_024.png",
+    "card_name": "效能过载",
+    "base_effect": "打出本卡牌时，从手牌中去除一张行动卡牌。使用三次该卡牌的基本效果。",
+    "required_crystals": "红",
+    "enhanced_effect": "打出本卡牌时，从手牌中去除一张行动卡牌。（免费）使用两次该卡牌的强力效果。",
+    "wiki": {
+      "wiki_text": "If you play this card withMagic Talent, you have to discard 3 other cards from your hand and can then play 3 spells (or one spell 3x) out of the Spell offer. After that you have to throw awayMagic Talent."
+    }
+  },
+  {
+    "id": "advanced_card_025",
+    "set": "advanced_card",
+    "set_idx": 25,
+    "image": "cards\\advanced_card_025.png",
+    "en_image": "cards\\advanced_card_en_025.png",
+    "card_name": "魔法天赋",
+    "base_effect": "弃掉一张任意颜色的卡牌。本回合你可以将法术供应区中的一张同色法术卡牌如同手牌般正常打出。该卡牌依旧保留在法术供应区中。",
+    "required_crystals": "蓝",
+    "enhanced_effect": "打出本卡牌时，支付一点任意颜色的魔力。从法术供应区中获得一张同色法术卡牌，放入你的弃牌堆。",
+    "wiki": {
+      "wiki_text": "new Version from Lost Legions:"
+    }
+  },
+  {
+    "id": "advanced_card_026",
+    "set": "advanced_card",
+    "set_idx": 26,
+    "image": "cards\\advanced_card_026.png",
+    "en_image": "cards\\advanced_card_en_026.png",
+    "card_name": "学习",
+    "base_effect": "影响力2。你可以支付6点影响力，以从高级行动供应区中获得一张高级行动卡牌，放入你的弃牌堆；本回合只能使用一次。",
+    "required_crystals": "白",
+    "enhanced_effect": "影响力4。你可以支付9点影响力，以从高级行动供应区中获得一张高级行动卡牌，加入你的手牌；本回合只能使用一次。",
+    "wiki": {
+      "wiki_text": "No notes for this card yet."
+    }
+  },
+  {
+    "id": "advanced_card_027",
+    "set": "advanced_card",
+    "set_idx": 27,
+    "image": "cards\\advanced_card_027.png",
+    "en_image": "cards\\advanced_card_en_027.png",
+    "card_name": "修行",
+    "base_effect": "从手牌中去除一张行动卡牌，随后从高级行动供应区中拿取一张同色卡牌，放入你的弃牌堆。",
+    "required_crystals": "绿",
+    "enhanced_effect": "从手牌中去除一张行动卡牌，随后从高级行动供应区中拿取一张同色卡牌，加入你的手牌。",
+    "wiki": {
+      "wiki_text": "Card Image on BGG"
+    }
+  },
+  {
+    "id": "advanced_card_028",
+    "set": "advanced_card",
+    "set_idx": 28,
+    "image": "cards\\advanced_card_028.png",
+    "en_image": "cards\\advanced_card_en_028.png",
+    "card_name": "反戈一击",
+    "base_effect": "攻击2。本回合中每格挡一个敌人获得额外攻击2。",
+    "required_crystals": "红",
+    "enhanced_effect": "攻击4。本回合中每格挡一个敌人获得额外攻击3。",
+    "wiki": {
+      "wiki_text": "No notes for this card yet."
+    }
+  },
+  {
+    "id": "advanced_card_029",
+    "set": "advanced_card",
+    "set_idx": 29,
+    "image": "cards\\advanced_card_029.png",
+    "en_image": "cards\\advanced_card_en_029.png",
+    "card_name": "仪式攻击",
+    "base_effect": "去除另一张行动卡牌。根据该卡牌颜色，你获得：红色获得攻击5，蓝色获得寒冰攻击3，白色获得远程攻击3，绿色获得攻城攻击2。",
+    "required_crystals": "红",
+    "enhanced_effect": "去除另一张行动卡牌。根据该卡牌颜色，你获得：红色获得火焰攻击6，蓝色获得冰火攻击4，白色获得远程火焰攻击4，绿色获得攻城火焰攻击3。",
+    "wiki": {
+      "wiki_text": "No notes for this card yet."
+    }
+  },
+  {
+    "id": "advanced_card_030",
+    "set": "advanced_card",
+    "set_idx": 30,
+    "image": "cards\\advanced_card_030.png",
+    "en_image": "cards\\advanced_card_en_030.png",
+    "card_name": "远古血脉",
+    "base_effect": "受到一点创伤。支付一点任意颜色的魔力。从高级行动供应区中拿取一张同色卡牌，加入你的手牌。",
+    "required_crystals": "红",
+    "enhanced_effect": "受到一点创伤，加入手牌或放入弃牌堆。使用高级行动供应区中任意一张卡牌的强力效果，但无需支付其魔力费用。该卡牌依旧保留在供应区中。",
+    "wiki": {}
+  },
+  {
+    "id": "advanced_card_031",
+    "set": "advanced_card",
+    "set_idx": 31,
+    "image": "cards\\advanced_card_031.png",
+    "en_image": "cards\\advanced_card_en_031.png",
+    "card_name": "盾牌重击",
+    "base_effect": "格挡3。对抗迅捷攻击时计算两次。",
+    "required_crystals": "蓝",
+    "enhanced_effect": "格挡5。对抗迅捷攻击时计算两次。你的格挡值比所需数值每高一点，被格挡的敌人受到护甲-1(最低至1)。",
+    "wiki": {
+      "wiki_text": "No notes for this card yet."
+    }
+  },
+  {
+    "id": "advanced_card_032",
+    "set": "advanced_card",
+    "set_idx": 32,
+    "image": "cards\\advanced_card_032.png",
+    "en_image": "cards\\advanced_card_en_032.png",
+    "card_name": "时光传送",
+    "base_effect": "使用回合行动。你可以移动到一个已翻开的相邻安全格（但不激怒肆虐的敌人）。无论你是否移动，下一次你抽取卡牌时，手牌上限增加1张。",
+    "required_crystals": "蓝",
+    "enhanced_effect": "作用同上，但你可以移动到距离两格的翻开的安全格，或者使手牌上限增加2张。",
+    "wiki": {
+      "wiki_text": "No notes for this card yet."
+    }
+  },
+  {
+    "id": "advanced_card_033",
+    "set": "advanced_card",
+    "set_idx": 33,
+    "image": "cards\\advanced_card_033.png",
+    "en_image": "cards\\advanced_card_en_033.png",
+    "card_name": "法术熔炉",
+    "base_effect": "获得一颗与法术供应区中一张法术卡牌同色的魔晶，加入物品栏。",
+    "required_crystals": "蓝",
+    "enhanced_effect": "获得两颗与法术供应区中两张不同的法术卡牌的同色魔晶，加入物品栏。",
+    "wiki": {
+      "wiki_text": "No notes for this card yet."
+    }
+  },
+  {
+    "id": "advanced_card_034",
+    "set": "advanced_card",
+    "set_idx": 34,
+    "image": "cards\\advanced_card_034.png",
+    "en_image": "cards\\advanced_card_en_034.png",
+    "card_name": "骑士精神",
+    "base_effect": "攻击3，或者攻击2并且本次攻击每击败一个敌人声誉+1。",
+    "required_crystals": "白",
+    "enhanced_effect": "攻击6，或者攻击4并且本次攻击每击败一个敌人声誉+1并且名望+1。",
+    "wiki": {
+      "wiki_text": "No notes for this card yet."
+    }
+  },
+  {
+    "id": "advanced_card_035",
+    "set": "advanced_card",
+    "set_idx": 35,
+    "image": "cards\\advanced_card_035.png",
+    "en_image": "cards\\advanced_card_en_035.png",
+    "card_name": "宁静时光",
+    "base_effect": "影响力3。你可以作为回合行动使用：如果你这么做，你每支付2点影响力可以获得治疗1。",
+    "required_crystals": "白、黑",
+    "enhanced_effect": "影响力6。你可以作为回合行动使用：如果你这么做，你每支付2点影响力可以获得治疗1，并/或支付部队等级2倍的影响力重整一支部队。",
+    "wiki": {
+      "wiki_text": "No notes for this card yet."
+    }
+  },
+  {
+    "id": "advanced_card_036",
+    "set": "advanced_card",
+    "set_idx": 36,
+    "image": "cards\\advanced_card_036.png",
+    "en_image": "cards\\advanced_card_en_036.png",
+    "card_name": "迂回躲避",
+    "base_effect": "使一次敌人的攻击降低2点。如果在战斗的攻击阶段前，手牌中没有加入创伤卡牌，则攻击阶段获得攻击1。",
+    "required_crystals": "白",
+    "enhanced_effect": "使一次敌人的攻击降低4点，或者使一个敌人的两次攻击或两个敌人的各一次攻击降低2点。如果在战斗的攻击阶段前，手牌中没有加入创伤卡牌，则攻击阶段获得攻击2。",
+    "wiki": {}
+  },
+  {
+    "id": "advanced_card_037",
+    "set": "advanced_card",
+    "set_idx": 37,
+    "image": "cards\\advanced_card_037.png",
+    "en_image": "cards\\advanced_card_en_037.png",
+    "card_name": "不屈不挠",
+    "base_effect": "移动力2，影响力2，攻击2或格挡2。你可以弃掉一张创伤卡牌，以将效果提升1点。",
+    "required_crystals": "绿",
+    "enhanced_effect": "移动力3，影响力3，攻击3或格挡3。你可以弃掉任意数量卡牌，其中包括一张创伤卡牌，每弃掉一张将效果提升2点。",
+    "wiki": {
+      "wiki_text": "No notes for this card yet."
+    }
+  },
+  {
+    "id": "advanced_card_038",
+    "set": "advanced_card",
+    "set_idx": 38,
+    "image": "cards\\advanced_card_038.png",
+    "en_image": "cards\\advanced_card_en_038.png",
+    "card_name": "自然之力",
+    "base_effect": "本次战斗中，选择一支部队获得物理抗性。",
+    "required_crystals": "绿",
+    "enhanced_effect": "攻城攻击3或格挡6。",
+    "wiki": {}
+  },
+  {
+    "id": "advanced_card_039",
+    "set": "advanced_card",
+    "set_idx": 39,
+    "image": "cards\\advanced_card_039.png",
+    "en_image": "cards\\advanced_card_en_039.png",
+    "card_name": "山川逸闻",
+    "base_effect": "移动力3。如果你回合结束停留在丘陵上，下一次你抽取卡牌时，手牌上限增加1张。",
+    "required_crystals": "绿",
+    "enhanced_effect": "移动力5。你可以支付5点移动力进入山脉，本回合结束时山脉视为安全格。如果你回合结束停留在山脉/丘陵上，下一次你抽取卡牌时，手牌上限增加2/1张。",
+    "wiki": {
+      "wiki_text": "No notes for this card yet."
+    }
+  },
+  {
+    "id": "advanced_card_040",
+    "set": "advanced_card",
+    "set_idx": 40,
+    "image": "cards\\advanced_card_040.png",
+    "en_image": "cards\\advanced_card_en_040.png",
+    "card_name": "魔晶力量",
+    "base_effect": "获得一颗你没有的基本色魔晶，加入物品栏。",
+    "required_crystals": "绿、蓝",
+    "enhanced_effect": "移动力4，治疗2或抽取两张卡牌。你物品栏中每有一组四颗不同色的魔晶：移动力2，治疗1或抽取一张卡牌。",
+    "wiki": {}
+  },
+  {
+    "id": "advanced_card_041",
+    "set": "advanced_card",
+    "set_idx": 41,
+    "image": "cards\\advanced_card_041.png",
+    "en_image": "cards\\advanced_card_en_041.png",
+    "card_name": "爆裂箭矢",
+    "base_effect": "受到一点创伤。获得一颗白色和一颗红色魔晶，放入物品栏。",
+    "required_crystals": "白、红",
+    "enhanced_effect": "远程攻击3。本次攻击每击败一个敌人，另外一个敌人受到护甲-1(最低至1)。",
+    "wiki": {
+      "wiki_text": "Dual Color: White or Red"
+    }
+  },
+  {
+    "id": "advanced_card_042",
+    "set": "advanced_card",
+    "set_idx": 42,
+    "image": "cards\\advanced_card_042.png",
+    "en_image": "cards\\advanced_card_en_042.png",
+    "card_name": "血脉贲张",
+    "base_effect": "本回合中，前三次手牌中加入创伤卡牌时，每次抽取一张卡牌。",
+    "required_crystals": "红、绿",
+    "enhanced_effect": "本回合中，第一次手牌中加入创伤卡牌时，去除这张创伤卡牌并抽取一张卡牌。之后三次手牌中加入创伤卡牌时，每次抽取一张卡牌。",
+    "wiki": {}
+  },
+  {
+    "id": "advanced_card_043",
+    "set": "advanced_card",
+    "set_idx": 43,
+    "image": "cards\\advanced_card_043.png",
+    "en_image": "cards\\advanced_card_en_043.png",
+    "card_name": "冷峻目光",
+    "base_effect": "影响力3，或者一次敌人攻击失去所有攻击能力（但不会失去攻击颜色）。",
+    "required_crystals": "蓝、白",
+    "enhanced_effect": "影响力5，或者本回合中一个敌人不攻击。",
+    "wiki": {
+      "wiki_text": "Dual Color: Blue or White"
+    }
+  },
+  {
+    "id": "advanced_card_044",
+    "set": "advanced_card",
+    "set_idx": 44,
+    "image": "cards\\advanced_card_044.png",
+    "en_image": "cards\\advanced_card_en_044.png"
+  },
+  {
+    "id": "advanced_card_045",
+    "set": "advanced_card",
+    "set_idx": 45,
+    "image": "cards\\advanced_card_045.png",
+    "en_image": "cards\\advanced_card_en_045.png"
+  },
+  {
+    "id": "advanced_card_046",
+    "set": "advanced_card",
+    "set_idx": 46,
+    "image": "cards\\advanced_card_046.png",
+    "en_image": "cards\\advanced_card_en_046.png"
+  },
+  {
+    "id": "advanced_card_047",
+    "set": "advanced_card",
+    "set_idx": 47,
+    "image": "cards\\advanced_card_047.png",
+    "en_image": "cards\\advanced_card_en_047.png"
+  }
+]

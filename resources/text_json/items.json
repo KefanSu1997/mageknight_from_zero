@@ -1,0 +1,332 @@
+[
+  {
+    "id": "items_000",
+    "set": "items",
+    "set_idx": 0,
+    "image": "cards\\items_000.png",
+    "en_image": "cards\\items_en_000.png",
+    "cn_raw": {},
+    "en_card_name": "",
+    "card_name": "荣誉旌旗",
+    "type": "神器/物品",
+    "assign_effect": "将本卡牌分配给一支你控制的部队。被分配到的部队获得护甲+1，且他们的任何攻击或格挡+1。每次这支部队攻击或格挡时，名望+1。",
+    "once_per_round": "本回合中你控制的所有部队获得护甲+1，且他们的任何攻击或格挡+1。本回合每有一支进行攻击或格挡的部队，名望+1。",
+    "wiki": {}
+  },
+  {
+    "id": "items_001",
+    "set": "items",
+    "set_idx": 1,
+    "image": "cards\\items_001.png",
+    "en_image": "cards\\items_en_001.png",
+    "cn_raw": {},
+    "en_card_name": "",
+    "card_name": "恐惧旌旗",
+    "type": "神器/物品",
+    "assign_effect": "将本卡牌分配给一支你控制的部队。在战斗格挡阶段，你可以让该部队精力耗尽，以取消一次敌人的攻击。如果这么做，名望+1。",
+    "once_per_round": "本次战斗中最多3个敌人不攻击。",
+    "wiki": {}
+  },
+  {
+    "id": "items_002",
+    "set": "items",
+    "set_idx": 2,
+    "image": "cards\\items_002.png",
+    "en_image": "cards\\items_en_002.png",
+    "cn_raw": {},
+    "en_card_name": "",
+    "card_name": "防护旌旗",
+    "type": "神器/物品",
+    "assign_effect": "将本卡牌分配给一支你控制的部队。被分配到的部队获得护甲+1、火焰抗性和寒冰抗性。",
+    "once_per_round": "你回合结束时，可以去除所有本回合中受到的创伤。",
+    "wiki": {}
+  },
+  {
+    "id": "items_003",
+    "set": "items",
+    "set_idx": 3,
+    "image": "cards\\items_003.png",
+    "en_image": "cards\\items_en_003.png",
+    "cn_raw": {},
+    "en_card_name": "",
+    "card_name": "勇气旌旗",
+    "type": "神器/物品",
+    "assign_effect": "将本卡牌分配给一支你控制的部队。每轮一次，战斗中除外，你可以将本卡牌翻面至正面朝下，以重整此部队。每轮开始时，将本卡牌再次翻面至正面朝上。",
+    "once_per_round": "你可以在战斗之外的任何时候打出本卡牌，以重整所有你控制的部队。",
+    "wiki": {}
+  },
+  {
+    "id": "items_004",
+    "set": "items",
+    "set_idx": 4,
+    "image": "cards\\items_004.png",
+    "en_image": "cards\\items_en_004.png",
+    "cn_raw": {},
+    "en_card_name": "",
+    "card_name": "红宝石戒指",
+    "type": "神器/物品",
+    "assign_effect": "获得一个红色魔力标记和一颗红色魔晶，将魔晶放入物品栏。名望+1。",
+    "once_per_round": "本回合中你拥有无尽的红色和黑色魔力。本回合中你每施放一个红色法术，名望+1。",
+    "wiki": {
+      "wiki_text": ""
+    }
+  },
+  {
+    "id": "items_005",
+    "set": "items",
+    "set_idx": 5,
+    "image": "cards\\items_005.png",
+    "en_image": "cards\\items_en_005.png",
+    "cn_raw": {},
+    "en_card_name": "",
+    "card_name": "蓝宝石戒指",
+    "type": "神器/物品",
+    "assign_effect": "获得一个蓝色魔力标记和一颗蓝色魔晶，将魔晶放入物品栏。名望+1。",
+    "once_per_round": "本回合中你拥有无尽的蓝色和黑色魔力。本回合中你每施放一个蓝色法术，名望+1。",
+    "wiki": {
+      "wiki_text": ""
+    }
+  },
+  {
+    "id": "items_006",
+    "set": "items",
+    "set_idx": 6,
+    "image": "cards\\items_006.png",
+    "en_image": "cards\\items_en_006.png",
+    "card_name": "钻石戒指",
+    "type": "物品",
+    "assign_effect": "获得一个白色魔力标记和一颗白色魔晶，将魔晶放入物品栏。名望+1。",
+    "once_per_round": "本回合中你拥有无尽的白色和黑色魔力。本回合中你每施放一个白色法术，名望+1。",
+    "wiki": {
+      "wiki_text": ""
+    }
+  },
+  {
+    "id": "items_007",
+    "set": "items",
+    "set_idx": 7,
+    "image": "cards\\items_007.png",
+    "en_image": "cards\\items_en_007.png",
+    "card_name": "翡翠戒指",
+    "type": "神器/物品",
+    "assign_effect": "获得一个绿色魔力标记和一颗绿色魔晶，将魔晶放入物品栏。名望+1。",
+    "once_per_round": "本回合中你拥有无尽的绿色和黑色魔力。本回合中你每施放一个绿色法术，名望+1。",
+    "wiki": {
+      "wiki_text": ""
+    }
+  },
+  {
+    "id": "items_008",
+    "set": "items",
+    "set_idx": 8,
+    "image": "cards\\items_008.png",
+    "en_image": "cards\\items_en_008.png",
+    "card_name": "公正之剑",
+    "type": "神器/物品",
+    "assign_effect": "打出本卡牌时，从手牌中弃掉任意数量的行动卡牌。以此方式弃掉的每张卡牌使你获得攻击3。本回合中你每击败一个敌人，名望+1。",
+    "once_per_round": "本回合中你在攻击阶段打出的所有物理攻击总数值翻倍。本回合中所有敌人失去物理抗性。本回合中你每击败一个敌人，名望+1。",
+    "wiki": {}
+  },
+  {
+    "id": "items_009",
+    "set": "items",
+    "set_idx": 9,
+    "image": "cards\\items_009.png",
+    "en_image": "cards\\items_en_009.png",
+    "card_name": "愤怒号角",
+    "type": "神器/物品",
+    "assign_effect": "攻城攻击5。投掷一颗魔力骰子。如果掷到黑色或红色，受到一点创伤。",
+    "once_per_round": "攻城攻击5。本次攻城攻击你可以最多+5攻击力。每+1攻击力你需要投掷一颗魔力骰子。每次掷到黑色或红色，受到一点创伤。",
+    "wiki": {}
+  },
+  {
+    "id": "items_010",
+    "set": "items",
+    "set_idx": 10,
+    "image": "cards\\items_010.png",
+    "en_image": "cards\\items_en_010.png",
+    "card_name": "无尽金币包",
+    "type": "神器/物品",
+    "assign_effect": "影响力4，名望+2。",
+    "once_per_round": "影响力9，名望+3。",
+    "wiki": {}
+  },
+  {
+    "id": "items_011",
+    "set": "items",
+    "set_idx": 11,
+    "image": "cards\\items_011.png",
+    "en_image": "cards\\items_en_011.png",
+    "card_name": "无尽宝石袋",
+    "type": "神器/物品",
+    "assign_effect": "投掷一颗魔力骰子两次。获得以此方式掷到的同色魔晶（掷到金色时你可以选择颜色）。如果掷到黑色，不获得魔晶，名望+1。",
+    "once_per_round": "获得每种基本色魔力标记各一个。同时（在白昼时）获得一个金色或（在黑夜中）黑色魔力标记。",
+    "wiki": {
+      "wiki_text": ""
+    }
+  },
+  {
+    "id": "items_012",
+    "set": "items",
+    "set_idx": 12,
+    "image": "cards\\items_012.png",
+    "en_image": "cards\\items_en_012.png",
+    "card_name": "黄金圣杯",
+    "type": "神器/物品",
+    "assign_effect": "治疗2。本回合中你每花费一点本牌提供的治疗，名望+1。",
+    "once_per_round": "治疗6。本回合中每次治疗手牌中的一点创伤，抽取一张卡牌。",
+    "wiki": {
+      "wiki_text": ""
+    }
+  },
+  {
+    "id": "items_013",
+    "set": "items",
+    "set_idx": 13,
+    "image": "cards\\items_013.png",
+    "en_image": "cards\\items_en_013.png",
+    "card_name": "智慧之书",
+    "type": "神器/物品",
+    "assign_effect": "从手牌中去除一张行动卡牌。从高级行动供应区中获得一张与去除卡牌同色的高级行动卡牌，加入你的手牌。",
+    "once_per_round": "从手牌中去除一张行动卡牌。从法术供应区中获得一张与去除卡牌同色的法术卡牌，加入你的手牌，并且获得一颗同色魔晶，放入物品栏。",
+    "wiki": {}
+  },
+  {
+    "id": "items_014",
+    "set": "items",
+    "set_idx": 14,
+    "image": "cards\\items_014.png",
+    "en_image": "cards\\items_en_014.png",
+    "card_name": "皓日护符",
+    "type": "神器/物品",
+    "assign_effect": "获得一个金色魔力标记。在黑夜中打出本卡牌，森林的移动费用降低至3，你可以使用金色魔力，并且你可以翻开相邻城防地点和遗迹中的驻军，就好像现在是白昼。",
+    "once_per_round": "与基本效果相同，但你得到三个金色魔力标记而非一个。",
+    "wiki": {}
+  },
+  {
+    "id": "items_015",
+    "set": "items",
+    "set_idx": 15,
+    "image": "cards\\items_015.png",
+    "en_image": "cards\\items_en_015.png",
+    "card_name": "黑暗护符",
+    "type": "神器/物品",
+    "assign_effect": "获得一个任意颜色的魔力标记。在白昼中打出本卡牌，沙漠的移动费用降低至3并且你可以使用黑色魔力，就好像现在是黑夜。",
+    "once_per_round": "与基本效果相同，但你得到三个任意颜色的魔力标记而非一个。",
+    "wiki": {}
+  },
+  {
+    "id": "items_016",
+    "set": "items",
+    "set_idx": 16,
+    "image": "cards\\items_016.png",
+    "en_image": "cards\\items_en_016.png",
+    "card_name": "星辰之弓",
+    "type": "神器/物品",
+    "assign_effect": "打出本卡牌时，从手牌中弃掉任意数量的卡牌。以此方式弃掉的每张卡牌使你获得远程攻击2。当前战斗阶段中你每击败一个敌人名望+1。",
+    "once_per_round": "本回合中你每次远程攻击或翻倍，或变为同样元素的攻城攻击。你也可以使任何攻城攻击翻倍，但这些攻击会变成同样元素的远程攻击。",
+    "wiki": {}
+  },
+  {
+    "id": "items_017",
+    "set": "items",
+    "set_idx": 17,
+    "image": "cards\\items_017.png",
+    "en_image": "cards\\items_en_017.png",
+    "card_name": "指挥旌旗",
+    "type": "神器/物品",
+    "assign_effect": "影响力4。本回合中如果你招募部队，可以将本卡牌分配给这支部队，代替指挥标记。部队精力耗尽时将本卡牌翻面，重整部队时将本卡牌翻回正面。",
+    "once_per_round": "获得名望+2。从部队供应区免费招募任意一支部队。(如果你已经达到指挥上限，你必须先解散你的一支部队。)",
+    "wiki": {}
+  },
+  {
+    "id": "items_018",
+    "set": "items",
+    "set_idx": 18,
+    "image": "cards\\items_018.png",
+    "en_image": "cards\\items_en_018.png",
+    "card_name": "强韧旌旗",
+    "type": "神器/物品",
+    "assign_effect": "将本卡牌分配给一支你控制的部队。每轮一次，这支部队即将受到创伤时，将本卡牌翻面，忽略这点创伤以及其产生的任何附加效果。每次战斗中这支部队仍然只能被分配一次伤害。",
+    "once_per_round": "任何时候，战斗中除外：完全治疗你所有的部队。",
+    "wiki": {}
+  },
+  {
+    "id": "items_019",
+    "set": "items",
+    "set_idx": 19,
+    "image": "cards\\items_019.png",
+    "en_image": "cards\\items_en_019.png",
+    "card_name": "灵魂收割者",
+    "type": "神器/物品",
+    "assign_effect": "攻击3。本次攻击每击败一个敌人获得一颗魔晶，加入物品栏。如果敌人具有火焰抗性你可以选择红色，具有寒冰抗性你可以选择蓝色，具有物理抗性你可以选择绿色。你永远可以选择白色。",
+    "once_per_round": "攻击8。在当前战斗阶段中每击败一个敌人获得一颗魔晶，效果同上。",
+    "wiki": {
+      "wiki_text": ""
+    }
+  },
+  {
+    "id": "items_020",
+    "set": "items",
+    "set_idx": 20,
+    "image": "cards\\items_020.png",
+    "en_image": "cards\\items_en_020.png",
+    "card_name": "亡君之盾",
+    "type": "神器/物品",
+    "assign_effect": "格挡6，或对两次不同的攻击格挡4。",
+    "once_per_round": "冰火格挡8，或对最多三次不同的攻击冰火格挡4。",
+    "wiki": {}
+  },
+  {
+    "id": "items_021",
+    "set": "items",
+    "set_idx": 21,
+    "image": "cards\\items_021.png",
+    "en_image": "cards\\items_en_021.png",
+    "card_name": "德鲁伊法杖",
+    "type": "神器/物品",
+    "assign_effect": "弃掉一张卡牌。根据该卡牌颜色，你获得：白色：在已翻开的地图上移动最多2格，停留在安全格上；蓝色：获得任意一种颜色的2颗魔晶；红色：重整一支最高3级的部队；绿色：治疗3。",
+    "once_per_round": "在以上选项中选择两项，但无须弃掉卡牌。",
+    "wiki": {
+      "wiki_text": ""
+    }
+  },
+  {
+    "id": "items_022",
+    "set": "items",
+    "set_idx": 22,
+    "image": "cards\\items_022.png",
+    "en_image": "cards\\items_en_022.png",
+    "card_name": "启迪头环",
+    "type": "神器/物品",
+    "assign_effect": "使用公共技能供应区中任意一个（包括你自己的）非互动技能。如果该技能每回合均能使用（不会翻面的技能），使用两次技能效果。",
+    "once_per_round": "拿取公共技能供应区中任意一个（包括你自己的）技能，保留至游戏结束，如同升级时获得一样。",
+    "wiki": {}
+  },
+  {
+    "id": "items_023",
+    "set": "items",
+    "set_idx": 23,
+    "image": "cards\\items_023.png",
+    "en_image": "cards\\items_en_023.png",
+    "card_name": "法术宝典",
+    "type": "神器/物品",
+    "assign_effect": "弃掉一张任意颜色的卡牌。使用法术供应区中一张同色法术卡牌的基本效果，但无需支付其魔力费用。",
+    "once_per_round": "弃掉一张任意颜色的卡牌。使用法术供应区中一张同色法术卡牌的强力效果，但无需支付其魔力费用。即使在白昼时也可以这么做。",
+    "wiki": {}
+  },
+  {
+    "id": "items_024",
+    "set": "items",
+    "set_idx": 24,
+    "image": "cards\\items_024.png",
+    "en_image": "cards\\items_en_024.png",
+    "card_name": "神秘宝盒",
+    "type": "神器/物品",
+    "assign_effect": "回合结束时，将翻开的神器放到神器牌库底；如果你没有使用神秘宝盒，则神秘宝盒返回手牌中；如果你将其作为旌旗分配给部队，则将神秘宝盒弃掉。",
+    "once_per_round": "移除并翻开神器牌库顶的一张卡牌。本回合中，你可以将神秘宝盒作为该神器使用。如果这么做，名望+1。",
+    "wiki": {
+      "wiki_text": ""
+    }
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "flag_000",
+    "set": "flag",
+    "set_idx": 0,
+    "image": "cards\\flag_000.png",
+    "en_image": "cards\\flag_en_000.png"
+  },
+  {
+    "id": "flag_001",
+    "set": "flag",
+    "set_idx": 1,
+    "image": "cards\\flag_001.png",
+    "en_image": "cards\\flag_en_001.png"
+  },
+  {
+    "id": "flag_002",
+    "set": "flag",
+    "set_idx": 2,
+    "image": "cards\\flag_002.png",
+    "en_image": "cards\\flag_en_002.png",
+    "wiki": {}
+  },
+  {
+    "id": "flag_003",
+    "set": "flag",
+    "set_idx": 3,
+    "image": "cards\\flag_003.png",
+    "en_image": "cards\\flag_en_003.png",
+    "wiki": {}
+  },
+  {
+    "id": "flag_004",
+    "set": "flag",
+    "set_idx": 4,
+    "image": "cards\\flag_004.png",
+    "en_image": "cards\\flag_en_004.png"
+  },
+  {
+    "id": "flag_005",
+    "set": "flag",
+    "set_idx": 5,
+    "image": "cards\\flag_005.png",
+    "en_image": "cards\\flag_en_005.png",
+    "wiki": {}
+  }
+]
