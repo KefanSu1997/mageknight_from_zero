@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-## Important Note：
+# Important Note：
 
 1. 回复使用中文
 
@@ -8,11 +8,85 @@
 
 3. 在修复bug过程中，当一次代码修改后导致编译bug大量增加时，应该首先进行回退，撤销修改，然后重新思考解决方案
 
-4. 当出现API调用失败时，表明上下文到达上限，主动使用/compact之后继续之前的工作
+4. vibe_coding/ccr 是属于你的工作记录文件夹，你可以在该文件夹中记录工作中的计划、思路、完成进度等等，方便之后查阅。
+
+5. 当出现API调用失败时，表明上下文到达上限，主动使用/compact之后继续之前的工作 
+   
+   
 
 ---
 
+# Git & PR Workflow Rules
+
+1. Never commit to main directly. Always create a new branch from origin/main:
+   - Branch name: feat/<short-slug> or fix/<short-slug>
+2. Before coding:
+   - Run: git fetch origin && git checkout -b <branch> origin/main
+3. After changes:
+   - Format & lint (use repo scripts): `make fmt && make lint` (或 npm/pnpm / python 脚本)
+   - Run tests: `make test`（或自定义 test 命令）
+4. Create atomic commits using the repository's commit template. Keep diffs small and focused.
+5. Push and open a Pull Request:
+   - Title uses Conventional Commit style.
+   - PR description must include: Why / What / How to test / Risks / Related issues.
+6. Never force-push unless explicitly instructed.
+7. If conflicts occur:
+   - Rebase onto origin/main: `git fetch origin && git rebase origin/main`
+   - Resolve conflicts and run tests again.
+8. For any automated file generation (codegen, assets lists), include reproducible commands in PR body.
+
+You are operating in a Git repo. Follow the repo's Git & PR Workflow Rules strictly:
+
+
+
+- Create a new branch from origin/main: feat/<slug>
+- Make minimal, reviewable commits using the commit template.
+- Run: format, lint, tests before committing.
+- Show me `git diff` before staging.
+- Push branch and open a PR with a detailed description (Why/What/How to test/Risks).
+- Never push to main; never force-push unless I say so.
+
+# Git 命令使用规范：
+
+    # 新建功能分支
+    git fetch origin
+    git checkout -b feat/xxx origin/main
+    
+    # 查看改动 / 暂存 / 提交
+    git status
+    git add -A
+    git commit -m "feat(core): add inference monitor with CLI entries
+    
+    Why:
+    - need to track GPU usage under vLLM
+    
+    What:
+    - add monitor.py and CLI flags
+    - integrate with existing runner
+    
+    How to test:
+    - python monitor.py --dry-run
+    "
+    
+    # 同步远端
+    git push -u origin feat/xxx
+    
+    # 基于 main 更新分支（保持线性历史）
+    git fetch origin
+    git rebase origin/main
+    
+    # 打 PR（GitHub CLI，CCR 也能用）
+    gh pr create --fill --base main --head feat/xxx
+    gh pr view --web
+    
+    # 代码审查后合并（保护分支+CI 通过）
+    gh pr merge --squash
+
+
+
 # Unity 编译错误查看
+
+
 
 当你需要查看 Unity 项目的编译报错时，请调用 `unity-mcp` 提供的工具。
 

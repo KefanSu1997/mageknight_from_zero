@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -11,6 +12,10 @@ public class DeckRuntime : MonoBehaviour
     public DeckListSO deckListSo;         // Drag "StarterDeck.asset" here
     public List<CardSO> drawPile { get; private set; }
     public Stack<CardSO> discard = new();
+
+    public event Action DeckStateChanged;
+
+    private void NotifyStateChanged() => DeckStateChanged?.Invoke();
 
     /* NEW */ void Awake()
     {
@@ -30,8 +35,17 @@ public class DeckRuntime : MonoBehaviour
 
     public void Shuffle()
     {
-        if (drawPile == null || drawPile.Count == 0) return;    // guard clause
-        drawPile = drawPile.OrderBy(_ => Random.value).ToList(); /* shuffle idiom :contentReference[oaicite:2]{index=2} */
+        if (drawPile == null)
+        {
+            drawPile = new List<CardSO>();
+        }
+
+        if (drawPile.Count > 0)
+        {
+            drawPile = drawPile.OrderBy(_ => UnityEngine.Random.value).ToList(); /* shuffle idiom :contentReference[oaicite:2]{index=2} */
+        }
+
+        NotifyStateChanged();
     }
 
     public CardSO Draw()
@@ -39,10 +53,14 @@ public class DeckRuntime : MonoBehaviour
         if (drawPile == null || drawPile.Count == 0)
         {
             Recycle();
-            if (drawPile.Count == 0) return null;               // still empty
+            if (drawPile == null || drawPile.Count == 0)
+            {
+                return null;               // still empty
+            }
         }
         var card = drawPile[0];
         drawPile.RemoveAt(0);
+        NotifyStateChanged();
         return card;
     }
 
@@ -54,5 +72,14 @@ public class DeckRuntime : MonoBehaviour
         Shuffle();
     }
 
-    public void Discard(CardSO c) => discard.Push(c);
+    public void Discard(CardSO c)
+    {
+        if (c == null)
+        {
+            return;
+        }
+
+        discard.Push(c);
+        NotifyStateChanged();
+    }
 }
