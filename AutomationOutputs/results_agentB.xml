@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<test-run name="MageKnight_from_zero" fullname="MageKnight_from_zero" result="Passed" duration="0.029355" passed="1" failed="0" skipped="0" inconclusive="0" asserts="0" total="1">
+  <test-suite name="MageKnightTests.dll" fullname="D:/study and work/code/unity-MK-test/wk-agentB/Library/ScriptAssemblies/MageKnightTests.dll" result="Passed" duration="0.024715" passed="1" failed="0" skipped="0" inconclusive="0" asserts="0" total="1">
+    <test-suite name="MK" fullname="MK" result="Passed" duration="0.024253" passed="1" failed="0" skipped="0" inconclusive="0" asserts="0" total="1">
+      <test-suite name="Tests" fullname="MK.Tests" result="Passed" duration="0.021802" passed="1" failed="0" skipped="0" inconclusive="0" asserts="0" total="1">
+        <test-suite name="demo" fullname="MK.Tests.demo" result="Passed" duration="0.021407" passed="1" failed="0" skipped="0" inconclusive="0" asserts="0" total="1">
+          <test-suite name="SphereTest" fullname="MK.Tests.demo.SphereTest" result="Passed" duration="0.020679" passed="1" failed="0" skipped="0" inconclusive="0" asserts="0" total="1">
+            <test-case name="SphereExists" fullname="MK.Tests.demo.SphereTest.SphereExists" result="Passed" duration="0.011246" passed="1" failed="0" skipped="0" inconclusive="0" asserts="0" total="1" />
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
