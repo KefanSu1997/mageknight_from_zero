@@ -1,3 +1,4 @@
+using UnityEditor;
 #if UNITY_EDITOR
 using System;
 using System.Globalization;
@@ -12,6 +13,10 @@ public static class CIHooks
 {
     public static void CompileAndQuit()
     {
+        AssetDatabase.Refresh();
+        EditorApplication.Exit(0);
+    }
+}
         // 方法能被调用即意味着脚本编译成功，直接以 0 退出。
         EditorApplication.Exit(0);
     }
