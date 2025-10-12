@@ -9,11 +9,26 @@ namespace MageKnight.SceneAutomation.Editor
         private const string DeckManaConfigRelativePath = "AutomationConfigs/part1_deckmana.json";
         private const string DeckButtonPath = "Canvas/Part1TestLayout/ControlColumn/Buttons/测试牌库系统Button";
         private const string ManaButtonPath = "Canvas/Part1TestLayout/ControlColumn/Buttons/测试魔力池Button";
+        private const string CombatConfigRelativePath = "AutomationConfigs/part1_combat.json";
+        private const string ExplorationConfigRelativePath = "AutomationConfigs/part1_exploration_recruitment.json";
+        private const string CombatButtonPath = "Canvas/Part1TestLayout/ControlColumn/Buttons/测试战斗系统Button";
 
         [MenuItem("Tools/Scene Automation/Run DeckMana Automation", priority = 2010)]
         private static void RunDeckManaAutomation()
         {
             SceneAutomationCommand.RunFromProjectRelativeConfig(DeckManaConfigRelativePath);
+        }
+
+        [MenuItem("Tools/Scene Automation/Run Combat Automation", priority = 2011)]
+        private static void RunCombatAutomation()
+        {
+            SceneAutomationCommand.RunFromProjectRelativeConfig(CombatConfigRelativePath);
+        }
+
+        [MenuItem("Tools/Scene Automation/Run Exploration Recruitment Automation", priority = 2012)]
+        private static void RunExplorationRecruitmentAutomation()
+        {
+            SceneAutomationCommand.RunFromProjectRelativeConfig(ExplorationConfigRelativePath);
         }
 
         [MenuItem("Tools/Scene Automation/Debug/List Runtime Buttons", priority = 2090)]
@@ -57,6 +72,11 @@ namespace MageKnight.SceneAutomation.Editor
             Debug.Log(mana != null
                 ? $"[SceneAutomation] Found mana button path: {ManaButtonPath}"
                 : $"[SceneAutomation] Mana button missing: {ManaButtonPath}");
+
+            var combat = GameObject.Find(CombatButtonPath);
+            Debug.Log(combat != null
+                ? $"[SceneAutomation] Found combat button path: {CombatButtonPath}"
+                : $"[SceneAutomation] Combat button missing: {CombatButtonPath}");
         }
 
         private static string GetHierarchyPath(Transform transform)

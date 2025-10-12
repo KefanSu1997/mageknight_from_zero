@@ -63,7 +63,8 @@ namespace MageKnight.SceneAutomation
 
             if (_request.initialDelaySeconds > 0f)
             {
-                Debug.LogWarning("[SceneAutomation] initialDelaySeconds is currently ignored; encode waits as explicit steps if needed.");
+                Debug.Log($"[SceneAutomation] Waiting initial delay: {_request.initialDelaySeconds:F3}s");
+                yield return new WaitForSecondsRealtime(_request.initialDelaySeconds);
             }
 
             if (_request.captureInitialView)
@@ -136,11 +137,18 @@ namespace MageKnight.SceneAutomation
             yield return ExecuteClick(button);
             Debug.Log($"[SceneAutomation] Clicked button: {label}");
 
-            var waitSeconds = step.waitAfterSeconds > 0f ? step.waitAfterSeconds : _request.defaultWaitAfterSeconds;
+            var waitSeconds = step.waitAfterSeconds >= 0f ? step.waitAfterSeconds : _request.defaultWaitAfterSeconds;
+            if (waitSeconds < 0f)
+            {
+                waitSeconds = 0f;
+            }
+
             if (waitSeconds > 0f)
             {
-                Debug.Log($"[SceneAutomation] Step wait requested: {waitSeconds:F3}s (ignored)");
+                Debug.Log($"[SceneAutomation] Waiting after step: {waitSeconds:F3}s");
+                yield return new WaitForSecondsRealtime(waitSeconds);
             }
+
 
             yield return null;
             yield return CaptureAndRecordStep(label, step.buttonPath, true, record);

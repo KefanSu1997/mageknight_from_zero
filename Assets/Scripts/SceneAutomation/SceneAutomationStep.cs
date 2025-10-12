@@ -10,6 +10,10 @@ namespace MageKnight.SceneAutomation
     {
         public string buttonPath;
         public string label;
-        public float waitAfterSeconds = 1f;
+
+        /// <summary>
+        /// Seconds to wait after the step completes; set to -1 to use the request default.
+        /// </summary>
+        public float waitAfterSeconds = -1f;
     }
 }

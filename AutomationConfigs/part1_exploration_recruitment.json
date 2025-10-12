@@ -1,0 +1,25 @@
+{
+  "scenePath": "Assets/Scenes/Part1/Part1_ExplorationRecruitmentTest.unity",
+  "screenshotsDirectory": "AutomationOutputs/Part1Exploration/captures",
+  "reportPath": "AutomationOutputs/Part1Exploration/report.json",
+  "captureInitialView": true,
+  "initialDelaySeconds": 0.5,
+  "defaultWaitAfterSeconds": 0.7,
+  "steps": [
+    {
+      "buttonPath": "Canvas/Part1TestLayout/ControlColumn/Buttons/测试探索系统Button",
+      "label": "首次探索",
+      "waitAfterSeconds": 0.8
+    },
+    {
+      "buttonPath": "Canvas/Part1TestLayout/ControlColumn/Buttons/测试探索系统Button",
+      "label": "继续探索",
+      "waitAfterSeconds": 0.8
+    },
+    {
+      "buttonPath": "Canvas/Part1TestLayout/ControlColumn/Buttons/测试招募系统Button",
+      "label": "尝试招募",
+      "waitAfterSeconds": 0.8
+    }
+  ]
+}

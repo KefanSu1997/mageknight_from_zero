@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML xmlns="UnityEngine.UIElements">
+  <Style src="DeckViewer.uss" />
+  <VisualElement name="Page_Deck" class="page">
+    <Label  name="Txt_Title" class="title" text="Deck Viewer" />
+    <VisualElement name="VE_Grid"  class="grid" />
+    <Button name="Btn_Close" class="btn"   text="Close" />
+  </VisualElement>
+</UXML>
