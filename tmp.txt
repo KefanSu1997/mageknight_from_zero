@@ -1,0 +1,161 @@
+using System.Collections.Generic;
+using UnityEngine;
+
+public class HandManager : MonoBehaviour
+{
+    public DeckRuntime deck;          // Inspector 拖入
+    public CardRuntime cardPrefab;    // 拖 CardView.prefab
+    public Transform handRoot;        // Canvas 下水平布局空物体
+
+    void Awake()
+    {
+        if (deck == null)
+        {
+            Debug.LogError("HandManager: DeckRuntime not assigned!");
+        }
+        if (cardPrefab == null)
+        {
+            Debug.LogError("HandManager: CardRuntime prefab not assigned!");
+        }
+        if (handRoot == null)
+        {
+            Debug.LogWarning("HandManager: handRoot not assigned, defaulting to this transform.");
+            handRoot = transform;
+        }
+    }
+
+    void Start () => Draw(5);         // 开局抽五张
+
+    public void Draw(int n = 1)
+    {
+        if (deck == null || cardPrefab == null)
+        {
+            Debug.LogError("Deck or Card Prefab not set up in HandManager, cannot draw cards.");
+            return;
+        }
+
+        for (int i = 0; i < n; i++)
+        {
+            var data = deck.Draw();
+            if (data == null)
+            {
+                Debug.LogWarning("HandManager: Deck is empty, cannot draw more cards.");
+                return;             // deck ran out
+            }
+            Debug.Log($"HandManager drawing card: {data.name}");
+            var view = Instantiate(cardPrefab, handRoot);
+            view.Init(data);
+        }
+        
+        // 重新排列手牌
+        ArrangeCards();
+    }
+
+    public void ClearHand()
+    {
+        if (handRoot == null)
+        {
+            return;
+        }
+
+        for (int i = handRoot.childCount - 1; i >= 0; i--)
+        {
+            var child = handRoot.GetChild(i);
+            if (child != null)
+            {
+                Destroy(child.gameObject);
+            }
+        }
+    }
+
+    public void ResetHand(int cardsToDraw = 5)
+    {
+        Debug.Log("[HandManager] ResetHand: clearing current hand");
+        ClearHand();
+        Draw(cardsToDraw);
+        Debug.Log("[HandManager] ResetHand: draw complete");
+    }
+
+
+    private void ArrangeCards()
+    {
+        if (handRoot == null)
+        {
+            return;
+        }
+
+        var handRootRect = handRoot as RectTransform;
+        var cardRects = new List<RectTransform>();
+        for (int i = 0; i < handRoot.childCount; i++)
+        {
+            var child = handRoot.GetChild(i);
+            if (child == null)
+            {
+                continue;
+            }
+
+            var go = child.gameObject;
+            if (go == null || !go.activeSelf)
+            {
+                continue;
+            }
+
+            if (child is RectTransform rect)
+            {
+                cardRects.Add(rect);
+            }
+        }
+
+        if (cardRects.Count == 0)
+        {
+            return;
+        }
+
+        float cardWidth = cardPrefab != null
+            ? cardPrefab.GetComponent<RectTransform>()?.rect.width ?? 150f
+            : 150f;
+
+        if (cardRects[0].rect.width > 0f)
+        {
+            cardWidth = cardRects[0].rect.width;
+        }
+
+        const float spacing = 30f;
+        float totalWidth = (cardRects.Count * cardWidth) + ((cardRects.Count - 1) * spacing);
+        float startX = -totalWidth / 2f + cardWidth / 2f;
+
+#if UNITY_EDITOR
+        var rootWidth = handRootRect != null ? handRootRect.rect.width : 0f;
+        Debug.Log($"[HandManager] Layout start — root width: {rootWidth}, cardWidth: {cardWidth}, totalWidth: {totalWidth}, startX: {startX}");
+#endif
+
+        for (int i = 0; i < cardRects.Count; i++)
+        {
+            var rect = cardRects[i];
+            if (rect == null)
+            {
+                continue;
+            }
+
+            rect.anchorMin = rect.anchorMax = new Vector2(0.5f, 0f);
+            rect.pivot = new Vector2(0.5f, 0f);
+            rect.localScale = Vector3.one;
+            rect.anchoredPosition = new Vector2(startX + i * (cardWidth + spacing), 0f);
+            rect.SetSiblingIndex(i);
+
+#if UNITY_EDITOR
+            Debug.Log($"[HandManager] Card {i} anchoredPosition: {rect.anchoredPosition}, size: {rect.rect.size}");
+#endif
+        }
+    }
+
+
+
+    
+    // 供Unity编辑器调用的方法，用于手动重新排列当前手牌
+    [ContextMenu("Arrange Cards")]
+    public void LayoutCardsForEditor()
+    {
+        ArrangeCards();
+    }
+}

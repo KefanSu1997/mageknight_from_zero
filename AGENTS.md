@@ -16,7 +16,16 @@
 
 7. vibe_coding/codex 是属于你的工作记录文件夹，每次进行代码修改后，都要在该文件夹中记录工作中的计划、思路、完成进度等等，方便之后我进行查阅，同时你也可以从中查找有用的信息。
 
-8. vibe_coding/codex/project_experience 中记录了过往解决问题的经验和教训，你遇到问题时可以查阅。当你解决了新的问题时，必须把经验和教训记录到该文件夹中，以供之后查阅。
+8. vibe_coding/codex/project_experience 中记录了过往解决问题的经验和教训，你遇到问题时可以查阅。当你解决了新的问题时，必须把经验和教训记录到该文件夹中，以供之后查阅。记录经验教训后，也必须在本文件中更新经验索引：一句话总结作为索引，加上全部经验对应文件路径。
+
+9. 目前用到的unity路径为'D:\Unity\Editor\2023.2.20f1c1\Editor\Unity.exe'，供你参考
+
+## 经验索引
+
+- DeckViewer 浮窗调试：Canvas 排序、RectTransform sizeDelta 与烟雾测试要点 —— `vibe_coding/codex/project_experience/deck_discard_viewer_notes.md`
+- DeckMana 布局：ScrollRect 高度计算与自动化截图校准 —— `vibe_coding/codex/project_experience/deckmana_layout_scrollable_log.md`
+- 字体修复：TMP 缺字回退与资源整理流程 —— `vibe_coding/codex/project_experience/font_fix_summary.md`
+- 自动化等待：场景执行步进与实时等待的调优 —— `vibe_coding/codex/project_experience/scene_automation_waits.md`
 
 ---
 
@@ -65,6 +74,156 @@
     原因（如按钮缺失），并保留失败截图。
   - 截图：…/captures/000_Scene Start.png（起始视图）、001_测试牌库系统.png、002_测试魔力池.png，用于比对 UI 变化。
   - 常见告警：运行中可能出现 msyh SDF 字体缺字警告，不影响逻辑；如需消除，可补充 TMP 字体或配置 fallback。
+
+# Unity UI 认知包
+
+## 1. UI 词汇与架构
+
+### UI Toolkit
+
+- **核心文件**
+  
+  - **UXML**：定义结构，类似 HTML。
+  
+  - **USS**：定义样式，类似 CSS。
+  
+  - **PanelSettings**：控制渲染、分辨率缩放等。
+
+- **常见元素**
+  
+  - `VisualElement`（通用容器）
+  
+  - `Label`（文本）
+  
+  - `Button`（按钮，含 `text` 属性）
+  
+  - `Image`（图像，需在运行时绑定 Texture）
+
+- **布局**
+  
+  - Flexbox 模型：`flex-direction`, `justify-content`, `align-items`。
+  
+  - 常见单位：px → 无单位数字，百分比可用。
+
+- **运行方式**
+  
+  - 在场景中挂载 `UIDocument`，指向 UXML 与 PanelSettings。
+  
+  - UXML 内部元素可通过 `rootVisualElement.Q<T>("name")` 查询。
+
+### uGUI (旧系统)
+
+- **核心组件**
+  
+  - `Canvas`（必备根，决定渲染模式与分辨率）
+  
+  - `CanvasScaler`（缩放适配）
+  
+  - `GraphicRaycaster`（事件）
+  
+  - `RectTransform`（替代 Transform，支持锚点与对齐）
+
+- **常见控件**
+  
+  - `Image`（图像，挂 Sprite）
+  
+  - `TextMeshProUGUI`（推荐文本控件）
+  
+  - `Button`（组合 Image + Button 脚本 + 子 Text）
+
+- **特点**
+  
+  - 手工管理 RectTransform 的锚点/对齐。
+  
+  - 分层：Sorting Layer / Order in Layer。
+
+### 两者并存注意
+
+- UI Toolkit 用 PanelSettings 控制渲染顺序；uGUI 用 Canvas 的 Sorting Layer。
+
+- 如果同时存在，要确保 PanelSettings 的排序不被 Canvas 遮挡。
+
+- 事件系统（EventSystem、Input System）要确认兼容。
+
+---
+
+## 2. 项目约定
+
+为了减少 agent 的歧义，请遵守以下规范：
+
+- **命名规则**
+  
+  - 页面容器：`Page_XXX`
+  
+  - 通用容器：`VE_XXX`
+  
+  - 按钮：`Btn_XXX`
+  
+  - 图片：`Img_XXX`
+  
+  - 文本：`Txt_XXX`
+
+- **目录结构**
+  
+  - 图片：`Assets/UI/Images`
+  
+  - UXML/USS：`Assets/UI/Views`
+  
+  - UI 脚本：`Assets/Scripts/UI`
+  
+  - Resources 路径：`Resources/UI/Images/…`（运行时加载用）
+
+- **场景锚点**
+  
+  - 始终存在 `UIRoot` 节点。
+  
+  - UI Toolkit：`UIRoot` 上挂 `UIDocument`（指向 `.uxml` + `PanelSettings`）。
+  
+  - uGUI：`UIRoot` 下有 `Canvas`（含 CanvasScaler + GraphicRaycaster）。
+
+- **MCP 工具调用（unity-mcp）**
+  
+  - `manage_asset`：写入/更新 UXML、USS、Sprites 等。
+  
+  - `manage_gameobject`：创建 GameObject，添加组件（如 UIDocument、Canvas）。
+  
+  - `manage_scene`：加载/保存测试场景。
+
+---
+
+## 3. UI 可见性检查清单
+
+在调试 UI 渲染问题时，逐项检查：
+
+### UI Toolkit
+
+- `UIDocument` 是否启用？
+
+- `UIDocument.visualTreeAsset` 是否正确引用？
+
+- `PanelSettings` 是否绑定，渲染层级是否正确？
+
+- `rootVisualElement` 下元素是否被 `display: none` 或 `visibility: hidden`？
+
+- 图片是否在运行时正确绑定？（异步 Addressables 需要在主线程赋值）
+
+### uGUI
+
+- `Canvas` 是否启用，`Canvas.enabled == true`？
+
+- `CanvasGroup.alpha` 是否为 1，`interactable` 与 `blocksRaycasts` 是否启用？
+
+- `Image.color.a` 是否透明？
+
+- 是否被 `Mask` / `RectMask2D` 裁切？
+
+- 相机渲染层级与 Canvas Sorting Order 是否正确？
+
+### 异步加载注意
+
+- Addressables/Resources 回调要在主线程执行 UI 赋值。
+
+- 赋值后最好调用 `LayoutRebuilder.ForceRebuildLayoutImmediate` 以刷新布局。
 
 # Git & PR Workflow Rules
 
@@ -195,3 +354,236 @@ gh pr merge --squash
 
 - When modifying files, prefer `Assets/Scripts/` for runtime logic and avoid touching `ProjectSettings/` unless required.
 - Do not edit generated `Library/` artifacts. Follow this document’s scope rules when proposing changes.
+
+# 附录：HTML/CSS → UXML/USS 映射表
+
+## 1. HTML 标签 → UXML 元素
+
+| HTML 标签               | 对应 UXML 元素                     | 说明                                  |
+| --------------------- | ------------------------------ | ----------------------------------- |
+| `<div>`               | `<VisualElement>`              | 通用容器，默认无样式。                         |
+| `<span>`              | `<Label>`                      | 内联文本（无换行）。                          |
+| `<p>`                 | `<Label>`                      | 段落文本。                               |
+| `<h1>` `<h2>` `<h3>`  | `<Label>`                      | 大标题/中标题/小标题，需通过 USS 设置 `font-size`。 |
+| `<ul>` `<ol>`         | `<VisualElement>`              | 列表容器，使用 `flex-direction: column;`。  |
+| `<li>`                | `<Label>`                      | 列表项文本，前缀符号需手动加。                     |
+| `<img>`               | `<Image>`                      | 仅定义占位，`image` 属性需运行时绑定。             |
+| `<button>`            | `<Button>`                     | 默认含 `Label` 子元素。                    |
+| `<input type="text">` | `<TextField>`                  | 单行输入框。                              |
+| `<textarea>`          | `<TextField multiline="true">` | 多行输入框。                              |
+| `<a>`                 | `<Label>` + 点击事件               | 超链接需手动添加事件。                         |
+
+---
+
+## 2. CSS 属性 → USS 样式
+
+| CSS 属性                       | USS 属性                    | 说明                                                                      |
+| ---------------------------- | ------------------------- | ----------------------------------------------------------------------- |
+| `display: flex`              | `display: flex`           | 支持，默认就是 flex。                                                           |
+| `flex-direction: row/column` | 同名                        | 横向/纵向布局。                                                                |
+| `justify-content`            | 同名                        | 支持 `flex-start`, `center`, `flex-end`, `space-between`, `space-around`。 |
+| `align-items`                | 同名                        | 支持 `flex-start`, `center`, `flex-end`, `stretch`。                       |
+| `width`, `height`            | `width`, `height`         | 单位去掉 `px`，如 `100px` → `100`。                                            |
+| `margin`, `padding`          | `margin`, `padding`       | 同 CSS 简写。                                                               |
+| `background-color`           | `background-color`        | 十六进制或 `rgb()`。                                                          |
+| `color`                      | `color`                   | 文本颜色。                                                                   |
+| `font-size`                  | `font-size`               | 文本大小。                                                                   |
+| `font-weight: bold`          | `-unity-font-style: bold` | 特殊写法。                                                                   |
+| `text-align`                 | `-unity-text-align`       | 取值：`upper-left`, `middle-center` 等。                                     |
+| `border`                     | 无原生支持                     | 需用 `border-color` + `border-width`。                                     |
+| `overflow: hidden/scroll`    | `overflow`                | Unity 2022+ 支持。                                                         |
+
+---
+
+## 3. 属性/事件映射
+
+| HTML 属性                     | UXML/USS 对应                          | 说明                          |
+| --------------------------- | ------------------------------------ | --------------------------- |
+| `id="foo"`                  | `name="foo"`                         | UXML 用 `name` 替代 HTML 的 id。 |
+| `class="bar"`               | `class="bar"`                        | 同 HTML，USS 用 `.bar` 选择器。    |
+| `src="img.png"` (img)       | 无                                    | Unity 不能直接写资源路径，需运行时绑定。     |
+| `onclick="..."`             | C# `button.clicked += () => { ... }` | 事件逻辑要写在脚本里。                 |
+| `placeholder="..."` (input) | `label="..."` (TextField)            | 占位符文本。                      |
+
+---
+
+## 4. 示例对照
+
+### HTML
+
+`<div class="container">  <h1>Hello World</h1>  <p class="desc">Welcome to UI Toolkit</p>  <button id="Btn_Start">Start</button> </div>`
+
+### 生成的 UXML
+
+`<UXML xmlns="UnityEngine.UIElements">  <VisualElement class="container">    <Label text="Hello World" class="h1"/>    <Label text="Welcome to UI Toolkit" class="desc"/>    <Button name="Btn_Start" text="Start"/>  </VisualElement> </UXML>`
+
+### USS
+
+`.container {  flex-direction: column;  align-items: center;  justify-content: center; }  .h1 {  font-size: 24;   -unity-font-style: bold; }  .desc {  font-size: 14;  color: #888888; }`
+
+好的 👍
+下面是一份完整的、**可直接放入你项目根目录的 `AGENT.md` 文件（中文版）**。
+它是专门给 Codex / Claude Router / MCP-Unity 等代码代理使用的协作说明文档，
+用于指导两个或更多 agent 在同一台电脑、同一 Unity 项目下安全并行开发。
+
+---
+
+## 📄 `AGENT.md` （中文版本）
+
+```markdown
+# 🧠 多智能体（Multi-Agent）并行开发指南  
+## —— MageKnight_from_zero 项目（Unity + Git Worktree）
+
+本仓库支持多个代码代理（如 Codex CLI、Claude Router、MCP-Unity）  
+在 **同一台电脑上并行开发**，通过 **Git Worktree** 创建独立工作区，  
+实现互不干扰的 Unity 编译、测试与合并流程。
+
+---
+
+## 一、环境初始化步骤（仅需执行一次）
+
+在主仓库根目录执行以下命令：
+
+```bash
+git fetch origin
+git worktree add ../wk-agentA -b feat/scene-test-A origin/main
+git worktree add ../wk-agentB -b feat/scene-test-B origin/main
+```
+
+| Agent | 分支名称                | 工作目录           | Unity 工程路径         |
+| ----- | ------------------- | -------------- | ------------------ |
+| A     | `feat/scene-test-A` | `../wk-agentA` | `D:\...\wk-agentA` |
+| B     | `feat/scene-test-B` | `../wk-agentB` | `D:\...\wk-agentB` |
+
+> 每个工作目录都是完整的 Unity 工程，拥有独立的 `Library/`、`Temp/`、`Logs/`。
+> 禁止两个 agent 在同一个目录下操作！
+
+---
+
+## 二、agent 工作流程（标准化指令）
+
+### Step 1. 进入自己的工作区
+
+```bash
+cd ../wk-agentA        # 或 ../wk-agentB
+git pull
+```
+
+### Step 2. 开发或创建场景
+
+例如：
+
+```
+Assets/Scenes/AgentA_TestScene.unity
+Assets/Scripts/Demo/RotateCube.cs
+```
+
+### Step 3. 运行编译检测（无界面模式）
+
+用于快速验证脚本是否能正常编译：
+
+```powershell
+"D:\Unity\Editor\2023.2.20f1c1\Editor\Unity.exe" `
+  -batchmode -nographics -quit `
+  -projectPath "D:\...\wk-agentA" `
+  -executeMethod CIHooks.CompileAndQuit `
+  -logFile "AutomationLogs/compile_agentA.log"
+```
+
+在wsl环境下运行unity编译：
+
+./scripts/unity_ci.sh -p <wk路径> -m <Compile|EditMode|PlayMode> -l <log> -r <xml>
+
+### Step 4. 运行自动化测试
+
+执行 Unity 自带的测试运行器（编辑器模式）：
+
+```powershell
+"C:\Program Files\Unity\Hub\Editor\<版本号>\Editor\Unity.exe" `
+  -batchmode -nographics -quit `
+  -projectPath "D:\...\wk-agentA" `
+  -runTests -testPlatform EditMode `
+  -testResults "AutomationOutputs/results_agentA.xml" `
+  -logFile "AutomationOutputs/test_agentA.log"
+```
+
+> 每个 agent 必须使用自己独立的日志与测试输出路径（logFile 与 testResults）。
+
+### Step 5. 提交与推送
+
+```bash
+git add .
+git commit -m "feat(agentA): 新增基础测试场景"
+git push -u origin feat/scene-test-A
+```
+
+---
+
+## 三、Unity 批处理编译脚本（必备）
+
+在项目中创建文件：
+**`Assets/Editor/CIHooks.cs`**
+
+内容如下：
+
+```csharp
+using UnityEditor;
+
+public static class CIHooks {
+    public static void CompileAndQuit() {
+        AssetDatabase.Refresh();
+        EditorApplication.Exit(0);
+    }
+}
+```
+
+此脚本用于支持命令行调用 Unity 进行无界面编译检测。
+
+---
+
+## 四、分支合并流程
+
+当所有 agent 的测试都通过后，按以下顺序合并：
+
+```bash
+git checkout main
+git pull
+git merge --no-ff feat/scene-test-A
+git merge --no-ff feat/scene-test-B
+git push origin main
+```
+
+随后再执行一次完整测试，确认主分支编译和运行均正常。
+
+---
+
+## 五、协作规则（必须遵守）
+
+* ❌ 不要在同一文件夹中同时运行两个 agent。
+
+* ✅ 每个 agent 使用独立的 `worktree` 目录。
+
+* 🪶 每个 agent 的 `-logFile`、`-testResults` 路径必须不同。
+
+* 🔒 对 `.unity`、`.prefab` 等共享文件，使用 Git LFS 锁定防止冲突：
+  
+  ```bash
+  git lfs lock Assets/Scenes/SharedScene.unity
+  git lfs unlock Assets/Scenes/SharedScene.unity
+  ```
+
+* 💾 Unity 的序列化模式需设为 **Force Text**（文本格式），减少合并冲突。
+
+* ✅ 所有提交必须是“可编译、可运行、测试通过”的版本。
+
+---
+
+## 六、常用命令速查表
+
+| 命令                                                | 功能说明           |
+| ------------------------------------------------- | -------------- |
+| `git worktree list`                               | 显示当前存在的工作区     |
+| `git worktree remove ../wk-agentA`                | 删除 agentA 的工作区 |
+| `Unity.exe -executeMethod CIHooks.CompileAndQuit` | 执行无界面编译检测      |
+| `Unity.exe -runTests …`                           | 执行自动化测试        |
+| `git lfs lock/unlock <文件>`                        | 锁定或解锁共享场景文件    |

@@ -1,0 +1,23 @@
+#Page_Deck {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24;
+}
+
+.title {
+  font-size: 24;
+}
+
+#VE_Grid {
+  display: flex;
+  flex-direction: row;
+  width: 800;
+  padding: 8;
+}
+
+#Btn_Close {
+  margin: 12;
+  width: 200;
+  height: 48;
+}

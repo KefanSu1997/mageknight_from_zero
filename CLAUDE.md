@@ -1,27 +1,227 @@
-# CLAUDE.md
+# Repository Guidelines
 
-# Important Note：
+## 注意事项：
 
-1. 回复使用中文
+1. 思考可以用英文，回复对话必须使用中文。
 
 2. 代码是给人看的，它只是碰巧可以运行。每次进行代码修改后，详细地汇报你修改的思路和具体修改的功能。
 
-3. 在修复bug过程中，当一次代码修改后导致编译bug大量增加时，应该首先进行回退，撤销修改，然后重新思考解决方案
+3. 确认是否存在编译错误必须按照“Unity 编译错误查看”这一部分的标准流程进行，获取unity console中的编译错误信息。
 
-4. vibe_coding/ccr 是属于你的工作记录文件夹，你可以在该文件夹中记录工作中的计划、思路、完成进度等等，方便之后查阅。
+4. 在完成代码修改后，必须确认是否存在编译错误，如果存在，继续修改直到无编译错误。
 
-5. 当出现API调用失败时，表明上下文到达上限，主动使用/compact之后继续之前的工作 
-   
-   
+5. 在修复bug过程中，当一次代码修改后导致编译bug大量增加时，应该首先进行回退，撤销修改，然后重新思考解决方案。
+
+6. 涉及测试场景的修改时，修改后必须运行自动化测试，检查运行效果。同样也必须确认是否存在编译错误，如有错误必须继续修改直到无编译错误。
+
+7. vibe_coding/ccr 是属于你的工作记录文件夹，每次进行代码修改后，都要在该文件夹中记录工作中的计划、思路、完成进度等等，方便之后我进行查阅，同时你也可以从中查找有用的信息。
+
+8. vibe_coding/ccr/project_experience 中记录了过往解决问题的经验和教训，你遇到问题时可以查阅。当你解决了新的问题时，必须把经验和教训记录到该文件夹中，以供之后查阅。
 
 ---
+
+# 自动化测试工具
+
+通用步骤概括
+
+1. 写配置：指定场景、截图/报告目录、按钮路径和等待时间。
+2. 触发执行：可在 Unity 菜单、或命令行 -executeMethod 下运行。
+3. 查看日志与报告：确认 Console 输出、report.json 状态与截图。
+4. 复盘异常（如有）：利用 Debug 菜单检查 Pending Request、按钮层级或缺失按钮警告，再调整配置重试。
+
+这套范例可直接复制，用于后续场景的自动化测试：只需仿照 JSON 更换 scenePath 与按钮路径，并重复上述流程即可。
+
+具体示例：DeckManaTest 自动化范例
+
+- 准备配置：在工程根目录创建 AutomationConfigs/part1_deckmana.json，约定 scenePath 指向 Assets/Scenes/Part1/
+  Part1_DeckManaTest.unity，按钮路径为 Canvas/Part1TestLayout/ControlColumn/Buttons/测试牌库系统Button、…/测试魔力池
+  Button，截图与报告输出到 AutomationOutputs/DeckManaTest/。
+
+- Unity 内运行
+  
+  - 菜单：Tools/Scene Automation/Run DeckMana Automation
+  
+  - 调试：如需核对当前请求或按钮路径，可使用 Tools/Scene Automation/Debug/Log Pending Request、…/Test Deck Button
+    Path、…/List Runtime Buttons。
+  
+  - 运行完成后 Unity Console 应输出：
+    
+    [SceneAutomation] 场景：Assets/Scenes/Part1/Part1_DeckManaTest.unity 状态：success 步骤数：3
+     [OK] Scene Start -> .../AutomationOutputs/DeckManaTest/captures/000_Scene Start.png
+     [OK] 测试牌库系统 -> .../AutomationOutputs/DeckManaTest/captures/001_测试牌库系统.png
+     [OK] 测试魔力池 -> .../AutomationOutputs/DeckManaTest/captures/002_测试魔力池.png
+
+- 命令行批处理（可选）
+  
+  "<Unity 编辑器路径>" -batchmode  
+  -projectPath "<工程根目录>"  
+  -executeMethod MageKnight.SceneAutomation.Editor.SceneAutomationCommand.RunFromCommandLine  
+  --scene-automation-config "<工程根目录>/AutomationConfigs/part1_deckmana.json"  
+  -quit
+
+- 验证结果
+  
+  - 报告：AutomationOutputs/DeckManaTest/report.json，status= success 表示流程通过；若失败，steps[*].message 将注明
+    原因（如按钮缺失），并保留失败截图。
+  - 截图：…/captures/000_Scene Start.png（起始视图）、001_测试牌库系统.png、002_测试魔力池.png，用于比对 UI 变化。
+  - 常见告警：运行中可能出现 msyh SDF 字体缺字警告，不影响逻辑；如需消除，可补充 TMP 字体或配置 fallback。
+
+# Unity UI 认知包
+
+## 1. UI 词汇与架构
+
+### UI Toolkit
+
+- **核心文件**
+  
+  - **UXML**：定义结构，类似 HTML。
+  
+  - **USS**：定义样式，类似 CSS。
+  
+  - **PanelSettings**：控制渲染、分辨率缩放等。
+
+- **常见元素**
+  
+  - `VisualElement`（通用容器）
+  
+  - `Label`（文本）
+  
+  - `Button`（按钮，含 `text` 属性）
+  
+  - `Image`（图像，需在运行时绑定 Texture）
+
+- **布局**
+  
+  - Flexbox 模型：`flex-direction`, `justify-content`, `align-items`。
+  
+  - 常见单位：px → 无单位数字，百分比可用。
+
+- **运行方式**
+  
+  - 在场景中挂载 `UIDocument`，指向 UXML 与 PanelSettings。
+  
+  - UXML 内部元素可通过 `rootVisualElement.Q<T>("name")` 查询。
+
+### uGUI (旧系统)
+
+- **核心组件**
+  
+  - `Canvas`（必备根，决定渲染模式与分辨率）
+  
+  - `CanvasScaler`（缩放适配）
+  
+  - `GraphicRaycaster`（事件）
+  
+  - `RectTransform`（替代 Transform，支持锚点与对齐）
+
+- **常见控件**
+  
+  - `Image`（图像，挂 Sprite）
+  
+  - `TextMeshProUGUI`（推荐文本控件）
+  
+  - `Button`（组合 Image + Button 脚本 + 子 Text）
+
+- **特点**
+  
+  - 手工管理 RectTransform 的锚点/对齐。
+  
+  - 分层：Sorting Layer / Order in Layer。
+
+### 两者并存注意
+
+- UI Toolkit 用 PanelSettings 控制渲染顺序；uGUI 用 Canvas 的 Sorting Layer。
+
+- 如果同时存在，要确保 PanelSettings 的排序不被 Canvas 遮挡。
+
+- 事件系统（EventSystem、Input System）要确认兼容。
+
+---
+
+## 2. 项目约定
+
+为了减少 agent 的歧义，请遵守以下规范：
+
+- **命名规则**
+  
+  - 页面容器：`Page_XXX`
+  
+  - 通用容器：`VE_XXX`
+  
+  - 按钮：`Btn_XXX`
+  
+  - 图片：`Img_XXX`
+  
+  - 文本：`Txt_XXX`
+
+- **目录结构**
+  
+  - 图片：`Assets/UI/Images`
+  
+  - UXML/USS：`Assets/UI/Views`
+  
+  - UI 脚本：`Assets/Scripts/UI`
+  
+  - Resources 路径：`Resources/UI/Images/…`（运行时加载用）
+
+- **场景锚点**
+  
+  - 始终存在 `UIRoot` 节点。
+  
+  - UI Toolkit：`UIRoot` 上挂 `UIDocument`（指向 `.uxml` + `PanelSettings`）。
+  
+  - uGUI：`UIRoot` 下有 `Canvas`（含 CanvasScaler + GraphicRaycaster）。
+
+- **MCP 工具调用（unity-mcp）**
+  
+  - `manage_asset`：写入/更新 UXML、USS、Sprites 等。
+  
+  - `manage_gameobject`：创建 GameObject，添加组件（如 UIDocument、Canvas）。
+  
+  - `manage_scene`：加载/保存测试场景。
+
+---
+
+## 3. UI 可见性检查清单
+
+在调试 UI 渲染问题时，逐项检查：
+
+### UI Toolkit
+
+- `UIDocument` 是否启用？
+
+- `UIDocument.visualTreeAsset` 是否正确引用？
+
+- `PanelSettings` 是否绑定，渲染层级是否正确？
+
+- `rootVisualElement` 下元素是否被 `display: none` 或 `visibility: hidden`？
+
+- 图片是否在运行时正确绑定？（异步 Addressables 需要在主线程赋值）
+
+### uGUI
+
+- `Canvas` 是否启用，`Canvas.enabled == true`？
+
+- `CanvasGroup.alpha` 是否为 1，`interactable` 与 `blocksRaycasts` 是否启用？
+
+- `Image.color.a` 是否透明？
+
+- 是否被 `Mask` / `RectMask2D` 裁切？
+
+- 相机渲染层级与 Canvas Sorting Order 是否正确？
+
+### 异步加载注意
+
+- Addressables/Resources 回调要在主线程执行 UI 赋值。
+
+- 赋值后最好调用 `LayoutRebuilder.ForceRebuildLayoutImmediate` 以刷新布局。
 
 # Git & PR Workflow Rules
 
 1. Never commit to main directly. Always create a new branch from origin/main:
-   - Branch name: feat/<short-slug> or fix/<short-slug>
+   - Branch name: feat/ or fix/
 2. Before coding:
-   - Run: git fetch origin && git checkout -b <branch> origin/main
+   - Run: git fetch origin && git checkout -b origin/main
 3. After changes:
    - Format & lint (use repo scripts): `make fmt && make lint` (或 npm/pnpm / python 脚本)
    - Run tests: `make test`（或自定义 test 命令）
@@ -37,9 +237,7 @@
 
 You are operating in a Git repo. Follow the repo's Git & PR Workflow Rules strictly:
 
-
-
-- Create a new branch from origin/main: feat/<slug>
+- Create a new branch from origin/main: feat/
 - Make minimal, reviewable commits using the commit template.
 - Run: format, lint, tests before committing.
 - Show me `git diff` before staging.
@@ -48,45 +246,43 @@ You are operating in a Git repo. Follow the repo's Git & PR Workflow Rules stric
 
 # Git 命令使用规范：
 
-    # 新建功能分支
-    git fetch origin
-    git checkout -b feat/xxx origin/main
-    
-    # 查看改动 / 暂存 / 提交
-    git status
-    git add -A
-    git commit -m "feat(core): add inference monitor with CLI entries
-    
-    Why:
-    - need to track GPU usage under vLLM
-    
-    What:
-    - add monitor.py and CLI flags
-    - integrate with existing runner
-    
-    How to test:
-    - python monitor.py --dry-run
-    "
-    
-    # 同步远端
-    git push -u origin feat/xxx
-    
-    # 基于 main 更新分支（保持线性历史）
-    git fetch origin
-    git rebase origin/main
-    
-    # 打 PR（GitHub CLI，CCR 也能用）
-    gh pr create --fill --base main --head feat/xxx
-    gh pr view --web
-    
-    # 代码审查后合并（保护分支+CI 通过）
-    gh pr merge --squash
+```
+# 新建功能分支
+git fetch origin
+git checkout -b feat/xxx origin/main
 
+# 查看改动 / 暂存 / 提交
+git status
+git add -A
+git commit -m "feat(core): add inference monitor with CLI entries
 
+Why:
+- need to track GPU usage under vLLM
+
+What:
+- add monitor.py and CLI flags
+- integrate with existing runner
+
+How to test:
+- python monitor.py --dry-run
+"
+
+# 同步远端
+git push -u origin feat/xxx
+
+# 基于 main 更新分支（保持线性历史）
+git fetch origin
+git rebase origin/main
+
+# 打 PR（GitHub CLI，CCR 也能用）
+gh pr create --fill --base main --head feat/xxx
+gh pr view --web
+
+# 代码审查后合并（保护分支+CI 通过）
+gh pr merge --squash
+```
 
 # Unity 编译错误查看
-
-
 
 当你需要查看 Unity 项目的编译报错时，请调用 `unity-mcp` 提供的工具。
 
@@ -99,158 +295,117 @@ You are operating in a Git repo. Follow the repo's Git & PR Workflow Rules stric
   - `@mcp-unity.execute_menu_item(path="...")`  
     在 Unity 中执行菜单命令（比如 `Assets/Reimport All`）。
 
-## Current Develop plan：see in DEVELOPMENT_PLAN.md
+## Project Structure & Module Organization
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+- `Assets/`: game code and content.
+  - `Assets/Scripts/`: gameplay/runtime code (C#).
+  - `Assets/Scenes/`: Unity scenes.
+  - `Assets/Tests/`: Unity Test Framework tests (`*Tests.cs`, assembly via `MageKnightTests.asmdef`).
+- `Packages/manifest.json`: package versions; manage via Unity Package Manager.
+- `ProjectSettings/`: Unity project settings.
+- `MageKnight_from_zero.sln` and `*.csproj`: generated build files for IDEs.
 
-## Overview
+## Build, Test, and Development Commands
 
-This is a **Unity 2023.x** project implementing the **Mage Knight** (魔法骑士) board game system. The project is structured as a digital card game with separate layers for Unity-specific code (MonoBehaviours) and pure game logic assemblies.
+- Open in Unity: use Unity Hub and target the project root.
+- Run tests (Unity CLI, EditMode): `"<Unity_Editor>\\Unity.exe" -batchmode -projectPath "." -runTests -testPlatform EditMode -testResults ".\\TestResults.xml" -quit`
+- Optional .NET tests (if configured): `dotnet test MageKnightTests.csproj`
+- Create a player build (Editor): File → Build Settings → Build.
+- Create a player build (CLI example, Windows): `"<Unity_Editor>\\Unity.exe" -batchmode -projectPath "." -buildWindows64Player ".\\Build\\MageKnight.exe" -quit`
 
-## Architecture Overview
+## Coding Style & Naming Conventions
 
-### Project Structure
+- C# with 4‑space indentation; UTF‑8 files with Unix or Windows line endings accepted.
+- Types/methods: PascalCase; local vars/params: camelCase; private fields: `_camelCase`.
+- One class per file; filename matches class (e.g., `ManaPool.cs`).
+- Keep MonoBehaviours lean; prefer plain C# classes for domain logic.
 
-```
-Assets/
-├── Scripts/              # Unity MonoBehaviour components
-├── Logic/                # Pure C# game logic (separate assembly)
-│   ├── Core/            # Constants, enums, utility classes
-│   ├── Data/            # Data models and JSON loading
-│   ├── Runtime/         # Game systems, state management
-│   └── CardEffects/     # 100+ card effect implementations
-├── Tests/               # NUnit tests for game logic
-├── GameData/           # Card assets and ScriptableObjects
-├── Prefabs/            # Unity prefabs (CardView.prefab)
-├── TextMesh Pro/       # UI and fonts
-└── AddressableAssetsData/
-```
+## Testing Guidelines
 
-### Assembly Structure
+- Place tests under `Assets/Tests/` and suffix files with `Tests` (e.g., `ManaPoolTests.cs`).
+- Prefer EditMode tests for logic in `Assets/Scripts/`.
+- Run via Unity Test Runner (Window → Test Runner) or CLI above.
+- Aim to cover rules/edge cases for core systems (combat, exploration, mana, market).
 
-- **MageKnight.Scripts**: Unity components (Monobehaviour)
-- **MageKnight.Logic**: Pure C# game engine (referenced by Scripts)
-- **MageKnightTests**: NUnit tests (references Logic only)
+## Commit & Pull Request Guidelines
 
-## Key Systems
+- Commits: imperative mood, concise subject, useful body when needed.
+- Conventional Commits encouraged (e.g., `feat: add terrain cost rules`).
+- PRs: include summary, linked issues, steps to test, and relevant screenshots/logs.
+- Keep PRs scoped; update or add tests for changed logic.
 
-### Card System
+## Security & Configuration Tips
 
-- **CardSO**: ScriptableObject base for all cards (Action, Spell, Item)
-- **DeckRuntime**: Unity component for managing draw/discard piles
-- **HandManager**: Unity component for hand visualization
-- **CardRuntime**: Runtime card instance for UI display
+- Do not commit `Library/`, `Temp/`, `Logs/`, `Build/`, or IDE caches; use `.gitignore`.
+- Packages are pinned via `Packages/manifest.json`; avoid manual edits to `Packages/packages-lock.json`.
 
-### Addressables
+## Agent‑Specific Notes
 
-- All card art loaded via Addressables (`ImagePath` in CardSO)
-- Cards are assigned unique IDs and organized by `CardSet`
+- When modifying files, prefer `Assets/Scripts/` for runtime logic and avoid touching `ProjectSettings/` unless required.
+- Do not edit generated `Library/` artifacts. Follow this document’s scope rules when proposing changes.
 
-### Game Flow
+# 附录：HTML/CSS → UXML/USS 映射表
 
-- **TurnEngine**: Manages player turns
-- **RoundClock**: Tracks day/night cycles
-- **ScenarioController**: Manages overall game state
+## 1. HTML 标签 → UXML 元素
 
-## Development Commands
+| HTML 标签               | 对应 UXML 元素                     | 说明                                  |
+| --------------------- | ------------------------------ | ----------------------------------- |
+| `<div>`               | `<VisualElement>`              | 通用容器，默认无样式。                         |
+| `<span>`              | `<Label>`                      | 内联文本（无换行）。                          |
+| `<p>`                 | `<Label>`                      | 段落文本。                               |
+| `<h1>` `<h2>` `<h3>`  | `<Label>`                      | 大标题/中标题/小标题，需通过 USS 设置 `font-size`。 |
+| `<ul>` `<ol>`         | `<VisualElement>`              | 列表容器，使用 `flex-direction: column;`。  |
+| `<li>`                | `<Label>`                      | 列表项文本，前缀符号需手动加。                     |
+| `<img>`               | `<Image>`                      | 仅定义占位，`image` 属性需运行时绑定。             |
+| `<button>`            | `<Button>`                     | 默认含 `Label` 子元素。                    |
+| `<input type="text">` | `<TextField>`                  | 单行输入框。                              |
+| `<textarea>`          | `<TextField multiline="true">` | 多行输入框。                              |
+| `<a>`                 | `<Label>` + 点击事件               | 超链接需手动添加事件。                         |
 
-### Unity Build & Test
+---
 
-```bash
-# Build for Windows
-Unity -quit -batchmode -executeMethod UnityEditor.BuildPipeline.BuildPlayer -projectPath . -buildTarget Win64 -buildPath ./Build/MageKnight.exe
+## 2. CSS 属性 → USS 样式
 
-# Run Unity tests
-Unity -quit -batchmode -runTests -projectPath . -testResults ./Tests/results.xml -testPlatform editmode
-```
+| CSS 属性                       | USS 属性                    | 说明                                                                      |
+| ---------------------------- | ------------------------- | ----------------------------------------------------------------------- |
+| `display: flex`              | `display: flex`           | 支持，默认就是 flex。                                                           |
+| `flex-direction: row/column` | 同名                        | 横向/纵向布局。                                                                |
+| `justify-content`            | 同名                        | 支持 `flex-start`, `center`, `flex-end`, `space-between`, `space-around`。 |
+| `align-items`                | 同名                        | 支持 `flex-start`, `center`, `flex-end`, `stretch`。                       |
+| `width`, `height`            | `width`, `height`         | 单位去掉 `px`，如 `100px` → `100`。                                            |
+| `margin`, `padding`          | `margin`, `padding`       | 同 CSS 简写。                                                               |
+| `background-color`           | `background-color`        | 十六进制或 `rgb()`。                                                          |
+| `color`                      | `color`                   | 文本颜色。                                                                   |
+| `font-size`                  | `font-size`               | 文本大小。                                                                   |
+| `font-weight: bold`          | `-unity-font-style: bold` | 特殊写法。                                                                   |
+| `text-align`                 | `-unity-text-align`       | 取值：`upper-left`, `middle-center` 等。                                     |
+| `border`                     | 无原生支持                     | 需用 `border-color` + `border-width`。                                     |
+| `overflow: hidden/scroll`    | `overflow`                | Unity 2022+ 支持。                                                         |
 
-### NUnit Tests
+---
 
-Tests use Unity Test Framework 1.3.9:
+## 3. 属性/事件映射
 
-- **Test location**: `Assets/Tests/`
-- **Test Type**: Edit mode tests only
-- **Categories**: Combat, Exploration, Mana, Market, Terrain, PlayerState
-- **Run tests**: Use Unity Test Runner or use `Unity -batchmode -runTests`  
+| HTML 属性                     | UXML/USS 对应                          | 说明                          |
+| --------------------------- | ------------------------------------ | --------------------------- |
+| `id="foo"`                  | `name="foo"`                         | UXML 用 `name` 替代 HTML 的 id。 |
+| `class="bar"`               | `class="bar"`                        | 同 HTML，USS 用 `.bar` 选择器。    |
+| `src="img.png"` (img)       | 无                                    | Unity 不能直接写资源路径，需运行时绑定。     |
+| `onclick="..."`             | C# `button.clicked += () => { ... }` | 事件逻辑要写在脚本里。                 |
+| `placeholder="..."` (input) | `label="..."` (TextField)            | 占位符文本。                      |
 
-### JSON Data Loading
+---
 
-- Card definitions in `resources/text_json/*.json`
-- Monster definitions in `resources/text_json/monster.json`
-- Place definitions in `resources/text_json/place.json`
-- Load via `CardJsonLoader` and `MonsterJsonLoader`
+## 4. 示例对照
 
-### Unity Packages
+### HTML
 
-- **Addressables**: 1.21.21 (for dynamic asset loading)
-- **Input System**: 1.7.0 (new input system)
-- **Test Framework**: 1.3.9 (Unity NUnit integration)
-- **Universal Render Pipeline**: 16.0.6 (graphics)
-- **Newtonsoft.Json**: 3.2.1 (via NuGet package)
+`<div class="container"> <h1>Hello World</h1> <p class="desc">Welcome to UI Toolkit</p> <button id="Btn_Start">Start</button> </div>`
 
-## Key Classes
+### 生成的 UXML
 
-### Core Components
+`<UXML xmlns="UnityEngine.UIElements"> <VisualElement class="container"> <Label text="Hello World" class="h1"/> <Label text="Welcome to UI Toolkit" class="desc"/> <Button name="Btn_Start" text="Start"/> </VisualElement> </UXML>`
 
-- `CardSO`: Base card definition (ScriptableObject)
-- `DeckRuntime`: Unity-side deck management
-- `HandManager`: Unity-side hand/card display
-- `GameEngine`: Core game engine (Logic assembly)
-- `ManaPool`: Universal mana system
-- `BattleResolver`: Combat system
+### USS
 
-### Data Models
-
-- `DamagePacket`: Combat damage/mana calculations
-- `UnitCard`: Unit entities
-- `SpellCard`: Spell definitions
-- `ActionCard`: Player actions
-- `PlaceData`: Map locations
-
-### Game Systems (Runtime)
-
-- `MapState`: Hex map management
-- `MonsterSpawningService`: AI entity spawning
-- `RecruitmentService`: Unit recruitment system
-- `TurnMachine`: State machine for turns/phases
-
-## Card Effects System
-
-The project includes 100+ card effect implementations:
-
-- Located in `Logic/Runtime/CardEffects/`
-- All implement `ICardEffect` interface
-- Effects are loaded via factory pattern (`CardEffectFactory`)
-- Examples: `FireballEffect`, `HealEffect`, `ManaDrawEffect`
-
-## Game State Flow
-
-Based on gameProcedure.md documentation:
-
-1. **Scenario**: Master game controller
-2. **Day/Night**: Affects terrain costs, mana availability
-3. **Round**: Phase management with tactical card selection
-4. **Turn**: Individual player actions and combat
-5. **Combat**: 5-phase combat system (ranged → block → assign → melee → end)
-
-## Testing Strategy
-
-- **Unit Tests**: Pure C# game logic (Logic assembly)
-- **Integration**: Unity components combined with Logic
-- **Test Data**: JSON-based test fixtures in test files
-- **Categories**: Use `[Category("combat")]` attributes for selective testing
-
-## Development Notes
-
-- **Language**: Mixed Chinese/English (Card names in Chinese, code logic in English)
-- **Card Sets**: Union/Archmage/Thracian expansion cards supported
-- **Art Assets**: PNG files organized by card type in `GameData/cards/`
-- **Editor Tools**: Custom importers in `Editor/` folder for card data
-
-## Project Setup
-
-1. Open in Unity 2023.x
-2. Import Addressables package
-3. Build Addressable assets: `Window → Asset Management → Addressables Groups`
-4. Generate deck starter cards: Use CardImporter tool
-5. All JSON data is automatically imported on startup
+`.container { flex-direction: column; align-items: center; justify-content: center; } .h1 { font-size: 24; -unity-font-style: bold; } .desc { font-size: 14; color: #888888; }`

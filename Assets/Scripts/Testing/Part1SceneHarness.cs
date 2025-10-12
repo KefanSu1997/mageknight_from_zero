@@ -1,3 +1,5 @@
+
+// Assets\Scripts\Testing\Part1SceneHarness.cs
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -23,10 +25,9 @@ public class Part1SceneHarness : MonoBehaviour
     private const float SectionSpacing = 24f;
     private const float ControlColumnWidth = 360f;
     private const float HandAreaHeight = 260f;
-    private const float DeckViewerOverlayTopMargin = 60f;
-    private const float DeckViewerOverlayHeight = 580f;
-
-    private const float DeckViewerOverlayLeftOffset = LayoutMargin + ControlColumnWidth + SectionSpacing;
+    private const float DeckViewerOverlayTopMargin = 40f;
+    private const float DeckViewerOverlayHeight = 720f;
+    private const float DeckViewerOverlayHorizontalInset = 40f;
 
 
 
@@ -52,7 +53,7 @@ public class Part1SceneHarness : MonoBehaviour
         public TextMeshProUGUI ViewerBodyLabel;
     }
 
-        private struct DeckViewerOverlayElements
+    private struct DeckViewerOverlayElements
     {
         public GameObject OverlayRoot;
         public Button BackgroundButton;
@@ -60,9 +61,61 @@ public class Part1SceneHarness : MonoBehaviour
         public TextMeshProUGUI TitleLabel;
         public TextMeshProUGUI SubtitleLabel;
         public RectTransform GridRoot;
+        public ScrollRect ScrollRect;
+    }
+
+    private struct CombatSideElements
+    {
+        public Image BannerImage;
+        public TextMeshProUGUI Title;
+        public TextMeshProUGUI Stats;
+        public TextMeshProUGUI Abilities;
+    }
+
+    private struct CombatPanelElements
+    {
+        public TextMeshProUGUI ScenarioTitle;
+        public TextMeshProUGUI ScenarioDescription;
+        public CombatSideElements HeroSide;
+        public CombatSideElements EnemySide;
+        public TextMeshProUGUI OutcomeLabel;
+        public Button NextScenarioButton;
+        public Button ResolveButton;
+    }
+
+    private struct ExplorationUIElements
+    {
+        public RectTransform PanelRoot;
+        public RectTransform MapRoot;
+        public TextMeshProUGUI SummaryLabel;
+        public TextMeshProUGUI DetailLabel;
+        public TextMeshProUGUI HintLabel;
+    }
+
+    private struct RecruitmentUIElements
+    {
+        public RectTransform PanelRoot;
+        public RectTransform AvailableListRoot;
+        public RectTransform RecruitedListRoot;
+        public TextMeshProUGUI SummaryLabel;
+        public TextMeshProUGUI LocationLabel;
+        public TextMeshProUGUI ResultLabel;
     }
 
     private TMP_FontAsset resolvedFont;
+
+    private static int GetMaxOverlaySortingOrder()
+    {
+        int max = 0;
+        // true 表示包含未激活对象，避免漏掉
+        var canvases = Object.FindObjectsOfType<Canvas>(true);
+        foreach (var c in canvases)
+        {
+            if (c.renderMode == RenderMode.ScreenSpaceOverlay)
+                max = Mathf.Max(max, c.sortingOrder);
+        }
+        return max;
+    }
 
     private void Awake()
     {
@@ -134,7 +187,10 @@ public class Part1SceneHarness : MonoBehaviour
         CleanupExistingLayout(canvas.transform);
         var layoutRoot = CreateLayoutRoot(canvas.transform);
 
-        var controlColumn = CreateControlColumn(layoutRoot);
+        bool includeHandArea = bindDeckAndHand && showDeck;
+        float reservedHandHeight = includeHandArea ? HandAreaHeight : 0f;
+
+        var controlColumn = CreateControlColumn(layoutRoot, reservedHandHeight);
         var buttonContainer = CreateButtonContainer(controlColumn);
         var buttonOrder = new List<(string label, System.Action<Button> assign, bool visible)>
         {
@@ -152,11 +208,17 @@ public class Part1SceneHarness : MonoBehaviour
             entry.assign(button);
         }
 
-        var infoColumn = CreateInfoColumn(layoutRoot);
+        var infoColumn = CreateInfoColumn(layoutRoot, reservedHandHeight);
         CreateTitle(infoColumn);
 
-        var manaDisplays = CreateManaDisplay(infoColumn);
+        Dictionary<ManaColor, TextMeshProUGUI> manaDisplays = null;
+        if (showMana)
+        {
+            manaDisplays = CreateManaDisplay(infoColumn);
+        }
         manager.ConfigureManaDisplay(manaDisplays);
+
+        GameObject overlayRoot = null;
 
         if (showDeck)
         {
@@ -176,19 +238,85 @@ public class Part1SceneHarness : MonoBehaviour
                 overlayElements.CloseButton,
                 overlayElements.TitleLabel,
                 overlayElements.SubtitleLabel,
-                overlayElements.GridRoot);
+                overlayElements.GridRoot,
+                overlayElements.ScrollRect);
+            overlayRoot = overlayElements.OverlayRoot;
+#if UNITY_EDITOR && SMOKE_TEST
+            SmokeTest(overlayElements.GridRoot);
+#endif
         }
         else
         {
             manager.ConfigureDeckZoneUI(null, null, null, null, null, null);
-            manager.ConfigureDeckViewerOverlay(null, null, null, null, null, null);
+            manager.ConfigureDeckViewerOverlay(null, null, null, null, null, null, null);
+        }
+
+        if (showExploration)
+        {
+            var explorationUi = CreateExplorationPanel(infoColumn);
+            manager.ConfigureExplorationUI(
+                explorationUi.MapRoot,
+                explorationUi.SummaryLabel,
+                explorationUi.DetailLabel,
+                explorationUi.HintLabel);
+        }
+        else
+        {
+            manager.ConfigureExplorationUI(null, null, null, null);
+        }
+
+        if (showRecruitment)
+        {
+            var recruitmentUi = CreateRecruitmentPanel(infoColumn);
+            manager.ConfigureRecruitmentUI(
+                recruitmentUi.AvailableListRoot,
+                recruitmentUi.RecruitedListRoot,
+                recruitmentUi.SummaryLabel,
+                recruitmentUi.LocationLabel,
+                recruitmentUi.ResultLabel);
+        }
+        else
+        {
+            manager.ConfigureRecruitmentUI(null, null, null, null, null);
+        }
+
+        if (showCombat)
+        {
+            var combatPanel = CreateCombatPanel(infoColumn);
+            manager.ConfigureCombatPanel(new Part1TestManager.CombatPanelBinding
+            {
+                ScenarioTitle = combatPanel.ScenarioTitle,
+                ScenarioDescription = combatPanel.ScenarioDescription,
+                HeroTitle = combatPanel.HeroSide.Title,
+                HeroStats = combatPanel.HeroSide.Stats,
+                HeroAbilities = combatPanel.HeroSide.Abilities,
+                EnemyTitle = combatPanel.EnemySide.Title,
+                EnemyStats = combatPanel.EnemySide.Stats,
+                EnemyAbilities = combatPanel.EnemySide.Abilities,
+                OutcomeLabel = combatPanel.OutcomeLabel,
+                NextScenarioButton = combatPanel.NextScenarioButton,
+                ResolveButton = combatPanel.ResolveButton
+            });
+        }
+        else
+        {
+            manager.ConfigureCombatPanel(default);
         }
 
         manager.testLog = CreateLog(infoColumn, out var logScrollRect);
         manager.logScrollRect = logScrollRect;
 
-        var handRoot = CreateHandArea(layoutRoot);
+        RectTransform handRoot = null;
+        if (includeHandArea)
+        {
+            handRoot = CreateHandArea(layoutRoot);
+        }
         BindHandRoot(handRoot);
+
+        if (overlayRoot != null)
+        {
+            overlayRoot.transform.SetAsLastSibling();
+        }
     }
 
 
@@ -234,25 +362,23 @@ public class Part1SceneHarness : MonoBehaviour
 
     private Canvas CreateCanvas()
     {
-        var existing = FindFirstObjectByType<Canvas>();
-        if (existing != null)
-        {
-            return existing;
-        }
-
-        var canvasGo = new GameObject("Part1TestCanvas");
+        // 始终创建专用浮窗 Canvas，避免复用场景中带有不同渲染模式的 Canvas 导致遮挡
+        var canvasGo = new GameObject("Canvas");
         var canvas = canvasGo.AddComponent<Canvas>();
         canvas.renderMode = RenderMode.ScreenSpaceOverlay;
-        canvas.sortingOrder = 200;
+        canvas.sortingOrder = 5000;
+        canvas.pixelPerfect = false;
 
         var scaler = canvasGo.AddComponent<CanvasScaler>();
         scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
         scaler.referenceResolution = new Vector2(1920, 1080);
+        scaler.matchWidthOrHeight = 1f;
 
         canvasGo.AddComponent<GraphicRaycaster>();
         temporaryObjects.Add(canvasGo);
         return canvas;
     }
+
 
     private RectTransform CreateLayoutRoot(Transform parent)
     {
@@ -269,7 +395,7 @@ public class Part1SceneHarness : MonoBehaviour
     }
 
 
-    private RectTransform CreateControlColumn(Transform parent)
+    private RectTransform CreateControlColumn(Transform parent, float reservedHandHeight)
     {
         var columnGo = new GameObject("ControlColumn");
         var rect = columnGo.AddComponent<RectTransform>();
@@ -277,7 +403,8 @@ public class Part1SceneHarness : MonoBehaviour
         rect.anchorMin = new Vector2(0f, 0f);
         rect.anchorMax = new Vector2(0f, 1f);
         rect.pivot = new Vector2(0f, 1f);
-        rect.offsetMin = new Vector2(0f, HandAreaHeight + SectionSpacing);
+        float bottomOffset = reservedHandHeight > 0f ? reservedHandHeight + SectionSpacing : 0f;
+        rect.offsetMin = new Vector2(0f, bottomOffset);
         rect.offsetMax = new Vector2(ControlColumnWidth, 0f);
 
         var background = columnGo.AddComponent<Image>();
@@ -297,7 +424,7 @@ public class Part1SceneHarness : MonoBehaviour
     }
 
 
-    private RectTransform CreateInfoColumn(Transform parent)
+    private RectTransform CreateInfoColumn(Transform parent, float reservedHandHeight)
     {
         var columnGo = new GameObject("InfoColumn");
         var rect = columnGo.AddComponent<RectTransform>();
@@ -305,7 +432,8 @@ public class Part1SceneHarness : MonoBehaviour
         rect.anchorMin = new Vector2(0f, 0f);
         rect.anchorMax = new Vector2(1f, 1f);
         rect.pivot = new Vector2(0f, 1f);
-        rect.offsetMin = new Vector2(ControlColumnWidth + SectionSpacing, HandAreaHeight + SectionSpacing);
+        float bottomOffset = reservedHandHeight > 0f ? reservedHandHeight + SectionSpacing : 0f;
+        rect.offsetMin = new Vector2(ControlColumnWidth + SectionSpacing, bottomOffset);
         rect.offsetMax = new Vector2(0f, 0f);
 
         var background = columnGo.AddComponent<Image>();
@@ -539,6 +667,12 @@ public class Part1SceneHarness : MonoBehaviour
         overlayRect.SetAsLastSibling();
         overlayGo.SetActive(false);
 
+        var modalCanvas = overlayGo.AddComponent<Canvas>();
+        modalCanvas.overrideSorting = true;
+        // 动态压过场景中所有 ScreenSpaceOverlay 画布
+        modalCanvas.sortingOrder = GetMaxOverlaySortingOrder() + 100; 
+        overlayGo.AddComponent<GraphicRaycaster>();
+
         var overlayCanvasGroup = overlayGo.AddComponent<CanvasGroup>();
         overlayCanvasGroup.alpha = 1f;
         overlayCanvasGroup.interactable = true;
@@ -556,26 +690,25 @@ public class Part1SceneHarness : MonoBehaviour
         dialogRect.anchorMin = new Vector2(0f, 1f);
         dialogRect.anchorMax = new Vector2(1f, 1f);
         dialogRect.pivot = new Vector2(0.5f, 1f);
-        dialogRect.offsetMin = new Vector2(DeckViewerOverlayLeftOffset, -(DeckViewerOverlayTopMargin + DeckViewerOverlayHeight));
-        dialogRect.offsetMax = new Vector2(-LayoutMargin, -DeckViewerOverlayTopMargin);
-        dialogRect.sizeDelta = Vector2.zero;
+        dialogRect.offsetMin = new Vector2(DeckViewerOverlayHorizontalInset, -(DeckViewerOverlayTopMargin + DeckViewerOverlayHeight));
+        dialogRect.offsetMax = new Vector2(-DeckViewerOverlayHorizontalInset, -DeckViewerOverlayTopMargin);
+        // dialogRect.sizeDelta = Vector2.zero;
 
         var dialogImage = dialogGo.AddComponent<Image>();
         dialogImage.color = new Color(0.16f, 0.19f, 0.3f, 0.94f);
 
-        var dialogLayout = dialogGo.AddComponent<VerticalLayoutGroup>();
-        dialogLayout.padding = new RectOffset(24, 24, 20, 24);
-        dialogLayout.spacing = 12f;
-        dialogLayout.childAlignment = TextAnchor.UpperLeft;
-        dialogLayout.childControlWidth = true;
-        dialogLayout.childForceExpandWidth = true;
-        dialogLayout.childControlHeight = true;
-        dialogLayout.childForceExpandHeight = true;
-
         var headerGo = new GameObject("Header");
         var headerRect = headerGo.AddComponent<RectTransform>();
         headerRect.SetParent(dialogGo.transform, false);
-        headerRect.sizeDelta = new Vector2(0f, 60f);
+        headerRect.anchorMin = new Vector2(0f, 1f);
+        headerRect.anchorMax = new Vector2(1f, 1f);
+        headerRect.pivot = new Vector2(0.5f, 1f);
+        const float headerHeight = 64f;
+        headerRect.offsetMin = new Vector2(24f, -headerHeight);
+        headerRect.offsetMax = new Vector2(-24f, 0f);
+
+        var headerBackground = headerGo.AddComponent<Image>();
+        headerBackground.color = new Color(0.08f, 0.15f, 0.32f, 0.95f);
 
         var headerLayout = headerGo.AddComponent<HorizontalLayoutGroup>();
         headerLayout.spacing = 18f;
@@ -584,10 +717,7 @@ public class Part1SceneHarness : MonoBehaviour
         headerLayout.childForceExpandWidth = true;
         headerLayout.childControlHeight = true;
         headerLayout.childForceExpandHeight = false;
-
-        var headerElement = headerGo.AddComponent<LayoutElement>();
-        headerElement.minHeight = 48f;
-        headerElement.preferredHeight = 52f;
+        headerLayout.padding = new RectOffset(24, 24, 0, 0);
 
         var titleGo = new GameObject("Title");
         var titleRect = titleGo.AddComponent<RectTransform>();
@@ -606,13 +736,13 @@ public class Part1SceneHarness : MonoBehaviour
         var closeButtonGo = new GameObject("CloseButton");
         var closeRect = closeButtonGo.AddComponent<RectTransform>();
         closeRect.SetParent(headerGo.transform, false);
-        closeRect.sizeDelta = new Vector2(112f, 40f);
+        closeRect.sizeDelta = new Vector2(140f, 44f);
 
         var closeLayout = closeButtonGo.AddComponent<LayoutElement>();
-        closeLayout.minWidth = 100f;
-        closeLayout.preferredWidth = 112f;
-        closeLayout.minHeight = 40f;
-        closeLayout.preferredHeight = 40f;
+        closeLayout.minWidth = 120f;
+        closeLayout.preferredWidth = 140f;
+        closeLayout.minHeight = 44f;
+        closeLayout.preferredHeight = 44f;
 
         var closeImage = closeButtonGo.AddComponent<Image>();
         closeImage.color = new Color(0.85f, 0.32f, 0.36f, 0.95f);
@@ -634,13 +764,28 @@ public class Part1SceneHarness : MonoBehaviour
         closeLabel.alignment = TextAlignmentOptions.Center;
         ApplyFont(closeLabel);
 
+        var bodyGo = new GameObject("Body");
+        var bodyRect = bodyGo.AddComponent<RectTransform>();
+        bodyRect.SetParent(dialogGo.transform, false);
+        bodyRect.anchorMin = new Vector2(0f, 0f);
+        bodyRect.anchorMax = new Vector2(1f, 1f);
+        const float bodyPadding = 24f;
+        const float bodyTopOffset = headerHeight + 16f;
+        bodyRect.offsetMin = new Vector2(bodyPadding, bodyPadding);
+        bodyRect.offsetMax = new Vector2(-bodyPadding, -bodyTopOffset);
+
+        var bodyBackground = bodyGo.AddComponent<Image>();
+        bodyBackground.color = new Color(0.11f, 0.15f, 0.26f, 0.92f);
+
         var subtitleGo = new GameObject("Subtitle");
         var subtitleRect = subtitleGo.AddComponent<RectTransform>();
-        subtitleRect.SetParent(dialogGo.transform, false);
-
-        var subtitleElement = subtitleGo.AddComponent<LayoutElement>();
-        subtitleElement.minHeight = 26f;
-        subtitleElement.preferredHeight = 26f;
+        subtitleRect.SetParent(bodyRect, false);
+        subtitleRect.anchorMin = new Vector2(0f, 1f);
+        subtitleRect.anchorMax = new Vector2(1f, 1f);
+        subtitleRect.pivot = new Vector2(0f, 1f);
+        const float subtitleHeight = 36f;
+        subtitleRect.offsetMin = new Vector2(16f, -subtitleHeight);
+        subtitleRect.offsetMax = new Vector2(-16f, 0f);
 
         var subtitleText = subtitleGo.AddComponent<TextMeshProUGUI>();
         subtitleText.text = "共 0 张卡牌。";
@@ -651,17 +796,14 @@ public class Part1SceneHarness : MonoBehaviour
 
         var scrollGo = new GameObject("ScrollView");
         var scrollRectTransform = scrollGo.AddComponent<RectTransform>();
-        scrollRectTransform.SetParent(dialogGo.transform, false);
+        scrollRectTransform.SetParent(bodyRect, false);
         scrollRectTransform.anchorMin = new Vector2(0f, 0f);
         scrollRectTransform.anchorMax = new Vector2(1f, 1f);
-        scrollRectTransform.offsetMin = Vector2.zero;
-        scrollRectTransform.offsetMax = Vector2.zero;
-
-        var scrollElement = scrollGo.AddComponent<LayoutElement>();
-        scrollElement.flexibleHeight = 1f;
+        scrollRectTransform.offsetMin = new Vector2(16f, 16f);
+        scrollRectTransform.offsetMax = new Vector2(-16f, -(subtitleHeight + 24f));
 
         var scrollBackground = scrollGo.AddComponent<Image>();
-        scrollBackground.color = new Color(0.09f, 0.11f, 0.2f, 0.92f);
+        scrollBackground.color = new Color(0.08f, 0.1f, 0.18f, 0.9f);
 
         var scrollRectComponent = scrollGo.AddComponent<ScrollRect>();
         scrollRectComponent.horizontal = false;
@@ -672,8 +814,8 @@ public class Part1SceneHarness : MonoBehaviour
         viewportRect.SetParent(scrollGo.transform, false);
         viewportRect.anchorMin = new Vector2(0f, 0f);
         viewportRect.anchorMax = new Vector2(1f, 1f);
-        viewportRect.offsetMin = new Vector2(8f, 8f);
-        viewportRect.offsetMax = new Vector2(-22f, -8f);
+        viewportRect.offsetMin = new Vector2(10f, 10f);
+        viewportRect.offsetMax = new Vector2(-28f, -10f);
         viewportGo.AddComponent<RectMask2D>();
 
         var contentGo = new GameObject("Content");
@@ -687,10 +829,10 @@ public class Part1SceneHarness : MonoBehaviour
         contentRect.offsetMax = Vector2.zero;
 
         var gridLayout = contentGo.AddComponent<GridLayoutGroup>();
-        gridLayout.cellSize = new Vector2(280f, 420f);
-        gridLayout.spacing = new Vector2(18f, 18f);
+        gridLayout.cellSize = new Vector2(320f, 480f);
+        gridLayout.spacing = new Vector2(24f, 32f);
         gridLayout.constraint = GridLayoutGroup.Constraint.FixedColumnCount;
-        gridLayout.constraintCount = 4;
+        gridLayout.constraintCount = 3;
         gridLayout.childAlignment = TextAnchor.UpperLeft;
 
         var contentFitter = contentGo.AddComponent<ContentSizeFitter>();
@@ -706,8 +848,8 @@ public class Part1SceneHarness : MonoBehaviour
         scrollbarRect.anchorMin = new Vector2(1f, 0f);
         scrollbarRect.anchorMax = new Vector2(1f, 1f);
         scrollbarRect.pivot = new Vector2(1f, 0.5f);
-        scrollbarRect.offsetMin = new Vector2(-12f, 8f);
-        scrollbarRect.offsetMax = new Vector2(-2f, -8f);
+        scrollbarRect.offsetMin = new Vector2(-16f, 10f);
+        scrollbarRect.offsetMax = new Vector2(-4f, -10f);
 
         var scrollbar = scrollbarGo.AddComponent<Scrollbar>();
         scrollbar.direction = Scrollbar.Direction.BottomToTop;
@@ -735,8 +877,9 @@ public class Part1SceneHarness : MonoBehaviour
         scrollbar.handleRect = handleRect;
 
         scrollRectComponent.verticalScrollbar = scrollbar;
-        scrollRectComponent.verticalScrollbarVisibility = ScrollRect.ScrollbarVisibility.AutoHideAndExpandViewport;
-        scrollRectComponent.verticalScrollbarSpacing = -6f;
+        scrollRectComponent.verticalScrollbarVisibility = ScrollRect.ScrollbarVisibility.AutoHide;
+        scrollRectComponent.verticalScrollbarSpacing = -8f;
+        scrollRectComponent.verticalNormalizedPosition = 1f;
 
         temporaryObjects.Add(overlayGo);
 
@@ -747,9 +890,41 @@ public class Part1SceneHarness : MonoBehaviour
             CloseButton = closeButton,
             TitleLabel = titleText,
             SubtitleLabel = subtitleText,
-            GridRoot = contentRect
+            GridRoot = contentRect,
+            ScrollRect = scrollRectComponent
         };
     }
+
+#if UNITY_EDITOR
+    private void SmokeTest(RectTransform gridRoot)
+    {
+        if (gridRoot == null)
+        {
+            Debug.LogWarning("[DeckOverlay] SmokeTest skipped: gridRoot missing");
+            return;
+        }
+
+        const int dummyCount = 8;
+        for (int i = 0; i < dummyCount; i++)
+        {
+            var dummy = new GameObject($"DummyCard_{i}");
+            var rectTransform = dummy.AddComponent<RectTransform>();
+            rectTransform.SetParent(gridRoot, false);
+
+            var image = dummy.AddComponent<Image>();
+            image.raycastTarget = false;
+            image.color = new Color(0.2f, 0.6f, 0.9f, 1f);
+        }
+
+        Canvas.ForceUpdateCanvases();
+        LayoutRebuilder.ForceRebuildLayoutImmediate(gridRoot);
+        var scrollRect = gridRoot.GetComponentInParent<ScrollRect>();
+        if (scrollRect != null)
+        {
+            scrollRect.verticalNormalizedPosition = 1f;
+        }
+    }
+#endif
     private DeckZoneUIElements CreateDeckZonesPanel(Transform parent)
     {
         var panelGo = new GameObject("DeckZonesPanel");
@@ -757,7 +932,7 @@ public class Part1SceneHarness : MonoBehaviour
         panelRect.SetParent(parent, false);
 
         var panelElement = panelGo.AddComponent<LayoutElement>();
-        panelElement.minHeight = 220f;
+        panelElement.minHeight = 280f;
         panelElement.flexibleHeight = 0f;
 
         var panelBackground = panelGo.AddComponent<Image>();
@@ -791,11 +966,11 @@ public class Part1SceneHarness : MonoBehaviour
         var zonesRow = new GameObject("ZonesRow");
         var zonesRect = zonesRow.AddComponent<RectTransform>();
         zonesRect.SetParent(panelGo.transform, false);
-        zonesRect.sizeDelta = new Vector2(0f, 110f);
+        zonesRect.sizeDelta = new Vector2(0f, 140f);
 
         var zonesElement = zonesRow.AddComponent<LayoutElement>();
-        zonesElement.minHeight = 110f;
-        zonesElement.preferredHeight = 110f;
+        zonesElement.minHeight = 140f;
+        zonesElement.preferredHeight = 140f;
 
         var zonesLayout = zonesRow.AddComponent<HorizontalLayoutGroup>();
         zonesLayout.spacing = 12f;
@@ -814,7 +989,7 @@ public class Part1SceneHarness : MonoBehaviour
 
         var viewerElement = viewerGo.AddComponent<LayoutElement>();
         viewerElement.flexibleHeight = 1f;
-        viewerElement.minHeight = 160f;
+        viewerElement.minHeight = 240f;
 
         var viewerBackground = viewerGo.AddComponent<Image>();
         viewerBackground.color = new Color(0.11f, 0.15f, 0.26f, 0.92f);
@@ -1006,6 +1181,260 @@ public class Part1SceneHarness : MonoBehaviour
         return (button, countText);
     }
 
+    private CombatPanelElements CreateCombatPanel(Transform parent)
+    {
+        var panelGo = new GameObject("CombatPanel");
+        var rect = panelGo.AddComponent<RectTransform>();
+        rect.SetParent(parent, false);
+
+        var element = panelGo.AddComponent<LayoutElement>();
+        element.minHeight = 340f;
+        element.flexibleHeight = 0f;
+
+        var background = panelGo.AddComponent<Image>();
+        background.color = new Color(0.14f, 0.18f, 0.32f, 0.92f);
+
+        var layout = panelGo.AddComponent<VerticalLayoutGroup>();
+        layout.padding = new RectOffset(24, 24, 24, 24);
+        layout.spacing = 16f;
+        layout.childAlignment = TextAnchor.UpperLeft;
+        layout.childControlWidth = true;
+        layout.childForceExpandWidth = true;
+        layout.childControlHeight = true;
+        layout.childForceExpandHeight = false;
+
+        temporaryObjects.Add(panelGo);
+
+        var headerGo = new GameObject("Header");
+        var headerRect = headerGo.AddComponent<RectTransform>();
+        headerRect.SetParent(panelGo.transform, false);
+
+        var headerLayout = headerGo.AddComponent<HorizontalLayoutGroup>();
+        headerLayout.spacing = 12f;
+        headerLayout.childAlignment = TextAnchor.MiddleLeft;
+        headerLayout.childControlWidth = true;
+        headerLayout.childForceExpandWidth = false;
+        headerLayout.childControlHeight = true;
+        headerLayout.childForceExpandHeight = false;
+
+        var headerElement = headerGo.AddComponent<LayoutElement>();
+        headerElement.minHeight = 48f;
+
+        var titleGo = new GameObject("ScenarioTitle");
+        var titleRect = titleGo.AddComponent<RectTransform>();
+        titleRect.SetParent(headerGo.transform, false);
+
+        var titleElement = titleGo.AddComponent<LayoutElement>();
+        titleElement.flexibleWidth = 1f;
+
+        var titleText = titleGo.AddComponent<TextMeshProUGUI>();
+        titleText.text = "战斗演示";
+        titleText.fontSize = 26f;
+        titleText.color = new Color(0.95f, 0.97f, 1f);
+        titleText.alignment = TextAlignmentOptions.Left;
+        ApplyFont(titleText);
+
+        var nextButtonGo = new GameObject("Btn_NextScenario");
+        var nextRect = nextButtonGo.AddComponent<RectTransform>();
+        nextRect.SetParent(headerGo.transform, false);
+        nextRect.sizeDelta = new Vector2(180f, 44f);
+
+        var nextImage = nextButtonGo.AddComponent<Image>();
+        nextImage.color = new Color(0.36f, 0.24f, 0.56f, 0.95f);
+
+        var nextLayout = nextButtonGo.AddComponent<LayoutElement>();
+        nextLayout.preferredWidth = 180f;
+        nextLayout.minHeight = 44f;
+
+        var nextButton = nextButtonGo.AddComponent<Button>();
+
+        var nextLabelGo = new GameObject("Text");
+        var nextLabelRect = nextLabelGo.AddComponent<RectTransform>();
+        nextLabelRect.SetParent(nextButtonGo.transform, false);
+        nextLabelRect.anchorMin = Vector2.zero;
+        nextLabelRect.anchorMax = Vector2.one;
+        nextLabelRect.offsetMin = new Vector2(12f, 0f);
+        nextLabelRect.offsetMax = new Vector2(-12f, 0f);
+
+        var nextLabel = nextLabelGo.AddComponent<TextMeshProUGUI>();
+        nextLabel.text = "切换对阵";
+        nextLabel.fontSize = 20f;
+        nextLabel.color = Color.white;
+        nextLabel.alignment = TextAlignmentOptions.Center;
+        ApplyFont(nextLabel);
+
+        var descriptionGo = new GameObject("ScenarioDescription");
+        var descriptionRect = descriptionGo.AddComponent<RectTransform>();
+        descriptionRect.SetParent(panelGo.transform, false);
+
+        var descriptionElement = descriptionGo.AddComponent<LayoutElement>();
+        descriptionElement.minHeight = 48f;
+
+        var descriptionText = descriptionGo.AddComponent<TextMeshProUGUI>();
+        descriptionText.text = "展示 BattleResolver 的基础流程。";
+        descriptionText.fontSize = 18f;
+        descriptionText.color = new Color(0.86f, 0.9f, 1f);
+        descriptionText.alignment = TextAlignmentOptions.Left;
+        descriptionText.enableWordWrapping = true;
+        ApplyFont(descriptionText);
+
+        var sidesGo = new GameObject("SidesRow");
+        var sidesRect = sidesGo.AddComponent<RectTransform>();
+        sidesRect.SetParent(panelGo.transform, false);
+
+        var sidesLayout = sidesGo.AddComponent<HorizontalLayoutGroup>();
+        sidesLayout.spacing = 18f;
+        sidesLayout.childAlignment = TextAnchor.UpperLeft;
+        sidesLayout.childControlWidth = true;
+        sidesLayout.childForceExpandWidth = true;
+        sidesLayout.childControlHeight = true;
+        sidesLayout.childForceExpandHeight = false;
+
+        var sidesElement = sidesGo.AddComponent<LayoutElement>();
+        sidesElement.minHeight = 220f;
+
+        var heroElements = CreateCombatSideCard(sidesGo.transform, "HeroCard", new Color(0.18f, 0.28f, 0.48f, 0.92f));
+        var enemyElements = CreateCombatSideCard(sidesGo.transform, "EnemyCard", new Color(0.38f, 0.16f, 0.2f, 0.92f));
+
+        var footerGo = new GameObject("Footer");
+        var footerRect = footerGo.AddComponent<RectTransform>();
+        footerRect.SetParent(panelGo.transform, false);
+
+        var footerLayout = footerGo.AddComponent<HorizontalLayoutGroup>();
+        footerLayout.spacing = 12f;
+        footerLayout.childAlignment = TextAnchor.MiddleLeft;
+        footerLayout.childControlWidth = true;
+        footerLayout.childForceExpandWidth = false;
+        footerLayout.childControlHeight = true;
+        footerLayout.childForceExpandHeight = false;
+
+        var footerElement = footerGo.AddComponent<LayoutElement>();
+        footerElement.minHeight = 52f;
+
+        var outcomeGo = new GameObject("OutcomeLabel");
+        var outcomeRect = outcomeGo.AddComponent<RectTransform>();
+        outcomeRect.SetParent(footerGo.transform, false);
+
+        var outcomeElement = outcomeGo.AddComponent<LayoutElement>();
+        outcomeElement.flexibleWidth = 1f;
+
+        var outcomeText = outcomeGo.AddComponent<TextMeshProUGUI>();
+        outcomeText.text = "等待战斗结算...";
+        outcomeText.fontSize = 20f;
+        outcomeText.color = new Color(0.86f, 0.9f, 1f);
+        outcomeText.alignment = TextAlignmentOptions.Left;
+        ApplyFont(outcomeText);
+
+        var resolveButtonGo = new GameObject("Btn_Resolve");
+        var resolveRect = resolveButtonGo.AddComponent<RectTransform>();
+        resolveRect.SetParent(footerGo.transform, false);
+        resolveRect.sizeDelta = new Vector2(180f, 44f);
+
+        var resolveImage = resolveButtonGo.AddComponent<Image>();
+        resolveImage.color = new Color(0.28f, 0.42f, 0.2f, 0.95f);
+
+        var resolveLayout = resolveButtonGo.AddComponent<LayoutElement>();
+        resolveLayout.preferredWidth = 180f;
+        resolveLayout.minHeight = 44f;
+
+        var resolveButton = resolveButtonGo.AddComponent<Button>();
+
+        var resolveLabelGo = new GameObject("Text");
+        var resolveLabelRect = resolveLabelGo.AddComponent<RectTransform>();
+        resolveLabelRect.SetParent(resolveButtonGo.transform, false);
+        resolveLabelRect.anchorMin = Vector2.zero;
+        resolveLabelRect.anchorMax = Vector2.one;
+        resolveLabelRect.offsetMin = new Vector2(12f, 0f);
+        resolveLabelRect.offsetMax = new Vector2(-12f, 0f);
+
+        var resolveLabel = resolveLabelGo.AddComponent<TextMeshProUGUI>();
+        resolveLabel.text = "立即结算";
+        resolveLabel.fontSize = 20f;
+        resolveLabel.color = Color.white;
+        resolveLabel.alignment = TextAlignmentOptions.Center;
+        ApplyFont(resolveLabel);
+
+        return new CombatPanelElements
+        {
+            ScenarioTitle = titleText,
+            ScenarioDescription = descriptionText,
+            HeroSide = heroElements,
+            EnemySide = enemyElements,
+            OutcomeLabel = outcomeText,
+            NextScenarioButton = nextButton,
+            ResolveButton = resolveButton
+        };
+    }
+
+    private CombatSideElements CreateCombatSideCard(Transform parent, string objectName, Color backgroundColor)
+    {
+        var cardGo = new GameObject(objectName);
+        var rect = cardGo.AddComponent<RectTransform>();
+        rect.SetParent(parent, false);
+
+        var element = cardGo.AddComponent<LayoutElement>();
+        element.flexibleWidth = 1f;
+        element.minWidth = 0f;
+        element.minHeight = 220f;
+
+        var background = cardGo.AddComponent<Image>();
+        background.color = backgroundColor;
+
+        var layout = cardGo.AddComponent<VerticalLayoutGroup>();
+        layout.padding = new RectOffset(16, 16, 16, 16);
+        layout.spacing = 10f;
+        layout.childAlignment = TextAnchor.UpperLeft;
+        layout.childControlWidth = true;
+        layout.childForceExpandWidth = true;
+        layout.childControlHeight = true;
+        layout.childForceExpandHeight = false;
+
+        var titleGo = new GameObject("Title");
+        var titleRect = titleGo.AddComponent<RectTransform>();
+        titleRect.SetParent(cardGo.transform, false);
+
+        var titleText = titleGo.AddComponent<TextMeshProUGUI>();
+        titleText.text = objectName == "HeroCard" ? "我方部队" : "敌方单位";
+        titleText.fontSize = 22f;
+        titleText.color = Color.white;
+        titleText.alignment = TextAlignmentOptions.Left;
+        ApplyFont(titleText);
+
+        var statsGo = new GameObject("Stats");
+        var statsRect = statsGo.AddComponent<RectTransform>();
+        statsRect.SetParent(cardGo.transform, false);
+
+        var statsText = statsGo.AddComponent<TextMeshProUGUI>();
+        statsText.text = "--";
+        statsText.fontSize = 18f;
+        statsText.color = new Color(0.92f, 0.95f, 1f);
+        statsText.alignment = TextAlignmentOptions.Left;
+        statsText.enableWordWrapping = true;
+        ApplyFont(statsText);
+
+        var abilitiesGo = new GameObject("Abilities");
+        var abilitiesRect = abilitiesGo.AddComponent<RectTransform>();
+        abilitiesRect.SetParent(cardGo.transform, false);
+
+        var abilitiesText = abilitiesGo.AddComponent<TextMeshProUGUI>();
+        abilitiesText.text = "能力：--";
+        abilitiesText.fontSize = 16f;
+        abilitiesText.color = new Color(0.82f, 0.88f, 1f);
+        abilitiesText.alignment = TextAlignmentOptions.Left;
+        abilitiesText.enableWordWrapping = true;
+        ApplyFont(abilitiesText);
+
+        temporaryObjects.Add(cardGo);
+
+        return new CombatSideElements
+        {
+            BannerImage = background,
+            Title = titleText,
+            Stats = statsText,
+            Abilities = abilitiesText
+        };
+    }
+
 
     private Dictionary<ManaColor, TextMeshProUGUI> CreateManaDisplay(Transform parent)
     {
@@ -1116,6 +1545,188 @@ public class Part1SceneHarness : MonoBehaviour
         return labels;
     }
 
+    private ExplorationUIElements CreateExplorationPanel(Transform parent)
+    {
+        var panelGo = new GameObject("ExplorationPanel");
+        var panelRect = panelGo.AddComponent<RectTransform>();
+        panelRect.SetParent(parent, false);
+
+        var panelElement = panelGo.AddComponent<LayoutElement>();
+        panelElement.minHeight = 320f;
+        panelElement.flexibleHeight = 0f;
+
+        var panelBackground = panelGo.AddComponent<Image>();
+        panelBackground.color = new Color(0.16f, 0.24f, 0.33f, 0.92f);
+
+        var layout = panelGo.AddComponent<VerticalLayoutGroup>();
+        layout.padding = new RectOffset(20, 20, 20, 20);
+        layout.spacing = 12f;
+        layout.childAlignment = TextAnchor.UpperLeft;
+        layout.childControlWidth = true;
+        layout.childForceExpandWidth = true;
+        layout.childControlHeight = true;
+        layout.childForceExpandHeight = false;
+
+        var header = CreateSectionLabel(panelGo.transform, "ExplorationHeader", "探索与地图", 22f, new Color(0.92f, 0.97f, 1f), TextAlignmentOptions.Left);
+        header.fontStyle = FontStyles.Bold;
+
+        var summary = CreateSectionLabel(panelGo.transform, "ExplorationSummary", "等待初始化……", 18f, new Color(0.86f, 0.92f, 1f), TextAlignmentOptions.Left);
+
+        var mapContainer = new GameObject("MapRoot");
+        var mapRect = mapContainer.AddComponent<RectTransform>();
+        mapRect.SetParent(panelGo.transform, false);
+        mapRect.anchorMin = new Vector2(0f, 0f);
+        mapRect.anchorMax = new Vector2(1f, 0f);
+        mapRect.pivot = new Vector2(0.5f, 0f);
+        mapRect.sizeDelta = new Vector2(0f, 240f);
+
+        var mapElement = mapContainer.AddComponent<LayoutElement>();
+        mapElement.minHeight = 220f;
+        mapElement.preferredHeight = 240f;
+
+        var mapBackground = mapContainer.AddComponent<Image>();
+        mapBackground.color = new Color(0.09f, 0.13f, 0.2f, 0.9f);
+
+        var detail = CreateSectionLabel(panelGo.transform, "ExplorationDetail", "点击“测试探索系统”按钮会依次探索英雄周围的六边形。", 17f, new Color(0.85f, 0.92f, 1f), TextAlignmentOptions.Left);
+
+        var hint = CreateSectionLabel(panelGo.transform, "ExplorationHint", "下一目标：待准备", 16f, new Color(0.8f, 0.87f, 1f), TextAlignmentOptions.Left);
+        hint.fontStyle = FontStyles.Italic;
+
+        temporaryObjects.Add(panelGo);
+
+        return new ExplorationUIElements
+        {
+            PanelRoot = panelRect,
+            MapRoot = mapRect,
+            SummaryLabel = summary,
+            DetailLabel = detail,
+            HintLabel = hint
+        };
+    }
+
+    private RecruitmentUIElements CreateRecruitmentPanel(Transform parent)
+    {
+        var panelGo = new GameObject("RecruitmentPanel");
+        var panelRect = panelGo.AddComponent<RectTransform>();
+        panelRect.SetParent(parent, false);
+
+        var panelElement = panelGo.AddComponent<LayoutElement>();
+        panelElement.minHeight = 320f;
+        panelElement.flexibleHeight = 0f;
+
+        var panelBackground = panelGo.AddComponent<Image>();
+        panelBackground.color = new Color(0.27f, 0.2f, 0.26f, 0.92f);
+
+        var layout = panelGo.AddComponent<VerticalLayoutGroup>();
+        layout.padding = new RectOffset(20, 20, 20, 20);
+        layout.spacing = 12f;
+        layout.childAlignment = TextAnchor.UpperLeft;
+        layout.childControlWidth = true;
+        layout.childForceExpandWidth = true;
+        layout.childControlHeight = true;
+        layout.childForceExpandHeight = false;
+
+        var header = CreateSectionLabel(panelGo.transform, "RecruitmentHeader", "招募面板", 22f, new Color(0.97f, 0.94f, 0.86f), TextAlignmentOptions.Left);
+        header.fontStyle = FontStyles.Bold;
+
+        var location = CreateSectionLabel(panelGo.transform, "RecruitmentLocation", "当前地点：等待探索", 18f, new Color(0.94f, 0.88f, 0.94f), TextAlignmentOptions.Left);
+        var summary = CreateSectionLabel(panelGo.transform, "RecruitmentSummary", "队伍尚未招募任何单位。", 17f, new Color(0.9f, 0.9f, 0.9f), TextAlignmentOptions.Left);
+
+        var listsRow = new GameObject("RecruitmentLists");
+        var listsRect = listsRow.AddComponent<RectTransform>();
+        listsRect.SetParent(panelGo.transform, false);
+
+        var listsElement = listsRow.AddComponent<LayoutElement>();
+        listsElement.minHeight = 200f;
+        listsElement.preferredHeight = 220f;
+
+        var listsLayout = listsRow.AddComponent<HorizontalLayoutGroup>();
+        listsLayout.spacing = 12f;
+        listsLayout.childAlignment = TextAnchor.UpperLeft;
+        listsLayout.childControlWidth = true;
+        listsLayout.childForceExpandWidth = true;
+        listsLayout.childControlHeight = true;
+        listsLayout.childForceExpandHeight = false;
+
+        var availableList = CreateRecruitmentColumn(listsRow.transform, "可招募单位");
+        var recruitedList = CreateRecruitmentColumn(listsRow.transform, "已招募单位");
+
+        var result = CreateSectionLabel(panelGo.transform, "RecruitmentResult", "点击“测试招募系统”按钮，从当前地点尝试招募一名单位。", 16f, new Color(0.98f, 0.9f, 0.78f), TextAlignmentOptions.Left);
+        result.fontStyle = FontStyles.Italic;
+
+        temporaryObjects.Add(panelGo);
+
+        return new RecruitmentUIElements
+        {
+            PanelRoot = panelRect,
+            AvailableListRoot = availableList,
+            RecruitedListRoot = recruitedList,
+            SummaryLabel = summary,
+            LocationLabel = location,
+            ResultLabel = result
+        };
+    }
+
+    private RectTransform CreateRecruitmentColumn(Transform parent, string headerText)
+    {
+        var columnGo = new GameObject(headerText);
+        var rect = columnGo.AddComponent<RectTransform>();
+        rect.SetParent(parent, false);
+        rect.sizeDelta = new Vector2(0f, 200f);
+
+        var element = columnGo.AddComponent<LayoutElement>();
+        element.flexibleWidth = 1f;
+
+        var background = columnGo.AddComponent<Image>();
+        background.color = new Color(0.12f, 0.13f, 0.2f, 0.88f);
+
+        var layout = columnGo.AddComponent<VerticalLayoutGroup>();
+        layout.padding = new RectOffset(12, 12, 12, 12);
+        layout.spacing = 8f;
+        layout.childAlignment = TextAnchor.UpperLeft;
+        layout.childControlWidth = true;
+        layout.childForceExpandWidth = true;
+        layout.childControlHeight = false;
+        layout.childForceExpandHeight = false;
+
+        var header = CreateSectionLabel(columnGo.transform, headerText + "Header", headerText, 18f, new Color(0.94f, 0.96f, 1f), TextAlignmentOptions.Left);
+        header.fontStyle = FontStyles.Bold;
+
+        var contentGo = new GameObject("Content");
+        var contentRect = contentGo.AddComponent<RectTransform>();
+        contentRect.SetParent(columnGo.transform, false);
+
+        var contentLayout = contentGo.AddComponent<VerticalLayoutGroup>();
+        contentLayout.spacing = 6f;
+        contentLayout.childAlignment = TextAnchor.UpperLeft;
+        contentLayout.childControlWidth = true;
+        contentLayout.childForceExpandWidth = true;
+        contentLayout.childControlHeight = false;
+        contentLayout.childForceExpandHeight = false;
+
+        var fitter = contentGo.AddComponent<ContentSizeFitter>();
+        fitter.verticalFit = ContentSizeFitter.FitMode.PreferredSize;
+        fitter.horizontalFit = ContentSizeFitter.FitMode.Unconstrained;
+
+        return contentRect;
+    }
+
+    private TextMeshProUGUI CreateSectionLabel(Transform parent, string name, string text, float fontSize, Color color, TextAlignmentOptions alignment)
+    {
+        var go = new GameObject(name);
+        var rect = go.AddComponent<RectTransform>();
+        rect.SetParent(parent, false);
+
+        var label = go.AddComponent<TextMeshProUGUI>();
+        label.text = text;
+        label.fontSize = fontSize;
+        label.color = color;
+        label.alignment = alignment;
+        label.enableWordWrapping = true;
+        ApplyFont(label);
+        return label;
+    }
+
     private RectTransform CreateButtonContainer(Transform parent)
     {
         var containerGo = new GameObject("Buttons");
@@ -1152,6 +1763,18 @@ public class Part1SceneHarness : MonoBehaviour
 
         var image = buttonGo.AddComponent<Image>();
         image.color = visible ? new Color(0.25f, 0.25f, 0.25f, 0.95f) : new Color(0.18f, 0.18f, 0.18f, 0.6f);
+
+#if UNITY_EDITOR
+        var pathSegments = new System.Collections.Generic.Stack<string>();
+        var currentTransform = buttonGo.transform;
+        while (currentTransform != null)
+        {
+            pathSegments.Push(currentTransform.name);
+            currentTransform = currentTransform.parent;
+        }
+
+        Debug.Log($"[Part1SceneHarness] Button created: {string.Join("/", pathSegments)}");
+#endif
 
         var button = buttonGo.AddComponent<Button>();
         button.interactable = visible;
