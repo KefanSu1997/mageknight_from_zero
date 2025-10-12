@@ -1,7 +1,6 @@
 {
-    "name": "MageKnightTests",
+    "name": "AgentATests",
     "references": [
-        "MageKnight.Logic",
         "MageKnight.Scripts"
     ],
     "optionalUnityReferences": [
@@ -13,11 +12,9 @@
     ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
-    "overrideReferences": true,
-    "precompiledReferences": [
-        "nunit.framework.dll"
-    ],
-    "autoReferenced": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
     "defineConstraints": [
         "UNITY_INCLUDE_TESTS"
     ],
