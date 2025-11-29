@@ -36,6 +36,12 @@
 - `SceneAutomationOrchestrator` 优先选择名称包含 `DeckUI` 的摄像机截图，确保自动化输出与场景实际视觉一致。
 - 最新一次自动化输出 `AutomationOutputs/DeckManaTest/captures/Part1_DeckManaTest_20251020_010718` 涵盖 7 张截图，与手动运行时的牌桌画面一致。
 
+## 2025-11-29 – DeckIdeal 截图恢复（禁用 -nographics）
+- 任务：验收提示“截图缺失/空白”，需要重新跑理想卡组场景并产出有效截图。
+- 操作：用 Windows Unity batchmode（不带 `-nographics`）执行 `DeckIdealSceneBuilder.BuildAndCaptureMenu`，生成新截图并复制到任务目录 `multi-agent-workspace/runs/T-20251028-003/review_bundle/artifacts/screenshots/part1_deck_ideal_001.png`，更新 `compile_status.json` 指向最新日志。
+- 经验：添加 `-nographics` 会导致 RenderTexture 灰屏，仅保留 `-batchmode -quit` 即可正常渲染 UI。
+- 校验：日志 `multi-agent-workspace/compile/deck_ideal_build_20251129_171000.log` 无 `error CS`/致命异常（仅命名管道警告），PIL 检查截图颜色丰富、大小约 1.9MB。
+
 ## 2025-10-20 – URP 可选化编译修复
 - 任务：用户请求修复缺失 URP 包导致的编译异常。
 - 操作：移除 `UnityEngine.Rendering.Universal` 编译期引用，改用反射探测并复制 UniversalAdditionalCameraData 设置；新增缓存函数避免重复查找。
