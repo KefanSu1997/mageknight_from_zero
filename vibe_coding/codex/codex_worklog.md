@@ -65,3 +65,13 @@
 
 - 兼容 Windows PowerShell 5.1，移除 `?.Source` 空条件运算符，改为显式 `Get-Command` 判空。
 - 调整 wt.exe 参数加入 --，防止分号被终端解析为命令分隔符引发 0x80070002。
+
+## 2025-11-27 – 理想卡组展示与自动截图
+- 编写 `DeckIdealSceneBuilder`（Tools/Scene Builders/Build + Capture Deck Ideal），复用 DeckUiBootstrapper 紫色主题并补齐顶部立绘、底部 5 张角色卡、漂浮牌堆与高光叠层，一键生成演示场景与截图。
+- 通过 batchmode 执行 BuildAndCaptureMenu，产出场景 `Assets/Scenes/Part1/Part1_DeckIdeal.unity` 与截图 `multi-agent-workspace/review_bundle/artifacts/screenshots/part1_deck_ideal_001.png`。
+- 更新 review_bundle manifest 与 `compile/compile_status.json`，记录 compile.log（无编译错误），便于验收脚本读取。
+
+## 2025-11-29 – 理想卡组截图修复与编译标记
+- `DeckIdealSceneBuilder.CreateCanvas` 额外强制 `RectTransform.localScale = Vector3.one`，防止异常缩放导致截图变灰。
+- 重新 batchmode 执行 BuildAndCaptureMenu，截图已写入 `multi-agent-workspace/review_bundle/artifacts/screenshots/part1_deck_ideal_001.png`，画面恢复紫色主题与牌面。
+- 写入 `multi-agent-workspace/compile/compile_status.json` 指向最新 `deck_ideal_build.log`，compile.log 更新记录本次无编译错误（仅授权/字体清理提示）。
