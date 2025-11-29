@@ -92,3 +92,8 @@
 - 新增滚动球试玩：编写 `RollingBallController`（WASD 平面力控制 + 速度钳制）与 `RollingBallCameraFollow`（插值跟随），并在 `RollingBallSceneBuilder` 中自动搭建地面、斜坡、方块障碍、摄像机与 UI 提示。
 - 通过 `RollingBallSceneBuilder.BuildAndCaptureMenu` 批处理生成场景 `Assets/Scenes/RollingBallDemo.unity`，同时保存截图 `rolling_slope_001.png`、`rolling_block_001.png` 到 `multi-agent-workspace/review_bundle/artifacts/screenshots/`。
 - 使用 `CIHooks.CompileAndQuit` 执行批处理编译，更新 `multi-agent-workspace/compile/compile.log` 与 `compile_status.json`（ok=true），确认无编译报错。
+
+## 2025-11-29
+- 将理想卡组自动化配置切换到新场景 `Assets/Scenes/Part1/Part1_DeckIdeal.unity`，保证截图直接对应紫色主题布局。
+- 在 WSL 通过 Windows Unity 执行 `DeckIdealSceneBuilder.BuildAndCaptureMenu`，重建场景并产出 `multi-agent-workspace/review_bundle/artifacts/screenshots/part1_deck_ideal_001.png`，画面含中心魔法阵、牌堆/弃牌堆、顶部立绘与底部 5 卡列。
+- 复用同一批处理日志 `multi-agent-workspace/review_bundle/deck_ideal_build.log` 确认无编译报错，更新 `multi-agent-workspace/compile/compile_status.json` 标记 ok=true。
