@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "ark-vision-mcp": {
+      "type": "stdio",
+      "command": "node",
+      "args": [ "D:/study and work/code/unity-MK-test/MageKnight_from_zero/mcp-ark-vision.mjs"],
+      "env": {
+        "ARK_API_KEY": "fe0334a9-3f4d-4c59-a246-03502b8f1ae2",
+        "ARK_MODEL": "doubao-seed-1-6-vision-250815",
+        "ARK_BASE_URL": "https://ark.cn-beijing.volces.com/api/v3"
+      }
+    }
+  }
+}

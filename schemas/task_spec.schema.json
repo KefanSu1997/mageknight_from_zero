@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/task_spec.schema.json",
+  "type": "object",
+  "required": ["title", "work_branch", "acceptance"],
+  "properties": {
+    "title": { "type": "string" },
+    "work_branch": { "type": "string" },
+    "base_commit": { "type": "string" },
+    "description": { "type": "string" },
+    "hints": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "acceptance": {
+      "type": "object",
+      "required": ["compile_ok_path", "screenshots_dir", "required_screenshots", "rubrics_checklist"],
+      "properties": {
+        "compile_ok_path": { "type": "string" },
+        "screenshots_dir": { "type": "string" },
+        "required_screenshots": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name", "pattern"],
+            "properties": {
+              "name": { "type": "string" },
+              "pattern": { "type": "string" },
+              "min_count": { "type": "integer", "minimum": 1, "default": 1 },
+              "note": { "type": "string" }
+            }
+          },
+          "default": []
+        },
+        "rubrics_checklist": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "text"],
+            "properties": {
+              "id": { "type": "string" },
+              "text": { "type": "string" },
+              "required": { "type": "boolean", "default": true },
+              "weight": { "type": "number", "default": 1.0 }
+            }
+          },
+          "default": []
+        }
+      }
+    }
+  }
+}

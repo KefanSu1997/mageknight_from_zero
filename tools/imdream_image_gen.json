@@ -1,0 +1,36 @@
+{
+  "name": "imdream_generate_image",
+  "description": "使用即梦AI（火山 / DMXAPI）生成图像",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "prompt": { "type": "string", "description": "图像生成提示词" },
+      "n": { "type": "integer", "description": "生成图片张数，默认为1", "default": 1 },
+      "response_format": { "type": "string", "description": "返回格式，url 或 b64_json", "default": "url" },
+      "model": { "type": "string", "description": "模型名称", "default": "doubao-seedream-4-0-250828" },
+      "image_refs": {
+        "type": "array",
+        "items": { "type": "string" },
+        "description": "可选参考图 URL 列表"
+      }
+    },
+    "required": ["prompt"]
+  },
+  "execute": {
+    "type": "http",
+    "method": "POST",
+    "url": "https://www.dmxapi.cn/v1/images/generations",
+    "headers": {
+      "Authorization": "Bearer ${IMDREAM_API_KEY}",
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "model": "${model}",
+      "prompt": "${prompt}",
+      "n": "${n}",
+      "response_format": "${response_format}",
+      "image": "${image_refs}"
+    },
+    "extract": "data"   /* 提取返回 JSON 的 data 字段（数组），工具层可进一步处理 */
+  }
+}

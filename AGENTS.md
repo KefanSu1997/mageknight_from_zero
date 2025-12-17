@@ -12,7 +12,7 @@
 
 5. 在修复bug过程中，当一次代码修改后导致编译bug大量增加时，应该首先进行回退，撤销修改，然后重新思考解决方案。
 
-6. 涉及测试场景的修改时，修改后必须运行自动化测试，检查运行效果。同样也必须确认是否存在编译错误，如有错误必须继续修改直到无编译错误。
+6. 涉及测试场景的修改时，修改后必须运行自动化测试，观察对应的截图是否达到预期效果，如果存在问题必须继续修改。同样也必须确认是否存在编译错误，如有错误必须继续修改直到无编译错误。
 
 7. vibe_coding/codex 是属于你的工作记录文件夹，每次进行代码修改后，都要在该文件夹中记录工作中的计划、思路、完成进度等等，方便之后我进行查阅，同时你也可以从中查找有用的信息。
 
@@ -20,12 +20,15 @@
 
 9. 目前用到的unity路径为'D:\Unity\Editor\2023.2.20f1c1\Editor\Unity.exe'，供你参考
 
+10. 禁止安装或者卸载unity的packages
+
 ## 经验索引
 
 - DeckViewer 浮窗调试：Canvas 排序、RectTransform sizeDelta 与烟雾测试要点 —— `vibe_coding/codex/project_experience/deck_discard_viewer_notes.md`
 - DeckMana 布局：ScrollRect 高度计算与自动化截图校准 —— `vibe_coding/codex/project_experience/deckmana_layout_scrollable_log.md`
 - 字体修复：TMP 缺字回退与资源整理流程 —— `vibe_coding/codex/project_experience/font_fix_summary.md`
 - 自动化等待：场景执行步进与实时等待的调优 —— `vibe_coding/codex/project_experience/scene_automation_waits.md`
+- 理想卡组截图调优：立绘高光透明度、魔法阵/星云叠层与牌堆位置透明度指南 —— `vibe_coding/codex/project_experience/deck_ideal_layout_notes.md`
 
 ---
 
@@ -43,8 +46,8 @@
 具体示例：DeckManaTest 自动化范例
 
 - 准备配置：在工程根目录创建 AutomationConfigs/part1_deckmana.json，约定 scenePath 指向 Assets/Scenes/Part1/
-  Part1_DeckManaTest.unity，按钮路径为 Canvas/Part1TestLayout/ControlColumn/Buttons/测试牌库系统Button、…/测试魔力池
-  Button，截图与报告输出到 AutomationOutputs/DeckManaTest/。
+  Part1_DeckManaTest.unity，按钮路径为 Canvas/Part1TableRoot/ActionColumnShell/ActionColumnRoot/Buttons/测试牌库系统Button、
+  …/测试魔力池Button，截图与报告输出到 AutomationOutputs/DeckManaTest/。
 
 - Unity 内运行
   
@@ -587,3 +590,167 @@ git push origin main
 | `Unity.exe -executeMethod CIHooks.CompileAndQuit` | 执行无界面编译检测      |
 | `Unity.exe -runTests …`                           | 执行自动化测试        |
 | `git lfs lock/unlock <文件>`                        | 锁定或解锁共享场景文件    |
+
+## 使用即梦 (Imdream) API 进行文生图，可用于美术素材生成
+
+  你可以通过本地封装脚本调用即梦（Imdream）生成或编辑图像。整个流程是异步的：先提交生成任务并获得任务 ID，再用该 ID 轮询
+  查询，直到任务完成并获取最终图像。
+
+### 核心工作流程
+
+1. 生成图像（提交任务）
+   执行 tools/generate_imdream_image.sh，提供核心 提示词 (Prompt) 及可选参数控制输出。脚本成功后会返回唯一的 任务 ID
+   (Task ID)。
+   
+   - 注意：看到任务 ID（如 1234567890）表示任务已提交，图像尚未生成。
+
+2. 查询结果（获取图像）
+   拿到任务 ID 后，执行 tools/imdream_query.sh <task_id> 轮询任务状态。
+   
+   - 当任务完成，脚本会自动解码返回的图像数据，并以 .jpg 或 .png 格式保存在 AutomationOutputs/Imdream/ 下。
+   - 文件命名格式：<task_id>_<索引>.jpg/png，例如 1234567890_0.png。
+   
+   ———
+   
+   ### 具体指令与参数
+   
+   #### 1. 文生图 (Text-to-Image)
+   
+   tools/generate_imdream_image.sh "<提示词>" [可选参数]
+   
+   示例：
+   
+   tools/generate_imdream_image.sh "一只穿着宇航服的猫漂浮在星云中，赛博朋克风格，电影级光效" --size 1048576 --scale 0.6
+   
+   #### 2. 图生图 / 图编辑 (Image-to-Image / Editing)
+   
+   需要提供参考图的公网 URL。
+
+3. 若参考图在本地（如 my_cat.png），先上传到可公网访问的服务器（推荐 tmpfiles.org）：
+   
+   UPLOAD_JSON=$(curl -F "file=@/path/to/my_cat.png" https://tmpfiles.org/api/v1/upload)
+   IMAGE_PAGE=$(echo "$UPLOAD_JSON" | jq -r '.data.url')
+   IMAGE_URL=${IMAGE_PAGE/http:/https:}
+   IMAGE_URL=${IMAGE_URL/https:\/\/tmpfiles.org\/#/https:\/\/tmpfiles.org\/dl/}
+   
+   IMAGE_URL 的最终形式应为 https://tmpfiles.org/dl/<id>/my_cat.png，这是直接可下载链接。
+
+4. 调用生成脚本时使用 --ref 参数传入该 URL：
+   
+   tools/generate_imdream_image.sh "把这只猫的背景换成月球表面" --ref "$IMAGE_URL"
+   
+   也可以多次添加 --ref，或用环境变量（最多 10 张参考图）：
+   
+   IMDREAM_IMAGE_REFS="url1,url2" tools/generate_imdream_image.sh "<提示词>" [可选参数]
+   
+   #### 3. 常用可选参数
+   
+   | 参数                  | 描述
+   | 示例                               |
+   
+   | ---------------------                      | ----------------------------------------------------------------------------------------------- |
+   | ------------------------------------------ | ----------------------------------------------------------------------------------------------- |
+   | --width <W> &<br>--height <H>              | 成对使用，指定生成图像的精确宽度和高度。必须同时提供两个参数。                                                                 |
+   | --width 2048 --height 2048                 |                                                                                                 |
+   | --size <S>                                 | 指定输出图像的大致面积（像素总数），让模型自动选择宽高比（不同时提供 --width/--height 时生                                          |
+   | 效）。                                        | --size 4194304（约 2048×2048）                                                                     |
+   | --scale <F>                                | 控制提示词对画面的影响力，范围 [0,1]，默认 0.5。值越大越贴合提示词，越小越贴合参考图。                                                |
+   | --scale 0.7                                |                                                                                                 |
+   | --ref <URL>                                | 指定参考图 URL，可重复最多 10 次；同时传主持有图生图或风格参考。<br>（也可用                                                    |
+   | IMDREAM_IMAGE_REFS="url1,url2" 环境变量一次性传入。） | --ref "https://tmpfiles.org/dl/...png"                                                          |
+   | --force-single                             | 强制只生成一张图像。                                                                                      |
+   | --force-single                             |                                                                                                 |
+   | --min-ratio <R>                            | 限制生成图像的最小宽高比（宽/高）。                                                                              |
+   | --min-ratio 1.5                            |                                                                                                 |
+   | --max-ratio <R>                            | 限制生成图像的最大宽高比（宽/高）。                                                                              |
+   | --max-ratio 2.0                            |                                                                                                 |
+   
+   #### 4. 查询与保存
+   
+   tools/imdream_query.sh <task_id> [可选输出目录]
+- <task_id>：提交时返回的任务 ID。
+
+- [可选输出目录]：缺省则保存到 AutomationOutputs/Imdream/。
+  
+  示例：
+  
+  tools/imdream_query.sh 1234567890
+  
+  运行完成后，即可在 AutomationOutputs/Imdream/1234567890_0.png 等文件中查看生成结果。
+
+### 提示词工程 (Prompt Engineering) 指南
+
+为了生成高质量、符合预期的图像，请遵循以下提示词构建策略。
+
+#### A. 核心原则：内容与美学分离
+
+将你的提示词分为两个部分，逻辑上更清晰，效果更好。
+
+1. **内容描述 (用自然语言长句)**: 清晰、连贯地描述画面的核心元素：主体是谁/是什么、在做什么、环境是怎样的。
+   
+   > **公式**: `主体 + 行为/姿态 + 环境/背景`
+   > 
+   > **示例**: `一个穿着银色铠甲的骑士，骑着一匹白色的战马，驰骋在日落时分的广阔草原上`
+
+2. **美学描述 (用逗号分隔的短词/词组)**: 描述画面的风格、艺术媒介、光影、色彩、构图等艺术性元素。
+   
+   > **公式**: `艺术风格, 色彩基调, 光照效果, 构图方式, 图像质量`
+   > 
+   > **示例**: `数字绘画, 电影感, 温暖的色调, 黄金时刻光影, 动态模糊, 广角镜头, 杰作, 8K, 超高细节`
+
+**组合示例:**
+
+> `一个穿着银色铠甲的骑士，骑着一匹白色的战馬，驰骋在日落时分的广阔草原上, 数字绘画, 电影感, 温暖的色调, 黄金时刻光影, 动态模糊, 广角镜头, 杰作, 8K, 超高细节`
+
+#### B. 特定任务技巧
+
+| 任务目标        | 核心技巧                                                | 示例                                                          |
+|:----------- |:--------------------------------------------------- |:----------------------------------------------------------- |
+| **生成多张图**   | 在提示词中加入意图词。                                         | `"帮我设计一系列不同风格的logo"`                                        |
+| **指定宽高比**   | 直接在提示词中说明，但**优先使用 `--width`/`--height` 参数**以获得精确控制。 | `"一张16:9的电影海报"`                                             |
+| **提升文字准确率** | 将需要生成的文字内容用**英文双引号** `""` 包裹。                       | `"一张咖啡店海报，上面写着 "Morning Brew""`                             |
+| **提升场景适配度** | 明确指出图像的用途和类型。                                       | `"一张用于PPT封面的背景图，内容是抽象的蓝色科技线条"`                              |
+| **图像编辑**    | 使用 `变化动作 + 变化对象 + 变化特征` 的清晰指令。                      | `使用参考图，"将图中男士的T恤衫变为红色"`                                     |
+| **多图融合/编辑** | 明确指出每张参考图的作用。                                       | `上传图1（人物）和图2（背景），"将图1中的角色放入图2的背景中，并采用图3（风格参考图）的梵高油画风格进行生成"` |
+
+#### C. 思考链与执行示例
+
+**用户请求**: "帮我画一只可爱的卡通小猫，做成微信头像。方形的。"
+
+**你的思考与执行流程:**
+
+1. **解析需求**:
+   
+   * 主体: 可爱的卡通小猫。
+   * 用途: 微信头像。
+   * 尺寸: 方形。
+
+2. **构建提示词**:
+   
+   * 内容描述: `一只非常可爱的卡通小猫，毛茸茸的，大眼睛`
+   * 美学描述: `皮克斯风格, 3D渲染, 明亮的色彩, 柔和的光线, 肖像特写`
+   * 组合: `一只非常可爱的卡通小猫，毛茸茸的大眼睛，皮克斯风格, 3D渲染, 明亮的色彩, 柔和的光线, 肖像特写, 微信头像`
+
+3. **确定参数**:
+   
+   * "方形" -> 使用 `--width 1024 --height 1024` 或 `--size 1024`。精确尺寸更佳。
+
+4. **执行命令**:
+   
+   * **步骤1 (生成)**:
+     
+     ```bash
+     tools/generate_imdream_image.sh "一只非常可爱的卡通小猫，毛茸茸的大眼睛，皮克斯风格, 3D渲染, 明亮的色彩, 柔和的光线, 肖像特写, 微信头像" --width 1024 --height 1024
+     ```
+   
+   * **假设返回**: `Task ID: 9876543210`
+   
+   * **步骤2 (查询)**:
+     
+     ```bash
+     tools/imdream_query.sh 9876543210
+     ```
+
+5. **报告结果**:
+   
+   * "图像已生成！您可以在 `AutomationOutputs/Imdream/9876543210_0.png` 查看。"
