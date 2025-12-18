@@ -11,7 +11,7 @@ public static class DeckUiThemeCache
     private const string BackgroundAssetPath = "Assets/UI/Images/DeckTheme/deckui_background.jpg";
     private const string BorderAssetPath = "Assets/UI/Images/DeckTheme/deckui_border.jpg";
     private const string MagicCircleAssetPath = "Assets/UI/Images/DeckTheme/deckui_magic_circle.jpg";
-    private const string CardBackAssetPath = "Assets/UI/Images/DeckTheme/Ideal/deck_ideal_card_back_v2.png";
+    private const string CardBackAssetPath = "Assets/UI/Images/DeckTheme/deckui_card_back.jpg";
     private const string HighlightAssetPath = "Assets/UI/Images/DeckTheme/deckui_card_highlight.jpg";
 
     // 紫银主题默认色：深紫背景 + 银色边框 + 紫色高光 + 金色次强调

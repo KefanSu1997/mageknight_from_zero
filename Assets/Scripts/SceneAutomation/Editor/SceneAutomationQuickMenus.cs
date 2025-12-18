@@ -23,6 +23,7 @@ namespace MageKnight.SceneAutomation.Editor
             {
                 scenePath = "Assets/Scenes/Part1/Part1_DeckIdeal.unity",
                 screenshotsDirectory = "multi-agent-workspace/runs/T-20251028-006/review_bundle/artifacts/screenshots",
+                useRunSubfolder = false,
                 reportPath = "multi-agent-workspace/runs/T-20251028-006/review_bundle/artifacts/deck_ideal_report.json",
                 captureInitialView = true,
                 initialDelaySeconds = 0.25f,

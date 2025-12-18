@@ -17,6 +17,10 @@ namespace MageKnight.SceneAutomation
     /// </summary>
     public class SceneAutomationOrchestrator : MonoBehaviour
     {
+        private const int DeckIdealCaptureWidth = 1378;
+        private const int DeckIdealCaptureHeight = 1204;
+        private const string DeckIdealSceneSuffix = "Assets/Scenes/Part1/Part1_DeckIdeal.unity";
+
         private SceneAutomationRequest _request;
         private SceneAutomationReport _report;
         private string _screenshotsDirectory;
@@ -54,12 +58,19 @@ namespace MageKnight.SceneAutomation
             var baseScreenshotsDirectory = ResolveDirectory(_request.screenshotsDirectory);
             EnsureDirectory(baseScreenshotsDirectory);
 
-            var sceneName = SanitizeFileName(Path.GetFileNameWithoutExtension(_request.scenePath) ?? "Scene");
-            var timestamp = DateTime.Now.ToString("yyyyMMdd_HHmmss");
-            var runFolderName = $"{sceneName}_{timestamp}";
+            if (_request.useRunSubfolder)
+            {
+                var sceneName = SanitizeFileName(Path.GetFileNameWithoutExtension(_request.scenePath) ?? "Scene");
+                var timestamp = DateTime.Now.ToString("yyyyMMdd_HHmmss");
+                var runFolderName = $"{sceneName}_{timestamp}";
 
-            _screenshotsDirectory = Path.Combine(baseScreenshotsDirectory, runFolderName);
-            EnsureDirectory(_screenshotsDirectory);
+                _screenshotsDirectory = Path.Combine(baseScreenshotsDirectory, runFolderName);
+                EnsureDirectory(_screenshotsDirectory);
+            }
+            else
+            {
+                _screenshotsDirectory = baseScreenshotsDirectory;
+            }
 
             if (_request.initialDelaySeconds > 0f)
             {
@@ -179,10 +190,22 @@ namespace MageKnight.SceneAutomation
 
             yield return new WaitForEndOfFrame();
 
+            Canvas.ForceUpdateCanvases();
+
+            var stepIndex = _report.steps.Count;
             var fileName = BuildScreenshotFileName(label);
             var filePath = Path.Combine(_screenshotsDirectory, fileName);
 
-            ScreenCapture.CaptureScreenshot(filePath);
+            var png = CapturePng();
+            if (png != null && png.Length > 0)
+            {
+                File.WriteAllBytes(filePath, png);
+                WriteDeckIdealAliasesIfNeeded(stepIndex, png);
+            }
+            else
+            {
+                ScreenCapture.CaptureScreenshot(filePath);
+            }
             record.screenshotPath = filePath;
             record.message = success ? "" : record.message;
 
@@ -190,6 +213,124 @@ namespace MageKnight.SceneAutomation
             Debug.Log($"[SceneAutomation] Step complete: {record.label} (success: {record.success})");
 
             yield return null;
+        }
+
+        private byte[] CapturePng()
+        {
+            var camera = FindCaptureCamera();
+            if (camera == null)
+            {
+                Debug.LogWarning("[SceneAutomation] No camera found for deterministic capture; falling back to ScreenCapture.");
+                return null;
+            }
+
+            var (width, height) = GetCaptureDimensions(camera);
+            if (width <= 0 || height <= 0)
+            {
+                Debug.LogWarning($"[SceneAutomation] Invalid capture size ({width}x{height}); falling back to ScreenCapture.");
+                return null;
+            }
+
+            var renderTexture = new RenderTexture(width, height, 24);
+            renderTexture.Create();
+
+            var previousTarget = camera.targetTexture;
+            var previousActive = RenderTexture.active;
+            var previousClearFlags = camera.clearFlags;
+
+            camera.targetTexture = renderTexture;
+            camera.clearFlags = CameraClearFlags.SolidColor;
+            camera.Render();
+
+            RenderTexture.active = renderTexture;
+            var texture = new Texture2D(renderTexture.width, renderTexture.height, TextureFormat.RGB24, false);
+            texture.ReadPixels(new Rect(0, 0, renderTexture.width, renderTexture.height), 0, 0);
+            texture.Apply();
+
+            var png = texture.EncodeToPNG();
+
+            camera.targetTexture = previousTarget;
+            camera.clearFlags = previousClearFlags;
+            RenderTexture.active = previousActive;
+
+            Destroy(texture);
+            renderTexture.Release();
+            Destroy(renderTexture);
+
+            return png;
+        }
+
+        private (int width, int height) GetCaptureDimensions(Camera camera)
+        {
+            if (IsDeckIdealRequest())
+            {
+                return (DeckIdealCaptureWidth, DeckIdealCaptureHeight);
+            }
+
+            var width = Mathf.Max(1, Screen.width);
+            var height = Mathf.Max(1, Screen.height);
+            if (camera != null && camera.targetTexture != null)
+            {
+                width = Mathf.Max(1, camera.targetTexture.width);
+                height = Mathf.Max(1, camera.targetTexture.height);
+            }
+
+            return (width, height);
+        }
+
+        private Camera FindCaptureCamera()
+        {
+            var cameras = FindObjectsByType<Camera>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+            if (cameras == null || cameras.Length == 0)
+            {
+                return null;
+            }
+
+            foreach (var cam in cameras)
+            {
+                if (cam != null && cam.enabled && string.Equals(cam.name, "DeckUICamera", StringComparison.Ordinal))
+                {
+                    return cam;
+                }
+            }
+
+            if (Camera.main != null && Camera.main.enabled)
+            {
+                return Camera.main;
+            }
+
+            foreach (var cam in cameras)
+            {
+                if (cam != null && cam.enabled)
+                {
+                    return cam;
+                }
+            }
+
+            return cameras[0];
+        }
+
+        private bool IsDeckIdealRequest()
+        {
+            return _request != null
+                && !string.IsNullOrWhiteSpace(_request.scenePath)
+                && _request.scenePath.Replace('\\', '/').EndsWith(DeckIdealSceneSuffix, StringComparison.OrdinalIgnoreCase);
+        }
+
+        private void WriteDeckIdealAliasesIfNeeded(int stepIndex, byte[] png)
+        {
+            if (!IsDeckIdealRequest() || png == null || png.Length == 0)
+            {
+                return;
+            }
+
+            if (stepIndex != 0)
+            {
+                return;
+            }
+
+            File.WriteAllBytes(Path.Combine(_screenshotsDirectory, "deck_ideal_overview.png"), png);
+            File.WriteAllBytes(Path.Combine(_screenshotsDirectory, "deck_ideal_automation_000.png"), png);
         }
 
         private string BuildScreenshotFileName(string label)

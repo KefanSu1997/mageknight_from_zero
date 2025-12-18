@@ -296,16 +296,26 @@ gh pr merge --squash
 
 # Unity 编译错误查看
 
-当你需要查看 Unity 项目的编译报错时，请调用 `unity-mcp` 提供的工具。
 
-- 工具前缀：`@mcp-unity`
-- 可用命令：
-  - `@mcp-unity.get_compile_errors()`  
-    获取当前 Unity 编辑器里的编译错误信息，并以列表形式返回。
-  - `@mcp-unity.get_console_logs(level="error")`  
-    获取 Unity Console 中的错误日志。
-  - `@mcp-unity.execute_menu_item(path="...")`  
-    在 Unity 中执行菜单命令（比如 `Assets/Reimport All`）。
+
+- Unity 编译错误检查（标准流程，按顺序执行）：
+  1. 先清空/隔离旧日志（可选但推荐）
+  - 调用 Unity Console：只拉取最近一段（例如 count=200），确认当前会话干净；或先执行清理（如果你们有清理菜单/工具的
+    话）。
+  2. 获取编译错误（必须）
+  - 用 unity-mcp 从 Console 拉取 types=["error"]（建议 count=1000，并开启 include_stacktrace=true）。
+  
+  - 判定标准：返回 0 条 error 才算“无编译错误”。
+  3. 如 error 为 0，再检查异常类报错（必须）
+  - 再拉取一次 types=["error"]（同上）确保没有遗漏；必要时把 count 加大。
+  
+  - 注意：本项目工具的 types 只接受 error|warning|log|all，不要传 Exception/Assert 之类值。
+  4. 如存在 error，按错误清单逐条处理（必须）
+  - 记录每条 error 的 message/file/line/stackTrace。
+  
+  - 修复后重复步骤 2，直到 error 为 0。
+  5. 最终留档（按你们仓库要求）
+  - 在 vibe_coding/codex 记录：检查时间、错误条数、关键错误信息（若有）和修复结论。
 
 ## Project Structure & Module Organization
 

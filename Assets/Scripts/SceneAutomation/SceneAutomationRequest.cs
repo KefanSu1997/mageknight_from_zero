@@ -11,6 +11,7 @@ namespace MageKnight.SceneAutomation
     {
         public string scenePath;
         public string screenshotsDirectory;
+        public bool useRunSubfolder = true;
         public string reportPath;
         public bool captureInitialView = true;
         public float initialDelaySeconds = 2f;

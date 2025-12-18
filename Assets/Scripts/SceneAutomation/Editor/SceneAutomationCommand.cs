@@ -107,12 +107,14 @@ namespace MageKnight.SceneAutomation.Editor
                     throw new InvalidOperationException($"场景路径无效：{request.scenePath}");
                 }
 
-                request.scenePath = scenePath;
+                 request.scenePath = scenePath;
+ 
+                 GameViewResolutionUtility.ApplyDeckIdealResolutionIfNeeded(scenePath);
 
-                SceneAutomationRuntimeState.SetRequest(request);
-                Debug.Log($"[SceneAutomation] Config prepared: {scenePath} (steps: {request.steps.Count})");
-                SceneAutomationRuntimeState.AutomationCompleted += OnAutomationCompleted;
-                EditorApplication.playModeStateChanged += OnPlayModeStateChanged;
+                 SceneAutomationRuntimeState.SetRequest(request);
+                 Debug.Log($"[SceneAutomation] Config prepared: {scenePath} (steps: {request.steps.Count})");
+                 SceneAutomationRuntimeState.AutomationCompleted += OnAutomationCompleted;
+                 EditorApplication.playModeStateChanged += OnPlayModeStateChanged;
 
                 EditorPrefs.SetBool("kPauseOnPlay", false);
                 EditorApplication.isPaused = false;
