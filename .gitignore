@@ -56,9 +56,11 @@ TestResults.xml
 
 # Tooling folders (local-only)
 vibe_coding_tools/
-multi-agent-workspace/
+/multi-agent-workspace/
+/multi-agent-workspace/**
 .ccr_bridge/
 .claude/
+
 
 # Project-specific: do NOT ignore Assets/, ProjectSettings/, Packages/
 # Keep Packages/manifest.json and packages-lock.json tracked
