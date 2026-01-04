@@ -65,3 +65,6 @@ vibe_coding_tools/
 # Project-specific: do NOT ignore Assets/, ProjectSettings/, Packages/
 # Keep Packages/manifest.json and packages-lock.json tracked
 
+
+# local secrets
+.env
