@@ -29,6 +29,7 @@
 - 字体修复：TMP 缺字回退与资源整理流程 —— `vibe_coding/codex/project_experience/font_fix_summary.md`
 - 自动化等待：场景执行步进与实时等待的调优 —— `vibe_coding/codex/project_experience/scene_automation_waits.md`
 - 理想卡组截图调优：立绘高光透明度、魔法阵/星云叠层与牌堆位置透明度指南 —— `vibe_coding/codex/project_experience/deck_ideal_layout_notes.md`
+- Imdream 下载偶发 EOF：imdream_query.ps1 失败重试与下载参数要点 —— `vibe_coding/codex/project_experience/imdream_query_download_retry_2026-01-05.md`
 
 ---
 
@@ -296,9 +297,8 @@ gh pr merge --squash
 
 # Unity 编译错误查看
 
-
-
 - Unity 编译错误检查（标准流程，按顺序执行）：
+  
   1. 先清空/隔离旧日志（可选但推荐）
   - 调用 Unity Console：只拉取最近一段（例如 count=200），确认当前会话干净；或先执行清理（如果你们有清理菜单/工具的
     话）。
@@ -609,16 +609,19 @@ git push origin main
 ### 核心工作流程
 
 1. 生成图像（提交任务）
-   执行 tools/generate_imdream_image.sh，提供核心 提示词 (Prompt) 及可选参数控制输出。脚本成功后会返回唯一的 任务 ID
+   执行 `tools/imdream_submit.ps1`，提供核心提示词 (Prompt) 及可选参数控制输出。脚本成功后会返回唯一的任务 ID
    (Task ID)。
    
    - 注意：看到任务 ID（如 1234567890）表示任务已提交，图像尚未生成。
+   - 若需要 `width/height/size/min_ratio` 等高级参数，请改用 `tools/generate_imdream_image.ps1`（同样返回任务 ID）。
 
 2. 查询结果（获取图像）
-   拿到任务 ID 后，执行 tools/imdream_query.sh <task_id> 轮询任务状态。
+   拿到任务 ID 后，执行 `tools/imdream_query.ps1 <task_id> [output_dir] --poll --interval <sec> --timeout <sec> --download-name <name>`
+   轮询任务状态并下载结果。
    
-   - 当任务完成，脚本会自动解码返回的图像数据，并以 .jpg 或 .png 格式保存在 AutomationOutputs/Imdream/ 下。
-   - 文件命名格式：<task_id>_<索引>.jpg/png，例如 1234567890_0.png。
+   - 传入 `--download-name` 会自动下载 `image_urls` 并保存到 AutomationOutputs/Imdream/ 下。
+   - 文件命名格式：<name>_<索引>.png，例如 t2i_cat_0.png。
+   - 不传 `--download-name` 时只输出 JSON（仅当返回 base64 数据时才会自动落盘）。
    
    ———
    
@@ -626,34 +629,38 @@ git push origin main
    
    #### 1. 文生图 (Text-to-Image)
    
-   tools/generate_imdream_image.sh "<提示词>" [可选参数]
+   .\tools\imdream_submit.ps1 -Prompt "<提示词>" [可选参数]
    
    示例：
    
-   tools/generate_imdream_image.sh "一只穿着宇航服的猫漂浮在星云中，赛博朋克风格，电影级光效" --size 1048576 --scale 0.6
+   .\tools\imdream_submit.ps1 -Prompt "一只穿着宇航服的猫漂浮在星云中，赛博朋克风格，电影级光效" -Scale 0.6 -ForceSingle
+   
+   若需指定尺寸等高级参数：
+   
+   .\tools\generate_imdream_image.ps1 "一只穿着宇航服的猫漂浮在星云中，赛博朋克风格，电影级光效" --size 1048576 --scale 0.6
    
    #### 2. 图生图 / 图编辑 (Image-to-Image / Editing)
    
    需要提供参考图的公网 URL。
-
-3. 若参考图在本地（如 my_cat.png），先上传到可公网访问的服务器（推荐 tmpfiles.org）：
    
-   UPLOAD_JSON=$(curl -F "file=@/path/to/my_cat.png" https://tmpfiles.org/api/v1/upload)
-   IMAGE_PAGE=$(echo "$UPLOAD_JSON" | jq -r '.data.url')
-   IMAGE_URL=${IMAGE_PAGE/http:/https:}
-   IMAGE_URL=${IMAGE_URL/https:\/\/tmpfiles.org\/#/https:\/\/tmpfiles.org\/dl/}
+   - 若参考图在本地（如 my_cat.png），先上传到可公网访问的服务器（推荐 tmpfiles.org）：
+     
+     $IMAGE_URL = .\tools\imdream_upload_ref.ps1 "C:\path\to\my_cat.png"
+     
+     IMAGE_URL 的最终形式应为 https://tmpfiles.org/dl/<id>/my_cat.png，这是直接可下载链接。
    
-   IMAGE_URL 的最终形式应为 https://tmpfiles.org/dl/<id>/my_cat.png，这是直接可下载链接。
-
-4. 调用生成脚本时使用 --ref 参数传入该 URL：
-   
-   tools/generate_imdream_image.sh "把这只猫的背景换成月球表面" --ref "$IMAGE_URL"
-   
-   也可以多次添加 --ref，或用环境变量（最多 10 张参考图）：
-   
-   IMDREAM_IMAGE_REFS="url1,url2" tools/generate_imdream_image.sh "<提示词>" [可选参数]
+   - 调用生成脚本时传入该 URL：
+     
+     .\tools\imdream_submit.ps1 -Prompt "把这只猫的背景换成月球表面" -ImageUrls $IMAGE_URL -Scale 0.6 -ForceSingle
+     
+     也可以多次添加参考图（最多 10 张），或用环境变量：
+     
+     $env:IMDREAM_IMAGE_REFS = "url1,url2"
+     .\tools\generate_imdream_image.ps1 "<提示词>" [可选参数]
    
    #### 3. 常用可选参数
+   
+   下面参数适用于 `tools/generate_imdream_image.ps1`（`imdream_submit.ps1` 仅封装常用提交参数）。
    
    | 参数                  | 描述
    | 示例                               |
@@ -677,16 +684,16 @@ git push origin main
    
    #### 4. 查询与保存
    
-   tools/imdream_query.sh <task_id> [可选输出目录]
+   .\tools\imdream_query.ps1 <task_id> [可选输出目录] --download-name <name> --poll --interval 5 --timeout 300
 - <task_id>：提交时返回的任务 ID。
 
 - [可选输出目录]：缺省则保存到 AutomationOutputs/Imdream/。
   
   示例：
   
-  tools/imdream_query.sh 1234567890
+  .\tools\imdream_query.ps1 1234567890 AutomationOutputs/Imdream --download-name sample --poll --interval 5 --timeout 300
   
-  运行完成后，即可在 AutomationOutputs/Imdream/1234567890_0.png 等文件中查看生成结果。
+  运行完成后，即可在 AutomationOutputs/Imdream/sample_0.png 等文件中查看生成结果。
 
 ### 提示词工程 (Prompt Engineering) 指南
 
@@ -750,7 +757,7 @@ git push origin main
    * **步骤1 (生成)**:
      
      ```bash
-     tools/generate_imdream_image.sh "一只非常可爱的卡通小猫，毛茸茸的大眼睛，皮克斯风格, 3D渲染, 明亮的色彩, 柔和的光线, 肖像特写, 微信头像" --width 1024 --height 1024
+     .\tools\generate_imdream_image.ps1 "一只非常可爱的卡通小猫，毛茸茸的大眼睛，皮克斯风格, 3D渲染, 明亮的色彩, 柔和的光线, 肖像特写, 微信头像" --width 1024 --height 1024
      ```
    
    * **假设返回**: `Task ID: 9876543210`
@@ -758,7 +765,7 @@ git push origin main
    * **步骤2 (查询)**:
      
      ```bash
-     tools/imdream_query.sh 9876543210
+     .\tools\imdream_query.ps1 9876543210 AutomationOutputs/Imdream --download-name avatar_cat --poll --interval 5 --timeout 300
      ```
 
 5. **报告结果**:
