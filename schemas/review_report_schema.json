@@ -33,6 +33,34 @@
       },
       "default": []
     },
+    "round_rubrics_result": {
+      "type": "array",
+      "description": "逐条对 round_context.round_rubrics 的打勾结果",
+      "items": {
+        "type": "object",
+        "required": ["id", "passed"],
+        "properties": {
+          "id": { "type": "string" },
+          "passed": { "type": "boolean" },
+          "note": { "type": "string" }
+        }
+      },
+      "default": []
+    },
+    "final_rubrics_result": {
+      "type": "array",
+      "description": "可选：与 rubrics_result 同义的最终验收打勾结果",
+      "items": {
+        "type": "object",
+        "required": ["id", "passed"],
+        "properties": {
+          "id": { "type": "string" },
+          "passed": { "type": "boolean" },
+          "note": { "type": "string" }
+        }
+      },
+      "default": []
+    },
     "notes": { "type": "string" }
   }
 }

@@ -8,7 +8,7 @@ namespace MageKnight.SceneAutomation.Editor
 {
     public static class SceneAutomationQuickMenus
     {
-        private const string DeckIdealConfigPath = "multi-agent-workspace/runs/T-20251028-006/scene_automation_deckideal.json";
+        private const string DeckIdealConfigPath = "multi-agent-workspace/runs/T-20251028-012/scene_automation_deckideal.json";
 
         [MenuItem("Tools/Scene Automation/Run DeckIdeal Automation")]
         private static void RunDeckIdealAutomation()
@@ -22,9 +22,9 @@ namespace MageKnight.SceneAutomation.Editor
             var request = new SceneAutomationRequest
             {
                 scenePath = "Assets/Scenes/Part1/Part1_DeckIdeal.unity",
-                screenshotsDirectory = "multi-agent-workspace/runs/T-20251028-006/review_bundle/artifacts/screenshots",
+                screenshotsDirectory = "multi-agent-workspace/runs/T-20251028-012/review_bundle/artifacts/screenshots",
                 useRunSubfolder = false,
-                reportPath = "multi-agent-workspace/runs/T-20251028-006/review_bundle/artifacts/deck_ideal_report.json",
+                reportPath = "multi-agent-workspace/runs/T-20251028-012/review_bundle/artifacts/deck_ideal_report.json",
                 captureInitialView = true,
                 initialDelaySeconds = 0.25f,
                 defaultWaitAfterSeconds = 0.5f,

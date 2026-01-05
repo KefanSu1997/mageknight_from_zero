@@ -295,6 +295,63 @@ gh pr view --web
 gh pr merge --squash
 ```
 
+# 自动化截图流程（Scene Automation）
+
+本节总结“自动化截图流程”从配置到触发再到输出的完整步骤，默认 **不使用 batchmode**。
+
+## 1) 配置
+
+DeckIdeal 的快速入口会自动生成配置文件：
+
+- 配置路径：`multi-agent-workspace/runs/T-20251028-012/scene_automation_deckideal.json`
+
+配置核心字段说明：
+
+- `scenePath`：目标场景，例如 `Assets/Scenes/Part1/Part1_DeckIdeal.unity`
+- `screenshotsDirectory`：截图输出目录
+- `reportPath`：报告输出路径（JSON）
+- `captureInitialView`：是否捕获初始视图（会生成 000_ 开头的截图）
+- `initialDelaySeconds`：场景加载后首次截图前的等待
+- `defaultWaitAfterSeconds`：每个步骤点击后的默认等待
+- `steps`：按钮点击步骤列表（label + buttonPath + waitAfterSeconds）
+- `useRunSubfolder`：是否在截图目录下再创建一次性子目录
+
+## 2) 触发（禁止 batchmode）
+
+在 **Unity 编辑器** 中执行：
+
+- 菜单：`Tools/Scene Automation/Run DeckIdeal Automation`
+
+执行流程：
+
+1. 编辑器自动写入配置文件（路径见上）。
+2. 进入 Play Mode。
+3. SceneAutomation 在运行时依次点击按钮、截图并写报告。
+4. 流程结束后自动退出 Play Mode。
+
+## 3) 输出
+
+成功后应看到：
+
+- 报告：`multi-agent-workspace/runs/T-20251028-012/review_bundle/artifacts/deck_ideal_report.json`
+  - `status=success` 表示流程通过。
+  - `steps[*].screenshotPath` 指向具体截图。
+- 截图目录：`multi-agent-workspace/runs/T-20251028-012/review_bundle/artifacts/screenshots`
+  - `000_Scene Start.png`（初始视图）
+  - `001_...` / `002_...` / `003_...`（每个步骤的截图）
+  - DeckIdeal 额外别名：`deck_ideal_overview.png`、`deck_ideal_automation_000.png`
+
+## 4) 验证要点
+
+- Unity Console 应输出：
+  - `[SceneAutomation] 场景：... 状态：success 步骤数：N`
+  - 每个步骤的 `[OK] label -> screenshotPath`
+- 若无输出或没有新文件，请检查：
+  - 当前是否处于 Play Mode
+  - `scenePath` 是否正确
+  - `screenshotsDirectory` / `reportPath` 是否可写
+
+
 # Unity 编译错误查看
 
 - Unity 编译错误检查（标准流程，按顺序执行）：
