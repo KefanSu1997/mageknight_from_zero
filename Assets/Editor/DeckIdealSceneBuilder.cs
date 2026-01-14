@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.IO;
 using UnityEditor;
 using UnityEditor.SceneManagement;
@@ -14,7 +15,7 @@ namespace MageKnight.EditorTools
     /// </summary>
     public static class DeckIdealSceneBuilder
     {
-        private const string BuildSignature = "2025-12-18_remove_placeholders_v1";
+        private const string BuildSignature = "2026-01-05_restore_deck_layout_v2";
         private const string ScenePath = "Assets/Scenes/Part1/Part1_DeckIdeal.unity";
         private const int DiscardScatterSeed = 1018;
         private const int IdealDeckCount = 30;
@@ -38,24 +39,32 @@ namespace MageKnight.EditorTools
 
         private static readonly string[] ScreenshotTargets =
         {
-            "multi-agent-workspace/runs/T-20251028-006/review_bundle/artifacts/screenshots/deck_ideal_overview.png"
+            "multi-agent-workspace/runs/T-20251028-012/review_bundle/artifacts/screenshots/deck_ideal_overview.png"
         };
 
-        private const string ThemeBackgroundPath = "Assets/UI/Images/DeckTheme/Ideal/deck_ideal_full_1378x1204_v2.png";
+        private const string ThemeBackgroundPath = "Assets/UI/Images/DeckTheme/Ideal/Candidates/Board/deck_ideal_board_candidate_20260104_f.png";
         private const string ThemeBorderPath = "Assets/UI/Images/DeckTheme/deckui_border.jpg";
         private const string ThemeMagicCirclePath = "Assets/UI/Images/DeckTheme/deckui_magic_circle.jpg";
         private const string ThemeHighlightPath = "Assets/UI/Images/DeckTheme/deckui_card_highlight.jpg";
-        private const string ThemeCardBackPath = "Assets/UI/Images/DeckTheme/Ideal/deck_ideal_card_back_v2.png";
+        private const string ThemeCardBackPath = "Assets/UI/Images/DeckTheme/Ideal/Candidates/CardBack/deck_ideal_card_back_candidate_20260104_f.png";
+        private static readonly string[] ThemeCardFacePaths =
+        {
+            "Assets/UI/Images/DeckTheme/Ideal/Candidates/CardFace/deck_ideal_card_face_candidate_20260104_a.png",
+            "Assets/UI/Images/DeckTheme/Ideal/Candidates/CardFace/deck_ideal_card_face_candidate_20260104_b.png",
+            "Assets/UI/Images/DeckTheme/Ideal/Candidates/CardFace/deck_ideal_card_face_candidate_20260104_c.png",
+            "Assets/UI/Images/DeckTheme/Ideal/Candidates/CardFace/deck_ideal_card_face_candidate_20260104_d.png",
+            "Assets/UI/Images/DeckTheme/Ideal/Candidates/CardFace/deck_ideal_card_face_candidate_20260104_e.png"
+        };
 
         private static readonly Color DeckStackTint = new(1f, 1f, 1f, 0.96f);
         private static readonly Color DiscardStackTint = new(1f, 1f, 1f, 0.9f);
         private static readonly Color FrameColor = new(0.9f, 0.94f, 1f, 0.38f);
-        private static readonly Color FiligreeColor = new(0.94f, 0.95f, 1f, 0.4f);
+        private static readonly Color FiligreeColor = new(0.94f, 0.95f, 1f, 0.36f);
         private static readonly Color GemColor = new(0.88f, 0.94f, 1f, 0.52f);
         private static readonly Color BackgroundTint = new(0f, 0f, 0f, 0.3f);
-        private static readonly Color MagicCircleColor = new(0.62f, 0.82f, 1f, 0.32f);
-        private static readonly Color SwirlColor = new(1f, 0.82f, 0.46f, 0.24f);
-        private static readonly Color CardGlowColor = new(1f, 0.88f, 0.58f, 0.26f);
+        private static readonly Color MagicCircleColor = new(0.62f, 0.82f, 1f, 0f);
+        private static readonly Color SwirlColor = new(1f, 0.82f, 0.46f, 0f);
+        private static readonly Color CardGlowColor = new(1f, 0.86f, 0.52f, 0.22f);
         private static readonly Color SlotTint = new(0.08f, 0.1f, 0.14f, 0.82f);
 
         private static Sprite _whiteSprite;
@@ -198,12 +207,38 @@ namespace MageKnight.EditorTools
                 Highlight = highlight,
                 MagicCircle = magicCircle,
                 CardBack = cardBack,
-                CardFaces = null,
+                CardFaces = LoadCardFaceSprites(),
                 Monster = null,
                 BackgroundColor = new Color(0.18f, 0.08f, 0.28f, 1f),
                 AccentColor = new Color(0.48f, 0.64f, 0.98f, 1f),
                 SecondaryAccentColor = new Color(1f, 0.82f, 0.52f, 1f)
             };
+        }
+
+        private static Sprite[] LoadCardFaceSprites()
+        {
+            if (ThemeCardFacePaths == null || ThemeCardFacePaths.Length == 0)
+            {
+                return null;
+            }
+
+            var faces = new List<Sprite>(ThemeCardFacePaths.Length);
+            foreach (var path in ThemeCardFacePaths)
+            {
+                if (string.IsNullOrWhiteSpace(path))
+                {
+                    continue;
+                }
+
+                AssetDatabase.ImportAsset(path, ImportAssetOptions.ForceUpdate);
+                var sprite = LoadSpriteLoose(path);
+                if (sprite != null)
+                {
+                    faces.Add(sprite);
+                }
+            }
+
+            return faces.Count > 0 ? faces.ToArray() : null;
         }
 
         private static void BuildStaticLayout(Canvas canvas, ThemeSprites theme)
@@ -215,6 +250,22 @@ namespace MageKnight.EditorTools
             }
 
             BuildBackground(root, theme);
+            BuildCenterStage(root, theme);
+            BuildCornerShelves(root, theme);
+            BuildBottomBand(root, theme);
+
+            var highlightRoot = CreateRect("HighlightRoot", root);
+            highlightRoot.anchorMin = Vector2.zero;
+            highlightRoot.anchorMax = Vector2.one;
+            highlightRoot.offsetMin = Vector2.zero;
+            highlightRoot.offsetMax = Vector2.zero;
+            highlightRoot.pivot = new Vector2(0.5f, 0.5f);
+            var highlightGroups = BuildHighlightOverlays(highlightRoot, theme);
+
+            BuildDeckStack(root, theme);
+            BuildDiscardPile(root, theme);
+            BuildHandZone(root, theme);
+            BuildBorder(root, theme);
 
             var overlayRoot = CreateRect("Overlay", root);
             overlayRoot.anchorMin = Vector2.zero;
@@ -222,9 +273,9 @@ namespace MageKnight.EditorTools
             overlayRoot.offsetMin = Vector2.zero;
             overlayRoot.offsetMax = Vector2.zero;
             overlayRoot.pivot = new Vector2(0.5f, 0.5f);
-
+            overlayRoot.SetAsLastSibling();
             BuildCountPlaques(overlayRoot, theme);
-            BuildInteractionHitboxes(overlayRoot);
+            BuildInteractionHitboxes(overlayRoot, highlightGroups);
         }
 
         private static Vector2 PixelToAnchoredPosition(Vector2 pixel)
@@ -272,12 +323,121 @@ namespace MageKnight.EditorTools
 
         private static void BuildInteractionHitboxes(RectTransform root)
         {
-            CreateHitbox(root, "DeckHitbox", PixelToAnchoredPosition(new Vector2(220f, 250f)), ScaleSizeUniform(new Vector2(360f, 300f)));
-            CreateHitbox(root, "DiscardHitbox", PixelToAnchoredPosition(new Vector2(1160f, 250f)), ScaleSizeUniform(new Vector2(360f, 300f)));
-            CreateHitbox(root, "HandHitbox", PixelToAnchoredPosition(new Vector2(689f, 960f)), ScaleSizeUniform(new Vector2(1220f, 420f)));
+            BuildInteractionHitboxes(root, Array.Empty<CanvasGroup>());
         }
 
-        private static void CreateHitbox(RectTransform parent, string name, Vector2 anchoredPosition, Vector2 size)
+        private static CanvasGroup[] BuildHighlightOverlays(RectTransform root, ThemeSprites theme)
+        {
+            var borderSprite = theme.Border ?? theme.Highlight;
+            var glowSprite = theme.Border ?? theme.Highlight;
+            if (borderSprite == null && glowSprite == null)
+            {
+                return Array.Empty<CanvasGroup>();
+            }
+
+            var deck = CreateHighlight(root,
+                "DeckHighlight",
+                borderSprite,
+                glowSprite,
+                theme.AccentColor,
+                0f,
+                PixelToAnchoredPosition(new Vector2(214f, 286f)),
+                ScaleSizeUniform(new Vector2(420f, 320f)));
+
+            var discard = CreateHighlight(root,
+                "DiscardHighlight",
+                borderSprite,
+                glowSprite,
+                theme.SecondaryAccentColor,
+                0f,
+                PixelToAnchoredPosition(new Vector2(1164f, 286f)),
+                ScaleSizeUniform(new Vector2(420f, 320f)));
+
+            var handTint = Color.Lerp(theme.AccentColor, theme.SecondaryAccentColor, 0.45f);
+            var hand = CreateHighlight(root,
+                "HandHighlight",
+                borderSprite,
+                glowSprite,
+                handTint,
+                0f,
+                PixelToAnchoredPosition(new Vector2(689f, 960f)),
+                ScaleSizeUniform(new Vector2(1220f, 420f)));
+
+            return new[] { deck, discard, hand };
+        }
+
+        private static CanvasGroup CreateHighlight(
+            RectTransform parent,
+            string name,
+            Sprite borderSprite,
+            Sprite glowSprite,
+            Color tint,
+            float alpha,
+            Vector2 anchoredPosition,
+            Vector2 size)
+        {
+            var root = CreateRect(name, parent);
+            root.anchorMin = new Vector2(0.5f, 0.5f);
+            root.anchorMax = new Vector2(0.5f, 0.5f);
+            root.pivot = new Vector2(0.5f, 0.5f);
+            root.anchoredPosition = anchoredPosition;
+            root.sizeDelta = size;
+
+            if (glowSprite != null)
+            {
+                var outerGlow = CreateImage("OuterGlow", root, glowSprite, Vector2.zero, Vector2.zero);
+                outerGlow.rectTransform.anchorMin = Vector2.zero;
+                outerGlow.rectTransform.anchorMax = Vector2.one;
+                outerGlow.rectTransform.offsetMin = ScaleSizeUniform(new Vector2(-28f, -28f));
+                outerGlow.rectTransform.offsetMax = -ScaleSizeUniform(new Vector2(-28f, -28f));
+                outerGlow.type = Image.Type.Sliced;
+                outerGlow.fillCenter = false;
+                outerGlow.color = new Color(tint.r, tint.g, tint.b, 0.24f);
+                outerGlow.raycastTarget = false;
+                var outerOutline = outerGlow.gameObject.AddComponent<Outline>();
+                outerOutline.effectColor = new Color(tint.r, tint.g, tint.b, 0.28f);
+                outerOutline.effectDistance = new Vector2(6f, -6f);
+
+                var innerGlow = CreateImage("InnerGlow", root, glowSprite, Vector2.zero, Vector2.zero);
+                innerGlow.rectTransform.anchorMin = Vector2.zero;
+                innerGlow.rectTransform.anchorMax = Vector2.one;
+                innerGlow.rectTransform.offsetMin = ScaleSizeUniform(new Vector2(-10f, -10f));
+                innerGlow.rectTransform.offsetMax = -ScaleSizeUniform(new Vector2(-10f, -10f));
+                innerGlow.type = Image.Type.Sliced;
+                innerGlow.fillCenter = false;
+                innerGlow.color = new Color(tint.r, tint.g, tint.b, 0.36f);
+                innerGlow.raycastTarget = false;
+            }
+
+            if (borderSprite != null)
+            {
+                var border = CreateImage("Border", root, borderSprite, Vector2.zero, Vector2.zero);
+                border.rectTransform.anchorMin = Vector2.zero;
+                border.rectTransform.anchorMax = Vector2.one;
+                border.rectTransform.offsetMin = Vector2.zero;
+                border.rectTransform.offsetMax = Vector2.zero;
+                border.type = Image.Type.Sliced;
+                border.fillCenter = false;
+                var baseAlpha = alpha <= 0f ? 0.85f : Mathf.Clamp01(alpha);
+                border.color = new Color(tint.r, tint.g, tint.b, baseAlpha);
+                border.raycastTarget = false;
+            }
+
+            var group = root.gameObject.AddComponent<CanvasGroup>();
+            group.alpha = 0f;
+            group.interactable = false;
+            group.blocksRaycasts = false;
+            return group;
+        }
+
+        private static void BuildInteractionHitboxes(RectTransform root, CanvasGroup[] highlightGroups)
+        {
+            CreateHitbox(root, "DeckHitbox", PixelToAnchoredPosition(new Vector2(220f, 250f)), ScaleSizeUniform(new Vector2(360f, 300f)), highlightGroups, 0);
+            CreateHitbox(root, "DiscardHitbox", PixelToAnchoredPosition(new Vector2(1160f, 250f)), ScaleSizeUniform(new Vector2(360f, 300f)), highlightGroups, 1);
+            CreateHitbox(root, "HandHitbox", PixelToAnchoredPosition(new Vector2(689f, 960f)), ScaleSizeUniform(new Vector2(1220f, 420f)), highlightGroups, 2);
+        }
+
+        private static void CreateHitbox(RectTransform parent, string name, Vector2 anchoredPosition, Vector2 size, CanvasGroup[] highlightGroups, int highlightIndex)
         {
             var hitbox = CreateRect(name, parent);
             hitbox.anchorMin = new Vector2(0.5f, 0.5f);
@@ -290,6 +450,12 @@ namespace MageKnight.EditorTools
             var hitImage = hitbox.gameObject.AddComponent<Image>();
             hitImage.color = new Color(1f, 1f, 1f, 0f);
             hitImage.raycastTarget = true;
+
+            if (highlightGroups != null && highlightIndex >= 0 && highlightIndex < highlightGroups.Length)
+            {
+                var highlighter = hitbox.gameObject.AddComponent<DeckIdealHitboxHighlighter>();
+                highlighter.Setup(highlightGroups[highlightIndex], highlightGroups);
+            }
         }
 
         private static void BuildBorder(RectTransform root, ThemeSprites theme)
@@ -345,7 +511,10 @@ namespace MageKnight.EditorTools
             circle.rectTransform.offsetMin = Vector2.zero;
             circle.rectTransform.offsetMax = Vector2.zero;
             circle.preserveAspect = true;
+            circle.type = Image.Type.Sliced;
+            circle.fillCenter = false;
             circle.color = MagicCircleColor;
+            circle.enabled = false;
             circle.raycastTarget = false;
 
             if (theme.Highlight != null)
@@ -356,7 +525,9 @@ namespace MageKnight.EditorTools
                 swirl.rectTransform.offsetMin = ScaleSizeUniform(new Vector2(60f, 60f));
                 swirl.rectTransform.offsetMax = -ScaleSizeUniform(new Vector2(60f, 60f));
                 swirl.type = Image.Type.Sliced;
+                swirl.fillCenter = false;
                 swirl.color = SwirlColor;
+                swirl.enabled = false;
                 swirl.raycastTarget = false;
             }
 
@@ -554,7 +725,9 @@ namespace MageKnight.EditorTools
             baseImg.rectTransform.offsetMin = Vector2.zero;
             baseImg.rectTransform.offsetMax = Vector2.zero;
             baseImg.preserveAspect = false;
-            baseImg.color = new Color(0.04f, 0.02f, 0.07f, 0.42f);
+            baseImg.type = Image.Type.Sliced;
+            baseImg.fillCenter = false;
+            baseImg.color = new Color(0.04f, 0.02f, 0.07f, 0f);
             baseImg.raycastTarget = false;
 
             var rim = CreateImage("Rim", shelf, theme.Highlight, Vector2.zero, Vector2.zero);
@@ -564,7 +737,7 @@ namespace MageKnight.EditorTools
             rim.rectTransform.offsetMax = Vector2.zero;
             rim.type = Image.Type.Sliced;
             rim.fillCenter = false;
-            rim.color = new Color(theme.AccentColor.r, theme.AccentColor.g, theme.AccentColor.b, 0.22f);
+            rim.color = new Color(theme.AccentColor.r, theme.AccentColor.g, theme.AccentColor.b, 0f);
             rim.raycastTarget = false;
         }
 
@@ -589,7 +762,9 @@ namespace MageKnight.EditorTools
             baseImg.rectTransform.offsetMin = Vector2.zero;
             baseImg.rectTransform.offsetMax = Vector2.zero;
             baseImg.preserveAspect = false;
-            baseImg.color = new Color(0.03f, 0.02f, 0.06f, 0.36f);
+            baseImg.type = Image.Type.Sliced;
+            baseImg.fillCenter = false;
+            baseImg.color = new Color(0.03f, 0.02f, 0.06f, 0f);
             baseImg.raycastTarget = false;
 
             var rim = CreateImage("Rim", band, theme.Highlight, Vector2.zero, Vector2.zero);
@@ -599,7 +774,7 @@ namespace MageKnight.EditorTools
             rim.rectTransform.offsetMax = Vector2.zero;
             rim.type = Image.Type.Sliced;
             rim.fillCenter = false;
-            rim.color = new Color(theme.SecondaryAccentColor.r, theme.SecondaryAccentColor.g, theme.SecondaryAccentColor.b, 0.12f);
+            rim.color = new Color(theme.SecondaryAccentColor.r, theme.SecondaryAccentColor.g, theme.SecondaryAccentColor.b, 0f);
             rim.raycastTarget = false;
         }
 
@@ -712,15 +887,17 @@ namespace MageKnight.EditorTools
             hitImage.color = new Color(1f, 1f, 1f, 0f);
             hitImage.raycastTarget = true;
 
-            if (theme.Highlight != null)
+            var glowSprite = theme.Border ?? theme.Highlight;
+            if (glowSprite != null)
             {
-                var glow = CreateImage("CardFaceGlow", cardRoot, theme.Highlight, Vector2.zero, Vector2.zero);
+                var glow = CreateImage("CardFaceGlow", cardRoot, glowSprite, Vector2.zero, Vector2.zero);
                 glow.rectTransform.anchorMin = Vector2.zero;
                 glow.rectTransform.anchorMax = Vector2.one;
                 glow.rectTransform.offsetMin = ScaleSizeUniform(new Vector2(-28f, -28f));
                 glow.rectTransform.offsetMax = -ScaleSizeUniform(new Vector2(-28f, -28f));
                 glow.type = Image.Type.Sliced;
-                glow.color = CardGlowColor;
+                glow.fillCenter = false;
+                glow.color = new Color(CardGlowColor.r, CardGlowColor.g, CardGlowColor.b, 0.26f);
                 glow.raycastTarget = false;
             }
 
@@ -735,15 +912,17 @@ namespace MageKnight.EditorTools
 
             BuildHandCardFace(cardRoot, theme, index);
 
-            if (theme.Highlight != null)
+            var filigreeSprite = theme.Border ?? theme.Highlight;
+            if (filigreeSprite != null)
             {
-                var filigree = CreateImage("Filigree", cardRoot, theme.Highlight, Vector2.zero, Vector2.zero);
+                var filigree = CreateImage("Filigree", cardRoot, filigreeSprite, Vector2.zero, Vector2.zero);
                 filigree.rectTransform.anchorMin = Vector2.zero;
                 filigree.rectTransform.anchorMax = Vector2.one;
-                filigree.rectTransform.offsetMin = ScaleSizeUniform(new Vector2(18f, 22f));
-                filigree.rectTransform.offsetMax = -ScaleSizeUniform(new Vector2(18f, 22f));
+                filigree.rectTransform.offsetMin = ScaleSizeUniform(new Vector2(20f, 24f));
+                filigree.rectTransform.offsetMax = -ScaleSizeUniform(new Vector2(20f, 24f));
                 filigree.type = Image.Type.Sliced;
-                filigree.color = FiligreeColor;
+                filigree.fillCenter = false;
+                filigree.color = new Color(FiligreeColor.r, FiligreeColor.g, FiligreeColor.b, 0.48f);
                 filigree.raycastTarget = false;
             }
         }
@@ -764,32 +943,119 @@ namespace MageKnight.EditorTools
             baseImg.rectTransform.offsetMax = Vector2.zero;
             baseImg.preserveAspect = false;
             baseImg.raycastTarget = false;
+            var faceSprite = (theme.CardFaces != null && theme.CardFaces.Length > 0)
+                ? theme.CardFaces[index % theme.CardFaces.Length]
+                : null;
 
-            var hue = (index * 0.18f) % 1f;
-            var tint = Color.HSVToRGB(hue, 0.45f, 0.85f);
-            baseImg.color = new Color(tint.r, tint.g, tint.b, 0.92f);
-            if (baseImg.type == Image.Type.Simple && baseSprite == theme.Highlight)
+            if (faceSprite != null)
             {
-                baseImg.type = Image.Type.Sliced;
+                baseImg.color = new Color(0.05f, 0.03f, 0.08f, 0.55f);
+                if (baseImg.type == Image.Type.Simple && baseSprite == theme.Highlight)
+                {
+                    baseImg.type = Image.Type.Sliced;
+                }
+
+                var art = CreateImage("Art", faceHost, faceSprite, Vector2.zero, Vector2.zero);
+                art.rectTransform.anchorMin = Vector2.zero;
+                art.rectTransform.anchorMax = Vector2.one;
+                art.rectTransform.offsetMin = Vector2.zero;
+                art.rectTransform.offsetMax = Vector2.zero;
+                art.preserveAspect = true;
+                art.raycastTarget = false;
+            }
+            else
+            {
+                var hue = (index * 0.18f) % 1f;
+                var tint = Color.HSVToRGB(hue, 0.45f, 0.85f);
+                baseImg.color = new Color(tint.r, tint.g, tint.b, 0.92f);
+                if (baseImg.type == Image.Type.Simple && baseSprite == theme.Highlight)
+                {
+                    baseImg.type = Image.Type.Sliced;
+                }
             }
 
             if (theme.MagicCircle != null)
             {
-                var rune = CreateImage("RuneCircle", faceHost, theme.MagicCircle, Vector2.zero, Vector2.zero);
-                rune.rectTransform.anchorMin = new Vector2(0.5f, 0.5f);
-                rune.rectTransform.anchorMax = new Vector2(0.5f, 0.5f);
-                rune.rectTransform.pivot = new Vector2(0.5f, 0.5f);
-                rune.rectTransform.anchoredPosition = ScaleFromBase(new Vector2(0f, 12f));
-                rune.rectTransform.sizeDelta = ScaleSizeUniform(new Vector2(220f, 220f));
-                rune.preserveAspect = true;
-                rune.color = new Color(theme.AccentColor.r, theme.AccentColor.g, theme.AccentColor.b, 0.26f);
-                rune.raycastTarget = false;
-                rune.rectTransform.localRotation = Quaternion.Euler(0f, 0f, 12f + index * 6f);
+                var runeOuter = CreateImage("RuneCircleOuter", faceHost, theme.MagicCircle, Vector2.zero, Vector2.zero);
+                runeOuter.rectTransform.anchorMin = new Vector2(0.5f, 0.5f);
+                runeOuter.rectTransform.anchorMax = new Vector2(0.5f, 0.5f);
+                runeOuter.rectTransform.pivot = new Vector2(0.5f, 0.5f);
+                runeOuter.rectTransform.anchoredPosition = ScaleFromBase(new Vector2(0f, 10f));
+                runeOuter.rectTransform.sizeDelta = ScaleSizeUniform(new Vector2(236f, 236f));
+                runeOuter.preserveAspect = true;
+                runeOuter.color = new Color(theme.AccentColor.r, theme.AccentColor.g, theme.AccentColor.b, 0.62f);
+                runeOuter.raycastTarget = false;
+                runeOuter.rectTransform.localRotation = Quaternion.Euler(0f, 0f, 12f + index * 6f);
+
+                var runeMid = CreateImage("RuneCircleMid", faceHost, theme.MagicCircle, Vector2.zero, Vector2.zero);
+                runeMid.rectTransform.anchorMin = new Vector2(0.5f, 0.5f);
+                runeMid.rectTransform.anchorMax = new Vector2(0.5f, 0.5f);
+                runeMid.rectTransform.pivot = new Vector2(0.5f, 0.5f);
+                runeMid.rectTransform.anchoredPosition = ScaleFromBase(new Vector2(0f, -2f));
+                runeMid.rectTransform.sizeDelta = ScaleSizeUniform(new Vector2(190f, 190f));
+                runeMid.preserveAspect = true;
+                runeMid.color = new Color(theme.SecondaryAccentColor.r, theme.SecondaryAccentColor.g, theme.SecondaryAccentColor.b, 0.54f);
+                runeMid.raycastTarget = false;
+                runeMid.rectTransform.localRotation = Quaternion.Euler(0f, 0f, -10f + index * 5f);
+
+                var runeInner = CreateImage("RuneCircleInner", faceHost, theme.MagicCircle, Vector2.zero, Vector2.zero);
+                runeInner.rectTransform.anchorMin = new Vector2(0.5f, 0.5f);
+                runeInner.rectTransform.anchorMax = new Vector2(0.5f, 0.5f);
+                runeInner.rectTransform.pivot = new Vector2(0.5f, 0.5f);
+                runeInner.rectTransform.anchoredPosition = ScaleFromBase(new Vector2(0f, -8f));
+                runeInner.rectTransform.sizeDelta = ScaleSizeUniform(new Vector2(138f, 138f));
+                runeInner.preserveAspect = true;
+                runeInner.color = new Color(theme.AccentColor.r, theme.AccentColor.g, theme.AccentColor.b, 0.5f);
+                runeInner.raycastTarget = false;
+                runeInner.rectTransform.localRotation = Quaternion.Euler(0f, 0f, 18f - index * 4f);
+
+                var runeCore = CreateImage("RuneCircleCore", faceHost, theme.MagicCircle, Vector2.zero, Vector2.zero);
+                runeCore.rectTransform.anchorMin = new Vector2(0.5f, 0.5f);
+                runeCore.rectTransform.anchorMax = new Vector2(0.5f, 0.5f);
+                runeCore.rectTransform.pivot = new Vector2(0.5f, 0.5f);
+                runeCore.rectTransform.anchoredPosition = ScaleFromBase(new Vector2(0f, -14f));
+                runeCore.rectTransform.sizeDelta = ScaleSizeUniform(new Vector2(96f, 96f));
+                runeCore.preserveAspect = true;
+                runeCore.color = new Color(theme.SecondaryAccentColor.r, theme.SecondaryAccentColor.g, theme.SecondaryAccentColor.b, 0.42f);
+                runeCore.raycastTarget = false;
+                runeCore.rectTransform.localRotation = Quaternion.Euler(0f, 0f, -26f + index * 7f);
+
+                var runeArcTop = CreateImage("RuneArcTop", faceHost, theme.MagicCircle, Vector2.zero, Vector2.zero);
+                runeArcTop.rectTransform.anchorMin = new Vector2(0.5f, 0.5f);
+                runeArcTop.rectTransform.anchorMax = new Vector2(0.5f, 0.5f);
+                runeArcTop.rectTransform.pivot = new Vector2(0.5f, 0.5f);
+                runeArcTop.rectTransform.anchoredPosition = ScaleFromBase(new Vector2(0f, 118f));
+                runeArcTop.rectTransform.sizeDelta = ScaleSizeUniform(new Vector2(86f, 86f));
+                runeArcTop.preserveAspect = true;
+                runeArcTop.color = new Color(theme.AccentColor.r, theme.AccentColor.g, theme.AccentColor.b, 0.46f);
+                runeArcTop.raycastTarget = false;
+                runeArcTop.rectTransform.localRotation = Quaternion.Euler(0f, 0f, 32f);
+
+                var runeArcBottom = CreateImage("RuneArcBottom", faceHost, theme.MagicCircle, Vector2.zero, Vector2.zero);
+                runeArcBottom.rectTransform.anchorMin = new Vector2(0.5f, 0.5f);
+                runeArcBottom.rectTransform.anchorMax = new Vector2(0.5f, 0.5f);
+                runeArcBottom.rectTransform.pivot = new Vector2(0.5f, 0.5f);
+                runeArcBottom.rectTransform.anchoredPosition = ScaleFromBase(new Vector2(0f, -126f));
+                runeArcBottom.rectTransform.sizeDelta = ScaleSizeUniform(new Vector2(92f, 92f));
+                runeArcBottom.preserveAspect = true;
+                runeArcBottom.color = new Color(theme.SecondaryAccentColor.r, theme.SecondaryAccentColor.g, theme.SecondaryAccentColor.b, 0.38f);
+                runeArcBottom.raycastTarget = false;
+                runeArcBottom.rectTransform.localRotation = Quaternion.Euler(0f, 0f, -18f);
             }
 
             var frameSprite = theme.Border ?? theme.Highlight;
             if (frameSprite != null)
             {
+                var frameShadow = CreateImage("FrameShadow", faceHost, frameSprite, Vector2.zero, Vector2.zero);
+                frameShadow.rectTransform.anchorMin = Vector2.zero;
+                frameShadow.rectTransform.anchorMax = Vector2.one;
+                frameShadow.rectTransform.offsetMin = ScaleSizeUniform(new Vector2(2f, 2f));
+                frameShadow.rectTransform.offsetMax = -ScaleSizeUniform(new Vector2(2f, 2f));
+                frameShadow.type = Image.Type.Sliced;
+                frameShadow.fillCenter = false;
+                frameShadow.color = new Color(0.03f, 0.02f, 0.08f, 0.9f);
+                frameShadow.raycastTarget = false;
+
                 var frame = CreateImage("Frame", faceHost, frameSprite, Vector2.zero, Vector2.zero);
                 frame.rectTransform.anchorMin = Vector2.zero;
                 frame.rectTransform.anchorMax = Vector2.one;
@@ -797,8 +1063,87 @@ namespace MageKnight.EditorTools
                 frame.rectTransform.offsetMax = -ScaleSizeUniform(new Vector2(6f, 6f));
                 frame.type = Image.Type.Sliced;
                 frame.fillCenter = false;
-                frame.color = new Color(1f, 0.86f, 0.56f, 0.78f);
+                frame.color = new Color(0.98f, 0.88f, 0.62f, 0.98f);
                 frame.raycastTarget = false;
+                var frameOutline = frame.gameObject.AddComponent<Outline>();
+                frameOutline.effectColor = new Color(1f, 0.92f, 0.68f, 0.52f);
+                frameOutline.effectDistance = new Vector2(3f, -3f);
+
+                var frameAccent = CreateImage("FrameAccent", faceHost, frameSprite, Vector2.zero, Vector2.zero);
+                frameAccent.rectTransform.anchorMin = Vector2.zero;
+                frameAccent.rectTransform.anchorMax = Vector2.one;
+                frameAccent.rectTransform.offsetMin = ScaleSizeUniform(new Vector2(12f, 12f));
+                frameAccent.rectTransform.offsetMax = -ScaleSizeUniform(new Vector2(12f, 12f));
+                frameAccent.type = Image.Type.Sliced;
+                frameAccent.fillCenter = false;
+                frameAccent.color = new Color(0.88f, 0.86f, 0.68f, 0.55f);
+                frameAccent.raycastTarget = false;
+
+                var innerFrame = CreateImage("FrameInner", faceHost, frameSprite, Vector2.zero, Vector2.zero);
+                innerFrame.rectTransform.anchorMin = Vector2.zero;
+                innerFrame.rectTransform.anchorMax = Vector2.one;
+                innerFrame.rectTransform.offsetMin = ScaleSizeUniform(new Vector2(20f, 20f));
+                innerFrame.rectTransform.offsetMax = -ScaleSizeUniform(new Vector2(20f, 20f));
+                innerFrame.type = Image.Type.Sliced;
+                innerFrame.fillCenter = false;
+                innerFrame.color = new Color(0.64f, 0.9f, 1f, 0.78f);
+                innerFrame.raycastTarget = false;
+            }
+
+            if (theme.Highlight != null)
+            {
+                var sigil = CreateImage("SigilGlow", faceHost, theme.Highlight, Vector2.zero, Vector2.zero);
+                sigil.rectTransform.anchorMin = new Vector2(0.5f, 0.5f);
+                sigil.rectTransform.anchorMax = new Vector2(0.5f, 0.5f);
+                sigil.rectTransform.pivot = new Vector2(0.5f, 0.5f);
+                sigil.rectTransform.anchoredPosition = ScaleFromBase(new Vector2(0f, -10f));
+                sigil.rectTransform.sizeDelta = ScaleSizeUniform(new Vector2(170f, 170f));
+                sigil.type = Image.Type.Sliced;
+                sigil.fillCenter = false;
+                sigil.color = new Color(1f, 0.9f, 0.72f, 0.42f);
+                sigil.raycastTarget = false;
+
+                var sigilCore = CreateImage("SigilCore", faceHost, GetWhiteSprite(), Vector2.zero, Vector2.zero);
+                sigilCore.rectTransform.anchorMin = new Vector2(0.5f, 0.5f);
+                sigilCore.rectTransform.anchorMax = new Vector2(0.5f, 0.5f);
+                sigilCore.rectTransform.pivot = new Vector2(0.5f, 0.5f);
+                sigilCore.rectTransform.anchoredPosition = ScaleFromBase(new Vector2(0f, -10f));
+                sigilCore.rectTransform.sizeDelta = ScaleSizeUniform(new Vector2(32f, 32f));
+                sigilCore.color = new Color(1f, 0.96f, 0.8f, 0.86f);
+                sigilCore.raycastTarget = false;
+                var sigilGlow = sigilCore.gameObject.AddComponent<Shadow>();
+                sigilGlow.effectColor = new Color(1f, 0.9f, 0.7f, 0.55f);
+                sigilGlow.effectDistance = new Vector2(1f, -1f);
+
+                var sparklePositions = new[]
+                {
+                    new Vector2(-92f, 128f),
+                    new Vector2(78f, 108f),
+                    new Vector2(-112f, 54f),
+                    new Vector2(104f, 34f),
+                    new Vector2(-120f, -12f),
+                    new Vector2(98f, -62f),
+                    new Vector2(-74f, -120f),
+                    new Vector2(72f, -132f),
+                    new Vector2(-10f, 148f),
+                    new Vector2(16f, -150f),
+                    new Vector2(118f, -12f),
+                    new Vector2(-126f, 102f)
+                };
+                var sparkleSizes = new[] { 10f, 14f, 8f, 12f, 6f, 10f, 12f, 9f, 7f, 8f, 6f, 9f };
+                var sparkleSprite = GetWhiteSprite();
+                for (int i = 0; i < sparklePositions.Length; i++)
+                {
+                    var size = ScaleSizeUniform(new Vector2(sparkleSizes[i], sparkleSizes[i]));
+                    var pos = ScaleFromBase(sparklePositions[i]);
+                    var sparkle = CreateImage($"Sparkle_{i}", faceHost, sparkleSprite, size, pos);
+                    sparkle.type = Image.Type.Simple;
+                    sparkle.color = new Color(1f, 0.95f, 0.78f, 0.82f);
+                    sparkle.raycastTarget = false;
+                    var sparkleGlow = sparkle.gameObject.AddComponent<Shadow>();
+                    sparkleGlow.effectColor = new Color(1f, 0.9f, 0.72f, 0.4f);
+                    sparkleGlow.effectDistance = new Vector2(1f, -1f);
+                }
             }
         }
 

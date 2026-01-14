@@ -14,7 +14,7 @@ internal static class DeckIdealRuntimeTuner
     private const float MagicCircleAlpha = 0.22f;
     private const float CardGlowAlpha = 0.18f;
     private const float FiligreeInset = 52f;
-    private const float BottomBandAlpha = 0.025f;
+    private const float BottomBandAlpha = 0f;
 
     private static readonly Vector2 DeckAnchor = new(0.14f, 0.82f);
     private static readonly Vector2 DiscardAnchor = new(0.86f, 0.82f);
@@ -23,7 +23,7 @@ internal static class DeckIdealRuntimeTuner
     private static readonly Color FiligreeTint = new(0.95f, 0.93f, 1f, 0.26f);
     private static readonly Color GemTint = new(0.94f, 0.96f, 1f, 0.72f);
     private static readonly Color TopCreatureGlowTint = new(1f, 0.9f, 0.7f, 0.12f);
-    private static readonly Color CardFiligreeTint = new(1f, 0.88f, 0.62f, 0.18f);
+    private static readonly Color CardFiligreeTint = new(1f, 0.88f, 0.62f, 0.28f);
 
     public static void ApplyIfInIdealScene(RectTransform root)
     {
@@ -538,7 +538,7 @@ internal static class DeckIdealRuntimeTuner
                 filigree.anchorMin = new Vector2(0.5f, 0.5f);
                 filigree.anchorMax = new Vector2(0.5f, 0.5f);
                 filigree.pivot = new Vector2(0.5f, 0.5f);
-                filigree.sizeDelta = new Vector2(246f, 340f);
+                filigree.sizeDelta = new Vector2(258f, 352f);
                 var img = filigree.GetComponent<Image>();
                 img.sprite = highlight;
                 img.type = Image.Type.Sliced;

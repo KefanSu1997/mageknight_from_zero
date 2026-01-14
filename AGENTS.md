@@ -22,6 +22,8 @@
 
 10. 禁止安装或者卸载unity的packages
 
+11. 禁止使用batchmode或者用命令行直接调用unity.exe，这会导致命令挂起卡住。
+
 ## 经验索引
 
 - DeckViewer 浮窗调试：Canvas 排序、RectTransform sizeDelta 与烟雾测试要点 —— `vibe_coding/codex/project_experience/deck_discard_viewer_notes.md`
@@ -30,6 +32,7 @@
 - 自动化等待：场景执行步进与实时等待的调优 —— `vibe_coding/codex/project_experience/scene_automation_waits.md`
 - 理想卡组截图调优：立绘高光透明度、魔法阵/星云叠层与牌堆位置透明度指南 —— `vibe_coding/codex/project_experience/deck_ideal_layout_notes.md`
 - Imdream 下载偶发 EOF：imdream_query.ps1 失败重试与下载参数要点 —— `vibe_coding/codex/project_experience/imdream_query_download_retry_2026-01-05.md`
+- DeckIdeal 素材替换审计记录：输出路径/替换路径/导入要点 —— `vibe_coding/codex/project_experience/deck_ideal_asset_trace_log_2026-01-06.md`
 
 ---
 
@@ -350,7 +353,6 @@ DeckIdeal 的快速入口会自动生成配置文件：
   - 当前是否处于 Play Mode
   - `scenePath` 是否正确
   - `screenshotsDirectory` / `reportPath` 是否可写
-
 
 # Unity 编译错误查看
 

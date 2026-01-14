@@ -28,7 +28,27 @@ namespace MageKnight.SceneAutomation.Editor
                 captureInitialView = true,
                 initialDelaySeconds = 0.25f,
                 defaultWaitAfterSeconds = 0.5f,
-                steps = new List<SceneAutomationStep>()
+                steps = new List<SceneAutomationStep>
+                {
+                    new SceneAutomationStep
+                    {
+                        label = "HighlightDeck",
+                        buttonPath = "UIRoot/Overlay/DeckHitbox",
+                        waitAfterSeconds = 0.35f
+                    },
+                    new SceneAutomationStep
+                    {
+                        label = "HighlightDiscard",
+                        buttonPath = "UIRoot/Overlay/DiscardHitbox",
+                        waitAfterSeconds = 0.35f
+                    },
+                    new SceneAutomationStep
+                    {
+                        label = "HighlightHand",
+                        buttonPath = "UIRoot/Overlay/HandHitbox",
+                        waitAfterSeconds = 0.35f
+                    }
+                }
             };
 
             var projectRoot = Path.GetFullPath(Path.Combine(Application.dataPath, ".."));
