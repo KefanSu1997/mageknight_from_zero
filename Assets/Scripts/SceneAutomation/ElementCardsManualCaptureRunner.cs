@@ -187,6 +187,7 @@ namespace MageKnight.SceneAutomation
             _sceneAutomationLines = new List<string>(64);
             RecordSceneAutomationLine($"[SceneAutomation] Config prepared: {ScenePath} (steps: {StepLabels.Length})");
             RecordSceneAutomationLine("[SceneAutomation] Runner started.");
+            RecordSceneAutomationLine($"[SceneAutomation] Crop policy: {BuildCropPolicySummary()}");
             var startedAtUtc = DateTime.UtcNow;
             var report = new SceneAutomationReport
             {
@@ -236,6 +237,7 @@ namespace MageKnight.SceneAutomation
                 _debugStepIndex = i + 1;
                 var stepLabel = StepLabels[i];
                 EnsureEditorUnpaused();
+                RecordSceneAutomationLine($"[SceneAutomation] Step index: {i + 1}/{StepLabels.Length} label={stepLabel}");
                 RecordSceneAutomationLine($"[SceneAutomation] Step begin: {stepLabel}");
                 try
                 {
@@ -631,8 +633,18 @@ namespace MageKnight.SceneAutomation
                 $"crop_applied step={stepLabel} element={elementLabel} elementIndex={elementIndex} " +
                 $"screenRect={screenRect.xMin:F1},{screenRect.yMin:F1},{screenRect.width:F1},{screenRect.height:F1} " +
                 $"laneDividers={leftDividerText}|{rightDividerText} laneRange={xMinScreen:F1}-{xMaxScreen:F1} " +
-                $"imageRect={cropRect.x},{cropRect.y},{cropRect.width},{cropRect.height} screen={screenWidth}x{screenHeight} image={screenshotWidth}x{screenshotHeight}";
+                $"imageRect={cropRect.x},{cropRect.y},{cropRect.width},{cropRect.height} screen={screenWidth}x{screenHeight} image={screenshotWidth}x{screenshotHeight} " +
+                $"policy={BuildCropPolicySummary()}";
             return true;
+        }
+
+        private static string BuildCropPolicySummary()
+        {
+            return
+                $"insetMinPx={StepCropInsetMinPixels.ToString("F1", CultureInfo.InvariantCulture)};" +
+                $"insetRatio={StepCropInsetRatio.ToString("F3", CultureInfo.InvariantCulture)};" +
+                $"laneGapPx={StepCropLaneGapPixels.ToString("F1", CultureInfo.InvariantCulture)};" +
+                $"minSizePx={StepCropMinSizePixels}";
         }
 
         private static bool TryGetScreenSpaceRect(RectTransform rectTransform, out Rect screenRect)
