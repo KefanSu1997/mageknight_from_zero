@@ -1,0 +1,27 @@
+IOException: Win32 IO returned 1224. Path: D:\study_and_work\unity-MK-test\MageKnight_from_zero\AutomationOutputs\OfficialCards\20260910\editmode-summary.json
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <c5ae8a4eeb824526b5df2932bc2395e0>:0
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <c5ae8a4eeb824526b5df2932bc2395e0>:0
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00055] in <c5ae8a4eeb824526b5df2932bc2395e0>:0
+  at System.IO.StreamWriter..ctor (System.String path) [0x00008] in <c5ae8a4eeb824526b5df2932bc2395e0>:0
+  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string)
+  at System.IO.File.WriteAllText (System.String path, System.String contents) [0x00026] in <c5ae8a4eeb824526b5df2932bc2395e0>:0
+  at MageKnight.SceneAutomation.Editor.RuleScenarioMenus+TestResults.RunFinished (UnityEditor.TestTools.TestRunner.Api.ITestResultAdaptor result) [0x00020] in D:\study_and_work\unity-MK-test\MageKnight_from_zero\Assets\Scripts\SceneAutomation\Editor\RuleScenarioMenus.cs:126
+  at UnityEditor.TestTools.TestRunner.Api.CallbacksDelegator+<>c__DisplayClass9_0.<RunFinished>b__0 (UnityEditor.TestTools.TestRunner.Api.ICallbacks callbacks) [0x00000] in .\Library\PackageCache\com.unity.test-framework@7a3849e09bd0\UnityEditor.TestRunner\Api\CallbacksDelegator.cs:55
+  at UnityEditor.TestTools.TestRunner.Api.CallbacksDelegator.TryInvokeAllCallbacks (System.Action`1[T] callbackAction) [0x00014] in .\Library\PackageCache\com.unity.test-framework@7a3849e09bd0\UnityEditor.TestRunner\Api\CallbacksDelegator.cs:135
+UnityEngine.StackTraceUtility:ExtractStringFromExceptionInternal(Object, String&, String&)
+UnityEngine.DebugLogHandler:Internal_LogException_Injected(Exception, IntPtr)
+UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+UnityEngine.Logger:LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+UnityEditor.TestTools.TestRunner.Api.CallbacksDelegator:TryInvokeAllCallbacks(Action`1) (at .\Library\PackageCache\com.unity.test-framework@7a3849e09bd0\UnityEditor.TestRunner\Api\CallbacksDelegator.cs:139)
+UnityEditor.TestTools.TestRunner.Api.CallbacksDelegator:RunFinished(ITestResult) (at .\Library\PackageCache\com.unity.test-framework@7a3849e09bd0\UnityEditor.TestRunner\Api\CallbacksDelegator.cs:55)
+UnityEngine.Events.InvokableCall`1:Invoke(ITestResult)
+UnityEngine.Events.UnityEvent`1:Invoke(ITestResult)
+UnityEditor.TestTools.TestRunner.TestRun.Tasks.Events.<Execute>d__0:MoveNext() (at .\Library\PackageCache\com.unity.test-framework@7a3849e09bd0\UnityEditor.TestRunner\TestRun\Tasks\Events\RunFinishedInvocationEvent.cs:24)
+UnityEditor.TestTools.TestRunner.TestRun.TestJobRunner:ExecuteStep() (at .\Library\PackageCache\com.unity.test-framework@7a3849e09bd0\UnityEditor.TestRunner\TestRun\TestJobRunner.cs:194)
+UnityEditor.TestTools.TestRunner.TestRun.TestJobRunner:ExecuteCallback() (at .\Library\PackageCache\com.unity.test-framework@7a3849e09bd0\UnityEditor.TestRunner\TestRun\TestJobRunner.cs:129)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions()
+
+(Filename: Assets/Scripts/SceneAutomation/Editor/RuleScenarioMenus.cs Line: 126)

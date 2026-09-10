@@ -1,0 +1,32 @@
+[
+  {
+    "path": "advanced_card/captures/050_advanced_card_007_00_execute.png",
+    "sha256": "261c7e4df6266b3d4084954faa758cb4ca8898cb1d9f35d31ed4a4dfb0465be3",
+    "identicalToPreviouslyInspectedCapture": true
+  },
+  {
+    "path": "items/captures/074_items_012_00_execute.png",
+    "sha256": "813d5ac651bea8240f79434f062cab0a985877b377a67d2536cc0da74447ac0b",
+    "identicalToPreviouslyInspectedCapture": true
+  },
+  {
+    "path": "regression/Combat/045_原卡组合战胜灰狼.png",
+    "sha256": "059bc84d7aea0b6568f8e9bc510bd99a9188b7372501ac9ce7dfbeae5fa458f5",
+    "identicalToPreviouslyInspectedCapture": true
+  },
+  {
+    "path": "regression/Exploration/022_非相邻不能探索.png",
+    "sha256": "dc6bbc5c262f84bc4f4b34ff784994f7384cf4d846370db9d165d189001b81a1",
+    "identicalToPreviouslyInspectedCapture": true
+  },
+  {
+    "path": "regression/Recruitment/016_回合结束正常补牌.png",
+    "sha256": "726e089c20c5c02c2f3810470064d92d57181d5a0c91a9c1481340ff540c04ba",
+    "identicalToPreviouslyInspectedCapture": true
+  },
+  {
+    "path": "regression/Journey/031_完整旅程获胜.png",
+    "sha256": "75f02ad99268ef8024d0a49c63c057d6cb2220a30755be80ff8453d9188206e2",
+    "identicalToPreviouslyInspectedCapture": true
+  }
+]
