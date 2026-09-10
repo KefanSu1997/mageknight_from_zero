@@ -258,6 +258,8 @@ namespace MK.Logic.Runtime.CardEffects
         SpellTomeAssign,
         SpellTomeOnce,
         MysticBoxAssign,
-        MysticBoxOnce
+        MysticBoxOnce,
+        InstinctBase,
+        InstinctEnhanced
     }
 }

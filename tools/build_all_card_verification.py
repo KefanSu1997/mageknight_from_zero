@@ -128,7 +128,7 @@ for strong in [False, True]:
         result = {pool: 4 if strong else 2}
         if strong: result['token:Red'] = 1
         b(27, strong, '本能原卡面：' + pool, result, option=opt,
-          limits=['原数据缺名称和效果且映射Unknown；本例预期直接来自现有本能卡面，未重写原卡资产'])
+          limits=['本能四选一的即时分支；地图、交涉、战斗及卡区完整生命周期仍须联验'])
 
 # Advanced actions: primary values and explicit resource/choice branches.
 # Entries come from the printed Chinese rules, not the effect implementation.
@@ -358,6 +358,56 @@ combat('basic_card_002', True, '凝结接碎裂之矢，加值保持攻城方式
 
 combat('basic_card_002', True, '凝结接狂怒，实际攻击6击破护甲6', 'Melee', [enemy(6)], 6, 6, 6, 1,
        followup='basic_card_021', extra={'played:MeleePool': 6, 'token:Red': 2})
+
+
+# Original basic-card branch repairs. Expected numbers come from the existing faces.
+for strong in [False, True]:
+    b(4, strong, '只选择移动，不同时治疗或格挡', {'MovementPool': 4 if strong else 2, 'Wounds': 3, 'handWounds': 3}, option=2)
+    for option in [-1, 4]:
+        b(27, strong, '非法本能选项保持费用与所有资源', {}, option=option,
+          error='InvalidOperationException: 本能必须选择移动、影响、攻击或格挡')
+    b(4, strong, '战斗中禁止治疗且不扣绿色费用', {}, setup={'InBattle': True},
+      error='InvalidOperationException: 战斗中不能使用治疗效果')
+    b(4, strong, '非法大地之子选项不得同时产生移动', {}, option=3,
+      error='InvalidOperationException: 大地之子必须选择治疗、格挡或移动')
+    combat('basic_card_027', strong, '本能攻击分支实际击败目标', 'Melee', [enemy(4 if strong else 2)],
+           4 if strong else 2, 4 if strong else 2, 4 if strong else 2, 1, option=2)
+    combat('basic_card_027', strong, '本能格挡分支实际阻挡敌人', 'Block', [enemy(5, attack=4 if strong else 2)],
+           4 if strong else 2, 4 if strong else 2, 4 if strong else 2, option=3)
+
+for terrain, time, value, element in [('Forest', 'Day', 3, 'Fire'), ('Forest', 'Night', 5, 'Ice'),
+    ('Desert', 'Day', 5, 'Fire'), ('Desert', 'Night', 3, 'Ice'), ('Mountain', 'Day', 5, 'Fire'), ('Lake', 'Night', 2, 'Ice')]:
+    # Select the opposite elemental attack, so this card's block operates at full strength.
+    attack_element = 'Ice' if element == 'Fire' else 'Fire'
+    combat('basic_card_004', True, '未修正地形费用与昼夜格挡：' + terrain + '/' + time,
+           'Block', [enemy(5, attack=value, element=attack_element)], value, value, value, option=1,
+           setup={'CurrentTerrain': terrain, 'DayPart': time, 'terrainCost:' + terrain: 2},
+           extra={'played:blockElement': element, 'played:BlockPool': value})
+
+combat('basic_card_020', False, '基础寒冰格挡3实际阻挡火焰攻击', 'Block', [enemy(5, attack=3, element='Fire')], 3, 3, 3, option=1,
+       extra={'played:blockElement': 'Ice'})
+for traits, attack_element, attack, printed, effective, required, wounds, title in [
+    (['Swift'], 'Fire', 3, 7, 7, 6, 0, '迅捷能力加火焰颜色，共增加2'),
+    ([], 'ColdFire', 3, 7, 3, 3, 0, '冰火两色增加2，冰格挡低效合计取整'),
+    (['FireResist', 'IceResist'], 'Physical', 7, 7, 7, 7, 0, '两种抗性能力增加2'),
+    (['MagicResist', 'Swift'], 'Fire', 3, 5, 5, 6, 2, '奥术免疫取消额外加成，格挡不足承受完整伤害')]:
+    combat('basic_card_020', True, title, 'Block', [enemy(5, attack=attack, element=attack_element, abilities=traits)],
+           printed, effective, required, wounds=wounds,
+           extra={'played:BlockPool': 5, 'played:blockElement': 'Ice'})
+b(20, True, '非法强化选项不得支付蓝色费用', {}, option=1,
+  error='InvalidOperationException: 寒冰护体的效果选项无效')
+b(6, False, '全神贯注绿色魔晶选项不额外产生蓝色魔力', {'crystal:Green': 3, 'token:Blue': 2},
+  option=3, setup={'crystal:Green': 2}, limits=['魔晶存量上限、实际使用及回合生命周期仍须覆盖'])
+b(6, False, '全神贯注非法选择不得退回蓝色魔力', {}, option=4,
+  error='InvalidOperationException: 全神贯注的魔力选项无效')
+
+
+b(6, False, '绿色魔晶满3后转成绿色魔力标记', {'crystal:Green': 3, 'token:Green': 3, 'token:Blue': 2},
+  option=3, setup={'crystal:Green': 3}, limits=['回合内使用与最终卡区生命周期仍须联验'])
+for n, color in [(0, 'Red'), (1, 'Blue'), (2, 'White'), (3, 'Green')]:
+    case(f'advanced_card_{n:03}', False, '满库存的原卡魔晶奖励转为同色标记',
+         {'crystal:' + color: 3, 'token:' + color: 3}, setup={'crystal:' + color: 3},
+         limits=['此例覆盖魔晶奖励边界；实际使用和卡区生命周期仍须联验'])
 
 
 def export():

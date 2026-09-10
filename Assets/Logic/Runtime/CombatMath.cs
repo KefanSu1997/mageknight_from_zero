@@ -9,6 +9,15 @@ namespace MK.Logic.Runtime
     /// <summary>中文规则书第9、10、24页：所有低效贡献合计后减半，向下取整一次。</summary>
     public static class CombatMath
     {
+        public static BlockAllocation[] ResolveBlocks(Monster enemy, IEnumerable<BlockAllocation> blocks)
+        {
+            // Physical attacks have no color. Cold-fire contains two attack colors.
+            int colors = enemy.AttackElement == Element.Physical ? 0 : enemy.AttackElement == Element.ColdFire ? 2 : 1;
+            int bonus = enemy.Abilities.Contains(Ability.MagicResist) ? 0 : enemy.Abilities.Count + colors;
+            return blocks.Select(b => b.CountEnemySymbols
+                ? b with { Value = b.Value + bonus, CountEnemySymbols = false } : b).ToArray();
+        }
+
         public static int EffectiveBlock(Element attack, IEnumerable<BlockAllocation> blocks)
         {
             int full = 0, reduced = 0;

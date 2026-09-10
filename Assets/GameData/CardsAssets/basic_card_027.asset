@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: basic_card_027
   m_EditorClassIdentifier: 
   Id: basic_card_027
-  NameCn: 
+  NameCn: 本能
   Set: 0
   ImagePath: cards/basic_card_027
   EnImagePath: cards/basic_card_en_027.png
-  BaseEffect: 
-  EnhancedEffect: 
-  RequiredCrystals: 
+  BaseEffect: 移动力2，影响力2，攻击2或格挡2。
+  EnhancedEffect: 移动力4，影响力4，攻击4或格挡4。
+  RequiredCrystals: 00000000

@@ -166,7 +166,7 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
         _limits.text = "范围：" + ((_case.limitations?.Length ?? 0) == 0 ? "本例的即时效果分支；整卡结论需汇总全部案例。" : string.Join("；", _case.limitations));
         if (!string.IsNullOrEmpty(_case.combatPhase))
             _fixture.text = "目标：" + string.Join(" / ", _context.Enemies.Select(e => $"{e.Id} 护甲{e.Armor} 攻击{e.Attack}({e.AttackElement}) [{string.Join(",", e.Abilities)}]"))
-                + $"\n{_case.combatPhase}阶段 · 城防地点={_context.FortifiedSite} · {_context.DayPart}";
+                + $"\n{_case.combatPhase}阶段 · 城防地点={_context.FortifiedSite} · {_context.DayPart} · 地形{_context.CurrentTerrain} · 移动费修正{(_context.TerrainCostOverride.TryGetValue(_context.CurrentTerrain, out int overrideCost) ? overrideCost.ToString() : "无")}";
         _play.interactable = false;
     }
 
@@ -326,6 +326,7 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
 
     private void Set(string key, string value)
     {
+        if (key.StartsWith("terrainCost:")) { _context.TerrainCostOverride[(TerrainType)Enum.Parse(typeof(TerrainType), key.Substring(12))] = int.Parse(value); return; }
         if (key.StartsWith("token:")) { _player.Mana.Tokens[(ManaColor)Enum.Parse(typeof(ManaColor), key.Substring(6))] = int.Parse(value); return; }
         if (key.StartsWith("crystal:")) { _player.Mana.Crystals[(ManaColor)Enum.Parse(typeof(ManaColor), key.Substring(8))] = int.Parse(value); return; }
         object target = key.StartsWith("player:") ? _player : _context;

@@ -59,7 +59,7 @@ namespace MK.Logic.Runtime
                 Element element = enemies[i].AttackElement;
                 if (ctx != null && ctx.AttackElementChange.TryGetValue(i, out var changed)) element = changed;
                 blockSum[i] = CombatMath.EffectiveBlock(element,
-                    (blocks ?? Array.Empty<BlockAllocation>()).Where(b => b.TargetIndex == i));
+                    CombatMath.ResolveBlocks(enemies[i], (blocks ?? Array.Empty<BlockAllocation>()).Where(b => b.TargetIndex == i)));
             }
             for (int i = 0; i < blockSum.Length; i++)
                 logger?.Log($"BlockSum {i} {blockSum[i]}");

@@ -1,4 +1,4 @@
-# fix(cards): restore original costs, wound cards and typed combat resolution
+# fix(cards): restore original card choices, costs and combat resolution
 
 ## Why
 
@@ -14,13 +14,17 @@ Exact-color payment validates the full cost before deduction. Spells pay their o
 
 Combat contributions now retain their element and melee/ranged/siege type, including boosts and conversions. The shared combat calculator fixes physical resistance, aggregate rounding, cold-fire group resistance and fortification phase rules. Existing ranged/battle/adventure consumers share it; real kill indices come from the production resolver. Card scenes separate play from combat confirmation and show cost, power, resistance-adjusted value, required defense/armor, kills, fame and wound-card totals.
 
+Instinct restores its missing original text, red cost and four mutually exclusive choices. Earth Strength restores exclusive movement/healing/block choices and unmodified day/night terrain block. Focus restores its green-crystal choice. Cold Toughness contributes ice block and resolves its conditional bonus against the actual enemy when blocking. These effects validate choices before payment. Crystal rewards store at most three per basic color and convert overflow into same-color tokens, following the printed rulebook.
+
 ## How to test
 
 Use the installed Unity 6000.6.0f1 editor via Hub. Run Tools/Mage Knight/Original Cards/Run All Batches, Tools/Mage Knight/Adventure/Run All EditMode Tests, and Tools/Mage Knight/Adventure/Run All Four. No batchmode or package changes.
 
-Reproduce source corrections with `python tools/restore_spell_costs.py` and generated fixtures with `python tools/build_all_card_verification.py`. Summarize the exact new directory with `python tools/summarize_all_card_verification.py --output AutomationOutputs/AllOriginalCards/<run>`. Verify regressions with `python tools/verify_card_regression.py --scenes <adventure-run> --tests <editmode-run>`.
+Reproduce source corrections with `python tools/restore_spell_costs.py` and `python tools/restore_instinct_card.py`, and generated fixtures with `python tools/build_all_card_verification.py`. Summarize the exact new directory with `python tools/summarize_all_card_verification.py --output AutomationOutputs/AllOriginalCards/<run>`. Verify regressions with `python tools/verify_card_regression.py --scenes <adventure-run> --tests <editmode-run>`.
 
-Latest evidence: AutomationOutputs/AllOriginalCards/20260910_152704_212d0af9. 109 EditMode tests pass with matching XML/JSON. 350 scene cases: 103 passed, 49 failed and 198 partial; 1071 pointer actions, 3862 effect assertions and 379 captures. All 325 previous case definitions and expectations remain unchanged. Sixteen old failures are repaired with no new failures among previously passing/partial cases; all assertions in 25 added combat-consumer cases pass. The UI distinguishes enemy damage from spell self-wounding and displays actual wound-card totals. Four adventure regressions pass 114 actions and 477 assertions; all 118 captures are byte-identical to the previous archived run. Two final Unity Console scans return zero errors. The complete 497 captures and reports are archived.
+Latest card evidence: AutomationOutputs/AllOriginalCards/20260910_155126_73d1e22d. 130 EditMode tests pass. 383 scene cases: 121 passed, 34 failed and 228 partial; 1185 pointer actions, 4537 effect assertions and 427 captures. All 350 previous cases retain their inputs, choices and numeric expectations; eight Instinct cases only update obsolete missing-data notes while retaining partial status. Fifteen old failures are repaired with no new failures among previously passing/partial cases; all assertions in 33 added cases pass. Full card certification is still pending.
+
+Four adventure regressions pass 114 actual actions and 477 assertions. All 118 captures are byte-identical to the preceding archived run, matched by scene and filename. EditMode XML/JSON agree on 130 passed, zero failed/skipped. Two final Unity Console scans return zero errors. All 545 final card/regression captures and reports are archived with provenance.
 
 ## Risks
 

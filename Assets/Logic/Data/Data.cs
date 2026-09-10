@@ -22,7 +22,8 @@ namespace MK.Logic.Data
         int TargetIndex,
         int Value,
         Element Element,
-        int? ForUnitIndex = null   // 新增：若非空表示此格挡由某个 Unit 承担
+        int? ForUnitIndex = null,  // 若非空表示此格挡由某个 Unit 承担
+        bool CountEnemySymbols = false // 寒冰护体：在实际目标结算时追加冰格挡
     );
 
         /// <summary>

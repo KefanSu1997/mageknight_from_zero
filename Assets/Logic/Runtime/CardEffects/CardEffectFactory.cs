@@ -26,7 +26,7 @@ namespace MK.Logic.Runtime.CardEffects
             { ActionEffectId.EarthStrengthEnhanced, new EarthStrengthEffect(4,2,true) },
             { ActionEffectId.RefreshingBase, new RefreshingEffect(1,1,false,2) },
             { ActionEffectId.RefreshingEnhanced, new RefreshingEffect(2,2,true,3) },
-            { ActionEffectId.WillFocusBase, new ManaGainEffect(false, ManaColor.Blue, ManaColor.White, ManaColor.Red) },
+            { ActionEffectId.WillFocusBase, new FocusManaEffect() },
             { ActionEffectId.WillFocusBoost, new BoostNextCardEffect(3) },
             { ActionEffectId.RangedAttack3, new RangedAttackEffect(3) },
             { ActionEffectId.ManaDrawBase, new ManaDrawEffect(false) },
@@ -65,6 +65,8 @@ namespace MK.Logic.Runtime.CardEffects
             { ActionEffectId.BattleRageEnhanced, new BattleRageEffect(true) },
             { ActionEffectId.IntimidateBase, new IntimidateEffect(false) },
             { ActionEffectId.IntimidateEnhanced, new IntimidateEffect(true) },
+            { ActionEffectId.InstinctBase, new InstinctEffect(2) },
+            { ActionEffectId.InstinctEnhanced, new InstinctEffect(4) },
             { ActionEffectId.UnknownBase, new UnknownEffect() },
             { ActionEffectId.UnknownEnhanced, new UnknownEffect() },
 

@@ -30,6 +30,8 @@
 
 ## 经验索引
 
+- 原版基础卡：本能数据恢复、互斥选项支付前验证、实际目标冰格挡及魔晶溢出 —— `vibe_coding/codex/project_experience/original_basic_card_choices_and_target_block_2026-09-10.md`
+
 - 原版卡战斗资源：元素/攻城贡献、合计取整、城防阶段、实际击杀与两步场景验收 —— `vibe_coding/codex/project_experience/typed_card_combat_and_rounding_2026-09-10.md`
 
 - 原法术费用与用例版本：ManaColor整笔支付、费用不足明确拒绝、TextAsset显式导入/SHA256、EditMode XML与摘要一致性 —— `vibe_coding/codex/project_experience/card_mana_and_suite_identity_2026-09-10.md`

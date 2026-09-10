@@ -98,7 +98,12 @@ namespace MK.Logic.Runtime
         /// <summary>向晶體池新增指定顏色。</summary>
         public void AddCrystal(ManaColor e, int n = 1)
         {
-            Crystals[e] = Crystals.GetValueOrDefault(e) + n;
+            if (n < 0) throw new System.ArgumentOutOfRangeException(nameof(n));
+            if (e < ManaColor.Red || e > ManaColor.White)
+                throw new System.InvalidOperationException("只有红、蓝、绿、白色可以成为魔晶");
+            int stored = System.Math.Min(n, System.Math.Max(0, 3 - Crystals.GetValueOrDefault(e)));
+            if (stored > 0) Crystals[e] = Crystals.GetValueOrDefault(e) + stored;
+            if (n > stored) AddToken(e, n - stored);
         }
 
         /// <summary>結束回合時清空所有法力標記。</summary>

@@ -119,8 +119,8 @@ namespace MK.Logic.Runtime
             _baseMap["basic_card_026"] = ActionEffectId.IntimidateBase;    // 無情威壓
             _enhMap["basic_card_026"]  = ActionEffectId.IntimidateEnhanced;
 
-            _baseMap["basic_card_027"] = ActionEffectId.UnknownBase;
-            _enhMap["basic_card_027"]  = ActionEffectId.UnknownEnhanced;
+            _baseMap["basic_card_027"] = ActionEffectId.InstinctBase;
+            _enhMap["basic_card_027"]  = ActionEffectId.InstinctEnhanced;
 
             // ─── 高級行動牌 000-008 ─────────────────────────────
             _baseMap["advanced_card_000"] = ActionEffectId.FireBoltBase;
@@ -320,12 +320,13 @@ namespace MK.Logic.Runtime
                         overlord = true;
             }
 
+            var effect = CardEffectFactory.Get(id);
+            if (effect is ICardEffectValidator validator) validator.Validate(player, ctx, option);
             if (!PayColors(player, ctx, cost))
                 throw new System.InvalidOperationException("法力不足，不能支付所选效果");
             if (!useEnh)
                 overlord = false;
 
-            var effect = CardEffectFactory.Get(id);
             int preMove = ctx.MovementPool;
             int preInf  = ctx.InfluencePool;
             int preMelee = ctx.MeleePool;

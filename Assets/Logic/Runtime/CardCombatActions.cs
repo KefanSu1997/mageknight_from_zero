@@ -56,7 +56,7 @@ namespace MK.Logic.Runtime
 
         public static Result Block(PlayerState player, ActionContext context, Monster enemy)
         {
-            var blocks = context.CombatPower.Blocks.ToArray();
+            var blocks = CombatMath.ResolveBlocks(enemy, context.CombatPower.Blocks);
             int printed = blocks.Sum(b => b.Value);
             int effective = CombatMath.EffectiveBlock(enemy.AttackElement, blocks);
             int required = AbilityRules.RequiredBlock(enemy);
