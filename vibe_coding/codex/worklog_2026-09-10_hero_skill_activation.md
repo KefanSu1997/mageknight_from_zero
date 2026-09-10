@@ -18,7 +18,7 @@ Unity 编译后 Console 两次为0；194项 EditMode 测试全部通过（Automa
 
 原490例完整回归 AutomationOutputs/AllOriginalCards/20260910_232109_6fc276ee：136 passed / 335 partial / 19 failed；1617操作、6674断言、645截图。所有状态不变；488个完整记录一致，号角/宝石袋两个案例仅随机输出不同，差异保留于 iteration_delta.json。
 
-四个冒险场景正在进行最终回归；远端推送待证据归档后执行。
+四个冒险场景最终回归 AutomationOutputs/AdventureRegression/20260910_233028_91b14288：114操作、477断言通过，118张截图与上次逐张SHA256一致，实际状态与断言也完全一致。最终Console两次0错误。源码提交1aef860，待全部证据提交后推送远端。
 
 ## 仍未完成的范围
 

@@ -22,15 +22,17 @@ Ice Shield and Burning/Exploding Shield now bind success triggers to their actua
 
 Nature Force and Wrath Horn now create actual siege contributions. Horn dice retain all six faces at day/night and roll once per chosen bonus; actual rolled colors and wound cards are audited in scenes. Necro Shield splits block into separate contributions for distinct attacks, preserving unused parts and rejecting reuse on the same attack. Strong blocks retain cold-fire. Full multi-attack enemy and artifact lifecycle integration remains pending.
 
+Hero skills now preserve original source identity and printed timing. A shared owned-skill entry validates choices before execution and tracks turn/round uses on the player; reloading the same definition cannot refresh usage. Burning Power retains siege and physical/fire choices; Hot Sword retains physical/fire melee. The original skill sheet is shown in an independent scene suite. The source audit retains 82 skill records and 32 unit records, including two unit backs and one unit with missing JSON rules.
+
 ## How to test
 
 Use the installed Unity 6000.6.0f1 editor via Hub. Run Tools/Mage Knight/Original Cards/Run All Batches, Tools/Mage Knight/Adventure/Run All EditMode Tests, and Tools/Mage Knight/Adventure/Run All Four. No batchmode or package changes.
 
 Reproduce source corrections with `python tools/restore_spell_costs.py` and `python tools/restore_instinct_card.py`, and generated fixtures with `python tools/build_all_card_verification.py`. Summarize the exact new directory with `python tools/summarize_all_card_verification.py --output AutomationOutputs/AllOriginalCards/<run>`. Verify regressions with `python tools/verify_card_regression.py --scenes <adventure-run> --tests <editmode-run>`.
 
-Latest full-suite evidence: AutomationOutputs/AllOriginalCards/20260910_222724_b5e1bbc2. 181 EditMode tests pass. 490 scene cases: 136 passed, 19 failed and 335 partial; 1617 pointer actions, 6674 effect assertions and 645 captures. All 449 previous case definitions and expectations are unchanged. Four old failures are repaired with no new regressions; all assertions in 41 added scene cases pass. Full card certification is still pending.
+Latest full-suite evidence: AutomationOutputs\AllOriginalCards\20260910_232109_6fc276ee. 194 EditMode tests pass. All 490 existing case definitions remain unchanged: 136 passed, 19 failed, 335 partial; 1617 pointer actions, 6674 effect assertions, 645 captures. Case statuses are unchanged; 488 complete records are identical, with two retained random artifact outcomes differing. Separate new hero-skill scene: 39 cases, 240 pointer actions, 1614 assertions and 164 captures pass (AutomationOutputs\HeroSkills\20260910_232750_4614deb3). Full card certification remains pending.
 
-Four adventure regressions pass 114 pointer actions and 477 assertions. An initial visual difference is isolated to button hover colors with identical actual state snapshots; a separate no-hover recheck is retained with provenance. Exact final Console responses, test XML/JSON and all captures are archived. Original artwork remains unchanged and intermediate checkpoints remain local.
+Four adventure regressions pass 114 pointer actions and 477 assertions. All 118 screenshots and actual state snapshots match the previous verified baseline exactly. Exact final Console responses, test XML/JSON and all captures are archived. Original artwork remains unchanged and intermediate checkpoints remain local.
 
 ## Risks
 

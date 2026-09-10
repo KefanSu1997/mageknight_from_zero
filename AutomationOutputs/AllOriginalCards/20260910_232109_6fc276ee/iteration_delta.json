@@ -1,0 +1,2769 @@
+{
+  "baseline": "AutomationOutputs\\AllOriginalCards\\20260910_222724_b5e1bbc2",
+  "unchangedCaseStatuses": 490,
+  "exactlyIdenticalCaseRecords": 488,
+  "randomOutcomeDifferences": [
+    {
+      "id": "items_009_00",
+      "fields": [
+        "after"
+      ],
+      "previous": {
+        "after": [
+          {
+            "key": "advancedOffer",
+            "value": "3"
+          },
+          {
+            "key": "AllowBlackAtDay",
+            "value": "False"
+          },
+          {
+            "key": "AllowGoldAtNight",
+            "value": "False"
+          },
+          {
+            "key": "AmbushAttackBonus",
+            "value": "0"
+          },
+          {
+            "key": "AmbushBlockBonus",
+            "value": "0"
+          },
+          {
+            "key": "AmbushTriggered",
+            "value": "False"
+          },
+          {
+            "key": "Armor",
+            "value": "2"
+          },
+          {
+            "key": "ArmorReducePerKill",
+            "value": "0"
+          },
+          {
+            "key": "AttackAfterBlock",
+            "value": "0"
+          },
+          {
+            "key": "AttackBonusLimit",
+            "value": "0"
+          },
+          {
+            "key": "AttackBonusPerBlock",
+            "value": "0"
+          },
+          {
+            "key": "AttackBonusPerWound",
+            "value": "0"
+          },
+          {
+            "key": "AttackDisabled",
+            "value": "False"
+          },
+          {
+            "key": "attackElement",
+            "value": "Physical"
+          },
+          {
+            "key": "AttackIfNoWound",
+            "value": "0"
+          },
+          {
+            "key": "AttackReduction",
+            "value": "0"
+          },
+          {
+            "key": "AttackReductionTimes",
+            "value": "0"
+          },
+          {
+            "key": "BlackManaWild",
+            "value": "False"
+          },
+          {
+            "key": "BlockArmorReduction",
+            "value": "0"
+          },
+          {
+            "key": "BlockedArmorOne",
+            "value": "False"
+          },
+          {
+            "key": "blockElement",
+            "value": ""
+          },
+          {
+            "key": "BlockPool",
+            "value": "0"
+          },
+          {
+            "key": "BoostValue",
+            "value": "0"
+          },
+          {
+            "key": "CardsFromDiscard:count",
+            "value": "2"
+          },
+          {
+            "key": "CardsToDiscard:count",
+            "value": "2"
+          },
+          {
+            "key": "CastleRevealRange",
+            "value": "0"
+          },
+          {
+            "key": "CommandSlots",
+            "value": "1"
+          },
+          {
+            "key": "crystal:Black",
+            "value": "0"
+          },
+          {
+            "key": "crystal:Blue",
+            "value": "1"
+          },
+          {
+            "key": "crystal:Gold",
+            "value": "0"
+          },
+          {
+            "key": "crystal:Green",
+            "value": "1"
+          },
+          {
+            "key": "crystal:Red",
+            "value": "1"
+          },
+          {
+            "key": "crystal:White",
+            "value": "1"
+          },
+          {
+            "key": "CrystalsPerKill",
+            "value": "0"
+          },
+          {
+            "key": "CurrentTerrain",
+            "value": "Forest"
+          },
+          {
+            "key": "DayPart",
+            "value": "Day"
+          },
+          {
+            "key": "dice:count",
+            "value": "1"
+          },
+          {
+            "key": "dice:faces",
+            "value": "Black"
+          },
+          {
+            "key": "discard",
+            "value": "2"
+          },
+          {
+            "key": "DiscardWounds",
+            "value": "0"
+          },
+          {
+            "key": "DiscardWoundsAfterBattle",
+            "value": "0"
+          },
+          {
+            "key": "DoublePhysicalAttack",
+            "value": "False"
+          },
+          {
+            "key": "DoubleRangedAttack",
+            "value": "False"
+          },
+          {
+            "key": "DoubleSiegeAttack",
+            "value": "False"
+          },
+          {
+            "key": "DrawPerHeal",
+            "value": "0"
+          },
+          {
+            "key": "Enemies:count",
+            "value": "1"
+          },
+          {
+            "key": "EnemySkipAttack",
+            "value": "False"
+          },
+          {
+            "key": "EngagedEnemies",
+            "value": "1"
+          },
+          {
+            "key": "ExploreMoveDiscount",
+            "value": "0"
+          },
+          {
+            "key": "ExtraCommandSlots",
+            "value": "0"
+          },
+          {
+            "key": "ExtraHandBonus",
+            "value": "0"
+          },
+          {
+            "key": "ExtraManaDice",
+            "value": "0"
+          },
+          {
+            "key": "ExtraTurn",
+            "value": "False"
+          },
+          {
+            "key": "Fame",
+            "value": "0"
+          },
+          {
+            "key": "FamePerRecruit",
+            "value": "0"
+          },
+          {
+            "key": "FamePerUnitAction",
+            "value": "0"
+          },
+          {
+            "key": "FireResistRemoved:count",
+            "value": "0"
+          },
+          {
+            "key": "FirstWoundIgnored",
+            "value": "False"
+          },
+          {
+            "key": "FortifiedSite",
+            "value": "False"
+          },
+          {
+            "key": "FreeRecruit",
+            "value": "False"
+          },
+          {
+            "key": "FreeSlots",
+            "value": "-1"
+          },
+          {
+            "key": "GoldManaWild",
+            "value": "False"
+          },
+          {
+            "key": "hand",
+            "value": "7"
+          },
+          {
+            "key": "handWounds",
+            "value": "4"
+          },
+          {
+            "key": "HarvestTriggers",
+            "value": "0"
+          },
+          {
+            "key": "HasRecruited",
+            "value": "False"
+          },
+          {
+            "key": "HealInfluenceRate",
+            "value": "0"
+          },
+          {
+            "key": "Id",
+            "value": "1"
+          },
+          {
+            "key": "IgnoreFireIceDamage",
+            "value": "0"
+          },
+          {
+            "key": "IgnoreFortified",
+            "value": "False"
+          },
+          {
+            "key": "IgnoreNextWound",
+            "value": "False"
+          },
+          {
+            "key": "IgnoreNonPhysicalDamage",
+            "value": "0"
+          },
+          {
+            "key": "IgnoreOtherDamage",
+            "value": "0"
+          },
+          {
+            "key": "IgnorePhysicalDamage",
+            "value": "0"
+          },
+          {
+            "key": "IgnoreRampaging",
+            "value": "False"
+          },
+          {
+            "key": "IgnoreReputationChange",
+            "value": "False"
+          },
+          {
+            "key": "IgnoreResist",
+            "value": "False"
+          },
+          {
+            "key": "InBattle",
+            "value": "False"
+          },
+          {
+            "key": "InfiniteMana:count",
+            "value": "0"
+          },
+          {
+            "key": "Influence",
+            "value": "0"
+          },
+          {
+            "key": "InfluenceAsBlock",
+            "value": "False"
+          },
+          {
+            "key": "InfluenceBlockElement",
+            "value": "Physical"
+          },
+          {
+            "key": "InfluencePool",
+            "value": "0"
+          },
+          {
+            "key": "InNegotiation",
+            "value": "False"
+          },
+          {
+            "key": "IntimidateUsed",
+            "value": "False"
+          },
+          {
+            "key": "KeepOrCastlePenalty",
+            "value": "False"
+          },
+          {
+            "key": "KillBlockedEnemy",
+            "value": "False"
+          },
+          {
+            "key": "LakeSafe",
+            "value": "False"
+          },
+          {
+            "key": "LastBlockElement",
+            "value": "Physical"
+          },
+          {
+            "key": "LastManaRolls:Black",
+            "value": "True"
+          },
+          {
+            "key": "LastManaRolls:count",
+            "value": "1"
+          },
+          {
+            "key": "LearnUsed",
+            "value": "False"
+          },
+          {
+            "key": "Level",
+            "value": "1"
+          },
+          {
+            "key": "ManaCurseTriggered",
+            "value": "False"
+          },
+          {
+            "key": "ManaSourceFrozen",
+            "value": "False"
+          },
+          {
+            "key": "MeleePool",
+            "value": "0"
+          },
+          {
+            "key": "MountainSafe",
+            "value": "False"
+          },
+          {
+            "key": "move:otherCost",
+            "value": "3"
+          },
+          {
+            "key": "move:selectedCost",
+            "value": "3"
+          },
+          {
+            "key": "MoveBonusAll",
+            "value": "0"
+          },
+          {
+            "key": "MoveBonusNext",
+            "value": "0"
+          },
+          {
+            "key": "MoveCostAttack",
+            "value": "0"
+          },
+          {
+            "key": "MoveCostRanged",
+            "value": "0"
+          },
+          {
+            "key": "MoveForbidden:count",
+            "value": "0"
+          },
+          {
+            "key": "MovementPool",
+            "value": "0"
+          },
+          {
+            "key": "Name",
+            "value": "验收玩家"
+          },
+          {
+            "key": "NextCardEnhanced",
+            "value": "False"
+          },
+          {
+            "key": "NextDrawBonus",
+            "value": "0"
+          },
+          {
+            "key": "NextMeleeAsRanged",
+            "value": "False"
+          },
+          {
+            "key": "NoUnitDamage",
+            "value": "False"
+          },
+          {
+            "key": "OtherPlayers:count",
+            "value": "0"
+          },
+          {
+            "key": "OtherUnitPenalty",
+            "value": "0"
+          },
+          {
+            "key": "OverlordPending",
+            "value": "False"
+          },
+          {
+            "key": "PendingFameOnKill",
+            "value": "0"
+          },
+          {
+            "key": "PendingFameOnRangedKill",
+            "value": "0"
+          },
+          {
+            "key": "PendingReputationOnKill",
+            "value": "0"
+          },
+          {
+            "key": "position:q",
+            "value": "0"
+          },
+          {
+            "key": "position:r",
+            "value": "0"
+          },
+          {
+            "key": "RangedAttackAsSiege",
+            "value": "False"
+          },
+          {
+            "key": "RangedPool",
+            "value": "0"
+          },
+          {
+            "key": "ReadyInfluencePerLevel",
+            "value": "0"
+          },
+          {
+            "key": "ReadyUnitMaxLevel",
+            "value": "0"
+          },
+          {
+            "key": "ReadyUnitOnHeal",
+            "value": "False"
+          },
+          {
+            "key": "readyUnits",
+            "value": "0"
+          },
+          {
+            "key": "RecruitDiscount",
+            "value": "0"
+          },
+          {
+            "key": "RecycleToBottom",
+            "value": "False"
+          },
+          {
+            "key": "RecycleToTop",
+            "value": "False"
+          },
+          {
+            "key": "Reputation",
+            "value": "0"
+          },
+          {
+            "key": "ReputationPerRecruit",
+            "value": "0"
+          },
+          {
+            "key": "RequireBlueForLake",
+            "value": "False"
+          },
+          {
+            "key": "ReturnAfterRetreat",
+            "value": "False"
+          },
+          {
+            "key": "ReturnSpentCrystals",
+            "value": "False"
+          },
+          {
+            "key": "SidewaysCardValue",
+            "value": "0"
+          },
+          {
+            "key": "SidewaysWoundValue",
+            "value": "0"
+          },
+          {
+            "key": "SiegeAttackAsRanged",
+            "value": "False"
+          },
+          {
+            "key": "SiegePool",
+            "value": "5"
+          },
+          {
+            "key": "skillOffer",
+            "value": "3"
+          },
+          {
+            "key": "Skills:count",
+            "value": "0"
+          },
+          {
+            "key": "SkipAttackIndices:count",
+            "value": "0"
+          },
+          {
+            "key": "SkipDraw",
+            "value": "False"
+          },
+          {
+            "key": "SpellColors:count",
+            "value": "0"
+          },
+          {
+            "key": "spellOffer",
+            "value": "3"
+          },
+          {
+            "key": "SpellStrongColors:count",
+            "value": "0"
+          },
+          {
+            "key": "SwiftBlockBonus",
+            "value": "0"
+          },
+          {
+            "key": "TacticHandBonus",
+            "value": "0"
+          },
+          {
+            "key": "TargetTerrain",
+            "value": "Forest"
+          },
+          {
+            "key": "TeleportForbidden:count",
+            "value": "0"
+          },
+          {
+            "key": "TeleportMustEndFort",
+            "value": "False"
+          },
+          {
+            "key": "TeleportMustEndSafe",
+            "value": "False"
+          },
+          {
+            "key": "TeleportRange",
+            "value": "0"
+          },
+          {
+            "key": "TempCommandSlots",
+            "value": "0"
+          },
+          {
+            "key": "token:Black",
+            "value": "2"
+          },
+          {
+            "key": "token:Blue",
+            "value": "2"
+          },
+          {
+            "key": "token:Gold",
+            "value": "2"
+          },
+          {
+            "key": "token:Green",
+            "value": "2"
+          },
+          {
+            "key": "token:Red",
+            "value": "2"
+          },
+          {
+            "key": "token:White",
+            "value": "2"
+          },
+          {
+            "key": "TransformMoveType",
+            "value": "0"
+          },
+          {
+            "key": "UnitArmorBonus",
+            "value": "0"
+          },
+          {
+            "key": "UnitAttackBonus",
+            "value": "0"
+          },
+          {
+            "key": "UnitBlockBonus",
+            "value": "0"
+          },
+          {
+            "key": "unitCanActivate",
+            "value": "False"
+          },
+          {
+            "key": "unitLevel",
+            "value": "2"
+          },
+          {
+            "key": "unitPhysicalResist",
+            "value": "False"
+          },
+          {
+            "key": "unitReady",
+            "value": "False"
+          },
+          {
+            "key": "Units:count",
+            "value": "2"
+          },
+          {
+            "key": "UnitsResistAll",
+            "value": "False"
+          },
+          {
+            "key": "unitWounds",
+            "value": "0"
+          },
+          {
+            "key": "WoundDrawRemaining",
+            "value": "0"
+          },
+          {
+            "key": "Wounds",
+            "value": "4"
+          }
+        ]
+      },
+      "current": {
+        "after": [
+          {
+            "key": "advancedOffer",
+            "value": "3"
+          },
+          {
+            "key": "AllowBlackAtDay",
+            "value": "False"
+          },
+          {
+            "key": "AllowGoldAtNight",
+            "value": "False"
+          },
+          {
+            "key": "AmbushAttackBonus",
+            "value": "0"
+          },
+          {
+            "key": "AmbushBlockBonus",
+            "value": "0"
+          },
+          {
+            "key": "AmbushTriggered",
+            "value": "False"
+          },
+          {
+            "key": "Armor",
+            "value": "2"
+          },
+          {
+            "key": "ArmorReducePerKill",
+            "value": "0"
+          },
+          {
+            "key": "AttackAfterBlock",
+            "value": "0"
+          },
+          {
+            "key": "AttackBonusLimit",
+            "value": "0"
+          },
+          {
+            "key": "AttackBonusPerBlock",
+            "value": "0"
+          },
+          {
+            "key": "AttackBonusPerWound",
+            "value": "0"
+          },
+          {
+            "key": "AttackDisabled",
+            "value": "False"
+          },
+          {
+            "key": "attackElement",
+            "value": "Physical"
+          },
+          {
+            "key": "AttackIfNoWound",
+            "value": "0"
+          },
+          {
+            "key": "AttackReduction",
+            "value": "0"
+          },
+          {
+            "key": "AttackReductionTimes",
+            "value": "0"
+          },
+          {
+            "key": "BlackManaWild",
+            "value": "False"
+          },
+          {
+            "key": "BlockArmorReduction",
+            "value": "0"
+          },
+          {
+            "key": "BlockedArmorOne",
+            "value": "False"
+          },
+          {
+            "key": "blockElement",
+            "value": ""
+          },
+          {
+            "key": "BlockPool",
+            "value": "0"
+          },
+          {
+            "key": "BoostValue",
+            "value": "0"
+          },
+          {
+            "key": "CardsFromDiscard:count",
+            "value": "2"
+          },
+          {
+            "key": "CardsToDiscard:count",
+            "value": "2"
+          },
+          {
+            "key": "CastleRevealRange",
+            "value": "0"
+          },
+          {
+            "key": "CommandSlots",
+            "value": "1"
+          },
+          {
+            "key": "crystal:Black",
+            "value": "0"
+          },
+          {
+            "key": "crystal:Blue",
+            "value": "1"
+          },
+          {
+            "key": "crystal:Gold",
+            "value": "0"
+          },
+          {
+            "key": "crystal:Green",
+            "value": "1"
+          },
+          {
+            "key": "crystal:Red",
+            "value": "1"
+          },
+          {
+            "key": "crystal:White",
+            "value": "1"
+          },
+          {
+            "key": "CrystalsPerKill",
+            "value": "0"
+          },
+          {
+            "key": "CurrentTerrain",
+            "value": "Forest"
+          },
+          {
+            "key": "DayPart",
+            "value": "Day"
+          },
+          {
+            "key": "dice:count",
+            "value": "1"
+          },
+          {
+            "key": "dice:faces",
+            "value": "White"
+          },
+          {
+            "key": "discard",
+            "value": "2"
+          },
+          {
+            "key": "DiscardWounds",
+            "value": "0"
+          },
+          {
+            "key": "DiscardWoundsAfterBattle",
+            "value": "0"
+          },
+          {
+            "key": "DoublePhysicalAttack",
+            "value": "False"
+          },
+          {
+            "key": "DoubleRangedAttack",
+            "value": "False"
+          },
+          {
+            "key": "DoubleSiegeAttack",
+            "value": "False"
+          },
+          {
+            "key": "DrawPerHeal",
+            "value": "0"
+          },
+          {
+            "key": "Enemies:count",
+            "value": "1"
+          },
+          {
+            "key": "EnemySkipAttack",
+            "value": "False"
+          },
+          {
+            "key": "EngagedEnemies",
+            "value": "1"
+          },
+          {
+            "key": "ExploreMoveDiscount",
+            "value": "0"
+          },
+          {
+            "key": "ExtraCommandSlots",
+            "value": "0"
+          },
+          {
+            "key": "ExtraHandBonus",
+            "value": "0"
+          },
+          {
+            "key": "ExtraManaDice",
+            "value": "0"
+          },
+          {
+            "key": "ExtraTurn",
+            "value": "False"
+          },
+          {
+            "key": "Fame",
+            "value": "0"
+          },
+          {
+            "key": "FamePerRecruit",
+            "value": "0"
+          },
+          {
+            "key": "FamePerUnitAction",
+            "value": "0"
+          },
+          {
+            "key": "FireResistRemoved:count",
+            "value": "0"
+          },
+          {
+            "key": "FirstWoundIgnored",
+            "value": "False"
+          },
+          {
+            "key": "FortifiedSite",
+            "value": "False"
+          },
+          {
+            "key": "FreeRecruit",
+            "value": "False"
+          },
+          {
+            "key": "FreeSlots",
+            "value": "-1"
+          },
+          {
+            "key": "GoldManaWild",
+            "value": "False"
+          },
+          {
+            "key": "hand",
+            "value": "6"
+          },
+          {
+            "key": "handWounds",
+            "value": "3"
+          },
+          {
+            "key": "HarvestTriggers",
+            "value": "0"
+          },
+          {
+            "key": "HasRecruited",
+            "value": "False"
+          },
+          {
+            "key": "HealInfluenceRate",
+            "value": "0"
+          },
+          {
+            "key": "Id",
+            "value": "1"
+          },
+          {
+            "key": "IgnoreFireIceDamage",
+            "value": "0"
+          },
+          {
+            "key": "IgnoreFortified",
+            "value": "False"
+          },
+          {
+            "key": "IgnoreNextWound",
+            "value": "False"
+          },
+          {
+            "key": "IgnoreNonPhysicalDamage",
+            "value": "0"
+          },
+          {
+            "key": "IgnoreOtherDamage",
+            "value": "0"
+          },
+          {
+            "key": "IgnorePhysicalDamage",
+            "value": "0"
+          },
+          {
+            "key": "IgnoreRampaging",
+            "value": "False"
+          },
+          {
+            "key": "IgnoreReputationChange",
+            "value": "False"
+          },
+          {
+            "key": "IgnoreResist",
+            "value": "False"
+          },
+          {
+            "key": "InBattle",
+            "value": "False"
+          },
+          {
+            "key": "InfiniteMana:count",
+            "value": "0"
+          },
+          {
+            "key": "Influence",
+            "value": "0"
+          },
+          {
+            "key": "InfluenceAsBlock",
+            "value": "False"
+          },
+          {
+            "key": "InfluenceBlockElement",
+            "value": "Physical"
+          },
+          {
+            "key": "InfluencePool",
+            "value": "0"
+          },
+          {
+            "key": "InNegotiation",
+            "value": "False"
+          },
+          {
+            "key": "IntimidateUsed",
+            "value": "False"
+          },
+          {
+            "key": "KeepOrCastlePenalty",
+            "value": "False"
+          },
+          {
+            "key": "KillBlockedEnemy",
+            "value": "False"
+          },
+          {
+            "key": "LakeSafe",
+            "value": "False"
+          },
+          {
+            "key": "LastBlockElement",
+            "value": "Physical"
+          },
+          {
+            "key": "LastManaRolls:count",
+            "value": "1"
+          },
+          {
+            "key": "LastManaRolls:White",
+            "value": "True"
+          },
+          {
+            "key": "LearnUsed",
+            "value": "False"
+          },
+          {
+            "key": "Level",
+            "value": "1"
+          },
+          {
+            "key": "ManaCurseTriggered",
+            "value": "False"
+          },
+          {
+            "key": "ManaSourceFrozen",
+            "value": "False"
+          },
+          {
+            "key": "MeleePool",
+            "value": "0"
+          },
+          {
+            "key": "MountainSafe",
+            "value": "False"
+          },
+          {
+            "key": "move:otherCost",
+            "value": "3"
+          },
+          {
+            "key": "move:selectedCost",
+            "value": "3"
+          },
+          {
+            "key": "MoveBonusAll",
+            "value": "0"
+          },
+          {
+            "key": "MoveBonusNext",
+            "value": "0"
+          },
+          {
+            "key": "MoveCostAttack",
+            "value": "0"
+          },
+          {
+            "key": "MoveCostRanged",
+            "value": "0"
+          },
+          {
+            "key": "MoveForbidden:count",
+            "value": "0"
+          },
+          {
+            "key": "MovementPool",
+            "value": "0"
+          },
+          {
+            "key": "Name",
+            "value": "验收玩家"
+          },
+          {
+            "key": "NextCardEnhanced",
+            "value": "False"
+          },
+          {
+            "key": "NextDrawBonus",
+            "value": "0"
+          },
+          {
+            "key": "NextMeleeAsRanged",
+            "value": "False"
+          },
+          {
+            "key": "NoUnitDamage",
+            "value": "False"
+          },
+          {
+            "key": "OtherPlayers:count",
+            "value": "0"
+          },
+          {
+            "key": "OtherUnitPenalty",
+            "value": "0"
+          },
+          {
+            "key": "OverlordPending",
+            "value": "False"
+          },
+          {
+            "key": "PendingFameOnKill",
+            "value": "0"
+          },
+          {
+            "key": "PendingFameOnRangedKill",
+            "value": "0"
+          },
+          {
+            "key": "PendingReputationOnKill",
+            "value": "0"
+          },
+          {
+            "key": "position:q",
+            "value": "0"
+          },
+          {
+            "key": "position:r",
+            "value": "0"
+          },
+          {
+            "key": "RangedAttackAsSiege",
+            "value": "False"
+          },
+          {
+            "key": "RangedPool",
+            "value": "0"
+          },
+          {
+            "key": "ReadyInfluencePerLevel",
+            "value": "0"
+          },
+          {
+            "key": "ReadyUnitMaxLevel",
+            "value": "0"
+          },
+          {
+            "key": "ReadyUnitOnHeal",
+            "value": "False"
+          },
+          {
+            "key": "readyUnits",
+            "value": "0"
+          },
+          {
+            "key": "RecruitDiscount",
+            "value": "0"
+          },
+          {
+            "key": "RecycleToBottom",
+            "value": "False"
+          },
+          {
+            "key": "RecycleToTop",
+            "value": "False"
+          },
+          {
+            "key": "Reputation",
+            "value": "0"
+          },
+          {
+            "key": "ReputationPerRecruit",
+            "value": "0"
+          },
+          {
+            "key": "RequireBlueForLake",
+            "value": "False"
+          },
+          {
+            "key": "ReturnAfterRetreat",
+            "value": "False"
+          },
+          {
+            "key": "ReturnSpentCrystals",
+            "value": "False"
+          },
+          {
+            "key": "SidewaysCardValue",
+            "value": "0"
+          },
+          {
+            "key": "SidewaysWoundValue",
+            "value": "0"
+          },
+          {
+            "key": "SiegeAttackAsRanged",
+            "value": "False"
+          },
+          {
+            "key": "SiegePool",
+            "value": "5"
+          },
+          {
+            "key": "skillOffer",
+            "value": "3"
+          },
+          {
+            "key": "Skills:count",
+            "value": "0"
+          },
+          {
+            "key": "SkipAttackIndices:count",
+            "value": "0"
+          },
+          {
+            "key": "SkipDraw",
+            "value": "False"
+          },
+          {
+            "key": "SpellColors:count",
+            "value": "0"
+          },
+          {
+            "key": "spellOffer",
+            "value": "3"
+          },
+          {
+            "key": "SpellStrongColors:count",
+            "value": "0"
+          },
+          {
+            "key": "SwiftBlockBonus",
+            "value": "0"
+          },
+          {
+            "key": "TacticHandBonus",
+            "value": "0"
+          },
+          {
+            "key": "TargetTerrain",
+            "value": "Forest"
+          },
+          {
+            "key": "TeleportForbidden:count",
+            "value": "0"
+          },
+          {
+            "key": "TeleportMustEndFort",
+            "value": "False"
+          },
+          {
+            "key": "TeleportMustEndSafe",
+            "value": "False"
+          },
+          {
+            "key": "TeleportRange",
+            "value": "0"
+          },
+          {
+            "key": "TempCommandSlots",
+            "value": "0"
+          },
+          {
+            "key": "token:Black",
+            "value": "2"
+          },
+          {
+            "key": "token:Blue",
+            "value": "2"
+          },
+          {
+            "key": "token:Gold",
+            "value": "2"
+          },
+          {
+            "key": "token:Green",
+            "value": "2"
+          },
+          {
+            "key": "token:Red",
+            "value": "2"
+          },
+          {
+            "key": "token:White",
+            "value": "2"
+          },
+          {
+            "key": "TransformMoveType",
+            "value": "0"
+          },
+          {
+            "key": "UnitArmorBonus",
+            "value": "0"
+          },
+          {
+            "key": "UnitAttackBonus",
+            "value": "0"
+          },
+          {
+            "key": "UnitBlockBonus",
+            "value": "0"
+          },
+          {
+            "key": "unitCanActivate",
+            "value": "False"
+          },
+          {
+            "key": "unitLevel",
+            "value": "2"
+          },
+          {
+            "key": "unitPhysicalResist",
+            "value": "False"
+          },
+          {
+            "key": "unitReady",
+            "value": "False"
+          },
+          {
+            "key": "Units:count",
+            "value": "2"
+          },
+          {
+            "key": "UnitsResistAll",
+            "value": "False"
+          },
+          {
+            "key": "unitWounds",
+            "value": "0"
+          },
+          {
+            "key": "WoundDrawRemaining",
+            "value": "0"
+          },
+          {
+            "key": "Wounds",
+            "value": "3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "items_011_00",
+      "fields": [
+        "after"
+      ],
+      "previous": {
+        "after": [
+          {
+            "key": "advancedOffer",
+            "value": "3"
+          },
+          {
+            "key": "AllowBlackAtDay",
+            "value": "False"
+          },
+          {
+            "key": "AllowGoldAtNight",
+            "value": "False"
+          },
+          {
+            "key": "AmbushAttackBonus",
+            "value": "0"
+          },
+          {
+            "key": "AmbushBlockBonus",
+            "value": "0"
+          },
+          {
+            "key": "AmbushTriggered",
+            "value": "False"
+          },
+          {
+            "key": "Armor",
+            "value": "2"
+          },
+          {
+            "key": "ArmorReducePerKill",
+            "value": "0"
+          },
+          {
+            "key": "AttackAfterBlock",
+            "value": "0"
+          },
+          {
+            "key": "AttackBonusLimit",
+            "value": "0"
+          },
+          {
+            "key": "AttackBonusPerBlock",
+            "value": "0"
+          },
+          {
+            "key": "AttackBonusPerWound",
+            "value": "0"
+          },
+          {
+            "key": "AttackDisabled",
+            "value": "False"
+          },
+          {
+            "key": "attackElement",
+            "value": ""
+          },
+          {
+            "key": "AttackIfNoWound",
+            "value": "0"
+          },
+          {
+            "key": "AttackReduction",
+            "value": "0"
+          },
+          {
+            "key": "AttackReductionTimes",
+            "value": "0"
+          },
+          {
+            "key": "BlackManaWild",
+            "value": "False"
+          },
+          {
+            "key": "BlockArmorReduction",
+            "value": "0"
+          },
+          {
+            "key": "BlockedArmorOne",
+            "value": "False"
+          },
+          {
+            "key": "blockElement",
+            "value": ""
+          },
+          {
+            "key": "BlockPool",
+            "value": "0"
+          },
+          {
+            "key": "BoostValue",
+            "value": "0"
+          },
+          {
+            "key": "CardsFromDiscard:count",
+            "value": "2"
+          },
+          {
+            "key": "CardsToDiscard:count",
+            "value": "2"
+          },
+          {
+            "key": "CastleRevealRange",
+            "value": "0"
+          },
+          {
+            "key": "CommandSlots",
+            "value": "1"
+          },
+          {
+            "key": "crystal:Black",
+            "value": "0"
+          },
+          {
+            "key": "crystal:Blue",
+            "value": "2"
+          },
+          {
+            "key": "crystal:Gold",
+            "value": "0"
+          },
+          {
+            "key": "crystal:Green",
+            "value": "1"
+          },
+          {
+            "key": "crystal:Red",
+            "value": "1"
+          },
+          {
+            "key": "crystal:White",
+            "value": "2"
+          },
+          {
+            "key": "CrystalsPerKill",
+            "value": "0"
+          },
+          {
+            "key": "CurrentTerrain",
+            "value": "Forest"
+          },
+          {
+            "key": "DayPart",
+            "value": "Day"
+          },
+          {
+            "key": "dice:count",
+            "value": "0"
+          },
+          {
+            "key": "dice:faces",
+            "value": ""
+          },
+          {
+            "key": "discard",
+            "value": "2"
+          },
+          {
+            "key": "DiscardWounds",
+            "value": "0"
+          },
+          {
+            "key": "DiscardWoundsAfterBattle",
+            "value": "0"
+          },
+          {
+            "key": "DoublePhysicalAttack",
+            "value": "False"
+          },
+          {
+            "key": "DoubleRangedAttack",
+            "value": "False"
+          },
+          {
+            "key": "DoubleSiegeAttack",
+            "value": "False"
+          },
+          {
+            "key": "DrawPerHeal",
+            "value": "0"
+          },
+          {
+            "key": "Enemies:count",
+            "value": "1"
+          },
+          {
+            "key": "EnemySkipAttack",
+            "value": "False"
+          },
+          {
+            "key": "EngagedEnemies",
+            "value": "1"
+          },
+          {
+            "key": "ExploreMoveDiscount",
+            "value": "0"
+          },
+          {
+            "key": "ExtraCommandSlots",
+            "value": "0"
+          },
+          {
+            "key": "ExtraHandBonus",
+            "value": "0"
+          },
+          {
+            "key": "ExtraManaDice",
+            "value": "0"
+          },
+          {
+            "key": "ExtraTurn",
+            "value": "False"
+          },
+          {
+            "key": "Fame",
+            "value": "0"
+          },
+          {
+            "key": "FamePerRecruit",
+            "value": "0"
+          },
+          {
+            "key": "FamePerUnitAction",
+            "value": "0"
+          },
+          {
+            "key": "FireResistRemoved:count",
+            "value": "0"
+          },
+          {
+            "key": "FirstWoundIgnored",
+            "value": "False"
+          },
+          {
+            "key": "FortifiedSite",
+            "value": "False"
+          },
+          {
+            "key": "FreeRecruit",
+            "value": "False"
+          },
+          {
+            "key": "FreeSlots",
+            "value": "-1"
+          },
+          {
+            "key": "GoldManaWild",
+            "value": "False"
+          },
+          {
+            "key": "hand",
+            "value": "6"
+          },
+          {
+            "key": "handWounds",
+            "value": "3"
+          },
+          {
+            "key": "HarvestTriggers",
+            "value": "0"
+          },
+          {
+            "key": "HasRecruited",
+            "value": "False"
+          },
+          {
+            "key": "HealInfluenceRate",
+            "value": "0"
+          },
+          {
+            "key": "Id",
+            "value": "1"
+          },
+          {
+            "key": "IgnoreFireIceDamage",
+            "value": "0"
+          },
+          {
+            "key": "IgnoreFortified",
+            "value": "False"
+          },
+          {
+            "key": "IgnoreNextWound",
+            "value": "False"
+          },
+          {
+            "key": "IgnoreNonPhysicalDamage",
+            "value": "0"
+          },
+          {
+            "key": "IgnoreOtherDamage",
+            "value": "0"
+          },
+          {
+            "key": "IgnorePhysicalDamage",
+            "value": "0"
+          },
+          {
+            "key": "IgnoreRampaging",
+            "value": "False"
+          },
+          {
+            "key": "IgnoreReputationChange",
+            "value": "False"
+          },
+          {
+            "key": "IgnoreResist",
+            "value": "False"
+          },
+          {
+            "key": "InBattle",
+            "value": "False"
+          },
+          {
+            "key": "InfiniteMana:count",
+            "value": "0"
+          },
+          {
+            "key": "Influence",
+            "value": "0"
+          },
+          {
+            "key": "InfluenceAsBlock",
+            "value": "False"
+          },
+          {
+            "key": "InfluenceBlockElement",
+            "value": "Physical"
+          },
+          {
+            "key": "InfluencePool",
+            "value": "0"
+          },
+          {
+            "key": "InNegotiation",
+            "value": "False"
+          },
+          {
+            "key": "IntimidateUsed",
+            "value": "False"
+          },
+          {
+            "key": "KeepOrCastlePenalty",
+            "value": "False"
+          },
+          {
+            "key": "KillBlockedEnemy",
+            "value": "False"
+          },
+          {
+            "key": "LakeSafe",
+            "value": "False"
+          },
+          {
+            "key": "LastBlockElement",
+            "value": "Physical"
+          },
+          {
+            "key": "LastManaRolls:count",
+            "value": "0"
+          },
+          {
+            "key": "LearnUsed",
+            "value": "False"
+          },
+          {
+            "key": "Level",
+            "value": "1"
+          },
+          {
+            "key": "ManaCurseTriggered",
+            "value": "False"
+          },
+          {
+            "key": "ManaSourceFrozen",
+            "value": "False"
+          },
+          {
+            "key": "MeleePool",
+            "value": "0"
+          },
+          {
+            "key": "MountainSafe",
+            "value": "False"
+          },
+          {
+            "key": "move:otherCost",
+            "value": "3"
+          },
+          {
+            "key": "move:selectedCost",
+            "value": "3"
+          },
+          {
+            "key": "MoveBonusAll",
+            "value": "0"
+          },
+          {
+            "key": "MoveBonusNext",
+            "value": "0"
+          },
+          {
+            "key": "MoveCostAttack",
+            "value": "0"
+          },
+          {
+            "key": "MoveCostRanged",
+            "value": "0"
+          },
+          {
+            "key": "MoveForbidden:count",
+            "value": "0"
+          },
+          {
+            "key": "MovementPool",
+            "value": "0"
+          },
+          {
+            "key": "Name",
+            "value": "验收玩家"
+          },
+          {
+            "key": "NextCardEnhanced",
+            "value": "False"
+          },
+          {
+            "key": "NextDrawBonus",
+            "value": "0"
+          },
+          {
+            "key": "NextMeleeAsRanged",
+            "value": "False"
+          },
+          {
+            "key": "NoUnitDamage",
+            "value": "False"
+          },
+          {
+            "key": "OtherPlayers:count",
+            "value": "0"
+          },
+          {
+            "key": "OtherUnitPenalty",
+            "value": "0"
+          },
+          {
+            "key": "OverlordPending",
+            "value": "False"
+          },
+          {
+            "key": "PendingFameOnKill",
+            "value": "0"
+          },
+          {
+            "key": "PendingFameOnRangedKill",
+            "value": "0"
+          },
+          {
+            "key": "PendingReputationOnKill",
+            "value": "0"
+          },
+          {
+            "key": "position:q",
+            "value": "0"
+          },
+          {
+            "key": "position:r",
+            "value": "0"
+          },
+          {
+            "key": "RangedAttackAsSiege",
+            "value": "False"
+          },
+          {
+            "key": "RangedPool",
+            "value": "0"
+          },
+          {
+            "key": "ReadyInfluencePerLevel",
+            "value": "0"
+          },
+          {
+            "key": "ReadyUnitMaxLevel",
+            "value": "0"
+          },
+          {
+            "key": "ReadyUnitOnHeal",
+            "value": "False"
+          },
+          {
+            "key": "readyUnits",
+            "value": "0"
+          },
+          {
+            "key": "RecruitDiscount",
+            "value": "0"
+          },
+          {
+            "key": "RecycleToBottom",
+            "value": "False"
+          },
+          {
+            "key": "RecycleToTop",
+            "value": "False"
+          },
+          {
+            "key": "Reputation",
+            "value": "0"
+          },
+          {
+            "key": "ReputationPerRecruit",
+            "value": "0"
+          },
+          {
+            "key": "RequireBlueForLake",
+            "value": "False"
+          },
+          {
+            "key": "ReturnAfterRetreat",
+            "value": "False"
+          },
+          {
+            "key": "ReturnSpentCrystals",
+            "value": "False"
+          },
+          {
+            "key": "SidewaysCardValue",
+            "value": "0"
+          },
+          {
+            "key": "SidewaysWoundValue",
+            "value": "0"
+          },
+          {
+            "key": "SiegeAttackAsRanged",
+            "value": "False"
+          },
+          {
+            "key": "SiegePool",
+            "value": "0"
+          },
+          {
+            "key": "skillOffer",
+            "value": "3"
+          },
+          {
+            "key": "Skills:count",
+            "value": "0"
+          },
+          {
+            "key": "SkipAttackIndices:count",
+            "value": "0"
+          },
+          {
+            "key": "SkipDraw",
+            "value": "False"
+          },
+          {
+            "key": "SpellColors:count",
+            "value": "0"
+          },
+          {
+            "key": "spellOffer",
+            "value": "3"
+          },
+          {
+            "key": "SpellStrongColors:count",
+            "value": "0"
+          },
+          {
+            "key": "SwiftBlockBonus",
+            "value": "0"
+          },
+          {
+            "key": "TacticHandBonus",
+            "value": "0"
+          },
+          {
+            "key": "TargetTerrain",
+            "value": "Forest"
+          },
+          {
+            "key": "TeleportForbidden:count",
+            "value": "0"
+          },
+          {
+            "key": "TeleportMustEndFort",
+            "value": "False"
+          },
+          {
+            "key": "TeleportMustEndSafe",
+            "value": "False"
+          },
+          {
+            "key": "TeleportRange",
+            "value": "0"
+          },
+          {
+            "key": "TempCommandSlots",
+            "value": "0"
+          },
+          {
+            "key": "token:Black",
+            "value": "2"
+          },
+          {
+            "key": "token:Blue",
+            "value": "2"
+          },
+          {
+            "key": "token:Gold",
+            "value": "2"
+          },
+          {
+            "key": "token:Green",
+            "value": "2"
+          },
+          {
+            "key": "token:Red",
+            "value": "2"
+          },
+          {
+            "key": "token:White",
+            "value": "2"
+          },
+          {
+            "key": "TransformMoveType",
+            "value": "0"
+          },
+          {
+            "key": "UnitArmorBonus",
+            "value": "0"
+          },
+          {
+            "key": "UnitAttackBonus",
+            "value": "0"
+          },
+          {
+            "key": "UnitBlockBonus",
+            "value": "0"
+          },
+          {
+            "key": "unitCanActivate",
+            "value": "False"
+          },
+          {
+            "key": "unitLevel",
+            "value": "2"
+          },
+          {
+            "key": "unitPhysicalResist",
+            "value": "False"
+          },
+          {
+            "key": "unitReady",
+            "value": "False"
+          },
+          {
+            "key": "Units:count",
+            "value": "2"
+          },
+          {
+            "key": "UnitsResistAll",
+            "value": "False"
+          },
+          {
+            "key": "unitWounds",
+            "value": "0"
+          },
+          {
+            "key": "WoundDrawRemaining",
+            "value": "0"
+          },
+          {
+            "key": "Wounds",
+            "value": "3"
+          }
+        ]
+      },
+      "current": {
+        "after": [
+          {
+            "key": "advancedOffer",
+            "value": "3"
+          },
+          {
+            "key": "AllowBlackAtDay",
+            "value": "False"
+          },
+          {
+            "key": "AllowGoldAtNight",
+            "value": "False"
+          },
+          {
+            "key": "AmbushAttackBonus",
+            "value": "0"
+          },
+          {
+            "key": "AmbushBlockBonus",
+            "value": "0"
+          },
+          {
+            "key": "AmbushTriggered",
+            "value": "False"
+          },
+          {
+            "key": "Armor",
+            "value": "2"
+          },
+          {
+            "key": "ArmorReducePerKill",
+            "value": "0"
+          },
+          {
+            "key": "AttackAfterBlock",
+            "value": "0"
+          },
+          {
+            "key": "AttackBonusLimit",
+            "value": "0"
+          },
+          {
+            "key": "AttackBonusPerBlock",
+            "value": "0"
+          },
+          {
+            "key": "AttackBonusPerWound",
+            "value": "0"
+          },
+          {
+            "key": "AttackDisabled",
+            "value": "False"
+          },
+          {
+            "key": "attackElement",
+            "value": ""
+          },
+          {
+            "key": "AttackIfNoWound",
+            "value": "0"
+          },
+          {
+            "key": "AttackReduction",
+            "value": "0"
+          },
+          {
+            "key": "AttackReductionTimes",
+            "value": "0"
+          },
+          {
+            "key": "BlackManaWild",
+            "value": "False"
+          },
+          {
+            "key": "BlockArmorReduction",
+            "value": "0"
+          },
+          {
+            "key": "BlockedArmorOne",
+            "value": "False"
+          },
+          {
+            "key": "blockElement",
+            "value": ""
+          },
+          {
+            "key": "BlockPool",
+            "value": "0"
+          },
+          {
+            "key": "BoostValue",
+            "value": "0"
+          },
+          {
+            "key": "CardsFromDiscard:count",
+            "value": "2"
+          },
+          {
+            "key": "CardsToDiscard:count",
+            "value": "2"
+          },
+          {
+            "key": "CastleRevealRange",
+            "value": "0"
+          },
+          {
+            "key": "CommandSlots",
+            "value": "1"
+          },
+          {
+            "key": "crystal:Black",
+            "value": "0"
+          },
+          {
+            "key": "crystal:Blue",
+            "value": "2"
+          },
+          {
+            "key": "crystal:Gold",
+            "value": "0"
+          },
+          {
+            "key": "crystal:Green",
+            "value": "2"
+          },
+          {
+            "key": "crystal:Red",
+            "value": "1"
+          },
+          {
+            "key": "crystal:White",
+            "value": "1"
+          },
+          {
+            "key": "CrystalsPerKill",
+            "value": "0"
+          },
+          {
+            "key": "CurrentTerrain",
+            "value": "Forest"
+          },
+          {
+            "key": "DayPart",
+            "value": "Day"
+          },
+          {
+            "key": "dice:count",
+            "value": "0"
+          },
+          {
+            "key": "dice:faces",
+            "value": ""
+          },
+          {
+            "key": "discard",
+            "value": "2"
+          },
+          {
+            "key": "DiscardWounds",
+            "value": "0"
+          },
+          {
+            "key": "DiscardWoundsAfterBattle",
+            "value": "0"
+          },
+          {
+            "key": "DoublePhysicalAttack",
+            "value": "False"
+          },
+          {
+            "key": "DoubleRangedAttack",
+            "value": "False"
+          },
+          {
+            "key": "DoubleSiegeAttack",
+            "value": "False"
+          },
+          {
+            "key": "DrawPerHeal",
+            "value": "0"
+          },
+          {
+            "key": "Enemies:count",
+            "value": "1"
+          },
+          {
+            "key": "EnemySkipAttack",
+            "value": "False"
+          },
+          {
+            "key": "EngagedEnemies",
+            "value": "1"
+          },
+          {
+            "key": "ExploreMoveDiscount",
+            "value": "0"
+          },
+          {
+            "key": "ExtraCommandSlots",
+            "value": "0"
+          },
+          {
+            "key": "ExtraHandBonus",
+            "value": "0"
+          },
+          {
+            "key": "ExtraManaDice",
+            "value": "0"
+          },
+          {
+            "key": "ExtraTurn",
+            "value": "False"
+          },
+          {
+            "key": "Fame",
+            "value": "0"
+          },
+          {
+            "key": "FamePerRecruit",
+            "value": "0"
+          },
+          {
+            "key": "FamePerUnitAction",
+            "value": "0"
+          },
+          {
+            "key": "FireResistRemoved:count",
+            "value": "0"
+          },
+          {
+            "key": "FirstWoundIgnored",
+            "value": "False"
+          },
+          {
+            "key": "FortifiedSite",
+            "value": "False"
+          },
+          {
+            "key": "FreeRecruit",
+            "value": "False"
+          },
+          {
+            "key": "FreeSlots",
+            "value": "-1"
+          },
+          {
+            "key": "GoldManaWild",
+            "value": "False"
+          },
+          {
+            "key": "hand",
+            "value": "6"
+          },
+          {
+            "key": "handWounds",
+            "value": "3"
+          },
+          {
+            "key": "HarvestTriggers",
+            "value": "0"
+          },
+          {
+            "key": "HasRecruited",
+            "value": "False"
+          },
+          {
+            "key": "HealInfluenceRate",
+            "value": "0"
+          },
+          {
+            "key": "Id",
+            "value": "1"
+          },
+          {
+            "key": "IgnoreFireIceDamage",
+            "value": "0"
+          },
+          {
+            "key": "IgnoreFortified",
+            "value": "False"
+          },
+          {
+            "key": "IgnoreNextWound",
+            "value": "False"
+          },
+          {
+            "key": "IgnoreNonPhysicalDamage",
+            "value": "0"
+          },
+          {
+            "key": "IgnoreOtherDamage",
+            "value": "0"
+          },
+          {
+            "key": "IgnorePhysicalDamage",
+            "value": "0"
+          },
+          {
+            "key": "IgnoreRampaging",
+            "value": "False"
+          },
+          {
+            "key": "IgnoreReputationChange",
+            "value": "False"
+          },
+          {
+            "key": "IgnoreResist",
+            "value": "False"
+          },
+          {
+            "key": "InBattle",
+            "value": "False"
+          },
+          {
+            "key": "InfiniteMana:count",
+            "value": "0"
+          },
+          {
+            "key": "Influence",
+            "value": "0"
+          },
+          {
+            "key": "InfluenceAsBlock",
+            "value": "False"
+          },
+          {
+            "key": "InfluenceBlockElement",
+            "value": "Physical"
+          },
+          {
+            "key": "InfluencePool",
+            "value": "0"
+          },
+          {
+            "key": "InNegotiation",
+            "value": "False"
+          },
+          {
+            "key": "IntimidateUsed",
+            "value": "False"
+          },
+          {
+            "key": "KeepOrCastlePenalty",
+            "value": "False"
+          },
+          {
+            "key": "KillBlockedEnemy",
+            "value": "False"
+          },
+          {
+            "key": "LakeSafe",
+            "value": "False"
+          },
+          {
+            "key": "LastBlockElement",
+            "value": "Physical"
+          },
+          {
+            "key": "LastManaRolls:count",
+            "value": "0"
+          },
+          {
+            "key": "LearnUsed",
+            "value": "False"
+          },
+          {
+            "key": "Level",
+            "value": "1"
+          },
+          {
+            "key": "ManaCurseTriggered",
+            "value": "False"
+          },
+          {
+            "key": "ManaSourceFrozen",
+            "value": "False"
+          },
+          {
+            "key": "MeleePool",
+            "value": "0"
+          },
+          {
+            "key": "MountainSafe",
+            "value": "False"
+          },
+          {
+            "key": "move:otherCost",
+            "value": "3"
+          },
+          {
+            "key": "move:selectedCost",
+            "value": "3"
+          },
+          {
+            "key": "MoveBonusAll",
+            "value": "0"
+          },
+          {
+            "key": "MoveBonusNext",
+            "value": "0"
+          },
+          {
+            "key": "MoveCostAttack",
+            "value": "0"
+          },
+          {
+            "key": "MoveCostRanged",
+            "value": "0"
+          },
+          {
+            "key": "MoveForbidden:count",
+            "value": "0"
+          },
+          {
+            "key": "MovementPool",
+            "value": "0"
+          },
+          {
+            "key": "Name",
+            "value": "验收玩家"
+          },
+          {
+            "key": "NextCardEnhanced",
+            "value": "False"
+          },
+          {
+            "key": "NextDrawBonus",
+            "value": "0"
+          },
+          {
+            "key": "NextMeleeAsRanged",
+            "value": "False"
+          },
+          {
+            "key": "NoUnitDamage",
+            "value": "False"
+          },
+          {
+            "key": "OtherPlayers:count",
+            "value": "0"
+          },
+          {
+            "key": "OtherUnitPenalty",
+            "value": "0"
+          },
+          {
+            "key": "OverlordPending",
+            "value": "False"
+          },
+          {
+            "key": "PendingFameOnKill",
+            "value": "0"
+          },
+          {
+            "key": "PendingFameOnRangedKill",
+            "value": "0"
+          },
+          {
+            "key": "PendingReputationOnKill",
+            "value": "0"
+          },
+          {
+            "key": "position:q",
+            "value": "0"
+          },
+          {
+            "key": "position:r",
+            "value": "0"
+          },
+          {
+            "key": "RangedAttackAsSiege",
+            "value": "False"
+          },
+          {
+            "key": "RangedPool",
+            "value": "0"
+          },
+          {
+            "key": "ReadyInfluencePerLevel",
+            "value": "0"
+          },
+          {
+            "key": "ReadyUnitMaxLevel",
+            "value": "0"
+          },
+          {
+            "key": "ReadyUnitOnHeal",
+            "value": "False"
+          },
+          {
+            "key": "readyUnits",
+            "value": "0"
+          },
+          {
+            "key": "RecruitDiscount",
+            "value": "0"
+          },
+          {
+            "key": "RecycleToBottom",
+            "value": "False"
+          },
+          {
+            "key": "RecycleToTop",
+            "value": "False"
+          },
+          {
+            "key": "Reputation",
+            "value": "0"
+          },
+          {
+            "key": "ReputationPerRecruit",
+            "value": "0"
+          },
+          {
+            "key": "RequireBlueForLake",
+            "value": "False"
+          },
+          {
+            "key": "ReturnAfterRetreat",
+            "value": "False"
+          },
+          {
+            "key": "ReturnSpentCrystals",
+            "value": "False"
+          },
+          {
+            "key": "SidewaysCardValue",
+            "value": "0"
+          },
+          {
+            "key": "SidewaysWoundValue",
+            "value": "0"
+          },
+          {
+            "key": "SiegeAttackAsRanged",
+            "value": "False"
+          },
+          {
+            "key": "SiegePool",
+            "value": "0"
+          },
+          {
+            "key": "skillOffer",
+            "value": "3"
+          },
+          {
+            "key": "Skills:count",
+            "value": "0"
+          },
+          {
+            "key": "SkipAttackIndices:count",
+            "value": "0"
+          },
+          {
+            "key": "SkipDraw",
+            "value": "False"
+          },
+          {
+            "key": "SpellColors:count",
+            "value": "0"
+          },
+          {
+            "key": "spellOffer",
+            "value": "3"
+          },
+          {
+            "key": "SpellStrongColors:count",
+            "value": "0"
+          },
+          {
+            "key": "SwiftBlockBonus",
+            "value": "0"
+          },
+          {
+            "key": "TacticHandBonus",
+            "value": "0"
+          },
+          {
+            "key": "TargetTerrain",
+            "value": "Forest"
+          },
+          {
+            "key": "TeleportForbidden:count",
+            "value": "0"
+          },
+          {
+            "key": "TeleportMustEndFort",
+            "value": "False"
+          },
+          {
+            "key": "TeleportMustEndSafe",
+            "value": "False"
+          },
+          {
+            "key": "TeleportRange",
+            "value": "0"
+          },
+          {
+            "key": "TempCommandSlots",
+            "value": "0"
+          },
+          {
+            "key": "token:Black",
+            "value": "2"
+          },
+          {
+            "key": "token:Blue",
+            "value": "2"
+          },
+          {
+            "key": "token:Gold",
+            "value": "2"
+          },
+          {
+            "key": "token:Green",
+            "value": "2"
+          },
+          {
+            "key": "token:Red",
+            "value": "2"
+          },
+          {
+            "key": "token:White",
+            "value": "2"
+          },
+          {
+            "key": "TransformMoveType",
+            "value": "0"
+          },
+          {
+            "key": "UnitArmorBonus",
+            "value": "0"
+          },
+          {
+            "key": "UnitAttackBonus",
+            "value": "0"
+          },
+          {
+            "key": "UnitBlockBonus",
+            "value": "0"
+          },
+          {
+            "key": "unitCanActivate",
+            "value": "False"
+          },
+          {
+            "key": "unitLevel",
+            "value": "2"
+          },
+          {
+            "key": "unitPhysicalResist",
+            "value": "False"
+          },
+          {
+            "key": "unitReady",
+            "value": "False"
+          },
+          {
+            "key": "Units:count",
+            "value": "2"
+          },
+          {
+            "key": "UnitsResistAll",
+            "value": "False"
+          },
+          {
+            "key": "unitWounds",
+            "value": "0"
+          },
+          {
+            "key": "WoundDrawRemaining",
+            "value": "0"
+          },
+          {
+            "key": "Wounds",
+            "value": "3"
+          }
+        ]
+      }
+    }
+  ],
+  "batches": [
+    {
+      "batch": "basic_card",
+      "cases": 183,
+      "statusChanges": 0
+    },
+    {
+      "batch": "advanced_card",
+      "cases": 119,
+      "statusChanges": 0
+    },
+    {
+      "batch": "magic",
+      "cases": 102,
+      "statusChanges": 0
+    },
+    {
+      "batch": "items",
+      "cases": 86,
+      "statusChanges": 0
+    }
+  ]
+}

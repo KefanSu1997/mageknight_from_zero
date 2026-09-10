@@ -1,0 +1,996 @@
+{
+    "scenePath": "Assets/Scenes/Part1/Part1_JourneyRules.unity",
+    "screenshotsDirectory": "AutomationOutputs/AdventureRegression/20260910_233028_91b14288/Journey/captures",
+    "useRunSubfolder": true,
+    "reportPath": "AutomationOutputs/AdventureRegression/20260910_233028_91b14288/Journey/report.json",
+    "captureInitialView": true,
+    "initialDelaySeconds": 1.2999999523162842,
+    "defaultWaitAfterSeconds": 0.18000000715255737,
+    "maxRunSeconds": 180.0,
+    "steps": [
+        {
+            "buttonPath": "Canvas/UIRoot/Hand/Card_0",
+            "label": "选择_basic_card_000_0",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "selectedCard",
+                    "expected": "basic_card_000",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "hand",
+                    "expected": "5",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "ui:hand",
+                    "expected": "5",
+                    "rule": "可见读数必须对应规则状态。选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "accepted",
+                    "expected": "1",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "ui:cardArt:0",
+                    "expected": "basic_card_000",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "ui:printedEffect",
+                    "expected": "基础：移动力2。",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Stage/Targets/Site_village",
+            "label": "点选_site_village",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "target",
+                    "expected": "site:village",
+                    "rule": "点选目标不扣费。"
+                },
+                {
+                    "key": "accepted",
+                    "expected": "1",
+                    "rule": "点选目标不扣费。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Inspector/Btn_Enhance",
+            "label": "选择原卡强化",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "enhanced",
+                    "expected": "1",
+                    "rule": "选择强化不支付；必须使用原卡规定的耗色和数值。"
+                },
+                {
+                    "key": "selectedValue",
+                    "expected": "4",
+                    "rule": "选择强化不支付；必须使用原卡规定的耗色和数值。"
+                },
+                {
+                    "key": "greenCrystal",
+                    "expected": "1",
+                    "rule": "选择强化不支付；必须使用原卡规定的耗色和数值。"
+                },
+                {
+                    "key": "ui:printedEffect",
+                    "expected": "强化：移动力4。",
+                    "rule": "选择强化不支付；必须使用原卡规定的耗色和数值。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+            "label": "行进强化准备探索",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "movement",
+                    "expected": "4",
+                    "rule": "原卡绿色强化4。"
+                },
+                {
+                    "key": "hand",
+                    "expected": "4",
+                    "rule": "原卡绿色强化4。"
+                },
+                {
+                    "key": "ui:hand",
+                    "expected": "4",
+                    "rule": "可见读数必须对应规则状态。原卡绿色强化4。"
+                },
+                {
+                    "key": "greenCrystal",
+                    "expected": "0",
+                    "rule": "原卡绿色强化4。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+            "label": "探索村庄扣二",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "movement",
+                    "expected": "2",
+                    "rule": "探索不移动。"
+                },
+                {
+                    "key": "position",
+                    "expected": "camp",
+                    "rule": "探索不移动。"
+                },
+                {
+                    "key": "revealed",
+                    "expected": "2",
+                    "rule": "探索不移动。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+            "label": "进入村庄再扣二",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "movement",
+                    "expected": "0",
+                    "rule": "平原进入费用2。"
+                },
+                {
+                    "key": "position",
+                    "expected": "village",
+                    "rule": "平原进入费用2。"
+                },
+                {
+                    "key": "phase",
+                    "expected": "Interaction",
+                    "rule": "平原进入费用2。"
+                },
+                {
+                    "key": "background",
+                    "expected": "village",
+                    "rule": "平原进入费用2。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Hand/Card_1",
+            "label": "选择_basic_card_008_1",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "selectedCard",
+                    "expected": "basic_card_008",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "hand",
+                    "expected": "4",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "ui:hand",
+                    "expected": "4",
+                    "rule": "可见读数必须对应规则状态。选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "accepted",
+                    "expected": "1",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "ui:cardArt:1",
+                    "expected": "basic_card_008",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "ui:printedEffect",
+                    "expected": "基础：影响力2。",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Stage/Targets/Offer_guard",
+            "label": "点选_offer_guard",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "target",
+                    "expected": "offer:guard",
+                    "rule": "点选目标不扣费。"
+                },
+                {
+                    "key": "accepted",
+                    "expected": "1",
+                    "rule": "点选目标不扣费。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Inspector/Btn_Enhance",
+            "label": "选择原卡强化",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "enhanced",
+                    "expected": "1",
+                    "rule": "选择强化不支付；必须使用原卡规定的耗色和数值。"
+                },
+                {
+                    "key": "selectedValue",
+                    "expected": "4",
+                    "rule": "选择强化不支付；必须使用原卡规定的耗色和数值。"
+                },
+                {
+                    "key": "whiteCrystal",
+                    "expected": "1",
+                    "rule": "选择强化不支付；必须使用原卡规定的耗色和数值。"
+                },
+                {
+                    "key": "ui:printedEffect",
+                    "expected": "强化：影响力4。",
+                    "rule": "选择强化不支付；必须使用原卡规定的耗色和数值。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+            "label": "承诺强化4",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "influence",
+                    "expected": "4",
+                    "rule": "白色强化4。"
+                },
+                {
+                    "key": "whiteCrystal",
+                    "expected": "0",
+                    "rule": "白色强化4。"
+                },
+                {
+                    "key": "hand",
+                    "expected": "3",
+                    "rule": "白色强化4。"
+                },
+                {
+                    "key": "ui:hand",
+                    "expected": "3",
+                    "rule": "可见读数必须对应规则状态。白色强化4。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Hand/Card_2",
+            "label": "选择_basic_card_008_2",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "selectedCard",
+                    "expected": "basic_card_008",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "hand",
+                    "expected": "3",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "ui:hand",
+                    "expected": "3",
+                    "rule": "可见读数必须对应规则状态。选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "accepted",
+                    "expected": "1",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "ui:cardArt:2",
+                    "expected": "basic_card_008",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "ui:printedEffect",
+                    "expected": "基础：影响力2。",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+            "label": "承诺基础补二",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "influence",
+                    "expected": "6",
+                    "rule": "4加2。"
+                },
+                {
+                    "key": "hand",
+                    "expected": "2",
+                    "rule": "4加2。"
+                },
+                {
+                    "key": "ui:hand",
+                    "expected": "2",
+                    "rule": "可见读数必须对应规则状态。4加2。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+            "label": "支付五招募守卫",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "influence",
+                    "expected": "1",
+                    "rule": "招募占一槽。"
+                },
+                {
+                    "key": "units",
+                    "expected": "1",
+                    "rule": "招募占一槽。"
+                },
+                {
+                    "key": "ready",
+                    "expected": "1",
+                    "rule": "招募占一槽。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+            "label": "进入下一回合遭遇",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "phase",
+                    "expected": "Block",
+                    "rule": "只补三张，原卡实例和已付魔力跨回合保留。"
+                },
+                {
+                    "key": "turn",
+                    "expected": "2",
+                    "rule": "只补三张，原卡实例和已付魔力跨回合保留。"
+                },
+                {
+                    "key": "hand",
+                    "expected": "5",
+                    "rule": "只补三张，原卡实例和已付魔力跨回合保留。"
+                },
+                {
+                    "key": "ui:hand",
+                    "expected": "5",
+                    "rule": "可见读数必须对应规则状态。只补三张，原卡实例和已付魔力跨回合保留。"
+                },
+                {
+                    "key": "deck",
+                    "expected": "2",
+                    "rule": "只补三张，原卡实例和已付魔力跨回合保留。"
+                },
+                {
+                    "key": "discard",
+                    "expected": "3",
+                    "rule": "只补三张，原卡实例和已付魔力跨回合保留。"
+                },
+                {
+                    "key": "influence",
+                    "expected": "0",
+                    "rule": "只补三张，原卡实例和已付魔力跨回合保留。"
+                },
+                {
+                    "key": "movement",
+                    "expected": "0",
+                    "rule": "只补三张，原卡实例和已付魔力跨回合保留。"
+                },
+                {
+                    "key": "greenCrystal",
+                    "expected": "0",
+                    "rule": "只补三张，原卡实例和已付魔力跨回合保留。"
+                },
+                {
+                    "key": "whiteCrystal",
+                    "expected": "0",
+                    "rule": "只补三张，原卡实例和已付魔力跨回合保留。"
+                },
+                {
+                    "key": "cardSlot0",
+                    "expected": "basic_card_021",
+                    "rule": "只补三张，原卡实例和已付魔力跨回合保留。"
+                },
+                {
+                    "key": "cardSlot2",
+                    "expected": "basic_card_016",
+                    "rule": "只补三张，原卡实例和已付魔力跨回合保留。"
+                },
+                {
+                    "key": "requiredBlock0",
+                    "expected": "6",
+                    "rule": "只补三张，原卡实例和已付魔力跨回合保留。"
+                },
+                {
+                    "key": "background",
+                    "expected": "village",
+                    "rule": "只补三张，原卡实例和已付魔力跨回合保留。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Units/Unit_guard",
+            "label": "选择部队",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "selectedUnit",
+                    "expected": "guard",
+                    "rule": "选择不耗竭。"
+                },
+                {
+                    "key": "ready",
+                    "expected": "1",
+                    "rule": "选择不耗竭。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+            "label": "没目标部队不能使用",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "accepted",
+                    "expected": "0",
+                    "rule": "未指定敌人不消耗。"
+                },
+                {
+                    "key": "ready",
+                    "expected": "1",
+                    "rule": "未指定敌人不消耗。"
+                },
+                {
+                    "key": "block0",
+                    "expected": "0",
+                    "rule": "未指定敌人不消耗。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Stage/Targets/Enemy_0",
+            "label": "点选_enemy_0",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "target",
+                    "expected": "enemy:0",
+                    "rule": "点选目标不扣费。"
+                },
+                {
+                    "key": "accepted",
+                    "expected": "1",
+                    "rule": "点选目标不扣费。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+            "label": "守卫格挡三",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "block0",
+                    "expected": "3",
+                    "rule": "确认才耗竭部队。"
+                },
+                {
+                    "key": "ready",
+                    "expected": "0",
+                    "rule": "确认才耗竭部队。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Units/Unit_guard",
+            "label": "耗竭单位不能重复",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "accepted",
+                    "expected": "0",
+                    "rule": "不能重复用能力。"
+                },
+                {
+                    "key": "block0",
+                    "expected": "3",
+                    "rule": "不能重复用能力。"
+                },
+                {
+                    "key": "ready",
+                    "expected": "0",
+                    "rule": "不能重复用能力。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Hand/Card_5",
+            "label": "选择_basic_card_016_5",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "selectedCard",
+                    "expected": "basic_card_016",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "hand",
+                    "expected": "5",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "ui:hand",
+                    "expected": "5",
+                    "rule": "可见读数必须对应规则状态。选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "accepted",
+                    "expected": "1",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "ui:cardArt:5",
+                    "expected": "basic_card_016",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "ui:printedEffect",
+                    "expected": "基础：攻击或格挡2。",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Stage/Targets/Enemy_0",
+            "label": "点选_enemy_0",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "target",
+                    "expected": "enemy:0",
+                    "rule": "点选目标不扣费。"
+                },
+                {
+                    "key": "accepted",
+                    "expected": "1",
+                    "rule": "点选目标不扣费。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Inspector/Btn_Enhance",
+            "label": "选择原卡强化",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "enhanced",
+                    "expected": "1",
+                    "rule": "选择强化不支付；必须使用原卡规定的耗色和数值。"
+                },
+                {
+                    "key": "selectedValue",
+                    "expected": "5",
+                    "rule": "选择强化不支付；必须使用原卡规定的耗色和数值。"
+                },
+                {
+                    "key": "blueCrystal",
+                    "expected": "1",
+                    "rule": "选择强化不支付；必须使用原卡规定的耗色和数值。"
+                },
+                {
+                    "key": "ui:printedEffect",
+                    "expected": "强化：格挡5。",
+                    "rule": "选择强化不支付；必须使用原卡规定的耗色和数值。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+            "label": "决心强化与部队合计八",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "block0",
+                    "expected": "8",
+                    "rule": "3加5抵挡迅捷需求6。"
+                },
+                {
+                    "key": "blueCrystal",
+                    "expected": "0",
+                    "rule": "3加5抵挡迅捷需求6。"
+                },
+                {
+                    "key": "hand",
+                    "expected": "4",
+                    "rule": "3加5抵挡迅捷需求6。"
+                },
+                {
+                    "key": "ui:hand",
+                    "expected": "4",
+                    "rule": "可见读数必须对应规则状态。3加5抵挡迅捷需求6。"
+                },
+                {
+                    "key": "ui:resource",
+                    "expected": "8 / 6",
+                    "rule": "3加5抵挡迅捷需求6。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+            "label": "成功格挡没有伤牌",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "phase",
+                    "expected": "Attack",
+                    "rule": "迅捷不把攻击伤害翻倍。"
+                },
+                {
+                    "key": "wounds",
+                    "expected": "0",
+                    "rule": "迅捷不把攻击伤害翻倍。"
+                },
+                {
+                    "key": "ui:wounds",
+                    "expected": "0",
+                    "rule": "可见读数必须对应规则状态。迅捷不把攻击伤害翻倍。"
+                },
+                {
+                    "key": "hand",
+                    "expected": "4",
+                    "rule": "迅捷不把攻击伤害翻倍。"
+                },
+                {
+                    "key": "ui:hand",
+                    "expected": "4",
+                    "rule": "可见读数必须对应规则状态。迅捷不把攻击伤害翻倍。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Hand/Card_3",
+            "label": "选择_basic_card_021_3",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "selectedCard",
+                    "expected": "basic_card_021",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "hand",
+                    "expected": "4",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "ui:hand",
+                    "expected": "4",
+                    "rule": "可见读数必须对应规则状态。选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "accepted",
+                    "expected": "1",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "ui:cardArt:3",
+                    "expected": "basic_card_021",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "ui:printedEffect",
+                    "expected": "基础：攻击或格挡2。",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Stage/Targets/Enemy_0",
+            "label": "点选_enemy_0",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "target",
+                    "expected": "enemy:0",
+                    "rule": "点选目标不扣费。"
+                },
+                {
+                    "key": "accepted",
+                    "expected": "1",
+                    "rule": "点选目标不扣费。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Inspector/Btn_Enhance",
+            "label": "选择原卡强化",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "enhanced",
+                    "expected": "1",
+                    "rule": "选择强化不支付；必须使用原卡规定的耗色和数值。"
+                },
+                {
+                    "key": "selectedValue",
+                    "expected": "4",
+                    "rule": "选择强化不支付；必须使用原卡规定的耗色和数值。"
+                },
+                {
+                    "key": "redCrystal",
+                    "expected": "1",
+                    "rule": "选择强化不支付；必须使用原卡规定的耗色和数值。"
+                },
+                {
+                    "key": "ui:redCrystal",
+                    "expected": "1",
+                    "rule": "可见读数必须对应规则状态。选择强化不支付；必须使用原卡规定的耗色和数值。"
+                },
+                {
+                    "key": "ui:printedEffect",
+                    "expected": "强化：攻击4。",
+                    "rule": "选择强化不支付；必须使用原卡规定的耗色和数值。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+            "label": "狂怒强化四",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "attack0",
+                    "expected": "4",
+                    "rule": "狂怒4还不足灰狼护甲5。"
+                },
+                {
+                    "key": "redCrystal",
+                    "expected": "0",
+                    "rule": "狂怒4还不足灰狼护甲5。"
+                },
+                {
+                    "key": "ui:redCrystal",
+                    "expected": "0",
+                    "rule": "可见读数必须对应规则状态。狂怒4还不足灰狼护甲5。"
+                },
+                {
+                    "key": "hand",
+                    "expected": "3",
+                    "rule": "狂怒4还不足灰狼护甲5。"
+                },
+                {
+                    "key": "ui:hand",
+                    "expected": "3",
+                    "rule": "可见读数必须对应规则状态。狂怒4还不足灰狼护甲5。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Hand/Card_4",
+            "label": "选择_basic_card_021_4",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "selectedCard",
+                    "expected": "basic_card_021",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "hand",
+                    "expected": "3",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "ui:hand",
+                    "expected": "3",
+                    "rule": "可见读数必须对应规则状态。选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "accepted",
+                    "expected": "1",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "ui:cardArt:4",
+                    "expected": "basic_card_021",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "ui:printedEffect",
+                    "expected": "基础：攻击或格挡2。",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+            "label": "狂怒基础合计六",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "attack0",
+                    "expected": "6",
+                    "rule": "两张原卡4加2。"
+                },
+                {
+                    "key": "hand",
+                    "expected": "2",
+                    "rule": "两张原卡4加2。"
+                },
+                {
+                    "key": "ui:hand",
+                    "expected": "2",
+                    "rule": "可见读数必须对应规则状态。两张原卡4加2。"
+                },
+                {
+                    "key": "ui:resource",
+                    "expected": "6 / 5",
+                    "rule": "两张原卡4加2。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+            "label": "完整旅程获胜",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "completed",
+                    "expected": "1",
+                    "rule": "四种原卡强化各消费对应颜色，奖励只结算一次。"
+                },
+                {
+                    "key": "fame",
+                    "expected": "4",
+                    "rule": "四种原卡强化各消费对应颜色，奖励只结算一次。"
+                },
+                {
+                    "key": "ui:fame",
+                    "expected": "4",
+                    "rule": "可见读数必须对应规则状态。四种原卡强化各消费对应颜色，奖励只结算一次。"
+                },
+                {
+                    "key": "wounds",
+                    "expected": "0",
+                    "rule": "四种原卡强化各消费对应颜色，奖励只结算一次。"
+                },
+                {
+                    "key": "ui:wounds",
+                    "expected": "0",
+                    "rule": "可见读数必须对应规则状态。四种原卡强化各消费对应颜色，奖励只结算一次。"
+                },
+                {
+                    "key": "turn",
+                    "expected": "2",
+                    "rule": "四种原卡强化各消费对应颜色，奖励只结算一次。"
+                },
+                {
+                    "key": "units",
+                    "expected": "1",
+                    "rule": "四种原卡强化各消费对应颜色，奖励只结算一次。"
+                },
+                {
+                    "key": "ready",
+                    "expected": "0",
+                    "rule": "四种原卡强化各消费对应颜色，奖励只结算一次。"
+                },
+                {
+                    "key": "actionCardTotal",
+                    "expected": "10",
+                    "rule": "四种原卡强化各消费对应颜色，奖励只结算一次。"
+                },
+                {
+                    "key": "redCrystal",
+                    "expected": "0",
+                    "rule": "四种原卡强化各消费对应颜色，奖励只结算一次。"
+                },
+                {
+                    "key": "ui:redCrystal",
+                    "expected": "0",
+                    "rule": "可见读数必须对应规则状态。四种原卡强化各消费对应颜色，奖励只结算一次。"
+                },
+                {
+                    "key": "blueCrystal",
+                    "expected": "0",
+                    "rule": "四种原卡强化各消费对应颜色，奖励只结算一次。"
+                },
+                {
+                    "key": "greenCrystal",
+                    "expected": "0",
+                    "rule": "四种原卡强化各消费对应颜色，奖励只结算一次。"
+                },
+                {
+                    "key": "whiteCrystal",
+                    "expected": "0",
+                    "rule": "四种原卡强化各消费对应颜色，奖励只结算一次。"
+                }
+            ]
+        }
+    ]
+}

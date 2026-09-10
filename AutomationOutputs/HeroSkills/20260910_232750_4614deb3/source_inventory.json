@@ -1,0 +1,611 @@
+{
+  "unitRecords": [
+    {
+      "id": "army_000",
+      "name": "阿尔蒂姆守护者",
+      "artworkExists": true,
+      "status": "pending_scene_verification"
+    },
+    {
+      "id": "army_001",
+      "name": "阿尔蒂姆法师",
+      "artworkExists": true,
+      "status": "pending_scene_verification"
+    },
+    {
+      "id": "army_002",
+      "name": "埃莫提普冰霜剑士",
+      "artworkExists": true,
+      "status": "pending_scene_verification"
+    },
+    {
+      "id": "army_003",
+      "name": "",
+      "artworkExists": true,
+      "status": "printed_card_missing_json_rules"
+    },
+    {
+      "id": "army_004",
+      "name": "投石车",
+      "artworkExists": true,
+      "status": "pending_scene_verification"
+    },
+    {
+      "id": "army_005",
+      "name": "黛尔法纳大师",
+      "artworkExists": true,
+      "status": "pending_scene_verification"
+    },
+    {
+      "id": "army_006",
+      "name": "火焰魔像",
+      "artworkExists": true,
+      "status": "pending_scene_verification"
+    },
+    {
+      "id": "army_007",
+      "name": "火焰法师",
+      "artworkExists": true,
+      "status": "pending_scene_verification"
+    },
+    {
+      "id": "army_008",
+      "name": "勇者",
+      "artworkExists": true,
+      "status": "pending_scene_verification"
+    },
+    {
+      "id": "army_009",
+      "name": "勇者",
+      "artworkExists": true,
+      "status": "pending_scene_verification"
+    },
+    {
+      "id": "army_010",
+      "name": "勇者",
+      "artworkExists": true,
+      "status": "pending_scene_verification"
+    },
+    {
+      "id": "army_011",
+      "name": "勇者",
+      "artworkExists": true,
+      "status": "pending_scene_verification"
+    },
+    {
+      "id": "army_012",
+      "name": "寒冰魔像",
+      "artworkExists": true,
+      "status": "pending_scene_verification"
+    },
+    {
+      "id": "army_013",
+      "name": "寒冰法师",
+      "artworkExists": true,
+      "status": "pending_scene_verification"
+    },
+    {
+      "id": "army_014",
+      "name": "巫师",
+      "artworkExists": true,
+      "status": "pending_scene_verification"
+    },
+    {
+      "id": "army_015",
+      "name": "",
+      "artworkExists": true,
+      "status": "back_artwork_not_playable"
+    },
+    {
+      "id": "army_2_000",
+      "name": "护林人",
+      "artworkExists": true,
+      "status": "pending_scene_verification"
+    },
+    {
+      "id": "army_2_001",
+      "name": "守护者魔像",
+      "artworkExists": true,
+      "status": "pending_scene_verification"
+    },
+    {
+      "id": "army_2_002",
+      "name": "药草师",
+      "artworkExists": true,
+      "status": "pending_scene_verification"
+    },
+    {
+      "id": "army_2_003",
+      "name": "幻术师",
+      "artworkExists": true,
+      "status": "pending_scene_verification"
+    },
+    {
+      "id": "army_2_004",
+      "name": "魔宠",
+      "artworkExists": true,
+      "status": "pending_scene_verification"
+    },
+    {
+      "id": "army_2_005",
+      "name": "北地僧侣",
+      "artworkExists": true,
+      "status": "pending_scene_verification"
+    },
+    {
+      "id": "army_2_006",
+      "name": "农民",
+      "artworkExists": true,
+      "status": "pending_scene_verification"
+    },
+    {
+      "id": "army_2_007",
+      "name": "赤袍僧侣",
+      "artworkExists": true,
+      "status": "pending_scene_verification"
+    },
+    {
+      "id": "army_2_008",
+      "name": "凶蛮僧侣",
+      "artworkExists": true,
+      "status": "pending_scene_verification"
+    },
+    {
+      "id": "army_2_009",
+      "name": "斥候",
+      "artworkExists": true,
+      "status": "pending_scene_verification"
+    },
+    {
+      "id": "army_2_010",
+      "name": "奇袭队",
+      "artworkExists": true,
+      "status": "pending_scene_verification"
+    },
+    {
+      "id": "army_2_011",
+      "name": "暴徒",
+      "artworkExists": true,
+      "status": "pending_scene_verification"
+    },
+    {
+      "id": "army_2_012",
+      "name": "乌顿弩手",
+      "artworkExists": true,
+      "status": "pending_scene_verification"
+    },
+    {
+      "id": "army_2_013",
+      "name": "乌顿守卫",
+      "artworkExists": true,
+      "status": "pending_scene_verification"
+    },
+    {
+      "id": "army_2_014",
+      "name": "乌顿剑士",
+      "artworkExists": true,
+      "status": "pending_scene_verification"
+    },
+    {
+      "id": "army_2_015",
+      "name": "",
+      "artworkExists": true,
+      "status": "back_artwork_not_playable"
+    }
+  ],
+  "heroPools": 8,
+  "skillRecords": [
+    {
+      "sourceId": "hero_skill_pool_000:00",
+      "name": "黑暗道路",
+      "status": "first_five_scene_cases_added"
+    },
+    {
+      "sourceId": "hero_skill_pool_000:01",
+      "name": "燃烧之力",
+      "status": "first_five_scene_cases_added"
+    },
+    {
+      "sourceId": "hero_skill_pool_000:02",
+      "name": "炽热剑术",
+      "status": "first_five_scene_cases_added"
+    },
+    {
+      "sourceId": "hero_skill_pool_000:03",
+      "name": "秘密谈判",
+      "status": "first_five_scene_cases_added"
+    },
+    {
+      "sourceId": "hero_skill_pool_000:04",
+      "name": "暗火魔法",
+      "status": "first_five_scene_cases_added"
+    },
+    {
+      "sourceId": "hero_skill_pool_000:05",
+      "name": "痛苦之力",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_000:06",
+      "name": "魔咒",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_000:07",
+      "name": "两极分化",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_000:08",
+      "name": "激励",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_000:09",
+      "name": "痛苦仪式/治疗仪式",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_001:00",
+      "name": "元素抗性",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_001:01",
+      "name": "野性盟友",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_001:02",
+      "name": "雷云风暴",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_001:03",
+      "name": "闪电风暴",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_001:04",
+      "name": "迷醉",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_001:05",
+      "name": "叉形闪电",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_001:06",
+      "name": "变换身形",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_001:07",
+      "name": "隐秘之路",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_001:08",
+      "name": "再生",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_001:09",
+      "name": "自然复仇/自然复仇",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_002:00",
+      "name": "全军行进",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_002:01",
+      "name": "白昼狙击",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_002:02",
+      "name": "重整旗鼓",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_002:03",
+      "name": "公开谈判",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_002:04",
+      "name": "风中残叶",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_002:05",
+      "name": "树梢风语",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_002:06",
+      "name": "领导",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_002:07",
+      "name": "忠诚契约",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_002:08",
+      "name": "激励",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_002:09",
+      "name": "风雨平复/风雨祈祷",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_003:00",
+      "name": "灵魂向导",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_003:01",
+      "name": "身经百战",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_003:02",
+      "name": "战斗狂乱",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_003:03",
+      "name": "萨满仪式",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_003:04",
+      "name": "再生",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_003:05",
+      "name": "奥术伪装",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_003:06",
+      "name": "傀儡大师",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_003:07",
+      "name": "混乱大师",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_003:08",
+      "name": "诅咒",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_003:09",
+      "name": "魔力强化/魔力抑制",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_004:00",
+      "name": "提神沐浴",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_004:01",
+      "name": "提神微风",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_004:02",
+      "name": "神鹰之眼",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_004:03",
+      "name": "特立独行",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_004:04",
+      "name": "百步穿杨",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_004:05",
+      "name": "洞悉猎物",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_004:06",
+      "name": "嘲讽",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_004:07",
+      "name": "决斗",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_004:08",
+      "name": "激励",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_004:09",
+      "name": "群狼嚎叫/狼嚎",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_005:00",
+      "name": "冰封之力",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_005:01",
+      "name": "药剂制作",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_005:02",
+      "name": "白晶锻造",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_005:03",
+      "name": "绿晶锻造",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_005:04",
+      "name": "红晶锻造",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_005:05",
+      "name": "荧光灵运",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_005:06",
+      "name": "飞行",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_005:07",
+      "name": "通用力量",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_005:08",
+      "name": "激励",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_005:09",
+      "name": "魔力开源/魔源冰封",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_006:00",
+      "name": "猛毒药瓶",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_006:01",
+      "name": "圣族之杯",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_006:02",
+      "name": "鬼魂灵药",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_006:03",
+      "name": "隐匿法杖",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_006:04",
+      "name": "复苏项链",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_006:05",
+      "name": "晨暮宝珠",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_006:06",
+      "name": "疗伤草药",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_006:07",
+      "name": "寒冰碎片",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_006:08",
+      "name": "火焰宝石",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_006:09",
+      "name": "秘法地图",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_006:10",
+      "name": "护御披风",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_006:11",
+      "name": "重训典籍/重训典籍",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_007:00",
+      "name": "快步前行",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_007:01",
+      "name": "黑夜狙击",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_007:02",
+      "name": "寒冰剑术",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_007:03",
+      "name": "盾牌精通",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_007:04",
+      "name": "抗性弱化",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_007:05",
+      "name": "无惧痛苦",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_007:06",
+      "name": "漫不经心",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_007:07",
+      "name": "魔法抗拒",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_007:08",
+      "name": "激励",
+      "status": "pending_scene_verification"
+    },
+    {
+      "sourceId": "hero_skill_pool_007:09",
+      "name": "魔力霸主",
+      "status": "pending_scene_verification"
+    }
+  ],
+  "sceneCases": 39,
+  "scope": "独立于既有125条行动/法术/宝物记录；新增场景案例不代表整张技能已全面验收。"
+}

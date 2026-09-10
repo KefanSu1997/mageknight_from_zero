@@ -1,0 +1,34 @@
+{
+  "codeCommit": "1aef860498742eb324dcd4e0ffe4716981275753",
+  "heroSkills": "AutomationOutputs\\HeroSkills\\20260910_232750_4614deb3",
+  "deedRegression": "AutomationOutputs\\AllOriginalCards\\20260910_232109_6fc276ee",
+  "adventureRegression": "AutomationOutputs\\AdventureRegression\\20260910_233028_91b14288",
+  "editMode": "AutomationOutputs\\EditMode\\20260910_231737_d9ea8b8f",
+  "sources": [
+    {
+      "path": "resources/text_json/skill.json",
+      "sha256": "9be430b8479edd6e16be99766160e100947a5ae7426b93010bf5de6b4c91c1b8"
+    },
+    {
+      "path": "resources/text_json/army.json",
+      "sha256": "cf87d265d62142d7496326f52ea85b7a9f9296594741324a9e014b6862c662eb"
+    },
+    {
+      "path": "resources/text_json/army_2.json",
+      "sha256": "5bed756b507b0682b9c7683f818082194865d206aff8110efcd4ce88fdd9bd2d"
+    },
+    {
+      "path": "Assets/GameData/cards/skill_000.png",
+      "sha256": "cea0bb0daeda4ebf733aa0d5cddee8bef85f493119df4e9dd3b073767d3fd0cf"
+    },
+    {
+      "path": "Assets/Resources/CardVerification/skill_cases.json",
+      "sha256": "2c57a0861d6fcb006ecb2cfa92a8b23cee4f702b1d1a14fb9b905fbc9add4f6b"
+    },
+    {
+      "path": "Assets/Resources/CardVerification/cases.json",
+      "sha256": "33111d207faf4740af97279f0ab3fa2bf5e8d20c624fbcabd71ef4f3b8fabf34"
+    }
+  ],
+  "coverage": "39 first-five skill cases pass; existing 490 deed cases retain 136 passed,335 partial,19 failed. Other skill/unit coverage remains pending."
+}

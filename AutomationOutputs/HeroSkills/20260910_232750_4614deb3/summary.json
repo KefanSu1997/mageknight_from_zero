@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "cases": 39,
+  "operations": 240,
+  "assertions": 1614,
+  "screenshots": 164,
+  "suiteSha256": "2c57a0861d6fcb006ecb2cfa92a8b23cee4f702b1d1a14fb9b905fbc9add4f6b",
+  "startedAt": "2026-09-10T15:28:06.3492745Z",
+  "finishedAt": "2026-09-10T15:28:55.9250093Z",
+  "scope": "原表前五个技能的39个场景案例；不代表82条技能/32条部队已全部验证"
+}
