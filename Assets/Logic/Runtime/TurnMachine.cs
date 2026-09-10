@@ -34,26 +34,10 @@ namespace MK.Logic.Runtime
 
             var res = RangedPhaseResolver.Resolve(enemies, rangedColumns, ctx);
 
-            if (ctx != null && ctx.CrystalOnKill != null && ctx.CrystalsPerKill > 0)
-            {
-                foreach (int i in res.KilledIndices)
-                {
-                    var color = ctx.CrystalOnKill(enemies[i]);
-                    _gs.ActivePlayer.Mana.AddCrystal(color, ctx.CrystalsPerKill);
-                }
-            }
-
-            // 删除击杀目标（倒序避免索引错位）
+            CardCombatActions.ApplyRangedRewards(_gs.ActivePlayer, enemies, res, ctx);
             foreach (int i in res.KilledIndices.OrderByDescending(x => x))
                 enemies.RemoveAt(i);
 
-            // 加入远程阶段获得的 Fame
-            _gs.ActivePlayer.Fame += res.FameGained;
-            if (ctx != null && ctx.PendingFameOnRangedKill > 0 && res.KilledIndices.Count > 0)
-            {
-                _gs.ActivePlayer.Fame += ctx.PendingFameOnRangedKill;
-                ctx.PendingFameOnRangedKill = 0;
-            }
             if (ctx != null && ctx.FamePerUnitAction > 0)
             {
                 _gs.ActivePlayer.Fame += ctx.FamePerUnitAction * rangedColumns.Count;

@@ -1,3 +1,5 @@
+using MK.Logic.Core;
+
 namespace MK.Logic.Runtime.CardEffects
 {
     /// <summary>
@@ -13,11 +15,11 @@ namespace MK.Logic.Runtime.CardEffects
             if (_enh)
             {
                 player.Wounds += 1;
-                ctx.RangedPool += 8;
+                ctx.CombatPower.AddAttack(8, Element.Ice, AttackType.Siege);
             }
             else
             {
-                ctx.RangedPool += 5;
+                ctx.CombatPower.AddAttack(5, Element.Ice, AttackType.Ranged);
             }
         }
     }

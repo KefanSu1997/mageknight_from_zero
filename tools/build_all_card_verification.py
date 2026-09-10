@@ -294,6 +294,72 @@ for n in [0, 6, 12, 18]:
          setup={'DayPart': 'Day'}, error='InvalidOperationException: 白昼不能施放强效法术')
 
 
+# Original card -> typed power -> real combat consumer. These are branch tests,
+# not a replacement for the unresolved full turn / target lifecycle audit.
+def enemy(armor, attack=0, element='Physical', abilities=(), fame=3):
+    return dict(id='规则目标', armor=armor, attack=attack, element=element, abilities=list(abilities), fame=fame)
+
+
+def combat(card_id, strong, title, phase, targets, printed, effective, required,
+           kills=0, wounds=0, option=0, setup=None, followup='', followup_strong=False, extra=None, error=''):
+    expected = {'combat:printed': printed, 'combat:effective': effective, 'combat:required': required,
+                'combat:kills': kills, 'combat:fame': sum(e['fame'] for e in targets) if kills else 0,
+                'combat:wounds': wounds, 'Fame': sum(e['fame'] for e in targets) if kills else 0,
+                'Wounds': 3 + wounds + int(strong and card_id in ['magic_009', 'magic_015']),
+                'handWounds': 3 + wounds + int(strong and card_id in ['magic_009', 'magic_015']), 'SiegePool': 0}
+    expected.update(extra or {})
+    if error:
+        expected = extra or {}
+    case(card_id, strong, title, expected, option=option, setup=setup, followup=followup,
+         limits=['此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收'])
+    CASES[-1].update(combatPhase=phase, enemies=targets, followupEnhanced=followup_strong)
+    if error: CASES[-1]['expectedException'] = error
+
+
+for n, element, resistance, opposite in [(9, 'Fire', 'FireResist', 'IceResist'), (15, 'Ice', 'IceResist', 'FireResist')]:
+    card = f'magic_{n:03}'
+    for trait, armor, effective, kills, title in [([], 5, 5, 1, '无抗性'), ([opposite], 6, 5, 0, '相对元素不产生双倍'),
+        ([resistance], 3, 2, 0, '同元素抗性取整'), (['MagicResist'], 5, 5, 1, '奥术免疫不抵抗攻击')]:
+        combat(card, False, title, 'Ranged', [enemy(armor, abilities=trait)], 5, effective, armor, kills,
+               extra={'played:RangedPool': 5, 'played:attackElement': element})
+    combat(card, True, '攻城击破单重城防', 'Ranged', [enemy(8, abilities=['Fortified'])], 8, 8, 8, 1,
+           extra={'played:SiegePool': 8, 'played:attackElement': element})
+    combat(card, True, '双重城防在攻击阶段不限制攻城攻击', 'Melee', [enemy(8, abilities=['Fortified'])], 8, 8, 8, 1,
+           setup={'FortifiedSite': True}, extra={'played:SiegePool': 8})
+    combat(card, False, '远程不能攻击城防目标，已产生资源保留', 'Ranged', [enemy(3, abilities=['Fortified'])], 0, 0, 0,
+           extra={'RangedPool': 5, 'Fame': 0, 'Wounds': 3, 'played:RangedPool': 5},
+           error='InvalidOperationException: 城防限制：当前攻击不能指定这些目标')
+    combat(card, True, '双重城防拒绝攻城，伤牌与攻城资源保留', 'Ranged', [enemy(8, abilities=['Fortified'])], 0, 0, 0,
+           setup={'FortifiedSite': True}, extra={'SiegePool': 8, 'Fame': 0, 'Wounds': 4, 'handWounds': 4},
+           error='InvalidOperationException: 城防限制：当前攻击不能指定这些目标')
+
+combat('advanced_card_000', True, '两张原卡低效贡献合计后减半', 'Ranged',
+       [enemy(3, abilities=['FireResist', 'IceResist'])], 6, 3, 3, 1,
+       followup='advanced_card_001', followup_strong=True,
+       extra={'token:Blue': 1, 'played:attackElement': 'Fire+Ice', 'played:RangedPool': 6})
+combat('advanced_card_003', True, '碎裂之矢以攻城方式击破城防', 'Ranged', [enemy(3, abilities=['Fortified'])], 3, 3, 3, 1,
+       extra={'played:SiegePool': 3})
+combat('basic_card_021', True, '物理抗性将狂怒攻击4减为2', 'Melee', [enemy(3, abilities=['PhysicalResist'])], 4, 2, 3,
+       extra={'played:MeleePool': 4})
+combat('basic_card_024', True, '火焰格挡对寒冰攻击全效', 'Block', [enemy(5, attack=3, element='Ice')], 3, 3, 3,
+       option=3, extra={'played:blockElement': 'Fire'})
+combat('basic_card_024', True, '火焰格挡对火焰攻击低效，不足不能减伤', 'Block', [enemy(5, attack=3, element='Fire')], 3, 1, 3,
+       wounds=2, option=3, extra={'played:blockElement': 'Fire'})
+combat('basic_card_024', True, '低效格挡3加5合计后除2成功阻挡冰火4', 'Block', [enemy(5, attack=4, element='ColdFire')], 8, 4, 4,
+       option=3, followup='basic_card_016', followup_strong=True,
+       extra={'token:Blue': 1, 'played:BlockPool': 8, 'played:blockElement': 'Physical+Fire'})
+
+
+combat('basic_card_002', True, '凝结接火焰箭矢，加值保持火焰元素', 'Ranged', [enemy(3, abilities=['FireResist'])], 5, 2, 3,
+       followup='advanced_card_000', extra={'played:RangedPool': 5, 'played:attackElement': 'Fire', 'token:Red': 2})
+combat('basic_card_002', True, '凝结接碎裂之矢，加值保持攻城方式', 'Ranged', [enemy(5, abilities=['Fortified'])], 5, 5, 5, 1,
+       followup='advanced_card_003', extra={'played:SiegePool': 5, 'token:Green': 1})
+
+
+combat('basic_card_002', True, '凝结接狂怒，实际攻击6击破护甲6', 'Melee', [enemy(6)], 6, 6, 6, 1,
+       followup='basic_card_021', extra={'played:MeleePool': 6, 'token:Red': 2})
+
+
 def export():
     target = ROOT / 'Assets/Resources/CardVerification'
     target.mkdir(exist_ok=True)
@@ -313,6 +379,10 @@ def export():
             steps.append(dict(label=c['id'] + '_select', buttonPath='Canvas/UIRoot/Btn_Select',
                               skipScreenshot=True,
                               before=[expectation('caseId', c['id'])], after=[expectation('selected', True)]))
+            if c.get('combatPhase'):
+                steps.append(dict(label=c['id'] + '_play', buttonPath='Canvas/UIRoot/Btn_Play',
+                                  before=[expectation('art', c['cardId'])],
+                                  after=[expectation('played', True), expectation('executed', False)]))
             steps.append(dict(label=c['id'] + '_execute', buttonPath='Canvas/UIRoot/Btn_Play',
                               before=[expectation('art', c['cardId'])], after=[expectation('executed', True), expectation('completed', i + 1)]))
         config = dict(scenePath=f'Assets/Scenes/Verification/{batch}.unity',

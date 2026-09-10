@@ -38,16 +38,16 @@ namespace MK.Logic.Runtime.CardEffects
                         ctx.BlockPool += 4;
                         break;
                     case 2:
-                        ctx.MeleePool += 3; // 火焰攻擊視作普通攻擊
+                        ctx.CombatPower.AddAttack(3, Element.Fire);
                         break;
                     case 3:
-                        ctx.BlockPool += 3; // 火焰格擋同理
+                        ctx.CombatPower.AddBlock(3, Element.Fire);
                         break;
                     case 4:
                         ctx.RangedPool += 3;
                         break;
                     default:
-                        ctx.MeleePool += 2; // 攻城攻擊僅記錄攻擊力
+                        ctx.CombatPower.AddAttack(2, Element.Physical, AttackType.Siege);
                         break;
                 }
             }

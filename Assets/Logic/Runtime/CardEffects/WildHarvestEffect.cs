@@ -17,9 +17,8 @@ namespace MK.Logic.Runtime.CardEffects
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
             ctx.MovementPool += _move;
-            // 使用 BlockPool 暫存允許觸發次數，待移動系統實作
-            if (_maxTriggers != 0)
-                ctx.BlockPool += _maxTriggers; // 先佔用現有欄位
+            // 触发次数与战斗资源独立；移动消费仍由后续集成负责。
+            ctx.HarvestTriggers = _maxTriggers;
         }
     }
 }

@@ -37,22 +37,11 @@ namespace MK.Logic.Runtime.Adventure
             => pool[(target, element)] = pool.GetValueOrDefault((target, element)) + value;
 
         public int RequiredBlock(int target) => AbilityRules.RequiredBlock(Definition.Enemies[target].Monster());
-        public int EffectiveBlock(int target) => _blocks.Where(p => p.Key.target == target)
-            .Sum(p => (int)Math.Floor(p.Value * Constants.BlockEfficiency(Definition.Enemies[target].Element, p.Key.element)));
-        public int EffectiveAttack(int target)
-        {
-            var abilities = Definition.Enemies[target].Abilities;
-            bool fire = abilities.Contains(Ability.FireResist) || abilities.Contains(Ability.MagicResist);
-            bool ice = abilities.Contains(Ability.IceResist) || abilities.Contains(Ability.MagicResist);
-            bool cold = abilities.Contains(Ability.ColdFireResist) || (fire && ice);
-            return _attacks.Where(p => p.Key.target == target).Sum(p =>
-            {
-                Ability? resistance = p.Key.element == Element.Fire && fire ? Ability.FireResist :
-                    p.Key.element == Element.Ice && ice ? Ability.IceResist :
-                    p.Key.element == Element.ColdFire && cold ? Ability.ColdFireResist : null;
-                return (int)Math.Floor(p.Value * Constants.Efficiency(p.Key.element, resistance));
-            });
-        }
+        public int EffectiveBlock(int target) => CombatMath.EffectiveBlock(Definition.Enemies[target].Element,
+            _blocks.Where(p => p.Key.target == target).Select(p => new BlockAllocation(target, p.Value, p.Key.element)));
+        public int EffectiveAttack(int target) => CombatMath.EffectiveAttack(
+            Definition.Enemies.Select(e => e.Monster()).ToArray(), new[] { target },
+            _attacks.Where(p => p.Key.target == target).Select(p => new AttackProfile(AttackType.Melee, p.Value, p.Key.element)), Phase.Melee);
 
         public int ResolveDefense(PlayerState player)
         {

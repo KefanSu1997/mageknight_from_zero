@@ -1,17 +1,3 @@
-/***************************************************************
- * 元素攻防效率表（规则书 UE p.25）                              *
- * - Fire vs IceResist  → ×2   (弱点)                           *
- * - Ice  vs FireResist → ×2                                     *
- * - 同元素攻/抗         → ×0.5 (抗性)                          *
- * - Cold-Fire 仅当目标同时具有 FireResist+IceResist             *
- *   或显式 ColdFireResist 时 ×0.5                              *
- *-------------------------------------------------------------*
- * Block 效率（p.18-19）：                                       *
- *   Fire Attack  ⇒  Ice / ColdFire Block 全效；其余 ×0.5       *
- *   Ice  Attack  ⇒  Fire / ColdFire Block 全效；其余 ×0.5      *
- *   ColdFire Attack ⇒  仅 ColdFire Block 全效；其余 ×0.5       *
- *   Physical 不区分元素，任意 Block 全效                       *
- **************************************************************/
 using System;
 using System.Collections.Generic;
 
@@ -21,15 +7,12 @@ namespace MK.Logic.Core
     {
         public const int FameCap = 102;
 
-        /// <summary>元素攻击遇到某种抗性时的倍率（1 / 0.5 / 2）</summary>
+        /// <summary>元素攻击遇到某种抗性时的倍率（1 / 0.5）；不存在相克双倍伤害</summary>
         public static double Efficiency(Element atk, Ability? resist) =>
             (atk, resist) switch
             {
-                // ── 弱点 ×2 ─────────────────────────
-                (Element.Fire, Ability.IceResist) => 2.0,
-                (Element.Ice,  Ability.FireResist) => 2.0,
-
                 // ── 抗性 ×½ ────────────────────────
+                (Element.Physical, Ability.PhysicalResist) => 0.5,
                 (Element.Fire, Ability.FireResist) => 0.5,
                 (Element.Ice,  Ability.IceResist)  => 0.5,
                 // Cold-Fire 只有在同时具 Fire+Ice 抗或显式 ColdFireResist 时减半

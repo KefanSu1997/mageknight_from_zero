@@ -54,7 +54,8 @@ namespace MK.Logic.Core
         Heal,        // 治疗：可移除创伤
         Negate,      // 否决：取消特殊效果
         Sweep,       // 范围：近战阶段可同时攻击多个目标
-        Enduring     // 坚毅：受到创伤时降低数量
+        Enduring,    // 坚毅：受到创伤时降低数量
+        PhysicalResist // 追加以保留已有序列化数值；物理抗性
     }
 
     /// <summary>

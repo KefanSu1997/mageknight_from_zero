@@ -32,7 +32,8 @@ namespace MK.Logic.Data
         IReadOnlyList<int>? TargetIndices, // null 或空 ⇒ 攻击全部剩余敌人
         int Value,                         // 攻击力
         Element Element,                   // 元素类型
-        bool IsSiege = false               // 是否攻城攻击；Fortified 只吃 Siege
+        bool IsSiege = false,              // 旧调用的单一攻击方式
+        IReadOnlyList<AttackProfile>? Components = null // 一次组攻可以组合多个元素和攻击方式
     );
 
 }

@@ -36,6 +36,9 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
     private int _index;
     private bool _selected;
     private bool _executed;
+    private bool _played;
+    private Dictionary<string, string> _playedState;
+    private CardCombatActions.Result _combatResult;
     private string _started;
     private string _suiteSha256;
     private string _outputRoot;
@@ -61,7 +64,9 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
         ["unitWounds"] = "目标部队创伤", ["unitLevel"] = "目标部队等级",
         ["originalArtwork"] = "原卡面绑定", ["printedEffectPresent"] = "印刷效果文本",
         ["attackElement"] = "攻击元素", ["blockElement"] = "格挡元素", ["SiegePool"] = "攻城攻击",
-        ["executionException"] = "操作合法性"
+        ["executionException"] = "操作合法性",
+        ["combat:printed"] = "出牌总值", ["combat:effective"] = "折算后有效值", ["combat:required"] = "所需数值",
+        ["combat:kills"] = "击杀数", ["combat:fame"] = "结算名望", ["combat:wounds"] = "敌人造成创伤"
     };
 
     private void Awake()
@@ -108,7 +113,9 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
     {
         _case = _cases[_index];
         _entry = _catalog.cards.Single(e => e.source.Id == _case.cardId);
-        _selected = _executed = false;
+        _selected = _executed = _played = false;
+        _playedState = null; _combatResult = null;
+        _play.GetComponentInChildren<TextMeshProUGUI>().text = "执行所选效果";
         _player = new PlayerState(1, "验收玩家");
         _context = new ActionContext { CurrentTerrain = TerrainType.Forest, DayPart = _case.enhanced && _entry.source is SpellCardSO ? DayPart.Night : DayPart.Day };
         foreach (ManaColor color in Enum.GetValues(typeof(ManaColor)))
@@ -145,7 +152,9 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
         _context.ArtifactSupply.SetDeck(new[] { new ArtifactCard("items_004"), new ArtifactCard("items_010") });
         _context.ManaSource = new ManaSource(1, () => _context.DayPart, new System.Random(20260910));
         _context.Enemies = new[] { new Monster("fixture_enemy", 5, 4, Element.Physical, 3, Array.Empty<Ability>()) };
-        _context.EngagedEnemies = 1;
+        if (_case.enemies != null && _case.enemies.Length > 0)
+            _context.Enemies = _case.enemies.Select(e => e.Create()).ToList();
+        _context.EngagedEnemies = _context.Enemies.Count;
         foreach (var value in _case.setup ?? Array.Empty<CardVerificationValue>()) Set(value.key, value.value);
         _before = Snapshot();
         _title.text = $"{_index + 1}/{_cases.Length}   {_entry.source.NameCn}   {_case.cardId}   ·   {_case.title}";
@@ -155,6 +164,9 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
         _comparison.text = "独立规则预期（执行后绝对值）\n" + string.Join("\n", _case.expected.Take(9).Select(e => $"{Label(e.key)}：{e.value}"));
         _status.text = "待操作：先选择卡牌和目标，再执行";
         _limits.text = "范围：" + ((_case.limitations?.Length ?? 0) == 0 ? "本例的即时效果分支；整卡结论需汇总全部案例。" : string.Join("；", _case.limitations));
+        if (!string.IsNullOrEmpty(_case.combatPhase))
+            _fixture.text = "目标：" + string.Join(" / ", _context.Enemies.Select(e => $"{e.Id} 护甲{e.Armor} 攻击{e.Attack}({e.AttackElement}) [{string.Join(",", e.Abilities)}]"))
+                + $"\n{_case.combatPhase}阶段 · 城防地点={_context.FortifiedSite} · {_context.DayPart}";
         _play.interactable = false;
     }
 
@@ -188,6 +200,7 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
     private void Execute()
     {
         if (!_selected || _executed) return;
+        if (_played) { ResolveCombat(); return; }
         _before = Snapshot();
         string exception = "";
         string executionPath = "ActionSystem.Play";
@@ -212,6 +225,38 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
             }
         }
         catch (Exception e) { exception = e.GetType().Name + ": " + e.Message; }
+        if (exception.Length == 0 && !string.IsNullOrEmpty(_case.combatPhase))
+        {
+            _played = true;
+            _playedState = Snapshot();
+            _comparison.text = "已打出原卡：" + _entry.source.NameCn + "\n"
+                + $"近战 {_context.MeleePool} / 远程 {_context.RangedPool} / 攻城 {_context.SiegePool} / 格挡 {_context.BlockPool}\n"
+                + "攻击元素：" + _playedState["attackElement"] + "；格挡元素：" + _playedState["blockElement"]
+                + "\n费用已支付，下一步对所选目标结算抗性、护甲、名望或创伤。";
+            _status.text = "原卡效果已执行 · 等待战斗结算";
+            _play.GetComponentInChildren<TextMeshProUGUI>().text = "确认目标并结算";
+            return;
+        }
+        CompleteCase(exception, executionPath);
+    }
+
+    private void ResolveCombat()
+    {
+        string exception = "";
+        try
+        {
+            var enemies = _context.Enemies.ToList();
+            _combatResult = _case.combatPhase == "Block"
+                ? CardCombatActions.Block(_player, _context, enemies[0])
+                : CardCombatActions.Attack(_player, _context, enemies, Enumerable.Range(0, enemies.Count).ToArray(),
+                    (Phase)Enum.Parse(typeof(Phase), _case.combatPhase));
+        }
+        catch (Exception e) { exception = e.GetType().Name + ": " + e.Message; }
+        CompleteCase(exception, "ActionSystem.Play -> CardCombatActions -> production combat resolver");
+    }
+
+    private void CompleteCase(string exception, string executionPath)
+    {
         var after = Snapshot();
         var checks = _case.expected.Select(e => new CardVerificationCheck
         {
@@ -228,12 +273,21 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
         _results.RemoveAll(r => r.id == result.id); _results.Add(result);
         _executed = true; _play.interactable = false;
         var display = checks.Where(c => c.key != "executionException" || c.expected.Length > 0 || c.actual.Length > 0)
-            .OrderBy(c => c.passed).Take(9);
+            .OrderBy(c => c.passed).ThenBy(c => !string.IsNullOrEmpty(_case.combatPhase) && c.key.StartsWith("combat:") ? 0 : 1).Take(9);
         _comparison.text = "检查项                       执行前 → 实际结果       规则预期\n" + string.Join("\n", display.Select(c =>
             $"{(c.passed ? "通过" : "不符")}  {Label(c.key)}   {(_before.TryGetValue(c.key, out var b) ? b : "—")} → {c.actual}   [预期 {c.expected}]"));
         _status.text = status == "passed" ? "本例断言通过" : status == "partial" ? "即时断言通过 · 整卡仍有未验证范围" : "发现不符：" + (exception.Length > 0 ? exception : checks.First(c => !c.passed).key);
         if (status == "passed" && !string.IsNullOrEmpty(_case.expectedException))
             _status.text = "按规则拒绝操作 · 资源守恒断言通过：" + exception.Substring(exception.IndexOf(": ", StringComparison.Ordinal) + 2);
+        if (_combatResult != null)
+        {
+            var costs = checks.Where(c => c.key.StartsWith("token:") || c.key.StartsWith("crystal:"));
+            _comparison.text = "战斗结算：实际结果 / 独立规则预期\n" + string.Join("\n", checks
+                .Where(c => c.key.StartsWith("combat:")).Select(c => $"{(c.passed ? "通过" : "不符")}  {Label(c.key)}：{c.actual} / {c.expected}"))
+                + "\n费用：" + string.Join("；", costs.Select(c => $"{Label(c.key)} {_before[c.key]}→{c.actual} [预期{c.expected}]"))
+                + $"\n剩余资源：近战{_context.MeleePool} 远程{_context.RangedPool} 攻城{_context.SiegePool} 格挡{_context.BlockPool}；手牌伤牌 {_before["handWounds"]}→{_player.Wounds}";
+            if (status == "partial") _status.text = "本例操作与数值通过 · 整卡仍有待验证范围";
+        }
         _status.color = status == "failed" ? new Color32(244, 142, 118, 255) : W.Gold;
         SaveResults();
     }
@@ -302,6 +356,20 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
             result["token:" + color] = _player.Mana.Tokens.GetValueOrDefault(color).ToString();
             result["crystal:" + color] = _player.Mana.Crystals.GetValueOrDefault(color).ToString();
         }
+        result["attackElement"] = string.Join("+", _context.CombatPower.Attacks.Select(a => a.Element).Distinct().OrderBy(e => e));
+        result["blockElement"] = string.Join("+", _context.CombatPower.Blocks.Select(a => a.Element).Distinct().OrderBy(e => e));
+        if (_playedState != null)
+            foreach (var entry in _playedState.Where(p => p.Key.EndsWith("Pool") || p.Key.EndsWith("Element")))
+                result["played:" + entry.Key] = entry.Value;
+        if (_combatResult != null)
+        {
+            result["combat:printed"] = _combatResult.PrintedPower.ToString();
+            result["combat:effective"] = _combatResult.EffectivePower.ToString();
+            result["combat:required"] = _combatResult.RequiredPower.ToString();
+            result["combat:kills"] = _combatResult.Kills.ToString();
+            result["combat:fame"] = _combatResult.Fame.ToString();
+            result["combat:wounds"] = _combatResult.Wounds.ToString();
+        }
         result["hand"] = _player.Deck.Hand.Count.ToString();
         result["handWounds"] = _player.Deck.Hand.Count(c => c.Type == CardType.Wound).ToString();
         result["discard"] = _player.Deck.DiscardPile.Count.ToString();
@@ -316,6 +384,7 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
     public Dictionary<string, string> ReadAutomationState() => new()
     {
         ["caseId"] = _case.id, ["cardId"] = _entry.source.Id, ["art"] = _art.sprite?.name ?? "",
+        ["played"] = _played.ToString(), ["ui:fixture"] = _fixture.text,
         ["selected"] = _selected.ToString(), ["executed"] = _executed.ToString(), ["completed"] = _results.Count.ToString(),
         ["ui:rule"] = _printed.text, ["ui:comparison"] = _comparison.text, ["ui:status"] = _status.text
     };

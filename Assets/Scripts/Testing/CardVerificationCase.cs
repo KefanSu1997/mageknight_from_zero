@@ -13,6 +13,8 @@ public sealed class CardVerificationCase
     public string followup;
     public bool followupEnhanced;
     public string expectedException;
+    public string combatPhase;
+    public CardVerificationEnemy[] enemies;
     public string[] limitations;
     public CardVerificationValue[] setup;
     public CardVerificationValue[] expected;

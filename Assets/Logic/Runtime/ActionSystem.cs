@@ -329,28 +329,30 @@ namespace MK.Logic.Runtime
             int preMove = ctx.MovementPool;
             int preInf  = ctx.InfluencePool;
             int preMelee = ctx.MeleePool;
+            int firstCombatContribution = ctx.CombatPower.Attacks.Count;
             int preRanged = ctx.RangedPool;
+            int preSiege = ctx.SiegePool;
             int preBlock = ctx.BlockPool;
             int preUnitAtk = ctx.UnitAttackBonus;
             int preUnitBlk = ctx.UnitBlockBonus;
             effect.Execute(player, ctx, option);
             if (ctx.NextMeleeAsRanged && ctx.MeleePool > preMelee)
             {
-                int diff = ctx.MeleePool - preMelee;
-                ctx.MeleePool = preMelee;
-                ctx.RangedPool += diff;
+                ctx.CombatPower.ConvertNewMeleeToRanged(firstCombatContribution);
                 ctx.NextMeleeAsRanged = false;
             }
             if (!ctx.AmbushTriggered)
             {
-                if ((ctx.MeleePool > preMelee) || (ctx.RangedPool > preRanged) || (ctx.UnitAttackBonus > preUnitAtk))
+                if ((ctx.MeleePool > preMelee) || (ctx.RangedPool > preRanged) || (ctx.SiegePool > preSiege) || (ctx.UnitAttackBonus > preUnitAtk))
                 {
                     if (ctx.AmbushAttackBonus != 0)
                     {
                         if (ctx.MeleePool > preMelee)
-                            ctx.MeleePool += ctx.AmbushAttackBonus;
+                            ctx.CombatPower.BoostAttack(AttackType.Melee, ctx.AmbushAttackBonus);
                         else if (ctx.RangedPool > preRanged)
-                            ctx.RangedPool += ctx.AmbushAttackBonus;
+                            ctx.CombatPower.BoostAttack(AttackType.Ranged, ctx.AmbushAttackBonus);
+                        else if (ctx.SiegePool > preSiege)
+                            ctx.CombatPower.BoostAttack(AttackType.Siege, ctx.AmbushAttackBonus);
                         else
                             ctx.UnitAttackBonus += ctx.AmbushAttackBonus;
                         ctx.AmbushTriggered = true;
@@ -361,7 +363,7 @@ namespace MK.Logic.Runtime
                     if (ctx.AmbushBlockBonus != 0)
                     {
                         if (ctx.BlockPool > preBlock)
-                            ctx.BlockPool += ctx.AmbushBlockBonus;
+                            ctx.CombatPower.BoostBlock(ctx.AmbushBlockBonus);
                         else
                             ctx.UnitBlockBonus += ctx.AmbushBlockBonus;
                         ctx.AmbushTriggered = true;
@@ -375,11 +377,13 @@ namespace MK.Logic.Runtime
                 else if (ctx.InfluencePool > preInf)
                     ctx.InfluencePool += 4;
                 else if (ctx.RangedPool > preRanged)
-                    ctx.RangedPool += 4;
+                    ctx.CombatPower.BoostAttack(AttackType.Ranged, 4);
+                else if (ctx.SiegePool > preSiege)
+                    ctx.CombatPower.BoostAttack(AttackType.Siege, 4);
                 else if (ctx.MeleePool > preMelee)
-                    ctx.MeleePool += 4;
+                    ctx.CombatPower.BoostAttack(AttackType.Melee, 4);
                 else if (ctx.BlockPool > preBlock)
-                    ctx.BlockPool += 4;
+                    ctx.CombatPower.BoostBlock(4);
                 else if (ctx.UnitAttackBonus > preUnitAtk)
                     ctx.UnitAttackBonus += 4;
                 else if (ctx.UnitBlockBonus > preUnitBlk)
@@ -393,12 +397,14 @@ namespace MK.Logic.Runtime
             // 若設置了加值，則根據效果類型增加數值
             if (ctx.BoostValue != 0 && effect is not BoostNextCardEffect)
             {
-                if (effect is MoveEffect)
+                if (ctx.MovementPool > preMove)
                     ctx.MovementPool += ctx.BoostValue;
-                else if (effect is InfluenceEffect)
+                else if (ctx.InfluencePool > preInf)
                     ctx.InfluencePool += ctx.BoostValue;
-                else if (effect is RangedAttackEffect)
-                    ctx.RangedPool += ctx.BoostValue;
+                else if (ctx.CombatPower.Attacks.Count > firstCombatContribution)
+                    ctx.CombatPower.BoostLastAttack(ctx.BoostValue);
+                else if (ctx.BlockPool > preBlock)
+                    ctx.CombatPower.BoostBlock(ctx.BoostValue);
                 ctx.BoostValue = 0;
             }
 

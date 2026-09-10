@@ -23,12 +23,16 @@ namespace MK.Logic.Runtime
         /// <summary>本次戰鬥獲得的名望。</summary>
         public int FameGain { get; init; }
 
+        /// <summary>正式结算器实际击杀的原始目标索引。</summary>
+        public IReadOnlyList<int> KilledIndices { get; init; }
+
         /// <summary>建構函式：初始化三項統計值。</summary>
         public BattleResult(bool allKilled, int totalWounds, int fameGain)
         {
             AllKilled   = allKilled;
             TotalWounds = totalWounds;
             FameGain    = fameGain;
+            KilledIndices = Array.Empty<int>();
         }
     }
 
@@ -50,19 +54,12 @@ namespace MK.Logic.Runtime
              * 1️⃣ 预计算：每只怪物被格挡的数值
              *────────────────────────────────────────────*/
             var blockSum = new int[enemies.Count];
-            if (blocks != null)
+            for (int i = 0; i < enemies.Count; i++)
             {
-                foreach (var blk in blocks)
-                {
-                    if (blk.TargetIndex < 0 || blk.TargetIndex >= enemies.Count) continue;
-                    var enemy = enemies[blk.TargetIndex];
-                    Element elem = enemy.AttackElement;
-                    if (ctx != null && ctx.AttackElementChange.TryGetValue(blk.TargetIndex, out var e2))
-                        elem = e2;
-                    blockSum[blk.TargetIndex] += (int)Math.Floor(
-                        blk.Value *
-                        Constants.BlockEfficiency(elem, blk.Element));
-                }
+                Element element = enemies[i].AttackElement;
+                if (ctx != null && ctx.AttackElementChange.TryGetValue(i, out var changed)) element = changed;
+                blockSum[i] = CombatMath.EffectiveBlock(element,
+                    (blocks ?? Array.Empty<BlockAllocation>()).Where(b => b.TargetIndex == i));
             }
             for (int i = 0; i < blockSum.Length; i++)
                 logger?.Log($"BlockSum {i} {blockSum[i]}");
@@ -223,18 +220,18 @@ namespace MK.Logic.Runtime
              * 3️⃣ Melee / 组攻 结算（与之前相同）
              *────────────────────────────────────────────*/
             logger?.Log("Phase Attack");
-            var alive = enemies.ToList();          // 独立可变副本
+            var alive = Enumerable.Range(0, enemies.Count).ToHashSet(); // 稳定的原始索引
             logger?.Log($"Kills {string.Join(',', killIndices)}");
             foreach (int k in killIndices.OrderByDescending(x => x))
             {
-                var m = alive[k];
+                var m = enemies[k];
                 fameGain += m.Fame;
                 if (ctx != null && ctx.CrystalOnKill != null && ctx.CrystalsPerKill > 0)
                 {
                     var color = ctx.CrystalOnKill(m);
                     player.Mana.AddCrystal(color, ctx.CrystalsPerKill);
                 }
-                alive.RemoveAt(k);
+                alive.Remove(k);
             }
             foreach (var atk in attacks ?? Array.Empty<AttackAllocation>())
             {
@@ -242,54 +239,26 @@ namespace MK.Logic.Runtime
                     player.Fame += ctx.FamePerUnitAction;
                 logger?.Log($"Attack {atk.Value} {atk.Element}");
                 var tgtIdx = (atk.TargetIndices == null || atk.TargetIndices.Count == 0)
-                             ? alive.Select((_, i) => i).ToList()
-                             : atk.TargetIndices.Where(i => i < alive.Count).ToList();
+                             ? alive.OrderBy(i => i).ToList()
+                             : atk.TargetIndices.Where(i => alive.Contains(i)).Distinct().ToList();
                 if (tgtIdx.Count == 0) continue;
 
-                int armorSum = 0;
-                bool fireRes = false, iceRes = false, coldRes = false;
-                foreach (int i in tgtIdx)
-                {
-                    var t = alive[i];
-                    int armor = t.Armor;
-                    if (ctx != null && ctx.ArmorReduction.TryGetValue(i, out int red))
-                        armor = Math.Max(1, armor - red);
-                    armorSum += armor;
-                    fireRes  |= (t.Abilities.Contains(Ability.FireResist) ||
-                                   t.Abilities.Contains(Ability.MagicResist)) &&
-                                   (ctx == null || !ctx.FireResistRemoved.Contains(i));
-                    iceRes   |= t.Abilities.Contains(Ability.IceResist) ||
-                                   t.Abilities.Contains(Ability.MagicResist);
-                    coldRes  |= t.Abilities.Contains(Ability.ColdFireResist);
-                }
-                if (!coldRes && fireRes && iceRes) coldRes = true;
-
-                Ability? resist = null;
-                if (ctx == null || !ctx.IgnoreResist)
-                {
-                    resist = atk.Element == Element.Fire      && fireRes ? Ability.FireResist :
-                             atk.Element == Element.Ice       && iceRes  ? Ability.IceResist  :
-                             atk.Element == Element.ColdFire  && coldRes ? Ability.ColdFireResist : null;
-                }
-
-                int atkVal = atk.Value;
-                if (ctx != null && ctx.DoublePhysicalAttack && atk.Element == Element.Physical)
-                    atkVal *= 2;
-                int effAtk = (int)Math.Floor(
-                    atkVal * Constants.Efficiency(atk.Element, resist));
+                int armorSum = tgtIdx.Sum(i => ctx != null && ctx.ArmorReduction.TryGetValue(i, out int red)
+                    ? Math.Max(1, enemies[i].Armor - red) : enemies[i].Armor);
+                int effAtk = CombatMath.EffectiveAttack(enemies, tgtIdx, CombatMath.Parts(atk), Phase.Melee, ctx);
 
                 if (effAtk >= armorSum)
                 {
                     foreach (int i in tgtIdx.OrderByDescending(x => x))
                     {
-                        var m = alive[i];
+                        var m = enemies[i];
                         fameGain += m.Fame;
                         if (ctx != null && ctx.CrystalOnKill != null && ctx.CrystalsPerKill > 0)
                         {
                             var color = ctx.CrystalOnKill(m);
                             player.Mana.AddCrystal(color, ctx.CrystalsPerKill);
                         }
-                        alive.RemoveAt(i);
+                        alive.Remove(i);
                     }
                 }
             }
@@ -321,7 +290,8 @@ namespace MK.Logic.Runtime
                 ctx.PendingFameOnKill = 0;
             }
             player.Fame += fameGain;
-            var result = new BattleResult(alive.Count == 0, woundsHero, fameGain);
+            var result = new BattleResult(alive.Count == 0, woundsHero, fameGain)
+            { KilledIndices = Enumerable.Range(0, enemies.Count).Where(i => !alive.Contains(i)).ToArray() };
             logger?.Log($"BattleEnd {result.AllKilled} wounds {result.TotalWounds}");
             return result;
         }

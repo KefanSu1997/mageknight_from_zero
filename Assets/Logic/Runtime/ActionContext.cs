@@ -17,10 +17,15 @@ namespace MK.Logic.Runtime
         public int InfluencePool { get; set; }
 
         /// <summary>當前累計的格擋值。</summary>
-        public int BlockPool { get; set; }
+        public int BlockPool { get => CombatPower.BlockTotal; set => CombatPower.SetBlockTotal(value); }
+
+        public CombatPowerPool CombatPower { get; } = new();
+        public int SiegePool { get => CombatPower.Total(AttackType.Siege); set => CombatPower.SetTotal(AttackType.Siege, value); }
+        public bool FortifiedSite { get; set; }
+        public int HarvestTriggers { get; set; }
 
         /// <summary>當前累計的遠程攻擊力。</summary>
-        public int RangedPool { get; set; }
+        public int RangedPool { get => CombatPower.Total(AttackType.Ranged); set => CombatPower.SetTotal(AttackType.Ranged, value); }
 
         /// <summary>橫置打出創傷卡時的數值，0 表示不可橫置。</summary>
         public int SidewaysWoundValue { get; set; }
@@ -46,8 +51,8 @@ namespace MK.Logic.Runtime
         /// <summary>一次性降低敵人攻擊力的數值。</summary>
         public int AttackReduction { get; set; }
 
-        /// <summary>近戰攻擊池，目前尚未與戰鬥系統串接。</summary>
-        public int MeleePool { get; set; }
+        /// <summary>近战攻击总值；元素与方式保存在 CombatPower，供战斗结算消费。</summary>
+        public int MeleePool { get => CombatPower.Total(AttackType.Melee); set => CombatPower.SetTotal(AttackType.Melee, value); }
 
         /// <summary>下一張移動牌獲得的額外移動力。</summary>
         public int MoveBonusNext { get; set; }
