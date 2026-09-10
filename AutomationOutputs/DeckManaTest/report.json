@@ -1,0 +1,58 @@
+{
+    "scenePath": "Assets/Scenes/Part1/Part1_DeckManaTest.unity",
+    "startedAt": "2025-10-09T16:49:21.0236931Z",
+    "finishedAt": "2025-10-09T16:49:25.0808249Z",
+    "status": "success",
+    "message": "",
+    "steps": [
+        {
+            "label": "Scene Start",
+            "buttonPath": "",
+            "screenshotPath": "D:\\study and work\\code\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\DeckManaTest\\captures\\Part1_DeckManaTest_20251010_004921\\000_Scene Start.png",
+            "success": true,
+            "message": ""
+        },
+        {
+            "label": "打开牌组浮窗",
+            "buttonPath": "Canvas/Part1TestLayout/InfoColumn/DeckZonesPanel/ZonesRow/DeckZone",
+            "screenshotPath": "D:\\study and work\\code\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\DeckManaTest\\captures\\Part1_DeckManaTest_20251010_004921\\001_打开牌组浮窗.png",
+            "success": true,
+            "message": ""
+        },
+        {
+            "label": "关闭牌组浮窗",
+            "buttonPath": "DeckViewerOverlay/Dialog/Header/CloseButton",
+            "screenshotPath": "D:\\study and work\\code\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\DeckManaTest\\captures\\Part1_DeckManaTest_20251010_004921\\002_关闭牌组浮窗.png",
+            "success": true,
+            "message": ""
+        },
+        {
+            "label": "打开弃牌浮窗",
+            "buttonPath": "Canvas/Part1TestLayout/InfoColumn/DeckZonesPanel/ZonesRow/DiscardZone",
+            "screenshotPath": "D:\\study and work\\code\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\DeckManaTest\\captures\\Part1_DeckManaTest_20251010_004921\\003_打开弃牌浮窗.png",
+            "success": true,
+            "message": ""
+        },
+        {
+            "label": "关闭弃牌浮窗",
+            "buttonPath": "DeckViewerOverlay/Dialog/Header/CloseButton",
+            "screenshotPath": "D:\\study and work\\code\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\DeckManaTest\\captures\\Part1_DeckManaTest_20251010_004921\\004_关闭弃牌浮窗.png",
+            "success": true,
+            "message": ""
+        },
+        {
+            "label": "测试牌库系统",
+            "buttonPath": "Canvas/Part1TestLayout/ControlColumn/Buttons/测试牌库系统Button",
+            "screenshotPath": "D:\\study and work\\code\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\DeckManaTest\\captures\\Part1_DeckManaTest_20251010_004921\\005_测试牌库系统.png",
+            "success": true,
+            "message": ""
+        },
+        {
+            "label": "测试魔力池",
+            "buttonPath": "Canvas/Part1TestLayout/ControlColumn/Buttons/测试魔力池Button",
+            "screenshotPath": "D:\\study and work\\code\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\DeckManaTest\\captures\\Part1_DeckManaTest_20251010_004921\\006_测试魔力池.png",
+            "success": true,
+            "message": ""
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+  "scenePath": "Assets/Scenes/Part1/Part1_CombatTest.unity",
+  "screenshotsDirectory": "AutomationOutputs/CombatTest/captures",
+  "reportPath": "AutomationOutputs/CombatTest/report.json",
+  "captureInitialView": true,
+  "initialDelaySeconds": 0,
+  "defaultWaitAfterSeconds": 0.6,
+  "steps": [
+    {
+      "buttonPath": "Canvas/Part1TestLayout/ControlColumn/Buttons/测试战斗系统Button",
+      "label": "执行战斗演算",
+      "waitAfterSeconds": 0.7
+    },
+    {
+      "buttonPath": "Canvas/Part1TestLayout/InfoColumn/CombatPanel/Header/Btn_NextScenario",
+      "label": "切换到下一组对阵",
+      "waitAfterSeconds": 0.6
+    },
+    {
+      "buttonPath": "Canvas/Part1TestLayout/InfoColumn/CombatPanel/Footer/Btn_Resolve",
+      "label": "再次执行战斗演算",
+      "waitAfterSeconds": 0.7
+    }
+  ]
+}

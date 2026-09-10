@@ -1,0 +1,25 @@
+{
+  "scenePath": "Assets/Scenes/hand_deck_test.unity",
+  "screenshotsDirectory": "AutomationOutputs/HandDeckTest/captures",
+  "reportPath": "AutomationOutputs/HandDeckTest/report.json",
+  "captureInitialView": false,
+  "initialDelaySeconds": 0.0,
+  "defaultWaitAfterSeconds": 0.6,
+  "steps": [
+    {
+      "label": "布局初始","findButtons": ["测试牌库系统"],"captureAfter": true
+    },
+    {
+      "buttonPath": "Canvas/Part1TableRoot/ActionColumnShell/ActionColumnRoot/Buttons/测试牌库系统Button",
+      "label": "测试牌库系统",
+      "waitAfterSeconds": 0.6,
+      "captureAfter": true
+    },
+    {
+      "buttonPath": "Canvas/Part1TableRoot/ActionColumnShell/ActionColumnRoot/Buttons/测试魔力池Button",
+      "label": "测试魔力池",
+      "waitAfterSeconds": 0.6,
+      "captureAfter": true
+    }
+  ]
+}

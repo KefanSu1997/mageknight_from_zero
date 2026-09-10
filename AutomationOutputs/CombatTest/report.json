@@ -1,0 +1,37 @@
+{
+    "scenePath": "Assets/Scenes/Part1/Part1_CombatTest.unity",
+    "startedAt": "2025-10-10T16:13:47.9170364Z",
+    "finishedAt": "2025-10-10T16:13:51.0079244Z",
+    "status": "success",
+    "message": "",
+    "steps": [
+        {
+            "label": "Scene Start",
+            "buttonPath": "",
+            "screenshotPath": "D:\\study and work\\code\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\CombatTest\\captures\\Part1_CombatTest_20251011_001347\\000_Scene Start.png",
+            "success": true,
+            "message": ""
+        },
+        {
+            "label": "执行战斗演算",
+            "buttonPath": "Canvas/Part1TestLayout/ControlColumn/Buttons/测试战斗系统Button",
+            "screenshotPath": "D:\\study and work\\code\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\CombatTest\\captures\\Part1_CombatTest_20251011_001347\\001_执行战斗演算.png",
+            "success": true,
+            "message": ""
+        },
+        {
+            "label": "切换到下一组对阵",
+            "buttonPath": "Canvas/Part1TestLayout/InfoColumn/CombatPanel/Header/Btn_NextScenario",
+            "screenshotPath": "D:\\study and work\\code\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\CombatTest\\captures\\Part1_CombatTest_20251011_001347\\002_切换到下一组对阵.png",
+            "success": true,
+            "message": ""
+        },
+        {
+            "label": "再次执行战斗演算",
+            "buttonPath": "Canvas/Part1TestLayout/InfoColumn/CombatPanel/Footer/Btn_Resolve",
+            "screenshotPath": "D:\\study and work\\code\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\CombatTest\\captures\\Part1_CombatTest_20251011_001347\\003_再次执行战斗演算.png",
+            "success": true,
+            "message": ""
+        }
+    ]
+}

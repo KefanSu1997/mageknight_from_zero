@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/review_report.schema.json",
+  "type": "object",
+  "required": ["status", "issues", "rubrics_result", "notes"],
+  "properties": {
+    "status": { "type": "string", "enum": ["PASS", "REWORK"] },
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type", "message"],
+        "properties": {
+          "type": { "type": "string", "enum": ["COMPILE", "SCREENSHOT", "CODE", "RUBRIC", "OTHER"] },
+          "file": { "type": "string" },
+          "message": { "type": "string" },
+          "fix_suggestion": { "type": "string" }
+        }
+      },
+      "default": []
+    },
+    "rubrics_result": {
+      "type": "array",
+      "description": "逐条对 task_spec.acceptance.rubrics_checklist 的打勾结果",
+      "items": {
+        "type": "object",
+        "required": ["id", "passed"],
+        "properties": {
+          "id": { "type": "string" },
+          "passed": { "type": "boolean" },
+          "note": { "type": "string" }
+        }
+      },
+      "default": []
+    },
+    "round_rubrics_result": {
+      "type": "array",
+      "description": "逐条对 round_context.round_rubrics 的打勾结果",
+      "items": {
+        "type": "object",
+        "required": ["id", "passed"],
+        "properties": {
+          "id": { "type": "string" },
+          "passed": { "type": "boolean" },
+          "note": { "type": "string" }
+        }
+      },
+      "default": []
+    },
+    "final_rubrics_result": {
+      "type": "array",
+      "description": "可选：与 rubrics_result 同义的最终验收打勾结果",
+      "items": {
+        "type": "object",
+        "required": ["id", "passed"],
+        "properties": {
+          "id": { "type": "string" },
+          "passed": { "type": "boolean" },
+          "note": { "type": "string" }
+        }
+      },
+      "default": []
+    },
+    "notes": { "type": "string" }
+  }
+}

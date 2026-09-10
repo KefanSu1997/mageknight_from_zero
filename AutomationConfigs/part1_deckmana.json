@@ -1,0 +1,40 @@
+{
+  "scenePath": "Assets/Scenes/Part1/Part1_DeckManaTest.unity",
+  "screenshotsDirectory": "AutomationOutputs/DeckManaTest/captures",
+  "reportPath": "AutomationOutputs/DeckManaTest/report.json",
+  "captureInitialView": true,
+  "initialDelaySeconds": 0,
+  "defaultWaitAfterSeconds": 0.6,
+  "steps": [
+    {
+      "buttonPath": "Canvas/Part1TestLayout/InfoColumn/DeckZonesPanel/ZonesRow/DeckZone",
+      "label": "打开牌组浮窗",
+      "waitAfterSeconds": 0.6
+    },
+    {
+      "buttonPath": "DeckViewerOverlay/Dialog/Header/CloseButton",
+      "label": "关闭牌组浮窗",
+      "waitAfterSeconds": 0.3
+    },
+    {
+      "buttonPath": "Canvas/Part1TestLayout/InfoColumn/DeckZonesPanel/ZonesRow/DiscardZone",
+      "label": "打开弃牌浮窗",
+      "waitAfterSeconds": 0.6
+    },
+    {
+      "buttonPath": "DeckViewerOverlay/Dialog/Header/CloseButton",
+      "label": "关闭弃牌浮窗",
+      "waitAfterSeconds": 0.3
+    },
+    {
+      "buttonPath": "Canvas/Part1TestLayout/ControlColumn/Buttons/测试牌库系统Button",
+      "label": "测试牌库系统",
+      "waitAfterSeconds": 0.5
+    },
+    {
+      "buttonPath": "Canvas/Part1TestLayout/ControlColumn/Buttons/测试魔力池Button",
+      "label": "测试魔力池",
+      "waitAfterSeconds": 0.5
+    }
+  ]
+}

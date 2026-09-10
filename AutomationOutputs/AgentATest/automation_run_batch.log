@@ -1,0 +1,2409 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Connection attempt to the License Client on channel: "LicenseClient-sukefan" failed because channel doesn't exist; code: "0x80000002"
+[Licensing::Module] Successfully launched the LicensingClient (PId: 30000)
+[Licensing::IpcConnector] Successfully connected to the License Client on channel: "LicenseClient-sukefan" at "2025-10-15T14:52:11.451811Z"
+[Licensing::Client] Error: Code 10 while verifying Licensing Client signature (process Id: 30000, path: "D:/Unity/Editor/2023.2.20f1c1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
+[Licensing::Module] Error: LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.12.0-cn+fe68f07
+  Session Id:              dba835cf2007495297fc439b0e31cb59
+  Correlation Id:          890dda102ad74e5aff716ca05cf01603
+  External correlation Id: 8142783480884482742
+  Machine Id:              STB3trSj8e0oW0UzIpu9zWnkcpA=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-sukefan" (connect: 0.43s, validation: 0.03s, handshake: 0.02s)
+[Licensing::IpcConnector] Successfully connected to the License Notification on channel: "LicenseClient-sukefan-notifications" at "2025-10-15T14:52:11.5058176Z"
+[Licensing::Module] Connected to LicensingClient (PId: 30000, launch time: 0.00, total connection time: 0.48s)
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully updated license
+Built from '2023.2/china_unity/20f1' branch; Version is '2023.2.20f1c1 (ceda3f59bbc9) revision 13556287'; Using compiler version '193431935'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26100) 64bit CoreCountrySpecific' Language: 'zh' Physical Memory: 16088 MB
+[Licensing::Client] Successfully resolved entitlements
+[Licensing::Module] Serial number assigned to: "ewogICJzdWJzR3JvdXAiIDogInVuaXR5IGVkaXRvciIsCiAgIm5hbWVzcGFjZSIgOiAidW5pdHlfZWRpdG9yIiwKICAidHlwZSIgOiAiRURJVE9SIiwKICAidGFnIiA6ICJVbml0eVBlcnNvbmFsXXXX"
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+D:\Unity\Editor\2023.2.20f1c1\Editor\Unity.exe
+-batchmode
+-projectPath
+D:\study and work\code\unity-MK-test\MageKnight_from_zero
+-executeMethod
+MageKnight.SceneAutomation.Editor.SceneAutomationCommand.RunFromCommandLine
+--scene-automation-config
+D:\study and work\code\unity-MK-test\MageKnight_from_zero\AutomationConfigs\agent_a_scene.json
+-logFile
+D:\study and work\code\unity-MK-test\MageKnight_from_zero\AutomationOutputs\AgentATest\automation_run_batch.log
+Successfully changed project path to: D:\study and work\code\unity-MK-test\MageKnight_from_zero
+D:/study and work/code/unity-MK-test/MageKnight_from_zero
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [19552] Host "[IP] 192.168.1.39 [Port] 55504 [Flags] 2 [Guid] 463875579 [EditorId] 463875579 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-MA4U9S5F) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [19552] Host "[IP] 192.168.1.39 [Port] 55504 [Flags] 2 [Guid] 463875579 [EditorId] 463875579 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-MA4U9S5F) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+[Physics::Module] Initialized MultithreadedJobDispatcher with 31 workers.
+[Package Manager] Connected to IPC stream "Upm-36560" after 0.2 seconds.
+Library Redirect Path: Library/
+[Licensing::Client] Successfully resolved entitlements
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 59 packages:
+  Packages from [https://packages.unity.cn]:
+    com.unity.addressables@1.21.21 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.addressables@1.21.21)
+    com.unity.ai.navigation@2.0.0 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.ai.navigation@2.0.0)
+    com.unity.collab-proxy@2.8.2 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.collab-proxy@2.8.2)
+    com.unity.ide.rider@3.0.28 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.ide.rider@3.0.28)
+    com.unity.ide.visualstudio@2.0.22 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.ide.visualstudio@2.0.22)
+    com.unity.inputsystem@1.7.0 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.inputsystem@1.7.0)
+    com.unity.nuget.newtonsoft-json@3.2.1 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1)
+    com.unity.test-framework@1.3.9 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.test-framework@1.3.9)
+    com.unity.timeline@1.8.6 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.timeline@1.8.6)
+    com.unity.visualscripting@1.8.0 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.visualscripting@1.8.0)
+    com.unity.ext.nunit@2.0.5 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.ext.nunit@2.0.5)
+    com.unity.mathematics@1.2.6 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.mathematics@1.2.6)
+    com.unity.burst@1.8.13 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.burst@1.8.13)
+    com.unity.scriptablebuildpipeline@1.21.23 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.scriptablebuildpipeline@1.21.23)
+    com.unity.editorcoroutines@1.0.0 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.editorcoroutines@1.0.0)
+    com.unity.searcher@4.9.2 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.searcher@4.9.2)
+    com.unity.collections@1.4.0 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.collections@1.4.0)
+    com.unity.nuget.mono-cecil@1.11.4 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.nuget.mono-cecil@1.11.4)
+  Built-in packages:
+    com.unity.render-pipelines.universal@16.0.6 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.render-pipelines.universal@16.0.6)
+    com.unity.ugui@2.0.0 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.ugui@2.0.0)
+    com.unity.modules.accessibility@1.0.0 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.modules.accessibility@1.0.0)
+    com.unity.modules.ai@1.0.0 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.modules.ai@1.0.0)
+    com.unity.modules.androidjni@1.0.0 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.modules.androidjni@1.0.0)
+    com.unity.modules.animation@1.0.0 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.modules.animation@1.0.0)
+    com.unity.modules.assetbundle@1.0.0 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.modules.assetbundle@1.0.0)
+    com.unity.modules.audio@1.0.0 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.modules.audio@1.0.0)
+    com.unity.modules.cloth@1.0.0 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.modules.cloth@1.0.0)
+    com.unity.modules.director@1.0.0 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.modules.director@1.0.0)
+    com.unity.modules.imageconversion@1.0.0 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.modules.imageconversion@1.0.0)
+    com.unity.modules.imgui@1.0.0 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.modules.imgui@1.0.0)
+    com.unity.modules.jsonserialize@1.0.0 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.modules.jsonserialize@1.0.0)
+    com.unity.modules.particlesystem@1.0.0 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.modules.particlesystem@1.0.0)
+    com.unity.modules.physics@1.0.0 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.modules.physics@1.0.0)
+    com.unity.modules.physics2d@1.0.0 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.modules.physics2d@1.0.0)
+    com.unity.modules.screencapture@1.0.0 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.modules.screencapture@1.0.0)
+    com.unity.modules.terrain@1.0.0 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.modules.terrain@1.0.0)
+    com.unity.modules.terrainphysics@1.0.0 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.modules.terrainphysics@1.0.0)
+    com.unity.modules.tilemap@1.0.0 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.modules.tilemap@1.0.0)
+    com.unity.modules.ui@1.0.0 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.modules.ui@1.0.0)
+    com.unity.modules.uielements@1.0.0 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.modules.uielements@1.0.0)
+    com.unity.modules.umbra@1.0.0 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.modules.umbra@1.0.0)
+    com.unity.modules.unityanalytics@1.0.0 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.modules.unityanalytics@1.0.0)
+    com.unity.modules.unitywebrequest@1.0.0 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.modules.unitywebrequest@1.0.0)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle@1.0.0)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.modules.unitywebrequestaudio@1.0.0)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.modules.unitywebrequesttexture@1.0.0)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.modules.unitywebrequestwww@1.0.0)
+    com.unity.modules.vehicles@1.0.0 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.modules.vehicles@1.0.0)
+    com.unity.modules.video@1.0.0 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.modules.video@1.0.0)
+    com.unity.modules.vr@1.0.0 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.modules.vr@1.0.0)
+    com.unity.modules.wind@1.0.0 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.modules.wind@1.0.0)
+    com.unity.modules.xr@1.0.0 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.modules.xr@1.0.0)
+    com.unity.modules.subsystems@1.0.0 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.modules.subsystems@1.0.0)
+    com.unity.modules.hierarchycore@1.0.0 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.modules.hierarchycore@1.0.0)
+    com.unity.render-pipelines.core@16.0.6 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.render-pipelines.core@16.0.6)
+    com.unity.shadergraph@16.0.6 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.shadergraph@16.0.6)
+    com.unity.rendering.light-transport@1.0.2 (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.unity.rendering.light-transport@1.0.2)
+  Git packages:
+    com.coplaydev.unity-mcp@https://github.com/CoplayDev/unity-mcp.git?path=/UnityMcpBridge (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.coplaydev.unity-mcp@b7411e2cde)
+    com.gamelovers.mcp-unity@https://github.com/CoderGamester/mcp-unity.git (location: D:\study and work\code\unity-MK-test\MageKnight_from_zero\Library\PackageCache\com.gamelovers.mcp-unity@0d1b088d96)
+[Subsystems] No new subsystems found in resolved package list.
+Package Manager log level set to [2]
+[Package Manager] Done registering packages in 0.48 seconds
+Refreshing native plugins compatible for Editor in 0.66 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2023.2.20f1c1 (ceda3f59bbc9)
+[Subsystems] Discovering subsystems at path D:/Unity/Editor/2023.2.20f1c1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/study and work/code/unity-MK-test/MageKnight_from_zero/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 4060 Laptop GPU (ID=0x28e0)
+    Vendor:   NVIDIA
+    VRAM:     7957 MB
+    Driver:   32.0.15.7657
+[Licensing::Client] Successfully resolved entitlements
+Initialize mono
+Mono path[0] = 'D:/Unity/Editor/2023.2.20f1c1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/Editor/2023.2.20f1c1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Unity/Editor/2023.2.20f1c1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56560
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Unity/Editor/2023.2.20f1c1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/Unity/Editor/2023.2.20f1c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001314 seconds.
+- Loaded All Assemblies, in  0.225 seconds
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.183 seconds
+Domain Reload Profiling: 408ms
+	BeginReloadAssembly (76ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (21ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (93ms)
+		LoadAssemblies (76ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (91ms)
+			TypeCache.Refresh (90ms)
+				TypeCache.ScanAssembly (82ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (183ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (155ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (115ms)
+			ProcessInitializeOnLoadMethodAttributes (29ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+[Licensing::Client] Successfully resolved entitlements
+[Licensing::Client] Successfully resolved entitlements
+Application.AssetDatabase Initial Refresh Start
+A meta data file (.meta) exists but its asset 'Packages/com.gamelovers.mcp-unity/package-lock.json' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.gamelovers.mcp-unity/package-lock.json.meta because it's in an immutable folder.
+Starting: D:\Unity\Editor\2023.2.20f1c1\Editor\Data\bee_backend.exe --dont-print-to-structured-log --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: D:/study and work/code/unity-MK-test/MageKnight_from_zero
+DisplayProgressbar: Compiling Scripts
+ExitCode: 0 Duration: 0s157ms
+[671/861    0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+*** Tundra build success (0.13 seconds), 1 items updated, 861 evaluated
+AssetDatabase: script compilation time: 0.446875s
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.621 seconds
+Refreshing native plugins compatible for Editor in 0.42 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[CCR Bridge] Initialized. Watching D:\study and work\code\unity-MK-test\MageKnight_from_zero\.ccr_bridge
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+CcrCompileBridge:.cctor () (at Assets/Editor/CcrCompileBridge.cs:52)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Editor/CcrCompileBridge.cs Line: 52)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.868 seconds
+Domain Reload Profiling: 1489ms
+	BeginReloadAssembly (241ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (21ms)
+	RebuildCommonClasses (21ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (16ms)
+	LoadAllAssembliesAndSetupDomain (334ms)
+		LoadAssemblies (227ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (166ms)
+			TypeCache.Refresh (130ms)
+				TypeCache.ScanAssembly (119ms)
+			BuildScriptInfoCaches (26ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (868ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (694ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (56ms)
+			ProcessInitializeOnLoadAttributes (606ms)
+			ProcessInitializeOnLoadMethodAttributes (23ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Asset Pipeline Refresh (id=84eb39c734f0d4d49b0c7f415ee88381): Total: 2.325 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=1170 ms
+		Asset DB Callback time: managed=21 ms, native=0 ms
+		Scripting: domain reloads=1, domain reload time=654 ms, compile time=448 ms, other=30 ms
+		Project Asset Count: scripts=1298, non-scripts=2670
+		Asset File Changes: new=0, changed=0, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokeCustomDependenciesCallbacks: 0.001ms
+	InvokePackagesCallback: 0.638ms
+	ApplyChangesToAssetFolders: 0.279ms
+	Scan: 93.389ms
+	OnSourceAssetsModified: 0.001ms
+	CategorizeAssetsWithTransientArtifact: 43.932ms
+	ProcessAssetsWithTransientArtifactChanges: 52.156ms
+	CategorizeAssets: 30.109ms
+	ImportOutOfDateAssets: 875.504ms (424.060ms without children)
+		CompileScripts: 448.287ms
+		ReloadNativeAssets: 0.021ms
+		UnloadImportedAssets: 2.158ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.413ms
+		InitializingProgressBar: 0.000ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.000ms
+		OnDemandSchedulerStart: 0.564ms
+	PostProcessAllAssets: 21.532ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.001ms
+	UnloadStreamsBegin: 0.983ms
+	PersistCurrentRevisions: 0.088ms
+	UnloadStreamsEnd: 0.001ms
+	GenerateScriptTypeHashes: 2.104ms
+	Untracked: 1206.373ms
+
+Application.AssetDatabase Initial Refresh End
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Scanning for USB devices : 6.290ms
+Initializing Unity extensions:
+[Licensing::Client] Successfully resolved entitlements
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-MageKnight_from_zero
+Unloading 23 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6599 unused Assets / (3.3 MB). Loaded Objects now: 7385.
+Memory consumption went from 204.0 MB to 200.7 MB.
+Total: 8.751400 ms (FindLiveObjects: 0.444400 ms CreateObjectMapping: 0.375900 ms MarkObjects: 6.343300 ms  DeleteObjects: 1.587000 ms)
+
+[SceneAutomation] PendingRequest stored. Scene: Assets/Scenes/AgentA_TestScene.unity, steps: 3
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationRuntimeState:SetRequest (MageKnight.SceneAutomation.SceneAutomationRequest) (at Assets/Scripts/SceneAutomation/SceneAutomationRuntimeState.cs:43)
+MageKnight.SceneAutomation.Editor.SceneAutomationCommand:RunWithConfig (string,string[]) (at Assets/Scripts/SceneAutomation/Editor/SceneAutomationCommand.cs:112)
+MageKnight.SceneAutomation.Editor.SceneAutomationCommand:RunFromCommandLine () (at Assets/Scripts/SceneAutomation/Editor/SceneAutomationCommand.cs:69)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationRuntimeState.cs Line: 43)
+
+[SceneAutomation] Config prepared: Assets/Scenes/AgentA_TestScene.unity (steps: 3)
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.Editor.SceneAutomationCommand:RunWithConfig (string,string[]) (at Assets/Scripts/SceneAutomation/Editor/SceneAutomationCommand.cs:113)
+MageKnight.SceneAutomation.Editor.SceneAutomationCommand:RunFromCommandLine () (at Assets/Scripts/SceneAutomation/Editor/SceneAutomationCommand.cs:69)
+
+(Filename: Assets/Scripts/SceneAutomation/Editor/SceneAutomationCommand.cs Line: 113)
+
+Opening scene 'Assets/Scenes/AgentA_TestScene.unity'
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Assets/Scenes/AgentA_TestScene.unity'
+	Deserialize:            1.485 ms
+	Integration:            7.585 ms
+	Integration of assets:  0.001 ms
+	Thread Wait Time:       0.007 ms
+	Total Operation Time:   9.079 ms
+Unloading 3 unused Assets / (1.0 KB). Loaded Objects now: 7406.
+Memory consumption went from 192.3 MB to 192.3 MB.
+Total: 5.541000 ms (FindLiveObjects: 0.241100 ms CreateObjectMapping: 0.133900 ms MarkObjects: 5.147800 ms  DeleteObjects: 0.017900 ms)
+
+[Project] Loading completed in 11.450 seconds
+	Project init time: 				5.399 seconds
+		Template init time: 		0.000 seconds
+		Package Manager init time: 		0.230 seconds
+		Asset Database init time: 		0.629 seconds
+		Global illumination init time: 	0.002 seconds
+		Assemblies load time: 			0.411 seconds
+		Unity extensions init time: 	0.031 seconds
+		Asset Database refresh time: 	2.325 seconds
+	Scene opening time: 			0.180 seconds
+##utp:{"type":"ProjectInfo","version":2,"phase":"Immediate","time":1760539942447,"processId":36560,"projectLoad":11.4497427,"projectInit":5.3990956,"templateInit":0.0,"packageManagerInit":0.2300993,"assetDatabaseInit":0.6289865,"globalIlluminationInit":0.0018337,"assembliesLoad":0.4107535,"unityExtensionsInit":0.0307416,"assetDatabaseRefresh":2.3250695,"sceneOpening":0.1800367}
+##utp:{"type":"EditorInfo","version":2,"phase":"Immediate","time":1760539942447,"processId":36560,"editorVersion":"2023.2.20f1c1 (ceda3f59bbc9)","branch":"2023.2/china_unity/20f1","buildType":"Release","platform":"Windows"}
+Reloading assemblies for play mode.
+Reloading assemblies after forced synchronous recompile.
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.298 seconds
+Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[CCR Bridge] Initialized. Watching D:\study and work\code\unity-MK-test\MageKnight_from_zero\.ccr_bridge
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+CcrCompileBridge:.cctor () (at Assets/Editor/CcrCompileBridge.cs:52)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Editor/CcrCompileBridge.cs Line: 52)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.609 seconds
+Domain Reload Profiling: 909ms
+	BeginReloadAssembly (120ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (38ms)
+	RebuildCommonClasses (20ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (15ms)
+	LoadAllAssembliesAndSetupDomain (137ms)
+		LoadAssemblies (89ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (103ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (88ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (609ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (413ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (53ms)
+			ProcessInitializeOnLoadAttributes (321ms)
+			ProcessInitializeOnLoadMethodAttributes (31ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (18ms)
+Asset Pipeline Refresh (id=882f881f558af874fabee69720129747): Total: 0.976 seconds - Initiated by StopAssetImportingV2(ForceSynchronousImport | ForceDomainReload)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=650 ms
+		Asset DB Callback time: managed=18 ms, native=0 ms
+		Scripting: domain reloads=1, domain reload time=305 ms, compile time=1 ms, other=0 ms
+		Project Asset Count: scripts=1298, non-scripts=2670
+		Asset File Changes: new=0, changed=0, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokeCustomDependenciesCallbacks: 0.001ms
+	InvokePackagesCallback: 0.464ms
+	ApplyChangesToAssetFolders: 0.180ms
+	Scan: 0.000ms
+	OnSourceAssetsModified: 0.001ms
+	CategorizeAssetsWithTransientArtifact: 0.002ms
+	ProcessAssetsWithTransientArtifactChanges: 3.348ms
+	CategorizeAssets: 23.117ms
+	ImportOutOfDateAssets: 614.194ms (609.549ms without children)
+		CompileScripts: 1.311ms
+		CollectScriptTypesHashes: 1.974ms
+		ReloadNativeAssets: 0.619ms
+		UnloadImportedAssets: 0.054ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.446ms
+		InitializingProgressBar: 0.000ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.000ms
+		OnDemandSchedulerStart: 0.241ms
+	PostProcessAllAssets: 18.363ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.150ms
+	UnloadStreamsBegin: 0.071ms
+	PersistCurrentRevisions: 0.090ms
+	UnloadStreamsEnd: 0.001ms
+	GenerateScriptTypeHashes: 3.582ms
+	Untracked: 315.632ms
+
+[AgentA Rig] Awake - preparing automation rig UI.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+AgentASceneAutomationRig:Awake () (at Assets/Scripts/Demo/AgentASceneAutomationRig.cs:19)
+
+(Filename: Assets/Scripts/Demo/AgentASceneAutomationRig.cs Line: 19)
+
+[AgentA Rig] Located RotateCube: RotatingCube
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+AgentASceneAutomationRig:Awake () (at Assets/Scripts/Demo/AgentASceneAutomationRig.cs:24)
+
+(Filename: Assets/Scripts/Demo/AgentASceneAutomationRig.cs Line: 24)
+
+[AgentA Rig] Cube renderer resolved: RotatingCube
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+AgentASceneAutomationRig:Awake () (at Assets/Scripts/Demo/AgentASceneAutomationRig.cs:30)
+
+(Filename: Assets/Scripts/Demo/AgentASceneAutomationRig.cs Line: 30)
+
+[AgentA Rig] UI buttons instantiated under AutomationCanvas.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+AgentASceneAutomationRig:CreateUi () (at Assets/Scripts/Demo/AgentASceneAutomationRig.cs:81)
+AgentASceneAutomationRig:Awake () (at Assets/Scripts/Demo/AgentASceneAutomationRig.cs:34)
+
+(Filename: Assets/Scripts/Demo/AgentASceneAutomationRig.cs Line: 81)
+
+[AgentA Rig] Toggle button found immediately after creation: True
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+AgentASceneAutomationRig:Awake () (at Assets/Scripts/Demo/AgentASceneAutomationRig.cs:39)
+
+(Filename: Assets/Scripts/Demo/AgentASceneAutomationRig.cs Line: 39)
+
+[AgentA Rig] Randomize button found immediately after creation: True
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+AgentASceneAutomationRig:Awake () (at Assets/Scripts/Demo/AgentASceneAutomationRig.cs:40)
+
+(Filename: Assets/Scripts/Demo/AgentASceneAutomationRig.cs Line: 40)
+
+[SceneAutomation] Bootstrap.InstallOrchestrator invoked.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationBootstrap:InstallOrchestrator () (at Assets/Scripts/SceneAutomation/SceneAutomationBootstrap.cs:13)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationBootstrap.cs Line: 13)
+
+[SceneAutomation] Awake (activeInHierarchy: True, enabled: True)
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator:Awake () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:41)
+UnityEngine.GameObject:Internal_AddComponentWithType (System.Type)
+UnityEngine.GameObject:AddComponent (System.Type)
+UnityEngine.GameObject:AddComponent<MageKnight.SceneAutomation.SceneAutomationOrchestrator> ()
+MageKnight.SceneAutomation.SceneAutomationBootstrap:InstallOrchestrator () (at Assets/Scripts/SceneAutomation/SceneAutomationBootstrap.cs:30)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 41)
+
+[SceneAutomation] OnEnable (activeInHierarchy: True)
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator:OnEnable () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:47)
+UnityEngine.GameObject:Internal_AddComponentWithType (System.Type)
+UnityEngine.GameObject:AddComponent (System.Type)
+UnityEngine.GameObject:AddComponent<MageKnight.SceneAutomation.SceneAutomationOrchestrator> ()
+MageKnight.SceneAutomation.SceneAutomationBootstrap:InstallOrchestrator () (at Assets/Scripts/SceneAutomation/SceneAutomationBootstrap.cs:30)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 47)
+
+[SceneAutomation] Orchestrator host created and component attached.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationBootstrap:InstallOrchestrator () (at Assets/Scripts/SceneAutomation/SceneAutomationBootstrap.cs:31)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationBootstrap.cs Line: 31)
+
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            0.823 ms
+	Integration:            46.851 ms
+	Integration of assets:  0.001 ms
+	Thread Wait Time:       0.105 ms
+	Total Operation Time:   47.781 ms
+[SceneAutomation] Start coroutine begin (activeInHierarchy: True, enabled: True)
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<Start>d__17:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:57)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 57)
+
+[SceneAutomation] Runner started.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<Start>d__17:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:67)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 67)
+
+[SceneAutomation] Time scale at start: 1
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<Start>d__17:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:68)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 68)
+
+[SceneAutomation] Graphics device type: Direct3D11
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<Start>d__17:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:69)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 69)
+
+[SceneAutomation] Orchestrator build: 2025-10-14T2315
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<Start>d__17:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:70)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 70)
+
+[SceneAutomation] --- PreExecutionSanityChecks ---
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator:PreExecutionSanityChecks () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:139)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<Start>d__17:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:96)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 139)
+
+[SceneAutomation] Orchestrator status (activeInHierarchy: True, enabled: True)
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator:PreExecutionSanityChecks () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:140)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<Start>d__17:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:96)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 140)
+
+[SceneAutomation] EventSystem located: EventSystem (active: True)
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator:PreExecutionSanityChecks () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:153)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<Start>d__17:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:96)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 153)
+
+[SceneAutomation] Canvas root not found via GameObject.Find.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator:PreExecutionSanityChecks () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:159)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<Start>d__17:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:96)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 159)
+
+[SceneAutomation] Available button paths (context: Pre-execution dump):
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator:LogAvailableButtons (string) (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:585)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator:PreExecutionSanityChecks () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:168)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<Start>d__17:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:96)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 585)
+
+    AutomationCanvas/Buttons/Btn_ToggleRotation
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator:LogAvailableButtons (string) (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:594)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator:PreExecutionSanityChecks () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:168)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<Start>d__17:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:96)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 594)
+
+    AutomationCanvas/Buttons/Btn_RandomizeColor
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator:LogAvailableButtons (string) (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:594)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator:PreExecutionSanityChecks () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:168)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<Start>d__17:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:96)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 594)
+
+[SceneAutomation] --- End PreExecutionSanityChecks ---
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator:PreExecutionSanityChecks () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:169)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<Start>d__17:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:96)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 169)
+
+[SceneAutomation] Waiting one frame before executing steps.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<Start>d__17:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:105)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 105)
+
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-MageKnight_from_zero
+Test scenes setup completed. Use Tools/Demo/Create Demo Assets to generate prefabs.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+TestSceneSetup:SetupTestScenes () (at Assets/Demo/TestSceneSetup.cs:37)
+UnityEditor.EditorApplication:Internal_CallDelayFunctions ()
+
+(Filename: Assets/Demo/TestSceneSetup.cs Line: 37)
+
+[MCP Unity] WebSocket server started successfully on 0.0.0.0:18090.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+McpUnity.Utils.McpLogger:LogInfo (string) (at ./Library/PackageCache/com.gamelovers.mcp-unity@0d1b088d96/Editor/Utils/Logger.cs:21)
+McpUnity.Unity.McpUnityServer:StartServer () (at ./Library/PackageCache/com.gamelovers.mcp-unity@0d1b088d96/Editor/UnityBridge/McpUnityServer.cs:133)
+McpUnity.Unity.McpUnityServer:.ctor () (at ./Library/PackageCache/com.gamelovers.mcp-unity@0d1b088d96/Editor/UnityBridge/McpUnityServer.cs:95)
+McpUnity.Unity.McpUnityServer:get_Instance () (at ./Library/PackageCache/com.gamelovers.mcp-unity@0d1b088d96/Editor/UnityBridge/McpUnityServer.cs:54)
+McpUnity.Unity.McpUnityServer/<>c:<.cctor>b__7_0 () (at ./Library/PackageCache/com.gamelovers.mcp-unity@0d1b088d96/Editor/UnityBridge/McpUnityServer.cs:41)
+UnityEditor.EditorApplication:Internal_CallDelayFunctions ()
+
+(Filename: ./Library/PackageCache/com.gamelovers.mcp-unity@0d1b088d96/Editor/UnityBridge/McpUnityServer.cs Line: 133)
+
+[SceneAutomation] Total steps: 3
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<Start>d__17:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:116)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 116)
+
+[SceneAutomation] Starting step: 暂停旋转
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<Start>d__17:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:120)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 120)
+
+[SceneAutomation] Executing step: 暂停旋转
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteStep>d__19:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:181)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 181)
+
+[SceneAutomation] Available button paths (context: Before waiting for '暂停旋转'):
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator:LogAvailableButtons (string) (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:585)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteStepCore>d__20:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:234)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteStep>d__19:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:192)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 585)
+
+    AutomationCanvas/Buttons/Btn_ToggleRotation
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator:LogAvailableButtons (string) (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:594)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteStepCore>d__20:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:234)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteStep>d__19:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:192)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 594)
+
+    AutomationCanvas/Buttons/Btn_RandomizeColor
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator:LogAvailableButtons (string) (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:594)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteStepCore>d__20:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:234)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteStep>d__19:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:192)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 594)
+
+[SceneAutomation] Waiting resolver for button path: AutomationCanvas/Buttons/Btn_ToggleRotation
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteStepCore>d__20:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:241)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteStep>d__19:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:192)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 241)
+
+[SceneAutomation] WaitForButton begin: AutomationCanvas/Buttons/Btn_ToggleRotation, timeout=10.00, interval=0.20
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<WaitForButton>d__22:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:309)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 309)
+
+[SceneAutomation] Button located: AutomationCanvas/Buttons/Btn_ToggleRotation after 0.001s
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<WaitForButton>d__22:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:316)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 316)
+
+<RI> Initialized touch support.
+Created GICache directory at C:/Users/sukefan/AppData/LocalLow/Unity/Caches/GiCache. Took: 0.005s, timestamps: [12.607 - 12.613]
+Setting up 8 worker threads for Enlighten.
+[SceneAutomation] Invoked button onClick: AutomationCanvas/Buttons/Btn_ToggleRotation
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteClick>d__23:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:361)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 361)
+
+[SceneAutomation] Clicked button: 暂停旋转
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteStepCore>d__20:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:269)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteStep>d__19:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:192)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 269)
+
+[SceneAutomation] Waiting after step: 0.500s
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteStepCore>d__20:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:279)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteStep>d__19:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:192)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 279)
+
+[SceneAutomation] Capturing result for step: 暂停旋转
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteStepCore>d__20:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:284)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteStep>d__19:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:192)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 284)
+
+[SceneAutomation] Capture step begin: 暂停旋转 (success target: True)
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<CaptureAndRecordStep>d__24:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:367)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 367)
+
+[SceneAutomation] Capturing screenshot via camera 'Main Camera' (Direct3D11) -> D:\study and work\code\unity-MK-test\MageKnight_from_zero\AutomationOutputs\AgentATest\captures\AgentA_TestScene_20251015_225223\000_暂停旋转.png
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator:TryCaptureScreenshot (string) (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:432)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<CaptureAndRecordStep>d__24:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:389)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 432)
+
+[SceneAutomation] Step complete: 暂停旋转 (success: True)
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<CaptureAndRecordStep>d__24:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:407)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 407)
+
+[SceneAutomation] Starting step: 切换颜色
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<Start>d__17:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:120)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 120)
+
+[SceneAutomation] Executing step: 切换颜色
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteStep>d__19:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:181)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 181)
+
+[SceneAutomation] Available button paths (context: Before waiting for '切换颜色'):
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator:LogAvailableButtons (string) (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:585)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteStepCore>d__20:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:234)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteStep>d__19:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:192)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 585)
+
+    AutomationCanvas/Buttons/Btn_ToggleRotation
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator:LogAvailableButtons (string) (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:594)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteStepCore>d__20:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:234)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteStep>d__19:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:192)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 594)
+
+    AutomationCanvas/Buttons/Btn_RandomizeColor
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator:LogAvailableButtons (string) (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:594)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteStepCore>d__20:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:234)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteStep>d__19:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:192)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 594)
+
+[SceneAutomation] Waiting resolver for button path: AutomationCanvas/Buttons/Btn_RandomizeColor
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteStepCore>d__20:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:241)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteStep>d__19:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:192)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 241)
+
+[SceneAutomation] WaitForButton begin: AutomationCanvas/Buttons/Btn_RandomizeColor, timeout=10.00, interval=0.20
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<WaitForButton>d__22:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:309)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 309)
+
+[SceneAutomation] Button located: AutomationCanvas/Buttons/Btn_RandomizeColor after 0.000s
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<WaitForButton>d__22:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:316)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 316)
+
+[SceneAutomation] Invoked button onClick: AutomationCanvas/Buttons/Btn_RandomizeColor
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteClick>d__23:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:361)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 361)
+
+[SceneAutomation] Clicked button: 切换颜色
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteStepCore>d__20:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:269)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteStep>d__19:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:192)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 269)
+
+[SceneAutomation] Waiting after step: 0.500s
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteStepCore>d__20:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:279)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteStep>d__19:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:192)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 279)
+
+[SceneAutomation] Capturing result for step: 切换颜色
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteStepCore>d__20:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:284)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteStep>d__19:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:192)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 284)
+
+[SceneAutomation] Capture step begin: 切换颜色 (success target: True)
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<CaptureAndRecordStep>d__24:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:367)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 367)
+
+[SceneAutomation] Capturing screenshot via camera 'Main Camera' (Direct3D11) -> D:\study and work\code\unity-MK-test\MageKnight_from_zero\AutomationOutputs\AgentATest\captures\AgentA_TestScene_20251015_225223\001_切换颜色.png
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator:TryCaptureScreenshot (string) (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:432)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<CaptureAndRecordStep>d__24:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:389)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 432)
+
+[SceneAutomation] Step complete: 切换颜色 (success: True)
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<CaptureAndRecordStep>d__24:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:407)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 407)
+
+[SceneAutomation] Starting step: 恢复旋转
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<Start>d__17:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:120)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 120)
+
+[SceneAutomation] Executing step: 恢复旋转
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteStep>d__19:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:181)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 181)
+
+[SceneAutomation] Available button paths (context: Before waiting for '恢复旋转'):
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator:LogAvailableButtons (string) (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:585)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteStepCore>d__20:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:234)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteStep>d__19:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:192)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 585)
+
+    AutomationCanvas/Buttons/Btn_ToggleRotation
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator:LogAvailableButtons (string) (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:594)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteStepCore>d__20:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:234)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteStep>d__19:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:192)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 594)
+
+    AutomationCanvas/Buttons/Btn_RandomizeColor
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator:LogAvailableButtons (string) (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:594)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteStepCore>d__20:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:234)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteStep>d__19:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:192)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 594)
+
+[SceneAutomation] Waiting resolver for button path: AutomationCanvas/Buttons/Btn_ToggleRotation
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteStepCore>d__20:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:241)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteStep>d__19:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:192)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 241)
+
+[SceneAutomation] WaitForButton begin: AutomationCanvas/Buttons/Btn_ToggleRotation, timeout=10.00, interval=0.20
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<WaitForButton>d__22:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:309)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 309)
+
+[SceneAutomation] Button located: AutomationCanvas/Buttons/Btn_ToggleRotation after 0.000s
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<WaitForButton>d__22:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:316)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 316)
+
+[SceneAutomation] Invoked button onClick: AutomationCanvas/Buttons/Btn_ToggleRotation
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteClick>d__23:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:361)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 361)
+
+[SceneAutomation] Clicked button: 恢复旋转
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteStepCore>d__20:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:269)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteStep>d__19:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:192)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 269)
+
+[SceneAutomation] Waiting after step: 0.500s
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteStepCore>d__20:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:279)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteStep>d__19:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:192)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 279)
+
+[SceneAutomation] Capturing result for step: 恢复旋转
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteStepCore>d__20:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:284)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<ExecuteStep>d__19:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:192)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 284)
+
+[SceneAutomation] Capture step begin: 恢复旋转 (success target: True)
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<CaptureAndRecordStep>d__24:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:367)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 367)
+
+[SceneAutomation] Capturing screenshot via camera 'Main Camera' (Direct3D11) -> D:\study and work\code\unity-MK-test\MageKnight_from_zero\AutomationOutputs\AgentATest\captures\AgentA_TestScene_20251015_225223\002_恢复旋转.png
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator:TryCaptureScreenshot (string) (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:432)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<CaptureAndRecordStep>d__24:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:389)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 432)
+
+[SceneAutomation] Step complete: 恢复旋转 (success: True)
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<CaptureAndRecordStep>d__24:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:407)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 407)
+
+[SceneAutomation] Automation finished.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<Start>d__17:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:133)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 133)
+
+[SceneAutomation] PendingRequest cleared.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationRuntimeState:SetRequest (MageKnight.SceneAutomation.SceneAutomationRequest) (at Assets/Scripts/SceneAutomation/SceneAutomationRuntimeState.cs:38)
+MageKnight.SceneAutomation.SceneAutomationRuntimeState:Clear () (at Assets/Scripts/SceneAutomation/SceneAutomationRuntimeState.cs:59)
+MageKnight.SceneAutomation.Editor.SceneAutomationCommand:OnAutomationCompleted (MageKnight.SceneAutomation.SceneAutomationReport) (at Assets/Scripts/SceneAutomation/Editor/SceneAutomationCommand.cs:207)
+MageKnight.SceneAutomation.SceneAutomationRuntimeState:ReportCompleted (MageKnight.SceneAutomation.SceneAutomationReport) (at Assets/Scripts/SceneAutomation/SceneAutomationRuntimeState.cs:64)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator:FinalizeAutomation () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:784)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<Start>d__17:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:134)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationRuntimeState.cs Line: 38)
+
+[SceneAutomation] 场景：Assets/Scenes/AgentA_TestScene.unity 状态：success 步骤数：3
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.Editor.SceneAutomationCommand:LogReportSummary (MageKnight.SceneAutomation.SceneAutomationReport) (at Assets/Scripts/SceneAutomation/Editor/SceneAutomationCommand.cs:246)
+MageKnight.SceneAutomation.Editor.SceneAutomationCommand:OnAutomationCompleted (MageKnight.SceneAutomation.SceneAutomationReport) (at Assets/Scripts/SceneAutomation/Editor/SceneAutomationCommand.cs:209)
+MageKnight.SceneAutomation.SceneAutomationRuntimeState:ReportCompleted (MageKnight.SceneAutomation.SceneAutomationReport) (at Assets/Scripts/SceneAutomation/SceneAutomationRuntimeState.cs:64)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator:FinalizeAutomation () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:784)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<Start>d__17:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:134)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/Editor/SceneAutomationCommand.cs Line: 246)
+
+  [OK] 暂停旋转 -> D:\study and work\code\unity-MK-test\MageKnight_from_zero\AutomationOutputs\AgentATest\captures\AgentA_TestScene_20251015_225223\000_暂停旋转.png
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.Editor.SceneAutomationCommand:LogReportSummary (MageKnight.SceneAutomation.SceneAutomationReport) (at Assets/Scripts/SceneAutomation/Editor/SceneAutomationCommand.cs:251)
+MageKnight.SceneAutomation.Editor.SceneAutomationCommand:OnAutomationCompleted (MageKnight.SceneAutomation.SceneAutomationReport) (at Assets/Scripts/SceneAutomation/Editor/SceneAutomationCommand.cs:209)
+MageKnight.SceneAutomation.SceneAutomationRuntimeState:ReportCompleted (MageKnight.SceneAutomation.SceneAutomationReport) (at Assets/Scripts/SceneAutomation/SceneAutomationRuntimeState.cs:64)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator:FinalizeAutomation () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:784)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<Start>d__17:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:134)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/Editor/SceneAutomationCommand.cs Line: 251)
+
+  [OK] 切换颜色 -> D:\study and work\code\unity-MK-test\MageKnight_from_zero\AutomationOutputs\AgentATest\captures\AgentA_TestScene_20251015_225223\001_切换颜色.png
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.Editor.SceneAutomationCommand:LogReportSummary (MageKnight.SceneAutomation.SceneAutomationReport) (at Assets/Scripts/SceneAutomation/Editor/SceneAutomationCommand.cs:251)
+MageKnight.SceneAutomation.Editor.SceneAutomationCommand:OnAutomationCompleted (MageKnight.SceneAutomation.SceneAutomationReport) (at Assets/Scripts/SceneAutomation/Editor/SceneAutomationCommand.cs:209)
+MageKnight.SceneAutomation.SceneAutomationRuntimeState:ReportCompleted (MageKnight.SceneAutomation.SceneAutomationReport) (at Assets/Scripts/SceneAutomation/SceneAutomationRuntimeState.cs:64)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator:FinalizeAutomation () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:784)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<Start>d__17:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:134)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/Editor/SceneAutomationCommand.cs Line: 251)
+
+  [OK] 恢复旋转 -> D:\study and work\code\unity-MK-test\MageKnight_from_zero\AutomationOutputs\AgentATest\captures\AgentA_TestScene_20251015_225223\002_恢复旋转.png
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.Editor.SceneAutomationCommand:LogReportSummary (MageKnight.SceneAutomation.SceneAutomationReport) (at Assets/Scripts/SceneAutomation/Editor/SceneAutomationCommand.cs:251)
+MageKnight.SceneAutomation.Editor.SceneAutomationCommand:OnAutomationCompleted (MageKnight.SceneAutomation.SceneAutomationReport) (at Assets/Scripts/SceneAutomation/Editor/SceneAutomationCommand.cs:209)
+MageKnight.SceneAutomation.SceneAutomationRuntimeState:ReportCompleted (MageKnight.SceneAutomation.SceneAutomationReport) (at Assets/Scripts/SceneAutomation/SceneAutomationRuntimeState.cs:64)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator:FinalizeAutomation () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:784)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<Start>d__17:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:134)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/Editor/SceneAutomationCommand.cs Line: 251)
+
+Clearing [msyh SDF] dynamic font asset data.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+TMPro.EditorEventCallbacks/<>c:<InitializeFontAssetResourceChangeCallBacks>b__0_0 () (at ./Library/PackageCache/com.unity.ugui@2.0.0/Editor/TMP/TMP_EditorResourceManager.cs:36)
+UnityEditor.EditorApplication:Internal_EditorApplicationQuit ()
+MageKnight.SceneAutomation.Editor.SceneAutomationCommand:ExitWithCode (int) (at Assets/Scripts/SceneAutomation/Editor/SceneAutomationCommand.cs:283)
+MageKnight.SceneAutomation.Editor.SceneAutomationCommand:OnAutomationCompleted (MageKnight.SceneAutomation.SceneAutomationReport) (at Assets/Scripts/SceneAutomation/Editor/SceneAutomationCommand.cs:211)
+MageKnight.SceneAutomation.SceneAutomationRuntimeState:ReportCompleted (MageKnight.SceneAutomation.SceneAutomationReport) (at Assets/Scripts/SceneAutomation/SceneAutomationRuntimeState.cs:64)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator:FinalizeAutomation () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:784)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<Start>d__17:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:134)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: ./Library/PackageCache/com.unity.ugui@2.0.0/Editor/TMP/TMP_EditorResourceManager.cs Line: 36)
+
+Clearing [msyh TMP Dynamic] dynamic font asset data.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+TMPro.EditorEventCallbacks/<>c:<InitializeFontAssetResourceChangeCallBacks>b__0_0 () (at ./Library/PackageCache/com.unity.ugui@2.0.0/Editor/TMP/TMP_EditorResourceManager.cs:36)
+UnityEditor.EditorApplication:Internal_EditorApplicationQuit ()
+MageKnight.SceneAutomation.Editor.SceneAutomationCommand:ExitWithCode (int) (at Assets/Scripts/SceneAutomation/Editor/SceneAutomationCommand.cs:283)
+MageKnight.SceneAutomation.Editor.SceneAutomationCommand:OnAutomationCompleted (MageKnight.SceneAutomation.SceneAutomationReport) (at Assets/Scripts/SceneAutomation/Editor/SceneAutomationCommand.cs:211)
+MageKnight.SceneAutomation.SceneAutomationRuntimeState:ReportCompleted (MageKnight.SceneAutomation.SceneAutomationReport) (at Assets/Scripts/SceneAutomation/SceneAutomationRuntimeState.cs:64)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator:FinalizeAutomation () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:784)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<Start>d__17:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:134)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: ./Library/PackageCache/com.unity.ugui@2.0.0/Editor/TMP/TMP_EditorResourceManager.cs Line: 36)
+
+[MCP Unity] Editor is quitting. Ensuring server is stopped.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+McpUnity.Utils.McpLogger:LogInfo (string) (at ./Library/PackageCache/com.gamelovers.mcp-unity@0d1b088d96/Editor/Utils/Logger.cs:21)
+McpUnity.Unity.McpUnityServer:OnEditorQuitting () (at ./Library/PackageCache/com.gamelovers.mcp-unity@0d1b088d96/Editor/UnityBridge/McpUnityServer.cs:309)
+UnityEditor.EditorApplication:Internal_EditorApplicationQuit ()
+MageKnight.SceneAutomation.Editor.SceneAutomationCommand:ExitWithCode (int) (at Assets/Scripts/SceneAutomation/Editor/SceneAutomationCommand.cs:283)
+MageKnight.SceneAutomation.Editor.SceneAutomationCommand:OnAutomationCompleted (MageKnight.SceneAutomation.SceneAutomationReport) (at Assets/Scripts/SceneAutomation/Editor/SceneAutomationCommand.cs:211)
+MageKnight.SceneAutomation.SceneAutomationRuntimeState:ReportCompleted (MageKnight.SceneAutomation.SceneAutomationReport) (at Assets/Scripts/SceneAutomation/SceneAutomationRuntimeState.cs:64)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator:FinalizeAutomation () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:784)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<Start>d__17:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:134)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: ./Library/PackageCache/com.gamelovers.mcp-unity@0d1b088d96/Editor/UnityBridge/McpUnityServer.cs Line: 309)
+
+[MCP Unity] WebSocket server stopped
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+McpUnity.Utils.McpLogger:LogInfo (string) (at ./Library/PackageCache/com.gamelovers.mcp-unity@0d1b088d96/Editor/Utils/Logger.cs:21)
+McpUnity.Unity.McpUnityServer:StopServer () (at ./Library/PackageCache/com.gamelovers.mcp-unity@0d1b088d96/Editor/UnityBridge/McpUnityServer.cs:159)
+McpUnity.Unity.McpUnityServer:Dispose () (at ./Library/PackageCache/com.gamelovers.mcp-unity@0d1b088d96/Editor/UnityBridge/McpUnityServer.cs:105)
+McpUnity.Unity.McpUnityServer:OnEditorQuitting () (at ./Library/PackageCache/com.gamelovers.mcp-unity@0d1b088d96/Editor/UnityBridge/McpUnityServer.cs:310)
+UnityEditor.EditorApplication:Internal_EditorApplicationQuit ()
+MageKnight.SceneAutomation.Editor.SceneAutomationCommand:ExitWithCode (int) (at Assets/Scripts/SceneAutomation/Editor/SceneAutomationCommand.cs:283)
+MageKnight.SceneAutomation.Editor.SceneAutomationCommand:OnAutomationCompleted (MageKnight.SceneAutomation.SceneAutomationReport) (at Assets/Scripts/SceneAutomation/Editor/SceneAutomationCommand.cs:211)
+MageKnight.SceneAutomation.SceneAutomationRuntimeState:ReportCompleted (MageKnight.SceneAutomation.SceneAutomationReport) (at Assets/Scripts/SceneAutomation/SceneAutomationRuntimeState.cs:64)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator:FinalizeAutomation () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:784)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<Start>d__17:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:134)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: ./Library/PackageCache/com.gamelovers.mcp-unity@0d1b088d96/Editor/UnityBridge/McpUnityServer.cs Line: 159)
+
+[MCP Unity] WebSocket server stopped and resources cleaned up.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+McpUnity.Utils.McpLogger:LogInfo (string) (at ./Library/PackageCache/com.gamelovers.mcp-unity@0d1b088d96/Editor/Utils/Logger.cs:21)
+McpUnity.Unity.McpUnityServer:StopServer () (at ./Library/PackageCache/com.gamelovers.mcp-unity@0d1b088d96/Editor/UnityBridge/McpUnityServer.cs:169)
+McpUnity.Unity.McpUnityServer:Dispose () (at ./Library/PackageCache/com.gamelovers.mcp-unity@0d1b088d96/Editor/UnityBridge/McpUnityServer.cs:105)
+McpUnity.Unity.McpUnityServer:OnEditorQuitting () (at ./Library/PackageCache/com.gamelovers.mcp-unity@0d1b088d96/Editor/UnityBridge/McpUnityServer.cs:310)
+UnityEditor.EditorApplication:Internal_EditorApplicationQuit ()
+MageKnight.SceneAutomation.Editor.SceneAutomationCommand:ExitWithCode (int) (at Assets/Scripts/SceneAutomation/Editor/SceneAutomationCommand.cs:283)
+MageKnight.SceneAutomation.Editor.SceneAutomationCommand:OnAutomationCompleted (MageKnight.SceneAutomation.SceneAutomationReport) (at Assets/Scripts/SceneAutomation/Editor/SceneAutomationCommand.cs:211)
+MageKnight.SceneAutomation.SceneAutomationRuntimeState:ReportCompleted (MageKnight.SceneAutomation.SceneAutomationReport) (at Assets/Scripts/SceneAutomation/SceneAutomationRuntimeState.cs:64)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator:FinalizeAutomation () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:784)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<Start>d__17:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:134)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: ./Library/PackageCache/com.gamelovers.mcp-unity@0d1b088d96/Editor/UnityBridge/McpUnityServer.cs Line: 169)
+
+Start importing Assets/Resources/Fonts/msyh TMP Dynamic.asset using Guid(68b4f96ca6fe21648adf898695211819) (NativeFormatImporter) -> (artifact id: '25765170f0d1a129c5e85fe03f4288ef') in 0.0631921 seconds
+Start importing Assets/Fonts/msyh SDF.asset using Guid(8df5115a1ef27b24e8e0b220c43a8364) (NativeFormatImporter) -> (artifact id: '6bd19f4ff4ffdf9f1f554d14d58b9fe9') in 0.0016857 seconds
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=2a1231b469a70ce47a25b7f071969d1c): Total: 0.239 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+[SceneAutomation] OnDisable (activeInHierarchy: False)
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator:OnDisable () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:52)
+MageKnight.SceneAutomation.Editor.SceneAutomationCommand:ExitWithCode (int) (at Assets/Scripts/SceneAutomation/Editor/SceneAutomationCommand.cs:283)
+MageKnight.SceneAutomation.Editor.SceneAutomationCommand:OnAutomationCompleted (MageKnight.SceneAutomation.SceneAutomationReport) (at Assets/Scripts/SceneAutomation/Editor/SceneAutomationCommand.cs:211)
+MageKnight.SceneAutomation.SceneAutomationRuntimeState:ReportCompleted (MageKnight.SceneAutomation.SceneAutomationReport) (at Assets/Scripts/SceneAutomation/SceneAutomationRuntimeState.cs:64)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator:FinalizeAutomation () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:784)
+MageKnight.SceneAutomation.SceneAutomationOrchestrator/<Start>d__17:MoveNext () (at Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs:134)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs Line: 52)
+
+[Licensing::IpcConnector] License Notification channel disconnected successfully.
+[Licensing::IpcConnector] License Client channel disconnected successfully.
+AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
+[Performance] WinEditorMain                                                                                                                        :        1 samples, Peak.  5.82 s (1.0x), Avg.  5.82 s, Total. 5.819 s (36.2%)
+[Performance] WinEditorMain.ConfigureCrashHandler                                                                                                  :        1 samples, Peak.  53.8 us (1.0x), Avg.  53.8 us, Total. 53.80 us (0.0%)
+[Performance] WinEditorMain.CurlRequestInitialize                                                                                                  :        1 samples, Peak.   637 us (1.0x), Avg.   637 us, Total. 637.2 us (0.0%)
+[Performance] WinEditorMain.SetupLogFile                                                                                                           :        1 samples, Peak.   141 us (1.0x), Avg.   141 us, Total. 140.8 us (0.0%)
+[Performance] WinEditorMain.RunNativeTestsIfRequiredAndExit                                                                                        :        1 samples, Peak. 0.0 (-nan(ind)x), Avg. 0.0, Total. 0.0 (0.0%)
+[Performance] WinEditorMain.Licensing                                                                                                              :        1 samples, Peak.  5.79 s (1.0x), Avg.  5.79 s, Total. 5.790 s (36.0%)
+[Performance] WinEditorMain.InitializeCrashHandler                                                                                                 :        1 samples, Peak.  14.2 ms (1.0x), Avg.  14.2 ms, Total. 14.24 ms (0.1%)
+[Performance] WinEditorMain.CreateApplication                                                                                                      :        1 samples, Peak.  12.2 ms (1.0x), Avg.  12.2 ms, Total. 12.20 ms (0.1%)
+[Performance] Application.InitializeProject                                                                                                        :        1 samples, Peak.  5.40 s (1.0x), Avg.  5.40 s, Total. 5.399 s (33.6%)
+[Performance] Application.PackageManager.StartServer                                                                                               :        1 samples, Peak.  2.37 ms (1.0x), Avg.  2.37 ms, Total. 2.373 ms (0.0%)
+[Performance] Application.AcquireProjectLock                                                                                                       :        1 samples, Peak.  2.37 ms (1.0x), Avg.  2.37 ms, Total. 2.374 ms (0.0%)
+[Performance] Application.InitializeEngineNoGraphics                                                                                               :        1 samples, Peak.  37.2 ms (1.0x), Avg.  37.2 ms, Total. 37.21 ms (0.2%)
+[Performance] Application.PackageManager.Initialize                                                                                                :        1 samples, Peak.   230 ms (1.0x), Avg.   230 ms, Total. 230.1 ms (1.4%)
+[Performance] Connecting to Package Manager                                                                                                        :       24 samples, Peak.  53.8 us (17.5x), Avg.  3.07 us, Total. 73.60 us (0.0%)
+[Performance] Application.EngineGraphics.Initialize                                                                                                :        1 samples, Peak.   238 ms (1.0x), Avg.   238 ms, Total. 238.3 ms (1.5%)
+[Performance] Application.GI.Initialize                                                                                                            :        1 samples, Peak.  1.84 ms (1.0x), Avg.  1.84 ms, Total. 1.836 ms (0.0%)
+[Performance] Application.LoadAllDefaultResourcesFromEditor                                                                                        :        1 samples, Peak.  1.24 ms (1.0x), Avg.  1.24 ms, Total. 1.238 ms (0.0%)
+[Performance] Application.LoadMonoAssemblies                                                                                                       :        1 samples, Peak.   411 ms (1.0x), Avg.   411 ms, Total. 410.8 ms (2.6%)
+[Performance] RestoreManagedReferences                                                                                                             :        3 samples, Peak.  64.1 ms (1.6x), Avg.  41.0 ms, Total. 122.9 ms (0.8%)
+[Performance] AssemblyReloadEvents.afterAssemblyReload: UnityEditor.SceneTemplate.SceneTemplateService.AfterAssemblyReload                         :        3 samples, Peak.  2.45 ms (1.4x), Avg.  1.71 ms, Total. 5.144 ms (0.0%)
+[Performance] ProcessService.EditorAfterLoadAllAssemblies                                                                                          :        3 samples, Peak.   238 us (1.1x), Avg.   217 us, Total. 649.5 us (0.0%)
+[Performance] Application.ReadLicenseInfo                                                                                                          :        1 samples, Peak.  23.0 ms (1.0x), Avg.  23.0 ms, Total. 23.04 ms (0.1%)
+[Performance] Application.InitialRefresh                                                                                                           :        1 samples, Peak.  2.33 s (1.0x), Avg.  2.33 s, Total. 2.327 s (14.5%)
+[Performance] AssetDatabase.InitialRefresh                                                                                                         :        1 samples, Peak.  2.33 s (1.0x), Avg.  2.33 s, Total. 2.325 s (14.5%)
+[Performance] Compiling Scripts                                                                                                                    :        1 samples, Peak.   447 ms (1.0x), Avg.   447 ms, Total. 446.9 ms (2.8%)
+[Performance] AssemblyReloadEvents.beforeAssemblyReload: UnityEditor.SceneTemplate.SceneTemplateService.BeforeAssemblyReload                       :        2 samples, Peak.   497 us (1.6x), Avg.   312 us, Total. 624.0 us (0.0%)
+[Performance] EditorResources.Load                                                                                                                 :     9225 samples, Peak.  29.7 ms (2879.1x), Avg.  10.3 us, Total. 95.17 ms (0.6%)
+[Performance] DidReloadScriptsTestListCache.ScriptReloaded                                                                                         :        2 samples, Peak.   894 us (1.8x), Avg.   494 us, Total. 988.6 us (0.0%)
+[Performance] DidReloadScriptsTestRunnerWindow.CompilationCallback                                                                                 :        2 samples, Peak.   625 us (1.1x), Avg.   593 us, Total. 1.185 ms (0.0%)
+[Performance] DidReloadScriptsLookDev.OnEditorReload                                                                                               :        2 samples, Peak.   160 us (1.1x), Avg.   151 us, Total. 301.5 us (0.0%)
+[Performance] DidReloadScriptsDebugWindow.OnEditorReload                                                                                           :        2 samples, Peak.  3.45 ms (1.1x), Avg.  3.21 ms, Total. 6.413 ms (0.0%)
+[Performance] DidReloadScriptsVolumeComponentEditor.OnEditorReload                                                                                 :        2 samples, Peak.  12.4 ms (1.1x), Avg.  11.1 ms, Total. 22.26 ms (0.1%)
+[Performance] DidReloadScriptsAdvancedDropdownWindow.OnScriptReload                                                                                :        4 samples, Peak.   227 us (1.4x), Avg.   162 us, Total. 648.9 us (0.0%)
+[Performance] DidReloadScriptsEditorMenuExtensions.FindAndCloseAllContextMenus                                                                     :        2 samples, Peak.  1.50 ms (1.0x), Avg.  1.48 ms, Total. 2.967 ms (0.0%)
+[Performance] UniversalRenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets                                                            :        6 samples, Peak.  8.82 ms (2.3x), Avg.  3.81 ms, Total. 22.87 ms (0.1%)
+[Performance] TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets                                                                            :        6 samples, Peak.   233 us (1.5x), Avg.   154 us, Total. 924.1 us (0.0%)
+[Performance] SyncVS.PostprocessSyncProject                                                                                                        :        3 samples, Peak.  6.95 ms (1.4x), Avg.  4.91 ms, Total. 14.72 ms (0.1%)
+[Performance] Application.ImportPackagesAndSetTemplateWhenCreatingProject                                                                          :        1 samples, Peak.  8.44 ms (1.0x), Avg.  8.44 ms, Total. 8.444 ms (0.1%)
+[Performance] Application.SyncCurrentColorSpace                                                                                                    :        1 samples, Peak.   930 ms (1.0x), Avg.   930 ms, Total. 930.5 ms (5.8%)
+[Performance] Application.OnUsbDevicesChanged                                                                                                      :        1 samples, Peak.  6.33 ms (1.0x), Avg.  6.33 ms, Total. 6.333 ms (0.0%)
+[Performance] Application.AssetInstanceCacheUpdate                                                                                                 :        1 samples, Peak.   200 ns (1.0x), Avg.   200 ns, Total. 200.0 ns (0.0%)
+[Performance] Application.UnityExtensions.Initialize                                                                                               :        1 samples, Peak.  30.7 ms (1.0x), Avg.  30.7 ms, Total. 30.74 ms (0.2%)
+[Performance] CodeEditorProjectSync.SyncEditorProject                                                                                              :        1 samples, Peak.   348 ms (1.0x), Avg.   348 ms, Total. 347.5 ms (2.2%)
+[Performance] Application.ExecuteStartups                                                                                                          :        1 samples, Peak.  32.1 ms (1.0x), Avg.  32.1 ms, Total. 32.12 ms (0.2%)
+[Performance] Menu.RegisterMenuInterface                                                                                                           :       26 samples, Peak.  1.90 us (8.5x), Avg.   223 ns, Total. 5.800 us (0.0%)
+[Performance] Gizmo.RebuildRenderers                                                                                                               :        3 samples, Peak.  31.1 ms (2.7x), Avg.  11.3 ms, Total. 34.02 ms (0.2%)
+[Performance] Gizmo.AddGizmoRenderers                                                                                                              :      399 samples, Peak.   927 us (73.8x), Avg.  12.6 us, Total. 5.014 ms (0.0%)
+[Performance] Application.editorInitializingProject                                                                                                :        1 samples, Peak.  98.8 ms (1.0x), Avg.  98.8 ms, Total. 98.83 ms (0.6%)
+[Performance] Application.FinishLoadingProject                                                                                                     :        1 samples, Peak.   180 ms (1.0x), Avg.   180 ms, Total. 180.0 ms (1.1%)
+[Performance] Application.InitializeMenu                                                                                                           :        1 samples, Peak.  85.0 ms (1.0x), Avg.  85.0 ms, Total. 85.05 ms (0.5%)
+[Performance] Menu.RebuildAll                                                                                                                      :        1 samples, Peak.  85.0 ms (1.0x), Avg.  85.0 ms, Total. 85.04 ms (0.5%)
+[Performance] Menu.BuildRegisteredMenuInterfaces                                                                                                   :        1 samples, Peak.  82.8 ms (1.0x), Avg.  82.8 ms, Total. 82.84 ms (0.5%)
+[Performance] Menu.FilterMenuItem                                                                                                                  :      861 samples, Peak.  63.0 ms (856.0x), Avg.  73.6 us, Total. 63.35 ms (0.4%)
+[Performance] UpdateAllMenus                                                                                                                       :        1 samples, Peak.   604 us (1.0x), Avg.   604 us, Total. 604.5 us (0.0%)
+[Performance] Menu.RebuildOSMainMenu                                                                                                               :        1 samples, Peak.  1.06 ms (1.0x), Avg.  1.06 ms, Total. 1.061 ms (0.0%)
+[Performance] EditorSceneManager.sceneClosing: UnityEditor.SceneVisibilityManager.EditorSceneManagerOnSceneClosing                                 :        3 samples, Peak.   155 us (1.5x), Avg.   103 us, Total. 308.8 us (0.0%)
+[Performance] GUIView.RepaintAll.PlayerLoopController                                                                                              :      815 samples, Peak.  4.83 ms (4.2x), Avg.  1.15 ms, Total. 939.5 ms (5.8%)
+[Performance] EditorSceneManager.newSceneCreated: UnityEditor.SceneTemplate.SceneTemplateService.OnNewSceneCreated                                 :        1 samples, Peak.   182 us (1.0x), Avg.   182 us, Total. 182.2 us (0.0%)
+[Performance] EditorSceneManager.newSceneCreated: UnityEditor.SceneVisibilityManager.EditorSceneManagerOnNewSceneCreated                           :        1 samples, Peak.   281 us (1.0x), Avg.   281 us, Total. 280.6 us (0.0%)
+[Performance] EditorSceneManager.newSceneCreated: UnityEditor.SceneManagement.StageNavigationManager.OnNewSceneCreated                             :        1 samples, Peak.  46.6 us (1.0x), Avg.  46.6 us, Total. 46.60 us (0.0%)
+[Performance] Application.InvokeFinishedLoadingProject                                                                                             :        1 samples, Peak.  13.0 ms (1.0x), Avg.  13.0 ms, Total. 13.02 ms (0.1%)
+[Performance] ProcessService.OnProjectLoaded                                                                                                       :        1 samples, Peak.   224 us (1.0x), Avg.   224 us, Total. 223.9 us (0.0%)
+[Performance] VersionControl.Task.Wait                                                                                                             :        1 samples, Peak.  9.50 us (1.0x), Avg.  9.50 us, Total. 9.500 us (0.0%)
+[Performance] EditorSceneManager.sceneOpening: UnityEditor.SceneVisibilityManager.EditorSceneManagerOnSceneOpening                                 :        1 samples, Peak.   101 us (1.0x), Avg.   101 us, Total. 101.4 us (0.0%)
+[Performance] Inspector.InitOrRebuild                                                                                                              :        4 samples, Peak.  7.63 ms (3.6x), Avg.  2.13 ms, Total. 8.504 ms (0.1%)
+[Performance] EditorSceneManager.sceneOpened: UnityEditor.SceneTemplate.SceneTemplateService.OnSceneOpened                                         :        1 samples, Peak.   154 us (1.0x), Avg.   154 us, Total. 154.4 us (0.0%)
+[Performance] EditorSceneManager.sceneOpened: UnityEditor.SceneVisibilityManager.EditorSceneManagerOnSceneOpened                                   :        1 samples, Peak.  94.9 us (1.0x), Avg.  94.9 us, Total. 94.90 us (0.0%)
+[Performance] EditorSceneManager.sceneOpened: UnityEditor.SceneManagement.StageNavigationManager.OnSceneOpened                                     :        1 samples, Peak.  32.3 us (1.0x), Avg.  32.3 us, Total. 32.30 us (0.0%)
+[Performance] EditorApplication.playModeStateChanged                                                                                               :        1 samples, Peak.  29.3 ms (1.0x), Avg.  29.3 ms, Total. 29.27 ms (0.2%)
+[Performance] EditorApplication.playModeStateChanged: UnityEditor.PackageManager.UI.Internal.PlayModeDownload.PlayModeStateChanged                 :        2 samples, Peak.   303 us (1.4x), Avg.   210 us, Total. 420.9 us (0.0%)
+[Performance] EditorApplication.playModeStateChanged: UnityEditor.TestTools.TestRunner.PlaymodeLauncher+BackgroundWatcher.OnPlayModeStateChanged   :        2 samples, Peak.   466 us (1.4x), Avg.   325 us, Total. 650.0 us (0.0%)
+[Performance] EditorApplication.playModeStateChanged: Unity.Burst.Editor.BurstLoader.EditorApplicationOnPlayModeStateChanged                       :        2 samples, Peak.  51.5 us (1.0x), Avg.  50.9 us, Total. 101.8 us (0.0%)
+[Performance] EditorApplication.playModeStateChanged: UnityEngine.InputSystem.LowLevel.NativeInputRuntime.OnPlayModeStateChanged                   :        2 samples, Peak.   368 us (1.2x), Avg.   312 us, Total. 624.3 us (0.0%)
+[Performance] EditorApplication.playModeStateChanged: UnityEngine.Rendering.Universal.ShadowCasterGroup2DManager.OnPlayModeStateChanged            :        2 samples, Peak.   162 us (1.0x), Avg.   155 us, Total. 311.0 us (0.0%)
+[Performance] EditorApplication.playModeStateChanged: UnityEditor.AddressableAssets.Build.AddressablesBuildScriptHooks.OnEditorPlayModeChanged     :        2 samples, Peak.  27.0 ms (2.0x), Avg.  13.6 ms, Total. 27.21 ms (0.2%)
+[Performance] EditorApplication.playModeStateChanged: UnityEngine.AddressableAssets.Addressables.SetAddressablesReInitFlagOnExitPlayMode           :        2 samples, Peak.  17.8 us (1.1x), Avg.  16.0 us, Total. 32.00 us (0.0%)
+[Performance] EditorApplication.playModeStateChanged: UnityEngine.AddressableAssets.AssetReference.EditorApplicationOnplayModeStateChanged         :        2 samples, Peak.   148 us (1.1x), Avg.   131 us, Total. 262.8 us (0.0%)
+[Performance] EditorApplication.playModeStateChanged: UnityEditor.SceneManagement.EditorSceneManager.PlayModeStateChangedCallback                  :        2 samples, Peak.  22.3 us (1.1x), Avg.  20.7 us, Total. 41.40 us (0.0%)
+[Performance] EditorApplication.playModeStateChanged: UnityEditor.PackageManager.UI.Internal.ApplicationProxy.PlayModeStateChanged                 :        2 samples, Peak.   153 us (1.2x), Avg.   126 us, Total. 251.4 us (0.0%)
+[Performance] EditorApplication.playModeStateChanged: UnityEditor.SceneVisibilityManager.EditorApplicationPlayModeStateChanged                     :        2 samples, Peak.  23.6 us (1.0x), Avg.  22.6 us, Total. 45.20 us (0.0%)
+[Performance] EditorApplication.playModeStateChanged: UnityEditor.TestTools.TestRunner.TestRunnerWindow.OnPlayModeStateChanged                     :        2 samples, Peak.  95.2 us (1.2x), Avg.  82.1 us, Total. 164.2 us (0.0%)
+[Performance] EditorApplication.playModeStateChanged: MageKnight.SceneAutomation.Editor.SceneAutomationCommand.OnPlayModeStateChanged              :        2 samples, Peak.  39.7 us (1.1x), Avg.  35.3 us, Total. 70.50 us (0.0%)
+[Performance] Application.InvokeProjectWasLoaded                                                                                                   :        1 samples, Peak.  35.9 us (1.0x), Avg.  35.9 us, Total. 35.90 us (0.0%)
+[Performance] Application.Message                                                                                                                  :      814 samples, Peak.   403 ms (813.0x), Avg.   495 us, Total. 403.3 ms (2.5%)
+[Performance] Application.Message.Timer                                                                                                            :        7 samples, Peak.  32.5 us (1.9x), Avg.  17.5 us, Total. 122.5 us (0.0%)
+[Performance] Application.Message.WM_0031F                                                                                                         :        2 samples, Peak.  6.00 us (1.3x), Avg.  4.60 us, Total. 9.200 us (0.0%)
+[Performance] Application.Tick                                                                                                                     :      813 samples, Peak.  1.41 s (386.2x), Avg.  3.66 ms, Total. 2.974 s (18.5%)
+[Performance] CheckLicensingClient                                                                                                                 :        1 samples, Peak.  7.10 us (1.0x), Avg.  7.10 us, Total. 7.100 us (0.0%)
+[Performance] CheckLicensingClientNotification                                                                                                     :        1 samples, Peak.  8.40 us (1.0x), Avg.  8.40 us, Total. 8.400 us (0.0%)
+[Performance] Application.TickVersionControl                                                                                                       :      814 samples, Peak.  1.90 us (4.5x), Avg.   421 ns, Total. 342.8 us (0.0%)
+[Performance] MonoCompiler.Tick                                                                                                                    :        9 samples, Peak.  1.15 s (9.0x), Avg.   128 ms, Total. 1.148 s (7.1%)
+[Performance] Application.EnterPlayMode                                                                                                            :        1 samples, Peak.  1.15 s (1.0x), Avg.  1.15 s, Total. 1.146 s (7.1%)
+[Performance] Application.Reload                                                                                                                   :        1 samples, Peak.   976 ms (1.0x), Avg.   976 ms, Total. 975.7 ms (6.1%)
+[Performance] AssemblyReloadEvents.beforeAssemblyReload: UnityEditor.Rendering.Analytics.DebugManagerWindowLifetimeAnalytic.OnBeforeAssemblyReload :        1 samples, Peak.   257 us (1.0x), Avg.   257 us, Total. 256.9 us (0.0%)
+[Performance] SceneDataContainer.TransformHierarchyChangedSetParentCallback                                                                        :       15 samples, Peak.  8.80 us (7.7x), Avg.  1.15 us, Total. 17.20 us (0.0%)
+[Performance] SceneVisibilityState.IsFlagSetInParents                                                                                              :       33 samples, Peak.   900 ns (3.8x), Avg.   239 ns, Total. 7.900 us (0.0%)
+[Performance] TimelineAnalyticsProcess.OnProcessScene                                                                                              :        1 samples, Peak.  1.28 ms (1.0x), Avg.  1.28 ms, Total. 1.283 ms (0.0%)
+[Performance] URPProcessScene.OnProcessScene                                                                                                       :        1 samples, Peak.   717 us (1.0x), Avg.   717 us, Total. 717.0 us (0.0%)
+[Performance] UnityBuildPostprocessor.OnProcessScene                                                                                               :        1 samples, Peak.   445 us (1.0x), Avg.   445 us, Total. 445.5 us (0.0%)
+[Performance] UnityConnect.Tick                                                                                                                    :        1 samples, Peak.  6.93 ms (1.0x), Avg.  6.93 ms, Total. 6.929 ms (0.0%)
+[Performance] UnityVersionControl.Tick                                                                                                             :        1 samples, Peak.  1000 ns (1.0x), Avg.  1000 ns, Total. 1000.0 ns (0.0%)
+[Performance] CurlRequest.Tick                                                                                                                     :       17 samples, Peak.  51.5 us (13.1x), Avg.  3.92 us, Total. 66.60 us (0.0%)
+[Performance] WebSocketClient.Tick                                                                                                                 :       17 samples, Peak.  1.20 us (3.6x), Avg.   329 ns, Total. 5.600 us (0.0%)
+[Performance] AssetDatabase.Tick                                                                                                                   :       17 samples, Peak.  42.6 us (15.9x), Avg.  2.68 us, Total. 45.50 us (0.0%)
+[Performance] SceneBackgroundTask.Tick                                                                                                             :       12 samples, Peak.  2.10 us (8.1x), Avg.   258 ns, Total. 3.100 us (0.0%)
+[Performance] Scheduler.Tick                                                                                                                       :      143 samples, Peak.  1.80 ms (54.8x), Avg.  32.8 us, Total. 4.694 ms (0.0%)
+[Performance] RepaintAllProfilerWindows                                                                                                            :        5 samples, Peak.   202 us (4.9x), Avg.  41.6 us, Total. 207.8 us (0.0%)
+[Performance] PlayerUpdates.Tick                                                                                                                   :       32 samples, Peak.  15.7 us (1.5x), Avg.  10.6 us, Total. 338.7 us (0.0%)
+[Performance] Application.TickGlobalCallbacks                                                                                                      :      814 samples, Peak.  51.2 ms (671.2x), Avg.  76.3 us, Total. 62.08 ms (0.4%)
+[Performance] EditorAnalytics.Tick                                                                                                                 :        8 samples, Peak.   307 us (7.5x), Avg.  41.0 us, Total. 328.1 us (0.0%)
+[Performance] Video.Update                                                                                                                         :      814 samples, Peak.  2.80 us (9.6x), Avg.   293 ns, Total. 238.3 us (0.0%)
+[Performance] Application.TickProgress                                                                                                             :      814 samples, Peak.  2.32 ms (731.8x), Avg.  3.17 us, Total. 2.582 ms (0.0%)
+[Performance] Application.TickSceneTracker                                                                                                         :      814 samples, Peak.  9.28 ms (16.8x), Avg.   551 us, Total. 448.6 ms (2.8%)
+[Performance] EditorApplication.update                                                                                                             :      814 samples, Peak.  9.18 ms (16.8x), Avg.   545 us, Total. 443.5 ms (2.8%)
+[Performance] EditorApplication.update: CcrCompileBridge.OnEditorUpdate                                                                            :      814 samples, Peak.  2.90 ms (5.8x), Avg.   503 us, Total. 409.6 ms (2.5%)
+[Performance] EditorApplication.update: Unity.PlasticSCM.Editor.Hub.ProcessHubCommand.RunOnceWhenAccessTokenIsInitialized                          :      814 samples, Peak.   193 us (192.8x), Avg.  1.00 us, Total. 816.1 us (0.0%)
+[Performance] EditorApplication.update: UnityEngine.Rendering.ProbeSubdivisionContext+RealtimeProbeSubdivisionDebug.UpdateRealtimeSubdivisionDebug :      814 samples, Peak.  2.07 ms (731.1x), Avg.  2.84 us, Total. 2.308 ms (0.0%)
+[Performance] EditorApplication.update: callback in Microsoft.Unity.VisualStudio.Editor.VisualStudioIntegration                                    :        1 samples, Peak.  1.19 ms (1.0x), Avg.  1.19 ms, Total. 1.189 ms (0.0%)
+[Performance] EditorApplication.update: Microsoft.Unity.VisualStudio.Editor.VisualStudioIntegration.OnUpdate                                       :      814 samples, Peak.   248 us (240.1x), Avg.  1.03 us, Total. 840.5 us (0.0%)
+[Performance] EditorApplication.update: callback in UnityEditor.Rendering.Universal.MaterialReimporter                                             :      814 samples, Peak.   764 us (324.0x), Avg.  2.36 us, Total. 1.921 ms (0.0%)
+[Performance] EditorApplication.update: UnityEditor.PackageManager.UI.Internal.ApplicationProxy.OnUpdate                                           :      814 samples, Peak.   808 us (304.6x), Avg.  2.65 us, Total. 2.159 ms (0.0%)
+[Performance] EditorApplication.update: UnityEditor.SceneManagement.StageNavigationManager.Update                                                  :      814 samples, Peak.   250 us (472.0x), Avg.   530 ns, Total. 431.7 us (0.0%)
+[Performance] EditorApplication.update: UnityEditor.TestTools.TestRunner.TestRunnerWindow.UpdateProgressBar                                        :      814 samples, Peak.  46.6 us (219.6x), Avg.   212 ns, Total. 172.7 us (0.0%)
+[Performance] ConsoleLog.Tick                                                                                                                      :        9 samples, Peak.   137 us (7.4x), Avg.  18.5 us, Total. 166.1 us (0.0%)
+[Performance] HierarchyWindow.Tick                                                                                                                 :       12 samples, Peak.   216 us (11.8x), Avg.  18.3 us, Total. 219.7 us (0.0%)
+[Performance] EditorApplication.hierarchyChanged: Unity.UIElements.Editor.UIDocumentHierarchyWatcher.OnHierarchyChanged                            :        1 samples, Peak.  79.8 us (1.0x), Avg.  79.8 us, Total. 79.80 us (0.0%)
+[Performance] Inspector.Tick                                                                                                                       :       12 samples, Peak.  52.6 ms (12.0x), Avg.  4.39 ms, Total. 52.71 ms (0.3%)
+[Performance] EditorApplication.delayCall: UnityEngine.Rendering.ProbeVolumeSceneData.MigrateBakingSets                                            :        2 samples, Peak.   230 us (2.0x), Avg.   116 us, Total. 231.1 us (0.0%)
+[Performance] EditorApplication.delayCall: UnityEditor.ShortcutManagement.ShortcutIntegration.EnsureShortcutsAreInitialized                        :        1 samples, Peak.  21.5 ms (1.0x), Avg.  21.5 ms, Total. 21.55 ms (0.1%)
+[Performance] EditorApplication.delayCall: TestSceneSetup.SetupTestScenes                                                                          :        1 samples, Peak.   836 us (1.0x), Avg.   836 us, Total. 835.6 us (0.0%)
+[Performance] EditorApplication.delayCall: ReadmeEditor.SelectReadmeAutomatically                                                                  :        1 samples, Peak.  12.1 ms (1.0x), Avg.  12.1 ms, Total. 12.12 ms (0.1%)
+[Performance] EditorApplication.delayCall: callback in McpUnity.Unity.McpUnityServer                                                               :        1 samples, Peak.  9.19 ms (1.0x), Avg.  9.19 ms, Total. 9.186 ms (0.1%)
+[Performance] EditorApplication.delayCall: callback in UnityEditor.AI.NavMeshEditorHelpers                                                         :        1 samples, Peak.  30.0 us (1.0x), Avg.  30.0 us, Total. 30.00 us (0.0%)
+[Performance] EditorApplication.delayCall: UnityEngine.InputSystem.InputSystem.SetUpRemotingInternal                                               :        1 samples, Peak.  6.81 ms (1.0x), Avg.  6.81 ms, Total. 6.815 ms (0.0%)
+[Performance] EditorApplication.delayCall: callback in UnityEngine.InputSystem.EnhancedTouch.TouchSimulation                                       :        1 samples, Peak.  37.4 us (1.0x), Avg.  37.4 us, Total. 37.40 us (0.0%)
+[Performance] EditorApplication.delayCall: callback in UnityEditor.EditorWindow                                                                    :        1 samples, Peak.   237 us (1.0x), Avg.   237 us, Total. 237.3 us (0.0%)
+[Performance] EditorApplication.delayCall: callback in UnityEditor.EditorTools.ToolShortcutContext                                                 :        1 samples, Peak.  56.9 us (1.0x), Avg.  56.9 us, Total. 56.90 us (0.0%)
+[Performance] EditorApplication.delayCall: callback in UnityEditor.RectSelection                                                                   :        1 samples, Peak.  22.6 us (1.0x), Avg.  22.6 us, Total. 22.60 us (0.0%)
+[Performance] EditorApplication.delayCall: callback in UnityEditor.SceneViewMotion                                                                 :        1 samples, Peak.   157 us (1.0x), Avg.   157 us, Total. 157.4 us (0.0%)
+[Performance] EditorApplication.delayCall: callback in UnityEditor.SceneVisibilityManager                                                          :        1 samples, Peak.  26.8 us (1.0x), Avg.  26.8 us, Total. 26.80 us (0.0%)
+[Performance] EditorApplication.delayCall: UnityEngine.Rendering.VolumeProfile.<OnValidate>b__19_0                                                 :        1 samples, Peak.   763 us (1.0x), Avg.   763 us, Total. 763.0 us (0.0%)
+[Performance] Tooltip.Tick                                                                                                                         :       32 samples, Peak.  44.1 us (24.9x), Avg.  1.77 us, Total. 56.60 us (0.0%)
+[Performance] Application.RequestRepaintForPanels                                                                                                  :      814 samples, Peak.   253 us (110.4x), Avg.  2.29 us, Total. 1.868 ms (0.0%)
+[Performance] Application.UpdateScene                                                                                                              :      813 samples, Peak.  15.6 ms (11.5x), Avg.  1.35 ms, Total. 1.102 s (6.8%)
+[Performance] Selection.selectionChanged: UnityEditor.PackageManager.UI.Internal.SelectionProxy.OnSelectionChanged                                 :        2 samples, Peak.   345 us (1.5x), Avg.   224 us, Total. 448.0 us (0.0%)
+[Performance] Selection.selectionChanged: UnityEditorInternal.EditMode.OnSelectionChange                                                           :        2 samples, Peak.   277 us (2.0x), Avg.   139 us, Total. 277.9 us (0.0%)
+[Performance] PackageImporter.Tick                                                                                                                 :        9 samples, Peak.   600 ns (2.0x), Avg.   300 ns, Total. 2.700 us (0.0%)
+[Performance] InspectorBackground.Tick                                                                                                             :       12 samples, Peak.  2.10 us (4.2x), Avg.   500 ns, Total. 6.000 us (0.0%)
+[Performance] BurstDebug.Tick                                                                                                                      :        5 samples, Peak.   800 ns (1.4x), Avg.   560 ns, Total. 2.800 us (0.0%)
+[Performance] Application.ChangeLayoutIfNeeded                                                                                                     :      813 samples, Peak.   126 ms (812.3x), Avg.   155 us, Total. 125.7 ms (0.8%)
+[Performance] BuildCatalog                                                                                                                         :        1 samples, Peak.  10.1 ms (1.0x), Avg.  10.1 ms, Total. 10.08 ms (0.1%)
+[Performance] GameView.OnBackingScaleFactorChanged                                                                                                 :        1 samples, Peak.  1.01 ms (1.0x), Avg.  1.01 ms, Total. 1.008 ms (0.0%)
+[Performance] ContainerWindow.OnResize                                                                                                             :        2 samples, Peak.  2.03 ms (1.8x), Avg.  1.14 ms, Total. 2.277 ms (0.0%)
+[Performance] AsyncReadManager.ForceCloseFiles                                                                                                     :        2 samples, Peak.  52.6 us (1.2x), Avg.  44.6 us, Total. 89.10 us (0.0%)
+[Performance] Application.Message.Paint                                                                                                            :        2 samples, Peak.   403 ms (2.0x), Avg.   201 ms, Total. 402.8 ms (2.5%)
+[Performance] GameView.Paint                                                                                                                       :      813 samples, Peak.   402 ms (243.7x), Avg.  1.65 ms, Total. 1.340 s (8.3%)
+[Performance] GameView.SetActiveWindowAsPresented                                                                                                  :        1 samples, Peak.  91.1 us (1.0x), Avg.  91.1 us, Total. 91.10 us (0.0%)
+[Performance] GameView.Repaint                                                                                                                     :      813 samples, Peak.   399 ms (245.0x), Avg.  1.63 ms, Total. 1.324 s (8.2%)
+[Performance] RefreshSkin                                                                                                                          :        1 samples, Peak.  71.3 ms (1.0x), Avg.  71.3 ms, Total. 71.35 ms (0.4%)
+[Performance] EditorApplication.update: McpUnity.Services.ConsoleLogsService.CheckConsoleClearViaReflection                                        :      813 samples, Peak.   296 us (13.1x), Avg.  22.6 us, Total. 18.36 ms (0.1%)
+[Performance] EditorApplication.update: UnityEditor.GameView.RepaintIfNeeded                                                                       :      813 samples, Peak.  67.5 us (60.0x), Avg.  1.13 us, Total. 915.3 us (0.0%)
+[Performance] EditorApplication.update: UnityEditor.Rendering.Universal.SceneViewDrawMode.UpdateSceneViewStates                                    :      813 samples, Peak.   134 us (149.3x), Avg.   895 ns, Total. 727.6 us (0.0%)
+[Performance] GameView.OnInspectorUpdate                                                                                                           :       11 samples, Peak.  25.4 us (4.1x), Avg.  6.15 us, Total. 67.70 us (0.0%)
+[Performance] GameView.OnSelectionChange                                                                                                           :        1 samples, Peak.  44.0 us (1.0x), Avg.  44.0 us, Total. 44.00 us (0.0%)
+[Performance] Application.Shutdown.SaveDefaultWindowPreferences                                                                                    :        1 samples, Peak.  27.6 us (1.0x), Avg.  27.6 us, Total. 27.60 us (0.0%)
+[Performance] Application.Shutdown.SaveSceneManagerSetup                                                                                           :        1 samples, Peak.   202 us (1.0x), Avg.   202 us, Total. 202.0 us (0.0%)
+[Performance] Application.Shutdown.CleanupAllContainerWindows                                                                                      :        1 samples, Peak.   147 ms (1.0x), Avg.   147 ms, Total. 147.0 ms (0.9%)
+[Performance] ContainerWindow.RequestCloseSentByNativeCode                                                                                         :        1 samples, Peak.   147 ms (1.0x), Avg.   147 ms, Total. 146.6 ms (0.9%)
+[Performance] EditorApplication.quitting: Unity.Burst.Editor.BurstLoader.OnEditorApplicationQuitting                                               :        1 samples, Peak.  18.3 us (1.0x), Avg.  18.3 us, Total. 18.30 us (0.0%)
+[Performance] EditorApplication.quitting: callback in TMPro.EditorEventCallbacks                                                                   :        1 samples, Peak.  97.8 ms (1.0x), Avg.  97.8 ms, Total. 97.80 ms (0.6%)
+[Performance] EditorApplication.quitting: callback in UnityEditor.TextCore.Text.EditorEventCallbacks                                               :        1 samples, Peak.  6.66 ms (1.0x), Avg.  6.66 ms, Total. 6.659 ms (0.0%)
+[Performance] EditorApplication.quitting: McpUnity.Unity.McpUnityServer.OnEditorQuitting                                                           :        1 samples, Peak.  12.9 ms (1.0x), Avg.  12.9 ms, Total. 12.93 ms (0.1%)
+[Performance] Application.Shutdown.PauseProfilerSession                                                                                            :        1 samples, Peak.  24.1 us (1.0x), Avg.  24.1 us, Total. 24.10 us (0.0%)
+[Performance] Application.Shutdown.PauseAssetImportWorkers                                                                                         :        1 samples, Peak.   113 us (1.0x), Avg.   113 us, Total. 112.7 us (0.0%)
+[Performance] Application.Shutdown.SaveAssets                                                                                                      :        1 samples, Peak.   583 ms (1.0x), Avg.   583 ms, Total. 582.7 ms (3.6%)
+[Performance] StateMacroSavedEvent.OnWillSaveAssets                                                                                                :        1 samples, Peak.   508 us (1.0x), Avg.   508 us, Total. 508.4 us (0.0%)
+[Performance] FlowMacroSavedEvent.OnWillSaveAssets                                                                                                 :        1 samples, Peak.   124 us (1.0x), Avg.   124 us, Total. 124.3 us (0.0%)
+[Performance] AssetModificationProcessor.OnWillSaveAssets                                                                                          :        1 samples, Peak.   268 us (1.0x), Avg.   268 us, Total. 268.3 us (0.0%)
+[Performance] UnityCloudProjectLinkMonitor.OnWillSaveAssets                                                                                        :        1 samples, Peak.   211 us (1.0x), Avg.   211 us, Total. 210.7 us (0.0%)
+[Performance] BuilderAssetModificationProcessor.OnWillSaveAssets                                                                                   :        1 samples, Peak.   298 us (1.0x), Avg.   298 us, Total. 297.6 us (0.0%)
+[Performance] TerrainModificationProcessor.OnWillSaveAssets                                                                                        :        1 samples, Peak.   438 us (1.0x), Avg.   438 us, Total. 438.3 us (0.0%)
+[Performance] AudioContainerModificationProcessor.OnWillSaveAssets                                                                                 :        1 samples, Peak.  46.2 us (1.0x), Avg.  46.2 us, Total. 46.20 us (0.0%)
+[Performance] AssetDatabase.ImportAssets                                                                                                           :        3 samples, Peak.   239 ms (3.0x), Avg.  79.8 ms, Total. 239.5 ms (1.5%)
+[Performance] PresetManagerPostProcessor.OnPreprocessAsset                                                                                         :        2 samples, Peak.   204 us (1.8x), Avg.   112 us, Total. 223.8 us (0.0%)
+[Performance] NugetAssetPostprocessor.OnPreprocessAsset                                                                                            :        2 samples, Peak.  12.6 ms (2.0x), Avg.  6.33 ms, Total. 12.66 ms (0.1%)
+[Performance] CancelSplashScreenOnAssetChange.OnPreprocessAsset                                                                                    :        2 samples, Peak.  83.2 us (2.0x), Avg.  42.3 us, Total. 84.60 us (0.0%)
+[Performance] ShaderGraphAssetPostProcessor.OnPreprocessAsset                                                                                      :        2 samples, Peak.   109 us (2.0x), Avg.  55.7 us, Total. 111.5 us (0.0%)
+[Performance] NugetAssetPostprocessor.OnPostprocessAllAssets                                                                                       :        2 samples, Peak.   921 us (1.0x), Avg.   918 us, Total. 1.835 ms (0.0%)
+[Performance] SamplePostprocessor.OnPostprocessAllAssets                                                                                           :        2 samples, Peak.   110 us (1.0x), Avg.   109 us, Total. 217.1 us (0.0%)
+[Performance] TMPro_TexturePostProcessor.OnPostprocessAllAssets                                                                                    :        2 samples, Peak.   467 us (1.0x), Avg.   466 us, Total. 932.3 us (0.0%)
+[Performance] WindowAssetPostprocessingWatcher_Internal.OnPostprocessAllAssets                                                                     :        2 samples, Peak.  1.03 ms (1.0x), Avg.  1.03 ms, Total. 2.065 ms (0.0%)
+[Performance] AssetPostprocessor.OnPostprocessAllAssets                                                                                            :        2 samples, Peak.  1.05 ms (1.0x), Avg.  1.05 ms, Total. 2.095 ms (0.0%)
+[Performance] BuilderAssetPostprocessor.OnPostprocessAllAssets                                                                                     :        2 samples, Peak.  3.17 ms (1.0x), Avg.  3.17 ms, Total. 6.346 ms (0.0%)
+[Performance] AddressablesAssetPostProcessor.OnPostprocessAllAssets                                                                                :        2 samples, Peak.  2.30 ms (1.0x), Avg.  2.30 ms, Total. 4.597 ms (0.0%)
+[Performance] ArtifactBrowserPostProcessor.OnPostprocessAllAssets                                                                                  :        2 samples, Peak.   342 us (1.0x), Avg.   341 us, Total. 682.2 us (0.0%)
+[Performance] AssetEvents.OnPostprocessAllAssets                                                                                                   :        4 samples, Peak.   114 us (1.6x), Avg.  72.8 us, Total. 291.2 us (0.0%)
+[Performance] AudioContainerPostProcessor.OnPostprocessAllAssets                                                                                   :        2 samples, Peak.  43.3 us (1.0x), Avg.  42.3 us, Total. 84.60 us (0.0%)
+[Performance] AudioMixerPostprocessor.OnPostprocessAllAssets                                                                                       :        2 samples, Peak.   190 us (1.0x), Avg.   190 us, Total. 379.0 us (0.0%)
+[Performance] StyleCatalogPostProcessor.OnPostprocessAllAssets                                                                                     :        2 samples, Peak.   158 us (1.0x), Avg.   158 us, Total. 315.2 us (0.0%)
+[Performance] ModelImporterPostProcessor.OnPostprocessAllAssets                                                                                    :        2 samples, Peak.   958 us (1.0x), Avg.   958 us, Total. 1.915 ms (0.0%)
+[Performance] AssetDatabaseProxy.OnPostprocessAllAssets                                                                                            :        2 samples, Peak.  14.1 ms (1.0x), Avg.  14.1 ms, Total. 28.14 ms (0.2%)
+[Performance] MaterialPostprocessor.OnPostprocessAllAssets                                                                                         :        4 samples, Peak.   380 us (1.1x), Avg.   353 us, Total. 1.412 ms (0.0%)
+[Performance] RetainedModeAssetPostprocessor.OnPostprocessAllAssets                                                                                :        2 samples, Peak.  1.41 ms (1.0x), Avg.  1.41 ms, Total. 2.827 ms (0.0%)
+[Performance] AssetChangedListener.OnPostprocessAllAssets                                                                                          :        2 samples, Peak.  1.04 ms (1.0x), Avg.  1.04 ms, Total. 2.072 ms (0.0%)
+[Performance] PostProcessor.OnPostprocessAllAssets                                                                                                 :        2 samples, Peak.   152 us (1.0x), Avg.   150 us, Total. 300.0 us (0.0%)
+[Performance] ShaderGraphAssetPostProcessor.OnPostprocessAllAssets                                                                                 :        2 samples, Peak.  1.05 ms (1.0x), Avg.  1.05 ms, Total. 2.101 ms (0.0%)
+[Performance] SpeedTreePostProcessor.OnPostprocessAllAssets                                                                                        :        2 samples, Peak.   123 us (1.0x), Avg.   122 us, Total. 243.5 us (0.0%)
+[Performance] TextAssetPostProcessor.OnPostprocessAllAssets                                                                                        :        2 samples, Peak.   232 us (1.0x), Avg.   232 us, Total. 463.4 us (0.0%)
+[Performance] AssetPathToTypes.OnPostprocessAllAssets                                                                                              :        2 samples, Peak.   192 us (1.0x), Avg.   191 us, Total. 381.4 us (0.0%)
+[Performance] Application.Shutdown.CleanupRenderPipeline                                                                                           :        1 samples, Peak.  2.81 ms (1.0x), Avg.  2.81 ms, Total. 2.813 ms (0.0%)
+[Performance] Application.Shutdown.StopPreloadManager                                                                                              :        1 samples, Peak.  9.99 ms (1.0x), Avg.  9.99 ms, Total. 9.985 ms (0.1%)
+[Performance] Application.Shutdown.DestroyWorld                                                                                                    :        1 samples, Peak.  5.17 ms (1.0x), Avg.  5.17 ms, Total. 5.165 ms (0.0%)
+[Performance] Application.Shutdown.CleanupAfterLoad                                                                                                :        1 samples, Peak.  4.78 ms (1.0x), Avg.  4.78 ms, Total. 4.777 ms (0.0%)
+[Performance] Application.Shutdown.Progress                                                                                                        :        1 samples, Peak.  2.00 us (1.0x), Avg.  2.00 us, Total. 2.000 us (0.0%)
+[Performance] Application.Shutdown.GICleanupManagers                                                                                               :        1 samples, Peak.  2.80 ms (1.0x), Avg.  2.80 ms, Total. 2.798 ms (0.0%)
+[Performance] Application.Shutdown.MenuCleanupClass                                                                                                :        1 samples, Peak.   147 us (1.0x), Avg.   147 us, Total. 147.1 us (0.0%)
+[Performance] Application.Shutdown.ADBSaveStateBeforeShutdown                                                                                      :        1 samples, Peak.  5.50 us (1.0x), Avg.  5.50 us, Total. 5.500 us (0.0%)
+[Performance] Application.Shutdown.RemoteShutdown                                                                                                  :        1 samples, Peak.   700 ns (1.0x), Avg.   700 ns, Total. 700.0 ns (0.0%)
+[Performance] Application.Shutdown.CleanupVCProvider                                                                                               :        1 samples, Peak.   133 us (1.0x), Avg.   133 us, Total. 133.0 us (0.0%)
+[Performance] Application.Shutdown.InputShutdown                                                                                                   :        1 samples, Peak.   400 ns (1.0x), Avg.   400 ns, Total. 400.0 ns (0.0%)
+[Performance] Application.Shutdown.GizmoManagerDestroy                                                                                             :        1 samples, Peak.   564 us (1.0x), Avg.   564 us, Total. 563.9 us (0.0%)
+[Performance] Application.Shutdown.ProfilerSession                                                                                                 :        1 samples, Peak.   633 us (1.0x), Avg.   633 us, Total. 633.2 us (0.0%)
+[Performance] Application.Shutdown.ReleaseGfxWindowOnAllGUIViews                                                                                   :        1 samples, Peak.   400 ns (1.0x), Avg.   400 ns, Total. 400.0 ns (0.0%)
+[Performance] Application.Shutdown.CleanupEngine                                                                                                   :        1 samples, Peak.   206 ms (1.0x), Avg.   206 ms, Total. 206.3 ms (1.3%)
+[Performance] Application.Shutdown.CleanupAssetDatabase                                                                                            :        1 samples, Peak.  11.4 ms (1.0x), Avg.  11.4 ms, Total. 11.40 ms (0.1%)
+[Performance] Application.Shutdown.ScriptCompilationCleanUp                                                                                        :        1 samples, Peak.  14.7 ms (1.0x), Avg.  14.7 ms, Total. 14.75 ms (0.1%)
+[Performance] Application.Shutdown.DestroyJobSystem                                                                                                :        1 samples, Peak.   101 us (1.0x), Avg.   101 us, Total. 101.3 us (0.0%)
+[Performance] Application.Shutdown.CleanupPersistentManager                                                                                        :        1 samples, Peak.   469 us (1.0x), Avg.   469 us, Total. 468.6 us (0.0%)
+[Performance] Application.Shutdown.CleanupAsyncReadManager                                                                                         :        1 samples, Peak.   334 us (1.0x), Avg.   334 us, Total. 333.8 us (0.0%)
+[Performance] Application.Shutdown.CleanupProgressBar                                                                                              :        1 samples, Peak.   400 ns (1.0x), Avg.   400 ns, Total. 400.0 ns (0.0%)
+[Performance] Application.Shutdown.CleanupMono                                                                                                     :        1 samples, Peak.  64.8 ms (1.0x), Avg.  64.8 ms, Total. 64.83 ms (0.4%)
+[Performance] Application.Shutdown.CleanupStdConverters                                                                                            :        1 samples, Peak.  5.10 us (1.0x), Avg.  5.10 us, Total. 5.100 us (0.0%)
+[Performance] Application.Shutdown.UnloadAllPlatformSupportModuleNativeDlls                                                                        :        1 samples, Peak.   600 ns (1.0x), Avg.   600 ns, Total. 600.0 ns (0.0%)
+[Performance] Application.Shutdown.UnloadAllPlatformSupportNativeLibraries                                                                         :        1 samples, Peak.   100 ns (1.0x), Avg.   100 ns, Total. 100.0 ns (0.0%)
+[Performance] Application.Shutdown.CleanupAutoDocumentation                                                                                        :        1 samples, Peak.   319 us (1.0x), Avg.   319 us, Total. 318.8 us (0.0%)
+[Performance] Application.Shutdown.ShaderNameManagerDestroy                                                                                        :        1 samples, Peak.  33.4 us (1.0x), Avg.  33.4 us, Total. 33.40 us (0.0%)
+[Performance] Application.Shutdown.CleanupCacheServer                                                                                              :        1 samples, Peak. 100.0 ns (1.0x), Avg. 100.0 ns, Total. 100.00 ns (0.0%)
+[Performance] Application.Shutdown.Virtualization_Shutdown                                                                                         :        1 samples, Peak.   300 ns (1.0x), Avg.   300 ns, Total. 300.0 ns (0.0%)
+[Performance] Application.Shutdown.DevConnections                                                                                                  :        1 samples, Peak.   106 us (1.0x), Avg.   106 us, Total. 105.8 us (0.0%)
+Thread: ID 19552, CleanupSafetyData: safetyData b01954f0
+Thread: ID 19552, CleanupSafetyData: safetyData b0770440
+Thread: ID 19552, CleanupSafetyData: safetyData b0770530
+Thread: ID 19552, CleanupSafetyData: safetyData b184dbe0
+Thread: ID 19552, CleanupSafetyData: safetyData b0dcc9b0
+Checking for leaked weakptr:
+  Found no leaked weakptrs.
+[Package Manager] Server process was shutdown
+Memory Statistics:
+[ALLOC_TEMP_TLS] TLS Allocator
+  StackAllocators : 
+    [ALLOC_TEMP_CurlRequest]
+      Initial Block Size 64.0 KB
+      Current Block Size 64.0 KB
+      Peak Allocated Bytes 0 B
+      Overflow Count 0
+    [ALLOC_TEMP_MAIN]
+      Peak usage frame count: [4.0 KB-8.0 KB]: 272 frames, [8.0 KB-16.0 KB]: 2 frames, [32.0 KB-64.0 KB]: 537 frames, [1.0 MB-2.0 MB]: 1 frames, [8.0 MB-16.0 MB]: 1 frames
+      Initial Block Size 16.0 MB
+      Current Block Size 44.3 MB
+      Peak Allocated Bytes 44.2 MB
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 30]
+      Initial Block Size 256.0 KB
+      Current Block Size 1.1 MB
+      Peak Allocated Bytes 1.1 MB
+      Overflow Count 0
+    [ALLOC_TEMP_BakingJobs.worker 17]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 42 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.worker 3]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 1.9 KB
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.worker 6]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 48 B
+      Overflow Count 0
+    [ALLOC_TEMP_AUDIO_FMOD (WASAPI) feeder thread]
+      Initial Block Size 64.0 KB
+      Current Block Size 64.0 KB
+      Peak Allocated Bytes 58 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 19]
+      Initial Block Size 256.0 KB
+      Current Block Size 1.1 MB
+      Peak Allocated Bytes 1.1 MB
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.worker 2]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 365 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.worker 15]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 50 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.worker 8]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 48 B
+      Overflow Count 0
+    [ALLOC_TEMP_AUDIO_FMOD mixer thread]
+      Initial Block Size 64.0 KB
+      Current Block Size 64.0 KB
+      Peak Allocated Bytes 38 B
+      Overflow Count 0
+    [ALLOC_TEMP_BakingJobs.worker 0]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 40 B
+      Overflow Count 0
+    [ALLOC_TEMP_BakingJobs.worker 13]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 42 B
+      Overflow Count 0
+    [ALLOC_TEMP_BakingJobs.worker 6]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 40 B
+      Overflow Count 0
+    [ALLOC_TEMP_BakingJobs.worker 7]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 40 B
+      Overflow Count 0
+    [ALLOC_TEMP_BakingJobs.worker 19]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 42 B
+      Overflow Count 0
+    [ALLOC_TEMP_BakingJobs.worker 20]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 42 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.worker 0]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 48 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 28]
+      Initial Block Size 256.0 KB
+      Current Block Size 1.1 MB
+      Peak Allocated Bytes 1.1 MB
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 6]
+      Initial Block Size 256.0 KB
+      Current Block Size 1.1 MB
+      Peak Allocated Bytes 1.1 MB
+      Overflow Count 0
+    [ALLOC_TEMP_BakingJobs.worker 1]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 0.7 KB
+      Overflow Count 0
+    [ALLOC_TEMP_BatchDeleteObjects]
+      Initial Block Size 64.0 KB
+      Current Block Size 64.0 KB
+      Peak Allocated Bytes 38 B
+      Overflow Count 0
+    [ALLOC_TEMP_AUDIO_FMOD stream thread]
+      Initial Block Size 64.0 KB
+      Current Block Size 64.0 KB
+      Peak Allocated Bytes 40 B
+      Overflow Count 0
+    [ALLOC_TEMP_BakingJobs.worker 21]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 42 B
+      Overflow Count 0
+    [ALLOC_TEMP_CoreBusinessMetricsCache]
+      Initial Block Size 64.0 KB
+      Current Block Size 64.0 KB
+      Peak Allocated Bytes 7.5 KB
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 15]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 7.2 KB
+      Overflow Count 1
+    [ALLOC_TEMP_Job.worker 4]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 25.0 KB
+      Overflow Count 1
+    [ALLOC_TEMP_Job.worker 13]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 3.4 KB
+      Overflow Count 1
+    [ALLOC_TEMP_Background Job.worker 1]
+      Initial Block Size 32.0 KB
+      Current Block Size 212.0 KB
+      Peak Allocated Bytes 112.1 KB
+      Overflow Count 0
+    [ALLOC_TEMP_AssetDatabase.IOService]
+      Initial Block Size 64.0 KB
+      Current Block Size 64.0 KB
+      Peak Allocated Bytes 48 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 1]
+      Initial Block Size 256.0 KB
+      Current Block Size 1.1 MB
+      Peak Allocated Bytes 1.1 MB
+      Overflow Count 0
+    [ALLOC_TEMP_BakingJobs.worker 3]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 40 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.worker 5]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 48 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 12]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 9.9 KB
+      Overflow Count 1
+    [ALLOC_TEMP_BakingJobs.worker 2]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 40 B
+      Overflow Count 0
+    [ALLOC_TEMP_BakingJobs.worker 15]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 42 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 7]
+      Initial Block Size 256.0 KB
+      Current Block Size 1.1 MB
+      Peak Allocated Bytes 1.1 MB
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 9]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 4.9 KB
+      Overflow Count 1
+    [ALLOC_TEMP_Job.worker 18]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 2.9 KB
+      Overflow Count 1
+    [ALLOC_TEMP_Job.worker 24]
+      Initial Block Size 256.0 KB
+      Current Block Size 1.1 MB
+      Peak Allocated Bytes 1.1 MB
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.worker 4]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 365 B
+      Overflow Count 0
+    [ALLOC_TEMP_Loading.PreloadManager] x 2
+      Initial Block Size 32.0 MB
+      Current Block Size 32.0 MB
+      Peak Allocated Bytes 2.0 MB
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.worker 11]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 50 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 16]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 2.8 KB
+      Overflow Count 1
+    [ALLOC_TEMP_Background Job.worker 7]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 48 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 27]
+      Initial Block Size 256.0 KB
+      Current Block Size 1.1 MB
+      Peak Allocated Bytes 1.1 MB
+      Overflow Count 0
+    [ALLOC_TEMP_EditorTaskManager]
+      Initial Block Size 64.0 KB
+      Current Block Size 68.0 KB
+      Peak Allocated Bytes 64.0 KB
+      Overflow Count 0
+    [ALLOC_TEMP_CloudJob.worker 0] x 4
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 2.3 KB
+      Overflow Count 0
+    [ALLOC_TEMP_Profiler.Dispatcher]
+      Initial Block Size 64.0 KB
+      Current Block Size 64.0 KB
+      Peak Allocated Bytes 0 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.worker 12]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 50 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.worker 10]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 50 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 5]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 7.6 KB
+      Overflow Count 1
+    [ALLOC_TEMP_Job.worker 20]
+      Initial Block Size 256.0 KB
+      Current Block Size 1.1 MB
+      Peak Allocated Bytes 1.1 MB
+      Overflow Count 0
+    [ALLOC_TEMP_BakingJobs.worker 22]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 42 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 23]
+      Initial Block Size 256.0 KB
+      Current Block Size 1.1 MB
+      Peak Allocated Bytes 1.1 MB
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.worker 13]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 50 B
+      Overflow Count 0
+    [ALLOC_TEMP_AssetGarbageCollectorHelper] x 31
+      Initial Block Size 64.0 KB
+      Current Block Size 64.0 KB
+      Peak Allocated Bytes 0 B
+      Overflow Count 0
+    [ALLOC_TEMP_CurlRequest]
+      Initial Block Size 64.0 KB
+      Current Block Size 64.0 KB
+      Peak Allocated Bytes 0 B
+      Overflow Count 0
+    [ALLOC_TEMP_BakingJobs.worker 9]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 40 B
+      Overflow Count 0
+    [ALLOC_TEMP_BakingJobs.worker 4]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 40 B
+      Overflow Count 0
+    [ALLOC_TEMP_BakingJobs.worker 14]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 42 B
+      Overflow Count 0
+    [ALLOC_TEMP_BakingJobs.worker 12]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 42 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 8]
+      Initial Block Size 256.0 KB
+      Current Block Size 1.1 MB
+      Peak Allocated Bytes 1.1 MB
+      Overflow Count 0
+    [ALLOC_TEMP_BakingJobs.worker 10]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 42 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.worker 14]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 50 B
+      Overflow Count 0
+    [ALLOC_TEMP_BakingJobs.worker 5]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 40 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 26]
+      Initial Block Size 256.0 KB
+      Current Block Size 1.1 MB
+      Peak Allocated Bytes 1.1 MB
+      Overflow Count 0
+    [ALLOC_TEMP_BakingJobs.worker 11]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 42 B
+      Overflow Count 0
+    [ALLOC_TEMP_BakingJobs.worker 18]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 42 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 11]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 90.3 KB
+      Overflow Count 1
+    [ALLOC_TEMP_ReadCacheIndex] x 2
+      Initial Block Size 64.0 KB
+      Current Block Size 64.0 KB
+      Peak Allocated Bytes 0.6 KB
+      Overflow Count 0
+    [ALLOC_TEMP_BakingJobs.worker 16]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 42 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.worker 9]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 48 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 0]
+      Initial Block Size 256.0 KB
+      Current Block Size 1.1 MB
+      Peak Allocated Bytes 1.1 MB
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 14]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 3.2 KB
+      Overflow Count 1
+    [ALLOC_TEMP_BakingJobs.worker 23]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 42 B
+      Overflow Count 0
+    [ALLOC_TEMP_EnlightenWorker] x 8
+      Initial Block Size 64.0 KB
+      Current Block Size 64.0 KB
+      Peak Allocated Bytes 0 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 21]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 4.9 KB
+      Overflow Count 1
+    [ALLOC_TEMP_Job.worker 3]
+      Initial Block Size 256.0 KB
+      Current Block Size 1.1 MB
+      Peak Allocated Bytes 1.1 MB
+      Overflow Count 0
+    [ALLOC_TEMP_DirMonitor]
+      Initial Block Size 64.0 KB
+      Current Block Size 64.0 KB
+      Peak Allocated Bytes 0.8 KB
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 25]
+      Initial Block Size 256.0 KB
+      Current Block Size 1.1 MB
+      Peak Allocated Bytes 1.1 MB
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 22]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 70.5 KB
+      Overflow Count 1
+    [ALLOC_TEMP_Job.worker 2]
+      Initial Block Size 256.0 KB
+      Current Block Size 1.0 MB
+      Peak Allocated Bytes 1.0 MB
+      Overflow Count 1
+    [ALLOC_TEMP_Job.worker 10]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 70.5 KB
+      Overflow Count 1
+    [ALLOC_TEMP_Job.worker 17]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 4.8 KB
+      Overflow Count 1
+    [ALLOC_TEMP_Job.worker 29]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 3.7 KB
+      Overflow Count 0
+    [ALLOC_TEMP_BakingJobs.worker 8]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 40 B
+      Overflow Count 0
+    [ALLOC_TEMP_Loading.AsyncRead]
+      Initial Block Size 64.0 KB
+      Current Block Size 64.0 KB
+      Peak Allocated Bytes 128 B
+      Overflow Count 0
+[ALLOC_MEMORYPROFILER]
+  Peak usage frame count: [0.5 MB-1.0 MB]: 813 frames
+  Requested Block Size 1.0 MB
+  Peak Block count 1
+  Peak Allocated memory 0.6 MB
+  Peak Large allocation bytes 0 B
+[ALLOC_DEFAULT] Dual Thread Allocator
+  Peak main deferred allocation count 4591
+    [ALLOC_BUCKET]
+      Large Block size 32.0 MB
+      Used Block count 1
+      Peak Allocated bytes 15.1 MB
+    [ALLOC_DEFAULT_MAIN]
+      Peak usage frame count: [128.0 MB-256.0 MB]: 813 frames
+      Requested Block Size 16.0 MB
+      Peak Block count 14
+      Peak Allocated memory 223.0 MB
+      Peak Large allocation bytes 11.0 MB
+    [ALLOC_DEFAULT_THREAD]
+      Peak usage frame count: [8.0 MB-16.0 MB]: 813 frames
+      Requested Block Size 16.0 MB
+      Peak Block count 1
+      Peak Allocated memory 8.9 MB
+      Peak Large allocation bytes 0 B
+[ALLOC_TEMP_JOB_1_FRAME]
+  Initial Block Size 2.0 MB
+  Used Block Count 1
+  Overflow Count (too large) 0
+  Overflow Count (full) 0
+[ALLOC_TEMP_JOB_2_FRAMES]
+  Initial Block Size 2.0 MB
+  Used Block Count 0
+  Overflow Count (too large) 0
+  Overflow Count (full) 0
+[ALLOC_TEMP_JOB_4_FRAMES (JobTemp)]
+  Initial Block Size 2.0 MB
+  Used Block Count 1
+  Overflow Count (too large) 0
+  Overflow Count (full) 0
+[ALLOC_TEMP_JOB_ASYNC (Background)]
+  Initial Block Size 1.0 MB
+  Used Block Count 1
+  Overflow Count (too large) 0
+  Overflow Count (full) 0
+[ALLOC_GFX] Dual Thread Allocator
+  Peak main deferred allocation count 0
+    [ALLOC_BUCKET]
+      Large Block size 32.0 MB
+      Used Block count 1
+      Peak Allocated bytes 15.1 MB
+    [ALLOC_GFX_MAIN]
+      Peak usage frame count: [8.0 MB-16.0 MB]: 813 frames
+      Requested Block Size 16.0 MB
+      Peak Block count 3
+      Peak Allocated memory 38.2 MB
+      Peak Large allocation bytes 0 B
+    [ALLOC_GFX_THREAD]
+      Peak usage frame count: [0-1.0 KB]: 1 frames, [4.0 KB-8.0 KB]: 812 frames
+      Requested Block Size 16.0 MB
+      Peak Block count 1
+      Peak Allocated memory 7.4 KB
+      Peak Large allocation bytes 0 B
+[ALLOC_CACHEOBJECTS] Dual Thread Allocator
+  Peak main deferred allocation count 160
+    [ALLOC_BUCKET]
+      Large Block size 32.0 MB
+      Used Block count 1
+      Peak Allocated bytes 15.1 MB
+    [ALLOC_CACHEOBJECTS_MAIN]
+      Peak usage frame count: [16.0 MB-32.0 MB]: 812 frames, [64.0 MB-128.0 MB]: 1 frames
+      Requested Block Size 4.0 MB
+      Peak Block count 14
+      Peak Allocated memory 76.3 MB
+      Peak Large allocation bytes 29.5 MB
+    [ALLOC_CACHEOBJECTS_THREAD]
+      Peak usage frame count: [128.0 KB-256.0 KB]: 812 frames, [256.0 KB-0.5 MB]: 1 frames
+      Requested Block Size 4.0 MB
+      Peak Block count 1
+      Peak Allocated memory 274.4 KB
+      Peak Large allocation bytes 0 B
+[ALLOC_TYPETREE] Dual Thread Allocator
+  Peak main deferred allocation count 952
+    [ALLOC_BUCKET]
+      Large Block size 32.0 MB
+      Used Block count 1
+      Peak Allocated bytes 15.1 MB
+    [ALLOC_TYPETREE_MAIN]
+      Peak usage frame count: [1.0 MB-2.0 MB]: 812 frames, [8.0 MB-16.0 MB]: 1 frames
+      Requested Block Size 2.0 MB
+      Peak Block count 6
+      Peak Allocated memory 10.6 MB
+      Peak Large allocation bytes 0 B
+    [ALLOC_TYPETREE_THREAD]
+      Peak usage frame count: [128.0 KB-256.0 KB]: 813 frames
+      Requested Block Size 2.0 MB
+      Peak Block count 1
+      Peak Allocated memory 199.2 KB
+      Peak Large allocation bytes 0 B
+[ALLOC_PROFILER]
+  Peak usage frame count: [0.5 MB-1.0 MB]: 813 frames
+  Requested Block Size 16.0 MB
+  Peak Block count 1
+  Peak Allocated memory 0.7 MB
+  Peak Large allocation bytes 0 B
+    [ALLOC_PROFILER_BUCKET]
+      Large Block size 32.0 MB
+      Used Block count 1
+      Peak Allocated bytes 16.5 KB
+[ALLOC_PROFILER_EDITOR]
+  Peak usage frame count: [0-1.0 KB]: 813 frames
+  Requested Block Size 1.0 MB
+  Peak Block count 0
+  Peak Allocated memory 0 B
+  Peak Large allocation bytes 0 B
+    [ALLOC_PROFILER_BUCKET]
+      Large Block size 32.0 MB
+      Used Block count 1
+      Peak Allocated bytes 16.5 KB
+##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1760539947126,"processId":36560,"allocatedMemory":18121564,"memoryLabels":[{"Default":17629},{"Permanent":15300},{"NewDelete":76140},{"Thread":4230344},{"Manager":49322},{"VertexData":824},{"Geometry":816},{"Texture":160},{"Shader":77931},{"Material":24},{"GfxDevice":55888},{"Animation":328},{"Audio":4040},{"FontEngine":224},{"Physics":369},{"Serialization":968},{"Input":14816},{"JobScheduler":33024},{"Mono":32},{"ScriptingNativeRuntime":155060},{"BaseObject":1619504},{"Resource":1304},{"Renderer":2360},{"Transform":4646},{"File":3897},{"WebCam":80},{"Culling":32},{"Terrain":953},{"Wind":24},{"STL":40},{"String":17335},{"DynamicArray":115137},{"HashMap":3874375},{"Utility":2670158},{"Curl":1448},{"PoolAlloc":1768},{"AI":104},{"TypeTree":4493},{"ScriptManager":512},{"RuntimeInitializeOnLoadManager":64},{"SpriteAtlas":112},{"GI":7888},{"Director":8240},{"CloudService":11832},{"WebRequest":11022},{"VR":45953},{"SceneManager":496},{"Video":64},{"LazyScriptCache":32},{"NativeArray":8},{"Camera":17},{"Secure":1},{"SerializationCache":1576},{"APIUpdating":10320},{"Subsystems":336},{"VirtualTexturing":57888},{"StaticSafetyDebugInfo":278528},{"Analytics":544},{"Hierarchy":16},{"Gui":88},{"EditorUtility":107325},{"VersionControl":4},{"Undo":624},{"AssetDatabase":4471882},{"EditorGi":328},{"UnityConnect":24872},{"Collab":545},{"Upm":1728},{"DrivenProperties":72},{"LocalIPC":264},{"ProfilerEditor":9738},{"CoreBusinessMetrics":14028},{"Licensing":3656},{"AssetReference":32},{"IPCStream":32}]}

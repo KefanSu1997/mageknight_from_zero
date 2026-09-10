@@ -1,0 +1,37 @@
+{
+    "scenePath": "Assets/Scenes/Part1/Part1_ExplorationRecruitmentTest.unity",
+    "startedAt": "2025-10-10T16:50:01.8372622Z",
+    "finishedAt": "2025-10-10T16:50:05.1161348Z",
+    "status": "success",
+    "message": "",
+    "steps": [
+        {
+            "label": "Scene Start",
+            "buttonPath": "",
+            "screenshotPath": "D:\\study and work\\code\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\Part1Exploration\\captures\\Part1_ExplorationRecruitmentTest_20251011_005001\\000_Scene Start.png",
+            "success": true,
+            "message": ""
+        },
+        {
+            "label": "首次探索",
+            "buttonPath": "Canvas/Part1TestLayout/ControlColumn/Buttons/测试探索系统Button",
+            "screenshotPath": "D:\\study and work\\code\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\Part1Exploration\\captures\\Part1_ExplorationRecruitmentTest_20251011_005001\\001_首次探索.png",
+            "success": true,
+            "message": ""
+        },
+        {
+            "label": "继续探索",
+            "buttonPath": "Canvas/Part1TestLayout/ControlColumn/Buttons/测试探索系统Button",
+            "screenshotPath": "D:\\study and work\\code\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\Part1Exploration\\captures\\Part1_ExplorationRecruitmentTest_20251011_005001\\002_继续探索.png",
+            "success": true,
+            "message": ""
+        },
+        {
+            "label": "尝试招募",
+            "buttonPath": "Canvas/Part1TestLayout/ControlColumn/Buttons/测试招募系统Button",
+            "screenshotPath": "D:\\study and work\\code\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\Part1Exploration\\captures\\Part1_ExplorationRecruitmentTest_20251011_005001\\003_尝试招募.png",
+            "success": true,
+            "message": ""
+        }
+    ]
+}

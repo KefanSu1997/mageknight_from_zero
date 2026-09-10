@@ -1,0 +1,30 @@
+{
+    "scenePath": "Assets/Scenes/hand_deck_test.unity",
+    "startedAt": "2025-11-20T15:22:44.9922057Z",
+    "finishedAt": "2025-11-20T15:23:06.1099050Z",
+    "status": "failed",
+    "message": "buttonPath is empty",
+    "steps": [
+        {
+            "label": "布局初始",
+            "buttonPath": "",
+            "screenshotPath": "D:\\study and work\\code\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\HandDeckTest\\captures\\hand_deck_test_20251120_232244\\000_布局初始.png",
+            "success": false,
+            "message": "buttonPath is empty"
+        },
+        {
+            "label": "测试牌库系统",
+            "buttonPath": "Canvas/Part1TableRoot/ActionColumnShell/ActionColumnRoot/Buttons/测试牌库系统Button",
+            "screenshotPath": "D:\\study and work\\code\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\HandDeckTest\\captures\\hand_deck_test_20251120_232244\\001_测试牌库系统.png",
+            "success": false,
+            "message": "Button not found within 10.00s"
+        },
+        {
+            "label": "测试魔力池",
+            "buttonPath": "Canvas/Part1TableRoot/ActionColumnShell/ActionColumnRoot/Buttons/测试魔力池Button",
+            "screenshotPath": "D:\\study and work\\code\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\HandDeckTest\\captures\\hand_deck_test_20251120_232244\\002_测试魔力池.png",
+            "success": false,
+            "message": "Button not found within 10.00s"
+        }
+    ]
+}

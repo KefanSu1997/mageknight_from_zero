@@ -1,0 +1,30 @@
+{
+    "scenePath": "Assets/Scenes/AgentA_TestScene.unity",
+    "startedAt": "2025-10-15T14:52:23.5229681Z",
+    "finishedAt": "2025-10-15T14:52:25.8314259Z",
+    "status": "success",
+    "message": "",
+    "steps": [
+        {
+            "label": "暂停旋转",
+            "buttonPath": "AutomationCanvas/Buttons/Btn_ToggleRotation",
+            "screenshotPath": "D:\\study and work\\code\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\AgentATest\\captures\\AgentA_TestScene_20251015_225223\\000_暂停旋转.png",
+            "success": true,
+            "message": ""
+        },
+        {
+            "label": "切换颜色",
+            "buttonPath": "AutomationCanvas/Buttons/Btn_RandomizeColor",
+            "screenshotPath": "D:\\study and work\\code\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\AgentATest\\captures\\AgentA_TestScene_20251015_225223\\001_切换颜色.png",
+            "success": true,
+            "message": ""
+        },
+        {
+            "label": "恢复旋转",
+            "buttonPath": "AutomationCanvas/Buttons/Btn_ToggleRotation",
+            "screenshotPath": "D:\\study and work\\code\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\AgentATest\\captures\\AgentA_TestScene_20251015_225223\\002_恢复旋转.png",
+            "success": true,
+            "message": ""
+        }
+    ]
+}
