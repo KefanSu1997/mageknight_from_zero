@@ -13892,6 +13892,1175 @@
         }
       ],
       "limitations": []
+    },
+    {
+      "id": "basic_card_021_03",
+      "cardId": "basic_card_021",
+      "batch": "basic_card",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 红色费用不足不能降级为基础攻击",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "token:Red",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "0"
+        },
+        {
+          "key": "token:Gold",
+          "value": "0"
+        },
+        {
+          "key": "token:Black",
+          "value": "0"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "0"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "0"
+        },
+        {
+          "key": "token:Black",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "Reputation",
+          "value": "0"
+        },
+        {
+          "key": "unitReady",
+          "value": "False"
+        },
+        {
+          "key": "unitWounds",
+          "value": "0"
+        },
+        {
+          "key": "ManaCurseTriggered",
+          "value": "False"
+        }
+      ],
+      "limitations": [],
+      "expectedException": "InvalidOperationException: 法力不足，不能支付所选效果"
+    },
+    {
+      "id": "magic_000_02",
+      "cardId": "magic_000",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 缺黑色费用，保留基础色与全部牌区",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "token:Black",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        },
+        {
+          "key": "token:Gold",
+          "value": "0"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:Black",
+          "value": "0"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        },
+        {
+          "key": "unitReady",
+          "value": "False"
+        },
+        {
+          "key": "token:Red",
+          "value": "2"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "Reputation",
+          "value": "0"
+        },
+        {
+          "key": "unitWounds",
+          "value": "0"
+        },
+        {
+          "key": "ManaCurseTriggered",
+          "value": "False"
+        }
+      ],
+      "limitations": [],
+      "expectedException": "InvalidOperationException: 法力不足，不能支付所选效果"
+    },
+    {
+      "id": "magic_000_03",
+      "cardId": "magic_000",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 白昼强效被拒绝且资源不变",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "DayPart",
+          "value": "Day"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:Black",
+          "value": "2"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        },
+        {
+          "key": "unitReady",
+          "value": "False"
+        },
+        {
+          "key": "token:Red",
+          "value": "2"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "Reputation",
+          "value": "0"
+        },
+        {
+          "key": "unitWounds",
+          "value": "0"
+        },
+        {
+          "key": "ManaCurseTriggered",
+          "value": "False"
+        }
+      ],
+      "limitations": [],
+      "expectedException": "InvalidOperationException: 白昼不能施放强效法术"
+    },
+    {
+      "id": "magic_006_02",
+      "cardId": "magic_006",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 缺黑色费用，保留基础色与全部牌区",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "token:Black",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        },
+        {
+          "key": "token:Gold",
+          "value": "0"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "2"
+        },
+        {
+          "key": "token:Black",
+          "value": "0"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        },
+        {
+          "key": "unitReady",
+          "value": "False"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "Reputation",
+          "value": "0"
+        },
+        {
+          "key": "unitWounds",
+          "value": "0"
+        },
+        {
+          "key": "ManaCurseTriggered",
+          "value": "False"
+        }
+      ],
+      "limitations": [],
+      "expectedException": "InvalidOperationException: 法力不足，不能支付所选效果"
+    },
+    {
+      "id": "magic_006_03",
+      "cardId": "magic_006",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 白昼强效被拒绝且资源不变",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "DayPart",
+          "value": "Day"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "2"
+        },
+        {
+          "key": "token:Black",
+          "value": "2"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        },
+        {
+          "key": "unitReady",
+          "value": "False"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "Reputation",
+          "value": "0"
+        },
+        {
+          "key": "unitWounds",
+          "value": "0"
+        },
+        {
+          "key": "ManaCurseTriggered",
+          "value": "False"
+        }
+      ],
+      "limitations": [],
+      "expectedException": "InvalidOperationException: 白昼不能施放强效法术"
+    },
+    {
+      "id": "magic_012_02",
+      "cardId": "magic_012",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 缺黑色费用，保留基础色与全部牌区",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "token:Black",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        },
+        {
+          "key": "token:Gold",
+          "value": "0"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Black",
+          "value": "0"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        },
+        {
+          "key": "unitReady",
+          "value": "False"
+        },
+        {
+          "key": "token:Red",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "Reputation",
+          "value": "0"
+        },
+        {
+          "key": "unitWounds",
+          "value": "0"
+        },
+        {
+          "key": "ManaCurseTriggered",
+          "value": "False"
+        }
+      ],
+      "limitations": [],
+      "expectedException": "InvalidOperationException: 法力不足，不能支付所选效果"
+    },
+    {
+      "id": "magic_012_03",
+      "cardId": "magic_012",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 白昼强效被拒绝且资源不变",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "DayPart",
+          "value": "Day"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Black",
+          "value": "2"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        },
+        {
+          "key": "unitReady",
+          "value": "False"
+        },
+        {
+          "key": "token:Red",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "Reputation",
+          "value": "0"
+        },
+        {
+          "key": "unitWounds",
+          "value": "0"
+        },
+        {
+          "key": "ManaCurseTriggered",
+          "value": "False"
+        }
+      ],
+      "limitations": [],
+      "expectedException": "InvalidOperationException: 白昼不能施放强效法术"
+    },
+    {
+      "id": "magic_018_02",
+      "cardId": "magic_018",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 缺黑色费用，保留基础色与全部牌区",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "token:Black",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        },
+        {
+          "key": "token:Gold",
+          "value": "0"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Black",
+          "value": "0"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        },
+        {
+          "key": "unitReady",
+          "value": "False"
+        },
+        {
+          "key": "token:Red",
+          "value": "2"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "Reputation",
+          "value": "0"
+        },
+        {
+          "key": "unitWounds",
+          "value": "0"
+        },
+        {
+          "key": "ManaCurseTriggered",
+          "value": "False"
+        }
+      ],
+      "limitations": [],
+      "expectedException": "InvalidOperationException: 法力不足，不能支付所选效果"
+    },
+    {
+      "id": "magic_018_03",
+      "cardId": "magic_018",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 白昼强效被拒绝且资源不变",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "DayPart",
+          "value": "Day"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Black",
+          "value": "2"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        },
+        {
+          "key": "unitReady",
+          "value": "False"
+        },
+        {
+          "key": "token:Red",
+          "value": "2"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "Reputation",
+          "value": "0"
+        },
+        {
+          "key": "unitWounds",
+          "value": "0"
+        },
+        {
+          "key": "ManaCurseTriggered",
+          "value": "False"
+        }
+      ],
+      "limitations": [],
+      "expectedException": "InvalidOperationException: 白昼不能施放强效法术"
     }
   ]
 }

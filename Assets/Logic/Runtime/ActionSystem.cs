@@ -14,31 +14,14 @@ namespace MK.Logic.Runtime
         private readonly Dictionary<string, ActionEffectId> _baseMap = new();
         private readonly Dictionary<string, ActionEffectId> _enhMap = new();
         private readonly Dictionary<string, ManaColor> _spellColor = new();
+        private readonly Dictionary<string, SpellCardData> _spells = new();
 
         /// <summary>
         /// 嘗試以玩家持有的法力標記或晶體支付指定顏色需求。
         /// </summary>
         private static bool PayColors(PlayerState player, ActionContext ctx, ManaColor[] colors)
         {
-            foreach (var c in colors)
-            {
-                if (ctx.InfiniteMana.Contains(c))
-                    continue;
-                if (player.Mana.Tokens.TryGetValue(c, out int t) && t > 0)
-                {
-                    if (--t == 0) player.Mana.Tokens.Remove(c); else player.Mana.Tokens[c] = t;
-                    continue;
-                }
-
-                if (player.Mana.Crystals.TryGetValue(c, out int cr) && cr > 0)
-                {
-                    if (--cr == 0) player.Mana.Crystals.Remove(c); else player.Mana.Crystals[c] = cr;
-                    ctx.SpentCrystals[c] = ctx.SpentCrystals.GetValueOrDefault(c) + 1;
-                    continue;
-                }
-                return false;
-            }
-            return true;
+            return player.Mana.TryPayExactColors(colors, ctx, player);
         }
 
         /// <summary>
@@ -49,7 +32,10 @@ namespace MK.Logic.Runtime
             // 纯行动牌场景直接持有原 ActionCardSO，无需读取磁盘法术 JSON。
             if (loadSpellMetadata)
                 foreach (var s in CardJsonLoader.LoadSpells())
+                {
                     _spellColor[s.Id] = s.ManaColor;
+                    _spells[s.Id] = s;
+                }
             // 映射編號 000-009 的基礎行動牌
             _baseMap["basic_card_000"] = ActionEffectId.Move2;                // 行進
             _enhMap["basic_card_000"]  = ActionEffectId.Move4;
@@ -309,7 +295,23 @@ namespace MK.Logic.Runtime
         /// </summary>
         public void Play(ActionCardData card, PlayerState player, ActionContext ctx, bool enhanced, int option = 0)
         {
-            bool useEnh = enhanced || ctx.NextCardEnhanced;
+            bool isSpell = card.Set == CardSet.Spell;
+            bool freeEnhancedAction = ctx.NextCardEnhanced && !isSpell;
+            bool useEnh = enhanced || freeEnhancedAction;
+            var map = useEnh ? _enhMap : _baseMap;
+            if (!map.TryGetValue(card.Id, out var id))
+                throw new System.InvalidOperationException($"未定義卡牌效果: {card.Id}");
+
+            ManaColor[] cost = System.Array.Empty<ManaColor>();
+            if (isSpell)
+            {
+                if (!_spells.TryGetValue(card.Id, out var spell))
+                    throw new System.InvalidOperationException("缺少原法术费用定义: " + card.Id);
+                if (enhanced && ctx.DayPart != DayPart.Night && !ctx.AllowBlackAtDay)
+                    throw new System.InvalidOperationException("白昼不能施放强效法术");
+                cost = enhanced ? spell.Bottom.ManaCost : spell.Top.ManaCost;
+            }
+            else if (enhanced && !freeEnhancedAction) cost = card.RequiredCrystals;
             bool overlord = false;
             if (useEnh && ctx.OverlordPending && ctx.OverlordColor.HasValue)
             {
@@ -318,19 +320,10 @@ namespace MK.Logic.Runtime
                         overlord = true;
             }
 
-            // 當玩家主動宣告強效時需要支付指定顏色的法力。
-            // 若支付失敗則退回執行基礎效果。
-            if (enhanced && card.RequiredCrystals.Length > 0 && !ctx.NextCardEnhanced)
-            {
-                if (!PayColors(player, ctx, card.RequiredCrystals))
-                    useEnh = false;
-            }
+            if (!PayColors(player, ctx, cost))
+                throw new System.InvalidOperationException("法力不足，不能支付所选效果");
             if (!useEnh)
                 overlord = false;
-
-            var map = useEnh ? _enhMap : _baseMap;
-            if (!map.TryGetValue(card.Id, out var id))
-                throw new System.InvalidOperationException($"未定義卡牌效果: {card.Id}");
 
             var effect = CardEffectFactory.Get(id);
             int preMove = ctx.MovementPool;

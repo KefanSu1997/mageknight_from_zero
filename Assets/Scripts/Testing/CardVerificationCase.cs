@@ -12,6 +12,7 @@ public sealed class CardVerificationCase
     public string effectChoice;
     public string followup;
     public bool followupEnhanced;
+    public string expectedException;
     public string[] limitations;
     public CardVerificationValue[] setup;
     public CardVerificationValue[] expected;

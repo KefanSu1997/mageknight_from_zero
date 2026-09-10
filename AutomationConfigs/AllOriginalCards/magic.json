@@ -2822,6 +2822,478 @@
           "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
         }
       ]
+    },
+    {
+      "label": "magic_000_02_prepare",
+      "buttonPath": "Canvas/UIRoot/Btn_Next",
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "caseId",
+          "expected": "magic_000_02",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        },
+        {
+          "key": "executed",
+          "expected": "False",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        }
+      ]
+    },
+    {
+      "label": "magic_000_02_select",
+      "buttonPath": "Canvas/UIRoot/Btn_Select",
+      "skipScreenshot": true,
+      "before": [
+        {
+          "key": "caseId",
+          "expected": "magic_000_02",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        }
+      ],
+      "after": [
+        {
+          "key": "selected",
+          "expected": "True",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        }
+      ]
+    },
+    {
+      "label": "magic_000_02_execute",
+      "buttonPath": "Canvas/UIRoot/Btn_Play",
+      "before": [
+        {
+          "key": "art",
+          "expected": "magic_000",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        }
+      ],
+      "after": [
+        {
+          "key": "executed",
+          "expected": "True",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        },
+        {
+          "key": "completed",
+          "expected": "49",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        }
+      ]
+    },
+    {
+      "label": "magic_000_03_prepare",
+      "buttonPath": "Canvas/UIRoot/Btn_Next",
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "caseId",
+          "expected": "magic_000_03",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        },
+        {
+          "key": "executed",
+          "expected": "False",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        }
+      ]
+    },
+    {
+      "label": "magic_000_03_select",
+      "buttonPath": "Canvas/UIRoot/Btn_Select",
+      "skipScreenshot": true,
+      "before": [
+        {
+          "key": "caseId",
+          "expected": "magic_000_03",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        }
+      ],
+      "after": [
+        {
+          "key": "selected",
+          "expected": "True",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        }
+      ]
+    },
+    {
+      "label": "magic_000_03_execute",
+      "buttonPath": "Canvas/UIRoot/Btn_Play",
+      "before": [
+        {
+          "key": "art",
+          "expected": "magic_000",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        }
+      ],
+      "after": [
+        {
+          "key": "executed",
+          "expected": "True",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        },
+        {
+          "key": "completed",
+          "expected": "50",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        }
+      ]
+    },
+    {
+      "label": "magic_006_02_prepare",
+      "buttonPath": "Canvas/UIRoot/Btn_Next",
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "caseId",
+          "expected": "magic_006_02",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        },
+        {
+          "key": "executed",
+          "expected": "False",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        }
+      ]
+    },
+    {
+      "label": "magic_006_02_select",
+      "buttonPath": "Canvas/UIRoot/Btn_Select",
+      "skipScreenshot": true,
+      "before": [
+        {
+          "key": "caseId",
+          "expected": "magic_006_02",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        }
+      ],
+      "after": [
+        {
+          "key": "selected",
+          "expected": "True",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        }
+      ]
+    },
+    {
+      "label": "magic_006_02_execute",
+      "buttonPath": "Canvas/UIRoot/Btn_Play",
+      "before": [
+        {
+          "key": "art",
+          "expected": "magic_006",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        }
+      ],
+      "after": [
+        {
+          "key": "executed",
+          "expected": "True",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        },
+        {
+          "key": "completed",
+          "expected": "51",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        }
+      ]
+    },
+    {
+      "label": "magic_006_03_prepare",
+      "buttonPath": "Canvas/UIRoot/Btn_Next",
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "caseId",
+          "expected": "magic_006_03",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        },
+        {
+          "key": "executed",
+          "expected": "False",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        }
+      ]
+    },
+    {
+      "label": "magic_006_03_select",
+      "buttonPath": "Canvas/UIRoot/Btn_Select",
+      "skipScreenshot": true,
+      "before": [
+        {
+          "key": "caseId",
+          "expected": "magic_006_03",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        }
+      ],
+      "after": [
+        {
+          "key": "selected",
+          "expected": "True",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        }
+      ]
+    },
+    {
+      "label": "magic_006_03_execute",
+      "buttonPath": "Canvas/UIRoot/Btn_Play",
+      "before": [
+        {
+          "key": "art",
+          "expected": "magic_006",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        }
+      ],
+      "after": [
+        {
+          "key": "executed",
+          "expected": "True",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        },
+        {
+          "key": "completed",
+          "expected": "52",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        }
+      ]
+    },
+    {
+      "label": "magic_012_02_prepare",
+      "buttonPath": "Canvas/UIRoot/Btn_Next",
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "caseId",
+          "expected": "magic_012_02",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        },
+        {
+          "key": "executed",
+          "expected": "False",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        }
+      ]
+    },
+    {
+      "label": "magic_012_02_select",
+      "buttonPath": "Canvas/UIRoot/Btn_Select",
+      "skipScreenshot": true,
+      "before": [
+        {
+          "key": "caseId",
+          "expected": "magic_012_02",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        }
+      ],
+      "after": [
+        {
+          "key": "selected",
+          "expected": "True",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        }
+      ]
+    },
+    {
+      "label": "magic_012_02_execute",
+      "buttonPath": "Canvas/UIRoot/Btn_Play",
+      "before": [
+        {
+          "key": "art",
+          "expected": "magic_012",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        }
+      ],
+      "after": [
+        {
+          "key": "executed",
+          "expected": "True",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        },
+        {
+          "key": "completed",
+          "expected": "53",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        }
+      ]
+    },
+    {
+      "label": "magic_012_03_prepare",
+      "buttonPath": "Canvas/UIRoot/Btn_Next",
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "caseId",
+          "expected": "magic_012_03",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        },
+        {
+          "key": "executed",
+          "expected": "False",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        }
+      ]
+    },
+    {
+      "label": "magic_012_03_select",
+      "buttonPath": "Canvas/UIRoot/Btn_Select",
+      "skipScreenshot": true,
+      "before": [
+        {
+          "key": "caseId",
+          "expected": "magic_012_03",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        }
+      ],
+      "after": [
+        {
+          "key": "selected",
+          "expected": "True",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        }
+      ]
+    },
+    {
+      "label": "magic_012_03_execute",
+      "buttonPath": "Canvas/UIRoot/Btn_Play",
+      "before": [
+        {
+          "key": "art",
+          "expected": "magic_012",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        }
+      ],
+      "after": [
+        {
+          "key": "executed",
+          "expected": "True",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        },
+        {
+          "key": "completed",
+          "expected": "54",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        }
+      ]
+    },
+    {
+      "label": "magic_018_02_prepare",
+      "buttonPath": "Canvas/UIRoot/Btn_Next",
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "caseId",
+          "expected": "magic_018_02",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        },
+        {
+          "key": "executed",
+          "expected": "False",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        }
+      ]
+    },
+    {
+      "label": "magic_018_02_select",
+      "buttonPath": "Canvas/UIRoot/Btn_Select",
+      "skipScreenshot": true,
+      "before": [
+        {
+          "key": "caseId",
+          "expected": "magic_018_02",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        }
+      ],
+      "after": [
+        {
+          "key": "selected",
+          "expected": "True",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        }
+      ]
+    },
+    {
+      "label": "magic_018_02_execute",
+      "buttonPath": "Canvas/UIRoot/Btn_Play",
+      "before": [
+        {
+          "key": "art",
+          "expected": "magic_018",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        }
+      ],
+      "after": [
+        {
+          "key": "executed",
+          "expected": "True",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        },
+        {
+          "key": "completed",
+          "expected": "55",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        }
+      ]
+    },
+    {
+      "label": "magic_018_03_prepare",
+      "buttonPath": "Canvas/UIRoot/Btn_Next",
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "caseId",
+          "expected": "magic_018_03",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        },
+        {
+          "key": "executed",
+          "expected": "False",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        }
+      ]
+    },
+    {
+      "label": "magic_018_03_select",
+      "buttonPath": "Canvas/UIRoot/Btn_Select",
+      "skipScreenshot": true,
+      "before": [
+        {
+          "key": "caseId",
+          "expected": "magic_018_03",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        }
+      ],
+      "after": [
+        {
+          "key": "selected",
+          "expected": "True",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        }
+      ]
+    },
+    {
+      "label": "magic_018_03_execute",
+      "buttonPath": "Canvas/UIRoot/Btn_Play",
+      "before": [
+        {
+          "key": "art",
+          "expected": "magic_018",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        }
+      ],
+      "after": [
+        {
+          "key": "executed",
+          "expected": "True",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        },
+        {
+          "key": "completed",
+          "expected": "56",
+          "rule": "界面操作完整性；效果通过与否以 effects.json 的独立断言为准"
+        }
+      ]
     }
   ]
 }

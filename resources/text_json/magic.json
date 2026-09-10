@@ -32,7 +32,7 @@
     "spell_bottom": {
       "name": "感染",
       "effect": "格挡阶段所有被格挡的敌人护甲降至1点。",
-      "mana_cost": "绿"
+      "mana_cost": "绿,黑"
     }
   },
   {
@@ -50,7 +50,7 @@
     "spell_bottom": {
       "name": "神游",
       "effect": "与基本效果相同，但由你选择卡牌，而不是随机选取。",
-      "mana_cost": "绿"
+      "mana_cost": "绿,黑"
     }
   },
   {
@@ -86,7 +86,7 @@
     "spell_bottom": {
       "name": "地道攻击",
       "effect": "与基本效果相同，但你移动结束必须停留在城防地点上（或其他玩家占据的格子中）。移动结束后视为突袭（或攻击该玩家）。忽略地点城防。如果战斗后撤离，返回出发地点。",
-      "mana_cost": "绿"
+      "mana_cost": "绿,黑"
     }
   },
   {
@@ -203,7 +203,7 @@
     "set_idx": 11,
     "image": "cards\\magic_011.png",
     "en_image": "cards\\magic_en_011.png",
-    "mana_color": "红",
+    "mana_color": "红色",
     "spell_top": {
       "name": "献祭",
       "effect": "获得一颗红色魔晶，放入物品栏。你可以从手牌中弃掉最多3张非创伤卡牌。每弃掉一张卡牌，获得一颗同色魔晶，放入物品栏（弃掉神器时任选颜色）。",
@@ -329,16 +329,16 @@
     "set_idx": 18,
     "image": "cards\\magic_018.png",
     "en_image": "cards\\magic_en_018.png",
-    "mana_color": "紫",
+    "mana_color": "白色",
     "spell_top": {
       "name": "思维读取",
       "effect": "选择一个颜色。获得一颗同色魔晶，放入物品栏。每位其他玩家必须从手牌中弃掉一张同色法术或行动卡牌，或者展示手牌表示没有此颜色卡牌。",
-      "mana_cost": "蓝"
+      "mana_cost": "白"
     },
     "spell_bottom": {
       "name": "思维窃取",
       "effect": "与基本效果相同。此外，你可以决定永久性偷取一张以此方式弃掉的行动卡牌（不能是法术）并加入你的手牌。",
-      "mana_cost": "蓝,黑"
+      "mana_cost": "白,黑"
     }
   },
   {
@@ -347,16 +347,16 @@
     "set_idx": 19,
     "image": "cards\\magic_019.png",
     "en_image": "cards\\magic_en_019.png",
-    "mana_color": "紫色",
+    "mana_color": "白色",
     "spell_top": {
       "name": "暴露",
       "effect": "本次战斗中目标敌人失去所有城防和抗性。远程攻击2。",
-      "mana_cost": "蓝"
+      "mana_cost": "白"
     },
     "spell_bottom": {
       "name": "群体暴露",
       "effect": "本次战斗中所有敌人或失去所有城防，或失去所有抗性。远程攻击3。",
-      "mana_cost": "蓝,黑"
+      "mana_cost": "白,黑"
     }
   },
   {
@@ -365,16 +365,16 @@
     "set_idx": 20,
     "image": "cards\\magic_020.png",
     "en_image": "cards\\magic_en_020.png",
-    "mana_color": "无色",
+    "mana_color": "白色",
     "spell_top": {
       "name": "战斗号召",
       "effect": "本回合中你可以使用部队供应区中一支部队的一个能力，将该部队视为你已招募的部队。你不能对这支部队分配伤害。",
-      "mana_cost": "蓝"
+      "mana_cost": "白"
     },
     "spell_bottom": {
       "name": "荣誉号召",
       "effect": "从部队供应区免费招募任意一支部队。(如果你已经达到指挥上限，你必须先解散你的一支部队。)",
-      "mana_cost": "蓝,黑"
+      "mana_cost": "白,黑"
     }
   },
   {
@@ -383,14 +383,16 @@
     "set_idx": 21,
     "image": "cards\\magic_021.png",
     "en_image": "cards\\magic_en_021.png",
-    "mana_color": "白",
+    "mana_color": "白色",
     "spell_top": {
       "name": "魅惑",
-      "effect": "影响力4。如果你在交涉中打出本卡牌，或者获得一颗任意颜色的魔晶，放入物品栏，或者使一支部队的招募费用-3。"
+      "effect": "影响力4。如果你在交涉中打出本卡牌，或者获得一颗任意颜色的魔晶，放入物品栏，或者使一支部队的招募费用-3。",
+      "mana_cost": "白"
     },
     "spell_bottom": {
       "name": "附身",
-      "effect": "一个敌人不攻击。攻击阶段中你获得等同于其攻击（包括元素属性）的攻击，但忽略特殊能力。此次攻击你只能选择其他敌人作为目标。"
+      "effect": "一个敌人不攻击。攻击阶段中你获得等同于其攻击（包括元素属性）的攻击，但忽略特殊能力。此次攻击你只能选择其他敌人作为目标。",
+      "mana_cost": "白,黑"
     }
   },
   {
@@ -399,14 +401,16 @@
     "set_idx": 22,
     "image": "cards\\magic_022.png",
     "en_image": "cards\\magic_en_022.png",
-    "mana_color": "蓝色",
+    "mana_color": "白色",
     "spell_top": {
       "name": "旋風",
-      "effect": "本次战斗中目标敌人不攻击。"
+      "effect": "本次战斗中目标敌人不攻击。",
+      "mana_cost": "白"
     },
     "spell_bottom": {
       "name": "颶風",
-      "effect": "本卡牌只能在战斗攻击阶段打出。消灭目标敌人。"
+      "effect": "本卡牌只能在战斗攻击阶段打出。消灭目标敌人。",
+      "mana_cost": "白,黑"
     }
   },
   {
@@ -415,14 +419,16 @@
     "set_idx": 23,
     "image": "cards\\magic_023.png",
     "en_image": "cards\\magic_en_023.png",
-    "mana_color": "蓝",
+    "mana_color": "白色",
     "spell_top": {
       "name": "清风之翼",
-      "effect": "打出本卡牌时，支付1-5点移动力点数，每支付1点在翻开的地图上移动一格。你移动结束必须停留在安全格上。以此方式移动不会激怒肆虐的敌人。"
+      "effect": "打出本卡牌时，支付1-5点移动力点数，每支付1点在翻开的地图上移动一格。你移动结束必须停留在安全格上。以此方式移动不会激怒肆虐的敌人。",
+      "mana_cost": "白"
     },
     "spell_bottom": {
       "name": "黑夜之翼",
-      "effect": "本次战斗中目标敌人不攻击。你可以将额外数量的敌人作为目标：支付1点移动力点数选择第二个敌人，支付2点移动力点数选择第三个敌人，以此类推。"
+      "effect": "本次战斗中目标敌人不攻击。你可以将额外数量的敌人作为目标：支付1点移动力点数选择第二个敌人，支付2点移动力点数选择第三个敌人，以此类推。",
+      "mana_cost": "白,黑"
     }
   }
 ]

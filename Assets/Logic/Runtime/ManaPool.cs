@@ -16,6 +16,45 @@ namespace MK.Logic.Runtime
         public Dictionary<ManaColor, int> Tokens { get; } = new();
 
         /// <summary>
+        /// Pay already-selected mana colors atomically, tokens before crystals.
+        /// Wild source dice must first be converted to the selected color by the source flow.
+        /// </summary>
+        public bool TryPayExactColors(IEnumerable<ManaColor> colors, ActionContext context, PlayerState owner = null)
+        {
+            var needs = new Dictionary<ManaColor, int>();
+            foreach (var color in colors)
+            {
+                if (!System.Enum.IsDefined(typeof(ManaColor), color)) return false;
+                if (!context.InfiniteMana.Contains(color))
+                    needs[color] = needs.GetValueOrDefault(color) + 1;
+            }
+            foreach (var need in needs)
+                if (Tokens.GetValueOrDefault(need.Key) + Crystals.GetValueOrDefault(need.Key) < need.Value)
+                    return false;
+
+            // Nothing changes until every color, including repeated costs, is affordable.
+            foreach (var need in needs)
+            {
+                int tokens = System.Math.Min(Tokens.GetValueOrDefault(need.Key), need.Value);
+                int crystals = need.Value - tokens;
+                if (tokens > 0)
+                {
+                    Tokens[need.Key] -= tokens;
+                    if (Tokens[need.Key] == 0) Tokens.Remove(need.Key);
+                }
+                if (crystals == 0) continue;
+                Crystals[need.Key] -= crystals;
+                context.SpentCrystals[need.Key] = context.SpentCrystals.GetValueOrDefault(need.Key) + crystals;
+                if (owner != null && owner.ManaCurseColor == need.Key && !owner.ManaCurseTriggered)
+                {
+                    owner.Wounds++;
+                    owner.ManaCurseTriggered = true;
+                }
+            }
+            return true;
+        }
+
+        /// <summary>
         /// 嘗試支付指定成本。法力標記會優先消耗，
         /// 若不足則使用晶體。資源不足時返回 false。
         /// </summary>

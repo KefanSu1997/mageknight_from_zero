@@ -20,7 +20,7 @@ def values(mapping):
     return [{'key': k, 'value': str(v) if not isinstance(v, bool) else str(v)} for k, v in mapping.items()]
 
 
-def case(card_id, enhanced, title, expected, option=0, setup=None, limits=(), followup='', effect_choice=''):
+def case(card_id, enhanced, title, expected, option=0, setup=None, limits=(), followup='', effect_choice='', error=''):
     card = CARDS[card_id]
     result = dict(MovementPool=0, InfluencePool=0, MeleePool=0, RangedPool=0, BlockPool=0)
     if card_id.startswith(('basic', 'advanced')) and enhanced:
@@ -40,6 +40,15 @@ def case(card_id, enhanced, title, expected, option=0, setup=None, limits=(), fo
                       option=option, effectChoice=effect_choice, title=('强化 / ' if enhanced else '基础 / ') + title,
                       followup=followup, followupEnhanced=False, setup=values(setup or {}),
                       expected=values(result), limitations=list(limits)))
+    if error:
+        CASES[-1]['expectedException'] = error
+        # Rejection must preserve every mana color, not just the missing one.
+        unchanged = {f'token:{color}': (setup or {}).get(f'token:{color}', 2) for color in COLORS}
+        unchanged.update({f'crystal:{color}': (setup or {}).get(f'crystal:{color}', int(color in COLORS[:4])) for color in COLORS})
+        unchanged.update(hand=6, discard=2, Wounds=3, handWounds=3, Fame=0, Reputation=0,
+                         unitReady=False, unitWounds=0, ManaCurseTriggered=False)
+        result.update(unchanged)
+        CASES[-1]['expected'] = values(result)
 
 
 def b(n, enhanced, title, expected, **kw):
@@ -265,6 +274,24 @@ for strong in [False, True]:
     b(1, strong, '治疗上限与每治疗一伤抽一牌',
       {'Wounds': 0, 'handWounds': 0, 'hand': 4, 'discard': 2},
       setup={'player:Wounds': 1, 'DrawPerHeal': 1})
+
+
+# Resource rejection cases assert both the rejection and unchanged real state.
+# There are no wildcard tokens in these fixtures, so they cannot cover missing costs.
+no_red = {'token:Red': 0, 'crystal:Red': 0, 'token:Gold': 0, 'token:Black': 0}
+b(21, True, '红色费用不足不能降级为基础攻击',
+  {'token:Red': 0, 'crystal:Red': 0, 'hand': 6, 'discard': 2}, setup=no_red,
+  error='InvalidOperationException: 法力不足，不能支付所选效果')
+for n in [0, 6, 12, 18]:
+    color = ['Green', 'Red', 'Blue', 'White'][n // 6]
+    # A full base-color token is available but black is missing; neither is spent.
+    case(f'magic_{n:03}', True, '缺黑色费用，保留基础色与全部牌区',
+         {'token:' + color: 2, 'token:Black': 0, 'hand': 6, 'discard': 2, 'unitReady': False},
+         setup={'token:Black': 0, 'crystal:Black': 0, 'token:Gold': 0},
+         error='InvalidOperationException: 法力不足，不能支付所选效果')
+    case(f'magic_{n:03}', True, '白昼强效被拒绝且资源不变',
+         {'token:' + color: 2, 'token:Black': 2, 'hand': 6, 'discard': 2, 'unitReady': False},
+         setup={'DayPart': 'Day'}, error='InvalidOperationException: 白昼不能施放强效法术')
 
 
 def export():

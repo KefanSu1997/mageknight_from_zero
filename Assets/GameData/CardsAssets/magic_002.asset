@@ -25,4 +25,4 @@ MonoBehaviour:
   Bottom:
     Name: "\u795E\u6E38"
     Effect: "\u4E0E\u57FA\u672C\u6548\u679C\u76F8\u540C\uFF0C\u4F46\u7531\u4F60\u9009\u62E9\u5361\u724C\uFF0C\u800C\u4E0D\u662F\u968F\u673A\u9009\u53D6\u3002"
-    ManaCost: 02000000
+    ManaCost: 0200000005000000

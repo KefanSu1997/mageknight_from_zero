@@ -30,6 +30,8 @@
 
 ## 经验索引
 
+- 原法术费用与用例版本：ManaColor整笔支付、费用不足明确拒绝、TextAsset显式导入/SHA256、EditMode XML与摘要一致性 —— `vibe_coding/codex/project_experience/card_mana_and_suite_identity_2026-09-10.md`
+
 - 真实伤牌守恒与报告IO1224：按实际牌区计数、治疗按实际移除数触发、独立运行目录和不可变检查点 —— `vibe_coding/codex/project_experience/card_wounds_and_immutable_reports_2026-09-10.md`
 
 - 原卡场景审计：121张有效牌面、合法夹具、独立预期、模块与整卡结论分开、报告时效和编译等待 —— `vibe_coding/codex/project_experience/original_card_scene_audit_2026-09-10.md`

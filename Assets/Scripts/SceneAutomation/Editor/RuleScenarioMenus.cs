@@ -14,6 +14,7 @@ namespace MageKnight.SceneAutomation.Editor
     {
         private const string QueueKey = "MageKnight.RulesSuite.Index";
         private const string StartKey = "MageKnight.RulesSuite.ExpectedStart";
+        private const string RootKey = "MageKnight.RulesSuite.OutputRoot";
         private static readonly string[] Names = { "Combat", "Exploration", "Recruitment", "Journey" };
         private static TestRunnerApi _testRunner;
 
@@ -44,7 +45,7 @@ namespace MageKnight.SceneAutomation.Editor
         [MenuItem("Tools/Mage Knight/Adventure/Run All Four")]
         public static void RunAll()
         {
-            EnsureScenes(); SessionState.SetInt(QueueKey, 0); RunAt(0);
+            BeginRun(0); RunAt(0);
         }
 
         [MenuItem("Tools/Mage Knight/Rules/Run Combat")]
@@ -58,14 +59,36 @@ namespace MageKnight.SceneAutomation.Editor
 
         private static void RunSingle(int index)
         {
-            EnsureScenes(); SessionState.SetInt(QueueKey, -1); RunAt(index);
+            BeginRun(-1); RunAt(index);
+        }
+
+        private static string NewOutputDirectory(string category)
+        {
+            string directory = "AutomationOutputs/" + category + "/" + DateTime.Now.ToString("yyyyMMdd_HHmmss") + "_" + Guid.NewGuid().ToString("N").Substring(0, 8);
+            Directory.CreateDirectory(directory);
+            Debug.Log("[RulesSuite] Output directory: " + directory);
+            return directory;
+        }
+
+        private static void BeginRun(int queue)
+        {
+            EnsureScenes();
+            SessionState.SetString(RootKey, NewOutputDirectory("AdventureRegression"));
+            SessionState.SetInt(QueueKey, queue);
         }
 
         private static void RunAt(int index)
         {
             SessionState.SetString(StartKey, DateTime.UtcNow.ToString("o"));
             GameViewResolutionUtility.TrySetFixedResolution(1920, 1080, "Rules_1920x1080");
-            SceneAutomationCommand.RunFromProjectRelativeConfig("AutomationConfigs/adventure_" + Names[index].ToLowerInvariant() + ".json");
+            string directory = SessionState.GetString(RootKey, "") + "/" + Names[index];
+            Directory.CreateDirectory(directory);
+            var request = JsonUtility.FromJson<SceneAutomationRequest>(File.ReadAllText("AutomationConfigs/adventure_" + Names[index].ToLowerInvariant() + ".json"));
+            request.reportPath = directory + "/report.json";
+            request.screenshotsDirectory = directory + "/captures";
+            string config = directory + "/request.json";
+            File.WriteAllText(config, JsonUtility.ToJson(request, true));
+            SceneAutomationCommand.RunFromProjectRelativeConfig(config);
         }
 
         private static void OnPlayModeChanged(PlayModeStateChange change)
@@ -73,7 +96,7 @@ namespace MageKnight.SceneAutomation.Editor
             if (change != PlayModeStateChange.EnteredEditMode) return;
             int index = SessionState.GetInt(QueueKey, -1);
             if (index < 0) return;
-            string path = "AutomationOutputs/OfficialCards/20260910/" + Names[index] + "/report.json";
+            string path = SessionState.GetString(RootKey, "") + "/" + Names[index] + "/report.json";
             var report = File.Exists(path) ? JsonUtility.FromJson<SceneAutomationReport>(File.ReadAllText(path)) : null;
             bool fresh = report != null && DateTime.TryParse(report.startedAt, out var start)
                 && DateTime.TryParse(SessionState.GetString(StartKey, ""), out var expected) && start >= expected;
@@ -107,7 +130,7 @@ namespace MageKnight.SceneAutomation.Editor
         {
             if (EditorApplication.isPlaying) throw new InvalidOperationException("Exit Play Mode before running tests.");
             _testRunner = ScriptableObject.CreateInstance<TestRunnerApi>();
-            _testRunner.RegisterCallbacks(new TestResults());
+            _testRunner.RegisterCallbacks(new TestResults(NewOutputDirectory("EditMode")));
             var filter = new Filter { testMode = TestMode.EditMode };
             if (!all) filter.groupNames = new[] { "^MK.Tests.Rules.", "^MK.Tests.Adventure.", "^MK.Tests.map.TerrainCostTests" };
             _testRunner.Execute(new ExecutionSettings(filter));
@@ -115,15 +138,15 @@ namespace MageKnight.SceneAutomation.Editor
 
         private sealed class TestResults : ICallbacks
         {
+            private readonly string _directory;
+            public TestResults(string directory) => _directory = directory;
             public void RunStarted(ITestAdaptor testsToRun) { }
             public void TestStarted(ITestAdaptor test) { }
             public void TestFinished(ITestResultAdaptor result) { }
             public void RunFinished(ITestResultAdaptor result)
             {
-                const string directory = "AutomationOutputs/OfficialCards/20260910";
-                Directory.CreateDirectory(directory);
-                TestRunnerApi.SaveResultToFile(result, Path.Combine(directory, "editmode-results.xml"));
-                File.WriteAllText(Path.Combine(directory, "editmode-summary.json"),
+                TestRunnerApi.SaveResultToFile(result, Path.Combine(_directory, "editmode-results.xml"));
+                File.WriteAllText(Path.Combine(_directory, "editmode-summary.json"),
                     "{\"passed\":" + result.PassCount + ",\"failed\":" + result.FailCount + ",\"skipped\":" + result.SkipCount + "}");
                 Debug.Log($"[RulesTests] Passed {result.PassCount}, failed {result.FailCount}, skipped {result.SkipCount}.");
             }

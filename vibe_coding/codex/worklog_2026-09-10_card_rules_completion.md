@@ -37,3 +37,21 @@
 - 未提供有效fmt/lint脚本（package.json只有占位test），使用C#空白检查、git diff --check、Python AST、JSON解析，以及实际Unity编译/测试作为本批检查。
 
 下一批：按原卡图修复法术颜色与上下半部费用；支付失败保持所有颜色不变、强化费用不足明确拒绝；绿色晶化使用ManaColor支付，不再通过攻击Element转换。随后继续完整牌区生命周期、目标合法性、实际移动/战斗消费者以及部队/技能场景。
+
+## 第二批：原法术费用与明确拒绝
+
+将已选定颜色的支付改为整笔预检查后再扣除，重复同色费用一起核对，并记录实际花费魔晶及诅咒触发。此API不替代魔力源取骰/万能色转换流程，该范围仍待后续联验。强化费用不足抛出明确的可验证拒绝，不自动降级；法术基础也支付费用，强效核对日夜（保留黑暗护符AllowBlackAtDay例外）。
+
+对照现有原图修复magic.json及SpellCardSO的24张法术费用同源，保留原卡图和GUID；复现命令为python tools/restore_spell_costs.py。绿色晶化直接按ManaColor支付，不再丢失颜色。新增9个真实场景拒绝/资源守恒案例和3项EditMode测试。预期拒绝须精确匹配异常并同时通过状态断言；旧案例预期不变。修改后待编译和实际场景验收。
+
+第二批初跑目录20260910_142203_15a8c217完成了325例，但检查发现Unity的TextAsset未导入最后追加的完整资源断言（拒绝例仅12/13项检查），不能据此宣称全资源守恒。修复菜单在运行前显式ImportAsset(cases.json)，报告记录实际加载的用例文本SHA256，汇总器强制与磁盘用例匹配，避免同ID但旧断言版本误验收。初跑保留为诊断，后续重新验收。
+
+有效重跑目录20260910_142756_642511ad：325例，95 passed、65 failed、165 partial，971次真实点击、3369效果断言、329截图；用例哈希66780c053252b9c92c19128d4c7edc85ed1b3ddbf997178e9a1899ea8fa3be1d完全匹配。新增拒绝案例每例29项断言全部通过。
+
+EditMode引擎98项全部通过，但旧摘要写入遇到同类IO1224而仍保留95的旧摘要（以最新XML时间与测试节点核查发现；异常在Editor.log）。因此把EditMode和四冒险场景入口也改为独立输出目录，保留原故障证据，待重跑取得XML/JSON一致的最终结果。不能仅看旧摘要或下一次域重载后干净Console就忽略该错误。
+
+最终98项EditMode全部通过、0失败/跳过，XML与JSON一致：AutomationOutputs/EditMode/20260910_143323_e2ac6241。四冒险新目录AutomationOutputs/AdventureRegression/20260910_143403_402116e7验证114次操作、477断言、118截图全部通过，已复制到有效原卡运行目录的regression子目录。复现核验：python tools/verify_card_regression.py --scenes <回归目录> --tests <EditMode目录>。最终Console两次0error证据在原卡目录console_final_1/2.json。
+
+实际查看最新狂怒费用不足、痊愈支付绿魔力并治疗、思维读取缺黑色费用的截图；其余代表截图与第一批已查看图做SHA256一致性检查，见visual_comparison.json。失败仍从首轮111下降为65，新增13例均通过；165个partial必须继续后续联验，部队/技能仍未纳入当前325例。
+
+第一批代码及完整证据已推送e278e4f/e2cc08c，远端feat/card-rules-completion已核对e2cc08cd59607acda04347b2da9f1f8509867ce6。GitHub PR/合并仍待账号认证，未改main。第二批继续同分支存档。

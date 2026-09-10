@@ -8,6 +8,7 @@ public sealed class CardVerificationResult
     public string title;
     public string status;
     public string exception;
+    public string expectedException;
     public string executionPath;
     public string printedEffect;
     public string artwork;

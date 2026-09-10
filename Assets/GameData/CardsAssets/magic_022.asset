@@ -17,12 +17,12 @@ MonoBehaviour:
   Set: 3
   ImagePath: cards/magic_022
   EnImagePath: cards/magic_en_022.png
-  ManaColor: 1
+  ManaColor: 3
   Top:
     Name: "\u65CB\u98A8"
     Effect: "\u672C\u6B21\u6218\u6597\u4E2D\u76EE\u6807\u654C\u4EBA\u4E0D\u653B\u51FB\u3002"
-    ManaCost: 
+    ManaCost: 03000000
   Bottom:
     Name: "\u98B6\u98A8"
     Effect: "\u672C\u5361\u724C\u53EA\u80FD\u5728\u6218\u6597\u653B\u51FB\u9636\u6BB5\u6253\u51FA\u3002\u6D88\u706D\u76EE\u6807\u654C\u4EBA\u3002"
-    ManaCost: 
+    ManaCost: 0300000005000000

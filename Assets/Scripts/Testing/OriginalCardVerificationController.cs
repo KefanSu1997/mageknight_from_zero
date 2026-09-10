@@ -37,6 +37,7 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
     private bool _selected;
     private bool _executed;
     private string _started;
+    private string _suiteSha256;
     private string _outputRoot;
     private int _checkpoint;
     private Dictionary<string, string> _before;
@@ -59,7 +60,8 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
         ["Fame"] = "名望", ["Reputation"] = "声誉", ["unitReady"] = "目标部队就绪",
         ["unitWounds"] = "目标部队创伤", ["unitLevel"] = "目标部队等级",
         ["originalArtwork"] = "原卡面绑定", ["printedEffectPresent"] = "印刷效果文本",
-        ["attackElement"] = "攻击元素", ["blockElement"] = "格挡元素", ["SiegePool"] = "攻城攻击"
+        ["attackElement"] = "攻击元素", ["blockElement"] = "格挡元素", ["SiegePool"] = "攻城攻击",
+        ["executionException"] = "操作合法性"
     };
 
     private void Awake()
@@ -67,6 +69,8 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
         CardJsonLoader.SetBaseDirectory(Path.Combine(Application.dataPath, "../resources/text_json"));
         _system = new ActionSystem();
         _catalog = Resources.Load<CardVerificationCatalog>("CardVerification/Catalog");
+        using (var sha = System.Security.Cryptography.SHA256.Create())
+            _suiteSha256 = BitConverter.ToString(sha.ComputeHash(System.Text.Encoding.UTF8.GetBytes(_catalog.cases.text.Replace("\r\n", "\n")))).Replace("-", "").ToLowerInvariant();
         _cases = JsonUtility.FromJson<CardVerificationSuite>(_catalog.cases.text).cases.Where(c => c.batch == batch).ToArray();
         _started = DateTime.UtcNow.ToString("o");
         string reportPath = SceneAutomationRuntimeState.PendingRequest?.reportPath;
@@ -216,16 +220,20 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
         }).ToList();
         checks.Add(new CardVerificationCheck { key = "originalArtwork", expected = _case.cardId, actual = _art.sprite?.name ?? "", passed = _art.sprite != null && _art.sprite.name == _case.cardId });
         checks.Add(new CardVerificationCheck { key = "printedEffectPresent", expected = "True", actual = (!string.IsNullOrWhiteSpace(_printed.text)).ToString(), passed = !string.IsNullOrWhiteSpace(_printed.text) });
-        string status = exception.Length > 0 || checks.Any(c => !c.passed) ? "failed" : (_case.limitations?.Length ?? 0) > 0 ? "partial" : "passed";
+        checks.Add(new CardVerificationCheck { key = "executionException", expected = _case.expectedException ?? "", actual = exception, passed = exception == (_case.expectedException ?? "") });
+        string status = checks.Any(c => !c.passed) ? "failed" : (_case.limitations?.Length ?? 0) > 0 ? "partial" : "passed";
         var result = new CardVerificationResult { id = _case.id, cardId = _case.cardId, title = _case.title, status = status,
-            exception = exception, executionPath = executionPath, printedEffect = _printed.text, artwork = _art.sprite?.name, limitations = _case.limitations,
+            exception = exception, expectedException = _case.expectedException, executionPath = executionPath, printedEffect = _printed.text, artwork = _art.sprite?.name, limitations = _case.limitations,
             before = Values(_before), after = Values(after), checks = checks.ToArray() };
         _results.RemoveAll(r => r.id == result.id); _results.Add(result);
         _executed = true; _play.interactable = false;
-        var display = checks.OrderBy(c => c.passed).Take(9);
+        var display = checks.Where(c => c.key != "executionException" || c.expected.Length > 0 || c.actual.Length > 0)
+            .OrderBy(c => c.passed).Take(9);
         _comparison.text = "检查项                       执行前 → 实际结果       规则预期\n" + string.Join("\n", display.Select(c =>
             $"{(c.passed ? "通过" : "不符")}  {Label(c.key)}   {(_before.TryGetValue(c.key, out var b) ? b : "—")} → {c.actual}   [预期 {c.expected}]"));
         _status.text = status == "passed" ? "本例断言通过" : status == "partial" ? "即时断言通过 · 整卡仍有未验证范围" : "发现不符：" + (exception.Length > 0 ? exception : checks.First(c => !c.passed).key);
+        if (status == "passed" && !string.IsNullOrEmpty(_case.expectedException))
+            _status.text = "按规则拒绝操作 · 资源守恒断言通过：" + exception.Substring(exception.IndexOf(": ", StringComparison.Ordinal) + 2);
         _status.color = status == "failed" ? new Color32(244, 142, 118, 255) : W.Gold;
         SaveResults();
     }
@@ -239,7 +247,7 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
         string checkpoint = Path.Combine(_outputRoot, "checkpoints", (++_checkpoint).ToString("D4") + ".json");
         File.WriteAllText(checkpoint, JsonUtility.ToJson(_results.Last(), true));
         if (_results.Count != _cases.Length) return;
-        var report = new CardVerificationResults { startedAt = _started, finishedAt = DateTime.UtcNow.ToString("o"), batch = batch,
+        var report = new CardVerificationResults { startedAt = _started, finishedAt = DateTime.UtcNow.ToString("o"), batch = batch, suiteSha256 = _suiteSha256,
             status = _results.Count != _cases.Length ? "running" : _results.Any(r => r.status == "failed") ? "has_failures" : _results.Any(r => r.status == "partial") ? "partial" : "passed", cases = _results.ToArray() };
         string temporary = Path.Combine(_outputRoot, Guid.NewGuid().ToString("N") + ".tmp");
         File.WriteAllText(temporary, JsonUtility.ToJson(report, true));

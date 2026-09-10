@@ -36,6 +36,9 @@ namespace MageKnight.SceneAutomation.Editor
                 .Where(c => c != null).Select(c => new CardVerificationCatalog.Entry
                 { source = c, artwork = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/GameData/cards/" + c.Id + ".png") }).ToArray();
             if (catalog.cards.Length != 125) throw new InvalidOperationException("Expected 125 canonical deed card assets, got " + catalog.cards.Length);
+            // The generator can update JSON while Unity is unfocused. Do not
+            // run an old imported TextAsset against a new disk configuration.
+            AssetDatabase.ImportAsset(folder + "/cases.json", ImportAssetOptions.ForceUpdate);
             catalog.cases = AssetDatabase.LoadAssetAtPath<TextAsset>(folder + "/cases.json");
             if (catalog.cases == null) throw new InvalidOperationException("Run tools/build_all_card_verification.py first.");
             EditorUtility.SetDirty(catalog); AssetDatabase.SaveAssets();

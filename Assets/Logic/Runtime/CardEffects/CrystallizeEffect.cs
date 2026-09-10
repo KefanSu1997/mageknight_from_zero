@@ -15,12 +15,13 @@ namespace MK.Logic.Runtime.CardEffects
 
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
+            if (option < 0 || option > 3) throw new System.ArgumentOutOfRangeException(nameof(option));
             ManaColor color = (ManaColor)option;
             if (!_enh)
             {
-                var cost = new ManaCost(new Dictionary<Element, int>{{color.ToElement(),1}});
-                if (player.Mana.Pay(cost, player))
-                    player.Mana.AddCrystal(color,1);
+                if (!player.Mana.TryPayExactColors(new[] { color }, ctx, player))
+                    throw new System.InvalidOperationException("法力不足，不能晶化");
+                player.Mana.AddCrystal(color,1);
             }
             else
             {
