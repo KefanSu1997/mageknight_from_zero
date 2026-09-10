@@ -1,0 +1,1513 @@
+{
+  "status": "audit_complete_with_findings",
+  "scope": "125 existing card records (121 readable faces); staged scene verification, not complete rules certification",
+  "batches": [
+    {
+      "batch": "basic_card",
+      "caseCount": 183,
+      "result": {
+        "passed": 97,
+        "partial": 86
+      },
+      "cardCount": 28,
+      "effectsReport": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\AllOriginalCards\\20260910_222724_b5e1bbc2\\basic_card\\effects.json"
+    },
+    {
+      "batch": "advanced_card",
+      "caseCount": 119,
+      "result": {
+        "passed": 19,
+        "partial": 89,
+        "failed": 11
+      },
+      "cardCount": 48,
+      "effectsReport": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\AllOriginalCards\\20260910_222724_b5e1bbc2\\advanced_card\\effects.json"
+    },
+    {
+      "batch": "magic",
+      "caseCount": 102,
+      "result": {
+        "partial": 81,
+        "failed": 5,
+        "passed": 16
+      },
+      "cardCount": 24,
+      "effectsReport": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\AllOriginalCards\\20260910_222724_b5e1bbc2\\magic\\effects.json"
+    },
+    {
+      "batch": "items",
+      "caseCount": 86,
+      "result": {
+        "partial": 79,
+        "failed": 3,
+        "passed": 4
+      },
+      "cardCount": 25,
+      "effectsReport": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\AllOriginalCards\\20260910_222724_b5e1bbc2\\items\\effects.json"
+    }
+  ],
+  "cards": [
+    {
+      "id": "advanced_card_000",
+      "status": "待联验",
+      "cases": 4,
+      "failures": [],
+      "remaining": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收",
+        "此例覆盖魔晶奖励边界；实际使用和卡区生命周期仍须联验"
+      ]
+    },
+    {
+      "id": "advanced_card_001",
+      "status": "待联验",
+      "cases": 3,
+      "failures": [],
+      "remaining": [
+        "此例覆盖魔晶奖励边界；实际使用和卡区生命周期仍须联验"
+      ]
+    },
+    {
+      "id": "advanced_card_002",
+      "status": "待联验",
+      "cases": 3,
+      "failures": [],
+      "remaining": [
+        "此例覆盖魔晶奖励边界；实际使用和卡区生命周期仍须联验"
+      ]
+    },
+    {
+      "id": "advanced_card_003",
+      "status": "待联验",
+      "cases": 4,
+      "failures": [],
+      "remaining": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收",
+        "此例覆盖魔晶奖励边界；实际使用和卡区生命周期仍须联验"
+      ]
+    },
+    {
+      "id": "advanced_card_004",
+      "status": "待联验",
+      "cases": 4,
+      "failures": [],
+      "remaining": [
+        "首轮检验本分支的即时输出；目标范围、额外选择及回合/战斗后续结算须补专用案例"
+      ]
+    },
+    {
+      "id": "advanced_card_005",
+      "status": "待联验",
+      "cases": 8,
+      "failures": [],
+      "remaining": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验",
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收",
+        "首轮检验本分支的即时输出；目标范围、额外选择及回合/战斗后续结算须补专用案例"
+      ]
+    },
+    {
+      "id": "advanced_card_006",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "首轮检验本分支的即时输出；目标范围、额外选择及回合/战斗后续结算须补专用案例"
+      ]
+    },
+    {
+      "id": "advanced_card_007",
+      "status": "待联验",
+      "cases": 4,
+      "failures": [],
+      "remaining": [
+        "首轮检验本分支的即时输出；目标范围、额外选择及回合/战斗后续结算须补专用案例"
+      ]
+    },
+    {
+      "id": "advanced_card_008",
+      "status": "待联验",
+      "cases": 4,
+      "failures": [],
+      "remaining": [
+        "首轮检验本分支的即时输出；目标范围、额外选择及回合/战斗后续结算须补专用案例"
+      ]
+    },
+    {
+      "id": "advanced_card_009",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "首轮检验本分支的即时输出；目标范围、额外选择及回合/战斗后续结算须补专用案例"
+      ]
+    },
+    {
+      "id": "advanced_card_010",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "首轮检验本分支的即时输出；目标范围、额外选择及回合/战斗后续结算须补专用案例"
+      ]
+    },
+    {
+      "id": "advanced_card_011",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "首轮检验本分支的即时输出；目标范围、额外选择及回合/战斗后续结算须补专用案例"
+      ]
+    },
+    {
+      "id": "advanced_card_012",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "首轮检验本分支的即时输出；目标范围、额外选择及回合/战斗后续结算须补专用案例"
+      ]
+    },
+    {
+      "id": "advanced_card_013",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "首轮检验本分支的即时输出；目标范围、额外选择及回合/战斗后续结算须补专用案例"
+      ]
+    },
+    {
+      "id": "advanced_card_014",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "首轮检验本分支的即时输出；目标范围、额外选择及回合/战斗后续结算须补专用案例"
+      ]
+    },
+    {
+      "id": "advanced_card_015",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "首轮检验本分支的即时输出；目标范围、额外选择及回合/战斗后续结算须补专用案例"
+      ]
+    },
+    {
+      "id": "advanced_card_016",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "首轮检验本分支的即时输出；目标范围、额外选择及回合/战斗后续结算须补专用案例"
+      ]
+    },
+    {
+      "id": "advanced_card_017",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "首轮检验本分支的即时输出；目标范围、额外选择及回合/战斗后续结算须补专用案例"
+      ]
+    },
+    {
+      "id": "advanced_card_018",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "首轮检验本分支的即时输出；目标范围、额外选择及回合/战斗后续结算须补专用案例"
+      ]
+    },
+    {
+      "id": "advanced_card_019",
+      "status": "已测分支通过",
+      "cases": 2,
+      "failures": [],
+      "remaining": []
+    },
+    {
+      "id": "advanced_card_020",
+      "status": "已测分支通过",
+      "cases": 2,
+      "failures": [],
+      "remaining": []
+    },
+    {
+      "id": "advanced_card_021",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "首轮检验本分支的即时输出；目标范围、额外选择及回合/战斗后续结算须补专用案例"
+      ]
+    },
+    {
+      "id": "advanced_card_022",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "首轮检验本分支的即时输出；目标范围、额外选择及回合/战斗后续结算须补专用案例"
+      ]
+    },
+    {
+      "id": "advanced_card_023",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "首轮检验本分支的即时输出；目标范围、额外选择及回合/战斗后续结算须补专用案例"
+      ]
+    },
+    {
+      "id": "advanced_card_024",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "首轮检验本分支的即时输出；目标范围、额外选择及回合/战斗后续结算须补专用案例"
+      ]
+    },
+    {
+      "id": "advanced_card_025",
+      "status": "发现不符",
+      "cases": 2,
+      "failures": [
+        {
+          "case": "advanced_card_025_01",
+          "checks": [
+            {
+              "key": "spellOffer",
+              "expected": "2",
+              "actual": "3",
+              "passed": false
+            },
+            {
+              "key": "discard",
+              "expected": "3",
+              "actual": "2",
+              "passed": false
+            },
+            {
+              "key": "executionException",
+              "expected": "",
+              "actual": "InvalidOperationException: 未指定要棄掉的卡牌",
+              "passed": false
+            }
+          ],
+          "exception": "InvalidOperationException: 未指定要棄掉的卡牌"
+        }
+      ],
+      "remaining": [
+        "首轮检验本分支的即时输出；目标范围、额外选择及回合/战斗后续结算须补专用案例"
+      ]
+    },
+    {
+      "id": "advanced_card_026",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "首轮检验本分支的即时输出；目标范围、额外选择及回合/战斗后续结算须补专用案例"
+      ]
+    },
+    {
+      "id": "advanced_card_027",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "首轮检验本分支的即时输出；目标范围、额外选择及回合/战斗后续结算须补专用案例"
+      ]
+    },
+    {
+      "id": "advanced_card_028",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "首轮检验本分支的即时输出；目标范围、额外选择及回合/战斗后续结算须补专用案例"
+      ]
+    },
+    {
+      "id": "advanced_card_029",
+      "status": "发现不符",
+      "cases": 2,
+      "failures": [
+        {
+          "case": "advanced_card_029_01",
+          "checks": [
+            {
+              "key": "attackElement",
+              "expected": "Fire",
+              "actual": "Physical",
+              "passed": false
+            }
+          ],
+          "exception": ""
+        }
+      ],
+      "remaining": [
+        "首轮检验本分支的即时输出；目标范围、额外选择及回合/战斗后续结算须补专用案例"
+      ]
+    },
+    {
+      "id": "advanced_card_030",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "首轮检验本分支的即时输出；目标范围、额外选择及回合/战斗后续结算须补专用案例"
+      ]
+    },
+    {
+      "id": "advanced_card_031",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "首轮检验本分支的即时输出；目标范围、额外选择及回合/战斗后续结算须补专用案例"
+      ]
+    },
+    {
+      "id": "advanced_card_032",
+      "status": "发现不符",
+      "cases": 2,
+      "failures": [
+        {
+          "case": "advanced_card_032_01",
+          "checks": [
+            {
+              "key": "NextDrawBonus",
+              "expected": "1",
+              "actual": "2",
+              "passed": false
+            }
+          ],
+          "exception": ""
+        }
+      ],
+      "remaining": [
+        "首轮检验本分支的即时输出；目标范围、额外选择及回合/战斗后续结算须补专用案例"
+      ]
+    },
+    {
+      "id": "advanced_card_033",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "首轮检验本分支的即时输出；目标范围、额外选择及回合/战斗后续结算须补专用案例"
+      ]
+    },
+    {
+      "id": "advanced_card_034",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "首轮检验本分支的即时输出；目标范围、额外选择及回合/战斗后续结算须补专用案例"
+      ]
+    },
+    {
+      "id": "advanced_card_035",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "首轮检验本分支的即时输出；目标范围、额外选择及回合/战斗后续结算须补专用案例"
+      ]
+    },
+    {
+      "id": "advanced_card_036",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "首轮检验本分支的即时输出；目标范围、额外选择及回合/战斗后续结算须补专用案例"
+      ]
+    },
+    {
+      "id": "advanced_card_037",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "首轮检验本分支的即时输出；目标范围、额外选择及回合/战斗后续结算须补专用案例"
+      ]
+    },
+    {
+      "id": "advanced_card_038",
+      "status": "待联验",
+      "cases": 7,
+      "failures": [],
+      "remaining": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收",
+        "首轮检验本分支的即时输出；目标范围、额外选择及回合/战斗后续结算须补专用案例"
+      ]
+    },
+    {
+      "id": "advanced_card_039",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "首轮检验本分支的即时输出；目标范围、额外选择及回合/战斗后续结算须补专用案例"
+      ]
+    },
+    {
+      "id": "advanced_card_040",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "首轮检验本分支的即时输出；目标范围、额外选择及回合/战斗后续结算须补专用案例"
+      ]
+    },
+    {
+      "id": "advanced_card_041",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "首轮检验本分支的即时输出；目标范围、额外选择及回合/战斗后续结算须补专用案例"
+      ]
+    },
+    {
+      "id": "advanced_card_042",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "首轮检验本分支的即时输出；目标范围、额外选择及回合/战斗后续结算须补专用案例"
+      ]
+    },
+    {
+      "id": "advanced_card_043",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "首轮检验本分支的即时输出；目标范围、额外选择及回合/战斗后续结算须补专用案例"
+      ]
+    },
+    {
+      "id": "advanced_card_044",
+      "status": "发现不符",
+      "cases": 2,
+      "failures": [
+        {
+          "case": "advanced_card_044_00",
+          "checks": [
+            {
+              "key": "printedEffectPresent",
+              "expected": "True",
+              "actual": "False",
+              "passed": false
+            },
+            {
+              "key": "executionException",
+              "expected": "",
+              "actual": "InvalidOperationException: 未定義卡牌效果: advanced_card_044",
+              "passed": false
+            }
+          ],
+          "exception": "InvalidOperationException: 未定義卡牌效果: advanced_card_044"
+        },
+        {
+          "case": "advanced_card_044_01",
+          "checks": [
+            {
+              "key": "printedEffectPresent",
+              "expected": "True",
+              "actual": "False",
+              "passed": false
+            },
+            {
+              "key": "executionException",
+              "expected": "",
+              "actual": "InvalidOperationException: 未定義卡牌效果: advanced_card_044",
+              "passed": false
+            }
+          ],
+          "exception": "InvalidOperationException: 未定義卡牌效果: advanced_card_044"
+        }
+      ],
+      "remaining": [
+        "原卡定义缺少名称与效果文本，不能把占位逻辑判为通过"
+      ]
+    },
+    {
+      "id": "advanced_card_045",
+      "status": "发现不符",
+      "cases": 2,
+      "failures": [
+        {
+          "case": "advanced_card_045_00",
+          "checks": [
+            {
+              "key": "printedEffectPresent",
+              "expected": "True",
+              "actual": "False",
+              "passed": false
+            },
+            {
+              "key": "executionException",
+              "expected": "",
+              "actual": "InvalidOperationException: 未定義卡牌效果: advanced_card_045",
+              "passed": false
+            }
+          ],
+          "exception": "InvalidOperationException: 未定義卡牌效果: advanced_card_045"
+        },
+        {
+          "case": "advanced_card_045_01",
+          "checks": [
+            {
+              "key": "printedEffectPresent",
+              "expected": "True",
+              "actual": "False",
+              "passed": false
+            },
+            {
+              "key": "executionException",
+              "expected": "",
+              "actual": "InvalidOperationException: 未定義卡牌效果: advanced_card_045",
+              "passed": false
+            }
+          ],
+          "exception": "InvalidOperationException: 未定義卡牌效果: advanced_card_045"
+        }
+      ],
+      "remaining": [
+        "原卡定义缺少名称与效果文本，不能把占位逻辑判为通过"
+      ]
+    },
+    {
+      "id": "advanced_card_046",
+      "status": "发现不符",
+      "cases": 2,
+      "failures": [
+        {
+          "case": "advanced_card_046_00",
+          "checks": [
+            {
+              "key": "printedEffectPresent",
+              "expected": "True",
+              "actual": "False",
+              "passed": false
+            },
+            {
+              "key": "executionException",
+              "expected": "",
+              "actual": "InvalidOperationException: 未定義卡牌效果: advanced_card_046",
+              "passed": false
+            }
+          ],
+          "exception": "InvalidOperationException: 未定義卡牌效果: advanced_card_046"
+        },
+        {
+          "case": "advanced_card_046_01",
+          "checks": [
+            {
+              "key": "printedEffectPresent",
+              "expected": "True",
+              "actual": "False",
+              "passed": false
+            },
+            {
+              "key": "executionException",
+              "expected": "",
+              "actual": "InvalidOperationException: 未定義卡牌效果: advanced_card_046",
+              "passed": false
+            }
+          ],
+          "exception": "InvalidOperationException: 未定義卡牌效果: advanced_card_046"
+        }
+      ],
+      "remaining": [
+        "原卡定义缺少名称与效果文本，不能把占位逻辑判为通过"
+      ]
+    },
+    {
+      "id": "advanced_card_047",
+      "status": "发现不符",
+      "cases": 2,
+      "failures": [
+        {
+          "case": "advanced_card_047_00",
+          "checks": [
+            {
+              "key": "printedEffectPresent",
+              "expected": "True",
+              "actual": "False",
+              "passed": false
+            },
+            {
+              "key": "executionException",
+              "expected": "",
+              "actual": "InvalidOperationException: 未定義卡牌效果: advanced_card_047",
+              "passed": false
+            }
+          ],
+          "exception": "InvalidOperationException: 未定義卡牌效果: advanced_card_047"
+        },
+        {
+          "case": "advanced_card_047_01",
+          "checks": [
+            {
+              "key": "printedEffectPresent",
+              "expected": "True",
+              "actual": "False",
+              "passed": false
+            },
+            {
+              "key": "executionException",
+              "expected": "",
+              "actual": "InvalidOperationException: 未定義卡牌效果: advanced_card_047",
+              "passed": false
+            }
+          ],
+          "exception": "InvalidOperationException: 未定義卡牌效果: advanced_card_047"
+        }
+      ],
+      "remaining": [
+        "原卡定义缺少名称与效果文本，不能把占位逻辑判为通过"
+      ]
+    },
+    {
+      "id": "basic_card_000",
+      "status": "已测分支通过",
+      "cases": 2,
+      "failures": [],
+      "remaining": []
+    },
+    {
+      "id": "basic_card_001",
+      "status": "已测分支通过",
+      "cases": 8,
+      "failures": [],
+      "remaining": []
+    },
+    {
+      "id": "basic_card_002",
+      "status": "待联验",
+      "cases": 7,
+      "failures": [],
+      "remaining": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ]
+    },
+    {
+      "id": "basic_card_003",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "移动逐格弃牌、同色魔晶与触发上限尚未接入结算；不能判整卡通过"
+      ]
+    },
+    {
+      "id": "basic_card_004",
+      "status": "待联验",
+      "cases": 16,
+      "failures": [],
+      "remaining": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ]
+    },
+    {
+      "id": "basic_card_005",
+      "status": "已测分支通过",
+      "cases": 8,
+      "failures": [],
+      "remaining": []
+    },
+    {
+      "id": "basic_card_006",
+      "status": "待联验",
+      "cases": 8,
+      "failures": [],
+      "remaining": [
+        "回合内使用与最终卡区生命周期仍须联验",
+        "魔晶存量上限、实际使用及回合生命周期仍须覆盖"
+      ]
+    },
+    {
+      "id": "basic_card_007",
+      "status": "已测分支通过",
+      "cases": 2,
+      "failures": [],
+      "remaining": []
+    },
+    {
+      "id": "basic_card_008",
+      "status": "已测分支通过",
+      "cases": 2,
+      "failures": [],
+      "remaining": []
+    },
+    {
+      "id": "basic_card_009",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "现有实现直接发魔力；未验证魔力源移除、保留骰面和归还",
+        "还须验证实际取骰、归还不重掷和非法颜色；仅设置额度不等于结算完成"
+      ]
+    },
+    {
+      "id": "basic_card_010",
+      "status": "待联验",
+      "cases": 6,
+      "failures": [],
+      "remaining": [
+        "减攻分支需与敌人实际攻击结算联验"
+      ]
+    },
+    {
+      "id": "basic_card_011",
+      "status": "待联验",
+      "cases": 3,
+      "failures": [],
+      "remaining": [
+        "远程击杀奖励需对照原卡面核对名望/声誉并实际击杀"
+      ]
+    },
+    {
+      "id": "basic_card_012",
+      "status": "已测分支通过",
+      "cases": 4,
+      "failures": [],
+      "remaining": []
+    },
+    {
+      "id": "basic_card_013",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "现有实现直接发魔力；未验证魔力源移除、保留骰面和归还",
+        "还须验证实际取骰、归还不重掷和非法颜色；仅设置额度不等于结算完成"
+      ]
+    },
+    {
+      "id": "basic_card_014",
+      "status": "已测分支通过",
+      "cases": 2,
+      "failures": [],
+      "remaining": []
+    },
+    {
+      "id": "basic_card_015",
+      "status": "已测分支通过",
+      "cases": 8,
+      "failures": [],
+      "remaining": []
+    },
+    {
+      "id": "basic_card_016",
+      "status": "已测分支通过",
+      "cases": 3,
+      "failures": [],
+      "remaining": []
+    },
+    {
+      "id": "basic_card_017",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "本例未覆盖横置移动及强化多张后续牌"
+      ]
+    },
+    {
+      "id": "basic_card_018",
+      "status": "待联验",
+      "cases": 20,
+      "failures": [],
+      "remaining": [
+        "单格/整类地形范围还需移动场景结算",
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ]
+    },
+    {
+      "id": "basic_card_019",
+      "status": "待联验",
+      "cases": 8,
+      "failures": [],
+      "remaining": [
+        "回合末弃另一张牌并收回本卡的流程未覆盖"
+      ]
+    },
+    {
+      "id": "basic_card_020",
+      "status": "待联验",
+      "cases": 9,
+      "failures": [],
+      "remaining": [
+        "强化额外格挡需敌人能力、攻击颜色和奥术免疫夹具",
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ]
+    },
+    {
+      "id": "basic_card_021",
+      "status": "待联验",
+      "cases": 5,
+      "failures": [],
+      "remaining": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ]
+    },
+    {
+      "id": "basic_card_022",
+      "status": "已测分支通过",
+      "cases": 2,
+      "failures": [],
+      "remaining": []
+    },
+    {
+      "id": "basic_card_023",
+      "status": "已测分支通过",
+      "cases": 8,
+      "failures": [],
+      "remaining": []
+    },
+    {
+      "id": "basic_card_024",
+      "status": "待联验",
+      "cases": 12,
+      "failures": [],
+      "remaining": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ]
+    },
+    {
+      "id": "basic_card_025",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "还须实际承受创伤并检验攻击增加及上限"
+      ]
+    },
+    {
+      "id": "basic_card_026",
+      "status": "待联验",
+      "cases": 14,
+      "failures": [],
+      "remaining": [
+        "实际招募和重整的消费及条件尚未联验",
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ]
+    },
+    {
+      "id": "basic_card_027",
+      "status": "待联验",
+      "cases": 16,
+      "failures": [],
+      "remaining": [
+        "本能四选一的即时分支；地图、交涉、战斗及卡区完整生命周期仍须联验",
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ]
+    },
+    {
+      "id": "items_000",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "复用已有CardEffectFactory模块；尚无按ItemCardData出牌的完整服务。分配、强化移除、限次、持续及随机效果保持待联验"
+      ]
+    },
+    {
+      "id": "items_001",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "复用已有CardEffectFactory模块；尚无按ItemCardData出牌的完整服务。分配、强化移除、限次、持续及随机效果保持待联验"
+      ]
+    },
+    {
+      "id": "items_002",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "复用已有CardEffectFactory模块；尚无按ItemCardData出牌的完整服务。分配、强化移除、限次、持续及随机效果保持待联验"
+      ]
+    },
+    {
+      "id": "items_003",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "复用已有CardEffectFactory模块；尚无按ItemCardData出牌的完整服务。分配、强化移除、限次、持续及随机效果保持待联验"
+      ]
+    },
+    {
+      "id": "items_004",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "复用已有CardEffectFactory模块；尚无按ItemCardData出牌的完整服务。分配、强化移除、限次、持续及随机效果保持待联验"
+      ]
+    },
+    {
+      "id": "items_005",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "复用已有CardEffectFactory模块；尚无按ItemCardData出牌的完整服务。分配、强化移除、限次、持续及随机效果保持待联验"
+      ]
+    },
+    {
+      "id": "items_006",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "复用已有CardEffectFactory模块；尚无按ItemCardData出牌的完整服务。分配、强化移除、限次、持续及随机效果保持待联验"
+      ]
+    },
+    {
+      "id": "items_007",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "复用已有CardEffectFactory模块；尚无按ItemCardData出牌的完整服务。分配、强化移除、限次、持续及随机效果保持待联验"
+      ]
+    },
+    {
+      "id": "items_008",
+      "status": "发现不符",
+      "cases": 2,
+      "failures": [
+        {
+          "case": "items_008_00",
+          "checks": [
+            {
+              "key": "discard",
+              "expected": "4",
+              "actual": "2",
+              "passed": false
+            }
+          ],
+          "exception": ""
+        }
+      ],
+      "remaining": [
+        "复用已有CardEffectFactory模块；尚无按ItemCardData出牌的完整服务。分配、强化移除、限次、持续及随机效果保持待联验"
+      ]
+    },
+    {
+      "id": "items_009",
+      "status": "待联验",
+      "cases": 24,
+      "failures": [],
+      "remaining": [
+        "复用已有CardEffectFactory模块；尚无按ItemCardData出牌的完整服务。分配、强化移除、限次、持续及随机效果保持待联验",
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ]
+    },
+    {
+      "id": "items_010",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "复用已有CardEffectFactory模块；尚无按ItemCardData出牌的完整服务。分配、强化移除、限次、持续及随机效果保持待联验"
+      ]
+    },
+    {
+      "id": "items_011",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "复用已有CardEffectFactory模块；尚无按ItemCardData出牌的完整服务。分配、强化移除、限次、持续及随机效果保持待联验"
+      ]
+    },
+    {
+      "id": "items_012",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "复用已有CardEffectFactory模块；尚无按ItemCardData出牌的完整服务。分配、强化移除、限次、持续及随机效果保持待联验"
+      ]
+    },
+    {
+      "id": "items_013",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "复用已有CardEffectFactory模块；尚无按ItemCardData出牌的完整服务。分配、强化移除、限次、持续及随机效果保持待联验"
+      ]
+    },
+    {
+      "id": "items_014",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "复用已有CardEffectFactory模块；尚无按ItemCardData出牌的完整服务。分配、强化移除、限次、持续及随机效果保持待联验"
+      ]
+    },
+    {
+      "id": "items_015",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "复用已有CardEffectFactory模块；尚无按ItemCardData出牌的完整服务。分配、强化移除、限次、持续及随机效果保持待联验"
+      ]
+    },
+    {
+      "id": "items_016",
+      "status": "发现不符",
+      "cases": 2,
+      "failures": [
+        {
+          "case": "items_016_00",
+          "checks": [
+            {
+              "key": "discard",
+              "expected": "4",
+              "actual": "2",
+              "passed": false
+            }
+          ],
+          "exception": ""
+        }
+      ],
+      "remaining": [
+        "复用已有CardEffectFactory模块；尚无按ItemCardData出牌的完整服务。分配、强化移除、限次、持续及随机效果保持待联验"
+      ]
+    },
+    {
+      "id": "items_017",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "复用已有CardEffectFactory模块；尚无按ItemCardData出牌的完整服务。分配、强化移除、限次、持续及随机效果保持待联验"
+      ]
+    },
+    {
+      "id": "items_018",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "复用已有CardEffectFactory模块；尚无按ItemCardData出牌的完整服务。分配、强化移除、限次、持续及随机效果保持待联验"
+      ]
+    },
+    {
+      "id": "items_019",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "复用已有CardEffectFactory模块；尚无按ItemCardData出牌的完整服务。分配、强化移除、限次、持续及随机效果保持待联验"
+      ]
+    },
+    {
+      "id": "items_020",
+      "status": "待联验",
+      "cases": 16,
+      "failures": [],
+      "remaining": [
+        "复用已有CardEffectFactory模块；尚无按ItemCardData出牌的完整服务。分配、强化移除、限次、持续及随机效果保持待联验",
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验",
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ]
+    },
+    {
+      "id": "items_021",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "复用已有CardEffectFactory模块；尚无按ItemCardData出牌的完整服务。分配、强化移除、限次、持续及随机效果保持待联验"
+      ]
+    },
+    {
+      "id": "items_022",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "复用已有CardEffectFactory模块；尚无按ItemCardData出牌的完整服务。分配、强化移除、限次、持续及随机效果保持待联验"
+      ]
+    },
+    {
+      "id": "items_023",
+      "status": "发现不符",
+      "cases": 2,
+      "failures": [
+        {
+          "case": "items_023_01",
+          "checks": [
+            {
+              "key": "hand",
+              "expected": "5",
+              "actual": "6",
+              "passed": false
+            }
+          ],
+          "exception": ""
+        }
+      ],
+      "remaining": [
+        "复用已有CardEffectFactory模块；尚无按ItemCardData出牌的完整服务。分配、强化移除、限次、持续及随机效果保持待联验"
+      ]
+    },
+    {
+      "id": "items_024",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "复用已有CardEffectFactory模块；尚无按ItemCardData出牌的完整服务。分配、强化移除、限次、持续及随机效果保持待联验"
+      ]
+    },
+    {
+      "id": "magic_000",
+      "status": "待联验",
+      "cases": 4,
+      "failures": [],
+      "remaining": [
+        "法术通过旧 ActionSystem 映射执行；所有目标选择、日夜合法性和后续结算尚未完整接通，不能判整卡通过"
+      ]
+    },
+    {
+      "id": "magic_001",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "法术通过旧 ActionSystem 映射执行；所有目标选择、日夜合法性和后续结算尚未完整接通，不能判整卡通过"
+      ]
+    },
+    {
+      "id": "magic_002",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "法术通过旧 ActionSystem 映射执行；所有目标选择、日夜合法性和后续结算尚未完整接通，不能判整卡通过"
+      ]
+    },
+    {
+      "id": "magic_003",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "法术通过旧 ActionSystem 映射执行；所有目标选择、日夜合法性和后续结算尚未完整接通，不能判整卡通过"
+      ]
+    },
+    {
+      "id": "magic_004",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "法术通过旧 ActionSystem 映射执行；所有目标选择、日夜合法性和后续结算尚未完整接通，不能判整卡通过"
+      ]
+    },
+    {
+      "id": "magic_005",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "法术通过旧 ActionSystem 映射执行；所有目标选择、日夜合法性和后续结算尚未完整接通，不能判整卡通过"
+      ]
+    },
+    {
+      "id": "magic_006",
+      "status": "待联验",
+      "cases": 4,
+      "failures": [],
+      "remaining": [
+        "法术通过旧 ActionSystem 映射执行；所有目标选择、日夜合法性和后续结算尚未完整接通，不能判整卡通过"
+      ]
+    },
+    {
+      "id": "magic_007",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "法术通过旧 ActionSystem 映射执行；所有目标选择、日夜合法性和后续结算尚未完整接通，不能判整卡通过"
+      ]
+    },
+    {
+      "id": "magic_008",
+      "status": "待联验",
+      "cases": 8,
+      "failures": [],
+      "remaining": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验",
+        "法术通过旧 ActionSystem 映射执行；所有目标选择、日夜合法性和后续结算尚未完整接通，不能判整卡通过"
+      ]
+    },
+    {
+      "id": "magic_009",
+      "status": "待联验",
+      "cases": 10,
+      "failures": [],
+      "remaining": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收",
+        "法术通过旧 ActionSystem 映射执行；所有目标选择、日夜合法性和后续结算尚未完整接通，不能判整卡通过"
+      ]
+    },
+    {
+      "id": "magic_010",
+      "status": "待联验",
+      "cases": 12,
+      "failures": [],
+      "remaining": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收",
+        "法术通过旧 ActionSystem 映射执行；所有目标选择、日夜合法性和后续结算尚未完整接通，不能判整卡通过"
+      ]
+    },
+    {
+      "id": "magic_011",
+      "status": "发现不符",
+      "cases": 2,
+      "failures": [
+        {
+          "case": "magic_011_00",
+          "checks": [
+            {
+              "key": "token:Red",
+              "expected": "1",
+              "actual": "2",
+              "passed": false
+            },
+            {
+              "key": "crystal:Blue",
+              "expected": "2",
+              "actual": "1",
+              "passed": false
+            }
+          ],
+          "exception": ""
+        },
+        {
+          "case": "magic_011_01",
+          "checks": [
+            {
+              "key": "MeleePool",
+              "expected": "0",
+              "actual": "4",
+              "passed": false
+            },
+            {
+              "key": "SiegePool",
+              "expected": "4",
+              "actual": "0",
+              "passed": false
+            },
+            {
+              "key": "attackElement",
+              "expected": "Fire",
+              "actual": "Physical",
+              "passed": false
+            }
+          ],
+          "exception": ""
+        }
+      ],
+      "remaining": [
+        "法术通过旧 ActionSystem 映射执行；所有目标选择、日夜合法性和后续结算尚未完整接通，不能判整卡通过"
+      ]
+    },
+    {
+      "id": "magic_012",
+      "status": "待联验",
+      "cases": 4,
+      "failures": [],
+      "remaining": [
+        "法术通过旧 ActionSystem 映射执行；所有目标选择、日夜合法性和后续结算尚未完整接通，不能判整卡通过"
+      ]
+    },
+    {
+      "id": "magic_013",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "法术通过旧 ActionSystem 映射执行；所有目标选择、日夜合法性和后续结算尚未完整接通，不能判整卡通过"
+      ]
+    },
+    {
+      "id": "magic_014",
+      "status": "发现不符",
+      "cases": 2,
+      "failures": [
+        {
+          "case": "magic_014_01",
+          "checks": [
+            {
+              "key": "IgnoreNextWound",
+              "expected": "True",
+              "actual": "False",
+              "passed": false
+            }
+          ],
+          "exception": ""
+        }
+      ],
+      "remaining": [
+        "法术通过旧 ActionSystem 映射执行；所有目标选择、日夜合法性和后续结算尚未完整接通，不能判整卡通过"
+      ]
+    },
+    {
+      "id": "magic_015",
+      "status": "待联验",
+      "cases": 10,
+      "failures": [],
+      "remaining": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收",
+        "法术通过旧 ActionSystem 映射执行；所有目标选择、日夜合法性和后续结算尚未完整接通，不能判整卡通过"
+      ]
+    },
+    {
+      "id": "magic_016",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "法术通过旧 ActionSystem 映射执行；所有目标选择、日夜合法性和后续结算尚未完整接通，不能判整卡通过"
+      ]
+    },
+    {
+      "id": "magic_017",
+      "status": "待联验",
+      "cases": 16,
+      "failures": [],
+      "remaining": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收",
+        "法术通过旧 ActionSystem 映射执行；所有目标选择、日夜合法性和后续结算尚未完整接通，不能判整卡通过"
+      ]
+    },
+    {
+      "id": "magic_018",
+      "status": "待联验",
+      "cases": 4,
+      "failures": [],
+      "remaining": [
+        "法术通过旧 ActionSystem 映射执行；所有目标选择、日夜合法性和后续结算尚未完整接通，不能判整卡通过"
+      ]
+    },
+    {
+      "id": "magic_019",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "法术通过旧 ActionSystem 映射执行；所有目标选择、日夜合法性和后续结算尚未完整接通，不能判整卡通过"
+      ]
+    },
+    {
+      "id": "magic_020",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "法术通过旧 ActionSystem 映射执行；所有目标选择、日夜合法性和后续结算尚未完整接通，不能判整卡通过"
+      ]
+    },
+    {
+      "id": "magic_021",
+      "status": "发现不符",
+      "cases": 2,
+      "failures": [
+        {
+          "case": "magic_021_01",
+          "checks": [
+            {
+              "key": "MeleePool",
+              "expected": "4",
+              "actual": "5",
+              "passed": false
+            }
+          ],
+          "exception": ""
+        }
+      ],
+      "remaining": [
+        "法术通过旧 ActionSystem 映射执行；所有目标选择、日夜合法性和后续结算尚未完整接通，不能判整卡通过"
+      ]
+    },
+    {
+      "id": "magic_022",
+      "status": "待联验",
+      "cases": 2,
+      "failures": [],
+      "remaining": [
+        "法术通过旧 ActionSystem 映射执行；所有目标选择、日夜合法性和后续结算尚未完整接通，不能判整卡通过"
+      ]
+    },
+    {
+      "id": "magic_023",
+      "status": "发现不符",
+      "cases": 2,
+      "failures": [
+        {
+          "case": "magic_023_00",
+          "checks": [
+            {
+              "key": "MovementPool",
+              "expected": "2",
+              "actual": "3",
+              "passed": false
+            }
+          ],
+          "exception": ""
+        }
+      ],
+      "remaining": [
+        "法术通过旧 ActionSystem 映射执行；所有目标选择、日夜合法性和后续结算尚未完整接通，不能判整卡通过"
+      ]
+    }
+  ],
+  "cardCount": 125,
+  "caseCount": 490,
+  "caseResults": {
+    "passed": 136,
+    "partial": 335,
+    "failed": 19
+  },
+  "cardResults": {
+    "待联验": 98,
+    "已测分支通过": 13,
+    "发现不符": 14
+  },
+  "uiOperations": 1617,
+  "uiAssertions": 3856,
+  "effectAssertions": 6674,
+  "screenshots": 645,
+  "playableFaces": 121,
+  "nonplayableRecords": [
+    "advanced_card_044",
+    "advanced_card_045",
+    "advanced_card_046",
+    "advanced_card_047"
+  ]
+}

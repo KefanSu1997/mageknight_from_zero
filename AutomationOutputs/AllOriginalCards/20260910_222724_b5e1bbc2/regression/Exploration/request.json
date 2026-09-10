@@ -1,0 +1,590 @@
+{
+    "scenePath": "Assets/Scenes/Part1/Part1_ExplorationRules.unity",
+    "screenshotsDirectory": "AutomationOutputs/AdventureRegression/20260910_223343_a2966d6e/Exploration/captures",
+    "useRunSubfolder": true,
+    "reportPath": "AutomationOutputs/AdventureRegression/20260910_223343_a2966d6e/Exploration/report.json",
+    "captureInitialView": true,
+    "initialDelaySeconds": 1.2999999523162842,
+    "defaultWaitAfterSeconds": 0.18000000715255737,
+    "maxRunSeconds": 180.0,
+    "steps": [
+        {
+            "buttonPath": "Canvas/UIRoot/Stage/Targets/Site_forest",
+            "label": "点选_site_forest",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "target",
+                    "expected": "site:forest",
+                    "rule": "点选目标不扣费。"
+                },
+                {
+                    "key": "accepted",
+                    "expected": "1",
+                    "rule": "点选目标不扣费。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+            "label": "零移动不能进入",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "accepted",
+                    "expected": "0",
+                    "rule": "白天森林需要3。"
+                },
+                {
+                    "key": "movement",
+                    "expected": "0",
+                    "rule": "白天森林需要3。"
+                },
+                {
+                    "key": "position",
+                    "expected": "camp",
+                    "rule": "白天森林需要3。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Hand/Card_0",
+            "label": "选择_basic_card_000_0",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "selectedCard",
+                    "expected": "basic_card_000",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "hand",
+                    "expected": "5",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "ui:hand",
+                    "expected": "5",
+                    "rule": "可见读数必须对应规则状态。选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "accepted",
+                    "expected": "1",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "ui:cardArt:0",
+                    "expected": "basic_card_000",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "ui:printedEffect",
+                    "expected": "基础：移动力2。",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "selectedValue",
+                    "expected": "2",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Stage/Targets/Site_forest",
+            "label": "点选_site_forest",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "target",
+                    "expected": "site:forest",
+                    "rule": "点选目标不扣费。"
+                },
+                {
+                    "key": "accepted",
+                    "expected": "1",
+                    "rule": "点选目标不扣费。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Inspector/Btn_Enhance",
+            "label": "选择原卡强化",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "enhanced",
+                    "expected": "1",
+                    "rule": "选择强化不支付；必须使用原卡规定的耗色和数值。"
+                },
+                {
+                    "key": "selectedValue",
+                    "expected": "4",
+                    "rule": "选择强化不支付；必须使用原卡规定的耗色和数值。"
+                },
+                {
+                    "key": "greenCrystal",
+                    "expected": "1",
+                    "rule": "选择强化不支付；必须使用原卡规定的耗色和数值。"
+                },
+                {
+                    "key": "ui:printedEffect",
+                    "expected": "强化：移动力4。",
+                    "rule": "选择强化不支付；必须使用原卡规定的耗色和数值。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+            "label": "行进绿色强化4",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "movement",
+                    "expected": "4",
+                    "rule": "行进强化4消耗绿色，不是移动6。"
+                },
+                {
+                    "key": "greenCrystal",
+                    "expected": "0",
+                    "rule": "行进强化4消耗绿色，不是移动6。"
+                },
+                {
+                    "key": "blueCrystal",
+                    "expected": "1",
+                    "rule": "行进强化4消耗绿色，不是移动6。"
+                },
+                {
+                    "key": "hand",
+                    "expected": "4",
+                    "rule": "行进强化4消耗绿色，不是移动6。"
+                },
+                {
+                    "key": "ui:hand",
+                    "expected": "4",
+                    "rule": "可见读数必须对应规则状态。行进强化4消耗绿色，不是移动6。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+            "label": "白天森林费用3",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "movement",
+                    "expected": "1",
+                    "rule": "4减3等于1。"
+                },
+                {
+                    "key": "position",
+                    "expected": "forest",
+                    "rule": "4减3等于1。"
+                },
+                {
+                    "key": "ui:resource",
+                    "expected": "1",
+                    "rule": "4减3等于1。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Hand/Card_1",
+            "label": "选择_basic_card_014_1",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "selectedCard",
+                    "expected": "basic_card_014",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "hand",
+                    "expected": "4",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "ui:hand",
+                    "expected": "4",
+                    "rule": "可见读数必须对应规则状态。选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "accepted",
+                    "expected": "1",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "ui:cardArt:1",
+                    "expected": "basic_card_014",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "ui:printedEffect",
+                    "expected": "基础：移动力2。",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Stage/Targets/Site_frontier",
+            "label": "点选_site_frontier",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "target",
+                    "expected": "site:frontier",
+                    "rule": "点选目标不扣费。"
+                },
+                {
+                    "key": "accepted",
+                    "expected": "1",
+                    "rule": "点选目标不扣费。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+            "label": "耐力基础移动2",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "movement",
+                    "expected": "3",
+                    "rule": "耐力基础不耗蓝色。"
+                },
+                {
+                    "key": "hand",
+                    "expected": "3",
+                    "rule": "耐力基础不耗蓝色。"
+                },
+                {
+                    "key": "ui:hand",
+                    "expected": "3",
+                    "rule": "可见读数必须对应规则状态。耐力基础不耗蓝色。"
+                },
+                {
+                    "key": "blueCrystal",
+                    "expected": "1",
+                    "rule": "耐力基础不耗蓝色。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+            "label": "探索只揭示不移动",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "movement",
+                    "expected": "1",
+                    "rule": "探索2，进入另付地形费用。"
+                },
+                {
+                    "key": "position",
+                    "expected": "forest",
+                    "rule": "探索2，进入另付地形费用。"
+                },
+                {
+                    "key": "revealed",
+                    "expected": "7",
+                    "rule": "探索2，进入另付地形费用。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+            "label": "进入平原费用不足",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "accepted",
+                    "expected": "0",
+                    "rule": "平原需要2。"
+                },
+                {
+                    "key": "movement",
+                    "expected": "1",
+                    "rule": "平原需要2。"
+                },
+                {
+                    "key": "position",
+                    "expected": "forest",
+                    "rule": "平原需要2。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Hand/Card_2",
+            "label": "选择_basic_card_000_2",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "selectedCard",
+                    "expected": "basic_card_000",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "hand",
+                    "expected": "3",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "ui:hand",
+                    "expected": "3",
+                    "rule": "可见读数必须对应规则状态。选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "accepted",
+                    "expected": "1",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "ui:cardArt:2",
+                    "expected": "basic_card_000",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "ui:printedEffect",
+                    "expected": "基础：移动力2。",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+            "label": "另一张行进基础2",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "movement",
+                    "expected": "3",
+                    "rule": "同名卡实例分别使用。"
+                },
+                {
+                    "key": "hand",
+                    "expected": "2",
+                    "rule": "同名卡实例分别使用。"
+                },
+                {
+                    "key": "ui:hand",
+                    "expected": "2",
+                    "rule": "可见读数必须对应规则状态。同名卡实例分别使用。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+            "label": "进入揭示平原",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "movement",
+                    "expected": "1",
+                    "rule": "3减2等于1。"
+                },
+                {
+                    "key": "position",
+                    "expected": "frontier",
+                    "rule": "3减2等于1。"
+                },
+                {
+                    "key": "actionCardTotal",
+                    "expected": "10",
+                    "rule": "3减2等于1。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Btn_Reset",
+            "label": "重新开始",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "hand",
+                    "expected": "5",
+                    "rule": "重开创建独立的新运行状态。"
+                },
+                {
+                    "key": "ui:hand",
+                    "expected": "5",
+                    "rule": "可见读数必须对应规则状态。重开创建独立的新运行状态。"
+                },
+                {
+                    "key": "played",
+                    "expected": "0",
+                    "rule": "重开创建独立的新运行状态。"
+                },
+                {
+                    "key": "wounds",
+                    "expected": "0",
+                    "rule": "重开创建独立的新运行状态。"
+                },
+                {
+                    "key": "ui:wounds",
+                    "expected": "0",
+                    "rule": "可见读数必须对应规则状态。重开创建独立的新运行状态。"
+                },
+                {
+                    "key": "redCrystal",
+                    "expected": "1",
+                    "rule": "重开创建独立的新运行状态。"
+                },
+                {
+                    "key": "ui:redCrystal",
+                    "expected": "1",
+                    "rule": "可见读数必须对应规则状态。重开创建独立的新运行状态。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Stage/Targets/Site_lake",
+            "label": "点选_site_lake",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "target",
+                    "expected": "site:lake",
+                    "rule": "点选目标不扣费。"
+                },
+                {
+                    "key": "accepted",
+                    "expected": "1",
+                    "rule": "点选目标不扣费。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+            "label": "湖泊不可通行",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "accepted",
+                    "expected": "0",
+                    "rule": "不能进入湖泊。"
+                },
+                {
+                    "key": "position",
+                    "expected": "camp",
+                    "rule": "不能进入湖泊。"
+                },
+                {
+                    "key": "movement",
+                    "expected": "0",
+                    "rule": "不能进入湖泊。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Stage/Targets/Site_mountain",
+            "label": "点选_site_mountain",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "target",
+                    "expected": "site:mountain",
+                    "rule": "点选目标不扣费。"
+                },
+                {
+                    "key": "accepted",
+                    "expected": "1",
+                    "rule": "点选目标不扣费。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+            "label": "高山不可通行",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "accepted",
+                    "expected": "0",
+                    "rule": "不能进入高山。"
+                },
+                {
+                    "key": "position",
+                    "expected": "camp",
+                    "rule": "不能进入高山。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Stage/Targets/Site_frontier",
+            "label": "点选_site_frontier",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "target",
+                    "expected": "site:frontier",
+                    "rule": "点选目标不扣费。"
+                },
+                {
+                    "key": "accepted",
+                    "expected": "1",
+                    "rule": "点选目标不扣费。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+            "label": "非相邻不能探索",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "accepted",
+                    "expected": "0",
+                    "rule": "禁止跳格。"
+                },
+                {
+                    "key": "revealed",
+                    "expected": "6",
+                    "rule": "禁止跳格。"
+                }
+            ]
+        }
+    ]
+}

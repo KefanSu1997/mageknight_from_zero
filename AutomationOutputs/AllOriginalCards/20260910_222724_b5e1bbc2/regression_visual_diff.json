@@ -1,0 +1,772 @@
+[
+  {
+    "scene": "Combat",
+    "file": "000_Scene Start.png",
+    "bbox": [
+      1061,
+      728,
+      1275,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Combat",
+    "file": "001_选择_basic_card_016_0.png",
+    "bbox": [
+      1061,
+      728,
+      1275,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Combat",
+    "file": "002_缺目标不得扣牌.png",
+    "bbox": [
+      1061,
+      728,
+      1275,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Combat",
+    "file": "003_点选_enemy_0.png",
+    "bbox": [
+      1061,
+      728,
+      1275,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Combat",
+    "file": "004_决心基础格挡2.png",
+    "bbox": [
+      946,
+      728,
+      1160,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Combat",
+    "file": "013_重新开始.png",
+    "bbox": [
+      1061,
+      728,
+      1275,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Combat",
+    "file": "014_选择_basic_card_016_0.png",
+    "bbox": [
+      1061,
+      728,
+      1275,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Combat",
+    "file": "015_点选_enemy_0.png",
+    "bbox": [
+      1061,
+      728,
+      1275,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Combat",
+    "file": "016_选择原卡强化.png",
+    "bbox": [
+      1061,
+      728,
+      1275,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Combat",
+    "file": "017_蓝色强化决心格挡5.png",
+    "bbox": [
+      946,
+      728,
+      1160,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Combat",
+    "file": "018_成功格挡免伤.png",
+    "bbox": [
+      946,
+      728,
+      1160,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Combat",
+    "file": "019_选择_basic_card_021_2.png",
+    "bbox": [
+      946,
+      728,
+      1160,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Combat",
+    "file": "020_点选_enemy_0.png",
+    "bbox": [
+      946,
+      728,
+      1160,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Combat",
+    "file": "021_选择原卡强化.png",
+    "bbox": [
+      946,
+      728,
+      1160,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Combat",
+    "file": "031_复用原卡迎战灰狼.png",
+    "bbox": [
+      1061,
+      728,
+      1275,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Combat",
+    "file": "032_选择_basic_card_016_0.png",
+    "bbox": [
+      1061,
+      728,
+      1275,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Combat",
+    "file": "033_点选_enemy_0.png",
+    "bbox": [
+      1061,
+      728,
+      1275,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Combat",
+    "file": "034_选择原卡强化.png",
+    "bbox": [
+      1061,
+      728,
+      1275,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Combat",
+    "file": "035_决心强化5.png",
+    "bbox": [
+      946,
+      728,
+      1160,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Exploration",
+    "file": "000_Scene Start.png",
+    "bbox": [
+      1061,
+      728,
+      1275,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Exploration",
+    "file": "001_点选_site_forest.png",
+    "bbox": [
+      1061,
+      728,
+      1275,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Exploration",
+    "file": "002_零移动不能进入.png",
+    "bbox": [
+      1061,
+      728,
+      1275,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Exploration",
+    "file": "003_选择_basic_card_000_0.png",
+    "bbox": [
+      1061,
+      728,
+      1275,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Exploration",
+    "file": "004_点选_site_forest.png",
+    "bbox": [
+      1061,
+      728,
+      1275,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Exploration",
+    "file": "005_选择原卡强化.png",
+    "bbox": [
+      1061,
+      728,
+      1275,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Exploration",
+    "file": "006_行进绿色强化4.png",
+    "bbox": [
+      946,
+      728,
+      1160,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Exploration",
+    "file": "007_白天森林费用3.png",
+    "bbox": [
+      946,
+      728,
+      1160,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Exploration",
+    "file": "008_选择_basic_card_014_1.png",
+    "bbox": [
+      946,
+      728,
+      1160,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Exploration",
+    "file": "009_点选_site_frontier.png",
+    "bbox": [
+      946,
+      728,
+      1160,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Exploration",
+    "file": "016_重新开始.png",
+    "bbox": [
+      1061,
+      728,
+      1275,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Exploration",
+    "file": "017_点选_site_lake.png",
+    "bbox": [
+      1061,
+      728,
+      1275,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Exploration",
+    "file": "018_湖泊不可通行.png",
+    "bbox": [
+      1061,
+      728,
+      1275,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Exploration",
+    "file": "019_点选_site_mountain.png",
+    "bbox": [
+      1061,
+      728,
+      1275,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Exploration",
+    "file": "020_高山不可通行.png",
+    "bbox": [
+      1061,
+      728,
+      1275,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Exploration",
+    "file": "021_点选_site_frontier.png",
+    "bbox": [
+      1061,
+      728,
+      1275,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Exploration",
+    "file": "022_非相邻不能探索.png",
+    "bbox": [
+      1061,
+      728,
+      1275,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Journey",
+    "file": "000_Scene Start.png",
+    "bbox": [
+      1061,
+      728,
+      1275,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Journey",
+    "file": "001_选择_basic_card_000_0.png",
+    "bbox": [
+      1061,
+      728,
+      1275,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Journey",
+    "file": "002_点选_site_village.png",
+    "bbox": [
+      1061,
+      728,
+      1275,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Journey",
+    "file": "003_选择原卡强化.png",
+    "bbox": [
+      1061,
+      728,
+      1275,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Journey",
+    "file": "004_行进强化准备探索.png",
+    "bbox": [
+      946,
+      728,
+      1160,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Journey",
+    "file": "005_探索村庄扣二.png",
+    "bbox": [
+      946,
+      728,
+      1160,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Journey",
+    "file": "006_进入村庄再扣二.png",
+    "bbox": [
+      946,
+      728,
+      1160,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Journey",
+    "file": "007_选择_basic_card_008_1.png",
+    "bbox": [
+      946,
+      728,
+      1160,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Journey",
+    "file": "008_点选_offer_guard.png",
+    "bbox": [
+      946,
+      728,
+      1160,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Journey",
+    "file": "009_选择原卡强化.png",
+    "bbox": [
+      946,
+      728,
+      1160,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Journey",
+    "file": "014_进入下一回合遭遇.png",
+    "bbox": [
+      1061,
+      728,
+      1275,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Journey",
+    "file": "015_选择部队.png",
+    "bbox": [
+      1061,
+      728,
+      1275,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Journey",
+    "file": "016_没目标部队不能使用.png",
+    "bbox": [
+      1061,
+      728,
+      1275,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Journey",
+    "file": "017_点选_enemy_0.png",
+    "bbox": [
+      1061,
+      728,
+      1275,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Journey",
+    "file": "018_守卫格挡三.png",
+    "bbox": [
+      1061,
+      728,
+      1275,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Journey",
+    "file": "019_耗竭单位不能重复.png",
+    "bbox": [
+      1061,
+      728,
+      1275,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Journey",
+    "file": "020_选择_basic_card_016_5.png",
+    "bbox": [
+      1061,
+      728,
+      1275,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Journey",
+    "file": "021_点选_enemy_0.png",
+    "bbox": [
+      1061,
+      728,
+      1275,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Journey",
+    "file": "022_选择原卡强化.png",
+    "bbox": [
+      1061,
+      728,
+      1275,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Journey",
+    "file": "023_决心强化与部队合计八.png",
+    "bbox": [
+      946,
+      728,
+      1160,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Journey",
+    "file": "024_成功格挡没有伤牌.png",
+    "bbox": [
+      946,
+      728,
+      1160,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Journey",
+    "file": "025_选择_basic_card_021_3.png",
+    "bbox": [
+      946,
+      728,
+      1160,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Journey",
+    "file": "026_点选_enemy_0.png",
+    "bbox": [
+      946,
+      728,
+      1160,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Journey",
+    "file": "027_选择原卡强化.png",
+    "bbox": [
+      946,
+      728,
+      1160,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Recruitment",
+    "file": "000_Scene Start.png",
+    "bbox": [
+      1061,
+      728,
+      1275,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Recruitment",
+    "file": "001_点选_offer_guard.png",
+    "bbox": [
+      1061,
+      728,
+      1275,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Recruitment",
+    "file": "002_影响力不足.png",
+    "bbox": [
+      1061,
+      728,
+      1275,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Recruitment",
+    "file": "003_选择_basic_card_008_0.png",
+    "bbox": [
+      1061,
+      728,
+      1275,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Recruitment",
+    "file": "004_点选_offer_guard.png",
+    "bbox": [
+      1061,
+      728,
+      1275,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Recruitment",
+    "file": "005_选择原卡强化.png",
+    "bbox": [
+      1061,
+      728,
+      1275,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Recruitment",
+    "file": "006_承诺白色强化4.png",
+    "bbox": [
+      946,
+      728,
+      1160,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Recruitment",
+    "file": "007_四点还不足费用五.png",
+    "bbox": [
+      946,
+      728,
+      1160,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Recruitment",
+    "file": "008_选择_basic_card_008_1.png",
+    "bbox": [
+      946,
+      728,
+      1160,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  },
+  {
+    "scene": "Recruitment",
+    "file": "016_回合结束正常补牌.png",
+    "bbox": [
+      1061,
+      728,
+      1275,
+      1034
+    ],
+    "pixelsDiffer": 11778
+  }
+]
