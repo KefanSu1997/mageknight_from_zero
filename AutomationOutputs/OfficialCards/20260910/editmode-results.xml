@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="91" result="Passed" total="91" passed="91" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:33Z" duration="0.5332566">
+  <test-suite type="TestSuite" id="1000" name="MageKnight_from_zero" fullname="MageKnight_from_zero" runstate="Runnable" testcasecount="91" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:33Z" duration="0.533257" total="91" passed="91" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1005" name="AgentATests.dll" fullname="D:/study_and_work/unity-MK-test/MageKnight_from_zero/Library/ScriptAssemblies/AgentATests.dll" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.184580" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="19636" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestFixture" id="1001" name="AgentASceneAutomationTests" fullname="AgentASceneAutomationTests" classname="AgentASceneAutomationTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.174651" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties>
+          <property name="Category" value="AgentA" />
+        </properties>
+        <test-case id="1002" name="AgentAScene_HasRotatingCube" fullname="AgentASceneAutomationTests.AgentAScene_HasRotatingCube" methodname="AgentAScene_HasRotatingCube" classname="AgentASceneAutomationTests" runstate="Runnable" seed="2060704903" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.155847" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1003" name="CubeTest" fullname="CubeTest" classname="CubeTest" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.008098" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1004" name="CubeExists" fullname="CubeTest.CubeExists" methodname="CubeExists" classname="CubeTest" runstate="Runnable" seed="615547961" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.000882" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+      </test-suite>
+    </test-suite>
+    <test-suite type="Assembly" id="1111" name="MageKnightTests.dll" fullname="D:/study_and_work/unity-MK-test/MageKnight_from_zero/Library/ScriptAssemblies/MageKnightTests.dll" runstate="Runnable" testcasecount="88" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:33Z" duration="0.332876" total="88" passed="88" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="19636" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1112" name="MageKnight" fullname="MageKnight" runstate="Runnable" testcasecount="13" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.079769" total="13" passed="13" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1113" name="Tests" fullname="MageKnight.Tests" runstate="Runnable" testcasecount="13" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.072195" total="13" passed="13" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1115" name="Clean" fullname="MageKnight.Tests.Clean" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.022279" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1014" name="CleanPart1Tests" fullname="MageKnight.Tests.Clean.CleanPart1Tests" classname="MageKnight.Tests.Clean.CleanPart1Tests" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.021501" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1021" name="AllPart1Systems_IntegrationTest" fullname="MageKnight.Tests.Clean.CleanPart1Tests.AllPart1Systems_IntegrationTest" methodname="AllPart1Systems_IntegrationTest" classname="MageKnight.Tests.Clean.CleanPart1Tests" runstate="Runnable" seed="238504257" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.017985" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1016" name="CardSystem_EffectsLoadSuccessfully" fullname="MageKnight.Tests.Clean.CleanPart1Tests.CardSystem_EffectsLoadSuccessfully" methodname="CardSystem_EffectsLoadSuccessfully" classname="MageKnight.Tests.Clean.CleanPart1Tests" runstate="Runnable" seed="521970287" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.000172" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1018" name="CombatSystem_InitializesSuccessfully" fullname="MageKnight.Tests.Clean.CleanPart1Tests.CombatSystem_InitializesSuccessfully" methodname="CombatSystem_InitializesSuccessfully" classname="MageKnight.Tests.Clean.CleanPart1Tests" runstate="Runnable" seed="384310183" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.000354" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1015" name="CoreSystems_LoadSuccessfully" fullname="MageKnight.Tests.Clean.CleanPart1Tests.CoreSystems_LoadSuccessfully" methodname="CoreSystems_LoadSuccessfully" classname="MageKnight.Tests.Clean.CleanPart1Tests" runstate="Runnable" seed="285739307" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.000205" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1017" name="ExplorationSystem_InitializesSuccessfully" fullname="MageKnight.Tests.Clean.CleanPart1Tests.ExplorationSystem_InitializesSuccessfully" methodname="ExplorationSystem_InitializesSuccessfully" classname="MageKnight.Tests.Clean.CleanPart1Tests" runstate="Runnable" seed="396834399" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.000337" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1020" name="RecruitmentSystem_InitializesSuccessfully" fullname="MageKnight.Tests.Clean.CleanPart1Tests.RecruitmentSystem_InitializesSuccessfully" methodname="RecruitmentSystem_InitializesSuccessfully" classname="MageKnight.Tests.Clean.CleanPart1Tests" runstate="Runnable" seed="1164099162" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.000185" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1019" name="ResourceSystem_InitializesSuccessfully" fullname="MageKnight.Tests.Clean.CleanPart1Tests.ResourceSystem_InitializesSuccessfully" methodname="ResourceSystem_InitializesSuccessfully" classname="MageKnight.Tests.Clean.CleanPart1Tests" runstate="Runnable" seed="1566560391" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.000274" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+          </test-suite>
+          <test-suite type="TestSuite" id="1114" name="Part1" fullname="MageKnight.Tests.Part1" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.026963" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1007" name="Part1IntegrationTests" fullname="MageKnight.Tests.Part1.Part1IntegrationTests" classname="MageKnight.Tests.Part1.Part1IntegrationTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.025522" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1009" name="CardSystem_EffectLoading" fullname="MageKnight.Tests.Part1.Part1IntegrationTests.CardSystem_EffectLoading" methodname="CardSystem_EffectLoading" classname="MageKnight.Tests.Part1.Part1IntegrationTests" runstate="Runnable" seed="1390951076" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.008306" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1011" name="CombatSystem_BasicResolution" fullname="MageKnight.Tests.Part1.Part1IntegrationTests.CombatSystem_BasicResolution" methodname="CombatSystem_BasicResolution" classname="MageKnight.Tests.Part1.Part1IntegrationTests" runstate="Runnable" seed="1285891712" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.006526" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1008" name="CoreGameLoop_Initialization" fullname="MageKnight.Tests.Part1.Part1IntegrationTests.CoreGameLoop_Initialization" methodname="CoreGameLoop_Initialization" classname="MageKnight.Tests.Part1.Part1IntegrationTests" runstate="Runnable" seed="252295121" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.006005" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1012" name="ExplorationSystem_BasicTiles" fullname="MageKnight.Tests.Part1.Part1IntegrationTests.ExplorationSystem_BasicTiles" methodname="ExplorationSystem_BasicTiles" classname="MageKnight.Tests.Part1.Part1IntegrationTests" runstate="Runnable" seed="1285269917" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.000881" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1010" name="ManaSystem_BasicOperations" fullname="MageKnight.Tests.Part1.Part1IntegrationTests.ManaSystem_BasicOperations" methodname="ManaSystem_BasicOperations" classname="MageKnight.Tests.Part1.Part1IntegrationTests" runstate="Runnable" seed="1126386809" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.000737" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1013" name="RecruitmentSystem_BasicUnits" fullname="MageKnight.Tests.Part1.Part1IntegrationTests.RecruitmentSystem_BasicUnits" methodname="RecruitmentSystem_BasicUnits" classname="MageKnight.Tests.Part1.Part1IntegrationTests" runstate="Runnable" seed="890861024" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.000832" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+      <test-suite type="TestSuite" id="1116" name="MK" fullname="MK" runstate="Runnable" testcasecount="75" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:33Z" duration="0.224847" total="75" passed="75" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1117" name="Tests" fullname="MK.Tests" runstate="Runnable" testcasecount="75" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:33Z" duration="0.223268" total="75" passed="75" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1122" name="Adventure" fullname="MK.Tests.Adventure" runstate="Runnable" testcasecount="18" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.137273" total="18" passed="18" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1090" name="AdventureSessionTests" fullname="MK.Tests.Adventure.AdventureSessionTests" classname="MK.Tests.Adventure.AdventureSessionTests" runstate="Runnable" testcasecount="9" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.120488" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1099" name="ContentSharesArtAndStatEditsAffectNewSessionWithoutUiChanges" fullname="MK.Tests.Adventure.AdventureSessionTests.ContentSharesArtAndStatEditsAffectNewSessionWithoutUiChanges" methodname="ContentSharesArtAndStatEditsAffectNewSessionWithoutUiChanges" classname="MK.Tests.Adventure.AdventureSessionTests" runstate="Runnable" seed="1771190220" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.077415" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1093" name="EnhancedCardPaysOnceAndMissingManaPreservesCard" fullname="MK.Tests.Adventure.AdventureSessionTests.EnhancedCardPaysOnceAndMissingManaPreservesCard" methodname="EnhancedCardPaysOnceAndMissingManaPreservesCard" classname="MK.Tests.Adventure.AdventureSessionTests" runstate="Runnable" seed="850920871" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.026072" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1094" name="ExplorationSeparatesRevealAndMovementAndRejectsInvalidDestinations" fullname="MK.Tests.Adventure.AdventureSessionTests.ExplorationSeparatesRevealAndMovementAndRejectsInvalidDestinations" methodname="ExplorationSeparatesRevealAndMovementAndRejectsInvalidDestinations" classname="MK.Tests.Adventure.AdventureSessionTests" runstate="Runnable" seed="1958731624" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.002936" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1096" name="JourneyKeepsActualCardsCrystalsAndUnitsAcrossTurns" fullname="MK.Tests.Adventure.AdventureSessionTests.JourneyKeepsActualCardsCrystalsAndUnitsAcrossTurns" methodname="JourneyKeepsActualCardsCrystalsAndUnitsAcrossTurns" classname="MK.Tests.Adventure.AdventureSessionTests" runstate="Runnable" seed="1819323056" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.004997" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1092" name="PartialBlockGivesFullDamageAndRealWoundCardsButNeverDoubleDamage" fullname="MK.Tests.Adventure.AdventureSessionTests.PartialBlockGivesFullDamageAndRealWoundCardsButNeverDoubleDamage" methodname="PartialBlockGivesFullDamageAndRealWoundCardsButNeverDoubleDamage" classname="MK.Tests.Adventure.AdventureSessionTests" runstate="Runnable" seed="1579356556" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.000753" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1098" name="PoisonAndParalysisAreReflectedInCardZones" fullname="MK.Tests.Adventure.AdventureSessionTests.PoisonAndParalysisAreReflectedInCardZones" methodname="PoisonAndParalysisAreReflectedInCardZones" classname="MK.Tests.Adventure.AdventureSessionTests" runstate="Runnable" seed="340027576" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.001757" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1095" name="RecruitRequiresLocationFundsAndCapacityAndCannotDuplicate" fullname="MK.Tests.Adventure.AdventureSessionTests.RecruitRequiresLocationFundsAndCapacityAndCannotDuplicate" methodname="RecruitRequiresLocationFundsAndCapacityAndCannotDuplicate" classname="MK.Tests.Adventure.AdventureSessionTests" runstate="Runnable" seed="1234499846" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.000631" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1091" name="SelectionAndMissingTargetDoNotSpendCardsOrMana" fullname="MK.Tests.Adventure.AdventureSessionTests.SelectionAndMissingTargetDoNotSpendCardsOrMana" methodname="SelectionAndMissingTargetDoNotSpendCardsOrMana" classname="MK.Tests.Adventure.AdventureSessionTests" runstate="Runnable" seed="910339616" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.001265" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1097" name="TargetsAndElementPoolsRemainIndependentAndAggregateBeforeRounding" fullname="MK.Tests.Adventure.AdventureSessionTests.TargetsAndElementPoolsRemainIndependentAndAggregateBeforeRounding" methodname="TargetsAndElementPoolsRemainIndependentAndAggregateBeforeRounding" classname="MK.Tests.Adventure.AdventureSessionTests" runstate="Runnable" seed="1358686774" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.002176" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1100" name="OfficialAdventureCardsTests" fullname="MK.Tests.Adventure.OfficialAdventureCardsTests" classname="MK.Tests.Adventure.OfficialAdventureCardsTests" runstate="Runnable" testcasecount="9" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.016074" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1107" name="DeterminationAttackAndFuryBlockAreValidButEnhancedBranchesAreRestricted" fullname="MK.Tests.Adventure.OfficialAdventureCardsTests.DeterminationAttackAndFuryBlockAreValidButEnhancedBranchesAreRestricted" methodname="DeterminationAttackAndFuryBlockAreValidButEnhancedBranchesAreRestricted" classname="MK.Tests.Adventure.OfficialAdventureCardsTests" runstate="Runnable" seed="1819119609" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.000312" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1110" name="EveryLessonUsesOnlyOriginalCardsWithExplicitLimitedMultiplicity" fullname="MK.Tests.Adventure.OfficialAdventureCardsTests.EveryLessonUsesOnlyOriginalCardsWithExplicitLimitedMultiplicity" methodname="EveryLessonUsesOnlyOriginalCardsWithExplicitLimitedMultiplicity" classname="MK.Tests.Adventure.OfficialAdventureCardsTests" runstate="Runnable" seed="58597969" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.001410" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1109" name="ManaTokenIsConsumedBeforeCrystalAndCannotDoublePlay" fullname="MK.Tests.Adventure.OfficialAdventureCardsTests.ManaTokenIsConsumedBeforeCrystalAndCannotDoublePlay" methodname="ManaTokenIsConsumedBeforeCrystalAndCannotDoublePlay" classname="MK.Tests.Adventure.OfficialAdventureCardsTests" runstate="Runnable" seed="2123219229" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.000529" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1106" name="OriginalCardIdentityArtAndPrintedNumbersAgree" fullname="MK.Tests.Adventure.OfficialAdventureCardsTests.OriginalCardIdentityArtAndPrintedNumbersAgree" classname="MK.Tests.Adventure.OfficialAdventureCardsTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.009811" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1101" name="OriginalCardIdentityArtAndPrintedNumbersAgree(&quot;basic_card_000&quot;,&quot;行进&quot;,Travel,2,4,Green)" fullname="MK.Tests.Adventure.OfficialAdventureCardsTests.OriginalCardIdentityArtAndPrintedNumbersAgree(&quot;basic_card_000&quot;,&quot;行进&quot;,Travel,2,4,Green)" methodname="OriginalCardIdentityArtAndPrintedNumbersAgree" classname="MK.Tests.Adventure.OfficialAdventureCardsTests" runstate="Runnable" seed="1643319759" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.002030" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1102" name="OriginalCardIdentityArtAndPrintedNumbersAgree(&quot;basic_card_014&quot;,&quot;耐力&quot;,Travel,2,4,Blue)" fullname="MK.Tests.Adventure.OfficialAdventureCardsTests.OriginalCardIdentityArtAndPrintedNumbersAgree(&quot;basic_card_014&quot;,&quot;耐力&quot;,Travel,2,4,Blue)" methodname="OriginalCardIdentityArtAndPrintedNumbersAgree" classname="MK.Tests.Adventure.OfficialAdventureCardsTests" runstate="Runnable" seed="224420560" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.001474" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1103" name="OriginalCardIdentityArtAndPrintedNumbersAgree(&quot;basic_card_008&quot;,&quot;承诺&quot;,Interaction,2,4,White)" fullname="MK.Tests.Adventure.OfficialAdventureCardsTests.OriginalCardIdentityArtAndPrintedNumbersAgree(&quot;basic_card_008&quot;,&quot;承诺&quot;,Interaction,2,4,White)" methodname="OriginalCardIdentityArtAndPrintedNumbersAgree" classname="MK.Tests.Adventure.OfficialAdventureCardsTests" runstate="Runnable" seed="1896357026" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.001534" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1104" name="OriginalCardIdentityArtAndPrintedNumbersAgree(&quot;basic_card_016&quot;,&quot;决心&quot;,Block,2,5,Blue)" fullname="MK.Tests.Adventure.OfficialAdventureCardsTests.OriginalCardIdentityArtAndPrintedNumbersAgree(&quot;basic_card_016&quot;,&quot;决心&quot;,Block,2,5,Blue)" methodname="OriginalCardIdentityArtAndPrintedNumbersAgree" classname="MK.Tests.Adventure.OfficialAdventureCardsTests" runstate="Runnable" seed="2061472731" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.001440" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1105" name="OriginalCardIdentityArtAndPrintedNumbersAgree(&quot;basic_card_021&quot;,&quot;狂怒&quot;,Attack,2,4,Red)" fullname="MK.Tests.Adventure.OfficialAdventureCardsTests.OriginalCardIdentityArtAndPrintedNumbersAgree(&quot;basic_card_021&quot;,&quot;狂怒&quot;,Attack,2,4,Red)" methodname="OriginalCardIdentityArtAndPrintedNumbersAgree" classname="MK.Tests.Adventure.OfficialAdventureCardsTests" runstate="Runnable" seed="891527802" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.001609" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1108" name="SidewaysUsesOnePhysicalPointAndCannotUseWounds" fullname="MK.Tests.Adventure.OfficialAdventureCardsTests.SidewaysUsesOnePhysicalPointAndCannotUseWounds" methodname="SidewaysUsesOnePhysicalPointAndCannotUseWounds" classname="MK.Tests.Adventure.OfficialAdventureCardsTests" runstate="Runnable" seed="1310595942" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.001981" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+          </test-suite>
+          <test-suite type="TestSuite" id="1118" name="demo" fullname="MK.Tests.demo" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.002497" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1022" name="SphereTest" fullname="MK.Tests.demo.SphereTest" classname="MK.Tests.demo.SphereTest" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.001790" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties>
+                <property name="Category" value="AgentB" />
+              </properties>
+              <test-case id="1023" name="SphereExists" fullname="MK.Tests.demo.SphereTest.SphereExists" methodname="SphereExists" classname="MK.Tests.demo.SphereTest" runstate="Runnable" seed="1266935723" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.000554" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+          </test-suite>
+          <test-suite type="TestSuite" id="1121" name="game" fullname="MK.Tests.game" runstate="Runnable" testcasecount="25" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:33Z" duration="0.055655" total="25" passed="25" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1060" name="CombatSystemTests" fullname="MK.Tests.game.CombatSystemTests" classname="MK.Tests.game.CombatSystemTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.007542" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1065" name="TestAbilityEffects" fullname="MK.Tests.game.CombatSystemTests.TestAbilityEffects" methodname="TestAbilityEffects" classname="MK.Tests.game.CombatSystemTests" runstate="Runnable" seed="414927489" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.000318" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1063" name="TestAttackTypeEnumeration" fullname="MK.Tests.game.CombatSystemTests.TestAttackTypeEnumeration" methodname="TestAttackTypeEnumeration" classname="MK.Tests.game.CombatSystemTests" runstate="Runnable" seed="413633289" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.000117" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1064" name="TestCombatPhaseEnumeration" fullname="MK.Tests.game.CombatSystemTests.TestCombatPhaseEnumeration" methodname="TestCombatPhaseEnumeration" classname="MK.Tests.game.CombatSystemTests" runstate="Runnable" seed="1978897864" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.000130" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1061" name="TestDamagePacketConstruction" fullname="MK.Tests.game.CombatSystemTests.TestDamagePacketConstruction" methodname="TestDamagePacketConstruction" classname="MK.Tests.game.CombatSystemTests" runstate="Runnable" seed="137387086" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.000140" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1062" name="TestElementalDamageTypes" fullname="MK.Tests.game.CombatSystemTests.TestElementalDamageTypes" methodname="TestElementalDamageTypes" classname="MK.Tests.game.CombatSystemTests" runstate="Runnable" seed="432524333" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:32Z" duration="0.000216" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1066" name="ManaPoolTests" fullname="MK.Tests.game.ManaPoolTests" classname="MK.Tests.game.ManaPoolTests" runstate="Runnable" testcasecount="9" result="Passed" start-time="2026-09-10 02:42:32Z" end-time="2026-09-10 02:42:33Z" duration="0.034277" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1073" name="TestDiceDistributionIsBalanced" fullname="MK.Tests.game.ManaPoolTests.TestDiceDistributionIsBalanced" methodname="TestDiceDistributionIsBalanced" classname="MK.Tests.game.ManaPoolTests" runstate="Runnable" seed="1959465769" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.003217" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1067" name="TestInitialDiceCount" fullname="MK.Tests.game.ManaPoolTests.TestInitialDiceCount" methodname="TestInitialDiceCount" classname="MK.Tests.game.ManaPoolTests" runstate="Runnable" seed="1656092275" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.000222" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1070" name="TestPlayerCannotTakeMultipleDice" fullname="MK.Tests.game.ManaPoolTests.TestPlayerCannotTakeMultipleDice" methodname="TestPlayerCannotTakeMultipleDice" classname="MK.Tests.game.ManaPoolTests" runstate="Runnable" seed="1176667728" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.000546" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1074" name="TestPrintPoolStateIsFormatted" fullname="MK.Tests.game.ManaPoolTests.TestPrintPoolStateIsFormatted" methodname="TestPrintPoolStateIsFormatted" classname="MK.Tests.game.ManaPoolTests" runstate="Runnable" seed="1444102698" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.001285" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1072" name="TestResetSourceLimitsBlackGoldRatio" fullname="MK.Tests.game.ManaPoolTests.TestResetSourceLimitsBlackGoldRatio" methodname="TestResetSourceLimitsBlackGoldRatio" classname="MK.Tests.game.ManaPoolTests" runstate="Runnable" seed="888043818" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.002411" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1075" name="TestReturnAllPlayersDice" fullname="MK.Tests.game.ManaPoolTests.TestReturnAllPlayersDice" methodname="TestReturnAllPlayersDice" classname="MK.Tests.game.ManaPoolTests" runstate="Runnable" seed="395998083" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.000709" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1071" name="TestReturnDice" fullname="MK.Tests.game.ManaPoolTests.TestReturnDice" methodname="TestReturnDice" classname="MK.Tests.game.ManaPoolTests" runstate="Runnable" seed="1573098618" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.000195" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1068" name="TestTakeAnyDice" fullname="MK.Tests.game.ManaPoolTests.TestTakeAnyDice" methodname="TestTakeAnyDice" classname="MK.Tests.game.ManaPoolTests" runstate="Runnable" seed="1547458025" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.000147" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1069" name="TestTakeSpecificColor" fullname="MK.Tests.game.ManaPoolTests.TestTakeSpecificColor" methodname="TestTakeSpecificColor" classname="MK.Tests.game.ManaPoolTests" runstate="Runnable" seed="1322212379" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.000512" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1076" name="MarketTests" fullname="MK.Tests.game.MarketTests" classname="MK.Tests.game.MarketTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.004555" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1077" name="TestAdvActionSupplyInitialRefill" fullname="MK.Tests.game.MarketTests.TestAdvActionSupplyInitialRefill" methodname="TestAdvActionSupplyInitialRefill" classname="MK.Tests.game.MarketTests" runstate="Runnable" seed="956567516" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.001184" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1078" name="TestAdvActionSupplyRotation" fullname="MK.Tests.game.MarketTests.TestAdvActionSupplyRotation" methodname="TestAdvActionSupplyRotation" classname="MK.Tests.game.MarketTests" runstate="Runnable" seed="816750305" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.000316" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1080" name="TestArtifactSupplyInitialization" fullname="MK.Tests.game.MarketTests.TestArtifactSupplyInitialization" methodname="TestArtifactSupplyInitialization" classname="MK.Tests.game.MarketTests" runstate="Runnable" seed="895087615" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.000415" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1081" name="TestEndOfRoundRefresh" fullname="MK.Tests.game.MarketTests.TestEndOfRoundRefresh" methodname="TestEndOfRoundRefresh" classname="MK.Tests.game.MarketTests" runstate="Runnable" seed="367764498" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.000843" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1079" name="TestSpellSupplyRefill" fullname="MK.Tests.game.MarketTests.TestSpellSupplyRefill" methodname="TestSpellSupplyRefill" classname="MK.Tests.game.MarketTests" runstate="Runnable" seed="184339224" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.000449" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1082" name="PlayerStateTests" fullname="MK.Tests.game.PlayerStateTests" classname="MK.Tests.game.PlayerStateTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.001284" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1084" name="TestManaDieAssignment" fullname="MK.Tests.game.PlayerStateTests.TestManaDieAssignment" methodname="TestManaDieAssignment" classname="MK.Tests.game.PlayerStateTests" runstate="Runnable" seed="1103879044" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.000161" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1083" name="TestPlayerInitialization" fullname="MK.Tests.game.PlayerStateTests.TestPlayerInitialization" methodname="TestPlayerInitialization" classname="MK.Tests.game.PlayerStateTests" runstate="Runnable" seed="1212302227" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.000185" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1085" name="TestReputationDoesNotCreateCommandTokens" fullname="MK.Tests.game.PlayerStateTests.TestReputationDoesNotCreateCommandTokens" methodname="TestReputationDoesNotCreateCommandTokens" classname="MK.Tests.game.PlayerStateTests" runstate="Runnable" seed="861519002" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.000114" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1086" name="UnitStateTests" fullname="MK.Tests.game.UnitStateTests" classname="MK.Tests.game.UnitStateTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.002021" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1088" name="TestUnitExhaustion" fullname="MK.Tests.game.UnitStateTests.TestUnitExhaustion" methodname="TestUnitExhaustion" classname="MK.Tests.game.UnitStateTests" runstate="Runnable" seed="1363978733" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.000458" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1089" name="TestUnitFatigue" fullname="MK.Tests.game.UnitStateTests.TestUnitFatigue" methodname="TestUnitFatigue" classname="MK.Tests.game.UnitStateTests" runstate="Runnable" seed="1703595224" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.000312" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1087" name="TestUnitInitialization" fullname="MK.Tests.game.UnitStateTests.TestUnitInitialization" methodname="TestUnitInitialization" classname="MK.Tests.game.UnitStateTests" runstate="Runnable" seed="990789345" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.000182" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+          </test-suite>
+          <test-suite type="TestSuite" id="1120" name="map" fullname="MK.Tests.map" runstate="Runnable" testcasecount="12" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.006747" total="12" passed="12" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1046" name="ExplorationTests" fullname="MK.Tests.map.ExplorationTests" classname="MK.Tests.map.ExplorationTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.003982" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1048" name="TestExploreSuccessWithSufficientMovement" fullname="MK.Tests.map.ExplorationTests.TestExploreSuccessWithSufficientMovement" methodname="TestExploreSuccessWithSufficientMovement" classname="MK.Tests.map.ExplorationTests" runstate="Runnable" seed="1439391251" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.002397" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1047" name="TestExploreWithInsufficientMovement" fullname="MK.Tests.map.ExplorationTests.TestExploreWithInsufficientMovement" methodname="TestExploreWithInsufficientMovement" classname="MK.Tests.map.ExplorationTests" runstate="Runnable" seed="1084572638" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.000261" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1049" name="TestExploreWithRotation" fullname="MK.Tests.map.ExplorationTests.TestExploreWithRotation" methodname="TestExploreWithRotation" classname="MK.Tests.map.ExplorationTests" runstate="Runnable" seed="700402364" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.000181" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1050" name="TestTileDrawingOrder" fullname="MK.Tests.map.ExplorationTests.TestTileDrawingOrder" methodname="TestTileDrawingOrder" classname="MK.Tests.map.ExplorationTests" runstate="Runnable" seed="1528316636" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.000267" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1051" name="TerrainCostTests" fullname="MK.Tests.map.TerrainCostTests" classname="MK.Tests.map.TerrainCostTests" runstate="Runnable" testcasecount="8" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.002282" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1057" name="TestCityAndPlainBasedTrainingSettlementsCostTwo" fullname="MK.Tests.map.TerrainCostTests.TestCityAndPlainBasedTrainingSettlementsCostTwo" methodname="TestCityAndPlainBasedTrainingSettlementsCostTwo" classname="MK.Tests.map.TerrainCostTests" runstate="Runnable" seed="1440931415" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.000191" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1053" name="TestDesertCosts" fullname="MK.Tests.map.TerrainCostTests.TestDesertCosts" methodname="TestDesertCosts" classname="MK.Tests.map.TerrainCostTests" runstate="Runnable" seed="757622582" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.000090" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1052" name="TestForestCosts" fullname="MK.Tests.map.TerrainCostTests.TestForestCosts" methodname="TestForestCosts" classname="MK.Tests.map.TerrainCostTests" runstate="Runnable" seed="1535038472" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.000076" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1054" name="TestMountainCosts" fullname="MK.Tests.map.TerrainCostTests.TestMountainCosts" methodname="TestMountainCosts" classname="MK.Tests.map.TerrainCostTests" runstate="Runnable" seed="622775290" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.000073" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1059" name="TestPassableCheck" fullname="MK.Tests.map.TerrainCostTests.TestPassableCheck" methodname="TestPassableCheck" classname="MK.Tests.map.TerrainCostTests" runstate="Runnable" seed="503690385" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.000191" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1056" name="TestPlainsCosts" fullname="MK.Tests.map.TerrainCostTests.TestPlainsCosts" methodname="TestPlainsCosts" classname="MK.Tests.map.TerrainCostTests" runstate="Runnable" seed="1839505226" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.000078" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1055" name="TestSwampCosts" fullname="MK.Tests.map.TerrainCostTests.TestSwampCosts" methodname="TestSwampCosts" classname="MK.Tests.map.TerrainCostTests" runstate="Runnable" seed="11380641" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.000071" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1058" name="TestWaterIsImpassable" fullname="MK.Tests.map.TerrainCostTests.TestWaterIsImpassable" methodname="TestWaterIsImpassable" classname="MK.Tests.map.TerrainCostTests" runstate="Runnable" seed="1300822208" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.000094" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+          </test-suite>
+          <test-suite type="TestSuite" id="1119" name="Rules" fullname="MK.Tests.Rules" runstate="Runnable" testcasecount="19" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.019710" total="19" passed="19" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1024" name="RuleScenarioTests" fullname="MK.Tests.Rules.RuleScenarioTests" classname="MK.Tests.Rules.RuleScenarioTests" runstate="Runnable" testcasecount="19" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.019117" total="19" passed="19" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1043" name="BasicAttackCannotDefeatArmorFive" fullname="MK.Tests.Rules.RuleScenarioTests.BasicAttackCannotDefeatArmorFive" methodname="BasicAttackCannotDefeatArmorFive" classname="MK.Tests.Rules.RuleScenarioTests" runstate="Runnable" seed="554954861" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.004521" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1032" name="EnemyAbilitiesUseSeparateBlockAndDamageRules" fullname="MK.Tests.Rules.RuleScenarioTests.EnemyAbilitiesUseSeparateBlockAndDamageRules" classname="MK.Tests.Rules.RuleScenarioTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.002616" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1028" name="EnemyAbilitiesUseSeparateBlockAndDamageRules(&quot;swift&quot;,4,2)" fullname="MK.Tests.Rules.RuleScenarioTests.EnemyAbilitiesUseSeparateBlockAndDamageRules(&quot;swift&quot;,4,2)" methodname="EnemyAbilitiesUseSeparateBlockAndDamageRules" classname="MK.Tests.Rules.RuleScenarioTests" runstate="Runnable" seed="1073240453" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.001678" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1029" name="EnemyAbilitiesUseSeparateBlockAndDamageRules(&quot;swift&quot;,8,0)" fullname="MK.Tests.Rules.RuleScenarioTests.EnemyAbilitiesUseSeparateBlockAndDamageRules(&quot;swift&quot;,8,0)" methodname="EnemyAbilitiesUseSeparateBlockAndDamageRules" classname="MK.Tests.Rules.RuleScenarioTests" runstate="Runnable" seed="1004346075" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.000072" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1030" name="EnemyAbilitiesUseSeparateBlockAndDamageRules(&quot;brutal&quot;,3,4)" fullname="MK.Tests.Rules.RuleScenarioTests.EnemyAbilitiesUseSeparateBlockAndDamageRules(&quot;brutal&quot;,3,4)" methodname="EnemyAbilitiesUseSeparateBlockAndDamageRules" classname="MK.Tests.Rules.RuleScenarioTests" runstate="Runnable" seed="1894825079" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.000046" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1031" name="EnemyAbilitiesUseSeparateBlockAndDamageRules(&quot;brutal&quot;,4,0)" fullname="MK.Tests.Rules.RuleScenarioTests.EnemyAbilitiesUseSeparateBlockAndDamageRules(&quot;brutal&quot;,4,0)" methodname="EnemyAbilitiesUseSeparateBlockAndDamageRules" classname="MK.Tests.Rules.RuleScenarioTests" runstate="Runnable" seed="478951977" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.000040" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1044" name="ExplorationRotationOccursOnceAndEmptyDeckReturnsFailure" fullname="MK.Tests.Rules.RuleScenarioTests.ExplorationRotationOccursOnceAndEmptyDeckReturnsFailure" methodname="ExplorationRotationOccursOnceAndEmptyDeckReturnsFailure" classname="MK.Tests.Rules.RuleScenarioTests" runstate="Runnable" seed="1578110901" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.000424" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1034" name="ExploreThenEnterPaysSeparateCostsAndRejectsInsufficientMove" fullname="MK.Tests.Rules.RuleScenarioTests.ExploreThenEnterPaysSeparateCostsAndRejectsInsufficientMove" methodname="ExploreThenEnterPaysSeparateCostsAndRejectsInsufficientMove" classname="MK.Tests.Rules.RuleScenarioTests" runstate="Runnable" seed="548186377" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.001843" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1041" name="FailedMultiColorPaymentIsAtomic" fullname="MK.Tests.Rules.RuleScenarioTests.FailedMultiColorPaymentIsAtomic" methodname="FailedMultiColorPaymentIsAtomic" classname="MK.Tests.Rules.RuleScenarioTests" runstate="Runnable" seed="1529102950" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.001934" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1033" name="FireAttackNeedsIceBlockAndFireResistanceHalvesAttack" fullname="MK.Tests.Rules.RuleScenarioTests.FireAttackNeedsIceBlockAndFireResistanceHalvesAttack" methodname="FireAttackNeedsIceBlockAndFireResistanceHalvesAttack" classname="MK.Tests.Rules.RuleScenarioTests" runstate="Runnable" seed="679146638" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.000315" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1039" name="FullCommandSlotsRejectRecruitEvenWithExactInfluence" fullname="MK.Tests.Rules.RuleScenarioTests.FullCommandSlotsRejectRecruitEvenWithExactInfluence" methodname="FullCommandSlotsRejectRecruitEvenWithExactInfluence" classname="MK.Tests.Rules.RuleScenarioTests" runstate="Runnable" seed="1601592784" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.001571" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1038" name="InitialCommandLimitComesFromLevelNotReputation" fullname="MK.Tests.Rules.RuleScenarioTests.InitialCommandLimitComesFromLevelNotReputation" methodname="InitialCommandLimitComesFromLevelNotReputation" classname="MK.Tests.Rules.RuleScenarioTests" runstate="Runnable" seed="71981688" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.000156" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1035" name="NightForestCostsFiveAndLakeIsInaccessible" fullname="MK.Tests.Rules.RuleScenarioTests.NightForestCostsFiveAndLakeIsInaccessible" methodname="NightForestCostsFiveAndLakeIsInaccessible" classname="MK.Tests.Rules.RuleScenarioTests" runstate="Runnable" seed="539099793" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.000312" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1027" name="PartialBlockNeverReducesDamage" fullname="MK.Tests.Rules.RuleScenarioTests.PartialBlockNeverReducesDamage" classname="MK.Tests.Rules.RuleScenarioTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.001044" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1025" name="PartialBlockNeverReducesDamage(3,2)" fullname="MK.Tests.Rules.RuleScenarioTests.PartialBlockNeverReducesDamage(3,2)" methodname="PartialBlockNeverReducesDamage" classname="MK.Tests.Rules.RuleScenarioTests" runstate="Runnable" seed="123942626" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.000349" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1026" name="PartialBlockNeverReducesDamage(4,0)" fullname="MK.Tests.Rules.RuleScenarioTests.PartialBlockNeverReducesDamage(4,0)" methodname="PartialBlockNeverReducesDamage" classname="MK.Tests.Rules.RuleScenarioTests" runstate="Runnable" seed="509411722" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.000052" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1036" name="RecruitingChecksLocationResourcesSlotsAndDuplicateOffer" fullname="MK.Tests.Rules.RuleScenarioTests.RecruitingChecksLocationResourcesSlotsAndDuplicateOffer" methodname="RecruitingChecksLocationResourcesSlotsAndDuplicateOffer" classname="MK.Tests.Rules.RuleScenarioTests" runstate="Runnable" seed="843657532" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.000299" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1037" name="ReputationAppliesOnceAcrossTwoPurchases" fullname="MK.Tests.Rules.RuleScenarioTests.ReputationAppliesOnceAcrossTwoPurchases" methodname="ReputationAppliesOnceAcrossTwoPurchases" classname="MK.Tests.Rules.RuleScenarioTests" runstate="Runnable" seed="515033809" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.000197" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1040" name="ReturnedManaDieClearsHolderAndCannotDuplicateTheSource" fullname="MK.Tests.Rules.RuleScenarioTests.ReturnedManaDieClearsHolderAndCannotDuplicateTheSource" methodname="ReturnedManaDieClearsHolderAndCannotDuplicateTheSource" classname="MK.Tests.Rules.RuleScenarioTests" runstate="Runnable" seed="1423305065" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.000439" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1045" name="SpawnedThreatReturnsACombatEventInsteadOfThrowing" fullname="MK.Tests.Rules.RuleScenarioTests.SpawnedThreatReturnsACombatEventInsteadOfThrowing" methodname="SpawnedThreatReturnsACombatEventInsteadOfThrowing" classname="MK.Tests.Rules.RuleScenarioTests" runstate="Runnable" seed="801789810" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.000603" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1042" name="TwoTurnJourneyConservesCardsAndRewardsOnlyOnce" fullname="MK.Tests.Rules.RuleScenarioTests.TwoTurnJourneyConservesCardsAndRewardsOnlyOnce" methodname="TwoTurnJourneyConservesCardsAndRewardsOnlyOnce" classname="MK.Tests.Rules.RuleScenarioTests" runstate="Runnable" seed="1560082932" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.000517" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+    <test-suite type="Assembly" id="1126" name="Unity.Addressables.DocExampleCode.Editor.Tests.dll" fullname="D:/study_and_work/unity-MK-test/MageKnight_from_zero/Library/ScriptAssemblies/Unity.Addressables.DocExampleCode.Editor.Tests.dll" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.001544" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="19636" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1127" name="AddressableAssets" fullname="AddressableAssets" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.001174" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1128" name="DocExampleCode" fullname="AddressableAssets.DocExampleCode" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.000937" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1124" name="TestStub" fullname="AddressableAssets.DocExampleCode.TestStub" classname="AddressableAssets.DocExampleCode.TestStub" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.000758" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1125" name="RequiredTest" fullname="AddressableAssets.DocExampleCode.TestStub.RequiredTest" methodname="RequiredTest" classname="AddressableAssets.DocExampleCode.TestStub" runstate="Runnable" seed="363211646" result="Passed" start-time="2026-09-10 02:42:33Z" end-time="2026-09-10 02:42:33Z" duration="0.000074" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[<b><color=#2EA3FF>MCP-FOR-UNITY</color></b>: [TestRunnerNoThrottle] Restored Interaction Mode after test run.
+Saving results to: C:/Users/sukefan/AppData/LocalLow/DefaultCompany/MageKnight_from_zero\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

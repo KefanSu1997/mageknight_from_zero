@@ -27,6 +27,7 @@ namespace MK.Tests.map
             };
             _explorationService = new ExplorationService(_mapState, new Random(42));
             _player = new PlayerState(1, "TestPlayer");
+            _mapState.Placed[_player.Position] = new MapTile(TileSet.Countryside, 0, new TerrainType[6]);
         }
 
         [Test]

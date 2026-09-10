@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 585e6a45507f378449ae38baa753c7ac, type: 3}
+  m_Name: 04_journey
+  m_EditorClassIdentifier: MageKnight.Scripts::MageKnight.Adventure.Content.AdventureDefinition
+  id: journey
+  displayName: "\u4ECE\u8425\u5730\u5230\u5E76\u80A9\u4F5C\u6218"
+  objective: "\u6559\u5B66\u624B\u724C\uFF1A\u884C\u8FDB\u63A2\u7D22\u6751\u5E84 \u2192 \u627F\u8BFA\u62DB\u52DF \u2192 \u51B3\u5FC3\u683C\u6321 \u2192 \u72C2\u6012\u653B\u51FB\u3002"
+  mode: 3
+  hero: {fileID: 11400000, guid: b9b3dc7fc130e6144ba95806caa3f7a6, type: 2}
+  startingBackground: {fileID: 11400000, guid: 4e00e30534147524ea5c8c03f71f7359, type: 2}
+  encounter: {fileID: 11400000, guid: 78c218939a4eb7f47a30193cdfd68c71, type: 2}
+  deck:
+  - {fileID: 11400000, guid: 9be5aa6b281f77a488d104d92f957025, type: 2}
+  - {fileID: 11400000, guid: 1b878840c6918b84c9cb18eb453b8c6a, type: 2}
+  - {fileID: 11400000, guid: 1b878840c6918b84c9cb18eb453b8c6a, type: 2}
+  - {fileID: 11400000, guid: cab6dabba7c5c124aa93149c1a7632df, type: 2}
+  - {fileID: 11400000, guid: cab6dabba7c5c124aa93149c1a7632df, type: 2}
+  - {fileID: 11400000, guid: 3f497a29c978ac24ebcef5d3919b40de, type: 2}
+  - {fileID: 11400000, guid: 3f497a29c978ac24ebcef5d3919b40de, type: 2}
+  - {fileID: 11400000, guid: 9be5aa6b281f77a488d104d92f957025, type: 2}
+  - {fileID: 11400000, guid: cd7861fed9f0f7f4d905b7163f4b501c, type: 2}
+  - {fileID: 11400000, guid: cd7861fed9f0f7f4d905b7163f4b501c, type: 2}
+  offers:
+  - {fileID: 11400000, guid: 421db8e4cf3292e47aed67cede69ed9e, type: 2}
+  - {fileID: 11400000, guid: f37890a330076ac40b789e041c1356fd, type: 2}
+  - {fileID: 11400000, guid: 3c3ecf644088bae4e93f1ff5f39daf36, type: 2}
+  sites:
+  - id: camp
+    displayName: "\u8425\u5730"
+    q: 0
+    r: 0
+    terrain: 0
+    revealed: 1
+    recruitAt: 0
+    location: {fileID: 11400000, guid: 4e00e30534147524ea5c8c03f71f7359, type: 2}
+  - id: village
+    displayName: "\u6751\u5E84"
+    q: 1
+    r: 0
+    terrain: 0
+    revealed: 0
+    recruitAt: 1
+    location: {fileID: 11400000, guid: c0071418e55e7574f9b3befdf3cb4873, type: 2}
+  startSite: camp
+  time: 0
+  movement: 0
+  influence: 0
+  fame: 0
+  reputation: 0
+  redCrystals: 1
+  blueCrystals: 1
+  greenCrystals: 1
+  whiteCrystals: 1

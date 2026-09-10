@@ -10,27 +10,27 @@ namespace MK.Tests.map
         public void TestForestCosts()
         {
             Assert.AreEqual(3, TerrainCost.GetCost(TerrainType.Forest, DayPart.Day));
-            Assert.AreEqual(2, TerrainCost.GetCost(TerrainType.Forest, DayPart.Night));
+            Assert.AreEqual(5, TerrainCost.GetCost(TerrainType.Forest, DayPart.Night));
         }
 
         [Test]
         public void TestDesertCosts()
         {
-            Assert.AreEqual(2, TerrainCost.GetCost(TerrainType.Desert, DayPart.Day));
+            Assert.AreEqual(5, TerrainCost.GetCost(TerrainType.Desert, DayPart.Day));
             Assert.AreEqual(3, TerrainCost.GetCost(TerrainType.Desert, DayPart.Night));
         }
 
         [Test]
         public void TestMountainCosts()
         {
-            Assert.AreEqual(3, TerrainCost.GetCost(TerrainType.Mountain, DayPart.Day));
-            Assert.AreEqual(4, TerrainCost.GetCost(TerrainType.Mountain, DayPart.Night));
+            Assert.AreEqual(int.MaxValue, TerrainCost.GetCost(TerrainType.Mountain, DayPart.Day));
+            Assert.AreEqual(int.MaxValue, TerrainCost.GetCost(TerrainType.Mountain, DayPart.Night));
         }
 
         [Test]
         public void TestSwampCosts()
         {
-            Assert.AreEqual(3, TerrainCost.GetCost(TerrainType.Swamp, DayPart.Day));
+            Assert.AreEqual(5, TerrainCost.GetCost(TerrainType.Swamp, DayPart.Day));
             Assert.AreEqual(5, TerrainCost.GetCost(TerrainType.Swamp, DayPart.Night));
         }
 
@@ -42,14 +42,14 @@ namespace MK.Tests.map
         }
 
         [Test]
-        public void TestSettlementsAreOneCost()
+        public void TestCityAndPlainBasedTrainingSettlementsCostTwo()
         {
-            Assert.AreEqual(1, TerrainCost.GetCost(TerrainType.Village, DayPart.Day));
-            Assert.AreEqual(1, TerrainCost.GetCost(TerrainType.Village, DayPart.Night));
-            Assert.AreEqual(1, TerrainCost.GetCost(TerrainType.City, DayPart.Day));
-            Assert.AreEqual(1, TerrainCost.GetCost(TerrainType.City, DayPart.Night));
-            Assert.AreEqual(1, TerrainCost.GetCost(TerrainType.Keep, DayPart.Day));
-            Assert.AreEqual(1, TerrainCost.GetCost(TerrainType.Keep, DayPart.Night));
+            Assert.AreEqual(2, TerrainCost.GetCost(TerrainType.Village, DayPart.Day));
+            Assert.AreEqual(2, TerrainCost.GetCost(TerrainType.Village, DayPart.Night));
+            Assert.AreEqual(2, TerrainCost.GetCost(TerrainType.City, DayPart.Day));
+            Assert.AreEqual(2, TerrainCost.GetCost(TerrainType.City, DayPart.Night));
+            Assert.AreEqual(2, TerrainCost.GetCost(TerrainType.Keep, DayPart.Day));
+            Assert.AreEqual(2, TerrainCost.GetCost(TerrainType.Keep, DayPart.Night));
         }
 
         [Test]

@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace MageKnight.SceneAutomation
 {
@@ -15,5 +16,15 @@ namespace MageKnight.SceneAutomation
         /// Seconds to wait after the step completes; set to -1 to use the request default.
         /// </summary>
         public float waitAfterSeconds = -1f;
+        public List<SceneAutomationExpectation> before = new();
+        public List<SceneAutomationExpectation> after = new();
+    }
+
+    [Serializable]
+    public class SceneAutomationExpectation
+    {
+        public string key;
+        public string expected;
+        public string rule;
     }
 }

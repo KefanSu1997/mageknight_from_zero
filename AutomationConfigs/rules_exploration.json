@@ -1,0 +1,455 @@
+{
+  "scenePath": "Assets/Scenes/Part1/Part1_ExplorationRules.unity",
+  "screenshotsDirectory": "AutomationOutputs/RulesScenarios/20260909/Exploration/captures",
+  "reportPath": "AutomationOutputs/RulesScenarios/20260909/Exploration/report.json",
+  "useRunSubfolder": true,
+  "captureInitialView": true,
+  "initialDelaySeconds": 1.2,
+  "defaultWaitAfterSeconds": 0.15,
+  "steps": [
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_move",
+      "label": "白昼进入森林",
+      "waitAfterSeconds": 0.15,
+      "before": [
+        {
+          "key": "movement",
+          "expected": "6",
+          "rule": "森林白天费用3；6−3=3。"
+        },
+        {
+          "key": "cost",
+          "expected": "3",
+          "rule": "森林白天费用3；6−3=3。"
+        }
+      ],
+      "after": [
+        {
+          "key": "movement",
+          "expected": "3",
+          "rule": "森林白天费用3；6−3=3。"
+        },
+        {
+          "key": "ui:movement",
+          "expected": "3",
+          "rule": "界面显示必须与规则结果一致；森林白天费用3；6−3=3。"
+        },
+        {
+          "key": "positionQ",
+          "expected": "1",
+          "rule": "森林白天费用3；6−3=3。"
+        },
+        {
+          "key": "positionR",
+          "expected": "0",
+          "rule": "森林白天费用3；6−3=3。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Map/Btn_select_frontier",
+      "label": "选择未知空位",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "movement",
+          "expected": "3",
+          "rule": "选中地块不消耗资源。"
+        },
+        {
+          "key": "ui:movement",
+          "expected": "3",
+          "rule": "界面显示必须与规则结果一致；选中地块不消耗资源。"
+        },
+        {
+          "key": "cost",
+          "expected": "2",
+          "rule": "选中地块不消耗资源。"
+        },
+        {
+          "key": "ui:cost",
+          "expected": "2",
+          "rule": "界面显示必须与规则结果一致；选中地块不消耗资源。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_explore",
+      "label": "揭示后棋子留在原位",
+      "waitAfterSeconds": 0.15,
+      "before": [
+        {
+          "key": "tiles",
+          "expected": "6",
+          "rule": "探索另付2，3−2=1；地块数6→7，牌堆1→0，玩家不移动。"
+        },
+        {
+          "key": "tileDeck",
+          "expected": "1",
+          "rule": "探索另付2，3−2=1；地块数6→7，牌堆1→0，玩家不移动。"
+        }
+      ],
+      "after": [
+        {
+          "key": "movement",
+          "expected": "1",
+          "rule": "探索另付2，3−2=1；地块数6→7，牌堆1→0，玩家不移动。"
+        },
+        {
+          "key": "ui:movement",
+          "expected": "1",
+          "rule": "界面显示必须与规则结果一致；探索另付2，3−2=1；地块数6→7，牌堆1→0，玩家不移动。"
+        },
+        {
+          "key": "tiles",
+          "expected": "7",
+          "rule": "探索另付2，3−2=1；地块数6→7，牌堆1→0，玩家不移动。"
+        },
+        {
+          "key": "ui:tiles",
+          "expected": "7",
+          "rule": "界面显示必须与规则结果一致；探索另付2，3−2=1；地块数6→7，牌堆1→0，玩家不移动。"
+        },
+        {
+          "key": "tileDeck",
+          "expected": "0",
+          "rule": "探索另付2，3−2=1；地块数6→7，牌堆1→0，玩家不移动。"
+        },
+        {
+          "key": "ui:tileDeck",
+          "expected": "0",
+          "rule": "界面显示必须与规则结果一致；探索另付2，3−2=1；地块数6→7，牌堆1→0，玩家不移动。"
+        },
+        {
+          "key": "positionQ",
+          "expected": "1",
+          "rule": "探索另付2，3−2=1；地块数6→7，牌堆1→0，玩家不移动。"
+        },
+        {
+          "key": "revealed",
+          "expected": "1",
+          "rule": "探索另付2，3−2=1；地块数6→7，牌堆1→0，玩家不移动。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_move",
+      "label": "移动力不足保留位置",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "accepted",
+          "expected": "0",
+          "rule": "进入平原需2，剩余1；失败不扣费，不移动。"
+        },
+        {
+          "key": "movement",
+          "expected": "1",
+          "rule": "进入平原需2，剩余1；失败不扣费，不移动。"
+        },
+        {
+          "key": "ui:movement",
+          "expected": "1",
+          "rule": "界面显示必须与规则结果一致；进入平原需2，剩余1；失败不扣费，不移动。"
+        },
+        {
+          "key": "positionQ",
+          "expected": "1",
+          "rule": "进入平原需2，剩余1；失败不扣费，不移动。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_explore",
+      "label": "空牌堆与重复探索被拒绝",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "accepted",
+          "expected": "0",
+          "rule": "已揭示地块不能重复探索，空牌堆不能取牌。"
+        },
+        {
+          "key": "movement",
+          "expected": "1",
+          "rule": "已揭示地块不能重复探索，空牌堆不能取牌。"
+        },
+        {
+          "key": "ui:movement",
+          "expected": "1",
+          "rule": "界面显示必须与规则结果一致；已揭示地块不能重复探索，空牌堆不能取牌。"
+        },
+        {
+          "key": "tiles",
+          "expected": "7",
+          "rule": "已揭示地块不能重复探索，空牌堆不能取牌。"
+        },
+        {
+          "key": "ui:tiles",
+          "expected": "7",
+          "rule": "界面显示必须与规则结果一致；已揭示地块不能重复探索，空牌堆不能取牌。"
+        },
+        {
+          "key": "tileDeck",
+          "expected": "0",
+          "rule": "已揭示地块不能重复探索，空牌堆不能取牌。"
+        },
+        {
+          "key": "ui:tileDeck",
+          "expected": "0",
+          "rule": "界面显示必须与规则结果一致；已揭示地块不能重复探索，空牌堆不能取牌。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Sidebar/Cases/Btn_night",
+      "label": "重置为夜间案例",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "movement",
+          "expected": "6",
+          "rule": "夜间森林费用5。"
+        },
+        {
+          "key": "ui:movement",
+          "expected": "6",
+          "rule": "界面显示必须与规则结果一致；夜间森林费用5。"
+        },
+        {
+          "key": "day",
+          "expected": "0",
+          "rule": "夜间森林费用5。"
+        },
+        {
+          "key": "cost",
+          "expected": "5",
+          "rule": "夜间森林费用5。"
+        },
+        {
+          "key": "ui:cost",
+          "expected": "5",
+          "rule": "界面显示必须与规则结果一致；夜间森林费用5。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_move",
+      "label": "夜间森林费用增加",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "movement",
+          "expected": "1",
+          "rule": "6−5=1；夜间森林不是更便宜。"
+        },
+        {
+          "key": "ui:movement",
+          "expected": "1",
+          "rule": "界面显示必须与规则结果一致；6−5=1；夜间森林不是更便宜。"
+        },
+        {
+          "key": "positionQ",
+          "expected": "1",
+          "rule": "6−5=1；夜间森林不是更便宜。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Sidebar/Cases/Btn_day",
+      "label": "重置为白昼案例",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "movement",
+          "expected": "6",
+          "rule": "开始独立白昼案例。"
+        },
+        {
+          "key": "ui:movement",
+          "expected": "6",
+          "rule": "界面显示必须与规则结果一致；开始独立白昼案例。"
+        },
+        {
+          "key": "positionQ",
+          "expected": "0",
+          "rule": "开始独立白昼案例。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Map/Btn_select_lake",
+      "label": "选择湖泊",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "cost",
+          "expected": "不可通行",
+          "rule": "湖泊没有普通移动费用，不能进入。"
+        },
+        {
+          "key": "ui:cost",
+          "expected": "不可通行",
+          "rule": "界面显示必须与规则结果一致；湖泊没有普通移动费用，不能进入。"
+        },
+        {
+          "key": "movement",
+          "expected": "6",
+          "rule": "湖泊没有普通移动费用，不能进入。"
+        },
+        {
+          "key": "ui:movement",
+          "expected": "6",
+          "rule": "界面显示必须与规则结果一致；湖泊没有普通移动费用，不能进入。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_move",
+      "label": "湖泊不能进入",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "accepted",
+          "expected": "0",
+          "rule": "不可通行地形拒绝移动并保留资源。"
+        },
+        {
+          "key": "positionQ",
+          "expected": "0",
+          "rule": "不可通行地形拒绝移动并保留资源。"
+        },
+        {
+          "key": "positionR",
+          "expected": "0",
+          "rule": "不可通行地形拒绝移动并保留资源。"
+        },
+        {
+          "key": "movement",
+          "expected": "6",
+          "rule": "不可通行地形拒绝移动并保留资源。"
+        },
+        {
+          "key": "ui:movement",
+          "expected": "6",
+          "rule": "界面显示必须与规则结果一致；不可通行地形拒绝移动并保留资源。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Map/Btn_select_frontier",
+      "label": "选择不相邻空位",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "movement",
+          "expected": "6",
+          "rule": "此时距离2。"
+        },
+        {
+          "key": "ui:movement",
+          "expected": "6",
+          "rule": "界面显示必须与规则结果一致；此时距离2。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_explore",
+      "label": "禁止远距离探索",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "accepted",
+          "expected": "0",
+          "rule": "只可探索玩家相邻空位，失败不抽地块。"
+        },
+        {
+          "key": "movement",
+          "expected": "6",
+          "rule": "只可探索玩家相邻空位，失败不抽地块。"
+        },
+        {
+          "key": "ui:movement",
+          "expected": "6",
+          "rule": "界面显示必须与规则结果一致；只可探索玩家相邻空位，失败不抽地块。"
+        },
+        {
+          "key": "tiles",
+          "expected": "6",
+          "rule": "只可探索玩家相邻空位，失败不抽地块。"
+        },
+        {
+          "key": "ui:tiles",
+          "expected": "6",
+          "rule": "界面显示必须与规则结果一致；只可探索玩家相邻空位，失败不抽地块。"
+        },
+        {
+          "key": "tileDeck",
+          "expected": "1",
+          "rule": "只可探索玩家相邻空位，失败不抽地块。"
+        },
+        {
+          "key": "ui:tileDeck",
+          "expected": "1",
+          "rule": "界面显示必须与规则结果一致；只可探索玩家相邻空位，失败不抽地块。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Map/Btn_select_desert",
+      "label": "白昼沙漠预览",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "cost",
+          "expected": "5",
+          "rule": "沙漠白天费用5。"
+        },
+        {
+          "key": "ui:cost",
+          "expected": "5",
+          "rule": "界面显示必须与规则结果一致；沙漠白天费用5。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_move",
+      "label": "进入白昼沙漠",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "movement",
+          "expected": "1",
+          "rule": "6−5=1。"
+        },
+        {
+          "key": "ui:movement",
+          "expected": "1",
+          "rule": "界面显示必须与规则结果一致；6−5=1。"
+        },
+        {
+          "key": "positionQ",
+          "expected": "1",
+          "rule": "6−5=1。"
+        },
+        {
+          "key": "positionR",
+          "expected": "-1",
+          "rule": "6−5=1。"
+        }
+      ]
+    }
+  ]
+}

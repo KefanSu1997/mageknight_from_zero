@@ -2,6 +2,8 @@ using System;
 using System.Collections;
 using System.IO;
 using System.Text;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -17,20 +19,45 @@ namespace MageKnight.SceneAutomation
     /// </summary>
     public class SceneAutomationOrchestrator : MonoBehaviour
     {
-        private const int DeckIdealCaptureWidth = 1378;
-        private const int DeckIdealCaptureHeight = 1204;
         private const string DeckIdealSceneSuffix = "Assets/Scenes/Part1/Part1_DeckIdeal.unity";
 
         private SceneAutomationRequest _request;
         private SceneAutomationReport _report;
         private string _screenshotsDirectory;
         private bool _hasError;
+        private float _startedRealtime;
+        private bool _finished;
+        private string _runtimeError;
 
         private static readonly char[] InvalidFileNameChars = Path.GetInvalidFileNameChars();
 
         private void Awake()
         {
             DontDestroyOnLoad(gameObject);
+            Application.logMessageReceived += OnRuntimeLog;
+            _startedRealtime = Time.realtimeSinceStartup;
+        }
+
+        private void OnDestroy() => Application.logMessageReceived -= OnRuntimeLog;
+
+        private void OnRuntimeLog(string condition, string stackTrace, LogType type)
+        {
+            if (type != LogType.Error && type != LogType.Exception && type != LogType.Assert) return;
+            _hasError = true;
+            _runtimeError ??= condition;
+        }
+
+        private void Update()
+        {
+            if (_finished || _request == null || _report == null) return;
+            if (Time.realtimeSinceStartup - _startedRealtime <= Mathf.Max(10, _request.maxRunSeconds)) return;
+            StopAllCoroutines();
+            _hasError = true; _finished = true;
+            _report.status = "failed"; _report.finishedAt = DateTime.UtcNow.ToString("o");
+            _report.message = "Automation timed out; last runtime error: " + (_runtimeError ?? "none");
+            string path = ResolvePath(_request.reportPath); EnsureDirectory(Path.GetDirectoryName(path));
+            File.WriteAllText(path, JsonUtility.ToJson(_report, true));
+            FinalizeAutomation();
         }
 
         private IEnumerator Start()
@@ -89,17 +116,19 @@ namespace MageKnight.SceneAutomation
             {
                 Debug.Log($"[SceneAutomation] Starting step: {step.label}");
                 yield return ExecuteStep(step);
+                if (_hasError) break;
             }
 
             _report.status = _hasError ? "failed" : "success";
             if (_hasError && string.IsNullOrEmpty(_report.message))
             {
-                _report.message = "One or more steps failed.";
+                _report.message = _runtimeError ?? "One or more steps failed.";
             }
 
             _report.finishedAt = DateTime.UtcNow.ToString("o");
 
             yield return WriteReport();
+            _finished = true;
             Debug.Log("[SceneAutomation] Automation finished.");
             FinalizeAutomation();
         }
@@ -114,6 +143,16 @@ namespace MageKnight.SceneAutomation
             };
 
             Debug.Log($"[SceneAutomation] Executing step: {label}");
+            var source = FindObjectsByType<MonoBehaviour>(FindObjectsSortMode.None)
+                .OfType<ISceneAutomationStateSource>().SingleOrDefault();
+            var before = source?.ReadAutomationState() ?? new Dictionary<string, string>();
+            record.beforeState = Snapshot(before);
+            if (!CheckExpectations(step.before, before, "before", record))
+            {
+                _hasError = true;
+                yield return CaptureAndRecordStep(label, step.buttonPath, false, record);
+                yield break;
+            }
 
             if (string.IsNullOrWhiteSpace(step.buttonPath))
             {
@@ -145,7 +184,12 @@ namespace MageKnight.SceneAutomation
                 yield break;
             }
 
-            yield return ExecuteClick(button);
+            if (!TryPointerClick(button, record))
+            {
+                _hasError = true;
+                yield return CaptureAndRecordStep(label, step.buttonPath, false, record);
+                yield break;
+            }
             Debug.Log($"[SceneAutomation] Clicked button: {label}");
 
             var waitSeconds = step.waitAfterSeconds >= 0f ? step.waitAfterSeconds : _request.defaultWaitAfterSeconds;
@@ -162,20 +206,70 @@ namespace MageKnight.SceneAutomation
 
 
             yield return null;
-            yield return CaptureAndRecordStep(label, step.buttonPath, true, record);
+            var after = source?.ReadAutomationState() ?? new Dictionary<string, string>();
+            record.afterState = Snapshot(after);
+            record.runtimeRule = source?.LastRule;
+            bool passed = CheckExpectations(step.after, after, "after", record);
+            if (!passed) _hasError = true;
+            yield return CaptureAndRecordStep(label, step.buttonPath, passed, record);
         }
 
-        private IEnumerator ExecuteClick(Button button)
-        {
-            if (EventSystem.current == null)
-            {
-                var eventSystem = new GameObject("EventSystem");
-                eventSystem.AddComponent<EventSystem>();
-                eventSystem.AddComponent<StandaloneInputModule>();
-            }
+        private static List<SceneAutomationStateValue> Snapshot(Dictionary<string, string> state) =>
+            state.Select(pair => new SceneAutomationStateValue { key = pair.Key, value = pair.Value }).ToList();
 
-            button.onClick?.Invoke();
-            yield return null;
+        private static bool CheckExpectations(List<SceneAutomationExpectation> expected,
+            Dictionary<string, string> state, string phase, SceneAutomationReportStep record)
+        {
+            bool allPassed = true;
+            foreach (var item in expected ?? new List<SceneAutomationExpectation>())
+            {
+                string actual = state.TryGetValue(item.key, out var value) ? value : "<missing>";
+                bool passed = actual == item.expected;
+                record.assertions.Add(new SceneAutomationAssertionResult
+                { phase = phase, key = item.key, expected = item.expected, actual = actual, rule = item.rule, passed = passed });
+                if (!passed)
+                {
+                    allPassed = false;
+                    record.message += $"{phase} {item.key}: expected {item.expected}, got {actual}. ";
+                }
+            }
+            return allPassed;
+        }
+
+        private static bool TryPointerClick(Button button, SceneAutomationReportStep record)
+        {
+            try { return PointerClick(button, record); }
+            catch (Exception ex)
+            {
+                record.message = $"Pointer input failed: {ex.GetType().Name}: {ex.Message}";
+                return false;
+            }
+        }
+
+        private static bool PointerClick(Button button, SceneAutomationReportStep record)
+        {
+            if (EventSystem.current == null || !button.isActiveAndEnabled || !button.IsInteractable())
+            { record.message = "No EventSystem, or button is inactive/disabled."; return false; }
+            Canvas.ForceUpdateCanvases();
+            var rect = (RectTransform)button.transform;
+            var canvas = button.GetComponentInParent<Canvas>();
+            var camera = canvas.renderMode == RenderMode.ScreenSpaceOverlay ? null : canvas.worldCamera;
+            Vector2 point = RectTransformUtility.WorldToScreenPoint(camera, rect.TransformPoint(rect.rect.center));
+            if (point.x < 0 || point.y < 0 || point.x >= Screen.width || point.y >= Screen.height)
+            { record.message = "Button center is outside Game View."; return false; }
+            var pointer = new PointerEventData(EventSystem.current) { position = point, button = PointerEventData.InputButton.Left };
+            var hits = new List<RaycastResult>();
+            EventSystem.current.RaycastAll(pointer, hits);
+            record.clickX = point.x; record.clickY = point.y;
+            if (hits.Count == 0) { record.message = "Pointer raycast missed the UI."; return false; }
+            record.hitObject = hits[0].gameObject.name;
+            var handler = ExecuteEvents.GetEventHandler<IPointerClickHandler>(hits[0].gameObject);
+            if (handler != button.gameObject)
+            { record.message = $"Button is obscured by {record.hitObject}."; return false; }
+            ExecuteEvents.Execute(button.gameObject, pointer, ExecuteEvents.pointerDownHandler);
+            ExecuteEvents.Execute(button.gameObject, pointer, ExecuteEvents.pointerUpHandler);
+            ExecuteEvents.Execute(button.gameObject, pointer, ExecuteEvents.pointerClickHandler);
+            return true;
         }
 
         private IEnumerator CaptureAndRecordStep(string label, string buttonPath, bool success, SceneAutomationReportStep record = null)
@@ -188,26 +282,36 @@ namespace MageKnight.SceneAutomation
 
             record.success = success;
 
-            yield return new WaitForEndOfFrame();
-
             Canvas.ForceUpdateCanvases();
+            yield return new WaitForEndOfFrame();
 
             var stepIndex = _report.steps.Count;
             var fileName = BuildScreenshotFileName(label);
             var filePath = Path.Combine(_screenshotsDirectory, fileName);
 
-            var png = CapturePng();
-            if (png != null && png.Length > 0)
+            try
             {
+                var png = CapturePng(out var isBlank);
                 File.WriteAllBytes(filePath, png);
+                record.screenshotPath = filePath;
+                if (isBlank)
+                    throw new InvalidOperationException("Screenshot contains only a uniform color; visual verification failed.");
+
                 WriteDeckIdealAliasesIfNeeded(stepIndex, png);
+                if (record.success)
+                    record.message = string.Empty;
             }
-            else
+            catch (Exception ex)
             {
-                ScreenCapture.CaptureScreenshot(filePath);
+                record.success = false;
+                record.message = string.IsNullOrEmpty(record.message)
+                    ? $"Screenshot failed: {ex.Message}"
+                    : $"{record.message}; Screenshot failed: {ex.Message}";
+                _hasError = true;
+                if (string.IsNullOrEmpty(_report.message))
+                    _report.message = record.message;
+                Debug.LogWarning($"[SceneAutomation] {record.message}");
             }
-            record.screenshotPath = filePath;
-            record.message = success ? "" : record.message;
 
             _report.steps.Add(record);
             Debug.Log($"[SceneAutomation] Step complete: {record.label} (success: {record.success})");
@@ -215,99 +319,39 @@ namespace MageKnight.SceneAutomation
             yield return null;
         }
 
-        private byte[] CapturePng()
+        private byte[] CapturePng(out bool isBlank)
         {
-            var camera = FindCaptureCamera();
-            if (camera == null)
+            // 在帧渲染结束后捕获实际 Game View，包含 URP 和 Overlay Canvas。
+            // Camera.Render() 在 SRP 中不能替代最终帧，也会漏掉屏幕空间 UI。
+            var texture = ScreenCapture.CaptureScreenshotAsTexture();
+            isBlank = true;
+            try
             {
-                Debug.LogWarning("[SceneAutomation] No camera found for deterministic capture; falling back to ScreenCapture.");
-                return null;
-            }
+                if (texture == null || texture.width < 2 || texture.height < 2)
+                    throw new InvalidOperationException("Game View did not produce a valid screenshot.");
 
-            var (width, height) = GetCaptureDimensions(camera);
-            if (width <= 0 || height <= 0)
-            {
-                Debug.LogWarning($"[SceneAutomation] Invalid capture size ({width}x{height}); falling back to ScreenCapture.");
-                return null;
-            }
-
-            var renderTexture = new RenderTexture(width, height, 24);
-            renderTexture.Create();
-
-            var previousTarget = camera.targetTexture;
-            var previousActive = RenderTexture.active;
-            var previousClearFlags = camera.clearFlags;
-
-            camera.targetTexture = renderTexture;
-            camera.clearFlags = CameraClearFlags.SolidColor;
-            camera.Render();
-
-            RenderTexture.active = renderTexture;
-            var texture = new Texture2D(renderTexture.width, renderTexture.height, TextureFormat.RGB24, false);
-            texture.ReadPixels(new Rect(0, 0, renderTexture.width, renderTexture.height), 0, 0);
-            texture.Apply();
-
-            var png = texture.EncodeToPNG();
-
-            camera.targetTexture = previousTarget;
-            camera.clearFlags = previousClearFlags;
-            RenderTexture.active = previousActive;
-
-            Destroy(texture);
-            renderTexture.Release();
-            Destroy(renderTexture);
-
-            return png;
-        }
-
-        private (int width, int height) GetCaptureDimensions(Camera camera)
-        {
-            if (IsDeckIdealRequest())
-            {
-                return (DeckIdealCaptureWidth, DeckIdealCaptureHeight);
-            }
-
-            var width = Mathf.Max(1, Screen.width);
-            var height = Mathf.Max(1, Screen.height);
-            if (camera != null && camera.targetTexture != null)
-            {
-                width = Mathf.Max(1, camera.targetTexture.width);
-                height = Mathf.Max(1, camera.targetTexture.height);
-            }
-
-            return (width, height);
-        }
-
-        private Camera FindCaptureCamera()
-        {
-            var cameras = FindObjectsByType<Camera>(FindObjectsInactive.Include, FindObjectsSortMode.None);
-            if (cameras == null || cameras.Length == 0)
-            {
-                return null;
-            }
-
-            foreach (var cam in cameras)
-            {
-                if (cam != null && cam.enabled && string.Equals(cam.name, "DeckUICamera", StringComparison.Ordinal))
+                var pixels = texture.GetPixels32();
+                var first = pixels[0];
+                for (var i = 1; i < pixels.Length; i++)
                 {
-                    return cam;
+                    var pixel = pixels[i];
+                    if (pixel.r != first.r || pixel.g != first.g || pixel.b != first.b)
+                    {
+                        isBlank = false;
+                        break;
+                    }
                 }
-            }
 
-            if (Camera.main != null && Camera.main.enabled)
+                var png = texture.EncodeToPNG();
+                if (png == null || png.Length == 0)
+                    throw new InvalidOperationException("Screenshot PNG encoding produced no data.");
+                return png;
+            }
+            finally
             {
-                return Camera.main;
+                if (texture != null)
+                    Destroy(texture);
             }
-
-            foreach (var cam in cameras)
-            {
-                if (cam != null && cam.enabled)
-                {
-                    return cam;
-                }
-            }
-
-            return cameras[0];
         }
 
         private bool IsDeckIdealRequest()

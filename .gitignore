@@ -68,3 +68,12 @@ vibe_coding_tools/
 
 # local secrets
 .env
+
+# Local runtime caches and recovery copies (already tracked history is preserved).
+node_modules/
+__pycache__/
+*.pyc
+/*.log
+*.slnx
+/Assets/_Recovery/
+/Assets/_Recovery.meta

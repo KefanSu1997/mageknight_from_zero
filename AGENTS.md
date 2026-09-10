@@ -18,13 +18,27 @@
 
 8. vibe_coding/codex/project_experience 中记录了过往解决问题的经验和教训，你遇到问题时可以查阅。当你解决了新的问题时，必须把经验和教训记录到该文件夹中，以供之后查阅。记录经验教训后，也必须在本文件中更新经验索引：一句话总结作为索引，加上全部经验对应文件路径。
 
-9. 目前用到的unity路径为'D:\Unity\Editor\2023.2.20f1c1\Editor\Unity.exe'，供你参考
+9. 当前已迁移到 Unity 6000.6.0f1，编辑器路径为'D:\Unity\Editor\6000.6.0f1\Editor\Unity.exe'；通过 Unity Hub 打开，不直接从命令行调用编辑器。迁移记录见 `vibe_coding/codex/worklog_2026-09-09_unity6_migration.md`。
 
 10. 禁止安装或者卸载unity的packages
 
 11. 禁止使用batchmode或者用命令行直接调用unity.exe，这会导致命令挂起卡住。
 
+12. MCP retry rule: on `hint=retry` or `ping not answered`, do not rapid-retry. Run `refresh_unity(wait_for_ready=true)` before each retry, use exponential backoff (2s -> 4s -> 8s -> 16s, cap 30s) via active polling, and restart MCP session after repeated consecutive failures.
+
+13. 除非用户明确要求设计新卡，行动卡必须复用 `Assets/GameData/CardsAssets` 的既有定义、`Assets/GameData/cards` 的原卡面和 `ActionSystem/CardEffects` 的效果实现；禁止用自制训练卡或猜测数值替代《魔法骑士》原卡。验收必须同时检查来源、牌面文字和实际效果。
+
 ## 经验索引
+
+- Git 存档：隐藏未跟踪文件、未完成合并备份、SSH 443 和 LFS/远端提交核对 —— `vibe_coding/codex/project_experience/git_archive_pending_merge_2026-09-10.md`
+
+- 原卡复用纠偏：原SO/原卡面/原效果三者同源、基础二选一与强化耗色、禁止用自制训练卡冒充正式内容 —— `vibe_coding/codex/project_experience/official_card_reuse_and_acceptance_2026-09-10.md`
+- 可复用冒险：角色/地点独立资产、卡牌实例与目标命令、伤牌同步、地图边界及规则滚动验收 —— `vibe_coding/codex/project_experience/reusable_adventure_content_and_input_2026-09-10.md`
+- 四个规则场景数值验收：独立预期、按钮命中、真实UI文本、失败资源守恒、协程超时和Console双扫描 —— `vibe_coding/codex/project_experience/rules_scenarios_numeric_acceptance_2026-09-09.md`
+- Codex 手机远程连接：系统代理未覆盖 WebSocket，用户开启 FlClash TUN 后恢复 Connected；区分网络通道与手机配对 —— `vibe_coding/codex/project_experience/codex_remote_tun_connection_2026-09-09.md`
+- DeckMana 桌面美化：统一材质与层级、保留按钮路径与隐藏绑定、空槽不计入手牌、截图及真实鼠标验收 —— `vibe_coding/codex/project_experience/deckmana_table_visual_polish_2026-09-09.md`
+
+- Unity 6.6 迁移：包编译清单恢复、禁止导入回调内重导入、停用旧自动启动、Game View 黑图误验收与布局复测 —— `vibe_coding/codex/project_experience/unity6_migration_capture_and_legacy_startup_2026-09-09.md`
 
 - DeckViewer 浮窗调试：Canvas 排序、RectTransform sizeDelta 与烟雾测试要点 —— `vibe_coding/codex/project_experience/deck_discard_viewer_notes.md`
 - DeckMana 布局：ScrollRect 高度计算与自动化截图校准 —— `vibe_coding/codex/project_experience/deckmana_layout_scrollable_log.md`
@@ -33,6 +47,7 @@
 - 理想卡组截图调优：立绘高光透明度、魔法阵/星云叠层与牌堆位置透明度指南 —— `vibe_coding/codex/project_experience/deck_ideal_layout_notes.md`
 - Imdream 下载偶发 EOF：imdream_query.ps1 失败重试与下载参数要点 —— `vibe_coding/codex/project_experience/imdream_query_download_retry_2026-01-05.md`
 - DeckIdeal 素材替换审计记录：输出路径/替换路径/导入要点 —— `vibe_coding/codex/project_experience/deck_ideal_asset_trace_log_2026-01-06.md`
+- RR1/RR3 QA recovery: targeted rollback for `McpHttpBridgeMenu.cs` and compile_status root-field contract sync —— `vibe_coding/codex/project_experience/qa_rr1_rr3_mcp_bridge_rollback_and_compile_status_root_fields_2026-03-04.md`
 
 ---
 

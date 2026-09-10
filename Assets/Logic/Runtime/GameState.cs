@@ -34,7 +34,17 @@ namespace MK.Logic.Runtime
         public int Reputation { get; set; }
         public string Name { get; set; }
         public int Influence => Reputation; // For test compatibility
-        public int Level => 0; // For test compatibility
+        public int Level
+        {
+            get
+            {
+                int level = 1;
+                foreach (int threshold in LevelThresholds)
+                    if (Fame >= threshold) level++;
+                return level;
+            }
+        }
+        private static readonly int[] LevelThresholds = { 3, 8, 15, 24, 35, 48, 63, 80, 99 };
 
         /// <summary>
         /// 當前戰術牌提供的額外手牌上限加成。
@@ -79,7 +89,7 @@ namespace MK.Logic.Runtime
         public List<UnitState> Units { get; } = new();
 
         /// <summary>
-        /// 指挥槽数量：基础 2 个，声望达到 +3/+7 时各增加 1 个，
+        /// 指挥槽数量：初始1个，升到奇数等级时增加；声望不增加指挥槽。
         /// 额外的临时加成通过 TempCommandSlots 控制，
         /// 部分技能可能永久增加指挥槽，存放於 ExtraCommandSlots。
         /// </summary>
@@ -87,9 +97,7 @@ namespace MK.Logic.Runtime
         {
             get
             {
-                int slots = 2;
-                if (Reputation >= 3) slots++;
-                if (Reputation >= 7) slots++;
+                int slots = 1 + (Level - 1) / 2;
                 return slots + TempCommandSlots + ExtraCommandSlots;
             }
         }

@@ -34,7 +34,9 @@ namespace MK.Tests.game
             Assert.AreEqual(3, _advActionSupply.Offer.Count);
             
             _advActionSupply.Refill(coreRevealed: true);
-            Assert.AreEqual(5, _advActionSupply.Offer.Count);
+            Assert.AreEqual(3, _advActionSupply.Offer.Count, "Core tiles do not enlarge the advanced action offer.");
+            Assert.AreEqual("card1", _advActionSupply.DiscardPile[0].Id);
+            Assert.AreEqual("card4", _advActionSupply.Offer[2].Id);
         }
 
         [Test]
@@ -70,7 +72,7 @@ namespace MK.Tests.game
             _spellSupply.SetDeck(spells);
             
             _spellSupply.Refill();
-            Assert.AreEqual(5, _spellSupply.Offer.Count);
+            Assert.AreEqual(3, _spellSupply.Offer.Count, "The spell offer contains three cards (MKUE p.3).");
         }
 
         [Test]

@@ -1,0 +1,65 @@
+{
+  "generatedAt": "2026-09-10T10:47:09.981432+08:00",
+  "scenes": {
+    "Combat": {
+      "operations": 45,
+      "screenshots": 46,
+      "assertions": 202,
+      "status": "success",
+      "finishedAt": "2026-09-10T02:43:46.8037158Z"
+    },
+    "Exploration": {
+      "operations": 22,
+      "screenshots": 23,
+      "assertions": 76,
+      "status": "success",
+      "finishedAt": "2026-09-10T02:44:02.3172386Z"
+    },
+    "Recruitment": {
+      "operations": 16,
+      "screenshots": 17,
+      "assertions": 58,
+      "status": "success",
+      "finishedAt": "2026-09-10T02:44:15.2237836Z"
+    },
+    "Journey": {
+      "operations": 31,
+      "screenshots": 32,
+      "assertions": 141,
+      "status": "success",
+      "finishedAt": "2026-09-10T02:44:34.3430152Z"
+    }
+  },
+  "editMode": {
+    "passed": 91,
+    "failed": 0,
+    "skipped": 0
+  },
+  "consoleErrors": [
+    0,
+    0
+  ],
+  "wrongExpectationRejected": true,
+  "operations": 114,
+  "screenshots": 118,
+  "assertions": 477,
+  "sha256": {
+    "AutomationOutputs/OfficialCards/20260910/Combat/report.json": "b031e3b90c193532b7c66e0fa974396d7761b4a7186c48d12179f2564c8d10dc",
+    "AutomationOutputs/OfficialCards/20260910/ExpectedFailure/report.json": "74cb23fe3de5ca63d4b12b7b68c40d4a357e151b2bd5ba1c64b0d5cba433e094",
+    "AutomationOutputs/OfficialCards/20260910/Exploration/report.json": "e33344d0fc36251506f5417078f1730892a9375b6e750ec699f880c111f90b4d",
+    "AutomationOutputs/OfficialCards/20260910/Journey/report.json": "4dddd63a3a9d400e15db3b509e42c4897b4d9a3333f1a90bbefcbca90977b50f",
+    "AutomationOutputs/OfficialCards/20260910/Recruitment/report.json": "a205d5db1b2ba04dd6a5e5568ab3dfe458f53d02279f97d3b730f4de6e485d2b",
+    "AutomationOutputs/OfficialCards/20260910/console_final_1.json": "b21abdd93106dc4f9fd3b6f688e83f05441fd1a4ea45669ba6102f6f1ad2e36d",
+    "AutomationOutputs/OfficialCards/20260910/console_final_2.json": "b21abdd93106dc4f9fd3b6f688e83f05441fd1a4ea45669ba6102f6f1ad2e36d",
+    "AutomationOutputs/OfficialCards/20260910/editmode-results.xml": "3a26a6853cf99a4a3711a20f1757426ce571ee7a6fd2fc412f38ebbf8ddd4c6f",
+    "Assets/Resources/Adventure/Art/forest_v1.png": "65a61e50953f118b467e691b1aeb7382f28c69da9dc0b85aa372792cfd907025",
+    "Assets/Resources/Adventure/Art/guard_v1.png": "7cfc89f05d09cfbca2ef3d791c4e12c61a504618af393eb46f26796b53c23368",
+    "Assets/Resources/Adventure/Art/hero_v1.png": "c3a04bb001ca1c5729c4c204766a1cbbe61f78b34cfa10e0912618350ff4341c",
+    "Assets/Resources/Adventure/Art/monk_v1.png": "ba4b244dd4978561d5578df149835fa738b4179d8d47aefc4d63ad8dbc9be086",
+    "Assets/Resources/Adventure/Art/orc_v1.png": "9688f4d3cde0a533577b4352675532d934cb2655861b3a906dcc372ad584852e",
+    "Assets/Resources/Adventure/Art/ranger_v1.png": "b94819740803e9dae8969f8cea950acfe2311bb690391410d6ab13ce4cb13eef",
+    "Assets/Resources/Adventure/Art/valley_v1.png": "f42cff69e222b8deb1711b9e88318849bc94c4df4a0faceccebe2d81082587f7",
+    "Assets/Resources/Adventure/Art/village_v1.png": "3601a137001b255096aa412d8f186ac7860e039d75de2ec97aba5695f1bd5fad",
+    "Assets/Resources/Adventure/Art/wolf_v1.png": "0237cc6aea8c98ae1008d8cb0722785acb84ebd0802c2e0e9ffd6cc34683e1d7"
+  }
+}

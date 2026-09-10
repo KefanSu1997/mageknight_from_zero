@@ -11,6 +11,9 @@ namespace MageKnight.EditorTools
 
         static McpTransportPrefs()
         {
+            if (!EditorPrefs.GetBool("MageKnight.LegacyMcpHttpAutoStart.Enabled", false))
+                return;
+
             // Ensure MCPForUnity uses the default HTTP transport so the MCP tools can connect.
             EditorPrefs.SetBool(UseHttpTransportKey, true);
             EditorPrefs.SetBool(ResumeHttpAfterReloadKey, true);

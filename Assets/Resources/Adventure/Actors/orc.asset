@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e0ffaf5ebe3ce34d9a10b384155ac76, type: 3}
+  m_Name: orc
+  m_EditorClassIdentifier: MageKnight.Scripts::MageKnight.Adventure.Content.ActorDefinition
+  id: orc
+  displayName: "\u8352\u91CE\u517D\u4EBA"
+  artwork: {fileID: 21300000, guid: ae3d0fd54703f8c40955743d21fcbbea, type: 3}
+  visualScale: 1
+  armor: 4
+  attack: 4
+  block: 0
+  fame: 3
+  attackElement: 0
+  abilities: 
+  recruitmentCost: 0
+  recruitAt: 1

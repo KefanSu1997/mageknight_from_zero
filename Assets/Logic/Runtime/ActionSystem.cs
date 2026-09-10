@@ -44,10 +44,12 @@ namespace MK.Logic.Runtime
         /// <summary>
         /// 初始化時注入各牌 ID 與對應效果。
         /// </summary>
-        public ActionSystem()
+        public ActionSystem(bool loadSpellMetadata = true)
         {
-            foreach (var s in CardJsonLoader.LoadSpells())
-                _spellColor[s.Id] = s.ManaColor;
+            // 纯行动牌场景直接持有原 ActionCardSO，无需读取磁盘法术 JSON。
+            if (loadSpellMetadata)
+                foreach (var s in CardJsonLoader.LoadSpells())
+                    _spellColor[s.Id] = s.ManaColor;
             // 映射編號 000-009 的基礎行動牌
             _baseMap["basic_card_000"] = ActionEffectId.Move2;                // 行進
             _enhMap["basic_card_000"]  = ActionEffectId.Move4;

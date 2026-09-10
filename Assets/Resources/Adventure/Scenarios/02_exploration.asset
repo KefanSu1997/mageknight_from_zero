@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 585e6a45507f378449ae38baa753c7ac, type: 3}
+  m_Name: 02_exploration
+  m_EditorClassIdentifier: MageKnight.Scripts::MageKnight.Adventure.Content.AdventureDefinition
+  id: exploration
+  displayName: "\u7A7F\u8D8A\u7FE1\u7FE0\u5C71\u8C37"
+  objective: "\u6559\u5B66\u624B\u724C\uFF1A\u884C\u8FDB / \u8010\u529B\u63D0\u4F9B\u79FB\u52A82\uFF0C\u5F3A\u53164\uFF1B\u63A2\u7D22\u4E0E\u8FDB\u5165\u5206\u522B\u4ED8\u8D39\u3002"
+  mode: 1
+  hero: {fileID: 11400000, guid: b9b3dc7fc130e6144ba95806caa3f7a6, type: 2}
+  startingBackground: {fileID: 11400000, guid: 4e00e30534147524ea5c8c03f71f7359, type: 2}
+  encounter: {fileID: 0}
+  deck:
+  - {fileID: 11400000, guid: 9be5aa6b281f77a488d104d92f957025, type: 2}
+  - {fileID: 11400000, guid: cd7861fed9f0f7f4d905b7163f4b501c, type: 2}
+  - {fileID: 11400000, guid: 9be5aa6b281f77a488d104d92f957025, type: 2}
+  - {fileID: 11400000, guid: cd7861fed9f0f7f4d905b7163f4b501c, type: 2}
+  - {fileID: 11400000, guid: 1b878840c6918b84c9cb18eb453b8c6a, type: 2}
+  - {fileID: 11400000, guid: 3f497a29c978ac24ebcef5d3919b40de, type: 2}
+  - {fileID: 11400000, guid: 3f497a29c978ac24ebcef5d3919b40de, type: 2}
+  - {fileID: 11400000, guid: cab6dabba7c5c124aa93149c1a7632df, type: 2}
+  - {fileID: 11400000, guid: cab6dabba7c5c124aa93149c1a7632df, type: 2}
+  - {fileID: 11400000, guid: 1b878840c6918b84c9cb18eb453b8c6a, type: 2}
+  offers: []
+  sites:
+  - id: camp
+    displayName: "\u8425\u5730"
+    q: 0
+    r: 0
+    terrain: 0
+    revealed: 1
+    recruitAt: 0
+    location: {fileID: 11400000, guid: 4e00e30534147524ea5c8c03f71f7359, type: 2}
+  - id: forest
+    displayName: "\u68EE\u6797"
+    q: 1
+    r: 0
+    terrain: 2
+    revealed: 1
+    recruitAt: 0
+    location: {fileID: 11400000, guid: 60ba7017611573d48accd0bbc6e8c3f8, type: 2}
+  - id: frontier
+    displayName: "\u5E73\u539F"
+    q: 2
+    r: 0
+    terrain: 0
+    revealed: 0
+    recruitAt: 0
+    location: {fileID: 11400000, guid: 4e00e30534147524ea5c8c03f71f7359, type: 2}
+  - id: desert
+    displayName: "\u6C99\u6F20"
+    q: 1
+    r: -1
+    terrain: 3
+    revealed: 1
+    recruitAt: 0
+    location: {fileID: 11400000, guid: 4e00e30534147524ea5c8c03f71f7359, type: 2}
+  - id: lake
+    displayName: "\u6E56\u6CCA"
+    q: -1
+    r: 0
+    terrain: 6
+    revealed: 1
+    recruitAt: 0
+    location: {fileID: 11400000, guid: 4e00e30534147524ea5c8c03f71f7359, type: 2}
+  - id: mountain
+    displayName: "\u9AD8\u5C71"
+    q: 0
+    r: -1
+    terrain: 8
+    revealed: 1
+    recruitAt: 0
+    location: {fileID: 11400000, guid: 4e00e30534147524ea5c8c03f71f7359, type: 2}
+  - id: plains
+    displayName: "\u8349\u539F"
+    q: 0
+    r: 1
+    terrain: 0
+    revealed: 1
+    recruitAt: 0
+    location: {fileID: 11400000, guid: 4e00e30534147524ea5c8c03f71f7359, type: 2}
+  startSite: camp
+  time: 0
+  movement: 0
+  influence: 0
+  fame: 0
+  reputation: 0
+  redCrystals: 1
+  blueCrystals: 1
+  greenCrystals: 1
+  whiteCrystals: 1

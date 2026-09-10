@@ -109,16 +109,17 @@ namespace MageKnight.SceneAutomation
                 return;
             }
 
-            if (SceneAutomationRuntimeState.PendingRequest != null)
-            {
-                return;
-            }
-
             var queued = UnityEditor.SessionState.GetBool(PendingSessionKey, false);
             var triggeredByFile = HasFileTrigger();
             if (!queued && !triggeredByFile)
             {
                 return;
+            }
+
+            if (SceneAutomationRuntimeState.PendingRequest != null)
+            {
+                SceneAutomationRuntimeState.Clear();
+                Debug.LogWarning("[ElementCardsManualCapture] Cleared stale SceneAutomation pending request before manual capture.");
             }
 
             var activeScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene();

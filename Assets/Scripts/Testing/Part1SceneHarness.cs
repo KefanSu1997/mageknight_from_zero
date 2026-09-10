@@ -185,10 +185,22 @@ public class Part1SceneHarness : MonoBehaviour
 
         Canvas canvas = CreateCanvas();
         CleanupExistingLayout(canvas.transform);
+        if (showDeck && showMana && !showCombat && !showExploration && !showRecruitment && !showFullFlow)
+        {
+            var table = DeckManaTableView.Create(canvas, ResolveFont(), manager);
+            var overlay = CreateDeckViewerOverlay(canvas.transform);
+            DeckManaTableView.StyleOverlay(overlay.OverlayRoot);
+            manager.ConfigureDeckViewerOverlay(overlay.OverlayRoot, overlay.BackgroundButton,
+                overlay.CloseButton, overlay.TitleLabel, overlay.SubtitleLabel, overlay.GridRoot, overlay.ScrollRect);
+            BindHandRoot(table.HandRoot);
+            return;
+        }
         var layoutRoot = CreateLayoutRoot(canvas.transform);
 
         bool includeHandArea = bindDeckAndHand && showDeck;
-        float reservedHandHeight = includeHandArea ? HandAreaHeight : 0f;
+        bool deckManaOnly = showDeck && showMana && !showCombat && !showExploration && !showRecruitment && !showFullFlow;
+        // 牌库测试把日志放在按钮下方，为完整尺寸的手牌留出空间。
+        float reservedHandHeight = includeHandArea ? (deckManaOnly ? 416f : HandAreaHeight) : 0f;
 
         var controlColumn = CreateControlColumn(layoutRoot, reservedHandHeight);
         var buttonContainer = CreateButtonContainer(controlColumn);
@@ -205,6 +217,10 @@ public class Part1SceneHarness : MonoBehaviour
         foreach (var entry in buttonOrder)
         {
             var button = CreateButton(buttonContainer, entry.label, entry.visible);
+            if (deckManaOnly && !entry.visible)
+            {
+                button.gameObject.SetActive(false);
+            }
             entry.assign(button);
         }
 
@@ -222,7 +238,7 @@ public class Part1SceneHarness : MonoBehaviour
 
         if (showDeck)
         {
-            var deckZoneUi = CreateDeckZonesPanel(infoColumn);
+            var deckZoneUi = CreateDeckZonesPanel(infoColumn, deckManaOnly);
             manager.ConfigureDeckZoneUI(
                 deckZoneUi.DeckButton,
                 deckZoneUi.DiscardButton,
@@ -303,13 +319,13 @@ public class Part1SceneHarness : MonoBehaviour
             manager.ConfigureCombatPanel(default);
         }
 
-        manager.testLog = CreateLog(infoColumn, out var logScrollRect);
+        manager.testLog = CreateLog(deckManaOnly ? controlColumn : infoColumn, out var logScrollRect);
         manager.logScrollRect = logScrollRect;
 
         RectTransform handRoot = null;
         if (includeHandArea)
         {
-            handRoot = CreateHandArea(layoutRoot);
+            handRoot = CreateHandArea(layoutRoot, reservedHandHeight);
         }
         BindHandRoot(handRoot);
 
@@ -451,7 +467,7 @@ public class Part1SceneHarness : MonoBehaviour
         temporaryObjects.Add(columnGo);
         return rect;
     }
-    private RectTransform CreateHandArea(Transform parent)
+    private RectTransform CreateHandArea(Transform parent, float height)
     {
         var handArea = new GameObject("HandArea");
         var rect = handArea.AddComponent<RectTransform>();
@@ -460,7 +476,7 @@ public class Part1SceneHarness : MonoBehaviour
         rect.anchorMax = new Vector2(1f, 0f);
         rect.pivot = new Vector2(0.5f, 0f);
         rect.offsetMin = new Vector2(0f, 0f);
-        rect.offsetMax = new Vector2(0f, HandAreaHeight);
+        rect.offsetMax = new Vector2(0f, height);
 
         var background = handArea.AddComponent<Image>();
         background.color = new Color(0.1f, 0.16f, 0.32f, 0.92f);
@@ -598,7 +614,7 @@ public class Part1SceneHarness : MonoBehaviour
         text.fontSize = 18f;
         text.color = Color.white;
         text.alignment = TextAlignmentOptions.TopLeft;
-        text.enableWordWrapping = true;
+        text.textWrappingMode = TextWrappingModes.Normal;
         ApplyFont(text);
 
         var fitter = textGo.AddComponent<ContentSizeFitter>();
@@ -925,14 +941,14 @@ public class Part1SceneHarness : MonoBehaviour
         }
     }
 #endif
-    private DeckZoneUIElements CreateDeckZonesPanel(Transform parent)
+    private DeckZoneUIElements CreateDeckZonesPanel(Transform parent, bool compact)
     {
         var panelGo = new GameObject("DeckZonesPanel");
         var panelRect = panelGo.AddComponent<RectTransform>();
         panelRect.SetParent(parent, false);
 
         var panelElement = panelGo.AddComponent<LayoutElement>();
-        panelElement.minHeight = 280f;
+        panelElement.minHeight = compact ? 204f : 280f;
         panelElement.flexibleHeight = 0f;
 
         var panelBackground = panelGo.AddComponent<Image>();
@@ -969,8 +985,8 @@ public class Part1SceneHarness : MonoBehaviour
         zonesRect.sizeDelta = new Vector2(0f, 140f);
 
         var zonesElement = zonesRow.AddComponent<LayoutElement>();
-        zonesElement.minHeight = 140f;
-        zonesElement.preferredHeight = 140f;
+        zonesElement.minHeight = compact ? 108f : 140f;
+        zonesElement.preferredHeight = zonesElement.minHeight;
 
         var zonesLayout = zonesRow.AddComponent<HorizontalLayoutGroup>();
         zonesLayout.spacing = 12f;
@@ -984,6 +1000,8 @@ public class Part1SceneHarness : MonoBehaviour
         var discardZone = CreateDeckZoneButton(zonesRow.transform, "DiscardZone", "弃牌区", new Color(0.38f, 0.22f, 0.22f, 0.9f));
 
         var viewerGo = new GameObject("Viewer");
+        // 浮窗仍复用此处字体绑定；紧凑布局只隐藏重复预览，不移除其引用。
+        viewerGo.SetActive(!compact);
         var viewerRect = viewerGo.AddComponent<RectTransform>();
         viewerRect.SetParent(panelGo.transform, false);
 
@@ -1061,7 +1079,7 @@ public class Part1SceneHarness : MonoBehaviour
         bodyText.fontSize = 16f;
         bodyText.color = Color.white;
         bodyText.alignment = TextAlignmentOptions.TopLeft;
-        bodyText.enableWordWrapping = true;
+        bodyText.textWrappingMode = TextWrappingModes.Normal;
         ApplyFont(bodyText);
 
         var fitter = bodyGo.AddComponent<ContentSizeFitter>();
@@ -1175,7 +1193,7 @@ public class Part1SceneHarness : MonoBehaviour
         countText.fontSize = 28f;
         countText.color = Color.white;
         countText.alignment = TextAlignmentOptions.Center;
-        countText.enableWordWrapping = false;
+        countText.textWrappingMode = TextWrappingModes.NoWrap;
         ApplyFont(countText);
 
         return (button, countText);
@@ -1275,7 +1293,7 @@ public class Part1SceneHarness : MonoBehaviour
         descriptionText.fontSize = 18f;
         descriptionText.color = new Color(0.86f, 0.9f, 1f);
         descriptionText.alignment = TextAlignmentOptions.Left;
-        descriptionText.enableWordWrapping = true;
+        descriptionText.textWrappingMode = TextWrappingModes.Normal;
         ApplyFont(descriptionText);
 
         var sidesGo = new GameObject("SidesRow");
@@ -1409,7 +1427,7 @@ public class Part1SceneHarness : MonoBehaviour
         statsText.fontSize = 18f;
         statsText.color = new Color(0.92f, 0.95f, 1f);
         statsText.alignment = TextAlignmentOptions.Left;
-        statsText.enableWordWrapping = true;
+        statsText.textWrappingMode = TextWrappingModes.Normal;
         ApplyFont(statsText);
 
         var abilitiesGo = new GameObject("Abilities");
@@ -1421,7 +1439,7 @@ public class Part1SceneHarness : MonoBehaviour
         abilitiesText.fontSize = 16f;
         abilitiesText.color = new Color(0.82f, 0.88f, 1f);
         abilitiesText.alignment = TextAlignmentOptions.Left;
-        abilitiesText.enableWordWrapping = true;
+        abilitiesText.textWrappingMode = TextWrappingModes.Normal;
         ApplyFont(abilitiesText);
 
         temporaryObjects.Add(cardGo);
@@ -1443,7 +1461,8 @@ public class Part1SceneHarness : MonoBehaviour
         rect.SetParent(parent, false);
 
         var element = containerGo.AddComponent<LayoutElement>();
-        element.preferredHeight = 160f;
+        element.minHeight = 168f;
+        element.preferredHeight = 168f;
         element.flexibleHeight = 0f;
 
         var background = containerGo.AddComponent<Image>();
@@ -1502,6 +1521,7 @@ public class Part1SceneHarness : MonoBehaviour
 
             var entryElement = entryGo.AddComponent<LayoutElement>();
             entryElement.flexibleWidth = 1f;
+            entryElement.minHeight = 96f;
 
             var entryBackground = entryGo.AddComponent<Image>();
             entryBackground.color = config.background;
@@ -1535,7 +1555,7 @@ public class Part1SceneHarness : MonoBehaviour
             valueText.fontSize = 28f;
             valueText.color = Color.white;
             valueText.alignment = TextAlignmentOptions.Center;
-            valueText.enableWordWrapping = false;
+            valueText.textWrappingMode = TextWrappingModes.NoWrap;
             ApplyFont(valueText);
 
             labels[config.color] = valueText;
@@ -1722,7 +1742,7 @@ public class Part1SceneHarness : MonoBehaviour
         label.fontSize = fontSize;
         label.color = color;
         label.alignment = alignment;
-        label.enableWordWrapping = true;
+        label.textWrappingMode = TextWrappingModes.Normal;
         ApplyFont(label);
         return label;
     }
@@ -1792,7 +1812,7 @@ public class Part1SceneHarness : MonoBehaviour
         text.fontSize = 20f;
         text.color = Color.white;
         text.alignment = TextAlignmentOptions.Center;
-        text.enableWordWrapping = false;
+        text.textWrappingMode = TextWrappingModes.NoWrap;
         ApplyFont(text);
 
         return button;

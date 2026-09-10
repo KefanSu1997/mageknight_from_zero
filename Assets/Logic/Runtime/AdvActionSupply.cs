@@ -4,7 +4,7 @@ using MK.Logic.Data;
 namespace MK.Logic.Runtime
 {
     /// <summary>
-    /// 高級行動牌的公共堆疊，根據是否揭示核心地形決定提供數量。
+    /// 高级行动牌面供固定三张（MKUE规则书p.3）；不因揭示核心地块而扩大。
     /// </summary>
     public sealed class AdvActionSupply
     {
@@ -18,7 +18,7 @@ namespace MK.Logic.Runtime
         public void SetDeck(IEnumerable<AdvActionCard> cards) => _deck.Set(cards);
 
         /// <summary>
-        /// 補充面供，每輪開始時調用；若核心地形已揭示則目標數量為5，否則為3。
+        /// 每轮开始弃置最底一张并补至三张；保留参数兼容旧调用方。
         /// </summary>
         public void Refill(bool coreRevealed)
         {
@@ -29,7 +29,7 @@ namespace MK.Logic.Runtime
                 Offer.RemoveAt(0); // 其餘卡牌索引自動向下移動
             }
 
-            int target = coreRevealed ? 5 : 3;
+            const int target = 3;
 
             // 抽牌補滿至目標數量，抽到的新牌會放在最上端（列表尾端）
             while (Offer.Count < target && _deck.TryDraw(out var c))

@@ -1,0 +1,1232 @@
+{
+  "scenePath": "Assets/Scenes/Part1/Part1_CombatRules.unity",
+  "screenshotsDirectory": "AutomationOutputs/RulesScenarios/20260909/Combat/captures",
+  "reportPath": "AutomationOutputs/RulesScenarios/20260909/Combat/report.json",
+  "useRunSubfolder": true,
+  "captureInitialView": true,
+  "initialDelaySeconds": 1.2,
+  "defaultWaitAfterSeconds": 0.15,
+  "steps": [
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_blockPlus",
+      "label": "分配格挡_1",
+      "waitAfterSeconds": 0.15,
+      "before": [
+        {
+          "key": "block",
+          "expected": "0",
+          "rule": "每次增加1点物理格挡。"
+        }
+      ],
+      "after": [
+        {
+          "key": "block",
+          "expected": "1",
+          "rule": "每次增加1点物理格挡。"
+        },
+        {
+          "key": "ui:block",
+          "expected": "1",
+          "rule": "界面显示必须与规则结果一致；每次增加1点物理格挡。"
+        },
+        {
+          "key": "effectiveBlock",
+          "expected": "1",
+          "rule": "每次增加1点物理格挡。"
+        },
+        {
+          "key": "ui:effectiveBlock",
+          "expected": "1",
+          "rule": "界面显示必须与规则结果一致；每次增加1点物理格挡。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_blockPlus",
+      "label": "分配格挡_2",
+      "waitAfterSeconds": 0.15,
+      "before": [
+        {
+          "key": "block",
+          "expected": "1",
+          "rule": "每次增加1点物理格挡。"
+        }
+      ],
+      "after": [
+        {
+          "key": "block",
+          "expected": "2",
+          "rule": "每次增加1点物理格挡。"
+        },
+        {
+          "key": "ui:block",
+          "expected": "2",
+          "rule": "界面显示必须与规则结果一致；每次增加1点物理格挡。"
+        },
+        {
+          "key": "effectiveBlock",
+          "expected": "2",
+          "rule": "每次增加1点物理格挡。"
+        },
+        {
+          "key": "ui:effectiveBlock",
+          "expected": "2",
+          "rule": "界面显示必须与规则结果一致；每次增加1点物理格挡。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_blockPlus",
+      "label": "分配格挡_3",
+      "waitAfterSeconds": 0.15,
+      "before": [
+        {
+          "key": "block",
+          "expected": "2",
+          "rule": "每次增加1点物理格挡。"
+        }
+      ],
+      "after": [
+        {
+          "key": "block",
+          "expected": "3",
+          "rule": "每次增加1点物理格挡。"
+        },
+        {
+          "key": "ui:block",
+          "expected": "3",
+          "rule": "界面显示必须与规则结果一致；每次增加1点物理格挡。"
+        },
+        {
+          "key": "effectiveBlock",
+          "expected": "3",
+          "rule": "每次增加1点物理格挡。"
+        },
+        {
+          "key": "ui:effectiveBlock",
+          "expected": "3",
+          "rule": "界面显示必须与规则结果一致；每次增加1点物理格挡。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_resolve",
+      "label": "部分格挡不能减伤",
+      "waitAfterSeconds": 0.15,
+      "before": [
+        {
+          "key": "wounds",
+          "expected": "0",
+          "rule": "格挡3<4，完整伤害4÷英雄护甲2=2伤口；攻击4达到护甲4，名望+3。"
+        },
+        {
+          "key": "fame",
+          "expected": "0",
+          "rule": "格挡3<4，完整伤害4÷英雄护甲2=2伤口；攻击4达到护甲4，名望+3。"
+        }
+      ],
+      "after": [
+        {
+          "key": "wounds",
+          "expected": "2",
+          "rule": "格挡3<4，完整伤害4÷英雄护甲2=2伤口；攻击4达到护甲4，名望+3。"
+        },
+        {
+          "key": "ui:wounds",
+          "expected": "2",
+          "rule": "界面显示必须与规则结果一致；格挡3<4，完整伤害4÷英雄护甲2=2伤口；攻击4达到护甲4，名望+3。"
+        },
+        {
+          "key": "fame",
+          "expected": "3",
+          "rule": "格挡3<4，完整伤害4÷英雄护甲2=2伤口；攻击4达到护甲4，名望+3。"
+        },
+        {
+          "key": "ui:fame",
+          "expected": "3",
+          "rule": "界面显示必须与规则结果一致；格挡3<4，完整伤害4÷英雄护甲2=2伤口；攻击4达到护甲4，名望+3。"
+        },
+        {
+          "key": "enemyAlive",
+          "expected": "0",
+          "rule": "格挡3<4，完整伤害4÷英雄护甲2=2伤口；攻击4达到护甲4，名望+3。"
+        },
+        {
+          "key": "resolved",
+          "expected": "1",
+          "rule": "格挡3<4，完整伤害4÷英雄护甲2=2伤口；攻击4达到护甲4，名望+3。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_resolve",
+      "label": "禁止重复领取名望",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "accepted",
+          "expected": "0",
+          "rule": "已结算敌人不得重复发奖。"
+        },
+        {
+          "key": "wounds",
+          "expected": "2",
+          "rule": "已结算敌人不得重复发奖。"
+        },
+        {
+          "key": "ui:wounds",
+          "expected": "2",
+          "rule": "界面显示必须与规则结果一致；已结算敌人不得重复发奖。"
+        },
+        {
+          "key": "fame",
+          "expected": "3",
+          "rule": "已结算敌人不得重复发奖。"
+        },
+        {
+          "key": "ui:fame",
+          "expected": "3",
+          "rule": "界面显示必须与规则结果一致；已结算敌人不得重复发奖。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Sidebar/Cases/Btn_case_normal",
+      "label": "案例_normal",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "block",
+          "expected": "0",
+          "rule": "切换训练案例重置该案例的全部状态。"
+        },
+        {
+          "key": "ui:block",
+          "expected": "0",
+          "rule": "界面显示必须与规则结果一致；切换训练案例重置该案例的全部状态。"
+        },
+        {
+          "key": "wounds",
+          "expected": "0",
+          "rule": "切换训练案例重置该案例的全部状态。"
+        },
+        {
+          "key": "ui:wounds",
+          "expected": "0",
+          "rule": "界面显示必须与规则结果一致；切换训练案例重置该案例的全部状态。"
+        },
+        {
+          "key": "fame",
+          "expected": "0",
+          "rule": "切换训练案例重置该案例的全部状态。"
+        },
+        {
+          "key": "ui:fame",
+          "expected": "0",
+          "rule": "界面显示必须与规则结果一致；切换训练案例重置该案例的全部状态。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_blockPlus",
+      "label": "分配格挡_1",
+      "waitAfterSeconds": 0.15,
+      "before": [
+        {
+          "key": "block",
+          "expected": "0",
+          "rule": "每次增加1点物理格挡。"
+        }
+      ],
+      "after": [
+        {
+          "key": "block",
+          "expected": "1",
+          "rule": "每次增加1点物理格挡。"
+        },
+        {
+          "key": "ui:block",
+          "expected": "1",
+          "rule": "界面显示必须与规则结果一致；每次增加1点物理格挡。"
+        },
+        {
+          "key": "effectiveBlock",
+          "expected": "1",
+          "rule": "每次增加1点物理格挡。"
+        },
+        {
+          "key": "ui:effectiveBlock",
+          "expected": "1",
+          "rule": "界面显示必须与规则结果一致；每次增加1点物理格挡。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_blockPlus",
+      "label": "分配格挡_2",
+      "waitAfterSeconds": 0.15,
+      "before": [
+        {
+          "key": "block",
+          "expected": "1",
+          "rule": "每次增加1点物理格挡。"
+        }
+      ],
+      "after": [
+        {
+          "key": "block",
+          "expected": "2",
+          "rule": "每次增加1点物理格挡。"
+        },
+        {
+          "key": "ui:block",
+          "expected": "2",
+          "rule": "界面显示必须与规则结果一致；每次增加1点物理格挡。"
+        },
+        {
+          "key": "effectiveBlock",
+          "expected": "2",
+          "rule": "每次增加1点物理格挡。"
+        },
+        {
+          "key": "ui:effectiveBlock",
+          "expected": "2",
+          "rule": "界面显示必须与规则结果一致；每次增加1点物理格挡。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_blockPlus",
+      "label": "分配格挡_3",
+      "waitAfterSeconds": 0.15,
+      "before": [
+        {
+          "key": "block",
+          "expected": "2",
+          "rule": "每次增加1点物理格挡。"
+        }
+      ],
+      "after": [
+        {
+          "key": "block",
+          "expected": "3",
+          "rule": "每次增加1点物理格挡。"
+        },
+        {
+          "key": "ui:block",
+          "expected": "3",
+          "rule": "界面显示必须与规则结果一致；每次增加1点物理格挡。"
+        },
+        {
+          "key": "effectiveBlock",
+          "expected": "3",
+          "rule": "每次增加1点物理格挡。"
+        },
+        {
+          "key": "ui:effectiveBlock",
+          "expected": "3",
+          "rule": "界面显示必须与规则结果一致；每次增加1点物理格挡。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_blockPlus",
+      "label": "分配格挡_4",
+      "waitAfterSeconds": 0.15,
+      "before": [
+        {
+          "key": "block",
+          "expected": "3",
+          "rule": "每次增加1点物理格挡。"
+        }
+      ],
+      "after": [
+        {
+          "key": "block",
+          "expected": "4",
+          "rule": "每次增加1点物理格挡。"
+        },
+        {
+          "key": "ui:block",
+          "expected": "4",
+          "rule": "界面显示必须与规则结果一致；每次增加1点物理格挡。"
+        },
+        {
+          "key": "effectiveBlock",
+          "expected": "4",
+          "rule": "每次增加1点物理格挡。"
+        },
+        {
+          "key": "ui:effectiveBlock",
+          "expected": "4",
+          "rule": "界面显示必须与规则结果一致；每次增加1点物理格挡。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_resolve",
+      "label": "足额格挡无伤击败",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "wounds",
+          "expected": "0",
+          "rule": "格挡4≥4完全格挡；攻击4≥护甲4。"
+        },
+        {
+          "key": "ui:wounds",
+          "expected": "0",
+          "rule": "界面显示必须与规则结果一致；格挡4≥4完全格挡；攻击4≥护甲4。"
+        },
+        {
+          "key": "fame",
+          "expected": "3",
+          "rule": "格挡4≥4完全格挡；攻击4≥护甲4。"
+        },
+        {
+          "key": "ui:fame",
+          "expected": "3",
+          "rule": "界面显示必须与规则结果一致；格挡4≥4完全格挡；攻击4≥护甲4。"
+        },
+        {
+          "key": "enemyAlive",
+          "expected": "0",
+          "rule": "格挡4≥4完全格挡；攻击4≥护甲4。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Sidebar/Cases/Btn_case_swift",
+      "label": "案例_swift",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "requiredBlock",
+          "expected": "8",
+          "rule": "切换训练案例重置该案例的全部状态。"
+        },
+        {
+          "key": "ui:requiredBlock",
+          "expected": "8",
+          "rule": "界面显示必须与规则结果一致；切换训练案例重置该案例的全部状态。"
+        },
+        {
+          "key": "block",
+          "expected": "0",
+          "rule": "切换训练案例重置该案例的全部状态。"
+        },
+        {
+          "key": "ui:block",
+          "expected": "0",
+          "rule": "界面显示必须与规则结果一致；切换训练案例重置该案例的全部状态。"
+        },
+        {
+          "key": "wounds",
+          "expected": "0",
+          "rule": "切换训练案例重置该案例的全部状态。"
+        },
+        {
+          "key": "ui:wounds",
+          "expected": "0",
+          "rule": "界面显示必须与规则结果一致；切换训练案例重置该案例的全部状态。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_blockPlus",
+      "label": "分配格挡_1",
+      "waitAfterSeconds": 0.15,
+      "before": [
+        {
+          "key": "block",
+          "expected": "0",
+          "rule": "每次增加1点物理格挡。"
+        }
+      ],
+      "after": [
+        {
+          "key": "block",
+          "expected": "1",
+          "rule": "每次增加1点物理格挡。"
+        },
+        {
+          "key": "ui:block",
+          "expected": "1",
+          "rule": "界面显示必须与规则结果一致；每次增加1点物理格挡。"
+        },
+        {
+          "key": "effectiveBlock",
+          "expected": "1",
+          "rule": "每次增加1点物理格挡。"
+        },
+        {
+          "key": "ui:effectiveBlock",
+          "expected": "1",
+          "rule": "界面显示必须与规则结果一致；每次增加1点物理格挡。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_blockPlus",
+      "label": "分配格挡_2",
+      "waitAfterSeconds": 0.15,
+      "before": [
+        {
+          "key": "block",
+          "expected": "1",
+          "rule": "每次增加1点物理格挡。"
+        }
+      ],
+      "after": [
+        {
+          "key": "block",
+          "expected": "2",
+          "rule": "每次增加1点物理格挡。"
+        },
+        {
+          "key": "ui:block",
+          "expected": "2",
+          "rule": "界面显示必须与规则结果一致；每次增加1点物理格挡。"
+        },
+        {
+          "key": "effectiveBlock",
+          "expected": "2",
+          "rule": "每次增加1点物理格挡。"
+        },
+        {
+          "key": "ui:effectiveBlock",
+          "expected": "2",
+          "rule": "界面显示必须与规则结果一致；每次增加1点物理格挡。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_blockPlus",
+      "label": "分配格挡_3",
+      "waitAfterSeconds": 0.15,
+      "before": [
+        {
+          "key": "block",
+          "expected": "2",
+          "rule": "每次增加1点物理格挡。"
+        }
+      ],
+      "after": [
+        {
+          "key": "block",
+          "expected": "3",
+          "rule": "每次增加1点物理格挡。"
+        },
+        {
+          "key": "ui:block",
+          "expected": "3",
+          "rule": "界面显示必须与规则结果一致；每次增加1点物理格挡。"
+        },
+        {
+          "key": "effectiveBlock",
+          "expected": "3",
+          "rule": "每次增加1点物理格挡。"
+        },
+        {
+          "key": "ui:effectiveBlock",
+          "expected": "3",
+          "rule": "界面显示必须与规则结果一致；每次增加1点物理格挡。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_blockPlus",
+      "label": "分配格挡_4",
+      "waitAfterSeconds": 0.15,
+      "before": [
+        {
+          "key": "block",
+          "expected": "3",
+          "rule": "每次增加1点物理格挡。"
+        }
+      ],
+      "after": [
+        {
+          "key": "block",
+          "expected": "4",
+          "rule": "每次增加1点物理格挡。"
+        },
+        {
+          "key": "ui:block",
+          "expected": "4",
+          "rule": "界面显示必须与规则结果一致；每次增加1点物理格挡。"
+        },
+        {
+          "key": "effectiveBlock",
+          "expected": "4",
+          "rule": "每次增加1点物理格挡。"
+        },
+        {
+          "key": "ui:effectiveBlock",
+          "expected": "4",
+          "rule": "界面显示必须与规则结果一致；每次增加1点物理格挡。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_resolve",
+      "label": "迅捷需要双倍格挡",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "wounds",
+          "expected": "2",
+          "rule": "迅捷需格挡4×2=8；格挡4不足，承受伤害4并得到2伤口。"
+        },
+        {
+          "key": "ui:wounds",
+          "expected": "2",
+          "rule": "界面显示必须与规则结果一致；迅捷需格挡4×2=8；格挡4不足，承受伤害4并得到2伤口。"
+        },
+        {
+          "key": "fame",
+          "expected": "3",
+          "rule": "迅捷需格挡4×2=8；格挡4不足，承受伤害4并得到2伤口。"
+        },
+        {
+          "key": "ui:fame",
+          "expected": "3",
+          "rule": "界面显示必须与规则结果一致；迅捷需格挡4×2=8；格挡4不足，承受伤害4并得到2伤口。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Sidebar/Cases/Btn_case_brutal",
+      "label": "案例_brutal",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "requiredBlock",
+          "expected": "4",
+          "rule": "切换训练案例重置该案例的全部状态。"
+        },
+        {
+          "key": "ui:requiredBlock",
+          "expected": "4",
+          "rule": "界面显示必须与规则结果一致；切换训练案例重置该案例的全部状态。"
+        },
+        {
+          "key": "block",
+          "expected": "0",
+          "rule": "切换训练案例重置该案例的全部状态。"
+        },
+        {
+          "key": "ui:block",
+          "expected": "0",
+          "rule": "界面显示必须与规则结果一致；切换训练案例重置该案例的全部状态。"
+        },
+        {
+          "key": "wounds",
+          "expected": "0",
+          "rule": "切换训练案例重置该案例的全部状态。"
+        },
+        {
+          "key": "ui:wounds",
+          "expected": "0",
+          "rule": "界面显示必须与规则结果一致；切换训练案例重置该案例的全部状态。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_blockPlus",
+      "label": "分配格挡_1",
+      "waitAfterSeconds": 0.15,
+      "before": [
+        {
+          "key": "block",
+          "expected": "0",
+          "rule": "每次增加1点物理格挡。"
+        }
+      ],
+      "after": [
+        {
+          "key": "block",
+          "expected": "1",
+          "rule": "每次增加1点物理格挡。"
+        },
+        {
+          "key": "ui:block",
+          "expected": "1",
+          "rule": "界面显示必须与规则结果一致；每次增加1点物理格挡。"
+        },
+        {
+          "key": "effectiveBlock",
+          "expected": "1",
+          "rule": "每次增加1点物理格挡。"
+        },
+        {
+          "key": "ui:effectiveBlock",
+          "expected": "1",
+          "rule": "界面显示必须与规则结果一致；每次增加1点物理格挡。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_blockPlus",
+      "label": "分配格挡_2",
+      "waitAfterSeconds": 0.15,
+      "before": [
+        {
+          "key": "block",
+          "expected": "1",
+          "rule": "每次增加1点物理格挡。"
+        }
+      ],
+      "after": [
+        {
+          "key": "block",
+          "expected": "2",
+          "rule": "每次增加1点物理格挡。"
+        },
+        {
+          "key": "ui:block",
+          "expected": "2",
+          "rule": "界面显示必须与规则结果一致；每次增加1点物理格挡。"
+        },
+        {
+          "key": "effectiveBlock",
+          "expected": "2",
+          "rule": "每次增加1点物理格挡。"
+        },
+        {
+          "key": "ui:effectiveBlock",
+          "expected": "2",
+          "rule": "界面显示必须与规则结果一致；每次增加1点物理格挡。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_blockPlus",
+      "label": "分配格挡_3",
+      "waitAfterSeconds": 0.15,
+      "before": [
+        {
+          "key": "block",
+          "expected": "2",
+          "rule": "每次增加1点物理格挡。"
+        }
+      ],
+      "after": [
+        {
+          "key": "block",
+          "expected": "3",
+          "rule": "每次增加1点物理格挡。"
+        },
+        {
+          "key": "ui:block",
+          "expected": "3",
+          "rule": "界面显示必须与规则结果一致；每次增加1点物理格挡。"
+        },
+        {
+          "key": "effectiveBlock",
+          "expected": "3",
+          "rule": "每次增加1点物理格挡。"
+        },
+        {
+          "key": "ui:effectiveBlock",
+          "expected": "3",
+          "rule": "界面显示必须与规则结果一致；每次增加1点物理格挡。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_resolve",
+      "label": "残暴伤害翻倍",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "wounds",
+          "expected": "4",
+          "rule": "格挡3不足；残暴伤害4×2=8，8÷护甲2=4伤口。"
+        },
+        {
+          "key": "ui:wounds",
+          "expected": "4",
+          "rule": "界面显示必须与规则结果一致；格挡3不足；残暴伤害4×2=8，8÷护甲2=4伤口。"
+        },
+        {
+          "key": "fame",
+          "expected": "3",
+          "rule": "格挡3不足；残暴伤害4×2=8，8÷护甲2=4伤口。"
+        },
+        {
+          "key": "ui:fame",
+          "expected": "3",
+          "rule": "界面显示必须与规则结果一致；格挡3不足；残暴伤害4×2=8，8÷护甲2=4伤口。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Sidebar/Cases/Btn_case_fire",
+      "label": "案例_fire",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "requiredBlock",
+          "expected": "4",
+          "rule": "切换训练案例重置该案例的全部状态。"
+        },
+        {
+          "key": "ui:requiredBlock",
+          "expected": "4",
+          "rule": "界面显示必须与规则结果一致；切换训练案例重置该案例的全部状态。"
+        },
+        {
+          "key": "block",
+          "expected": "0",
+          "rule": "切换训练案例重置该案例的全部状态。"
+        },
+        {
+          "key": "ui:block",
+          "expected": "0",
+          "rule": "界面显示必须与规则结果一致；切换训练案例重置该案例的全部状态。"
+        },
+        {
+          "key": "wounds",
+          "expected": "0",
+          "rule": "切换训练案例重置该案例的全部状态。"
+        },
+        {
+          "key": "ui:wounds",
+          "expected": "0",
+          "rule": "界面显示必须与规则结果一致；切换训练案例重置该案例的全部状态。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_blockPlus",
+      "label": "分配格挡_1",
+      "waitAfterSeconds": 0.15,
+      "before": [
+        {
+          "key": "block",
+          "expected": "0",
+          "rule": "每次增加1点分配；物理格挡火焰半效向下取整。"
+        }
+      ],
+      "after": [
+        {
+          "key": "block",
+          "expected": "1",
+          "rule": "每次增加1点分配；物理格挡火焰半效向下取整。"
+        },
+        {
+          "key": "ui:block",
+          "expected": "1",
+          "rule": "界面显示必须与规则结果一致；每次增加1点分配；物理格挡火焰半效向下取整。"
+        },
+        {
+          "key": "effectiveBlock",
+          "expected": "0",
+          "rule": "每次增加1点分配；物理格挡火焰半效向下取整。"
+        },
+        {
+          "key": "ui:effectiveBlock",
+          "expected": "0",
+          "rule": "界面显示必须与规则结果一致；每次增加1点分配；物理格挡火焰半效向下取整。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_blockPlus",
+      "label": "分配格挡_2",
+      "waitAfterSeconds": 0.15,
+      "before": [
+        {
+          "key": "block",
+          "expected": "1",
+          "rule": "每次增加1点分配；物理格挡火焰半效向下取整。"
+        }
+      ],
+      "after": [
+        {
+          "key": "block",
+          "expected": "2",
+          "rule": "每次增加1点分配；物理格挡火焰半效向下取整。"
+        },
+        {
+          "key": "ui:block",
+          "expected": "2",
+          "rule": "界面显示必须与规则结果一致；每次增加1点分配；物理格挡火焰半效向下取整。"
+        },
+        {
+          "key": "effectiveBlock",
+          "expected": "1",
+          "rule": "每次增加1点分配；物理格挡火焰半效向下取整。"
+        },
+        {
+          "key": "ui:effectiveBlock",
+          "expected": "1",
+          "rule": "界面显示必须与规则结果一致；每次增加1点分配；物理格挡火焰半效向下取整。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_blockPlus",
+      "label": "分配格挡_3",
+      "waitAfterSeconds": 0.15,
+      "before": [
+        {
+          "key": "block",
+          "expected": "2",
+          "rule": "每次增加1点分配；物理格挡火焰半效向下取整。"
+        }
+      ],
+      "after": [
+        {
+          "key": "block",
+          "expected": "3",
+          "rule": "每次增加1点分配；物理格挡火焰半效向下取整。"
+        },
+        {
+          "key": "ui:block",
+          "expected": "3",
+          "rule": "界面显示必须与规则结果一致；每次增加1点分配；物理格挡火焰半效向下取整。"
+        },
+        {
+          "key": "effectiveBlock",
+          "expected": "1",
+          "rule": "每次增加1点分配；物理格挡火焰半效向下取整。"
+        },
+        {
+          "key": "ui:effectiveBlock",
+          "expected": "1",
+          "rule": "界面显示必须与规则结果一致；每次增加1点分配；物理格挡火焰半效向下取整。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_blockPlus",
+      "label": "分配格挡_4",
+      "waitAfterSeconds": 0.15,
+      "before": [
+        {
+          "key": "block",
+          "expected": "3",
+          "rule": "每次增加1点分配；物理格挡火焰半效向下取整。"
+        }
+      ],
+      "after": [
+        {
+          "key": "block",
+          "expected": "4",
+          "rule": "每次增加1点分配；物理格挡火焰半效向下取整。"
+        },
+        {
+          "key": "ui:block",
+          "expected": "4",
+          "rule": "界面显示必须与规则结果一致；每次增加1点分配；物理格挡火焰半效向下取整。"
+        },
+        {
+          "key": "effectiveBlock",
+          "expected": "2",
+          "rule": "每次增加1点分配；物理格挡火焰半效向下取整。"
+        },
+        {
+          "key": "ui:effectiveBlock",
+          "expected": "2",
+          "rule": "界面显示必须与规则结果一致；每次增加1点分配；物理格挡火焰半效向下取整。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_attackFire",
+      "label": "选择火焰攻击",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "effectiveAttack",
+          "expected": "2",
+          "rule": "火焰攻击4遇火抗减半为2。"
+        },
+        {
+          "key": "ui:effectiveAttack",
+          "expected": "2",
+          "rule": "界面显示必须与规则结果一致；火焰攻击4遇火抗减半为2。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_resolve",
+      "label": "错误元素造成受伤且敌人存活",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "wounds",
+          "expected": "2",
+          "rule": "物理格挡4对火攻击仅有效2，承受完整伤害4；火攻击4遇火抗有效2<护甲4。"
+        },
+        {
+          "key": "ui:wounds",
+          "expected": "2",
+          "rule": "界面显示必须与规则结果一致；物理格挡4对火攻击仅有效2，承受完整伤害4；火攻击4遇火抗有效2<护甲4。"
+        },
+        {
+          "key": "fame",
+          "expected": "0",
+          "rule": "物理格挡4对火攻击仅有效2，承受完整伤害4；火攻击4遇火抗有效2<护甲4。"
+        },
+        {
+          "key": "ui:fame",
+          "expected": "0",
+          "rule": "界面显示必须与规则结果一致；物理格挡4对火攻击仅有效2，承受完整伤害4；火攻击4遇火抗有效2<护甲4。"
+        },
+        {
+          "key": "enemyAlive",
+          "expected": "1",
+          "rule": "物理格挡4对火攻击仅有效2，承受完整伤害4；火攻击4遇火抗有效2<护甲4。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Sidebar/Cases/Btn_case_fire",
+      "label": "案例_fire",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "block",
+          "expected": "0",
+          "rule": "切换训练案例重置该案例的全部状态。"
+        },
+        {
+          "key": "ui:block",
+          "expected": "0",
+          "rule": "界面显示必须与规则结果一致；切换训练案例重置该案例的全部状态。"
+        },
+        {
+          "key": "wounds",
+          "expected": "0",
+          "rule": "切换训练案例重置该案例的全部状态。"
+        },
+        {
+          "key": "ui:wounds",
+          "expected": "0",
+          "rule": "界面显示必须与规则结果一致；切换训练案例重置该案例的全部状态。"
+        },
+        {
+          "key": "fame",
+          "expected": "0",
+          "rule": "切换训练案例重置该案例的全部状态。"
+        },
+        {
+          "key": "ui:fame",
+          "expected": "0",
+          "rule": "界面显示必须与规则结果一致；切换训练案例重置该案例的全部状态。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_blockPlus",
+      "label": "分配格挡_1",
+      "waitAfterSeconds": 0.15,
+      "before": [
+        {
+          "key": "block",
+          "expected": "0",
+          "rule": "每次增加1点分配；物理格挡火焰半效向下取整。"
+        }
+      ],
+      "after": [
+        {
+          "key": "block",
+          "expected": "1",
+          "rule": "每次增加1点分配；物理格挡火焰半效向下取整。"
+        },
+        {
+          "key": "ui:block",
+          "expected": "1",
+          "rule": "界面显示必须与规则结果一致；每次增加1点分配；物理格挡火焰半效向下取整。"
+        },
+        {
+          "key": "effectiveBlock",
+          "expected": "0",
+          "rule": "每次增加1点分配；物理格挡火焰半效向下取整。"
+        },
+        {
+          "key": "ui:effectiveBlock",
+          "expected": "0",
+          "rule": "界面显示必须与规则结果一致；每次增加1点分配；物理格挡火焰半效向下取整。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_blockPlus",
+      "label": "分配格挡_2",
+      "waitAfterSeconds": 0.15,
+      "before": [
+        {
+          "key": "block",
+          "expected": "1",
+          "rule": "每次增加1点分配；物理格挡火焰半效向下取整。"
+        }
+      ],
+      "after": [
+        {
+          "key": "block",
+          "expected": "2",
+          "rule": "每次增加1点分配；物理格挡火焰半效向下取整。"
+        },
+        {
+          "key": "ui:block",
+          "expected": "2",
+          "rule": "界面显示必须与规则结果一致；每次增加1点分配；物理格挡火焰半效向下取整。"
+        },
+        {
+          "key": "effectiveBlock",
+          "expected": "1",
+          "rule": "每次增加1点分配；物理格挡火焰半效向下取整。"
+        },
+        {
+          "key": "ui:effectiveBlock",
+          "expected": "1",
+          "rule": "界面显示必须与规则结果一致；每次增加1点分配；物理格挡火焰半效向下取整。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_blockPlus",
+      "label": "分配格挡_3",
+      "waitAfterSeconds": 0.15,
+      "before": [
+        {
+          "key": "block",
+          "expected": "2",
+          "rule": "每次增加1点分配；物理格挡火焰半效向下取整。"
+        }
+      ],
+      "after": [
+        {
+          "key": "block",
+          "expected": "3",
+          "rule": "每次增加1点分配；物理格挡火焰半效向下取整。"
+        },
+        {
+          "key": "ui:block",
+          "expected": "3",
+          "rule": "界面显示必须与规则结果一致；每次增加1点分配；物理格挡火焰半效向下取整。"
+        },
+        {
+          "key": "effectiveBlock",
+          "expected": "1",
+          "rule": "每次增加1点分配；物理格挡火焰半效向下取整。"
+        },
+        {
+          "key": "ui:effectiveBlock",
+          "expected": "1",
+          "rule": "界面显示必须与规则结果一致；每次增加1点分配；物理格挡火焰半效向下取整。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_blockPlus",
+      "label": "分配格挡_4",
+      "waitAfterSeconds": 0.15,
+      "before": [
+        {
+          "key": "block",
+          "expected": "3",
+          "rule": "每次增加1点分配；物理格挡火焰半效向下取整。"
+        }
+      ],
+      "after": [
+        {
+          "key": "block",
+          "expected": "4",
+          "rule": "每次增加1点分配；物理格挡火焰半效向下取整。"
+        },
+        {
+          "key": "ui:block",
+          "expected": "4",
+          "rule": "界面显示必须与规则结果一致；每次增加1点分配；物理格挡火焰半效向下取整。"
+        },
+        {
+          "key": "effectiveBlock",
+          "expected": "2",
+          "rule": "每次增加1点分配；物理格挡火焰半效向下取整。"
+        },
+        {
+          "key": "ui:effectiveBlock",
+          "expected": "2",
+          "rule": "界面显示必须与规则结果一致；每次增加1点分配；物理格挡火焰半效向下取整。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_blockIce",
+      "label": "改用冰格挡",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "effectiveBlock",
+          "expected": "4",
+          "rule": "冰格挡火攻击全效；物理攻击不受火抗影响。"
+        },
+        {
+          "key": "ui:effectiveBlock",
+          "expected": "4",
+          "rule": "界面显示必须与规则结果一致；冰格挡火攻击全效；物理攻击不受火抗影响。"
+        },
+        {
+          "key": "effectiveAttack",
+          "expected": "4",
+          "rule": "冰格挡火攻击全效；物理攻击不受火抗影响。"
+        },
+        {
+          "key": "ui:effectiveAttack",
+          "expected": "4",
+          "rule": "界面显示必须与规则结果一致；冰格挡火攻击全效；物理攻击不受火抗影响。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_resolve",
+      "label": "正确元素无伤击败",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "wounds",
+          "expected": "0",
+          "rule": "有效格挡4达到4，物理攻击4达到护甲4。"
+        },
+        {
+          "key": "ui:wounds",
+          "expected": "0",
+          "rule": "界面显示必须与规则结果一致；有效格挡4达到4，物理攻击4达到护甲4。"
+        },
+        {
+          "key": "fame",
+          "expected": "3",
+          "rule": "有效格挡4达到4，物理攻击4达到护甲4。"
+        },
+        {
+          "key": "ui:fame",
+          "expected": "3",
+          "rule": "界面显示必须与规则结果一致；有效格挡4达到4，物理攻击4达到护甲4。"
+        },
+        {
+          "key": "enemyAlive",
+          "expected": "0",
+          "rule": "有效格挡4达到4，物理攻击4达到护甲4。"
+        }
+      ]
+    }
+  ]
+}

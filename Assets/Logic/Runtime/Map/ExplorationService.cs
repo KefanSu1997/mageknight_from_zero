@@ -34,6 +34,11 @@ namespace MK.Logic.Runtime.Map
             var validationResult = ValidateExploration(explorer, coord, movementPoints);
             if (!validationResult.IsValid)
                 return ExplorationResult.FromError(validationResult.ErrorMessage!);
+            if (rotation < 0 || rotation >= 360 || rotation % 60 != 0)
+                return ExplorationResult.FromError("旋转角度必须为0到300之间的60度倍数");
+            var next = _map.Countryside.Count > 0 ? _map.Countryside.Peek() : _map.Core.Peek();
+            if (!_placer.CanPlace(_map, next, coord, rotation / 60))
+                return ExplorationResult.FromError("指定的坐标无法放置新地块");
 
             // Step 2: 支付移动力 (探索需要2点移动力)
             int explorationCost = 2;
@@ -43,13 +48,9 @@ namespace MK.Logic.Runtime.Map
             MapTile tile = DrawNewTile();
             
             // Step 4: 应用旋转
-            if (rotation != 0)
-            {
-                tile.Rotate(rotation / 60);
-            }
-            
-            // Step 5: 放置新地块
-            _placer.Place(_map, tile, coord, rotation);
+            // Place 接受旋转步数；仅旋转一次，避免度数/步数混用。
+            _placer.Place(_map, tile, coord, rotation / 60);
+            tile.Rotation = rotation;
             
             // 注意：这里需要一个临时的MapTile来处理验证
             var tempTile = tile;
@@ -73,6 +74,12 @@ namespace MK.Logic.Runtime.Map
         {
             if (availableMovement < 2)
                 return ValidationResult.Invalid("探索需要2点移动力");
+            if (_map.Countryside.Count == 0 && _map.Core.Count == 0)
+                return ValidationResult.Invalid("地块牌堆已空");
+            int dq = coord.Q - explorer.Position.Q;
+            int dr = coord.R - explorer.Position.R;
+            if ((Math.Abs(dq) + Math.Abs(dr) + Math.Abs(dq + dr)) / 2 != 1)
+                return ValidationResult.Invalid("只能探索玩家相邻的空位");
                 
             // 使用空白tile验证放置可行性
             var mockTile = new MapTile(TileSet.Countryside, 0, new TerrainType[6]);
@@ -107,7 +114,7 @@ namespace MK.Logic.Runtime.Map
             {
                 var monster = _monsterSpawner.SpawnRandomMonster(coord);
                 spawnedElements.Add(new SpawnedElement("Monster", monster, coord));
-                return SpawnResult.WithThreat(spawnedElements);
+                return new SpawnResult(true, spawnedElements, new Combat(monster, coord));
             }
 
             return SpawnResult.FromElements(spawnedElements);

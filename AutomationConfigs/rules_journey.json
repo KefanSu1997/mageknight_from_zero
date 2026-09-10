@@ -1,0 +1,540 @@
+{
+  "scenePath": "Assets/Scenes/Part1/Part1_JourneyRules.unity",
+  "screenshotsDirectory": "AutomationOutputs/RulesScenarios/20260909/Journey/captures",
+  "reportPath": "AutomationOutputs/RulesScenarios/20260909/Journey/report.json",
+  "useRunSubfolder": true,
+  "captureInitialView": true,
+  "initialDelaySeconds": 1.2,
+  "defaultWaitAfterSeconds": 0.15,
+  "steps": [
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_recruit",
+      "label": "营地不能直接招募",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "accepted",
+          "expected": "0",
+          "rule": "尚未进入村庄和开始交涉，拒绝招募。"
+        },
+        {
+          "key": "units",
+          "expected": "0",
+          "rule": "尚未进入村庄和开始交涉，拒绝招募。"
+        },
+        {
+          "key": "ui:units",
+          "expected": "0",
+          "rule": "界面显示必须与规则结果一致；尚未进入村庄和开始交涉，拒绝招募。"
+        },
+        {
+          "key": "hand",
+          "expected": "5",
+          "rule": "尚未进入村庄和开始交涉，拒绝招募。"
+        },
+        {
+          "key": "ui:hand",
+          "expected": "5",
+          "rule": "界面显示必须与规则结果一致；尚未进入村庄和开始交涉，拒绝招募。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_march",
+      "label": "打出行军牌",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "movement",
+          "expected": "6",
+          "rule": "训练行军牌提供6移动力；卡牌转入已打出区。"
+        },
+        {
+          "key": "ui:movement",
+          "expected": "6",
+          "rule": "界面显示必须与规则结果一致；训练行军牌提供6移动力；卡牌转入已打出区。"
+        },
+        {
+          "key": "hand",
+          "expected": "4",
+          "rule": "训练行军牌提供6移动力；卡牌转入已打出区。"
+        },
+        {
+          "key": "ui:hand",
+          "expected": "4",
+          "rule": "界面显示必须与规则结果一致；训练行军牌提供6移动力；卡牌转入已打出区。"
+        },
+        {
+          "key": "played",
+          "expected": "1",
+          "rule": "训练行军牌提供6移动力；卡牌转入已打出区。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_explore",
+      "label": "支付2揭示村庄",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "movement",
+          "expected": "4",
+          "rule": "6−2=4，揭示地块不会自动移动。"
+        },
+        {
+          "key": "ui:movement",
+          "expected": "4",
+          "rule": "界面显示必须与规则结果一致；6−2=4，揭示地块不会自动移动。"
+        },
+        {
+          "key": "revealed",
+          "expected": "1",
+          "rule": "6−2=4，揭示地块不会自动移动。"
+        },
+        {
+          "key": "positionQ",
+          "expected": "0",
+          "rule": "6−2=4，揭示地块不会自动移动。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_travel",
+      "label": "另付2进入平原村庄",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "movement",
+          "expected": "2",
+          "rule": "村庄底层地形为平原；4−2=2。"
+        },
+        {
+          "key": "ui:movement",
+          "expected": "2",
+          "rule": "界面显示必须与规则结果一致；村庄底层地形为平原；4−2=2。"
+        },
+        {
+          "key": "positionQ",
+          "expected": "1",
+          "rule": "村庄底层地形为平原；4−2=2。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_talk",
+      "label": "打出交涉牌",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "influence",
+          "expected": "6",
+          "rule": "训练交涉牌提供6影响力，开始互动。"
+        },
+        {
+          "key": "ui:influence",
+          "expected": "6",
+          "rule": "界面显示必须与规则结果一致；训练交涉牌提供6影响力，开始互动。"
+        },
+        {
+          "key": "hand",
+          "expected": "3",
+          "rule": "训练交涉牌提供6影响力，开始互动。"
+        },
+        {
+          "key": "ui:hand",
+          "expected": "3",
+          "rule": "界面显示必须与规则结果一致；训练交涉牌提供6影响力，开始互动。"
+        },
+        {
+          "key": "played",
+          "expected": "2",
+          "rule": "训练交涉牌提供6影响力，开始互动。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_march",
+      "label": "交涉后不可再移动",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "accepted",
+          "expected": "0",
+          "rule": "行动阶段开始后不能回到移动阶段。"
+        },
+        {
+          "key": "movement",
+          "expected": "2",
+          "rule": "行动阶段开始后不能回到移动阶段。"
+        },
+        {
+          "key": "ui:movement",
+          "expected": "2",
+          "rule": "界面显示必须与规则结果一致；行动阶段开始后不能回到移动阶段。"
+        },
+        {
+          "key": "hand",
+          "expected": "3",
+          "rule": "行动阶段开始后不能回到移动阶段。"
+        },
+        {
+          "key": "ui:hand",
+          "expected": "3",
+          "rule": "界面显示必须与规则结果一致；行动阶段开始后不能回到移动阶段。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_recruit",
+      "label": "招募一名守卫",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "influence",
+          "expected": "1",
+          "rule": "费用5，6−5=1；守卫就绪加入。"
+        },
+        {
+          "key": "ui:influence",
+          "expected": "1",
+          "rule": "界面显示必须与规则结果一致；费用5，6−5=1；守卫就绪加入。"
+        },
+        {
+          "key": "units",
+          "expected": "1",
+          "rule": "费用5，6−5=1；守卫就绪加入。"
+        },
+        {
+          "key": "ui:units",
+          "expected": "1",
+          "rule": "界面显示必须与规则结果一致；费用5，6−5=1；守卫就绪加入。"
+        },
+        {
+          "key": "ready",
+          "expected": "1",
+          "rule": "费用5，6−5=1；守卫就绪加入。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_endTurn",
+      "label": "弃牌补牌与资源保留",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "turn",
+          "expected": "2",
+          "rule": "两张已打出牌弃置，补2张至手牌5；牌库11−2=9。回合资源清零，水晶与部队保留。"
+        },
+        {
+          "key": "hand",
+          "expected": "5",
+          "rule": "两张已打出牌弃置，补2张至手牌5；牌库11−2=9。回合资源清零，水晶与部队保留。"
+        },
+        {
+          "key": "ui:hand",
+          "expected": "5",
+          "rule": "界面显示必须与规则结果一致；两张已打出牌弃置，补2张至手牌5；牌库11−2=9。回合资源清零，水晶与部队保留。"
+        },
+        {
+          "key": "deck",
+          "expected": "9",
+          "rule": "两张已打出牌弃置，补2张至手牌5；牌库11−2=9。回合资源清零，水晶与部队保留。"
+        },
+        {
+          "key": "ui:deck",
+          "expected": "9",
+          "rule": "界面显示必须与规则结果一致；两张已打出牌弃置，补2张至手牌5；牌库11−2=9。回合资源清零，水晶与部队保留。"
+        },
+        {
+          "key": "discard",
+          "expected": "2",
+          "rule": "两张已打出牌弃置，补2张至手牌5；牌库11−2=9。回合资源清零，水晶与部队保留。"
+        },
+        {
+          "key": "ui:discard",
+          "expected": "2",
+          "rule": "界面显示必须与规则结果一致；两张已打出牌弃置，补2张至手牌5；牌库11−2=9。回合资源清零，水晶与部队保留。"
+        },
+        {
+          "key": "played",
+          "expected": "0",
+          "rule": "两张已打出牌弃置，补2张至手牌5；牌库11−2=9。回合资源清零，水晶与部队保留。"
+        },
+        {
+          "key": "movement",
+          "expected": "0",
+          "rule": "两张已打出牌弃置，补2张至手牌5；牌库11−2=9。回合资源清零，水晶与部队保留。"
+        },
+        {
+          "key": "ui:movement",
+          "expected": "0",
+          "rule": "界面显示必须与规则结果一致；两张已打出牌弃置，补2张至手牌5；牌库11−2=9。回合资源清零，水晶与部队保留。"
+        },
+        {
+          "key": "influence",
+          "expected": "0",
+          "rule": "两张已打出牌弃置，补2张至手牌5；牌库11−2=9。回合资源清零，水晶与部队保留。"
+        },
+        {
+          "key": "ui:influence",
+          "expected": "0",
+          "rule": "界面显示必须与规则结果一致；两张已打出牌弃置，补2张至手牌5；牌库11−2=9。回合资源清零，水晶与部队保留。"
+        },
+        {
+          "key": "redCrystal",
+          "expected": "1",
+          "rule": "两张已打出牌弃置，补2张至手牌5；牌库11−2=9。回合资源清零，水晶与部队保留。"
+        },
+        {
+          "key": "ui:redCrystal",
+          "expected": "1",
+          "rule": "界面显示必须与规则结果一致；两张已打出牌弃置，补2张至手牌5；牌库11−2=9。回合资源清零，水晶与部队保留。"
+        },
+        {
+          "key": "units",
+          "expected": "1",
+          "rule": "两张已打出牌弃置，补2张至手牌5；牌库11−2=9。回合资源清零，水晶与部队保留。"
+        },
+        {
+          "key": "ui:units",
+          "expected": "1",
+          "rule": "界面显示必须与规则结果一致；两张已打出牌弃置，补2张至手牌5；牌库11−2=9。回合资源清零，水晶与部队保留。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_unit",
+      "label": "守卫提供格挡3",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "block",
+          "expected": "3",
+          "rule": "守卫发动训练格挡能力3，横置一次。"
+        },
+        {
+          "key": "ui:block",
+          "expected": "3",
+          "rule": "界面显示必须与规则结果一致；守卫发动训练格挡能力3，横置一次。"
+        },
+        {
+          "key": "ready",
+          "expected": "0",
+          "rule": "守卫发动训练格挡能力3，横置一次。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_unit",
+      "label": "守卫不能重复提供格挡",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "accepted",
+          "expected": "0",
+          "rule": "横置单位不可再次使用。"
+        },
+        {
+          "key": "block",
+          "expected": "3",
+          "rule": "横置单位不可再次使用。"
+        },
+        {
+          "key": "ui:block",
+          "expected": "3",
+          "rule": "界面显示必须与规则结果一致；横置单位不可再次使用。"
+        },
+        {
+          "key": "ready",
+          "expected": "0",
+          "rule": "横置单位不可再次使用。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_boost",
+      "label": "消耗红晶强化攻击",
+      "waitAfterSeconds": 0.15,
+      "before": [
+        {
+          "key": "redCrystal",
+          "expected": "1",
+          "rule": "支付红1，训练猛击由4强化为6，手牌减1。"
+        },
+        {
+          "key": "hand",
+          "expected": "5",
+          "rule": "支付红1，训练猛击由4强化为6，手牌减1。"
+        }
+      ],
+      "after": [
+        {
+          "key": "attack",
+          "expected": "6",
+          "rule": "支付红1，训练猛击由4强化为6，手牌减1。"
+        },
+        {
+          "key": "ui:attack",
+          "expected": "6",
+          "rule": "界面显示必须与规则结果一致；支付红1，训练猛击由4强化为6，手牌减1。"
+        },
+        {
+          "key": "redCrystal",
+          "expected": "0",
+          "rule": "支付红1，训练猛击由4强化为6，手牌减1。"
+        },
+        {
+          "key": "ui:redCrystal",
+          "expected": "0",
+          "rule": "界面显示必须与规则结果一致；支付红1，训练猛击由4强化为6，手牌减1。"
+        },
+        {
+          "key": "hand",
+          "expected": "4",
+          "rule": "支付红1，训练猛击由4强化为6，手牌减1。"
+        },
+        {
+          "key": "ui:hand",
+          "expected": "4",
+          "rule": "界面显示必须与规则结果一致；支付红1，训练猛击由4强化为6，手牌减1。"
+        },
+        {
+          "key": "played",
+          "expected": "1",
+          "rule": "支付红1，训练猛击由4强化为6，手牌减1。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_boost",
+      "label": "同一攻击牌不可重复强化",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "accepted",
+          "expected": "0",
+          "rule": "攻击牌已使用，不能重复产生攻击或扣牌。"
+        },
+        {
+          "key": "attack",
+          "expected": "6",
+          "rule": "攻击牌已使用，不能重复产生攻击或扣牌。"
+        },
+        {
+          "key": "ui:attack",
+          "expected": "6",
+          "rule": "界面显示必须与规则结果一致；攻击牌已使用，不能重复产生攻击或扣牌。"
+        },
+        {
+          "key": "redCrystal",
+          "expected": "0",
+          "rule": "攻击牌已使用，不能重复产生攻击或扣牌。"
+        },
+        {
+          "key": "ui:redCrystal",
+          "expected": "0",
+          "rule": "界面显示必须与规则结果一致；攻击牌已使用，不能重复产生攻击或扣牌。"
+        },
+        {
+          "key": "hand",
+          "expected": "4",
+          "rule": "攻击牌已使用，不能重复产生攻击或扣牌。"
+        },
+        {
+          "key": "ui:hand",
+          "expected": "4",
+          "rule": "界面显示必须与规则结果一致；攻击牌已使用，不能重复产生攻击或扣牌。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_battle",
+      "label": "无伤清剿并获得名望",
+      "waitAfterSeconds": 0.15,
+      "before": [
+        {
+          "key": "fame",
+          "expected": "0",
+          "rule": "格挡3达到敌攻击3，攻击6≥敌护甲5，无伤获名望3。"
+        }
+      ],
+      "after": [
+        {
+          "key": "wounds",
+          "expected": "0",
+          "rule": "格挡3达到敌攻击3，攻击6≥敌护甲5，无伤获名望3。"
+        },
+        {
+          "key": "ui:wounds",
+          "expected": "0",
+          "rule": "界面显示必须与规则结果一致；格挡3达到敌攻击3，攻击6≥敌护甲5，无伤获名望3。"
+        },
+        {
+          "key": "fame",
+          "expected": "3",
+          "rule": "格挡3达到敌攻击3，攻击6≥敌护甲5，无伤获名望3。"
+        },
+        {
+          "key": "ui:fame",
+          "expected": "3",
+          "rule": "界面显示必须与规则结果一致；格挡3达到敌攻击3，攻击6≥敌护甲5，无伤获名望3。"
+        },
+        {
+          "key": "completed",
+          "expected": "1",
+          "rule": "格挡3达到敌攻击3，攻击6≥敌护甲5，无伤获名望3。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_battle",
+      "label": "完成后不能重复领奖",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "accepted",
+          "expected": "0",
+          "rule": "同一敌人只发放一次奖励。"
+        },
+        {
+          "key": "wounds",
+          "expected": "0",
+          "rule": "同一敌人只发放一次奖励。"
+        },
+        {
+          "key": "ui:wounds",
+          "expected": "0",
+          "rule": "界面显示必须与规则结果一致；同一敌人只发放一次奖励。"
+        },
+        {
+          "key": "fame",
+          "expected": "3",
+          "rule": "同一敌人只发放一次奖励。"
+        },
+        {
+          "key": "ui:fame",
+          "expected": "3",
+          "rule": "界面显示必须与规则结果一致；同一敌人只发放一次奖励。"
+        },
+        {
+          "key": "completed",
+          "expected": "1",
+          "rule": "同一敌人只发放一次奖励。"
+        }
+      ]
+    }
+  ]
+}

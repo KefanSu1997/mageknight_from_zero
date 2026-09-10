@@ -25,5 +25,30 @@ namespace MageKnight.SceneAutomation
         public string screenshotPath;
         public bool success;
         public string message;
+        public string runtimeRule;
+        public float clickX;
+        public float clickY;
+        public string hitObject;
+        public List<SceneAutomationStateValue> beforeState = new();
+        public List<SceneAutomationStateValue> afterState = new();
+        public List<SceneAutomationAssertionResult> assertions = new();
+    }
+
+    [Serializable]
+    public class SceneAutomationStateValue
+    {
+        public string key;
+        public string value;
+    }
+
+    [Serializable]
+    public class SceneAutomationAssertionResult
+    {
+        public string phase;
+        public string key;
+        public string expected;
+        public string actual;
+        public string rule;
+        public bool passed;
     }
 }

@@ -21,6 +21,13 @@ namespace MK.Logic.Runtime
         /// </summary>
         public bool Pay(ManaCost cost, PlayerState? owner = null)
         {
+            // 先验证整笔支付，失败时所有颜色和诅咒状态保持不变。
+            foreach (var pair in cost.Need)
+            {
+                var color = Map(pair.Key);
+                if (pair.Value < 0 || Tokens.GetValueOrDefault(color) + Crystals.GetValueOrDefault(color) < pair.Value)
+                    return false;
+            }
             foreach (var pair in cost.Need)
             {
                 var color = Map(pair.Key);

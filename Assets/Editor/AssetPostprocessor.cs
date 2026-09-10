@@ -10,7 +10,7 @@ class CardsTexturePostprocessor : AssetPostprocessor
             var importer = (TextureImporter)assetImporter;
             importer.textureType = TextureImporterType.Sprite;
             importer.spriteImportMode = SpriteImportMode.Single;
-            importer.SaveAndReimport();
+            // 当前导入会应用这些设置；预处理回调中再次导入会造成递归，并被 Unity 6 拒绝。
         }
     }
 }

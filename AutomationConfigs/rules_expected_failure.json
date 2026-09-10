@@ -1,0 +1,20 @@
+{
+  "scenePath": "Assets/Scenes/Part1/Part1_CombatRules.unity",
+  "screenshotsDirectory": "AutomationOutputs/RulesScenarios/20260909/ExpectedFailure/captures",
+  "reportPath": "AutomationOutputs/RulesScenarios/20260909/ExpectedFailure/report.json",
+  "initialDelaySeconds": 1,
+  "captureInitialView": false,
+  "steps": [
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_blockPlus",
+      "label": "故意错误预期必须失败",
+      "after": [
+        {
+          "key": "block",
+          "expected": "999",
+          "rule": "故障注入：点击一次实际只能产生1，验收不得误报通过。"
+        }
+      ]
+    }
+  ]
+}

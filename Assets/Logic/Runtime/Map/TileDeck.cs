@@ -14,6 +14,7 @@ namespace MK.Logic.Runtime.Map
         public void Push(MapTile tile) => _stack.Push(tile);
 
         public MapTile Draw() => _stack.Pop();
+        public MapTile Peek() => _stack.Peek();
 
         // Compatibility method for tests
         public void SetCards(IEnumerable<MapTile> cards)

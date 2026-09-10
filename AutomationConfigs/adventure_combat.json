@@ -1,0 +1,1381 @@
+{
+  "scenePath": "Assets/Scenes/Part1/Part1_CombatRules.unity",
+  "screenshotsDirectory": "AutomationOutputs/OfficialCards/20260910/Combat/captures",
+  "reportPath": "AutomationOutputs/OfficialCards/20260910/Combat/report.json",
+  "useRunSubfolder": true,
+  "captureInitialView": true,
+  "initialDelaySeconds": 1.3,
+  "defaultWaitAfterSeconds": 0.18,
+  "maxRunSeconds": 180,
+  "steps": [
+    {
+      "buttonPath": "Canvas/UIRoot/Hand/Card_0",
+      "label": "选择_basic_card_016_0",
+      "waitAfterSeconds": 0.18,
+      "before": [],
+      "after": [
+        {
+          "key": "selectedCard",
+          "expected": "basic_card_016",
+          "rule": "选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "hand",
+          "expected": "5",
+          "rule": "选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "ui:hand",
+          "expected": "5",
+          "rule": "可见读数必须对应规则状态。选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "accepted",
+          "expected": "1",
+          "rule": "选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "ui:cardArt:0",
+          "expected": "basic_card_016",
+          "rule": "选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "ui:printedEffect",
+          "expected": "基础：攻击或格挡2。",
+          "rule": "选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "selectedValue",
+          "expected": "2",
+          "rule": "选牌不扣牌，确认才消耗。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+      "label": "缺目标不得扣牌",
+      "waitAfterSeconds": 0.18,
+      "before": [],
+      "after": [
+        {
+          "key": "accepted",
+          "expected": "0",
+          "rule": "选择不是打出。"
+        },
+        {
+          "key": "hand",
+          "expected": "5",
+          "rule": "选择不是打出。"
+        },
+        {
+          "key": "ui:hand",
+          "expected": "5",
+          "rule": "可见读数必须对应规则状态。选择不是打出。"
+        },
+        {
+          "key": "played",
+          "expected": "0",
+          "rule": "选择不是打出。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Stage/Targets/Enemy_0",
+      "label": "点选_enemy_0",
+      "waitAfterSeconds": 0.18,
+      "before": [],
+      "after": [
+        {
+          "key": "target",
+          "expected": "enemy:0",
+          "rule": "点选目标不扣费。"
+        },
+        {
+          "key": "accepted",
+          "expected": "1",
+          "rule": "点选目标不扣费。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+      "label": "决心基础格挡2",
+      "waitAfterSeconds": 0.18,
+      "before": [],
+      "after": [
+        {
+          "key": "hand",
+          "expected": "4",
+          "rule": "原卡决心基础格挡2，不是自制格挡3。"
+        },
+        {
+          "key": "ui:hand",
+          "expected": "4",
+          "rule": "可见读数必须对应规则状态。原卡决心基础格挡2，不是自制格挡3。"
+        },
+        {
+          "key": "block0",
+          "expected": "2",
+          "rule": "原卡决心基础格挡2，不是自制格挡3。"
+        },
+        {
+          "key": "blueCrystal",
+          "expected": "1",
+          "rule": "原卡决心基础格挡2，不是自制格挡3。"
+        },
+        {
+          "key": "ui:resource",
+          "expected": "2 / 4",
+          "rule": "原卡决心基础格挡2，不是自制格挡3。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+      "label": "格挡不足承受完整攻击",
+      "waitAfterSeconds": 0.18,
+      "before": [],
+      "after": [
+        {
+          "key": "phase",
+          "expected": "Attack",
+          "rule": "未达到4则承受完整攻击，4除护甲2产生2张伤牌。"
+        },
+        {
+          "key": "wounds",
+          "expected": "2",
+          "rule": "未达到4则承受完整攻击，4除护甲2产生2张伤牌。"
+        },
+        {
+          "key": "ui:wounds",
+          "expected": "2",
+          "rule": "可见读数必须对应规则状态。未达到4则承受完整攻击，4除护甲2产生2张伤牌。"
+        },
+        {
+          "key": "hand",
+          "expected": "6",
+          "rule": "未达到4则承受完整攻击，4除护甲2产生2张伤牌。"
+        },
+        {
+          "key": "ui:hand",
+          "expected": "6",
+          "rule": "可见读数必须对应规则状态。未达到4则承受完整攻击，4除护甲2产生2张伤牌。"
+        },
+        {
+          "key": "woundCards",
+          "expected": "2",
+          "rule": "未达到4则承受完整攻击，4除护甲2产生2张伤牌。"
+        },
+        {
+          "key": "actionCardTotal",
+          "expected": "10",
+          "rule": "未达到4则承受完整攻击，4除护甲2产生2张伤牌。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Hand/Card_10",
+      "label": "伤牌不能打出",
+      "waitAfterSeconds": 0.18,
+      "before": [],
+      "after": [
+        {
+          "key": "accepted",
+          "expected": "0",
+          "rule": "伤牌不能横置或当攻击使用。"
+        },
+        {
+          "key": "hand",
+          "expected": "6",
+          "rule": "伤牌不能横置或当攻击使用。"
+        },
+        {
+          "key": "ui:hand",
+          "expected": "6",
+          "rule": "可见读数必须对应规则状态。伤牌不能横置或当攻击使用。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Hand/Card_2",
+      "label": "选择_basic_card_021_2",
+      "waitAfterSeconds": 0.18,
+      "before": [],
+      "after": [
+        {
+          "key": "selectedCard",
+          "expected": "basic_card_021",
+          "rule": "选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "hand",
+          "expected": "6",
+          "rule": "选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "ui:hand",
+          "expected": "6",
+          "rule": "可见读数必须对应规则状态。选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "accepted",
+          "expected": "1",
+          "rule": "选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "ui:cardArt:2",
+          "expected": "basic_card_021",
+          "rule": "选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "ui:printedEffect",
+          "expected": "基础：攻击或格挡2。",
+          "rule": "选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "selectedValue",
+          "expected": "2",
+          "rule": "选牌不扣牌，确认才消耗。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Stage/Targets/Enemy_0",
+      "label": "点选_enemy_0",
+      "waitAfterSeconds": 0.18,
+      "before": [],
+      "after": [
+        {
+          "key": "target",
+          "expected": "enemy:0",
+          "rule": "点选目标不扣费。"
+        },
+        {
+          "key": "accepted",
+          "expected": "1",
+          "rule": "点选目标不扣费。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+      "label": "狂怒基础攻击2",
+      "waitAfterSeconds": 0.18,
+      "before": [],
+      "after": [
+        {
+          "key": "attack0",
+          "expected": "2",
+          "rule": "狂怒基础攻击2。"
+        },
+        {
+          "key": "hand",
+          "expected": "5",
+          "rule": "狂怒基础攻击2。"
+        },
+        {
+          "key": "ui:hand",
+          "expected": "5",
+          "rule": "可见读数必须对应规则状态。狂怒基础攻击2。"
+        },
+        {
+          "key": "redCrystal",
+          "expected": "1",
+          "rule": "狂怒基础攻击2。"
+        },
+        {
+          "key": "ui:redCrystal",
+          "expected": "1",
+          "rule": "可见读数必须对应规则状态。狂怒基础攻击2。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Hand/Card_3",
+      "label": "选择_basic_card_021_3",
+      "waitAfterSeconds": 0.18,
+      "before": [],
+      "after": [
+        {
+          "key": "selectedCard",
+          "expected": "basic_card_021",
+          "rule": "选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "hand",
+          "expected": "5",
+          "rule": "选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "ui:hand",
+          "expected": "5",
+          "rule": "可见读数必须对应规则状态。选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "accepted",
+          "expected": "1",
+          "rule": "选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "ui:cardArt:3",
+          "expected": "basic_card_021",
+          "rule": "选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "ui:printedEffect",
+          "expected": "基础：攻击或格挡2。",
+          "rule": "选牌不扣牌，确认才消耗。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+      "label": "第二张狂怒基础合计4",
+      "waitAfterSeconds": 0.18,
+      "before": [],
+      "after": [
+        {
+          "key": "attack0",
+          "expected": "4",
+          "rule": "两张独立实例，2加2击破护甲4。"
+        },
+        {
+          "key": "hand",
+          "expected": "4",
+          "rule": "两张独立实例，2加2击破护甲4。"
+        },
+        {
+          "key": "ui:hand",
+          "expected": "4",
+          "rule": "可见读数必须对应规则状态。两张独立实例，2加2击破护甲4。"
+        },
+        {
+          "key": "ui:resource",
+          "expected": "4 / 4",
+          "rule": "两张独立实例，2加2击破护甲4。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+      "label": "结算且不重复受伤",
+      "waitAfterSeconds": 0.18,
+      "before": [],
+      "after": [
+        {
+          "key": "completed",
+          "expected": "1",
+          "rule": "只结算攻击和名望，不再次结算敌人伤害。"
+        },
+        {
+          "key": "fame",
+          "expected": "3",
+          "rule": "只结算攻击和名望，不再次结算敌人伤害。"
+        },
+        {
+          "key": "ui:fame",
+          "expected": "3",
+          "rule": "可见读数必须对应规则状态。只结算攻击和名望，不再次结算敌人伤害。"
+        },
+        {
+          "key": "wounds",
+          "expected": "2",
+          "rule": "只结算攻击和名望，不再次结算敌人伤害。"
+        },
+        {
+          "key": "ui:wounds",
+          "expected": "2",
+          "rule": "可见读数必须对应规则状态。只结算攻击和名望，不再次结算敌人伤害。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Btn_Reset",
+      "label": "重新开始",
+      "waitAfterSeconds": 0.18,
+      "before": [],
+      "after": [
+        {
+          "key": "hand",
+          "expected": "5",
+          "rule": "重开创建独立的新运行状态。"
+        },
+        {
+          "key": "ui:hand",
+          "expected": "5",
+          "rule": "可见读数必须对应规则状态。重开创建独立的新运行状态。"
+        },
+        {
+          "key": "played",
+          "expected": "0",
+          "rule": "重开创建独立的新运行状态。"
+        },
+        {
+          "key": "wounds",
+          "expected": "0",
+          "rule": "重开创建独立的新运行状态。"
+        },
+        {
+          "key": "ui:wounds",
+          "expected": "0",
+          "rule": "可见读数必须对应规则状态。重开创建独立的新运行状态。"
+        },
+        {
+          "key": "redCrystal",
+          "expected": "1",
+          "rule": "重开创建独立的新运行状态。"
+        },
+        {
+          "key": "ui:redCrystal",
+          "expected": "1",
+          "rule": "可见读数必须对应规则状态。重开创建独立的新运行状态。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Hand/Card_0",
+      "label": "选择_basic_card_016_0",
+      "waitAfterSeconds": 0.18,
+      "before": [],
+      "after": [
+        {
+          "key": "selectedCard",
+          "expected": "basic_card_016",
+          "rule": "选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "hand",
+          "expected": "5",
+          "rule": "选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "ui:hand",
+          "expected": "5",
+          "rule": "可见读数必须对应规则状态。选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "accepted",
+          "expected": "1",
+          "rule": "选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "ui:cardArt:0",
+          "expected": "basic_card_016",
+          "rule": "选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "ui:printedEffect",
+          "expected": "基础：攻击或格挡2。",
+          "rule": "选牌不扣牌，确认才消耗。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Stage/Targets/Enemy_0",
+      "label": "点选_enemy_0",
+      "waitAfterSeconds": 0.18,
+      "before": [],
+      "after": [
+        {
+          "key": "target",
+          "expected": "enemy:0",
+          "rule": "点选目标不扣费。"
+        },
+        {
+          "key": "accepted",
+          "expected": "1",
+          "rule": "点选目标不扣费。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Inspector/Btn_Enhance",
+      "label": "选择原卡强化",
+      "waitAfterSeconds": 0.18,
+      "before": [],
+      "after": [
+        {
+          "key": "enhanced",
+          "expected": "1",
+          "rule": "选择强化不支付；必须使用原卡规定的耗色和数值。"
+        },
+        {
+          "key": "selectedValue",
+          "expected": "5",
+          "rule": "选择强化不支付；必须使用原卡规定的耗色和数值。"
+        },
+        {
+          "key": "blueCrystal",
+          "expected": "1",
+          "rule": "选择强化不支付；必须使用原卡规定的耗色和数值。"
+        },
+        {
+          "key": "ui:printedEffect",
+          "expected": "强化：格挡5。",
+          "rule": "选择强化不支付；必须使用原卡规定的耗色和数值。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+      "label": "蓝色强化决心格挡5",
+      "waitAfterSeconds": 0.18,
+      "before": [],
+      "after": [
+        {
+          "key": "block0",
+          "expected": "5",
+          "rule": "决心强化是格挡5，消耗蓝色魔力。"
+        },
+        {
+          "key": "blueCrystal",
+          "expected": "0",
+          "rule": "决心强化是格挡5，消耗蓝色魔力。"
+        },
+        {
+          "key": "redCrystal",
+          "expected": "1",
+          "rule": "决心强化是格挡5，消耗蓝色魔力。"
+        },
+        {
+          "key": "ui:redCrystal",
+          "expected": "1",
+          "rule": "可见读数必须对应规则状态。决心强化是格挡5，消耗蓝色魔力。"
+        },
+        {
+          "key": "hand",
+          "expected": "4",
+          "rule": "决心强化是格挡5，消耗蓝色魔力。"
+        },
+        {
+          "key": "ui:hand",
+          "expected": "4",
+          "rule": "可见读数必须对应规则状态。决心强化是格挡5，消耗蓝色魔力。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+      "label": "成功格挡免伤",
+      "waitAfterSeconds": 0.18,
+      "before": [],
+      "after": [
+        {
+          "key": "phase",
+          "expected": "Attack",
+          "rule": "5达到需求4。"
+        },
+        {
+          "key": "wounds",
+          "expected": "0",
+          "rule": "5达到需求4。"
+        },
+        {
+          "key": "ui:wounds",
+          "expected": "0",
+          "rule": "可见读数必须对应规则状态。5达到需求4。"
+        },
+        {
+          "key": "hand",
+          "expected": "4",
+          "rule": "5达到需求4。"
+        },
+        {
+          "key": "ui:hand",
+          "expected": "4",
+          "rule": "可见读数必须对应规则状态。5达到需求4。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Hand/Card_2",
+      "label": "选择_basic_card_021_2",
+      "waitAfterSeconds": 0.18,
+      "before": [],
+      "after": [
+        {
+          "key": "selectedCard",
+          "expected": "basic_card_021",
+          "rule": "选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "hand",
+          "expected": "4",
+          "rule": "选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "ui:hand",
+          "expected": "4",
+          "rule": "可见读数必须对应规则状态。选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "accepted",
+          "expected": "1",
+          "rule": "选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "ui:cardArt:2",
+          "expected": "basic_card_021",
+          "rule": "选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "ui:printedEffect",
+          "expected": "基础：攻击或格挡2。",
+          "rule": "选牌不扣牌，确认才消耗。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Stage/Targets/Enemy_0",
+      "label": "点选_enemy_0",
+      "waitAfterSeconds": 0.18,
+      "before": [],
+      "after": [
+        {
+          "key": "target",
+          "expected": "enemy:0",
+          "rule": "点选目标不扣费。"
+        },
+        {
+          "key": "accepted",
+          "expected": "1",
+          "rule": "点选目标不扣费。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Inspector/Btn_Enhance",
+      "label": "选择原卡强化",
+      "waitAfterSeconds": 0.18,
+      "before": [],
+      "after": [
+        {
+          "key": "enhanced",
+          "expected": "1",
+          "rule": "选择强化不支付；必须使用原卡规定的耗色和数值。"
+        },
+        {
+          "key": "selectedValue",
+          "expected": "4",
+          "rule": "选择强化不支付；必须使用原卡规定的耗色和数值。"
+        },
+        {
+          "key": "redCrystal",
+          "expected": "1",
+          "rule": "选择强化不支付；必须使用原卡规定的耗色和数值。"
+        },
+        {
+          "key": "ui:redCrystal",
+          "expected": "1",
+          "rule": "可见读数必须对应规则状态。选择强化不支付；必须使用原卡规定的耗色和数值。"
+        },
+        {
+          "key": "ui:printedEffect",
+          "expected": "强化：攻击4。",
+          "rule": "选择强化不支付；必须使用原卡规定的耗色和数值。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+      "label": "红色强化狂怒攻击4",
+      "waitAfterSeconds": 0.18,
+      "before": [],
+      "after": [
+        {
+          "key": "attack0",
+          "expected": "4",
+          "rule": "原卡狂怒强化攻击4，不是6，也不是火焰攻击。"
+        },
+        {
+          "key": "redCrystal",
+          "expected": "0",
+          "rule": "原卡狂怒强化攻击4，不是6，也不是火焰攻击。"
+        },
+        {
+          "key": "ui:redCrystal",
+          "expected": "0",
+          "rule": "可见读数必须对应规则状态。原卡狂怒强化攻击4，不是6，也不是火焰攻击。"
+        },
+        {
+          "key": "blueCrystal",
+          "expected": "0",
+          "rule": "原卡狂怒强化攻击4，不是6，也不是火焰攻击。"
+        },
+        {
+          "key": "hand",
+          "expected": "3",
+          "rule": "原卡狂怒强化攻击4，不是6，也不是火焰攻击。"
+        },
+        {
+          "key": "ui:hand",
+          "expected": "3",
+          "rule": "可见读数必须对应规则状态。原卡狂怒强化攻击4，不是6，也不是火焰攻击。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Hand/Card_3",
+      "label": "选择_basic_card_021_3",
+      "waitAfterSeconds": 0.18,
+      "before": [],
+      "after": [
+        {
+          "key": "selectedCard",
+          "expected": "basic_card_021",
+          "rule": "选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "hand",
+          "expected": "3",
+          "rule": "选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "ui:hand",
+          "expected": "3",
+          "rule": "可见读数必须对应规则状态。选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "accepted",
+          "expected": "1",
+          "rule": "选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "ui:cardArt:3",
+          "expected": "basic_card_021",
+          "rule": "选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "ui:printedEffect",
+          "expected": "基础：攻击或格挡2。",
+          "rule": "选牌不扣牌，确认才消耗。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Inspector/Btn_Enhance",
+      "label": "再次声明强化",
+      "waitAfterSeconds": 0.18,
+      "before": [],
+      "after": [
+        {
+          "key": "enhanced",
+          "expected": "1",
+          "rule": "声明可失败，尚未出牌。"
+        },
+        {
+          "key": "redCrystal",
+          "expected": "0",
+          "rule": "声明可失败，尚未出牌。"
+        },
+        {
+          "key": "ui:redCrystal",
+          "expected": "0",
+          "rule": "可见读数必须对应规则状态。声明可失败，尚未出牌。"
+        },
+        {
+          "key": "hand",
+          "expected": "3",
+          "rule": "声明可失败，尚未出牌。"
+        },
+        {
+          "key": "ui:hand",
+          "expected": "3",
+          "rule": "可见读数必须对应规则状态。声明可失败，尚未出牌。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+      "label": "缺红色魔力不降级打出",
+      "waitAfterSeconds": 0.18,
+      "before": [],
+      "after": [
+        {
+          "key": "accepted",
+          "expected": "0",
+          "rule": "魔力不足不得偷偷执行基础攻击2。"
+        },
+        {
+          "key": "redCrystal",
+          "expected": "0",
+          "rule": "魔力不足不得偷偷执行基础攻击2。"
+        },
+        {
+          "key": "ui:redCrystal",
+          "expected": "0",
+          "rule": "可见读数必须对应规则状态。魔力不足不得偷偷执行基础攻击2。"
+        },
+        {
+          "key": "hand",
+          "expected": "3",
+          "rule": "魔力不足不得偷偷执行基础攻击2。"
+        },
+        {
+          "key": "ui:hand",
+          "expected": "3",
+          "rule": "可见读数必须对应规则状态。魔力不足不得偷偷执行基础攻击2。"
+        },
+        {
+          "key": "attack0",
+          "expected": "4",
+          "rule": "魔力不足不得偷偷执行基础攻击2。"
+        },
+        {
+          "key": "selectedCard",
+          "expected": "basic_card_021",
+          "rule": "魔力不足不得偷偷执行基础攻击2。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Inspector/Btn_Cancel",
+      "label": "取消未支付行动",
+      "waitAfterSeconds": 0.18,
+      "before": [],
+      "after": [
+        {
+          "key": "selectedCard",
+          "expected": "",
+          "rule": "取消不消耗牌。"
+        },
+        {
+          "key": "hand",
+          "expected": "3",
+          "rule": "取消不消耗牌。"
+        },
+        {
+          "key": "ui:hand",
+          "expected": "3",
+          "rule": "可见读数必须对应规则状态。取消不消耗牌。"
+        },
+        {
+          "key": "attack0",
+          "expected": "4",
+          "rule": "取消不消耗牌。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+      "label": "原卡强化获胜",
+      "waitAfterSeconds": 0.18,
+      "before": [],
+      "after": [
+        {
+          "key": "completed",
+          "expected": "1",
+          "rule": "攻击4对护甲4。"
+        },
+        {
+          "key": "fame",
+          "expected": "3",
+          "rule": "攻击4对护甲4。"
+        },
+        {
+          "key": "ui:fame",
+          "expected": "3",
+          "rule": "可见读数必须对应规则状态。攻击4对护甲4。"
+        },
+        {
+          "key": "wounds",
+          "expected": "0",
+          "rule": "攻击4对护甲4。"
+        },
+        {
+          "key": "ui:wounds",
+          "expected": "0",
+          "rule": "可见读数必须对应规则状态。攻击4对护甲4。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Inspector/Btn_Rules",
+      "label": "展开规则",
+      "waitAfterSeconds": 0.18,
+      "before": [],
+      "after": [
+        {
+          "key": "ui:rulesVisible",
+          "expected": "1",
+          "rule": "规则按需展开。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Inspector/Btn_Rules",
+      "label": "收起规则",
+      "waitAfterSeconds": 0.18,
+      "before": [],
+      "after": [
+        {
+          "key": "ui:rulesVisible",
+          "expected": "0",
+          "rule": "收起后不占用主操作区。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Btn_Menu",
+      "label": "切换遭遇",
+      "waitAfterSeconds": 0.18,
+      "before": [],
+      "after": []
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/AdventureMenu/Btn_wolf_encounter",
+      "label": "复用原卡迎战灰狼",
+      "waitAfterSeconds": 0.18,
+      "before": [],
+      "after": [
+        {
+          "key": "scenario",
+          "expected": "wolf_encounter",
+          "rule": "相同卡牌资源面对不同规则需求。"
+        },
+        {
+          "key": "requiredBlock0",
+          "expected": "6",
+          "rule": "相同卡牌资源面对不同规则需求。"
+        },
+        {
+          "key": "hand",
+          "expected": "5",
+          "rule": "相同卡牌资源面对不同规则需求。"
+        },
+        {
+          "key": "ui:hand",
+          "expected": "5",
+          "rule": "可见读数必须对应规则状态。相同卡牌资源面对不同规则需求。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Hand/Card_0",
+      "label": "选择_basic_card_016_0",
+      "waitAfterSeconds": 0.18,
+      "before": [],
+      "after": [
+        {
+          "key": "selectedCard",
+          "expected": "basic_card_016",
+          "rule": "选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "hand",
+          "expected": "5",
+          "rule": "选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "ui:hand",
+          "expected": "5",
+          "rule": "可见读数必须对应规则状态。选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "accepted",
+          "expected": "1",
+          "rule": "选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "ui:cardArt:0",
+          "expected": "basic_card_016",
+          "rule": "选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "ui:printedEffect",
+          "expected": "基础：攻击或格挡2。",
+          "rule": "选牌不扣牌，确认才消耗。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Stage/Targets/Enemy_0",
+      "label": "点选_enemy_0",
+      "waitAfterSeconds": 0.18,
+      "before": [],
+      "after": [
+        {
+          "key": "target",
+          "expected": "enemy:0",
+          "rule": "点选目标不扣费。"
+        },
+        {
+          "key": "accepted",
+          "expected": "1",
+          "rule": "点选目标不扣费。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Inspector/Btn_Enhance",
+      "label": "选择原卡强化",
+      "waitAfterSeconds": 0.18,
+      "before": [],
+      "after": [
+        {
+          "key": "enhanced",
+          "expected": "1",
+          "rule": "选择强化不支付；必须使用原卡规定的耗色和数值。"
+        },
+        {
+          "key": "selectedValue",
+          "expected": "5",
+          "rule": "选择强化不支付；必须使用原卡规定的耗色和数值。"
+        },
+        {
+          "key": "blueCrystal",
+          "expected": "1",
+          "rule": "选择强化不支付；必须使用原卡规定的耗色和数值。"
+        },
+        {
+          "key": "ui:printedEffect",
+          "expected": "强化：格挡5。",
+          "rule": "选择强化不支付；必须使用原卡规定的耗色和数值。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+      "label": "决心强化5",
+      "waitAfterSeconds": 0.18,
+      "before": [],
+      "after": [
+        {
+          "key": "block0",
+          "expected": "5",
+          "rule": "迅捷需要6，5还不够。"
+        },
+        {
+          "key": "hand",
+          "expected": "4",
+          "rule": "迅捷需要6，5还不够。"
+        },
+        {
+          "key": "ui:hand",
+          "expected": "4",
+          "rule": "可见读数必须对应规则状态。迅捷需要6，5还不够。"
+        },
+        {
+          "key": "blueCrystal",
+          "expected": "0",
+          "rule": "迅捷需要6，5还不够。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Hand/Card_4",
+      "label": "选择_basic_card_000_4",
+      "waitAfterSeconds": 0.18,
+      "before": [],
+      "after": [
+        {
+          "key": "selectedCard",
+          "expected": "basic_card_000",
+          "rule": "选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "hand",
+          "expected": "4",
+          "rule": "选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "ui:hand",
+          "expected": "4",
+          "rule": "可见读数必须对应规则状态。选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "accepted",
+          "expected": "1",
+          "rule": "选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "ui:cardArt:4",
+          "expected": "basic_card_000",
+          "rule": "选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "sideways",
+          "expected": "1",
+          "rule": "选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "selectedValue",
+          "expected": "1",
+          "rule": "选牌不扣牌，确认才消耗。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+      "label": "行进横置格挡1",
+      "waitAfterSeconds": 0.18,
+      "before": [],
+      "after": [
+        {
+          "key": "block0",
+          "expected": "6",
+          "rule": "非伤牌可横置普通格挡1，不发动移动也不耗绿魔力。"
+        },
+        {
+          "key": "hand",
+          "expected": "3",
+          "rule": "非伤牌可横置普通格挡1，不发动移动也不耗绿魔力。"
+        },
+        {
+          "key": "ui:hand",
+          "expected": "3",
+          "rule": "可见读数必须对应规则状态。非伤牌可横置普通格挡1，不发动移动也不耗绿魔力。"
+        },
+        {
+          "key": "greenCrystal",
+          "expected": "1",
+          "rule": "非伤牌可横置普通格挡1，不发动移动也不耗绿魔力。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+      "label": "横置补足迅捷格挡",
+      "waitAfterSeconds": 0.18,
+      "before": [],
+      "after": [
+        {
+          "key": "phase",
+          "expected": "Attack",
+          "rule": "5加1达到6。"
+        },
+        {
+          "key": "wounds",
+          "expected": "0",
+          "rule": "5加1达到6。"
+        },
+        {
+          "key": "ui:wounds",
+          "expected": "0",
+          "rule": "可见读数必须对应规则状态。5加1达到6。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Hand/Card_2",
+      "label": "选择_basic_card_021_2",
+      "waitAfterSeconds": 0.18,
+      "before": [],
+      "after": [
+        {
+          "key": "selectedCard",
+          "expected": "basic_card_021",
+          "rule": "选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "hand",
+          "expected": "3",
+          "rule": "选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "ui:hand",
+          "expected": "3",
+          "rule": "可见读数必须对应规则状态。选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "accepted",
+          "expected": "1",
+          "rule": "选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "ui:cardArt:2",
+          "expected": "basic_card_021",
+          "rule": "选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "ui:printedEffect",
+          "expected": "基础：攻击或格挡2。",
+          "rule": "选牌不扣牌，确认才消耗。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Stage/Targets/Enemy_0",
+      "label": "点选_enemy_0",
+      "waitAfterSeconds": 0.18,
+      "before": [],
+      "after": [
+        {
+          "key": "target",
+          "expected": "enemy:0",
+          "rule": "点选目标不扣费。"
+        },
+        {
+          "key": "accepted",
+          "expected": "1",
+          "rule": "点选目标不扣费。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Inspector/Btn_Enhance",
+      "label": "选择原卡强化",
+      "waitAfterSeconds": 0.18,
+      "before": [],
+      "after": [
+        {
+          "key": "enhanced",
+          "expected": "1",
+          "rule": "选择强化不支付；必须使用原卡规定的耗色和数值。"
+        },
+        {
+          "key": "selectedValue",
+          "expected": "4",
+          "rule": "选择强化不支付；必须使用原卡规定的耗色和数值。"
+        },
+        {
+          "key": "redCrystal",
+          "expected": "1",
+          "rule": "选择强化不支付；必须使用原卡规定的耗色和数值。"
+        },
+        {
+          "key": "ui:redCrystal",
+          "expected": "1",
+          "rule": "可见读数必须对应规则状态。选择强化不支付；必须使用原卡规定的耗色和数值。"
+        },
+        {
+          "key": "ui:printedEffect",
+          "expected": "强化：攻击4。",
+          "rule": "选择强化不支付；必须使用原卡规定的耗色和数值。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+      "label": "狂怒强化4",
+      "waitAfterSeconds": 0.18,
+      "before": [],
+      "after": [
+        {
+          "key": "attack0",
+          "expected": "4",
+          "rule": "护甲5尚未被击破。"
+        },
+        {
+          "key": "hand",
+          "expected": "2",
+          "rule": "护甲5尚未被击破。"
+        },
+        {
+          "key": "ui:hand",
+          "expected": "2",
+          "rule": "可见读数必须对应规则状态。护甲5尚未被击破。"
+        },
+        {
+          "key": "redCrystal",
+          "expected": "0",
+          "rule": "护甲5尚未被击破。"
+        },
+        {
+          "key": "ui:redCrystal",
+          "expected": "0",
+          "rule": "可见读数必须对应规则状态。护甲5尚未被击破。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Hand/Card_1",
+      "label": "选择_basic_card_016_1",
+      "waitAfterSeconds": 0.18,
+      "before": [],
+      "after": [
+        {
+          "key": "selectedCard",
+          "expected": "basic_card_016",
+          "rule": "选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "hand",
+          "expected": "2",
+          "rule": "选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "ui:hand",
+          "expected": "2",
+          "rule": "可见读数必须对应规则状态。选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "accepted",
+          "expected": "1",
+          "rule": "选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "ui:cardArt:1",
+          "expected": "basic_card_016",
+          "rule": "选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "ui:printedEffect",
+          "expected": "基础：攻击或格挡2。",
+          "rule": "选牌不扣牌，确认才消耗。"
+        },
+        {
+          "key": "selectedValue",
+          "expected": "2",
+          "rule": "选牌不扣牌，确认才消耗。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+      "label": "决心基础改选攻击2",
+      "waitAfterSeconds": 0.18,
+      "before": [],
+      "after": [
+        {
+          "key": "attack0",
+          "expected": "6",
+          "rule": "决心基础攻击或格挡2，攻击阶段可选攻击。"
+        },
+        {
+          "key": "hand",
+          "expected": "1",
+          "rule": "决心基础攻击或格挡2，攻击阶段可选攻击。"
+        },
+        {
+          "key": "ui:hand",
+          "expected": "1",
+          "rule": "可见读数必须对应规则状态。决心基础攻击或格挡2，攻击阶段可选攻击。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+      "label": "原卡组合战胜灰狼",
+      "waitAfterSeconds": 0.18,
+      "before": [],
+      "after": [
+        {
+          "key": "completed",
+          "expected": "1",
+          "rule": "4加2大于等于护甲5。"
+        },
+        {
+          "key": "fame",
+          "expected": "4",
+          "rule": "4加2大于等于护甲5。"
+        },
+        {
+          "key": "ui:fame",
+          "expected": "4",
+          "rule": "可见读数必须对应规则状态。4加2大于等于护甲5。"
+        },
+        {
+          "key": "wounds",
+          "expected": "0",
+          "rule": "4加2大于等于护甲5。"
+        },
+        {
+          "key": "ui:wounds",
+          "expected": "0",
+          "rule": "可见读数必须对应规则状态。4加2大于等于护甲5。"
+        }
+      ]
+    }
+  ]
+}

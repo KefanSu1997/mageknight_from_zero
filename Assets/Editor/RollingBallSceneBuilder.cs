@@ -83,7 +83,7 @@ namespace MageKnight.EditorTools
             ball.rotation = Quaternion.identity;
             if (ball.TryGetComponent<Rigidbody>(out var rb))
             {
-                rb.velocity = Vector3.zero;
+                rb.linearVelocity = Vector3.zero;
                 rb.angularVelocity = Vector3.zero;
             }
         }
@@ -111,8 +111,8 @@ namespace MageKnight.EditorTools
             ball.transform.position = new Vector3(0f, 1f, -8f);
             var rb = ball.AddComponent<Rigidbody>();
             rb.mass = 1f;
-            rb.drag = 0.05f;
-            rb.angularDrag = 0.05f;
+            rb.linearDamping = 0.05f;
+            rb.angularDamping = 0.05f;
             rb.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
             rb.interpolation = RigidbodyInterpolation.Interpolate;
 

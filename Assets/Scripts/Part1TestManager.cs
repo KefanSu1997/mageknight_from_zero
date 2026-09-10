@@ -2072,7 +2072,7 @@ public class Part1TestManager : MonoBehaviour
         label.fontSize = 16f;
         label.color = new Color(0.92f, 0.96f, 1f);
         label.alignment = TextAlignmentOptions.Center;
-        label.enableWordWrapping = true;
+        label.textWrappingMode = TextWrappingModes.Normal;
 
         var referenceFont = explorationSummaryLabel != null ? explorationSummaryLabel.font : (testLog != null ? testLog.font : null);
         if (referenceFont != null)
@@ -2530,7 +2530,7 @@ public class Part1TestManager : MonoBehaviour
         label.fontSize = 16f;
         label.color = color;
         label.alignment = TextAlignmentOptions.Left;
-        label.enableWordWrapping = true;
+        label.textWrappingMode = TextWrappingModes.Normal;
 
         var referenceFont = recruitmentSummaryLabel != null ? recruitmentSummaryLabel.font : (testLog != null ? testLog.font : null);
         if (referenceFont != null)

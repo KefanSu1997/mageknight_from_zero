@@ -39,6 +39,10 @@ public static class CcrCompileBridge
 
     static CcrCompileBridge()
     {
+        // 避免重放半年前的请求及每帧写入巨大轨迹日志；旧外部循环按需启用。
+        if (!EditorPrefs.GetBool("MageKnight.LegacyCcrBridge.Enabled", false))
+            return;
+
         if (!Directory.Exists(BridgeDir))
             Directory.CreateDirectory(BridgeDir);
 

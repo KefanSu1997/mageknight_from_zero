@@ -8,6 +8,13 @@ namespace MK.Logic.Runtime
     /// </summary>
     public sealed class RecruitmentService
     {
+        public static int GetCost(PlayerState player, UnitCard candidate, RecruitLocation location,
+            ActionContext? ctx = null, bool applyReputationModifier = true)
+        {
+            int modifier = applyReputationModifier ? ReputationTable.CalcRecruitModifier(player.Reputation) : 0;
+            int cost = System.Math.Max(0, candidate.InfluenceCost + modifier - (ctx?.RecruitDiscount ?? 0));
+            return cost + (location.HasFlag(RecruitLocation.RefugeeCamp) && candidate.IsElite ? 2 : 0);
+        }
         /// <summary>
         /// 尝试在指定地点招募部队。若招募成功，将其加入玩家单位列表并返回 true。
         /// </summary>
@@ -21,7 +28,8 @@ public bool TryRecruit(
             RecruitLocation location,
             int            influenceGenerated,
             ActionContext? ctx = null,
-            IGameLogger?   logger = null)
+            IGameLogger?   logger = null,
+            bool applyReputationModifier = true)
         {
             // 1️⃣ 地点验证：允许的地点必须落在枚举定义内，且非 None
             const RecruitLocation ValidMask =
@@ -44,13 +52,8 @@ public bool TryRecruit(
             }
 
             // 2️⃣ 计算最终招募费用，声望正负都会影响 Influence 消耗
-            int repAdj = ReputationTable.CalcRecruitModifier(player.Reputation);
             int discount = ctx?.RecruitDiscount ?? 0;
-            int cost = System.Math.Max(0, candidate.InfluenceCost + repAdj - discount);
-
-            // 难民营招募精英单位需额外支付 2 点影响力
-            if (location.HasFlag(RecruitLocation.RefugeeCamp) && candidate.IsElite)
-                cost += 2;
+            int cost = GetCost(player, candidate, location, ctx, applyReputationModifier);
 
             if (influenceGenerated < cost)
             {

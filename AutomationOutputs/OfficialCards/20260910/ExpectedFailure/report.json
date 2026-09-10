@@ -1,0 +1,624 @@
+{
+    "scenePath": "Assets/Scenes/Part1/Part1_CombatRules.unity",
+    "startedAt": "2026-09-10T02:45:08.6484679Z",
+    "finishedAt": "2026-09-10T02:45:10.9723578Z",
+    "status": "failed",
+    "message": "One or more steps failed.",
+    "steps": [
+        {
+            "label": "Scene Start",
+            "buttonPath": "",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\ExpectedFailure\\captures\\Part1_CombatRules_20260910_104508\\000_Scene Start.png",
+            "success": true,
+            "message": "",
+            "runtimeRule": "",
+            "clickX": 0.0,
+            "clickY": 0.0,
+            "hitObject": "",
+            "beforeState": [],
+            "afterState": [],
+            "assertions": []
+        },
+        {
+            "label": "选择_basic_card_016_0",
+            "buttonPath": "Canvas/UIRoot/Hand/Card_0",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\ExpectedFailure\\captures\\Part1_CombatRules_20260910_104508\\001_选择_basic_card_016_0.png",
+            "success": false,
+            "message": "after hand: expected 999, got 5. after ui:hand: expected 999, got 5. ",
+            "runtimeRule": "选择本身不消耗卡牌或魔力。",
+            "clickX": 248.0,
+            "clickY": 199.0,
+            "hitObject": "Card_0",
+            "beforeState": [
+                {
+                    "key": "scenario",
+                    "value": "combat"
+                },
+                {
+                    "key": "phase",
+                    "value": "Block"
+                },
+                {
+                    "key": "target",
+                    "value": ""
+                },
+                {
+                    "key": "selectedCard",
+                    "value": ""
+                },
+                {
+                    "key": "selectedUnit",
+                    "value": ""
+                },
+                {
+                    "key": "enhanced",
+                    "value": "0"
+                },
+                {
+                    "key": "sideways",
+                    "value": "0"
+                },
+                {
+                    "key": "selectedValue",
+                    "value": "0"
+                },
+                {
+                    "key": "accepted",
+                    "value": "1"
+                },
+                {
+                    "key": "revision",
+                    "value": "0"
+                },
+                {
+                    "key": "hand",
+                    "value": "5"
+                },
+                {
+                    "key": "deck",
+                    "value": "5"
+                },
+                {
+                    "key": "played",
+                    "value": "0"
+                },
+                {
+                    "key": "discard",
+                    "value": "0"
+                },
+                {
+                    "key": "cardTotal",
+                    "value": "10"
+                },
+                {
+                    "key": "actionCardTotal",
+                    "value": "10"
+                },
+                {
+                    "key": "woundCards",
+                    "value": "0"
+                },
+                {
+                    "key": "movement",
+                    "value": "0"
+                },
+                {
+                    "key": "influence",
+                    "value": "0"
+                },
+                {
+                    "key": "wounds",
+                    "value": "0"
+                },
+                {
+                    "key": "fame",
+                    "value": "0"
+                },
+                {
+                    "key": "turn",
+                    "value": "1"
+                },
+                {
+                    "key": "units",
+                    "value": "0"
+                },
+                {
+                    "key": "ready",
+                    "value": "0"
+                },
+                {
+                    "key": "freeSlots",
+                    "value": "1"
+                },
+                {
+                    "key": "redCrystal",
+                    "value": "1"
+                },
+                {
+                    "key": "blueCrystal",
+                    "value": "1"
+                },
+                {
+                    "key": "greenCrystal",
+                    "value": "1"
+                },
+                {
+                    "key": "whiteCrystal",
+                    "value": "1"
+                },
+                {
+                    "key": "position",
+                    "value": "camp"
+                },
+                {
+                    "key": "revealed",
+                    "value": "1"
+                },
+                {
+                    "key": "completed",
+                    "value": "0"
+                },
+                {
+                    "key": "encounter",
+                    "value": "forest_orc"
+                },
+                {
+                    "key": "cardSlot0",
+                    "value": "basic_card_016"
+                },
+                {
+                    "key": "cardSlot1",
+                    "value": "basic_card_016"
+                },
+                {
+                    "key": "cardSlot2",
+                    "value": "basic_card_021"
+                },
+                {
+                    "key": "cardSlot3",
+                    "value": "basic_card_021"
+                },
+                {
+                    "key": "cardSlot4",
+                    "value": "basic_card_000"
+                },
+                {
+                    "key": "enemy0",
+                    "value": "orc"
+                },
+                {
+                    "key": "block0",
+                    "value": "0"
+                },
+                {
+                    "key": "requiredBlock0",
+                    "value": "4"
+                },
+                {
+                    "key": "attack0",
+                    "value": "0"
+                },
+                {
+                    "key": "defeated0",
+                    "value": "0"
+                },
+                {
+                    "key": "ui:hand",
+                    "value": "5"
+                },
+                {
+                    "key": "ui:fame",
+                    "value": "0"
+                },
+                {
+                    "key": "ui:wounds",
+                    "value": "0"
+                },
+                {
+                    "key": "ui:redCrystal",
+                    "value": "1"
+                },
+                {
+                    "key": "ui:primary",
+                    "value": "结束格挡"
+                },
+                {
+                    "key": "ui:resource",
+                    "value": "0 / 4"
+                },
+                {
+                    "key": "ui:rulesVisible",
+                    "value": "0"
+                },
+                {
+                    "key": "ui:primaryButtons",
+                    "value": "1"
+                },
+                {
+                    "key": "ui:context",
+                    "value": "选择格挡牌或就绪部队，再点选要抵挡的敌人。准备好后结束格挡。"
+                },
+                {
+                    "key": "ui:printedEffect",
+                    "value": "选择格挡牌或就绪部队，再点选要抵挡的敌人。准备好后结束格挡。"
+                },
+                {
+                    "key": "ui:mana",
+                    "value": "蓝晶 1   绿晶 1   白晶 1"
+                },
+                {
+                    "key": "ui:cardArt:0",
+                    "value": "basic_card_016"
+                },
+                {
+                    "key": "ui:cardNote:0",
+                    "value": "基础 · 格挡2"
+                },
+                {
+                    "key": "ui:cardArt:1",
+                    "value": "basic_card_016"
+                },
+                {
+                    "key": "ui:cardNote:1",
+                    "value": "基础 · 格挡2"
+                },
+                {
+                    "key": "ui:cardArt:2",
+                    "value": "basic_card_021"
+                },
+                {
+                    "key": "ui:cardNote:2",
+                    "value": "基础 · 格挡2"
+                },
+                {
+                    "key": "ui:cardArt:3",
+                    "value": "basic_card_021"
+                },
+                {
+                    "key": "ui:cardNote:3",
+                    "value": "基础 · 格挡2"
+                },
+                {
+                    "key": "ui:cardArt:4",
+                    "value": "basic_card_000"
+                },
+                {
+                    "key": "ui:cardNote:4",
+                    "value": "本阶段可横置 · 1"
+                },
+                {
+                    "key": "background",
+                    "value": "forest"
+                },
+                {
+                    "key": "heroArt",
+                    "value": "hero_v1"
+                },
+                {
+                    "key": "enemyArt0",
+                    "value": "orc_v1"
+                }
+            ],
+            "afterState": [
+                {
+                    "key": "scenario",
+                    "value": "combat"
+                },
+                {
+                    "key": "phase",
+                    "value": "Block"
+                },
+                {
+                    "key": "target",
+                    "value": ""
+                },
+                {
+                    "key": "selectedCard",
+                    "value": "basic_card_016"
+                },
+                {
+                    "key": "selectedUnit",
+                    "value": ""
+                },
+                {
+                    "key": "enhanced",
+                    "value": "0"
+                },
+                {
+                    "key": "sideways",
+                    "value": "0"
+                },
+                {
+                    "key": "selectedValue",
+                    "value": "2"
+                },
+                {
+                    "key": "accepted",
+                    "value": "1"
+                },
+                {
+                    "key": "revision",
+                    "value": "1"
+                },
+                {
+                    "key": "hand",
+                    "value": "5"
+                },
+                {
+                    "key": "deck",
+                    "value": "5"
+                },
+                {
+                    "key": "played",
+                    "value": "0"
+                },
+                {
+                    "key": "discard",
+                    "value": "0"
+                },
+                {
+                    "key": "cardTotal",
+                    "value": "10"
+                },
+                {
+                    "key": "actionCardTotal",
+                    "value": "10"
+                },
+                {
+                    "key": "woundCards",
+                    "value": "0"
+                },
+                {
+                    "key": "movement",
+                    "value": "0"
+                },
+                {
+                    "key": "influence",
+                    "value": "0"
+                },
+                {
+                    "key": "wounds",
+                    "value": "0"
+                },
+                {
+                    "key": "fame",
+                    "value": "0"
+                },
+                {
+                    "key": "turn",
+                    "value": "1"
+                },
+                {
+                    "key": "units",
+                    "value": "0"
+                },
+                {
+                    "key": "ready",
+                    "value": "0"
+                },
+                {
+                    "key": "freeSlots",
+                    "value": "1"
+                },
+                {
+                    "key": "redCrystal",
+                    "value": "1"
+                },
+                {
+                    "key": "blueCrystal",
+                    "value": "1"
+                },
+                {
+                    "key": "greenCrystal",
+                    "value": "1"
+                },
+                {
+                    "key": "whiteCrystal",
+                    "value": "1"
+                },
+                {
+                    "key": "position",
+                    "value": "camp"
+                },
+                {
+                    "key": "revealed",
+                    "value": "1"
+                },
+                {
+                    "key": "completed",
+                    "value": "0"
+                },
+                {
+                    "key": "encounter",
+                    "value": "forest_orc"
+                },
+                {
+                    "key": "cardSlot0",
+                    "value": "basic_card_016"
+                },
+                {
+                    "key": "cardSlot1",
+                    "value": "basic_card_016"
+                },
+                {
+                    "key": "cardSlot2",
+                    "value": "basic_card_021"
+                },
+                {
+                    "key": "cardSlot3",
+                    "value": "basic_card_021"
+                },
+                {
+                    "key": "cardSlot4",
+                    "value": "basic_card_000"
+                },
+                {
+                    "key": "enemy0",
+                    "value": "orc"
+                },
+                {
+                    "key": "block0",
+                    "value": "0"
+                },
+                {
+                    "key": "requiredBlock0",
+                    "value": "4"
+                },
+                {
+                    "key": "attack0",
+                    "value": "0"
+                },
+                {
+                    "key": "defeated0",
+                    "value": "0"
+                },
+                {
+                    "key": "ui:hand",
+                    "value": "5"
+                },
+                {
+                    "key": "ui:fame",
+                    "value": "0"
+                },
+                {
+                    "key": "ui:wounds",
+                    "value": "0"
+                },
+                {
+                    "key": "ui:redCrystal",
+                    "value": "1"
+                },
+                {
+                    "key": "ui:primary",
+                    "value": "先选择目标"
+                },
+                {
+                    "key": "ui:resource",
+                    "value": "0 / 4"
+                },
+                {
+                    "key": "ui:rulesVisible",
+                    "value": "0"
+                },
+                {
+                    "key": "ui:primaryButtons",
+                    "value": "1"
+                },
+                {
+                    "key": "ui:context",
+                    "value": "基础：攻击或格挡2。\n强化耗色：蓝\n选择格挡牌或就绪部队，再点选要抵挡的敌人。准备好后结束格挡。"
+                },
+                {
+                    "key": "ui:printedEffect",
+                    "value": "基础：攻击或格挡2。"
+                },
+                {
+                    "key": "ui:mana",
+                    "value": "蓝晶 1   绿晶 1   白晶 1"
+                },
+                {
+                    "key": "ui:cardArt:0",
+                    "value": "basic_card_016"
+                },
+                {
+                    "key": "ui:cardNote:0",
+                    "value": "已选基础 · 2"
+                },
+                {
+                    "key": "ui:cardArt:1",
+                    "value": "basic_card_016"
+                },
+                {
+                    "key": "ui:cardNote:1",
+                    "value": "基础 · 格挡2"
+                },
+                {
+                    "key": "ui:cardArt:2",
+                    "value": "basic_card_021"
+                },
+                {
+                    "key": "ui:cardNote:2",
+                    "value": "基础 · 格挡2"
+                },
+                {
+                    "key": "ui:cardArt:3",
+                    "value": "basic_card_021"
+                },
+                {
+                    "key": "ui:cardNote:3",
+                    "value": "基础 · 格挡2"
+                },
+                {
+                    "key": "ui:cardArt:4",
+                    "value": "basic_card_000"
+                },
+                {
+                    "key": "ui:cardNote:4",
+                    "value": "本阶段可横置 · 1"
+                },
+                {
+                    "key": "background",
+                    "value": "forest"
+                },
+                {
+                    "key": "heroArt",
+                    "value": "hero_v1"
+                },
+                {
+                    "key": "enemyArt0",
+                    "value": "orc_v1"
+                }
+            ],
+            "assertions": [
+                {
+                    "phase": "after",
+                    "key": "selectedCard",
+                    "expected": "basic_card_016",
+                    "actual": "basic_card_016",
+                    "rule": "选牌不扣牌，确认才消耗。",
+                    "passed": true
+                },
+                {
+                    "phase": "after",
+                    "key": "hand",
+                    "expected": "999",
+                    "actual": "5",
+                    "rule": "选牌不扣牌，确认才消耗。",
+                    "passed": false
+                },
+                {
+                    "phase": "after",
+                    "key": "ui:hand",
+                    "expected": "999",
+                    "actual": "5",
+                    "rule": "可见读数必须对应规则状态。选牌不扣牌，确认才消耗。",
+                    "passed": false
+                },
+                {
+                    "phase": "after",
+                    "key": "accepted",
+                    "expected": "1",
+                    "actual": "1",
+                    "rule": "选牌不扣牌，确认才消耗。",
+                    "passed": true
+                },
+                {
+                    "phase": "after",
+                    "key": "ui:cardArt:0",
+                    "expected": "basic_card_016",
+                    "actual": "basic_card_016",
+                    "rule": "选牌不扣牌，确认才消耗。",
+                    "passed": true
+                },
+                {
+                    "phase": "after",
+                    "key": "ui:printedEffect",
+                    "expected": "基础：攻击或格挡2。",
+                    "actual": "基础：攻击或格挡2。",
+                    "rule": "选牌不扣牌，确认才消耗。",
+                    "passed": true
+                }
+            ]
+        }
+    ]
+}

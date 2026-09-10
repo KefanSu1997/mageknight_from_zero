@@ -60,7 +60,7 @@ namespace MageKnight.Scripts.Demo
                 return;
             }
 
-            var planarVelocity = new Vector3(_rigidbody.velocity.x, 0f, _rigidbody.velocity.z);
+            var planarVelocity = new Vector3(_rigidbody.linearVelocity.x, 0f, _rigidbody.linearVelocity.z);
             var targetVelocity = moveDir * maxSpeed;
             var accel = (targetVelocity - planarVelocity) * moveAcceleration;
             _rigidbody.AddForce(new Vector3(accel.x, 0f, accel.z), ForceMode.Acceleration);
@@ -68,11 +68,11 @@ namespace MageKnight.Scripts.Demo
 
         private void ClampPlanarSpeed()
         {
-            var planarVelocity = new Vector3(_rigidbody.velocity.x, 0f, _rigidbody.velocity.z);
+            var planarVelocity = new Vector3(_rigidbody.linearVelocity.x, 0f, _rigidbody.linearVelocity.z);
             if (planarVelocity.sqrMagnitude > maxSpeed * maxSpeed)
             {
                 var limited = planarVelocity.normalized * maxSpeed;
-                _rigidbody.velocity = new Vector3(limited.x, _rigidbody.velocity.y, limited.z);
+                _rigidbody.linearVelocity = new Vector3(limited.x, _rigidbody.linearVelocity.y, limited.z);
             }
         }
 

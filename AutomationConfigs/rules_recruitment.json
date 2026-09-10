@@ -1,0 +1,680 @@
+{
+  "scenePath": "Assets/Scenes/Part1/Part1_RecruitmentRules.unity",
+  "screenshotsDirectory": "AutomationOutputs/RulesScenarios/20260909/Recruitment/captures",
+  "reportPath": "AutomationOutputs/RulesScenarios/20260909/Recruitment/report.json",
+  "useRunSubfolder": true,
+  "captureInitialView": true,
+  "initialDelaySeconds": 1.2,
+  "defaultWaitAfterSeconds": 0.15,
+  "steps": [
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_recruit",
+      "label": "影响力不足不扣费",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "accepted",
+          "expected": "0",
+          "rule": "守卫费用5，现有4；失败时影响力与招募列不变。"
+        },
+        {
+          "key": "influence",
+          "expected": "4",
+          "rule": "守卫费用5，现有4；失败时影响力与招募列不变。"
+        },
+        {
+          "key": "ui:influence",
+          "expected": "4",
+          "rule": "界面显示必须与规则结果一致；守卫费用5，现有4；失败时影响力与招募列不变。"
+        },
+        {
+          "key": "units",
+          "expected": "0",
+          "rule": "守卫费用5，现有4；失败时影响力与招募列不变。"
+        },
+        {
+          "key": "ui:units",
+          "expected": "0",
+          "rule": "界面显示必须与规则结果一致；守卫费用5，现有4；失败时影响力与招募列不变。"
+        },
+        {
+          "key": "offer",
+          "expected": "3",
+          "rule": "守卫费用5，现有4；失败时影响力与招募列不变。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Btn_select_2",
+      "label": "选择修道院单位",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "selected",
+          "expected": "2",
+          "rule": "选择单位不扣费。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_recruit",
+      "label": "村庄不能招募修道院单位",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "accepted",
+          "expected": "0",
+          "rule": "地点图标必须匹配。"
+        },
+        {
+          "key": "influence",
+          "expected": "4",
+          "rule": "地点图标必须匹配。"
+        },
+        {
+          "key": "ui:influence",
+          "expected": "4",
+          "rule": "界面显示必须与规则结果一致；地点图标必须匹配。"
+        },
+        {
+          "key": "units",
+          "expected": "0",
+          "rule": "地点图标必须匹配。"
+        },
+        {
+          "key": "ui:units",
+          "expected": "0",
+          "rule": "界面显示必须与规则结果一致；地点图标必须匹配。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Btn_select_0",
+      "label": "选回守卫",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "selected",
+          "expected": "0",
+          "rule": "守卫允许村庄招募。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_influence",
+      "label": "打出影响力2",
+      "waitAfterSeconds": 0.15,
+      "before": [
+        {
+          "key": "influence",
+          "expected": "4",
+          "rule": "交涉牌提供2，4+2=6。"
+        }
+      ],
+      "after": [
+        {
+          "key": "influence",
+          "expected": "6",
+          "rule": "交涉牌提供2，4+2=6。"
+        },
+        {
+          "key": "ui:influence",
+          "expected": "6",
+          "rule": "界面显示必须与规则结果一致；交涉牌提供2，4+2=6。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_influence",
+      "label": "同一张牌不能重复用",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "accepted",
+          "expected": "0",
+          "rule": "交涉牌已使用，资源保持6。"
+        },
+        {
+          "key": "influence",
+          "expected": "6",
+          "rule": "交涉牌已使用，资源保持6。"
+        },
+        {
+          "key": "ui:influence",
+          "expected": "6",
+          "rule": "界面显示必须与规则结果一致；交涉牌已使用，资源保持6。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_recruit",
+      "label": "守卫就绪加入",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "influence",
+          "expected": "1",
+          "rule": "6−5=1；部队0→1、初始指挥槽1被占用、单位就绪、公开列3→2。"
+        },
+        {
+          "key": "ui:influence",
+          "expected": "1",
+          "rule": "界面显示必须与规则结果一致；6−5=1；部队0→1、初始指挥槽1被占用、单位就绪、公开列3→2。"
+        },
+        {
+          "key": "units",
+          "expected": "1",
+          "rule": "6−5=1；部队0→1、初始指挥槽1被占用、单位就绪、公开列3→2。"
+        },
+        {
+          "key": "ui:units",
+          "expected": "1",
+          "rule": "界面显示必须与规则结果一致；6−5=1；部队0→1、初始指挥槽1被占用、单位就绪、公开列3→2。"
+        },
+        {
+          "key": "freeSlots",
+          "expected": "0",
+          "rule": "6−5=1；部队0→1、初始指挥槽1被占用、单位就绪、公开列3→2。"
+        },
+        {
+          "key": "ui:freeSlots",
+          "expected": "0",
+          "rule": "界面显示必须与规则结果一致；6−5=1；部队0→1、初始指挥槽1被占用、单位就绪、公开列3→2。"
+        },
+        {
+          "key": "ready",
+          "expected": "1",
+          "rule": "6−5=1；部队0→1、初始指挥槽1被占用、单位就绪、公开列3→2。"
+        },
+        {
+          "key": "ui:ready",
+          "expected": "1",
+          "rule": "界面显示必须与规则结果一致；6−5=1；部队0→1、初始指挥槽1被占用、单位就绪、公开列3→2。"
+        },
+        {
+          "key": "offer",
+          "expected": "2",
+          "rule": "6−5=1；部队0→1、初始指挥槽1被占用、单位就绪、公开列3→2。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_recruit",
+      "label": "同一单位不能重复招募",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "accepted",
+          "expected": "0",
+          "rule": "已离开公开列的单位不可再次购买。"
+        },
+        {
+          "key": "influence",
+          "expected": "1",
+          "rule": "已离开公开列的单位不可再次购买。"
+        },
+        {
+          "key": "ui:influence",
+          "expected": "1",
+          "rule": "界面显示必须与规则结果一致；已离开公开列的单位不可再次购买。"
+        },
+        {
+          "key": "units",
+          "expected": "1",
+          "rule": "已离开公开列的单位不可再次购买。"
+        },
+        {
+          "key": "ui:units",
+          "expected": "1",
+          "rule": "界面显示必须与规则结果一致；已离开公开列的单位不可再次购买。"
+        },
+        {
+          "key": "offer",
+          "expected": "2",
+          "rule": "已离开公开列的单位不可再次购买。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_activate",
+      "label": "使用部队后横置",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "ready",
+          "expected": "0",
+          "rule": "部队使用后不再就绪，但仍占用指挥槽。"
+        },
+        {
+          "key": "ui:ready",
+          "expected": "0",
+          "rule": "界面显示必须与规则结果一致；部队使用后不再就绪，但仍占用指挥槽。"
+        },
+        {
+          "key": "units",
+          "expected": "1",
+          "rule": "部队使用后不再就绪，但仍占用指挥槽。"
+        },
+        {
+          "key": "ui:units",
+          "expected": "1",
+          "rule": "界面显示必须与规则结果一致；部队使用后不再就绪，但仍占用指挥槽。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_activate",
+      "label": "横置单位不能重复使用",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "accepted",
+          "expected": "0",
+          "rule": "本昼夜没有就绪单位。"
+        },
+        {
+          "key": "ready",
+          "expected": "0",
+          "rule": "本昼夜没有就绪单位。"
+        },
+        {
+          "key": "ui:ready",
+          "expected": "0",
+          "rule": "界面显示必须与规则结果一致；本昼夜没有就绪单位。"
+        },
+        {
+          "key": "units",
+          "expected": "1",
+          "rule": "本昼夜没有就绪单位。"
+        },
+        {
+          "key": "ui:units",
+          "expected": "1",
+          "rule": "界面显示必须与规则结果一致；本昼夜没有就绪单位。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Sidebar/Cases/Btn_case_reputation",
+      "label": "案例_reputation",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "influence",
+          "expected": "12",
+          "rule": "切换训练案例重置该案例的全部状态。"
+        },
+        {
+          "key": "ui:influence",
+          "expected": "12",
+          "rule": "界面显示必须与规则结果一致；切换训练案例重置该案例的全部状态。"
+        },
+        {
+          "key": "units",
+          "expected": "0",
+          "rule": "切换训练案例重置该案例的全部状态。"
+        },
+        {
+          "key": "ui:units",
+          "expected": "0",
+          "rule": "界面显示必须与规则结果一致；切换训练案例重置该案例的全部状态。"
+        },
+        {
+          "key": "freeSlots",
+          "expected": "2",
+          "rule": "切换训练案例重置该案例的全部状态。"
+        },
+        {
+          "key": "ui:freeSlots",
+          "expected": "2",
+          "rule": "界面显示必须与规则结果一致；切换训练案例重置该案例的全部状态。"
+        },
+        {
+          "key": "reputationBonus",
+          "expected": "2",
+          "rule": "切换训练案例重置该案例的全部状态。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_recruit",
+      "label": "声望修正只在开始应用",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "influence",
+          "expected": "7",
+          "rule": "基础影响10+声望修正2=12，招募守卫扣5后余7。"
+        },
+        {
+          "key": "ui:influence",
+          "expected": "7",
+          "rule": "界面显示必须与规则结果一致；基础影响10+声望修正2=12，招募守卫扣5后余7。"
+        },
+        {
+          "key": "units",
+          "expected": "1",
+          "rule": "基础影响10+声望修正2=12，招募守卫扣5后余7。"
+        },
+        {
+          "key": "ui:units",
+          "expected": "1",
+          "rule": "界面显示必须与规则结果一致；基础影响10+声望修正2=12，招募守卫扣5后余7。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Btn_select_1",
+      "label": "选择游侠",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "selected",
+          "expected": "1",
+          "rule": "游侠牌面费用7。"
+        },
+        {
+          "key": "cost",
+          "expected": "7",
+          "rule": "游侠牌面费用7。"
+        },
+        {
+          "key": "ui:cost",
+          "expected": "7",
+          "rule": "界面显示必须与规则结果一致；游侠牌面费用7。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_recruit",
+      "label": "第二次招募不重复声望优惠",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "influence",
+          "expected": "0",
+          "rule": "7−7=0，不能再次追加声望修正2。"
+        },
+        {
+          "key": "ui:influence",
+          "expected": "0",
+          "rule": "界面显示必须与规则结果一致；7−7=0，不能再次追加声望修正2。"
+        },
+        {
+          "key": "units",
+          "expected": "2",
+          "rule": "7−7=0，不能再次追加声望修正2。"
+        },
+        {
+          "key": "ui:units",
+          "expected": "2",
+          "rule": "界面显示必须与规则结果一致；7−7=0，不能再次追加声望修正2。"
+        },
+        {
+          "key": "freeSlots",
+          "expected": "0",
+          "rule": "7−7=0，不能再次追加声望修正2。"
+        },
+        {
+          "key": "ui:freeSlots",
+          "expected": "0",
+          "rule": "界面显示必须与规则结果一致；7−7=0，不能再次追加声望修正2。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Sidebar/Cases/Btn_case_capacity",
+      "label": "案例_capacity",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "influence",
+          "expected": "12",
+          "rule": "切换训练案例重置该案例的全部状态。"
+        },
+        {
+          "key": "ui:influence",
+          "expected": "12",
+          "rule": "界面显示必须与规则结果一致；切换训练案例重置该案例的全部状态。"
+        },
+        {
+          "key": "units",
+          "expected": "0",
+          "rule": "切换训练案例重置该案例的全部状态。"
+        },
+        {
+          "key": "ui:units",
+          "expected": "0",
+          "rule": "界面显示必须与规则结果一致；切换训练案例重置该案例的全部状态。"
+        },
+        {
+          "key": "freeSlots",
+          "expected": "1",
+          "rule": "切换训练案例重置该案例的全部状态。"
+        },
+        {
+          "key": "ui:freeSlots",
+          "expected": "1",
+          "rule": "界面显示必须与规则结果一致；切换训练案例重置该案例的全部状态。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_recruit",
+      "label": "占满唯一指挥槽",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "influence",
+          "expected": "7",
+          "rule": "等级1只有1个指挥槽；12−5=7。"
+        },
+        {
+          "key": "ui:influence",
+          "expected": "7",
+          "rule": "界面显示必须与规则结果一致；等级1只有1个指挥槽；12−5=7。"
+        },
+        {
+          "key": "units",
+          "expected": "1",
+          "rule": "等级1只有1个指挥槽；12−5=7。"
+        },
+        {
+          "key": "ui:units",
+          "expected": "1",
+          "rule": "界面显示必须与规则结果一致；等级1只有1个指挥槽；12−5=7。"
+        },
+        {
+          "key": "freeSlots",
+          "expected": "0",
+          "rule": "等级1只有1个指挥槽；12−5=7。"
+        },
+        {
+          "key": "ui:freeSlots",
+          "expected": "0",
+          "rule": "界面显示必须与规则结果一致；等级1只有1个指挥槽；12−5=7。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Btn_select_1",
+      "label": "资源足够但指挥槽不足",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "selected",
+          "expected": "1",
+          "rule": "费用7与现有影响力7相等。"
+        },
+        {
+          "key": "cost",
+          "expected": "7",
+          "rule": "费用7与现有影响力7相等。"
+        },
+        {
+          "key": "ui:cost",
+          "expected": "7",
+          "rule": "界面显示必须与规则结果一致；费用7与现有影响力7相等。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_recruit",
+      "label": "缺少指挥槽不得扣费",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "accepted",
+          "expected": "0",
+          "rule": "虽然影响力足够，指挥槽已满，失败时不扣费用或移除公开牌。"
+        },
+        {
+          "key": "influence",
+          "expected": "7",
+          "rule": "虽然影响力足够，指挥槽已满，失败时不扣费用或移除公开牌。"
+        },
+        {
+          "key": "ui:influence",
+          "expected": "7",
+          "rule": "界面显示必须与规则结果一致；虽然影响力足够，指挥槽已满，失败时不扣费用或移除公开牌。"
+        },
+        {
+          "key": "units",
+          "expected": "1",
+          "rule": "虽然影响力足够，指挥槽已满，失败时不扣费用或移除公开牌。"
+        },
+        {
+          "key": "ui:units",
+          "expected": "1",
+          "rule": "界面显示必须与规则结果一致；虽然影响力足够，指挥槽已满，失败时不扣费用或移除公开牌。"
+        },
+        {
+          "key": "freeSlots",
+          "expected": "0",
+          "rule": "虽然影响力足够，指挥槽已满，失败时不扣费用或移除公开牌。"
+        },
+        {
+          "key": "ui:freeSlots",
+          "expected": "0",
+          "rule": "界面显示必须与规则结果一致；虽然影响力足够，指挥槽已满，失败时不扣费用或移除公开牌。"
+        },
+        {
+          "key": "offer",
+          "expected": "2",
+          "rule": "虽然影响力足够，指挥槽已满，失败时不扣费用或移除公开牌。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Sidebar/Cases/Btn_case_monastery",
+      "label": "案例_monastery",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "influence",
+          "expected": "6",
+          "rule": "切换训练案例重置该案例的全部状态。"
+        },
+        {
+          "key": "ui:influence",
+          "expected": "6",
+          "rule": "界面显示必须与规则结果一致；切换训练案例重置该案例的全部状态。"
+        },
+        {
+          "key": "units",
+          "expected": "0",
+          "rule": "切换训练案例重置该案例的全部状态。"
+        },
+        {
+          "key": "ui:units",
+          "expected": "0",
+          "rule": "界面显示必须与规则结果一致；切换训练案例重置该案例的全部状态。"
+        },
+        {
+          "key": "location",
+          "expected": "Monastery",
+          "rule": "切换训练案例重置该案例的全部状态。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Btn_select_2",
+      "label": "在修道院选择学徒",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "selected",
+          "expected": "2",
+          "rule": "修道院图标匹配。"
+        },
+        {
+          "key": "cost",
+          "expected": "6",
+          "rule": "修道院图标匹配。"
+        },
+        {
+          "key": "ui:cost",
+          "expected": "6",
+          "rule": "界面显示必须与规则结果一致；修道院图标匹配。"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/UIRoot/Actions/Btn_recruit",
+      "label": "修道院招募成功",
+      "waitAfterSeconds": 0.15,
+      "before": [],
+      "after": [
+        {
+          "key": "influence",
+          "expected": "0",
+          "rule": "6−6=0，单位就绪加入。"
+        },
+        {
+          "key": "ui:influence",
+          "expected": "0",
+          "rule": "界面显示必须与规则结果一致；6−6=0，单位就绪加入。"
+        },
+        {
+          "key": "units",
+          "expected": "1",
+          "rule": "6−6=0，单位就绪加入。"
+        },
+        {
+          "key": "ui:units",
+          "expected": "1",
+          "rule": "界面显示必须与规则结果一致；6−6=0，单位就绪加入。"
+        },
+        {
+          "key": "ready",
+          "expected": "1",
+          "rule": "6−6=0，单位就绪加入。"
+        },
+        {
+          "key": "ui:ready",
+          "expected": "1",
+          "rule": "界面显示必须与规则结果一致；6−6=0，单位就绪加入。"
+        }
+      ]
+    }
+  ]
+}

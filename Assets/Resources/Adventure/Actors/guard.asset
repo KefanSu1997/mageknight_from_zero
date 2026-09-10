@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e0ffaf5ebe3ce34d9a10b384155ac76, type: 3}
+  m_Name: guard
+  m_EditorClassIdentifier: MageKnight.Scripts::MageKnight.Adventure.Content.ActorDefinition
+  id: guard
+  displayName: "\u8FB9\u5883\u5B88\u536B"
+  artwork: {fileID: 21300000, guid: 606d7ebfd8ad19c4996ac057ea5e2a49, type: 3}
+  visualScale: 1
+  armor: 3
+  attack: 3
+  block: 3
+  fame: 0
+  attackElement: 0
+  abilities: 
+  recruitmentCost: 5
+  recruitAt: 3

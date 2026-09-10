@@ -49,7 +49,7 @@ namespace MageKnight.Tests.Part1
             // CardEffectFactory is a static factory - we just test it creates effects
             var effect = CardEffectFactory.Get(ActionEffectId.FireballBase);
             Assert.IsNotNull(effect, "Card effects should be loaded");
-            Assert.IsAssignableFrom<MK.Logic.Runtime.CardEffects.ICardEffect>(effect, "Effect should implement ICardEffect");
+            Assert.IsInstanceOf<MK.Logic.Runtime.CardEffects.ICardEffect>(effect, "Effect should implement ICardEffect");
         }
         
         [UnityTest]

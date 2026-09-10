@@ -16,6 +16,7 @@ namespace MageKnight.SceneAutomation
         public bool captureInitialView = true;
         public float initialDelaySeconds = 2f;
         public float defaultWaitAfterSeconds = 1f;
+        public float maxRunSeconds = 120f;
         public List<SceneAutomationStep> steps = new();
     }
 }

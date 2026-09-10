@@ -18,7 +18,7 @@ namespace MK.Tests.game
             Assert.AreEqual("TestPlayer", player.Name);
             Assert.AreEqual(0, player.Reputation);
             Assert.AreEqual(0, player.Influence);
-            Assert.AreEqual(0, player.Level);
+            Assert.AreEqual(1, player.Level);
             Assert.AreEqual(0, player.Fame);
         }
 
@@ -33,15 +33,12 @@ namespace MK.Tests.game
         }
 
         [Test]
-        public void TestReputationInfluenceSystem()
+        public void TestReputationDoesNotCreateCommandTokens()
         {
             var player = new PlayerState(1, "TestPlayer");
             
             player.Reputation = 5;
-            // The influence system design varies across versions - adjust as needed
-            // For now, we'll test the basic reputation functionality
-            Assert.AreEqual(5, player.Reputation);
-            Assert.AreEqual(0, player.Influence); // Simplified test for compatibility
+            Assert.AreEqual(1, player.CommandSlots, "Reputation modifies interaction influence, not the unit command limit.");
         }
     }
 

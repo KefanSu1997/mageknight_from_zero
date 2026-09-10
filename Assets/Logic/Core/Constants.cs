@@ -44,7 +44,7 @@ namespace MK.Logic.Core
             {
                 // 物理攻击 & 物理格挡或元素格挡 —— 全效
                 (Element.Physical, _)                     => 1,
-                (_, Element.Physical)                     => 1,
+                (_, Element.Physical)                     => 0.5,
 
                 // Fire 被 Ice / ColdFire 全效，其余半效
                 (Element.Fire, Element.Ice)               => 1,

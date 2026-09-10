@@ -23,6 +23,7 @@ namespace MK.Logic.Data
         RecruitLocation RecruitLocationMask,  // 可招募地点掩码
         AttackProfile[] Attacks,   // 能造成的攻击列表
         Ability[] Abilities,       // 其他特殊能力
-        bool IsElite = false       // 是否为精英单位，难民营招募时会额外加费
+        bool IsElite = false,      // 是否为精英单位，难民营招募时会额外加费
+        int BlockValue = 0         // 可用的基础格挡能力；未配置的单位不提供格挡
     );
 }

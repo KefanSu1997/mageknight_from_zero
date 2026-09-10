@@ -13,6 +13,7 @@ namespace MK.Logic.Runtime
         private readonly List<ManaDie> _dice;
         private readonly Func<DayPart> _timeProvider;
         private readonly Dictionary<ManaColor, int> _rerollLimits;
+        private readonly Dictionary<ManaDie, PlayerState> _holders = new();
 
         public ManaSource(int playerCount, Func<DayPart> timeProvider, Random? rnd = null)
         {
@@ -71,13 +72,9 @@ namespace MK.Logic.Runtime
             var die = availableDice.First();
             _dice.Remove(die);
             
-            // 检查是否需要重掷
-            if (CanReroll(desired))
-            {
-                die.Roll(_timeProvider());
-            }
-            
+            // 取用时保持选择的颜色，仅在回合结束归还时重掷。
             owner.HeldManaDie = die;
+            _holders[die] = owner;
             return die;
         }
 
@@ -95,6 +92,7 @@ namespace MK.Logic.Runtime
             var die = _dice.First();
             _dice.Remove(die);
             owner.HeldManaDie = die;
+            _holders[die] = owner;
             return die;
         }
 
@@ -118,6 +116,12 @@ namespace MK.Logic.Runtime
         /// </summary>
         public void Return(ManaDie die)
         {
+            if (_dice.Contains(die)) return;
+            if (_holders.TryGetValue(die, out var owner))
+            {
+                if (owner.HeldManaDie == die) owner.HeldManaDie = null;
+                _holders.Remove(die);
+            }
             die.Roll(_timeProvider());
             _dice.Add(die);
         }
