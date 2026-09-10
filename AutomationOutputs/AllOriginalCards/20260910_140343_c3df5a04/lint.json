@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "files": [
+    "AGENTS.md",
+    "Assets/Logic/Runtime/AbilityRules.cs",
+    "Assets/Logic/Runtime/CardEffects/CardHealing.cs",
+    "Assets/Logic/Runtime/CardEffects/CardHealing.cs.meta",
+    "Assets/Logic/Runtime/CardEffects/CureEffect.cs",
+    "Assets/Logic/Runtime/CardEffects/DruidStaffEffect.cs",
+    "Assets/Logic/Runtime/CardEffects/EarthStrengthEffect.cs",
+    "Assets/Logic/Runtime/CardEffects/HealEffect.cs",
+    "Assets/Logic/Runtime/CardEffects/HealOrDrawEffect.cs",
+    "Assets/Logic/Runtime/CardEffects/HeroSkillEffects.cs",
+    "Assets/Logic/Runtime/CardEffects/HolyGrailEffect.cs",
+    "Assets/Logic/Runtime/CardEffects/ManaPowerEffect.cs",
+    "Assets/Logic/Runtime/CardEffects/RefreshingEffect.cs",
+    "Assets/Logic/Runtime/CardEffects/RefreshingWalkEffect.cs",
+    "Assets/Logic/Runtime/CardEffects/RegenerationEffect.cs",
+    "Assets/Logic/Runtime/CardEffects/RestoreEffect.cs",
+    "Assets/Logic/Runtime/GameState.cs",
+    "Assets/Logic/Runtime/PlayerDeck.cs",
+    "Assets/Resources/CardVerification/cases.json",
+    "Assets/Scripts/SceneAutomation/Editor/AllCardVerificationMenus.cs",
+    "Assets/Scripts/Testing/OriginalCardVerificationController.cs",
+    "Assets/Tests/CardWoundConservationTests.cs",
+    "Assets/Tests/CardWoundConservationTests.cs.meta",
+    "AutomationConfigs/AllOriginalCards/basic_card.json",
+    "tools/build_all_card_verification.py",
+    "tools/summarize_all_card_verification.py",
+    "vibe_coding/codex/project_experience/card_wounds_and_immutable_reports_2026-09-10.md",
+    "vibe_coding/codex/worklog_2026-09-10_card_rules_completion.md"
+  ],
+  "checks": [
+    "git diff --check for changed lines",
+    "no trailing whitespace in new files or C# tabs",
+    "Python AST parse",
+    "JSON parse"
+  ],
+  "reviewDiff": "D:\\study_and_work\\multi_agent_system\\recovery_backups\\archive_20260910\\wound_rules_review.diff"
+}

@@ -1,0 +1,7 @@
+{
+  "status": "success",
+  "result": {
+    "success": true,
+    "message": "Attempted to execute menu item: 'Tools/Mage Knight/Adventure/Run All Four'. Check Unity logs for confirmation or errors."
+  }
+}
