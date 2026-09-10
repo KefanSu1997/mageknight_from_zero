@@ -1,0 +1,35 @@
+{
+  "scenes": [
+    {
+      "name": "Combat",
+      "status": "success",
+      "startedAt": "2026-09-10T05:20:12.1504548Z",
+      "finishedAt": "2026-09-10T05:20:31.2774889Z",
+      "steps": 46
+    },
+    {
+      "name": "Exploration",
+      "status": "success",
+      "startedAt": "2026-09-10T05:20:36.9006398Z",
+      "finishedAt": "2026-09-10T05:20:46.9171166Z",
+      "steps": 23
+    },
+    {
+      "name": "Recruitment",
+      "status": "success",
+      "startedAt": "2026-09-10T05:20:51.8906040Z",
+      "finishedAt": "2026-09-10T05:20:59.7355687Z",
+      "steps": 17
+    },
+    {
+      "name": "Journey",
+      "status": "success",
+      "startedAt": "2026-09-10T05:21:04.7164221Z",
+      "finishedAt": "2026-09-10T05:21:18.5758735Z",
+      "steps": 32
+    }
+  ],
+  "uiOperations": 114,
+  "assertions": 477,
+  "screenshots": 118
+}

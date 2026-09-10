@@ -1,14 +1,14 @@
 {
     "scenePath": "Assets/Scenes/Part1/Part1_CombatRules.unity",
-    "startedAt": "2026-09-10T02:43:27.0243622Z",
-    "finishedAt": "2026-09-10T02:43:46.8037158Z",
+    "startedAt": "2026-09-10T05:20:12.1504548Z",
+    "finishedAt": "2026-09-10T05:20:31.2774889Z",
     "status": "success",
     "message": "",
     "steps": [
         {
             "label": "Scene Start",
             "buttonPath": "",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_104327\\000_Scene Start.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_132012\\000_Scene Start.png",
             "success": true,
             "message": "",
             "runtimeRule": "",
@@ -22,7 +22,7 @@
         {
             "label": "选择_basic_card_016_0",
             "buttonPath": "Canvas/UIRoot/Hand/Card_0",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_104327\\001_选择_basic_card_016_0.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_132012\\001_选择_basic_card_016_0.png",
             "success": true,
             "message": "",
             "runtimeRule": "选择本身不消耗卡牌或魔力。",
@@ -631,7 +631,7 @@
         {
             "label": "缺目标不得扣牌",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_104327\\002_缺目标不得扣牌.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_132012\\002_缺目标不得扣牌.png",
             "success": true,
             "message": "",
             "runtimeRule": "先选卡牌，再选地点、部队或敌人；未确认不消耗资源。",
@@ -1216,7 +1216,7 @@
         {
             "label": "点选_enemy_0",
             "buttonPath": "Canvas/UIRoot/Stage/Targets/Enemy_0",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_104327\\003_点选_enemy_0.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_132012\\003_点选_enemy_0.png",
             "success": true,
             "message": "",
             "runtimeRule": "目标与行动条件会在确认时重新校验。",
@@ -1785,7 +1785,7 @@
         {
             "label": "决心基础格挡2",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_104327\\004_决心基础格挡2.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_132012\\004_决心基础格挡2.png",
             "success": true,
             "message": "",
             "runtimeRule": "攻击或格挡2。",
@@ -2366,7 +2366,7 @@
         {
             "label": "格挡不足承受完整攻击",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_104327\\005_格挡不足承受完整攻击.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_132012\\005_格挡不足承受完整攻击.png",
             "success": true,
             "message": "",
             "runtimeRule": "只有达到格挡需求才免伤；不足时承受完整攻击，伤害÷英雄护甲向上取整。",
@@ -2975,7 +2975,7 @@
         {
             "label": "伤牌不能打出",
             "buttonPath": "Canvas/UIRoot/Hand/Card_10",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_104327\\006_伤牌不能打出.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_132012\\006_伤牌不能打出.png",
             "success": true,
             "message": "",
             "runtimeRule": "只有达到格挡需求才免伤；不足时承受完整攻击，伤害÷英雄护甲向上取整。",
@@ -3576,7 +3576,7 @@
         {
             "label": "选择_basic_card_021_2",
             "buttonPath": "Canvas/UIRoot/Hand/Card_2",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_104327\\007_选择_basic_card_021_2.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_132012\\007_选择_basic_card_021_2.png",
             "success": true,
             "message": "",
             "runtimeRule": "选择本身不消耗卡牌或魔力。",
@@ -4209,7 +4209,7 @@
         {
             "label": "点选_enemy_0",
             "buttonPath": "Canvas/UIRoot/Stage/Targets/Enemy_0",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_104327\\008_点选_enemy_0.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_132012\\008_点选_enemy_0.png",
             "success": true,
             "message": "",
             "runtimeRule": "目标与行动条件会在确认时重新校验。",
@@ -4802,7 +4802,7 @@
         {
             "label": "狂怒基础攻击2",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_104327\\009_狂怒基础攻击2.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_132012\\009_狂怒基础攻击2.png",
             "success": true,
             "message": "",
             "runtimeRule": "攻击或格挡2。",
@@ -5407,7 +5407,7 @@
         {
             "label": "选择_basic_card_021_3",
             "buttonPath": "Canvas/UIRoot/Hand/Card_3",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_104327\\010_选择_basic_card_021_3.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_132012\\010_选择_basic_card_021_3.png",
             "success": true,
             "message": "",
             "runtimeRule": "选择本身不消耗卡牌或魔力。",
@@ -6008,7 +6008,7 @@
         {
             "label": "第二张狂怒基础合计4",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_104327\\011_第二张狂怒基础合计4.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_132012\\011_第二张狂怒基础合计4.png",
             "success": true,
             "message": "",
             "runtimeRule": "攻击或格挡2。",
@@ -6581,7 +6581,7 @@
         {
             "label": "结算且不重复受伤",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_104327\\012_结算且不重复受伤.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_132012\\012_结算且不重复受伤.png",
             "success": true,
             "message": "",
             "runtimeRule": "攻击资源按目标和元素合并，应用抗性后与护甲比较；每个敌人的名望只领取一次。",
@@ -7150,7 +7150,7 @@
         {
             "label": "重新开始",
             "buttonPath": "Canvas/UIRoot/Btn_Reset",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_104327\\013_重新开始.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_132012\\013_重新开始.png",
             "success": true,
             "message": "",
             "runtimeRule": "卡牌和部队提供行动；确认后才消耗资源。",
@@ -7747,7 +7747,7 @@
         {
             "label": "选择_basic_card_016_0",
             "buttonPath": "Canvas/UIRoot/Hand/Card_0",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_104327\\014_选择_basic_card_016_0.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_132012\\014_选择_basic_card_016_0.png",
             "success": true,
             "message": "",
             "runtimeRule": "选择本身不消耗卡牌或魔力。",
@@ -8348,7 +8348,7 @@
         {
             "label": "点选_enemy_0",
             "buttonPath": "Canvas/UIRoot/Stage/Targets/Enemy_0",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_104327\\015_点选_enemy_0.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_132012\\015_点选_enemy_0.png",
             "success": true,
             "message": "",
             "runtimeRule": "目标与行动条件会在确认时重新校验。",
@@ -8917,7 +8917,7 @@
         {
             "label": "选择原卡强化",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Enhance",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_104327\\016_选择原卡强化.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_132012\\016_选择原卡强化.png",
             "success": true,
             "message": "",
             "runtimeRule": "目标与行动条件会在确认时重新校验。",
@@ -9502,7 +9502,7 @@
         {
             "label": "蓝色强化决心格挡5",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_104327\\017_蓝色强化决心格挡5.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_132012\\017_蓝色强化决心格挡5.png",
             "success": true,
             "message": "",
             "runtimeRule": "格挡5。",
@@ -10091,7 +10091,7 @@
         {
             "label": "成功格挡免伤",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_104327\\018_成功格挡免伤.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_132012\\018_成功格挡免伤.png",
             "success": true,
             "message": "",
             "runtimeRule": "只有达到格挡需求才免伤；不足时承受完整攻击，伤害÷英雄护甲向上取整。",
@@ -10660,7 +10660,7 @@
         {
             "label": "选择_basic_card_021_2",
             "buttonPath": "Canvas/UIRoot/Hand/Card_2",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_104327\\019_选择_basic_card_021_2.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_132012\\019_选择_basic_card_021_2.png",
             "success": true,
             "message": "",
             "runtimeRule": "选择本身不消耗卡牌或魔力。",
@@ -11237,7 +11237,7 @@
         {
             "label": "点选_enemy_0",
             "buttonPath": "Canvas/UIRoot/Stage/Targets/Enemy_0",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_104327\\020_点选_enemy_0.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_132012\\020_点选_enemy_0.png",
             "success": true,
             "message": "",
             "runtimeRule": "目标与行动条件会在确认时重新校验。",
@@ -11782,7 +11782,7 @@
         {
             "label": "选择原卡强化",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Enhance",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_104327\\021_选择原卡强化.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_132012\\021_选择原卡强化.png",
             "success": true,
             "message": "",
             "runtimeRule": "目标与行动条件会在确认时重新校验。",
@@ -12351,7 +12351,7 @@
         {
             "label": "红色强化狂怒攻击4",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_104327\\022_红色强化狂怒攻击4.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_132012\\022_红色强化狂怒攻击4.png",
             "success": true,
             "message": "",
             "runtimeRule": "攻击4。",
@@ -12916,7 +12916,7 @@
         {
             "label": "选择_basic_card_021_3",
             "buttonPath": "Canvas/UIRoot/Hand/Card_3",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_104327\\023_选择_basic_card_021_3.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_132012\\023_选择_basic_card_021_3.png",
             "success": true,
             "message": "",
             "runtimeRule": "选择本身不消耗卡牌或魔力。",
@@ -13469,7 +13469,7 @@
         {
             "label": "再次声明强化",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Enhance",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_104327\\024_再次声明强化.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_132012\\024_再次声明强化.png",
             "success": true,
             "message": "",
             "runtimeRule": "选择本身不消耗卡牌或魔力。",
@@ -14014,7 +14014,7 @@
         {
             "label": "缺红色魔力不降级打出",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_104327\\025_缺红色魔力不降级打出.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_132012\\025_缺红色魔力不降级打出.png",
             "success": true,
             "message": "",
             "runtimeRule": "选择本身不消耗卡牌或魔力。",
@@ -14575,7 +14575,7 @@
         {
             "label": "取消未支付行动",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Cancel",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_104327\\026_取消未支付行动.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_132012\\026_取消未支付行动.png",
             "success": true,
             "message": "",
             "runtimeRule": "选择本身不消耗卡牌或魔力。",
@@ -15112,7 +15112,7 @@
         {
             "label": "原卡强化获胜",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_104327\\027_原卡强化获胜.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_132012\\027_原卡强化获胜.png",
             "success": true,
             "message": "",
             "runtimeRule": "攻击资源按目标和元素合并，应用抗性后与护甲比较；每个敌人的名望只领取一次。",
@@ -15657,7 +15657,7 @@
         {
             "label": "展开规则",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Rules",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_104327\\028_展开规则.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_132012\\028_展开规则.png",
             "success": true,
             "message": "",
             "runtimeRule": "攻击资源按目标和元素合并，应用抗性后与护甲比较；每个敌人的名望只领取一次。",
@@ -16170,7 +16170,7 @@
         {
             "label": "收起规则",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Rules",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_104327\\029_收起规则.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_132012\\029_收起规则.png",
             "success": true,
             "message": "",
             "runtimeRule": "攻击资源按目标和元素合并，应用抗性后与护甲比较；每个敌人的名望只领取一次。",
@@ -16683,7 +16683,7 @@
         {
             "label": "切换遭遇",
             "buttonPath": "Canvas/UIRoot/Btn_Menu",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_104327\\030_切换遭遇.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_132012\\030_切换遭遇.png",
             "success": true,
             "message": "",
             "runtimeRule": "攻击资源按目标和元素合并，应用抗性后与护甲比较；每个敌人的名望只领取一次。",
@@ -17187,7 +17187,7 @@
         {
             "label": "复用原卡迎战灰狼",
             "buttonPath": "Canvas/UIRoot/AdventureMenu/Btn_wolf_encounter",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_104327\\031_复用原卡迎战灰狼.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_132012\\031_复用原卡迎战灰狼.png",
             "success": true,
             "message": "",
             "runtimeRule": "卡牌和部队提供行动；确认后才消耗资源。",
@@ -17748,7 +17748,7 @@
         {
             "label": "选择_basic_card_016_0",
             "buttonPath": "Canvas/UIRoot/Hand/Card_0",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_104327\\032_选择_basic_card_016_0.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_132012\\032_选择_basic_card_016_0.png",
             "success": true,
             "message": "",
             "runtimeRule": "选择本身不消耗卡牌或魔力。",
@@ -18349,7 +18349,7 @@
         {
             "label": "点选_enemy_0",
             "buttonPath": "Canvas/UIRoot/Stage/Targets/Enemy_0",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_104327\\033_点选_enemy_0.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_132012\\033_点选_enemy_0.png",
             "success": true,
             "message": "",
             "runtimeRule": "目标与行动条件会在确认时重新校验。",
@@ -18918,7 +18918,7 @@
         {
             "label": "选择原卡强化",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Enhance",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_104327\\034_选择原卡强化.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_132012\\034_选择原卡强化.png",
             "success": true,
             "message": "",
             "runtimeRule": "目标与行动条件会在确认时重新校验。",
@@ -19503,7 +19503,7 @@
         {
             "label": "决心强化5",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_104327\\035_决心强化5.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_132012\\035_决心强化5.png",
             "success": true,
             "message": "",
             "runtimeRule": "格挡5。",
@@ -20076,7 +20076,7 @@
         {
             "label": "选择_basic_card_000_4",
             "buttonPath": "Canvas/UIRoot/Hand/Card_4",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_104327\\036_选择_basic_card_000_4.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_132012\\036_选择_basic_card_000_4.png",
             "success": true,
             "message": "",
             "runtimeRule": "选择本身不消耗卡牌或魔力。",
@@ -20661,7 +20661,7 @@
         {
             "label": "行进横置格挡1",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_104327\\037_行进横置格挡1.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_132012\\037_行进横置格挡1.png",
             "success": true,
             "message": "",
             "runtimeRule": "任意非伤牌可以横置提供移动、影响、格挡或普通攻击1。",
@@ -21210,7 +21210,7 @@
         {
             "label": "横置补足迅捷格挡",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_104327\\038_横置补足迅捷格挡.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_132012\\038_横置补足迅捷格挡.png",
             "success": true,
             "message": "",
             "runtimeRule": "只有达到格挡需求才免伤；不足时承受完整攻击，伤害÷英雄护甲向上取整。",
@@ -21739,7 +21739,7 @@
         {
             "label": "选择_basic_card_021_2",
             "buttonPath": "Canvas/UIRoot/Hand/Card_2",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_104327\\039_选择_basic_card_021_2.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_132012\\039_选择_basic_card_021_2.png",
             "success": true,
             "message": "",
             "runtimeRule": "选择本身不消耗卡牌或魔力。",
@@ -22292,7 +22292,7 @@
         {
             "label": "点选_enemy_0",
             "buttonPath": "Canvas/UIRoot/Stage/Targets/Enemy_0",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_104327\\040_点选_enemy_0.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_132012\\040_点选_enemy_0.png",
             "success": true,
             "message": "",
             "runtimeRule": "目标与行动条件会在确认时重新校验。",
@@ -22813,7 +22813,7 @@
         {
             "label": "选择原卡强化",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Enhance",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_104327\\041_选择原卡强化.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_132012\\041_选择原卡强化.png",
             "success": true,
             "message": "",
             "runtimeRule": "目标与行动条件会在确认时重新校验。",
@@ -23358,7 +23358,7 @@
         {
             "label": "狂怒强化4",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_104327\\042_狂怒强化4.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_132012\\042_狂怒强化4.png",
             "success": true,
             "message": "",
             "runtimeRule": "攻击4。",
@@ -23891,7 +23891,7 @@
         {
             "label": "选择_basic_card_016_1",
             "buttonPath": "Canvas/UIRoot/Hand/Card_1",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_104327\\043_选择_basic_card_016_1.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_132012\\043_选择_basic_card_016_1.png",
             "success": true,
             "message": "",
             "runtimeRule": "选择本身不消耗卡牌或魔力。",
@@ -24428,7 +24428,7 @@
         {
             "label": "决心基础改选攻击2",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_104327\\044_决心基础改选攻击2.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_132012\\044_决心基础改选攻击2.png",
             "success": true,
             "message": "",
             "runtimeRule": "攻击或格挡2。",
@@ -24921,7 +24921,7 @@
         {
             "label": "原卡组合战胜灰狼",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_104327\\045_原卡组合战胜灰狼.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Combat\\captures\\Part1_CombatRules_20260910_132012\\045_原卡组合战胜灰狼.png",
             "success": true,
             "message": "",
             "runtimeRule": "攻击资源按目标和元素合并，应用抗性后与护甲比较；每个敌人的名望只领取一次。",

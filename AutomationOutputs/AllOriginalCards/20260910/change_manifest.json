@@ -1,0 +1,2577 @@
+[
+  {
+    "path": "AGENTS.md",
+    "bytes": 40042,
+    "sha256": "f98d6ab008e12de5d84e230a73ed94e300606b9f8adb0846801c6683113edefd"
+  },
+  {
+    "path": "Assets/GameData/cards/advanced_card_000.png",
+    "bytes": 2097087,
+    "sha256": "a92a92158d6bee602ca9f4f5fcd4b5a29a7a1a7ae306c964cea10979f054ec49"
+  },
+  {
+    "path": "Assets/GameData/cards/advanced_card_001.png",
+    "bytes": 1875885,
+    "sha256": "cac1730b9628ffe1d864e211a4cf477ae24cbe47f3d53130c9ba5e5660d26ca2"
+  },
+  {
+    "path": "Assets/GameData/cards/advanced_card_002.png",
+    "bytes": 1902554,
+    "sha256": "0d2ccb46d04d5753158a735e82deb94cfbf1d9421926d68298ced8b3df2129c6"
+  },
+  {
+    "path": "Assets/GameData/cards/advanced_card_003.png",
+    "bytes": 2002919,
+    "sha256": "45effa2c60233dafee971e90343743bbab15f66bf21edc59ae4191f5a5ce4142"
+  },
+  {
+    "path": "Assets/GameData/cards/advanced_card_004.png",
+    "bytes": 2171419,
+    "sha256": "89fe459978bb273fb53e02a9afc7f10e8bd3577fb6f5a69e847cd932d9e3286b"
+  },
+  {
+    "path": "Assets/Resources/CardVerification.meta",
+    "bytes": 172,
+    "sha256": "64ee442f554b17416b84659c5e7cc4a9c2936debcdfb8631649d9c81e69a1a7b"
+  },
+  {
+    "path": "Assets/Resources/CardVerification/Catalog.asset",
+    "bytes": 20649,
+    "sha256": "613817dd722f206f3663ec7e2adfb672a0d6ca1f9f4a6557ed90c059417b9155"
+  },
+  {
+    "path": "Assets/Resources/CardVerification/Catalog.asset.meta",
+    "bytes": 189,
+    "sha256": "155f61f0f56aa6cb526601937adc2f81db45adc6be2dced279e072953a495b59"
+  },
+  {
+    "path": "Assets/Resources/CardVerification/cases.json",
+    "bytes": 313940,
+    "sha256": "e9d9ec44c32b284ee20b91bf1ff0c6e7ea9dc2512cfe2263691421c628ac754c"
+  },
+  {
+    "path": "Assets/Resources/CardVerification/cases.json.meta",
+    "bytes": 158,
+    "sha256": "1f1821bee2175daee71cb4f496b663694ecafd7419c8115e7fd9fca5f3b09665"
+  },
+  {
+    "path": "Assets/Scenes/Verification.meta",
+    "bytes": 172,
+    "sha256": "044bdaa2b95adcfbd81265ecdca0da21569c8831f5a832c0387d8c0fe0839d0b"
+  },
+  {
+    "path": "Assets/Scenes/Verification/advanced_card.unity",
+    "bytes": 6908,
+    "sha256": "0b94b26f54ebaabd91164d1679e81e5b46d9fd725b1c0a5579ab0e19d117ce1e"
+  },
+  {
+    "path": "Assets/Scenes/Verification/advanced_card.unity.meta",
+    "bytes": 155,
+    "sha256": "2f2527673f2b23cde3aa0f5d3ac8aac0f5c1d531e8d6adac36eba723913500c8"
+  },
+  {
+    "path": "Assets/Scenes/Verification/basic_card.unity",
+    "bytes": 6905,
+    "sha256": "c4d557f1d8c2f13176495b3d9bddb6a93703906a55f4681cc6919a52b20cd976"
+  },
+  {
+    "path": "Assets/Scenes/Verification/basic_card.unity.meta",
+    "bytes": 155,
+    "sha256": "98937c3eca02432e47c1d02ef0153f956545df771558bb7dd5cf0e8a1eca9823"
+  },
+  {
+    "path": "Assets/Scenes/Verification/items.unity",
+    "bytes": 6900,
+    "sha256": "85a69084b6382682b6eaff2ce5bade41509afa05cd8706763c07f5850a610524"
+  },
+  {
+    "path": "Assets/Scenes/Verification/items.unity.meta",
+    "bytes": 155,
+    "sha256": "b82460f80cbedfc4779d4dac4dd0022f114f5da57ce13c316cf2e3f7a808e694"
+  },
+  {
+    "path": "Assets/Scenes/Verification/magic.unity",
+    "bytes": 6900,
+    "sha256": "7f6c4082a2fc93067476ddadd5a57d8f2988d1dfda24b1af2d24e680b73fee48"
+  },
+  {
+    "path": "Assets/Scenes/Verification/magic.unity.meta",
+    "bytes": 155,
+    "sha256": "6f5b226e1b1459340dc8931f6d27ac42dc11a4ddd0299d5bae2d2c5c212f94ec"
+  },
+  {
+    "path": "Assets/Scripts/SceneAutomation/Editor/AllCardVerificationMenus.cs",
+    "bytes": 5979,
+    "sha256": "86f4eba4678e2dd7b12245e48cb7419adbedc980663e3f9fbccb8ad42f77dbd4"
+  },
+  {
+    "path": "Assets/Scripts/SceneAutomation/Editor/AllCardVerificationMenus.cs.meta",
+    "bytes": 59,
+    "sha256": "77f386772cc8193e11114e62abdaa239b92ad999d9c420b1e01600ab1d6ebf48"
+  },
+  {
+    "path": "Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs",
+    "bytes": 18712,
+    "sha256": "b4f2f1e36f0184ee708cbf986862347d9556b3e04f415dbce59c6709e2d6e468"
+  },
+  {
+    "path": "Assets/Scripts/SceneAutomation/SceneAutomationStep.cs",
+    "bytes": 938,
+    "sha256": "4b6b88ddb31fb1a75a3b67048eeff79386ad27071a97ef41ca1835c99390e1f2"
+  },
+  {
+    "path": "Assets/Scripts/Testing/CardVerificationCase.cs",
+    "bytes": 454,
+    "sha256": "6c11e0d6f206f015fd6e00a6096cf901174c07c7f1e4afa07e692eb9a15ef6cd"
+  },
+  {
+    "path": "Assets/Scripts/Testing/CardVerificationCase.cs.meta",
+    "bytes": 59,
+    "sha256": "c56c1da4fe0ca86af7525adf5bedb8ed00a3ba2f0bdf81f63655f51a2d10c0c7"
+  },
+  {
+    "path": "Assets/Scripts/Testing/CardVerificationCatalog.cs",
+    "bytes": 384,
+    "sha256": "6c3078e20696eaaf0dfe44a9d993164410700725a95ffe5051bbaad75aa58668"
+  },
+  {
+    "path": "Assets/Scripts/Testing/CardVerificationCatalog.cs.meta",
+    "bytes": 59,
+    "sha256": "b68e590f3ec6cf06832d42287547181d4a68bc74b6d8f29704460842b9cdf145"
+  },
+  {
+    "path": "Assets/Scripts/Testing/CardVerificationCheck.cs",
+    "bytes": 187,
+    "sha256": "4d85590cf83fc1fdaf9e769f8852df56c7c9dc76e947694f1766925dfb4727f2"
+  },
+  {
+    "path": "Assets/Scripts/Testing/CardVerificationCheck.cs.meta",
+    "bytes": 59,
+    "sha256": "9625885ac6eb28833c58217079ca84f9463fb4b21b7a66d49125a34662fe6894"
+  },
+  {
+    "path": "Assets/Scripts/Testing/CardVerificationResult.cs",
+    "bytes": 477,
+    "sha256": "68870560fc9ac18a93e74af995885cc6d6faf2c48df2357a1d47fe551ef0cb71"
+  },
+  {
+    "path": "Assets/Scripts/Testing/CardVerificationResult.cs.meta",
+    "bytes": 59,
+    "sha256": "7e1b8b0abdfbedb6444cd007d6e0179a1394a63ca85e547185e9c6abb03bddef"
+  },
+  {
+    "path": "Assets/Scripts/Testing/CardVerificationResults.cs",
+    "bytes": 242,
+    "sha256": "7a7d4e6b5e6881c77adea8c5dba9871a1247e5aab3e844f39a050808b308bdf9"
+  },
+  {
+    "path": "Assets/Scripts/Testing/CardVerificationResults.cs.meta",
+    "bytes": 59,
+    "sha256": "8f9356aed2f416c25f1af690fa1da96d57a85d399fc8156b2b876e5510984747"
+  },
+  {
+    "path": "Assets/Scripts/Testing/CardVerificationSuite.cs",
+    "bytes": 124,
+    "sha256": "d9ead5d79baca1f5e4944bfd2fd9b65d224de946903f4ef28f413fe45c035f42"
+  },
+  {
+    "path": "Assets/Scripts/Testing/CardVerificationSuite.cs.meta",
+    "bytes": 59,
+    "sha256": "3619a7be1299fbbf105324d9ff60dd0562b2fb57ee9e7569bc904d7d6a935452"
+  },
+  {
+    "path": "Assets/Scripts/Testing/CardVerificationValue.cs",
+    "bytes": 132,
+    "sha256": "170ca0cb562ff888c0f4d8ce2d21c2739de9094cc88026c207daff9fcfca7120"
+  },
+  {
+    "path": "Assets/Scripts/Testing/CardVerificationValue.cs.meta",
+    "bytes": 59,
+    "sha256": "072780abed52cb2c9fa1a6b0b6aa7c122a11b522d87d69c93111e6cb0fdab1e5"
+  },
+  {
+    "path": "Assets/Scripts/Testing/OriginalCardVerificationController.cs",
+    "bytes": 19441,
+    "sha256": "c41d82963a6cfbb4e4b1f8a1ab636f3ff275875f31f3866ba630480461121f0e"
+  },
+  {
+    "path": "Assets/Scripts/Testing/OriginalCardVerificationController.cs.meta",
+    "bytes": 59,
+    "sha256": "2cf96fe6c27542d2f9acb3a73813de45e1366e154f894ec40c81a87065105bd6"
+  },
+  {
+    "path": "AutomationConfigs/AllOriginalCards/advanced_card.json",
+    "bytes": 190099,
+    "sha256": "20ed78715e52d479acb47914e80311fa07bd41f0cd4aa4cf07008ca3ca7038c4"
+  },
+  {
+    "path": "AutomationConfigs/AllOriginalCards/basic_card.json",
+    "bytes": 206740,
+    "sha256": "4aaa66ead052bb36fe16f5a7831b5b6dbecb12a0d633195ca6145446dbfeae3a"
+  },
+  {
+    "path": "AutomationConfigs/AllOriginalCards/items.json",
+    "bytes": 90708,
+    "sha256": "8d76efd7bdb9a700df49eb04eab31d8d2e5823e8f2ca21cbc7a92edbecf3ab2a"
+  },
+  {
+    "path": "AutomationConfigs/AllOriginalCards/magic.json",
+    "bytes": 87074,
+    "sha256": "4fc476d593f17d4d9dfba858aa5791b91cef54245e9e70f006d661edd83a86b9"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/000_Scene Start.png",
+    "bytes": 950730,
+    "sha256": "23276fd9e571d4b38649ab7195b073e449681296abc7e8030e97ec3757590275"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/002_advanced_card_000_00_execute.png",
+    "bytes": 1008943,
+    "sha256": "fb3fba2907f437ca4280bc31548ed23795807ac97a446fef2107cf5fc1241a63"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/005_advanced_card_000_01_execute.png",
+    "bytes": 1026254,
+    "sha256": "703c5c79c0f550957bc91d8bacc202904cc88d94c839eea4a43d9b6836a6ca42"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/008_advanced_card_001_00_execute.png",
+    "bytes": 968671,
+    "sha256": "5e834ed5bebf58734a9935262b676a07c9dd40d86943ab322d2a0ba1ccd88de0"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/011_advanced_card_001_01_execute.png",
+    "bytes": 985260,
+    "sha256": "7eb6dfb38e8af3ae4d2be2c4203454f94fa063544e6494baddd27ea93d4278b8"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/014_advanced_card_002_00_execute.png",
+    "bytes": 994032,
+    "sha256": "c96a242ee1e02d656221b5e7d46ee180a8da8c6655e2be6c13e8f421778c835a"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/017_advanced_card_002_01_execute.png",
+    "bytes": 987033,
+    "sha256": "3f25ad8e442ac443029d4cbc0f36cabffb15fd7fb0f1c3f3d7664773253de42b"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/020_advanced_card_003_00_execute.png",
+    "bytes": 1002643,
+    "sha256": "8557c9fa06ec29efd73f96aba9c630642c1424e4718c42c0d89b9a3bcb6ee75f"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/023_advanced_card_003_01_execute.png",
+    "bytes": 1013790,
+    "sha256": "e9c26c5ccd04894f99d3681d4095e0d7b4a0efc97db0b9b17bfd551b5282381c"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/026_advanced_card_004_00_execute.png",
+    "bytes": 1054722,
+    "sha256": "902ebae0e1a680871189ba78888eb8ada27547e7000b0fe7354de4dc3e32c1e3"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/029_advanced_card_004_01_execute.png",
+    "bytes": 1066035,
+    "sha256": "22219a330fbd2251337f511193f6bb19f0824fb84992d383434b0aa091417bb2"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/032_advanced_card_004_02_execute.png",
+    "bytes": 1063543,
+    "sha256": "2068465050bec85c7965beb39832e4012a6883a70dd7b43ecfe7e3d9eefda5f8"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/035_advanced_card_004_03_execute.png",
+    "bytes": 1063013,
+    "sha256": "0e68de173c99b216d126c6893e00cf378a8718df2e78b3a6f433c816aa91c738"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/038_advanced_card_005_00_execute.png",
+    "bytes": 954263,
+    "sha256": "36416c25293b29397d3ecb72e8a469648d932ba46b1b9024d06c3fc2962ff07b"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/041_advanced_card_005_01_execute.png",
+    "bytes": 986145,
+    "sha256": "24ecb582d884669ac0ce2b47c76c4ed792ca99c8ef75292e4f7a7c32a196dfc4"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/044_advanced_card_006_00_execute.png",
+    "bytes": 1036987,
+    "sha256": "db2b3529a0165b40de5ebc5a7b893cd78b66426aaeb198f15d19097fe2ec636d"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/047_advanced_card_006_01_execute.png",
+    "bytes": 1057005,
+    "sha256": "fe571d94e85812ed0eddc153935d234e020c7efafcdcb5ea2021b3e017f58153"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/050_advanced_card_007_00_execute.png",
+    "bytes": 1032877,
+    "sha256": "d113d97ee1b91c99954e135d72948fd68ca6520aa8cd5ef24a425a5f175497b8"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/053_advanced_card_007_01_execute.png",
+    "bytes": 1020716,
+    "sha256": "b02c4123945c81bf1292916c21ce9465dd691222348c000da6b8ae3dbe033e85"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/056_advanced_card_007_02_execute.png",
+    "bytes": 1029167,
+    "sha256": "2e19f830ac96e33ee581954e2f768d0d2126db61bbb5643a8a67c3650c9728bb"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/059_advanced_card_007_03_execute.png",
+    "bytes": 1017859,
+    "sha256": "ca642d21150795b368517ef81f3c70f7277d9cf5d0fde7f11df12bd90e34e647"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/062_advanced_card_008_00_execute.png",
+    "bytes": 1000071,
+    "sha256": "dad220dee382a8aa279ddb94b118e733707c1d5373020447571d97504328de4a"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/065_advanced_card_008_01_execute.png",
+    "bytes": 981715,
+    "sha256": "48501dd66eb9c2b8f41ec3e0b7ae6b1a36484b1cf1c2a6ee15c8486c1f231ad3"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/068_advanced_card_008_02_execute.png",
+    "bytes": 1011180,
+    "sha256": "cf9c7d56a4225859f871624117d01bc1345be93c28621dd4582b009fd8d687d9"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/071_advanced_card_008_03_execute.png",
+    "bytes": 992188,
+    "sha256": "1314e4b0f2f66aedd8901b2b34cff85fcddf238cdc0c628f7a6f1e863f09e79e"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/074_advanced_card_009_00_execute.png",
+    "bytes": 999664,
+    "sha256": "b3527d4a675be90073519bd94e2903cbac30aa6de8086d2b581377cb2c147ca6"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/077_advanced_card_009_01_execute.png",
+    "bytes": 1018062,
+    "sha256": "dcc8462dbf4769f8fa7153d5183d41c3a447b94c7f1a5d3e2b3f6f780c0de51b"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/080_advanced_card_010_00_execute.png",
+    "bytes": 1033490,
+    "sha256": "65cdb33790177a20033ab9d0c0694a68a6716caf2cb561b66853c4b7e6a5d10e"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/083_advanced_card_010_01_execute.png",
+    "bytes": 1080434,
+    "sha256": "e7cd388ba9a68c4939c9c0daf1d19c14c7679076cd7db78fe1043241df76f35c"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/086_advanced_card_011_00_execute.png",
+    "bytes": 1012373,
+    "sha256": "f50dfbe09e9bda7a4393bc638f1e4e69541b622e53fa72f209267c2363d4dc81"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/089_advanced_card_011_01_execute.png",
+    "bytes": 1031624,
+    "sha256": "59fe2d35483c2eecf1b3c72540291ef43bfd813775cb9862a674627a7dd47d5b"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/092_advanced_card_012_00_execute.png",
+    "bytes": 1016987,
+    "sha256": "3ad7c9e82a2212ba741855b07782144e391d792ed4e97f6ab47a827e30f7a7c3"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/095_advanced_card_012_01_execute.png",
+    "bytes": 1025447,
+    "sha256": "a85f7c64242fafeaad7a981dea3c76245bfa64d8b66b78d9592f583aaca3bd1b"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/098_advanced_card_013_00_execute.png",
+    "bytes": 1070164,
+    "sha256": "f92254ede3697600ce0ef0229081915a463e8b1260a0188e34ae0ba60a537599"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/101_advanced_card_013_01_execute.png",
+    "bytes": 1070175,
+    "sha256": "2535c1695905a0ff42e2e39c295641d632aabd5ad9faea427608d0f932d9ba53"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/104_advanced_card_014_00_execute.png",
+    "bytes": 1023062,
+    "sha256": "b3e5f1cd26911e25e8671979de88a2fe1cb68c2a3e57e149d53f6754e4e8d768"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/107_advanced_card_014_01_execute.png",
+    "bytes": 1033670,
+    "sha256": "40b51f1e620b70fe5bf11e0b4d8157935c01c4e49aad6258066f5a9524d4bfbd"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/110_advanced_card_015_00_execute.png",
+    "bytes": 1031337,
+    "sha256": "8347e1ed433e9072b3ee282f7fe685f5bd78df456be651bfee61228f0ac75409"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/113_advanced_card_015_01_execute.png",
+    "bytes": 1020808,
+    "sha256": "4fe2fccf7a00b5ebca204b40d1dfc0ecff83ff0a916b83738e971165708a5871"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/116_advanced_card_016_00_execute.png",
+    "bytes": 1087582,
+    "sha256": "0868ab75f3f84b61d1f6f9ff52e9131dceba7010f49a4136b91a65529825d2b7"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/119_advanced_card_016_01_execute.png",
+    "bytes": 1077701,
+    "sha256": "ee219ea3db5a2b213942ecfee581b89f239bb9908c47cba3816edcb5135d32a7"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/122_advanced_card_017_00_execute.png",
+    "bytes": 1027055,
+    "sha256": "6f96aa569d14aac99fff09f8a01061ff8660555716fc966235d2f0ef1a2a6f36"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/125_advanced_card_017_01_execute.png",
+    "bytes": 1031289,
+    "sha256": "9f48a2ede45e06b30301bc8e7f60723b1cf91e73b8517abe2af5eb60b73dc560"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/128_advanced_card_018_00_execute.png",
+    "bytes": 1003774,
+    "sha256": "caebb1fd9d9c8c3980f48ffd18ccff0db9775f55896bcd1c9f8a535e91f32b22"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/131_advanced_card_018_01_execute.png",
+    "bytes": 1025429,
+    "sha256": "781008c046c2b93b9e848db8f05cbaa6cdb5a76a1f5997ce9808e6fa3866758b"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/134_advanced_card_019_00_execute.png",
+    "bytes": 1020230,
+    "sha256": "b9260646368ea3f3f4a612fda560b74fb06f2eb7804a0b9c7c3cea916b8b1649"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/137_advanced_card_019_01_execute.png",
+    "bytes": 1029505,
+    "sha256": "76632766052bded821ab3c5d6d3c74cda6f2291148285e3baa2932d451012da1"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/140_advanced_card_020_00_execute.png",
+    "bytes": 1055354,
+    "sha256": "914a169d7b6d3fce3088bce4f0aa42f36b1ebb8e3a5c7dd56651dfe6bc99c7d1"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/143_advanced_card_020_01_execute.png",
+    "bytes": 1044525,
+    "sha256": "ee87859d7b46e6972eb1c9b734c4e43e401fe1db209347d9f8df02340623ee54"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/146_advanced_card_021_00_execute.png",
+    "bytes": 1002229,
+    "sha256": "adc74d33f743480902bf8d77045de175926cff90cd11288ba9e9dfe1bfee5181"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/149_advanced_card_021_01_execute.png",
+    "bytes": 1004564,
+    "sha256": "a371ff15afd6e8a6623e7904fcaa5f5ab1f6799ac666d90aa5aa407bb74ccca5"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/152_advanced_card_022_00_execute.png",
+    "bytes": 1034126,
+    "sha256": "6fa0e99f2b3b17cb2f6aebf12738ed31ef30aa9de9b8bbea8099b2b1dd7e92c6"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/155_advanced_card_022_01_execute.png",
+    "bytes": 1060199,
+    "sha256": "8cb66e5a24e570a1d343ae26b028bbc5ddbe5f68090af61e8d1658fc9ec93b3c"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/158_advanced_card_023_00_execute.png",
+    "bytes": 1042280,
+    "sha256": "2050f42b3e8a17315a1e7347adee86f639f6a2bb4fe9c6278e60a838d767d3ab"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/161_advanced_card_023_01_execute.png",
+    "bytes": 1039782,
+    "sha256": "626b1ae054382c11cc4365913ed91887bed0c44e8e726e022ca6b73601601306"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/164_advanced_card_024_00_execute.png",
+    "bytes": 1030539,
+    "sha256": "53c0dfa756e7969db9a23493dc1f08c43c1d566bd31c4be8f1009e0f38d97fd6"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/167_advanced_card_024_01_execute.png",
+    "bytes": 1044622,
+    "sha256": "9343829574aea2d3095d37b0c626566e5afb0aaa702d519dde0cf5f5a37a1608"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/170_advanced_card_025_00_execute.png",
+    "bytes": 1052650,
+    "sha256": "15b73880c7ebb2d35c73d575daf16f706c636e174bcca3528b6ec47a19710fa7"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/173_advanced_card_025_01_execute.png",
+    "bytes": 1058412,
+    "sha256": "a663e2915202a01abaa6886df32777ff28cd13d990928cfbc05d41a31062f4b1"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/176_advanced_card_026_00_execute.png",
+    "bytes": 1039817,
+    "sha256": "545ec1b53eaf9891a35ce70f2265e5a797a4014055323aa2c01677ca18e37cc8"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/179_advanced_card_026_01_execute.png",
+    "bytes": 1046424,
+    "sha256": "183a84e45a2733c8484f1c31c7a70e768f966a67e4f958e6c3bcab0353d628ed"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/182_advanced_card_027_00_execute.png",
+    "bytes": 1029339,
+    "sha256": "4e689ff80f20acf64b99c59ca8321b41f159e7cdae87a3eaf0dc4e9c2f76bd01"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/185_advanced_card_027_01_execute.png",
+    "bytes": 1026947,
+    "sha256": "5f2a23f8f1b693912fff71ee6b511765c0732673de2def23d58499cd115b834f"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/188_advanced_card_028_00_execute.png",
+    "bytes": 1066223,
+    "sha256": "733362b459b5e4bc436807489072fcea983f58827fcdbb9275a4bea96ceecc87"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/191_advanced_card_028_01_execute.png",
+    "bytes": 1076258,
+    "sha256": "50dc26752e1d41b33c56467ee4b42ee51a157e8ed3c480d204ff853ad981ee59"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/194_advanced_card_029_00_execute.png",
+    "bytes": 1110916,
+    "sha256": "f0ad2524688274019da4ad719cd9ecb6344d70725997bfe2f053e8a3a26654c8"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/197_advanced_card_029_01_execute.png",
+    "bytes": 1127433,
+    "sha256": "e7f37b28539c41a3861b600ee4c498f7e4fcd8e413d66aaf9281f173ea1b6c2e"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/200_advanced_card_030_00_execute.png",
+    "bytes": 1064855,
+    "sha256": "675e410ccd302cf4c8b64c39203ebc6ce5846fd8601fb048bd08d0cda0dcc579"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/203_advanced_card_030_01_execute.png",
+    "bytes": 1077781,
+    "sha256": "864ab7128cfb046b5d6861e2ac5e5a626e9ed7a36c3348615afa3852664d0047"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/206_advanced_card_031_00_execute.png",
+    "bytes": 1068887,
+    "sha256": "14605a71ac5d2807525cb3e96822643fc9974f3e759d27393a31b956ffeea26f"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/209_advanced_card_031_01_execute.png",
+    "bytes": 1099177,
+    "sha256": "1fe6d8a62a2b8a7db456596896f7f618fbe3e7258e15594825af71e22b779623"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/212_advanced_card_032_00_execute.png",
+    "bytes": 1053319,
+    "sha256": "142d5fee30fa4a9d6dadd3d9f41f6baf260eeadea9d7edc440c23d55e98bafbf"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/215_advanced_card_032_01_execute.png",
+    "bytes": 1031225,
+    "sha256": "59664f4366927daf37c3014a996ace35eff9bcc08b2011b0744d43a77f441076"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/218_advanced_card_033_00_execute.png",
+    "bytes": 1006285,
+    "sha256": "4219bb4f4a1938b3a364b104e08e28debc4bda16b49d16bcab5bc5de227676d8"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/221_advanced_card_033_01_execute.png",
+    "bytes": 1015571,
+    "sha256": "b373239979367d3066d34811070b78acef135fe9d67bbfd5ae94b37fd49ce0ea"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/224_advanced_card_034_00_execute.png",
+    "bytes": 1068582,
+    "sha256": "a8518968f519380f025dc235c29cba3c658b54b23d59b48eb0623d5e65f25158"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/227_advanced_card_034_01_execute.png",
+    "bytes": 1079979,
+    "sha256": "f789a7d12ae8f3a052f4715660626d178867d4b20703071ffda34d52f01133cb"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/230_advanced_card_035_00_execute.png",
+    "bytes": 1071087,
+    "sha256": "e4d71867e9f67ad6da7d84108c23ec69b4f88da1dfd7df41433e0a117df038b4"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/233_advanced_card_035_01_execute.png",
+    "bytes": 1088026,
+    "sha256": "0e982c0d5031f5c4786344260a49fffe4c1c8dbe84c866c214f4bdf5c36373b7"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/236_advanced_card_036_00_execute.png",
+    "bytes": 1067319,
+    "sha256": "73dcdefb863c08159149b51e3a7d7ebdbe6b5d925de644b629ce931274ef5c25"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/239_advanced_card_036_01_execute.png",
+    "bytes": 1085463,
+    "sha256": "01330c4c196cc8e9f7edbe78bd167d820dd92bb2ca58a08bd647eb6f549bc779"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/242_advanced_card_037_00_execute.png",
+    "bytes": 1061416,
+    "sha256": "06af0aa8ace41a7eda405c8dd6266cecc8bc498f8ffedbd29cfab6c5e6d58fef"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/245_advanced_card_037_01_execute.png",
+    "bytes": 1079917,
+    "sha256": "6f0b45ba5b0ace328f293a449bf537c0f5808639bdfae2da44cac4a8211b38be"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/248_advanced_card_038_00_execute.png",
+    "bytes": 1013479,
+    "sha256": "ea89b730ebdf3f592ab43d10aa09a2869dd3c3911540d0cf18f609b8b803585a"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/251_advanced_card_038_01_execute.png",
+    "bytes": 1012543,
+    "sha256": "2f230da6bfe5ae5641e1c2b4c57f891d68263eae80642ce2234c588bc182365b"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/254_advanced_card_039_00_execute.png",
+    "bytes": 1000888,
+    "sha256": "cd2d2d4c6c8fee9c772b947ca4deab280e1b9bb4ca8390f391e101f2db7ec88a"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/257_advanced_card_039_01_execute.png",
+    "bytes": 1046662,
+    "sha256": "973caa24b881935daef417c6a845f71fa4ca060626005ec02ee016c0c7f6a024"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/260_advanced_card_040_00_execute.png",
+    "bytes": 1008770,
+    "sha256": "284c7079d9b228b7ac8366edf35319cf0dff5ca6f78e66b94084122e088b7718"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/263_advanced_card_040_01_execute.png",
+    "bytes": 1039871,
+    "sha256": "ff7af14532cd3b3b2d29fb84c6114e8e588fc288c760f2175366e3719b83cd14"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/266_advanced_card_041_00_execute.png",
+    "bytes": 1008278,
+    "sha256": "12e969800615f0416a4138de21f6d62878ccad16153c2cc0afd92c09508f9ee8"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/269_advanced_card_041_01_execute.png",
+    "bytes": 1027736,
+    "sha256": "6d1fe94931ca6b7d36b4744829dbcac30005cef46897ee22f7cd2ca11a4cbeb7"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/272_advanced_card_042_00_execute.png",
+    "bytes": 1042534,
+    "sha256": "0081dcfd1a505eee737ec797cdacb55b5ef015f44b886d907e2cb9518f6b3b3f"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/275_advanced_card_042_01_execute.png",
+    "bytes": 1058034,
+    "sha256": "f6d2bf35921d1798168f80f692675576c3a61207d9488c1c9a4a09063751bac0"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/278_advanced_card_043_00_execute.png",
+    "bytes": 1008907,
+    "sha256": "d62318123dbaafba5e4ef2f69a166434d6346748acdb3e9436ca393f8a367fde"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/281_advanced_card_043_01_execute.png",
+    "bytes": 1018490,
+    "sha256": "ce574a9769761a3aca1341fb399f07eadab1d4bd8d2a68ea784cac92cc43370b"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/284_advanced_card_044_00_execute.png",
+    "bytes": 290117,
+    "sha256": "4fd143efafa1ab5d2d7014ba3816046e9e99060fa9845ab0f7812401f037564f"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/287_advanced_card_044_01_execute.png",
+    "bytes": 290799,
+    "sha256": "5205b5c1805d42f09d92d0f52f75990e7a8b01b747b5987b37c548e854dbb7a5"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/290_advanced_card_045_00_execute.png",
+    "bytes": 288491,
+    "sha256": "166a9151a51e83e8368acf13689dbbf1b70919e4c50ca28423a207fae45cc73e"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/293_advanced_card_045_01_execute.png",
+    "bytes": 288854,
+    "sha256": "3fdc54f0c9371752e5c35bb2c5ab95e22a19836dcb6c3c51fbd6872db28db5fe"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/296_advanced_card_046_00_execute.png",
+    "bytes": 295638,
+    "sha256": "5636a6496914d6919d6dd5c702a2af0c1d7285d613db5ae710edb928cc4699e3"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/299_advanced_card_046_01_execute.png",
+    "bytes": 296296,
+    "sha256": "f7f0247c3887666d534f9f54a5c9608717dd7077f3d3c7f529c0f49794ea2b27"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/302_advanced_card_047_00_execute.png",
+    "bytes": 904493,
+    "sha256": "215a50908aecf7350be489ceffff033c6f94bd8f687acb744f616cf08d9030f9"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/captures/305_advanced_card_047_01_execute.png",
+    "bytes": 905017,
+    "sha256": "1436ad912ff799ecf755008caa7f944d0c18e5d49257c556df4c94f0dcfc8e98"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/effects.json",
+    "bytes": 3874664,
+    "sha256": "58fe2b49c018b088124ac9ca22c4bc09441f6c6adf3e45e2a8013e29bbf75049"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/report.json",
+    "bytes": 1318623,
+    "sha256": "145d46b1749abcf3eede31b46b3ac7a92e045c6164e3f8e40b941698834f97ff"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/advanced_card/逐例验收.md",
+    "bytes": 96068,
+    "sha256": "7beb2ce9de12dc4cc0570e9214a9db62a65f55f554aa755809e88b6750a69301"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/adventure_regression.json",
+    "bytes": 871,
+    "sha256": "32dbbd9e590dd4d3d860e0a818d37a61fe0f83a6fc06df9327ace3be7da49478"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/000_Scene Start.png",
+    "bytes": 893468,
+    "sha256": "84811995a6c713055c45e77449c8b33164d9f027a29677dc8d0e5306eb941a05"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/002_basic_card_000_00_execute.png",
+    "bytes": 945030,
+    "sha256": "fec87d1460108bfbb6870933710134b54ad94b4737c4884ee9377c48b3647a03"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/005_basic_card_014_00_execute.png",
+    "bytes": 933411,
+    "sha256": "b77e2e7c517b557e1da9bfe03337ab07b99ee4a08387477bfb203e12fb89b15a"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/008_basic_card_001_00_execute.png",
+    "bytes": 1002488,
+    "sha256": "e4045d1d8611b5b0eb6b5e426c2e0de3325ea5da5c6f15610db54255a2980fa6"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/011_basic_card_001_01_execute.png",
+    "bytes": 983304,
+    "sha256": "4e4938d3860d55cc5d5ae2bc49c7c5860212361f5b73ac222dd488b64c0639db"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/014_basic_card_002_00_execute.png",
+    "bytes": 994656,
+    "sha256": "6990e6f0f9ff7d5f1c489f7f58b6c2ae0aa9d7945eeaf45ca3b1cdf3ed951847"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/017_basic_card_002_01_execute.png",
+    "bytes": 994967,
+    "sha256": "4ad8b0558f6ccd02758e829403056910ec4a2234162e5bf5358d647c972dab52"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/020_basic_card_002_02_execute.png",
+    "bytes": 994473,
+    "sha256": "a7d28d388f5813d7f130840a68e8087eacb8ac55dc9d98fb4ad0c6aa43d4e7ee"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/023_basic_card_006_00_execute.png",
+    "bytes": 1022181,
+    "sha256": "6ff4db03a82e6abb305ae88ba4b86452d3f85babcf09280b3964f23ad7e85176"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/026_basic_card_006_01_execute.png",
+    "bytes": 1022207,
+    "sha256": "8d0abdbc530b4a4921aa377e969ad6b787742ced3a339859322c931803ba497e"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/029_basic_card_006_02_execute.png",
+    "bytes": 1022296,
+    "sha256": "9b608e397db24628fa3187d730a949747ce4bcba751641c1dba596b46657e111"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/032_basic_card_006_03_execute.png",
+    "bytes": 1035493,
+    "sha256": "d723c575eb5d6b8840ed26932813f5a6b928e121ed11bc80173c3b81ea467cb8"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/035_basic_card_003_00_execute.png",
+    "bytes": 1092654,
+    "sha256": "5b01db0ea2e75c45955dcd74c79604ee2dfb136e807421398c12f977dc06917e"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/038_basic_card_004_00_execute.png",
+    "bytes": 999863,
+    "sha256": "af345950276eacb5640464bf4bb4e14c6e2cbbb319b6925ed2f257ea1826fd82"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/041_basic_card_004_01_execute.png",
+    "bytes": 979799,
+    "sha256": "163abffa3f20727fa66a9d658fe207bc8fb0b769b2934f7488f60776ff657ab8"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/044_basic_card_005_00_execute.png",
+    "bytes": 1013359,
+    "sha256": "4b2cc6920c0a7617fe251d242e294ce71ef4c1227c7b354e9a861a06b224c661"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/047_basic_card_005_01_execute.png",
+    "bytes": 998798,
+    "sha256": "3137c4f63f623110d17084523d7018a8193b4c9521cd8489663b29dee27d6b9e"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/050_basic_card_005_02_execute.png",
+    "bytes": 1000672,
+    "sha256": "084e47e7fbb6844827886db75754896a0da54e78b625595407b2b0530799d2e6"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/053_basic_card_005_03_execute.png",
+    "bytes": 1010358,
+    "sha256": "b97b981d9088bf27301aee6bf077427cbf158b181475364784d52c06e1db3011"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/056_basic_card_007_00_execute.png",
+    "bytes": 929197,
+    "sha256": "488b4c23bcd154b0691591eee71e7b0501d47c08e6c072b207d071774b207b12"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/059_basic_card_008_00_execute.png",
+    "bytes": 886362,
+    "sha256": "ad7681bf20247da76f043af9b9ebb75f96369e9db76795be4d6a003be7817b01"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/062_basic_card_009_00_execute.png",
+    "bytes": 991168,
+    "sha256": "49ea9e7640e15cfdb87e77d41e8a882f9cf8c23c375406dc327bcb5dc3d3500f"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/065_basic_card_013_00_execute.png",
+    "bytes": 995942,
+    "sha256": "f109e7f09cc5f3f7eb1c33137f6d231c71be1b3631420d7044a51f8210c011c9"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/068_basic_card_010_00_execute.png",
+    "bytes": 968282,
+    "sha256": "660cefd96a49b30b2d3ca80b7976bd505786ece489cdecab6f3cfce5f8fc4212"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/071_basic_card_010_01_execute.png",
+    "bytes": 968191,
+    "sha256": "191e79db2e68d20c285d427c9d57b2b211f5a9c787a49b6da8c4977f94afc48d"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/074_basic_card_010_02_execute.png",
+    "bytes": 989515,
+    "sha256": "4349ee4b0f7df6b9628d870fcf4d143be4d4e84c01a38d142d2790ac689092d7"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/077_basic_card_011_00_execute.png",
+    "bytes": 962122,
+    "sha256": "94646d22d6e608617d83c784da2c459ba36493ca013b43ced8a8b869f7b83041"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/080_basic_card_011_01_execute.png",
+    "bytes": 961787,
+    "sha256": "f48f5061a8f6a18c3828b42fdb4bbfd2e5840b26121556e198d0a03a255e0bd9"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/083_basic_card_012_00_execute.png",
+    "bytes": 970030,
+    "sha256": "8d198bb7cc72e651b1efefaab8f01bbfc088a5384e6cbe13826e3d303b43f16a"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/086_basic_card_012_01_execute.png",
+    "bytes": 968499,
+    "sha256": "3ba34cd8111b6e31d21691e1d819f77dcaf293ec12d63ffc137d1381d1bc9bf4"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/089_basic_card_015_00_execute.png",
+    "bytes": 1022404,
+    "sha256": "35f119295999e26484fb00228d7ce36955d681cf9fea788a03939d1af589e489"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/092_basic_card_015_01_execute.png",
+    "bytes": 1021631,
+    "sha256": "36e290c1baf2e9351aae9049063f2bc8963474bb5cf24b2baa57c8f46eac90b8"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/095_basic_card_015_02_execute.png",
+    "bytes": 1027008,
+    "sha256": "27f2faf42e26abf680d83703261ac7bc794601ecf8b86e47cb65eb548964d169"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/098_basic_card_015_03_execute.png",
+    "bytes": 1022300,
+    "sha256": "44a2d1d817176df78b6715159dea6261ae0c347ec6fb0bb788482472f013f90c"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/101_basic_card_019_00_execute.png",
+    "bytes": 1049290,
+    "sha256": "7daa037596d922cc7fd50987802afb81240a416ecddf1bdd51a312ea2a05955a"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/104_basic_card_019_01_execute.png",
+    "bytes": 1049186,
+    "sha256": "060a9b85b180f7a71fb68cf320ef50221be53fcf8b34b78071e54b991175205a"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/107_basic_card_019_02_execute.png",
+    "bytes": 1044973,
+    "sha256": "df5923519c82939b80e5eb15919c7daed45b7e8fedfd850648728e3d1aa96f7e"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/110_basic_card_019_03_execute.png",
+    "bytes": 1049414,
+    "sha256": "ec66e6c518737db4e0fe33f42d94cb859f2cfaa85d525cc27461b2a83d8a070c"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/113_basic_card_016_00_execute.png",
+    "bytes": 936808,
+    "sha256": "c3f3ccf665b2e02da7f80c42c51054f3bbbe8274ab798ff3b5642a7c6ade18df"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/116_basic_card_016_01_execute.png",
+    "bytes": 936829,
+    "sha256": "865b118ede193d3573a2e5e97e523e39ab60c326a26582321e7e84daad1529a0"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/119_basic_card_017_00_execute.png",
+    "bytes": 950801,
+    "sha256": "db5170018c3ef93dedfd415f397cae11612230f5709626c38ef9c4df36e2a463"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/122_basic_card_018_00_execute.png",
+    "bytes": 951535,
+    "sha256": "5b1509239d81c5a0dee99233bdb5037de35589e0f2b9f6dc994d272852e376c7"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/125_basic_card_020_00_execute.png",
+    "bytes": 951617,
+    "sha256": "8d75825d716a4d993c89a945f3af1b72cafbb65c0baed79e099f5c20cced5d0c"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/128_basic_card_020_01_execute.png",
+    "bytes": 973035,
+    "sha256": "e9bf6401038241ae508159a29eac8c5903a751b949629e9fd35fabf50e0e2054"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/131_basic_card_021_00_execute.png",
+    "bytes": 948509,
+    "sha256": "5587d0fbdaa2285c755785d413639e3d4649bcc6ddf3b74527bed65d4d5c7b75"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/134_basic_card_021_01_execute.png",
+    "bytes": 948508,
+    "sha256": "b303c64165cfb441e5e913a725e876bfeac35e445534d90dba21c29e9538ad02"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/137_basic_card_022_00_execute.png",
+    "bytes": 955970,
+    "sha256": "7988ebd16f8d0c4df0b2559eb3cb47edec9f5ea779d80aa895b14b2c08a71b57"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/140_basic_card_023_00_execute.png",
+    "bytes": 1022278,
+    "sha256": "c7f4074c18377cbcb6bf8c564d47c7d530c0f31e6460966cf9f9ccbda8bee8df"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/143_basic_card_023_01_execute.png",
+    "bytes": 1021349,
+    "sha256": "aa3d5e1080591822aa4e801eec1c6f88cecfdf15b70591fc9a316b6368aa0158"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/146_basic_card_023_02_execute.png",
+    "bytes": 1021358,
+    "sha256": "3646821e8a9a042cd79dbbf7d925ade7cc5d58fad973bdf149e6b958ded012cf"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/149_basic_card_023_03_execute.png",
+    "bytes": 1021306,
+    "sha256": "81ff5c4339a20b1ed32cde5e6598e69d91873697103e1db66cd172d5f7014229"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/152_basic_card_024_00_execute.png",
+    "bytes": 910214,
+    "sha256": "c281fd863daac4838c9c5df76811aabaf06994ac05611167ebfe96b873d3cbb4"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/155_basic_card_024_01_execute.png",
+    "bytes": 910332,
+    "sha256": "8504379f0022e9019dd6e403b81b5ab1cb5b6638e6a486e4e9360f12f89fdde1"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/158_basic_card_024_02_execute.png",
+    "bytes": 910071,
+    "sha256": "081892e31b936cb9467a399e08a02c6f759d69190b236bd76ff89c9b56f10c0e"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/161_basic_card_025_00_execute.png",
+    "bytes": 1001596,
+    "sha256": "b277f049aab03385c5c27f74ceb66e5a78e70281ca74a047fe97faeb980510ec"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/164_basic_card_026_00_execute.png",
+    "bytes": 1039695,
+    "sha256": "4276a61c208f3ac9a041909b04ad9d9d0259a5b725f60a290c486cb0c879a5c3"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/167_basic_card_027_00_execute.png",
+    "bytes": 946924,
+    "sha256": "15bbb60a8c8ba9e849b1af34e320bafa87a9e341c6d71e271b95718ba91990ea"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/170_basic_card_027_01_execute.png",
+    "bytes": 943925,
+    "sha256": "ff198fa0240ed96f18550c23dba1bd0f1647b890781b4b8d84387020a997ffdf"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/173_basic_card_027_02_execute.png",
+    "bytes": 943731,
+    "sha256": "a463fcf995f163e582838eb4ba69ad4cea1bab58bfefa05772779531dcd573ef"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/176_basic_card_027_03_execute.png",
+    "bytes": 943144,
+    "sha256": "09c1dbced071a71274fa78b002e22c641519658a8c9fe97ca4f0a4b614e48d70"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/179_basic_card_000_01_execute.png",
+    "bytes": 954225,
+    "sha256": "d5bdd158202a1ea065c42b1e9037729b0727c534539bc7005508699d143e5518"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/182_basic_card_014_01_execute.png",
+    "bytes": 942622,
+    "sha256": "f9905fe79e940f7626b29c3c12512563e06f6199183249a0b5152ec0d52c47c3"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/185_basic_card_001_02_execute.png",
+    "bytes": 1000329,
+    "sha256": "77438b0a8695f2105a1b2ff4756e17fa7444d360575bb56bd8df0704303686a1"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/188_basic_card_001_03_execute.png",
+    "bytes": 995476,
+    "sha256": "9489d1d8287405dc95335e1ccd27c0aad1a11aa5e3b8bd716e5f287b6c5d28e9"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/191_basic_card_002_03_execute.png",
+    "bytes": 1047079,
+    "sha256": "f7f51cfe907ecec4d77752f013f3ff15f5cb316ce995ce975093319bfd4771c5"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/194_basic_card_006_04_execute.png",
+    "bytes": 1066613,
+    "sha256": "b511c7e7f5496e739380cb6ed1a1272c53388dd0446ad32c1dc538370b71deda"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/197_basic_card_003_01_execute.png",
+    "bytes": 1103594,
+    "sha256": "4815ce429e53b722f32d94de6bd2a28bcf183867719347b9a398fc0efb155ce1"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/200_basic_card_004_02_execute.png",
+    "bytes": 1029653,
+    "sha256": "9b7763a11fdba60d02800eff74f6608621c98bd03c6d5d80fe75b1bebf886537"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/203_basic_card_004_03_execute.png",
+    "bytes": 1041771,
+    "sha256": "c88c57b2e33bf25334edbc3cc58c046854028627003bd5be7828aea08ff3281c"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/206_basic_card_005_04_execute.png",
+    "bytes": 1015864,
+    "sha256": "652ee5a8dbefb22c898b2a9c5b6cae6f4ecee80a715d221ce16ffe1803028069"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/209_basic_card_005_05_execute.png",
+    "bytes": 1016373,
+    "sha256": "635142ca78b0c817bf50390ddeb9f4477e3e977aa0e77f81696cde40d1253ea2"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/212_basic_card_005_06_execute.png",
+    "bytes": 1017081,
+    "sha256": "5ee392662c53b54a7df102bbcbd0c1e2742052cd25a3bd7f5abcf97ee52246ac"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/215_basic_card_005_07_execute.png",
+    "bytes": 1026602,
+    "sha256": "20f813c5c7f210c6e25b250dc1d932d3c3bdd29c5c27c37425e638754e8f9eeb"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/218_basic_card_007_01_execute.png",
+    "bytes": 940466,
+    "sha256": "a3586a9bc0a9022108cadcc4fa9c69595a7a0aaa787c7c2d11cfd2f2c5e8bdc2"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/221_basic_card_008_01_execute.png",
+    "bytes": 895339,
+    "sha256": "2bcc9b418a95cbfafd31dfa3abe48e923317a917ffef8c376a35d6b663948642"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/224_basic_card_009_01_execute.png",
+    "bytes": 1011370,
+    "sha256": "4ece3684980310f17d7d834c82f7f5bcf69b1f7dd79f21ab39534d5ee76b6396"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/227_basic_card_013_01_execute.png",
+    "bytes": 990775,
+    "sha256": "11059aaf87084b3156cfd7f4776870f7c0de1ac1e725910edf3604004a63572c"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/230_basic_card_010_03_execute.png",
+    "bytes": 976989,
+    "sha256": "a58d67f41da506a39d013a4d63b1bd9f37ce901a21557d52bbda7e130f21d37c"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/233_basic_card_010_04_execute.png",
+    "bytes": 978188,
+    "sha256": "1e6ae1d88a15efee4b293b316c06de9982bc1faf3094f982b29f3efe2da289b3"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/236_basic_card_010_05_execute.png",
+    "bytes": 1001016,
+    "sha256": "402167d30438577bfef1e97f0dfbe821e7bcc69c75413d99219ea96242423375"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/239_basic_card_011_02_execute.png",
+    "bytes": 991562,
+    "sha256": "de9b33160321ec0adba18ffaa3f049afb0e22e52aa8d973d6c6b19a14869143d"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/242_basic_card_012_02_execute.png",
+    "bytes": 968958,
+    "sha256": "973cf5af5bbcbf29d607e70d1e9be7230a5ede350bf22d7e6865db3ac83797e2"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/245_basic_card_012_03_execute.png",
+    "bytes": 966999,
+    "sha256": "0d8ddb5dc569fe5b62d581892fccc58920299cd56c480f026f32d56bd52648fc"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/248_basic_card_015_04_execute.png",
+    "bytes": 1018040,
+    "sha256": "36f33cd921f2d82810d1c061f722a33cbd0e2ae8d8fd813ab764689548f2f061"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/251_basic_card_015_05_execute.png",
+    "bytes": 1017464,
+    "sha256": "bb2add8b3eccbfc920994b9d517ecc10d1daeddca1d90bb70a3e6aa5c77ef970"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/254_basic_card_015_06_execute.png",
+    "bytes": 1018799,
+    "sha256": "0ba86b46bfc4ace1dfa050661dc7735ce34a1e60974f4e73c1d7f2f677aef31e"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/257_basic_card_015_07_execute.png",
+    "bytes": 1018528,
+    "sha256": "7835d8c2f20e9738a91ec571c58decb213b95878070f4093aa5c1a791855db52"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/260_basic_card_019_04_execute.png",
+    "bytes": 1047333,
+    "sha256": "59820d5d03a2c90e1fc3e4c1ab90c337551da08686e8c665f59f3df6d3d8f654"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/263_basic_card_019_05_execute.png",
+    "bytes": 1047313,
+    "sha256": "64794e8f67b4561c312f73f8a7873e470f2a4d8057c296fe1b7373232a740f85"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/266_basic_card_019_06_execute.png",
+    "bytes": 1048682,
+    "sha256": "09e5cbeec456f95d996d453fd3caa65cba9cb750f85b214784f81f47ecca57f4"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/269_basic_card_019_07_execute.png",
+    "bytes": 1047881,
+    "sha256": "6ee581b7b543a0a929ce382da6e08301d241399e923277d415eb4a03de693db6"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/272_basic_card_016_02_execute.png",
+    "bytes": 943044,
+    "sha256": "f06af686992ac9191fe67b2cbaa24b3f131afb37a711d65cf77f673165fa9a6f"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/275_basic_card_017_01_execute.png",
+    "bytes": 962126,
+    "sha256": "b12fbac8bdba77b38aa81e088ea3ea9f35188e6f0f178a4c28fd3640c5cea548"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/278_basic_card_018_01_execute.png",
+    "bytes": 960712,
+    "sha256": "4c2e3adff9df0df80ef43a0061ce3836d27ea969dd0f0a9148d696c68ac047c4"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/281_basic_card_020_02_execute.png",
+    "bytes": 1029726,
+    "sha256": "f502d8f629f6c67bf95ba8548de55f475ea39411ac966b0e36fecb8f17d9101b"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/284_basic_card_021_02_execute.png",
+    "bytes": 953600,
+    "sha256": "df2ba47288da2e4c51ab214985597670598d72e24d6d1a361a1a69e9426bfb3e"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/287_basic_card_022_01_execute.png",
+    "bytes": 967887,
+    "sha256": "6656a4822e027615422e3fff8b75569e7d4905af5664927571e19993cd470fa3"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/290_basic_card_023_04_execute.png",
+    "bytes": 1019796,
+    "sha256": "24cec2a6e8d64e3612b3e11353df402f9ec76575f06f3bcab8edd575e320bb8c"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/293_basic_card_023_05_execute.png",
+    "bytes": 1018751,
+    "sha256": "09a6b43812c71da711d40c5227825a57333d56b2290469e483f1e3fec9ed3160"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/296_basic_card_023_06_execute.png",
+    "bytes": 1018655,
+    "sha256": "14c364cbe5a92b451933d305682e55551d603c193e4a27a1f4499a5922291661"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/299_basic_card_023_07_execute.png",
+    "bytes": 1018483,
+    "sha256": "0fe83876fc6ec220bee1591a760b8e6646bb125184fb93bc2901fafa3d1844b8"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/302_basic_card_024_03_execute.png",
+    "bytes": 932611,
+    "sha256": "33ca2a9cd4c7f71ddc2a0d3b60ebede507a61deb6a334b13a853e5bb2bba2aea"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/305_basic_card_024_04_execute.png",
+    "bytes": 932782,
+    "sha256": "86322f7f3e60fb87dcbcd3f933b97843ee24721853813ae16d00930ca646fef3"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/308_basic_card_024_05_execute.png",
+    "bytes": 953898,
+    "sha256": "1a624c881d115dea2c24ab26c3e137581ae86ac7b24208b367576c52ef9dd33f"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/311_basic_card_024_06_execute.png",
+    "bytes": 953279,
+    "sha256": "5d5e1d26f71e07d3f7fdb25599db5a36e809b2e25fcc6324f9c07270464d6f1e"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/314_basic_card_024_07_execute.png",
+    "bytes": 933311,
+    "sha256": "08b0a29c0689101c310687eaad04fb15987c3888ed6028b4c9373e66950f4993"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/317_basic_card_024_08_execute.png",
+    "bytes": 951844,
+    "sha256": "d59c88b0bde8e170fb116d064d15db732db01d0e78710d75f31fc8885f16032c"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/320_basic_card_025_01_execute.png",
+    "bytes": 1004860,
+    "sha256": "b07eb71a6b41f37d828c30c689880f740b050239996c4cb4e34ab3e0c4fa397f"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/323_basic_card_026_01_execute.png",
+    "bytes": 1042711,
+    "sha256": "e468d4dfbd28cbbbaff1e75c8e6ee8a82663b9a50f6b87a405812731808b37c6"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/326_basic_card_027_04_execute.png",
+    "bytes": 957325,
+    "sha256": "31387090d200ed7953a947534d237270c92919f262275d56d9908b6e5e505d35"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/329_basic_card_027_05_execute.png",
+    "bytes": 954422,
+    "sha256": "94e15b732c974f200ca110f0b7593466962f2891491fb6bc9fb64fbf5dc0158b"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/332_basic_card_027_06_execute.png",
+    "bytes": 953446,
+    "sha256": "7eabb7bf149ca9496af4710c29556a51938c6f90267a1a5e4ed3d8bbb0314298"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/captures/335_basic_card_027_07_execute.png",
+    "bytes": 953240,
+    "sha256": "a2fbf73641681827d0ce1c7356930a29f6990767d88a38339c7fd8b4eadd8b85"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/effects.json",
+    "bytes": 4227738,
+    "sha256": "ec852fbad4b4e54157632c86aeb150e077b6f20bed42acc3eb8080e23c7521a7"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/report.json",
+    "bytes": 1410002,
+    "sha256": "88d8787b0bcb9c147a691504d60395426c35817b12cd1bc58b4576880e82c622"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/basic_card/逐例验收.md",
+    "bytes": 90308,
+    "sha256": "89205ef63d088bf2e2d48725b45723ee4ab0e34d82a49bb8973e38621657a558"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/editmode-results.xml",
+    "bytes": 74732,
+    "sha256": "f3f3cd11030c132b369ef3200689016250f83520dd65e2503ef734ed528d8e26"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/editmode-summary.json",
+    "bytes": 36,
+    "sha256": "a1427a675e5bbc129a8c09038555648e9ad7bf3a9cf554c5de20883613f47d96"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/final_console_1.json",
+    "bytes": 130,
+    "sha256": "b21abdd93106dc4f9fd3b6f688e83f05441fd1a4ea45669ba6102f6f1ad2e36d"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/final_console_2.json",
+    "bytes": 130,
+    "sha256": "b21abdd93106dc4f9fd3b6f688e83f05441fd1a4ea45669ba6102f6f1ad2e36d"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/full_system_compile_1.json",
+    "bytes": 130,
+    "sha256": "b21abdd93106dc4f9fd3b6f688e83f05441fd1a4ea45669ba6102f6f1ad2e36d"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/full_system_compile_2.json",
+    "bytes": 130,
+    "sha256": "b21abdd93106dc4f9fd3b6f688e83f05441fd1a4ea45669ba6102f6f1ad2e36d"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/000_Scene Start.png",
+    "bytes": 1025829,
+    "sha256": "e4f37f20af5323838245b845b6dabca569916f8621aac34ec673cf87803daf91"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/002_items_000_00_execute.png",
+    "bytes": 1085403,
+    "sha256": "63128230325390eecfd20e5d2e6dda4105bc93218aa0a0e96263713b10f2678b"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/005_items_000_01_execute.png",
+    "bytes": 1081200,
+    "sha256": "88ad59965e02f5a698d04c01a765601d28c478ba3669715b07f9cae5d832442c"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/008_items_001_00_execute.png",
+    "bytes": 1011965,
+    "sha256": "527545b79b0112492d7cfc34e639329afe5c9b7b230e5b15348d593c2e658938"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/011_items_001_01_execute.png",
+    "bytes": 994428,
+    "sha256": "9bec6d38f0cdd738f19dd61260dac9eee776a0f7f782d62ffd502d9278496510"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/014_items_002_00_execute.png",
+    "bytes": 1006235,
+    "sha256": "8bdb2fec3272b018b795266847753ffe5dc11440b37f8c74079be0b4948fc2ee"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/017_items_002_01_execute.png",
+    "bytes": 985717,
+    "sha256": "0c7b48a638f07923e0087e6cec03726eefd0bdc74858549e907f2e6a7c4a7b29"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/020_items_003_00_execute.png",
+    "bytes": 1057434,
+    "sha256": "a17dc413ef02d58c467fca935aa7bce19a619a1f03d4dd5bf5606c576e5c6651"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/023_items_003_01_execute.png",
+    "bytes": 1035016,
+    "sha256": "0d64781a2f155fd136882f924c4397c44f368d98c25e9a3cb353aaffdafba245"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/026_items_004_00_execute.png",
+    "bytes": 1025456,
+    "sha256": "1f4ac149a8383b025c9c0791b1a624c8ea2000e2de74cdb440b97f96f6d414aa"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/029_items_004_01_execute.png",
+    "bytes": 1037580,
+    "sha256": "1ad3f50c97c18786020ff64f962bfeb8f30610606f5b3479343b05a4953884a4"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/032_items_005_00_execute.png",
+    "bytes": 1004847,
+    "sha256": "f799c037a4d6471e3c7d27f555d4152cc83591c75017b7974339ecdb3b177ef6"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/035_items_005_01_execute.png",
+    "bytes": 1016875,
+    "sha256": "6aba720144c4e34803d2f23fd8ae116ec7156d2324fec5c1fde24eac2eb97da7"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/038_items_006_00_execute.png",
+    "bytes": 991824,
+    "sha256": "2f9f75bbc00e57fc15eb695e8c4599c578b481723dc8082c9036b0a03b14d25e"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/041_items_006_01_execute.png",
+    "bytes": 1005574,
+    "sha256": "9ab3ef52b5556ab20a5a21bea6acdca21bd3ec209d45c8f68bf6813ccc9559fc"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/044_items_007_00_execute.png",
+    "bytes": 1012038,
+    "sha256": "2abcaae1d3c3af4d03576c303d9baf3237760515a6809c655a7e514832b39bd1"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/047_items_007_01_execute.png",
+    "bytes": 1024017,
+    "sha256": "23620f2603fb96f0ada0c0f2097d29b62201f77b9de7579a1daa0624549837fe"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/050_items_008_00_execute.png",
+    "bytes": 1034082,
+    "sha256": "c119173e5ee15e3cb11adb640ba4dc795ab8ee9ecc949329c3140c48bf0da4da"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/053_items_008_01_execute.png",
+    "bytes": 1029011,
+    "sha256": "e973f6fcda958623b185a324cfce1b828a6770d4669d78b4f09f222a20016783"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/056_items_009_00_execute.png",
+    "bytes": 1024113,
+    "sha256": "859883f7a566b8300a68e492c76a5d03956f6739f22d89ab75ee875296fd1264"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/059_items_009_01_execute.png",
+    "bytes": 1044915,
+    "sha256": "fbc6a1e2d227046bae716d1f7e4c03da87c1a15477d33f0238dbdb526180a497"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/062_items_010_00_execute.png",
+    "bytes": 996239,
+    "sha256": "82b699827cb3d2b329a79f49768317bdb6f5e870c8cef2ae088c370cfa2130b8"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/065_items_010_01_execute.png",
+    "bytes": 997373,
+    "sha256": "a6abd3fe473c5654c771f1ca1fcf28810039457a3592e687e0f24932f4543104"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/068_items_011_00_execute.png",
+    "bytes": 1054392,
+    "sha256": "350e4cee5a6c5166747f2a3429195382af9287f25253a3d5092f09eae21664e8"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/071_items_011_01_execute.png",
+    "bytes": 1055210,
+    "sha256": "7d020ee9284ae2fda3b4133cf63447056985836d31b8733ceb01d5a9a9fd1533"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/074_items_012_00_execute.png",
+    "bytes": 987440,
+    "sha256": "ae058f67f8d1b898b2e1e71682707fbf499ea24899cb29d75c5c290b3f4a4b5a"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/077_items_012_01_execute.png",
+    "bytes": 992379,
+    "sha256": "038c401f4b88ed01a648306aba641cc5a200e94c4062c722edb2f7c8c8c6693c"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/080_items_013_00_execute.png",
+    "bytes": 1036432,
+    "sha256": "584f33bb069fa513f8172e587e8dbf79582fba00ead699483115a92a305defc8"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/083_items_013_01_execute.png",
+    "bytes": 1044703,
+    "sha256": "0549b952f9281733249673a4f1976ee0c70363893d49ef80e4497eec05bc6216"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/086_items_014_00_execute.png",
+    "bytes": 1043367,
+    "sha256": "54fec394741d8b107bc3ac3f64691575c90875dd5cba91257e90338a644251be"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/089_items_014_01_execute.png",
+    "bytes": 1003337,
+    "sha256": "33696ef7da0da0bd8de9992770cea90875b84597793c50526268ecb36d6bb8d8"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/092_items_015_00_execute.png",
+    "bytes": 1032302,
+    "sha256": "0add59b49d85127ff8addcb863f2256809d27561b468e24e2ad8bf670a8d131d"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/095_items_015_01_execute.png",
+    "bytes": 1008665,
+    "sha256": "b0fabcbc8878ed36b0ce9f3b9c597894548cd409e739bc4547c525e7052a5b42"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/098_items_016_00_execute.png",
+    "bytes": 1064181,
+    "sha256": "8f8d50d126d546ab9038999a89c94f5822b263d5fe429a49ebaa173b957dd31c"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/101_items_016_01_execute.png",
+    "bytes": 1062313,
+    "sha256": "81e3e2781d087a037a80ce533170f180a7487ef8dc3fd4f708065e89df3ce03d"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/104_items_017_00_execute.png",
+    "bytes": 1058659,
+    "sha256": "b69994f5a3e0fced07429735df501571fcf3263f3f082486623ac671f7b5c575"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/107_items_017_01_execute.png",
+    "bytes": 1069364,
+    "sha256": "60f8f860b199660b8c1bc1cd78f8d51ef5bbbe4d491886a65f521a5b3a0ca532"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/110_items_018_00_execute.png",
+    "bytes": 1060646,
+    "sha256": "c423afded8eca4676c8466f1c0905bc6c69194e873165cd74b64eb032df1e638"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/113_items_018_01_execute.png",
+    "bytes": 1030904,
+    "sha256": "b5de769403a421272bbfe082af2b443dd6d8f28aa7293d2b878d709efdc07bcd"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/116_items_019_00_execute.png",
+    "bytes": 1037380,
+    "sha256": "8d3bcb11aa3dd2a93aed0a677782564a316fcac645d6d15e69668a72aa8407b0"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/119_items_019_01_execute.png",
+    "bytes": 1006327,
+    "sha256": "4a481a5387eace8f76324df64e069127341c20dfd8ee612b094128e09a0c9230"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/122_items_020_00_execute.png",
+    "bytes": 1012777,
+    "sha256": "590cfdd0c3476f10d5c1f28557a48d1d92285befc4ae10b65b32065bce8768b1"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/125_items_020_01_execute.png",
+    "bytes": 1033210,
+    "sha256": "4924821ae000c251600c62841cf6c9bfe4edd3c7a1543a9f404d789641c354a3"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/128_items_021_00_execute.png",
+    "bytes": 1060453,
+    "sha256": "f1a2ffaddb2c61fb829181b66901c234410ff620341f8ef54071e9086ea3bc6e"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/131_items_021_01_execute.png",
+    "bytes": 1006303,
+    "sha256": "5bba773550d26caa82d9269f23b31c790c576297ff65f6bd26a032b14ef434c7"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/134_items_022_00_execute.png",
+    "bytes": 1002247,
+    "sha256": "486a8338c6e89642dd2f27e01961d484450eb2f5c39d09b837c44f1257090542"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/137_items_022_01_execute.png",
+    "bytes": 1012232,
+    "sha256": "18ed97aead48fba4a5da462a8fe9e081a8bb5cd1e52ad712f1abd71244c9f036"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/140_items_023_00_execute.png",
+    "bytes": 1063250,
+    "sha256": "1ab5bb8eef863e52fdb1f8518818d5f87ed7a76b0f7a4c32f78c592ab6f5d562"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/143_items_023_01_execute.png",
+    "bytes": 1071978,
+    "sha256": "d9cbbc778e9b5131a6539f7a9ebeee369a9bb38a087bc962ac1750575c1ba070"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/146_items_024_00_execute.png",
+    "bytes": 1050782,
+    "sha256": "db26721920baf264dc591e87e5a6727cd9659afd2cee03733e7a9147db891582"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/captures/149_items_024_01_execute.png",
+    "bytes": 1044120,
+    "sha256": "1b1cf652c0bc96b944edb9cb8c12b17765ac71fb4759b4d3062d555db9bdab6d"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/effects.json",
+    "bytes": 1902574,
+    "sha256": "778e267b15ec84bb3e5d2e7ff37baf491ca07d9740cfed65f37ed676b2d9e591"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/report.json",
+    "bytes": 646488,
+    "sha256": "5c21bd8cfef1d4db1c88a44b87ba83fa8e12a24201ed0a969d3b90754d3375f4"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/items/逐例验收.md",
+    "bytes": 49205,
+    "sha256": "ccac68a7b77eb90f196ef3d4dd5f5ac97315b17752164f7885a1eab5efb4d32d"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/lint.json",
+    "bytes": 361,
+    "sha256": "c5bf9e6bbc379f5e535085b7150404605be26d4d2836dfc0556d2bf6867fa574"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/000_Scene Start.png",
+    "bytes": 1004368,
+    "sha256": "c783440b58d3f4ed85e2ae30d50e4c284b0d5d676690788c4a728ec72ab0789d"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/002_magic_000_00_execute.png",
+    "bytes": 1069196,
+    "sha256": "7bc69831f3e3cbdf564d0a2a90c3919999960411004fa36e46d676af0b61e2a1"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/005_magic_000_01_execute.png",
+    "bytes": 1074359,
+    "sha256": "d0b7f55b68cbef74a7743df63424e30bd2dc0c8ad1a0376fd875dd8b07e01b49"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/008_magic_001_00_execute.png",
+    "bytes": 1002195,
+    "sha256": "65089b9ea602094148968fa5e002e7248cc671117c2b0589dc83cb6dc5d90056"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/011_magic_001_01_execute.png",
+    "bytes": 1001918,
+    "sha256": "9f793e3ceaf9d494c6308dd3fd491b04d3a0588ad1eed30f8c6ddc3b3d969560"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/014_magic_002_00_execute.png",
+    "bytes": 1021525,
+    "sha256": "f4ebc4cc5424731370b2d126f2ae7615ea0a6a03299b8146fc1967d5f8f6ecf7"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/017_magic_002_01_execute.png",
+    "bytes": 997759,
+    "sha256": "ff5f35dbd33dbe00a77fdd534b25561f492fc04c3d3af6b5b94cb462d2dad2ee"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/020_magic_003_00_execute.png",
+    "bytes": 1028906,
+    "sha256": "ee2f89ab63fbf72d4666de3feaf957cf29e4476adb613fcf0615736ed8ef7006"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/023_magic_003_01_execute.png",
+    "bytes": 1042939,
+    "sha256": "828141f79c8f4aaf84d7307494d10b57d87644f8103d6151d6186b745b4b25e4"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/026_magic_004_00_execute.png",
+    "bytes": 1086443,
+    "sha256": "a0a27e564e31c273b7f48df5615f786551096a8ed58055741d05cb55387cd477"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/029_magic_004_01_execute.png",
+    "bytes": 1085441,
+    "sha256": "95f5a1bd317f59cf9ac20f8a6c7bac4b7de5e7c72845fe2ac09a44e3dcd612e2"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/032_magic_005_00_execute.png",
+    "bytes": 1000928,
+    "sha256": "a1550081a21d8dde2497de21fc86c30d26d70e5ed45db754601af0a3f42f36d4"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/035_magic_005_01_execute.png",
+    "bytes": 1028269,
+    "sha256": "72d6760637f7f3bf58c562734aa79f457afebe1003a3658107b978a2221e8aed"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/038_magic_006_00_execute.png",
+    "bytes": 1101964,
+    "sha256": "bf2d2d4db5cfeb51b34339ed40a2ef83e76d509386cd688529eea1ecdf1a84db"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/041_magic_006_01_execute.png",
+    "bytes": 1081246,
+    "sha256": "dbe2cc88395394af28c6fdd89b295a180ac49d4f2c66342186c9c801dc39fbb3"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/044_magic_007_00_execute.png",
+    "bytes": 1008702,
+    "sha256": "e3f90155981e9e5022e6458eca510be3a396a1b1b0dd8bcd28c8801bdaf2683f"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/047_magic_007_01_execute.png",
+    "bytes": 1020928,
+    "sha256": "a506e468274b74cc684aff4e34976c2b0f658ab7c2821f9974fb3c0d9d556e4b"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/050_magic_008_00_execute.png",
+    "bytes": 1026244,
+    "sha256": "d381d57a2d3e3f7db3adecd9cfd0f9fcf314a54ea9d9ddd21f22f71445c87cbb"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/053_magic_008_01_execute.png",
+    "bytes": 1014762,
+    "sha256": "924efa3d032f18394bd34933dc1c05fd02e84ec2e48d4b97ae19f8406dbe652b"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/056_magic_009_00_execute.png",
+    "bytes": 1004728,
+    "sha256": "577b7627159cae49d10f8181398b31ad3d6e5cde97c54dd0add40cef7a4e35a9"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/059_magic_009_01_execute.png",
+    "bytes": 1009430,
+    "sha256": "208c7b3b26c185d9818955d94194684303b8889dd3dfefb09c84525877f092db"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/062_magic_010_00_execute.png",
+    "bytes": 1028754,
+    "sha256": "680942eab22eb6274f392026af1fa215c742be4fbb0c513abe03dbd6422bcc01"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/065_magic_010_01_execute.png",
+    "bytes": 1048466,
+    "sha256": "428411011ffdb150010ee23cc7271ba1786638149c0dfc339c01a21da0fedd8e"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/068_magic_011_00_execute.png",
+    "bytes": 1087479,
+    "sha256": "27755b55e8ae59dfdc5ae208f28ed5386b33a7c73b6a040560faf6d5b26faed3"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/071_magic_011_01_execute.png",
+    "bytes": 1128768,
+    "sha256": "9ddb11341d9399986e2f74d135083997009d40bbec33dad822d8509341414900"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/074_magic_012_00_execute.png",
+    "bytes": 1088310,
+    "sha256": "985e9eae740736a91bf5660f66bdf391bdd6d781b617665303557f6286152afd"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/077_magic_012_01_execute.png",
+    "bytes": 1082664,
+    "sha256": "fe20d18de6f7e0f9930c05825c58828673e338e28326f6fd2e461c91e3b36750"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/080_magic_013_00_execute.png",
+    "bytes": 1007231,
+    "sha256": "c82cfed3f6c2dd096af363b34f503999bca62c0f361c751d8adb2d0df92bed58"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/083_magic_013_01_execute.png",
+    "bytes": 1003409,
+    "sha256": "e6380517c11e26094a988d6d556a867fdf548dbc844e3b3c6aa93d32fc942168"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/086_magic_014_00_execute.png",
+    "bytes": 1021344,
+    "sha256": "d38918e75c65dfded9e400f9162971f4cf896defbb733c4f27d623465ffcb848"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/089_magic_014_01_execute.png",
+    "bytes": 1017668,
+    "sha256": "8707aa2475422c7597f077e09d6b66d53073ac4547dea74f1e8ba45dbacc82c2"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/092_magic_015_00_execute.png",
+    "bytes": 981762,
+    "sha256": "138737b1e64ef253077330e9cf17258091faae16ed4964d8f4204f6bd2fa0a45"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/095_magic_015_01_execute.png",
+    "bytes": 987017,
+    "sha256": "da108e9dc9269cd349694aa52d8bc59db2cab0cf80b2410df4aa5218c8d27c30"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/098_magic_016_00_execute.png",
+    "bytes": 1063181,
+    "sha256": "d204f8f102a6209cc81aa9d66d1a70d6ab6588867f5d293b6e98ed33377fac9b"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/101_magic_016_01_execute.png",
+    "bytes": 1062783,
+    "sha256": "259a41d6df605a8cb231b89910094d8c896094c33fbac1cabb241b5a6011a8a5"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/104_magic_017_00_execute.png",
+    "bytes": 1093359,
+    "sha256": "78d63d0702abd7538d45d104031315b614cd63b2a7aee2da36a59157898db85f"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/107_magic_017_01_execute.png",
+    "bytes": 1088819,
+    "sha256": "c0e2d44f3896a7e2a2cb15a2883f5430071362f9521e8699b2fcaf80c9782286"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/110_magic_018_00_execute.png",
+    "bytes": 1046420,
+    "sha256": "cdfbe42df1618db1c484f26ce2cc7681bbff962028400dc69077ee4cc97f2ae1"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/113_magic_018_01_execute.png",
+    "bytes": 1031692,
+    "sha256": "da0ab550b7254269d5b0af52f15f12925c30d2430f9f083756a2145a94e12b7d"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/116_magic_019_00_execute.png",
+    "bytes": 974479,
+    "sha256": "67aa113fa871598646b0581ccf21699792409c5b3f77075691a12ed933e2e8f4"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/119_magic_019_01_execute.png",
+    "bytes": 984903,
+    "sha256": "f826916aa846fe062ab8ce57244a409c54a2204a2e0810303d93c85359b48e0c"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/122_magic_020_00_execute.png",
+    "bytes": 1013910,
+    "sha256": "254ee02d756afb31c565998446643307187b56df7f3f0f1c126ed5e60e5e9157"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/125_magic_020_01_execute.png",
+    "bytes": 1012358,
+    "sha256": "e684f47203f237e03dba64a49e1949a790c8c1a089a0c8a62048d4004003a210"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/128_magic_021_00_execute.png",
+    "bytes": 963504,
+    "sha256": "cb02044c102e55c534c136b02c5f9a313af64811f3e7659fa86db14de8499dbd"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/131_magic_021_01_execute.png",
+    "bytes": 978472,
+    "sha256": "f0c41b964cfe78993569006bdb9670130f9fc3482555925057ada86c66912f8f"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/134_magic_022_00_execute.png",
+    "bytes": 958428,
+    "sha256": "57c3480c0b4c462f260ab588934158bce47303707774f73651dca293a5335ad3"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/137_magic_022_01_execute.png",
+    "bytes": 961320,
+    "sha256": "2b5132b423e593499d34c99f3ed19ff93359274cf3b4cc047907a1e3a949f3d8"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/140_magic_023_00_execute.png",
+    "bytes": 1047032,
+    "sha256": "ce521da1807759b1a2736d4df4e451438e88fbf9878cd665b2ae49ae37504d41"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/captures/143_magic_023_01_execute.png",
+    "bytes": 1049449,
+    "sha256": "d6f799f500a1dbc873a013679e88c63f5183c6f204666b1a9161d6edb3841095"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/effects.json",
+    "bytes": 1840817,
+    "sha256": "4e65e295c1a5d43cfc3f472b340a148a452017357f0d2ac97356c7eb6f926dd3"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/report.json",
+    "bytes": 630743,
+    "sha256": "8504c761ebc37a6bc2ff66f123ec89fde9528d74eb27e2e9276f739229aefcce"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/magic/逐例验收.md",
+    "bytes": 50805,
+    "sha256": "cf16b23e4aaad0dace42756a6eb69432452cbaff4e33c09fdd6cea3ad07b3c98"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/restored_card_faces.json",
+    "bytes": 1038,
+    "sha256": "069b91d39ed8445fc30dccb7db066e2c5d4da96604efa21af2a63b84ed9e11e2"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/source_inventory.json",
+    "bytes": 104636,
+    "sha256": "7b9efea96cec71006f6c177a0bd6c3a7d2c872bcf1d4531f861059188a275962"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/summary.json",
+    "bytes": 77226,
+    "sha256": "ce18506be7dfc2ea1049ba006706802a96b8467f7752a5228d6ab5a07ed6804b"
+  },
+  {
+    "path": "AutomationOutputs/AllOriginalCards/20260910/验收总览.md",
+    "bytes": 6027,
+    "sha256": "270ca19562db34e04b5316db504d5c51606dfd1e20de9615b00873c2afc54fec"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Combat/captures/Part1_CombatRules_20260910_132012/000_Scene Start.png",
+    "bytes": 2183493,
+    "sha256": "6359e88f6419999db981265ad085fab3aba480d4ed0a21abf372fba436ee89f3"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Combat/captures/Part1_CombatRules_20260910_132012/001_选择_basic_card_016_0.png",
+    "bytes": 2344127,
+    "sha256": "b44de318283a930315c2fcf8a576d38cc09d29fe25f85a4624c1f42b4cc3afcc"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Combat/captures/Part1_CombatRules_20260910_132012/002_缺目标不得扣牌.png",
+    "bytes": 2342202,
+    "sha256": "b2fc20344fc0014b802e5d39c68aa22ad988b7b70c62b1e08642f69c67a33c37"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Combat/captures/Part1_CombatRules_20260910_132012/003_点选_enemy_0.png",
+    "bytes": 2326329,
+    "sha256": "7296ff900d0aec7ef5f269aaaa2973a22d08031fefb67e5eb0ad717ccbf5e835"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Combat/captures/Part1_CombatRules_20260910_132012/004_决心基础格挡2.png",
+    "bytes": 2173444,
+    "sha256": "1f4e08a6d324bfaabd3f517089ba20e6081bd798ab679835e71f5d2dd79020b1"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Combat/captures/Part1_CombatRules_20260910_132012/005_格挡不足承受完整攻击.png",
+    "bytes": 2188804,
+    "sha256": "75ba45384dc5a719de2d630cb8c3917c8ed4657aa7552eccf59b40c4215b4853"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Combat/captures/Part1_CombatRules_20260910_132012/006_伤牌不能打出.png",
+    "bytes": 2185566,
+    "sha256": "3de2bd9bb7e01492e53e83c52a47e367a330a4f53e25b5402e79d739921740f0"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Combat/captures/Part1_CombatRules_20260910_132012/007_选择_basic_card_021_2.png",
+    "bytes": 2345523,
+    "sha256": "489f1cc5d5f48d218c9323d83f9b77333a505b62bc1ac6d5f452de66ff14a637"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Combat/captures/Part1_CombatRules_20260910_132012/008_点选_enemy_0.png",
+    "bytes": 2332924,
+    "sha256": "67d5cf6116a5956443a29222e1b01c97914ae0132556e4dffd08a0d7e13a3f3d"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Combat/captures/Part1_CombatRules_20260910_132012/009_狂怒基础攻击2.png",
+    "bytes": 2177080,
+    "sha256": "68eed50e6c6c8d8b68319eb678a9d1d52ca3f3405f9b5e0a2c1d6d48456d56ab"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Combat/captures/Part1_CombatRules_20260910_132012/010_选择_basic_card_021_3.png",
+    "bytes": 2197000,
+    "sha256": "e88f646288b07a984b2f713ac38b462fa6bed17eefed47e311fd648f62ed1a53"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Combat/captures/Part1_CombatRules_20260910_132012/011_第二张狂怒基础合计4.png",
+    "bytes": 2033943,
+    "sha256": "10bd304303eb0f56c67718342507f13bdf690bf5a85d2a2248baedceae342b94"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Combat/captures/Part1_CombatRules_20260910_132012/012_结算且不重复受伤.png",
+    "bytes": 2002295,
+    "sha256": "5fca12bad3105860c8ba950c64af505b9a97a6e8ca951ba6ed5bb7d8755cf756"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Combat/captures/Part1_CombatRules_20260910_132012/013_重新开始.png",
+    "bytes": 2183493,
+    "sha256": "6359e88f6419999db981265ad085fab3aba480d4ed0a21abf372fba436ee89f3"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Combat/captures/Part1_CombatRules_20260910_132012/014_选择_basic_card_016_0.png",
+    "bytes": 2344127,
+    "sha256": "b44de318283a930315c2fcf8a576d38cc09d29fe25f85a4624c1f42b4cc3afcc"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Combat/captures/Part1_CombatRules_20260910_132012/015_点选_enemy_0.png",
+    "bytes": 2326329,
+    "sha256": "7296ff900d0aec7ef5f269aaaa2973a22d08031fefb67e5eb0ad717ccbf5e835"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Combat/captures/Part1_CombatRules_20260910_132012/016_选择原卡强化.png",
+    "bytes": 2333187,
+    "sha256": "65f1ffb3cca1d94917303af3507a8d9421489fe9f5fb697f8f27994c9c9f2dad"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Combat/captures/Part1_CombatRules_20260910_132012/017_蓝色强化决心格挡5.png",
+    "bytes": 2173899,
+    "sha256": "c1b8bb931ec84c319949a8de74441e417eb30f9e4a9bf0ab56e37e481eadac89"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Combat/captures/Part1_CombatRules_20260910_132012/018_成功格挡免伤.png",
+    "bytes": 2179018,
+    "sha256": "122775435cf269085d4bd1ee2b686b8beb57481cf1d1921314878d2802dec078"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Combat/captures/Part1_CombatRules_20260910_132012/019_选择_basic_card_021_2.png",
+    "bytes": 2336110,
+    "sha256": "3cf4735899aa4dd3608aeb2a67f4660918713f073214dda8419c8f9137c4e814"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Combat/captures/Part1_CombatRules_20260910_132012/020_点选_enemy_0.png",
+    "bytes": 2323257,
+    "sha256": "57026df367dcca3fcb55fc84f6373148ae49a067061335c7870c1a629e9b6cde"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Combat/captures/Part1_CombatRules_20260910_132012/021_选择原卡强化.png",
+    "bytes": 2329936,
+    "sha256": "6094e9b442155c748d925da7b05ff816b7e24205890c1364c3cfb5c6d2d227dd"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Combat/captures/Part1_CombatRules_20260910_132012/022_红色强化狂怒攻击4.png",
+    "bytes": 2167383,
+    "sha256": "c9d24ff536fc7fc5661200e6b7307ddde4cf0358d0085293f1249a3b88c51795"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Combat/captures/Part1_CombatRules_20260910_132012/023_选择_basic_card_021_3.png",
+    "bytes": 2187152,
+    "sha256": "d694064d6de784ac858a3327cd9b2293673615cd22f20eddafede2ccd6386cb5"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Combat/captures/Part1_CombatRules_20260910_132012/024_再次声明强化.png",
+    "bytes": 2190021,
+    "sha256": "72bbc5a9c379c7c6e5acbfc5599f4b92aa314a357a64892c5a97ccb7802b42c4"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Combat/captures/Part1_CombatRules_20260910_132012/025_缺红色魔力不降级打出.png",
+    "bytes": 2190266,
+    "sha256": "441ede30d083d930e733ecb34d539dcabd1e01a77f54cbbb2735407e4323d871"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Combat/captures/Part1_CombatRules_20260910_132012/026_取消未支付行动.png",
+    "bytes": 2172112,
+    "sha256": "7b95e5506419a5348ae05ab2dfbad5711111f5f63f4b6a24277359ba2df0be69"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Combat/captures/Part1_CombatRules_20260910_132012/027_原卡强化获胜.png",
+    "bytes": 2136000,
+    "sha256": "6f835e2b48f39d0dd84168be0bfceb7a6ed98310f09268e2587cec16fc543735"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Combat/captures/Part1_CombatRules_20260910_132012/028_展开规则.png",
+    "bytes": 2164192,
+    "sha256": "ae6898201b98ad869554de01c135538d2f856b4e5f97815e1c07554a6ef47511"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Combat/captures/Part1_CombatRules_20260910_132012/029_收起规则.png",
+    "bytes": 2135963,
+    "sha256": "248e76623059a4a6873d4b0c5fc30ef94b9471a2fd114327a9a8b4e86d9bda4f"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Combat/captures/Part1_CombatRules_20260910_132012/030_切换遭遇.png",
+    "bytes": 2138929,
+    "sha256": "b288659df238ea49d5d5413b43ea38e5ca78c2d9dbcd588b03a1174d4b05ca30"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Combat/captures/Part1_CombatRules_20260910_132012/031_复用原卡迎战灰狼.png",
+    "bytes": 2181701,
+    "sha256": "67ed2a3257b60e3b874b48d3f14b50e5f3bde3bc0930e31287073faef1d40242"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Combat/captures/Part1_CombatRules_20260910_132012/032_选择_basic_card_016_0.png",
+    "bytes": 2340889,
+    "sha256": "660f4eab6b15afff366824f29e07a9a743baf3a825e2f3ca8daed35741c3716a"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Combat/captures/Part1_CombatRules_20260910_132012/033_点选_enemy_0.png",
+    "bytes": 2331769,
+    "sha256": "5d772ecc7edffeb60b99c39ac91ce24f6999a3fe886cbcb8b3118aa3a465ce4c"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Combat/captures/Part1_CombatRules_20260910_132012/034_选择原卡强化.png",
+    "bytes": 2338897,
+    "sha256": "a47de612e1623ba9f2ab04744f7db479c8619f1548e52d341ecfbd5301f8a65c"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Combat/captures/Part1_CombatRules_20260910_132012/035_决心强化5.png",
+    "bytes": 2180077,
+    "sha256": "7474641634ed41401c854c60b2377d5a06776ada2c66a3b32edebb5c74c2cbf6"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Combat/captures/Part1_CombatRules_20260910_132012/036_选择_basic_card_000_4.png",
+    "bytes": 2191311,
+    "sha256": "1cb5596f5043ec0c7e365a08ad95fe6475c4cb0451a5b6be08f46f99993c9d59"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Combat/captures/Part1_CombatRules_20260910_132012/037_行进横置格挡1.png",
+    "bytes": 2031710,
+    "sha256": "12a46c93a8bbea200acd190caa2018260f4cef6c4b9458a85f9005b2a0c2f2c0"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Combat/captures/Part1_CombatRules_20260910_132012/038_横置补足迅捷格挡.png",
+    "bytes": 2029009,
+    "sha256": "0643d31d55cc03ac403c130e2975d85737fea466da353b57fa0a3ed521f4ccac"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Combat/captures/Part1_CombatRules_20260910_132012/039_选择_basic_card_021_2.png",
+    "bytes": 2190484,
+    "sha256": "0dad874bdff8d0a3ff0b966d85792d56ea2fc4d9d0f76d8f2e98ec5e98992305"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Combat/captures/Part1_CombatRules_20260910_132012/040_点选_enemy_0.png",
+    "bytes": 2185552,
+    "sha256": "ac2734a88986c9a3f464ec07a9d1456faab86fcea9361cbcffd0980248ed1126"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Combat/captures/Part1_CombatRules_20260910_132012/041_选择原卡强化.png",
+    "bytes": 2192658,
+    "sha256": "7f0792a539c00b57a7ba74602f489b66d66ae9c6c158d3ff4fb7cac84664b4cd"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Combat/captures/Part1_CombatRules_20260910_132012/042_狂怒强化4.png",
+    "bytes": 2027073,
+    "sha256": "dd5dedf4bf4af35a93a77668d6d23827d532fa510b8e57576c1a7beb7096325a"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Combat/captures/Part1_CombatRules_20260910_132012/043_选择_basic_card_016_1.png",
+    "bytes": 2042110,
+    "sha256": "2fd0b76d34cf62b75027bacc7f317512ae55a9e953a2926efa91b5e4559fb5b5"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Combat/captures/Part1_CombatRules_20260910_132012/044_决心基础改选攻击2.png",
+    "bytes": 1884827,
+    "sha256": "4161f4b02537bd4fd3370a4c41c5c82d87152d20b02714717534c12120526603"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Combat/captures/Part1_CombatRules_20260910_132012/045_原卡组合战胜灰狼.png",
+    "bytes": 1858044,
+    "sha256": "059bc84d7aea0b6568f8e9bc510bd99a9188b7372501ac9ce7dfbeae5fa458f5"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Combat/report.json",
+    "bytes": 765300,
+    "sha256": "0f81b6b57d6e2a6d324aaf46878a58e1ac948fad8a216067550b7a7ee2023174"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Exploration/captures/Part1_ExplorationRules_20260910_132036/000_Scene Start.png",
+    "bytes": 1893355,
+    "sha256": "936d6c19aa641ecb17d42066739222af5106b744c608753c9353d186911ba276"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Exploration/captures/Part1_ExplorationRules_20260910_132036/001_点选_site_forest.png",
+    "bytes": 1884914,
+    "sha256": "98b81e928d1ac560dc8383300aee5cec07b994417adc579dedb34d1adc8b21c2"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Exploration/captures/Part1_ExplorationRules_20260910_132036/002_零移动不能进入.png",
+    "bytes": 1888729,
+    "sha256": "1864a339a2c9a92494281f25dd06b43817bf4fb62ad207f45d6f844fd8fed035"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Exploration/captures/Part1_ExplorationRules_20260910_132036/003_选择_basic_card_000_0.png",
+    "bytes": 2047541,
+    "sha256": "6d9d39cf0e41fd21f5730b5fb18933bdbe279813ba8db11bfd470e187cdd7fb2"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Exploration/captures/Part1_ExplorationRules_20260910_132036/004_点选_site_forest.png",
+    "bytes": 2042980,
+    "sha256": "dbb4fa075a788b79932bfda3ff0812836cd1e010f49898dd8692af9a2b8db9d5"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Exploration/captures/Part1_ExplorationRules_20260910_132036/005_选择原卡强化.png",
+    "bytes": 2053126,
+    "sha256": "64133440ba789d6405d57d8ba4e979e85c0c8aa420cae043161115a300f1f01d"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Exploration/captures/Part1_ExplorationRules_20260910_132036/006_行进绿色强化4.png",
+    "bytes": 1887382,
+    "sha256": "33709b4b0d92d4ca167e1029f01e6c62ba94119d0e2238717930a47e35371960"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Exploration/captures/Part1_ExplorationRules_20260910_132036/007_白天森林费用3.png",
+    "bytes": 1891202,
+    "sha256": "9c6d24ce4d82cf8bcff36c8eb8bc5e2d32736acc9021f478b82bb442a1914410"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Exploration/captures/Part1_ExplorationRules_20260910_132036/008_选择_basic_card_014_1.png",
+    "bytes": 2045569,
+    "sha256": "f9e59856a487f90c01e9bdada1d5939c8a28716e6da35612be7b8a9720fd9a88"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Exploration/captures/Part1_ExplorationRules_20260910_132036/009_点选_site_frontier.png",
+    "bytes": 2044033,
+    "sha256": "3e7334b1c7473d1ed7769c2d03727bb99e39f243a1c401160ca175b594ae5487"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Exploration/captures/Part1_ExplorationRules_20260910_132036/010_耐力基础移动2.png",
+    "bytes": 1890587,
+    "sha256": "1c84ded7bdae8813b763aec640dc7af786931fbd1ecc2898ae925c3ec87652ae"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Exploration/captures/Part1_ExplorationRules_20260910_132036/011_探索只揭示不移动.png",
+    "bytes": 1877470,
+    "sha256": "245d5246393bfae335a149391a8e805bcdc750ec667ec34cdfdb4a1c05586d93"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Exploration/captures/Part1_ExplorationRules_20260910_132036/012_进入平原费用不足.png",
+    "bytes": 1877668,
+    "sha256": "ba00ad4ce64a224725a96951d3a0dcb455ba6d64799a48723dcd549504ec81b5"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Exploration/captures/Part1_ExplorationRules_20260910_132036/013_选择_basic_card_000_2.png",
+    "bytes": 1900255,
+    "sha256": "8465bad405ff70a747dfbde755949ee61cecc484e22cab9c83d43be9e863e8a7"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Exploration/captures/Part1_ExplorationRules_20260910_132036/014_另一张行进基础2.png",
+    "bytes": 1737158,
+    "sha256": "bd7f6686d8f507a76dcd092ef01e1f72293eaece1557abcc0ca239d1f6c28ff3"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Exploration/captures/Part1_ExplorationRules_20260910_132036/015_进入揭示平原.png",
+    "bytes": 1740670,
+    "sha256": "4cf77e1e2fb5e5bc30456a7a2fafa699c8387afe55d0dc8dfc2d6199ab440b78"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Exploration/captures/Part1_ExplorationRules_20260910_132036/016_重新开始.png",
+    "bytes": 1893355,
+    "sha256": "936d6c19aa641ecb17d42066739222af5106b744c608753c9353d186911ba276"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Exploration/captures/Part1_ExplorationRules_20260910_132036/017_点选_site_lake.png",
+    "bytes": 1883470,
+    "sha256": "5c4d02b7d6866f60946911b111664cf14e94154501173580ab878a6ccf11c626"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Exploration/captures/Part1_ExplorationRules_20260910_132036/018_湖泊不可通行.png",
+    "bytes": 1889602,
+    "sha256": "96c030ca32ed6162cd4bece6bfbe1242782c18388395523befd5af9049b3c2d1"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Exploration/captures/Part1_ExplorationRules_20260910_132036/019_点选_site_mountain.png",
+    "bytes": 1880320,
+    "sha256": "e6e5ee3c4b1d74118e89080ca7442e3705a2a47c0c73ea229aaad63cc24ffb7b"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Exploration/captures/Part1_ExplorationRules_20260910_132036/020_高山不可通行.png",
+    "bytes": 1886163,
+    "sha256": "ab64e8d3870e20c80b7df16ca1f9dded265816fe2c9db2dded1bc8677d761615"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Exploration/captures/Part1_ExplorationRules_20260910_132036/021_点选_site_frontier.png",
+    "bytes": 1893042,
+    "sha256": "de6ed6e4afd170421f7fb9e44bbb2acdd4af820a1daed333301a76df2488ba87"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Exploration/captures/Part1_ExplorationRules_20260910_132036/022_非相邻不能探索.png",
+    "bytes": 1902300,
+    "sha256": "dc6bbc5c262f84bc4f4b34ff784994f7384cf4d846370db9d165d189001b81a1"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Exploration/report.json",
+    "bytes": 338926,
+    "sha256": "c1fabe01aaa5d7eb94cd687ad5ecdcc4f823bfc9cd331c768f8f84b02c4bce83"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Journey/captures/Part1_JourneyRules_20260910_132104/000_Scene Start.png",
+    "bytes": 2010109,
+    "sha256": "47d746ec326e373a346b4c294c7f55db02c6a90135254c3cf262c2d73cf337d3"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Journey/captures/Part1_JourneyRules_20260910_132104/001_选择_basic_card_000_0.png",
+    "bytes": 2032245,
+    "sha256": "9b59ad7a09371e3427b67aa24106a94d74b29cbf50b558b1ae2d340bc2fb500a"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Journey/captures/Part1_JourneyRules_20260910_132104/002_点选_site_village.png",
+    "bytes": 2029901,
+    "sha256": "d346770e6267f2ae3b743d96e4b32e046b511266b2871574fbfe50883b90f05c"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Journey/captures/Part1_JourneyRules_20260910_132104/003_选择原卡强化.png",
+    "bytes": 2039506,
+    "sha256": "6dde0fd801f0a4a33203b447531f3c2f15afd4d37f536f6532a11948296f278b"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Journey/captures/Part1_JourneyRules_20260910_132104/004_行进强化准备探索.png",
+    "bytes": 1870395,
+    "sha256": "aea17bc3b99395b4f415a74e9dd09a4b9a9fe5a4f9f8c1753f449f8ae0842fab"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Journey/captures/Part1_JourneyRules_20260910_132104/005_探索村庄扣二.png",
+    "bytes": 1857274,
+    "sha256": "d7da090c91b266f227e8531acb80ef8a27f41a755920aaf717b75b599b2cceeb"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Journey/captures/Part1_JourneyRules_20260910_132104/006_进入村庄再扣二.png",
+    "bytes": 2028200,
+    "sha256": "6438bb1799dc33aaf6126a25d6601b92e679f9cbf15cd239f6c539e0d913b6a5"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Journey/captures/Part1_JourneyRules_20260910_132104/007_选择_basic_card_008_1.png",
+    "bytes": 2175440,
+    "sha256": "862466532257b34a462a0f96f8a3799594dfee2a74d1ede849fb45c9231a1f15"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Journey/captures/Part1_JourneyRules_20260910_132104/008_点选_offer_guard.png",
+    "bytes": 2173421,
+    "sha256": "94ef582b874ad3267a00b29b5c6602713eadfd942500eb14afc585e74a0849c4"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Journey/captures/Part1_JourneyRules_20260910_132104/009_选择原卡强化.png",
+    "bytes": 2183423,
+    "sha256": "4865dcfdf7e6fe7f17fe8764767c349b60298b02f014e9ebe8fd99da8fbbf48a"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Journey/captures/Part1_JourneyRules_20260910_132104/010_承诺强化4.png",
+    "bytes": 2031016,
+    "sha256": "8a62979a880376871c2e490d5b0f1326b2c96e695b62784f7812f7d6136268a8"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Journey/captures/Part1_JourneyRules_20260910_132104/011_选择_basic_card_008_2.png",
+    "bytes": 2042856,
+    "sha256": "d3d3161408dcee8a767094463cec969419203152494e83679153082c70eb77db"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Journey/captures/Part1_JourneyRules_20260910_132104/012_承诺基础补二.png",
+    "bytes": 1896153,
+    "sha256": "a195e4f13b7397c8f87c9ec6007da8fd7ea5ba013973d7ab187583f4d30c5253"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Journey/captures/Part1_JourneyRules_20260910_132104/013_支付五招募守卫.png",
+    "bytes": 1881956,
+    "sha256": "d6753527064ba776d9c0f3eafece130b89ea1031501bb785fb770fb1bdcb106e"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Journey/captures/Part1_JourneyRules_20260910_132104/014_进入下一回合遭遇.png",
+    "bytes": 2215748,
+    "sha256": "f1d08878d0e580b57bc87d52b0b9e899c67caafcca836a014bc3f2d1dba80f90"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Journey/captures/Part1_JourneyRules_20260910_132104/015_选择部队.png",
+    "bytes": 2219386,
+    "sha256": "e032bcafc247c691189abd213ac7b0f253483630c39f7dac2e9b6fe045107402"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Journey/captures/Part1_JourneyRules_20260910_132104/016_没目标部队不能使用.png",
+    "bytes": 2216691,
+    "sha256": "768b38cc89002d821a275c8a047d97ea32804184f3fd507a890d09840472471c"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Journey/captures/Part1_JourneyRules_20260910_132104/017_点选_enemy_0.png",
+    "bytes": 2208576,
+    "sha256": "e89f2b83dc7228357f1752d88bc9aed3c45cbb1c06941076afec3bd924b33873"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Journey/captures/Part1_JourneyRules_20260910_132104/018_守卫格挡三.png",
+    "bytes": 2214751,
+    "sha256": "b80afae6ea3a5ce7065143b5f82c608f86e570608e4e62ab9a0b59900a51986d"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Journey/captures/Part1_JourneyRules_20260910_132104/019_耗竭单位不能重复.png",
+    "bytes": 2210944,
+    "sha256": "f60c05b3ece88eef39b4376652b8237784a74a164dbf269f8ae86a1b2ad86510"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Journey/captures/Part1_JourneyRules_20260910_132104/020_选择_basic_card_016_5.png",
+    "bytes": 2362581,
+    "sha256": "41c1bf4924a1bf3dfb24ba855b5ef885e9cf52770f50fa09547b67d085ea95a0"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Journey/captures/Part1_JourneyRules_20260910_132104/021_点选_enemy_0.png",
+    "bytes": 2358650,
+    "sha256": "48ba98b103e9086192980b3de9eedbe65e317712d99af4253472668e7ac3c8ee"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Journey/captures/Part1_JourneyRules_20260910_132104/022_选择原卡强化.png",
+    "bytes": 2365601,
+    "sha256": "2190df90634a5f1b736ce0b74d377b1055769def7f46c3f3310096b5fa6198cf"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Journey/captures/Part1_JourneyRules_20260910_132104/023_决心强化与部队合计八.png",
+    "bytes": 2209484,
+    "sha256": "d966900e620b45a2bf988627b655db71bf24538ed80dc141194f2f7f7976d5c2"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Journey/captures/Part1_JourneyRules_20260910_132104/024_成功格挡没有伤牌.png",
+    "bytes": 2206398,
+    "sha256": "667c548606ffd4262d6f0a55d9a5a5a9b21ca312fce42f98857259c907f42b0f"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Journey/captures/Part1_JourneyRules_20260910_132104/025_选择_basic_card_021_3.png",
+    "bytes": 2360554,
+    "sha256": "0f627d5008de8d6f870817a171f09ea5f62015619ed363123a2e60cfcab02277"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Journey/captures/Part1_JourneyRules_20260910_132104/026_点选_enemy_0.png",
+    "bytes": 2355269,
+    "sha256": "70a3cc00abaf9d760489fc96422a205c5c9c272a4c65fc3ce3ff7e8f73dc244d"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Journey/captures/Part1_JourneyRules_20260910_132104/027_选择原卡强化.png",
+    "bytes": 2362135,
+    "sha256": "6e03ad15ca01cc1bfa1357fb8e15630497af80a9967dedda1463af3813c6ca85"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Journey/captures/Part1_JourneyRules_20260910_132104/028_狂怒强化四.png",
+    "bytes": 2202568,
+    "sha256": "80c89ad2ab1f843640267c66e827e810d30ad4b0762ce011dc9c29e47a0da257"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Journey/captures/Part1_JourneyRules_20260910_132104/029_选择_basic_card_021_4.png",
+    "bytes": 2219105,
+    "sha256": "e4e5d4b19118ed8689d610368ea687103108db211665facbcecf870c5e47602f"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Journey/captures/Part1_JourneyRules_20260910_132104/030_狂怒基础合计六.png",
+    "bytes": 2059793,
+    "sha256": "70d084b1e8008ce56d3eb95e83ea41e69a361fb3cb7ef92b3bdfd79874f60b23"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Journey/captures/Part1_JourneyRules_20260910_132104/031_完整旅程获胜.png",
+    "bytes": 2027672,
+    "sha256": "75f02ad99268ef8024d0a49c63c057d6cb2220a30755be80ff8453d9188206e2"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Journey/report.json",
+    "bytes": 512109,
+    "sha256": "b345b388336e91b1f953893a546df70b1b062592506933bad554882a805d220c"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Recruitment/captures/Part1_RecruitmentRules_20260910_132051/000_Scene Start.png",
+    "bytes": 2296821,
+    "sha256": "001e8e2daf38ee555392cbfa8b7f1453816490d682fa1adbbc2e777d4bea703e"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Recruitment/captures/Part1_RecruitmentRules_20260910_132051/001_点选_offer_guard.png",
+    "bytes": 2302696,
+    "sha256": "d7926eb8acab73acfa375702b3cd0afc883e00385feef18e009457b9581367e8"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Recruitment/captures/Part1_RecruitmentRules_20260910_132051/002_影响力不足.png",
+    "bytes": 2313680,
+    "sha256": "204c74275e3dcb3a2e96e994dd383905779d3ec103c9a773a689eb2a89494947"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Recruitment/captures/Part1_RecruitmentRules_20260910_132051/003_选择_basic_card_008_0.png",
+    "bytes": 2446208,
+    "sha256": "6b39385979f541ee5143c03ceaab5012737176b6e77c10c1aeb2328cd3641241"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Recruitment/captures/Part1_RecruitmentRules_20260910_132051/004_点选_offer_guard.png",
+    "bytes": 2442007,
+    "sha256": "6a51e231049745032749b86bd79fa9a298040f7f76bfbc3410733550c2574547"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Recruitment/captures/Part1_RecruitmentRules_20260910_132051/005_选择原卡强化.png",
+    "bytes": 2452100,
+    "sha256": "194819240d9849283c5c8760a6949e5930f26c825e32509c7e8e4801c828cbf8"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Recruitment/captures/Part1_RecruitmentRules_20260910_132051/006_承诺白色强化4.png",
+    "bytes": 2301844,
+    "sha256": "f8575ada49e56034038972a847bab8661c80de4d2fa64409ddb162bb6cba565c"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Recruitment/captures/Part1_RecruitmentRules_20260910_132051/007_四点还不足费用五.png",
+    "bytes": 2307942,
+    "sha256": "e523f7ce4fa45bbdc3613fe2bec338b3b424d331984e242d9c2301a48e0d44b0"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Recruitment/captures/Part1_RecruitmentRules_20260910_132051/008_选择_basic_card_008_1.png",
+    "bytes": 2315016,
+    "sha256": "a68311be920c68cd3dcbde56b4ac5c226e96e35dc2bcf03ba0d2d4fe145b1e6a"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Recruitment/captures/Part1_RecruitmentRules_20260910_132051/009_第二张承诺基础2.png",
+    "bytes": 2171114,
+    "sha256": "f41403d9bb7a2623b3e67f68dee2cb30ba208c18c19a13ec6d9577c0deae3ca8"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Recruitment/captures/Part1_RecruitmentRules_20260910_132051/010_招募扣五余一.png",
+    "bytes": 2158099,
+    "sha256": "c676bfaf6f8d4ee17fc55e4e797a4901f76f2dded124cf835d236ee64123be00"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Recruitment/captures/Part1_RecruitmentRules_20260910_132051/011_点选_offer_guard.png",
+    "bytes": 2153802,
+    "sha256": "29fe4b35a89207da602f83f46beb750bb3696be9bb9195a2363c8776804d1b3b"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Recruitment/captures/Part1_RecruitmentRules_20260910_132051/012_不能重复招募.png",
+    "bytes": 2157323,
+    "sha256": "eb47dd4059329e7f09ef584a197fdf8e84536b4fc0c104a860081c8598f967fa"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Recruitment/captures/Part1_RecruitmentRules_20260910_132051/013_点选_offer_monk.png",
+    "bytes": 2165067,
+    "sha256": "a0bab2249f3e464e976497f04906d8c1d45e095169a421b9d452f0034c9e1db6"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Recruitment/captures/Part1_RecruitmentRules_20260910_132051/014_地点不符不得招募.png",
+    "bytes": 2175937,
+    "sha256": "bed88d5aee4285ce44775c6e7291096a82ef92851f24c80df3d30f96e0075a5f"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Recruitment/captures/Part1_RecruitmentRules_20260910_132051/015_取消目标.png",
+    "bytes": 2159534,
+    "sha256": "52cc9f62a644f0bda711f2c26ca6e9b610bb81a85d48074017bf4b3b6af759e9"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Recruitment/captures/Part1_RecruitmentRules_20260910_132051/016_回合结束正常补牌.png",
+    "bytes": 2164050,
+    "sha256": "726e089c20c5c02c2f3810470064d92d57181d5a0c91a9c1481340ff540c04ba"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/Recruitment/report.json",
+    "bytes": 246489,
+    "sha256": "0fb8a3c2d9ddc749d568d043aebd24e85f819617db044329264cdd32b0a27d44"
+  },
+  {
+    "path": "AutomationOutputs/OfficialCards/20260910/editmode-results.xml",
+    "bytes": 74732,
+    "sha256": "f3f3cd11030c132b369ef3200689016250f83520dd65e2503ef734ed528d8e26"
+  },
+  {
+    "path": "tools/audit_card_sources.py",
+    "bytes": 2610,
+    "sha256": "dabe8d83d0fd4bcbdc40865b86dcbba3534a4579a732607eca6935c248d07552"
+  },
+  {
+    "path": "tools/build_all_card_verification.py",
+    "bytes": 21242,
+    "sha256": "f6c1ed4b6d57957961ffdeba2062fe03b16b9c8292f598d036744b8eaf57dc8b"
+  },
+  {
+    "path": "tools/summarize_all_card_verification.py",
+    "bytes": 7932,
+    "sha256": "2ee6f4d1e37593aa100baf601a5b3e06304b487baff123e1ea3cac90f82186be"
+  },
+  {
+    "path": "vibe_coding/codex/original_card_findings_2026-09-10.md",
+    "bytes": 4942,
+    "sha256": "a5ff0486bb54614db30bc0dfa2bd2428ec7d615ed5a044084b9b93889f436e4e"
+  },
+  {
+    "path": "vibe_coding/codex/pr_archive_2026-09-10.md",
+    "bytes": 1448,
+    "sha256": "e6ae75559aaa97b8a3857fcf8bed33f0bb9bca6f9cf7ece9f9f709734bba567a"
+  },
+  {
+    "path": "vibe_coding/codex/pr_original_card_verification_2026-09-10.md",
+    "bytes": 2575,
+    "sha256": "57241105c7ace4f0ed85d5505b85eb6a08bf8fe70daebdaaf2a377b77e14d347"
+  },
+  {
+    "path": "vibe_coding/codex/project_experience/original_card_scene_audit_2026-09-10.md",
+    "bytes": 4132,
+    "sha256": "f27182417e6cc7064e227894f6f10df677b02c7a73cf572ac5e032a1dd1d601b"
+  },
+  {
+    "path": "vibe_coding/codex/worklog_2026-09-10_archive_and_card_verification.md",
+    "bytes": 7170,
+    "sha256": "5092d39f07239084ec20be85d851ff247e9375ed3f3d0153161785397357172b"
+  }
+]

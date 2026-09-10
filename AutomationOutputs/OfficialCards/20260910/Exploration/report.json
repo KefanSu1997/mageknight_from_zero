@@ -1,14 +1,14 @@
 {
     "scenePath": "Assets/Scenes/Part1/Part1_ExplorationRules.unity",
-    "startedAt": "2026-09-10T02:43:51.6367366Z",
-    "finishedAt": "2026-09-10T02:44:02.3172386Z",
+    "startedAt": "2026-09-10T05:20:36.9006398Z",
+    "finishedAt": "2026-09-10T05:20:46.9171166Z",
     "status": "success",
     "message": "",
     "steps": [
         {
             "label": "Scene Start",
             "buttonPath": "",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Exploration\\captures\\Part1_ExplorationRules_20260910_104351\\000_Scene Start.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Exploration\\captures\\Part1_ExplorationRules_20260910_132036\\000_Scene Start.png",
             "success": true,
             "message": "",
             "runtimeRule": "",
@@ -22,7 +22,7 @@
         {
             "label": "点选_site_forest",
             "buttonPath": "Canvas/UIRoot/Stage/Targets/Site_forest",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Exploration\\captures\\Part1_ExplorationRules_20260910_104351\\001_点选_site_forest.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Exploration\\captures\\Part1_ExplorationRules_20260910_132036\\001_点选_site_forest.png",
             "success": true,
             "message": "",
             "runtimeRule": "目标与行动条件会在确认时重新校验。",
@@ -543,7 +543,7 @@
         {
             "label": "零移动不能进入",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Exploration\\captures\\Part1_ExplorationRules_20260910_104351\\002_零移动不能进入.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Exploration\\captures\\Part1_ExplorationRules_20260910_132036\\002_零移动不能进入.png",
             "success": true,
             "message": "",
             "runtimeRule": "先选择移动牌并确认打出，再支付目标费用。",
@@ -1072,7 +1072,7 @@
         {
             "label": "选择_basic_card_000_0",
             "buttonPath": "Canvas/UIRoot/Hand/Card_0",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Exploration\\captures\\Part1_ExplorationRules_20260910_104351\\003_选择_basic_card_000_0.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Exploration\\captures\\Part1_ExplorationRules_20260910_132036\\003_选择_basic_card_000_0.png",
             "success": true,
             "message": "",
             "runtimeRule": "选择本身不消耗卡牌或魔力。",
@@ -1633,7 +1633,7 @@
         {
             "label": "点选_site_forest",
             "buttonPath": "Canvas/UIRoot/Stage/Targets/Site_forest",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Exploration\\captures\\Part1_ExplorationRules_20260910_104351\\004_点选_site_forest.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Exploration\\captures\\Part1_ExplorationRules_20260910_132036\\004_点选_site_forest.png",
             "success": true,
             "message": "",
             "runtimeRule": "目标与行动条件会在确认时重新校验。",
@@ -2154,7 +2154,7 @@
         {
             "label": "选择原卡强化",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Enhance",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Exploration\\captures\\Part1_ExplorationRules_20260910_104351\\005_选择原卡强化.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Exploration\\captures\\Part1_ExplorationRules_20260910_132036\\005_选择原卡强化.png",
             "success": true,
             "message": "",
             "runtimeRule": "目标与行动条件会在确认时重新校验。",
@@ -2691,7 +2691,7 @@
         {
             "label": "行进绿色强化4",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Exploration\\captures\\Part1_ExplorationRules_20260910_104351\\006_行进绿色强化4.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Exploration\\captures\\Part1_ExplorationRules_20260910_132036\\006_行进绿色强化4.png",
             "success": true,
             "message": "",
             "runtimeRule": "移动力4。",
@@ -3224,7 +3224,7 @@
         {
             "label": "白天森林费用3",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Exploration\\captures\\Part1_ExplorationRules_20260910_104351\\007_白天森林费用3.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Exploration\\captures\\Part1_ExplorationRules_20260910_132036\\007_白天森林费用3.png",
             "success": true,
             "message": "",
             "runtimeRule": "按昼夜与底层地形支付费用；进入交涉阶段后不再移动。",
@@ -3729,7 +3729,7 @@
         {
             "label": "选择_basic_card_014_1",
             "buttonPath": "Canvas/UIRoot/Hand/Card_1",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Exploration\\captures\\Part1_ExplorationRules_20260910_104351\\008_选择_basic_card_014_1.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Exploration\\captures\\Part1_ExplorationRules_20260910_132036\\008_选择_basic_card_014_1.png",
             "success": true,
             "message": "",
             "runtimeRule": "选择本身不消耗卡牌或魔力。",
@@ -4258,7 +4258,7 @@
         {
             "label": "点选_site_frontier",
             "buttonPath": "Canvas/UIRoot/Stage/Targets/Site_frontier",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Exploration\\captures\\Part1_ExplorationRules_20260910_104351\\009_点选_site_frontier.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Exploration\\captures\\Part1_ExplorationRules_20260910_132036\\009_点选_site_frontier.png",
             "success": true,
             "message": "",
             "runtimeRule": "目标与行动条件会在确认时重新校验。",
@@ -4755,7 +4755,7 @@
         {
             "label": "耐力基础移动2",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Exploration\\captures\\Part1_ExplorationRules_20260910_104351\\010_耐力基础移动2.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Exploration\\captures\\Part1_ExplorationRules_20260910_132036\\010_耐力基础移动2.png",
             "success": true,
             "message": "",
             "runtimeRule": "移动力2。",
@@ -5256,7 +5256,7 @@
         {
             "label": "探索只揭示不移动",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Exploration\\captures\\Part1_ExplorationRules_20260910_104351\\011_探索只揭示不移动.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Exploration\\captures\\Part1_ExplorationRules_20260910_132036\\011_探索只揭示不移动.png",
             "success": true,
             "message": "",
             "runtimeRule": "探索费用2；进入揭示的地形还需另外支付地形费用。",
@@ -5737,7 +5737,7 @@
         {
             "label": "进入平原费用不足",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Exploration\\captures\\Part1_ExplorationRules_20260910_104351\\012_进入平原费用不足.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Exploration\\captures\\Part1_ExplorationRules_20260910_132036\\012_进入平原费用不足.png",
             "success": true,
             "message": "",
             "runtimeRule": "先选择移动牌并确认打出，再支付目标费用。",
@@ -6218,7 +6218,7 @@
         {
             "label": "选择_basic_card_000_2",
             "buttonPath": "Canvas/UIRoot/Hand/Card_2",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Exploration\\captures\\Part1_ExplorationRules_20260910_104351\\013_选择_basic_card_000_2.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Exploration\\captures\\Part1_ExplorationRules_20260910_132036\\013_选择_basic_card_000_2.png",
             "success": true,
             "message": "",
             "runtimeRule": "选择本身不消耗卡牌或魔力。",
@@ -6723,7 +6723,7 @@
         {
             "label": "另一张行进基础2",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Exploration\\captures\\Part1_ExplorationRules_20260910_104351\\014_另一张行进基础2.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Exploration\\captures\\Part1_ExplorationRules_20260910_132036\\014_另一张行进基础2.png",
             "success": true,
             "message": "",
             "runtimeRule": "移动力2。",
@@ -7192,7 +7192,7 @@
         {
             "label": "进入揭示平原",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Exploration\\captures\\Part1_ExplorationRules_20260910_104351\\015_进入揭示平原.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Exploration\\captures\\Part1_ExplorationRules_20260910_132036\\015_进入揭示平原.png",
             "success": true,
             "message": "",
             "runtimeRule": "按昼夜与底层地形支付费用；进入交涉阶段后不再移动。",
@@ -7649,7 +7649,7 @@
         {
             "label": "重新开始",
             "buttonPath": "Canvas/UIRoot/Btn_Reset",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Exploration\\captures\\Part1_ExplorationRules_20260910_104351\\016_重新开始.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Exploration\\captures\\Part1_ExplorationRules_20260910_132036\\016_重新开始.png",
             "success": true,
             "message": "",
             "runtimeRule": "卡牌和部队提供行动；确认后才消耗资源。",
@@ -8174,7 +8174,7 @@
         {
             "label": "点选_site_lake",
             "buttonPath": "Canvas/UIRoot/Stage/Targets/Site_lake",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Exploration\\captures\\Part1_ExplorationRules_20260910_104351\\017_点选_site_lake.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Exploration\\captures\\Part1_ExplorationRules_20260910_132036\\017_点选_site_lake.png",
             "success": true,
             "message": "",
             "runtimeRule": "目标与行动条件会在确认时重新校验。",
@@ -8695,7 +8695,7 @@
         {
             "label": "湖泊不可通行",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Exploration\\captures\\Part1_ExplorationRules_20260910_104351\\018_湖泊不可通行.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Exploration\\captures\\Part1_ExplorationRules_20260910_132036\\018_湖泊不可通行.png",
             "success": true,
             "message": "",
             "runtimeRule": "目标与行动条件会在确认时重新校验。",
@@ -9224,7 +9224,7 @@
         {
             "label": "点选_site_mountain",
             "buttonPath": "Canvas/UIRoot/Stage/Targets/Site_mountain",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Exploration\\captures\\Part1_ExplorationRules_20260910_104351\\019_点选_site_mountain.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Exploration\\captures\\Part1_ExplorationRules_20260910_132036\\019_点选_site_mountain.png",
             "success": true,
             "message": "",
             "runtimeRule": "目标与行动条件会在确认时重新校验。",
@@ -9745,7 +9745,7 @@
         {
             "label": "高山不可通行",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Exploration\\captures\\Part1_ExplorationRules_20260910_104351\\020_高山不可通行.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Exploration\\captures\\Part1_ExplorationRules_20260910_132036\\020_高山不可通行.png",
             "success": true,
             "message": "",
             "runtimeRule": "目标与行动条件会在确认时重新校验。",
@@ -10266,7 +10266,7 @@
         {
             "label": "点选_site_frontier",
             "buttonPath": "Canvas/UIRoot/Stage/Targets/Site_frontier",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Exploration\\captures\\Part1_ExplorationRules_20260910_104351\\021_点选_site_frontier.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Exploration\\captures\\Part1_ExplorationRules_20260910_132036\\021_点选_site_frontier.png",
             "success": true,
             "message": "",
             "runtimeRule": "目标与行动条件会在确认时重新校验。",
@@ -10787,7 +10787,7 @@
         {
             "label": "非相邻不能探索",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Exploration\\captures\\Part1_ExplorationRules_20260910_104351\\022_非相邻不能探索.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Exploration\\captures\\Part1_ExplorationRules_20260910_132036\\022_非相邻不能探索.png",
             "success": true,
             "message": "",
             "runtimeRule": "目标与行动条件会在确认时重新校验。",

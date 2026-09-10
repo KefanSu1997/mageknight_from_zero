@@ -1,14 +1,14 @@
 {
     "scenePath": "Assets/Scenes/Part1/Part1_JourneyRules.unity",
-    "startedAt": "2026-09-10T02:44:19.9659063Z",
-    "finishedAt": "2026-09-10T02:44:34.3430152Z",
+    "startedAt": "2026-09-10T05:21:04.7164221Z",
+    "finishedAt": "2026-09-10T05:21:18.5758735Z",
     "status": "success",
     "message": "",
     "steps": [
         {
             "label": "Scene Start",
             "buttonPath": "",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_104419\\000_Scene Start.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_132104\\000_Scene Start.png",
             "success": true,
             "message": "",
             "runtimeRule": "",
@@ -22,7 +22,7 @@
         {
             "label": "选择_basic_card_000_0",
             "buttonPath": "Canvas/UIRoot/Hand/Card_0",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_104419\\001_选择_basic_card_000_0.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_132104\\001_选择_basic_card_000_0.png",
             "success": true,
             "message": "",
             "runtimeRule": "选择本身不消耗卡牌或魔力。",
@@ -575,7 +575,7 @@
         {
             "label": "点选_site_village",
             "buttonPath": "Canvas/UIRoot/Stage/Targets/Site_village",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_104419\\002_点选_site_village.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_132104\\002_点选_site_village.png",
             "success": true,
             "message": "",
             "runtimeRule": "目标与行动条件会在确认时重新校验。",
@@ -1096,7 +1096,7 @@
         {
             "label": "选择原卡强化",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Enhance",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_104419\\003_选择原卡强化.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_132104\\003_选择原卡强化.png",
             "success": true,
             "message": "",
             "runtimeRule": "目标与行动条件会在确认时重新校验。",
@@ -1633,7 +1633,7 @@
         {
             "label": "行进强化准备探索",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_104419\\004_行进强化准备探索.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_132104\\004_行进强化准备探索.png",
             "success": true,
             "message": "",
             "runtimeRule": "移动力4。",
@@ -2158,7 +2158,7 @@
         {
             "label": "探索村庄扣二",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_104419\\005_探索村庄扣二.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_132104\\005_探索村庄扣二.png",
             "success": true,
             "message": "",
             "runtimeRule": "探索费用2；进入揭示的地形还需另外支付地形费用。",
@@ -2663,7 +2663,7 @@
         {
             "label": "进入村庄再扣二",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_104419\\006_进入村庄再扣二.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_132104\\006_进入村庄再扣二.png",
             "success": true,
             "message": "",
             "runtimeRule": "按昼夜与底层地形支付费用；进入交涉阶段后不再移动。",
@@ -3176,7 +3176,7 @@
         {
             "label": "选择_basic_card_008_1",
             "buttonPath": "Canvas/UIRoot/Hand/Card_1",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_104419\\007_选择_basic_card_008_1.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_132104\\007_选择_basic_card_008_1.png",
             "success": true,
             "message": "",
             "runtimeRule": "选择本身不消耗卡牌或魔力。",
@@ -3705,7 +3705,7 @@
         {
             "label": "点选_offer_guard",
             "buttonPath": "Canvas/UIRoot/Stage/Targets/Offer_guard",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_104419\\008_点选_offer_guard.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_132104\\008_点选_offer_guard.png",
             "success": true,
             "message": "",
             "runtimeRule": "目标与行动条件会在确认时重新校验。",
@@ -4202,7 +4202,7 @@
         {
             "label": "选择原卡强化",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Enhance",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_104419\\009_选择原卡强化.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_132104\\009_选择原卡强化.png",
             "success": true,
             "message": "",
             "runtimeRule": "目标与行动条件会在确认时重新校验。",
@@ -4715,7 +4715,7 @@
         {
             "label": "承诺强化4",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_104419\\010_承诺强化4.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_132104\\010_承诺强化4.png",
             "success": true,
             "message": "",
             "runtimeRule": "影响力4。",
@@ -5216,7 +5216,7 @@
         {
             "label": "选择_basic_card_008_2",
             "buttonPath": "Canvas/UIRoot/Hand/Card_2",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_104419\\011_选择_basic_card_008_2.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_132104\\011_选择_basic_card_008_2.png",
             "success": true,
             "message": "",
             "runtimeRule": "选择本身不消耗卡牌或魔力。",
@@ -5721,7 +5721,7 @@
         {
             "label": "承诺基础补二",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_104419\\012_承诺基础补二.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_132104\\012_承诺基础补二.png",
             "success": true,
             "message": "",
             "runtimeRule": "影响力2。",
@@ -6190,7 +6190,7 @@
         {
             "label": "支付五招募守卫",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_104419\\013_支付五招募守卫.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_132104\\013_支付五招募守卫.png",
             "success": true,
             "message": "",
             "runtimeRule": "支付牌面费用，占用一个指挥槽；单位就绪加入。",
@@ -6647,7 +6647,7 @@
         {
             "label": "进入下一回合遭遇",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_104419\\014_进入下一回合遭遇.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_132104\\014_进入下一回合遭遇.png",
             "success": true,
             "message": "",
             "runtimeRule": "已打出牌进入弃牌堆；补牌到5，临时移动力/影响力/魔力清零，水晶与部队保留。",
@@ -7252,7 +7252,7 @@
         {
             "label": "选择部队",
             "buttonPath": "Canvas/UIRoot/Units/Unit_guard",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_104419\\015_选择部队.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_132104\\015_选择部队.png",
             "success": true,
             "message": "",
             "runtimeRule": "选择不消耗单位；确认后单位变为已用。",
@@ -7821,7 +7821,7 @@
         {
             "label": "没目标部队不能使用",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_104419\\016_没目标部队不能使用.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_132104\\016_没目标部队不能使用.png",
             "success": true,
             "message": "",
             "runtimeRule": "选择不消耗单位；确认后单位变为已用。",
@@ -8398,7 +8398,7 @@
         {
             "label": "点选_enemy_0",
             "buttonPath": "Canvas/UIRoot/Stage/Targets/Enemy_0",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_104419\\017_点选_enemy_0.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_132104\\017_点选_enemy_0.png",
             "success": true,
             "message": "",
             "runtimeRule": "目标与行动条件会在确认时重新校验。",
@@ -8967,7 +8967,7 @@
         {
             "label": "守卫格挡三",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_104419\\018_守卫格挡三.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_132104\\018_守卫格挡三.png",
             "success": true,
             "message": "",
             "runtimeRule": "部队能力来自单位定义；已用状态保留到整轮结束。",
@@ -9536,7 +9536,7 @@
         {
             "label": "耗竭单位不能重复",
             "buttonPath": "Canvas/UIRoot/Units/Unit_guard",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_104419\\019_耗竭单位不能重复.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_132104\\019_耗竭单位不能重复.png",
             "success": true,
             "message": "",
             "runtimeRule": "部队能力来自单位定义；已用状态保留到整轮结束。",
@@ -10113,7 +10113,7 @@
         {
             "label": "选择_basic_card_016_5",
             "buttonPath": "Canvas/UIRoot/Hand/Card_5",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_104419\\020_选择_basic_card_016_5.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_132104\\020_选择_basic_card_016_5.png",
             "success": true,
             "message": "",
             "runtimeRule": "选择本身不消耗卡牌或魔力。",
@@ -10714,7 +10714,7 @@
         {
             "label": "点选_enemy_0",
             "buttonPath": "Canvas/UIRoot/Stage/Targets/Enemy_0",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_104419\\021_点选_enemy_0.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_132104\\021_点选_enemy_0.png",
             "success": true,
             "message": "",
             "runtimeRule": "目标与行动条件会在确认时重新校验。",
@@ -11283,7 +11283,7 @@
         {
             "label": "选择原卡强化",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Enhance",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_104419\\022_选择原卡强化.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_132104\\022_选择原卡强化.png",
             "success": true,
             "message": "",
             "runtimeRule": "目标与行动条件会在确认时重新校验。",
@@ -11868,7 +11868,7 @@
         {
             "label": "决心强化与部队合计八",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_104419\\023_决心强化与部队合计八.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_132104\\023_决心强化与部队合计八.png",
             "success": true,
             "message": "",
             "runtimeRule": "格挡5。",
@@ -12449,7 +12449,7 @@
         {
             "label": "成功格挡没有伤牌",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_104419\\024_成功格挡没有伤牌.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_132104\\024_成功格挡没有伤牌.png",
             "success": true,
             "message": "",
             "runtimeRule": "只有达到格挡需求才免伤；不足时承受完整攻击，伤害÷英雄护甲向上取整。",
@@ -13018,7 +13018,7 @@
         {
             "label": "选择_basic_card_021_3",
             "buttonPath": "Canvas/UIRoot/Hand/Card_3",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_104419\\025_选择_basic_card_021_3.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_132104\\025_选择_basic_card_021_3.png",
             "success": true,
             "message": "",
             "runtimeRule": "选择本身不消耗卡牌或魔力。",
@@ -13595,7 +13595,7 @@
         {
             "label": "点选_enemy_0",
             "buttonPath": "Canvas/UIRoot/Stage/Targets/Enemy_0",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_104419\\026_点选_enemy_0.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_132104\\026_点选_enemy_0.png",
             "success": true,
             "message": "",
             "runtimeRule": "目标与行动条件会在确认时重新校验。",
@@ -14140,7 +14140,7 @@
         {
             "label": "选择原卡强化",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Enhance",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_104419\\027_选择原卡强化.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_132104\\027_选择原卡强化.png",
             "success": true,
             "message": "",
             "runtimeRule": "目标与行动条件会在确认时重新校验。",
@@ -14709,7 +14709,7 @@
         {
             "label": "狂怒强化四",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_104419\\028_狂怒强化四.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_132104\\028_狂怒强化四.png",
             "success": true,
             "message": "",
             "runtimeRule": "攻击4。",
@@ -15266,7 +15266,7 @@
         {
             "label": "选择_basic_card_021_4",
             "buttonPath": "Canvas/UIRoot/Hand/Card_4",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_104419\\029_选择_basic_card_021_4.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_132104\\029_选择_basic_card_021_4.png",
             "success": true,
             "message": "",
             "runtimeRule": "选择本身不消耗卡牌或魔力。",
@@ -15819,7 +15819,7 @@
         {
             "label": "狂怒基础合计六",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_104419\\030_狂怒基础合计六.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_132104\\030_狂怒基础合计六.png",
             "success": true,
             "message": "",
             "runtimeRule": "攻击或格挡2。",
@@ -16344,7 +16344,7 @@
         {
             "label": "完整旅程获胜",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_104419\\031_完整旅程获胜.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Journey\\captures\\Part1_JourneyRules_20260910_132104\\031_完整旅程获胜.png",
             "success": true,
             "message": "",
             "runtimeRule": "攻击资源按目标和元素合并，应用抗性后与护甲比较；每个敌人的名望只领取一次。",

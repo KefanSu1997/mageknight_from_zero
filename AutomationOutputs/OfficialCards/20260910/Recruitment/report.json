@@ -1,14 +1,14 @@
 {
     "scenePath": "Assets/Scenes/Part1/Part1_RecruitmentRules.unity",
-    "startedAt": "2026-09-10T02:44:07.1898434Z",
-    "finishedAt": "2026-09-10T02:44:15.2237836Z",
+    "startedAt": "2026-09-10T05:20:51.8906040Z",
+    "finishedAt": "2026-09-10T05:20:59.7355687Z",
     "status": "success",
     "message": "",
     "steps": [
         {
             "label": "Scene Start",
             "buttonPath": "",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Recruitment\\captures\\Part1_RecruitmentRules_20260910_104407\\000_Scene Start.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Recruitment\\captures\\Part1_RecruitmentRules_20260910_132051\\000_Scene Start.png",
             "success": true,
             "message": "",
             "runtimeRule": "",
@@ -22,7 +22,7 @@
         {
             "label": "点选_offer_guard",
             "buttonPath": "Canvas/UIRoot/Stage/Targets/Offer_guard",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Recruitment\\captures\\Part1_RecruitmentRules_20260910_104407\\001_点选_offer_guard.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Recruitment\\captures\\Part1_RecruitmentRules_20260910_132051\\001_点选_offer_guard.png",
             "success": true,
             "message": "",
             "runtimeRule": "目标与行动条件会在确认时重新校验。",
@@ -543,7 +543,7 @@
         {
             "label": "影响力不足",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Recruitment\\captures\\Part1_RecruitmentRules_20260910_104407\\002_影响力不足.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Recruitment\\captures\\Part1_RecruitmentRules_20260910_132051\\002_影响力不足.png",
             "success": true,
             "message": "",
             "runtimeRule": "招募失败不扣费；声望在交涉开始时只应用一次。",
@@ -1072,7 +1072,7 @@
         {
             "label": "选择_basic_card_008_0",
             "buttonPath": "Canvas/UIRoot/Hand/Card_0",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Recruitment\\captures\\Part1_RecruitmentRules_20260910_104407\\003_选择_basic_card_008_0.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Recruitment\\captures\\Part1_RecruitmentRules_20260910_132051\\003_选择_basic_card_008_0.png",
             "success": true,
             "message": "",
             "runtimeRule": "选择本身不消耗卡牌或魔力。",
@@ -1625,7 +1625,7 @@
         {
             "label": "点选_offer_guard",
             "buttonPath": "Canvas/UIRoot/Stage/Targets/Offer_guard",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Recruitment\\captures\\Part1_RecruitmentRules_20260910_104407\\004_点选_offer_guard.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Recruitment\\captures\\Part1_RecruitmentRules_20260910_132051\\004_点选_offer_guard.png",
             "success": true,
             "message": "",
             "runtimeRule": "目标与行动条件会在确认时重新校验。",
@@ -2146,7 +2146,7 @@
         {
             "label": "选择原卡强化",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Enhance",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Recruitment\\captures\\Part1_RecruitmentRules_20260910_104407\\005_选择原卡强化.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Recruitment\\captures\\Part1_RecruitmentRules_20260910_132051\\005_选择原卡强化.png",
             "success": true,
             "message": "",
             "runtimeRule": "目标与行动条件会在确认时重新校验。",
@@ -2683,7 +2683,7 @@
         {
             "label": "承诺白色强化4",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Recruitment\\captures\\Part1_RecruitmentRules_20260910_104407\\006_承诺白色强化4.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Recruitment\\captures\\Part1_RecruitmentRules_20260910_132051\\006_承诺白色强化4.png",
             "success": true,
             "message": "",
             "runtimeRule": "影响力4。",
@@ -3208,7 +3208,7 @@
         {
             "label": "四点还不足费用五",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Recruitment\\captures\\Part1_RecruitmentRules_20260910_104407\\007_四点还不足费用五.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Recruitment\\captures\\Part1_RecruitmentRules_20260910_132051\\007_四点还不足费用五.png",
             "success": true,
             "message": "",
             "runtimeRule": "招募失败不扣费；声望在交涉开始时只应用一次。",
@@ -3713,7 +3713,7 @@
         {
             "label": "选择_basic_card_008_1",
             "buttonPath": "Canvas/UIRoot/Hand/Card_1",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Recruitment\\captures\\Part1_RecruitmentRules_20260910_104407\\008_选择_basic_card_008_1.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Recruitment\\captures\\Part1_RecruitmentRules_20260910_132051\\008_选择_basic_card_008_1.png",
             "success": true,
             "message": "",
             "runtimeRule": "选择本身不消耗卡牌或魔力。",
@@ -4242,7 +4242,7 @@
         {
             "label": "第二张承诺基础2",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Recruitment\\captures\\Part1_RecruitmentRules_20260910_104407\\009_第二张承诺基础2.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Recruitment\\captures\\Part1_RecruitmentRules_20260910_132051\\009_第二张承诺基础2.png",
             "success": true,
             "message": "",
             "runtimeRule": "影响力2。",
@@ -4743,7 +4743,7 @@
         {
             "label": "招募扣五余一",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Recruitment\\captures\\Part1_RecruitmentRules_20260910_104407\\010_招募扣五余一.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Recruitment\\captures\\Part1_RecruitmentRules_20260910_132051\\010_招募扣五余一.png",
             "success": true,
             "message": "",
             "runtimeRule": "支付牌面费用，占用一个指挥槽；单位就绪加入。",
@@ -5232,7 +5232,7 @@
         {
             "label": "点选_offer_guard",
             "buttonPath": "Canvas/UIRoot/Stage/Targets/Offer_guard",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Recruitment\\captures\\Part1_RecruitmentRules_20260910_104407\\011_点选_offer_guard.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Recruitment\\captures\\Part1_RecruitmentRules_20260910_132051\\011_点选_offer_guard.png",
             "success": true,
             "message": "",
             "runtimeRule": "目标与行动条件会在确认时重新校验。",
@@ -5705,7 +5705,7 @@
         {
             "label": "不能重复招募",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Recruitment\\captures\\Part1_RecruitmentRules_20260910_104407\\012_不能重复招募.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Recruitment\\captures\\Part1_RecruitmentRules_20260910_132051\\012_不能重复招募.png",
             "success": true,
             "message": "",
             "runtimeRule": "目标与行动条件会在确认时重新校验。",
@@ -6186,7 +6186,7 @@
         {
             "label": "点选_offer_monk",
             "buttonPath": "Canvas/UIRoot/Stage/Targets/Offer_monk",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Recruitment\\captures\\Part1_RecruitmentRules_20260910_104407\\013_点选_offer_monk.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Recruitment\\captures\\Part1_RecruitmentRules_20260910_132051\\013_点选_offer_monk.png",
             "success": true,
             "message": "",
             "runtimeRule": "目标与行动条件会在确认时重新校验。",
@@ -6659,7 +6659,7 @@
         {
             "label": "地点不符不得招募",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Recruitment\\captures\\Part1_RecruitmentRules_20260910_104407\\014_地点不符不得招募.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Recruitment\\captures\\Part1_RecruitmentRules_20260910_132051\\014_地点不符不得招募.png",
             "success": true,
             "message": "",
             "runtimeRule": "招募失败不扣费；声望在交涉开始时只应用一次。",
@@ -7132,7 +7132,7 @@
         {
             "label": "取消目标",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Cancel",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Recruitment\\captures\\Part1_RecruitmentRules_20260910_104407\\015_取消目标.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Recruitment\\captures\\Part1_RecruitmentRules_20260910_132051\\015_取消目标.png",
             "success": true,
             "message": "",
             "runtimeRule": "招募失败不扣费；声望在交涉开始时只应用一次。",
@@ -7605,7 +7605,7 @@
         {
             "label": "回合结束正常补牌",
             "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
-            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Recruitment\\captures\\Part1_RecruitmentRules_20260910_104407\\016_回合结束正常补牌.png",
+            "screenshotPath": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\OfficialCards\\20260910\\Recruitment\\captures\\Part1_RecruitmentRules_20260910_132051\\016_回合结束正常补牌.png",
             "success": true,
             "message": "",
             "runtimeRule": "已打出牌进入弃牌堆；补牌到5，临时移动力/影响力/魔力清零，水晶与部队保留。",

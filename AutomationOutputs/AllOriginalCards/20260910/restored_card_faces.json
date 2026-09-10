@@ -1,0 +1,32 @@
+[
+  {
+    "path": "Assets/GameData/cards/advanced_card_000.png",
+    "sourceCommit": "ffe6bcf",
+    "sha256": "a92a92158d6bee602ca9f4f5fcd4b5a29a7a1a7ae306c964cea10979f054ec49",
+    "size": 2097087
+  },
+  {
+    "path": "Assets/GameData/cards/advanced_card_001.png",
+    "sourceCommit": "ffe6bcf",
+    "sha256": "cac1730b9628ffe1d864e211a4cf477ae24cbe47f3d53130c9ba5e5660d26ca2",
+    "size": 1875885
+  },
+  {
+    "path": "Assets/GameData/cards/advanced_card_002.png",
+    "sourceCommit": "ffe6bcf",
+    "sha256": "0d2ccb46d04d5753158a735e82deb94cfbf1d9421926d68298ced8b3df2129c6",
+    "size": 1902554
+  },
+  {
+    "path": "Assets/GameData/cards/advanced_card_003.png",
+    "sourceCommit": "ffe6bcf",
+    "sha256": "45effa2c60233dafee971e90343743bbab15f66bf21edc59ae4191f5a5ce4142",
+    "size": 2002919
+  },
+  {
+    "path": "Assets/GameData/cards/advanced_card_004.png",
+    "sourceCommit": "ffe6bcf",
+    "sha256": "89fe459978bb273fb53e02a9afc7f10e8bd3577fb6f5a69e847cd932d9e3286b",
+    "size": 2171419
+  }
+]
