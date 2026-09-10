@@ -8,10 +8,12 @@ namespace MK.Logic.Runtime.CardEffects
     /// <summary>
     /// 黑暗道路：依照日夜獲得不同移動力。
     /// </summary>
-    public sealed class DarkPathEffect : ICardEffect
+    public sealed class DarkPathEffect : ICardEffect, ICardEffectValidator
     {
+        public void Validate(PlayerState player, ActionContext ctx, int option) => SkillOption.Require(option, 0);
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
+            Validate(player, ctx, option);
             ctx.MovementPool += ctx.DayPart == DayPart.Day ? 1 : 2;
         }
     }
@@ -19,32 +21,38 @@ namespace MK.Logic.Runtime.CardEffects
     /// <summary>
     /// 燃燒之力：提供1點攻城攻擊（火焰或物理）。
     /// </summary>
-    public sealed class BurningPowerEffect : ICardEffect
+    public sealed class BurningPowerEffect : ICardEffect, ICardEffectValidator
     {
+        public void Validate(PlayerState player, ActionContext ctx, int option) => SkillOption.Require(option, 1);
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            ctx.RangedPool += 1;
+            Validate(player, ctx, option);
+            ctx.CombatPower.AddAttack(1, option == 0 ? Element.Physical : Element.Fire, AttackType.Siege);
         }
     }
 
     /// <summary>
     /// 炙熱劍術：攻擊2點。
     /// </summary>
-    public sealed class HotSwordEffect : ICardEffect
+    public sealed class HotSwordEffect : ICardEffect, ICardEffectValidator
     {
+        public void Validate(PlayerState player, ActionContext ctx, int option) => SkillOption.Require(option, 1);
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            ctx.MeleePool += 2;
+            Validate(player, ctx, option);
+            ctx.CombatPower.AddAttack(2, option == 0 ? Element.Physical : Element.Fire);
         }
     }
 
     /// <summary>
     /// 秘密談判：依日夜獲得影響力。
     /// </summary>
-    public sealed class SecretNegotiationEffect : ICardEffect
+    public sealed class SecretNegotiationEffect : ICardEffect, ICardEffectValidator
     {
+        public void Validate(PlayerState player, ActionContext ctx, int option) => SkillOption.Require(option, 0);
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
+            Validate(player, ctx, option);
             ctx.InfluencePool += ctx.DayPart == DayPart.Day ? 2 : 3;
         }
     }
@@ -53,10 +61,12 @@ namespace MK.Logic.Runtime.CardEffects
     /// 暗火魔法：翻面獲得紅色晶體並取得紅或黑色法力。
     /// option 0 紅色，1 黑色。
     /// </summary>
-    public sealed class DarkFireMagicEffect : ICardEffect
+    public sealed class DarkFireMagicEffect : ICardEffect, ICardEffectValidator
     {
+        public void Validate(PlayerState player, ActionContext ctx, int option) => SkillOption.Require(option, 1);
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
+            Validate(player, ctx, option);
             player.Mana.AddCrystal(ManaColor.Red, 1);
             ManaColor color = option == 1 ? ManaColor.Black : ManaColor.Red;
             player.Mana.AddToken(color, 1);

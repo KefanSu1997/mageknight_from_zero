@@ -121,6 +121,7 @@ namespace MK.Logic.Data
             {
                 if ((string?)element["id"] != poolId) continue;
                 var list = new List<SkillCard>();
+                int skillIndex = 0;
                 foreach (var s in element["skills"]!)
                 {
                     string name = (string)s["skill_name"]!;
@@ -220,8 +221,12 @@ namespace MK.Logic.Data
                         _ => new Runtime.CardEffects.DummyEffect()
                     };
 
-                    bool reusable = true; // 英雄技能預設可重複使用
-                    list.Add(new SkillCard(name, eff, reusable));
+                    string printed = (string?)s["total_description"] ?? "";
+                    // Double-sided and multi-frequency skills need their own timing contract.
+                    // Missing metadata must never silently grant unlimited activations.
+                    var frequency = printed.StartsWith("每回合一次") ? SkillFrequency.OncePerTurn
+                        : printed.StartsWith("每轮一次") ? SkillFrequency.OncePerRound : SkillFrequency.Unspecified;
+                    list.Add(new SkillCard(name, eff, true, $"{poolId}:{skillIndex++:00}", printed, frequency));
                 }
                 return list;
             }

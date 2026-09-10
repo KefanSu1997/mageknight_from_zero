@@ -83,6 +83,9 @@ namespace MK.Logic.Runtime
         /// <summary>玩家擁有的技能列表。</summary>
         public List<SkillCard> Skills { get; } = new();
 
+        internal HashSet<string> SkillsUsedThisTurn { get; } = new();
+        internal HashSet<string> SkillsUsedThisRound { get; } = new();
+
         /// <summary>
         /// 玩家已招募的全部部队。进入新回合时仍然保留，以供战斗和其他逻辑使用。
         /// </summary>

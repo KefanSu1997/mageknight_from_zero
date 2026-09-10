@@ -1,0 +1,5042 @@
+{
+  "cases": [
+    {
+      "id": "skill_000",
+      "skillIndex": 0,
+      "day": "Day",
+      "title": "白昼·选项0·完整次数生命周期",
+      "steps": [
+        {
+          "kind": "use",
+          "label": "发动所选技能",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "move",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试重复发动",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "该技能本回合已经使用"
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "move",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "kind": "reloadUse",
+          "label": "重载同一技能后尝试发动",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "该技能本回合已经使用"
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "move",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "kind": "move",
+          "label": "移动至平原（费用2）",
+          "option": 0,
+          "expected": [
+            {
+              "key": "outcome",
+              "value": "False"
+            },
+            {
+              "key": "move",
+              "value": "1"
+            },
+            {
+              "key": "position",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "nextTurn",
+          "label": "结束回合并开始下一回合",
+          "option": 0,
+          "expected": [
+            {
+              "key": "used",
+              "value": "False"
+            },
+            {
+              "key": "move",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "redToken",
+              "value": "0"
+            },
+            {
+              "key": "blackToken",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "下一回合重新发动",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "move",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "kind": "nextRound",
+          "label": "进入下一轮恢复标记",
+          "option": 0,
+          "expected": [
+            {
+              "key": "used",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "下一轮发动技能",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "move",
+              "value": "1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skill_001",
+      "skillIndex": 0,
+      "day": "Night",
+      "title": "黑夜·选项0·完整次数生命周期",
+      "steps": [
+        {
+          "kind": "use",
+          "label": "发动所选技能",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "move",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试重复发动",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "该技能本回合已经使用"
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "move",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "kind": "reloadUse",
+          "label": "重载同一技能后尝试发动",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "该技能本回合已经使用"
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "move",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "kind": "move",
+          "label": "移动至平原（费用2）",
+          "option": 0,
+          "expected": [
+            {
+              "key": "outcome",
+              "value": "True"
+            },
+            {
+              "key": "move",
+              "value": "0"
+            },
+            {
+              "key": "position",
+              "value": "1"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "nextTurn",
+          "label": "结束回合并开始下一回合",
+          "option": 0,
+          "expected": [
+            {
+              "key": "used",
+              "value": "False"
+            },
+            {
+              "key": "move",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "redToken",
+              "value": "0"
+            },
+            {
+              "key": "blackToken",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "下一回合重新发动",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "move",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "kind": "nextRound",
+          "label": "进入下一轮恢复标记",
+          "option": 0,
+          "expected": [
+            {
+              "key": "used",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "下一轮发动技能",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "move",
+              "value": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skill_002",
+      "skillIndex": 0,
+      "day": "Day",
+      "title": "非法选项-1不产生效果且不消耗次数",
+      "steps": [
+        {
+          "kind": "use",
+          "label": "尝试非法选项",
+          "option": -1,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "技能选项无效"
+            },
+            {
+              "key": "used",
+              "value": "False"
+            },
+            {
+              "key": "move",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "0"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "redCrystal",
+              "value": "0"
+            },
+            {
+              "key": "redToken",
+              "value": "0"
+            },
+            {
+              "key": "blackToken",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "随后发动合法选项",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "move",
+              "value": "1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skill_003",
+      "skillIndex": 0,
+      "day": "Day",
+      "title": "非法选项1不产生效果且不消耗次数",
+      "steps": [
+        {
+          "kind": "use",
+          "label": "尝试非法选项",
+          "option": 1,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "技能选项无效"
+            },
+            {
+              "key": "used",
+              "value": "False"
+            },
+            {
+              "key": "move",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "0"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "redCrystal",
+              "value": "0"
+            },
+            {
+              "key": "redToken",
+              "value": "0"
+            },
+            {
+              "key": "blackToken",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "随后发动合法选项",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "move",
+              "value": "1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skill_004",
+      "skillIndex": 0,
+      "day": "Day",
+      "title": "未持有的技能不能发动",
+      "steps": [
+        {
+          "kind": "use",
+          "label": "尝试未持有技能",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "只能使用玩家持有的技能"
+            },
+            {
+              "key": "used",
+              "value": "False"
+            },
+            {
+              "key": "move",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "redCrystal",
+              "value": "0"
+            },
+            {
+              "key": "redToken",
+              "value": "0"
+            },
+            {
+              "key": "blackToken",
+              "value": "0"
+            }
+          ]
+        }
+      ],
+      "unowned": true
+    },
+    {
+      "id": "skill_005",
+      "skillIndex": 1,
+      "day": "Day",
+      "title": "白昼·选项0·完整次数生命周期",
+      "steps": [
+        {
+          "kind": "use",
+          "label": "发动所选技能",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "siege",
+              "value": "1"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Physical"
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试重复发动",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "该技能本回合已经使用"
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "siege",
+              "value": "1"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Physical"
+            }
+          ]
+        },
+        {
+          "kind": "reloadUse",
+          "label": "重载同一技能后尝试发动",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "该技能本回合已经使用"
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "siege",
+              "value": "1"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Physical"
+            }
+          ]
+        },
+        {
+          "kind": "attack",
+          "label": "结算原类型攻击",
+          "option": 0,
+          "expected": [
+            {
+              "key": "effective",
+              "value": "1"
+            },
+            {
+              "key": "kills",
+              "value": "1"
+            },
+            {
+              "key": "fame",
+              "value": "2"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "nextTurn",
+          "label": "结束回合并开始下一回合",
+          "option": 0,
+          "expected": [
+            {
+              "key": "used",
+              "value": "False"
+            },
+            {
+              "key": "move",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "redToken",
+              "value": "0"
+            },
+            {
+              "key": "blackToken",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "下一回合重新发动",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "siege",
+              "value": "1"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Physical"
+            }
+          ]
+        },
+        {
+          "kind": "nextRound",
+          "label": "进入下一轮恢复标记",
+          "option": 0,
+          "expected": [
+            {
+              "key": "used",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "下一轮发动技能",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "siege",
+              "value": "1"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Physical"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skill_006",
+      "skillIndex": 1,
+      "day": "Day",
+      "title": "白昼·选项1·完整次数生命周期",
+      "steps": [
+        {
+          "kind": "use",
+          "label": "发动所选技能",
+          "option": 1,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "siege",
+              "value": "1"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Fire"
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试重复发动",
+          "option": 1,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "该技能本回合已经使用"
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "siege",
+              "value": "1"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Fire"
+            }
+          ]
+        },
+        {
+          "kind": "reloadUse",
+          "label": "重载同一技能后尝试发动",
+          "option": 1,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "该技能本回合已经使用"
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "siege",
+              "value": "1"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Fire"
+            }
+          ]
+        },
+        {
+          "kind": "attack",
+          "label": "结算原类型攻击",
+          "option": 0,
+          "expected": [
+            {
+              "key": "effective",
+              "value": "1"
+            },
+            {
+              "key": "kills",
+              "value": "1"
+            },
+            {
+              "key": "fame",
+              "value": "2"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "nextTurn",
+          "label": "结束回合并开始下一回合",
+          "option": 0,
+          "expected": [
+            {
+              "key": "used",
+              "value": "False"
+            },
+            {
+              "key": "move",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "redToken",
+              "value": "0"
+            },
+            {
+              "key": "blackToken",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "下一回合重新发动",
+          "option": 1,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "siege",
+              "value": "1"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Fire"
+            }
+          ]
+        },
+        {
+          "kind": "nextRound",
+          "label": "进入下一轮恢复标记",
+          "option": 0,
+          "expected": [
+            {
+              "key": "used",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "下一轮发动技能",
+          "option": 1,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "siege",
+              "value": "1"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Fire"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skill_007",
+      "skillIndex": 1,
+      "day": "Night",
+      "title": "黑夜·选项0·完整次数生命周期",
+      "steps": [
+        {
+          "kind": "use",
+          "label": "发动所选技能",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "siege",
+              "value": "1"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Physical"
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试重复发动",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "该技能本回合已经使用"
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "siege",
+              "value": "1"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Physical"
+            }
+          ]
+        },
+        {
+          "kind": "reloadUse",
+          "label": "重载同一技能后尝试发动",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "该技能本回合已经使用"
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "siege",
+              "value": "1"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Physical"
+            }
+          ]
+        },
+        {
+          "kind": "attack",
+          "label": "结算原类型攻击",
+          "option": 0,
+          "expected": [
+            {
+              "key": "effective",
+              "value": "1"
+            },
+            {
+              "key": "kills",
+              "value": "1"
+            },
+            {
+              "key": "fame",
+              "value": "2"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "nextTurn",
+          "label": "结束回合并开始下一回合",
+          "option": 0,
+          "expected": [
+            {
+              "key": "used",
+              "value": "False"
+            },
+            {
+              "key": "move",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "redToken",
+              "value": "0"
+            },
+            {
+              "key": "blackToken",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "下一回合重新发动",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "siege",
+              "value": "1"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Physical"
+            }
+          ]
+        },
+        {
+          "kind": "nextRound",
+          "label": "进入下一轮恢复标记",
+          "option": 0,
+          "expected": [
+            {
+              "key": "used",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "下一轮发动技能",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "siege",
+              "value": "1"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Physical"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skill_008",
+      "skillIndex": 1,
+      "day": "Night",
+      "title": "黑夜·选项1·完整次数生命周期",
+      "steps": [
+        {
+          "kind": "use",
+          "label": "发动所选技能",
+          "option": 1,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "siege",
+              "value": "1"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Fire"
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试重复发动",
+          "option": 1,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "该技能本回合已经使用"
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "siege",
+              "value": "1"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Fire"
+            }
+          ]
+        },
+        {
+          "kind": "reloadUse",
+          "label": "重载同一技能后尝试发动",
+          "option": 1,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "该技能本回合已经使用"
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "siege",
+              "value": "1"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Fire"
+            }
+          ]
+        },
+        {
+          "kind": "attack",
+          "label": "结算原类型攻击",
+          "option": 0,
+          "expected": [
+            {
+              "key": "effective",
+              "value": "1"
+            },
+            {
+              "key": "kills",
+              "value": "1"
+            },
+            {
+              "key": "fame",
+              "value": "2"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "nextTurn",
+          "label": "结束回合并开始下一回合",
+          "option": 0,
+          "expected": [
+            {
+              "key": "used",
+              "value": "False"
+            },
+            {
+              "key": "move",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "redToken",
+              "value": "0"
+            },
+            {
+              "key": "blackToken",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "下一回合重新发动",
+          "option": 1,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "siege",
+              "value": "1"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Fire"
+            }
+          ]
+        },
+        {
+          "kind": "nextRound",
+          "label": "进入下一轮恢复标记",
+          "option": 0,
+          "expected": [
+            {
+              "key": "used",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "下一轮发动技能",
+          "option": 1,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "siege",
+              "value": "1"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Fire"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skill_009",
+      "skillIndex": 1,
+      "day": "Day",
+      "title": "非法选项-1不产生效果且不消耗次数",
+      "steps": [
+        {
+          "kind": "use",
+          "label": "尝试非法选项",
+          "option": -1,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "技能选项无效"
+            },
+            {
+              "key": "used",
+              "value": "False"
+            },
+            {
+              "key": "move",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "0"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "redCrystal",
+              "value": "0"
+            },
+            {
+              "key": "redToken",
+              "value": "0"
+            },
+            {
+              "key": "blackToken",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "随后发动合法选项",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "siege",
+              "value": "1"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Physical"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skill_010",
+      "skillIndex": 1,
+      "day": "Day",
+      "title": "非法选项2不产生效果且不消耗次数",
+      "steps": [
+        {
+          "kind": "use",
+          "label": "尝试非法选项",
+          "option": 2,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "技能选项无效"
+            },
+            {
+              "key": "used",
+              "value": "False"
+            },
+            {
+              "key": "move",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "0"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "redCrystal",
+              "value": "0"
+            },
+            {
+              "key": "redToken",
+              "value": "0"
+            },
+            {
+              "key": "blackToken",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "随后发动合法选项",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "siege",
+              "value": "1"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Physical"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skill_011",
+      "skillIndex": 1,
+      "day": "Day",
+      "title": "未持有的技能不能发动",
+      "steps": [
+        {
+          "kind": "use",
+          "label": "尝试未持有技能",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "只能使用玩家持有的技能"
+            },
+            {
+              "key": "used",
+              "value": "False"
+            },
+            {
+              "key": "move",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "redCrystal",
+              "value": "0"
+            },
+            {
+              "key": "redToken",
+              "value": "0"
+            },
+            {
+              "key": "blackToken",
+              "value": "0"
+            }
+          ]
+        }
+      ],
+      "unowned": true
+    },
+    {
+      "id": "skill_012",
+      "skillIndex": 2,
+      "day": "Day",
+      "title": "白昼·选项0·完整次数生命周期",
+      "steps": [
+        {
+          "kind": "use",
+          "label": "发动所选技能",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "melee",
+              "value": "2"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Physical"
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试重复发动",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "该技能本回合已经使用"
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "melee",
+              "value": "2"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Physical"
+            }
+          ]
+        },
+        {
+          "kind": "reloadUse",
+          "label": "重载同一技能后尝试发动",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "该技能本回合已经使用"
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "melee",
+              "value": "2"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Physical"
+            }
+          ]
+        },
+        {
+          "kind": "attack",
+          "label": "结算原类型攻击",
+          "option": 0,
+          "expected": [
+            {
+              "key": "effective",
+              "value": "2"
+            },
+            {
+              "key": "kills",
+              "value": "1"
+            },
+            {
+              "key": "fame",
+              "value": "2"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "nextTurn",
+          "label": "结束回合并开始下一回合",
+          "option": 0,
+          "expected": [
+            {
+              "key": "used",
+              "value": "False"
+            },
+            {
+              "key": "move",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "redToken",
+              "value": "0"
+            },
+            {
+              "key": "blackToken",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "下一回合重新发动",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "melee",
+              "value": "2"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Physical"
+            }
+          ]
+        },
+        {
+          "kind": "nextRound",
+          "label": "进入下一轮恢复标记",
+          "option": 0,
+          "expected": [
+            {
+              "key": "used",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "下一轮发动技能",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "melee",
+              "value": "2"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Physical"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skill_013",
+      "skillIndex": 2,
+      "day": "Day",
+      "title": "白昼·选项1·完整次数生命周期",
+      "steps": [
+        {
+          "kind": "use",
+          "label": "发动所选技能",
+          "option": 1,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "melee",
+              "value": "2"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Fire"
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试重复发动",
+          "option": 1,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "该技能本回合已经使用"
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "melee",
+              "value": "2"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Fire"
+            }
+          ]
+        },
+        {
+          "kind": "reloadUse",
+          "label": "重载同一技能后尝试发动",
+          "option": 1,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "该技能本回合已经使用"
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "melee",
+              "value": "2"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Fire"
+            }
+          ]
+        },
+        {
+          "kind": "attack",
+          "label": "结算原类型攻击",
+          "option": 0,
+          "expected": [
+            {
+              "key": "effective",
+              "value": "2"
+            },
+            {
+              "key": "kills",
+              "value": "1"
+            },
+            {
+              "key": "fame",
+              "value": "2"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "nextTurn",
+          "label": "结束回合并开始下一回合",
+          "option": 0,
+          "expected": [
+            {
+              "key": "used",
+              "value": "False"
+            },
+            {
+              "key": "move",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "redToken",
+              "value": "0"
+            },
+            {
+              "key": "blackToken",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "下一回合重新发动",
+          "option": 1,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "melee",
+              "value": "2"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Fire"
+            }
+          ]
+        },
+        {
+          "kind": "nextRound",
+          "label": "进入下一轮恢复标记",
+          "option": 0,
+          "expected": [
+            {
+              "key": "used",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "下一轮发动技能",
+          "option": 1,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "melee",
+              "value": "2"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Fire"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skill_014",
+      "skillIndex": 2,
+      "day": "Night",
+      "title": "黑夜·选项0·完整次数生命周期",
+      "steps": [
+        {
+          "kind": "use",
+          "label": "发动所选技能",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "melee",
+              "value": "2"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Physical"
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试重复发动",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "该技能本回合已经使用"
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "melee",
+              "value": "2"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Physical"
+            }
+          ]
+        },
+        {
+          "kind": "reloadUse",
+          "label": "重载同一技能后尝试发动",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "该技能本回合已经使用"
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "melee",
+              "value": "2"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Physical"
+            }
+          ]
+        },
+        {
+          "kind": "attack",
+          "label": "结算原类型攻击",
+          "option": 0,
+          "expected": [
+            {
+              "key": "effective",
+              "value": "2"
+            },
+            {
+              "key": "kills",
+              "value": "1"
+            },
+            {
+              "key": "fame",
+              "value": "2"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "nextTurn",
+          "label": "结束回合并开始下一回合",
+          "option": 0,
+          "expected": [
+            {
+              "key": "used",
+              "value": "False"
+            },
+            {
+              "key": "move",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "redToken",
+              "value": "0"
+            },
+            {
+              "key": "blackToken",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "下一回合重新发动",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "melee",
+              "value": "2"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Physical"
+            }
+          ]
+        },
+        {
+          "kind": "nextRound",
+          "label": "进入下一轮恢复标记",
+          "option": 0,
+          "expected": [
+            {
+              "key": "used",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "下一轮发动技能",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "melee",
+              "value": "2"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Physical"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skill_015",
+      "skillIndex": 2,
+      "day": "Night",
+      "title": "黑夜·选项1·完整次数生命周期",
+      "steps": [
+        {
+          "kind": "use",
+          "label": "发动所选技能",
+          "option": 1,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "melee",
+              "value": "2"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Fire"
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试重复发动",
+          "option": 1,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "该技能本回合已经使用"
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "melee",
+              "value": "2"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Fire"
+            }
+          ]
+        },
+        {
+          "kind": "reloadUse",
+          "label": "重载同一技能后尝试发动",
+          "option": 1,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "该技能本回合已经使用"
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "melee",
+              "value": "2"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Fire"
+            }
+          ]
+        },
+        {
+          "kind": "attack",
+          "label": "结算原类型攻击",
+          "option": 0,
+          "expected": [
+            {
+              "key": "effective",
+              "value": "2"
+            },
+            {
+              "key": "kills",
+              "value": "1"
+            },
+            {
+              "key": "fame",
+              "value": "2"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "nextTurn",
+          "label": "结束回合并开始下一回合",
+          "option": 0,
+          "expected": [
+            {
+              "key": "used",
+              "value": "False"
+            },
+            {
+              "key": "move",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "redToken",
+              "value": "0"
+            },
+            {
+              "key": "blackToken",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "下一回合重新发动",
+          "option": 1,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "melee",
+              "value": "2"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Fire"
+            }
+          ]
+        },
+        {
+          "kind": "nextRound",
+          "label": "进入下一轮恢复标记",
+          "option": 0,
+          "expected": [
+            {
+              "key": "used",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "下一轮发动技能",
+          "option": 1,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "melee",
+              "value": "2"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Fire"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skill_016",
+      "skillIndex": 2,
+      "day": "Day",
+      "title": "非法选项-1不产生效果且不消耗次数",
+      "steps": [
+        {
+          "kind": "use",
+          "label": "尝试非法选项",
+          "option": -1,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "技能选项无效"
+            },
+            {
+              "key": "used",
+              "value": "False"
+            },
+            {
+              "key": "move",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "0"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "redCrystal",
+              "value": "0"
+            },
+            {
+              "key": "redToken",
+              "value": "0"
+            },
+            {
+              "key": "blackToken",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "随后发动合法选项",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "melee",
+              "value": "2"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Physical"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skill_017",
+      "skillIndex": 2,
+      "day": "Day",
+      "title": "非法选项2不产生效果且不消耗次数",
+      "steps": [
+        {
+          "kind": "use",
+          "label": "尝试非法选项",
+          "option": 2,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "技能选项无效"
+            },
+            {
+              "key": "used",
+              "value": "False"
+            },
+            {
+              "key": "move",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "0"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "redCrystal",
+              "value": "0"
+            },
+            {
+              "key": "redToken",
+              "value": "0"
+            },
+            {
+              "key": "blackToken",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "随后发动合法选项",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "melee",
+              "value": "2"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Physical"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skill_018",
+      "skillIndex": 2,
+      "day": "Day",
+      "title": "未持有的技能不能发动",
+      "steps": [
+        {
+          "kind": "use",
+          "label": "尝试未持有技能",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "只能使用玩家持有的技能"
+            },
+            {
+              "key": "used",
+              "value": "False"
+            },
+            {
+              "key": "move",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "redCrystal",
+              "value": "0"
+            },
+            {
+              "key": "redToken",
+              "value": "0"
+            },
+            {
+              "key": "blackToken",
+              "value": "0"
+            }
+          ]
+        }
+      ],
+      "unowned": true
+    },
+    {
+      "id": "skill_019",
+      "skillIndex": 3,
+      "day": "Day",
+      "title": "白昼·选项0·完整次数生命周期",
+      "steps": [
+        {
+          "kind": "use",
+          "label": "发动所选技能",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "influence",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试重复发动",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "该技能本回合已经使用"
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "influence",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "kind": "reloadUse",
+          "label": "重载同一技能后尝试发动",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "该技能本回合已经使用"
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "influence",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "kind": "nextTurn",
+          "label": "结束回合并开始下一回合",
+          "option": 0,
+          "expected": [
+            {
+              "key": "used",
+              "value": "False"
+            },
+            {
+              "key": "move",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "redToken",
+              "value": "0"
+            },
+            {
+              "key": "blackToken",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "下一回合重新发动",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "influence",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "kind": "nextRound",
+          "label": "进入下一轮恢复标记",
+          "option": 0,
+          "expected": [
+            {
+              "key": "used",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "下一轮发动技能",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "influence",
+              "value": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skill_020",
+      "skillIndex": 3,
+      "day": "Night",
+      "title": "黑夜·选项0·完整次数生命周期",
+      "steps": [
+        {
+          "kind": "use",
+          "label": "发动所选技能",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "influence",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试重复发动",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "该技能本回合已经使用"
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "influence",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "kind": "reloadUse",
+          "label": "重载同一技能后尝试发动",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "该技能本回合已经使用"
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "influence",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "kind": "nextTurn",
+          "label": "结束回合并开始下一回合",
+          "option": 0,
+          "expected": [
+            {
+              "key": "used",
+              "value": "False"
+            },
+            {
+              "key": "move",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "redToken",
+              "value": "0"
+            },
+            {
+              "key": "blackToken",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "下一回合重新发动",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "influence",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "kind": "nextRound",
+          "label": "进入下一轮恢复标记",
+          "option": 0,
+          "expected": [
+            {
+              "key": "used",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "下一轮发动技能",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "influence",
+              "value": "3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skill_021",
+      "skillIndex": 3,
+      "day": "Day",
+      "title": "非法选项-1不产生效果且不消耗次数",
+      "steps": [
+        {
+          "kind": "use",
+          "label": "尝试非法选项",
+          "option": -1,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "技能选项无效"
+            },
+            {
+              "key": "used",
+              "value": "False"
+            },
+            {
+              "key": "move",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "0"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "redCrystal",
+              "value": "0"
+            },
+            {
+              "key": "redToken",
+              "value": "0"
+            },
+            {
+              "key": "blackToken",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "随后发动合法选项",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "influence",
+              "value": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skill_022",
+      "skillIndex": 3,
+      "day": "Day",
+      "title": "非法选项1不产生效果且不消耗次数",
+      "steps": [
+        {
+          "kind": "use",
+          "label": "尝试非法选项",
+          "option": 1,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "技能选项无效"
+            },
+            {
+              "key": "used",
+              "value": "False"
+            },
+            {
+              "key": "move",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "0"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "redCrystal",
+              "value": "0"
+            },
+            {
+              "key": "redToken",
+              "value": "0"
+            },
+            {
+              "key": "blackToken",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "随后发动合法选项",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "influence",
+              "value": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skill_023",
+      "skillIndex": 3,
+      "day": "Day",
+      "title": "未持有的技能不能发动",
+      "steps": [
+        {
+          "kind": "use",
+          "label": "尝试未持有技能",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "只能使用玩家持有的技能"
+            },
+            {
+              "key": "used",
+              "value": "False"
+            },
+            {
+              "key": "move",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "redCrystal",
+              "value": "0"
+            },
+            {
+              "key": "redToken",
+              "value": "0"
+            },
+            {
+              "key": "blackToken",
+              "value": "0"
+            }
+          ]
+        }
+      ],
+      "unowned": true
+    },
+    {
+      "id": "skill_024",
+      "skillIndex": 4,
+      "day": "Day",
+      "title": "白昼·选项0·完整次数生命周期",
+      "steps": [
+        {
+          "kind": "use",
+          "label": "发动所选技能",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "redCrystal",
+              "value": "1"
+            },
+            {
+              "key": "redToken",
+              "value": "1"
+            },
+            {
+              "key": "blackToken",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试重复发动",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "该技能本轮已经翻面使用"
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "redCrystal",
+              "value": "1"
+            },
+            {
+              "key": "redToken",
+              "value": "1"
+            },
+            {
+              "key": "blackToken",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "kind": "reloadUse",
+          "label": "重载同一技能后尝试发动",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "该技能本轮已经翻面使用"
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "redCrystal",
+              "value": "1"
+            },
+            {
+              "key": "redToken",
+              "value": "1"
+            },
+            {
+              "key": "blackToken",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "kind": "nextTurn",
+          "label": "结束回合并开始下一回合",
+          "option": 0,
+          "expected": [
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "move",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "redToken",
+              "value": "0"
+            },
+            {
+              "key": "blackToken",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "下一回合尝试翻面技能",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "该技能本轮已经翻面使用"
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "redCrystal",
+              "value": "1"
+            },
+            {
+              "key": "redToken",
+              "value": "0"
+            },
+            {
+              "key": "blackToken",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "kind": "nextRound",
+          "label": "进入下一轮恢复标记",
+          "option": 0,
+          "expected": [
+            {
+              "key": "used",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "下一轮发动技能",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "redCrystal",
+              "value": "2"
+            },
+            {
+              "key": "redToken",
+              "value": "1"
+            },
+            {
+              "key": "blackToken",
+              "value": "0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skill_025",
+      "skillIndex": 4,
+      "day": "Day",
+      "title": "白昼·选项1·完整次数生命周期",
+      "steps": [
+        {
+          "kind": "use",
+          "label": "发动所选技能",
+          "option": 1,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "redCrystal",
+              "value": "1"
+            },
+            {
+              "key": "redToken",
+              "value": "0"
+            },
+            {
+              "key": "blackToken",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试重复发动",
+          "option": 1,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "该技能本轮已经翻面使用"
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "redCrystal",
+              "value": "1"
+            },
+            {
+              "key": "redToken",
+              "value": "0"
+            },
+            {
+              "key": "blackToken",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "kind": "reloadUse",
+          "label": "重载同一技能后尝试发动",
+          "option": 1,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "该技能本轮已经翻面使用"
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "redCrystal",
+              "value": "1"
+            },
+            {
+              "key": "redToken",
+              "value": "0"
+            },
+            {
+              "key": "blackToken",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "kind": "nextTurn",
+          "label": "结束回合并开始下一回合",
+          "option": 0,
+          "expected": [
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "move",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "redToken",
+              "value": "0"
+            },
+            {
+              "key": "blackToken",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "下一回合尝试翻面技能",
+          "option": 1,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "该技能本轮已经翻面使用"
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "redCrystal",
+              "value": "1"
+            },
+            {
+              "key": "redToken",
+              "value": "0"
+            },
+            {
+              "key": "blackToken",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "kind": "nextRound",
+          "label": "进入下一轮恢复标记",
+          "option": 0,
+          "expected": [
+            {
+              "key": "used",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "下一轮发动技能",
+          "option": 1,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "redCrystal",
+              "value": "2"
+            },
+            {
+              "key": "redToken",
+              "value": "0"
+            },
+            {
+              "key": "blackToken",
+              "value": "1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skill_026",
+      "skillIndex": 4,
+      "day": "Night",
+      "title": "黑夜·选项0·完整次数生命周期",
+      "steps": [
+        {
+          "kind": "use",
+          "label": "发动所选技能",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "redCrystal",
+              "value": "1"
+            },
+            {
+              "key": "redToken",
+              "value": "1"
+            },
+            {
+              "key": "blackToken",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试重复发动",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "该技能本轮已经翻面使用"
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "redCrystal",
+              "value": "1"
+            },
+            {
+              "key": "redToken",
+              "value": "1"
+            },
+            {
+              "key": "blackToken",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "kind": "reloadUse",
+          "label": "重载同一技能后尝试发动",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "该技能本轮已经翻面使用"
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "redCrystal",
+              "value": "1"
+            },
+            {
+              "key": "redToken",
+              "value": "1"
+            },
+            {
+              "key": "blackToken",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "kind": "nextTurn",
+          "label": "结束回合并开始下一回合",
+          "option": 0,
+          "expected": [
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "move",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "redToken",
+              "value": "0"
+            },
+            {
+              "key": "blackToken",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "下一回合尝试翻面技能",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "该技能本轮已经翻面使用"
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "redCrystal",
+              "value": "1"
+            },
+            {
+              "key": "redToken",
+              "value": "0"
+            },
+            {
+              "key": "blackToken",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "kind": "nextRound",
+          "label": "进入下一轮恢复标记",
+          "option": 0,
+          "expected": [
+            {
+              "key": "used",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "下一轮发动技能",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "redCrystal",
+              "value": "2"
+            },
+            {
+              "key": "redToken",
+              "value": "1"
+            },
+            {
+              "key": "blackToken",
+              "value": "0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skill_027",
+      "skillIndex": 4,
+      "day": "Night",
+      "title": "黑夜·选项1·完整次数生命周期",
+      "steps": [
+        {
+          "kind": "use",
+          "label": "发动所选技能",
+          "option": 1,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "redCrystal",
+              "value": "1"
+            },
+            {
+              "key": "redToken",
+              "value": "0"
+            },
+            {
+              "key": "blackToken",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试重复发动",
+          "option": 1,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "该技能本轮已经翻面使用"
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "redCrystal",
+              "value": "1"
+            },
+            {
+              "key": "redToken",
+              "value": "0"
+            },
+            {
+              "key": "blackToken",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "kind": "reloadUse",
+          "label": "重载同一技能后尝试发动",
+          "option": 1,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "该技能本轮已经翻面使用"
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "redCrystal",
+              "value": "1"
+            },
+            {
+              "key": "redToken",
+              "value": "0"
+            },
+            {
+              "key": "blackToken",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "kind": "nextTurn",
+          "label": "结束回合并开始下一回合",
+          "option": 0,
+          "expected": [
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "move",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "redToken",
+              "value": "0"
+            },
+            {
+              "key": "blackToken",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "下一回合尝试翻面技能",
+          "option": 1,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "该技能本轮已经翻面使用"
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "redCrystal",
+              "value": "1"
+            },
+            {
+              "key": "redToken",
+              "value": "0"
+            },
+            {
+              "key": "blackToken",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "kind": "nextRound",
+          "label": "进入下一轮恢复标记",
+          "option": 0,
+          "expected": [
+            {
+              "key": "used",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "下一轮发动技能",
+          "option": 1,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "redCrystal",
+              "value": "2"
+            },
+            {
+              "key": "redToken",
+              "value": "0"
+            },
+            {
+              "key": "blackToken",
+              "value": "1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skill_028",
+      "skillIndex": 4,
+      "day": "Day",
+      "title": "非法选项-1不产生效果且不消耗次数",
+      "steps": [
+        {
+          "kind": "use",
+          "label": "尝试非法选项",
+          "option": -1,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "技能选项无效"
+            },
+            {
+              "key": "used",
+              "value": "False"
+            },
+            {
+              "key": "move",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "0"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "redCrystal",
+              "value": "0"
+            },
+            {
+              "key": "redToken",
+              "value": "0"
+            },
+            {
+              "key": "blackToken",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "随后发动合法选项",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "redCrystal",
+              "value": "1"
+            },
+            {
+              "key": "redToken",
+              "value": "1"
+            },
+            {
+              "key": "blackToken",
+              "value": "0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skill_029",
+      "skillIndex": 4,
+      "day": "Day",
+      "title": "非法选项2不产生效果且不消耗次数",
+      "steps": [
+        {
+          "kind": "use",
+          "label": "尝试非法选项",
+          "option": 2,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "技能选项无效"
+            },
+            {
+              "key": "used",
+              "value": "False"
+            },
+            {
+              "key": "move",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "0"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "redCrystal",
+              "value": "0"
+            },
+            {
+              "key": "redToken",
+              "value": "0"
+            },
+            {
+              "key": "blackToken",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "随后发动合法选项",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "used",
+              "value": "True"
+            },
+            {
+              "key": "redCrystal",
+              "value": "1"
+            },
+            {
+              "key": "redToken",
+              "value": "1"
+            },
+            {
+              "key": "blackToken",
+              "value": "0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skill_030",
+      "skillIndex": 4,
+      "day": "Day",
+      "title": "未持有的技能不能发动",
+      "steps": [
+        {
+          "kind": "use",
+          "label": "尝试未持有技能",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "只能使用玩家持有的技能"
+            },
+            {
+              "key": "used",
+              "value": "False"
+            },
+            {
+              "key": "move",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "redCrystal",
+              "value": "0"
+            },
+            {
+              "key": "redToken",
+              "value": "0"
+            },
+            {
+              "key": "blackToken",
+              "value": "0"
+            }
+          ]
+        }
+      ],
+      "unowned": true
+    },
+    {
+      "id": "skill_031",
+      "skillIndex": 1,
+      "day": "Day",
+      "title": "选项0·PhysicalResist·实际战斗折算",
+      "steps": [
+        {
+          "kind": "use",
+          "label": "发动所选攻击",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "siege",
+              "value": "1"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Physical"
+            }
+          ]
+        },
+        {
+          "kind": "attack",
+          "label": "对抗有抗性的目标",
+          "option": 0,
+          "expected": [
+            {
+              "key": "effective",
+              "value": "0"
+            },
+            {
+              "key": "kills",
+              "value": "0"
+            },
+            {
+              "key": "fame",
+              "value": "0"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "resistance": "PhysicalResist"
+    },
+    {
+      "id": "skill_032",
+      "skillIndex": 1,
+      "day": "Day",
+      "title": "选项0·FireResist·实际战斗折算",
+      "steps": [
+        {
+          "kind": "use",
+          "label": "发动所选攻击",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "siege",
+              "value": "1"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Physical"
+            }
+          ]
+        },
+        {
+          "kind": "attack",
+          "label": "对抗有抗性的目标",
+          "option": 0,
+          "expected": [
+            {
+              "key": "effective",
+              "value": "1"
+            },
+            {
+              "key": "kills",
+              "value": "1"
+            },
+            {
+              "key": "fame",
+              "value": "2"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "resistance": "FireResist"
+    },
+    {
+      "id": "skill_033",
+      "skillIndex": 1,
+      "day": "Day",
+      "title": "选项1·PhysicalResist·实际战斗折算",
+      "steps": [
+        {
+          "kind": "use",
+          "label": "发动所选攻击",
+          "option": 1,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "siege",
+              "value": "1"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Fire"
+            }
+          ]
+        },
+        {
+          "kind": "attack",
+          "label": "对抗有抗性的目标",
+          "option": 0,
+          "expected": [
+            {
+              "key": "effective",
+              "value": "1"
+            },
+            {
+              "key": "kills",
+              "value": "1"
+            },
+            {
+              "key": "fame",
+              "value": "2"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "resistance": "PhysicalResist"
+    },
+    {
+      "id": "skill_034",
+      "skillIndex": 1,
+      "day": "Day",
+      "title": "选项1·FireResist·实际战斗折算",
+      "steps": [
+        {
+          "kind": "use",
+          "label": "发动所选攻击",
+          "option": 1,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "siege",
+              "value": "1"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Fire"
+            }
+          ]
+        },
+        {
+          "kind": "attack",
+          "label": "对抗有抗性的目标",
+          "option": 0,
+          "expected": [
+            {
+              "key": "effective",
+              "value": "0"
+            },
+            {
+              "key": "kills",
+              "value": "0"
+            },
+            {
+              "key": "fame",
+              "value": "0"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "resistance": "FireResist"
+    },
+    {
+      "id": "skill_035",
+      "skillIndex": 2,
+      "day": "Day",
+      "title": "选项0·PhysicalResist·实际战斗折算",
+      "steps": [
+        {
+          "kind": "use",
+          "label": "发动所选攻击",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "melee",
+              "value": "2"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Physical"
+            }
+          ]
+        },
+        {
+          "kind": "attack",
+          "label": "对抗有抗性的目标",
+          "option": 0,
+          "expected": [
+            {
+              "key": "effective",
+              "value": "1"
+            },
+            {
+              "key": "kills",
+              "value": "0"
+            },
+            {
+              "key": "fame",
+              "value": "0"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "resistance": "PhysicalResist"
+    },
+    {
+      "id": "skill_036",
+      "skillIndex": 2,
+      "day": "Day",
+      "title": "选项0·FireResist·实际战斗折算",
+      "steps": [
+        {
+          "kind": "use",
+          "label": "发动所选攻击",
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "melee",
+              "value": "2"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Physical"
+            }
+          ]
+        },
+        {
+          "kind": "attack",
+          "label": "对抗有抗性的目标",
+          "option": 0,
+          "expected": [
+            {
+              "key": "effective",
+              "value": "2"
+            },
+            {
+              "key": "kills",
+              "value": "1"
+            },
+            {
+              "key": "fame",
+              "value": "2"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "resistance": "FireResist"
+    },
+    {
+      "id": "skill_037",
+      "skillIndex": 2,
+      "day": "Day",
+      "title": "选项1·PhysicalResist·实际战斗折算",
+      "steps": [
+        {
+          "kind": "use",
+          "label": "发动所选攻击",
+          "option": 1,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "melee",
+              "value": "2"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Fire"
+            }
+          ]
+        },
+        {
+          "kind": "attack",
+          "label": "对抗有抗性的目标",
+          "option": 0,
+          "expected": [
+            {
+              "key": "effective",
+              "value": "2"
+            },
+            {
+              "key": "kills",
+              "value": "1"
+            },
+            {
+              "key": "fame",
+              "value": "2"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "resistance": "PhysicalResist"
+    },
+    {
+      "id": "skill_038",
+      "skillIndex": 2,
+      "day": "Day",
+      "title": "选项1·FireResist·实际战斗折算",
+      "steps": [
+        {
+          "kind": "use",
+          "label": "发动所选攻击",
+          "option": 1,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "melee",
+              "value": "2"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "element",
+              "value": "Fire"
+            }
+          ]
+        },
+        {
+          "kind": "attack",
+          "label": "对抗有抗性的目标",
+          "option": 0,
+          "expected": [
+            {
+              "key": "effective",
+              "value": "1"
+            },
+            {
+              "key": "kills",
+              "value": "0"
+            },
+            {
+              "key": "fame",
+              "value": "0"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "resistance": "FireResist"
+    }
+  ]
+}

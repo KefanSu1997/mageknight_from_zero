@@ -30,6 +30,8 @@
 
 ## 经验索引
 
+- 原版技能来源身份、所有权与每回合/每轮次数分离；原技能整表场景和LF配置指纹 —— `vibe_coding/codex/project_experience/hero_skill_activation_identity_and_timing_2026-09-10.md`
+
 - 攻城保留类型、卡牌六面骰注入与亡君之盾分次格挡消费/重复目标拒绝 —— `vibe_coding/codex/project_experience/card_siege_dice_and_split_blocks_2026-09-10.md`
 
 - 元素护盾成功触发、目标索引与魔力箭矢整笔额外费用；内存耗尽时减少Unity空闲导入worker —— `vibe_coding/codex/project_experience/card_elemental_triggers_and_atomic_extra_mana_2026-09-10.md`

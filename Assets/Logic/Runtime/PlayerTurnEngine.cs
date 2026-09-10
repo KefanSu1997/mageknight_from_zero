@@ -25,6 +25,7 @@ namespace MK.Logic.Runtime
             Map.MapState? map = null)
         {
             _logger?.Log($"StartTurn P{p.Id}");
+            SkillActions.StartTurn(p);
             // 開啟回合時重置持有骰，防止上一回合遺留
             p.HeldManaDie = null;
 

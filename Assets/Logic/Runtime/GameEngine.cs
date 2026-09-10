@@ -44,6 +44,7 @@ namespace MK.Logic.Runtime
             // 開局抓牌：根據手牌上限抽到滿，不會在此階段洗牌
             foreach (var p in _players)
             {
+                SkillActions.StartRound(p);
                 int limit = p.Deck.HandLimit(
                     Clock.DayPart,
                     p.Reputation,
@@ -104,4 +105,3 @@ namespace MK.Logic.Runtime
         public bool CheckEndOfScenario() => Clock.ScenarioEnded(_maxDays);
     }
 }
-
