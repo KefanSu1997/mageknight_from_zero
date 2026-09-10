@@ -23,7 +23,10 @@ namespace MK.Logic.Data
         int Value,
         Element Element,
         int? ForUnitIndex = null,  // 若非空表示此格挡由某个 Unit 承担
-        bool CountEnemySymbols = false // 寒冰护体：在实际目标结算时追加冰格挡
+          bool CountEnemySymbols = false, // 寒冰护体：在实际目标结算时追加冰格挡
+          int ArmorReductionOnSuccess = 0,
+          int AttackOnSuccess = 0,
+          bool KillOnSuccess = false
     );
 
         /// <summary>

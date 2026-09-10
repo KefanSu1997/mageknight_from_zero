@@ -471,6 +471,71 @@ operation_case('basic_card_026',True,'回合结束重整许可过期',
     [dict(kind='EndTurn'),ready()])
 
 
+
+# Elemental spell costs and block contributions must survive into actual combat.
+for strong in [False, True]:
+    for color, option, value, element, attack_type in [
+        ('Blue',1,8,'Ice','Melee'),('Red',0,7,'ColdFire','Melee'),
+        ('White',3,6,'Ice','Ranged'),('Green',2,5,'Ice','Siege')]:
+        power=value+(3 if strong else 0)
+        phase='Melee' if attack_type=='Melee' else 'Ranged'
+        combat('magic_017',strong,color+'额外魔力决定攻击类型并实际杀敌',phase,
+               [enemy(power,abilities=['PhysicalResist'])],power,power,power,option=option,kills=1,
+               extra={'token:Blue':0 if color=='Blue' else 1,'token:'+color:0 if color=='Blue' else 1,
+                      'played:attackElement':element,'played:'+('SiegePool' if attack_type=='Siege' else 'RangedPool' if attack_type=='Ranged' else 'MeleePool'):power})
+    for option,setup in [(1,{'token:Blue':1,'crystal:Blue':0}), (0,{'token:Red':0,'crystal:Red':0})]:
+        case('magic_017',strong,'额外费用不足时施法费用也不得先扣',{},option=option,setup=setup,
+             error='InvalidOperationException: 法力不足，不能支付所选效果')
+    case('magic_017',strong,'黑色不能作为箭矢的四选一颜色',{},option=5,
+         error='InvalidOperationException: 魔力箭矢必须选择红蓝绿白之一')
+    power=7 if strong else 5
+    combat('magic_010',strong,'火焰攻击对火抗合计减半','Melee',[enemy(power//2,abilities=['FireResist'])],
+           power,power//2,power//2,kills=1)
+    combat('magic_010',strong,'火焰攻击穿过物理抗性','Melee',[enemy(power,abilities=['PhysicalResist'])],power,power,power,kills=1)
+    for element,required,wounds in [('Ice',9 if strong else 7,0),('Fire',5 if strong else 4,3 if strong else 2)]:
+        block=9 if strong else 7
+        combat('magic_010',strong,'火焰格挡对'+element+'攻击的效率','Block',[enemy(5,attack=required,element=element)],
+               block,block if element=='Ice' else block//2,required,option=1,wounds=wounds)
+    case('magic_010',strong,'非法攻击格挡选项不得支付',{},option=2,
+         error='InvalidOperationException: 烈焰之墙必须选择攻击或格挡')
+
+
+def combat_operation(kind,index=0): return dict(kind=kind,targetIndex=index)
+def operation_result(index,printed,effective,required,kills=0,wounds=0):
+    return {f'operation:{index}:'+k:v for k,v in dict(printed=printed,effective=effective,required=required,kills=kills,wounds=wounds).items()}
+
+for traits,attack,index,title in [([],3,0,'成功格挡后实际减甲并击杀'),(['IceResist'],3,0,'寒冰抗性取消减甲'),
+                                 (['MagicResist'],3,0,'奥术免疫取消减甲'),([],4,0,'格挡失败不得提前减甲'),
+                                 ([],3,1,'选择第二个敌人只改变该敌人的护甲')]:
+    reduced=not traits and attack==3
+    expected={'MeleePool':0,'BlockPool':0,'BlockArmorReduction':0,'Wounds':3 if attack==3 else 5,
+              'Fame':3 if reduced else 0, **operation_result(0,3,3,attack,wounds=0 if attack==3 else 2),
+              **operation_result(1,2,2,2 if reduced else 5,kills=1 if reduced else 0),
+              'operation:0:armor0':3 if reduced and index==0 else 0,'operation:0:armor1':3 if reduced and index==1 else 0}
+    operation_case('advanced_card_005',True,title,expected,[combat_operation('Block',index),combat_operation('Attack',index)],
+                   setup={'MeleePool':2},enemies=([enemy(9)] if index else [])+[enemy(5,attack=attack,element='Fire',abilities=traits)])
+combat('advanced_card_005',False,'基础寒冰格挡实际对抗火焰攻击','Block',[enemy(5,attack=3,element='Fire')],3,3,3)
+
+operation_case('magic_008',False,'成功格挡后火焰攻击可用于另一个物抗敌人',
+    {'MeleePool':0,'BlockPool':0,'AttackAfterBlock':0,'Fame':3,'Wounds':3,
+     **operation_result(0,4,4,4),**operation_result(1,4,4,4,kills=1),'operation:0:MeleePool':4},
+    [combat_operation('Block'),combat_operation('Attack',1)],
+    enemies=[enemy(9,attack=4,element='Ice'),enemy(4,abilities=['PhysicalResist'])])
+operation_case('magic_008',False,'失败格挡没有追加攻击',
+    {'MeleePool':0,'BlockPool':0,'AttackAfterBlock':0,'Fame':0,'Wounds':6,**operation_result(0,4,4,5,wounds=3)},
+    [combat_operation('Block')],enemies=[enemy(9,attack=5,element='Ice')])
+for traits in [[],['FireResist'],['MagicResist']]:
+    operation_case('magic_008',True,'爆破护盾消灭条件与抗性'+str(traits),
+        {'MeleePool':0,'BlockPool':0,'KillBlockedEnemy':False,'Fame':0 if traits else 3,'Wounds':3,
+         **operation_result(0,4,4,4,kills=0 if traits else 1)},[combat_operation('Block')],
+        enemies=[enemy(9,attack=4,element='Ice',abilities=traits)])
+operation_case('magic_008',True,'消灭只绑定本次格挡不得泄漏到下个敌人',
+    {'MeleePool':0,'BlockPool':0,'KillBlockedEnemy':False,'Fame':3,'Wounds':5,
+     **operation_result(0,4,4,4,kills=1),**operation_result(1,0,0,3,wounds=2)},
+    [combat_operation('Block'),combat_operation('Block',1)],
+    enemies=[enemy(9,attack=4,element='Ice'),enemy(9,attack=3,element='Ice')])
+
+
 def export():
     target = ROOT / 'Assets/Resources/CardVerification'
     target.mkdir(exist_ok=True)

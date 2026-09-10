@@ -2,7 +2,7 @@ namespace MK.Logic.Runtime.CardEffects
 {
     /// <summary>
     /// 寒冰之盾：強化時降低一名被格擋敵人的護甲。
-    /// option 指定目標索引。
+    /// 降甲附着在这笔格挡上，实际选择目标且成功格挡后才触发。
     /// </summary>
     public sealed class IceShieldEffect : ICardEffect
     {
@@ -11,11 +11,7 @@ namespace MK.Logic.Runtime.CardEffects
 
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            ctx.BlockPool += 3; // 皆提供寒冰格擋3
-            if (_enh)
-            {
-                ctx.ArmorReduction[option] = 3;
-            }
+            ctx.CombatPower.AddBlock(3, MK.Logic.Core.Element.Ice, armorReductionOnSuccess: _enh ? 3 : 0);
         }
     }
 }

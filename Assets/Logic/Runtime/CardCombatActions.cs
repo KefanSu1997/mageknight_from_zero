@@ -55,14 +55,30 @@ namespace MK.Logic.Runtime
         }
 
         public static Result Block(PlayerState player, ActionContext context, Monster enemy)
+            => Block(player, context, new[] { enemy }, 0);
+
+        public static Result Block(PlayerState player, ActionContext context, IList<Monster> enemies, int target)
         {
-            var blocks = CombatMath.ResolveBlocks(enemy, context.CombatPower.Blocks);
+            if (target < 0 || target >= enemies.Count) throw new InvalidOperationException("格挡目标无效");
+            var enemy = enemies[target];
+            var blocks = CombatMath.ResolveBlocks(enemy, context.CombatPower.Blocks)
+                .Select(b => b with { TargetIndex = target }).ToArray();
             int printed = blocks.Sum(b => b.Value);
             int effective = CombatMath.EffectiveBlock(enemy.AttackElement, blocks);
             int required = AbilityRules.RequiredBlock(enemy);
             context.CombatPower.ConsumeBlocks();
-            var result = BattleResolver.Resolve(player, new[] { enemy }, blocks, Array.Empty<AttackAllocation>(), ctx: context);
-            return new Result(printed, effective, required, result.KilledIndices.Count, result.FameGain, result.TotalWounds);
+            var saved = context.SkipAttackIndices.ToArray();
+            try
+            {
+                for (int i = 0; i < enemies.Count; i++) if (i != target) context.SkipAttackIndices.Add(i);
+                var result = BattleResolver.Resolve(player, enemies, blocks, Array.Empty<AttackAllocation>(), ctx: context);
+                return new Result(printed, effective, required, result.KilledIndices.Count, result.FameGain, result.TotalWounds);
+            }
+            finally
+            {
+                context.SkipAttackIndices.Clear();
+                foreach (int i in saved) context.SkipAttackIndices.Add(i);
+            }
         }
 
         internal static void ApplyRangedRewards(PlayerState player, IList<Monster> enemies,

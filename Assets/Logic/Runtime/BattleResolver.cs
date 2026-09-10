@@ -97,12 +97,19 @@ namespace MK.Logic.Runtime
                         player.Fame += ctx.FamePerUnitAction;
                     if (ctx.BlockedArmorOne)
                         ctx.ArmorReduction[idx] = m.Armor - 1;
-                    if (ctx.KillBlockedEnemy)
-                        killIndices.Add(idx);
-                    if (ctx.AttackAfterBlock > 0)
+                    foreach (var block in (blocks ?? Array.Empty<BlockAllocation>()).Where(b => b.TargetIndex == idx))
                     {
-                        ctx.MeleePool += ctx.AttackAfterBlock;
-                        ctx.AttackAfterBlock = 0;
+                        // A reward for the player is independent of enemy immunity;
+                        // effects that directly alter this enemy respect its immunities.
+                        if (block.AttackOnSuccess > 0)
+                            ctx.CombatPower.AddAttack(block.AttackOnSuccess, block.Element);
+                        bool immune = m.Abilities.Contains(Ability.MagicResist)
+                            || (block.Element == Element.Fire && m.Abilities.Contains(Ability.FireResist))
+                            || (block.Element == Element.Ice && m.Abilities.Contains(Ability.IceResist));
+                        if (immune) continue;
+                        if (block.KillOnSuccess && !killIndices.Contains(idx)) killIndices.Add(idx);
+                        if (block.ArmorReductionOnSuccess > 0)
+                            ctx.ArmorReduction[idx] = ctx.ArmorReduction.GetValueOrDefault(idx) + block.ArmorReductionOnSuccess;
                     }
                 }
 

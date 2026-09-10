@@ -22,10 +22,12 @@ namespace MK.Logic.Runtime
             if (value > 0) _attacks.Add(new AttackProfile(type, value, element));
         }
 
-        public void AddBlock(int value, Element element = Element.Physical, bool countEnemySymbols = false)
+        public void AddBlock(int value, Element element = Element.Physical, bool countEnemySymbols = false,
+            int armorReductionOnSuccess = 0, int attackOnSuccess = 0, bool killOnSuccess = false)
         {
             if (value < 0) throw new ArgumentOutOfRangeException(nameof(value));
-            if (value > 0) _blocks.Add(new BlockAllocation(0, value, element, CountEnemySymbols: countEnemySymbols));
+            if (value > 0) _blocks.Add(new BlockAllocation(0, value, element, CountEnemySymbols: countEnemySymbols,
+                ArmorReductionOnSuccess: armorReductionOnSuccess, AttackOnSuccess: attackOnSuccess, KillOnSuccess: killOnSuccess));
         }
 
         // Compatibility for physical effects. Reductions remove recent contributions

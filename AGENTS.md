@@ -30,6 +30,8 @@
 
 ## 经验索引
 
+- 元素护盾成功触发、目标索引与魔力箭矢整笔额外费用；内存耗尽时减少Unity空闲导入worker —— `vibe_coding/codex/project_experience/card_elemental_triggers_and_atomic_extra_mana_2026-09-10.md`
+
 - 原卡移动和重整：指定格/地形减费、真实成本消费、伤牌与就绪独立、逐步后续操作验收 —— `vibe_coding/codex/project_experience/card_movement_scope_and_unit_readiness_2026-09-10.md`
 
 - 原版基础卡：本能数据恢复、互斥选项支付前验证、实际目标冰格挡及魔晶溢出 —— `vibe_coding/codex/project_experience/original_basic_card_choices_and_target_block_2026-09-10.md`

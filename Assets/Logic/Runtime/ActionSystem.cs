@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using MK.Logic.Core;
 using MK.Logic.Data.Cards;
 using MK.Logic.Data;
@@ -322,6 +323,8 @@ namespace MK.Logic.Runtime
 
             var effect = CardEffectFactory.Get(id);
             if (effect is ICardEffectValidator validator) validator.Validate(player, ctx, option);
+            if (effect is ICardAdditionalManaCost additional)
+                cost = cost.Concat(additional.GetAdditionalManaCost(option)).ToArray();
             if (!PayColors(player, ctx, cost))
                 throw new System.InvalidOperationException("法力不足，不能支付所选效果");
             if (!useEnh)

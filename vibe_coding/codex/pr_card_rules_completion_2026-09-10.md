@@ -18,15 +18,17 @@ Instinct restores its missing original text, red cost and four mutually exclusiv
 
 Druidic Paths now distinguishes a chosen hex from a chosen terrain type and uses the real movement-cost/pool service. Intimidate grants a paid ready action limited to owned level-1/2 units. Unit readiness and wound cards are independent: readying does not heal, healing does not ready, and starting the next turn does not ready spent units. Actual adventure consumers check CanActivate. Turn-end clears the new temporary discounts and ready permission. Each downstream move, ready or turn-end has a separate scene confirmation and numeric checks.
 
+Ice Shield and Burning/Exploding Shield now bind success triggers to their actual block contribution and target. Failed blocks do not grant bonuses; direct enemy effects respect immunity, fire attack rewards retain their element, and duplicate destroy contributions reward a target only once. Flame Wall keeps fire attack/block choices. Mana Bolt preserves all four original color-dependent attack types and pays the printed and extra costs atomically. Sequential scene operations display Chinese result labels, armor changes, payment, kills and wounds.
+
 ## How to test
 
 Use the installed Unity 6000.6.0f1 editor via Hub. Run Tools/Mage Knight/Original Cards/Run All Batches, Tools/Mage Knight/Adventure/Run All EditMode Tests, and Tools/Mage Knight/Adventure/Run All Four. No batchmode or package changes.
 
 Reproduce source corrections with `python tools/restore_spell_costs.py` and `python tools/restore_instinct_card.py`, and generated fixtures with `python tools/build_all_card_verification.py`. Summarize the exact new directory with `python tools/summarize_all_card_verification.py --output AutomationOutputs/AllOriginalCards/<run>`. Verify regressions with `python tools/verify_card_regression.py --scenes <adventure-run> --tests <editmode-run>`.
 
-Latest full-suite evidence: AutomationOutputs/AllOriginalCards/20260910_162121_0c45bf3c. 145 EditMode tests pass. 413 scene cases: 123 passed, 31 failed and 259 partial; 1308 pointer actions, 4956 effect assertions and 490 captures. All 383 previous cases remain, with unchanged numeric expectations. Two Druidic Paths checks observe real selected-hex cost (still 2), replacing an incorrect global-override field contract; test_contract_corrections.json records the change and added counterexamples. Three old failures are repaired with no new regressions; all assertions in 30 added cases pass. Full card certification is still pending.
+Latest full-suite evidence: AutomationOutputs/AllOriginalCards/20260910_215449_a1ed901f. 166 EditMode tests pass. 449 scene cases: 131 passed, 23 failed and 295 partial; 1451 pointer actions, 5777 effect assertions and 561 captures. All 413 previous case definitions and expectations are unchanged. Eight old failures are repaired with no new regressions; all assertions in 36 added scene cases pass. Full card certification is still pending.
 
-The final UI-only change labels the fixture as the state before the current operation. Its separate 183-case basic-card recheck retains identical assertions and actual states, with 239 supplementary captures, without combining batches into a fabricated full run. Four adventure regressions pass 114 actions and 477 assertions; all 118 captures are byte-identical to the previous archive. Two final Unity Console scans return zero errors. All 847 full-suite/recheck/regression captures and test XML/JSON are archived with verification_provenance.json.
+Four adventure regressions pass 114 pointer actions and 477 assertions, and all 118 regression captures are byte-identical to the previous archive. Two final Unity Console scans return zero errors. All 679 scene/regression captures, reports and test XML/JSON are archived with verification_provenance.json. Original artwork remains unchanged. Intermediate checkpoints and the superseded first run remain local.
 
 ## Risks
 

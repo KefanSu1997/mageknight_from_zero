@@ -12,11 +12,7 @@ namespace MK.Logic.Runtime.CardEffects
 
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            ctx.BlockPool += 4;
-            if (_enh)
-                ctx.KillBlockedEnemy = true;
-            else
-                ctx.AttackAfterBlock = 4;
+            ctx.CombatPower.AddBlock(4, Element.Fire, attackOnSuccess: _enh ? 0 : 4, killOnSuccess: _enh);
         }
     }
 }

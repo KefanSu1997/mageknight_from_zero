@@ -279,15 +279,38 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
             : operation.kind == "Ready" ? $"下一步重整目标部队{operation.targetIndex}；每级{_context.ReadyInfluencePerLevel}影响力，等级上限{_context.ReadyUnitMaxLevel}"
             : "下一步结束回合，检查临时减费与重整许可过期。")
             + "\n" + string.Join("；", _operationResults.Select(v => v.Key + "=" + v.Value));
+        if (operation.kind == "Block" || operation.kind == "Attack")
+        {
+            _fixture.text = "所选敌人索引" + operation.targetIndex + "：" + string.Join(" / ", _context.Enemies.Select(e => $"{e.Id} 护甲{e.Armor} 攻击{e.Attack}({e.AttackElement}) [{string.Join(",", e.Abilities)}]"));
+            _comparison.text = $"已出牌：格挡{_context.BlockPool}，攻击{_context.MeleePool}，元素{Snapshot()["attackElement"]}\n"
+                + $"待成功格挡：追加攻击{_context.AttackAfterBlock}，减甲{_context.BlockArmorReduction}，消灭{_context.KillBlockedEnemy}\n"
+                + "下一步：" + (operation.kind == "Block" ? "格挡所选敌人" : "攻击所选敌人")
+                + "\n" + string.Join("；", _operationResults.Where(v => v.Key.EndsWith(":effective") || v.Key.EndsWith(":kills") || v.Key.EndsWith(":wounds")).Select(v => Label(v.Key) + "=" + v.Value));
+        }
         _status.text = $"等待确认操作 {_operationIndex + 1}/{_case.operations.Length}";
-        _play.GetComponentInChildren<TextMeshProUGUI>().text = operation.kind == "Move" ? "确认目标并移动" : operation.kind == "Ready" ? "确认部队并重整" : "确认结束回合";
+        _play.GetComponentInChildren<TextMeshProUGUI>().text = operation.kind == "Block" ? "确认敌人并格挡" : operation.kind == "Attack" ? "确认敌人并攻击" : operation.kind == "Move" ? "确认目标并移动" : operation.kind == "Ready" ? "确认部队并重整" : "确认结束回合";
     }
 
     private void ResolveOperation()
     {
         var operation = _case.operations[_operationIndex];
         string key = "operation:" + _operationIndex;
-        if (operation.kind == "Move")
+        if (operation.kind == "Block" || operation.kind == "Attack")
+        {
+            var enemies = _context.Enemies.ToList();
+            var result = operation.kind == "Block"
+                ? CardCombatActions.Block(_player, _context, enemies, operation.targetIndex)
+                : CardCombatActions.Attack(_player, _context, enemies, new[] { operation.targetIndex }, Phase.Melee);
+            _operationResults[key + ":printed"] = result.PrintedPower.ToString();
+            _operationResults[key + ":effective"] = result.EffectivePower.ToString();
+            _operationResults[key + ":required"] = result.RequiredPower.ToString();
+            _operationResults[key + ":kills"] = result.Kills.ToString();
+            _operationResults[key + ":wounds"] = result.Wounds.ToString();
+            _operationResults[key + ":MeleePool"] = _context.MeleePool.ToString();
+            _operationResults[key + ":armor0"] = _context.ArmorReduction.GetValueOrDefault(0).ToString();
+            _operationResults[key + ":armor1"] = _context.ArmorReduction.GetValueOrDefault(1).ToString();
+        }
+        else if (operation.kind == "Move")
         {
             var to = new AxialCoord(operation.q, operation.r);
             _operationResults[key + ":cost"] = MovementService.GetCost(to, _context.MovementMap, _context.DayPart, _context).ToString();
@@ -309,7 +332,7 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
         else throw new InvalidOperationException("Unknown verification operation " + operation.kind);
         _operationIndex++;
         if (_operationIndex < _case.operations.Length) ShowNextOperation();
-        else CompleteCase("", "ActionSystem.Play -> MovementService / CardUnitActions / PlayerTurnEngine");
+        else CompleteCase("", "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer");
     }
 
     private void ResolveCombat()
@@ -368,6 +391,27 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
             _comparison.text = "操作结算：实际结果 / 独立规则预期\n"
                 + string.Join("\n", visible.Select(c => $"{(c.passed ? "通过" : "不符")} {Label(c.key)}：{c.actual} / {c.expected}"));
         }
+        if (_case.operations?.Any(o => o.kind == "Block" || o.kind == "Attack") == true)
+        {
+            var lines = new List<string> { "逐步战斗：实际结果 / 独立规则预期" };
+            for (int i = 0; i < _case.operations.Length; i++)
+            {
+                string prefix = "operation:" + i + ":";
+                var fields = checks.Where(c => c.key.StartsWith(prefix) && new[] { "printed", "effective", "required", "kills", "wounds" }.Contains(c.key.Substring(prefix.Length))).ToArray();
+                var labels = new Dictionary<string, string> { ["printed"] = "原值", ["effective"] = "有效值", ["required"] = "所需", ["kills"] = "击杀", ["wounds"] = "新增伤牌" };
+                string action = _case.operations[i].kind == "Block" ? "格挡" : "攻击";
+                lines.Add($"操作{i + 1} {action}：" + string.Join("  ", fields.Select(c => labels[c.key.Substring(prefix.Length)] + " " + c.actual + "/" + c.expected)));
+                if (_case.operations[i].kind == "Block")
+                {
+                    int target = _case.operations[i].targetIndex;
+                    if (_operationResults.TryGetValue(prefix + "armor" + target, out string reductionText) && int.TryParse(reductionText, out int reduction))
+                        lines.Add($"目标{target + 1}护甲：{_context.Enemies.ElementAt(target).Armor}→{Math.Max(1, _context.Enemies.ElementAt(target).Armor - reduction)}，已生效减甲{reduction}");
+                }
+            }
+            lines.Add("费用：" + string.Join("；", checks.Where(c => c.key.StartsWith("token:")).Select(c => Label(c.key) + " " + _before[c.key] + "→" + c.actual + " [预期" + c.expected + "]")));
+            lines.Add($"剩余格挡{_context.BlockPool}，近战{_context.MeleePool}；实际名望{_player.Fame}，手牌伤牌{_player.Wounds}");
+            _comparison.text = string.Join("\n", lines);
+        }
         _status.color = status == "failed" ? new Color32(244, 142, 118, 255) : W.Gold;
         SaveResults();
     }
@@ -396,7 +440,7 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
         if (key.StartsWith("operation:"))
         {
             var parts = key.Split(':');
-            return $"操作{int.Parse(parts[1]) + 1}" + (parts[2] == "cost" ? "费用" : "成功");
+            return $"操作{int.Parse(parts[1]) + 1}" + (parts[2] switch { "cost" => "费用", "effective" => "有效值", "kills" => "击杀", "wounds" => "敌人创伤", _ => "成功" });
         }
         if (_labels.TryGetValue(key, out var label)) return label;
         string[] colors = { "Red", "Blue", "Green", "White", "Gold", "Black" };

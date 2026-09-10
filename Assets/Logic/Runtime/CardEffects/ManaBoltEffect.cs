@@ -1,46 +1,28 @@
+using System;
 using MK.Logic.Core;
-using MK.Logic.Data;
-using System.Collections.Generic;
 
 namespace MK.Logic.Runtime.CardEffects
 {
-    /// <summary>
-    /// 魔力箭矢 / 魔力雷矢：支付魔力後依顏色獲得攻擊。
-    /// option 為顏色索引。
-    /// </summary>
-    public sealed class ManaBoltEffect : ICardEffect
+    /// <summary>ActionSystem pays the printed blue cost plus the chosen color before applying this effect.</summary>
+    public sealed class ManaBoltEffect : ICardEffect, ICardEffectValidator, ICardAdditionalManaCost
     {
         private readonly bool _enh;
         public ManaBoltEffect(bool enhanced) => _enh = enhanced;
 
+        public void Validate(PlayerState player, ActionContext ctx, int option)
+        {
+            if (option < 0 || option > 3) throw new InvalidOperationException("魔力箭矢必须选择红蓝绿白之一");
+        }
+
+        public ManaColor[] GetAdditionalManaCost(int option) => new[] { (ManaColor)option };
+
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            ManaColor color = (ManaColor)option;
-            var cost = new ManaCost(new Dictionary<Element,int>{{Element.Ice,1}});
-            if (!player.Mana.Pay(cost, player))
-                return;
-            if (_enh)
-            {
-                ctx.RangedPool += color switch
-                {
-                    ManaColor.Blue => 11,
-                    ManaColor.Red => 10,
-                    ManaColor.White => 9,
-                    ManaColor.Green => 8,
-                    _ => 0
-                };
-            }
-            else
-            {
-                ctx.RangedPool += color switch
-                {
-                    ManaColor.Blue => 8,
-                    ManaColor.Red => 7,
-                    ManaColor.White => 6,
-                    ManaColor.Green => 5,
-                    _ => 0
-                };
-            }
+            Validate(player, ctx, option);
+            var color = (ManaColor)option;
+            int value = color switch { ManaColor.Blue => 8, ManaColor.Red => 7, ManaColor.White => 6, _ => 5 };
+            var type = color == ManaColor.White ? AttackType.Ranged : color == ManaColor.Green ? AttackType.Siege : AttackType.Melee;
+            ctx.CombatPower.AddAttack(value + (_enh ? 3 : 0), color == ManaColor.Red ? Element.ColdFire : Element.Ice, type);
         }
     }
 }

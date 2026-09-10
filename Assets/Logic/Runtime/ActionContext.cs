@@ -2,6 +2,7 @@ using MK.Logic.Core;
 using MK.Logic.Data;
 using MK.Logic.Runtime.CardEffects;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace MK.Logic.Runtime
 {
@@ -347,10 +348,11 @@ namespace MK.Logic.Runtime
         public int EngagedEnemies { get; set; }
 
         /// <summary>成功格擋後獲得的單次攻擊力。</summary>
-        public int AttackAfterBlock { get; set; }
+        public int AttackAfterBlock => CombatPower.Blocks.Sum(b => b.AttackOnSuccess);
 
         /// <summary>成功格擋後直接殺死敵人。</summary>
-        public bool KillBlockedEnemy { get; set; }
+        public bool KillBlockedEnemy => CombatPower.Blocks.Any(b => b.KillOnSuccess);
+        public int BlockArmorReduction => CombatPower.Blocks.Sum(b => b.ArmorReductionOnSuccess);
 
         /// <summary>免費招募標記。</summary>
         public bool FreeRecruit { get; set; }

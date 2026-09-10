@@ -22798,6 +22798,3972 @@
           "targetIndex": 0
         }
       ]
+    },
+    {
+      "id": "magic_017_02",
+      "cardId": "magic_017",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 1,
+      "effectChoice": "",
+      "title": "基础 / Blue额外魔力决定攻击类型并实际杀敌",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "0"
+        },
+        {
+          "key": "combat:printed",
+          "value": "8"
+        },
+        {
+          "key": "combat:effective",
+          "value": "8"
+        },
+        {
+          "key": "combat:required",
+          "value": "8"
+        },
+        {
+          "key": "combat:kills",
+          "value": "1"
+        },
+        {
+          "key": "combat:fame",
+          "value": "3"
+        },
+        {
+          "key": "combat:wounds",
+          "value": "0"
+        },
+        {
+          "key": "Fame",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        },
+        {
+          "key": "played:attackElement",
+          "value": "Ice"
+        },
+        {
+          "key": "played:MeleePool",
+          "value": "8"
+        }
+      ],
+      "limitations": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ],
+      "combatPhase": "Melee",
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 8,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [
+            "PhysicalResist"
+          ],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_017_03",
+      "cardId": "magic_017",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / Red额外魔力决定攻击类型并实际杀敌",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "combat:printed",
+          "value": "7"
+        },
+        {
+          "key": "combat:effective",
+          "value": "7"
+        },
+        {
+          "key": "combat:required",
+          "value": "7"
+        },
+        {
+          "key": "combat:kills",
+          "value": "1"
+        },
+        {
+          "key": "combat:fame",
+          "value": "3"
+        },
+        {
+          "key": "combat:wounds",
+          "value": "0"
+        },
+        {
+          "key": "Fame",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "played:attackElement",
+          "value": "ColdFire"
+        },
+        {
+          "key": "played:MeleePool",
+          "value": "7"
+        }
+      ],
+      "limitations": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ],
+      "combatPhase": "Melee",
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 7,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [
+            "PhysicalResist"
+          ],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_017_04",
+      "cardId": "magic_017",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 3,
+      "effectChoice": "",
+      "title": "基础 / White额外魔力决定攻击类型并实际杀敌",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "combat:printed",
+          "value": "6"
+        },
+        {
+          "key": "combat:effective",
+          "value": "6"
+        },
+        {
+          "key": "combat:required",
+          "value": "6"
+        },
+        {
+          "key": "combat:kills",
+          "value": "1"
+        },
+        {
+          "key": "combat:fame",
+          "value": "3"
+        },
+        {
+          "key": "combat:wounds",
+          "value": "0"
+        },
+        {
+          "key": "Fame",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        },
+        {
+          "key": "token:White",
+          "value": "1"
+        },
+        {
+          "key": "played:attackElement",
+          "value": "Ice"
+        },
+        {
+          "key": "played:RangedPool",
+          "value": "6"
+        }
+      ],
+      "limitations": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ],
+      "combatPhase": "Ranged",
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 6,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [
+            "PhysicalResist"
+          ],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_017_05",
+      "cardId": "magic_017",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 2,
+      "effectChoice": "",
+      "title": "基础 / Green额外魔力决定攻击类型并实际杀敌",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "combat:printed",
+          "value": "5"
+        },
+        {
+          "key": "combat:effective",
+          "value": "5"
+        },
+        {
+          "key": "combat:required",
+          "value": "5"
+        },
+        {
+          "key": "combat:kills",
+          "value": "1"
+        },
+        {
+          "key": "combat:fame",
+          "value": "3"
+        },
+        {
+          "key": "combat:wounds",
+          "value": "0"
+        },
+        {
+          "key": "Fame",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        },
+        {
+          "key": "token:Green",
+          "value": "1"
+        },
+        {
+          "key": "played:attackElement",
+          "value": "Ice"
+        },
+        {
+          "key": "played:SiegePool",
+          "value": "5"
+        }
+      ],
+      "limitations": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ],
+      "combatPhase": "Ranged",
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [
+            "PhysicalResist"
+          ],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_017_06",
+      "cardId": "magic_017",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 1,
+      "effectChoice": "",
+      "title": "基础 / 额外费用不足时施法费用也不得先扣",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "0"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "token:Red",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "token:Black",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "Reputation",
+          "value": "0"
+        },
+        {
+          "key": "unitReady",
+          "value": "False"
+        },
+        {
+          "key": "unitWounds",
+          "value": "0"
+        },
+        {
+          "key": "ManaCurseTriggered",
+          "value": "False"
+        }
+      ],
+      "limitations": [],
+      "expectedException": "InvalidOperationException: 法力不足，不能支付所选效果"
+    },
+    {
+      "id": "magic_017_07",
+      "cardId": "magic_017",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / 额外费用不足时施法费用也不得先扣",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "token:Red",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "0"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Red",
+          "value": "0"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "token:Black",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "Reputation",
+          "value": "0"
+        },
+        {
+          "key": "unitReady",
+          "value": "False"
+        },
+        {
+          "key": "unitWounds",
+          "value": "0"
+        },
+        {
+          "key": "ManaCurseTriggered",
+          "value": "False"
+        }
+      ],
+      "limitations": [],
+      "expectedException": "InvalidOperationException: 法力不足，不能支付所选效果"
+    },
+    {
+      "id": "magic_017_08",
+      "cardId": "magic_017",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 5,
+      "effectChoice": "",
+      "title": "基础 / 黑色不能作为箭矢的四选一颜色",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Red",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "token:Black",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "Reputation",
+          "value": "0"
+        },
+        {
+          "key": "unitReady",
+          "value": "False"
+        },
+        {
+          "key": "unitWounds",
+          "value": "0"
+        },
+        {
+          "key": "ManaCurseTriggered",
+          "value": "False"
+        }
+      ],
+      "limitations": [],
+      "expectedException": "InvalidOperationException: 魔力箭矢必须选择红蓝绿白之一"
+    },
+    {
+      "id": "magic_010_02",
+      "cardId": "magic_010",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / 火焰攻击对火抗合计减半",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "combat:printed",
+          "value": "5"
+        },
+        {
+          "key": "combat:effective",
+          "value": "2"
+        },
+        {
+          "key": "combat:required",
+          "value": "2"
+        },
+        {
+          "key": "combat:kills",
+          "value": "1"
+        },
+        {
+          "key": "combat:fame",
+          "value": "3"
+        },
+        {
+          "key": "combat:wounds",
+          "value": "0"
+        },
+        {
+          "key": "Fame",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        }
+      ],
+      "limitations": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ],
+      "combatPhase": "Melee",
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 2,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [
+            "FireResist"
+          ],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_010_03",
+      "cardId": "magic_010",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / 火焰攻击穿过物理抗性",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "combat:printed",
+          "value": "5"
+        },
+        {
+          "key": "combat:effective",
+          "value": "5"
+        },
+        {
+          "key": "combat:required",
+          "value": "5"
+        },
+        {
+          "key": "combat:kills",
+          "value": "1"
+        },
+        {
+          "key": "combat:fame",
+          "value": "3"
+        },
+        {
+          "key": "combat:wounds",
+          "value": "0"
+        },
+        {
+          "key": "Fame",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        }
+      ],
+      "limitations": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ],
+      "combatPhase": "Melee",
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [
+            "PhysicalResist"
+          ],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_010_04",
+      "cardId": "magic_010",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 1,
+      "effectChoice": "",
+      "title": "基础 / 火焰格挡对Ice攻击的效率",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "combat:printed",
+          "value": "7"
+        },
+        {
+          "key": "combat:effective",
+          "value": "7"
+        },
+        {
+          "key": "combat:required",
+          "value": "7"
+        },
+        {
+          "key": "combat:kills",
+          "value": "0"
+        },
+        {
+          "key": "combat:fame",
+          "value": "0"
+        },
+        {
+          "key": "combat:wounds",
+          "value": "0"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        }
+      ],
+      "limitations": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ],
+      "combatPhase": "Block",
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 7,
+          "element": "Ice",
+          "abilities": [],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_010_05",
+      "cardId": "magic_010",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 1,
+      "effectChoice": "",
+      "title": "基础 / 火焰格挡对Fire攻击的效率",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "combat:printed",
+          "value": "7"
+        },
+        {
+          "key": "combat:effective",
+          "value": "3"
+        },
+        {
+          "key": "combat:required",
+          "value": "4"
+        },
+        {
+          "key": "combat:kills",
+          "value": "0"
+        },
+        {
+          "key": "combat:fame",
+          "value": "0"
+        },
+        {
+          "key": "combat:wounds",
+          "value": "2"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "Wounds",
+          "value": "5"
+        },
+        {
+          "key": "handWounds",
+          "value": "5"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        }
+      ],
+      "limitations": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ],
+      "combatPhase": "Block",
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 4,
+          "element": "Fire",
+          "abilities": [],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_010_06",
+      "cardId": "magic_010",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 2,
+      "effectChoice": "",
+      "title": "基础 / 非法攻击格挡选项不得支付",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "2"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "token:Black",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "Reputation",
+          "value": "0"
+        },
+        {
+          "key": "unitReady",
+          "value": "False"
+        },
+        {
+          "key": "unitWounds",
+          "value": "0"
+        },
+        {
+          "key": "ManaCurseTriggered",
+          "value": "False"
+        }
+      ],
+      "limitations": [],
+      "expectedException": "InvalidOperationException: 烈焰之墙必须选择攻击或格挡"
+    },
+    {
+      "id": "magic_017_09",
+      "cardId": "magic_017",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 1,
+      "effectChoice": "",
+      "title": "强化 / Blue额外魔力决定攻击类型并实际杀敌",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "0"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "combat:printed",
+          "value": "11"
+        },
+        {
+          "key": "combat:effective",
+          "value": "11"
+        },
+        {
+          "key": "combat:required",
+          "value": "11"
+        },
+        {
+          "key": "combat:kills",
+          "value": "1"
+        },
+        {
+          "key": "combat:fame",
+          "value": "3"
+        },
+        {
+          "key": "combat:wounds",
+          "value": "0"
+        },
+        {
+          "key": "Fame",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        },
+        {
+          "key": "played:attackElement",
+          "value": "Ice"
+        },
+        {
+          "key": "played:MeleePool",
+          "value": "11"
+        }
+      ],
+      "limitations": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ],
+      "combatPhase": "Melee",
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 11,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [
+            "PhysicalResist"
+          ],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_017_10",
+      "cardId": "magic_017",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / Red额外魔力决定攻击类型并实际杀敌",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "combat:printed",
+          "value": "10"
+        },
+        {
+          "key": "combat:effective",
+          "value": "10"
+        },
+        {
+          "key": "combat:required",
+          "value": "10"
+        },
+        {
+          "key": "combat:kills",
+          "value": "1"
+        },
+        {
+          "key": "combat:fame",
+          "value": "3"
+        },
+        {
+          "key": "combat:wounds",
+          "value": "0"
+        },
+        {
+          "key": "Fame",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "played:attackElement",
+          "value": "ColdFire"
+        },
+        {
+          "key": "played:MeleePool",
+          "value": "10"
+        }
+      ],
+      "limitations": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ],
+      "combatPhase": "Melee",
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 10,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [
+            "PhysicalResist"
+          ],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_017_11",
+      "cardId": "magic_017",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 3,
+      "effectChoice": "",
+      "title": "强化 / White额外魔力决定攻击类型并实际杀敌",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "combat:printed",
+          "value": "9"
+        },
+        {
+          "key": "combat:effective",
+          "value": "9"
+        },
+        {
+          "key": "combat:required",
+          "value": "9"
+        },
+        {
+          "key": "combat:kills",
+          "value": "1"
+        },
+        {
+          "key": "combat:fame",
+          "value": "3"
+        },
+        {
+          "key": "combat:wounds",
+          "value": "0"
+        },
+        {
+          "key": "Fame",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        },
+        {
+          "key": "token:White",
+          "value": "1"
+        },
+        {
+          "key": "played:attackElement",
+          "value": "Ice"
+        },
+        {
+          "key": "played:RangedPool",
+          "value": "9"
+        }
+      ],
+      "limitations": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ],
+      "combatPhase": "Ranged",
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 9,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [
+            "PhysicalResist"
+          ],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_017_12",
+      "cardId": "magic_017",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 2,
+      "effectChoice": "",
+      "title": "强化 / Green额外魔力决定攻击类型并实际杀敌",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "combat:printed",
+          "value": "8"
+        },
+        {
+          "key": "combat:effective",
+          "value": "8"
+        },
+        {
+          "key": "combat:required",
+          "value": "8"
+        },
+        {
+          "key": "combat:kills",
+          "value": "1"
+        },
+        {
+          "key": "combat:fame",
+          "value": "3"
+        },
+        {
+          "key": "combat:wounds",
+          "value": "0"
+        },
+        {
+          "key": "Fame",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        },
+        {
+          "key": "token:Green",
+          "value": "1"
+        },
+        {
+          "key": "played:attackElement",
+          "value": "Ice"
+        },
+        {
+          "key": "played:SiegePool",
+          "value": "8"
+        }
+      ],
+      "limitations": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ],
+      "combatPhase": "Ranged",
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 8,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [
+            "PhysicalResist"
+          ],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_017_13",
+      "cardId": "magic_017",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 1,
+      "effectChoice": "",
+      "title": "强化 / 额外费用不足时施法费用也不得先扣",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "0"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "2"
+        },
+        {
+          "key": "token:Red",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "Reputation",
+          "value": "0"
+        },
+        {
+          "key": "unitReady",
+          "value": "False"
+        },
+        {
+          "key": "unitWounds",
+          "value": "0"
+        },
+        {
+          "key": "ManaCurseTriggered",
+          "value": "False"
+        }
+      ],
+      "limitations": [],
+      "expectedException": "InvalidOperationException: 法力不足，不能支付所选效果"
+    },
+    {
+      "id": "magic_017_14",
+      "cardId": "magic_017",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 额外费用不足时施法费用也不得先扣",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "token:Red",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "0"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Black",
+          "value": "2"
+        },
+        {
+          "key": "token:Red",
+          "value": "0"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "Reputation",
+          "value": "0"
+        },
+        {
+          "key": "unitReady",
+          "value": "False"
+        },
+        {
+          "key": "unitWounds",
+          "value": "0"
+        },
+        {
+          "key": "ManaCurseTriggered",
+          "value": "False"
+        }
+      ],
+      "limitations": [],
+      "expectedException": "InvalidOperationException: 法力不足，不能支付所选效果"
+    },
+    {
+      "id": "magic_017_15",
+      "cardId": "magic_017",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 5,
+      "effectChoice": "",
+      "title": "强化 / 黑色不能作为箭矢的四选一颜色",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Black",
+          "value": "2"
+        },
+        {
+          "key": "token:Red",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "Reputation",
+          "value": "0"
+        },
+        {
+          "key": "unitReady",
+          "value": "False"
+        },
+        {
+          "key": "unitWounds",
+          "value": "0"
+        },
+        {
+          "key": "ManaCurseTriggered",
+          "value": "False"
+        }
+      ],
+      "limitations": [],
+      "expectedException": "InvalidOperationException: 魔力箭矢必须选择红蓝绿白之一"
+    },
+    {
+      "id": "magic_010_07",
+      "cardId": "magic_010",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 火焰攻击对火抗合计减半",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "combat:printed",
+          "value": "7"
+        },
+        {
+          "key": "combat:effective",
+          "value": "3"
+        },
+        {
+          "key": "combat:required",
+          "value": "3"
+        },
+        {
+          "key": "combat:kills",
+          "value": "1"
+        },
+        {
+          "key": "combat:fame",
+          "value": "3"
+        },
+        {
+          "key": "combat:wounds",
+          "value": "0"
+        },
+        {
+          "key": "Fame",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        }
+      ],
+      "limitations": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ],
+      "combatPhase": "Melee",
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 3,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [
+            "FireResist"
+          ],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_010_08",
+      "cardId": "magic_010",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 火焰攻击穿过物理抗性",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "combat:printed",
+          "value": "7"
+        },
+        {
+          "key": "combat:effective",
+          "value": "7"
+        },
+        {
+          "key": "combat:required",
+          "value": "7"
+        },
+        {
+          "key": "combat:kills",
+          "value": "1"
+        },
+        {
+          "key": "combat:fame",
+          "value": "3"
+        },
+        {
+          "key": "combat:wounds",
+          "value": "0"
+        },
+        {
+          "key": "Fame",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        }
+      ],
+      "limitations": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ],
+      "combatPhase": "Melee",
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 7,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [
+            "PhysicalResist"
+          ],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_010_09",
+      "cardId": "magic_010",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 1,
+      "effectChoice": "",
+      "title": "强化 / 火焰格挡对Ice攻击的效率",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "combat:printed",
+          "value": "9"
+        },
+        {
+          "key": "combat:effective",
+          "value": "9"
+        },
+        {
+          "key": "combat:required",
+          "value": "9"
+        },
+        {
+          "key": "combat:kills",
+          "value": "0"
+        },
+        {
+          "key": "combat:fame",
+          "value": "0"
+        },
+        {
+          "key": "combat:wounds",
+          "value": "0"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        }
+      ],
+      "limitations": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ],
+      "combatPhase": "Block",
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 9,
+          "element": "Ice",
+          "abilities": [],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_010_10",
+      "cardId": "magic_010",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 1,
+      "effectChoice": "",
+      "title": "强化 / 火焰格挡对Fire攻击的效率",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "combat:printed",
+          "value": "9"
+        },
+        {
+          "key": "combat:effective",
+          "value": "4"
+        },
+        {
+          "key": "combat:required",
+          "value": "5"
+        },
+        {
+          "key": "combat:kills",
+          "value": "0"
+        },
+        {
+          "key": "combat:fame",
+          "value": "0"
+        },
+        {
+          "key": "combat:wounds",
+          "value": "3"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "Wounds",
+          "value": "6"
+        },
+        {
+          "key": "handWounds",
+          "value": "6"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        }
+      ],
+      "limitations": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ],
+      "combatPhase": "Block",
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 5,
+          "element": "Fire",
+          "abilities": [],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_010_11",
+      "cardId": "magic_010",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 2,
+      "effectChoice": "",
+      "title": "强化 / 非法攻击格挡选项不得支付",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "2"
+        },
+        {
+          "key": "token:Black",
+          "value": "2"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "Reputation",
+          "value": "0"
+        },
+        {
+          "key": "unitReady",
+          "value": "False"
+        },
+        {
+          "key": "unitWounds",
+          "value": "0"
+        },
+        {
+          "key": "ManaCurseTriggered",
+          "value": "False"
+        }
+      ],
+      "limitations": [],
+      "expectedException": "InvalidOperationException: 烈焰之墙必须选择攻击或格挡"
+    },
+    {
+      "id": "advanced_card_005_02",
+      "cardId": "advanced_card_005",
+      "batch": "advanced_card",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 成功格挡后实际减甲并击杀",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "MeleePool",
+          "value": "2"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "BlockArmorReduction",
+          "value": "0"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "Fame",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:printed",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:effective",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:required",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:kills",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:wounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:1:printed",
+          "value": "2"
+        },
+        {
+          "key": "operation:1:effective",
+          "value": "2"
+        },
+        {
+          "key": "operation:1:required",
+          "value": "2"
+        },
+        {
+          "key": "operation:1:kills",
+          "value": "1"
+        },
+        {
+          "key": "operation:1:wounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:armor0",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:armor1",
+          "value": "0"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Block",
+          "targetIndex": 0
+        },
+        {
+          "kind": "Attack",
+          "targetIndex": 0
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 3,
+          "element": "Fire",
+          "abilities": [],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "advanced_card_005_03",
+      "cardId": "advanced_card_005",
+      "batch": "advanced_card",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 寒冰抗性取消减甲",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "MeleePool",
+          "value": "2"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "BlockArmorReduction",
+          "value": "0"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:printed",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:effective",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:required",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:kills",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:wounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:1:printed",
+          "value": "2"
+        },
+        {
+          "key": "operation:1:effective",
+          "value": "2"
+        },
+        {
+          "key": "operation:1:required",
+          "value": "5"
+        },
+        {
+          "key": "operation:1:kills",
+          "value": "0"
+        },
+        {
+          "key": "operation:1:wounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:armor0",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:armor1",
+          "value": "0"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Block",
+          "targetIndex": 0
+        },
+        {
+          "kind": "Attack",
+          "targetIndex": 0
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 3,
+          "element": "Fire",
+          "abilities": [
+            "IceResist"
+          ],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "advanced_card_005_04",
+      "cardId": "advanced_card_005",
+      "batch": "advanced_card",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 奥术免疫取消减甲",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "MeleePool",
+          "value": "2"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "BlockArmorReduction",
+          "value": "0"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:printed",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:effective",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:required",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:kills",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:wounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:1:printed",
+          "value": "2"
+        },
+        {
+          "key": "operation:1:effective",
+          "value": "2"
+        },
+        {
+          "key": "operation:1:required",
+          "value": "5"
+        },
+        {
+          "key": "operation:1:kills",
+          "value": "0"
+        },
+        {
+          "key": "operation:1:wounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:armor0",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:armor1",
+          "value": "0"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Block",
+          "targetIndex": 0
+        },
+        {
+          "kind": "Attack",
+          "targetIndex": 0
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 3,
+          "element": "Fire",
+          "abilities": [
+            "MagicResist"
+          ],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "advanced_card_005_05",
+      "cardId": "advanced_card_005",
+      "batch": "advanced_card",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 格挡失败不得提前减甲",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "MeleePool",
+          "value": "2"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "BlockArmorReduction",
+          "value": "0"
+        },
+        {
+          "key": "Wounds",
+          "value": "5"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:printed",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:effective",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:required",
+          "value": "4"
+        },
+        {
+          "key": "operation:0:kills",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:wounds",
+          "value": "2"
+        },
+        {
+          "key": "operation:1:printed",
+          "value": "2"
+        },
+        {
+          "key": "operation:1:effective",
+          "value": "2"
+        },
+        {
+          "key": "operation:1:required",
+          "value": "5"
+        },
+        {
+          "key": "operation:1:kills",
+          "value": "0"
+        },
+        {
+          "key": "operation:1:wounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:armor0",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:armor1",
+          "value": "0"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Block",
+          "targetIndex": 0
+        },
+        {
+          "kind": "Attack",
+          "targetIndex": 0
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 4,
+          "element": "Fire",
+          "abilities": [],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "advanced_card_005_06",
+      "cardId": "advanced_card_005",
+      "batch": "advanced_card",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 选择第二个敌人只改变该敌人的护甲",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "MeleePool",
+          "value": "2"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "BlockArmorReduction",
+          "value": "0"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "Fame",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:printed",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:effective",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:required",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:kills",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:wounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:1:printed",
+          "value": "2"
+        },
+        {
+          "key": "operation:1:effective",
+          "value": "2"
+        },
+        {
+          "key": "operation:1:required",
+          "value": "2"
+        },
+        {
+          "key": "operation:1:kills",
+          "value": "1"
+        },
+        {
+          "key": "operation:1:wounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:armor0",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:armor1",
+          "value": "3"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Block",
+          "targetIndex": 1
+        },
+        {
+          "kind": "Attack",
+          "targetIndex": 1
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 9,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [],
+          "fame": 3
+        },
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 3,
+          "element": "Fire",
+          "abilities": [],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "advanced_card_005_07",
+      "cardId": "advanced_card_005",
+      "batch": "advanced_card",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / 基础寒冰格挡实际对抗火焰攻击",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "combat:printed",
+          "value": "3"
+        },
+        {
+          "key": "combat:effective",
+          "value": "3"
+        },
+        {
+          "key": "combat:required",
+          "value": "3"
+        },
+        {
+          "key": "combat:kills",
+          "value": "0"
+        },
+        {
+          "key": "combat:fame",
+          "value": "0"
+        },
+        {
+          "key": "combat:wounds",
+          "value": "0"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        }
+      ],
+      "limitations": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ],
+      "combatPhase": "Block",
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 3,
+          "element": "Fire",
+          "abilities": [],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_008_02",
+      "cardId": "magic_008",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / 成功格挡后火焰攻击可用于另一个物抗敌人",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "AttackAfterBlock",
+          "value": "0"
+        },
+        {
+          "key": "Fame",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:printed",
+          "value": "4"
+        },
+        {
+          "key": "operation:0:effective",
+          "value": "4"
+        },
+        {
+          "key": "operation:0:required",
+          "value": "4"
+        },
+        {
+          "key": "operation:0:kills",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:wounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:1:printed",
+          "value": "4"
+        },
+        {
+          "key": "operation:1:effective",
+          "value": "4"
+        },
+        {
+          "key": "operation:1:required",
+          "value": "4"
+        },
+        {
+          "key": "operation:1:kills",
+          "value": "1"
+        },
+        {
+          "key": "operation:1:wounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:MeleePool",
+          "value": "4"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Block",
+          "targetIndex": 0
+        },
+        {
+          "kind": "Attack",
+          "targetIndex": 1
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 9,
+          "attack": 4,
+          "element": "Ice",
+          "abilities": [],
+          "fame": 3
+        },
+        {
+          "id": "规则目标",
+          "armor": 4,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [
+            "PhysicalResist"
+          ],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_008_03",
+      "cardId": "magic_008",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / 失败格挡没有追加攻击",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "AttackAfterBlock",
+          "value": "0"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "Wounds",
+          "value": "6"
+        },
+        {
+          "key": "operation:0:printed",
+          "value": "4"
+        },
+        {
+          "key": "operation:0:effective",
+          "value": "4"
+        },
+        {
+          "key": "operation:0:required",
+          "value": "5"
+        },
+        {
+          "key": "operation:0:kills",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:wounds",
+          "value": "3"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Block",
+          "targetIndex": 0
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 9,
+          "attack": 5,
+          "element": "Ice",
+          "abilities": [],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_008_04",
+      "cardId": "magic_008",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 爆破护盾消灭条件与抗性[]",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "KillBlockedEnemy",
+          "value": "False"
+        },
+        {
+          "key": "Fame",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:printed",
+          "value": "4"
+        },
+        {
+          "key": "operation:0:effective",
+          "value": "4"
+        },
+        {
+          "key": "operation:0:required",
+          "value": "4"
+        },
+        {
+          "key": "operation:0:kills",
+          "value": "1"
+        },
+        {
+          "key": "operation:0:wounds",
+          "value": "0"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Block",
+          "targetIndex": 0
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 9,
+          "attack": 4,
+          "element": "Ice",
+          "abilities": [],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_008_05",
+      "cardId": "magic_008",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 爆破护盾消灭条件与抗性['FireResist']",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "KillBlockedEnemy",
+          "value": "False"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:printed",
+          "value": "4"
+        },
+        {
+          "key": "operation:0:effective",
+          "value": "4"
+        },
+        {
+          "key": "operation:0:required",
+          "value": "4"
+        },
+        {
+          "key": "operation:0:kills",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:wounds",
+          "value": "0"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Block",
+          "targetIndex": 0
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 9,
+          "attack": 4,
+          "element": "Ice",
+          "abilities": [
+            "FireResist"
+          ],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_008_06",
+      "cardId": "magic_008",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 爆破护盾消灭条件与抗性['MagicResist']",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "KillBlockedEnemy",
+          "value": "False"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:printed",
+          "value": "4"
+        },
+        {
+          "key": "operation:0:effective",
+          "value": "4"
+        },
+        {
+          "key": "operation:0:required",
+          "value": "4"
+        },
+        {
+          "key": "operation:0:kills",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:wounds",
+          "value": "0"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Block",
+          "targetIndex": 0
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 9,
+          "attack": 4,
+          "element": "Ice",
+          "abilities": [
+            "MagicResist"
+          ],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_008_07",
+      "cardId": "magic_008",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 消灭只绑定本次格挡不得泄漏到下个敌人",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "KillBlockedEnemy",
+          "value": "False"
+        },
+        {
+          "key": "Fame",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "5"
+        },
+        {
+          "key": "operation:0:printed",
+          "value": "4"
+        },
+        {
+          "key": "operation:0:effective",
+          "value": "4"
+        },
+        {
+          "key": "operation:0:required",
+          "value": "4"
+        },
+        {
+          "key": "operation:0:kills",
+          "value": "1"
+        },
+        {
+          "key": "operation:0:wounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:1:printed",
+          "value": "0"
+        },
+        {
+          "key": "operation:1:effective",
+          "value": "0"
+        },
+        {
+          "key": "operation:1:required",
+          "value": "3"
+        },
+        {
+          "key": "operation:1:kills",
+          "value": "0"
+        },
+        {
+          "key": "operation:1:wounds",
+          "value": "2"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Block",
+          "targetIndex": 0
+        },
+        {
+          "kind": "Block",
+          "targetIndex": 1
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 9,
+          "attack": 4,
+          "element": "Ice",
+          "abilities": [],
+          "fame": 3
+        },
+        {
+          "id": "规则目标",
+          "armor": 9,
+          "attack": 3,
+          "element": "Ice",
+          "abilities": [],
+          "fame": 3
+        }
+      ]
     }
   ]
 }
