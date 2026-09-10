@@ -16,6 +16,8 @@ namespace MageKnight.SceneAutomation
         /// Seconds to wait after the step completes; set to -1 to use the request default.
         /// </summary>
         public float waitAfterSeconds = -1f;
+        // Preparation steps still record pointer hits and assertions. Failures always capture.
+        public bool skipScreenshot;
         public List<SceneAutomationExpectation> before = new();
         public List<SceneAutomationExpectation> after = new();
     }

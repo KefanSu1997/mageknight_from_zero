@@ -211,7 +211,7 @@ namespace MageKnight.SceneAutomation
             record.runtimeRule = source?.LastRule;
             bool passed = CheckExpectations(step.after, after, "after", record);
             if (!passed) _hasError = true;
-            yield return CaptureAndRecordStep(label, step.buttonPath, passed, record);
+            yield return CaptureAndRecordStep(label, step.buttonPath, passed, record, step.skipScreenshot && passed);
         }
 
         private static List<SceneAutomationStateValue> Snapshot(Dictionary<string, string> state) =>
@@ -272,7 +272,7 @@ namespace MageKnight.SceneAutomation
             return true;
         }
 
-        private IEnumerator CaptureAndRecordStep(string label, string buttonPath, bool success, SceneAutomationReportStep record = null)
+        private IEnumerator CaptureAndRecordStep(string label, string buttonPath, bool success, SceneAutomationReportStep record = null, bool skipScreenshot = false)
         {
             record ??= new SceneAutomationReportStep
             {
@@ -281,6 +281,12 @@ namespace MageKnight.SceneAutomation
             };
 
             record.success = success;
+
+            if (skipScreenshot)
+            {
+                _report.steps.Add(record);
+                yield break;
+            }
 
             Canvas.ForceUpdateCanvases();
             yield return new WaitForEndOfFrame();

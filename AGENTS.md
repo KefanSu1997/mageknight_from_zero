@@ -30,6 +30,8 @@
 
 ## 经验索引
 
+- 原卡场景审计：121张有效牌面、合法夹具、独立预期、模块与整卡结论分开、报告时效和编译等待 —— `vibe_coding/codex/project_experience/original_card_scene_audit_2026-09-10.md`
+
 - Git 存档：隐藏未跟踪文件、未完成合并备份、SSH 443 和 LFS/远端提交核对 —— `vibe_coding/codex/project_experience/git_archive_pending_merge_2026-09-10.md`
 
 - 原卡复用纠偏：原SO/原卡面/原效果三者同源、基础二选一与强化耗色、禁止用自制训练卡冒充正式内容 —— `vibe_coding/codex/project_experience/official_card_reuse_and_acceptance_2026-09-10.md`
