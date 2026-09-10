@@ -1629,7 +1629,7 @@
           "value": "0"
         },
         {
-          "key": "TerrainCostOverride:Forest",
+          "key": "move:selectedCost",
           "value": "2"
         }
       ],
@@ -3797,7 +3797,7 @@
           "value": "1"
         },
         {
-          "key": "TerrainCostOverride:Forest",
+          "key": "move:selectedCost",
           "value": "2"
         }
       ],
@@ -20637,6 +20637,2166 @@
       ],
       "limitations": [
         "此例覆盖魔晶奖励边界；实际使用和卡区生命周期仍须联验"
+      ]
+    },
+    {
+      "id": "basic_card_018_02",
+      "cardId": "basic_card_018",
+      "batch": "basic_card",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / 连续移动区分选中格与另一森林",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "MovementPool",
+          "value": "2"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "2"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "position:q",
+          "value": "1"
+        },
+        {
+          "key": "move:selectedCost",
+          "value": "2"
+        },
+        {
+          "key": "move:otherCost",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:cost",
+          "value": "2"
+        },
+        {
+          "key": "operation:1:success",
+          "value": "False"
+        },
+        {
+          "key": "operation:1:cost",
+          "value": "3"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        },
+        {
+          "kind": "Move",
+          "q": 2,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "id": "basic_card_018_03",
+      "cardId": "basic_card_018",
+      "batch": "basic_card",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / Forest/Night实际移动与最低费用",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "MovementPool",
+          "value": "4"
+        },
+        {
+          "key": "DayPart",
+          "value": "Night"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "2"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "position:q",
+          "value": "1"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:cost",
+          "value": "4"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        }
+      ],
+      "destinationTerrain": "Forest"
+    },
+    {
+      "id": "basic_card_018_04",
+      "cardId": "basic_card_018",
+      "batch": "basic_card",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / Desert/Day实际移动与最低费用",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "MovementPool",
+          "value": "4"
+        },
+        {
+          "key": "DayPart",
+          "value": "Day"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "2"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "position:q",
+          "value": "1"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:cost",
+          "value": "4"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        }
+      ],
+      "destinationTerrain": "Desert"
+    },
+    {
+      "id": "basic_card_018_05",
+      "cardId": "basic_card_018",
+      "batch": "basic_card",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / Desert/Night实际移动与最低费用",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "MovementPool",
+          "value": "4"
+        },
+        {
+          "key": "DayPart",
+          "value": "Night"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "4"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "position:q",
+          "value": "1"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:cost",
+          "value": "2"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        }
+      ],
+      "destinationTerrain": "Desert"
+    },
+    {
+      "id": "basic_card_018_06",
+      "cardId": "basic_card_018",
+      "batch": "basic_card",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / Plains/Day实际移动与最低费用",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "MovementPool",
+          "value": "4"
+        },
+        {
+          "key": "DayPart",
+          "value": "Day"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "4"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "position:q",
+          "value": "1"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:cost",
+          "value": "2"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        }
+      ],
+      "destinationTerrain": "Plains"
+    },
+    {
+      "id": "basic_card_018_07",
+      "cardId": "basic_card_018",
+      "batch": "basic_card",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / Mountain/Day实际移动与最低费用",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "MovementPool",
+          "value": "4"
+        },
+        {
+          "key": "DayPart",
+          "value": "Day"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "6"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "position:q",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:cost",
+          "value": "2147483647"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        }
+      ],
+      "destinationTerrain": "Mountain"
+    },
+    {
+      "id": "basic_card_018_08",
+      "cardId": "basic_card_018",
+      "batch": "basic_card",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / 非相邻格拒绝不消耗资源",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "2"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "position:q",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:cost",
+          "value": "3"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Move",
+          "q": 2,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "id": "basic_card_018_09",
+      "cardId": "basic_card_018",
+      "batch": "basic_card",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / 回合结束后减费与移动力过期",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "move:selectedCost",
+          "value": "3"
+        },
+        {
+          "key": "move:otherCost",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        },
+        {
+          "key": "token:Red",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "0"
+        },
+        {
+          "key": "token:Green",
+          "value": "0"
+        },
+        {
+          "key": "token:White",
+          "value": "0"
+        },
+        {
+          "key": "token:Gold",
+          "value": "0"
+        },
+        {
+          "key": "token:Black",
+          "value": "0"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "EndTurn"
+        }
+      ]
+    },
+    {
+      "id": "basic_card_018_10",
+      "cardId": "basic_card_018",
+      "batch": "basic_card",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / 缺少移动目标时在支付前拒绝",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "2"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "token:Black",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "Reputation",
+          "value": "0"
+        },
+        {
+          "key": "unitReady",
+          "value": "False"
+        },
+        {
+          "key": "unitWounds",
+          "value": "0"
+        },
+        {
+          "key": "ManaCurseTriggered",
+          "value": "False"
+        }
+      ],
+      "limitations": [],
+      "expectedException": "InvalidOperationException: 德鲁伊之道必须选择有效六角格或地形",
+      "omitMovementTarget": true
+    },
+    {
+      "id": "basic_card_018_11",
+      "cardId": "basic_card_018",
+      "batch": "basic_card",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 连续移动区分选中格与另一森林",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "position:q",
+          "value": "2"
+        },
+        {
+          "key": "move:selectedCost",
+          "value": "2"
+        },
+        {
+          "key": "move:otherCost",
+          "value": "2"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:cost",
+          "value": "2"
+        },
+        {
+          "key": "operation:1:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:1:cost",
+          "value": "2"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        },
+        {
+          "kind": "Move",
+          "q": 2,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "id": "basic_card_018_12",
+      "cardId": "basic_card_018",
+      "batch": "basic_card",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / Forest/Night实际移动与最低费用",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "MovementPool",
+          "value": "4"
+        },
+        {
+          "key": "DayPart",
+          "value": "Night"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "4"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "position:q",
+          "value": "1"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:cost",
+          "value": "4"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        }
+      ],
+      "destinationTerrain": "Forest"
+    },
+    {
+      "id": "basic_card_018_13",
+      "cardId": "basic_card_018",
+      "batch": "basic_card",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / Desert/Day实际移动与最低费用",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "MovementPool",
+          "value": "4"
+        },
+        {
+          "key": "DayPart",
+          "value": "Day"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "4"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "position:q",
+          "value": "1"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:cost",
+          "value": "4"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        }
+      ],
+      "destinationTerrain": "Desert"
+    },
+    {
+      "id": "basic_card_018_14",
+      "cardId": "basic_card_018",
+      "batch": "basic_card",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / Desert/Night实际移动与最低费用",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "MovementPool",
+          "value": "4"
+        },
+        {
+          "key": "DayPart",
+          "value": "Night"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "6"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "position:q",
+          "value": "1"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:cost",
+          "value": "2"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        }
+      ],
+      "destinationTerrain": "Desert"
+    },
+    {
+      "id": "basic_card_018_15",
+      "cardId": "basic_card_018",
+      "batch": "basic_card",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / Plains/Day实际移动与最低费用",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "MovementPool",
+          "value": "4"
+        },
+        {
+          "key": "DayPart",
+          "value": "Day"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "6"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "position:q",
+          "value": "1"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:cost",
+          "value": "2"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        }
+      ],
+      "destinationTerrain": "Plains"
+    },
+    {
+      "id": "basic_card_018_16",
+      "cardId": "basic_card_018",
+      "batch": "basic_card",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / Mountain/Day实际移动与最低费用",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "MovementPool",
+          "value": "4"
+        },
+        {
+          "key": "DayPart",
+          "value": "Day"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "8"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "position:q",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:cost",
+          "value": "2147483647"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        }
+      ],
+      "destinationTerrain": "Mountain"
+    },
+    {
+      "id": "basic_card_018_17",
+      "cardId": "basic_card_018",
+      "batch": "basic_card",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 非相邻格拒绝不消耗资源",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "4"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "position:q",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:cost",
+          "value": "2"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Move",
+          "q": 2,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "id": "basic_card_018_18",
+      "cardId": "basic_card_018",
+      "batch": "basic_card",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 回合结束后减费与移动力过期",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "0"
+        },
+        {
+          "key": "move:selectedCost",
+          "value": "3"
+        },
+        {
+          "key": "move:otherCost",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        },
+        {
+          "key": "token:Red",
+          "value": "0"
+        },
+        {
+          "key": "token:Green",
+          "value": "0"
+        },
+        {
+          "key": "token:White",
+          "value": "0"
+        },
+        {
+          "key": "token:Gold",
+          "value": "0"
+        },
+        {
+          "key": "token:Black",
+          "value": "0"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "EndTurn"
+        }
+      ]
+    },
+    {
+      "id": "basic_card_018_19",
+      "cardId": "basic_card_018",
+      "batch": "basic_card",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 缺少移动目标时在支付前拒绝",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Red",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "token:Black",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "Reputation",
+          "value": "0"
+        },
+        {
+          "key": "unitReady",
+          "value": "False"
+        },
+        {
+          "key": "unitWounds",
+          "value": "0"
+        },
+        {
+          "key": "ManaCurseTriggered",
+          "value": "False"
+        }
+      ],
+      "limitations": [],
+      "expectedException": "InvalidOperationException: 德鲁伊之道必须选择有效六角格或地形",
+      "omitMovementTarget": true
+    },
+    {
+      "id": "basic_card_026_02",
+      "cardId": "basic_card_026",
+      "batch": "basic_card",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 重整等级1部队的上限与费用",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "4"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "Reputation",
+          "value": "-1"
+        },
+        {
+          "key": "unitReady",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        },
+        {
+          "key": "unitLevel",
+          "value": "1"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Ready",
+          "targetIndex": 0
+        }
+      ],
+      "unitLevels": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "basic_card_026_03",
+      "cardId": "basic_card_026",
+      "batch": "basic_card",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 重整等级2部队的上限与费用",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "2"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "Reputation",
+          "value": "-1"
+        },
+        {
+          "key": "unitReady",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        },
+        {
+          "key": "unitLevel",
+          "value": "2"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Ready",
+          "targetIndex": 0
+        }
+      ],
+      "unitLevels": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": "basic_card_026_04",
+      "cardId": "basic_card_026",
+      "batch": "basic_card",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 重整等级3部队的上限与费用",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "6"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "Reputation",
+          "value": "-1"
+        },
+        {
+          "key": "unitReady",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "False"
+        },
+        {
+          "key": "unitLevel",
+          "value": "3"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Ready",
+          "targetIndex": 0
+        }
+      ],
+      "unitLevels": [
+        3,
+        2
+      ]
+    },
+    {
+      "id": "basic_card_026_05",
+      "cardId": "basic_card_026",
+      "batch": "basic_card",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 重整等级4部队的上限与费用",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "6"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "Reputation",
+          "value": "-1"
+        },
+        {
+          "key": "unitReady",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "False"
+        },
+        {
+          "key": "unitLevel",
+          "value": "4"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Ready",
+          "targetIndex": 0
+        }
+      ],
+      "unitLevels": [
+        4,
+        2
+      ]
+    },
+    {
+      "id": "basic_card_026_06",
+      "cardId": "basic_card_026",
+      "batch": "basic_card",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 依次重整1级和2级部队刚好支付6影响力",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "Reputation",
+          "value": "-1"
+        },
+        {
+          "key": "readyUnits",
+          "value": "2"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:1:success",
+          "value": "True"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Ready",
+          "targetIndex": 0
+        },
+        {
+          "kind": "Ready",
+          "targetIndex": 1
+        }
+      ],
+      "unitLevels": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "basic_card_026_07",
+      "cardId": "basic_card_026",
+      "batch": "basic_card",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 第二支部队影响力不足时保留剩余资源",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "2"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "Reputation",
+          "value": "-1"
+        },
+        {
+          "key": "readyUnits",
+          "value": "1"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:1:success",
+          "value": "False"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Ready",
+          "targetIndex": 0
+        },
+        {
+          "kind": "Ready",
+          "targetIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "basic_card_026_08",
+      "cardId": "basic_card_026",
+      "batch": "basic_card",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 无目标不得扣影响力",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "6"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "Reputation",
+          "value": "-1"
+        },
+        {
+          "key": "unitReady",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "False"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Ready",
+          "targetIndex": -1
+        }
+      ]
+    },
+    {
+      "id": "basic_card_026_09",
+      "cardId": "basic_card_026",
+      "batch": "basic_card",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 非自有目标不得扣影响力",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "6"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "Reputation",
+          "value": "-1"
+        },
+        {
+          "key": "unitReady",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "False"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Ready",
+          "targetIndex": 2
+        }
+      ]
+    },
+    {
+      "id": "basic_card_026_10",
+      "cardId": "basic_card_026",
+      "batch": "basic_card",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 已就绪目标拒绝重复重整",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "6"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "Reputation",
+          "value": "-1"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "False"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Ready",
+          "targetIndex": 0
+        }
+      ],
+      "unitInitiallyReady": true
+    },
+    {
+      "id": "basic_card_026_11",
+      "cardId": "basic_card_026",
+      "batch": "basic_card",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 已摧毁目标拒绝重复重整",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "6"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "Reputation",
+          "value": "-1"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "False"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Ready",
+          "targetIndex": 0
+        }
+      ],
+      "unitDestroyed": true
+    },
+    {
+      "id": "basic_card_026_12",
+      "cardId": "basic_card_026",
+      "batch": "basic_card",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 重整受伤部队保留伤牌且仍不能发动",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "2"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "Reputation",
+          "value": "-1"
+        },
+        {
+          "key": "unitReady",
+          "value": "True"
+        },
+        {
+          "key": "unitWounds",
+          "value": "2"
+        },
+        {
+          "key": "unitCanActivate",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Ready",
+          "targetIndex": 0
+        }
+      ],
+      "unitWounds": 2
+    },
+    {
+      "id": "basic_card_026_13",
+      "cardId": "basic_card_026",
+      "batch": "basic_card",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 回合结束重整许可过期",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "0"
+        },
+        {
+          "key": "Reputation",
+          "value": "-1"
+        },
+        {
+          "key": "ReadyInfluencePerLevel",
+          "value": "0"
+        },
+        {
+          "key": "ReadyUnitMaxLevel",
+          "value": "0"
+        },
+        {
+          "key": "unitReady",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:1:success",
+          "value": "False"
+        },
+        {
+          "key": "token:Blue",
+          "value": "0"
+        },
+        {
+          "key": "token:Green",
+          "value": "0"
+        },
+        {
+          "key": "token:White",
+          "value": "0"
+        },
+        {
+          "key": "token:Gold",
+          "value": "0"
+        },
+        {
+          "key": "token:Black",
+          "value": "0"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "EndTurn"
+        },
+        {
+          "kind": "Ready",
+          "targetIndex": 0
+        }
       ]
     }
   ]

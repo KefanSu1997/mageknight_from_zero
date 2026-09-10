@@ -99,7 +99,7 @@ namespace MK.Logic.Runtime.Adventure
             if (command.StartsWith("unit:"))
             {
                 var unit = Player.Units.FirstOrDefault(u => "unit:" + u.Card.Id == command);
-                if (unit == null || !unit.IsReady || Phase != AdventurePhase.Block)
+                if (unit == null || !unit.CanActivate || Phase != AdventurePhase.Block)
                     return Say(false, "这名部队当前不能使用。");
                 SelectedUnit = unit.Card.Id; SelectedCard = -1;
                 return Say(true, "已选择部队，点选要格挡的敌人。", "选择不消耗单位；确认后单位变为已用。");
@@ -255,7 +255,7 @@ namespace MK.Logic.Runtime.Adventure
         private bool UseUnit()
         {
             var unit = Player.Units.FirstOrDefault(u => u.Card.Id == SelectedUnit);
-            if (unit == null || !unit.IsReady) return Say(false, "这名部队已用过，不能再次发动。");
+            if (unit == null || !unit.CanActivate) return Say(false, "这名部队已用过，不能再次发动。");
             if (Phase != AdventurePhase.Block || unit.Card.BlockValue <= 0) return Say(false, "此单位当前只能用于格挡阶段。");
             if (EnemyIndex < 0 || EnemyIndex >= Battle.Definition.Enemies.Length) return Say(false, "先点选要格挡的敌人。");
             unit.Exhaust(); Battle.Allocate(EnemyIndex, CardAction.Block, unit.Card.BlockValue, Element.Physical); SelectedUnit = "";

@@ -18,4 +18,20 @@ public sealed class CardVerificationCase
     public string[] limitations;
     public CardVerificationValue[] setup;
     public CardVerificationValue[] expected;
+    public CardVerificationOperation[] operations;
+    public int[] unitLevels;
+    public int unitWounds;
+    public bool unitInitiallyReady;
+    public bool unitDestroyed;
+    public string destinationTerrain;
+    public bool omitMovementTarget;
+}
+
+[Serializable]
+public sealed class CardVerificationOperation
+{
+    public string kind;
+    public int q;
+    public int r;
+    public int targetIndex;
 }

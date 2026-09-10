@@ -84,7 +84,7 @@ namespace MK.Logic.Runtime.Scenarios
                     return Outcome(true, $"回合结束：弃牌 {Discard}，补至手牌 {Hand}，牌库 {Deck}。", "已打出的牌进入弃牌堆，手牌补到5；未用移动力、影响力、临时魔力清零，水晶与部队保留。");
                 case "unit":
                     if (Turn != 2 || BattleDone) break;
-                    var unit = Player.Units.FirstOrDefault(u => u.IsReady);
+                    var unit = Player.Units.FirstOrDefault(u => u.CanActivate);
                     if (unit == null) break;
                     unit.Exhaust(); Block += unit.Card.BlockValue;
                     return Outcome(true, "守卫提供格挡3，状态变为已用。", "训练守卫能力：格挡3；单位横置后不能重复发动。");

@@ -16,7 +16,7 @@ namespace MK.Logic.Runtime
             _logger = logger;
         }
         /// <summary>
-        /// 回合開始：僅讓部隊就緒，不進行抽牌（抽牌在回合結束）。
+        /// 回合開始不重整部隊；部隊只在新一輪或卡牌明確允許時重整。
         /// </summary>
         public void StartTurn(
             PlayerState p,
@@ -27,8 +27,6 @@ namespace MK.Logic.Runtime
             _logger?.Log($"StartTurn P{p.Id}");
             // 開啟回合時重置持有骰，防止上一回合遺留
             p.HeldManaDie = null;
-            foreach (var u in p.Units)
-                u.NewRound();
 
             // 發放因法術獲得的每回合法力標記
             foreach (var pair in p.TokensPerTurn)
@@ -73,6 +71,7 @@ namespace MK.Logic.Runtime
                 }
                 ctx.SpentCrystals.Clear();
                 ctx.RecycleToTop = ctx.RecycleToBottom = false;
+                ctx.ClearMovementAndReadyEffects();
             }
             p.Mana.ResetTokens();
             if (ctx != null && ctx.SkipDraw)
@@ -96,4 +95,3 @@ namespace MK.Logic.Runtime
         }
     }
 }
-

@@ -105,6 +105,11 @@ namespace MK.Logic.Runtime
         /// <summary>地形移動費用的臨時覆寫表。</summary>
         public Dictionary<TerrainType, int> TerrainCostOverride { get; } = new();
         public HashSet<TerrainType> MoveForbidden { get; } = new();
+        public Map.MapState MovementMap { get; set; }
+        public Map.AxialCoord? TargetHex { get; set; }
+        public TerrainType? TargetTerrain { get; set; }
+        public Dictionary<Map.AxialCoord, int> HexMoveReduction { get; } = new();
+        public Dictionary<TerrainType, int> TerrainMoveReduction { get; } = new();
 
         /// <summary>穿越湖泊時是否需要支付一點藍色魔力。</summary>
         public bool RequireBlueForLake { get; set; }
@@ -247,6 +252,18 @@ namespace MK.Logic.Runtime
 
         /// <summary>重整部隊時每級需支付的影響力，0 表示不可重整。</summary>
         public int ReadyInfluencePerLevel { get; set; }
+        public int ReadyUnitMaxLevel { get; set; }
+
+        /// <summary>Clear turn-scoped movement and unit conversions, including when drawing is skipped.</summary>
+        public void ClearMovementAndReadyEffects()
+        {
+            HexMoveReduction.Clear();
+            TerrainMoveReduction.Clear();
+            TargetHex = null;
+            TargetTerrain = null;
+            ReadyInfluencePerLevel = ReadyUnitMaxLevel = 0;
+            MovementPool = InfluencePool = 0;
+        }
 
         /// <summary>若在攻擊階段前未加入創傷可獲得的攻擊力。</summary>
         public int AttackIfNoWound { get; set; }

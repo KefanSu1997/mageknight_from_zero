@@ -30,6 +30,8 @@
 
 ## 经验索引
 
+- 原卡移动和重整：指定格/地形减费、真实成本消费、伤牌与就绪独立、逐步后续操作验收 —— `vibe_coding/codex/project_experience/card_movement_scope_and_unit_readiness_2026-09-10.md`
+
 - 原版基础卡：本能数据恢复、互斥选项支付前验证、实际目标冰格挡及魔晶溢出 —— `vibe_coding/codex/project_experience/original_basic_card_choices_and_target_block_2026-09-10.md`
 
 - 原版卡战斗资源：元素/攻城贡献、合计取整、城防阶段、实际击杀与两步场景验收 —— `vibe_coding/codex/project_experience/typed_card_combat_and_rounding_2026-09-10.md`

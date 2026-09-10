@@ -67,7 +67,7 @@ namespace MK.Logic.Runtime.Scenarios
             }
             if (action == "activate")
             {
-                var ready = Player.Units.FirstOrDefault(unit => unit.IsReady);
+                var ready = Player.Units.FirstOrDefault(unit => unit.CanActivate);
                 if (ready == null) return Outcome(false, "没有就绪的部队。", "已横置单位不能重复使用；直到新昼夜才恢复。");
                 ready.Exhaust();
                 return Outcome(true, $"{ready.Card.NameCn}已横置。", "单位使用一次能力后从就绪变为已用。");

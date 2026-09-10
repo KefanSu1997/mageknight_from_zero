@@ -24,6 +24,7 @@ namespace MK.Logic.Runtime
 
         /// <summary>当前是否处于就绪状态。</summary>
         public bool IsReady { get; private set; } = true;
+        public bool CanActivate => IsReady && Wounds == 0 && !IsDestroyed;
 
         /// <summary>已承受的创伤数量。</summary>
         public int Wounds { get; private set; } = 0;
@@ -59,10 +60,10 @@ namespace MK.Logic.Runtime
         /// <summary>接口用：与 Exhaust 含义相同，便于语义化调用。</summary>
         public void UseAbility() => Exhaust();
 
-        /// <summary>若未受重创，则使单位重新就绪。</summary>
+        /// <summary>重整只恢复指挥标记；伤牌保留，受伤部队仍不能发动。</summary>
         public void Ready()
         {
-            if (!Fatigued) IsReady = true;
+            if (!IsDestroyed) IsReady = true;
         }
 
         /// <summary>
@@ -76,7 +77,6 @@ namespace MK.Logic.Runtime
             int before = Wounds;
             Wounds += count;
             if (Wounds < 0) Wounds = 0;
-            if (Fatigued) IsReady = false;
             return Wounds - before;
         }
 
@@ -85,7 +85,6 @@ namespace MK.Logic.Runtime
         {
             int before = Wounds;
             Wounds = System.Math.Max(0, Wounds - count);
-            if (!Fatigued) IsReady = true;
             return before - Wounds;
         }
 

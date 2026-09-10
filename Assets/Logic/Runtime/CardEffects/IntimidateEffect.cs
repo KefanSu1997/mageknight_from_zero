@@ -4,7 +4,7 @@ namespace MK.Logic.Runtime.CardEffects
 {
     /// <summary>
     /// 無情威壓：基礎影響力2並招募減免2；強效影響力6，聲望-1。
-    /// 重整部隊功能尚未串接。
+    /// 強效的重整許可由CardUnitActions支付每級2影響力，限自有1、2級部隊。
     /// </summary>
     public sealed class IntimidateEffect : ICardEffect
     {
@@ -23,7 +23,8 @@ namespace MK.Logic.Runtime.CardEffects
             {
                 ctx.InfluencePool += 6;
                 player.Reputation -= 1;
-                // 重整部隊需要另行支付影響力，待擴充
+                ctx.ReadyInfluencePerLevel = 2;
+                ctx.ReadyUnitMaxLevel = System.Math.Max(ctx.ReadyUnitMaxLevel, 2);
             }
         }
     }

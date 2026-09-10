@@ -105,7 +105,7 @@ for strong in [False, True]:
     b(16, strong, '格挡' if strong else '攻击', {'BlockPool': 5} if strong else {'MeleePool': 2})
     if not strong: b(16, False, '格挡', {'BlockPool': 2}, option=1)
     b(17, strong, '随后打出行进，检验额外移动', {'MovementPool': move + 3}, followup='basic_card_000', limits=['本例未覆盖横置移动及强化多张后续牌'])
-    b(18, strong, '森林费用降至2', {'MovementPool': move, 'TerrainCostOverride:Forest': 2}, limits=['单格/整类地形范围还需移动场景结算'])
+    b(18, strong, '森林费用降至2', {'MovementPool': move, 'move:selectedCost': 2}, limits=['单格/整类地形范围还需移动场景结算'])
     b(20, strong, '寒冰格挡' if strong else '攻击', {'BlockPool': 5, 'blockElement': 'Ice'} if strong else {'MeleePool': 2},
       limits=['强化额外格挡需敌人能力、攻击颜色和奥术免疫夹具'] if strong else [])
     if not strong: b(20, False, '寒冰格挡', {'BlockPool': 3, 'blockElement': 'Ice'}, option=1)
@@ -410,6 +410,67 @@ for n, color in [(0, 'Red'), (1, 'Blue'), (2, 'White'), (3, 'Green')]:
          limits=['此例覆盖魔晶奖励边界；实际使用和卡区生命周期仍须联验'])
 
 
+
+# Printed Druidic Paths is a reduction for a selected hex/type, not a global cost override.
+# The two legacy cases retain the expected numeric cost 2 and now observe the actual cost API.
+def operation_case(card_id, strong, title, expected, operations, setup=None, **fields):
+    case(card_id, strong, title, expected, setup=setup,
+         limits=['已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验'])
+    CASES[-1].update(operations=operations, **fields)
+
+
+def move(q, r=0): return dict(kind='Move', q=q, r=r)
+def ready(index=0): return dict(kind='Ready', targetIndex=index)
+
+for strong in [False, True]:
+    # Identical Forest hexes expose base-only-one-hex versus strong-whole-terrain scope.
+    operation_case('basic_card_018', strong, '连续移动区分选中格与另一森林',
+        {'MovementPool': 0 if strong else 2, 'position:q': 2 if strong else 1,
+         'move:selectedCost': 2, 'move:otherCost': 2 if strong else 3,
+         'operation:0:success': True, 'operation:0:cost': 2,
+         'operation:1:success': strong, 'operation:1:cost': 2 if strong else 3},
+        [move(1), move(2)], setup={'MovementPool': 0 if strong else 2})
+    for terrain, time, cost in [('Forest','Night',4), ('Desert','Day',4), ('Desert','Night',2),
+                                ('Plains','Day',2), ('Mountain','Day',2147483647)]:
+        valid=cost<2147483647
+        operation_case('basic_card_018', strong, terrain+'/'+time+'实际移动与最低费用',
+            {'MovementPool': (8 if strong else 6)-(cost if valid else 0), 'position:q': 1 if valid else 0,
+             'operation:0:success':valid,'operation:0:cost':cost}, [move(1)],
+            setup={'MovementPool':4,'DayPart':time}, destinationTerrain=terrain)
+    operation_case('basic_card_018', strong, '非相邻格拒绝不消耗资源',
+        {'MovementPool':4 if strong else 2,'position:q':0,'operation:0:success':False,
+         'operation:0:cost':2 if strong else 3}, [move(2)])
+    operation_case('basic_card_018', strong, '回合结束后减费与移动力过期',
+        {'MovementPool':0,'InfluencePool':0,'move:selectedCost':3,'move:otherCost':3,
+         'operation:0:success':True, **{'token:'+c:0 for c in COLORS}}, [dict(kind='EndTurn')])
+    b(18,strong,'缺少移动目标时在支付前拒绝',{},
+      error='InvalidOperationException: 德鲁伊之道必须选择有效六角格或地形')
+    CASES[-1]['omitMovementTarget']=True
+
+for level in [1,2,3,4]:
+    operation_case('basic_card_026',True,'重整等级'+str(level)+'部队的上限与费用',
+        {'InfluencePool':6-2*level if level<=2 else 6,'Reputation':-1,'unitReady':level<=2,
+         'operation:0:success':level<=2,'unitLevel':level},[ready()],unitLevels=[level,2])
+operation_case('basic_card_026',True,'依次重整1级和2级部队刚好支付6影响力',
+    {'InfluencePool':0,'Reputation':-1,'readyUnits':2,'operation:0:success':True,'operation:1:success':True},
+    [ready(0),ready(1)],unitLevels=[1,2])
+operation_case('basic_card_026',True,'第二支部队影响力不足时保留剩余资源',
+    {'InfluencePool':2,'Reputation':-1,'readyUnits':1,'operation:0:success':True,'operation:1:success':False},[ready(0),ready(1)])
+for index,title in [(-1,'无目标'),(2,'非自有目标')]:
+    operation_case('basic_card_026',True,title+'不得扣影响力',
+        {'InfluencePool':6,'Reputation':-1,'unitReady':False,'operation:0:success':False},[ready(index)])
+for fields,title in [({'unitInitiallyReady':True},'已就绪目标'),({'unitDestroyed':True},'已摧毁目标')]:
+    operation_case('basic_card_026',True,title+'拒绝重复重整',
+        {'InfluencePool':6,'Reputation':-1,'operation:0:success':False},[ready()],**fields)
+operation_case('basic_card_026',True,'重整受伤部队保留伤牌且仍不能发动',
+    {'InfluencePool':2,'Reputation':-1,'unitReady':True,'unitWounds':2,'unitCanActivate':False,
+     'operation:0:success':True},[ready()],unitWounds=2)
+operation_case('basic_card_026',True,'回合结束重整许可过期',
+    {'InfluencePool':0,'Reputation':-1,'ReadyInfluencePerLevel':0,'ReadyUnitMaxLevel':0,
+     'unitReady':False,'operation:0:success':True,'operation:1:success':False,**{'token:'+c:0 for c in COLORS}},
+    [dict(kind='EndTurn'),ready()])
+
+
 def export():
     target = ROOT / 'Assets/Resources/CardVerification'
     target.mkdir(exist_ok=True)
@@ -429,10 +490,13 @@ def export():
             steps.append(dict(label=c['id'] + '_select', buttonPath='Canvas/UIRoot/Btn_Select',
                               skipScreenshot=True,
                               before=[expectation('caseId', c['id'])], after=[expectation('selected', True)]))
-            if c.get('combatPhase'):
+            if c.get('combatPhase') or c.get('operations'):
                 steps.append(dict(label=c['id'] + '_play', buttonPath='Canvas/UIRoot/Btn_Play',
                                   before=[expectation('art', c['cardId'])],
                                   after=[expectation('played', True), expectation('executed', False)]))
+            for operation_index in range(max(0, len(c.get('operations', [])) - 1)):
+                steps.append(dict(label=c['id'] + '_operation_' + str(operation_index), buttonPath='Canvas/UIRoot/Btn_Play',
+                                  after=[expectation('operationCount', operation_index + 1), expectation('executed', False)]))
             steps.append(dict(label=c['id'] + '_execute', buttonPath='Canvas/UIRoot/Btn_Play',
                               before=[expectation('art', c['cardId'])], after=[expectation('executed', True), expectation('completed', i + 1)]))
         config = dict(scenePath=f'Assets/Scenes/Verification/{batch}.unity',

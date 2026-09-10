@@ -12,6 +12,8 @@ using MK.Logic.Data;
 using MK.Logic.Data.Cards;
 using MK.Logic.Runtime;
 using MK.Logic.Runtime.CardEffects;
+using MK.Logic.Runtime.Map;
+using Monster = MK.Logic.Data.Monster;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -34,6 +36,8 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
     private ActionContext _context;
     private ActionSystem _system;
     private int _index;
+    private int _operationIndex;
+    private readonly Dictionary<string, string> _operationResults = new();
     private bool _selected;
     private bool _executed;
     private bool _played;
@@ -65,6 +69,9 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
         ["originalArtwork"] = "原卡面绑定", ["printedEffectPresent"] = "印刷效果文本",
         ["attackElement"] = "攻击元素", ["blockElement"] = "格挡元素", ["SiegePool"] = "攻城攻击",
         ["executionException"] = "操作合法性",
+        ["move:selectedCost"] = "选中格费用", ["move:otherCost"] = "同类另一格费用",
+        ["position:q"] = "位置Q", ["position:r"] = "位置R", ["readyUnits"] = "就绪部队数",
+        ["unitCanActivate"] = "目标可发动",
         ["combat:printed"] = "出牌总值", ["combat:effective"] = "折算后有效值", ["combat:required"] = "所需数值",
         ["combat:kills"] = "击杀数", ["combat:fame"] = "结算名望", ["combat:wounds"] = "敌人造成创伤"
     };
@@ -115,6 +122,7 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
         _entry = _catalog.cards.Single(e => e.source.Id == _case.cardId);
         _selected = _executed = _played = false;
         _playedState = null; _combatResult = null;
+        _operationIndex = 0; _operationResults.Clear();
         _play.GetComponentInChildren<TextMeshProUGUI>().text = "执行所选效果";
         _player = new PlayerState(1, "验收玩家");
         _context = new ActionContext { CurrentTerrain = TerrainType.Forest, DayPart = _case.enhanced && _entry.source is SpellCardSO ? DayPart.Night : DayPart.Day };
@@ -134,8 +142,18 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
         // A declared fixture, not a new gameplay card: two exhausted level-2 units.
         var unit = new UnitCard("verification_unit", "验收部队", "Fixture", 2, 4, 6, RecruitLocation.Village,
             Array.Empty<AttackProfile>(), Array.Empty<Ability>());
-        _player.Units.Add(new UnitState(unit)); _player.Units.Add(new UnitState(unit));
+        foreach (int level in _case.unitLevels ?? new[] { 2, 2 })
+            _player.Units.Add(new UnitState(new UnitCard(unit.Id, unit.NameCn, "Fixture", level, 4, 6,
+                RecruitLocation.Village, Array.Empty<AttackProfile>(), Array.Empty<Ability>())));
         foreach (var u in _player.Units) u.Exhaust();
+        _player.Units[0].AddWounds(_case.unitWounds);
+        if (_case.unitInitiallyReady) _player.Units[0].Ready();
+        if (_case.unitDestroyed) _player.Units[0].Destroy();
+        _context.MovementMap = new MapState();
+        var destinationTerrain = string.IsNullOrEmpty(_case.destinationTerrain) ? TerrainType.Forest
+            : (TerrainType)Enum.Parse(typeof(TerrainType), _case.destinationTerrain);
+        foreach (var position in new[] { new AxialCoord(0, 0), new AxialCoord(1, 0), new AxialCoord(2, 0), new AxialCoord(0, 1) })
+            _context.MovementMap.Placed[position] = new MapTile(TileSet.Countryside, position.Q, new[] { destinationTerrain });
         _context.CardToDiscard = _player.Deck.Hand[1]; _context.CardToRemove = _player.Deck.Hand[1];
         _context.CardToRecycle = source;
         _context.CardsToDiscard.AddRange(_player.Deck.Hand.Skip(1).Take(2));
@@ -194,13 +212,18 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
     {
         if (_executed) return;
         _selected = true; _context.TargetUnit = _player.Units[0];
+        if (!_case.omitMovementTarget)
+        {
+            _context.TargetHex = new AxialCoord(1, 0);
+            _context.TargetTerrain = _context.MovementMap.Placed[_context.TargetHex.Value].Edges[0];
+        }
         _status.text = "已选择原卡和夹具目标，可以执行"; _play.interactable = true;
     }
 
     private void Execute()
     {
         if (!_selected || _executed) return;
-        if (_played) { ResolveCombat(); return; }
+        if (_played) { if ((_case.operations?.Length ?? 0) > 0) ResolveOperation(); else ResolveCombat(); return; }
         _before = Snapshot();
         string exception = "";
         string executionPath = "ActionSystem.Play";
@@ -225,6 +248,12 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
             }
         }
         catch (Exception e) { exception = e.GetType().Name + ": " + e.Message; }
+        if (exception.Length == 0 && (_case.operations?.Length ?? 0) > 0)
+        {
+            _played = true; _playedState = Snapshot();
+            ShowNextOperation();
+            return;
+        }
         if (exception.Length == 0 && !string.IsNullOrEmpty(_case.combatPhase))
         {
             _played = true;
@@ -238,6 +267,49 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
             return;
         }
         CompleteCase(exception, executionPath);
+    }
+
+    private void ShowNextOperation()
+    {
+        var operation = _case.operations[_operationIndex];
+        _fixture.text = $"本次操作前：位置({_player.Position.Q},{_player.Position.R}) · {_context.DayPart} · 目标地形{_context.MovementMap.Placed[new AxialCoord(1, 0)].Edges[0]}"
+            + $"\n部队等级{_player.Units[0].Card.Level} · 伤牌{_player.Units[0].Wounds} · 就绪{_player.Units[0].IsReady}";
+        _comparison.text = $"原卡已执行：移动力{_context.MovementPool}，影响力{_context.InfluencePool}\n"
+            + (operation.kind == "Move" ? $"下一步移动至({operation.q},{operation.r})，实际费用{MovementService.GetCost(new AxialCoord(operation.q, operation.r), _context.MovementMap, _context.DayPart, _context)}"
+            : operation.kind == "Ready" ? $"下一步重整目标部队{operation.targetIndex}；每级{_context.ReadyInfluencePerLevel}影响力，等级上限{_context.ReadyUnitMaxLevel}"
+            : "下一步结束回合，检查临时减费与重整许可过期。")
+            + "\n" + string.Join("；", _operationResults.Select(v => v.Key + "=" + v.Value));
+        _status.text = $"等待确认操作 {_operationIndex + 1}/{_case.operations.Length}";
+        _play.GetComponentInChildren<TextMeshProUGUI>().text = operation.kind == "Move" ? "确认目标并移动" : operation.kind == "Ready" ? "确认部队并重整" : "确认结束回合";
+    }
+
+    private void ResolveOperation()
+    {
+        var operation = _case.operations[_operationIndex];
+        string key = "operation:" + _operationIndex;
+        if (operation.kind == "Move")
+        {
+            var to = new AxialCoord(operation.q, operation.r);
+            _operationResults[key + ":cost"] = MovementService.GetCost(to, _context.MovementMap, _context.DayPart, _context).ToString();
+            _operationResults[key + ":success"] = new MovementService().TryMoveUsingPool(_player, to, _context.MovementMap, _context).ToString();
+        }
+        else if (operation.kind == "Ready")
+        {
+            var target = operation.targetIndex < 0 ? null : operation.targetIndex < _player.Units.Count ? _player.Units[operation.targetIndex]
+                : new UnitState(_player.Units[0].Card);
+            if (target != null && !_player.Units.Contains(target)) target.Exhaust();
+            _operationResults[key + ":success"] = CardUnitActions.TryReady(_player, _context, target).ToString();
+        }
+        else if (operation.kind == "EndTurn")
+        {
+            _context.CardToRecycle = null; _context.SkipDraw = true;
+            new PlayerTurnEngine().EndTurn(_player, _context.DayPart, _context.ManaSource, _context);
+            _operationResults[key + ":success"] = "True";
+        }
+        else throw new InvalidOperationException("Unknown verification operation " + operation.kind);
+        _operationIndex++;
+        if (_operationIndex < _case.operations.Length) ShowNextOperation();
+        else CompleteCase("", "ActionSystem.Play -> MovementService / CardUnitActions / PlayerTurnEngine");
     }
 
     private void ResolveCombat()
@@ -288,6 +360,14 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
                 + $"\n剩余资源：近战{_context.MeleePool} 远程{_context.RangedPool} 攻城{_context.SiegePool} 格挡{_context.BlockPool}；手牌伤牌 {_before["handWounds"]}→{_player.Wounds}";
             if (status == "partial") _status.text = "本例操作与数值通过 · 整卡仍有待验证范围";
         }
+        if (_operationResults.Count > 0)
+        {
+            var visible = checks.Where(c => c.key.StartsWith("operation:") || c.key.StartsWith("move:")
+                || c.key.StartsWith("position:") || c.key.StartsWith("unit") || c.key == "readyUnits"
+                || c.key == "MovementPool" || c.key == "InfluencePool" || c.key == "Reputation").Take(9);
+            _comparison.text = "操作结算：实际结果 / 独立规则预期\n"
+                + string.Join("\n", visible.Select(c => $"{(c.passed ? "通过" : "不符")} {Label(c.key)}：{c.actual} / {c.expected}"));
+        }
         _status.color = status == "failed" ? new Color32(244, 142, 118, 255) : W.Gold;
         SaveResults();
     }
@@ -313,6 +393,11 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
     private static CardVerificationValue[] Values(Dictionary<string, string> values) => values.OrderBy(p => p.Key).Select(p => new CardVerificationValue { key = p.Key, value = p.Value }).ToArray();
     private string Label(string key)
     {
+        if (key.StartsWith("operation:"))
+        {
+            var parts = key.Split(':');
+            return $"操作{int.Parse(parts[1]) + 1}" + (parts[2] == "cost" ? "费用" : "成功");
+        }
         if (_labels.TryGetValue(key, out var label)) return label;
         string[] colors = { "Red", "Blue", "Green", "White", "Gold", "Black" };
         string[] names = { "红", "蓝", "绿", "白", "金", "黑" };
@@ -357,6 +442,12 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
             result["token:" + color] = _player.Mana.Tokens.GetValueOrDefault(color).ToString();
             result["crystal:" + color] = _player.Mana.Crystals.GetValueOrDefault(color).ToString();
         }
+        result["move:selectedCost"] = MovementService.GetCost(new AxialCoord(1, 0), _context.MovementMap, _context.DayPart, _context).ToString();
+        result["move:otherCost"] = MovementService.GetCost(new AxialCoord(2, 0), _context.MovementMap, _context.DayPart, _context).ToString();
+        result["position:q"] = _player.Position.Q.ToString(); result["position:r"] = _player.Position.R.ToString();
+        result["unitCanActivate"] = _player.Units[0].CanActivate.ToString();
+        result["readyUnits"] = _player.Units.Count(u => u.IsReady).ToString();
+        foreach (var operation in _operationResults) result[operation.Key] = operation.Value;
         result["attackElement"] = string.Join("+", _context.CombatPower.Attacks.Select(a => a.Element).Distinct().OrderBy(e => e));
         result["blockElement"] = string.Join("+", _context.CombatPower.Blocks.Select(a => a.Element).Distinct().OrderBy(e => e));
         if (_playedState != null)
@@ -385,7 +476,7 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
     public Dictionary<string, string> ReadAutomationState() => new()
     {
         ["caseId"] = _case.id, ["cardId"] = _entry.source.Id, ["art"] = _art.sprite?.name ?? "",
-        ["played"] = _played.ToString(), ["ui:fixture"] = _fixture.text,
+        ["operationCount"] = _operationIndex.ToString(), ["played"] = _played.ToString(), ["ui:fixture"] = _fixture.text,
         ["selected"] = _selected.ToString(), ["executed"] = _executed.ToString(), ["completed"] = _results.Count.ToString(),
         ["ui:rule"] = _printed.text, ["ui:comparison"] = _comparison.text, ["ui:status"] = _status.text
     };
