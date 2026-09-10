@@ -20,15 +20,17 @@ Druidic Paths now distinguishes a chosen hex from a chosen terrain type and uses
 
 Ice Shield and Burning/Exploding Shield now bind success triggers to their actual block contribution and target. Failed blocks do not grant bonuses; direct enemy effects respect immunity, fire attack rewards retain their element, and duplicate destroy contributions reward a target only once. Flame Wall keeps fire attack/block choices. Mana Bolt preserves all four original color-dependent attack types and pays the printed and extra costs atomically. Sequential scene operations display Chinese result labels, armor changes, payment, kills and wounds.
 
+Nature Force and Wrath Horn now create actual siege contributions. Horn dice retain all six faces at day/night and roll once per chosen bonus; actual rolled colors and wound cards are audited in scenes. Necro Shield splits block into separate contributions for distinct attacks, preserving unused parts and rejecting reuse on the same attack. Strong blocks retain cold-fire. Full multi-attack enemy and artifact lifecycle integration remains pending.
+
 ## How to test
 
 Use the installed Unity 6000.6.0f1 editor via Hub. Run Tools/Mage Knight/Original Cards/Run All Batches, Tools/Mage Knight/Adventure/Run All EditMode Tests, and Tools/Mage Knight/Adventure/Run All Four. No batchmode or package changes.
 
 Reproduce source corrections with `python tools/restore_spell_costs.py` and `python tools/restore_instinct_card.py`, and generated fixtures with `python tools/build_all_card_verification.py`. Summarize the exact new directory with `python tools/summarize_all_card_verification.py --output AutomationOutputs/AllOriginalCards/<run>`. Verify regressions with `python tools/verify_card_regression.py --scenes <adventure-run> --tests <editmode-run>`.
 
-Latest full-suite evidence: AutomationOutputs/AllOriginalCards/20260910_215449_a1ed901f. 166 EditMode tests pass. 449 scene cases: 131 passed, 23 failed and 295 partial; 1451 pointer actions, 5777 effect assertions and 561 captures. All 413 previous case definitions and expectations are unchanged. Eight old failures are repaired with no new regressions; all assertions in 36 added scene cases pass. Full card certification is still pending.
+Latest full-suite evidence: AutomationOutputs/AllOriginalCards/20260910_222724_b5e1bbc2. 181 EditMode tests pass. 490 scene cases: 136 passed, 19 failed and 335 partial; 1617 pointer actions, 6674 effect assertions and 645 captures. All 449 previous case definitions and expectations are unchanged. Four old failures are repaired with no new regressions; all assertions in 41 added scene cases pass. Full card certification is still pending.
 
-Four adventure regressions pass 114 pointer actions and 477 assertions, and all 118 regression captures are byte-identical to the previous archive. Two final Unity Console scans return zero errors. All 679 scene/regression captures, reports and test XML/JSON are archived with verification_provenance.json. Original artwork remains unchanged. Intermediate checkpoints and the superseded first run remain local.
+Four adventure regressions pass 114 pointer actions and 477 assertions. An initial visual difference is isolated to button hover colors with identical actual state snapshots; a separate no-hover recheck is retained with provenance. Exact final Console responses, test XML/JSON and all captures are archived. Original artwork remains unchanged and intermediate checkpoints remain local.
 
 ## Risks
 

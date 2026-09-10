@@ -23,6 +23,9 @@ namespace MK.Logic.Runtime
 #endif
         }
 
+        /// <summary>Roll all six printed faces; card-effect dice are not filtered by time of day.</summary>
+        public void RollUnrestricted() => Face = (ManaColor)_rnd.Next(6);
+
         /// <summary>
         /// 依當前日夜擲骰，排除禁用的顏色。
         /// </summary>

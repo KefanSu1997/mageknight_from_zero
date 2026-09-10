@@ -38,6 +38,18 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
     private int _index;
     private int _operationIndex;
     private readonly Dictionary<string, string> _operationResults = new();
+    private sealed class ScriptedRollRandom : System.Random
+    {
+        private readonly Queue<int> _faces;
+        public ScriptedRollRandom(IEnumerable<int> faces) => _faces = new Queue<int>(faces);
+        public override int Next(int maxValue)
+        {
+            if (_faces.Count == 0) throw new InvalidOperationException("验收骰面序列已耗尽");
+            int face = _faces.Dequeue();
+            if (face < 0 || face >= maxValue) throw new InvalidOperationException("验收骰面超出实际骰子范围");
+            return face;
+        }
+    }
     private bool _selected;
     private bool _executed;
     private bool _played;
@@ -169,6 +181,7 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
         _context.ArtifactSupply = new ArtifactSupply();
         _context.ArtifactSupply.SetDeck(new[] { new ArtifactCard("items_004"), new ArtifactCard("items_010") });
         _context.ManaSource = new ManaSource(1, () => _context.DayPart, new System.Random(20260910));
+        if (_case.manaRolls != null) _context.EffectRandom = new ScriptedRollRandom(_case.manaRolls);
         _context.Enemies = new[] { new Monster("fixture_enemy", 5, 4, Element.Physical, 3, Array.Empty<Ability>()) };
         if (_case.enemies != null && _case.enemies.Length > 0)
             _context.Enemies = _case.enemies.Select(e => e.Create()).ToList();
@@ -297,6 +310,8 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
         string key = "operation:" + _operationIndex;
         if (operation.kind == "Block" || operation.kind == "Attack")
         {
+            try
+            {
             var enemies = _context.Enemies.ToList();
             var result = operation.kind == "Block"
                 ? CardCombatActions.Block(_player, _context, enemies, operation.targetIndex)
@@ -309,6 +324,15 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
             _operationResults[key + ":MeleePool"] = _context.MeleePool.ToString();
             _operationResults[key + ":armor0"] = _context.ArmorReduction.GetValueOrDefault(0).ToString();
             _operationResults[key + ":armor1"] = _context.ArmorReduction.GetValueOrDefault(1).ToString();
+            _operationResults[key + ":success"] = "True";
+            _operationResults[key + ":exception"] = "";
+            }
+            catch (InvalidOperationException e)
+            {
+                _operationResults[key + ":success"] = "False";
+                _operationResults[key + ":exception"] = e.Message;
+            }
+            _operationResults[key + ":BlockPool"] = _context.BlockPool.ToString();
         }
         else if (operation.kind == "Move")
         {
@@ -397,6 +421,11 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
             for (int i = 0; i < _case.operations.Length; i++)
             {
                 string prefix = "operation:" + i + ":";
+                if (_operationResults.TryGetValue(prefix + "exception", out string operationError) && operationError.Length > 0)
+                {
+                    lines.Add($"操作{i + 1}已拒绝：{operationError}；剩余格挡{_operationResults[prefix + "BlockPool"]}");
+                    continue;
+                }
                 var fields = checks.Where(c => c.key.StartsWith(prefix) && new[] { "printed", "effective", "required", "kills", "wounds" }.Contains(c.key.Substring(prefix.Length))).ToArray();
                 var labels = new Dictionary<string, string> { ["printed"] = "原值", ["effective"] = "有效值", ["required"] = "所需", ["kills"] = "击杀", ["wounds"] = "新增伤牌" };
                 string action = _case.operations[i].kind == "Block" ? "格挡" : "攻击";
@@ -412,6 +441,9 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
             lines.Add($"剩余格挡{_context.BlockPool}，近战{_context.MeleePool}；实际名望{_player.Fame}，手牌伤牌{_player.Wounds}");
             _comparison.text = string.Join("\n", lines);
         }
+        if (_context.LastManaRolls.Count > 0)
+            _comparison.text += "\n本次实际骰面：" + string.Join("、", _context.LastManaRolls.Select(c => c switch
+                { ManaColor.Red => "红", ManaColor.Blue => "蓝", ManaColor.Green => "绿", ManaColor.White => "白", ManaColor.Gold => "金", _ => "黑" }));
         _status.color = status == "failed" ? new Color32(244, 142, 118, 255) : W.Gold;
         SaveResults();
     }
@@ -468,6 +500,8 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
     private Dictionary<string, string> Snapshot()
     {
         var result = new Dictionary<string, string>();
+        result["dice:faces"] = string.Join(",", _context.LastManaRolls);
+        result["dice:count"] = _context.LastManaRolls.Count.ToString();
         foreach (var target in new object[] { _context, _player })
             foreach (var p in target.GetType().GetProperties(BindingFlags.Public | BindingFlags.Instance))
             {

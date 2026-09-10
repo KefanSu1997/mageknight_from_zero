@@ -348,6 +348,8 @@ namespace MK.Logic.Runtime
         public int EngagedEnemies { get; set; }
 
         /// <summary>成功格擋後獲得的單次攻擊力。</summary>
+        public System.Random EffectRandom { get; set; }
+        public List<ManaColor> LastManaRolls { get; } = new();
         public int AttackAfterBlock => CombatPower.Blocks.Sum(b => b.AttackOnSuccess);
 
         /// <summary>成功格擋後直接殺死敵人。</summary>

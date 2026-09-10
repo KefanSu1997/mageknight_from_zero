@@ -26,7 +26,8 @@ namespace MK.Logic.Data
           bool CountEnemySymbols = false, // 寒冰护体：在实际目标结算时追加冰格挡
           int ArmorReductionOnSuccess = 0,
           int AttackOnSuccess = 0,
-          bool KillOnSuccess = false
+          bool KillOnSuccess = false,
+          int DistinctAttackGroup = 0
     );
 
         /// <summary>

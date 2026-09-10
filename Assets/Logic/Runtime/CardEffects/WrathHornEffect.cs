@@ -7,7 +7,7 @@ namespace MK.Logic.Runtime.CardEffects
     /// 愤怒号角：攻城攻击并可能因骰色受创。
     /// option 表示強效額外攻擊力，0~5。
     /// </summary>
-    public sealed class WrathHornEffect : ICardEffect
+    public sealed class WrathHornEffect : ICardEffect, ICardEffectValidator
     {
         private readonly bool _once;
         private readonly Random _rnd;
@@ -21,28 +21,24 @@ namespace MK.Logic.Runtime.CardEffects
 #endif
         }
 
-        public void Execute(PlayerState player, ActionContext ctx, int option = 0)
+        public void Validate(PlayerState player, ActionContext ctx, int option)
         {
-            ctx.RangedPool += 5;
-            if (!_once)
-            {
-                RollAndWound(player, ctx.DayPart);
-            }
-            else
-            {
-                int extra = Math.Clamp(option, 0, 5);
-                ctx.RangedPool += extra;
-                for (int i = 0; i < extra; i++)
-                    RollAndWound(player, ctx.DayPart);
-            }
+            if (option < 0 || option > (_once ? 5 : 0)) throw new InvalidOperationException("愤怒号角额外攻击必须在允许范围内");
         }
 
-        private void RollAndWound(PlayerState player, DayPart part)
+        public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            var die = new ManaDie(_rnd);
-            die.Roll(part);
-            if (die.Face is ManaColor.Red or ManaColor.Black)
-                player.Wounds += 1;
+            Validate(player, ctx, option);
+            ctx.LastManaRolls.Clear();
+            ctx.CombatPower.AddAttack(5 + (_once ? option : 0), Element.Physical, AttackType.Siege);
+            int rolls = _once ? option : 1;
+            for (int i = 0; i < rolls; i++)
+            {
+                var die = new ManaDie(ctx.EffectRandom ?? _rnd);
+                die.RollUnrestricted();
+                ctx.LastManaRolls.Add(die.Face);
+                if (die.Face is ManaColor.Red or ManaColor.Black) player.Wounds += 1;
+            }
         }
     }
 }

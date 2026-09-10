@@ -11,6 +11,8 @@ namespace MK.Logic.Runtime
     {
         private readonly List<AttackProfile> _attacks = new();
         private readonly List<BlockAllocation> _blocks = new();
+        private int _nextBlockGroup;
+        private readonly Dictionary<int, HashSet<int>> _usedBlockTargets = new();
         public IReadOnlyList<AttackProfile> Attacks => _attacks.AsReadOnly();
         public IReadOnlyList<BlockAllocation> Blocks => _blocks.AsReadOnly();
         public int Total(AttackType type) => _attacks.Where(a => a.Type == type).Sum(a => a.Value);
@@ -95,6 +97,36 @@ namespace MK.Logic.Runtime
         public void ConsumeAttacks(Phase phase)
             => _attacks.RemoveAll(a => phase == Phase.Melee || (phase == Phase.Ranged && a.Type != AttackType.Melee));
 
-        public void ConsumeBlocks() => _blocks.Clear();
+        public void AddDistinctBlocks(int value, Element element, int count)
+        {
+            if (value <= 0 || count <= 0) throw new ArgumentOutOfRangeException(nameof(count));
+            int group = ++_nextBlockGroup;
+            _usedBlockTargets[group] = new HashSet<int>();
+            for (int i = 0; i < count; i++)
+                _blocks.Add(new BlockAllocation(0, value, element, DistinctAttackGroup: group));
+        }
+
+        // Current combat data has one attack per enemy. Retain one contribution
+        // from each split card for this attack; its other blocks remain available.
+        public BlockAllocation[] AvailableBlocks(int target)
+        {
+            var selected = _blocks.Where(b => b.DistinctAttackGroup == 0).ToList();
+            foreach (var group in _blocks.Where(b => b.DistinctAttackGroup != 0).GroupBy(b => b.DistinctAttackGroup))
+                if (!_usedBlockTargets[group.Key].Contains(target)) selected.Add(group.First());
+            if (selected.Count == 0 && _blocks.Count > 0)
+                throw new InvalidOperationException("分次格挡必须选择尚未使用该效果的攻击");
+            return selected.ToArray();
+        }
+
+        public void ConsumeBlocks(IReadOnlyList<BlockAllocation> selected, int target)
+        {
+            foreach (var block in selected)
+            {
+                if (!_blocks.Remove(block)) throw new InvalidOperationException("格挡贡献已被消耗");
+                if (block.DistinctAttackGroup != 0) _usedBlockTargets[block.DistinctAttackGroup].Add(target);
+            }
+        }
+
+        public void ConsumeBlocks() { _blocks.Clear(); _usedBlockTargets.Clear(); }
     }
 }

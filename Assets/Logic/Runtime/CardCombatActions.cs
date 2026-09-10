@@ -61,12 +61,13 @@ namespace MK.Logic.Runtime
         {
             if (target < 0 || target >= enemies.Count) throw new InvalidOperationException("格挡目标无效");
             var enemy = enemies[target];
-            var blocks = CombatMath.ResolveBlocks(enemy, context.CombatPower.Blocks)
+            var selected = context.CombatPower.AvailableBlocks(target);
+            var blocks = CombatMath.ResolveBlocks(enemy, selected)
                 .Select(b => b with { TargetIndex = target }).ToArray();
             int printed = blocks.Sum(b => b.Value);
             int effective = CombatMath.EffectiveBlock(enemy.AttackElement, blocks);
             int required = AbilityRules.RequiredBlock(enemy);
-            context.CombatPower.ConsumeBlocks();
+            context.CombatPower.ConsumeBlocks(selected, target);
             var saved = context.SkipAttackIndices.ToArray();
             try
             {

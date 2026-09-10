@@ -536,6 +536,59 @@ operation_case('magic_008',True,'消灭只绑定本次格挡不得泄漏到下�
     enemies=[enemy(9,attack=4,element='Ice'),enemy(9,attack=3,element='Ice')])
 
 
+# Siege dice and split blocks: original faces, actual rolls, separate enemy attacks.
+for time in ['Day', 'Night']:
+    for face,color in enumerate(COLORS):
+        hurt=int(color in ['Red','Black'])
+        combat('items_009',False,time+'掷出'+color+'后攻城攻击城防敌人','Ranged',
+               [enemy(5,abilities=['Fortified'])],5,5,5,kills=1,setup={'DayPart':time},
+               extra={'Wounds':3+hurt,'handWounds':3+hurt,'dice:faces':color,'dice:count':1,'played:SiegePool':5})
+        CASES[-1]['manaRolls']=[face]
+    for bonus in [0,1,3,5]:
+        faces=[0,5,1,4,0][:bonus]
+        hurt=sum(f in [0,5] for f in faces)
+        combat('items_009',True,time+'选择额外攻城'+str(bonus)+'逐颗掷骰','Ranged',
+               [enemy(5+bonus,abilities=['Fortified'])],5+bonus,5+bonus,5+bonus,kills=1,option=bonus,
+               setup={'DayPart':time},extra={'Wounds':3+hurt,'handWounds':3+hurt,
+                'dice:faces':','.join(COLORS[f] for f in faces),'dice:count':bonus,'played:SiegePool':5+bonus})
+        CASES[-1]['manaRolls']=faces
+for option in [-1,6]:
+    case('items_009',True,'拒绝超范围加攻且不掷骰',{'SiegePool':0,'dice:count':0},option=option,
+         error='InvalidOperationException: 愤怒号角额外攻击必须在允许范围内')
+    CASES[-1]['manaRolls']=[]
+
+for traits,armor,effective in [(['Fortified'],3,3),(['PhysicalResist'],1,1)]:
+    combat('advanced_card_038',True,'攻城3对'+str(traits),'Ranged',[enemy(armor,abilities=traits)],3,effective,armor,kills=1,
+           extra={'played:SiegePool':3})
+for element,attack,effective,wounds in [('Physical',6,6,0),('Fire',4,3,2)]:
+    combat('advanced_card_038',True,'选择格挡6对'+element,'Block',[enemy(5,attack=attack,element=element)],6,effective,attack,option=1,wounds=wounds)
+case('advanced_card_038',True,'无效选项不扣绿色费用',{},option=2,error='InvalidOperationException: 自然之力选项无效')
+
+for strong in [False,True]:
+    power=8 if strong else 6
+    for element in ['Physical','Fire','Ice','ColdFire']:
+        effective=power if strong or element=='Physical' else power//2
+        combat('items_020',strong,'单次格挡对'+element,'Block',[enemy(5,attack=effective,element=element)],power,effective,effective,
+               extra={'played:blockElement':'ColdFire' if strong else 'Physical'})
+    count=3 if strong else 2
+    expected={'BlockPool':0,'Wounds':3,'handWounds':3,'Fame':0}
+    for index in range(count):
+        expected.update(operation_result(index,4,4,4))
+        expected['operation:'+str(index)+':BlockPool']=(count-index-1)*4
+    operation_case('items_020',strong,'分次格挡必须分别消耗在不同攻击上',expected,
+                   [combat_operation('Block',i) for i in range(count)],enemies=[enemy(9,attack=4) for _ in range(count)])
+    CASES[-1]['option']=1
+    expected={'BlockPool':(count-2)*4,'Wounds':6,'handWounds':6,
+              **operation_result(0,4,4,5,wounds=3),**operation_result(2,4,4,4),
+              'operation:1:success':False,'operation:1:exception':'分次格挡必须选择尚未使用该效果的攻击',
+              'operation:1:BlockPool':(count-1)*4}
+    operation_case('items_020',strong,'格挡5失败不合并分段且拒绝重复同次攻击',expected,
+                   [combat_operation('Block',0),combat_operation('Block',0),combat_operation('Block',1)],
+                   enemies=[enemy(9,attack=5),enemy(9,attack=4)])
+    CASES[-1]['option']=1
+    case('items_020',strong,'拒绝单次与分次之外的选项',{},option=2,error='InvalidOperationException: 亡君之盾必须选择单次或分次格挡')
+
+
 def export():
     target = ROOT / 'Assets/Resources/CardVerification'
     target.mkdir(exist_ok=True)

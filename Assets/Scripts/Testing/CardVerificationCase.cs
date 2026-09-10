@@ -25,6 +25,7 @@ public sealed class CardVerificationCase
     public bool unitDestroyed;
     public string destinationTerrain;
     public bool omitMovementTarget;
+    public int[] manaRolls;
 }
 
 [Serializable]
