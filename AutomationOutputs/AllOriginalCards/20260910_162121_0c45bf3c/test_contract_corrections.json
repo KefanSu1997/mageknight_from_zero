@@ -1,0 +1,131 @@
+{
+  "reason": "Original printed rule selects one hex/type; compare real movement cost rather than inventing a global override. Numeric expected cost remains 2. Added counterexamples test another same-terrain hex, time, cost floor and actual pool consumption.",
+  "retainedCases": 383,
+  "addedCases": 30,
+  "changes": [
+    {
+      "id": "basic_card_018_00",
+      "changedFields": [
+        "expected"
+      ],
+      "oldExpected": [
+        {
+          "key": "MovementPool",
+          "value": "2"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "TerrainCostOverride:Forest",
+          "value": "2"
+        }
+      ],
+      "newExpected": [
+        {
+          "key": "MovementPool",
+          "value": "2"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "move:selectedCost",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "id": "basic_card_018_01",
+      "changedFields": [
+        "expected"
+      ],
+      "oldExpected": [
+        {
+          "key": "MovementPool",
+          "value": "4"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "TerrainCostOverride:Forest",
+          "value": "2"
+        }
+      ],
+      "newExpected": [
+        {
+          "key": "MovementPool",
+          "value": "4"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "move:selectedCost",
+          "value": "2"
+        }
+      ]
+    }
+  ]
+}

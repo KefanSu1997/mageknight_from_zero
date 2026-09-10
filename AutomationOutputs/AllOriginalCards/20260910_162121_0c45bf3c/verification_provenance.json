@@ -1,0 +1,29 @@
+{
+  "baseline": "AutomationOutputs/AllOriginalCards/20260910_155126_73d1e22d",
+  "fullSceneRun": "AutomationOutputs/AllOriginalCards/20260910_162121_0c45bf3c",
+  "retainedCases": 383,
+  "numericExpectedValuesRetained": true,
+  "correctedObservationContracts": 2,
+  "contractCorrectionRecord": "test_contract_corrections.json",
+  "addedCases": 30,
+  "editmodeSource": "AutomationOutputs/EditMode/20260910_162049_eee1b4a6",
+  "editmodePassed": 145,
+  "regressionSource": "AutomationOutputs/AdventureRegression/20260910_162916_0e1113b6",
+  "regressionScreenshotsIdenticalToPrevious": 118,
+  "changedRegressionCaptures": [],
+  "uiRecheckSource": "AutomationOutputs/AllOriginalCards/20260910_162657_77f7ff82",
+  "uiRecheckCases": 183,
+  "uiRecheckChange": "Only ShowNextOperation fixture label changed to 本次操作前. All 183 case assertions and actual snapshots match the full run. This separate run is archived under ui_recheck and is not merged into the full-suite counts.",
+  "consoleScans": [
+    {
+      "file": "console_final_1.json",
+      "errors": 0
+    },
+    {
+      "file": "console_final_2.json",
+      "errors": 0
+    }
+  ],
+  "rawReportPaths": "Reports retain original absolute paths; archived copies preserve filenames and bytes.",
+  "codeCommit": "e4b96ddd6794c4f1abb4de52cb527342714cbd58"
+}

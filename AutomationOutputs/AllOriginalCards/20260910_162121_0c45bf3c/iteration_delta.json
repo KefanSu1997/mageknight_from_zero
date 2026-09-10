@@ -1,0 +1,42 @@
+{
+  "baseline": "AutomationOutputs/AllOriginalCards/20260910_155126_73d1e22d",
+  "repairedCaseIds": [
+    "basic_card_018_00",
+    "basic_card_018_01",
+    "basic_card_026_01"
+  ],
+  "newRegressions": [],
+  "addedCases": [
+    "basic_card_018_02",
+    "basic_card_018_03",
+    "basic_card_018_04",
+    "basic_card_018_05",
+    "basic_card_018_06",
+    "basic_card_018_07",
+    "basic_card_018_08",
+    "basic_card_018_09",
+    "basic_card_018_10",
+    "basic_card_018_11",
+    "basic_card_018_12",
+    "basic_card_018_13",
+    "basic_card_018_14",
+    "basic_card_018_15",
+    "basic_card_018_16",
+    "basic_card_018_17",
+    "basic_card_018_18",
+    "basic_card_018_19",
+    "basic_card_026_02",
+    "basic_card_026_03",
+    "basic_card_026_04",
+    "basic_card_026_05",
+    "basic_card_026_06",
+    "basic_card_026_07",
+    "basic_card_026_08",
+    "basic_card_026_09",
+    "basic_card_026_10",
+    "basic_card_026_11",
+    "basic_card_026_12",
+    "basic_card_026_13"
+  ],
+  "addedAssertionsAllPass": true
+}
