@@ -1,0 +1,23 @@
+{
+  "status": "success",
+  "result": {
+    "success": true,
+    "message": "Retrieved 2 log entries.",
+    "data": [
+      {
+        "type": "Error",
+        "message": "Assets\\Scripts\\Testing\\OriginalCardVerificationController.cs(408,55): error CS0103: The name '_enemies' does not exist in the current context\n",
+        "file": "Assets\\Scripts\\Testing\\OriginalCardVerificationController.cs",
+        "line": 408,
+        "stackTrace": null
+      },
+      {
+        "type": "Error",
+        "message": "Assets\\Scripts\\Testing\\OriginalCardVerificationController.cs(408,92): error CS0103: The name '_enemies' does not exist in the current context\n",
+        "file": "Assets\\Scripts\\Testing\\OriginalCardVerificationController.cs",
+        "line": 408,
+        "stackTrace": null
+      }
+    ]
+  }
+}

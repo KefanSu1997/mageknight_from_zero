@@ -1,0 +1,446 @@
+{
+    "scenePath": "Assets/Scenes/Part1/Part1_RecruitmentRules.unity",
+    "screenshotsDirectory": "AutomationOutputs/AdventureRegression/20260910_220015_5309392c/Recruitment/captures",
+    "useRunSubfolder": true,
+    "reportPath": "AutomationOutputs/AdventureRegression/20260910_220015_5309392c/Recruitment/report.json",
+    "captureInitialView": true,
+    "initialDelaySeconds": 1.2999999523162842,
+    "defaultWaitAfterSeconds": 0.18000000715255737,
+    "maxRunSeconds": 180.0,
+    "steps": [
+        {
+            "buttonPath": "Canvas/UIRoot/Stage/Targets/Offer_guard",
+            "label": "点选_offer_guard",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "target",
+                    "expected": "offer:guard",
+                    "rule": "点选目标不扣费。"
+                },
+                {
+                    "key": "accepted",
+                    "expected": "1",
+                    "rule": "点选目标不扣费。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+            "label": "影响力不足",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "accepted",
+                    "expected": "0",
+                    "rule": "影响来自出牌，不预填免费影响力。"
+                },
+                {
+                    "key": "influence",
+                    "expected": "0",
+                    "rule": "影响来自出牌，不预填免费影响力。"
+                },
+                {
+                    "key": "units",
+                    "expected": "0",
+                    "rule": "影响来自出牌，不预填免费影响力。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Hand/Card_0",
+            "label": "选择_basic_card_008_0",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "selectedCard",
+                    "expected": "basic_card_008",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "hand",
+                    "expected": "5",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "ui:hand",
+                    "expected": "5",
+                    "rule": "可见读数必须对应规则状态。选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "accepted",
+                    "expected": "1",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "ui:cardArt:0",
+                    "expected": "basic_card_008",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "ui:printedEffect",
+                    "expected": "基础：影响力2。",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Stage/Targets/Offer_guard",
+            "label": "点选_offer_guard",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "target",
+                    "expected": "offer:guard",
+                    "rule": "点选目标不扣费。"
+                },
+                {
+                    "key": "accepted",
+                    "expected": "1",
+                    "rule": "点选目标不扣费。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Inspector/Btn_Enhance",
+            "label": "选择原卡强化",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "enhanced",
+                    "expected": "1",
+                    "rule": "选择强化不支付；必须使用原卡规定的耗色和数值。"
+                },
+                {
+                    "key": "selectedValue",
+                    "expected": "4",
+                    "rule": "选择强化不支付；必须使用原卡规定的耗色和数值。"
+                },
+                {
+                    "key": "whiteCrystal",
+                    "expected": "1",
+                    "rule": "选择强化不支付；必须使用原卡规定的耗色和数值。"
+                },
+                {
+                    "key": "ui:printedEffect",
+                    "expected": "强化：影响力4。",
+                    "rule": "选择强化不支付；必须使用原卡规定的耗色和数值。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+            "label": "承诺白色强化4",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "influence",
+                    "expected": "4",
+                    "rule": "承诺强效影响4。"
+                },
+                {
+                    "key": "whiteCrystal",
+                    "expected": "0",
+                    "rule": "承诺强效影响4。"
+                },
+                {
+                    "key": "hand",
+                    "expected": "4",
+                    "rule": "承诺强效影响4。"
+                },
+                {
+                    "key": "ui:hand",
+                    "expected": "4",
+                    "rule": "可见读数必须对应规则状态。承诺强效影响4。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+            "label": "四点还不足费用五",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "accepted",
+                    "expected": "0",
+                    "rule": "不能少付费用。"
+                },
+                {
+                    "key": "influence",
+                    "expected": "4",
+                    "rule": "不能少付费用。"
+                },
+                {
+                    "key": "units",
+                    "expected": "0",
+                    "rule": "不能少付费用。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Hand/Card_1",
+            "label": "选择_basic_card_008_1",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "selectedCard",
+                    "expected": "basic_card_008",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "hand",
+                    "expected": "4",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "ui:hand",
+                    "expected": "4",
+                    "rule": "可见读数必须对应规则状态。选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "accepted",
+                    "expected": "1",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "ui:cardArt:1",
+                    "expected": "basic_card_008",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                },
+                {
+                    "key": "ui:printedEffect",
+                    "expected": "基础：影响力2。",
+                    "rule": "选牌不扣牌，确认才消耗。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+            "label": "第二张承诺基础2",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "influence",
+                    "expected": "6",
+                    "rule": "4加2等于6。"
+                },
+                {
+                    "key": "hand",
+                    "expected": "3",
+                    "rule": "4加2等于6。"
+                },
+                {
+                    "key": "ui:hand",
+                    "expected": "3",
+                    "rule": "可见读数必须对应规则状态。4加2等于6。"
+                },
+                {
+                    "key": "ui:resource",
+                    "expected": "6",
+                    "rule": "4加2等于6。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+            "label": "招募扣五余一",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "influence",
+                    "expected": "1",
+                    "rule": "占用指挥槽。"
+                },
+                {
+                    "key": "units",
+                    "expected": "1",
+                    "rule": "占用指挥槽。"
+                },
+                {
+                    "key": "ready",
+                    "expected": "1",
+                    "rule": "占用指挥槽。"
+                },
+                {
+                    "key": "freeSlots",
+                    "expected": "0",
+                    "rule": "占用指挥槽。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Stage/Targets/Offer_guard",
+            "label": "点选_offer_guard",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "target",
+                    "expected": "offer:guard",
+                    "rule": "点选目标不扣费。"
+                },
+                {
+                    "key": "accepted",
+                    "expected": "1",
+                    "rule": "点选目标不扣费。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+            "label": "不能重复招募",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "accepted",
+                    "expected": "0",
+                    "rule": "同一供给单位只能招募一次。"
+                },
+                {
+                    "key": "influence",
+                    "expected": "1",
+                    "rule": "同一供给单位只能招募一次。"
+                },
+                {
+                    "key": "units",
+                    "expected": "1",
+                    "rule": "同一供给单位只能招募一次。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Stage/Targets/Offer_monk",
+            "label": "点选_offer_monk",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "target",
+                    "expected": "offer:monk",
+                    "rule": "点选目标不扣费。"
+                },
+                {
+                    "key": "accepted",
+                    "expected": "1",
+                    "rule": "点选目标不扣费。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+            "label": "地点不符不得招募",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "accepted",
+                    "expected": "0",
+                    "rule": "村庄不能招募修道院单位。"
+                },
+                {
+                    "key": "influence",
+                    "expected": "1",
+                    "rule": "村庄不能招募修道院单位。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Inspector/Btn_Cancel",
+            "label": "取消目标",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "target",
+                    "expected": "",
+                    "rule": "取消不付费。"
+                },
+                {
+                    "key": "influence",
+                    "expected": "1",
+                    "rule": "取消不付费。"
+                }
+            ]
+        },
+        {
+            "buttonPath": "Canvas/UIRoot/Inspector/Btn_Confirm",
+            "label": "回合结束正常补牌",
+            "waitAfterSeconds": 0.18000000715255737,
+            "skipScreenshot": false,
+            "before": [],
+            "after": [
+                {
+                    "key": "hand",
+                    "expected": "5",
+                    "rule": "已打出两张承诺进弃牌，补两张，保留晶体和部队。"
+                },
+                {
+                    "key": "ui:hand",
+                    "expected": "5",
+                    "rule": "可见读数必须对应规则状态。已打出两张承诺进弃牌，补两张，保留晶体和部队。"
+                },
+                {
+                    "key": "deck",
+                    "expected": "3",
+                    "rule": "已打出两张承诺进弃牌，补两张，保留晶体和部队。"
+                },
+                {
+                    "key": "discard",
+                    "expected": "2",
+                    "rule": "已打出两张承诺进弃牌，补两张，保留晶体和部队。"
+                },
+                {
+                    "key": "turn",
+                    "expected": "2",
+                    "rule": "已打出两张承诺进弃牌，补两张，保留晶体和部队。"
+                },
+                {
+                    "key": "influence",
+                    "expected": "0",
+                    "rule": "已打出两张承诺进弃牌，补两张，保留晶体和部队。"
+                },
+                {
+                    "key": "whiteCrystal",
+                    "expected": "0",
+                    "rule": "已打出两张承诺进弃牌，补两张，保留晶体和部队。"
+                },
+                {
+                    "key": "units",
+                    "expected": "1",
+                    "rule": "已打出两张承诺进弃牌，补两张，保留晶体和部队。"
+                },
+                {
+                    "key": "ready",
+                    "expected": "1",
+                    "rule": "已打出两张承诺进弃牌，补两张，保留晶体和部队。"
+                }
+            ]
+        }
+    ]
+}

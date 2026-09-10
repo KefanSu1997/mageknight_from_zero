@@ -1,0 +1,31 @@
+{
+  "baseline": "AutomationOutputs/AllOriginalCards/20260910_162121_0c45bf3c",
+  "fullSceneRun": "AutomationOutputs/AllOriginalCards/20260910_215449_a1ed901f",
+  "retainedCases": 413,
+  "priorCaseDefinitionsUnchanged": true,
+  "addedCases": 36,
+  "editmodeSource": "AutomationOutputs/EditMode/20260910_215419_a7866305",
+  "editmodePassed": 166,
+  "regressionSource": "AutomationOutputs/AdventureRegression/20260910_220015_5309392c",
+  "regressionScreenshotsIdenticalToPrevious": 118,
+  "changedRegressionCaptures": [],
+  "consoleScans": [
+    {
+      "file": "console_final_1.json",
+      "errors": 0
+    },
+    {
+      "file": "console_final_2.json",
+      "errors": 0
+    }
+  ],
+  "reviewedCardScreenshots": [
+    "advanced_card/captures/350_advanced_card_005_06_execute.png",
+    "magic/captures/345_magic_008_07_execute.png",
+    "magic/captures/279_magic_017_09_execute.png",
+    "magic/captures/294_magic_017_13_execute.png"
+  ],
+  "rawReportPaths": "Original absolute paths retained; archived copies preserve filenames and bytes. Superseded first run is not mixed with this run.",
+  "archiveTime": "2026-09-10T22:03:28.700167+08:00",
+  "codeCommit": "ffee4e59ee3ad14c0aea4ed05c098dd01227171b"
+}
