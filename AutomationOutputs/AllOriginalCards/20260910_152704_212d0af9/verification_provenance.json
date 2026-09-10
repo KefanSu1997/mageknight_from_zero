@@ -1,0 +1,9 @@
+{
+  "originalCasesRetainedUnchanged": 325,
+  "addedCases": 25,
+  "editmodeSource": "AutomationOutputs/EditMode/20260910_152638_b980cf17",
+  "regressionSource": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6",
+  "regressionScreenshotsIdenticalToPrevious": 118,
+  "regressionScope": "No adventure or logic changes after this regression. The last change only clarified wound labels in OriginalCardVerificationController.",
+  "rawReportPaths": "Reports retain original capture paths; archived copies preserve filenames and bytes."
+}

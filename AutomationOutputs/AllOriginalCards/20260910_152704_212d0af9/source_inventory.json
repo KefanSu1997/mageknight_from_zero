@@ -1,0 +1,2127 @@
+[
+  {
+    "id": "basic_card_000",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\basic_card_000.png",
+    "rgbMean": [
+      140.4724553234659,
+      135.58425591134926,
+      99.6842715188721
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "87a715ffc618da9b49eaaeee22c89d18f7153cc5c33e27cfbf73ae77b85d8114",
+    "actualSha256": "87a715ffc618da9b49eaaeee22c89d18f7153cc5c33e27cfbf73ae77b85d8114",
+    "matchesRepositoryOriginal": true,
+    "name": "行进",
+    "baseText": "移动力2。",
+    "enhancedText": "移动力4。"
+  },
+  {
+    "id": "basic_card_001",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\basic_card_001.png",
+    "rgbMean": [
+      164.08256899825716,
+      156.4090016387899,
+      120.25128371875243
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "d12eeb068cb3456144efd28ab3b191f1b022218d53925c148798cc36a4bcd93f",
+    "actualSha256": "d12eeb068cb3456144efd28ab3b191f1b022218d53925c148798cc36a4bcd93f",
+    "matchesRepositoryOriginal": true,
+    "name": "宁静",
+    "baseText": "治疗1或抽取一张卡牌。",
+    "enhancedText": "治疗2或抽取两张卡牌。"
+  },
+  {
+    "id": "basic_card_002",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\basic_card_002.png",
+    "rgbMean": [
+      157.54845225398643,
+      162.82085945425695,
+      114.60955830710402
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "7e49624dad584fa486ec3e015e7f25410b285bc54b3f95efa629bbae98bc04e5",
+    "actualSha256": "7e49624dad584fa486ec3e015e7f25410b285bc54b3f95efa629bbae98bc04e5",
+    "matchesRepositoryOriginal": true,
+    "name": "凝结",
+    "baseText": "获得一个蓝色，白色或红色魔力标记。",
+    "enhancedText": "打出本卡牌时，同时打出另一张行动卡牌。免费获得该卡牌的强力效果。如果该效果给予你移动力、影响力、格挡或任何类型的攻击，该效果数值+2。"
+  },
+  {
+    "id": "basic_card_003",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\basic_card_003.png",
+    "rgbMean": [
+      142.67868012381967,
+      140.5758772728455,
+      87.8011445516739
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "0552cd5a85fc9961776db51eb20a16e06e36222a9fbb125653461cb5c9e9b5b1",
+    "actualSha256": "0552cd5a85fc9961776db51eb20a16e06e36222a9fbb125653461cb5c9e9b5b1",
+    "matchesRepositoryOriginal": true,
+    "name": "野蛮收获",
+    "baseText": "移动力2。本回合一次，你移动一格时，你可以弃掉一张卡牌，获得一颗同色魔晶。如果你弃掉一件神器，你可以选择任意颜色。",
+    "enhancedText": "移动力4。本回合中你每次移动一格时，你可以弃掉一张卡牌，获得一颗同色魔晶。如果你弃掉一件神器，你可以选择任意颜色。"
+  },
+  {
+    "id": "basic_card_004",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\basic_card_004.png",
+    "rgbMean": [
+      139.60974559737792,
+      147.51430689592382,
+      123.56746351741539
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "3f00cbe3508aefb15fb3199f381f2ca290270038aa2c1ac6a3d19b3a9cfdc981",
+    "actualSha256": "3f00cbe3508aefb15fb3199f381f2ca290270038aa2c1ac6a3d19b3a9cfdc981",
+    "matchesRepositoryOriginal": true,
+    "name": "大地之子",
+    "baseText": "移动力2，治疗1或格挡2。",
+    "enhancedText": "移动力4，治疗2或格挡，格挡数值等于你所在格未修正的移动费用（山脉5、湖泊2）。白昼时为火焰格挡，黑夜中为寒冰格挡。"
+  },
+  {
+    "id": "basic_card_005",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\basic_card_005.png",
+    "rgbMean": [
+      148.85562911323257,
+      151.96803449262543,
+      107.76702390552246
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "86dce27e29debd25a0ba33a42d9af39de1ac7be948193779f4190c7175d0ed1d",
+    "actualSha256": "86dce27e29debd25a0ba33a42d9af39de1ac7be948193779f4190c7175d0ed1d",
+    "matchesRepositoryOriginal": true,
+    "name": "活力焕发",
+    "baseText": "治疗1，抽取一张卡牌，获得一个绿色魔力标记，或重整一支1级或2级部队。",
+    "enhancedText": "治疗2，抽取两张卡牌，获得一颗绿色魔晶放入物品栏，或重整一支1级、2级或3级部队。"
+  },
+  {
+    "id": "basic_card_006",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\basic_card_006.png",
+    "rgbMean": [
+      126.69345264417449,
+      129.32865541190853,
+      82.15623000286138
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "1d3ef20931953e96a1a75be03296b98ba0cea3c8a34bda16687aa9d8857f7a9d",
+    "actualSha256": "1d3ef20931953e96a1a75be03296b98ba0cea3c8a34bda16687aa9d8857f7a9d",
+    "matchesRepositoryOriginal": true,
+    "name": "全神贯注",
+    "baseText": "获得一个蓝色，白色或红色魔力标记，或获得一颗绿色魔晶，放入物品栏。",
+    "enhancedText": "打出本卡牌时，同时打出另一张行动卡牌。免费获得该卡牌的强力效果。如果该效果给予你移动力、影响力、格挡或任何类型的攻击，该效果数值+3。"
+  },
+  {
+    "id": "basic_card_007",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\basic_card_007.png",
+    "rgbMean": [
+      174.4731121400515,
+      166.3618161954062,
+      161.22086465676455
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "a37914fe0fa4e77302c40e0d3cf99c437a8dbfd2e66830899b762620dcdb9feb",
+    "actualSha256": "a37914fe0fa4e77302c40e0d3cf99c437a8dbfd2e66830899b762620dcdb9feb",
+    "matchesRepositoryOriginal": true,
+    "name": "敏捷",
+    "baseText": "移动力2。",
+    "enhancedText": "远程攻击3。"
+  },
+  {
+    "id": "basic_card_008",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\basic_card_008.png",
+    "rgbMean": [
+      162.5807949431626,
+      148.2636110605312,
+      144.95068933225815
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "07904c0fce35ae85d1aad28dababdd9dc3f5b71cf0b3ea3066cd6010e269eb98",
+    "actualSha256": "07904c0fce35ae85d1aad28dababdd9dc3f5b71cf0b3ea3066cd6010e269eb98",
+    "matchesRepositoryOriginal": true,
+    "name": "承诺",
+    "baseText": "影响力2。",
+    "enhancedText": "影响力4。"
+  },
+  {
+    "id": "basic_card_009",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\basic_card_009.png",
+    "rgbMean": [
+      164.6764755612205,
+      151.17038992794528,
+      157.47146554639338
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "1649930c019e7b821daecbc02bf208d0476d6bd236897e79b77a0d9e2f07edc7",
+    "actualSha256": "1649930c019e7b821daecbc02bf208d0476d6bd236897e79b77a0d9e2f07edc7",
+    "matchesRepositoryOriginal": true,
+    "name": "魔力汲取",
+    "baseText": "本回合中你可以使用魔力源中的额外一颗魔力骰子。",
+    "enhancedText": "从魔力源中拿取一颗魔力骰子，转化成除金色外任意颜色。获得两个该颜色的魔力标记。这颗骰子放回魔力源时不要重掷。"
+  },
+  {
+    "id": "basic_card_010",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\basic_card_010.png",
+    "rgbMean": [
+      170.74838722264133,
+      161.09041437973104,
+      156.54576515880655
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "ebb404df60d299b9eea4c5b06984608ddc7f40b7ecb9c53f5ad7efd6cbf8edb6",
+    "actualSha256": "ebb404df60d299b9eea4c5b06984608ddc7f40b7ecb9c53f5ad7efd6cbf8edb6",
+    "matchesRepositoryOriginal": true,
+    "name": "迅捷反应",
+    "baseText": "移动力2，远程攻击1，或者一次敌人的攻击降低1点。",
+    "enhancedText": "移动力4，远程攻击3，或者一次敌人的攻击降低2点。"
+  },
+  {
+    "id": "basic_card_011",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\basic_card_011.png",
+    "rgbMean": [
+      157.08501287620632,
+      142.49822204302473,
+      127.31936763520017
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "e9d028478e0e0109cc18f9418df8332441f7470f0389ac0a18f97cd312bc3c9a",
+    "actualSha256": "e9d028478e0e0109cc18f9418df8332441f7470f0389ac0a18f97cd312bc3c9a",
+    "matchesRepositoryOriginal": true,
+    "name": "利斧投掷",
+    "baseText": "移动力2或远程攻击1",
+    "enhancedText": "远程攻击3 若用这次攻击至少击败了一个敌人 则声望+1"
+  },
+  {
+    "id": "basic_card_012",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\basic_card_012.png",
+    "rgbMean": [
+      149.17618422079443,
+      148.009066670135,
+      146.46425617147466
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "d42062920faa90044b281c19d3e44d9d9afe872abfe12fdd30377fe1938aa9f4",
+    "actualSha256": "d42062920faa90044b281c19d3e44d9d9afe872abfe12fdd30377fe1938aa9f4",
+    "matchesRepositoryOriginal": true,
+    "name": "高贵气质",
+    "baseText": "影响力2。交涉中打出本卡牌，名望+1。",
+    "enhancedText": "影响力4。交涉中打出本卡牌，名望+1并且声誉+1。"
+  },
+  {
+    "id": "basic_card_013",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\basic_card_013.png",
+    "rgbMean": [
+      169.7721522773977,
+      157.3611047524907,
+      155.13064927294957
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "cf1229e35016d1ade76e23c4bf26cfdad434f76ebe7b7e2e4fce28d63dc360a7",
+    "actualSha256": "cf1229e35016d1ade76e23c4bf26cfdad434f76ebe7b7e2e4fce28d63dc360a7",
+    "matchesRepositoryOriginal": true,
+    "name": "魔力征引",
+    "baseText": "本回合中你可以使用魔力源中的额外一颗魔力骰子。如果该骰子为黑色，可以用来产生任意颜色的魔力。",
+    "enhancedText": "从魔力源中拿取两颗魔力骰子，转化成除金色外任意颜色。获得这些颜色的魔力标记。这些骰子放回魔力源时不要重掷。"
+  },
+  {
+    "id": "basic_card_014",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\basic_card_014.png",
+    "rgbMean": [
+      132.05070884166167,
+      136.6229144447624,
+      141.65577348281872
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "3f91a0514b76aa18106c90b06170e73669537d775e5ff19faf1da98a29bc73dd",
+    "actualSha256": "3f91a0514b76aa18106c90b06170e73669537d775e5ff19faf1da98a29bc73dd",
+    "matchesRepositoryOriginal": true,
+    "name": "耐力",
+    "baseText": "移动力2。",
+    "enhancedText": "移动力4。"
+  },
+  {
+    "id": "basic_card_015",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\basic_card_015.png",
+    "rgbMean": [
+      130.34548162214188,
+      158.16232604115183,
+      182.80436360325677
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "0684dac62344e30cfe7923bf8c02cea4100fe1f9d97c334cd2d79117fac7f5bc",
+    "actualSha256": "0684dac62344e30cfe7923bf8c02cea4100fe1f9d97c334cd2d79117fac7f5bc",
+    "matchesRepositoryOriginal": true,
+    "name": "晶化",
+    "baseText": "打出本卡牌时，同时支付一点基本色魔力。获得一颗同色魔晶，放入物品栏。",
+    "enhancedText": "获得一颗任意颜色的魔晶，放入物品栏。"
+  },
+  {
+    "id": "basic_card_016",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\basic_card_016.png",
+    "rgbMean": [
+      128.8105662929532,
+      126.82387040553547,
+      133.739497437765
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "a4bda761453cb4afc90d5a90451455219663fbf1dd4ed0cf15852638a36497fa",
+    "actualSha256": "a4bda761453cb4afc90d5a90451455219663fbf1dd4ed0cf15852638a36497fa",
+    "matchesRepositoryOriginal": true,
+    "name": "决心",
+    "baseText": "攻击或格挡2。",
+    "enhancedText": "格挡5。"
+  },
+  {
+    "id": "basic_card_017",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\basic_card_017.png",
+    "rgbMean": [
+      149.65101969149129,
+      156.48921260047342,
+      174.0141026975002
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "f5e5d95c1d902392d602b8ca53f46d36e733ba21c46900991e54bf916cac54de",
+    "actualSha256": "f5e5d95c1d902392d602b8ca53f46d36e733ba21c46900991e54bf916cac54de",
+    "matchesRepositoryOriginal": true,
+    "name": "永不止步",
+    "baseText": "移动力2。本回合中下一张提供移动力（包括横置打出的卡牌）的卡牌获得额外1点移动力。",
+    "enhancedText": "移动力4。本回合中其它每张提供移动力（包括横置打出的卡牌）的卡牌获得额外1点移动力。"
+  },
+  {
+    "id": "basic_card_018",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\basic_card_018.png",
+    "rgbMean": [
+      115.15975730302006,
+      116.68096402465989,
+      125.88609759904274
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "1f30eafb540db040140b9e701d5bdb9b9c0918c38a53b65b8d76af97f04cde94",
+    "actualSha256": "1f30eafb540db040140b9e701d5bdb9b9c0918c38a53b65b8d76af97f04cde94",
+    "matchesRepositoryOriginal": true,
+    "name": "德鲁伊之道",
+    "baseText": "移动力2。本回合中一个六角格的移动费用降低1点，最低至2。",
+    "enhancedText": "移动力4。本回合中一种地形的移动费用降低1点，最低至2。"
+  },
+  {
+    "id": "basic_card_019",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\basic_card_019.png",
+    "rgbMean": [
+      114.36557110527274,
+      127.56403116302057,
+      138.22900918242593
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "2cec4a84604f31e506e5289d18d5e5d460ecd921bd41a230fdc18f9ff2cf6bdc",
+    "actualSha256": "2cec4a84604f31e506e5289d18d5e5d460ecd921bd41a230fdc18f9ff2cf6bdc",
+    "matchesRepositoryOriginal": true,
+    "name": "欢悦魔晶",
+    "baseText": "支付一点任意基本色魔力，以获得一颗同色魔晶，放入物品栏。你回合结束时，可以弃掉另一张非创伤卡牌，将本卡牌收回手牌。",
+    "enhancedText": "获得一颗任意基本色魔晶，放入物品栏。你回合结束时，可以弃掉另一张包括创伤在内的卡牌，将本卡牌收回手牌。"
+  },
+  {
+    "id": "basic_card_020",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\basic_card_020.png",
+    "rgbMean": [
+      111.95627292354915,
+      114.5087675259475,
+      123.29634263715111
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "6c474bb3dfed7eb636d6091b46f8e21bb65b061abafb7d93fc226d34271555ad",
+    "actualSha256": "6c474bb3dfed7eb636d6091b46f8e21bb65b061abafb7d93fc226d34271555ad",
+    "matchesRepositoryOriginal": true,
+    "name": "寒冰护体",
+    "baseText": "攻击2或寒冰格挡3。",
+    "enhancedText": "寒冰格挡5。你格挡的敌人标记上每有一个能力或攻击的颜色，+1寒冰格挡（除非敌人具有奥术免疫），或对手攻击时每支付一点魔力+1寒冰格挡。"
+  },
+  {
+    "id": "basic_card_021",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\basic_card_021.png",
+    "rgbMean": [
+      151.13831516791095,
+      115.26135577348282,
+      97.0703509091382
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "f0e5b6897df24e28c3a135b5af5104e92f07e7841302db1087932d699ae607c9",
+    "actualSha256": "f0e5b6897df24e28c3a135b5af5104e92f07e7841302db1087932d699ae607c9",
+    "matchesRepositoryOriginal": true,
+    "name": "狂怒",
+    "baseText": "攻击或格挡2。",
+    "enhancedText": "攻击4。"
+  },
+  {
+    "id": "basic_card_022",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\basic_card_022.png",
+    "rgbMean": [
+      160.30791041281898,
+      123.3510144889837,
+      110.83937908071691
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "35015cadb0381d5de14e9f216f2cb194285ac1da5c3b61ddd2de8a68e41526f5",
+    "actualSha256": "35015cadb0381d5de14e9f216f2cb194285ac1da5c3b61ddd2de8a68e41526f5",
+    "matchesRepositoryOriginal": true,
+    "name": "威胁",
+    "baseText": "影响力2。",
+    "enhancedText": "影响力5。声誉-1。"
+  },
+  {
+    "id": "basic_card_023",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\basic_card_023.png",
+    "rgbMean": [
+      153.68348333896938,
+      111.86166532268554,
+      99.38576333792888
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "8a23f877bed7c3c5f4c2a3786014ba88005eb46d62f5ebc302284db340689568",
+    "actualSha256": "8a23f877bed7c3c5f4c2a3786014ba88005eb46d62f5ebc302284db340689568",
+    "matchesRepositoryOriginal": true,
+    "name": "随机应变",
+    "baseText": "从手牌中弃掉另一张卡牌，以获得移动力3，影响力3，攻击3或格挡3。",
+    "enhancedText": "从手牌中弃掉另一张卡牌，以获得移动力5，影响力5，攻击5或格挡5。"
+  },
+  {
+    "id": "basic_card_024",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\basic_card_024.png",
+    "rgbMean": [
+      163.46527586296594,
+      108.5355305257134,
+      95.58298910074656
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "93f827c60b5193dba40e12f601cbee0765a4758d4f811cf181d6f2e7be6880e6",
+    "actualSha256": "93f827c60b5193dba40e12f601cbee0765a4758d4f811cf181d6f2e7be6880e6",
+    "matchesRepositoryOriginal": true,
+    "name": "灵活战斗",
+    "baseText": "攻击2，格挡2，或远程攻击1。",
+    "enhancedText": "攻击4，格挡4，火焰攻击3，火焰格挡3，远程攻击3，或攻城攻击2。"
+  },
+  {
+    "id": "basic_card_025",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\basic_card_025.png",
+    "rgbMean": [
+      126.16678719142627,
+      93.18165725879874,
+      76.85759436048176
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "7ccdae4498c5aa54cf899f14032bbc51548b66ec44f33e108f52004f59def7f7",
+    "actualSha256": "7ccdae4498c5aa54cf899f14032bbc51548b66ec44f33e108f52004f59def7f7",
+    "matchesRepositoryOriginal": true,
+    "name": "战斗之怒",
+    "baseText": "攻击2；如果你在这场战斗中收到一张伤害卡，则加1点攻击力",
+    "enhancedText": "攻击4；在这场战斗中，每收到一张伤害卡，你就可以增加1点攻击力（最多4点）"
+  },
+  {
+    "id": "basic_card_026",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\basic_card_026.png",
+    "rgbMean": [
+      160.45639388185106,
+      119.69873188877038,
+      101.31399994797492
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "466abc8df69af61675a2933faf08084e122216241355d5d522042f33821beb0b",
+    "actualSha256": "466abc8df69af61675a2933faf08084e122216241355d5d522042f33821beb0b",
+    "matchesRepositoryOriginal": true,
+    "name": "无情威压",
+    "baseText": "影响力2。你可以在招募一支部队时减少其2点招募费用，如果本回合你以此法招募该部队，则声誉-1。",
+    "enhancedText": "影响力6。声誉-1。你可以支付部队等级2倍的影响力，重整你控制的1级和2级部队。"
+  },
+  {
+    "id": "basic_card_027",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\basic_card_027.png",
+    "rgbMean": [
+      151.98017584475718,
+      115.5765301875504,
+      98.66054158104207
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "f5277493e2d835d75dfa99de6198a9566591f89ec673380eac1d3f733346e075",
+    "actualSha256": "f5277493e2d835d75dfa99de6198a9566591f89ec673380eac1d3f733346e075",
+    "matchesRepositoryOriginal": true,
+    "name": "",
+    "baseText": "",
+    "enhancedText": ""
+  },
+  {
+    "id": "advanced_card_000",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_000.png",
+    "rgbMean": [
+      198.73804214285715,
+      149.51028142857143,
+      98.10869785714286
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "a92a92158d6bee602ca9f4f5fcd4b5a29a7a1a7ae306c964cea10979f054ec49",
+    "actualSha256": "a92a92158d6bee602ca9f4f5fcd4b5a29a7a1a7ae306c964cea10979f054ec49",
+    "matchesRepositoryOriginal": true,
+    "name": "火焰箭矢",
+    "baseText": "获得一颗红色魔晶，放入物品栏。",
+    "enhancedText": "远程火焰攻击3。"
+  },
+  {
+    "id": "advanced_card_001",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_001.png",
+    "rgbMean": [
+      144.50331,
+      163.76640357142858,
+      187.38381285714286
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "cac1730b9628ffe1d864e211a4cf477ae24cbe47f3d53130c9ba5e5660d26ca2",
+    "actualSha256": "cac1730b9628ffe1d864e211a4cf477ae24cbe47f3d53130c9ba5e5660d26ca2",
+    "matchesRepositoryOriginal": true,
+    "name": "寒冰箭矢",
+    "baseText": "获得一颗蓝色魔晶，放入物品栏。",
+    "enhancedText": "远程寒冰攻击3。"
+  },
+  {
+    "id": "advanced_card_002",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_002.png",
+    "rgbMean": [
+      181.834585,
+      168.32494285714284,
+      175.5016792857143
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "0d2ccb46d04d5753158a735e82deb94cfbf1d9421926d68298ced8b3df2129c6",
+    "actualSha256": "0d2ccb46d04d5753158a735e82deb94cfbf1d9421926d68298ced8b3df2129c6",
+    "matchesRepositoryOriginal": true,
+    "name": "迅捷箭矢",
+    "baseText": "获得一颗白色魔晶，放入物品栏。",
+    "enhancedText": "远程攻击4。"
+  },
+  {
+    "id": "advanced_card_003",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_003.png",
+    "rgbMean": [
+      171.27519714285714,
+      165.877455,
+      104.44113285714286
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "45effa2c60233dafee971e90343743bbab15f66bf21edc59ae4191f5a5ce4142",
+    "actualSha256": "45effa2c60233dafee971e90343743bbab15f66bf21edc59ae4191f5a5ce4142",
+    "matchesRepositoryOriginal": true,
+    "name": "粉碎箭矢",
+    "baseText": "获得一颗绿色魔晶，放入物品栏。",
+    "enhancedText": "攻城攻击3。"
+  },
+  {
+    "id": "advanced_card_004",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_004.png",
+    "rgbMean": [
+      164.39140785714287,
+      118.08649714285714,
+      93.19529571428572
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "89fe459978bb273fb53e02a9afc7f10e8bd3577fb6f5a69e847cd932d9e3286b",
+    "actualSha256": "89fe459978bb273fb53e02a9afc7f10e8bd3577fb6f5a69e847cd932d9e3286b",
+    "matchesRepositoryOriginal": true,
+    "name": "血色狂怒",
+    "baseText": "攻击2。你可以受到一点创伤，以将本卡牌提升至攻击5。",
+    "enhancedText": "攻击4。你可以受到一点创伤，以将本卡牌提升至攻击9。"
+  },
+  {
+    "id": "advanced_card_005",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_005.png",
+    "rgbMean": [
+      161.9608107142857,
+      184.93987857142858,
+      195.10003571428572
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "e43bc9010f952fea70f4eb4143bc336837d5eedb3c8846472f66de07ffbef85b",
+    "actualSha256": "e43bc9010f952fea70f4eb4143bc336837d5eedb3c8846472f66de07ffbef85b",
+    "matchesRepositoryOriginal": true,
+    "name": "寒冰之盾",
+    "baseText": "寒冰格挡3。",
+    "enhancedText": "寒冰格挡3。被本卡牌格挡的一个敌人护甲降低3。护甲无法降低至1以下。"
+  },
+  {
+    "id": "advanced_card_006",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_006.png",
+    "rgbMean": [
+      159.06258285714287,
+      145.5938857142857,
+      137.53235642857143
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "f4467750cc176e4a061c7340dfe87e315af9937ed0bae5ad0de4736e75106089",
+    "actualSha256": "f4467750cc176e4a061c7340dfe87e315af9937ed0bae5ad0de4736e75106089",
+    "matchesRepositoryOriginal": true,
+    "name": "灵动",
+    "baseText": "移动力2。本回合战斗中，你可以支付移动力点数，每支付1点获得攻击1。",
+    "enhancedText": "移动力4。本回合战斗中，你可以支付任意数量的移动力点数：支付1点获得攻击1，和/或支付2点获得远程攻击1。"
+  },
+  {
+    "id": "advanced_card_007",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_007.png",
+    "rgbMean": [
+      169.99895571428573,
+      158.48991714285714,
+      124.78524785714286
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "74e504dbb4227dd786420ca2ddd719cdc09f619ad624bdcce44ae95a04352a04",
+    "actualSha256": "74e504dbb4227dd786420ca2ddd719cdc09f619ad624bdcce44ae95a04352a04",
+    "matchesRepositoryOriginal": true,
+    "name": "提神漫步",
+    "baseText": "移动力2和治疗1。如果你在战斗中打出本卡牌，只获得移动力2。",
+    "enhancedText": "移动力4和治疗2。如果你在战斗中打出本卡牌，只获得移动力4。"
+  },
+  {
+    "id": "advanced_card_008",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_008.png",
+    "rgbMean": [
+      161.61265214285714,
+      122.24934785714285,
+      98.71121357142857
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "e6694941792e336ae9eb14ce33e1b2219f66a88eab69c8b04e9b6b36f73c6864",
+    "actualSha256": "e6694941792e336ae9eb14ce33e1b2219f66a88eab69c8b04e9b6b36f73c6864",
+    "matchesRepositoryOriginal": true,
+    "name": "胁迫",
+    "baseText": "影响力4或攻击3。声誉-1。",
+    "enhancedText": "影响力8或攻击7。声誉-2。"
+  },
+  {
+    "id": "advanced_card_009",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_009.png",
+    "rgbMean": [
+      170.0008657142857,
+      167.61845714285715,
+      170.69604214285715
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "dec04b0195dd06a993409ea62dff0f5307b9b88bd5354ebd308381ac2e0392f3",
+    "actualSha256": "dec04b0195dd06a993409ea62dff0f5307b9b88bd5354ebd308381ac2e0392f3",
+    "matchesRepositoryOriginal": true,
+    "name": "冰霜之桥",
+    "baseText": "移动力2。本回合中沼泽的移动费用降低至1。",
+    "enhancedText": "移动力4。本回合中你可以穿越湖泊，且湖泊和沼泽的移动费用降低至1。"
+  },
+  {
+    "id": "advanced_card_010",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_010.png",
+    "rgbMean": [
+      171.61828642857142,
+      157.41426785714285,
+      165.79480714285714
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "553652ce20263ec58497bb280dbae4e0cf21764c156b15c8fc30e2ebe4063e55",
+    "actualSha256": "553652ce20263ec58497bb280dbae4e0cf21764c156b15c8fc30e2ebe4063e55",
+    "matchesRepositoryOriginal": true,
+    "name": "清风之歌",
+    "baseText": "移动力2。本回合中平原、沙漠和荒原的移动费用降低1点，最低至0。",
+    "enhancedText": "移动力2。本回合中平原、沙漠和荒原的移动费用降低2点，最低至0。本回合中，你可以支付一点蓝色魔力穿越湖泊，湖泊的移动费用为0。"
+  },
+  {
+    "id": "advanced_card_011",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_011.png",
+    "rgbMean": [
+      133.45881785714286,
+      123.46481214285714,
+      91.94167285714286
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "f647a3e184f46936d7c477516e889ca1eb2e05a6b4ec2113a9373b9b29b5273c",
+    "actualSha256": "f647a3e184f46936d7c477516e889ca1eb2e05a6b4ec2113a9373b9b29b5273c",
+    "matchesRepositoryOriginal": true,
+    "name": "迷途寻踪",
+    "baseText": "移动力2。本回合中所有地形的移动费用降低1点，最低至2。",
+    "enhancedText": "移动力4。本回合中所有地形的移动费用降低至2。"
+  },
+  {
+    "id": "advanced_card_012",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_012.png",
+    "rgbMean": [
+      160.51888357142857,
+      93.57156357142857,
+      70.38560214285714
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "06214a13b75c4fb34645f3953853180c45d2400c42cba62c745291519ada7c2b",
+    "actualSha256": "06214a13b75c4fb34645f3953853180c45d2400c42cba62c745291519ada7c2b",
+    "matchesRepositoryOriginal": true,
+    "name": "鲜血仪式",
+    "baseText": "受到一点创伤。获得一颗红色魔晶，放入物品栏；并且获得一个任意颜色的魔力标记（包括非基本色）。",
+    "enhancedText": "受到一点创伤。获得三个任意颜色的魔力标记（包括非基本色）。你可以支付一点任意基本色的魔力，以获得一颗同色魔晶，放入物品栏。"
+  },
+  {
+    "id": "advanced_card_013",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_013.png",
+    "rgbMean": [
+      119.70195857142858,
+      145.84191142857142,
+      158.78286214285714
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "6e7b8dbb2f8042a2bf4dc1498593a4a597463130dbac4b626f46d1250181b9e9",
+    "actualSha256": "6e7b8dbb2f8042a2bf4dc1498593a4a597463130dbac4b626f46d1250181b9e9",
+    "matchesRepositoryOriginal": true,
+    "name": "纯净魔法",
+    "baseText": "打出本卡牌时，支付一点魔力。如果支付绿色魔力，获得移动力4。如果支付白色魔力，获得影响力4。如果支付蓝色魔力，获得格挡4。如果支付红色魔力，获得攻击4。",
+    "enhancedText": "打出本卡牌时，支付一点魔力。如果支付绿色魔力，获得移动力7。如果支付白色魔力，获得影响力7。如果支付蓝色魔力，获得格挡7。如果支付红色魔力，获得攻击7。"
+  },
+  {
+    "id": "advanced_card_014",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_014.png",
+    "rgbMean": [
+      160.29904357142857,
+      142.99877714285714,
+      139.01447
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "c42e773249818cba337e52dd95fcc6d81286dcb04ce2ef061950d193b59de272",
+    "actualSha256": "c42e773249818cba337e52dd95fcc6d81286dcb04ce2ef061950d193b59de272",
+    "matchesRepositoryOriginal": true,
+    "name": "英雄事迹",
+    "baseText": "影响力3。本回合中每招募一支部队，声誉+1。",
+    "enhancedText": "影响力6。本回合中每招募一支部队，名望+1且声誉+1。"
+  },
+  {
+    "id": "advanced_card_015",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_015.png",
+    "rgbMean": [
+      165.46599642857143,
+      162.4698757142857,
+      104.43495
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "47a92d72ea0d62d6a23924e774c2a9185f155453329ad0ca888edde99ef7c037",
+    "actualSha256": "47a92d72ea0d62d6a23924e774c2a9185f155453329ad0ca888edde99ef7c037",
+    "matchesRepositoryOriginal": true,
+    "name": "再生",
+    "baseText": "治疗1。重整一支你控制的1或2级部队。",
+    "enhancedText": "治疗2。重整一支你控制的1、2或3级部队。"
+  },
+  {
+    "id": "advanced_card_016",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_016.png",
+    "rgbMean": [
+      167.63249714285715,
+      131.490485,
+      91.32005357142857
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "65d546cf06ce9583581625f91d696d19a3489d247de40cc2dc99c7da759fefad",
+    "actualSha256": "65d546cf06ce9583581625f91d696d19a3489d247de40cc2dc99c7da759fefad",
+    "matchesRepositoryOriginal": true,
+    "name": "冲锋陷阵",
+    "baseText": "战斗开始时打出本卡牌。本次战斗中你所有部队的攻击和格挡数值提升2。本回合你不能对你的部队分配伤害。",
+    "enhancedText": "战斗开始时打出本卡牌。本次战斗中你所有部队的攻击和格挡数值提升3。本回合你不能对你的部队分配伤害。"
+  },
+  {
+    "id": "advanced_card_017",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_017.png",
+    "rgbMean": [
+      141.79243,
+      153.83465785714284,
+      168.16059714285714
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "63480b8593f16eae8159a5b43842253b0cbacbf1c2539ceab2a8972bbeec5052",
+    "actualSha256": "63480b8593f16eae8159a5b43842253b0cbacbf1c2539ceab2a8972bbeec5052",
+    "matchesRepositoryOriginal": true,
+    "name": "稳步前进",
+    "baseText": "移动力2。你回合结束时，如果功能牌库不为空，你可以将本卡牌放到功能牌库底，而无需放入弃牌堆。",
+    "enhancedText": "移动力4。你回合结束时，可以将本卡牌放到功能牌库顶，而无需放入弃牌堆。"
+  },
+  {
+    "id": "advanced_card_018",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_018.png",
+    "rgbMean": [
+      185.97927142857142,
+      166.29626214285713,
+      153.0455707142857
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "3de8f1ceab57c67865352bfef78d16bcc464910e10aa3e9e1187b496794857d2",
+    "actualSha256": "3de8f1ceab57c67865352bfef78d16bcc464910e10aa3e9e1187b496794857d2",
+    "matchesRepositoryOriginal": true,
+    "name": "外交",
+    "baseText": "影响力2。本回合中你可以将影响力作为格挡使用。",
+    "enhancedText": "影响力4。选择寒冰或火焰。本回合中你可以将影响力作为该元素属性的格挡使用。"
+  },
+  {
+    "id": "advanced_card_019",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_019.png",
+    "rgbMean": [
+      159.1926007142857,
+      148.577815,
+      106.31322142857142
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "57a691fa41def901afa5d14f8cc34c0429f033134c1b9d4dbff22b798ac125bf",
+    "actualSha256": "57a691fa41def901afa5d14f8cc34c0429f033134c1b9d4dbff22b798ac125bf",
+    "matchesRepositoryOriginal": true,
+    "name": "求援",
+    "baseText": "影响力3。你手牌中和控制的部队上每有一张创伤卡牌获得额外影响力1。",
+    "enhancedText": "影响力5。你手牌中和控制的部队上每有一张创伤卡牌获得额外影响力2。"
+  },
+  {
+    "id": "advanced_card_020",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_020.png",
+    "rgbMean": [
+      193.2034942857143,
+      134.58690285714286,
+      98.32010571428572
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "a23ddfa0d19882ef1a69ee8fde5555c3aa49828c5928bb2904dc082f1d9d7c0e",
+    "actualSha256": "a23ddfa0d19882ef1a69ee8fde5555c3aa49828c5928bb2904dc082f1d9d7c0e",
+    "matchesRepositoryOriginal": true,
+    "name": "分解",
+    "baseText": "打出本卡牌时，从手牌中去除一张行动卡牌。获得两颗与去除卡牌同色的魔晶，加入物品栏。",
+    "enhancedText": "打出本卡牌时，从手牌中去除一张行动卡牌。获得与去除卡牌不同色的基本色魔晶，每种颜色一颗，加入物品栏。"
+  },
+  {
+    "id": "advanced_card_021",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_021.png",
+    "rgbMean": [
+      134.38263928571428,
+      147.56280714285714,
+      155.04655857142856
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "c47b500c9c3d755b9f77589d13f6af035adffe6d039b0e1cec57a5e9c2edd90f",
+    "actualSha256": "c47b500c9c3d755b9f77589d13f6af035adffe6d039b0e1cec57a5e9c2edd90f",
+    "matchesRepositoryOriginal": true,
+    "name": "魔晶精通",
+    "baseText": "获得一颗你已拥有魔晶的同色魔晶，加入物品栏。",
+    "enhancedText": "回合结束时，本回合你支付的所有魔晶返回你的物品栏。"
+  },
+  {
+    "id": "advanced_card_022",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_022.png",
+    "rgbMean": [
+      146.22521,
+      126.09803928571428,
+      136.95100714285715
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "02335ac8c174a0ebe1dbe9124253a5a762c3dc2edcc4235b546867ac170482f2",
+    "actualSha256": "02335ac8c174a0ebe1dbe9124253a5a762c3dc2edcc4235b546867ac170482f2",
+    "matchesRepositoryOriginal": true,
+    "name": "魔力风暴",
+    "baseText": "选择魔力源中一颗基本色魔力骰子。获得一颗同色魔晶，放入物品栏，随后立即重掷该骰子并放回魔力源。",
+    "enhancedText": "重掷魔力源中的所有骰子。你可以使用魔力源中的额外三颗魔力骰子，并且你可以无视白昼黑夜，将黑色或金色骰子作为任意基本色魔力使用。"
+  },
+  {
+    "id": "advanced_card_023",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_023.png",
+    "rgbMean": [
+      171.515055,
+      170.57173928571427,
+      126.43292642857143
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "e491bed07e0c021bdba39c09558357f3521b9953f4e42abc8d3948d7a0ab8b6d",
+    "actualSha256": "e491bed07e0c021bdba39c09558357f3521b9953f4e42abc8d3948d7a0ab8b6d",
+    "matchesRepositoryOriginal": true,
+    "name": "伏击",
+    "baseText": "移动力2。你打出的第一张用于攻击的任意类型卡牌数值+1或你打出的第一张用于格挡的任意类型卡牌数值+2，以本回合中先打出的效果为准。",
+    "enhancedText": "移动力4。你打出的第一张用于攻击的任意类型卡牌数值+2或你打出的第一张用于格挡的任意类型卡牌数值+4，以本回合中先打出的效果为准。"
+  },
+  {
+    "id": "advanced_card_024",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_024.png",
+    "rgbMean": [
+      159.285675,
+      118.75652642857143,
+      78.25059428571429
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "902029cc6b62f92c6e46bf9c36d8834e2dc94b97c291ff8b85bfbb06ebe99169",
+    "actualSha256": "902029cc6b62f92c6e46bf9c36d8834e2dc94b97c291ff8b85bfbb06ebe99169",
+    "matchesRepositoryOriginal": true,
+    "name": "效能过载",
+    "baseText": "打出本卡牌时，从手牌中去除一张行动卡牌。使用三次该卡牌的基本效果。",
+    "enhancedText": "打出本卡牌时，从手牌中去除一张行动卡牌。（免费）使用两次该卡牌的强力效果。"
+  },
+  {
+    "id": "advanced_card_025",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_025.png",
+    "rgbMean": [
+      136.71928785714286,
+      147.683325,
+      160.5360442857143
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "bab410ac0edad2a0b58c9f3b9d177bd4b4a5db12a38dc3684270ee62229d2320",
+    "actualSha256": "bab410ac0edad2a0b58c9f3b9d177bd4b4a5db12a38dc3684270ee62229d2320",
+    "matchesRepositoryOriginal": true,
+    "name": "魔法天赋",
+    "baseText": "弃掉一张任意颜色的卡牌。本回合你可以将法术供应区中的一张同色法术卡牌如同手牌般正常打出。该卡牌依旧保留在法术供应区中。",
+    "enhancedText": "打出本卡牌时，支付一点任意颜色的魔力。从法术供应区中获得一张同色法术卡牌，放入你的弃牌堆。"
+  },
+  {
+    "id": "advanced_card_026",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_026.png",
+    "rgbMean": [
+      161.41316928571428,
+      156.426905,
+      144.47118357142858
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "d05bfb2ff81946d7b5c36921b628f2fe817cff8a903e641f492b29ec4d29ce6d",
+    "actualSha256": "d05bfb2ff81946d7b5c36921b628f2fe817cff8a903e641f492b29ec4d29ce6d",
+    "matchesRepositoryOriginal": true,
+    "name": "学习",
+    "baseText": "影响力2。你可以支付6点影响力，以从高级行动供应区中获得一张高级行动卡牌，放入你的弃牌堆；本回合只能使用一次。",
+    "enhancedText": "影响力4。你可以支付9点影响力，以从高级行动供应区中获得一张高级行动卡牌，加入你的手牌；本回合只能使用一次。"
+  },
+  {
+    "id": "advanced_card_027",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_027.png",
+    "rgbMean": [
+      162.72516214285713,
+      161.28759857142856,
+      116.65631071428571
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "2fbbf24153d9f5507fbf99543b942a0b706f88456d0656837db5a2c00ef87a6b",
+    "actualSha256": "2fbbf24153d9f5507fbf99543b942a0b706f88456d0656837db5a2c00ef87a6b",
+    "matchesRepositoryOriginal": true,
+    "name": "修行",
+    "baseText": "从手牌中去除一张行动卡牌，随后从高级行动供应区中拿取一张同色卡牌，放入你的弃牌堆。",
+    "enhancedText": "从手牌中去除一张行动卡牌，随后从高级行动供应区中拿取一张同色卡牌，加入你的手牌。"
+  },
+  {
+    "id": "advanced_card_028",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_028.png",
+    "rgbMean": [
+      165.85799857142857,
+      121.80728357142857,
+      95.10880857142857
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "1b6f87dfa3be1084f109dd451dfb729321db6f507b5de27957956b040a1cab7a",
+    "actualSha256": "1b6f87dfa3be1084f109dd451dfb729321db6f507b5de27957956b040a1cab7a",
+    "matchesRepositoryOriginal": true,
+    "name": "反戈一击",
+    "baseText": "攻击2。本回合中每格挡一个敌人获得额外攻击2。",
+    "enhancedText": "攻击4。本回合中每格挡一个敌人获得额外攻击3。"
+  },
+  {
+    "id": "advanced_card_029",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_029.png",
+    "rgbMean": [
+      142.10877714285715,
+      108.14283428571429,
+      79.90431214285714
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "8ee2663708d5c13631f998e29b8cb527177bf10fe39bdf5684fdc73d23a1b98c",
+    "actualSha256": "8ee2663708d5c13631f998e29b8cb527177bf10fe39bdf5684fdc73d23a1b98c",
+    "matchesRepositoryOriginal": true,
+    "name": "仪式攻击",
+    "baseText": "去除另一张行动卡牌。根据该卡牌颜色，你获得：红色获得攻击5，蓝色获得寒冰攻击3，白色获得远程攻击3，绿色获得攻城攻击2。",
+    "enhancedText": "去除另一张行动卡牌。根据该卡牌颜色，你获得：红色获得火焰攻击6，蓝色获得冰火攻击4，白色获得远程火焰攻击4，绿色获得攻城火焰攻击3。"
+  },
+  {
+    "id": "advanced_card_030",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_030.png",
+    "rgbMean": [
+      144.89314642857144,
+      107.43977785714286,
+      77.79710071428572
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "94708f973be3af322af567dcef67700a342ba854da48e3cbeb0dd97dbd4413bb",
+    "actualSha256": "94708f973be3af322af567dcef67700a342ba854da48e3cbeb0dd97dbd4413bb",
+    "matchesRepositoryOriginal": true,
+    "name": "远古血脉",
+    "baseText": "受到一点创伤。支付一点任意颜色的魔力。从高级行动供应区中拿取一张同色卡牌，加入你的手牌。",
+    "enhancedText": "受到一点创伤，加入手牌或放入弃牌堆。使用高级行动供应区中任意一张卡牌的强力效果，但无需支付其魔力费用。该卡牌依旧保留在供应区中。"
+  },
+  {
+    "id": "advanced_card_031",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_031.png",
+    "rgbMean": [
+      153.62219285714286,
+      154.31606857142856,
+      158.33192571428572
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "f3c1a215b05a0f97c9c6de3cd47d5d1904335afd5e45ce05fe645780422284c6",
+    "actualSha256": "f3c1a215b05a0f97c9c6de3cd47d5d1904335afd5e45ce05fe645780422284c6",
+    "matchesRepositoryOriginal": true,
+    "name": "盾牌重击",
+    "baseText": "格挡3。对抗迅捷攻击时计算两次。",
+    "enhancedText": "格挡5。对抗迅捷攻击时计算两次。你的格挡值比所需数值每高一点，被格挡的敌人受到护甲-1(最低至1)。"
+  },
+  {
+    "id": "advanced_card_032",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_032.png",
+    "rgbMean": [
+      128.350035,
+      137.22757142857142,
+      148.98598928571428
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "8aa171e89cc1fac5286b2825f9ad1d557b162ec30b60619ae38b989c2b2a418d",
+    "actualSha256": "8aa171e89cc1fac5286b2825f9ad1d557b162ec30b60619ae38b989c2b2a418d",
+    "matchesRepositoryOriginal": true,
+    "name": "时光传送",
+    "baseText": "使用回合行动。你可以移动到一个已翻开的相邻安全格（但不激怒肆虐的敌人）。无论你是否移动，下一次你抽取卡牌时，手牌上限增加1张。",
+    "enhancedText": "作用同上，但你可以移动到距离两格的翻开的安全格，或者使手牌上限增加2张。"
+  },
+  {
+    "id": "advanced_card_033",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_033.png",
+    "rgbMean": [
+      124.47196714285714,
+      134.46777714285713,
+      147.36280357142857
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "37762da14ac6a01c8ae00e69e854af2716d421b75380d5d21cdd50a3007f6fb4",
+    "actualSha256": "37762da14ac6a01c8ae00e69e854af2716d421b75380d5d21cdd50a3007f6fb4",
+    "matchesRepositoryOriginal": true,
+    "name": "法术熔炉",
+    "baseText": "获得一颗与法术供应区中一张法术卡牌同色的魔晶，加入物品栏。",
+    "enhancedText": "获得两颗与法术供应区中两张不同的法术卡牌的同色魔晶，加入物品栏。"
+  },
+  {
+    "id": "advanced_card_034",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_034.png",
+    "rgbMean": [
+      158.51335642857143,
+      146.6308407142857,
+      135.0862307142857
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "3ca5cc9829473a4c1210d0d795690c9ce847af3033cbbe3d34c25c8bb5a07e47",
+    "actualSha256": "3ca5cc9829473a4c1210d0d795690c9ce847af3033cbbe3d34c25c8bb5a07e47",
+    "matchesRepositoryOriginal": true,
+    "name": "骑士精神",
+    "baseText": "攻击3，或者攻击2并且本次攻击每击败一个敌人声誉+1。",
+    "enhancedText": "攻击6，或者攻击4并且本次攻击每击败一个敌人声誉+1并且名望+1。"
+  },
+  {
+    "id": "advanced_card_035",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_035.png",
+    "rgbMean": [
+      161.34490428571428,
+      147.80871071428572,
+      139.59174642857144
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "990afe96070400eb0c3c74357b22eeb89140d6206e2c5639f2a2e8318c9f485a",
+    "actualSha256": "990afe96070400eb0c3c74357b22eeb89140d6206e2c5639f2a2e8318c9f485a",
+    "matchesRepositoryOriginal": true,
+    "name": "宁静时光",
+    "baseText": "影响力3。你可以作为回合行动使用：如果你这么做，你每支付2点影响力可以获得治疗1。",
+    "enhancedText": "影响力6。你可以作为回合行动使用：如果你这么做，你每支付2点影响力可以获得治疗1，并/或支付部队等级2倍的影响力重整一支部队。"
+  },
+  {
+    "id": "advanced_card_036",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_036.png",
+    "rgbMean": [
+      161.42608857142858,
+      150.46838142857143,
+      152.41360285714285
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "6fa530ae83c340ab3bdd0ce5b405d50e356efd19413ea981f50f1bc079aa1100",
+    "actualSha256": "6fa530ae83c340ab3bdd0ce5b405d50e356efd19413ea981f50f1bc079aa1100",
+    "matchesRepositoryOriginal": true,
+    "name": "迂回躲避",
+    "baseText": "使一次敌人的攻击降低2点。如果在战斗的攻击阶段前，手牌中没有加入创伤卡牌，则攻击阶段获得攻击1。",
+    "enhancedText": "使一次敌人的攻击降低4点，或者使一个敌人的两次攻击或两个敌人的各一次攻击降低2点。如果在战斗的攻击阶段前，手牌中没有加入创伤卡牌，则攻击阶段获得攻击2。"
+  },
+  {
+    "id": "advanced_card_037",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_037.png",
+    "rgbMean": [
+      133.08461,
+      136.00941357142858,
+      86.89346928571429
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "5c13296f5f94bea47027f6047047b801e7493e7089afff1c19828f1f39b26124",
+    "actualSha256": "5c13296f5f94bea47027f6047047b801e7493e7089afff1c19828f1f39b26124",
+    "matchesRepositoryOriginal": true,
+    "name": "不屈不挠",
+    "baseText": "移动力2，影响力2，攻击2或格挡2。你可以弃掉一张创伤卡牌，以将效果提升1点。",
+    "enhancedText": "移动力3，影响力3，攻击3或格挡3。你可以弃掉任意数量卡牌，其中包括一张创伤卡牌，每弃掉一张将效果提升2点。"
+  },
+  {
+    "id": "advanced_card_038",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_038.png",
+    "rgbMean": [
+      124.19506785714286,
+      123.97432428571429,
+      79.471945
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "208041a63223766245776d19c92b76fd0a2dfce89614885fdc33374cb093c975",
+    "actualSha256": "208041a63223766245776d19c92b76fd0a2dfce89614885fdc33374cb093c975",
+    "matchesRepositoryOriginal": true,
+    "name": "自然之力",
+    "baseText": "本次战斗中，选择一支部队获得物理抗性。",
+    "enhancedText": "攻城攻击3或格挡6。"
+  },
+  {
+    "id": "advanced_card_039",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_039.png",
+    "rgbMean": [
+      138.20202714285713,
+      140.20813285714286,
+      114.92171714285715
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "ab6bb65eaded991aa4de08e6051b348f23510c61c2021ea6766a91cd70078eed",
+    "actualSha256": "ab6bb65eaded991aa4de08e6051b348f23510c61c2021ea6766a91cd70078eed",
+    "matchesRepositoryOriginal": true,
+    "name": "山川逸闻",
+    "baseText": "移动力3。如果你回合结束停留在丘陵上，下一次你抽取卡牌时，手牌上限增加1张。",
+    "enhancedText": "移动力5。你可以支付5点移动力进入山脉，本回合结束时山脉视为安全格。如果你回合结束停留在山脉/丘陵上，下一次你抽取卡牌时，手牌上限增加2/1张。"
+  },
+  {
+    "id": "advanced_card_040",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_040.png",
+    "rgbMean": [
+      128.44579785714285,
+      138.02630071428572,
+      121.15044214285714
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "595af643f21127edf9f7e7afe441a8f703f50225ce9d7b47d7ce0f56d0a1f391",
+    "actualSha256": "595af643f21127edf9f7e7afe441a8f703f50225ce9d7b47d7ce0f56d0a1f391",
+    "matchesRepositoryOriginal": true,
+    "name": "魔晶力量",
+    "baseText": "获得一颗你没有的基本色魔晶，加入物品栏。",
+    "enhancedText": "移动力4，治疗2或抽取两张卡牌。你物品栏中每有一组四颗不同色的魔晶：移动力2，治疗1或抽取一张卡牌。"
+  },
+  {
+    "id": "advanced_card_041",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_041.png",
+    "rgbMean": [
+      138.6818607142857,
+      115.69572857142857,
+      96.68860571428571
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "68a5dfdef113bc2517e085f706f78e6421436b21c39b21b9f4258c7fa0548b38",
+    "actualSha256": "68a5dfdef113bc2517e085f706f78e6421436b21c39b21b9f4258c7fa0548b38",
+    "matchesRepositoryOriginal": true,
+    "name": "爆裂箭矢",
+    "baseText": "受到一点创伤。获得一颗白色和一颗红色魔晶，放入物品栏。",
+    "enhancedText": "远程攻击3。本次攻击每击败一个敌人，另外一个敌人受到护甲-1(最低至1)。"
+  },
+  {
+    "id": "advanced_card_042",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_042.png",
+    "rgbMean": [
+      168.29866642857144,
+      152.27326357142857,
+      132.786625
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "5d516ca5002a272db557629eb2f625e3748f20d8673129ce031c49f098703e2d",
+    "actualSha256": "5d516ca5002a272db557629eb2f625e3748f20d8673129ce031c49f098703e2d",
+    "matchesRepositoryOriginal": true,
+    "name": "血脉贲张",
+    "baseText": "本回合中，前三次手牌中加入创伤卡牌时，每次抽取一张卡牌。",
+    "enhancedText": "本回合中，第一次手牌中加入创伤卡牌时，去除这张创伤卡牌并抽取一张卡牌。之后三次手牌中加入创伤卡牌时，每次抽取一张卡牌。"
+  },
+  {
+    "id": "advanced_card_043",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_043.png",
+    "rgbMean": [
+      120.51484857142857,
+      118.78262857142857,
+      104.458545
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "ddf7f5569b1b18e5667d2c74735392dbefa7b4a2942a80c2e2acaa6ca981a1ce",
+    "actualSha256": "ddf7f5569b1b18e5667d2c74735392dbefa7b4a2942a80c2e2acaa6ca981a1ce",
+    "matchesRepositoryOriginal": true,
+    "name": "冷峻目光",
+    "baseText": "影响力3，或者一次敌人攻击失去所有攻击能力（但不会失去攻击颜色）。",
+    "enhancedText": "影响力5，或者本回合中一个敌人不攻击。"
+  },
+  {
+    "id": "advanced_card_044",
+    "category": "empty_image_slot",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_044.png",
+    "rgbMean": [
+      0.05742357142857143,
+      0.05440428571428572,
+      0.07092285714285715
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "2a7ded909ab7ba199047dbef77dcbe6f7bd5dab88ee92e252299a3df89512f4f",
+    "actualSha256": "2a7ded909ab7ba199047dbef77dcbe6f7bd5dab88ee92e252299a3df89512f4f",
+    "matchesRepositoryOriginal": true,
+    "name": "",
+    "baseText": "",
+    "enhancedText": ""
+  },
+  {
+    "id": "advanced_card_045",
+    "category": "empty_image_slot",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_045.png",
+    "rgbMean": [
+      0.020282142857142856,
+      0.018514285714285716,
+      0.024112142857142856
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "132f9ca077219f557d7281ba16aa16324941201d3c04b5ea98070c7f6420a7dc",
+    "actualSha256": "132f9ca077219f557d7281ba16aa16324941201d3c04b5ea98070c7f6420a7dc",
+    "matchesRepositoryOriginal": true,
+    "name": "",
+    "baseText": "",
+    "enhancedText": ""
+  },
+  {
+    "id": "advanced_card_046",
+    "category": "empty_image_slot",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_046.png",
+    "rgbMean": [
+      0.07693,
+      0.04288,
+      0.04816928571428571
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "b71350858af7f7adbdea62f79593e0f5e881b70f26116235f815d3a6ccc9bf6a",
+    "actualSha256": "b71350858af7f7adbdea62f79593e0f5e881b70f26116235f815d3a6ccc9bf6a",
+    "matchesRepositoryOriginal": true,
+    "name": "",
+    "baseText": "",
+    "enhancedText": ""
+  },
+  {
+    "id": "advanced_card_047",
+    "category": "card_back",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\advanced_card_047.png",
+    "rgbMean": [
+      148.71041285714287,
+      89.41219642857143,
+      11.164445
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "b44f0921def91d2e38cbe2155e945f0aea56724e81372ca901700948b35feac6",
+    "actualSha256": "b44f0921def91d2e38cbe2155e945f0aea56724e81372ca901700948b35feac6",
+    "matchesRepositoryOriginal": true,
+    "name": "",
+    "baseText": "",
+    "enhancedText": ""
+  },
+  {
+    "id": "magic_000",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\magic_000.png",
+    "rgbMean": [
+      151.65108928571428,
+      153.83632142857144,
+      144.31089214285714
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "6f7eb7dbf917f8ecdb18b0065e6214033935ca4e926adcd3e35b7e10b27e614b",
+    "actualSha256": "6f7eb7dbf917f8ecdb18b0065e6214033935ca4e926adcd3e35b7e10b27e614b",
+    "matchesRepositoryOriginal": true,
+    "name": "能量流转",
+    "baseText": "重整一支部队。如果这么做，你可以使每位其他玩家部队区域中一支最高2级的部队精力耗尽。",
+    "enhancedText": "重整一支部队。如果这么做，该部队同时获得治疗，且你可以使每位其他玩家部队区域中一支最高3级的部队精力耗尽。"
+  },
+  {
+    "id": "magic_001",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\magic_001.png",
+    "rgbMean": [
+      152.76457714285715,
+      156.08005357142858,
+      149.21473285714285
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "e5ac62d33a5042e86f0c936a8eb3a46f1772a1bb13f77d2184bc821933a43508",
+    "actualSha256": "e5ac62d33a5042e86f0c936a8eb3a46f1772a1bb13f77d2184bc821933a43508",
+    "matchesRepositoryOriginal": true,
+    "name": "痊愈",
+    "baseText": "治疗2。本回合每治疗手牌中一张创伤卡牌，抽取一张卡牌，并且重整本回合治疗的所有部队。",
+    "enhancedText": "格挡阶段所有被格挡的敌人护甲降至1点。"
+  },
+  {
+    "id": "magic_002",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\magic_002.png",
+    "rgbMean": [
+      156.20233142857143,
+      159.17073642857142,
+      151.04054642857142
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "d125f1e69f4de14cda201476f5a078d854eafc4f17507108930268b40ae20ec6",
+    "actualSha256": "d125f1e69f4de14cda201476f5a078d854eafc4f17507108930268b40ae20ec6",
+    "matchesRepositoryOriginal": true,
+    "name": "冥想",
+    "baseText": "从你的弃牌堆中随机选取两张卡牌，将它们放在你的功能牌库顶部或底部。下一次你抽取卡牌时，手牌上限增加2张。",
+    "enhancedText": "与基本效果相同，但由你选择卡牌，而不是随机选取。"
+  },
+  {
+    "id": "magic_003",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\magic_003.png",
+    "rgbMean": [
+      152.28910428571427,
+      155.40573,
+      145.63033857142858
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "7340647dad04b322eb0575c7cbef47b18083d68137ff471c5553fd70f181ce9f",
+    "actualSha256": "7340647dad04b322eb0575c7cbef47b18083d68137ff471c5553fd70f181ce9f",
+    "matchesRepositoryOriginal": true,
+    "name": "地脉震颤",
+    "baseText": "目标敌人受到护甲-3，或所有敌人受到护甲-2。护甲无法降低至1以下。",
+    "enhancedText": "目标敌人受到护甲-3（具有城防时-6），或所有敌人受到护甲-2（具有城防时-4）。护甲无法降低至1以下。"
+  },
+  {
+    "id": "magic_004",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\magic_004.png",
+    "rgbMean": [
+      151.62312785714286,
+      155.62561428571428,
+      147.40070285714285
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "cc8a161fdfe1aa277ab40769f9185a89297f4f9d938ab5dced214e086ea42529",
+    "actualSha256": "cc8a161fdfe1aa277ab40769f9185a89297f4f9d938ab5dced214e086ea42529",
+    "matchesRepositoryOriginal": true,
+    "name": "地道穿行",
+    "baseText": "在翻开的地图上移动最多3格。你不能以此方式穿越或移动至沼泽或湖泊，且你移动结束必须停留在安全格上。以此方式移动不会激怒肆虐的敌人。",
+    "enhancedText": "与基本效果相同，但你移动结束必须停留在城防地点上（或其他玩家占据的格子中）。移动结束后视为突袭（或攻击该玩家）。忽略地点城防。如果战斗后撤离，返回出发地点。"
+  },
+  {
+    "id": "magic_005",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\magic_005.png",
+    "rgbMean": [
+      159.07954785714287,
+      159.90036714285714,
+      154.14189857142858
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "8e4da7ff2a48a8f02bb67f09de36593a1efe1ffe99f93b72f005d8cbb656cb50",
+    "actualSha256": "8e4da7ff2a48a8f02bb67f09de36593a1efe1ffe99f93b72f005d8cbb656cb50",
+    "matchesRepositoryOriginal": true,
+    "name": "复原",
+    "baseText": "治疗3。如果处于森林中，则改为治疗5。",
+    "enhancedText": "治疗3。如果处于森林中，则改为治疗5。重整一支或多支部队，总计等级数最多3级。如果处于森林中，总计等级数改为最多5级。"
+  },
+  {
+    "id": "magic_006",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\magic_006.png",
+    "rgbMean": [
+      158.32441285714285,
+      145.08758928571427,
+      143.32081714285715
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "b34e49c947fa86d3606ce2fc465ee4a0fe1e165c6ac4cf479de9514a4fcd19b7",
+    "actualSha256": "b34e49c947fa86d3606ce2fc465ee4a0fe1e165c6ac4cf479de9514a4fcd19b7",
+    "matchesRepositoryOriginal": true,
+    "name": "魔力熔毁",
+    "baseText": "每位其他玩家必须随机选择并失去自己物品栏中的一颗魔晶。你可以将以此方式失去的一颗魔晶放入你的物品栏。你打出本卡牌时，所有物品栏中没有魔晶的玩家受到一点创伤。",
+    "enhancedText": "打出本卡牌时，选择一种魔力基本色。包括你在内的每位玩家，每拥有一颗同色魔晶，受到一点创伤。你获得两颗同色魔晶，放入物品栏。"
+  },
+  {
+    "id": "magic_007",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\magic_007.png",
+    "rgbMean": [
+      170.2688807142857,
+      155.01230714285714,
+      151.32570857142858
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "f2e633b47df3a5816a1f9d13136157107994528d270ec7c255d6d873899a349b",
+    "actualSha256": "f2e633b47df3a5816a1f9d13136157107994528d270ec7c255d6d873899a349b",
+    "matchesRepositoryOriginal": true,
+    "name": "拆毁",
+    "baseText": "本回合中忽略地点城防。敌人受到护甲-1(最低至1)。",
+    "enhancedText": "本卡牌只能在战斗攻击阶段打出。消灭目标敌人。其他敌人受到护甲-1(最低至1)。"
+  },
+  {
+    "id": "magic_008",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\magic_008.png",
+    "rgbMean": [
+      166.14775214285714,
+      152.11263285714287,
+      147.57844428571428
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "9e1a22a2012b2ab7e6e67535d738bb6bac0a24c8dd1364ede0335930a2cb777b",
+    "actualSha256": "9e1a22a2012b2ab7e6e67535d738bb6bac0a24c8dd1364ede0335930a2cb777b",
+    "matchesRepositoryOriginal": true,
+    "name": "燃烧护盾",
+    "baseText": "火焰格挡4。如果本卡牌用于一次成功的格挡，你可以在攻击阶段作为火焰攻击4使用。",
+    "enhancedText": "火焰格挡4。如果本卡牌用于一次成功的格挡，消灭被格挡的敌人。"
+  },
+  {
+    "id": "magic_009",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\magic_009.png",
+    "rgbMean": [
+      171.02018714285714,
+      155.70427214285715,
+      150.7405442857143
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "57e40946889ba12a81eb68141132f5455f2bcb59ffc9dcfeb25ae0a425e355f9",
+    "actualSha256": "57e40946889ba12a81eb68141132f5455f2bcb59ffc9dcfeb25ae0a425e355f9",
+    "matchesRepositoryOriginal": true,
+    "name": "火焰魔球",
+    "baseText": "远程火焰攻击5。",
+    "enhancedText": "受到一点创伤。攻城火焰攻击8。"
+  },
+  {
+    "id": "magic_010",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\magic_010.png",
+    "rgbMean": [
+      166.48119714285716,
+      153.1526492857143,
+      150.11634714285714
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "66eb4e65df29d497b6c4c209e1f8ad8d71642d267ca4ad19dfa5103be467096f",
+    "actualSha256": "66eb4e65df29d497b6c4c209e1f8ad8d71642d267ca4ad19dfa5103be467096f",
+    "matchesRepositoryOriginal": true,
+    "name": "烈焰之墙",
+    "baseText": "火焰攻击5或火焰格挡7。",
+    "enhancedText": "火焰攻击5或火焰格挡7。每个你交战的敌人标记可以使本次攻击或格挡提升2。"
+  },
+  {
+    "id": "magic_011",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\magic_011.png",
+    "rgbMean": [
+      156.30824857142858,
+      141.19731714285714,
+      137.78885357142858
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "458727fe85db1d8de3e268cef56b3ca0978845ded3c26e9dc5d093059510552f",
+    "actualSha256": "458727fe85db1d8de3e268cef56b3ca0978845ded3c26e9dc5d093059510552f",
+    "matchesRepositoryOriginal": true,
+    "name": "献祭",
+    "baseText": "获得一颗红色魔晶，放入物品栏。你可以从手牌中弃掉最多3张非创伤卡牌。每弃掉一张卡牌，获得一颗同色魔晶，放入物品栏（弃掉神器时任选颜色）。",
+    "enhancedText": "选择绿色或白色，随后选择红色或蓝色。你物品栏中每有一对魔晶（所选颜色各一），获得攻城攻击4（如果选择了绿色）或远程攻击6（如果选择了白色）。此次攻击为火焰攻击（如果选择了红色）或寒冰攻击（如果选择了蓝色）。随后，将所有配对的魔晶转化为魔力。"
+  },
+  {
+    "id": "magic_012",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\magic_012.png",
+    "rgbMean": [
+      143.39748,
+      149.32348142857143,
+      178.73219714285713
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "9d8ff07a58e6b85f53d90f22e88322bb28514215ca4c2afdd4480032a8843434",
+    "actualSha256": "9d8ff07a58e6b85f53d90f22e88322bb28514215ca4c2afdd4480032a8843434",
+    "matchesRepositoryOriginal": true,
+    "name": "魔力宣夺",
+    "baseText": "从魔力源中拿取一颗基本色魔力骰子，放入你的游戏区域直到本轮结束。你可以在本回合中获得3个同色魔力标记，或者在本轮中接下来的（从你下回合开始）每个回合获得一个同色魔力标记。",
+    "enhancedText": "与基本效果相同。此外，在本轮结束前：每次其他玩家在自己回合（从任意来源）使用一点或更多同色魔力，该玩家受到一点创伤。每位玩家每回合只会以此方式受到一点创伤。"
+  },
+  {
+    "id": "magic_013",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\magic_013.png",
+    "rgbMean": [
+      147.3597142857143,
+      152.6105457142857,
+      182.6221742857143
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "1a4675ef0fdb24fa0dd39f7be09714d608fb95246a952f616c6aff55ccb7cfcb",
+    "actualSha256": "1a4675ef0fdb24fa0dd39f7be09714d608fb95246a952f616c6aff55ccb7cfcb",
+    "matchesRepositoryOriginal": true,
+    "name": "冰冻",
+    "baseText": "本次战斗中目标敌人不攻击。如果该敌人具有火焰抗性，则在本回合剩余时间内失去火焰抗性。",
+    "enhancedText": "本次战斗中目标敌人不攻击，且本回合剩余时间内受到护甲-4（最低至1）。"
+  },
+  {
+    "id": "magic_014",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\magic_014.png",
+    "rgbMean": [
+      142.96308214285713,
+      140.92541785714286,
+      170.92391285714285
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "478d2d06191b479ccbe5fa7fb5a85474ca29b5f3780ab92e7efa5c3f0e0908b5",
+    "actualSha256": "478d2d06191b479ccbe5fa7fb5a85474ca29b5f3780ab92e7efa5c3f0e0908b5",
+    "matchesRepositoryOriginal": true,
+    "name": "迷雾形态",
+    "baseText": "移动力4。所有地形，包括湖泊的移动费用变为2。本回合剩余时间内，你不能进入丘陵和山脉。",
+    "enhancedText": "你的所有部队获得所有抗性。本回合中你的英雄忽略敌人造成的第一点创伤。同时忽略该创伤的所有附加效果。"
+  },
+  {
+    "id": "magic_015",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\magic_015.png",
+    "rgbMean": [
+      154.79899785714287,
+      160.72698785714286,
+      192.14637357142857
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "396fc73f4596d6d664b552e9b4a0b75fb1652250f3f2232b408b612806d7885d",
+    "actualSha256": "396fc73f4596d6d664b552e9b4a0b75fb1652250f3f2232b408b612806d7885d",
+    "matchesRepositoryOriginal": true,
+    "name": "风雪交加",
+    "baseText": "远程寒冰攻击5。",
+    "enhancedText": "受到一点创伤。攻城寒冰攻击8。"
+  },
+  {
+    "id": "magic_016",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\magic_016.png",
+    "rgbMean": [
+      143.32290785714287,
+      149.29936,
+      177.76848214285715
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "69229a069dd947014ff8829b344ef1ffd77fd6921247aa78f63a9436b901bb69",
+    "actualSha256": "69229a069dd947014ff8829b344ef1ffd77fd6921247aa78f63a9436b901bb69",
+    "matchesRepositoryOriginal": true,
+    "name": "空间扭曲",
+    "baseText": "本回合中，你移动和探索新板块时，可以将距离自己2格的六角格视为相邻格。忽略以此方式跳过的六角格。本回合中，你的移动不会激怒肆虐的敌人。",
+    "enhancedText": "你回合结束时，将本卡牌单独放在一边，留到本轮结束。将你本回合打出过的所有其它（不包括弃掉和去除的）卡牌放回手牌。回合结束时跳过“抽取新的卡牌”部分。立即再进行一个回合。"
+  },
+  {
+    "id": "magic_017",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\magic_017.png",
+    "rgbMean": [
+      141.0354692857143,
+      147.06421857142857,
+      178.0162442857143
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "926145cb259a6191b25d0f3fb4d93a0c066c12f7b2efe7e62d619cfcc95dde07",
+    "actualSha256": "926145cb259a6191b25d0f3fb4d93a0c066c12f7b2efe7e62d619cfcc95dde07",
+    "matchesRepositoryOriginal": true,
+    "name": "魔力箭矢",
+    "baseText": "打出本卡牌时，支付一点魔力。如果支付蓝色魔力，获得寒冰攻击8。如果支付红色魔力，获得冰火攻击7。如果支付白色魔力，获得远程寒冰攻击6。如果支付绿色魔力，获得攻城寒冰攻击5。",
+    "enhancedText": "打出本卡牌时，支付一点魔力。如果支付蓝色魔力，获得寒冰攻击11。如果支付红色魔力，获得冰火攻击10。如果支付白色魔力，获得远程寒冰攻击9。如果支付绿色魔力，获得攻城寒冰攻击8。"
+  },
+  {
+    "id": "magic_018",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\magic_018.png",
+    "rgbMean": [
+      156.30415214285713,
+      152.28440285714285,
+      171.45617214285716
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "a6b411c3cb72a12e2a52e44f048609c7dda8f2fd02df074a264abbba2fee8388",
+    "actualSha256": "a6b411c3cb72a12e2a52e44f048609c7dda8f2fd02df074a264abbba2fee8388",
+    "matchesRepositoryOriginal": true,
+    "name": "思维读取",
+    "baseText": "选择一个颜色。获得一颗同色魔晶，放入物品栏。每位其他玩家必须从手牌中弃掉一张同色法术或行动卡牌，或者展示手牌表示没有此颜色卡牌。",
+    "enhancedText": "与基本效果相同。此外，你可以决定永久性偷取一张以此方式弃掉的行动卡牌（不能是法术）并加入你的手牌。"
+  },
+  {
+    "id": "magic_019",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\magic_019.png",
+    "rgbMean": [
+      157.58893714285713,
+      155.00424857142858,
+      173.11278357142857
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "05c07622972cd5203fc7b2e04527b39e13051d079ef5a0dfb105dc5c8b542c92",
+    "actualSha256": "05c07622972cd5203fc7b2e04527b39e13051d079ef5a0dfb105dc5c8b542c92",
+    "matchesRepositoryOriginal": true,
+    "name": "暴露",
+    "baseText": "本次战斗中目标敌人失去所有城防和抗性。远程攻击2。",
+    "enhancedText": "本次战斗中所有敌人或失去所有城防，或失去所有抗性。远程攻击3。"
+  },
+  {
+    "id": "magic_020",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\magic_020.png",
+    "rgbMean": [
+      156.59412571428572,
+      155.87086642857142,
+      174.67203142857142
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "ee6c31295225e7316886a08bd02435806debc04ab0f371d1b5abcdd45cbcb3c7",
+    "actualSha256": "ee6c31295225e7316886a08bd02435806debc04ab0f371d1b5abcdd45cbcb3c7",
+    "matchesRepositoryOriginal": true,
+    "name": "战斗号召",
+    "baseText": "本回合中你可以使用部队供应区中一支部队的一个能力，将该部队视为你已招募的部队。你不能对这支部队分配伤害。",
+    "enhancedText": "从部队供应区免费招募任意一支部队。(如果你已经达到指挥上限，你必须先解散你的一支部队。)"
+  },
+  {
+    "id": "magic_021",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\magic_021.png",
+    "rgbMean": [
+      153.56415142857142,
+      147.10706,
+      167.6024742857143
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "43d19c668faa2625dead28eb9c96ae8730256f9aec57b187a445d6e1d1ec8245",
+    "actualSha256": "43d19c668faa2625dead28eb9c96ae8730256f9aec57b187a445d6e1d1ec8245",
+    "matchesRepositoryOriginal": true,
+    "name": "魅惑",
+    "baseText": "影响力4。如果你在交涉中打出本卡牌，或者获得一颗任意颜色的魔晶，放入物品栏，或者使一支部队的招募费用-3。",
+    "enhancedText": "一个敌人不攻击。攻击阶段中你获得等同于其攻击（包括元素属性）的攻击，但忽略特殊能力。此次攻击你只能选择其他敌人作为目标。"
+  },
+  {
+    "id": "magic_022",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\magic_022.png",
+    "rgbMean": [
+      159.46826071428572,
+      157.94101,
+      178.08536285714285
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "d3fb1b3922d0d8eb84994d8fbcfb01f426ef8dcd08b99237200e3122562bf548",
+    "actualSha256": "d3fb1b3922d0d8eb84994d8fbcfb01f426ef8dcd08b99237200e3122562bf548",
+    "matchesRepositoryOriginal": true,
+    "name": "旋風",
+    "baseText": "本次战斗中目标敌人不攻击。",
+    "enhancedText": "本卡牌只能在战斗攻击阶段打出。消灭目标敌人。"
+  },
+  {
+    "id": "magic_023",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\magic_023.png",
+    "rgbMean": [
+      157.79984142857143,
+      155.39402928571428,
+      173.73889571428572
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "da6f8b13ab263dfa0cee030b8e2a749af929437082298b23df5af6797de7b790",
+    "actualSha256": "da6f8b13ab263dfa0cee030b8e2a749af929437082298b23df5af6797de7b790",
+    "matchesRepositoryOriginal": true,
+    "name": "清风之翼",
+    "baseText": "打出本卡牌时，支付1-5点移动力点数，每支付1点在翻开的地图上移动一格。你移动结束必须停留在安全格上。以此方式移动不会激怒肆虐的敌人。",
+    "enhancedText": "本次战斗中目标敌人不攻击。你可以将额外数量的敌人作为目标：支付1点移动力点数选择第二个敌人，支付2点移动力点数选择第三个敌人，以此类推。"
+  },
+  {
+    "id": "items_000",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\items_000.png",
+    "rgbMean": [
+      152.27867714285713,
+      134.69304357142857,
+      99.96341785714286
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "278b5db8ca8cc7a71c5ca805f9c2320cafe8a527c419b392fa5f74ce027ea27f",
+    "actualSha256": "278b5db8ca8cc7a71c5ca805f9c2320cafe8a527c419b392fa5f74ce027ea27f",
+    "matchesRepositoryOriginal": true,
+    "name": "荣誉旌旗",
+    "baseText": "将本卡牌分配给一支你控制的部队。被分配到的部队获得护甲+1，且他们的任何攻击或格挡+1。每次这支部队攻击或格挡时，名望+1。",
+    "enhancedText": "本回合中你控制的所有部队获得护甲+1，且他们的任何攻击或格挡+1。本回合每有一支进行攻击或格挡的部队，名望+1。"
+  },
+  {
+    "id": "items_001",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\items_001.png",
+    "rgbMean": [
+      135.28361642857143,
+      117.94564714285714,
+      94.42160714285714
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "09764ecfab4bd4966d48e4864858651b6490ee220e44cdd3f976d2f63fc52886",
+    "actualSha256": "09764ecfab4bd4966d48e4864858651b6490ee220e44cdd3f976d2f63fc52886",
+    "matchesRepositoryOriginal": true,
+    "name": "恐惧旌旗",
+    "baseText": "将本卡牌分配给一支你控制的部队。在战斗格挡阶段，你可以让该部队精力耗尽，以取消一次敌人的攻击。如果这么做，名望+1。",
+    "enhancedText": "本次战斗中最多3个敌人不攻击。"
+  },
+  {
+    "id": "items_002",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\items_002.png",
+    "rgbMean": [
+      141.7501142857143,
+      136.5632857142857,
+      117.256185
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "cb0354273cd025aed65b7172f365ebc320726ce9be10f6e93a9fdaba05adcd3d",
+    "actualSha256": "cb0354273cd025aed65b7172f365ebc320726ce9be10f6e93a9fdaba05adcd3d",
+    "matchesRepositoryOriginal": true,
+    "name": "防护旌旗",
+    "baseText": "将本卡牌分配给一支你控制的部队。被分配到的部队获得护甲+1、火焰抗性和寒冰抗性。",
+    "enhancedText": "你回合结束时，可以去除所有本回合中受到的创伤。"
+  },
+  {
+    "id": "items_003",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\items_003.png",
+    "rgbMean": [
+      151.50384857142856,
+      132.116115,
+      104.05017642857143
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "17fe9c35a4e9a0bcd5c62e3e9ed48a53741f9eaf5034f3485f3442c30fa16f68",
+    "actualSha256": "17fe9c35a4e9a0bcd5c62e3e9ed48a53741f9eaf5034f3485f3442c30fa16f68",
+    "matchesRepositoryOriginal": true,
+    "name": "勇气旌旗",
+    "baseText": "将本卡牌分配给一支你控制的部队。每轮一次，战斗中除外，你可以将本卡牌翻面至正面朝下，以重整此部队。每轮开始时，将本卡牌再次翻面至正面朝上。",
+    "enhancedText": "你可以在战斗之外的任何时候打出本卡牌，以重整所有你控制的部队。"
+  },
+  {
+    "id": "items_004",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\items_004.png",
+    "rgbMean": [
+      181.90724571428572,
+      143.43987214285715,
+      107.21974571428571
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "c448743d61beb14d34016dee23faa8fc5d7f0fb0925bc5a9f7b65cf75a848a17",
+    "actualSha256": "c448743d61beb14d34016dee23faa8fc5d7f0fb0925bc5a9f7b65cf75a848a17",
+    "matchesRepositoryOriginal": true,
+    "name": "红宝石戒指",
+    "baseText": "获得一个红色魔力标记和一颗红色魔晶，将魔晶放入物品栏。名望+1。",
+    "enhancedText": "本回合中你拥有无尽的红色和黑色魔力。本回合中你每施放一个红色法术，名望+1。"
+  },
+  {
+    "id": "items_005",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\items_005.png",
+    "rgbMean": [
+      145.89545214285715,
+      148.89307357142857,
+      139.0284792857143
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "8811ab4ddb54b15e8e62bd0491702edd8d45006114ea3ad515ee5b9722244b3b",
+    "actualSha256": "8811ab4ddb54b15e8e62bd0491702edd8d45006114ea3ad515ee5b9722244b3b",
+    "matchesRepositoryOriginal": true,
+    "name": "蓝宝石戒指",
+    "baseText": "获得一个蓝色魔力标记和一颗蓝色魔晶，将魔晶放入物品栏。名望+1。",
+    "enhancedText": "本回合中你拥有无尽的蓝色和黑色魔力。本回合中你每施放一个蓝色法术，名望+1。"
+  },
+  {
+    "id": "items_006",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\items_006.png",
+    "rgbMean": [
+      169.97763357142858,
+      152.71988071428572,
+      133.67175357142858
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "ddf928b8f35b354c13e30c5b78c7564c6634c99c93ac9e525a9d08ad5f1ac4fd",
+    "actualSha256": "ddf928b8f35b354c13e30c5b78c7564c6634c99c93ac9e525a9d08ad5f1ac4fd",
+    "matchesRepositoryOriginal": true,
+    "name": "钻石戒指",
+    "baseText": "获得一个白色魔力标记和一颗白色魔晶，将魔晶放入物品栏。名望+1。",
+    "enhancedText": "本回合中你拥有无尽的白色和黑色魔力。本回合中你每施放一个白色法术，名望+1。"
+  },
+  {
+    "id": "items_007",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\items_007.png",
+    "rgbMean": [
+      158.9445007142857,
+      155.76812142857142,
+      84.23741928571428
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "7690ddb115731aedd2ced1d32ae615369434440fd3689d2dbe1683dd6ab27bd2",
+    "actualSha256": "7690ddb115731aedd2ced1d32ae615369434440fd3689d2dbe1683dd6ab27bd2",
+    "matchesRepositoryOriginal": true,
+    "name": "翡翠戒指",
+    "baseText": "获得一个绿色魔力标记和一颗绿色魔晶，将魔晶放入物品栏。名望+1。",
+    "enhancedText": "本回合中你拥有无尽的绿色和黑色魔力。本回合中你每施放一个绿色法术，名望+1。"
+  },
+  {
+    "id": "items_008",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\items_008.png",
+    "rgbMean": [
+      173.8975142857143,
+      157.92112928571427,
+      127.26705428571428
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "f957ceefc1cb4fc45c8479cf8220be5dff9f392658353df63e0d9db1e53a8f85",
+    "actualSha256": "f957ceefc1cb4fc45c8479cf8220be5dff9f392658353df63e0d9db1e53a8f85",
+    "matchesRepositoryOriginal": true,
+    "name": "公正之剑",
+    "baseText": "打出本卡牌时，从手牌中弃掉任意数量的行动卡牌。以此方式弃掉的每张卡牌使你获得攻击3。本回合中你每击败一个敌人，名望+1。",
+    "enhancedText": "本回合中你在攻击阶段打出的所有物理攻击总数值翻倍。本回合中所有敌人失去物理抗性。本回合中你每击败一个敌人，名望+1。"
+  },
+  {
+    "id": "items_009",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\items_009.png",
+    "rgbMean": [
+      158.43238857142856,
+      133.53817142857142,
+      73.54768285714286
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "76748485486790ca9c445dee027e432cd78f9dcccbd60bcb9152895e4924851b",
+    "actualSha256": "76748485486790ca9c445dee027e432cd78f9dcccbd60bcb9152895e4924851b",
+    "matchesRepositoryOriginal": true,
+    "name": "愤怒号角",
+    "baseText": "攻城攻击5。投掷一颗魔力骰子。如果掷到黑色或红色，受到一点创伤。",
+    "enhancedText": "攻城攻击5。本次攻城攻击你可以最多+5攻击力。每+1攻击力你需要投掷一颗魔力骰子。每次掷到黑色或红色，受到一点创伤。"
+  },
+  {
+    "id": "items_010",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\items_010.png",
+    "rgbMean": [
+      181.12971071428572,
+      155.31464714285715,
+      90.28890071428572
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "3ea167f8e462c204282d068e1ad6c9cb389f867457753bd750afdf7451fc8f1d",
+    "actualSha256": "3ea167f8e462c204282d068e1ad6c9cb389f867457753bd750afdf7451fc8f1d",
+    "matchesRepositoryOriginal": true,
+    "name": "无尽金币包",
+    "baseText": "影响力4，名望+2。",
+    "enhancedText": "影响力9，名望+3。"
+  },
+  {
+    "id": "items_011",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\items_011.png",
+    "rgbMean": [
+      160.31629285714286,
+      136.49048,
+      90.76006714285714
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "0f4e0211363e304a024d5f3823b379c4364b2c3c58b307adff1c24925e8f3e59",
+    "actualSha256": "0f4e0211363e304a024d5f3823b379c4364b2c3c58b307adff1c24925e8f3e59",
+    "matchesRepositoryOriginal": true,
+    "name": "无尽宝石袋",
+    "baseText": "投掷一颗魔力骰子两次。获得以此方式掷到的同色魔晶（掷到金色时你可以选择颜色）。如果掷到黑色，不获得魔晶，名望+1。",
+    "enhancedText": "获得每种基本色魔力标记各一个。同时（在白昼时）获得一个金色或（在黑夜中）黑色魔力标记。"
+  },
+  {
+    "id": "items_012",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\items_012.png",
+    "rgbMean": [
+      186.83222214285715,
+      154.17049571428572,
+      87.13773
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "94dfbfe89f391b550a42b5f2fe5ac4042eff640117e96dd5ae9bb7065f6e7951",
+    "actualSha256": "94dfbfe89f391b550a42b5f2fe5ac4042eff640117e96dd5ae9bb7065f6e7951",
+    "matchesRepositoryOriginal": true,
+    "name": "黄金圣杯",
+    "baseText": "治疗2。本回合中你每花费一点本牌提供的治疗，名望+1。",
+    "enhancedText": "治疗6。本回合中每次治疗手牌中的一点创伤，抽取一张卡牌。"
+  },
+  {
+    "id": "items_013",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\items_013.png",
+    "rgbMean": [
+      168.07781642857142,
+      146.184475,
+      101.36458142857143
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "aa5a6b10a69f3336a19c3a33ae130ef4c2bc261e5313ceb3913647150769edf1",
+    "actualSha256": "aa5a6b10a69f3336a19c3a33ae130ef4c2bc261e5313ceb3913647150769edf1",
+    "matchesRepositoryOriginal": true,
+    "name": "智慧之书",
+    "baseText": "从手牌中去除一张行动卡牌。从高级行动供应区中获得一张与去除卡牌同色的高级行动卡牌，加入你的手牌。",
+    "enhancedText": "从手牌中去除一张行动卡牌。从法术供应区中获得一张与去除卡牌同色的法术卡牌，加入你的手牌，并且获得一颗同色魔晶，放入物品栏。"
+  },
+  {
+    "id": "items_014",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\items_014.png",
+    "rgbMean": [
+      159.24279357142856,
+      140.50389714285714,
+      81.80711714285714
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "38620d62abc871a5fa2f47c9b9c2e38c94ad9bcd77815ba23bf8751e37646efb",
+    "actualSha256": "38620d62abc871a5fa2f47c9b9c2e38c94ad9bcd77815ba23bf8751e37646efb",
+    "matchesRepositoryOriginal": true,
+    "name": "皓日护符",
+    "baseText": "获得一个金色魔力标记。在黑夜中打出本卡牌，森林的移动费用降低至3，你可以使用金色魔力，并且你可以翻开相邻城防地点和遗迹中的驻军，就好像现在是白昼。",
+    "enhancedText": "与基本效果相同，但你得到三个金色魔力标记而非一个。"
+  },
+  {
+    "id": "items_015",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\items_015.png",
+    "rgbMean": [
+      146.81038214285715,
+      134.18627285714285,
+      96.01646214285714
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "a7c22a6cb80ec48fddde370f29a6e10c3acbb301ee6c67addebce96047944f00",
+    "actualSha256": "a7c22a6cb80ec48fddde370f29a6e10c3acbb301ee6c67addebce96047944f00",
+    "matchesRepositoryOriginal": true,
+    "name": "黑暗护符",
+    "baseText": "获得一个任意颜色的魔力标记。在白昼中打出本卡牌，沙漠的移动费用降低至3并且你可以使用黑色魔力，就好像现在是黑夜。",
+    "enhancedText": "与基本效果相同，但你得到三个任意颜色的魔力标记而非一个。"
+  },
+  {
+    "id": "items_016",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\items_016.png",
+    "rgbMean": [
+      185.74854857142856,
+      158.96385142857142,
+      103.54521214285714
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "04bb51d14426142019553a6bab2377694072f95776e45e098fc68b252765ac99",
+    "actualSha256": "04bb51d14426142019553a6bab2377694072f95776e45e098fc68b252765ac99",
+    "matchesRepositoryOriginal": true,
+    "name": "星辰之弓",
+    "baseText": "打出本卡牌时，从手牌中弃掉任意数量的卡牌。以此方式弃掉的每张卡牌使你获得远程攻击2。当前战斗阶段中你每击败一个敌人名望+1。",
+    "enhancedText": "本回合中你每次远程攻击或翻倍，或变为同样元素的攻城攻击。你也可以使任何攻城攻击翻倍，但这些攻击会变成同样元素的远程攻击。"
+  },
+  {
+    "id": "items_017",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\items_017.png",
+    "rgbMean": [
+      163.887125,
+      132.72898,
+      96.72818785714286
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "6dac01d452b933f91bb07dc5da914c22bbf6711806acc4339b67d3a571d4bb86",
+    "actualSha256": "6dac01d452b933f91bb07dc5da914c22bbf6711806acc4339b67d3a571d4bb86",
+    "matchesRepositoryOriginal": true,
+    "name": "指挥旌旗",
+    "baseText": "影响力4。本回合中如果你招募部队，可以将本卡牌分配给这支部队，代替指挥标记。部队精力耗尽时将本卡牌翻面，重整部队时将本卡牌翻回正面。",
+    "enhancedText": "获得名望+2。从部队供应区免费招募任意一支部队。(如果你已经达到指挥上限，你必须先解散你的一支部队。)"
+  },
+  {
+    "id": "items_018",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\items_018.png",
+    "rgbMean": [
+      145.6050657142857,
+      128.45834,
+      64.17306571428571
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "e061dae7cb37ca4b52f95e5a4c7e1ecd3a9f074adabf8d48dea44ae1e9d3be99",
+    "actualSha256": "e061dae7cb37ca4b52f95e5a4c7e1ecd3a9f074adabf8d48dea44ae1e9d3be99",
+    "matchesRepositoryOriginal": true,
+    "name": "强韧旌旗",
+    "baseText": "将本卡牌分配给一支你控制的部队。每轮一次，这支部队即将受到创伤时，将本卡牌翻面，忽略这点创伤以及其产生的任何附加效果。每次战斗中这支部队仍然只能被分配一次伤害。",
+    "enhancedText": "任何时候，战斗中除外：完全治疗你所有的部队。"
+  },
+  {
+    "id": "items_019",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\items_019.png",
+    "rgbMean": [
+      138.09509785714286,
+      125.93919357142858,
+      134.31496357142856
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "7f78b7efaa1b7dc3bac3a57e2838d7e7bd172cc84ee034f8026e9df2e77c4571",
+    "actualSha256": "7f78b7efaa1b7dc3bac3a57e2838d7e7bd172cc84ee034f8026e9df2e77c4571",
+    "matchesRepositoryOriginal": true,
+    "name": "灵魂收割者",
+    "baseText": "攻击3。本次攻击每击败一个敌人获得一颗魔晶，加入物品栏。如果敌人具有火焰抗性你可以选择红色，具有寒冰抗性你可以选择蓝色，具有物理抗性你可以选择绿色。你永远可以选择白色。",
+    "enhancedText": "攻击8。在当前战斗阶段中每击败一个敌人获得一颗魔晶，效果同上。"
+  },
+  {
+    "id": "items_020",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\items_020.png",
+    "rgbMean": [
+      153.86691357142857,
+      132.07141857142858,
+      104.15551071428571
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "22c1ea2601bf5ab699922cc86b65432e5c8c721ad5244d9860af743d173bc6ed",
+    "actualSha256": "22c1ea2601bf5ab699922cc86b65432e5c8c721ad5244d9860af743d173bc6ed",
+    "matchesRepositoryOriginal": true,
+    "name": "亡君之盾",
+    "baseText": "格挡6，或对两次不同的攻击格挡4。",
+    "enhancedText": "冰火格挡8，或对最多三次不同的攻击冰火格挡4。"
+  },
+  {
+    "id": "items_021",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\items_021.png",
+    "rgbMean": [
+      141.21416,
+      137.89885142857142,
+      81.71423785714286
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "b1cbaa7871b0855547b8100dae92b09909f079ac62e1271376813afa3d1be506",
+    "actualSha256": "b1cbaa7871b0855547b8100dae92b09909f079ac62e1271376813afa3d1be506",
+    "matchesRepositoryOriginal": true,
+    "name": "德鲁伊法杖",
+    "baseText": "弃掉一张卡牌。根据该卡牌颜色，你获得：白色：在已翻开的地图上移动最多2格，停留在安全格上；蓝色：获得任意一种颜色的2颗魔晶；红色：重整一支最高3级的部队；绿色：治疗3。",
+    "enhancedText": "在以上选项中选择两项，但无须弃掉卡牌。"
+  },
+  {
+    "id": "items_022",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\items_022.png",
+    "rgbMean": [
+      135.49846857142856,
+      113.03350357142857,
+      120.90940071428571
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "412d02a9ac4bca98c3a0c8ad7c8b4e2985461d1047688051869261404a88f376",
+    "actualSha256": "412d02a9ac4bca98c3a0c8ad7c8b4e2985461d1047688051869261404a88f376",
+    "matchesRepositoryOriginal": true,
+    "name": "启迪头环",
+    "baseText": "使用公共技能供应区中任意一个（包括你自己的）非互动技能。如果该技能每回合均能使用（不会翻面的技能），使用两次技能效果。",
+    "enhancedText": "拿取公共技能供应区中任意一个（包括你自己的）技能，保留至游戏结束，如同升级时获得一样。"
+  },
+  {
+    "id": "items_023",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\items_023.png",
+    "rgbMean": [
+      140.02077714285716,
+      120.59602357142857,
+      98.28342071428571
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "d92ddea41c675491e4c580466e1f9c00c484fb2509b20ee1118f606187ab1865",
+    "actualSha256": "d92ddea41c675491e4c580466e1f9c00c484fb2509b20ee1118f606187ab1865",
+    "matchesRepositoryOriginal": true,
+    "name": "法术宝典",
+    "baseText": "弃掉一张任意颜色的卡牌。使用法术供应区中一张同色法术卡牌的基本效果，但无需支付其魔力费用。",
+    "enhancedText": "弃掉一张任意颜色的卡牌。使用法术供应区中一张同色法术卡牌的强力效果，但无需支付其魔力费用。即使在白昼时也可以这么做。"
+  },
+  {
+    "id": "items_024",
+    "category": "playable_face",
+    "image": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\Assets\\GameData\\cards\\items_024.png",
+    "rgbMean": [
+      138.71876285714285,
+      115.82064785714286,
+      99.073315
+    ],
+    "originalRevision": "ffe6bcf",
+    "originalSha256": "99dcd437312cefcc9c352f7f2fa1903b3f4eec382b67d87d82e943e8bc6b14f3",
+    "actualSha256": "99dcd437312cefcc9c352f7f2fa1903b3f4eec382b67d87d82e943e8bc6b14f3",
+    "matchesRepositoryOriginal": true,
+    "name": "神秘宝盒",
+    "baseText": "回合结束时，将翻开的神器放到神器牌库底；如果你没有使用神秘宝盒，则神秘宝盒返回手牌中；如果你将其作为旌旗分配给部队，则将神秘宝盒弃掉。",
+    "enhancedText": "移除并翻开神器牌库顶的一张卡牌。本回合中，你可以将神秘宝盒作为该神器使用。如果这么做，名望+1。"
+  }
+]

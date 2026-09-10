@@ -1,0 +1,596 @@
+{
+  "compared": 118,
+  "identical": 118,
+  "comparisons": [
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Combat/captures/Part1_CombatRules_20260910_151922/000_Scene Start.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Combat/000_Scene Start.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Combat/captures/Part1_CombatRules_20260910_151922/001_选择_basic_card_016_0.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Combat/001_选择_basic_card_016_0.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Combat/captures/Part1_CombatRules_20260910_151922/002_缺目标不得扣牌.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Combat/002_缺目标不得扣牌.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Combat/captures/Part1_CombatRules_20260910_151922/003_点选_enemy_0.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Combat/003_点选_enemy_0.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Combat/captures/Part1_CombatRules_20260910_151922/004_决心基础格挡2.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Combat/004_决心基础格挡2.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Combat/captures/Part1_CombatRules_20260910_151922/005_格挡不足承受完整攻击.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Combat/005_格挡不足承受完整攻击.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Combat/captures/Part1_CombatRules_20260910_151922/006_伤牌不能打出.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Combat/006_伤牌不能打出.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Combat/captures/Part1_CombatRules_20260910_151922/007_选择_basic_card_021_2.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Combat/007_选择_basic_card_021_2.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Combat/captures/Part1_CombatRules_20260910_151922/008_点选_enemy_0.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Combat/008_点选_enemy_0.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Combat/captures/Part1_CombatRules_20260910_151922/009_狂怒基础攻击2.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Combat/009_狂怒基础攻击2.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Combat/captures/Part1_CombatRules_20260910_151922/010_选择_basic_card_021_3.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Combat/010_选择_basic_card_021_3.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Combat/captures/Part1_CombatRules_20260910_151922/011_第二张狂怒基础合计4.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Combat/011_第二张狂怒基础合计4.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Combat/captures/Part1_CombatRules_20260910_151922/012_结算且不重复受伤.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Combat/012_结算且不重复受伤.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Combat/captures/Part1_CombatRules_20260910_151922/013_重新开始.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Combat/013_重新开始.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Combat/captures/Part1_CombatRules_20260910_151922/014_选择_basic_card_016_0.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Combat/014_选择_basic_card_016_0.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Combat/captures/Part1_CombatRules_20260910_151922/015_点选_enemy_0.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Combat/015_点选_enemy_0.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Combat/captures/Part1_CombatRules_20260910_151922/016_选择原卡强化.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Combat/016_选择原卡强化.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Combat/captures/Part1_CombatRules_20260910_151922/017_蓝色强化决心格挡5.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Combat/017_蓝色强化决心格挡5.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Combat/captures/Part1_CombatRules_20260910_151922/018_成功格挡免伤.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Combat/018_成功格挡免伤.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Combat/captures/Part1_CombatRules_20260910_151922/019_选择_basic_card_021_2.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Combat/019_选择_basic_card_021_2.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Combat/captures/Part1_CombatRules_20260910_151922/020_点选_enemy_0.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Combat/020_点选_enemy_0.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Combat/captures/Part1_CombatRules_20260910_151922/021_选择原卡强化.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Combat/021_选择原卡强化.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Combat/captures/Part1_CombatRules_20260910_151922/022_红色强化狂怒攻击4.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Combat/022_红色强化狂怒攻击4.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Combat/captures/Part1_CombatRules_20260910_151922/023_选择_basic_card_021_3.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Combat/023_选择_basic_card_021_3.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Combat/captures/Part1_CombatRules_20260910_151922/024_再次声明强化.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Combat/024_再次声明强化.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Combat/captures/Part1_CombatRules_20260910_151922/025_缺红色魔力不降级打出.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Combat/025_缺红色魔力不降级打出.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Combat/captures/Part1_CombatRules_20260910_151922/026_取消未支付行动.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Combat/026_取消未支付行动.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Combat/captures/Part1_CombatRules_20260910_151922/027_原卡强化获胜.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Combat/027_原卡强化获胜.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Combat/captures/Part1_CombatRules_20260910_151922/028_展开规则.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Combat/028_展开规则.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Combat/captures/Part1_CombatRules_20260910_151922/029_收起规则.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Combat/029_收起规则.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Combat/captures/Part1_CombatRules_20260910_151922/030_切换遭遇.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Combat/030_切换遭遇.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Combat/captures/Part1_CombatRules_20260910_151922/031_复用原卡迎战灰狼.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Combat/031_复用原卡迎战灰狼.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Combat/captures/Part1_CombatRules_20260910_151922/032_选择_basic_card_016_0.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Combat/032_选择_basic_card_016_0.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Combat/captures/Part1_CombatRules_20260910_151922/033_点选_enemy_0.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Combat/033_点选_enemy_0.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Combat/captures/Part1_CombatRules_20260910_151922/034_选择原卡强化.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Combat/034_选择原卡强化.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Combat/captures/Part1_CombatRules_20260910_151922/035_决心强化5.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Combat/035_决心强化5.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Combat/captures/Part1_CombatRules_20260910_151922/036_选择_basic_card_000_4.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Combat/036_选择_basic_card_000_4.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Combat/captures/Part1_CombatRules_20260910_151922/037_行进横置格挡1.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Combat/037_行进横置格挡1.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Combat/captures/Part1_CombatRules_20260910_151922/038_横置补足迅捷格挡.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Combat/038_横置补足迅捷格挡.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Combat/captures/Part1_CombatRules_20260910_151922/039_选择_basic_card_021_2.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Combat/039_选择_basic_card_021_2.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Combat/captures/Part1_CombatRules_20260910_151922/040_点选_enemy_0.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Combat/040_点选_enemy_0.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Combat/captures/Part1_CombatRules_20260910_151922/041_选择原卡强化.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Combat/041_选择原卡强化.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Combat/captures/Part1_CombatRules_20260910_151922/042_狂怒强化4.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Combat/042_狂怒强化4.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Combat/captures/Part1_CombatRules_20260910_151922/043_选择_basic_card_016_1.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Combat/043_选择_basic_card_016_1.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Combat/captures/Part1_CombatRules_20260910_151922/044_决心基础改选攻击2.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Combat/044_决心基础改选攻击2.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Combat/captures/Part1_CombatRules_20260910_151922/045_原卡组合战胜灰狼.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Combat/045_原卡组合战胜灰狼.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Exploration/captures/Part1_ExplorationRules_20260910_151948/000_Scene Start.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Exploration/000_Scene Start.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Exploration/captures/Part1_ExplorationRules_20260910_151948/001_点选_site_forest.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Exploration/001_点选_site_forest.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Exploration/captures/Part1_ExplorationRules_20260910_151948/002_零移动不能进入.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Exploration/002_零移动不能进入.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Exploration/captures/Part1_ExplorationRules_20260910_151948/003_选择_basic_card_000_0.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Exploration/003_选择_basic_card_000_0.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Exploration/captures/Part1_ExplorationRules_20260910_151948/004_点选_site_forest.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Exploration/004_点选_site_forest.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Exploration/captures/Part1_ExplorationRules_20260910_151948/005_选择原卡强化.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Exploration/005_选择原卡强化.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Exploration/captures/Part1_ExplorationRules_20260910_151948/006_行进绿色强化4.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Exploration/006_行进绿色强化4.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Exploration/captures/Part1_ExplorationRules_20260910_151948/007_白天森林费用3.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Exploration/007_白天森林费用3.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Exploration/captures/Part1_ExplorationRules_20260910_151948/008_选择_basic_card_014_1.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Exploration/008_选择_basic_card_014_1.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Exploration/captures/Part1_ExplorationRules_20260910_151948/009_点选_site_frontier.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Exploration/009_点选_site_frontier.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Exploration/captures/Part1_ExplorationRules_20260910_151948/010_耐力基础移动2.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Exploration/010_耐力基础移动2.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Exploration/captures/Part1_ExplorationRules_20260910_151948/011_探索只揭示不移动.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Exploration/011_探索只揭示不移动.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Exploration/captures/Part1_ExplorationRules_20260910_151948/012_进入平原费用不足.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Exploration/012_进入平原费用不足.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Exploration/captures/Part1_ExplorationRules_20260910_151948/013_选择_basic_card_000_2.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Exploration/013_选择_basic_card_000_2.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Exploration/captures/Part1_ExplorationRules_20260910_151948/014_另一张行进基础2.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Exploration/014_另一张行进基础2.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Exploration/captures/Part1_ExplorationRules_20260910_151948/015_进入揭示平原.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Exploration/015_进入揭示平原.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Exploration/captures/Part1_ExplorationRules_20260910_151948/016_重新开始.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Exploration/016_重新开始.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Exploration/captures/Part1_ExplorationRules_20260910_151948/017_点选_site_lake.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Exploration/017_点选_site_lake.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Exploration/captures/Part1_ExplorationRules_20260910_151948/018_湖泊不可通行.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Exploration/018_湖泊不可通行.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Exploration/captures/Part1_ExplorationRules_20260910_151948/019_点选_site_mountain.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Exploration/019_点选_site_mountain.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Exploration/captures/Part1_ExplorationRules_20260910_151948/020_高山不可通行.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Exploration/020_高山不可通行.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Exploration/captures/Part1_ExplorationRules_20260910_151948/021_点选_site_frontier.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Exploration/021_点选_site_frontier.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Exploration/captures/Part1_ExplorationRules_20260910_151948/022_非相邻不能探索.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Exploration/022_非相邻不能探索.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Recruitment/captures/Part1_RecruitmentRules_20260910_152005/000_Scene Start.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Recruitment/000_Scene Start.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Recruitment/captures/Part1_RecruitmentRules_20260910_152005/001_点选_offer_guard.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Recruitment/001_点选_offer_guard.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Recruitment/captures/Part1_RecruitmentRules_20260910_152005/002_影响力不足.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Recruitment/002_影响力不足.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Recruitment/captures/Part1_RecruitmentRules_20260910_152005/003_选择_basic_card_008_0.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Recruitment/003_选择_basic_card_008_0.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Recruitment/captures/Part1_RecruitmentRules_20260910_152005/004_点选_offer_guard.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Recruitment/004_点选_offer_guard.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Recruitment/captures/Part1_RecruitmentRules_20260910_152005/005_选择原卡强化.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Recruitment/005_选择原卡强化.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Recruitment/captures/Part1_RecruitmentRules_20260910_152005/006_承诺白色强化4.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Recruitment/006_承诺白色强化4.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Recruitment/captures/Part1_RecruitmentRules_20260910_152005/007_四点还不足费用五.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Recruitment/007_四点还不足费用五.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Recruitment/captures/Part1_RecruitmentRules_20260910_152005/008_选择_basic_card_008_1.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Recruitment/008_选择_basic_card_008_1.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Recruitment/captures/Part1_RecruitmentRules_20260910_152005/009_第二张承诺基础2.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Recruitment/009_第二张承诺基础2.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Recruitment/captures/Part1_RecruitmentRules_20260910_152005/010_招募扣五余一.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Recruitment/010_招募扣五余一.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Recruitment/captures/Part1_RecruitmentRules_20260910_152005/011_点选_offer_guard.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Recruitment/011_点选_offer_guard.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Recruitment/captures/Part1_RecruitmentRules_20260910_152005/012_不能重复招募.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Recruitment/012_不能重复招募.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Recruitment/captures/Part1_RecruitmentRules_20260910_152005/013_点选_offer_monk.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Recruitment/013_点选_offer_monk.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Recruitment/captures/Part1_RecruitmentRules_20260910_152005/014_地点不符不得招募.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Recruitment/014_地点不符不得招募.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Recruitment/captures/Part1_RecruitmentRules_20260910_152005/015_取消目标.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Recruitment/015_取消目标.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Recruitment/captures/Part1_RecruitmentRules_20260910_152005/016_回合结束正常补牌.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Recruitment/016_回合结束正常补牌.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Journey/captures/Part1_JourneyRules_20260910_152019/000_Scene Start.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Journey/000_Scene Start.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Journey/captures/Part1_JourneyRules_20260910_152019/001_选择_basic_card_000_0.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Journey/001_选择_basic_card_000_0.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Journey/captures/Part1_JourneyRules_20260910_152019/002_点选_site_village.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Journey/002_点选_site_village.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Journey/captures/Part1_JourneyRules_20260910_152019/003_选择原卡强化.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Journey/003_选择原卡强化.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Journey/captures/Part1_JourneyRules_20260910_152019/004_行进强化准备探索.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Journey/004_行进强化准备探索.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Journey/captures/Part1_JourneyRules_20260910_152019/005_探索村庄扣二.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Journey/005_探索村庄扣二.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Journey/captures/Part1_JourneyRules_20260910_152019/006_进入村庄再扣二.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Journey/006_进入村庄再扣二.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Journey/captures/Part1_JourneyRules_20260910_152019/007_选择_basic_card_008_1.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Journey/007_选择_basic_card_008_1.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Journey/captures/Part1_JourneyRules_20260910_152019/008_点选_offer_guard.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Journey/008_点选_offer_guard.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Journey/captures/Part1_JourneyRules_20260910_152019/009_选择原卡强化.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Journey/009_选择原卡强化.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Journey/captures/Part1_JourneyRules_20260910_152019/010_承诺强化4.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Journey/010_承诺强化4.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Journey/captures/Part1_JourneyRules_20260910_152019/011_选择_basic_card_008_2.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Journey/011_选择_basic_card_008_2.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Journey/captures/Part1_JourneyRules_20260910_152019/012_承诺基础补二.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Journey/012_承诺基础补二.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Journey/captures/Part1_JourneyRules_20260910_152019/013_支付五招募守卫.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Journey/013_支付五招募守卫.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Journey/captures/Part1_JourneyRules_20260910_152019/014_进入下一回合遭遇.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Journey/014_进入下一回合遭遇.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Journey/captures/Part1_JourneyRules_20260910_152019/015_选择部队.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Journey/015_选择部队.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Journey/captures/Part1_JourneyRules_20260910_152019/016_没目标部队不能使用.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Journey/016_没目标部队不能使用.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Journey/captures/Part1_JourneyRules_20260910_152019/017_点选_enemy_0.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Journey/017_点选_enemy_0.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Journey/captures/Part1_JourneyRules_20260910_152019/018_守卫格挡三.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Journey/018_守卫格挡三.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Journey/captures/Part1_JourneyRules_20260910_152019/019_耗竭单位不能重复.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Journey/019_耗竭单位不能重复.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Journey/captures/Part1_JourneyRules_20260910_152019/020_选择_basic_card_016_5.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Journey/020_选择_basic_card_016_5.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Journey/captures/Part1_JourneyRules_20260910_152019/021_点选_enemy_0.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Journey/021_点选_enemy_0.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Journey/captures/Part1_JourneyRules_20260910_152019/022_选择原卡强化.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Journey/022_选择原卡强化.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Journey/captures/Part1_JourneyRules_20260910_152019/023_决心强化与部队合计八.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Journey/023_决心强化与部队合计八.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Journey/captures/Part1_JourneyRules_20260910_152019/024_成功格挡没有伤牌.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Journey/024_成功格挡没有伤牌.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Journey/captures/Part1_JourneyRules_20260910_152019/025_选择_basic_card_021_3.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Journey/025_选择_basic_card_021_3.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Journey/captures/Part1_JourneyRules_20260910_152019/026_点选_enemy_0.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Journey/026_点选_enemy_0.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Journey/captures/Part1_JourneyRules_20260910_152019/027_选择原卡强化.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Journey/027_选择原卡强化.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Journey/captures/Part1_JourneyRules_20260910_152019/028_狂怒强化四.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Journey/028_狂怒强化四.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Journey/captures/Part1_JourneyRules_20260910_152019/029_选择_basic_card_021_4.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Journey/029_选择_basic_card_021_4.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Journey/captures/Part1_JourneyRules_20260910_152019/030_狂怒基础合计六.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Journey/030_狂怒基础合计六.png",
+      "identical": true
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260910_151916_00d9aca6/Journey/captures/Part1_JourneyRules_20260910_152019/031_完整旅程获胜.png",
+      "reference": "AutomationOutputs/AllOriginalCards/20260910_142756_642511ad/regression/Journey/031_完整旅程获胜.png",
+      "identical": true
+    }
+  ]
+}
