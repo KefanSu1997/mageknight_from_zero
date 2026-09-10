@@ -1,0 +1,22 @@
+{
+  "originalCaseNumericExpectationsAndInputsRetained": 350,
+  "updatedLimitationNotesOnly": 8,
+  "addedCases": 33,
+  "editmodeSource": "AutomationOutputs/EditMode/20260910_155033_f51da061",
+  "regressionSource": "AutomationOutputs/AdventureRegression/20260910_160027_a7f7a99f",
+  "regressionScreenshotsIdenticalToPrevious": 118,
+  "changedRegressionCaptures": [],
+  "rawReportPaths": "Reports retain original capture paths; archived copies preserve filenames and bytes.",
+  "consoleScans": [
+    {
+      "file": "console_final_1.json",
+      "errors": 0
+    },
+    {
+      "file": "console_final_2.json",
+      "errors": 0
+    }
+  ],
+  "imageComparison": "Match by scene and filename; timestamped capture subfolders intentionally differ.",
+  "codeCommit": "cee3af9863415b82a22122a79b4311944d285acb"
+}
