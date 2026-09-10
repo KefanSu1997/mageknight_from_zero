@@ -13,7 +13,7 @@ namespace MK.Logic.Runtime.CardEffects
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
             int heal = _enh ? 2 : 1;
-            player.Wounds = System.Math.Max(0, player.Wounds - heal);
+            CardHealing.Heal(player, ctx, heal);
 
             var unit = ctx.TargetUnit;
             if (unit != null)

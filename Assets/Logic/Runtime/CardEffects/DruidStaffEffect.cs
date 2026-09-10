@@ -48,7 +48,7 @@ namespace MK.Logic.Runtime.CardEffects
                         unit.Ready();
                     break;
                 case 3: // 綠色：治療3
-                    p.Wounds = System.Math.Max(0, p.Wounds - 3);
+                    CardHealing.Heal(p, ctx, 3);
                     break;
             }
         }

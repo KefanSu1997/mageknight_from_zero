@@ -256,6 +256,16 @@ for n in range(25):
         case(f'items_{n:03}', strong, '印刷效果', ITEM[n][int(strong)], **kwargs,
              limits=['复用已有CardEffectFactory模块；尚无按ItemCardData出牌的完整服务。分配、强化移除、限次、持续及随机效果保持待联验'])
 
+# Healing boundaries use the same real hand as the Wounds property. A heal is
+# capped by available wound cards and never draws for a nonexistent wound.
+for strong in [False, True]:
+    b(1, strong, '没有伤牌时不产生治疗或额外抽牌',
+      {'Wounds': 0, 'handWounds': 0, 'hand': 3, 'discard': 2},
+      setup={'player:Wounds': 0, 'DrawPerHeal': 1})
+    b(1, strong, '治疗上限与每治疗一伤抽一牌',
+      {'Wounds': 0, 'handWounds': 0, 'hand': 4, 'discard': 2},
+      setup={'player:Wounds': 1, 'DrawPerHeal': 1})
+
 
 def export():
     target = ROOT / 'Assets/Resources/CardVerification'

@@ -118,9 +118,19 @@ namespace MK.Logic.Runtime
         public void Disband(UnitState unit) => Units.Remove(unit);
 
         public int Armor { get; init; } = 2;
-        public int Wounds { get; set; }
-        /// <summary>因毒素進入棄牌堆的傷牌數量。</summary>
-        public int DiscardWounds { get; set; }
+        /// <summary>Hand wounds are the actual cards, including cards drawn or discarded this turn.</summary>
+        public int Wounds
+        {
+            get => Deck.Hand.Count(card => card.Type == CardType.Wound);
+            set => Deck.SetWoundCount(value, false);
+        }
+
+        /// <summary>Actual wound cards in the discard pile, including poison wounds.</summary>
+        public int DiscardWounds
+        {
+            get => Deck.DiscardPile.Count(card => card.Type == CardType.Wound);
+            set => Deck.SetWoundCount(value, true);
+        }
 
         /// <summary>每回合開始自動獲得的法力標記。</summary>
         public Dictionary<ManaColor, int> TokensPerTurn { get; } = new();
@@ -147,7 +157,6 @@ namespace MK.Logic.Runtime
         public void AddWoundsToDiscard(int count)
         {
             if (count <= 0) return;
-            DiscardWounds += count;
             for (int i = 0; i < count; i++)
                 Deck.GainToDiscard(new DeedCard("w", CardType.Wound));
         }

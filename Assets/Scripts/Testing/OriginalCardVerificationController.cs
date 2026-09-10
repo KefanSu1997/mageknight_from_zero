@@ -37,6 +37,8 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
     private bool _selected;
     private bool _executed;
     private string _started;
+    private string _outputRoot;
+    private int _checkpoint;
     private Dictionary<string, string> _before;
     private TextMeshProUGUI _title, _printed, _fixture, _comparison, _status, _limits;
     private Image _art;
@@ -67,6 +69,11 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
         _catalog = Resources.Load<CardVerificationCatalog>("CardVerification/Catalog");
         _cases = JsonUtility.FromJson<CardVerificationSuite>(_catalog.cases.text).cases.Where(c => c.batch == batch).ToArray();
         _started = DateTime.UtcNow.ToString("o");
+        string reportPath = SceneAutomationRuntimeState.PendingRequest?.reportPath;
+        _outputRoot = string.IsNullOrEmpty(reportPath)
+            ? Path.Combine(Application.dataPath, "../AutomationOutputs/AllOriginalCards/manual_" + Guid.NewGuid().ToString("N"), batch)
+            : Path.GetDirectoryName(Path.GetFullPath(reportPath));
+        Directory.CreateDirectory(Path.Combine(_outputRoot, "checkpoints"));
         if (EventSystem.current == null) new GameObject("EventSystem", typeof(EventSystem), typeof(StandaloneInputModule));
         var canvasObject = new GameObject("Canvas", typeof(RectTransform), typeof(Canvas), typeof(CanvasScaler), typeof(GraphicRaycaster));
         canvasObject.GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceOverlay;
@@ -98,7 +105,7 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
         _case = _cases[_index];
         _entry = _catalog.cards.Single(e => e.source.Id == _case.cardId);
         _selected = _executed = false;
-        _player = new PlayerState(1, "验收玩家") { Wounds = 3 };
+        _player = new PlayerState(1, "验收玩家");
         _context = new ActionContext { CurrentTerrain = TerrainType.Forest, DayPart = _case.enhanced && _entry.source is SpellCardSO ? DayPart.Night : DayPart.Day };
         foreach (ManaColor color in Enum.GetValues(typeof(ManaColor)))
         {
@@ -140,7 +147,7 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
         _title.text = $"{_index + 1}/{_cases.Length}   {_entry.source.NameCn}   {_case.cardId}   ·   {_case.title}";
         _art.sprite = _entry.artwork;
         _printed.text = PrintedEffect();
-        _fixture.text = $"初始：手牌6（含3伤牌）· 弃牌2 · 各色魔力2 · 基本色魔晶1\n目标：2级耗竭部队 / 敌人护甲5、攻击4；{_context.CurrentTerrain}，{_context.DayPart}；选项 {_case.option}";
+        _fixture.text = $"初始：手牌{_before["hand"]}（伤牌{_before["handWounds"]}）· 弃牌{_before["discard"]} · 魔力 红{_before["token:Red"]}/蓝{_before["token:Blue"]}/绿{_before["token:Green"]}/白{_before["token:White"]}/金{_before["token:Gold"]}/黑{_before["token:Black"]}\n目标：2级耗竭部队 / 敌人护甲5、攻击4；{_context.CurrentTerrain}，{_context.DayPart}；选项 {_case.option}";
         _comparison.text = "独立规则预期（执行后绝对值）\n" + string.Join("\n", _case.expected.Take(9).Select(e => $"{Label(e.key)}：{e.value}"));
         _status.text = "待操作：先选择卡牌和目标，再执行";
         _limits.text = "范围：" + ((_case.limitations?.Length ?? 0) == 0 ? "本例的即时效果分支；整卡结论需汇总全部案例。" : string.Join("；", _case.limitations));
@@ -227,11 +234,18 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
 
     private void SaveResults()
     {
-        string root = Path.Combine(Application.dataPath, "../AutomationOutputs/AllOriginalCards/20260910/", batch);
-        Directory.CreateDirectory(root);
+        // Immutable checkpoints preserve interrupted runs without truncating a
+        // report that an indexer or reviewer may currently have memory-mapped.
+        string checkpoint = Path.Combine(_outputRoot, "checkpoints", (++_checkpoint).ToString("D4") + ".json");
+        File.WriteAllText(checkpoint, JsonUtility.ToJson(_results.Last(), true));
+        if (_results.Count != _cases.Length) return;
         var report = new CardVerificationResults { startedAt = _started, finishedAt = DateTime.UtcNow.ToString("o"), batch = batch,
             status = _results.Count != _cases.Length ? "running" : _results.Any(r => r.status == "failed") ? "has_failures" : _results.Any(r => r.status == "partial") ? "partial" : "passed", cases = _results.ToArray() };
-        File.WriteAllText(Path.Combine(root, "effects.json"), JsonUtility.ToJson(report, true));
+        string temporary = Path.Combine(_outputRoot, Guid.NewGuid().ToString("N") + ".tmp");
+        File.WriteAllText(temporary, JsonUtility.ToJson(report, true));
+        string destination = Path.Combine(_outputRoot, "effects.json");
+        if (File.Exists(destination)) File.Replace(temporary, destination, null);
+        else File.Move(temporary, destination);
     }
 
     private static CardVerificationValue[] Values(Dictionary<string, string> values) => values.OrderBy(p => p.Key).Select(p => new CardVerificationValue { key = p.Key, value = p.Value }).ToArray();

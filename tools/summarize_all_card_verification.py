@@ -3,6 +3,7 @@ from collections import Counter
 from pathlib import Path
 from datetime import datetime
 import json
+import argparse
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / 'AutomationOutputs/AllOriginalCards/20260910'
@@ -13,6 +14,12 @@ def read(path):
 
 
 def main():
+    global OUTPUT
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--output', type=Path, default=OUTPUT, help='Exact scene run directory; never combine separate runs.')
+    parser.add_argument('--sources', type=Path, default=OUTPUT / 'source_inventory.json')
+    args = parser.parse_args()
+    OUTPUT = args.output.resolve()
     planned = read(ROOT / 'Assets/Resources/CardVerification/cases.json')['cases']
     summary = {'status': 'incomplete', 'scope': '125 existing card records (121 readable faces); first scene audit, not complete rules certification', 'batches': [], 'cards': []}
     all_cases = []
@@ -75,7 +82,7 @@ def main():
                    uiAssertions=total_asserts, effectAssertions=sum(len(c['checks']) for c in all_cases), screenshots=total_shots)
     if len(all_cases) == len(planned):
         summary['status'] = 'audit_complete_with_findings'
-    sources = read(OUTPUT / 'source_inventory.json')
+    sources = read(args.sources)
     assert all(c['matchesRepositoryOriginal'] for c in sources), 'Original artwork provenance failed'
     nonplayable = {c['id'] for c in sources if c['category'] != 'playable_face'}
     summary['playableFaces'] = sum(c['id'] not in nonplayable for c in summary['cards'])

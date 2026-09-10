@@ -13,6 +13,7 @@ namespace MageKnight.SceneAutomation.Editor
     {
         private const string QueueKey = "MageKnight.AllCards.Queue";
         private const string StartKey = "MageKnight.AllCards.Start";
+        private const string RootKey = "MageKnight.AllCards.OutputRoot";
         private static readonly string[] Batches = { "basic_card", "advanced_card", "magic", "items" };
 
         static AllCardVerificationMenus() => EditorApplication.playModeStateChanged += OnPlayMode;
@@ -56,25 +57,42 @@ namespace MageKnight.SceneAutomation.Editor
         }
 
         [MenuItem("Tools/Mage Knight/Original Cards/Run All Batches")]
-        public static void RunAll() { Build(); SessionState.SetInt(QueueKey, 0); RunAt(0); }
+        public static void RunAll() { BeginRun(0); RunAt(0); }
 
         [MenuItem("Tools/Mage Knight/Original Cards/Run Basic Cards")]
-        public static void RunBasic() { Build(); SessionState.SetInt(QueueKey, -1); RunAt(0); }
+        public static void RunBasic() { BeginRun(-1); RunAt(0); }
 
         [MenuItem("Tools/Mage Knight/Original Cards/Run Advanced Cards")]
-        public static void RunAdvanced() { Build(); SessionState.SetInt(QueueKey, -1); RunAt(1); }
+        public static void RunAdvanced() { BeginRun(-1); RunAt(1); }
 
         [MenuItem("Tools/Mage Knight/Original Cards/Run Spells")]
-        public static void RunSpells() { Build(); SessionState.SetInt(QueueKey, -1); RunAt(2); }
+        public static void RunSpells() { BeginRun(-1); RunAt(2); }
 
         [MenuItem("Tools/Mage Knight/Original Cards/Run Artifacts")]
-        public static void RunItems() { Build(); SessionState.SetInt(QueueKey, -1); RunAt(3); }
+        public static void RunItems() { BeginRun(-1); RunAt(3); }
+
+        private static void BeginRun(int queue)
+        {
+            Build();
+            string root = "AutomationOutputs/AllOriginalCards/" + DateTime.Now.ToString("yyyyMMdd_HHmmss") + "_" + Guid.NewGuid().ToString("N").Substring(0, 8);
+            Directory.CreateDirectory(root);
+            SessionState.SetString(RootKey, root);
+            SessionState.SetInt(QueueKey, queue);
+            Debug.Log("[AllCards] Output directory: " + root);
+        }
 
         private static void RunAt(int index)
         {
             SessionState.SetString(StartKey, DateTime.UtcNow.ToString("o"));
             GameViewResolutionUtility.TrySetFixedResolution(1920, 1080, "OriginalCards_1920x1080");
-            SceneAutomationCommand.RunFromProjectRelativeConfig("AutomationConfigs/AllOriginalCards/" + Batches[index] + ".json");
+            string root = SessionState.GetString(RootKey, "") + "/" + Batches[index];
+            Directory.CreateDirectory(root);
+            var request = JsonUtility.FromJson<SceneAutomationRequest>(File.ReadAllText("AutomationConfigs/AllOriginalCards/" + Batches[index] + ".json"));
+            request.reportPath = root + "/report.json";
+            request.screenshotsDirectory = root + "/captures";
+            string config = root + "/request.json";
+            File.WriteAllText(config, JsonUtility.ToJson(request, true));
+            SceneAutomationCommand.RunFromProjectRelativeConfig(config);
         }
 
         private static void OnPlayMode(PlayModeStateChange state)
@@ -82,7 +100,7 @@ namespace MageKnight.SceneAutomation.Editor
             if (state != PlayModeStateChange.EnteredEditMode) return;
             int index = SessionState.GetInt(QueueKey, -1);
             if (index < 0) return;
-            string path = "AutomationOutputs/AllOriginalCards/20260910/" + Batches[index] + "/report.json";
+            string path = SessionState.GetString(RootKey, "") + "/" + Batches[index] + "/report.json";
             var report = File.Exists(path) ? JsonUtility.FromJson<SceneAutomationReport>(File.ReadAllText(path)) : null;
             bool fresh = report != null && DateTime.TryParse(report.startedAt, out var start)
                 && DateTime.TryParse(SessionState.GetString(StartKey, ""), out var expected) && start >= expected;

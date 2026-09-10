@@ -13644,6 +13644,254 @@
       "limitations": [
         "复用已有CardEffectFactory模块；尚无按ItemCardData出牌的完整服务。分配、强化移除、限次、持续及随机效果保持待联验"
       ]
+    },
+    {
+      "id": "basic_card_001_04",
+      "cardId": "basic_card_001",
+      "batch": "basic_card",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / 没有伤牌时不产生治疗或额外抽牌",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "player:Wounds",
+          "value": "0"
+        },
+        {
+          "key": "DrawPerHeal",
+          "value": "1"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "Wounds",
+          "value": "0"
+        },
+        {
+          "key": "handWounds",
+          "value": "0"
+        },
+        {
+          "key": "hand",
+          "value": "3"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "id": "basic_card_001_05",
+      "cardId": "basic_card_001",
+      "batch": "basic_card",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / 治疗上限与每治疗一伤抽一牌",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "player:Wounds",
+          "value": "1"
+        },
+        {
+          "key": "DrawPerHeal",
+          "value": "1"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "Wounds",
+          "value": "0"
+        },
+        {
+          "key": "handWounds",
+          "value": "0"
+        },
+        {
+          "key": "hand",
+          "value": "4"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "id": "basic_card_001_06",
+      "cardId": "basic_card_001",
+      "batch": "basic_card",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 没有伤牌时不产生治疗或额外抽牌",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "player:Wounds",
+          "value": "0"
+        },
+        {
+          "key": "DrawPerHeal",
+          "value": "1"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Green",
+          "value": "1"
+        },
+        {
+          "key": "Wounds",
+          "value": "0"
+        },
+        {
+          "key": "handWounds",
+          "value": "0"
+        },
+        {
+          "key": "hand",
+          "value": "3"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "id": "basic_card_001_07",
+      "cardId": "basic_card_001",
+      "batch": "basic_card",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 治疗上限与每治疗一伤抽一牌",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "player:Wounds",
+          "value": "1"
+        },
+        {
+          "key": "DrawPerHeal",
+          "value": "1"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Green",
+          "value": "1"
+        },
+        {
+          "key": "Wounds",
+          "value": "0"
+        },
+        {
+          "key": "handWounds",
+          "value": "0"
+        },
+        {
+          "key": "hand",
+          "value": "4"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        }
+      ],
+      "limitations": []
     }
   ]
 }

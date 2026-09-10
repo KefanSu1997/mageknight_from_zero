@@ -35,7 +35,7 @@ namespace MK.Logic.Runtime.CardEffects
                         ctx.MovementPool += 4 + sets * 2;
                         break;
                     case 1:
-                        player.Wounds = System.Math.Max(0, player.Wounds - (2 + sets));
+                        CardHealing.Heal(player, ctx, (2 + sets));
                         break;
                     default:
                         player.Deck.DrawExact(2 + sets);

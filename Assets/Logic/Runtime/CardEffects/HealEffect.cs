@@ -9,7 +9,7 @@ namespace MK.Logic.Runtime.CardEffects
         public HealEffect(int value) => _value = value;
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            player.Wounds = System.Math.Max(0, player.Wounds - _value);
+            CardHealing.Heal(player, ctx, _value);
         }
     }
 }

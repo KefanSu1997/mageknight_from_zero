@@ -14,9 +14,9 @@ namespace MK.Logic.Runtime.CardEffects
         {
             if (!_enh)
             {
-                player.Wounds = System.Math.Max(0, player.Wounds - 2);
                 ctx.DrawPerHeal = 1;
                 ctx.ReadyUnitOnHeal = true;
+                CardHealing.Heal(player, ctx, 2);
             }
             else
             {

@@ -14,13 +14,13 @@ namespace MK.Logic.Runtime.CardEffects
             {
                 ctx.MovementPool += 2;
                 if (!ctx.InBattle)
-                    player.Wounds = System.Math.Max(0, player.Wounds - 1);
+                    CardHealing.Heal(player, ctx, 1);
             }
             else
             {
                 ctx.MovementPool += 4;
                 if (!ctx.InBattle)
-                    player.Wounds = System.Math.Max(0, player.Wounds - 2);
+                    CardHealing.Heal(player, ctx, 2);
             }
         }
     }

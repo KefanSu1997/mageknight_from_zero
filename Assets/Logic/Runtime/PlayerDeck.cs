@@ -16,6 +16,25 @@ namespace MK.Logic.Runtime
         /// <summary>當前手牌列表。</summary>
         public List<DeedCard> Hand { get; } = new();
 
+        /// <summary>Compatibility writes update real wound cards; counts never live separately.</summary>
+        internal void SetWoundCount(int count, bool inDiscard)
+        {
+            if (count < 0) throw new System.ArgumentOutOfRangeException(nameof(count));
+            var wounds = (inDiscard ? _discard.ToList() : Hand)
+                .Where(card => card.Type == CardType.Wound).ToArray();
+            foreach (var card in wounds.Take(System.Math.Max(0, wounds.Length - count)))
+            {
+                if (inDiscard) RemoveFromDiscard(card);
+                else Hand.Remove(card);
+            }
+            for (int i = wounds.Length; i < count; i++)
+            {
+                var card = new DeedCard("w", CardType.Wound);
+                if (inDiscard) GainToDiscard(card);
+                else Hand.Add(card);
+            }
+        }
+
         /// <summary>
         /// 根據日夜、聲望、戰術牌以及地形/技能修正計算手牌上限。
         /// </summary>

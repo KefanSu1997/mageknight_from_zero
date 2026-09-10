@@ -30,6 +30,8 @@
 
 ## 经验索引
 
+- 真实伤牌守恒与报告IO1224：按实际牌区计数、治疗按实际移除数触发、独立运行目录和不可变检查点 —— `vibe_coding/codex/project_experience/card_wounds_and_immutable_reports_2026-09-10.md`
+
 - 原卡场景审计：121张有效牌面、合法夹具、独立预期、模块与整卡结论分开、报告时效和编译等待 —— `vibe_coding/codex/project_experience/original_card_scene_audit_2026-09-10.md`
 
 - Git 存档：隐藏未跟踪文件、未完成合并备份、SSH 443 和 LFS/远端提交核对 —— `vibe_coding/codex/project_experience/git_archive_pending_merge_2026-09-10.md`

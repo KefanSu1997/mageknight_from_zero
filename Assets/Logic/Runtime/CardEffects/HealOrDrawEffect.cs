@@ -17,7 +17,7 @@ namespace MK.Logic.Runtime.CardEffects
         {
             if (option == 0)
             {
-                player.Wounds = System.Math.Max(0, player.Wounds - _heal);
+                CardHealing.Heal(player, ctx, _heal);
             }
             else
             {

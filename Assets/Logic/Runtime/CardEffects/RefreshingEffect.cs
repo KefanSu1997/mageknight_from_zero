@@ -24,7 +24,7 @@ namespace MK.Logic.Runtime.CardEffects
             switch (option)
             {
                 case 0:
-                    player.Wounds = System.Math.Max(0, player.Wounds - _heal);
+                    CardHealing.Heal(player, ctx, _heal);
                     break;
                 case 1:
                     player.Deck.DrawExact(_draw);

@@ -13,7 +13,7 @@ namespace MK.Logic.Runtime.CardEffects
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
             int heal = ctx.CurrentTerrain == TerrainType.Forest ? 5 : 3;
-            player.Wounds = System.Math.Max(0, player.Wounds - heal);
+            CardHealing.Heal(player, ctx, heal);
             if (_enh && ctx.TargetUnit != null)
             {
                 int limit = ctx.CurrentTerrain == TerrainType.Forest ? 5 : 3;

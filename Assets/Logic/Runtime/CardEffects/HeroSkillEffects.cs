@@ -743,7 +743,7 @@ public sealed class ManaSuppressEffect : ICardEffect
     {
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            player.Wounds = System.Math.Max(0, player.Wounds - 1);
+            CardHealing.Heal(player, ctx, 1);
             player.Mana.AddCrystal(ManaColor.Blue, 1);
         }
     }
@@ -755,7 +755,7 @@ public sealed class ManaSuppressEffect : ICardEffect
     {
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            player.Wounds = System.Math.Max(0, player.Wounds - 1);
+            CardHealing.Heal(player, ctx, 1);
             player.Mana.AddCrystal(ManaColor.White, 1);
         }
     }
@@ -923,7 +923,7 @@ public sealed class ManaSuppressEffect : ICardEffect
     {
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            player.Wounds = System.Math.Max(0, player.Wounds - 2);
+            CardHealing.Heal(player, ctx, 2);
         }
     }
 
@@ -1172,7 +1172,7 @@ public sealed class ManaSuppressEffect : ICardEffect
             }
             else
             {
-                player.Wounds = System.Math.Max(0, player.Wounds - 1);
+                CardHealing.Heal(player, ctx, 1);
             }
         }
     }

@@ -14,15 +14,13 @@ namespace MK.Logic.Runtime.CardEffects
         {
             if (!_once)
             {
-                int heal = System.Math.Min(2, player.Wounds);
-                player.Wounds -= heal;
+                int heal = CardHealing.Heal(player, ctx, 2);
                 player.Fame += heal;
             }
             else
             {
-                int heal = System.Math.Min(6, player.Wounds);
-                player.Wounds -= heal;
                 ctx.DrawPerHeal = 1;
+                CardHealing.Heal(player, ctx, 6);
             }
         }
     }

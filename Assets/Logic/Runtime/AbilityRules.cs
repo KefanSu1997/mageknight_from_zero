@@ -58,7 +58,7 @@ namespace MK.Logic.Runtime
                 bool paralyze = src.Abilities.Contains(Ability.Paralyze) && (ignore == null || !ignore.Contains(Ability.Paralyze));
                 if (paralyze)
                     p.DiscardNonWoundHand();              // 先棄掉非傷牌
-                p.AddWoundCards(wounds);                  // 將創傷牌加入手牌
+                // Wounds already updates the actual hand; do not add the same cards twice.
                 if (poison)
                     p.AddWoundsToDiscard(wounds);         // 毒素額外進入棄牌堆
             }
@@ -67,4 +67,3 @@ namespace MK.Logic.Runtime
         }
     }
 }
-
