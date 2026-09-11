@@ -1,0 +1,12 @@
+{
+  "scenePath": "Assets/Scenes/Verification/magic.unity",
+  "screenshotsDirectory": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures",
+  "useRunSubfolder": false,
+  "reportPath": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/report.json",
+  "caseIds": [],
+  "captureInitialView": true,
+  "initialDelaySeconds": 1.5,
+  "defaultWaitAfterSeconds": 0.05000000074505806,
+  "maxRunSeconds": 900.0,
+  "steps": []
+}

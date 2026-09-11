@@ -27,6 +27,10 @@ def main():
     folder = args.output.resolve() / 'magic'
     suite_file = ROOT / 'Assets/Resources/CardVerification/cases.json'
     planned = {c['id']: c for c in read(suite_file)['cases'] if c['cardId'] == 'magic_014'}
+    selected = read(folder/'request.json').get('caseIds') or []
+    if selected:
+        planned = {k:v for k,v in planned.items() if k in selected}
+    assert planned, 'No mist cases selected'
     effects, report = read(folder / 'effects.json'), read(folder / 'report.json')
     assert report['status'] == 'success'
     assert effects['suiteSha256'] == hashlib.sha256(suite_file.read_bytes()).hexdigest()

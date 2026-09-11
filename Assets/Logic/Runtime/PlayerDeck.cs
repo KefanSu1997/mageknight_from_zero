@@ -105,6 +105,16 @@ namespace MK.Logic.Runtime
                 _discard.Push(c);
         }
 
+        /// <summary>按所选手牌实例弃牌，避免同ID卡牌的值相等替换了实际目标。</summary>
+        public bool TryDiscardExact(DeedCard card)
+        {
+            int index = Hand.FindIndex(c => ReferenceEquals(c, card));
+            if (index < 0) return false;
+            Hand.RemoveAt(index);
+            _discard.Push(card);
+            return true;
+        }
+
         /// <summary>
         /// 直接將一張卡牌置入棄牌堆，常用於從市場獲得新牌。
         /// </summary>

@@ -74,6 +74,28 @@ namespace MageKnight.SceneAutomation.Editor
         [MenuItem("Tools/Mage Knight/Original Cards/Run Artifacts")]
         public static void RunItems() { BeginRun(-1); RunAt(3); }
 
+        [MenuItem("Tools/Mage Knight/Original Cards/Run Focused Cases")]
+        public static void RunFocused()
+        {
+            var request = JsonUtility.FromJson<SceneAutomationRequest>(File.ReadAllText("AutomationConfigs/AllOriginalCards/focused.json"));
+            if (request.caseIds == null || request.caseIds.Length == 0)
+            {
+                Debug.Log("[AllCards] 待验收队列为空，已通过用例不重复运行。");
+                return;
+            }
+            string batch = Path.GetFileNameWithoutExtension(request.scenePath);
+            if (!Batches.Contains(batch)) throw new InvalidOperationException("Focused request must use an original-card verification scene");
+            BeginRun(-1);
+            GameViewResolutionUtility.TrySetFixedResolution(1920, 1080, "OriginalCards_1920x1080");
+            string folder = SessionState.GetString(RootKey, "") + "/" + batch;
+            Directory.CreateDirectory(folder);
+            request.reportPath = folder + "/report.json";
+            request.screenshotsDirectory = folder + "/captures";
+            string config = folder + "/request.json";
+            File.WriteAllText(config, JsonUtility.ToJson(request, true));
+            SceneAutomationCommand.RunFromProjectRelativeConfig(config);
+        }
+
         private static void BeginRun(int queue)
         {
             Build();

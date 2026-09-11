@@ -97,6 +97,14 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
         using (var sha = System.Security.Cryptography.SHA256.Create())
             _suiteSha256 = BitConverter.ToString(sha.ComputeHash(System.Text.Encoding.UTF8.GetBytes(_catalog.cases.text.Replace("\r\n", "\n")))).Replace("-", "").ToLowerInvariant();
         _cases = JsonUtility.FromJson<CardVerificationSuite>(_catalog.cases.text).cases.Where(c => c.batch == batch).ToArray();
+        var selectedCases = SceneAutomationRuntimeState.PendingRequest?.caseIds;
+        if (selectedCases?.Length > 0)
+        {
+            var requested = new HashSet<string>(selectedCases);
+            _cases = _cases.Where(c => requested.Contains(c.id)).ToArray();
+            if (requested.Count != selectedCases.Length || _cases.Length != requested.Count)
+                throw new InvalidOperationException("指定用例重复或不属于当前场景，拒绝不完整验收");
+        }
         _started = DateTime.UtcNow.ToString("o");
         string reportPath = SceneAutomationRuntimeState.PendingRequest?.reportPath;
         _outputRoot = string.IsNullOrEmpty(reportPath)
@@ -149,6 +157,12 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
         _player.Deck.Hand.Add(new DeedCard("basic_card_021", CardType.Action));
         _player.Deck.Hand.Add(new DeedCard("basic_card_014", CardType.Action));
         for (int i = 0; i < 3; i++) _player.Deck.Hand.Add(new DeedCard("wound_" + i, CardType.Wound));
+        foreach (string id in _case.extraHandCards ?? Array.Empty<string>())
+        {
+            var original = _catalog.cards.Single(e => e.source.Id == id).source;
+            _player.Deck.Hand.Add(new DeedCard(id, original is SpellCardSO ? CardType.Spell
+                : original is ItemCardSO ? CardType.Artifact : CardType.Action));
+        }
         for (int i = 0; i < 10; i++) _player.Deck.PutUnder(new DeedCard("basic_card_000", CardType.Action));
         _player.Deck.GainToDiscard(new DeedCard("basic_card_008", CardType.Action));
         _player.Deck.GainToDiscard(new DeedCard("basic_card_016", CardType.Action));
@@ -174,6 +188,15 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
         _context.CardToDiscard = _player.Deck.Hand[1]; _context.CardToRemove = _player.Deck.Hand[1];
         _context.CardToRecycle = source;
         _context.CardsToDiscard.AddRange(_player.Deck.Hand.Skip(1).Take(2));
+        if (_case.discardIndices != null)
+        {
+            _context.CardsToDiscard.Clear();
+            foreach (int index in _case.discardIndices)
+            {
+                var target = _player.Deck.Hand[index];
+                _context.CardsToDiscard.Add(_case.foreignDiscard ? new DeedCard(target.Id, target.Type) : target);
+            }
+        }
         _context.CardsFromDiscard.AddRange(_player.Deck.DiscardPile);
         _context.AdvActionSupply = new AdvActionSupply();
         _context.AdvActionSupply.SetDeck(new[] { new AdvActionCard("advanced_card_000"), new AdvActionCard("advanced_card_001"), new AdvActionCard("advanced_card_003") });
@@ -204,6 +227,9 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
             _fixture.text = "目标：" + string.Join(" / ", _context.Enemies.Select(e => $"{e.Id} 护甲{e.Armor} 攻击{e.Attack}({e.AttackElement}) [{string.Join(",", e.Abilities)}]"))
                 + $"\n{_case.combatPhase}阶段 · 城防地点={_context.FortifiedSite} · {_context.DayPart} · 地形{_context.CurrentTerrain} · 移动费修正{(_context.TerrainCostOverride.TryGetValue(_context.CurrentTerrain, out int overrideCost) ? overrideCost.ToString() : "无")}";
         if (_case.unitIds?.Length > 0) _fixture.text = DamageFixture();
+        if (_case.discardIndices != null)
+            _fixture.text = "待弃手牌：" + string.Join(" / ", _context.CardsToDiscard.Select(c => c.Id))
+                + $"\n手牌{_player.Deck.Hand.Count}，弃牌{_player.Deck.DiscardPile.Count}；神器依次选色编码{_case.option}；外来实例{_case.foreignDiscard}";
         _play.interactable = false;
     }
 
@@ -510,6 +536,23 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
                 + "\n费用：" + string.Join("；", checks.Where(c => c.key.StartsWith("token:")).Select(c => Label(c.key) + " " + _before[c.key] + "→" + c.actual + " [预期" + c.expected + "]"))
                 + $"\n独立效果断言：{checks.Count(c => c.passed)}/{checks.Count}；全抗性{_context.UnitsResistAll}；首伤待用{_context.IgnoreNextWound}";
         }
+        if (_case.discardIndices != null)
+        {
+            var resources = checks.Where(c => c.key.StartsWith("crystal:") || c.key.StartsWith("token:")).ToArray();
+            _comparison.text = "弃牌与魔晶：实际 / 独立预期\n"
+                + $"手牌 {_before["hand"]}→{after["hand"]}；弃牌 {_before["discard"]}→{after["discard"]}；手牌伤牌{after["handWounds"]}\n"
+                + string.Join("\n", resources.GroupBy(c => c.key.Split(':')[0]).Select(g =>
+                    string.Join("；", g.Select(c => $"{Label(c.key)} {c.actual}/{c.expected}"))))
+                + $"\n弃牌及牌区身份断言：{checks.Count(c => c.passed)}/{checks.Count}；实际弃牌："
+                + string.Join("、", _player.Deck.DiscardPile.Select(c => _catalog.cards.FirstOrDefault(e => e.source.Id == c.Id)?.source.NameCn ?? c.Id));
+        }
+        if (_case.cardId == "magic_011" && _combatResult != null)
+        {
+            _comparison.text = "牺牲配对后真实攻击：实际 / 独立预期\n"
+                + string.Join("\n", checks.Where(c => c.key.StartsWith("combat:")).Select(c => $"{Label(c.key)} {c.actual}/{c.expected}"))
+                + "\n配对剩余魔晶：" + string.Join("；", checks.Where(c => c.key.StartsWith("crystal:")).Select(c => $"{Label(c.key)} {c.actual}/{c.expected}"))
+                + "\n费用及转化后魔力：" + string.Join("；", checks.Where(c => c.key.StartsWith("token:")).Select(c => $"{Label(c.key)} {c.actual}/{c.expected}"));
+        }
         _status.color = status == "failed" ? new Color32(244, 142, 118, 255) : W.Gold;
         SaveResults();
     }
@@ -609,6 +652,11 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
         result["hand"] = _player.Deck.Hand.Count.ToString();
         result["handWounds"] = _player.Deck.Hand.Count(c => c.Type == CardType.Wound).ToString();
         result["discard"] = _player.Deck.DiscardPile.Count.ToString();
+        if (_case.discardIndices != null)
+        {
+            result["hand:ids"] = string.Join(",", _player.Deck.Hand.Select(c => c.Id));
+            result["discard:ids"] = string.Join(",", _player.Deck.DiscardPile.Select(c => c.Id));
+        }
         result["unitReady"] = _damageUnits[0].IsReady.ToString(); result["unitWounds"] = _damageUnits[0].Wounds.ToString();
         result["unitLevel"] = _damageUnits[0].Card.Level.ToString();
         result["unitPhysicalResist"] = _damageUnits[0].PhysicalResistTemp.ToString();

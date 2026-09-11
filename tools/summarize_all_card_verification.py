@@ -38,6 +38,11 @@ def main():
         ui_start = datetime.fromisoformat(ui['startedAt'].replace('Z', '+00:00'))
         assert abs((effect_start - ui_start).total_seconds()) < 20, f'{batch}: stale effect/UI report pair'
         expected = [c for c in planned if c['batch'] == batch]
+        request = read(directory / 'request.json')
+        selected_ids = request.get('caseIds') or []
+        if selected_ids:
+            expected = [c for c in expected if c['id'] in selected_ids]
+            assert len(expected) == len(set(selected_ids)) == len(selected_ids), f'{batch}: invalid focused selection'
         assert {c['id'] for c in effects['cases']} == {c['id'] for c in expected}, f'{batch}: case coverage mismatch'
         assert len(effects['cases']) == len(expected), f'{batch}: duplicate cases'
         assert ui['status'] == 'success', f'{batch}: input automation failed'
@@ -62,7 +67,7 @@ def main():
             assert case['status'] == 'failed' if failed or unexpected_error else case['status'] in ['passed', 'partial']
             case['capture'] = screenshots[case['id']].relative_to(ROOT).as_posix()
         all_cases.extend(effects['cases'])
-        summary['batches'].append({'batch': batch, 'caseCount': len(expected), 'result': dict(Counter(c['status'] for c in effects['cases'])),
+        summary['batches'].append({'batch': batch, 'caseCount': len(expected), 'focused': bool(selected_ids), 'result': dict(Counter(c['status'] for c in effects['cases'])),
                                    'cardCount': len({c['cardId'] for c in expected}), 'effectsReport': str(directory / 'effects.json')})
         detail = ['# ' + batch + '：场景执行明细', '', 'UI流程完成不等于规则全通过。partial 表示即时数值断言通过，但仍有明确未验证范围。', '']
         for case in effects['cases']:

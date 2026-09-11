@@ -37753,6 +37753,6481 @@
         "army_2_006",
         "army_2_001"
       ]
+    },
+    {
+      "id": "magic_011_02",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / 不弃牌仍获得一红晶",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "CardsToDiscard:count",
+          "value": "0"
+        },
+        {
+          "key": "hand:ids",
+          "value": "magic_011,basic_card_021,basic_card_014,wound_0,wound_1,wound_2"
+        },
+        {
+          "key": "discard:ids",
+          "value": "basic_card_016,basic_card_008"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "2"
+        }
+      ],
+      "limitations": [
+        "实际弃牌及奖励已测；正在施放卡的实例身份和完整出牌区生命周期仍需联验"
+      ],
+      "extraHandCards": [],
+      "discardIndices": [],
+      "foreignDiscard": false,
+      "expectedException": ""
+    },
+    {
+      "id": "magic_011_03",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / 弃原红牌获得红晶",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "hand",
+          "value": "5"
+        },
+        {
+          "key": "discard",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "CardsToDiscard:count",
+          "value": "0"
+        },
+        {
+          "key": "hand:ids",
+          "value": "magic_011,basic_card_014,wound_0,wound_1,wound_2"
+        },
+        {
+          "key": "discard:ids",
+          "value": "basic_card_021,basic_card_016,basic_card_008"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "3"
+        }
+      ],
+      "limitations": [
+        "实际弃牌及奖励已测；正在施放卡的实例身份和完整出牌区生命周期仍需联验"
+      ],
+      "extraHandCards": [],
+      "discardIndices": [
+        1
+      ],
+      "foreignDiscard": false,
+      "expectedException": ""
+    },
+    {
+      "id": "magic_011_04",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / 弃原蓝牌获得蓝晶",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "hand",
+          "value": "5"
+        },
+        {
+          "key": "discard",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "CardsToDiscard:count",
+          "value": "0"
+        },
+        {
+          "key": "hand:ids",
+          "value": "magic_011,basic_card_021,wound_0,wound_1,wound_2"
+        },
+        {
+          "key": "discard:ids",
+          "value": "basic_card_014,basic_card_016,basic_card_008"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "2"
+        }
+      ],
+      "limitations": [
+        "实际弃牌及奖励已测；正在施放卡的实例身份和完整出牌区生命周期仍需联验"
+      ],
+      "extraHandCards": [],
+      "discardIndices": [
+        2
+      ],
+      "foreignDiscard": false,
+      "expectedException": ""
+    },
+    {
+      "id": "magic_011_05",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / 两张不同颜色分别进入弃牌堆",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "hand",
+          "value": "4"
+        },
+        {
+          "key": "discard",
+          "value": "4"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "CardsToDiscard:count",
+          "value": "0"
+        },
+        {
+          "key": "hand:ids",
+          "value": "magic_011,wound_0,wound_1,wound_2"
+        },
+        {
+          "key": "discard:ids",
+          "value": "basic_card_014,basic_card_021,basic_card_016,basic_card_008"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "3"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "2"
+        }
+      ],
+      "limitations": [
+        "实际弃牌及奖励已测；正在施放卡的实例身份和完整出牌区生命周期仍需联验"
+      ],
+      "extraHandCards": [],
+      "discardIndices": [
+        1,
+        2
+      ],
+      "foreignDiscard": false,
+      "expectedException": ""
+    },
+    {
+      "id": "magic_011_06",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / 最多三张不同原色",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "hand",
+          "value": "4"
+        },
+        {
+          "key": "discard",
+          "value": "5"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "CardsToDiscard:count",
+          "value": "0"
+        },
+        {
+          "key": "hand:ids",
+          "value": "magic_011,wound_0,wound_1,wound_2"
+        },
+        {
+          "key": "discard:ids",
+          "value": "basic_card_000,basic_card_014,basic_card_021,basic_card_016,basic_card_008"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "3"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "2"
+        }
+      ],
+      "limitations": [
+        "实际弃牌及奖励已测；正在施放卡的实例身份和完整出牌区生命周期仍需联验"
+      ],
+      "extraHandCards": [
+        "basic_card_000"
+      ],
+      "discardIndices": [
+        1,
+        2,
+        6
+      ],
+      "foreignDiscard": false,
+      "expectedException": ""
+    },
+    {
+      "id": "magic_011_07",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / 同ID不同实例均可弃掉",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "hand",
+          "value": "5"
+        },
+        {
+          "key": "discard",
+          "value": "4"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "CardsToDiscard:count",
+          "value": "0"
+        },
+        {
+          "key": "hand:ids",
+          "value": "magic_011,basic_card_021,wound_0,wound_1,wound_2"
+        },
+        {
+          "key": "discard:ids",
+          "value": "basic_card_014,basic_card_014,basic_card_016,basic_card_008"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "3"
+        }
+      ],
+      "limitations": [
+        "实际弃牌及奖励已测；正在施放卡的实例身份和完整出牌区生命周期仍需联验"
+      ],
+      "extraHandCards": [
+        "basic_card_014"
+      ],
+      "discardIndices": [
+        2,
+        6
+      ],
+      "foreignDiscard": false,
+      "expectedException": ""
+    },
+    {
+      "id": "magic_011_08",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / 只弃所选同ID实例",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "CardsToDiscard:count",
+          "value": "0"
+        },
+        {
+          "key": "hand:ids",
+          "value": "magic_011,basic_card_021,basic_card_014,wound_0,wound_1,wound_2"
+        },
+        {
+          "key": "discard:ids",
+          "value": "basic_card_014,basic_card_016,basic_card_008"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "2"
+        }
+      ],
+      "limitations": [
+        "实际弃牌及奖励已测；正在施放卡的实例身份和完整出牌区生命周期仍需联验"
+      ],
+      "extraHandCards": [
+        "basic_card_014"
+      ],
+      "discardIndices": [
+        6
+      ],
+      "foreignDiscard": false,
+      "expectedException": ""
+    },
+    {
+      "id": "magic_011_09",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / 法术按原蓝色奖励",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "CardsToDiscard:count",
+          "value": "0"
+        },
+        {
+          "key": "hand:ids",
+          "value": "magic_011,basic_card_021,basic_card_014,wound_0,wound_1,wound_2"
+        },
+        {
+          "key": "discard:ids",
+          "value": "magic_014,basic_card_016,basic_card_008"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "2"
+        }
+      ],
+      "limitations": [
+        "实际弃牌及奖励已测；正在施放卡的实例身份和完整出牌区生命周期仍需联验"
+      ],
+      "extraHandCards": [
+        "magic_014"
+      ],
+      "discardIndices": [
+        6
+      ],
+      "foreignDiscard": false,
+      "expectedException": ""
+    },
+    {
+      "id": "magic_011_10",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / 弃神器选择Red",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "CardsToDiscard:count",
+          "value": "0"
+        },
+        {
+          "key": "hand:ids",
+          "value": "magic_011,basic_card_021,basic_card_014,wound_0,wound_1,wound_2"
+        },
+        {
+          "key": "discard:ids",
+          "value": "items_004,basic_card_016,basic_card_008"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "3"
+        }
+      ],
+      "limitations": [
+        "实际弃牌及奖励已测；正在施放卡的实例身份和完整出牌区生命周期仍需联验"
+      ],
+      "extraHandCards": [
+        "items_004"
+      ],
+      "discardIndices": [
+        6
+      ],
+      "foreignDiscard": false,
+      "expectedException": ""
+    },
+    {
+      "id": "magic_011_11",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 1,
+      "effectChoice": "",
+      "title": "基础 / 弃神器选择Blue",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "CardsToDiscard:count",
+          "value": "0"
+        },
+        {
+          "key": "hand:ids",
+          "value": "magic_011,basic_card_021,basic_card_014,wound_0,wound_1,wound_2"
+        },
+        {
+          "key": "discard:ids",
+          "value": "items_004,basic_card_016,basic_card_008"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "2"
+        }
+      ],
+      "limitations": [
+        "实际弃牌及奖励已测；正在施放卡的实例身份和完整出牌区生命周期仍需联验"
+      ],
+      "extraHandCards": [
+        "items_004"
+      ],
+      "discardIndices": [
+        6
+      ],
+      "foreignDiscard": false,
+      "expectedException": ""
+    },
+    {
+      "id": "magic_011_12",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 2,
+      "effectChoice": "",
+      "title": "基础 / 弃神器选择Green",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "CardsToDiscard:count",
+          "value": "0"
+        },
+        {
+          "key": "hand:ids",
+          "value": "magic_011,basic_card_021,basic_card_014,wound_0,wound_1,wound_2"
+        },
+        {
+          "key": "discard:ids",
+          "value": "items_004,basic_card_016,basic_card_008"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "2"
+        }
+      ],
+      "limitations": [
+        "实际弃牌及奖励已测；正在施放卡的实例身份和完整出牌区生命周期仍需联验"
+      ],
+      "extraHandCards": [
+        "items_004"
+      ],
+      "discardIndices": [
+        6
+      ],
+      "foreignDiscard": false,
+      "expectedException": ""
+    },
+    {
+      "id": "magic_011_13",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 3,
+      "effectChoice": "",
+      "title": "基础 / 弃神器选择White",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "CardsToDiscard:count",
+          "value": "0"
+        },
+        {
+          "key": "hand:ids",
+          "value": "magic_011,basic_card_021,basic_card_014,wound_0,wound_1,wound_2"
+        },
+        {
+          "key": "discard:ids",
+          "value": "items_004,basic_card_016,basic_card_008"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "2"
+        },
+        {
+          "key": "crystal:White",
+          "value": "2"
+        }
+      ],
+      "limitations": [
+        "实际弃牌及奖励已测；正在施放卡的实例身份和完整出牌区生命周期仍需联验"
+      ],
+      "extraHandCards": [
+        "items_004"
+      ],
+      "discardIndices": [
+        6
+      ],
+      "foreignDiscard": false,
+      "expectedException": ""
+    },
+    {
+      "id": "magic_011_14",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 36,
+      "effectChoice": "",
+      "title": "基础 / 三件神器分别选择红蓝绿",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "5"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "CardsToDiscard:count",
+          "value": "0"
+        },
+        {
+          "key": "hand:ids",
+          "value": "magic_011,basic_card_021,basic_card_014,wound_0,wound_1,wound_2"
+        },
+        {
+          "key": "discard:ids",
+          "value": "items_006,items_005,items_004,basic_card_016,basic_card_008"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "3"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "2"
+        }
+      ],
+      "limitations": [
+        "实际弃牌及奖励已测；正在施放卡的实例身份和完整出牌区生命周期仍需联验"
+      ],
+      "extraHandCards": [
+        "items_004",
+        "items_005",
+        "items_006"
+      ],
+      "discardIndices": [
+        6,
+        7,
+        8
+      ],
+      "foreignDiscard": false,
+      "expectedException": ""
+    },
+    {
+      "id": "magic_011_15",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 9,
+      "effectChoice": "",
+      "title": "基础 / 同ID神器实例可选不同颜色",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "4"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "CardsToDiscard:count",
+          "value": "0"
+        },
+        {
+          "key": "hand:ids",
+          "value": "magic_011,basic_card_021,basic_card_014,wound_0,wound_1,wound_2"
+        },
+        {
+          "key": "discard:ids",
+          "value": "items_004,items_004,basic_card_016,basic_card_008"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "2"
+        }
+      ],
+      "limitations": [
+        "实际弃牌及奖励已测；正在施放卡的实例身份和完整出牌区生命周期仍需联验"
+      ],
+      "extraHandCards": [
+        "items_004",
+        "items_004"
+      ],
+      "discardIndices": [
+        6,
+        7
+      ],
+      "foreignDiscard": false,
+      "expectedException": ""
+    },
+    {
+      "id": "magic_011_16",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / 红晶满三上限转为红标记",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "crystal:Red",
+          "value": "3"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "3"
+        },
+        {
+          "key": "hand",
+          "value": "5"
+        },
+        {
+          "key": "discard",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "CardsToDiscard:count",
+          "value": "0"
+        },
+        {
+          "key": "hand:ids",
+          "value": "magic_011,basic_card_014,wound_0,wound_1,wound_2"
+        },
+        {
+          "key": "discard:ids",
+          "value": "basic_card_021,basic_card_016,basic_card_008"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "3"
+        }
+      ],
+      "limitations": [
+        "实际弃牌及奖励已测；正在施放卡的实例身份和完整出牌区生命周期仍需联验"
+      ],
+      "extraHandCards": [],
+      "discardIndices": [
+        1
+      ],
+      "foreignDiscard": false,
+      "expectedException": ""
+    },
+    {
+      "id": "magic_011_17",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / 两张蓝牌溢出蓝晶上限",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "crystal:Blue",
+          "value": "3"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "hand",
+          "value": "5"
+        },
+        {
+          "key": "discard",
+          "value": "4"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "CardsToDiscard:count",
+          "value": "0"
+        },
+        {
+          "key": "hand:ids",
+          "value": "magic_011,basic_card_021,wound_0,wound_1,wound_2"
+        },
+        {
+          "key": "discard:ids",
+          "value": "basic_card_014,basic_card_014,basic_card_016,basic_card_008"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "3"
+        },
+        {
+          "key": "token:Blue",
+          "value": "4"
+        }
+      ],
+      "limitations": [
+        "实际弃牌及奖励已测；正在施放卡的实例身份和完整出牌区生命周期仍需联验"
+      ],
+      "extraHandCards": [
+        "basic_card_014"
+      ],
+      "discardIndices": [
+        2,
+        6
+      ],
+      "foreignDiscard": false,
+      "expectedException": ""
+    },
+    {
+      "id": "magic_011_18",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / 拒绝重复选择同一实例",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "2"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "CardsToDiscard:count",
+          "value": "2"
+        },
+        {
+          "key": "hand:ids",
+          "value": "magic_011,basic_card_021,basic_card_014,wound_0,wound_1,wound_2"
+        },
+        {
+          "key": "discard:ids",
+          "value": "basic_card_016,basic_card_008"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "token:Black",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        }
+      ],
+      "limitations": [
+        "实际弃牌及奖励已测；正在施放卡的实例身份和完整出牌区生命周期仍需联验"
+      ],
+      "extraHandCards": [],
+      "discardIndices": [
+        1,
+        1
+      ],
+      "foreignDiscard": false,
+      "expectedException": "InvalidOperationException: 献祭不能重复选择同一张手牌"
+    },
+    {
+      "id": "magic_011_19",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / 拒绝夹杂伤牌且不先弃合法牌",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "2"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "CardsToDiscard:count",
+          "value": "2"
+        },
+        {
+          "key": "hand:ids",
+          "value": "magic_011,basic_card_021,basic_card_014,wound_0,wound_1,wound_2"
+        },
+        {
+          "key": "discard:ids",
+          "value": "basic_card_016,basic_card_008"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "token:Black",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        }
+      ],
+      "limitations": [
+        "实际弃牌及奖励已测；正在施放卡的实例身份和完整出牌区生命周期仍需联验"
+      ],
+      "extraHandCards": [],
+      "discardIndices": [
+        1,
+        3
+      ],
+      "foreignDiscard": false,
+      "expectedException": "InvalidOperationException: 献祭不能弃掉创伤或非契约卡牌"
+    },
+    {
+      "id": "magic_011_20",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / 同ID外来对象不能冒充持有手牌",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "2"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "CardsToDiscard:count",
+          "value": "1"
+        },
+        {
+          "key": "hand:ids",
+          "value": "magic_011,basic_card_021,basic_card_014,wound_0,wound_1,wound_2"
+        },
+        {
+          "key": "discard:ids",
+          "value": "basic_card_016,basic_card_008"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "token:Black",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        }
+      ],
+      "limitations": [
+        "实际弃牌及奖励已测；正在施放卡的实例身份和完整出牌区生命周期仍需联验"
+      ],
+      "extraHandCards": [],
+      "discardIndices": [
+        1
+      ],
+      "foreignDiscard": true,
+      "expectedException": "InvalidOperationException: 献祭必须选择实际持有的手牌实例"
+    },
+    {
+      "id": "magic_011_21",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / 拒绝超过三张",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "2"
+        },
+        {
+          "key": "hand",
+          "value": "8"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "CardsToDiscard:count",
+          "value": "4"
+        },
+        {
+          "key": "hand:ids",
+          "value": "magic_011,basic_card_021,basic_card_014,wound_0,wound_1,wound_2,basic_card_000,items_004"
+        },
+        {
+          "key": "discard:ids",
+          "value": "basic_card_016,basic_card_008"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "token:Black",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        }
+      ],
+      "limitations": [
+        "实际弃牌及奖励已测；正在施放卡的实例身份和完整出牌区生命周期仍需联验"
+      ],
+      "extraHandCards": [
+        "basic_card_000",
+        "items_004"
+      ],
+      "discardIndices": [
+        1,
+        2,
+        6,
+        7
+      ],
+      "foreignDiscard": false,
+      "expectedException": "InvalidOperationException: 献祭最多弃掉三张非创伤手牌"
+    },
+    {
+      "id": "magic_011_22",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 1,
+      "effectChoice": "",
+      "title": "基础 / 无神器时拒绝额外选色编码",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "2"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "CardsToDiscard:count",
+          "value": "1"
+        },
+        {
+          "key": "hand:ids",
+          "value": "magic_011,basic_card_021,basic_card_014,wound_0,wound_1,wound_2"
+        },
+        {
+          "key": "discard:ids",
+          "value": "basic_card_016,basic_card_008"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "token:Black",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        }
+      ],
+      "limitations": [
+        "实际弃牌及奖励已测；正在施放卡的实例身份和完整出牌区生命周期仍需联验"
+      ],
+      "extraHandCards": [],
+      "discardIndices": [
+        1
+      ],
+      "foreignDiscard": false,
+      "expectedException": "InvalidOperationException: 献祭神器魔晶颜色选择无效"
+    },
+    {
+      "id": "magic_011_23",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 4,
+      "effectChoice": "",
+      "title": "基础 / 拒绝超出单神器颜色范围",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "2"
+        },
+        {
+          "key": "hand",
+          "value": "7"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "CardsToDiscard:count",
+          "value": "1"
+        },
+        {
+          "key": "hand:ids",
+          "value": "magic_011,basic_card_021,basic_card_014,wound_0,wound_1,wound_2,items_004"
+        },
+        {
+          "key": "discard:ids",
+          "value": "basic_card_016,basic_card_008"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "token:Black",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        }
+      ],
+      "limitations": [
+        "实际弃牌及奖励已测；正在施放卡的实例身份和完整出牌区生命周期仍需联验"
+      ],
+      "extraHandCards": [
+        "items_004"
+      ],
+      "discardIndices": [
+        6
+      ],
+      "foreignDiscard": false,
+      "expectedException": "InvalidOperationException: 献祭神器魔晶颜色选择无效"
+    },
+    {
+      "id": "magic_011_24",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / 不能用尚未获得的红晶支付本卡",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "token:Red",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "0"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "0"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "CardsToDiscard:count",
+          "value": "1"
+        },
+        {
+          "key": "hand:ids",
+          "value": "magic_011,basic_card_021,basic_card_014,wound_0,wound_1,wound_2"
+        },
+        {
+          "key": "discard:ids",
+          "value": "basic_card_016,basic_card_008"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "token:Black",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        }
+      ],
+      "limitations": [
+        "实际弃牌及奖励已测；正在施放卡的实例身份和完整出牌区生命周期仍需联验"
+      ],
+      "extraHandCards": [],
+      "discardIndices": [
+        1
+      ],
+      "foreignDiscard": false,
+      "expectedException": "InvalidOperationException: 法力不足，不能支付所选效果"
+    },
+    {
+      "id": "magic_011_25",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 2,
+      "effectChoice": "",
+      "title": "强化 / GreenRed零对不能攻击",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "crystal:Green",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "3"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "3"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "0"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        }
+      ],
+      "limitations": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ],
+      "combatPhase": "Ranged",
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 1,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [],
+          "fame": 3
+        }
+      ],
+      "expectedException": "InvalidOperationException: 没有可用于此阶段的攻击"
+    },
+    {
+      "id": "magic_011_26",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 2,
+      "effectChoice": "",
+      "title": "强化 / GreenRed1对实际消灭目标",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "3"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "2"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "combat:printed",
+          "value": "4"
+        },
+        {
+          "key": "combat:effective",
+          "value": "4"
+        },
+        {
+          "key": "combat:required",
+          "value": "4"
+        },
+        {
+          "key": "combat:kills",
+          "value": "1"
+        },
+        {
+          "key": "combat:fame",
+          "value": "3"
+        },
+        {
+          "key": "combat:wounds",
+          "value": "0"
+        },
+        {
+          "key": "Fame",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        },
+        {
+          "key": "played:attackElement",
+          "value": "Fire"
+        },
+        {
+          "key": "played:SiegePool",
+          "value": "4"
+        },
+        {
+          "key": "played:RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "3"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "0"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        }
+      ],
+      "limitations": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ],
+      "combatPhase": "Ranged",
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 4,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [
+            "Fortified"
+          ],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_011_27",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 2,
+      "effectChoice": "",
+      "title": "强化 / GreenRed2对实际消灭目标",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "crystal:Green",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "3"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "3"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "combat:printed",
+          "value": "8"
+        },
+        {
+          "key": "combat:effective",
+          "value": "8"
+        },
+        {
+          "key": "combat:required",
+          "value": "8"
+        },
+        {
+          "key": "combat:kills",
+          "value": "1"
+        },
+        {
+          "key": "combat:fame",
+          "value": "3"
+        },
+        {
+          "key": "combat:wounds",
+          "value": "0"
+        },
+        {
+          "key": "Fame",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        },
+        {
+          "key": "played:attackElement",
+          "value": "Fire"
+        },
+        {
+          "key": "played:SiegePool",
+          "value": "8"
+        },
+        {
+          "key": "played:RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "4"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "0"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        }
+      ],
+      "limitations": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ],
+      "combatPhase": "Ranged",
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 8,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [
+            "Fortified"
+          ],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_011_28",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 2,
+      "effectChoice": "",
+      "title": "强化 / GreenRed3对实际消灭目标",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "crystal:Green",
+          "value": "3"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "3"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "4"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "combat:printed",
+          "value": "12"
+        },
+        {
+          "key": "combat:effective",
+          "value": "12"
+        },
+        {
+          "key": "combat:required",
+          "value": "12"
+        },
+        {
+          "key": "combat:kills",
+          "value": "1"
+        },
+        {
+          "key": "combat:fame",
+          "value": "3"
+        },
+        {
+          "key": "combat:wounds",
+          "value": "0"
+        },
+        {
+          "key": "Fame",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        },
+        {
+          "key": "played:attackElement",
+          "value": "Fire"
+        },
+        {
+          "key": "played:SiegePool",
+          "value": "12"
+        },
+        {
+          "key": "played:RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "5"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "0"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        }
+      ],
+      "limitations": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ],
+      "combatPhase": "Ranged",
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 12,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [
+            "Fortified"
+          ],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_011_29",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 2,
+      "effectChoice": "",
+      "title": "强化 / GreenRed对应元素抗性减半",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "2"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "combat:printed",
+          "value": "4"
+        },
+        {
+          "key": "combat:effective",
+          "value": "2"
+        },
+        {
+          "key": "combat:required",
+          "value": "2"
+        },
+        {
+          "key": "combat:kills",
+          "value": "1"
+        },
+        {
+          "key": "combat:fame",
+          "value": "3"
+        },
+        {
+          "key": "combat:wounds",
+          "value": "0"
+        },
+        {
+          "key": "Fame",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "3"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "0"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        }
+      ],
+      "limitations": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ],
+      "combatPhase": "Ranged",
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 2,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [
+            "FireResist"
+          ],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_011_30",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 258,
+      "effectChoice": "",
+      "title": "强化 / GreenBlue零对不能攻击",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "crystal:Green",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "3"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "3"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "0"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        }
+      ],
+      "limitations": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ],
+      "combatPhase": "Ranged",
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 1,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [],
+          "fame": 3
+        }
+      ],
+      "expectedException": "InvalidOperationException: 没有可用于此阶段的攻击"
+    },
+    {
+      "id": "magic_011_31",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 258,
+      "effectChoice": "",
+      "title": "强化 / GreenBlue1对实际消灭目标",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "3"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "combat:printed",
+          "value": "4"
+        },
+        {
+          "key": "combat:effective",
+          "value": "4"
+        },
+        {
+          "key": "combat:required",
+          "value": "4"
+        },
+        {
+          "key": "combat:kills",
+          "value": "1"
+        },
+        {
+          "key": "combat:fame",
+          "value": "3"
+        },
+        {
+          "key": "combat:wounds",
+          "value": "0"
+        },
+        {
+          "key": "Fame",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        },
+        {
+          "key": "played:attackElement",
+          "value": "Ice"
+        },
+        {
+          "key": "played:SiegePool",
+          "value": "4"
+        },
+        {
+          "key": "played:RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "3"
+        },
+        {
+          "key": "token:Green",
+          "value": "3"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "0"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        }
+      ],
+      "limitations": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ],
+      "combatPhase": "Ranged",
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 4,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [
+            "Fortified"
+          ],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_011_32",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 258,
+      "effectChoice": "",
+      "title": "强化 / GreenBlue2对实际消灭目标",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "crystal:Green",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "3"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "combat:printed",
+          "value": "8"
+        },
+        {
+          "key": "combat:effective",
+          "value": "8"
+        },
+        {
+          "key": "combat:required",
+          "value": "8"
+        },
+        {
+          "key": "combat:kills",
+          "value": "1"
+        },
+        {
+          "key": "combat:fame",
+          "value": "3"
+        },
+        {
+          "key": "combat:wounds",
+          "value": "0"
+        },
+        {
+          "key": "Fame",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        },
+        {
+          "key": "played:attackElement",
+          "value": "Ice"
+        },
+        {
+          "key": "played:SiegePool",
+          "value": "8"
+        },
+        {
+          "key": "played:RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "4"
+        },
+        {
+          "key": "token:Green",
+          "value": "4"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "0"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        }
+      ],
+      "limitations": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ],
+      "combatPhase": "Ranged",
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 8,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [
+            "Fortified"
+          ],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_011_33",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 258,
+      "effectChoice": "",
+      "title": "强化 / GreenBlue3对实际消灭目标",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "crystal:Green",
+          "value": "3"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "3"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "combat:printed",
+          "value": "12"
+        },
+        {
+          "key": "combat:effective",
+          "value": "12"
+        },
+        {
+          "key": "combat:required",
+          "value": "12"
+        },
+        {
+          "key": "combat:kills",
+          "value": "1"
+        },
+        {
+          "key": "combat:fame",
+          "value": "3"
+        },
+        {
+          "key": "combat:wounds",
+          "value": "0"
+        },
+        {
+          "key": "Fame",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        },
+        {
+          "key": "played:attackElement",
+          "value": "Ice"
+        },
+        {
+          "key": "played:SiegePool",
+          "value": "12"
+        },
+        {
+          "key": "played:RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "5"
+        },
+        {
+          "key": "token:Green",
+          "value": "5"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "0"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        }
+      ],
+      "limitations": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ],
+      "combatPhase": "Ranged",
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 12,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [
+            "Fortified"
+          ],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_011_34",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 258,
+      "effectChoice": "",
+      "title": "强化 / GreenBlue对应元素抗性减半",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "combat:printed",
+          "value": "4"
+        },
+        {
+          "key": "combat:effective",
+          "value": "2"
+        },
+        {
+          "key": "combat:required",
+          "value": "2"
+        },
+        {
+          "key": "combat:kills",
+          "value": "1"
+        },
+        {
+          "key": "combat:fame",
+          "value": "3"
+        },
+        {
+          "key": "combat:wounds",
+          "value": "0"
+        },
+        {
+          "key": "Fame",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "3"
+        },
+        {
+          "key": "token:Green",
+          "value": "3"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "0"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        }
+      ],
+      "limitations": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ],
+      "combatPhase": "Ranged",
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 2,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [
+            "IceResist"
+          ],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_011_35",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 3,
+      "effectChoice": "",
+      "title": "强化 / WhiteRed零对不能攻击",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "crystal:White",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "3"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "3"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "0"
+        }
+      ],
+      "limitations": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ],
+      "combatPhase": "Ranged",
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 1,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [],
+          "fame": 3
+        }
+      ],
+      "expectedException": "InvalidOperationException: 没有可用于此阶段的攻击"
+    },
+    {
+      "id": "magic_011_36",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 3,
+      "effectChoice": "",
+      "title": "强化 / WhiteRed1对实际消灭目标",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "crystal:White",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "3"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "2"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "combat:printed",
+          "value": "6"
+        },
+        {
+          "key": "combat:effective",
+          "value": "6"
+        },
+        {
+          "key": "combat:required",
+          "value": "6"
+        },
+        {
+          "key": "combat:kills",
+          "value": "1"
+        },
+        {
+          "key": "combat:fame",
+          "value": "3"
+        },
+        {
+          "key": "combat:wounds",
+          "value": "0"
+        },
+        {
+          "key": "Fame",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        },
+        {
+          "key": "played:attackElement",
+          "value": "Fire"
+        },
+        {
+          "key": "played:SiegePool",
+          "value": "0"
+        },
+        {
+          "key": "played:RangedPool",
+          "value": "6"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "3"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "0"
+        }
+      ],
+      "limitations": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ],
+      "combatPhase": "Ranged",
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 6,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_011_37",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 3,
+      "effectChoice": "",
+      "title": "强化 / WhiteRed2对实际消灭目标",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "crystal:White",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "3"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "3"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "combat:printed",
+          "value": "12"
+        },
+        {
+          "key": "combat:effective",
+          "value": "12"
+        },
+        {
+          "key": "combat:required",
+          "value": "12"
+        },
+        {
+          "key": "combat:kills",
+          "value": "1"
+        },
+        {
+          "key": "combat:fame",
+          "value": "3"
+        },
+        {
+          "key": "combat:wounds",
+          "value": "0"
+        },
+        {
+          "key": "Fame",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        },
+        {
+          "key": "played:attackElement",
+          "value": "Fire"
+        },
+        {
+          "key": "played:SiegePool",
+          "value": "0"
+        },
+        {
+          "key": "played:RangedPool",
+          "value": "12"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "4"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "0"
+        }
+      ],
+      "limitations": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ],
+      "combatPhase": "Ranged",
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 12,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_011_38",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 3,
+      "effectChoice": "",
+      "title": "强化 / WhiteRed3对实际消灭目标",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "crystal:White",
+          "value": "3"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "3"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "4"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "combat:printed",
+          "value": "18"
+        },
+        {
+          "key": "combat:effective",
+          "value": "18"
+        },
+        {
+          "key": "combat:required",
+          "value": "18"
+        },
+        {
+          "key": "combat:kills",
+          "value": "1"
+        },
+        {
+          "key": "combat:fame",
+          "value": "3"
+        },
+        {
+          "key": "combat:wounds",
+          "value": "0"
+        },
+        {
+          "key": "Fame",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        },
+        {
+          "key": "played:attackElement",
+          "value": "Fire"
+        },
+        {
+          "key": "played:SiegePool",
+          "value": "0"
+        },
+        {
+          "key": "played:RangedPool",
+          "value": "18"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "5"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "0"
+        }
+      ],
+      "limitations": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ],
+      "combatPhase": "Ranged",
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 18,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_011_39",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 3,
+      "effectChoice": "",
+      "title": "强化 / WhiteRed对应元素抗性减半",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "2"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "combat:printed",
+          "value": "6"
+        },
+        {
+          "key": "combat:effective",
+          "value": "3"
+        },
+        {
+          "key": "combat:required",
+          "value": "3"
+        },
+        {
+          "key": "combat:kills",
+          "value": "1"
+        },
+        {
+          "key": "combat:fame",
+          "value": "3"
+        },
+        {
+          "key": "combat:wounds",
+          "value": "0"
+        },
+        {
+          "key": "Fame",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "3"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "0"
+        }
+      ],
+      "limitations": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ],
+      "combatPhase": "Ranged",
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 3,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [
+            "FireResist"
+          ],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_011_40",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 3,
+      "effectChoice": "",
+      "title": "强化 / 远程Fire仍被城防拒绝",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "6"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "2"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "attackElement",
+          "value": "Fire"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "3"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "0"
+        }
+      ],
+      "limitations": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ],
+      "combatPhase": "Ranged",
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 3,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [
+            "Fortified"
+          ],
+          "fame": 3
+        }
+      ],
+      "expectedException": "InvalidOperationException: 城防限制：当前攻击不能指定这些目标"
+    },
+    {
+      "id": "magic_011_41",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 259,
+      "effectChoice": "",
+      "title": "强化 / WhiteBlue零对不能攻击",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "crystal:White",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "3"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "3"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "0"
+        }
+      ],
+      "limitations": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ],
+      "combatPhase": "Ranged",
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 1,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [],
+          "fame": 3
+        }
+      ],
+      "expectedException": "InvalidOperationException: 没有可用于此阶段的攻击"
+    },
+    {
+      "id": "magic_011_42",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 259,
+      "effectChoice": "",
+      "title": "强化 / WhiteBlue1对实际消灭目标",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "crystal:White",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "3"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "combat:printed",
+          "value": "6"
+        },
+        {
+          "key": "combat:effective",
+          "value": "6"
+        },
+        {
+          "key": "combat:required",
+          "value": "6"
+        },
+        {
+          "key": "combat:kills",
+          "value": "1"
+        },
+        {
+          "key": "combat:fame",
+          "value": "3"
+        },
+        {
+          "key": "combat:wounds",
+          "value": "0"
+        },
+        {
+          "key": "Fame",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        },
+        {
+          "key": "played:attackElement",
+          "value": "Ice"
+        },
+        {
+          "key": "played:SiegePool",
+          "value": "0"
+        },
+        {
+          "key": "played:RangedPool",
+          "value": "6"
+        },
+        {
+          "key": "token:Blue",
+          "value": "3"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "3"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "0"
+        }
+      ],
+      "limitations": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ],
+      "combatPhase": "Ranged",
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 6,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_011_43",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 259,
+      "effectChoice": "",
+      "title": "强化 / WhiteBlue2对实际消灭目标",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "crystal:White",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "3"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "combat:printed",
+          "value": "12"
+        },
+        {
+          "key": "combat:effective",
+          "value": "12"
+        },
+        {
+          "key": "combat:required",
+          "value": "12"
+        },
+        {
+          "key": "combat:kills",
+          "value": "1"
+        },
+        {
+          "key": "combat:fame",
+          "value": "3"
+        },
+        {
+          "key": "combat:wounds",
+          "value": "0"
+        },
+        {
+          "key": "Fame",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        },
+        {
+          "key": "played:attackElement",
+          "value": "Ice"
+        },
+        {
+          "key": "played:SiegePool",
+          "value": "0"
+        },
+        {
+          "key": "played:RangedPool",
+          "value": "12"
+        },
+        {
+          "key": "token:Blue",
+          "value": "4"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "4"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "0"
+        }
+      ],
+      "limitations": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ],
+      "combatPhase": "Ranged",
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 12,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_011_44",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 259,
+      "effectChoice": "",
+      "title": "强化 / WhiteBlue3对实际消灭目标",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "crystal:White",
+          "value": "3"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "3"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "combat:printed",
+          "value": "18"
+        },
+        {
+          "key": "combat:effective",
+          "value": "18"
+        },
+        {
+          "key": "combat:required",
+          "value": "18"
+        },
+        {
+          "key": "combat:kills",
+          "value": "1"
+        },
+        {
+          "key": "combat:fame",
+          "value": "3"
+        },
+        {
+          "key": "combat:wounds",
+          "value": "0"
+        },
+        {
+          "key": "Fame",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        },
+        {
+          "key": "played:attackElement",
+          "value": "Ice"
+        },
+        {
+          "key": "played:SiegePool",
+          "value": "0"
+        },
+        {
+          "key": "played:RangedPool",
+          "value": "18"
+        },
+        {
+          "key": "token:Blue",
+          "value": "5"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "5"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "0"
+        }
+      ],
+      "limitations": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ],
+      "combatPhase": "Ranged",
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 18,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_011_45",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 259,
+      "effectChoice": "",
+      "title": "强化 / WhiteBlue对应元素抗性减半",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "combat:printed",
+          "value": "6"
+        },
+        {
+          "key": "combat:effective",
+          "value": "3"
+        },
+        {
+          "key": "combat:required",
+          "value": "3"
+        },
+        {
+          "key": "combat:kills",
+          "value": "1"
+        },
+        {
+          "key": "combat:fame",
+          "value": "3"
+        },
+        {
+          "key": "combat:wounds",
+          "value": "0"
+        },
+        {
+          "key": "Fame",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "3"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "3"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "0"
+        }
+      ],
+      "limitations": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ],
+      "combatPhase": "Ranged",
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 3,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [
+            "IceResist"
+          ],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_011_46",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 259,
+      "effectChoice": "",
+      "title": "强化 / 远程Ice仍被城防拒绝",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "6"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "attackElement",
+          "value": "Ice"
+        },
+        {
+          "key": "token:Blue",
+          "value": "3"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "3"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "0"
+        }
+      ],
+      "limitations": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ],
+      "combatPhase": "Ranged",
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 3,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [
+            "Fortified"
+          ],
+          "fame": 3
+        }
+      ],
+      "expectedException": "InvalidOperationException: 城防限制：当前攻击不能指定这些目标"
+    },
+    {
+      "id": "magic_011_47",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": true,
+      "option": -1,
+      "effectChoice": "",
+      "title": "强化 / 非法配对选择不消费魔力或魔晶",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "2"
+        },
+        {
+          "key": "token:Black",
+          "value": "2"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "Reputation",
+          "value": "0"
+        },
+        {
+          "key": "unitReady",
+          "value": "False"
+        },
+        {
+          "key": "unitWounds",
+          "value": "0"
+        },
+        {
+          "key": "ManaCurseTriggered",
+          "value": "False"
+        }
+      ],
+      "limitations": [],
+      "expectedException": "InvalidOperationException: 牺牲必须选择绿或白，再选择红或蓝"
+    },
+    {
+      "id": "magic_011_48",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 非法配对选择不消费魔力或魔晶",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "2"
+        },
+        {
+          "key": "token:Black",
+          "value": "2"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "Reputation",
+          "value": "0"
+        },
+        {
+          "key": "unitReady",
+          "value": "False"
+        },
+        {
+          "key": "unitWounds",
+          "value": "0"
+        },
+        {
+          "key": "ManaCurseTriggered",
+          "value": "False"
+        }
+      ],
+      "limitations": [],
+      "expectedException": "InvalidOperationException: 牺牲必须选择绿或白，再选择红或蓝"
+    },
+    {
+      "id": "magic_011_49",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 1,
+      "effectChoice": "",
+      "title": "强化 / 非法配对选择不消费魔力或魔晶",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "2"
+        },
+        {
+          "key": "token:Black",
+          "value": "2"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "Reputation",
+          "value": "0"
+        },
+        {
+          "key": "unitReady",
+          "value": "False"
+        },
+        {
+          "key": "unitWounds",
+          "value": "0"
+        },
+        {
+          "key": "ManaCurseTriggered",
+          "value": "False"
+        }
+      ],
+      "limitations": [],
+      "expectedException": "InvalidOperationException: 牺牲必须选择绿或白，再选择红或蓝"
+    },
+    {
+      "id": "magic_011_50",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 4,
+      "effectChoice": "",
+      "title": "强化 / 非法配对选择不消费魔力或魔晶",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "2"
+        },
+        {
+          "key": "token:Black",
+          "value": "2"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "Reputation",
+          "value": "0"
+        },
+        {
+          "key": "unitReady",
+          "value": "False"
+        },
+        {
+          "key": "unitWounds",
+          "value": "0"
+        },
+        {
+          "key": "ManaCurseTriggered",
+          "value": "False"
+        }
+      ],
+      "limitations": [],
+      "expectedException": "InvalidOperationException: 牺牲必须选择绿或白，再选择红或蓝"
+    },
+    {
+      "id": "magic_011_51",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 514,
+      "effectChoice": "",
+      "title": "强化 / 非法配对选择不消费魔力或魔晶",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "2"
+        },
+        {
+          "key": "token:Black",
+          "value": "2"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "Reputation",
+          "value": "0"
+        },
+        {
+          "key": "unitReady",
+          "value": "False"
+        },
+        {
+          "key": "unitWounds",
+          "value": "0"
+        },
+        {
+          "key": "ManaCurseTriggered",
+          "value": "False"
+        }
+      ],
+      "limitations": [],
+      "expectedException": "InvalidOperationException: 牺牲必须选择绿或白，再选择红或蓝"
+    },
+    {
+      "id": "magic_011_52",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 65538,
+      "effectChoice": "",
+      "title": "强化 / 非法配对选择不消费魔力或魔晶",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "2"
+        },
+        {
+          "key": "token:Black",
+          "value": "2"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "Reputation",
+          "value": "0"
+        },
+        {
+          "key": "unitReady",
+          "value": "False"
+        },
+        {
+          "key": "unitWounds",
+          "value": "0"
+        },
+        {
+          "key": "ManaCurseTriggered",
+          "value": "False"
+        }
+      ],
+      "limitations": [],
+      "expectedException": "InvalidOperationException: 牺牲必须选择绿或白，再选择红或蓝"
+    },
+    {
+      "id": "magic_011_53",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 2,
+      "effectChoice": "",
+      "title": "强化 / 施法条件不满足时不转化任何晶体",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "token:Black",
+          "value": "0"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "2"
+        },
+        {
+          "key": "token:Black",
+          "value": "0"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "Reputation",
+          "value": "0"
+        },
+        {
+          "key": "unitReady",
+          "value": "False"
+        },
+        {
+          "key": "unitWounds",
+          "value": "0"
+        },
+        {
+          "key": "ManaCurseTriggered",
+          "value": "False"
+        }
+      ],
+      "limitations": [],
+      "expectedException": "InvalidOperationException: 法力不足，不能支付所选效果"
+    },
+    {
+      "id": "magic_011_54",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 2,
+      "effectChoice": "",
+      "title": "强化 / 施法条件不满足时不转化任何晶体",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "token:Red",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "0"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "0"
+        },
+        {
+          "key": "token:Black",
+          "value": "2"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "Reputation",
+          "value": "0"
+        },
+        {
+          "key": "unitReady",
+          "value": "False"
+        },
+        {
+          "key": "unitWounds",
+          "value": "0"
+        },
+        {
+          "key": "ManaCurseTriggered",
+          "value": "False"
+        }
+      ],
+      "limitations": [],
+      "expectedException": "InvalidOperationException: 法力不足，不能支付所选效果"
+    },
+    {
+      "id": "magic_011_55",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 2,
+      "effectChoice": "",
+      "title": "强化 / 施法条件不满足时不转化任何晶体",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "DayPart",
+          "value": "Day"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "2"
+        },
+        {
+          "key": "token:Black",
+          "value": "2"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "Reputation",
+          "value": "0"
+        },
+        {
+          "key": "unitReady",
+          "value": "False"
+        },
+        {
+          "key": "unitWounds",
+          "value": "0"
+        },
+        {
+          "key": "ManaCurseTriggered",
+          "value": "False"
+        }
+      ],
+      "limitations": [],
+      "expectedException": "InvalidOperationException: 白昼不能施放强效法术"
+    },
+    {
+      "id": "magic_011_56",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 2,
+      "effectChoice": "",
+      "title": "强化 / 支付红晶后已无红绿配对不能攻击",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "token:Red",
+          "value": "0"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "0"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        }
+      ],
+      "limitations": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ],
+      "combatPhase": "Ranged",
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 1,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [],
+          "fame": 3
+        }
+      ],
+      "expectedException": "InvalidOperationException: 没有可用于此阶段的攻击"
+    },
+    {
+      "id": "magic_011_57",
+      "cardId": "magic_011",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 258,
+      "effectChoice": "",
+      "title": "强化 / 配对所得蓝魔力继续施放原迷雾形态",
+      "followup": "magic_014",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "token:Blue",
+          "value": "0"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "4"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "combat:printed",
+          "value": "4"
+        },
+        {
+          "key": "combat:effective",
+          "value": "4"
+        },
+        {
+          "key": "combat:required",
+          "value": "4"
+        },
+        {
+          "key": "combat:kills",
+          "value": "1"
+        },
+        {
+          "key": "combat:fame",
+          "value": "3"
+        },
+        {
+          "key": "combat:wounds",
+          "value": "0"
+        },
+        {
+          "key": "Fame",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "SiegePool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "0"
+        },
+        {
+          "key": "token:Green",
+          "value": "3"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "0"
+        },
+        {
+          "key": "played:attackElement",
+          "value": "Ice"
+        }
+      ],
+      "limitations": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ],
+      "combatPhase": "Ranged",
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 4,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [
+            "Fortified"
+          ],
+          "fame": 3
+        }
+      ]
     }
   ]
 }

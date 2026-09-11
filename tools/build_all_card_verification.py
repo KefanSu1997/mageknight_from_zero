@@ -668,6 +668,94 @@ operation_case('magic_014',True,'蓝晶加黑标记支付后实际忽略毒素�
     unitIds=['army_2_006','army_2_001'])
 
 
+# magic_011: printed discard rewards and crystal pairs, using original instances.
+def sacrifice_discard(title, targets, rewards, extra=(), option=0, setup=None, error='', foreign=False):
+    initial=['magic_011','basic_card_021','basic_card_014','wound_0','wound_1','wound_2',*extra]
+    expected={'hand':len(initial)-(0 if error else len(targets)), 'discard':2+(0 if error else len(targets)),
+              'handWounds':3,'Wounds':3,'CardsToDiscard:count':len(targets) if error else 0,
+              'hand:ids':','.join(c for i,c in enumerate(initial) if error or i not in targets),
+              'discard:ids':','.join(([] if error else [initial[i] for i in reversed(targets)])+['basic_card_016','basic_card_008'])}
+    if error:
+        expected.update({f'token:{c}':(setup or {}).get(f'token:{c}',2) for c in COLORS})
+        expected.update({f'crystal:{c}':(setup or {}).get(f'crystal:{c}',int(c in COLORS[:4])) for c in COLORS})
+    expected.update(rewards)
+    case('magic_011',False,title,expected,option=option,setup=setup,
+         limits=['实际弃牌及奖励已测；正在施放卡的实例身份和完整出牌区生命周期仍需联验'])
+    CASES[-1].update(extraHandCards=list(extra),discardIndices=list(targets),foreignDiscard=foreign,expectedException=error)
+
+
+sacrifice_discard('不弃牌仍获得一红晶',[],{'crystal:Red':2})
+sacrifice_discard('弃原红牌获得红晶',[1],{'crystal:Red':3})
+sacrifice_discard('弃原蓝牌获得蓝晶',[2],{'crystal:Red':2,'crystal:Blue':2})
+sacrifice_discard('两张不同颜色分别进入弃牌堆',[1,2],{'crystal:Red':3,'crystal:Blue':2})
+sacrifice_discard('最多三张不同原色',[1,2,6],{'crystal:Red':3,'crystal:Blue':2,'crystal:Green':2},extra=['basic_card_000'])
+sacrifice_discard('同ID不同实例均可弃掉',[2,6],{'crystal:Red':2,'crystal:Blue':3},extra=['basic_card_014'])
+sacrifice_discard('只弃所选同ID实例',[6],{'crystal:Red':2,'crystal:Blue':2},extra=['basic_card_014'])
+sacrifice_discard('法术按原蓝色奖励',[6],{'crystal:Red':2,'crystal:Blue':2},extra=['magic_014'])
+for color in range(4):
+    sacrifice_discard('弃神器选择'+COLORS[color],[6],{'crystal:Red':3 if color==0 else 2,
+                      **({} if color==0 else {'crystal:'+COLORS[color]:2})},extra=['items_004'],option=color)
+sacrifice_discard('三件神器分别选择红蓝绿',[6,7,8],{'crystal:Red':3,'crystal:Blue':2,'crystal:Green':2},
+                  extra=['items_004','items_005','items_006'],option=0|(1<<2)|(2<<4))
+sacrifice_discard('同ID神器实例可选不同颜色',[6,7],{'crystal:Red':2,'crystal:Blue':2,'crystal:Green':2},
+                  extra=['items_004','items_004'],option=1|(2<<2))
+sacrifice_discard('红晶满三上限转为红标记',[1],{'crystal:Red':3,'token:Red':3},setup={'crystal:Red':3})
+sacrifice_discard('两张蓝牌溢出蓝晶上限',[2,6],{'crystal:Red':2,'crystal:Blue':3,'token:Blue':4},
+                  setup={'crystal:Blue':3},extra=['basic_card_014'])
+sacrifice_discard('拒绝重复选择同一实例',[1,1],{},error='InvalidOperationException: 献祭不能重复选择同一张手牌')
+sacrifice_discard('拒绝夹杂伤牌且不先弃合法牌',[1,3],{},error='InvalidOperationException: 献祭不能弃掉创伤或非契约卡牌')
+sacrifice_discard('同ID外来对象不能冒充持有手牌',[1],{},foreign=True,error='InvalidOperationException: 献祭必须选择实际持有的手牌实例')
+sacrifice_discard('拒绝超过三张',[1,2,6,7],{},extra=['basic_card_000','items_004'],error='InvalidOperationException: 献祭最多弃掉三张非创伤手牌')
+sacrifice_discard('无神器时拒绝额外选色编码',[1],{},option=1,error='InvalidOperationException: 献祭神器魔晶颜色选择无效')
+sacrifice_discard('拒绝超出单神器颜色范围',[6],{},extra=['items_004'],option=4,error='InvalidOperationException: 献祭神器魔晶颜色选择无效')
+sacrifice_discard('不能用尚未获得的红晶支付本卡',[1],{},setup={'token:Red':0,'crystal:Red':0},error='InvalidOperationException: 法力不足，不能支付所选效果')
+
+
+def sacrifice_pair_state(first, second, first_count, second_count):
+    pairs=min(first_count,second_count)
+    tokens={c:2 for c in COLORS};tokens['Red']-=1;tokens['Black']-=1
+    crystals={c:1 for c in COLORS[:4]};crystals[first]=first_count;crystals[second]=second_count
+    for c in [first,second]:tokens[c]+=pairs;crystals[c]-=pairs
+    return {**{'token:'+c:n for c,n in tokens.items()},**{'crystal:'+c:n for c,n in crystals.items()}}
+
+
+for first in ['Green','White']:
+    for second,element,resist in [('Red','Fire','FireResist'),('Blue','Ice','IceResist')]:
+        option=COLORS.index(first)|(COLORS.index(second)<<8)
+        for count in [0,1,2,3]:
+            power=count*(4 if first=='Green' else 6)
+            expected=sacrifice_pair_state(first,second,count,3)
+            setup={'crystal:'+first:count,'crystal:'+second:3}
+            if count==0:
+                combat('magic_011',True,first+second+'零对不能攻击','Ranged',[enemy(1)],0,0,1,
+                       option=option,setup=setup,extra={'SiegePool':0,'RangedPool':0,**expected},
+                       error='InvalidOperationException: 没有可用于此阶段的攻击')
+            else:
+                combat('magic_011',True,first+second+str(count)+'对实际消灭目标','Ranged',
+                       [enemy(power,abilities=['Fortified'] if first=='Green' else [])],power,power,power,kills=1,
+                       option=option,setup=setup,extra={'played:attackElement':element,
+                       'played:SiegePool':power if first=='Green' else 0,'played:RangedPool':power if first=='White' else 0,**expected})
+        power=4 if first=='Green' else 6
+        combat('magic_011',True,first+second+'对应元素抗性减半','Ranged',[enemy(power//2,abilities=[resist])],
+               power,power//2,power//2,kills=1,option=option,extra=sacrifice_pair_state(first,second,1,1))
+        if first=='White':
+            combat('magic_011',True,'远程'+element+'仍被城防拒绝','Ranged',[enemy(3,abilities=['Fortified'])],0,0,3,
+                   option=option,extra={'RangedPool':6,'attackElement':element,**sacrifice_pair_state(first,second,1,1)},
+                   error='InvalidOperationException: 城防限制：当前攻击不能指定这些目标')
+for option in [-1,0,1,4,514,65538]:
+    case('magic_011',True,'非法配对选择不消费魔力或魔晶',{'SiegePool':0},option=option,
+         error='InvalidOperationException: 牺牲必须选择绿或白，再选择红或蓝')
+for setup in [{'token:Black':0},{'token:Red':0,'crystal:Red':0},{'DayPart':'Day'}]:
+    case('magic_011',True,'施法条件不满足时不转化任何晶体',{'SiegePool':0},option=2,setup=setup,
+         error='InvalidOperationException: '+('白昼不能施放强效法术' if 'DayPart' in setup else '法力不足，不能支付所选效果'))
+combat('magic_011',True,'支付红晶后已无红绿配对不能攻击','Ranged',[enemy(1)],0,0,1,option=2,
+       setup={'token:Red':0},extra={'SiegePool':0,'crystal:Red':0,'crystal:Green':1,'token:Red':0,'token:Green':2},
+       error='InvalidOperationException: 没有可用于此阶段的攻击')
+combat('magic_011',True,'配对所得蓝魔力继续施放原迷雾形态','Ranged',[enemy(4,abilities=['Fortified'])],4,4,4,kills=1,
+       option=258,setup={'token:Blue':0},followup='magic_014',extra={'MovementPool':4,'token:Blue':0,'crystal:Blue':0,
+       'token:Green':3,'crystal:Green':0,'played:attackElement':'Ice'})
+
+
 def write_json(path, value):
     data = (json.dumps(value, ensure_ascii=False, indent=2) + '\n').encode('utf-8')
     if path.exists() and path.read_bytes() == data:
@@ -706,7 +794,7 @@ def export():
             steps.append(dict(label=c['id'] + '_execute', buttonPath='Canvas/UIRoot/Btn_Play',
                               before=[expectation('art', c['cardId'])], after=[expectation('executed', True), expectation('completed', i + 1)]))
         for step in steps:
-            if step['label'].startswith('magic_014_'):
+            if step['label'].startswith(('magic_014_', 'magic_011_')):
                 step.setdefault('after', []).append(expectation('ui:textFits', True))
         config = dict(scenePath=f'Assets/Scenes/Verification/{batch}.unity',
                       screenshotsDirectory=f'AutomationOutputs/AllOriginalCards/20260910/{batch}/captures',

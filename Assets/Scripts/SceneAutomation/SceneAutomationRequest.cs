@@ -13,6 +13,7 @@ namespace MageKnight.SceneAutomation
         public string screenshotsDirectory;
         public bool useRunSubfolder = true;
         public string reportPath;
+        public string[] caseIds;
         public bool captureInitialView = true;
         public float initialDelaySeconds = 2f;
         public float defaultWaitAfterSeconds = 1f;

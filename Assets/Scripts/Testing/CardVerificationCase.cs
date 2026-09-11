@@ -27,6 +27,9 @@ public sealed class CardVerificationCase
     public string destinationTerrain;
     public bool omitMovementTarget;
     public int[] manaRolls;
+    public string[] extraHandCards;
+    public int[] discardIndices;
+    public bool foreignDiscard;
 }
 
 [Serializable]

@@ -1,4 +1,4 @@
-# fix(cards): connect original costs, combat, unit damage and mist protection
+# fix(cards): connect original costs, combat, unit damage and crystal sacrifice
 
 ## Why
 
@@ -12,13 +12,17 @@ Mist Form now connects all-unit resistance and the hero’s first enemy-wound pr
 
 Scene suites use original SOs and artwork, independent expectations, real pointer hits, explicit follow-up operations, actual state/zone records, PNG captures, TMP overflow checks and suite hashes. Unique output directories and atomic reports/config writes avoid stale data and mapped-file truncation failures. This branch retains known failures and partial coverage.
 
+Sacrifice now discards the actual selected original-card instances, rewards their original colors, allows each artifact to choose its crystal color and validates the whole selection before payment. Strong Sacrifice pays the spell cost first, converts every remaining selected crystal pair into typed elemental siege/ranged power and returns matching mana tokens.
+
 ## How to test
 
-Generate outside Play Mode: `python tools/build_all_card_verification.py`, `python tools/build_unit_verification.py`, and `python tools/build_hero_skill_verification.py` for the existing skill suite. Open the project through Unity Hub; do not launch Unity directly or use batchmode.
+For routine iterations, select only affected cards/cases with `python tools/build_focused_card_verification.py --cards magic_011` or `--cases <IDs>` and run Unity menu `Tools/Mage Knight/Original Cards/Run Focused Cases`. Verify its exact output with `tools/verify_sacrifice_scene.py --output <run>` and `tools/summarize_all_card_verification.py --output <run>`. Use `--failed-from <effects.json>` to remove completed checks from the daily queue; the full regression library stays intact. Never use stale or incomplete reports to prune the queue.
 
-Run Unity menus `Tools/Mage Knight/Adventure/Run All EditMode Tests`, `Tools/Mage Knight/Original Cards/Run All Batches`, `Tools/Mage Knight/Original Cards/Run Units`, and `Tools/Mage Knight/Adventure/Run All Four`. Verify exact fresh output directories with `tools/summarize_all_card_verification.py`, `tools/verify_mist_scene.py`, `tools/verify_unit_scenes.py` and `tools/verify_card_regression.py` using their output/scenes/tests arguments.
+Regenerate the full case library only when fixtures change: `python tools/build_all_card_verification.py`. Run only necessary EditMode/scene regressions for the touched behavior; full-batch, unit and four-adventure regressions require an actual impact reason. Open through Unity Hub, never batchmode or direct Unity.exe.
 
-Latest evidence on 2026-09-11: EditMode243 passed; deed550 cases (142 passed,390 partial,18 failed),1897 pointer actions,7898 effect assertions,805 screenshots. Mist62 cases all expected checks passed, with full-card status still partial. Original490 case definitions unchanged;487 complete records unchanged, one intended fix and two unseeded random outcomes differ. Unit156 cases/6914 assertions passed. Adventure114 actions/477 assertions passed with118 identical images. Final actual Unity Console error reads twice zero. Exact run paths and visual comparisons: `vibe_coding/codex/worklog_2026-09-11_mist_form_resolution.md`.
+Current focused result `20260911_213849_0b76d08a`: Sacrifice58 cases (old2 failures +new56),197 pointer actions,1411 effect assertions and83 captures passed. Source/printed text, actual zones, payment, fortification/resistance and screenshot readability verified. All58 completed checks now leave an empty daily queue; whole-card status still partial. Core EditMode260 passed, and actual Unity Console twice zero after the focused run. The earlier broad spell run was explicitly stopped following the user's minimum-necessary instruction and is not counted as completed evidence.
+
+Historical baseline `20260911_205758_b83addf3` remains550 cases with142 passed/390 partial/18 failed. Old550 definitions were retained when extending to606. This focused run fixes the two Sacrifice failures; it is not a fresh full606 regression. Exact evidence and remaining scope: `vibe_coding/codex/worklog_2026-09-11_sacrifice_resolution.md`.
 
 ## Risks
 
