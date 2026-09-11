@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "unitDefinitions": 8,
+  "cases": 110,
+  "operations": 612,
+  "assertions": 2937,
+  "screenshots": 213,
+  "suiteSha256": "6bd14e0a413270f5905c4545153d5ff8afa82707d2948891dfe935d85ffe76d1",
+  "startedAt": "2026-09-11T11:33:43.4096327Z",
+  "finishedAt": "2026-09-11T11:35:26.1511824Z",
+  "scope": "八种原部队的招募/主动能力分支；不代表所有部队承伤、复杂规则与完整冒险已通过"
+}

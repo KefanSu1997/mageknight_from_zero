@@ -1,0 +1,2592 @@
+{
+  "files": [
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/captures/Part1_CombatRules_20260911_193906/000_Scene Start.png",
+      "bytes": 2183493,
+      "sha256": "6359e88f6419999db981265ad085fab3aba480d4ed0a21abf372fba436ee89f3"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/captures/Part1_CombatRules_20260911_193906/001_选择_basic_card_016_0.png",
+      "bytes": 2344127,
+      "sha256": "b44de318283a930315c2fcf8a576d38cc09d29fe25f85a4624c1f42b4cc3afcc"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/captures/Part1_CombatRules_20260911_193906/002_缺目标不得扣牌.png",
+      "bytes": 2342202,
+      "sha256": "b2fc20344fc0014b802e5d39c68aa22ad988b7b70c62b1e08642f69c67a33c37"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/captures/Part1_CombatRules_20260911_193906/003_点选_enemy_0.png",
+      "bytes": 2326329,
+      "sha256": "7296ff900d0aec7ef5f269aaaa2973a22d08031fefb67e5eb0ad717ccbf5e835"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/captures/Part1_CombatRules_20260911_193906/004_决心基础格挡2.png",
+      "bytes": 2173444,
+      "sha256": "1f4e08a6d324bfaabd3f517089ba20e6081bd798ab679835e71f5d2dd79020b1"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/captures/Part1_CombatRules_20260911_193906/005_格挡不足承受完整攻击.png",
+      "bytes": 2188804,
+      "sha256": "75ba45384dc5a719de2d630cb8c3917c8ed4657aa7552eccf59b40c4215b4853"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/captures/Part1_CombatRules_20260911_193906/006_伤牌不能打出.png",
+      "bytes": 2185566,
+      "sha256": "3de2bd9bb7e01492e53e83c52a47e367a330a4f53e25b5402e79d739921740f0"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/captures/Part1_CombatRules_20260911_193906/007_选择_basic_card_021_2.png",
+      "bytes": 2345523,
+      "sha256": "489f1cc5d5f48d218c9323d83f9b77333a505b62bc1ac6d5f452de66ff14a637"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/captures/Part1_CombatRules_20260911_193906/008_点选_enemy_0.png",
+      "bytes": 2332924,
+      "sha256": "67d5cf6116a5956443a29222e1b01c97914ae0132556e4dffd08a0d7e13a3f3d"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/captures/Part1_CombatRules_20260911_193906/009_狂怒基础攻击2.png",
+      "bytes": 2177080,
+      "sha256": "68eed50e6c6c8d8b68319eb678a9d1d52ca3f3405f9b5e0a2c1d6d48456d56ab"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/captures/Part1_CombatRules_20260911_193906/010_选择_basic_card_021_3.png",
+      "bytes": 2197000,
+      "sha256": "e88f646288b07a984b2f713ac38b462fa6bed17eefed47e311fd648f62ed1a53"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/captures/Part1_CombatRules_20260911_193906/011_第二张狂怒基础合计4.png",
+      "bytes": 2033943,
+      "sha256": "10bd304303eb0f56c67718342507f13bdf690bf5a85d2a2248baedceae342b94"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/captures/Part1_CombatRules_20260911_193906/012_结算且不重复受伤.png",
+      "bytes": 2002295,
+      "sha256": "5fca12bad3105860c8ba950c64af505b9a97a6e8ca951ba6ed5bb7d8755cf756"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/captures/Part1_CombatRules_20260911_193906/013_重新开始.png",
+      "bytes": 2183493,
+      "sha256": "6359e88f6419999db981265ad085fab3aba480d4ed0a21abf372fba436ee89f3"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/captures/Part1_CombatRules_20260911_193906/014_选择_basic_card_016_0.png",
+      "bytes": 2344127,
+      "sha256": "b44de318283a930315c2fcf8a576d38cc09d29fe25f85a4624c1f42b4cc3afcc"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/captures/Part1_CombatRules_20260911_193906/015_点选_enemy_0.png",
+      "bytes": 2326329,
+      "sha256": "7296ff900d0aec7ef5f269aaaa2973a22d08031fefb67e5eb0ad717ccbf5e835"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/captures/Part1_CombatRules_20260911_193906/016_选择原卡强化.png",
+      "bytes": 2333187,
+      "sha256": "65f1ffb3cca1d94917303af3507a8d9421489fe9f5fb697f8f27994c9c9f2dad"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/captures/Part1_CombatRules_20260911_193906/017_蓝色强化决心格挡5.png",
+      "bytes": 2173899,
+      "sha256": "c1b8bb931ec84c319949a8de74441e417eb30f9e4a9bf0ab56e37e481eadac89"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/captures/Part1_CombatRules_20260911_193906/018_成功格挡免伤.png",
+      "bytes": 2179018,
+      "sha256": "122775435cf269085d4bd1ee2b686b8beb57481cf1d1921314878d2802dec078"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/captures/Part1_CombatRules_20260911_193906/019_选择_basic_card_021_2.png",
+      "bytes": 2336110,
+      "sha256": "3cf4735899aa4dd3608aeb2a67f4660918713f073214dda8419c8f9137c4e814"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/captures/Part1_CombatRules_20260911_193906/020_点选_enemy_0.png",
+      "bytes": 2323257,
+      "sha256": "57026df367dcca3fcb55fc84f6373148ae49a067061335c7870c1a629e9b6cde"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/captures/Part1_CombatRules_20260911_193906/021_选择原卡强化.png",
+      "bytes": 2329936,
+      "sha256": "6094e9b442155c748d925da7b05ff816b7e24205890c1364c3cfb5c6d2d227dd"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/captures/Part1_CombatRules_20260911_193906/022_红色强化狂怒攻击4.png",
+      "bytes": 2167383,
+      "sha256": "c9d24ff536fc7fc5661200e6b7307ddde4cf0358d0085293f1249a3b88c51795"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/captures/Part1_CombatRules_20260911_193906/023_选择_basic_card_021_3.png",
+      "bytes": 2187152,
+      "sha256": "d694064d6de784ac858a3327cd9b2293673615cd22f20eddafede2ccd6386cb5"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/captures/Part1_CombatRules_20260911_193906/024_再次声明强化.png",
+      "bytes": 2190021,
+      "sha256": "72bbc5a9c379c7c6e5acbfc5599f4b92aa314a357a64892c5a97ccb7802b42c4"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/captures/Part1_CombatRules_20260911_193906/025_缺红色魔力不降级打出.png",
+      "bytes": 2190266,
+      "sha256": "441ede30d083d930e733ecb34d539dcabd1e01a77f54cbbb2735407e4323d871"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/captures/Part1_CombatRules_20260911_193906/026_取消未支付行动.png",
+      "bytes": 2172112,
+      "sha256": "7b95e5506419a5348ae05ab2dfbad5711111f5f63f4b6a24277359ba2df0be69"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/captures/Part1_CombatRules_20260911_193906/027_原卡强化获胜.png",
+      "bytes": 2136000,
+      "sha256": "6f835e2b48f39d0dd84168be0bfceb7a6ed98310f09268e2587cec16fc543735"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/captures/Part1_CombatRules_20260911_193906/028_展开规则.png",
+      "bytes": 2164192,
+      "sha256": "ae6898201b98ad869554de01c135538d2f856b4e5f97815e1c07554a6ef47511"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/captures/Part1_CombatRules_20260911_193906/029_收起规则.png",
+      "bytes": 2135963,
+      "sha256": "248e76623059a4a6873d4b0c5fc30ef94b9471a2fd114327a9a8b4e86d9bda4f"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/captures/Part1_CombatRules_20260911_193906/030_切换遭遇.png",
+      "bytes": 2138929,
+      "sha256": "b288659df238ea49d5d5413b43ea38e5ca78c2d9dbcd588b03a1174d4b05ca30"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/captures/Part1_CombatRules_20260911_193906/031_复用原卡迎战灰狼.png",
+      "bytes": 2181701,
+      "sha256": "67ed2a3257b60e3b874b48d3f14b50e5f3bde3bc0930e31287073faef1d40242"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/captures/Part1_CombatRules_20260911_193906/032_选择_basic_card_016_0.png",
+      "bytes": 2340889,
+      "sha256": "660f4eab6b15afff366824f29e07a9a743baf3a825e2f3ca8daed35741c3716a"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/captures/Part1_CombatRules_20260911_193906/033_点选_enemy_0.png",
+      "bytes": 2331769,
+      "sha256": "5d772ecc7edffeb60b99c39ac91ce24f6999a3fe886cbcb8b3118aa3a465ce4c"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/captures/Part1_CombatRules_20260911_193906/034_选择原卡强化.png",
+      "bytes": 2338897,
+      "sha256": "a47de612e1623ba9f2ab04744f7db479c8619f1548e52d341ecfbd5301f8a65c"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/captures/Part1_CombatRules_20260911_193906/035_决心强化5.png",
+      "bytes": 2180077,
+      "sha256": "7474641634ed41401c854c60b2377d5a06776ada2c66a3b32edebb5c74c2cbf6"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/captures/Part1_CombatRules_20260911_193906/036_选择_basic_card_000_4.png",
+      "bytes": 2191311,
+      "sha256": "1cb5596f5043ec0c7e365a08ad95fe6475c4cb0451a5b6be08f46f99993c9d59"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/captures/Part1_CombatRules_20260911_193906/037_行进横置格挡1.png",
+      "bytes": 2031710,
+      "sha256": "12a46c93a8bbea200acd190caa2018260f4cef6c4b9458a85f9005b2a0c2f2c0"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/captures/Part1_CombatRules_20260911_193906/038_横置补足迅捷格挡.png",
+      "bytes": 2029009,
+      "sha256": "0643d31d55cc03ac403c130e2975d85737fea466da353b57fa0a3ed521f4ccac"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/captures/Part1_CombatRules_20260911_193906/039_选择_basic_card_021_2.png",
+      "bytes": 2190484,
+      "sha256": "0dad874bdff8d0a3ff0b966d85792d56ea2fc4d9d0f76d8f2e98ec5e98992305"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/captures/Part1_CombatRules_20260911_193906/040_点选_enemy_0.png",
+      "bytes": 2185552,
+      "sha256": "ac2734a88986c9a3f464ec07a9d1456faab86fcea9361cbcffd0980248ed1126"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/captures/Part1_CombatRules_20260911_193906/041_选择原卡强化.png",
+      "bytes": 2192658,
+      "sha256": "7f0792a539c00b57a7ba74602f489b66d66ae9c6c158d3ff4fb7cac84664b4cd"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/captures/Part1_CombatRules_20260911_193906/042_狂怒强化4.png",
+      "bytes": 2027073,
+      "sha256": "dd5dedf4bf4af35a93a77668d6d23827d532fa510b8e57576c1a7beb7096325a"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/captures/Part1_CombatRules_20260911_193906/043_选择_basic_card_016_1.png",
+      "bytes": 2042110,
+      "sha256": "2fd0b76d34cf62b75027bacc7f317512ae55a9e953a2926efa91b5e4559fb5b5"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/captures/Part1_CombatRules_20260911_193906/044_决心基础改选攻击2.png",
+      "bytes": 1884827,
+      "sha256": "4161f4b02537bd4fd3370a4c41c5c82d87152d20b02714717534c12120526603"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/captures/Part1_CombatRules_20260911_193906/045_原卡组合战胜灰狼.png",
+      "bytes": 1858044,
+      "sha256": "059bc84d7aea0b6568f8e9bc510bd99a9188b7372501ac9ce7dfbeae5fa458f5"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/report.json",
+      "bytes": 766312,
+      "sha256": "bf796aa327f6aeab6d80bedc36a78d0afd27515f926a4e2e90c945fd371dca44"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Combat/request.json",
+      "bytes": 52889,
+      "sha256": "a24f817b9aad5c25f9980922322e31bafcd3db12ce602461e6cca218630fad28"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Exploration/captures/Part1_ExplorationRules_20260911_193930/000_Scene Start.png",
+      "bytes": 1893355,
+      "sha256": "936d6c19aa641ecb17d42066739222af5106b744c608753c9353d186911ba276"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Exploration/captures/Part1_ExplorationRules_20260911_193930/001_点选_site_forest.png",
+      "bytes": 1884914,
+      "sha256": "98b81e928d1ac560dc8383300aee5cec07b994417adc579dedb34d1adc8b21c2"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Exploration/captures/Part1_ExplorationRules_20260911_193930/002_零移动不能进入.png",
+      "bytes": 1888729,
+      "sha256": "1864a339a2c9a92494281f25dd06b43817bf4fb62ad207f45d6f844fd8fed035"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Exploration/captures/Part1_ExplorationRules_20260911_193930/003_选择_basic_card_000_0.png",
+      "bytes": 2047541,
+      "sha256": "6d9d39cf0e41fd21f5730b5fb18933bdbe279813ba8db11bfd470e187cdd7fb2"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Exploration/captures/Part1_ExplorationRules_20260911_193930/004_点选_site_forest.png",
+      "bytes": 2042980,
+      "sha256": "dbb4fa075a788b79932bfda3ff0812836cd1e010f49898dd8692af9a2b8db9d5"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Exploration/captures/Part1_ExplorationRules_20260911_193930/005_选择原卡强化.png",
+      "bytes": 2053126,
+      "sha256": "64133440ba789d6405d57d8ba4e979e85c0c8aa420cae043161115a300f1f01d"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Exploration/captures/Part1_ExplorationRules_20260911_193930/006_行进绿色强化4.png",
+      "bytes": 1887382,
+      "sha256": "33709b4b0d92d4ca167e1029f01e6c62ba94119d0e2238717930a47e35371960"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Exploration/captures/Part1_ExplorationRules_20260911_193930/007_白天森林费用3.png",
+      "bytes": 1891202,
+      "sha256": "9c6d24ce4d82cf8bcff36c8eb8bc5e2d32736acc9021f478b82bb442a1914410"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Exploration/captures/Part1_ExplorationRules_20260911_193930/008_选择_basic_card_014_1.png",
+      "bytes": 2045569,
+      "sha256": "f9e59856a487f90c01e9bdada1d5939c8a28716e6da35612be7b8a9720fd9a88"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Exploration/captures/Part1_ExplorationRules_20260911_193930/009_点选_site_frontier.png",
+      "bytes": 2044033,
+      "sha256": "3e7334b1c7473d1ed7769c2d03727bb99e39f243a1c401160ca175b594ae5487"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Exploration/captures/Part1_ExplorationRules_20260911_193930/010_耐力基础移动2.png",
+      "bytes": 1890587,
+      "sha256": "1c84ded7bdae8813b763aec640dc7af786931fbd1ecc2898ae925c3ec87652ae"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Exploration/captures/Part1_ExplorationRules_20260911_193930/011_探索只揭示不移动.png",
+      "bytes": 1877470,
+      "sha256": "245d5246393bfae335a149391a8e805bcdc750ec667ec34cdfdb4a1c05586d93"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Exploration/captures/Part1_ExplorationRules_20260911_193930/012_进入平原费用不足.png",
+      "bytes": 1877668,
+      "sha256": "ba00ad4ce64a224725a96951d3a0dcb455ba6d64799a48723dcd549504ec81b5"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Exploration/captures/Part1_ExplorationRules_20260911_193930/013_选择_basic_card_000_2.png",
+      "bytes": 1900255,
+      "sha256": "8465bad405ff70a747dfbde755949ee61cecc484e22cab9c83d43be9e863e8a7"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Exploration/captures/Part1_ExplorationRules_20260911_193930/014_另一张行进基础2.png",
+      "bytes": 1737158,
+      "sha256": "bd7f6686d8f507a76dcd092ef01e1f72293eaece1557abcc0ca239d1f6c28ff3"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Exploration/captures/Part1_ExplorationRules_20260911_193930/015_进入揭示平原.png",
+      "bytes": 1740670,
+      "sha256": "4cf77e1e2fb5e5bc30456a7a2fafa699c8387afe55d0dc8dfc2d6199ab440b78"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Exploration/captures/Part1_ExplorationRules_20260911_193930/016_重新开始.png",
+      "bytes": 1893355,
+      "sha256": "936d6c19aa641ecb17d42066739222af5106b744c608753c9353d186911ba276"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Exploration/captures/Part1_ExplorationRules_20260911_193930/017_点选_site_lake.png",
+      "bytes": 1883470,
+      "sha256": "5c4d02b7d6866f60946911b111664cf14e94154501173580ab878a6ccf11c626"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Exploration/captures/Part1_ExplorationRules_20260911_193930/018_湖泊不可通行.png",
+      "bytes": 1889602,
+      "sha256": "96c030ca32ed6162cd4bece6bfbe1242782c18388395523befd5af9049b3c2d1"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Exploration/captures/Part1_ExplorationRules_20260911_193930/019_点选_site_mountain.png",
+      "bytes": 1880320,
+      "sha256": "e6e5ee3c4b1d74118e89080ca7442e3705a2a47c0c73ea229aaad63cc24ffb7b"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Exploration/captures/Part1_ExplorationRules_20260911_193930/020_高山不可通行.png",
+      "bytes": 1886163,
+      "sha256": "ab64e8d3870e20c80b7df16ca1f9dded265816fe2c9db2dded1bc8677d761615"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Exploration/captures/Part1_ExplorationRules_20260911_193930/021_点选_site_frontier.png",
+      "bytes": 1893042,
+      "sha256": "de6ed6e4afd170421f7fb9e44bbb2acdd4af820a1daed333301a76df2488ba87"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Exploration/captures/Part1_ExplorationRules_20260911_193930/022_非相邻不能探索.png",
+      "bytes": 1902300,
+      "sha256": "dc6bbc5c262f84bc4f4b34ff784994f7384cf4d846370db9d165d189001b81a1"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Exploration/report.json",
+      "bytes": 339432,
+      "sha256": "78e56a49b37bdbff1466b31fffa72332373b9063e6b385e261bde4e543ca2144"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Exploration/request.json",
+      "bytes": 20698,
+      "sha256": "ba5daeb7927c13ead6086b84a49f0c462e55723b76a67048a604239c3713dc75"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Journey/captures/Part1_JourneyRules_20260911_193958/000_Scene Start.png",
+      "bytes": 2010109,
+      "sha256": "47d746ec326e373a346b4c294c7f55db02c6a90135254c3cf262c2d73cf337d3"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Journey/captures/Part1_JourneyRules_20260911_193958/001_选择_basic_card_000_0.png",
+      "bytes": 2032245,
+      "sha256": "9b59ad7a09371e3427b67aa24106a94d74b29cbf50b558b1ae2d340bc2fb500a"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Journey/captures/Part1_JourneyRules_20260911_193958/002_点选_site_village.png",
+      "bytes": 2029901,
+      "sha256": "d346770e6267f2ae3b743d96e4b32e046b511266b2871574fbfe50883b90f05c"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Journey/captures/Part1_JourneyRules_20260911_193958/003_选择原卡强化.png",
+      "bytes": 2039506,
+      "sha256": "6dde0fd801f0a4a33203b447531f3c2f15afd4d37f536f6532a11948296f278b"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Journey/captures/Part1_JourneyRules_20260911_193958/004_行进强化准备探索.png",
+      "bytes": 1870395,
+      "sha256": "aea17bc3b99395b4f415a74e9dd09a4b9a9fe5a4f9f8c1753f449f8ae0842fab"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Journey/captures/Part1_JourneyRules_20260911_193958/005_探索村庄扣二.png",
+      "bytes": 1857274,
+      "sha256": "d7da090c91b266f227e8531acb80ef8a27f41a755920aaf717b75b599b2cceeb"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Journey/captures/Part1_JourneyRules_20260911_193958/006_进入村庄再扣二.png",
+      "bytes": 2028200,
+      "sha256": "6438bb1799dc33aaf6126a25d6601b92e679f9cbf15cd239f6c539e0d913b6a5"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Journey/captures/Part1_JourneyRules_20260911_193958/007_选择_basic_card_008_1.png",
+      "bytes": 2175440,
+      "sha256": "862466532257b34a462a0f96f8a3799594dfee2a74d1ede849fb45c9231a1f15"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Journey/captures/Part1_JourneyRules_20260911_193958/008_点选_offer_guard.png",
+      "bytes": 2173421,
+      "sha256": "94ef582b874ad3267a00b29b5c6602713eadfd942500eb14afc585e74a0849c4"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Journey/captures/Part1_JourneyRules_20260911_193958/009_选择原卡强化.png",
+      "bytes": 2183423,
+      "sha256": "4865dcfdf7e6fe7f17fe8764767c349b60298b02f014e9ebe8fd99da8fbbf48a"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Journey/captures/Part1_JourneyRules_20260911_193958/010_承诺强化4.png",
+      "bytes": 2031016,
+      "sha256": "8a62979a880376871c2e490d5b0f1326b2c96e695b62784f7812f7d6136268a8"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Journey/captures/Part1_JourneyRules_20260911_193958/011_选择_basic_card_008_2.png",
+      "bytes": 2042856,
+      "sha256": "d3d3161408dcee8a767094463cec969419203152494e83679153082c70eb77db"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Journey/captures/Part1_JourneyRules_20260911_193958/012_承诺基础补二.png",
+      "bytes": 1896153,
+      "sha256": "a195e4f13b7397c8f87c9ec6007da8fd7ea5ba013973d7ab187583f4d30c5253"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Journey/captures/Part1_JourneyRules_20260911_193958/013_支付五招募守卫.png",
+      "bytes": 1881956,
+      "sha256": "d6753527064ba776d9c0f3eafece130b89ea1031501bb785fb770fb1bdcb106e"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Journey/captures/Part1_JourneyRules_20260911_193958/014_进入下一回合遭遇.png",
+      "bytes": 2215748,
+      "sha256": "f1d08878d0e580b57bc87d52b0b9e899c67caafcca836a014bc3f2d1dba80f90"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Journey/captures/Part1_JourneyRules_20260911_193958/015_选择部队.png",
+      "bytes": 2219386,
+      "sha256": "e032bcafc247c691189abd213ac7b0f253483630c39f7dac2e9b6fe045107402"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Journey/captures/Part1_JourneyRules_20260911_193958/016_没目标部队不能使用.png",
+      "bytes": 2216691,
+      "sha256": "768b38cc89002d821a275c8a047d97ea32804184f3fd507a890d09840472471c"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Journey/captures/Part1_JourneyRules_20260911_193958/017_点选_enemy_0.png",
+      "bytes": 2208576,
+      "sha256": "e89f2b83dc7228357f1752d88bc9aed3c45cbb1c06941076afec3bd924b33873"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Journey/captures/Part1_JourneyRules_20260911_193958/018_守卫格挡三.png",
+      "bytes": 2214751,
+      "sha256": "b80afae6ea3a5ce7065143b5f82c608f86e570608e4e62ab9a0b59900a51986d"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Journey/captures/Part1_JourneyRules_20260911_193958/019_耗竭单位不能重复.png",
+      "bytes": 2210944,
+      "sha256": "f60c05b3ece88eef39b4376652b8237784a74a164dbf269f8ae86a1b2ad86510"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Journey/captures/Part1_JourneyRules_20260911_193958/020_选择_basic_card_016_5.png",
+      "bytes": 2362581,
+      "sha256": "41c1bf4924a1bf3dfb24ba855b5ef885e9cf52770f50fa09547b67d085ea95a0"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Journey/captures/Part1_JourneyRules_20260911_193958/021_点选_enemy_0.png",
+      "bytes": 2358650,
+      "sha256": "48ba98b103e9086192980b3de9eedbe65e317712d99af4253472668e7ac3c8ee"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Journey/captures/Part1_JourneyRules_20260911_193958/022_选择原卡强化.png",
+      "bytes": 2365601,
+      "sha256": "2190df90634a5f1b736ce0b74d377b1055769def7f46c3f3310096b5fa6198cf"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Journey/captures/Part1_JourneyRules_20260911_193958/023_决心强化与部队合计八.png",
+      "bytes": 2209484,
+      "sha256": "d966900e620b45a2bf988627b655db71bf24538ed80dc141194f2f7f7976d5c2"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Journey/captures/Part1_JourneyRules_20260911_193958/024_成功格挡没有伤牌.png",
+      "bytes": 2206398,
+      "sha256": "667c548606ffd4262d6f0a55d9a5a5a9b21ca312fce42f98857259c907f42b0f"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Journey/captures/Part1_JourneyRules_20260911_193958/025_选择_basic_card_021_3.png",
+      "bytes": 2360554,
+      "sha256": "0f627d5008de8d6f870817a171f09ea5f62015619ed363123a2e60cfcab02277"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Journey/captures/Part1_JourneyRules_20260911_193958/026_点选_enemy_0.png",
+      "bytes": 2355269,
+      "sha256": "70a3cc00abaf9d760489fc96422a205c5c9c272a4c65fc3ce3ff7e8f73dc244d"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Journey/captures/Part1_JourneyRules_20260911_193958/027_选择原卡强化.png",
+      "bytes": 2362135,
+      "sha256": "6e03ad15ca01cc1bfa1357fb8e15630497af80a9967dedda1463af3813c6ca85"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Journey/captures/Part1_JourneyRules_20260911_193958/028_狂怒强化四.png",
+      "bytes": 2202568,
+      "sha256": "80c89ad2ab1f843640267c66e827e810d30ad4b0762ce011dc9c29e47a0da257"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Journey/captures/Part1_JourneyRules_20260911_193958/029_选择_basic_card_021_4.png",
+      "bytes": 2219105,
+      "sha256": "e4e5d4b19118ed8689d610368ea687103108db211665facbcecf870c5e47602f"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Journey/captures/Part1_JourneyRules_20260911_193958/030_狂怒基础合计六.png",
+      "bytes": 2059793,
+      "sha256": "70d084b1e8008ce56d3eb95e83ea41e69a361fb3cb7ef92b3bdfd79874f60b23"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Journey/captures/Part1_JourneyRules_20260911_193958/031_完整旅程获胜.png",
+      "bytes": 2027672,
+      "sha256": "75f02ad99268ef8024d0a49c63c057d6cb2220a30755be80ff8453d9188206e2"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Journey/report.json",
+      "bytes": 512813,
+      "sha256": "d5a16114d0a25c834288a326e8fbd765133cb62cd99f07388a596ab8035bd8f6"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Journey/request.json",
+      "bytes": 36500,
+      "sha256": "1e54e9874d0f0b78bb18e0b41484038f8ac406f1261bd51e0a84ae3c5a32bc65"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Recruitment/captures/Part1_RecruitmentRules_20260911_193946/000_Scene Start.png",
+      "bytes": 2296821,
+      "sha256": "001e8e2daf38ee555392cbfa8b7f1453816490d682fa1adbbc2e777d4bea703e"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Recruitment/captures/Part1_RecruitmentRules_20260911_193946/001_点选_offer_guard.png",
+      "bytes": 2302696,
+      "sha256": "d7926eb8acab73acfa375702b3cd0afc883e00385feef18e009457b9581367e8"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Recruitment/captures/Part1_RecruitmentRules_20260911_193946/002_影响力不足.png",
+      "bytes": 2313680,
+      "sha256": "204c74275e3dcb3a2e96e994dd383905779d3ec103c9a773a689eb2a89494947"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Recruitment/captures/Part1_RecruitmentRules_20260911_193946/003_选择_basic_card_008_0.png",
+      "bytes": 2446208,
+      "sha256": "6b39385979f541ee5143c03ceaab5012737176b6e77c10c1aeb2328cd3641241"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Recruitment/captures/Part1_RecruitmentRules_20260911_193946/004_点选_offer_guard.png",
+      "bytes": 2442007,
+      "sha256": "6a51e231049745032749b86bd79fa9a298040f7f76bfbc3410733550c2574547"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Recruitment/captures/Part1_RecruitmentRules_20260911_193946/005_选择原卡强化.png",
+      "bytes": 2452100,
+      "sha256": "194819240d9849283c5c8760a6949e5930f26c825e32509c7e8e4801c828cbf8"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Recruitment/captures/Part1_RecruitmentRules_20260911_193946/006_承诺白色强化4.png",
+      "bytes": 2301844,
+      "sha256": "f8575ada49e56034038972a847bab8661c80de4d2fa64409ddb162bb6cba565c"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Recruitment/captures/Part1_RecruitmentRules_20260911_193946/007_四点还不足费用五.png",
+      "bytes": 2307942,
+      "sha256": "e523f7ce4fa45bbdc3613fe2bec338b3b424d331984e242d9c2301a48e0d44b0"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Recruitment/captures/Part1_RecruitmentRules_20260911_193946/008_选择_basic_card_008_1.png",
+      "bytes": 2315016,
+      "sha256": "a68311be920c68cd3dcbde56b4ac5c226e96e35dc2bcf03ba0d2d4fe145b1e6a"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Recruitment/captures/Part1_RecruitmentRules_20260911_193946/009_第二张承诺基础2.png",
+      "bytes": 2171114,
+      "sha256": "f41403d9bb7a2623b3e67f68dee2cb30ba208c18c19a13ec6d9577c0deae3ca8"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Recruitment/captures/Part1_RecruitmentRules_20260911_193946/010_招募扣五余一.png",
+      "bytes": 2158099,
+      "sha256": "c676bfaf6f8d4ee17fc55e4e797a4901f76f2dded124cf835d236ee64123be00"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Recruitment/captures/Part1_RecruitmentRules_20260911_193946/011_点选_offer_guard.png",
+      "bytes": 2153802,
+      "sha256": "29fe4b35a89207da602f83f46beb750bb3696be9bb9195a2363c8776804d1b3b"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Recruitment/captures/Part1_RecruitmentRules_20260911_193946/012_不能重复招募.png",
+      "bytes": 2157323,
+      "sha256": "eb47dd4059329e7f09ef584a197fdf8e84536b4fc0c104a860081c8598f967fa"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Recruitment/captures/Part1_RecruitmentRules_20260911_193946/013_点选_offer_monk.png",
+      "bytes": 2165067,
+      "sha256": "a0bab2249f3e464e976497f04906d8c1d45e095169a421b9d452f0034c9e1db6"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Recruitment/captures/Part1_RecruitmentRules_20260911_193946/014_地点不符不得招募.png",
+      "bytes": 2175937,
+      "sha256": "bed88d5aee4285ce44775c6e7291096a82ef92851f24c80df3d30f96e0075a5f"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Recruitment/captures/Part1_RecruitmentRules_20260911_193946/015_取消目标.png",
+      "bytes": 2159534,
+      "sha256": "52cc9f62a644f0bda711f2c26ca6e9b610bb81a85d48074017bf4b3b6af759e9"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Recruitment/captures/Part1_RecruitmentRules_20260911_193946/016_回合结束正常补牌.png",
+      "bytes": 2164050,
+      "sha256": "726e089c20c5c02c2f3810470064d92d57181d5a0c91a9c1481340ff540c04ba"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Recruitment/report.json",
+      "bytes": 246863,
+      "sha256": "bc03bb34196a75ebcc9e24b48f1a8795520bd6dd2356eb59c6f824d0f5128558"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/Recruitment/request.json",
+      "bytes": 15894,
+      "sha256": "0b75c41c85200f68477d8ef12599532b0844ae030b8265c7ea1c9538b93dff1b"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/regression_summary.json",
+      "bytes": 946,
+      "sha256": "456111694a44f39a08d9501c972ae81772ab4cef0e038adc9f2ed81fcff5eb9b"
+    },
+    {
+      "path": "AutomationOutputs/AdventureRegression/20260911_193901_2d48c21f/visual_comparison.json",
+      "bytes": 241,
+      "sha256": "3832dd2f519375b3cb0766315181957dd64a28742a676f4ac48a7933cd1b22b8"
+    },
+    {
+      "path": "AutomationOutputs/EditMode/20260911_000812_9f8ff9b6/editmode-results.xml",
+      "bytes": 175205,
+      "sha256": "5d39d81e4a8d838e52dacfb98ff41894eb414d41388ace2fa4cc531035a79ddc"
+    },
+    {
+      "path": "AutomationOutputs/EditMode/20260911_000812_9f8ff9b6/editmode-summary.json",
+      "bytes": 37,
+      "sha256": "428078b5ef557f6bfc0ee8e4c83a09a969043fd9596cc0aa19349b09137a7925"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/baseline_comparison.json",
+      "bytes": 240,
+      "sha256": "0c1750505d83fbfefb41ccf7414a2860481f9381738c8b2d223dc4f6b22269da"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/000_Scene Start.png",
+      "bytes": 1179040,
+      "sha256": "65749e5dd09c0db979748196015ece8096bf38dd24805deb2c4857d858635b02"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/002_skill_000_00_use.png",
+      "bytes": 1203602,
+      "sha256": "2a872cf47095f8664bdb554de758de83b3e1c49dc617959345203c005228e0b9"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/003_skill_000_01_use.png",
+      "bytes": 1219867,
+      "sha256": "90c563288c3aa8f5d889455e11c1ebfda821f6b67784b309a41cc2ba0bdeba7d"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/004_skill_000_02_reloadUse.png",
+      "bytes": 1222422,
+      "sha256": "7429daeac9b27f0c56dff2d6beae026c4f7f5bb11652d5e98daae704d7ce8f6e"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/005_skill_000_03_move.png",
+      "bytes": 1213160,
+      "sha256": "716702a9b73a6f6012f262dca1b2183677aa1e12ec7581848fb76110f49f8d7b"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/006_skill_000_04_nextTurn.png",
+      "bytes": 1251871,
+      "sha256": "4ebb081e191ae3ad13f487c9dfa1e47ab34cb499fe5a888ac90906fd9886b35b"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/007_skill_000_05_use.png",
+      "bytes": 1204645,
+      "sha256": "191d613460362a305ce0379d8d55128e0e290b80f0604ab9e1356de2daa576ce"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/008_skill_000_06_nextRound.png",
+      "bytes": 1196132,
+      "sha256": "2b319cba57ee90e27eebbdcdbc7ae6de2674fca10b4665ec98a59a75c7a71361"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/009_skill_000_07_use.png",
+      "bytes": 1202269,
+      "sha256": "2b76dd531d2736cad8b0b25ca48b5f9734fbdbceca4d89eba1babf007320fdb8"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/012_skill_001_00_use.png",
+      "bytes": 1204754,
+      "sha256": "dcb4e95aabcc96e76a75df2cf1f66f446e632d6bc48bdd6579913e9b503b3148"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/013_skill_001_01_use.png",
+      "bytes": 1221642,
+      "sha256": "6109038cb15323b601271f00888e48e0888191228436a4ad1b17dcf310d8ff9b"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/014_skill_001_02_reloadUse.png",
+      "bytes": 1224486,
+      "sha256": "620278bd46c44ffa52ae4effe16bfbcb1904e11cbb52ae25ce9029c92a0b17c5"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/015_skill_001_03_move.png",
+      "bytes": 1213792,
+      "sha256": "1ddd40810fb43348352bea849bcc32c8a6a7adb645cdcd51fc426e5bb905b012"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/016_skill_001_04_nextTurn.png",
+      "bytes": 1252650,
+      "sha256": "fe04526b96126c270f80b25793640381638f6067cf847092049df345a516c4e9"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/017_skill_001_05_use.png",
+      "bytes": 1205754,
+      "sha256": "56184d83bce46680521a439a3135b7063e7065678fbb6071ab496591b1c08c02"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/018_skill_001_06_nextRound.png",
+      "bytes": 1196991,
+      "sha256": "43592bf6c6eaf1497ca5bfef1e7894e2e83023327995899bbd82dee7ea18fb1e"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/019_skill_001_07_use.png",
+      "bytes": 1203425,
+      "sha256": "6673aa3a5355e7b1a52eb635fbdb8b83bf96796d16c50ebae0a9d64f682df213"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/022_skill_002_00_use.png",
+      "bytes": 1273147,
+      "sha256": "809e9ab3fd689c30a2a09a2e14879632b70eeed7eda31b3f83f1ad3d72f6dc94"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/023_skill_002_01_use.png",
+      "bytes": 1205087,
+      "sha256": "4b180d0a5c3a0ff7fb0e81731ee29c405b5cc5169f99f0a9a897f91f5a541931"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/026_skill_003_00_use.png",
+      "bytes": 1273105,
+      "sha256": "9bf5addd20af6c90ccdf9d7234fc325e425ab33a78b595dd2ac088c680ffd7c6"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/027_skill_003_01_use.png",
+      "bytes": 1205050,
+      "sha256": "283114b4a25e3279c8cf507f5e48dff0ce2c5cbc8dd2c6fd94d14ccbd00d3be3"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/030_skill_004_00_use.png",
+      "bytes": 1271080,
+      "sha256": "c9cfee5980c7f398ad8a8ded10ed0c6e8e3567caa5ce4bf45cda2eef8ee4301c"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/033_skill_005_00_use.png",
+      "bytes": 1231133,
+      "sha256": "1ed080893b0eb1af08001e857fd16ff8a9d779432a2782de21acfad4477e1eaa"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/034_skill_005_01_use.png",
+      "bytes": 1247768,
+      "sha256": "2b9c1ec97987aa448b1f4cc5249de9f17db92ae09be74e6fd9712b953b499c2d"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/035_skill_005_02_reloadUse.png",
+      "bytes": 1249136,
+      "sha256": "5af0b6f673476ba4cabf9022b4fe4114754dc1798d2bd5be11d71e52f8b85d05"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/036_skill_005_03_attack.png",
+      "bytes": 1233970,
+      "sha256": "e9550d7cf149c2cfab03958fd667f4a7acb88a6190dd71714e8965d8329fd6b2"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/037_skill_005_04_nextTurn.png",
+      "bytes": 1246864,
+      "sha256": "dfcc391667235bb5493d2f57f2114af686898b32b22f60cbebaffbabc190e4e2"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/038_skill_005_05_use.png",
+      "bytes": 1232183,
+      "sha256": "b3a509fd8cd6b68777db5c1c584af1c1485d2fb07bb58e51d882a7d40bec31e4"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/039_skill_005_06_nextRound.png",
+      "bytes": 1191015,
+      "sha256": "9de8582814940c69b6c4559b12d91f93b68542a55387a09db97a9e3fb9b93c19"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/040_skill_005_07_use.png",
+      "bytes": 1229779,
+      "sha256": "8b05b8c295d614d2a86db35d67a00f8cccc55fedfbbac5fb3d3052bd8ba85036"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/043_skill_006_00_use.png",
+      "bytes": 1227737,
+      "sha256": "3baf463ed98404319999ea2c85b074a53ac8560f7cf0c9c689617d033deddc72"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/044_skill_006_01_use.png",
+      "bytes": 1243883,
+      "sha256": "bc49797415ee2c7d46afb575e1429842acf4583e1784915e2629c0c8e5096216"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/045_skill_006_02_reloadUse.png",
+      "bytes": 1244982,
+      "sha256": "c0d4fa07203b697c3358a375e6ddc3049c27e8b8f7c5a7c0fef37aab9159ca53"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/046_skill_006_03_attack.png",
+      "bytes": 1233445,
+      "sha256": "d2d8d2ecba9c6f86b5bd02862aabc274add0be6d6d4ce2af85fe9ff85a03f2a1"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/047_skill_006_04_nextTurn.png",
+      "bytes": 1246272,
+      "sha256": "d9b212604941c79dda501dc876c72eb6b078fe8823afdd1a4621a9be9c0a0947"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/048_skill_006_05_use.png",
+      "bytes": 1228686,
+      "sha256": "ca10e0e0b6a5087e05be05dafff88e1f5a9af4578061e767bdb49099631a4a86"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/049_skill_006_06_nextRound.png",
+      "bytes": 1190348,
+      "sha256": "8fa28c81606267274c82e8330e6c4b09fba8888252d2f7d89eb69a1a722eebfa"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/050_skill_006_07_use.png",
+      "bytes": 1226413,
+      "sha256": "44c888f98a799af4ed6bf50e69842a4c5f60dc008f7848f6c3de6e4c5dd2a11d"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/053_skill_007_00_use.png",
+      "bytes": 1231747,
+      "sha256": "04cd4706e14f076cc9d063b3a91e37f93fa90e1a05f6a7bd9448505ea0047645"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/054_skill_007_01_use.png",
+      "bytes": 1248471,
+      "sha256": "41671d746658fbab0235f545bedb96a1b755dfacb1301f1a71ae956c7cf642d6"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/055_skill_007_02_reloadUse.png",
+      "bytes": 1250050,
+      "sha256": "4243fa63b5eb29b7d2eaaf64923e8ed180954ec832c42858af91163db79924f6"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/056_skill_007_03_attack.png",
+      "bytes": 1234683,
+      "sha256": "d419d2388f1661db4c81fdf09c53fcffeed69efe54b3b53987c0780dbaf8e26e"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/057_skill_007_04_nextTurn.png",
+      "bytes": 1247872,
+      "sha256": "3a4105bd7bbe320e26569f75bc4030fa4572f380417ce3ccf03f67f5a13be023"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/058_skill_007_05_use.png",
+      "bytes": 1232871,
+      "sha256": "b85fdd30e0a94eda2840761f49f7b96372e7f70ec3d71f8884932c6f0468a77e"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/059_skill_007_06_nextRound.png",
+      "bytes": 1191929,
+      "sha256": "6d6073005796751a90c2999eaf2b1ac7db030a9fb61b9dd2107d4614e282c998"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/060_skill_007_07_use.png",
+      "bytes": 1230373,
+      "sha256": "43259fbd1144b472b78949b368b2f91528800d78e7b1dc6d13a1043bcd638251"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/063_skill_008_00_use.png",
+      "bytes": 1228634,
+      "sha256": "269e8775076a21ff5245c431e5beaa5a77ff5019c4010975188b71449f83e44d"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/064_skill_008_01_use.png",
+      "bytes": 1244930,
+      "sha256": "d29fd76d3a907ea87ab9b16e6f266b1365d521239e02f30cb4207dba9f49191c"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/065_skill_008_02_reloadUse.png",
+      "bytes": 1245962,
+      "sha256": "f722c3010170bd387627092a344a108b5946afbcccadda1186957f9f487c0213"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/066_skill_008_03_attack.png",
+      "bytes": 1234387,
+      "sha256": "7bf953052c1ddd9706d42f45b634e63e39367b53cf0aaabf45fd2c4f93f2a6c9"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/067_skill_008_04_nextTurn.png",
+      "bytes": 1247507,
+      "sha256": "7c17f8f3b8d61d24c5198bb0795d17b0ad0a60d056c83e43694c3f1c89dabaf9"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/068_skill_008_05_use.png",
+      "bytes": 1229621,
+      "sha256": "d6bc84e7b706b233861c3746ddaee8e2780307096f381a8572640f5e41d3ad6c"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/069_skill_008_06_nextRound.png",
+      "bytes": 1191619,
+      "sha256": "45e94b039abe2097697754691266463b90d8f4448974e57df9298505b18ff198"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/070_skill_008_07_use.png",
+      "bytes": 1227288,
+      "sha256": "55a90174505944c32def871ee8b7d7d2281f457c770ad3419437384cf6b5af96"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/073_skill_009_00_use.png",
+      "bytes": 1268541,
+      "sha256": "dd419f08528fd2e37ec68017d9e0d425bed3950fb5228f9f868d1fbf2ca18487"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/074_skill_009_01_use.png",
+      "bytes": 1232927,
+      "sha256": "bb980288e8a580ca77558fe485008bb1d2706b9e1c69b9ce6e7d3f89220c497e"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/077_skill_010_00_use.png",
+      "bytes": 1268102,
+      "sha256": "ac44136f38ec7cb51b6ae107007aa767eb96264571b9524ee5d1dbe0117407b0"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/078_skill_010_01_use.png",
+      "bytes": 1232474,
+      "sha256": "4ed2badfb30a611e2908307238c3323e8e52732755979a0956c81a6e00116fc8"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/081_skill_011_00_use.png",
+      "bytes": 1266456,
+      "sha256": "762693c5ccbaa6720314bb0e91100aea746e6c9141d11487ea6db622582ef656"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/084_skill_012_00_use.png",
+      "bytes": 1229459,
+      "sha256": "fd5dbce01618124e1933af70b37a09dcc2d910ed1f37fbcb55a8927e45386907"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/085_skill_012_01_use.png",
+      "bytes": 1245935,
+      "sha256": "ac5324878eeaf3c84fd83ec480d13aaf053d7728fa45f569857b93c5f4c7080d"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/086_skill_012_02_reloadUse.png",
+      "bytes": 1247053,
+      "sha256": "9da9fc38efbe7f3c61cc0cfa52665f5d3cfbe84c4718cf10a72ad7b283523f0a"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/087_skill_012_03_attack.png",
+      "bytes": 1232091,
+      "sha256": "a55d6f37ce66afecaeb6b43debba2a29befe4d5be6b8e8f2eeca9bca5d2ceecc"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/088_skill_012_04_nextTurn.png",
+      "bytes": 1244000,
+      "sha256": "ecc413a2fe58b6a3e91c857ab077a0613ad20d1c87e5d071cd80c28193f8badd"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/089_skill_012_05_use.png",
+      "bytes": 1230502,
+      "sha256": "86d8924222f3d41cf6822f2250c89061f7e109016d05e8f44d18674380797a0d"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/090_skill_012_06_nextRound.png",
+      "bytes": 1187913,
+      "sha256": "ed0952a937d9754317c1af142bd0d95d061a49a37f2706cfd6300604e8cd4710"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/091_skill_012_07_use.png",
+      "bytes": 1228124,
+      "sha256": "f032672ef6ba1cfae0597399a2ca10139bbc6ecc5cef29c611a9fce257d31b02"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/094_skill_013_00_use.png",
+      "bytes": 1225934,
+      "sha256": "4e8d67365891e41393ec14cdbd5ca49e6a21ce8a8f1e43788643c94f406ddff1"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/095_skill_013_01_use.png",
+      "bytes": 1241744,
+      "sha256": "dde121dd50d7b531658c390979e63e77c4d297dc3c33f8f72d90c2d3a78c003c"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/096_skill_013_02_reloadUse.png",
+      "bytes": 1243089,
+      "sha256": "7cc16786b2f46ded79b3bd11f702ac04c53291cae5fcddd6640dfdd3234e28a3"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/097_skill_013_03_attack.png",
+      "bytes": 1231518,
+      "sha256": "abfa369ce5a2b87d585fcd046f3076e1e86d9b4e81e2449be23f736a41ff6338"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/098_skill_013_04_nextTurn.png",
+      "bytes": 1243254,
+      "sha256": "47b6ca449f9c7ea8dd0b72eb3c7bf6c4d5d448f340bde280bb364daec72830f7"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/099_skill_013_05_use.png",
+      "bytes": 1226939,
+      "sha256": "807f6ef417c76562528ef6671dbaba6d2f04ff218fa68e9bf9d245dfbaf63908"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/100_skill_013_06_nextRound.png",
+      "bytes": 1187383,
+      "sha256": "6a4d78ba3fe57a668d721a6b79babd987548ca5a4864145fc12a1a5f13846824"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/101_skill_013_07_use.png",
+      "bytes": 1224620,
+      "sha256": "d580f52671099720651bd94c1309009dec77e8f0bdeddc7eb88e8d09f6bfff5b"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/104_skill_014_00_use.png",
+      "bytes": 1230162,
+      "sha256": "0380b4d797bcfd45897082b718601f5d62a1846bb1171a1b140a67ccde498cdc"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/105_skill_014_01_use.png",
+      "bytes": 1246664,
+      "sha256": "9c6ef8c9d41f750a9461b66c077440bd4c63a061fc8c29fa2850497484a7dde0"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/106_skill_014_02_reloadUse.png",
+      "bytes": 1247947,
+      "sha256": "ea80eef453223470d5394ed3800c51207f7e37dfa58cc5d1e4dbd6fe3f8ec4b6"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/107_skill_014_03_attack.png",
+      "bytes": 1232766,
+      "sha256": "800cdeef9bc3b62cf54ae38fe521990714ac767234964f000050a643a7ea7e35"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/108_skill_014_04_nextTurn.png",
+      "bytes": 1244739,
+      "sha256": "0ed0c9240364509ae7f3121c383fdaf1136fb349f13e3664fee109d4bf07593b"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/109_skill_014_05_use.png",
+      "bytes": 1231197,
+      "sha256": "8294883e6219714d29c16c29c3c5e04f492a38853fdc52dd7be3d71353e50f6f"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/110_skill_014_06_nextRound.png",
+      "bytes": 1188920,
+      "sha256": "94f571bc140b3ad0ed4978717d9033a29f7cbc1ddaf19d901af00d7893753afc"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/111_skill_014_07_use.png",
+      "bytes": 1228831,
+      "sha256": "5c569ef3107e6715d169a04c5dee94cf54515803ceafbb9cda928ce146bfab33"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/114_skill_015_00_use.png",
+      "bytes": 1226924,
+      "sha256": "03c9c67c239815fbea152f98a8b05c85a150f7c42b92e4ba053f4ee05c02189a"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/115_skill_015_01_use.png",
+      "bytes": 1242993,
+      "sha256": "538a17c342cf753d890ff98feb75969f4733017662f8943ac552fcbd998957b8"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/116_skill_015_02_reloadUse.png",
+      "bytes": 1244146,
+      "sha256": "6c9f2cafaeac699fbc5c75164bd7ba86e52f31e1684dbf493099f2e0e3010c78"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/117_skill_015_03_attack.png",
+      "bytes": 1232541,
+      "sha256": "ed82c945c6695fc57b869b626055438fb8d201f478f75cb54cce1828890fe696"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/118_skill_015_04_nextTurn.png",
+      "bytes": 1244477,
+      "sha256": "b645c168189744eff8e3e6dc0adfd120da57268ba10654f85e6c268a6621d37c"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/119_skill_015_05_use.png",
+      "bytes": 1227931,
+      "sha256": "fddbdf9f29d4cd2fc685fe9cd12813be64cfd2372fe0b14ccf3208a70acca0bc"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/120_skill_015_06_nextRound.png",
+      "bytes": 1188603,
+      "sha256": "6ad356425ec3a6d075dd3bb507d94c983b33fe4eb6f127f76b9692fd39b6de75"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/121_skill_015_07_use.png",
+      "bytes": 1225605,
+      "sha256": "a8f904eb2713023b3a700d80be651632ffbd9a7f1671b0c2598b1f55a60fe38c"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/124_skill_016_00_use.png",
+      "bytes": 1266194,
+      "sha256": "aea06c4b788b9d3c39da9ffb51453bddd7083e4239ccda2ce08bb69a1705f51d"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/125_skill_016_01_use.png",
+      "bytes": 1230947,
+      "sha256": "e647355f009f683c070fef2355094100c035a42bd13be32815713c54d0f588a5"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/128_skill_017_00_use.png",
+      "bytes": 1266344,
+      "sha256": "b1e82c82a611824ff06d7e733c4ed19dabb1503ada3250f30b0e87bea0d025ce"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/129_skill_017_01_use.png",
+      "bytes": 1231140,
+      "sha256": "d7e643526a3aeddbf1cb0e1a63cf911380988843da7c2293d01a8214617973d4"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/132_skill_018_00_use.png",
+      "bytes": 1264612,
+      "sha256": "aeea63da5a76560166569e78a78ab9b6364072b2307a616b66e9434555c01b85"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/135_skill_019_00_use.png",
+      "bytes": 1203650,
+      "sha256": "cbc078855e80334288acfaa4555cdfb96eb3b1dbd2c29512e9b3a7b465fb2af8"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/136_skill_019_01_use.png",
+      "bytes": 1220198,
+      "sha256": "52f2a8571566909d109d083391a46384570f68326dae2855b807e3c112ccb00f"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/137_skill_019_02_reloadUse.png",
+      "bytes": 1221536,
+      "sha256": "cb369c7f004106594528dcc5e2cc860c1645edab895ac033658e57ccb003b9b2"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/138_skill_019_03_nextTurn.png",
+      "bytes": 1251760,
+      "sha256": "e70cc0fbba400584cbb25b6e0337d2cf2888cb319a6a082eb197aad299588db1"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/139_skill_019_04_use.png",
+      "bytes": 1204587,
+      "sha256": "8481cd711fc7992d2b4a03ebc4badce0f1765ee411c0e3acc4d1dcf320a2b385"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/140_skill_019_05_nextRound.png",
+      "bytes": 1196425,
+      "sha256": "267b5c3aa24eb3fd35a3a78682ddd968e49838c4da45004ef91dc4db75cc75bf"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/141_skill_019_06_use.png",
+      "bytes": 1202126,
+      "sha256": "3bd2ab315a520ea5219deed672f53ded684e509c95c9734a6693c3d612a883bd"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/144_skill_020_00_use.png",
+      "bytes": 1204155,
+      "sha256": "c4b3ccc4255f22d97409ef3af3ac210c3a91123550b652b05c42b68fe32901bd"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/145_skill_020_01_use.png",
+      "bytes": 1220944,
+      "sha256": "2c3b49e207bae0a89071800a252dcbf9cf00d1bdaa8c2249003237de3c55792b"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/146_skill_020_02_reloadUse.png",
+      "bytes": 1222505,
+      "sha256": "54fb413e3d228d346c0ec67b2f36058767173608eba6c8131d2ed7cad33340c0"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/147_skill_020_03_nextTurn.png",
+      "bytes": 1252487,
+      "sha256": "6a38b14f1c05a4a355edd21ef0593854f2311cfba456e4de423110ea8587b766"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/148_skill_020_04_use.png",
+      "bytes": 1205163,
+      "sha256": "88c02a64f9b4879efc446e901529e3e17e128b1b837e44dac39a3dbab7258801"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/149_skill_020_05_nextRound.png",
+      "bytes": 1197111,
+      "sha256": "1b951a8cacb64e984337ddaab4e6c1e44e43f27ff0db8ddad2941a1eea9ad42c"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/150_skill_020_06_use.png",
+      "bytes": 1202612,
+      "sha256": "cf6491426fc6aba91a469b4a1796d4e07d31b2b8260cb7e6e992a201381d40a8"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/153_skill_021_00_use.png",
+      "bytes": 1273108,
+      "sha256": "8ee613ed107a5ee42e48b61db2a6b4b9ef610e104f51ff74d32fc87479e294cc"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/154_skill_021_01_use.png",
+      "bytes": 1205107,
+      "sha256": "176c9be4a0650cd27d89ea2ec83d04d69080b9c3bc2f19567e415c72cf5a6dc7"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/157_skill_022_00_use.png",
+      "bytes": 1273446,
+      "sha256": "2a8293e4668a547bb08bf7ec385b02782a89d338002ab5bf60243209464f3ba4"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/158_skill_022_01_use.png",
+      "bytes": 1205384,
+      "sha256": "6b6802009c87f9155ea3275178b0c901a975eba605865fc1b91e5eca73c53090"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/161_skill_023_00_use.png",
+      "bytes": 1271358,
+      "sha256": "f6f3c035ec9b15e8e005a7b17f1fbf59eb12d40d6e36249de7d52c221ebd49b6"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/164_skill_024_00_use.png",
+      "bytes": 1230637,
+      "sha256": "7744e63951794b5e1b353a8e8d547a18bd0a1f1e341a556ad846e9851ef52658"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/165_skill_024_01_use.png",
+      "bytes": 1249836,
+      "sha256": "f6afbbc1de8183cd1737bc2e930b02f6570e749857479a0d9bfc753fae4f4619"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/166_skill_024_02_reloadUse.png",
+      "bytes": 1251263,
+      "sha256": "59baae4c61fe6f14121e94c62585f612dde66fee6e2cc94a2958770a6fa6bd58"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/167_skill_024_03_nextTurn.png",
+      "bytes": 1262096,
+      "sha256": "9669af6a535ded0cb2257e7bd6fee560f10267689ffb4668fccb9854f90f4976"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/168_skill_024_04_use.png",
+      "bytes": 1250707,
+      "sha256": "1f7254933d8697e82715e0c7928475e6110f4c951b9e1eef246b468c13ca0975"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/169_skill_024_05_nextRound.png",
+      "bytes": 1205039,
+      "sha256": "6b36423371c2c2fc63dd0d0151f75ef8f9cad2993551b3481989ee8144704419"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/170_skill_024_06_use.png",
+      "bytes": 1229747,
+      "sha256": "841aa1b7c121da6fdba9536f57bf32ee7d2c15be4fdeff7ed1a8eb098aa03b85"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/173_skill_025_00_use.png",
+      "bytes": 1230402,
+      "sha256": "80d429d1336ea74d42cdaaa3a8e93d40ae45df552c6423a29b3c758a79794c87"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/174_skill_025_01_use.png",
+      "bytes": 1249594,
+      "sha256": "f508cde458171e5ba5de8dfb71d517580db13ac069aebc4aa3bfb0aa7ac338ef"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/175_skill_025_02_reloadUse.png",
+      "bytes": 1250933,
+      "sha256": "75546c7fdfb2c2dc58b0c0f8bb136d6ad5974dfa992472ffe9e583651fdb72d1"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/176_skill_025_03_nextTurn.png",
+      "bytes": 1261909,
+      "sha256": "435d37e70cf69f3dd467efcdcb1c1ddafc2b23bf1b659caba0dbc47ef4d8c28a"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/177_skill_025_04_use.png",
+      "bytes": 1250356,
+      "sha256": "72af4d5fe65baceecf40861dec70243e4680a5288a4c090adc96fa508eb99100"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/178_skill_025_05_nextRound.png",
+      "bytes": 1204811,
+      "sha256": "5412712d6c276cc3bce2fd06fd0f1ea676f90121d00a53ffbb364189c79c41dd"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/179_skill_025_06_use.png",
+      "bytes": 1229529,
+      "sha256": "467ac36321c02d2adb4c8e0abc976c69116baa6903620f000879962574a2814c"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/182_skill_026_00_use.png",
+      "bytes": 1231556,
+      "sha256": "028c015eef4eb6abe3e553d8346d6f165eb0f4404f69f99400838e1825002e30"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/183_skill_026_01_use.png",
+      "bytes": 1250949,
+      "sha256": "a940da98894d3573a42b9f3150dfd8ebf0343beeb2d8ccdf53848f4264cecfe0"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/184_skill_026_02_reloadUse.png",
+      "bytes": 1252529,
+      "sha256": "a5e0a89fd68317ba2f537c0bfa2510f94597804b934e7cce8d0e4bd6b95ecafa"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/185_skill_026_03_nextTurn.png",
+      "bytes": 1263039,
+      "sha256": "49edbce4d4d8d6962d9fd8534bc5a00c7eb68e8762e9579283413df2bce5354c"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/186_skill_026_04_use.png",
+      "bytes": 1251855,
+      "sha256": "2ed0dbe078f019c595e0034413b8e64390f622987a24cf994cf5f91a38fb7365"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/187_skill_026_05_nextRound.png",
+      "bytes": 1205799,
+      "sha256": "17a49feb57622a736f1440b4ffc01ef40e3884d794249eb84f6d9d850062d283"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/188_skill_026_06_use.png",
+      "bytes": 1230713,
+      "sha256": "a64530798ed4663a82bca8488de0e378af88478f041fd813ef2cf6f933150da5"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/191_skill_027_00_use.png",
+      "bytes": 1231190,
+      "sha256": "b5b80d6b5ece68bee029ebd8b8a064934cfa2294c53b3466c82bf69ceb01ed72"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/192_skill_027_01_use.png",
+      "bytes": 1250431,
+      "sha256": "66860d9cd441ea06a87b23136e50ef95e7b19ae043e956e8d1307a84a2e73c28"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/193_skill_027_02_reloadUse.png",
+      "bytes": 1251990,
+      "sha256": "7007df6ede0d47dbd56a3146b23ba7d5aecb424c38c1a30ce4e2107fe2585efd"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/194_skill_027_03_nextTurn.png",
+      "bytes": 1262612,
+      "sha256": "a894649446c0a4e41b2487e422ae814859b6fd9dc800f6f8c7a2d54e221944b3"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/195_skill_027_04_use.png",
+      "bytes": 1251418,
+      "sha256": "8fc04e836a4758f60b383ab78e0d3d1d6120b71ae06d9967876042c4620d6040"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/196_skill_027_05_nextRound.png",
+      "bytes": 1205516,
+      "sha256": "ded4eed6e5afb97bb5f43abd7f895f162f94d76f63609a58a2e8b3cd25462cb1"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/197_skill_027_06_use.png",
+      "bytes": 1230378,
+      "sha256": "1c11cb43fae1b4025d1390b30c810fa623c0755cd1e71a5f50ecabeff237d495"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/200_skill_028_00_use.png",
+      "bytes": 1283235,
+      "sha256": "73a59846bdf42f9f5e781fedcf242c15c1d5dd37f33606dde9ae99c0a340c520"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/201_skill_028_01_use.png",
+      "bytes": 1232534,
+      "sha256": "e4397153798e4f81f255f9b5965b5ea1217cdb70bf83623a7efaa8f4820cd017"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/204_skill_029_00_use.png",
+      "bytes": 1283478,
+      "sha256": "acb207e7d2b4a79b954f93c2af7648fce621ff4a3b0614abd055f52b97818c2f"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/205_skill_029_01_use.png",
+      "bytes": 1232785,
+      "sha256": "ffd695823d0f8e8da66ffabf8961e3289a5a61c92dcbfa4c22387dddfe426132"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/208_skill_030_00_use.png",
+      "bytes": 1281067,
+      "sha256": "9ead6d070d4b8a26cc1299bc215d357254165f7bceed47c9883501a49eb3a817"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/211_skill_031_00_use.png",
+      "bytes": 1220255,
+      "sha256": "f1d76dae8c83cb2d9c33b7c1e98fb3969752bc0491ab7a532c707352e3e539b5"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/212_skill_031_01_attack.png",
+      "bytes": 1224530,
+      "sha256": "ff4c458dc600b49fad08ac60399cc18b3f62b869617b0cf46d37b4de09877b5c"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/215_skill_032_00_use.png",
+      "bytes": 1218969,
+      "sha256": "2ff5e5197e630c41de9a0fbccc7ae0e3a899ef133ce69051da26b7e7a829d4d9"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/216_skill_032_01_attack.png",
+      "bytes": 1221677,
+      "sha256": "175d00e586a21379a1bdcc75a446543b7f60d7f53e53d9f9397c9c8566b68989"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/219_skill_033_00_use.png",
+      "bytes": 1216519,
+      "sha256": "ddd6bd3e6175c21987aac2db9645801ffbc28a9412faa54cb5af784f817310db"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/220_skill_033_01_attack.png",
+      "bytes": 1222594,
+      "sha256": "ecc61579ffe8b036ca5b37c85989140a11fed1a98350f74a9852dc7b17c955f2"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/223_skill_034_00_use.png",
+      "bytes": 1215138,
+      "sha256": "968bfb80c9dd01568510397dd8b9bcb1a0418ffdec867fc22dbd0a54555d2ea1"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/224_skill_034_01_attack.png",
+      "bytes": 1223020,
+      "sha256": "3d0f934717f4e49a4b05b325bcf80a866ee568f5ee5012793beaa97723bd72bb"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/227_skill_035_00_use.png",
+      "bytes": 1218937,
+      "sha256": "cf0f8f95975d828dab6dfa7384b38b06379b6b4a1a86874ba642d1d33057b179"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/228_skill_035_01_attack.png",
+      "bytes": 1221920,
+      "sha256": "b4ed4c13aaed8e292809e02e01784273f6fe5ac01a3bc67cfa22efe945705a4d"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/231_skill_036_00_use.png",
+      "bytes": 1217296,
+      "sha256": "2ee47bc5bdaba5d9911bdec853dc92488bdab49310b86fc636d263dd603e16c3"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/232_skill_036_01_attack.png",
+      "bytes": 1220067,
+      "sha256": "9bd0826f63addc3f53947465039da72f60213089c690b63a6ec5bc5e951b77d2"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/235_skill_037_00_use.png",
+      "bytes": 1215060,
+      "sha256": "0cae7a3547e1babf9aa9ccbe1a8f6a8c6a59a1b5fd82fe010805239fe0f70109"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/236_skill_037_01_attack.png",
+      "bytes": 1221171,
+      "sha256": "a9f67080d8964f1fed7aec266aeb0302dad3cd11c21283d4da2dc31d36d35210"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/239_skill_038_00_use.png",
+      "bytes": 1213691,
+      "sha256": "64fd69329698e7700470425d0a31fa3b0f77ba27fd1bb942a1fb98f2fe48a953"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/captures/240_skill_038_01_attack.png",
+      "bytes": 1220138,
+      "sha256": "5d24aee72c1a62b4f29a7d468bee0b52b9be94730580134b12cb2c68fb5798ad"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/report.json",
+      "bytes": 2173510,
+      "sha256": "5ad20720282c488e6c79a7c2d3a936cf3752b7277b4723d8db42ca139718bd12"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/request.json",
+      "bytes": 406627,
+      "sha256": "717904606f58e7f5ea9a655378a78ca94ac412f1992e79deed80b90363c9fb81"
+    },
+    {
+      "path": "AutomationOutputs/HeroSkills/20260911_193604_558bedfd/summary.json",
+      "bytes": 402,
+      "sha256": "ab734e5f75145f2ba55bfb1148479ab4ab0e76b34a7f4a9cdb63e5ffb7a9ae9d"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/000_Scene Start.png",
+      "bytes": 1198847,
+      "sha256": "7a1b134707739fff79e3c872fec4843dc359864bd99d1f35ee089a18be0c062c"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/002_unit_000_00_recruit.png",
+      "bytes": 1271300,
+      "sha256": "244f147f04e6c7a77e2351a356d9c28abfc54722408a07a0830b8d39f4182538"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/004_unit_000_02_use.png",
+      "bytes": 1246850,
+      "sha256": "c0ee30265bc7be1997f257535c9760ffe56e8d211fb0567471c9f4f649779423"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/005_unit_000_03_resolve.png",
+      "bytes": 1236893,
+      "sha256": "0f291d68bc9ab7e3257264956cb9f44358482bcad761880dcd7d782c3c32187f"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/008_unit_001_00_recruit.png",
+      "bytes": 1270867,
+      "sha256": "6ba0b4782b6e38db74e37a21e9b852d3f6a714ca413c373d3ac3f36bab0181bb"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/010_unit_001_02_use.png",
+      "bytes": 1246723,
+      "sha256": "780d22a7631eed477dba6c3c223ccc4ba0a5fe58e68c1e18b63726d8b5919b79"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/011_unit_001_03_resolve.png",
+      "bytes": 1238195,
+      "sha256": "85c534dcbb48056ac7957977b6291f51f119d35e1eaf862046c17d4f4c2871f9"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/014_unit_002_00_recruit.png",
+      "bytes": 1271217,
+      "sha256": "4fa2fa6bf4fa0ae9639a1b76c631defe2f310f39f52693661daa92ef8109405f"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/016_unit_002_02_use.png",
+      "bytes": 1252720,
+      "sha256": "b55e91062b0ff846763f64c24d847201294d8e09652116e3353aaac4f8cc9c68"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/017_unit_002_03_resolve.png",
+      "bytes": 1236952,
+      "sha256": "fa840f3d10f181fec6192e5b1e61c9832e901a222141fa5a7f4c891dc8da93cd"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/022_unit_003_02_use.png",
+      "bytes": 1212680,
+      "sha256": "fc5c36621ebb57b403b2d24d6e2094710e7428f4422a72db132663632d3c3575"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/023_unit_003_03_use.png",
+      "bytes": 1233486,
+      "sha256": "8475ffc12410d0a0743e8a0c6ea59ad00704b107cbe3c0ffe7e2fb058b2c279c"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/026_unit_003_06_nextRound.png",
+      "bytes": 1215613,
+      "sha256": "4c05e5e6583831a186e20c50f87453d5df6cd739d186330eae913eb6bd272903"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/028_unit_003_08_use.png",
+      "bytes": 1211285,
+      "sha256": "84b59cec928ff33828f9fea043c68dbef17dc7248ef9fc783e2c15fe048ce245"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/033_unit_004_02_use.png",
+      "bytes": 1257615,
+      "sha256": "8f925200110f888325ff6c059e164148125ae84260a3eac3ae41e338d1798c3c"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/038_unit_005_02_use.png",
+      "bytes": 1267254,
+      "sha256": "9ea4dd5b01272ff0ca30efd4732efd8b8de5709d48e3297280b01187f515db98"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/043_unit_006_02_use.png",
+      "bytes": 1267912,
+      "sha256": "d1b8105b181dc9b4d4cc7421062538612ecc0fd89bd0633bde074122c2ac4b12"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/048_unit_007_02_use.png",
+      "bytes": 1268160,
+      "sha256": "8921ad7a2968311bc539c0e7beae06b86e451bff7733d3cdcc3b3888ee29d3c3"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/053_unit_008_02_use.png",
+      "bytes": 1251960,
+      "sha256": "a1be8c954064466f05fb5e8ec71bf619a51d74cb337d16f8fd7d7b76b8e64eaa"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/054_unit_008_03_use.png",
+      "bytes": 1210775,
+      "sha256": "087244cb3a20fad48c1fab3da04590940ae77fefc507abf2bff00cb5682991d8"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/059_unit_009_02_use.png",
+      "bytes": 1244209,
+      "sha256": "c31f0226054a1f72247c5f60995bfb5cee7fd12fbb23b79a939962bef1498329"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/060_unit_009_03_use.png",
+      "bytes": 1210784,
+      "sha256": "4d25a5a3bc9f67e28f7e07f0a4190b82c77291a1d60d05453ba09c1ab4b505b1"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/063_unit_010_00_recruit.png",
+      "bytes": 1232650,
+      "sha256": "661b6d6d15177126295b99215da3f32b3e36e07fc74d411ec16b29ad5e566473"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/066_unit_011_00_recruit.png",
+      "bytes": 1228613,
+      "sha256": "5a294b8efcd44414980f8b0b97c3c9bce86bac3bc8b186ad6e2df38613cb4bde"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/071_unit_012_02_use.png",
+      "bytes": 1289914,
+      "sha256": "df4e452acd483412a7249020ee6aa62aac3c0ece44b61d01e2785e1eb82c6f9f"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/074_unit_013_00_recruit.png",
+      "bytes": 1234292,
+      "sha256": "c56312126dec838f2da5058f0d668066d32570c81bf311338617cd3f0fc5b0c1"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/076_unit_013_02_use.png",
+      "bytes": 1210594,
+      "sha256": "62ee59f4cf818b90999752eb511b629d56491106710096509f001a549f093df4"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/077_unit_013_03_resolve.png",
+      "bytes": 1201239,
+      "sha256": "80c23335b41e96cf243d69a99ad5aadf391a069300969a0dc0df77b24a911fb8"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/080_unit_014_00_recruit.png",
+      "bytes": 1233958,
+      "sha256": "ddae285e372fa43d622f94c5233bdd3bce77d54eb53089387226862db2d4b7d7"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/082_unit_014_02_use.png",
+      "bytes": 1210241,
+      "sha256": "8f06f553cece4e931940e27ee4e3e149e319bfb1edd4805fb4150053daf95133"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/083_unit_014_03_resolve.png",
+      "bytes": 1201397,
+      "sha256": "d5240013dd0f6e7596c3efcdadd72d23adb74fe06d9780cb0918da51a147d982"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/086_unit_015_00_recruit.png",
+      "bytes": 1234007,
+      "sha256": "423f111005a7fff3da32274d1b6e9b7ddc53f325fc7e3d163c2ea1c4d7ff840f"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/088_unit_015_02_use.png",
+      "bytes": 1216378,
+      "sha256": "57e305a55104fdae3ebd7948b466eca7fd7284c97d657535c64ef61ca766fac5"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/089_unit_015_03_resolve.png",
+      "bytes": 1201440,
+      "sha256": "34f671ba414f66ab4bff528c933016d08618bbf2b9368a7e161ab4af9f41ae22"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/092_unit_016_00_recruit.png",
+      "bytes": 1234249,
+      "sha256": "0fb80e721f51efed771b89ae8b63db9e690d7ee3fe2e390d5d5adbc3dd48221e"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/094_unit_016_02_use.png",
+      "bytes": 1216685,
+      "sha256": "98a1b22c204d96756710a98d09738fb9ebed850aeab7d6c76827c76ff12557ea"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/095_unit_016_03_resolve.png",
+      "bytes": 1201543,
+      "sha256": "f48f8e5465719033eb0ff109d58298785fd70393b70e10540d3ccee9572fc297"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/100_unit_017_02_use.png",
+      "bytes": 1175365,
+      "sha256": "e35eeeae15a494c444895d603e87fa7d7dc7ba7adfebfdf94f09258e22a47541"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/101_unit_017_03_use.png",
+      "bytes": 1197435,
+      "sha256": "a03759d8a0e60c22190aacafe90689c6cc0ccdeb7f25688e09b7e250a8aa97b3"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/104_unit_017_06_nextRound.png",
+      "bytes": 1178121,
+      "sha256": "d9ff0c1364f6e95b395011ecadb07159cdd21f1305f781cd0cb629cbe64aa997"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/106_unit_017_08_use.png",
+      "bytes": 1174262,
+      "sha256": "5dcd71123f2d63f6b06056fb064346ea59a889efce5ea618ca49c1df738286c4"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/111_unit_018_02_use.png",
+      "bytes": 1222318,
+      "sha256": "222168597f9a7b9fd50a16a82278a584a2279c916264cef8ddde11a1b556250e"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/116_unit_019_02_use.png",
+      "bytes": 1230567,
+      "sha256": "9374f92ead05e12e9c77d172021a07166bb734613b4733063ae0e6ad47ff5557"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/121_unit_020_02_use.png",
+      "bytes": 1231072,
+      "sha256": "3b0478eaba23d48b5d10febeb3fc3822b69c679ade91bac9171127cb7cb72a7c"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/126_unit_021_02_use.png",
+      "bytes": 1231302,
+      "sha256": "2279efeb56ac3dfc63f37699e1763f33e761386ce4d5260cb9562a32c112b458"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/131_unit_022_02_use.png",
+      "bytes": 1216124,
+      "sha256": "d9e8816187193a801e3410091b7e9140943c740af86134ed0f3d163d2932cdf8"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/132_unit_022_03_use.png",
+      "bytes": 1174036,
+      "sha256": "598a54be90519cc1ec9002d2d029c5747a65b5f3d0079f73c477f00dece45701"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/137_unit_023_02_use.png",
+      "bytes": 1207541,
+      "sha256": "92436cc51a1621c883fd1b53375a275ea9c8c3dc1af465327917b029aa8bb77e"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/138_unit_023_03_use.png",
+      "bytes": 1174031,
+      "sha256": "4fd8a5e6a9596f9c77be35ab5346d755a375b4549228531e1c16ea32938a9a83"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/141_unit_024_00_recruit.png",
+      "bytes": 1198209,
+      "sha256": "1d345b01e7d42c97ff097a729aa3927e93b28c55e5165715ea5eb7e9c351898e"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/144_unit_025_00_recruit.png",
+      "bytes": 1194253,
+      "sha256": "e7c2f613e7e0cb6329d221c580278f25524c183e52603293d3c8e8342a062841"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/149_unit_026_02_use.png",
+      "bytes": 1254626,
+      "sha256": "1b594aea7a54b368d02d9dcf3f0a55fe54ebcc8812a2a0a72b9ab7a8a41b21f2"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/154_unit_027_02_use.png",
+      "bytes": 1254602,
+      "sha256": "c986f866f839aacdaa45fea5c45312f2a93ebb26fe16fd413237d8d5dc9bb5a3"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/157_unit_028_00_recruit.png",
+      "bytes": 1201395,
+      "sha256": "4dcc4d696fe7a73d13732e4d815de191e32bcc206671ecf6f2cc1dbe1296c16e"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/159_unit_028_02_use.png",
+      "bytes": 1177269,
+      "sha256": "61468c63d18f2e9b051837da2dc0ef084c8a196e5dccd2eda5805b43a8fee1ad"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/160_unit_028_03_resolve.png",
+      "bytes": 1167551,
+      "sha256": "fd852e59813ab41ac2a7188e2d1e7d16273c9a706b8c85ac273b09eb839a7e7f"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/163_unit_029_00_recruit.png",
+      "bytes": 1201041,
+      "sha256": "6ec1bb1286db2c1fb6fadf17ceb39e041987e1b6257d340fec40a9d10f648fdc"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/165_unit_029_02_use.png",
+      "bytes": 1177014,
+      "sha256": "392a89951ee50e68cf930456df568b0b938a6d3a80f6a772c6e34e0c7198f65a"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/166_unit_029_03_resolve.png",
+      "bytes": 1168790,
+      "sha256": "f1a258d13b01b8a6149a71a77b6f7520bf8cc27495a5e730eccd83e914b8640c"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/169_unit_030_00_recruit.png",
+      "bytes": 1200376,
+      "sha256": "93e571314030de26b372f21b126fa459bf9edb577615d76f6d4f4291c5a26ee1"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/171_unit_030_02_use.png",
+      "bytes": 1181631,
+      "sha256": "8722ea676daed14fdb5326b0de2900863163cdd0146551bfdb67228197b3c7c1"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/172_unit_030_03_resolve.png",
+      "bytes": 1166237,
+      "sha256": "1e97c3f0e9b11cd9c28fbb733830b5b94995c7015e7054e9f60fff52fb3e3c38"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/175_unit_031_00_recruit.png",
+      "bytes": 1200010,
+      "sha256": "45d961ef3f4abbaeb435ba6d7a558adedecf62bd6b25e58a869fb8946ed34477"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/177_unit_031_02_use.png",
+      "bytes": 1181352,
+      "sha256": "c0be4dbf88523b0b0aabcb87c75c3e9884ccfaab3a487461a257a4c364fdd493"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/178_unit_031_03_resolve.png",
+      "bytes": 1167444,
+      "sha256": "bbbf2a63dea43925047914e75f1136a47a58983919b6ac418851f2345bcc259f"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/183_unit_032_02_use.png",
+      "bytes": 1142440,
+      "sha256": "e1f1970c83c18a290772aaf0a77dad4dd91357c0cb925f5d10b79d090505a83e"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/184_unit_032_03_use.png",
+      "bytes": 1163463,
+      "sha256": "ccdb98ffb6170d4135bad1e064a5d1f4d4479ed9a43ab6728b7a544bfce6af8b"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/187_unit_032_06_nextRound.png",
+      "bytes": 1145318,
+      "sha256": "bc6d22ce79d73e629ca4dd5dc0b5e13d6328022fc7532a6c24a248552c0f2d44"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/189_unit_032_08_use.png",
+      "bytes": 1141041,
+      "sha256": "73569033220a07b644edd093cccddd2ebc9bc5f039b781afaed5517fb4b20331"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/194_unit_033_02_use.png",
+      "bytes": 1187814,
+      "sha256": "293d52356746d83638c7c3a20eec6cfcc151f8ef14466b00d99d8d75858cfb0b"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/199_unit_034_02_use.png",
+      "bytes": 1196282,
+      "sha256": "64e2d3755812607351610af89156ec02f3c2cab0aa652530a164f36d1c7ea61a"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/204_unit_035_02_use.png",
+      "bytes": 1197676,
+      "sha256": "cd3ddae671d233e6740d0d8300081d8c7726acc30056b0e09fe5b0eaa1275314"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/209_unit_036_02_use.png",
+      "bytes": 1197704,
+      "sha256": "83b816374b34f6807239777cc05e26b39f2f6beb25553b3311b3972cdb3664da"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/214_unit_037_02_use.png",
+      "bytes": 1181453,
+      "sha256": "40ef30dfc8a06692c2d23ece8d05a8ac0f2c4d6c25bbae79283700a1391d9087"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/215_unit_037_03_use.png",
+      "bytes": 1140049,
+      "sha256": "edf49dc2b972661f47715d7c62bf8463ec7e9e65255a1ebb91ee1127c2f70aa9"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/220_unit_038_02_use.png",
+      "bytes": 1173634,
+      "sha256": "ff46b2812fe303fcef72cefd8371a68d6fc5867216613905722e563fc94c49fc"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/221_unit_038_03_use.png",
+      "bytes": 1140328,
+      "sha256": "b022d05312792d4f602aef18dd5cc87165aab3ca672459a53a9aa5753ba14269"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/224_unit_039_00_recruit.png",
+      "bytes": 1163915,
+      "sha256": "84ceacf4ec620cd6b13c7e9808b1847c0a70f56ae86b0c31403d0852a2edcbb3"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/227_unit_040_00_recruit.png",
+      "bytes": 1158728,
+      "sha256": "68a2597f3583600565d8f3bd161efd3a6ec1f6c5460986bd6efbf03593a304ad"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/232_unit_041_02_use.png",
+      "bytes": 1219787,
+      "sha256": "d2a1ff5a09e01905d996febe2bcec80a9a1ae9c87db8597996f1385fee3dd4b4"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/235_unit_042_00_recruit.png",
+      "bytes": 1196307,
+      "sha256": "72c0c0f6caec9c9933642b511994e741aa034ccae8f22a0290e633508b5b8750"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/237_unit_042_02_use.png",
+      "bytes": 1172360,
+      "sha256": "3f52d8d847c23babadb58df94511d45aa8d010b1344b6653a0ae6adc420fdcfc"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/238_unit_042_03_resolve.png",
+      "bytes": 1163340,
+      "sha256": "681d4a4fee45592a221d14394be97ac8a631c45e561e1045c81a58428e6c08e8"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/241_unit_043_00_recruit.png",
+      "bytes": 1195810,
+      "sha256": "60237cbbbb30bee85edaabf61b2f76cd22c642bb6f5fac4a1347cbf973092549"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/243_unit_043_02_use.png",
+      "bytes": 1172030,
+      "sha256": "dfa4f34d4cac99717132306da0415c32ebd98aafbb74c26abc32773603ba6f0f"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/244_unit_043_03_resolve.png",
+      "bytes": 1163334,
+      "sha256": "52718094507438a521f4ecd25345981f0184ace54964153e06001aeb5f12d0b4"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/247_unit_044_00_recruit.png",
+      "bytes": 1193403,
+      "sha256": "f91248f7c064480ce7b5b65696dcf9f2ee9399c84184cb81dd5aeb37e7a62e62"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/248_unit_044_01_use.png",
+      "bytes": 1154943,
+      "sha256": "eb4e672288c671fbe3a81d2e6d24ee868500e2651fd4916bfb8c7b5f12017625"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/251_unit_045_00_recruit.png",
+      "bytes": 1193902,
+      "sha256": "b10bacc9f7e1574024e68665ebce18c2a25e17ee9e9f93184da2ded4084876ae"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/252_unit_045_01_use.png",
+      "bytes": 1158296,
+      "sha256": "b9d1f7830fafe51843ad40c7ebb2edef74782e3d270a745c4fac6596c8861e75"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/253_unit_045_02_move.png",
+      "bytes": 1153661,
+      "sha256": "c605d120d9e6bf25f57d818f7429d98952ab15b7f4279f38409cfda04b511571"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/258_unit_046_02_use.png",
+      "bytes": 1137529,
+      "sha256": "6b88f7de0762f0d1d944fc86faeb061910d51a3d2bdb0b45de6cb0bf0b05068d"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/259_unit_046_03_use.png",
+      "bytes": 1158018,
+      "sha256": "2b77d0bb6a33c32c0dfbaa417cc1fa9160f9e48e62bb834e9e2f463bc881ab44"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/262_unit_046_06_nextRound.png",
+      "bytes": 1140329,
+      "sha256": "00c04f98c94601757e45b1c55e41d7560697d2bd9ab42b8f48a3a051298f759b"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/264_unit_046_08_use.png",
+      "bytes": 1136144,
+      "sha256": "ae80295dcd267d2eeca06d2326f3160518b87dc78b989c555be2d827eb539403"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/269_unit_047_02_use.png",
+      "bytes": 1182396,
+      "sha256": "a2198c2a0e27d2db82754bb79ff6f30ebd366a597a015f9c871d7d823d6abc1f"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/274_unit_048_02_use.png",
+      "bytes": 1191756,
+      "sha256": "4b2e0119816a3f8e4dc976b1e3068f69ac8025b8af9a5c21f8f7ea91e962de13"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/279_unit_049_02_use.png",
+      "bytes": 1192913,
+      "sha256": "53b08c3c406b475263c5a1417b7db9800016dcedf670ecdb77f93d7863148526"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/284_unit_050_02_use.png",
+      "bytes": 1192719,
+      "sha256": "1836be05876a01d12f378beaa8bc8ef1f4bbec47bb90ecdd981430041aab9a0f"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/289_unit_051_02_use.png",
+      "bytes": 1176322,
+      "sha256": "e24f3f17c9017659a5a88b86a5416f7828e17388005fda6f16e366cf9a327444"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/290_unit_051_03_use.png",
+      "bytes": 1134976,
+      "sha256": "1f49e74189c0d36a6f12757f4c5f8b85a5d198ba52bf51603b9047e5e7a8afb8"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/295_unit_052_02_use.png",
+      "bytes": 1169041,
+      "sha256": "de2ca7d728fbe1fec1881e5aeee13b652f4a13a0cd0433e37aae26f019458d00"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/296_unit_052_03_use.png",
+      "bytes": 1135415,
+      "sha256": "e694e03d24e7f84dd2b7b7fe4ea663dd8e5bafbb56eb26a0231ef8a17ed30e57"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/299_unit_053_00_recruit.png",
+      "bytes": 1158773,
+      "sha256": "61279b2f64b1dbb7d10256d936785ace17f393db203a28cf9a2a4c7d7724e694"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/302_unit_054_00_recruit.png",
+      "bytes": 1154155,
+      "sha256": "b587e25d97272b20909b5a9c2351cfd7066e1701e9d84a2ab0e4ddf2136a6fc0"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/305_unit_055_00_recruit.png",
+      "bytes": 1216511,
+      "sha256": "cf9ea045b4b7fa4d7bde47ea1ed888f45beb0a5516ecc193667f3c5bec103a69"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/307_unit_055_02_use.png",
+      "bytes": 1192524,
+      "sha256": "36a89a206727325468064d5a5dd7b55cc7470bf1409ced2448b9e61a839bed63"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/308_unit_055_03_resolve.png",
+      "bytes": 1182343,
+      "sha256": "9c0063b8727df5af6f8cb310dbf4a8dee33bc48c18b4f8702ddc0268ee9a976e"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/311_unit_056_00_recruit.png",
+      "bytes": 1216075,
+      "sha256": "69a57e8cf856c59fd10b9e87c540ad1f92dcfc1f7e3d707a253216515eaab12e"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/313_unit_056_02_use.png",
+      "bytes": 1192239,
+      "sha256": "c3531a66ba8e685c5759b1138b5b83541dfb259a6b87e0b3720d4472b8781861"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/314_unit_056_03_resolve.png",
+      "bytes": 1183475,
+      "sha256": "9faca891cba3add8405dad58f1e636ef49eef9fc5e6c232afd5b31d93d658b4d"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/317_unit_057_00_recruit.png",
+      "bytes": 1216054,
+      "sha256": "ee23165ebec7d51ff295ced5a249de245f85a61e41ea758c975d85c9edc208c3"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/319_unit_057_02_use.png",
+      "bytes": 1197524,
+      "sha256": "917cc16118434e845a1785e9dd9152b214420dd2c7b94ca879d9d1461a047269"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/320_unit_057_03_resolve.png",
+      "bytes": 1181395,
+      "sha256": "1670dfa9d9512e5b85a4242bc391229374cdd5946e0b81f2ae3d12d2c21c17e4"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/323_unit_058_00_recruit.png",
+      "bytes": 1215963,
+      "sha256": "a57a610c3df08048bae72adfeddf1fd4f09369bd86b44d7119f95271289bf35b"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/325_unit_058_02_use.png",
+      "bytes": 1197547,
+      "sha256": "1a582279fbd64aa3a78f54ebc88f5ac3801d49fe3ccd34a7a61b83e8dcaccc9f"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/326_unit_058_03_resolve.png",
+      "bytes": 1182928,
+      "sha256": "5a9afdf21f0afa2fe93549aedba143168fd4ebc0f98c126880084599bc4733a8"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/331_unit_059_02_use.png",
+      "bytes": 1157453,
+      "sha256": "47d5e1373f232a96e744a1844f561dc3d9272b52b7867e944d899cc714fd9de2"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/332_unit_059_03_use.png",
+      "bytes": 1178756,
+      "sha256": "330c0bc3afd2aefb0d34aeb07695b3e3b3c470e9776ebf61f9288278c2a2c95d"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/335_unit_059_06_nextRound.png",
+      "bytes": 1160276,
+      "sha256": "4092c455d4a5156d9a123892dbc48a0d19be794c1d0daa505b79ce81c11b0fbd"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/337_unit_059_08_use.png",
+      "bytes": 1156005,
+      "sha256": "0a93a5662ff3fac479362f0cf487f82a9b2c166b7e0f254b53b79c3e569bc473"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/342_unit_060_02_use.png",
+      "bytes": 1203034,
+      "sha256": "dd7ee4ccb1a6091ef41c2b1a417a08072e7b8ad450386e03be518ea72e608443"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/347_unit_061_02_use.png",
+      "bytes": 1211730,
+      "sha256": "b7e60201797999067e2929f29198f20b4b556dc1908581db014448cf28b240d8"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/352_unit_062_02_use.png",
+      "bytes": 1213389,
+      "sha256": "24fa08bda7260976a5a87ad6eb7d6b32ee23e0748ed202d5fe8b3e6f872af3e7"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/357_unit_063_02_use.png",
+      "bytes": 1213318,
+      "sha256": "ff862e232a3012efa4158d032c51418049fdfe4c128a0e725a2032210af5e5e4"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/362_unit_064_02_use.png",
+      "bytes": 1196989,
+      "sha256": "ddac64cc5158215febc7efce5401fd43c67c11c8bced8ceb7ce5fcd031a295f8"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/363_unit_064_03_use.png",
+      "bytes": 1154918,
+      "sha256": "08a0a861f1e5c663579c508a98ca3d553ef163950f76085bdb3d58e15fb35f4b"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/368_unit_065_02_use.png",
+      "bytes": 1189334,
+      "sha256": "0a4948a7ae8fe844fd6e3898ec9b6b1ed90ac019e629582537dd37b12a9929e9"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/369_unit_065_03_use.png",
+      "bytes": 1155107,
+      "sha256": "2e7233c8c462cb970e5a72721c0ca9bc4542c6026a92d3644f9ce7e67399578d"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/372_unit_066_00_recruit.png",
+      "bytes": 1179263,
+      "sha256": "61cb607477398ae5ad26abbce1210205ee8c7b99ad31c83c7f41ebf75eb1cfe0"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/375_unit_067_00_recruit.png",
+      "bytes": 1174788,
+      "sha256": "a56bd343b09e4975851ed89443d1fece3fd262853e2216c11d1c73d23e415e59"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/380_unit_068_02_use.png",
+      "bytes": 1236239,
+      "sha256": "86927b6ca6b0665c0d70c3754f9ac1ea101eda3920cc043e8edfff985d6b35a1"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/383_unit_069_00_recruit.png",
+      "bytes": 1241168,
+      "sha256": "513d2cad81956447b930e9d00744b0a0ca38efc342a3ce41bc2f993f809020e9"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/385_unit_069_02_use.png",
+      "bytes": 1217451,
+      "sha256": "ba1027213dbd47e0f739d4719e4374b98809ba31e0506c2b4ba64bab5db7bee9"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/386_unit_069_03_resolve.png",
+      "bytes": 1207129,
+      "sha256": "95817108aea1b7abff4825792c5945617744e7ae27ecbe422e9faaae9d059a3c"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/389_unit_070_00_recruit.png",
+      "bytes": 1239953,
+      "sha256": "d72652b057f1c6593451f7bc3129820e7feaea1c52b021e59300c815a67ffa6c"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/391_unit_070_02_use.png",
+      "bytes": 1216393,
+      "sha256": "013bf2278db25567e5a4af2838a094150ba0ee18daaeeb339a146bcf2c600397"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/392_unit_070_03_resolve.png",
+      "bytes": 1207549,
+      "sha256": "53add8cb2a203e5681f70613aef42f06db7f2dbb2df0095650f0744a3dbfc3ee"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/395_unit_071_00_recruit.png",
+      "bytes": 1239852,
+      "sha256": "a0a8e17d28777217337b9b479cf858491d1b460515d99022370c9f6f29902fa0"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/397_unit_071_02_use.png",
+      "bytes": 1224287,
+      "sha256": "7a7ffcb3e95dd74cf38fa6202b4c48adbddfff591217893a7fc960ad4df54f9d"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/398_unit_071_03_resolve.png",
+      "bytes": 1204505,
+      "sha256": "0527b0ac3c79c07bb26659b95e4e0c3a20cfe9e3f2d1d40e8a0a0782ad27fea7"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/403_unit_072_02_use.png",
+      "bytes": 1181710,
+      "sha256": "0fcc8e60b2c3c602ad33b5ed4bef94a192f3bd22a5ff451d6bf77088c8e0c095"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/404_unit_072_03_use.png",
+      "bytes": 1202441,
+      "sha256": "55e27db0a44036dba762b2d4e4e3798e46fedda22fbc4901444a72a60c4e9242"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/407_unit_072_06_nextRound.png",
+      "bytes": 1184723,
+      "sha256": "cadec5bae73a2bce4ad1f1cae3596e951d7382397778e4c4cdba9243111eef82"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/409_unit_072_08_use.png",
+      "bytes": 1180427,
+      "sha256": "958a0660fc62d1f5853b124cd9fee51a9927e94c52dc4e8f146f5264bdae9858"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/414_unit_073_02_use.png",
+      "bytes": 1227891,
+      "sha256": "743ecaa0d4c9a607bcd2e7493075a1e173bdf9206f07081d233785ee3e5f1241"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/419_unit_074_02_use.png",
+      "bytes": 1235820,
+      "sha256": "dcd8c07bb0b1070276e49d67ada7ff617741ab8811c03828a9a71d2924a89872"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/424_unit_075_02_use.png",
+      "bytes": 1237277,
+      "sha256": "47f03c134a7c7c2776da46a2d02441822fe3e5cd38331f58b686d5e5b9656a9d"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/429_unit_076_02_use.png",
+      "bytes": 1237338,
+      "sha256": "6ca98ef3f27ba788defba8ae04d4a8cdec4ef5b43ed71608e12177f846cce70a"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/434_unit_077_02_use.png",
+      "bytes": 1220728,
+      "sha256": "32795698e58ae6cb40e03f604a0b98e3a8ec7c82ab6a8ded3a197f7199d7b218"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/435_unit_077_03_use.png",
+      "bytes": 1179731,
+      "sha256": "8e42214571606330df83e1dcf65eeda23b4e5a820e21d1ebf9b432115eed03dd"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/440_unit_078_02_use.png",
+      "bytes": 1213279,
+      "sha256": "ab45803eae06d73d669fb3145bd0b0297a056069bfb3a30b4257dcadb9bfee9d"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/441_unit_078_03_use.png",
+      "bytes": 1179982,
+      "sha256": "0f0ac83714b31dffd1d5ad41ec07a4ecc02ec597afbc6369ad586c845edaf885"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/444_unit_079_00_recruit.png",
+      "bytes": 1203144,
+      "sha256": "f12a2b4c5190f30b90504f35f4e7efb8d4620491fa0f9bcaf29eb9d86ac724f3"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/447_unit_080_00_recruit.png",
+      "bytes": 1199384,
+      "sha256": "2db3d6198807d6719475ca49b0af5139b26b616d1f34397543ed14e2c8440222"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/452_unit_081_02_use.png",
+      "bytes": 1259677,
+      "sha256": "47e7e9ba1bed8a76d34ccde6266910a8b23862eafae806fee6cc6d514a6d4e6a"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/455_unit_082_00_recruit.png",
+      "bytes": 1218819,
+      "sha256": "c59d99a68f39013a63718b0ce38666143541c57bec7ff1b196b2e0dfe2f8b489"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/457_unit_082_02_use.png",
+      "bytes": 1195633,
+      "sha256": "1f240d6fbee906cae9b733c65ddf3a2b75254cac7eecd6b8037a582333685fe9"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/458_unit_082_03_resolve.png",
+      "bytes": 1185872,
+      "sha256": "0fa5fe7bdd1756e964f82b1b1f33248ee13736b33eb57217c22aeef5b672f67a"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/461_unit_083_00_recruit.png",
+      "bytes": 1218331,
+      "sha256": "95632bc28c642983534408d5f16aa0b7c7a368c4159d16d1fd0297184166f8c6"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/463_unit_083_02_use.png",
+      "bytes": 1195505,
+      "sha256": "af3ed34b15f4624714c68296a26a32f486aa720675cc944c24872956fe54b09a"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/464_unit_083_03_resolve.png",
+      "bytes": 1186983,
+      "sha256": "7f778af942255f0fca99e41b00c7e0ff4a8558900b68e3e18d81245a948960fa"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/467_unit_084_00_recruit.png",
+      "bytes": 1218236,
+      "sha256": "004667d4958ed0e0b807a3a299f7a59da980e514041f11ab4f009f067581f94f"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/469_unit_084_02_use.png",
+      "bytes": 1194886,
+      "sha256": "63f1e6dcae6ecc8ba3db6829b0d664e6e8d4503784ef2d2a9c22c901958daf5c"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/470_unit_084_03_resolve.png",
+      "bytes": 1186048,
+      "sha256": "15be64da77f80c681c4470edac4b9244e52b8ca815c58c5cd6a0caae602261bb"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/475_unit_085_02_use.png",
+      "bytes": 1161648,
+      "sha256": "d5a120b294b587ce22ac0350abced0892d675db0feaba120d760f890666abddf"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/476_unit_085_03_use.png",
+      "bytes": 1182622,
+      "sha256": "bfd4ba3c21e44159b3c56f89fec409c59d7cd41e5e838ff5c78d5485baa0cbd4"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/479_unit_085_06_nextRound.png",
+      "bytes": 1164322,
+      "sha256": "9b92fb717f365810a66450a265c4c36b220aa9c2e20048eedc0df4f15e85ff47"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/481_unit_085_08_use.png",
+      "bytes": 1160179,
+      "sha256": "d4616b2f13a38461551539bcf46d017d39d8c1b34b98ce903f373181b3945850"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/486_unit_086_02_use.png",
+      "bytes": 1206199,
+      "sha256": "819dede9fb2cdd3869e152ed55e5c3a710034690999946af5be41b7b31f61b29"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/491_unit_087_02_use.png",
+      "bytes": 1214949,
+      "sha256": "dc10a3456df856f0ad6463cb9f43682a2b78815ad0819c87480f5743d8c99836"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/496_unit_088_02_use.png",
+      "bytes": 1216364,
+      "sha256": "3504ab0889e01130d0f80a70e76632cd631012570970f8b01e0779bf0b4de4e4"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/501_unit_089_02_use.png",
+      "bytes": 1216487,
+      "sha256": "d86d186eba633193cba9469ee7ca0c2a9186b3299564d387621cee05f9c1eef8"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/506_unit_090_02_use.png",
+      "bytes": 1199830,
+      "sha256": "a558dc97e37c6dcdfc3e8c5b454a1aa8d629fc0a66c58c78694d767c1b8743a3"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/507_unit_090_03_use.png",
+      "bytes": 1158967,
+      "sha256": "405e23b64d4c11e922c4bbd1aa0a59df681fdd20cd89eae2a999629c2fb53c8d"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/512_unit_091_02_use.png",
+      "bytes": 1191856,
+      "sha256": "148481f634663bc49d1f8dafd24930e15642b49db17c73184deed51992a6ca97"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/513_unit_091_03_use.png",
+      "bytes": 1158856,
+      "sha256": "b6c26dbbea5a10e457f0a2c8c1e26c7fd7997a265277d983974e8ef553dda7ea"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/516_unit_092_00_recruit.png",
+      "bytes": 1182027,
+      "sha256": "1d5ea54f619f574fcee4f52f0cb14539afb06072e17cccc892229937763fbdb4"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/519_unit_093_00_recruit.png",
+      "bytes": 1177708,
+      "sha256": "f335968e0f4754029e5a306efbc93daadb0b7ceeb2f4cb25785f8ad1326509dc"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/522_unit_094_00_recruit.png",
+      "bytes": 1209129,
+      "sha256": "555fc3ba6fe470186fe183c8b2b9b331ce7f16fbf8ec413b1747cbb00a3b0d84"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/524_unit_094_02_use.png",
+      "bytes": 1185726,
+      "sha256": "1b0e619d671e1b8756ba84ee5f5687680ad50d678a7955a9986d8beacd56b184"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/525_unit_094_03_resolve.png",
+      "bytes": 1176229,
+      "sha256": "0d43709b793a7558927c48580c0d5aaba1de83102bc471723c7d7779df66d5d5"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/528_unit_095_00_recruit.png",
+      "bytes": 1208882,
+      "sha256": "2f4abba8acd67627c0d09203dad503aca7dbdc6628ca57c8bd0f9f27e6f5da98"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/530_unit_095_02_use.png",
+      "bytes": 1185497,
+      "sha256": "ff60229378a069e6378b730b3905660c3e8ba2ec1fb252047eb286cdc116e0a7"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/531_unit_095_03_resolve.png",
+      "bytes": 1177522,
+      "sha256": "52471e3ae6a0b3761340ff6a98d12bf155e66b783d00658f8f53113213b85365"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/534_unit_096_00_recruit.png",
+      "bytes": 1208751,
+      "sha256": "1845ee1e373e81f015f585359883354b3a0c997440fd37bc0f8cf628b3067845"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/536_unit_096_02_use.png",
+      "bytes": 1184484,
+      "sha256": "164f737531dfc073609ac0ccbbe2bb9586b33af62636231e023e6366ed8668eb"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/537_unit_096_03_resolve.png",
+      "bytes": 1175913,
+      "sha256": "4a76942d3f4e2c5d6b8d53c2f9f1d7661e5781404b6ee03a8c4dbec76c030e3f"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/540_unit_097_00_recruit.png",
+      "bytes": 1208318,
+      "sha256": "8d5da8aba8048fef1bda6c9fdba4e7544a15d5544caceac4b8702644e27a6cfa"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/542_unit_097_02_use.png",
+      "bytes": 1184098,
+      "sha256": "0a8c393c47c3f7fa2d74aca5a45dcf18279e66d02b9461e90962f1a1aa757809"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/543_unit_097_03_resolve.png",
+      "bytes": 1177043,
+      "sha256": "b385b9f64fa25de84c6f030b2be894b1cad8ddd7bab336f4518d9c71b5073361"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/548_unit_098_02_use.png",
+      "bytes": 1151123,
+      "sha256": "e1126b4983c1b4e4742bcdbd7ee884282f8f44e73e19f3f5776d9225deb76253"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/549_unit_098_03_use.png",
+      "bytes": 1172903,
+      "sha256": "77ead3add6fa2068151486de173b5d1e5fcc9abbc8f7326bbb135fcbfe11f447"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/552_unit_098_06_nextRound.png",
+      "bytes": 1153696,
+      "sha256": "61a9168af89122a2d95eb32f7e5c7df5726904c45ffc7bde986225ce77ddf6dd"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/554_unit_098_08_use.png",
+      "bytes": 1150162,
+      "sha256": "9723771ed8d49db2c16e401ba52b818823a714d7f1915d4d7ba4efc25686f296"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/559_unit_099_02_use.png",
+      "bytes": 1197393,
+      "sha256": "d4ba9bc9b4adbd71013372692b65a995652e91254b81e0ab28d69518768c856e"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/564_unit_100_02_use.png",
+      "bytes": 1204742,
+      "sha256": "90de333325b83d585ecf72991fabd05d699d203bd51df2ab473c2a6e9cfe749d"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/569_unit_101_02_use.png",
+      "bytes": 1205811,
+      "sha256": "bc6ddac39296cf2f0fae8c8e632dab31fe795d91054cdc04d7e85e3c5a7532a6"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/574_unit_102_02_use.png",
+      "bytes": 1206471,
+      "sha256": "7cc234bcbb1e2c4191e20be1361b201880985fa79ba510a176ac0dfc0a569a78"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/579_unit_103_02_use.png",
+      "bytes": 1190029,
+      "sha256": "e7aac78109e1db78276f6ba8b6b630c3a4080b2393fe426b4e708da24f2c6c4f"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/580_unit_103_03_use.png",
+      "bytes": 1148907,
+      "sha256": "8af1a85cca61f46a1e0edd43cca880c21a23505c6700d9aa92201ac6740e9113"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/585_unit_104_02_use.png",
+      "bytes": 1181370,
+      "sha256": "df2f135d3c36f874117dcdb4f10ecbc5bd210a3b84661798129a78b0e763f58c"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/586_unit_104_03_use.png",
+      "bytes": 1148800,
+      "sha256": "dec00a3be60fc262e536dc8bcd3e4736f17a11d77d6b079f8b0d571a8bf13b64"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/589_unit_105_00_recruit.png",
+      "bytes": 1172448,
+      "sha256": "fc82092a429f39962b5f1ae0bbea2eee3df9a62b5bedc2cf5a3eab60b1e25deb"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/592_unit_106_00_recruit.png",
+      "bytes": 1168516,
+      "sha256": "8a7e7d0e78a1295f5b8db4c8088db88a0655c27aad60655985ce385f716fbeb5"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/597_unit_107_02_use.png",
+      "bytes": 1255815,
+      "sha256": "dd965734f72e97bdde7893434e842589f83304667efdbe1b3aa90cb4666a1def"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/600_unit_108_00_recruit.png",
+      "bytes": 1146754,
+      "sha256": "8cfb6271ffc56dc024e5ec77e466ae1bb6ca25889a9916ed268aa9bba3cfa4d8"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/601_unit_108_01_use.png",
+      "bytes": 1151791,
+      "sha256": "b2ed79a6e88ce3aaf94d6b929dafb8a6e46880091acab7b1a88c8018dba8fc93"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/602_unit_108_02_recruit.png",
+      "bytes": 1160390,
+      "sha256": "682cda4cce250a15abaf821a393a6143d801514c1b8ec6d57da6373516a164f3"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/607_unit_109_02_use.png",
+      "bytes": 1169766,
+      "sha256": "064c4fec750b32469b620f2ae60ccb07146b3b022fc4cbfc36c9b67c2391dcaf"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/608_unit_109_03_nextRound.png",
+      "bytes": 1164104,
+      "sha256": "ef5e5aa36b738a9d436179b880e008243b7084b2f570e769fa2a89d37b5ad578"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/609_unit_109_04_use.png",
+      "bytes": 1163456,
+      "sha256": "1abd1dd2dc5c5de2843d8807eaf6c77660f33749b239e1bdd754df16aadac33f"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/captures/612_unit_109_07_use.png",
+      "bytes": 1158880,
+      "sha256": "4db410502ff4936374633c6f33ad5bafbf8658533f97a47155ec40003546ef88"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/console_final_1.json",
+      "bytes": 130,
+      "sha256": "b21abdd93106dc4f9fd3b6f688e83f05441fd1a4ea45669ba6102f6f1ad2e36d"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/console_final_2.json",
+      "bytes": 130,
+      "sha256": "b21abdd93106dc4f9fd3b6f688e83f05441fd1a4ea45669ba6102f6f1ad2e36d"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/report.json",
+      "bytes": 6542976,
+      "sha256": "8aaa1f09efb57070fe822fec636c9be99435dc75beab23712e56a508cfa551e4"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/request.json",
+      "bytes": 767564,
+      "sha256": "757769166252eef9a79944f8ebd3f8e2aac565b0916985661950543315992569"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/source_provenance.json",
+      "bytes": 4436,
+      "sha256": "261d390abe54f48cf9cad2cfbf80ccc45c0ad26e4c2fc166b3f86968752206e5"
+    },
+    {
+      "path": "AutomationOutputs/OriginalUnits/20260911_193332_c99cb476/summary.json",
+      "bytes": 449,
+      "sha256": "905686fa29f0bd566eb9753cf378f806a559523a5db8e0361ee4dbde17e8938c"
+    }
+  ],
+  "bytes": 720583525,
+  "screenshots": 495,
+  "storage": "local only; not staged for remote upload"
+}
