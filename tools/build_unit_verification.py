@@ -1,6 +1,7 @@
 """Author independent unit expectations from the inspected original card faces."""
 import hashlib
 import json
+import os
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -19,7 +20,12 @@ UNITS = {
 
 def write(path, value):
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + '\n', encoding='utf-8', newline='\n')
+    content = (json.dumps(value, ensure_ascii=False, indent=2) + '\n').encode('utf-8')
+    if path.exists() and path.read_bytes() == content:
+        return
+    temporary = path.with_name(path.name + '.tmp')
+    temporary.write_bytes(content)
+    os.replace(temporary, path)
 
 
 def build():
@@ -89,11 +95,98 @@ def build():
         step('heal', '治疗后才允许发动', wounds=0, ready='True', canActivate='True'),
         step('battle', '重新进入交战', exception=''), step('use', '发动基础能力', melee=3, ready='False', exception='')])
 
+    # Rulebook pages 9-10; these expectations do not call the production damage calculator.
+    def hit(damage, targets=None, block=0, **expected):
+        value = step('suffer', f'确认敌人攻击{damage}的伤害分配', enemyAttack=damage, **expected)
+        value.update(damage=damage, unitTargets=[0] if targets is None else targets, block=block)
+        return value
+
+    def damage_case(card, title, steps, **fields):
+        add(card, title, [step('prepare', '选择原部队作为承伤目标', exception=''),
+                          step('battle', '进入同一场战斗', exception='')] + steps, **fields)
+
+    for card, table in [('army_2_006', [(1,1,0),(3,1,0),(4,1,1),(7,1,2)]),
+                        ('army_2_001', [(1,0,0),(3,0,0),(4,1,0),(6,1,0),(7,1,1)])]:
+        for damage,wound,hero in table:
+            damage_case(card, '护甲边界与溢出继续交给英雄', [hit(damage, wounds=wound, heroWounds=hero, heroDiscardWounds=0,
+                damageAssigned=1, ready='True', canActivate='True' if wound==0 else 'False', exception='')])
+    for element in ('Fire','Ice','ColdFire'):
+        damage_case('army_2_001', element+'攻击不受物理抗性保护', [hit(4, wounds=1, heroWounds=1, damageAssigned=1, exception='')], enemyElement=element)
+    for card,table in [('army_2_006',[(1,2,0),(7,2,2)]),('army_2_001',[(3,0,0),(4,2,0),(7,2,1)])]:
+        for damage,wound,hero in table:
+            damage_case(card, '剧毒只把实际部队伤牌替换为两张', [hit(damage,wounds=wound,heroWounds=hero,heroDiscardWounds=hero,
+                destroyed='False',damageAssigned=1,exception='')],enemyTraits='Poison')
+    for card,damage,destroyed,hero in [('army_2_006',1,True,0),('army_2_001',3,False,0),('army_2_001',4,True,0),('army_2_001',7,True,1)]:
+        damage_case(card, '麻痹只在实际受伤时消灭部队并腾出指挥槽', [hit(damage,wounds=0,heroWounds=hero,
+            destroyed=str(destroyed),units=0 if destroyed else 1,freeSlots=1 if destroyed else 0,exception='')],enemyTraits='Paralyze')
+    damage_case('army_2_006','剧毒与麻痹同在，部队消灭而英雄仍收剧毒弃牌伤',[
+        hit(4,wounds=0,destroyed='True',units=0,heroWounds=1,heroDiscardWounds=1,exception='')],enemyTraits='Poison,Paralyze')
+    damage_case('army_2_006','横置不妨碍未受伤部队承伤',[
+        hit(3,wounds=1,ready='False',heroWounds=0,exception='')],exhausted=True)
+    for fields,reason in [({'wounds':1},'受伤或已销毁部队不能承伤'),({'destroyed':True},'受伤或已销毁部队不能承伤'),
+                          ({'unowned':True},'只能让自有部队承伤'),({'noUnitDamage':True},'当前效果禁止部队承伤')]:
+        damage_case('army_2_006','非法承伤选择必须先拒绝，不能改变英雄伤牌',[
+            hit(4,wounds=fields.get('wounds',0),heroWounds=0,damageAssigned=0,exception=reason)],**fields)
+    damage_case('army_2_001','抗性无伤吸收也不能同场复用，下一场才重置',[
+        hit(3,wounds=0,heroWounds=0,damageAssigned=1,exception=''),
+        hit(3,wounds=0,heroWounds=0,damageAssigned=1,exception='同场战斗不能重复向该部队分配伤害'),
+        step('endBattle','结束战斗恢复下场承伤资格',damageAssigned=0,wounds=0,ready='True'),
+        step('battle','开始下一场战斗',exception=''),hit(3,wounds=0,heroWounds=0,damageAssigned=1,exception=''),
+        step('use','无伤且就绪的魔像还能发动攻击',melee=2,ready='False',exception='')])
+    damage_case('army_2_001','同次攻击按魔像、农民、英雄顺序继续分配',[
+        hit(10,[0,1],wounds=1,secondWounds=1,heroWounds=1,damageAssigned=2,units=2,exception='')],extraUnitId='army_2_006',extraSlots=1)
+    damage_case('army_2_001','前一部队吸收完时不消耗后续部队资格',[
+        hit(2,[0,1],wounds=0,secondWounds=0,heroWounds=0,damageAssigned=1,exception=''),
+        hit(3,[1],wounds=0,secondWounds=1,heroWounds=0,damageAssigned=2,exception='')],extraUnitId='army_2_006',extraSlots=1)
+    damage_case('army_2_006','重复目标拒绝在任何伤害发生之前',[
+        hit(7,[0,0],wounds=0,heroWounds=0,damageAssigned=0,exception='同场战斗不能重复向该部队分配伤害')])
+    damage_case('army_2_006','不存在的部队索引不得造成伤害',[
+        hit(7,[99],wounds=0,heroWounds=0,damageAssigned=0,exception='承伤部队索引无效')])
+    damage_case('army_2_006','可以选择全部伤害交给英雄',[
+        hit(5,[],wounds=0,heroWounds=3,damageAssigned=0,exception='')])
+    damage_case('army_2_006','禁用部队承伤时仍可分配给英雄',[
+        hit(3,[],wounds=0,heroWounds=2,damageAssigned=0,exception='')],noUnitDamage=True)
+    damage_case('army_2_001','攻击元素转换后按最终元素判断抗性',[
+        hit(4,wounds=1,heroWounds=1,damageAssigned=1,exception='')],changedElement='Fire')
+    for trait in ['Poison','Paralyze']:
+        damage_case('army_2_006','被忽略的'+trait+'不再追加伤牌或消灭部队',[
+            hit(3,wounds=1,heroWounds=0,destroyed='False',units=1,exception='')],enemyTraits=trait,ignoredAbility=trait)
+    damage_case('army_2_006','残暴先翻倍再分配给部队与英雄',[
+        hit(2,wounds=1,heroWounds=1,exception='')],enemyTraits='Brutal')
+    damage_case('army_2_001','残暴先翻倍再应用抗性吸收',[
+        hit(2,wounds=1,heroWounds=0,exception='')],enemyTraits='Brutal')
+    damage_case('army_2_001','迅捷只影响格挡要求，不翻倍伤害',[
+        hit(3,wounds=0,heroWounds=0,exception='')],enemyTraits='Swift')
+    damage_case('army_2_001','部队护甲加成参与抗性两次吸收',[
+        hit(11,wounds=1,heroWounds=1,exception='')],unitArmorBonus=2)
+    damage_case('army_2_001','完全格挡不消耗部队承伤资格',[
+        hit(3,block=3,wounds=0,heroWounds=0,damageAssigned=0,exception=''),
+        hit(3,wounds=0,heroWounds=0,damageAssigned=1,exception='')])
+    damage_case('army_2_006','不完全格挡不能减少交给部队的原伤害',[
+        hit(5,block=2,wounds=1,heroWounds=1,damageAssigned=1,exception='')])
+    damage_case('army_2_006','临时物理抗性效果连接承伤并在战后失效',[
+        step('natureResistance','执行既有自然之力抗性效果模块',physicalResistTemp='True'),
+        hit(3,wounds=0,heroWounds=0,damageAssigned=1,exception=''),
+        step('endBattle','战后清除临时抗性',physicalResistTemp='False',damageAssigned=0),
+        step('battle','下一场战斗',exception=''),hit(4,wounds=1,heroWounds=1,exception='')])
+    damage_case('army_2_006','剧毒两张伤牌必须分两次治疗才能发动',[
+        hit(1,wounds=2,heroWounds=0,ready='True',exception=''),
+        step('endBattle','战后伤牌仍保留',wounds=2,ready='True'),step('heal','第一次治疗一张',wounds=1,canActivate='False'),
+        step('battle','受伤的部队参与下一场战斗',exception=''),step('use','伤牌未清除前不能发动',exception='部队必须就绪、未受伤且未销毁'),
+        step('endBattle','结束战斗后继续治疗',wounds=1),step('heal','第二次治疗才移除最后一张',wounds=0,canActivate='True'),
+        step('battle','再次交战',exception=''),step('use','未横置的部队此时能发动原攻击2',melee=2,ready='False',exception='')],enemyTraits='Poison')
+    damage_case('army_2_006','麻痹消灭后治疗和重整不能复活部队',[
+        hit(1,destroyed='True',wounds=0,units=0,exception=''),step('endBattle','清理战斗标记',damageAssigned=0,destroyed='True'),
+        step('heal','治疗不能复活',wounds=0,canActivate='False'),step('nextRound','新一轮也不能复活',ready='False',units=0),
+        step('use','不能发动已不属于玩家的消灭部队',exception='只能发动自有部队')],enemyTraits='Paralyze')
+
     suite = ROOT/'Assets/Resources/CardVerification/unit_cases.json'; write(suite,dict(cases=cases))
     sha = hashlib.sha256(suite.read_bytes()).hexdigest()
     config = dict(scenePath='Assets/Scenes/Verification/units.unity', useRunSubfolder=False, captureInitialView=True,
                   initialDelaySeconds=1.5, defaultWaitAfterSeconds=0.05, maxRunSeconds=900, steps=[])
-    def checks(d): return [dict(key=k,expected=str(v),rule='原版部队独立预期：费用、状态、操作与结算') for k,v in d.items()]
+    def checks(d):
+        d = dict(d, **{'ui:ruleFits':'True','ui:valuesFits':'True'})
+        return [dict(key=k,expected=str(v),rule='原版部队独立预期：费用、状态、操作、结算及完整可读的文字') for k,v in d.items()]
     for i,c in enumerate(cases):
         if i: config['steps'].append(dict(label=c['id']+'_next', buttonPath='Canvas/UIRoot/Btn_Next',skipScreenshot=True,after=checks(dict(caseId=c['id'],step=0))))
         config['steps'].append(dict(label=c['id']+'_select',buttonPath='Canvas/UIRoot/Btn_Select',skipScreenshot=True,

@@ -41,6 +41,7 @@ def main():
             assertions += len(result['assertions'])
             state = {v['key']:v['value'] for v in result['afterState']}
             assert state['suiteSha256']==digest
+            assert state['ui:ruleFits']==state['ui:valuesFits']=='True', result['label']
             case = cases[state['caseId']]
             assert state['cardId']==state['art']==case['cardId']
             for ability in sources[case['cardId']]['abilities']:
@@ -60,7 +61,8 @@ def main():
     assert captures==1+sum(not s.get('skipScreenshot',False) for s in config['steps'])
     summary=dict(status='passed',unitDefinitions=len({c['cardId'] for c in suite}),cases=len(suite),operations=len(config['steps']),
                  assertions=assertions,screenshots=captures,suiteSha256=digest,startedAt=report['startedAt'],finishedAt=report['finishedAt'],
-                 scope='八种原部队的招募/主动能力分支；不代表所有部队承伤、复杂规则与完整冒险已通过')
+                 damageCases=sum(any(s['kind']=='suffer' for s in c['steps']) for c in suite),
+                 scope='八种原部队的招募/主动能力，以及列明的承伤案例；其余部队、完整元素抗性与复杂规则仍待验收')
     (run/'summary.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(json.dumps(summary,ensure_ascii=False))
 

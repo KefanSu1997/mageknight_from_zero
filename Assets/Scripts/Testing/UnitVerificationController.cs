@@ -18,15 +18,19 @@ public sealed class UnitVerificationController : MonoBehaviour, ISceneAutomation
     [Serializable] public sealed class Suite { public Case[] cases; }
     [Serializable] public sealed class Case
     {
-        public string id, cardId, title, location, enemyElement, resistance;
+        public string id, cardId, title, location, enemyElement, resistance, enemyTraits, extraUnitId, changedElement, ignoredAbility;
         public int mana = 2, crystals, influence = 20, wounds, extraSlots, offerCount = 1;
         public bool destroyed, exhausted, unowned;
+        public bool noUnitDamage;
+        public int unitArmorBonus;
         public Step[] steps;
     }
     [Serializable] public sealed class Step
     {
         public string kind, label;
         public int ability, option;
+        public int damage, block;
+        public int[] unitTargets;
         public CardVerificationValue[] expected;
     }
     public Sprite[] artwork;
@@ -37,6 +41,8 @@ public sealed class UnitVerificationController : MonoBehaviour, ISceneAutomation
     private UnitCard _card;
     private UnitState _unit;
     private List<UnitCard> _offer;
+    private List<UnitState> _damageTargets;
+    private int _enemyAttack;
     private string _exception, _outcome, _hash;
     private int _index, _step, _effective, _kills, _required;
     private bool _selected;
@@ -62,10 +68,10 @@ public sealed class UnitVerificationController : MonoBehaviour, ISceneAutomation
         _title = W.Text(root, "Case", "", 48, 90, 1790, 60, 25, W.Cream);
         _art = W.Sprite(root, "OriginalCard", null, 48, 160, 556, 782);
         W.Text(root, "Source", "原版部队图片与原始规则数据", 48, 945, 560, 45, 20, W.Muted);
-        _rule = W.Text(root, "Rule", "", 660, 165, 1190, 150, 25, W.Cream);
-        _values = W.Text(root, "Values", "", 660, 330, 1190, 430, 23, W.Cream);
+        _rule = W.Text(root, "Rule", "", 660, 165, 1190, 235, 22, W.Cream);
+        _values = W.Text(root, "Values", "", 660, 415, 1190, 345, 23, W.Cream);
         _result = W.Text(root, "Result", "", 660, 770, 1190, 80, 24, W.Gold);
-        W.Text(root, "Limits", "本批验证八种原部队的招募与主动能力；分配部队伤害、复杂能力及完整冒险UI仍待联验。", 660, 860, 1190, 78, 20, W.Muted);
+        W.Text(root, "Limits", "本场景验证原部队的招募、主动能力及列明的承伤分支；其余部队、复杂能力和完整冒险仍待联验。", 660, 860, 1190, 78, 20, W.Muted);
         W.Button(root, "Btn_Select", "选择部队与目标", 660, 967, 290, 65).onClick.AddListener(() => { _selected = true; _execute.interactable = _step < _case.steps.Length; });
         _execute = W.Button(root, "Btn_Execute", "执行", 970, 967, 500, 65, true); _execute.onClick.AddListener(Execute);
         _buttonText = _execute.GetComponentInChildren<TextMeshProUGUI>();
@@ -79,13 +85,19 @@ public sealed class UnitVerificationController : MonoBehaviour, ISceneAutomation
         _case = _cases[_index]; _step = 0; _selected = false;
         _card = CardJsonLoader.LoadUnit(_case.cardId); _offer = Enumerable.Repeat(_card, _case.offerCount).ToList();
         _player = new PlayerState(1, "部队验收玩家") { ExtraCommandSlots = _case.extraSlots };
-        _context = new ActionContext { InfluencePool = _case.influence };
+        _context = new ActionContext { InfluencePool = _case.influence, NoUnitDamage = _case.noUnitDamage, UnitArmorBonus = _case.unitArmorBonus };
+        if (!string.IsNullOrEmpty(_case.changedElement)) _context.AttackElementChange[0] = (Element)Enum.Parse(typeof(Element), _case.changedElement);
+        if (!string.IsNullOrEmpty(_case.ignoredAbility)) _context.IgnoredAbilities[0] = (Ability)Enum.Parse(typeof(Ability), _case.ignoredAbility);
         foreach (var c in new[] { ManaColor.Red, ManaColor.Blue, ManaColor.Green, ManaColor.White })
         { _player.Mana.AddToken(c, _case.mana); _player.Mana.AddCrystal(c, _case.crystals); }
         _unit = new UnitState(_card); _exception = _outcome = ""; _effective = _kills = _required = 0;
+        _damageTargets = new List<UnitState> { _unit }; _enemyAttack = 0;
+        if (!string.IsNullOrEmpty(_case.extraUnitId)) _damageTargets.Add(new UnitState(CardJsonLoader.LoadUnit(_case.extraUnitId)));
         _art.sprite = artwork.Single(s => s.name == _case.cardId);
         _title.text = $"{_index + 1}/{_cases.Length} · {_card.NameCn} · {_case.title} · {_case.id}";
         _rule.text = $"等级{_card.Level} · 护甲{_card.Armor} · 招募影响力{_card.InfluenceCost} · 地点{_card.RecruitLocationMask}\n" + string.Join("\n", _card.Actions.Select(a => $"{(a.Cost.Length == 0 ? "免费" : string.Join("/", a.Cost))}：{a.PrintedRule}"));
+        if (_case.steps.Any(s => s.kind == "suffer"))
+            _rule.text += "\n规则书第9—10页：每次承伤一张；抗性先吸收护甲；剩余伤害继续分配。\n毒素替换为两张，麻痹直接消灭；同一部队同场战斗只能承伤一次。";
         _values.text = "选择原版部队，从招募与能力操作开始验收。"; _result.text = "未执行";
         _buttonText.text = _case.steps[0].label; _execute.interactable = false;
     }
@@ -100,13 +112,20 @@ public sealed class UnitVerificationController : MonoBehaviour, ISceneAutomation
             {
                 case "recruit":
                     _outcome = CardUnitActions.TryRecruit(_player, _context, _offer, 0, (RecruitLocation)Enum.Parse(typeof(RecruitLocation), _case.location)).ToString();
-                    if (_player.Units.Count > 0) _unit = _player.Units[0];
+                    if (_player.Units.Count > 0) { _unit = _player.Units[0]; _damageTargets[0] = _unit; }
                     break;
                 case "prepare":
                     if (!_case.unowned) _player.Units.Add(_unit);
+                    foreach (var other in _damageTargets.Skip(1)) _player.Units.Add(other);
                     _unit.AddWounds(_case.wounds); if (_case.exhausted) _unit.Exhaust(); if (_case.destroyed) _unit.Destroy(); break;
                 case "use": CardUnitActions.Use(_player, _context, _unit, step.ability, step.option); break;
                 case "battle": _context.InBattle = true; break;
+                case "suffer": Suffer(step); break;
+                case "endBattle": UnitDamageResolver.EndBattle(_player, _context); break;
+                case "natureResistance":
+                    _context.TargetUnit = _unit;
+                    new MK.Logic.Runtime.CardEffects.NatureForceEffect(false).Execute(_player, _context);
+                    break;
                 case "nextTurn":
                     new PlayerTurnEngine().EndTurn(_player, DayPart.Day, new ManaSource(1, () => DayPart.Day), _context);
                     new PlayerTurnEngine().StartTurn(_player, DayPart.Day); _context = new ActionContext(); break;
@@ -146,6 +165,21 @@ public sealed class UnitVerificationController : MonoBehaviour, ISceneAutomation
         _effective = result.EffectivePower; _required = result.RequiredPower; _kills = result.Kills;
     }
 
+    private void Suffer(Step step)
+    {
+        _enemyAttack = step.damage;
+        var traits = string.IsNullOrEmpty(_case.enemyTraits) ? Array.Empty<Ability>()
+            : _case.enemyTraits.Split(',').Select(s => (Ability)Enum.Parse(typeof(Ability), s)).ToArray();
+        var element = string.IsNullOrEmpty(_case.enemyElement) ? Element.Physical : (Element)Enum.Parse(typeof(Element), _case.enemyElement);
+        var enemy = new MK.Logic.Data.Monster("unit_damage_rule_fixture", 3, step.damage, element, 2, traits);
+        var indices = step.unitTargets ?? new[] { 0 };
+        if (indices.Any(i => i < 0 || i >= _damageTargets.Count)) throw new InvalidOperationException("承伤部队索引无效");
+        var selected = indices.Select(i => _damageTargets[i]).ToArray();
+        var blocks = step.block > 0 ? new[] { new BlockAllocation(0, step.block, Element.Physical) } : Array.Empty<BlockAllocation>();
+        BattleResolver.Resolve(_player, new[] { enemy }, blocks, Array.Empty<AttackAllocation>(),
+            ctx: _context, damageAssignments: new[] { new UnitDamageAllocation(0, selected) });
+    }
+
     private static string Display(string value) => value == "" ? "无" : value == "True" ? "是" : value == "False" ? "否" : value;
     private static string Label(string key) => key switch
     {
@@ -153,11 +187,17 @@ public sealed class UnitVerificationController : MonoBehaviour, ISceneAutomation
         "move" => "移动力", "influence" => "影响力", "melee" => "近战攻击", "ranged" => "远程攻击", "siege" => "攻城攻击", "block" => "格挡",
         "units" => "自有部队", "offer" => "供应区数量", "outcome" => "操作成功", "effective" => "折算值", "required" => "所需值", "kills" => "击杀数",
         "heroWounds" => "英雄创伤", "element" => "攻击元素", "blockElement" => "格挡元素", "position" => "位置Q",
-        "Red" => "红色魔力", "Blue" => "蓝色魔力", "Green" => "绿色魔力", "redCrystal" => "红色魔晶", _ => key
+        "Red" => "红色魔力", "Blue" => "蓝色魔力", "Green" => "绿色魔力", "redCrystal" => "红色魔晶",
+        "destroyed" => "部队已消灭", "damageAssigned" => "本场已承伤部队", "secondWounds" => "第二支部队伤牌",
+        "heroDiscardWounds" => "英雄弃牌区伤牌", "freeSlots" => "空闲指挥槽", "enemyAttack" => "敌人原攻击",
+        "physicalResistTemp" => "本场临时物理抗性", _ => key
     };
 
-    public Dictionary<string, string> ReadAutomationState() => new()
+    public Dictionary<string, string> ReadAutomationState()
     {
+        _rule.ForceMeshUpdate(); _values.ForceMeshUpdate();
+        return new()
+        {
         ["caseId"] = _case.id, ["cardId"] = _card.Id, ["art"] = _art.sprite.name, ["suiteSha256"] = _hash,
         ["selected"] = _selected.ToString(), ["step"] = _step.ToString(), ["exception"] = _exception, ["outcome"] = _outcome,
         ["ready"] = _unit.IsReady.ToString(), ["canActivate"] = _unit.CanActivate.ToString(), ["wounds"] = _unit.Wounds.ToString(),
@@ -170,6 +210,13 @@ public sealed class UnitVerificationController : MonoBehaviour, ISceneAutomation
         ["Red"] = _player.Mana.Tokens.GetValueOrDefault(ManaColor.Red).ToString(), ["Blue"] = _player.Mana.Tokens.GetValueOrDefault(ManaColor.Blue).ToString(),
         ["Green"] = _player.Mana.Tokens.GetValueOrDefault(ManaColor.Green).ToString(), ["redCrystal"] = _player.Mana.Crystals.GetValueOrDefault(ManaColor.Red).ToString(),
         ["effective"] = _effective.ToString(), ["required"] = _required.ToString(), ["kills"] = _kills.ToString(), ["heroWounds"] = _player.Wounds.ToString(),
+        ["destroyed"] = _unit.IsDestroyed.ToString(), ["damageAssigned"] = _context.DamageAssignedUnits.Count.ToString(),
+        ["secondWounds"] = (_damageTargets.Count > 1 ? _damageTargets[1].Wounds : 0).ToString(),
+        ["heroDiscardWounds"] = _player.DiscardWounds.ToString(), ["freeSlots"] = _player.FreeSlots.ToString(),
+        ["enemyAttack"] = _enemyAttack.ToString(), ["physicalResistTemp"] = _unit.PhysicalResistTemp.ToString(),
+        ["ui:ruleFits"] = (!_rule.isTextTruncated && !_rule.isTextOverflowing).ToString(),
+        ["ui:valuesFits"] = (!_values.isTextTruncated && !_values.isTextOverflowing).ToString(),
         ["ui:rule"] = _rule.text, ["ui:values"] = _values.text, ["ui:result"] = _result.text
-    };
+        };
+    }
 }

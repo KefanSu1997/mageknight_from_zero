@@ -8914,6 +8914,3654 @@
           ]
         }
       ]
+    },
+    {
+      "id": "unit_110",
+      "cardId": "army_2_006",
+      "title": "护甲边界与溢出继续交给英雄",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击1的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "1"
+            },
+            {
+              "key": "wounds",
+              "value": "1"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "heroDiscardWounds",
+              "value": "0"
+            },
+            {
+              "key": "damageAssigned",
+              "value": "1"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "canActivate",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 1,
+          "unitTargets": [
+            0
+          ],
+          "block": 0
+        }
+      ]
+    },
+    {
+      "id": "unit_111",
+      "cardId": "army_2_006",
+      "title": "护甲边界与溢出继续交给英雄",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击3的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "3"
+            },
+            {
+              "key": "wounds",
+              "value": "1"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "heroDiscardWounds",
+              "value": "0"
+            },
+            {
+              "key": "damageAssigned",
+              "value": "1"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "canActivate",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 3,
+          "unitTargets": [
+            0
+          ],
+          "block": 0
+        }
+      ]
+    },
+    {
+      "id": "unit_112",
+      "cardId": "army_2_006",
+      "title": "护甲边界与溢出继续交给英雄",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击4的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "4"
+            },
+            {
+              "key": "wounds",
+              "value": "1"
+            },
+            {
+              "key": "heroWounds",
+              "value": "1"
+            },
+            {
+              "key": "heroDiscardWounds",
+              "value": "0"
+            },
+            {
+              "key": "damageAssigned",
+              "value": "1"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "canActivate",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 4,
+          "unitTargets": [
+            0
+          ],
+          "block": 0
+        }
+      ]
+    },
+    {
+      "id": "unit_113",
+      "cardId": "army_2_006",
+      "title": "护甲边界与溢出继续交给英雄",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击7的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "7"
+            },
+            {
+              "key": "wounds",
+              "value": "1"
+            },
+            {
+              "key": "heroWounds",
+              "value": "2"
+            },
+            {
+              "key": "heroDiscardWounds",
+              "value": "0"
+            },
+            {
+              "key": "damageAssigned",
+              "value": "1"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "canActivate",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 7,
+          "unitTargets": [
+            0
+          ],
+          "block": 0
+        }
+      ]
+    },
+    {
+      "id": "unit_114",
+      "cardId": "army_2_001",
+      "title": "护甲边界与溢出继续交给英雄",
+      "location": "MageTower",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击1的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "1"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "heroDiscardWounds",
+              "value": "0"
+            },
+            {
+              "key": "damageAssigned",
+              "value": "1"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "canActivate",
+              "value": "True"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 1,
+          "unitTargets": [
+            0
+          ],
+          "block": 0
+        }
+      ]
+    },
+    {
+      "id": "unit_115",
+      "cardId": "army_2_001",
+      "title": "护甲边界与溢出继续交给英雄",
+      "location": "MageTower",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击3的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "3"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "heroDiscardWounds",
+              "value": "0"
+            },
+            {
+              "key": "damageAssigned",
+              "value": "1"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "canActivate",
+              "value": "True"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 3,
+          "unitTargets": [
+            0
+          ],
+          "block": 0
+        }
+      ]
+    },
+    {
+      "id": "unit_116",
+      "cardId": "army_2_001",
+      "title": "护甲边界与溢出继续交给英雄",
+      "location": "MageTower",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击4的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "4"
+            },
+            {
+              "key": "wounds",
+              "value": "1"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "heroDiscardWounds",
+              "value": "0"
+            },
+            {
+              "key": "damageAssigned",
+              "value": "1"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "canActivate",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 4,
+          "unitTargets": [
+            0
+          ],
+          "block": 0
+        }
+      ]
+    },
+    {
+      "id": "unit_117",
+      "cardId": "army_2_001",
+      "title": "护甲边界与溢出继续交给英雄",
+      "location": "MageTower",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击6的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "6"
+            },
+            {
+              "key": "wounds",
+              "value": "1"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "heroDiscardWounds",
+              "value": "0"
+            },
+            {
+              "key": "damageAssigned",
+              "value": "1"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "canActivate",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 6,
+          "unitTargets": [
+            0
+          ],
+          "block": 0
+        }
+      ]
+    },
+    {
+      "id": "unit_118",
+      "cardId": "army_2_001",
+      "title": "护甲边界与溢出继续交给英雄",
+      "location": "MageTower",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击7的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "7"
+            },
+            {
+              "key": "wounds",
+              "value": "1"
+            },
+            {
+              "key": "heroWounds",
+              "value": "1"
+            },
+            {
+              "key": "heroDiscardWounds",
+              "value": "0"
+            },
+            {
+              "key": "damageAssigned",
+              "value": "1"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "canActivate",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 7,
+          "unitTargets": [
+            0
+          ],
+          "block": 0
+        }
+      ]
+    },
+    {
+      "id": "unit_119",
+      "cardId": "army_2_001",
+      "title": "Fire攻击不受物理抗性保护",
+      "location": "MageTower",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击4的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "4"
+            },
+            {
+              "key": "wounds",
+              "value": "1"
+            },
+            {
+              "key": "heroWounds",
+              "value": "1"
+            },
+            {
+              "key": "damageAssigned",
+              "value": "1"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 4,
+          "unitTargets": [
+            0
+          ],
+          "block": 0
+        }
+      ],
+      "enemyElement": "Fire"
+    },
+    {
+      "id": "unit_120",
+      "cardId": "army_2_001",
+      "title": "Ice攻击不受物理抗性保护",
+      "location": "MageTower",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击4的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "4"
+            },
+            {
+              "key": "wounds",
+              "value": "1"
+            },
+            {
+              "key": "heroWounds",
+              "value": "1"
+            },
+            {
+              "key": "damageAssigned",
+              "value": "1"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 4,
+          "unitTargets": [
+            0
+          ],
+          "block": 0
+        }
+      ],
+      "enemyElement": "Ice"
+    },
+    {
+      "id": "unit_121",
+      "cardId": "army_2_001",
+      "title": "ColdFire攻击不受物理抗性保护",
+      "location": "MageTower",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击4的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "4"
+            },
+            {
+              "key": "wounds",
+              "value": "1"
+            },
+            {
+              "key": "heroWounds",
+              "value": "1"
+            },
+            {
+              "key": "damageAssigned",
+              "value": "1"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 4,
+          "unitTargets": [
+            0
+          ],
+          "block": 0
+        }
+      ],
+      "enemyElement": "ColdFire"
+    },
+    {
+      "id": "unit_122",
+      "cardId": "army_2_006",
+      "title": "剧毒只把实际部队伤牌替换为两张",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击1的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "1"
+            },
+            {
+              "key": "wounds",
+              "value": "2"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "heroDiscardWounds",
+              "value": "0"
+            },
+            {
+              "key": "destroyed",
+              "value": "False"
+            },
+            {
+              "key": "damageAssigned",
+              "value": "1"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 1,
+          "unitTargets": [
+            0
+          ],
+          "block": 0
+        }
+      ],
+      "enemyTraits": "Poison"
+    },
+    {
+      "id": "unit_123",
+      "cardId": "army_2_006",
+      "title": "剧毒只把实际部队伤牌替换为两张",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击7的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "7"
+            },
+            {
+              "key": "wounds",
+              "value": "2"
+            },
+            {
+              "key": "heroWounds",
+              "value": "2"
+            },
+            {
+              "key": "heroDiscardWounds",
+              "value": "2"
+            },
+            {
+              "key": "destroyed",
+              "value": "False"
+            },
+            {
+              "key": "damageAssigned",
+              "value": "1"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 7,
+          "unitTargets": [
+            0
+          ],
+          "block": 0
+        }
+      ],
+      "enemyTraits": "Poison"
+    },
+    {
+      "id": "unit_124",
+      "cardId": "army_2_001",
+      "title": "剧毒只把实际部队伤牌替换为两张",
+      "location": "MageTower",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击3的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "3"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "heroDiscardWounds",
+              "value": "0"
+            },
+            {
+              "key": "destroyed",
+              "value": "False"
+            },
+            {
+              "key": "damageAssigned",
+              "value": "1"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 3,
+          "unitTargets": [
+            0
+          ],
+          "block": 0
+        }
+      ],
+      "enemyTraits": "Poison"
+    },
+    {
+      "id": "unit_125",
+      "cardId": "army_2_001",
+      "title": "剧毒只把实际部队伤牌替换为两张",
+      "location": "MageTower",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击4的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "4"
+            },
+            {
+              "key": "wounds",
+              "value": "2"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "heroDiscardWounds",
+              "value": "0"
+            },
+            {
+              "key": "destroyed",
+              "value": "False"
+            },
+            {
+              "key": "damageAssigned",
+              "value": "1"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 4,
+          "unitTargets": [
+            0
+          ],
+          "block": 0
+        }
+      ],
+      "enemyTraits": "Poison"
+    },
+    {
+      "id": "unit_126",
+      "cardId": "army_2_001",
+      "title": "剧毒只把实际部队伤牌替换为两张",
+      "location": "MageTower",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击7的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "7"
+            },
+            {
+              "key": "wounds",
+              "value": "2"
+            },
+            {
+              "key": "heroWounds",
+              "value": "1"
+            },
+            {
+              "key": "heroDiscardWounds",
+              "value": "1"
+            },
+            {
+              "key": "destroyed",
+              "value": "False"
+            },
+            {
+              "key": "damageAssigned",
+              "value": "1"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 7,
+          "unitTargets": [
+            0
+          ],
+          "block": 0
+        }
+      ],
+      "enemyTraits": "Poison"
+    },
+    {
+      "id": "unit_127",
+      "cardId": "army_2_006",
+      "title": "麻痹只在实际受伤时消灭部队并腾出指挥槽",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击1的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "1"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "destroyed",
+              "value": "True"
+            },
+            {
+              "key": "units",
+              "value": "0"
+            },
+            {
+              "key": "freeSlots",
+              "value": "1"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 1,
+          "unitTargets": [
+            0
+          ],
+          "block": 0
+        }
+      ],
+      "enemyTraits": "Paralyze"
+    },
+    {
+      "id": "unit_128",
+      "cardId": "army_2_001",
+      "title": "麻痹只在实际受伤时消灭部队并腾出指挥槽",
+      "location": "MageTower",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击3的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "3"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "destroyed",
+              "value": "False"
+            },
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "freeSlots",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 3,
+          "unitTargets": [
+            0
+          ],
+          "block": 0
+        }
+      ],
+      "enemyTraits": "Paralyze"
+    },
+    {
+      "id": "unit_129",
+      "cardId": "army_2_001",
+      "title": "麻痹只在实际受伤时消灭部队并腾出指挥槽",
+      "location": "MageTower",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击4的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "4"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "destroyed",
+              "value": "True"
+            },
+            {
+              "key": "units",
+              "value": "0"
+            },
+            {
+              "key": "freeSlots",
+              "value": "1"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 4,
+          "unitTargets": [
+            0
+          ],
+          "block": 0
+        }
+      ],
+      "enemyTraits": "Paralyze"
+    },
+    {
+      "id": "unit_130",
+      "cardId": "army_2_001",
+      "title": "麻痹只在实际受伤时消灭部队并腾出指挥槽",
+      "location": "MageTower",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击7的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "7"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "heroWounds",
+              "value": "1"
+            },
+            {
+              "key": "destroyed",
+              "value": "True"
+            },
+            {
+              "key": "units",
+              "value": "0"
+            },
+            {
+              "key": "freeSlots",
+              "value": "1"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 7,
+          "unitTargets": [
+            0
+          ],
+          "block": 0
+        }
+      ],
+      "enemyTraits": "Paralyze"
+    },
+    {
+      "id": "unit_131",
+      "cardId": "army_2_006",
+      "title": "剧毒与麻痹同在，部队消灭而英雄仍收剧毒弃牌伤",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击4的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "4"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "destroyed",
+              "value": "True"
+            },
+            {
+              "key": "units",
+              "value": "0"
+            },
+            {
+              "key": "heroWounds",
+              "value": "1"
+            },
+            {
+              "key": "heroDiscardWounds",
+              "value": "1"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 4,
+          "unitTargets": [
+            0
+          ],
+          "block": 0
+        }
+      ],
+      "enemyTraits": "Poison,Paralyze"
+    },
+    {
+      "id": "unit_132",
+      "cardId": "army_2_006",
+      "title": "横置不妨碍未受伤部队承伤",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击3的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "3"
+            },
+            {
+              "key": "wounds",
+              "value": "1"
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 3,
+          "unitTargets": [
+            0
+          ],
+          "block": 0
+        }
+      ],
+      "exhausted": true
+    },
+    {
+      "id": "unit_133",
+      "cardId": "army_2_006",
+      "title": "非法承伤选择必须先拒绝，不能改变英雄伤牌",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击4的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "4"
+            },
+            {
+              "key": "wounds",
+              "value": "1"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "damageAssigned",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": "受伤或已销毁部队不能承伤"
+            }
+          ],
+          "damage": 4,
+          "unitTargets": [
+            0
+          ],
+          "block": 0
+        }
+      ],
+      "wounds": 1
+    },
+    {
+      "id": "unit_134",
+      "cardId": "army_2_006",
+      "title": "非法承伤选择必须先拒绝，不能改变英雄伤牌",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击4的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "4"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "damageAssigned",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": "受伤或已销毁部队不能承伤"
+            }
+          ],
+          "damage": 4,
+          "unitTargets": [
+            0
+          ],
+          "block": 0
+        }
+      ],
+      "destroyed": true
+    },
+    {
+      "id": "unit_135",
+      "cardId": "army_2_006",
+      "title": "非法承伤选择必须先拒绝，不能改变英雄伤牌",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击4的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "4"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "damageAssigned",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": "只能让自有部队承伤"
+            }
+          ],
+          "damage": 4,
+          "unitTargets": [
+            0
+          ],
+          "block": 0
+        }
+      ],
+      "unowned": true
+    },
+    {
+      "id": "unit_136",
+      "cardId": "army_2_006",
+      "title": "非法承伤选择必须先拒绝，不能改变英雄伤牌",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击4的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "4"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "damageAssigned",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": "当前效果禁止部队承伤"
+            }
+          ],
+          "damage": 4,
+          "unitTargets": [
+            0
+          ],
+          "block": 0
+        }
+      ],
+      "noUnitDamage": true
+    },
+    {
+      "id": "unit_137",
+      "cardId": "army_2_001",
+      "title": "抗性无伤吸收也不能同场复用，下一场才重置",
+      "location": "MageTower",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击3的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "3"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "damageAssigned",
+              "value": "1"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 3,
+          "unitTargets": [
+            0
+          ],
+          "block": 0
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击3的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "3"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "damageAssigned",
+              "value": "1"
+            },
+            {
+              "key": "exception",
+              "value": "同场战斗不能重复向该部队分配伤害"
+            }
+          ],
+          "damage": 3,
+          "unitTargets": [
+            0
+          ],
+          "block": 0
+        },
+        {
+          "kind": "endBattle",
+          "label": "结束战斗恢复下场承伤资格",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "damageAssigned",
+              "value": "0"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "开始下一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击3的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "3"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "damageAssigned",
+              "value": "1"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 3,
+          "unitTargets": [
+            0
+          ],
+          "block": 0
+        },
+        {
+          "kind": "use",
+          "label": "无伤且就绪的魔像还能发动攻击",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "melee",
+              "value": "2"
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_138",
+      "cardId": "army_2_001",
+      "title": "同次攻击按魔像、农民、英雄顺序继续分配",
+      "location": "MageTower",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击10的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "10"
+            },
+            {
+              "key": "wounds",
+              "value": "1"
+            },
+            {
+              "key": "secondWounds",
+              "value": "1"
+            },
+            {
+              "key": "heroWounds",
+              "value": "1"
+            },
+            {
+              "key": "damageAssigned",
+              "value": "2"
+            },
+            {
+              "key": "units",
+              "value": "2"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 10,
+          "unitTargets": [
+            0,
+            1
+          ],
+          "block": 0
+        }
+      ],
+      "extraUnitId": "army_2_006",
+      "extraSlots": 1
+    },
+    {
+      "id": "unit_139",
+      "cardId": "army_2_001",
+      "title": "前一部队吸收完时不消耗后续部队资格",
+      "location": "MageTower",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击2的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "2"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "secondWounds",
+              "value": "0"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "damageAssigned",
+              "value": "1"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 2,
+          "unitTargets": [
+            0,
+            1
+          ],
+          "block": 0
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击3的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "3"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "secondWounds",
+              "value": "1"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "damageAssigned",
+              "value": "2"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 3,
+          "unitTargets": [
+            1
+          ],
+          "block": 0
+        }
+      ],
+      "extraUnitId": "army_2_006",
+      "extraSlots": 1
+    },
+    {
+      "id": "unit_140",
+      "cardId": "army_2_006",
+      "title": "重复目标拒绝在任何伤害发生之前",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击7的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "7"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "damageAssigned",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": "同场战斗不能重复向该部队分配伤害"
+            }
+          ],
+          "damage": 7,
+          "unitTargets": [
+            0,
+            0
+          ],
+          "block": 0
+        }
+      ]
+    },
+    {
+      "id": "unit_141",
+      "cardId": "army_2_006",
+      "title": "不存在的部队索引不得造成伤害",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击7的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "7"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "damageAssigned",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": "承伤部队索引无效"
+            }
+          ],
+          "damage": 7,
+          "unitTargets": [
+            99
+          ],
+          "block": 0
+        }
+      ]
+    },
+    {
+      "id": "unit_142",
+      "cardId": "army_2_006",
+      "title": "可以选择全部伤害交给英雄",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击5的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "5"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "heroWounds",
+              "value": "3"
+            },
+            {
+              "key": "damageAssigned",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 5,
+          "unitTargets": [],
+          "block": 0
+        }
+      ]
+    },
+    {
+      "id": "unit_143",
+      "cardId": "army_2_006",
+      "title": "禁用部队承伤时仍可分配给英雄",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击3的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "3"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "heroWounds",
+              "value": "2"
+            },
+            {
+              "key": "damageAssigned",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 3,
+          "unitTargets": [],
+          "block": 0
+        }
+      ],
+      "noUnitDamage": true
+    },
+    {
+      "id": "unit_144",
+      "cardId": "army_2_001",
+      "title": "攻击元素转换后按最终元素判断抗性",
+      "location": "MageTower",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击4的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "4"
+            },
+            {
+              "key": "wounds",
+              "value": "1"
+            },
+            {
+              "key": "heroWounds",
+              "value": "1"
+            },
+            {
+              "key": "damageAssigned",
+              "value": "1"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 4,
+          "unitTargets": [
+            0
+          ],
+          "block": 0
+        }
+      ],
+      "changedElement": "Fire"
+    },
+    {
+      "id": "unit_145",
+      "cardId": "army_2_006",
+      "title": "被忽略的Poison不再追加伤牌或消灭部队",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击3的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "3"
+            },
+            {
+              "key": "wounds",
+              "value": "1"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "destroyed",
+              "value": "False"
+            },
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 3,
+          "unitTargets": [
+            0
+          ],
+          "block": 0
+        }
+      ],
+      "enemyTraits": "Poison",
+      "ignoredAbility": "Poison"
+    },
+    {
+      "id": "unit_146",
+      "cardId": "army_2_006",
+      "title": "被忽略的Paralyze不再追加伤牌或消灭部队",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击3的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "3"
+            },
+            {
+              "key": "wounds",
+              "value": "1"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "destroyed",
+              "value": "False"
+            },
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 3,
+          "unitTargets": [
+            0
+          ],
+          "block": 0
+        }
+      ],
+      "enemyTraits": "Paralyze",
+      "ignoredAbility": "Paralyze"
+    },
+    {
+      "id": "unit_147",
+      "cardId": "army_2_006",
+      "title": "残暴先翻倍再分配给部队与英雄",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击2的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "2"
+            },
+            {
+              "key": "wounds",
+              "value": "1"
+            },
+            {
+              "key": "heroWounds",
+              "value": "1"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 2,
+          "unitTargets": [
+            0
+          ],
+          "block": 0
+        }
+      ],
+      "enemyTraits": "Brutal"
+    },
+    {
+      "id": "unit_148",
+      "cardId": "army_2_001",
+      "title": "残暴先翻倍再应用抗性吸收",
+      "location": "MageTower",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击2的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "2"
+            },
+            {
+              "key": "wounds",
+              "value": "1"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 2,
+          "unitTargets": [
+            0
+          ],
+          "block": 0
+        }
+      ],
+      "enemyTraits": "Brutal"
+    },
+    {
+      "id": "unit_149",
+      "cardId": "army_2_001",
+      "title": "迅捷只影响格挡要求，不翻倍伤害",
+      "location": "MageTower",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击3的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "3"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 3,
+          "unitTargets": [
+            0
+          ],
+          "block": 0
+        }
+      ],
+      "enemyTraits": "Swift"
+    },
+    {
+      "id": "unit_150",
+      "cardId": "army_2_001",
+      "title": "部队护甲加成参与抗性两次吸收",
+      "location": "MageTower",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击11的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "11"
+            },
+            {
+              "key": "wounds",
+              "value": "1"
+            },
+            {
+              "key": "heroWounds",
+              "value": "1"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 11,
+          "unitTargets": [
+            0
+          ],
+          "block": 0
+        }
+      ],
+      "unitArmorBonus": 2
+    },
+    {
+      "id": "unit_151",
+      "cardId": "army_2_001",
+      "title": "完全格挡不消耗部队承伤资格",
+      "location": "MageTower",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击3的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "3"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "damageAssigned",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 3,
+          "unitTargets": [
+            0
+          ],
+          "block": 3
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击3的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "3"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "damageAssigned",
+              "value": "1"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 3,
+          "unitTargets": [
+            0
+          ],
+          "block": 0
+        }
+      ]
+    },
+    {
+      "id": "unit_152",
+      "cardId": "army_2_006",
+      "title": "不完全格挡不能减少交给部队的原伤害",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击5的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "5"
+            },
+            {
+              "key": "wounds",
+              "value": "1"
+            },
+            {
+              "key": "heroWounds",
+              "value": "1"
+            },
+            {
+              "key": "damageAssigned",
+              "value": "1"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 5,
+          "unitTargets": [
+            0
+          ],
+          "block": 2
+        }
+      ]
+    },
+    {
+      "id": "unit_153",
+      "cardId": "army_2_006",
+      "title": "临时物理抗性效果连接承伤并在战后失效",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "natureResistance",
+          "label": "执行既有自然之力抗性效果模块",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "physicalResistTemp",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击3的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "3"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "damageAssigned",
+              "value": "1"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 3,
+          "unitTargets": [
+            0
+          ],
+          "block": 0
+        },
+        {
+          "kind": "endBattle",
+          "label": "战后清除临时抗性",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "physicalResistTemp",
+              "value": "False"
+            },
+            {
+              "key": "damageAssigned",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "下一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击4的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "4"
+            },
+            {
+              "key": "wounds",
+              "value": "1"
+            },
+            {
+              "key": "heroWounds",
+              "value": "1"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 4,
+          "unitTargets": [
+            0
+          ],
+          "block": 0
+        }
+      ]
+    },
+    {
+      "id": "unit_154",
+      "cardId": "army_2_006",
+      "title": "剧毒两张伤牌必须分两次治疗才能发动",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击1的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "1"
+            },
+            {
+              "key": "wounds",
+              "value": "2"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 1,
+          "unitTargets": [
+            0
+          ],
+          "block": 0
+        },
+        {
+          "kind": "endBattle",
+          "label": "战后伤牌仍保留",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "wounds",
+              "value": "2"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "heal",
+          "label": "第一次治疗一张",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "wounds",
+              "value": "1"
+            },
+            {
+              "key": "canActivate",
+              "value": "False"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "受伤的部队参与下一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "伤牌未清除前不能发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队必须就绪、未受伤且未销毁"
+            }
+          ]
+        },
+        {
+          "kind": "endBattle",
+          "label": "结束战斗后继续治疗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "wounds",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "kind": "heal",
+          "label": "第二次治疗才移除最后一张",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "canActivate",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "再次交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "未横置的部队此时能发动原攻击2",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "melee",
+              "value": "2"
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "enemyTraits": "Poison"
+    },
+    {
+      "id": "unit_155",
+      "cardId": "army_2_006",
+      "title": "麻痹消灭后治疗和重整不能复活部队",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击1的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "1"
+            },
+            {
+              "key": "destroyed",
+              "value": "True"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "units",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 1,
+          "unitTargets": [
+            0
+          ],
+          "block": 0
+        },
+        {
+          "kind": "endBattle",
+          "label": "清理战斗标记",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "damageAssigned",
+              "value": "0"
+            },
+            {
+              "key": "destroyed",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "heal",
+          "label": "治疗不能复活",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "canActivate",
+              "value": "False"
+            }
+          ]
+        },
+        {
+          "kind": "nextRound",
+          "label": "新一轮也不能复活",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "units",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "不能发动已不属于玩家的消灭部队",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "只能发动自有部队"
+            }
+          ]
+        }
+      ],
+      "enemyTraits": "Paralyze"
     }
   ]
 }

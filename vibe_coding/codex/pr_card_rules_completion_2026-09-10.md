@@ -1,4 +1,4 @@
-# fix(cards): restore original card choices, costs and combat resolution
+# fix(cards): restore original choices, costs, combat and unit damage
 
 ## Why
 
@@ -30,7 +30,7 @@ Use the installed Unity 6000.6.0f1 editor via Hub. Run Tools/Mage Knight/Origina
 
 Reproduce source corrections with `python tools/restore_spell_costs.py` and `python tools/restore_instinct_card.py`, and generated fixtures with `python tools/build_all_card_verification.py`. Summarize the exact new directory with `python tools/summarize_all_card_verification.py --output AutomationOutputs/AllOriginalCards/<run>`. Verify regressions with `python tools/verify_card_regression.py --scenes <adventure-run> --tests <editmode-run>`.
 
-Latest full-suite evidence: AutomationOutputs\AllOriginalCards\20260910_232109_6fc276ee. 194 EditMode tests pass. All 490 existing case definitions remain unchanged: 136 passed, 19 failed, 335 partial; 1617 pointer actions, 6674 effect assertions, 645 captures. Case statuses are unchanged; 488 complete records are identical, with two retained random artifact outcomes differing. Separate new hero-skill scene: 39 cases, 240 pointer actions, 1614 assertions and 164 captures pass (AutomationOutputs\HeroSkills\20260910_232750_4614deb3). Full card certification remains pending.
+Earlier full-suite evidence: AutomationOutputs\AllOriginalCards\20260910_232109_6fc276ee. 194 EditMode tests pass. All 490 existing case definitions remain unchanged: 136 passed, 19 failed, 335 partial; 1617 pointer actions, 6674 effect assertions, 645 captures. Case statuses are unchanged; 488 complete records are identical, with two retained random artifact outcomes differing. Separate new hero-skill scene: 39 cases, 240 pointer actions, 1614 assertions and 164 captures pass (AutomationOutputs\HeroSkills\20260910_232750_4614deb3). Full card certification remains pending.
 
 Four adventure regressions pass 114 pointer actions and 477 assertions. All 118 screenshots and actual state snapshots match the previous verified baseline exactly. Exact final Console responses, test XML/JSON and all captures are archived. Original artwork remains unchanged and intermediate checkpoints remain local.
 
@@ -52,3 +52,14 @@ How to test: run `python tools/restore_original_unit_data.py` and `python tools/
 Risks: this covers eight units' recruitment and active abilities, not all 30 valid unit cards or every rule. Existing failed/partial deed cases and unverified skills remain open. Related issues: user-requested all-original-card verification; no linked issue ID.
 
 Archive policy: remote push is paused following VPN quota exhaustion. Full captures and reports stay local; review and local commit contain source, concise evidence summaries and hashes. Estimate pending LFS transfers before any future push. No main/force push.
+
+
+## Unit damage batch (2026-09-11, local archive)
+
+Why: a unit incorrectly swallowed an entire enemy attack by taking ceil(damage/armor) wounds, ignoring resistance and damage left for the hero. Paralyzed units continued occupying command slots. What: ordered unit assignments validate actual ownership and legal targets before mutation; each unit absorbs its armor (twice for matching resistance), with one wound or poison's two only when wounded. Paralyze destroys/removes the unit only when it would be wounded. Exhaustion does not prevent damage assignment; even an unwounded resistant unit can receive damage only once per battle. Explicit battle end clears that marker and temporary resistance without healing or readying. Old ForUnitIndex callers use the same remainder calculation.
+
+How to test: the unit generator preserves all 110 old case definitions and adds 46 rulebook-derived damage cases. Reproduce with `python tools/build_unit_verification.py`; use `Tools/Mage Knight/Original Cards/Run Units` and verify the new directory with `python tools/verify_unit_scenes.py --output <run>`. The final run `20260911_201151_0dece5c6` has 156 cases, 865 actual clicks, 6914 assertions and 275 captures passed. TMP text truncation/overflow is asserted after real layout, following a visually failed first run. EditMode231 passed; four adventure scenes passed with 118 identical images; final Console twice zero.
+
+Fresh deed regression `20260911_201543_752adb07`: all490 cases retain 136 passed / 335 partial / 19 failed. The new empty DamageAssignedUnits count is recorded as an additive snapshot field;489 otherwise complete records are identical and one unseeded Horn die outcome differs. This is not full-card completion.
+
+Risks: other22 valid units, positive elemental-resistance matrices, full adventure phase UI and original effects such as UnitsResistAll/FirstWoundIgnored remain to be audited and connected. Direct NatureForce output-to-damage coverage is a module check, not a full paid-card acceptance. Remote push stays paused; only local source and concise evidence commits, with full screenshots/reports retained on disk.

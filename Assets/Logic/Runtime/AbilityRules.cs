@@ -45,10 +45,10 @@ namespace MK.Logic.Runtime
             {
                 bool poison = src.Abilities.Contains(Ability.Poison) && (ignore == null || !ignore.Contains(Ability.Poison));
                 bool paralyze = src.Abilities.Contains(Ability.Paralyze) && (ignore == null || !ignore.Contains(Ability.Paralyze));
-                int mult = poison ? 2 : 1;
-                u.AddWounds(wounds * mult);
                 if (paralyze)
                     u.Destroy();
+                else
+                    u.AddWounds(wounds * (poison ? 2 : 1));
             }
             // 針對英雄本身的處理
             else if (target is PlayerState p)

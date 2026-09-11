@@ -46,8 +46,40 @@ namespace MK.Logic.Runtime
             IList<UnitState>?               units = null,
             int attackReduction             = 0,
             ActionContext?                 ctx = null,
-            IGameLogger?                   logger = null)
+            IGameLogger?                   logger = null,
+            IReadOnlyList<UnitDamageAllocation>? damageAssignments = null)
         {
+            var damageContext = ctx ?? new ActionContext();
+            var damagePlan = new Dictionary<int, IReadOnlyList<UnitState>>();
+            if (damageAssignments != null)
+            {
+                if (blocks != null && blocks.Any(b => b.ForUnitIndex.HasValue))
+                    throw new InvalidOperationException("承伤目标不能同时来自新旧两种分配");
+                foreach (var assignment in damageAssignments)
+                {
+                    if (assignment == null || assignment.TargetIndex < 0 || assignment.TargetIndex >= enemies.Count
+                        || assignment.Units == null || damagePlan.ContainsKey(assignment.TargetIndex))
+                        throw new InvalidOperationException("承伤敌人或分配列表无效");
+                    damagePlan.Add(assignment.TargetIndex, assignment.Units);
+                }
+            }
+            else if (blocks != null)
+            {
+                // 兼容旧调用，但不再把整次攻击吞进一支部队。
+                foreach (var block in blocks.Where(b => b.ForUnitIndex.HasValue))
+                {
+                    int index = block.ForUnitIndex.Value;
+                    if (units == null || index < 0 || index >= units.Count || block.TargetIndex < 0 || block.TargetIndex >= enemies.Count)
+                        throw new InvalidOperationException("承伤部队索引无效");
+                    if (!damagePlan.ContainsKey(block.TargetIndex)) damagePlan.Add(block.TargetIndex, new[] { units[index] });
+                }
+            }
+            var selectedUnits = new HashSet<UnitState>();
+            foreach (var unit in damagePlan.Values.SelectMany(value => value))
+            {
+                UnitDamageResolver.Validate(player, damageContext, unit);
+                if (!selectedUnits.Add(unit)) throw new InvalidOperationException("同场战斗不能重复向该部队分配伤害");
+            }
             logger?.Log($"BattleStart {string.Join(',', enemies.Select(e => e.Id))}");
             logger?.Log("Phase Block");
             /*──────────────────────────────────────────────
@@ -135,30 +167,17 @@ namespace MK.Logic.Runtime
 
                 if (dmgLeft == 0) continue;
 
-                // 尝试查找一个“由单位承担”的格挡记录
-                int? forUnit = null;
-                if (blocks != null)
+                if (damagePlan.TryGetValue(idx, out var damageUnits))
                 {
-                    foreach (var b in blocks)
-                        if (b.TargetIndex == idx && b.ForUnitIndex.HasValue)
-                        { forUnit = b.ForUnitIndex; break; }
+                    Element damageElement = m.AttackElement;
+                    if (ctx != null && ctx.AttackElementChange.TryGetValue(idx, out var replacement)) damageElement = replacement;
+                    foreach (var unit in damageUnits)
+                    {
+                        if (dmgLeft == 0) break;
+                        dmgLeft = UnitDamageResolver.Assign(player, damageContext, unit, m, dmgLeft, damageElement, ignore);
+                    }
                 }
-
-                bool allowUnit = ctx == null || !ctx.NoUnitDamage;
-                bool dealtToUnit = allowUnit && units != null && forUnit.HasValue
-                                   && forUnit.Value >= 0 && forUnit.Value < units.Count;
-
-                if (dealtToUnit)
-                {
-                    /*—— 单位受创 ——*/
-                    var u = units![forUnit!.Value];
-                    int armor = u.Card.Armor + (ctx?.UnitArmorBonus ?? 0);
-                    int w = (int)System.Math.Ceiling(
-                        dmgLeft / (double)System.Math.Max(1, armor));
-
-                    AbilityRules.AssignWounds(m, u, ref w, ignore);
-                }
-                else
+                if (dmgLeft > 0)
                 {
                     /*—— 英雄受创 ——*/
                     int ignoreAmt = 0;

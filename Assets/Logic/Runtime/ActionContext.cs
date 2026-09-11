@@ -21,6 +21,7 @@ namespace MK.Logic.Runtime
         public int BlockPool { get => CombatPower.BlockTotal; set => CombatPower.SetBlockTotal(value); }
 
         public CombatPowerPool CombatPower { get; } = new();
+        public HashSet<UnitState> DamageAssignedUnits { get; } = new();
         public int SiegePool { get => CombatPower.Total(AttackType.Siege); set => CombatPower.SetTotal(AttackType.Siege, value); }
         public bool FortifiedSite { get; set; }
         public int HarvestTriggers { get; set; }

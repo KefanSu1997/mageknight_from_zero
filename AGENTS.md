@@ -30,6 +30,8 @@
 
 ## 经验索引
 
+- 部队承伤余量、抗性同场一次、毒素与麻痹释放指挥槽，以及TMP截断和配置原子替换 —— `vibe_coding/codex/project_experience/original_unit_damage_allocation_2026-09-11.md`
+
 - 原部队能力与费用、每轮重整和伤牌独立、供应资源后续联验及本地证据存档 —— `vibe_coding/codex/project_experience/original_unit_activation_and_round_reset_2026-09-11.md`
 
 - 原版技能来源身份、所有权与每回合/每轮次数分离；原技能整表场景和LF配置指纹 —— `vibe_coding/codex/project_experience/hero_skill_activation_identity_and_timing_2026-09-10.md`
