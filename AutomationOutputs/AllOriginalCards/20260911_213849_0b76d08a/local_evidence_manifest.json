@@ -1,0 +1,733 @@
+{
+  "policy": "Only final focused-run raw evidence indexed; images and complete reports stay local. Earlier stopped broad run is not claimed as validation.",
+  "files": [
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/000_Scene Start.png",
+      "bytes": 1045600,
+      "sha256": "bcd367edab2347daf3725b7d71fc2fade6acd5a628187caa4fb3cf5ab214ae25"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/002_magic_011_00_execute.png",
+      "bytes": 1096231,
+      "sha256": "8a9bab5a7b10b3c04ff4c3e2576c74f2abbdcbb9ff1b09b0c8678c3244e16ae1"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/005_magic_011_01_execute.png",
+      "bytes": 1122992,
+      "sha256": "079af3b8cefa02da65f676799843002a4e5b8d19bd6ac275744f9f483c3ff465"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/008_magic_011_02_execute.png",
+      "bytes": 1021867,
+      "sha256": "6ecb1424f1da5f365ada5607dbd2f7be00f377fb418f721a63694c16312f6966"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/011_magic_011_03_execute.png",
+      "bytes": 1026805,
+      "sha256": "06f09fe8db2481a0830e6d4db06783130cfdbbda0c2f7ea32bd481c1c3ca9ecd"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/014_magic_011_04_execute.png",
+      "bytes": 1032113,
+      "sha256": "2be2f28d420318503d8f4cbbd5f18f91e6db240678f64f7bcd6b3ccdc2462f66"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/017_magic_011_05_execute.png",
+      "bytes": 1043191,
+      "sha256": "4b82925e13e90c6d8251fc7ba69f4fdc75133bd8d6107da0d377f2100af5739c"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/020_magic_011_06_execute.png",
+      "bytes": 1046429,
+      "sha256": "2fbd04608262800b2f660b3c1b8b9011ef8ed122169748002a13914b88b3b72c"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/023_magic_011_07_execute.png",
+      "bytes": 1036132,
+      "sha256": "4d4193f9d92a80b6de0e944be490b7262d289221c647be58776b5391c2e62f8f"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/026_magic_011_08_execute.png",
+      "bytes": 1031954,
+      "sha256": "d9fe7e773ef1fbc955ee8a606f7ec9e7d181eb66221677e2cc5988a386395aed"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/029_magic_011_09_execute.png",
+      "bytes": 1034962,
+      "sha256": "b229cdf32a50add5eae0bfe0abd0e38bdf3b193b9055779a55ba7eee542ce7c6"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/032_magic_011_10_execute.png",
+      "bytes": 1026805,
+      "sha256": "45d15b2f49651730c1c3bc7d6c486d6ae6039cd1f0adf1ba01f6287dbe037207"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/035_magic_011_11_execute.png",
+      "bytes": 1032297,
+      "sha256": "f261e656d86346bea402e1f346c8d123155f6653966e2dc1daec3ed6877c278e"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/038_magic_011_12_execute.png",
+      "bytes": 1033679,
+      "sha256": "4a01a9c48141f3b12046095e2f1227e3f86562af2c923cbc06998fb85656df4a"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/041_magic_011_13_execute.png",
+      "bytes": 1032997,
+      "sha256": "e5433cb21652d002862865f1521ce85374a40e4150a8b5e60b9d2aa3b09534be"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/044_magic_011_14_execute.png",
+      "bytes": 1049302,
+      "sha256": "1a8b518f91c9ffd609cced6a551509c11e8a5cd27da61262abdc1e50b8922a62"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/047_magic_011_15_execute.png",
+      "bytes": 1044252,
+      "sha256": "95215ac400aff87b79f1144f4c6b55a037214a88c8a3ae776f09fdeb56507e56"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/050_magic_011_16_execute.png",
+      "bytes": 1029471,
+      "sha256": "0af2cba722ba0e0b325cf3e01dbe571bf935f2df766509ec9cd24504ae6f792d"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/053_magic_011_17_execute.png",
+      "bytes": 1041128,
+      "sha256": "4c87e21d544200002f8d5c67352aeba212ff918eca814dc5da1ed9036b82b63a"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/056_magic_011_18_execute.png",
+      "bytes": 1075258,
+      "sha256": "60ab1c6e60000e914af488e784a919026c303f30cee1c51afac1fb0eacbeb973"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/059_magic_011_19_execute.png",
+      "bytes": 1076495,
+      "sha256": "7795841e923af2c805f8e5adb76277e122acbf7fdfca954d8c7b451b6dadb01b"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/062_magic_011_20_execute.png",
+      "bytes": 1074521,
+      "sha256": "e17794a20383ee9fed58f7f1afdaf7fb355b5ba21e5cd21c813d7f0ae16c8b98"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/065_magic_011_21_execute.png",
+      "bytes": 1078396,
+      "sha256": "6ae16cd52bdb242cac431207e8f46dc1c89118e4a65aa1417bf5e2f6b7d4fdb7"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/068_magic_011_22_execute.png",
+      "bytes": 1074705,
+      "sha256": "4adc6f2455eeb56faf59ad70bc33e8ad432f03da182a6c23db43fca2d3ad191f"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/071_magic_011_23_execute.png",
+      "bytes": 1071775,
+      "sha256": "0bea1e099141d74b63eb4d01eb9aa2abc1e85b509ccb81fa17e1ba117582ee15"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/074_magic_011_24_execute.png",
+      "bytes": 1075763,
+      "sha256": "4b8cc58773f1d9c589af268e49e188391f724661abb58f5e005ffbb34fba326f"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/077_magic_011_25_play.png",
+      "bytes": 1054883,
+      "sha256": "4ee26a414710a0b2d16acfd34fa3efd31db168f72bd94c17743c59f34feaab63"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/078_magic_011_25_execute.png",
+      "bytes": 1110604,
+      "sha256": "a401cb4a43924e18ecf83d97011dc78c9eb40671782f5c97bd396a1ca30b3571"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/081_magic_011_26_play.png",
+      "bytes": 1061525,
+      "sha256": "008db603a409b8f9a902ca98a2bb133ba2ebea7967853701ae1894301d547c66"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/082_magic_011_26_execute.png",
+      "bytes": 1120400,
+      "sha256": "70dfe36a7635d195498daf9c2d1ecb89423fc5824a005c5b76e5a88b3e396873"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/085_magic_011_27_play.png",
+      "bytes": 1062770,
+      "sha256": "fbbbfc7d1f76b83b7872520880695418aba8621c00ac33c250d7f77548e7a9d7"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/086_magic_011_27_execute.png",
+      "bytes": 1122393,
+      "sha256": "55e760e4a567f619261203fe9cb216a6d8b6ad44968f3e09cf298017e111fa7c"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/089_magic_011_28_play.png",
+      "bytes": 1062481,
+      "sha256": "30ed6ca8cada68c1a3659f75f70e23f8534ba5c52c3d61f220b3ceadcdf4180d"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/090_magic_011_28_execute.png",
+      "bytes": 1123051,
+      "sha256": "20ce18e4c73c7d4caed1ca5ed2039a20fd547e5cb4ea4f62407ffd94edf6aa11"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/093_magic_011_29_play.png",
+      "bytes": 1063062,
+      "sha256": "2549bfaa7d4fc6bba5245e2264fe5a34d0fbad38f3ee944a66d719d9304b4660"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/094_magic_011_29_execute.png",
+      "bytes": 1122625,
+      "sha256": "d3ba47cb2286305c4bb627c61f8088c6d868eb552d478ff806f2c575c4f6eadd"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/097_magic_011_30_play.png",
+      "bytes": 1054236,
+      "sha256": "51b9b4294921699543b2afea69f0847c48a1428a93665b69f39c348f0ecdca18"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/098_magic_011_30_execute.png",
+      "bytes": 1109889,
+      "sha256": "c2e98de37ca8ebf353965627adc966dc15b71ed55360bc299e43df667798114c"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/101_magic_011_31_play.png",
+      "bytes": 1061099,
+      "sha256": "c960a5bab39e196f540ae95eb2e3328803e9f8ef54e31224414da9e495a313d2"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/102_magic_011_31_execute.png",
+      "bytes": 1119742,
+      "sha256": "a1a638fe9a866c29739892673773c3bc444b2e7e5514932fb0ed36a7d78c3cd5"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/105_magic_011_32_play.png",
+      "bytes": 1062163,
+      "sha256": "8429763fd7d0e4ad3d08060ffe667054c327fe413fe6ccf3eea5b0fec397e591"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/106_magic_011_32_execute.png",
+      "bytes": 1121145,
+      "sha256": "b9eded31b3029471cd8b469303d021a112baec177bf6fa0836e1d886cab7fc4f"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/109_magic_011_33_play.png",
+      "bytes": 1061654,
+      "sha256": "6b7c3f6627198ea49b7fb458f686b1f4b82677901da1615ac0548adc0cf59328"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/110_magic_011_33_execute.png",
+      "bytes": 1121898,
+      "sha256": "413c22f6acdac292d764d7b5f87861c8cb47742fe415acf304772fd5ca594b21"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/113_magic_011_34_play.png",
+      "bytes": 1062516,
+      "sha256": "7418fa55bf197099c84c2e63e662d4b538a2f5138385d4f6e04b0db1803e53e5"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/114_magic_011_34_execute.png",
+      "bytes": 1121814,
+      "sha256": "46c0c81ce1b62035f37122e247849177baefda2f50319af7178f9585aa6665e6"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/117_magic_011_35_play.png",
+      "bytes": 1055224,
+      "sha256": "44840be0e4d8b8be2801c1e3375ca3d5bf31b7b02bf78a58af0e4346a2b77f9c"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/118_magic_011_35_execute.png",
+      "bytes": 1110909,
+      "sha256": "96f5e13b88dbf451eb2eddb1f58a38b11ac2b6704fccd6955d1c790c95502fb9"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/121_magic_011_36_play.png",
+      "bytes": 1059654,
+      "sha256": "1d470580e3aaad6bf71e1bd0beadcf7f749f93d04ac6d765cf2db074ea9d6949"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/122_magic_011_36_execute.png",
+      "bytes": 1119879,
+      "sha256": "9fdc29f510a9ed5ea612780cca999167802a0dc2cf8ffb635c4f5e23517c89ea"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/125_magic_011_37_play.png",
+      "bytes": 1060353,
+      "sha256": "707a8e6379186d0eaf7a8611bd863649f39d07c55de160382f20ea800c602f05"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/126_magic_011_37_execute.png",
+      "bytes": 1120372,
+      "sha256": "d099b3326754156ec3a2678c3a7bf9a09a694481f7381209fa61b9f6c2ac8373"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/129_magic_011_38_play.png",
+      "bytes": 1060674,
+      "sha256": "dc2c9dfd37d1c133c739f1f416fc5ba8aced0cc9b3f400bfb029862ad7b41fa6"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/130_magic_011_38_execute.png",
+      "bytes": 1122129,
+      "sha256": "8197d80e41b393a687cd90c1684744fe9567fa8977b37dbd45c6b61768789306"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/133_magic_011_39_play.png",
+      "bytes": 1063304,
+      "sha256": "173ab5c760aaa9c8f2f52cf0fff25a324f01e830ecd5a3fb8e0e83807ed60c27"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/134_magic_011_39_execute.png",
+      "bytes": 1123424,
+      "sha256": "b59557a2bb2533b803269293e2920cc61e85e30118544e46fc778f106aa84b9b"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/137_magic_011_40_play.png",
+      "bytes": 1060575,
+      "sha256": "732091714cfc0fc6eb013f6e2b6b8e7faf442dee6662d980a785d184bd1ecd0c"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/138_magic_011_40_execute.png",
+      "bytes": 1114085,
+      "sha256": "9002794b25c891cda6772aeb1ecde287cea905f535a4dc1e8b4fe9f5dc3798a9"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/141_magic_011_41_play.png",
+      "bytes": 1054511,
+      "sha256": "64a0c7c0a27d77f64b0faa13e55bb2e86c8d9e300aca5d04b4fd0372c6b40ab2"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/142_magic_011_41_execute.png",
+      "bytes": 1110228,
+      "sha256": "2e317fd3420dbcefa7692a4608ccea82b98ada50441fe6992740f92ca61d14eb"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/145_magic_011_42_play.png",
+      "bytes": 1059149,
+      "sha256": "19d9a8cbea8823160b0f9b97ee8c9cd031e3cc7eb686c3c9aa16adab2589c75b"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/146_magic_011_42_execute.png",
+      "bytes": 1119192,
+      "sha256": "3974d5102aa3b52bb97e700839fe50043d09e3cdbbb65ddf86777e561420ea9c"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/149_magic_011_43_play.png",
+      "bytes": 1059184,
+      "sha256": "d8467da13625602acefa046c8078cce361eb719b5c56c9452a67e98f4d33c841"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/150_magic_011_43_execute.png",
+      "bytes": 1118655,
+      "sha256": "e75efe0c4f090429583d883040fe27fb849a17ac154365216ee671460ffddda0"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/153_magic_011_44_play.png",
+      "bytes": 1059828,
+      "sha256": "4edd61c8323beee68ef08a37436f3b62a765a44a587aadf54b98bb16c5fed2cd"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/154_magic_011_44_execute.png",
+      "bytes": 1121006,
+      "sha256": "dc361e43f1dff7a68c9adb8ea25f995bc3120453f67db9187ba72e479ce60f11"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/157_magic_011_45_play.png",
+      "bytes": 1062750,
+      "sha256": "70950e402a214670b7886c634036ec73f4188d6eae491bf3bda1f00da2981162"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/158_magic_011_45_execute.png",
+      "bytes": 1122693,
+      "sha256": "28291f11f806386fba7161f26b9c2aefb9413e651163a2d984a5d4586c24fad8"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/161_magic_011_46_play.png",
+      "bytes": 1060484,
+      "sha256": "72de2ba667ee6d5a02cfd36908fb3136fe9edc5bb657e13dc71548268fd7e153"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/162_magic_011_46_execute.png",
+      "bytes": 1113171,
+      "sha256": "bac725de1ba65ae255d58ed8e0b74411bd035b715a4b9332365bce69caee92a2"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/165_magic_011_47_execute.png",
+      "bytes": 1129470,
+      "sha256": "466df802b43b75a5de751e0a49f1556f9f9c384bc0afdf52b01f010358eed0d3"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/168_magic_011_48_execute.png",
+      "bytes": 1129681,
+      "sha256": "24350901d936f988b0510dc3873c1e71c9606851f602ba4e32cab27754312eb7"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/171_magic_011_49_execute.png",
+      "bytes": 1129451,
+      "sha256": "d74e4a89a02330f804d96a2ca158a7634150f1ee3b14095b7255bcbf683241b1"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/174_magic_011_50_execute.png",
+      "bytes": 1129102,
+      "sha256": "f40d6ecb7a5cef694f89c16e464734a1add1afd8b0bfedf5ac410474c79a0095"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/177_magic_011_51_execute.png",
+      "bytes": 1129994,
+      "sha256": "fb293929b4734e5ed12ca83cd15ba9b638768bd4c1fa958b8916af1c1978737d"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/180_magic_011_52_execute.png",
+      "bytes": 1131127,
+      "sha256": "3dc6634d7385df073315822e339c3b9853f87181ea5639335ac100fc77bec49f"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/183_magic_011_53_execute.png",
+      "bytes": 1128590,
+      "sha256": "3925a37c7fe0e1f79bd02040db258ffa401c50e1053d1f2dab987bb81cb1659a"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/186_magic_011_54_execute.png",
+      "bytes": 1128810,
+      "sha256": "59fd270d8e794259807512dabedde9acd06c420bda596639c7a78665222e4245"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/189_magic_011_55_execute.png",
+      "bytes": 1127503,
+      "sha256": "ddf63ad9548087119f4c9d89dbe5f9c14c05cb9ed50bc2c8760e003c416bb23b"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/192_magic_011_56_play.png",
+      "bytes": 1057843,
+      "sha256": "938e220200452b58d1730494e0eb3ef45b09eeb207c5c0166930c5d48718c47d"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/193_magic_011_56_execute.png",
+      "bytes": 1113609,
+      "sha256": "c068ef2ff6037ca57211e2ce2a25bb6f31e2360fb3fd13d7bf579fa7544592d8"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/196_magic_011_57_play.png",
+      "bytes": 1069176,
+      "sha256": "93ce2c28848a37664b46022fc9ea8a8bd1c02f1ddfd53f7618259945c8b3abdc"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/captures/197_magic_011_57_execute.png",
+      "bytes": 1112362,
+      "sha256": "1544dbebb6cd0a8ed8787769e6c78a510a1996796f5dab805648c3f5d5bfdb0c"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0001.json",
+      "bytes": 31239,
+      "sha256": "332be8be8584cc47b81c8f277456d50958066faa6b1c756bd1e70f94a1b4ff61"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0002.json",
+      "bytes": 31829,
+      "sha256": "0267453887e39493ae28862f87b36b351003f1c6397a24ac779241596964938c"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0003.json",
+      "bytes": 32563,
+      "sha256": "419ca7f8c9fbd1323037c7836feac86b32cb1695eae8b2f15b10ddd663c8ca8d"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0004.json",
+      "bytes": 32560,
+      "sha256": "9836f52ad2725bba6a96f333298c506044788f9c0e480eb206216de0be2650ce"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0005.json",
+      "bytes": 32699,
+      "sha256": "98f273cb40a111bd82de5d7f672242d7994bcfcaef3d885443e226c392ff1ba7"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0006.json",
+      "bytes": 32714,
+      "sha256": "230c9a7a1b4f9d0611972904f7388b17780e213d1ddb717c25a5a51f993b0f05"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0007.json",
+      "bytes": 32899,
+      "sha256": "768a18a5cab5b5d0a66a893f5bd0bc113665f2b8b9f083a992700bcdd3a9eb52"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0008.json",
+      "bytes": 32764,
+      "sha256": "5be94a50cd47d1e8c64e4997dd52747ba31cd8941ae280c93539442ac7474bcf"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0009.json",
+      "bytes": 32758,
+      "sha256": "34bf20b77c02d36e17a0182ce1fe05ecac8178fcf2543d2c580de0c71e445c2e"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0010.json",
+      "bytes": 32739,
+      "sha256": "2e332ad2819105c2b9070dc49759a5b4f29b7efccfde518aad208735b940935c"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0011.json",
+      "bytes": 32594,
+      "sha256": "75e031494ea8de01f836e7eddc0c677607b77cd463a8c032d6cda048a3695134"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0012.json",
+      "bytes": 32734,
+      "sha256": "e6d27484f97d17008b4369bc58c1ece8e9a594366e70ee6071e3abbf63f998c7"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0013.json",
+      "bytes": 32736,
+      "sha256": "c5f43fc142e61e4eacda0de01f077578758fb5a938380b4510af4af3cb673781"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0014.json",
+      "bytes": 32736,
+      "sha256": "5e8557275624e036a0f275970619eac56f14406e80823ec5ef82bf17df60fa1a"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0015.json",
+      "bytes": 32968,
+      "sha256": "7f74df3e4a522b663bedf53694eb6e7232a47564ad39515245d994a9e1abb4f1"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0016.json",
+      "bytes": 32930,
+      "sha256": "48b2b0cc8dc60fc62b97ab0d3d4057f3446f4545440c6b7dbebc43342ef9fe8b"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0017.json",
+      "bytes": 32569,
+      "sha256": "e7f9a54beea9188a04ca96b026ac4650e08592e71b5b06f1e9f658843677c162"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0018.json",
+      "bytes": 32902,
+      "sha256": "2393ac859bed485e4d7850f45c954ebeeefe65ea01ce597a77957fb633d4b44d"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0019.json",
+      "bytes": 34216,
+      "sha256": "2d91c2c8dda5a7d838b1472c7c9feb7c726121a7d7e645c8bb280cd1c552e0bc"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0020.json",
+      "bytes": 34237,
+      "sha256": "263c4be066890a4cb46d336fb7d2a106809c6275a23600c2c3a8e7b0e1c1deee"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0021.json",
+      "bytes": 34251,
+      "sha256": "ceaec6f973092fc101523d8deba3e6b614d34792c027c0abd07a75e8886c87dc"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0022.json",
+      "bytes": 34304,
+      "sha256": "900022537824b2ac27dc45275575db931b4ac285fe351c812fe5d6bc4680da7c"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0023.json",
+      "bytes": 34210,
+      "sha256": "764ed9b01d1751b93d76f03f292bbff6cb1bb28277344f18f46b02a66e4c2051"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0024.json",
+      "bytes": 34247,
+      "sha256": "cfb8487cd6a47ab4b42e9d506c69d732893a8317d9cc1b47bca88cf768babf0f"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0025.json",
+      "bytes": 34228,
+      "sha256": "2af1c9e55e13451b3f3fb82077795dd3e97df06c8593555873434f1171a4f6e5"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0026.json",
+      "bytes": 33527,
+      "sha256": "49710cc4719719cdc5622d9afa997853abbb467f69e789d09785b071541224f0"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0027.json",
+      "bytes": 35474,
+      "sha256": "ddbe2fb3d25e6346a867fbf1829e28da1276ea2d0138af23de780fec27b3e8e6"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0028.json",
+      "bytes": 35474,
+      "sha256": "d5033009485c397c5e2211ab2c9b9ae33e2ab1daf8babc9eb370374fce5d5e59"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0029.json",
+      "bytes": 35486,
+      "sha256": "e4a08e639d62733e904953692abcc2cf713513ae7020388146faf08001f9560f"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0030.json",
+      "bytes": 35036,
+      "sha256": "3121772cf0db82b55a01c37233de2a3d21748fa4ec9d9176271258dc0b9b7a00"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0031.json",
+      "bytes": 33528,
+      "sha256": "81f2f8c9ccd3458da2ab8472020d8cbb34f6822180a4f8ec2091f8d8cd695f30"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0032.json",
+      "bytes": 35472,
+      "sha256": "4e6e812fe467df3ebf3ae44e21f824edb1a8abcf0d3a089e980f7415753791d1"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0033.json",
+      "bytes": 35472,
+      "sha256": "4f0155919bb817cfbd63c00dddbd3abd8731f789ff7aad3c1338ebcba2a274cc"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0034.json",
+      "bytes": 35484,
+      "sha256": "5b34d162cfbbe4d4e66fe1ac05cd1d62513c63285bb1192f494ad199685b3eb5"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0035.json",
+      "bytes": 35036,
+      "sha256": "1689c19a714ab3bdab2c22b57578f991f63175c241cdf6e63f4df18b195fea20"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0036.json",
+      "bytes": 33527,
+      "sha256": "658603dbbcc894cc0d21b0a8d001fd327d9ce80fdb4633f96be88f1dbc5b5a51"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0037.json",
+      "bytes": 35474,
+      "sha256": "4e7f29b30826c76bd27fd6bf9af2828cab26d2dcb1542de306b78385c18fc3b5"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0038.json",
+      "bytes": 35486,
+      "sha256": "3b47ef11cee4019bce35c3c715fdd2b0fbfbb85a79ae949efea959b35c1eb530"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0039.json",
+      "bytes": 35486,
+      "sha256": "954300a370fcd7db54b8c327db17da6f3c0359238bc13ed0cdc63ddbf2499dd6"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0040.json",
+      "bytes": 35036,
+      "sha256": "9a224fa38a93a8c3dc8cb63d5022a777f2d523a169196b2c391256cd6e4807a2"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0041.json",
+      "bytes": 33619,
+      "sha256": "3c286fc3707011e0eddbbbe111358487fd791dbed2067a333a9a096c3dac7467"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0042.json",
+      "bytes": 33528,
+      "sha256": "76f8c3cec0a0171ca9cbb6e59ff78daaeff3651de46b95ea70ebb589c092223a"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0043.json",
+      "bytes": 35472,
+      "sha256": "a1c78ae279a838ee919e8a16701f7a834e200a37b316e72060fd0bca9ead89d1"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0044.json",
+      "bytes": 35484,
+      "sha256": "cf696f064fe6711a68dc6ddd131216d20d98b8a4d2401024a204bb79e607a474"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0045.json",
+      "bytes": 35484,
+      "sha256": "bb9e51deba2ef818edca2dc738cd6842517b49b11285f245a83b6c1e62fe5b57"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0046.json",
+      "bytes": 35036,
+      "sha256": "905757f5e8be17dc90b4590ecd98cc6d73bf755a10a456db51770d977392187c"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0047.json",
+      "bytes": 33614,
+      "sha256": "ef2f9117b57f67ed964e1db1631d177f3688eeb60b617e21e454d379fc44e434"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0048.json",
+      "bytes": 34047,
+      "sha256": "f9048ebc3ff259ff19706c528a5aa9856c333cfde7873ebfdd2574226fbc023b"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0049.json",
+      "bytes": 34047,
+      "sha256": "00a15b4606a530efb66a83cdf3ca39a5dc984d6bce49da39c188c3329a10eb70"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0050.json",
+      "bytes": 34047,
+      "sha256": "6c709f90499327b8b2734dd64d05396b11b51f2f621ac10db2af652b8fff461b"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0051.json",
+      "bytes": 34047,
+      "sha256": "c6555c07c82d544226b3e5eb16ef6313050686685370a4a0e9ebacdd7e4145f8"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0052.json",
+      "bytes": 34047,
+      "sha256": "50de5627c8dbd2cf23988c515a9cf0cb420192dd8d449c87545425d7be4fd13c"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0053.json",
+      "bytes": 34047,
+      "sha256": "8ac1a912e08ab979fdf7625ae4b623e6b6fbfbdc2eb0b912cb2f74c20caa492c"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0054.json",
+      "bytes": 34014,
+      "sha256": "db55c06e81c8f462fce55dd2ce57f217695c08c2834e6794a222107a82b5d896"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0055.json",
+      "bytes": 34014,
+      "sha256": "eee442370b12c860dac0dc37ae8c45d2c67524a491182d4ec02e765d5cc09fbf"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0056.json",
+      "bytes": 33974,
+      "sha256": "5d55dbd89b2f12a06fff087a3ea386bbef9a45ab9d2302797a4df040296ccafa"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0057.json",
+      "bytes": 32941,
+      "sha256": "90d7db67df3c7af93ee5a24389f1b272fc57dbf31508e826070b5dd3e8bbcd82"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/checkpoints/0058.json",
+      "bytes": 36065,
+      "sha256": "e3b55f0716633ddfbdc7482ca928454e71661374fedeb29c9fbc7d7b18ba56ac"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/effects.json",
+      "bytes": 2691827,
+      "sha256": "d1e774e91bb342493aee7493e09651f915aa27ae9ee0c62f740e293ecaf51959"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/report.json",
+      "bytes": 1255982,
+      "sha256": "48102ad581835c9f6144088d2815a87bae64bcd44229150ef3c2b346d6868094"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_213849_0b76d08a/magic/request.json",
+      "bytes": 207680,
+      "sha256": "0c2f6345df9ad85e345ed810c7cd10a2e4b8b2b4f4fbe01605b0f68b140cd0c5"
+    },
+    {
+      "path": "AutomationOutputs/EditMode/20260911_212818_da651efb/editmode-results.xml",
+      "bytes": 214571,
+      "sha256": "2c8e05f10fc4c2ddf81f10edfd17676c13001359ed538886413933797c03e768"
+    }
+  ],
+  "fileCount": 145,
+  "pngCount": 83,
+  "bytes": 96142432
+}

@@ -1,0 +1,15 @@
+{
+  "status": "verified_cases_only",
+  "cases": 58,
+  "discardCases": 23,
+  "caseResults": {
+    "partial": 49,
+    "passed": 9
+  },
+  "operations": 197,
+  "effectAssertions": 1411,
+  "screenshots": 82,
+  "suiteSha256": "a8bc0c4b0bc27d78486fff9581d27c83d10ca4715df1df3e92f6da3cb8503842",
+  "originalArtSha256": "458727fe85db1d8de3e268cef56b3ca0978845ded3c26e9dc5d093059510552f",
+  "remaining": "Active played-card identity and full play-zone lifecycle remain pending; do not claim complete card certification."
+}

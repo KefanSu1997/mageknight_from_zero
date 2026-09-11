@@ -1,0 +1,32 @@
+{
+  "sourceCommit": "6394510873cca23b397cf57c16233ce92aac01ad",
+  "sourceSha256": {
+    "AGENTS.md": "2a669837d44790762d5e71f8bfc728fbf4ebf4662cee856782de1d6e51ff464d",
+    "Assets/Logic/Runtime/CardEffects/SacrificeEffect.cs": "a4694bfdd53ed98e579b72d088656bf870206eaa971a14d941eac16f60a188b3",
+    "Assets/Logic/Runtime/PlayerDeck.cs": "99761c41419ca6b961a60bfd4314ff27c912c8e7633db45c274da1b2c8a3f19d",
+    "Assets/Resources/CardVerification/cases.json": "a8bc0c4b0bc27d78486fff9581d27c83d10ca4715df1df3e92f6da3cb8503842",
+    "Assets/Scripts/SceneAutomation/Editor/AllCardVerificationMenus.cs": "3cdb28a373ecac59b71319b219932cb1341c70aab43ad10bdd28d0fc082fa3b8",
+    "Assets/Scripts/SceneAutomation/SceneAutomationRequest.cs": "27b488bd30e550592194844c7ba02d6c649219c46d5919b69a99745275970db4",
+    "Assets/Scripts/Testing/CardVerificationCase.cs": "79dfbf7d02d9bf3cc021fe3d2cb68dc12d10b2003783cf50b56b9e0d924e6fa8",
+    "Assets/Scripts/Testing/OriginalCardVerificationController.cs": "a309cbe50d428eb5ac95e3d1cc87cf2791bf9fd170fb3f154680663b338c3f66",
+    "AutomationConfigs/AllOriginalCards/magic.json": "3fb87b729d2f1166456a6920532ba54f5a2cb2ad429bfd0f1eb8aa32a487f7f4",
+    "tools/build_all_card_verification.py": "5cbbd7104d596b0a4e2546fdc7616bdf0b242b153478dd0d7f2b382c8d22f38a",
+    "tools/summarize_all_card_verification.py": "0960c280fb662638a342a350c0a696b3e458a3c19ff6ac50ab2a58148fa6a885",
+    "tools/verify_mist_scene.py": "4623b63becda397c28eb5d10270e3d1db705f70dfb28f900ed92a1ca95400841",
+    "vibe_coding/codex/pr_card_rules_completion_2026-09-10.md": "58578821346db1ae690d651b6f0e304f7eb7708bd18dff9308c6358081fb6cdd",
+    "Assets/Tests/SacrificeResolutionTests.cs": "e3dfa49a8004a93e2a545bb80f69b5aafe030566dba2899b82e5789e12fb9822",
+    "Assets/Tests/SacrificeResolutionTests.cs.meta": "0ec4e741c94d133f6f2a75cd87df6783fec74b7ef0c8edecca2a89b9b940d501",
+    "AutomationConfigs/AllOriginalCards/focused.json": "2658d084a111d75d9498a83ebd3725bedd0e4e3c473099cf1ee0612611e7c161",
+    "tools/build_focused_card_verification.py": "141ceb87a52ef0171f5275859fbc3461dc7272a8e26253c08ee1380f00548ed7",
+    "tools/verify_sacrifice_scene.py": "313d415043f3c1e2e85eab4a650437c5c7ff6d2458f17e013a0f4963546616ac",
+    "vibe_coding/codex/worklog_2026-09-11_sacrifice_resolution.md": "581da31a1a1f68f6a5c28b3fd1ea453036bd3008838ae46abda79f54d371b421",
+    "vibe_coding/codex/project_experience/sacrifice_identity_and_focused_verification_2026-09-11.md": "849b7888dc8169c69600b8508f5bc9698eb35393e4e482767859aff4d921bc59"
+  },
+  "testedCaseCount": 58,
+  "fullLibraryCount": 606,
+  "fullRegressionRun": false,
+  "dailyQueueRemaining": 0,
+  "scope": "Only original magic_011; full card lifecycle still partial. Core260 tests preceded the later focused-menu change, which was checked in its real scene and empty-queue path.",
+  "localMemory": "C:/Users/sukefan/.codex/memories/MEMORY.md",
+  "remotePush": "paused"
+}

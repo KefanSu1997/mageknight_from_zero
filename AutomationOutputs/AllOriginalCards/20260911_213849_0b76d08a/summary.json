@@ -1,0 +1,62 @@
+{
+  "status": "incomplete",
+  "scope": "125 existing card records (121 readable faces); staged scene verification, not complete rules certification",
+  "batches": [
+    {
+      "batch": "basic_card",
+      "status": "not_run"
+    },
+    {
+      "batch": "advanced_card",
+      "status": "not_run"
+    },
+    {
+      "batch": "magic",
+      "caseCount": 58,
+      "focused": true,
+      "result": {
+        "partial": 49,
+        "passed": 9
+      },
+      "cardCount": 1,
+      "effectsReport": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\AllOriginalCards\\20260911_213849_0b76d08a\\magic\\effects.json"
+    },
+    {
+      "batch": "items",
+      "status": "not_run"
+    }
+  ],
+  "cards": [
+    {
+      "id": "magic_011",
+      "status": "待联验",
+      "cases": 58,
+      "failures": [],
+      "remaining": [
+        "实际弃牌及奖励已测；正在施放卡的实例身份和完整出牌区生命周期仍需联验",
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收",
+        "法术通过旧 ActionSystem 映射执行；所有目标选择、日夜合法性和后续结算尚未完整接通，不能判整卡通过"
+      ]
+    }
+  ],
+  "cardCount": 1,
+  "caseCount": 58,
+  "caseResults": {
+    "partial": 49,
+    "passed": 9
+  },
+  "cardResults": {
+    "待联验": 1
+  },
+  "uiOperations": 197,
+  "uiAssertions": 673,
+  "effectAssertions": 1411,
+  "screenshots": 83,
+  "playableFaces": 1,
+  "nonplayableRecords": [
+    "advanced_card_044",
+    "advanced_card_045",
+    "advanced_card_046",
+    "advanced_card_047"
+  ]
+}
