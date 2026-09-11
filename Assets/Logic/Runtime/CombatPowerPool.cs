@@ -18,10 +18,11 @@ namespace MK.Logic.Runtime
         public int Total(AttackType type) => _attacks.Where(a => a.Type == type).Sum(a => a.Value);
         public int BlockTotal => _blocks.Sum(b => b.Value);
 
-        public void AddAttack(int value, Element element = Element.Physical, AttackType type = AttackType.Melee)
+        public void AddAttack(int value, Element element = Element.Physical, AttackType type = AttackType.Melee,
+            int excludedTargetIndex = -1)
         {
             if (value < 0) throw new ArgumentOutOfRangeException(nameof(value));
-            if (value > 0) _attacks.Add(new AttackProfile(type, value, element));
+            if (value > 0) _attacks.Add(new AttackProfile(type, value, element, ExcludedTargetIndex: excludedTargetIndex));
         }
 
         public void AddBlock(int value, Element element = Element.Physical, bool countEnemySymbols = false,
@@ -67,7 +68,7 @@ namespace MK.Logic.Runtime
         public void ConvertNewMeleeToRanged(int firstContribution)
         {
             for (int i = firstContribution; i < _attacks.Count; i++)
-                if (_attacks[i].Type == AttackType.Melee)
+                if (_attacks[i].Type == AttackType.Melee && _attacks[i].ExcludedTargetIndex < 0)
                     _attacks[i] = _attacks[i] with { Type = AttackType.Ranged };
         }
 
@@ -93,6 +94,16 @@ namespace MK.Logic.Runtime
 
         public AttackProfile[] AvailableAttacks(Phase phase) => _attacks
             .Where(a => phase == Phase.Melee || (phase == Phase.Ranged && a.Type != AttackType.Melee)).ToArray();
+
+        public AttackProfile[] AvailableAttacks(Phase phase, IReadOnlyList<int> targets) => AvailableAttacks(phase)
+            .Where(a => a.ExcludedTargetIndex < 0 || (phase == Phase.Melee && !targets.Contains(a.ExcludedTargetIndex))).ToArray();
+
+        public void ConsumeAttacks(IReadOnlyList<AttackProfile> selected)
+        {
+            foreach (var part in selected) _attacks.Remove(part);
+        }
+
+        public void ClearPossessedAttacks() => _attacks.RemoveAll(a => a.ExcludedTargetIndex >= 0);
 
         public void ConsumeAttacks(Phase phase)
             => _attacks.RemoveAll(a => phase == Phase.Melee || (phase == Phase.Ranged && a.Type != AttackType.Melee));

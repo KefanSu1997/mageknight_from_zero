@@ -1,0 +1,208 @@
+{
+  "status": "verified_selected_checks_only",
+  "scope": "22 magic_021 cases plus 2 directly affected combat cases; not complete card certification",
+  "acceptedCases": 24,
+  "caseResults": {
+    "partial": 19,
+    "passed": 5
+  },
+  "firstRun": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613",
+  "firstRunPassedChecks": 23,
+  "retryRun": "AutomationOutputs/AllOriginalCards/20260911_220957_5f6c50b2",
+  "retriedCases": [
+    "magic_021_13"
+  ],
+  "correction": "Only new assertion key discardWounds -> existing PlayerState.DiscardWounds; expected zero unchanged; no old case changed.",
+  "originalRegressionDefinitionsPreserved": 606,
+  "fullLibraryCases": 626,
+  "fullRegressionRun": false,
+  "testRun": "AutomationOutputs/EditMode/20260911_220656_4ca7d067",
+  "editModePassed": 41,
+  "consoleErrors": [
+    0,
+    0
+  ],
+  "dailyQueueRemaining": 0,
+  "executedOperationsIncludingRetest": 95,
+  "screenshotsIncludingRetest": 49,
+  "acceptedEffectAssertions": 495,
+  "originalArtSha256": "43d19c668faa2625dead28eb9c96ae8730256f9aec57b187a445d6e1d1ec8245",
+  "sourceParentCommit": "2347f5a257545f260ac724831e16d063b00608eb",
+  "sourceSha256": {
+    "Assets/Logic/Data/UnitCard.cs": "ebcc3addc5976364cad1a8d44316d15d80d240dec4608e8dbba239dc30bd6a16",
+    "Assets/Logic/Runtime/ActionContext.cs": "b49a7da7b904e6419725b11847080fe52b5593853be689b0834d7dfc9bfd332b",
+    "Assets/Logic/Runtime/ActionSystem.cs": "30b62542bc651c8deb3fad81dcb7af04085cc731c4b9d1e46cfbc52f10286287",
+    "Assets/Logic/Runtime/BattleResolver.cs": "3488b9dbbc5ab9ee565a7b03a95e4d9a02a10f92e97d2b47cff04a5920ce2080",
+    "Assets/Logic/Runtime/CardCombatActions.cs": "4f53e8c8998bc18fe930e725a1e2692f413ca3921c4dffbca80967b01fb209bb",
+    "Assets/Logic/Runtime/CardEffects/CharmEffect.cs": "279cb7c5a019400a69a6c0d298b021476cc715eaa7ab9cfac6f13dd06f7e6802",
+    "Assets/Logic/Runtime/CombatMath.cs": "aa6dcd994f6c1589d8ec4cad118514f1b3c491a34198610b5dda262b6628d2a1",
+    "Assets/Logic/Runtime/CombatPowerPool.cs": "1855855f9e11ca14d920b8e582296ba9fe38bead211c06e270e379638e2de721",
+    "Assets/Logic/Runtime/UnitDamageResolver.cs": "f7c0623b7b26daf6a912d420c718aae5fb7bbefa248087438d361ee46f82f025",
+    "Assets/Scripts/SceneAutomation/Editor/RuleScenarioMenus.cs": "9b45dafc37686a649e9c796e93773ad408212cdc73aa295683efc08784279b74",
+    "Assets/Scripts/Testing/OriginalCardVerificationController.cs": "3c23ca1ed72de81f3c2978c47a7ffb0702c008c1b82abed81910471571c22f87",
+    "Assets/Tests/PossessResolutionTests.cs": "3f08740d166288f9b66a991e5e4a765ace4e1015f4f7b412ebf6ed6f3a319357",
+    "AutomationConfigs/editmode_focused.json": "e2d4736b1634631ba1156a926ac7ea70fb7eb337c1a70d405908b187e98f21ff",
+    "tools/build_all_card_verification.py": "34ce61e06f99429ef33c4acb67528d2c621970b98d768e17c627185b0734f957"
+  },
+  "suiteSha256": {
+    "firstRun": "510fb8c6554c3972340b60559a2b7ac60872dcf1b840f5c0476d8551180029dd",
+    "current": "3ac376d38ed51e806d0ee3eb09dc312b130dcb1fdf8c927e8449bddfcf410d60"
+  },
+  "acceptedEvidence": {
+    "magic_010_01": {
+      "run": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613",
+      "caseStatus": "partial",
+      "caseDefinitionSha256": "d4ef671a5bc9fae9faac046879b1f85305e5a9ae053ab17e38c20d45933ae8b5",
+      "checks": 11
+    },
+    "magic_021_00": {
+      "run": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613",
+      "caseStatus": "partial",
+      "caseDefinitionSha256": "62a2ee7f92d27b26a1d1b3b9c079a214b58e14acbe00a2ea4cfcd72b4c6aac0c",
+      "checks": 9
+    },
+    "magic_021_01": {
+      "run": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613",
+      "caseStatus": "partial",
+      "caseDefinitionSha256": "9bd60a6410f6cf4790418cbc9e8cab3969f505caa1280cfb030801972f6fd65a",
+      "checks": 11
+    },
+    "magic_011_28": {
+      "run": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613",
+      "caseStatus": "partial",
+      "caseDefinitionSha256": "5d6d335a0e22f3b02b9d1e676eb6c40f13610082d5383a0c7b5cae3ca385c0bc",
+      "checks": 31
+    },
+    "magic_021_02": {
+      "run": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613",
+      "caseStatus": "partial",
+      "caseDefinitionSha256": "28986072d1e40a7bf3532297ef2f6a957388f2e7d4ef0bf98cd6b33f8b203b2f",
+      "checks": 20
+    },
+    "magic_021_03": {
+      "run": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613",
+      "caseStatus": "partial",
+      "caseDefinitionSha256": "5a1685c3a40895fe5485b24e55bf19ed010bdeb472ffdce94fc0412d52ee12b8",
+      "checks": 20
+    },
+    "magic_021_04": {
+      "run": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613",
+      "caseStatus": "partial",
+      "caseDefinitionSha256": "81dcbd42777a61af837328f35ee3637acc64d2a386fbdb3e6bf51e47bf56883c",
+      "checks": 20
+    },
+    "magic_021_05": {
+      "run": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613",
+      "caseStatus": "partial",
+      "caseDefinitionSha256": "944f93eeb93afd3455dd637d56fa5a9ef10d92d2d3523d6d92b39e38d6e79380",
+      "checks": 20
+    },
+    "magic_021_06": {
+      "run": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613",
+      "caseStatus": "partial",
+      "caseDefinitionSha256": "e6116c0ef6a6fb4d5f5e4c13f617fae5fa2ab0d4a23cf9825d00144b62c20b3d",
+      "checks": 20
+    },
+    "magic_021_07": {
+      "run": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613",
+      "caseStatus": "partial",
+      "caseDefinitionSha256": "3aa7ed85e9aca0347d126a44bf1f381c023880233d498f443ef9a78b4db78424",
+      "checks": 20
+    },
+    "magic_021_08": {
+      "run": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613",
+      "caseStatus": "partial",
+      "caseDefinitionSha256": "c98ab98fa31119d73ce953f2f3ba172d8b971fe308f1266864df00ac32408b94",
+      "checks": 20
+    },
+    "magic_021_09": {
+      "run": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613",
+      "caseStatus": "partial",
+      "caseDefinitionSha256": "d1c067a87848b92064a95277e93fff42e66ab91dc09e45f1b158d13ca7d3841d",
+      "checks": 20
+    },
+    "magic_021_10": {
+      "run": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613",
+      "caseStatus": "partial",
+      "caseDefinitionSha256": "3cec13db56ec5122f28d687c4f2863a269b412d3aed4cbde9bd85ae909a4fb3e",
+      "checks": 18
+    },
+    "magic_021_11": {
+      "run": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613",
+      "caseStatus": "partial",
+      "caseDefinitionSha256": "1a50fa3803aec52365b7e14a658f4e996995c645db9b60847c0d76ffb65588ba",
+      "checks": 19
+    },
+    "magic_021_12": {
+      "run": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613",
+      "caseStatus": "partial",
+      "caseDefinitionSha256": "7383668dbd8cb0c1a5a27aa886926c358c393c8f4e697a3bea16c822a129d9f6",
+      "checks": 22
+    },
+    "magic_021_14": {
+      "run": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613",
+      "caseStatus": "partial",
+      "caseDefinitionSha256": "9f5bce81769f00209beaada310f9fd52a4c4a4de05c6262c2314603283dd6a62",
+      "checks": 13
+    },
+    "magic_021_15": {
+      "run": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613",
+      "caseStatus": "passed",
+      "caseDefinitionSha256": "0e298ca8f612a7ed53ee36a9375fe239086fc564750d2db5393593717d6e085b",
+      "checks": 31
+    },
+    "magic_021_16": {
+      "run": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613",
+      "caseStatus": "passed",
+      "caseDefinitionSha256": "e70f9bc6ddb33383cd75b148685bd92e91d34a7af22ff96d8369a13adba342f7",
+      "checks": 31
+    },
+    "magic_021_17": {
+      "run": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613",
+      "caseStatus": "passed",
+      "caseDefinitionSha256": "304dfbbc63443e7e8dc47d4f3a74cc05109113a0c352fe138f5601a69f258630",
+      "checks": 30
+    },
+    "magic_021_18": {
+      "run": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613",
+      "caseStatus": "passed",
+      "caseDefinitionSha256": "1a7ae69f23cb7b913da79c2435399079c6d6478be8c0efb125fcf0c95da0a4c7",
+      "checks": 30
+    },
+    "magic_021_19": {
+      "run": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613",
+      "caseStatus": "passed",
+      "caseDefinitionSha256": "402bf4d56f5787f1b462f4df18b319948dc20962ba53c2645f77b50ee23a87e2",
+      "checks": 30
+    },
+    "magic_021_20": {
+      "run": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613",
+      "caseStatus": "partial",
+      "caseDefinitionSha256": "9a62f9fa4c5519036141210bc9c104c01448730463423cc38764c481f55e3103",
+      "checks": 11
+    },
+    "magic_021_21": {
+      "run": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613",
+      "caseStatus": "partial",
+      "caseDefinitionSha256": "d077eaabc52d0497fe89669f470a13a01e11c6f9e73e1f29c54c03c9bffb34b6",
+      "checks": 14
+    },
+    "magic_021_13": {
+      "run": "AutomationOutputs/AllOriginalCards/20260911_220957_5f6c50b2",
+      "caseStatus": "partial",
+      "caseDefinitionSha256": "3eb826598c010bb8d293b33513508315035020a9e1a139f35843e065e6be5d96",
+      "checks": 24
+    }
+  },
+  "screenshotsInspected": [
+    "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/captures/058_magic_021_12_execute.png",
+    "AutomationOutputs/AllOriginalCards/20260911_220957_5f6c50b2/magic/captures/004_magic_021_13_execute.png"
+  ],
+  "remaining": [
+    "Charm negotiation rewards and single recruit discount",
+    "Complete play-zone lifecycle and other combinations",
+    "All other original card/unit/skill unfinished work"
+  ],
+  "remoteTransfer": "paused; no upload performed",
+  "editModeXmlSha256": "fa5878cf0b4794f86a0ea2b6500f9ac39e9aec18d03049ce48ea91fb09a3b115"
+}

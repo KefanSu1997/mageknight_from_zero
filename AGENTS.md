@@ -43,6 +43,8 @@
 
 ## 经验索引
 
+- 附身按来源限制单笔攻击、保留合法普通攻击、战斗过期及仅补测失败例 —— `vibe_coding/codex/project_experience/possessed_attack_targets_and_failed_only_retest_2026-09-11.md`
+
 - 献祭真实弃牌实例、晶体付费后配对、按需筛选并清理已通过日常用例 —— `vibe_coding/codex/project_experience/sacrifice_identity_and_focused_verification_2026-09-11.md`
 
 - 迷雾全抗性实际承伤、英雄首伤附加效果隔离、战斗与回合失效分离 —— `vibe_coding/codex/project_experience/mist_form_damage_and_turn_lifetime_2026-09-11.md`

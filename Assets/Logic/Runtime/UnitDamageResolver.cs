@@ -48,6 +48,9 @@ namespace MK.Logic.Runtime
         /// <summary>调用于真实战斗结束；恢复承伤资格但不治疗、不重整。</summary>
         public static void EndBattle(PlayerState player, ActionContext context)
         {
+            context.SkipAttackIndices.ExceptWith(context.PossessedEnemyIndices);
+            context.PossessedEnemyIndices.Clear();
+            context.CombatPower.ClearPossessedAttacks();
             foreach (var unit in player.Units.Concat(context.DamageAssignedUnits).Distinct()) unit.PhysicalResistTemp = false;
             context.DamageAssignedUnits.Clear();
             context.UnitArmorBonus = 0;

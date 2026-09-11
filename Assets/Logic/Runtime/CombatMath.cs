@@ -58,6 +58,8 @@ namespace MK.Logic.Runtime
         public static bool CanAttack(IList<Monster> enemies, IReadOnlyList<int> targets,
             IReadOnlyList<AttackProfile> parts, Phase phase, ActionContext ctx = null)
         {
+            if (parts.Any(p => p.ExcludedTargetIndex >= 0 &&
+                (phase != Phase.Melee || targets.Contains(p.ExcludedTargetIndex)))) return false;
             if (phase == Phase.Melee) return true;
             if (phase != Phase.Ranged || parts.Any(p => p.Type == AttackType.Melee)) return false;
             if (ctx?.IgnoreFortified == true) return true;

@@ -118,6 +118,17 @@ namespace MageKnight.SceneAutomation.Editor
         [MenuItem("Tools/Mage Knight/Adventure/Run All EditMode Tests")]
         public static void RunAllTests() => RunTests(true);
 
+        [Serializable] private sealed class FocusedTests { public string[] groupNames; }
+
+        [MenuItem("Tools/Mage Knight/Rules/Run Focused EditMode Tests")]
+        public static void RunFocusedTests()
+        {
+            var config = JsonUtility.FromJson<FocusedTests>(File.ReadAllText("AutomationConfigs/editmode_focused.json"));
+            if (config?.groupNames == null || config.groupNames.Length == 0 || config.groupNames.Any(string.IsNullOrWhiteSpace))
+                throw new InvalidOperationException("必须指定待验证的测试类，不能隐式执行全量测试");
+            RunTests(false, config.groupNames);
+        }
+
         [MenuItem("Tools/Mage Knight/Rules/Verify Wrong Expectation Fails")]
         public static void VerifyWrongExpectation()
         {
@@ -126,13 +137,13 @@ namespace MageKnight.SceneAutomation.Editor
             SceneAutomationCommand.RunFromProjectRelativeConfig("AutomationConfigs/adventure_expected_failure.json");
         }
 
-        private static void RunTests(bool all)
+        private static void RunTests(bool all, string[] groups = null)
         {
             if (EditorApplication.isPlaying) throw new InvalidOperationException("Exit Play Mode before running tests.");
             _testRunner = ScriptableObject.CreateInstance<TestRunnerApi>();
             _testRunner.RegisterCallbacks(new TestResults(NewOutputDirectory("EditMode")));
             var filter = new Filter { testMode = TestMode.EditMode };
-            if (!all) filter.groupNames = new[] { "^MK.Tests.Rules.", "^MK.Tests.Adventure.", "^MK.Tests.map.TerrainCostTests" };
+            if (!all) filter.groupNames = groups ?? new[] { "^MK.Tests.Rules.", "^MK.Tests.Adventure.", "^MK.Tests.map.TerrainCostTests" };
             _testRunner.Execute(new ExecutionSettings(filter));
         }
 

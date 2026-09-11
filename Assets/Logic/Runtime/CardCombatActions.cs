@@ -17,7 +17,7 @@ namespace MK.Logic.Runtime
             if (phase != Phase.Ranged && phase != Phase.Melee) throw new InvalidOperationException("当前不是攻击阶段");
             if (targets == null || targets.Count == 0 || targets.Distinct().Count() != targets.Count ||
                 targets.Any(i => i < 0 || i >= enemies.Count)) throw new InvalidOperationException("攻击目标无效");
-            var parts = context.CombatPower.AvailableAttacks(phase);
+            var parts = context.CombatPower.AvailableAttacks(phase, targets);
             if (parts.Length == 0) throw new InvalidOperationException("没有可用于此阶段的攻击");
             if (!CombatMath.CanAttack(enemies, targets, parts, phase, context))
                 throw new InvalidOperationException("城防限制：当前攻击不能指定这些目标");
@@ -25,7 +25,7 @@ namespace MK.Logic.Runtime
                 ? Math.Max(1, enemies[i].Armor - reduction) : enemies[i].Armor);
             int effective = CombatMath.EffectiveAttack(enemies, targets, parts, phase, context);
             var allocation = new AttackAllocation(targets, parts.Sum(p => p.Value), Element.Physical, Components: parts);
-            context.CombatPower.ConsumeAttacks(phase);
+            context.CombatPower.ConsumeAttacks(parts);
             int beforeFame = player.Fame;
             int kills;
             if (phase == Phase.Ranged)

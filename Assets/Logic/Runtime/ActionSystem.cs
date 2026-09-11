@@ -340,7 +340,8 @@ namespace MK.Logic.Runtime
             int preUnitAtk = ctx.UnitAttackBonus;
             int preUnitBlk = ctx.UnitBlockBonus;
             effect.Execute(player, ctx, option);
-            if (ctx.NextMeleeAsRanged && ctx.MeleePool > preMelee)
+            if (ctx.NextMeleeAsRanged && ctx.CombatPower.Attacks.Skip(firstCombatContribution)
+                .Any(a => a.Type == AttackType.Melee && a.ExcludedTargetIndex < 0))
             {
                 ctx.CombatPower.ConvertNewMeleeToRanged(firstCombatContribution);
                 ctx.NextMeleeAsRanged = false;

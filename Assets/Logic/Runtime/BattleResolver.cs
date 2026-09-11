@@ -49,6 +49,14 @@ namespace MK.Logic.Runtime
             IGameLogger?                   logger = null,
             IReadOnlyList<UnitDamageAllocation>? damageAssignments = null)
         {
+            // 在分配伤害等状态变更前拒绝绕过卡牌操作入口的非法附身攻击。
+            foreach (var attack in attacks ?? Array.Empty<AttackAllocation>())
+            {
+                var targets = attack.TargetIndices == null || attack.TargetIndices.Count == 0
+                    ? Enumerable.Range(0, enemies.Count).ToArray() : attack.TargetIndices;
+                if (CombatMath.Parts(attack).Any(p => p.ExcludedTargetIndex >= 0 && targets.Contains(p.ExcludedTargetIndex)))
+                    throw new InvalidOperationException("附身攻击不能指定其来源敌人");
+            }
             var damageContext = ctx ?? new ActionContext();
             var damagePlan = new Dictionary<int, IReadOnlyList<UnitState>>();
             if (damageAssignments != null)

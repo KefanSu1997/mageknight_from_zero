@@ -756,6 +756,47 @@ combat('magic_011',True,'配对所得蓝魔力继续施放原迷雾形态','Rang
        'token:Green':3,'crystal:Green':0,'played:attackElement':'Ice'})
 
 
+# magic_021: possession preserves printed power, element and source exclusion.
+for element, traits in [('Physical',['PhysicalResist']),('Fire',['FireResist']),('Ice',['IceResist']),('ColdFire',['FireResist','IceResist'])]:
+    for resisted in [False,True]:
+        effective=3 if resisted else 7
+        operation_case('magic_021',True,element+'附身攻击其他敌人'+('并结算抗性' if resisted else ''),
+            {**operation_result(0,7,effective,effective,kills=1),'Fame':3,'Wounds':3,
+             'played:MeleePool':7,'played:attackElement':element,'SkipAttackIndices:0':True},
+            [combat_operation('Attack',1)],enemies=[enemy(5,7,element,['Brutal','Swift','Poison']),enemy(effective,abilities=traits if resisted else [])])
+operation_case('magic_021',True,'附身第二个敌人并用其攻击第一个敌人',
+    {**operation_result(0,7,7,7,kills=1),'Fame':3,'SkipAttackIndices:1':True,'played:attackElement':'Ice'},
+    [combat_operation('Attack',0)],option=1,enemies=[enemy(7),enemy(5,7,'Ice')])
+operation_case('magic_021',True,'禁止攻击附身来源且保留攻击供另一目标使用',
+    {'operation:0:success':False,'operation:0:exception':'没有可用于此阶段的攻击','operation:0:MeleePool':4,
+     **operation_result(1,4,4,4,kills=1),'Fame':3},
+    [combat_operation('Attack',0),combat_operation('Attack',1)],enemies=[enemy(4,4),enemy(4)])
+operation_case('magic_021',True,'普通攻击击杀附身者后仍可使用借来的攻击',
+    {**operation_result(0,4,4,4,kills=1),'operation:0:MeleePool':4,
+     **operation_result(1,4,4,4,kills=1),'Fame':6},
+    [combat_operation('Attack',0),combat_operation('Attack',1)],setup={'MeleePool':4},enemies=[enemy(4,4),enemy(4)])
+operation_case('magic_021',True,'第二个敌人被附身不造成毒素伤牌且可用于攻击',
+    {**operation_result(0,0,0,8,wounds=0),**operation_result(1,8,8,8,kills=1),'Wounds':3,'handWounds':3,'DiscardWounds':0,'Fame':3},
+    [combat_operation('Block',1),combat_operation('Attack',0)],option=1,
+    enemies=[enemy(8),enemy(5,8,'Fire',['Poison'])])
+operation_case('magic_021',True,'零攻击敌人不凭空产生攻击力',
+    {'operation:0:success':False,'operation:0:exception':'没有可用于此阶段的攻击','SkipAttackIndices:0':True},
+    [combat_operation('Attack',1)],enemies=[enemy(5,0),enemy(4)])
+for target in [-1,1]:
+    case('magic_021',True,'非法敌人索引在费用支付前拒绝',{'SkipAttackIndices:count':0,'PossessedEnemyIndices:count':0},
+         option=target,error='InvalidOperationException: 附身必须选择当前战斗中的敌人')
+for setup in [{'token:White':0,'crystal:White':0},{'token:Black':0},{'DayPart':'Day'}]:
+    case('magic_021',True,'附身费用或昼夜条件不满足时原子拒绝',{'SkipAttackIndices:count':0},setup=setup,
+         error='InvalidOperationException: '+('白昼不能施放强效法术' if 'DayPart' in setup else '法力不足，不能支付所选效果'))
+combat('magic_021',True,'附身不能借转远程效果提前攻击','Ranged',[enemy(5,4),enemy(4)],0,0,9,
+       setup={'NextMeleeAsRanged':True},extra={'MeleePool':4,'NextMeleeAsRanged':True},
+       error='InvalidOperationException: 没有可用于此阶段的攻击')
+operation_case('magic_021',True,'结束战斗后借来的攻击与跳过攻击标记过期',
+    {'SkipAttackIndices:count':0,'PossessedEnemyIndices:count':0,
+     'operation:1:success':False,'operation:1:exception':'没有可用于此阶段的攻击'},
+    [dict(kind='EndBattle'),combat_operation('Attack',1)],enemies=[enemy(5,4),enemy(4)])
+
+
 def write_json(path, value):
     data = (json.dumps(value, ensure_ascii=False, indent=2) + '\n').encode('utf-8')
     if path.exists() and path.read_bytes() == data:
@@ -794,7 +835,7 @@ def export():
             steps.append(dict(label=c['id'] + '_execute', buttonPath='Canvas/UIRoot/Btn_Play',
                               before=[expectation('art', c['cardId'])], after=[expectation('executed', True), expectation('completed', i + 1)]))
         for step in steps:
-            if step['label'].startswith(('magic_014_', 'magic_011_')):
+            if step['label'].startswith(('magic_014_', 'magic_011_', 'magic_021_')):
                 step.setdefault('after', []).append(expectation('ui:textFits', True))
         config = dict(scenePath=f'Assets/Scenes/Verification/{batch}.unity',
                       screenshotsDirectory=f'AutomationOutputs/AllOriginalCards/20260910/{batch}/captures',

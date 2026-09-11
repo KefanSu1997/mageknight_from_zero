@@ -1,0 +1,415 @@
+{
+  "files": [
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/effects.json",
+      "bytes": 1120265,
+      "sha256": "dd1eb6728988bc1e3dc016f037af248fd65aa55131f108bb927706df9e2be400"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/report.json",
+      "bytes": 549230,
+      "sha256": "0c10df165ce8440f63ec03d91c08b2a16eb82b3f272b64ffc40f3dddfab1e951"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/request.json",
+      "bytes": 96114,
+      "sha256": "a00d1daf5d45d22ea29add607a3c5ff41a29efe81517f704495b04b366cfdd9c"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/逐例验收.md",
+      "bytes": 38202,
+      "sha256": "014c7f7b0ee66c9baca9fcf6ba390a9d1e830c6117f3a7ef424e13eec44a5e32"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/captures/000_Scene Start.png",
+      "bytes": 985516,
+      "sha256": "70a73c9533807f9177c949787b7b7b4a9c5aa35ef5b0ea703ae8cd965d907ea6"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/captures/002_magic_010_01_execute.png",
+      "bytes": 1047032,
+      "sha256": "a33c41395c599ac817e17d0e8cd6710bf248c2eb9c5d45ec29b73afeff74d8b7"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/captures/005_magic_021_00_execute.png",
+      "bytes": 970160,
+      "sha256": "0ecfe2fe5f1d6a69bb9f98b74bea789c0b7dd4b2e3680abb6b8b49a030e7af97"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/captures/008_magic_021_01_execute.png",
+      "bytes": 985921,
+      "sha256": "252b1354b28b8fc9fb33b54911576cfc60cfae5d62e8dd1097f8bd3085cac0c6"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/captures/011_magic_011_28_play.png",
+      "bytes": 1061275,
+      "sha256": "1e6abea31cce0ecde6106e2988b9f9a1b1aeb14998d23a4a609843cd83d8a0cb"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/captures/012_magic_011_28_execute.png",
+      "bytes": 1121825,
+      "sha256": "8d8b0f19ca6d372a6e27bd1e91762e414b6cc879f3b08323d476905fbcead6ce"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/captures/015_magic_021_02_play.png",
+      "bytes": 890612,
+      "sha256": "0d69351ac529fcdb84c692cf37f22519dc792122a34beceb708a9644df743c82"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/captures/016_magic_021_02_execute.png",
+      "bytes": 929025,
+      "sha256": "3bdae4fbc5da3cd0c8226f38cb6881277db0652b2aa9b14c44444f2e0867eef5"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/captures/019_magic_021_03_play.png",
+      "bytes": 897676,
+      "sha256": "0890196a021f59a0afbe1ad757b7c17511cecbf332d6c034f8949624f59f1e28"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/captures/020_magic_021_03_execute.png",
+      "bytes": 937603,
+      "sha256": "ef4bd7ac95c12b9cfd6c27bb5360df5354ae2a5dfed6171e4a6aa896ec6543bf"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/captures/023_magic_021_04_play.png",
+      "bytes": 886706,
+      "sha256": "e3fc35de7b8b5260e40952ac328e3a60801d50ca3f491f00aa7e92d97dca0151"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/captures/024_magic_021_04_execute.png",
+      "bytes": 925751,
+      "sha256": "144de2810e000ef0f641d9dfbcb1fbdbbc3a3e09720d5260f4f3ee07b95206c2"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/captures/027_magic_021_05_play.png",
+      "bytes": 892390,
+      "sha256": "595bac4aa3b4b8a4f2e56eb59fb3bca37617a17df2f484bd9c1befdb9ea19d94"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/captures/028_magic_021_05_execute.png",
+      "bytes": 933417,
+      "sha256": "367f9258f7cadb40a968dfffd45852df5f4dba4206e78cab224a25be9c9a3730"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/captures/031_magic_021_06_play.png",
+      "bytes": 886797,
+      "sha256": "eca2b873c0f83c92a797787db4ec471dda2cc00fbfa816c5a728e778d1139119"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/captures/032_magic_021_06_execute.png",
+      "bytes": 925871,
+      "sha256": "1d447f484639adf77bf6c97720c860b0a99cafa573882ec3045cd106e67cff59"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/captures/035_magic_021_07_play.png",
+      "bytes": 892386,
+      "sha256": "d25f3c77eb2a2f80707b9133117083a7a8de3d90eb28099260dfb243ddf9ee5e"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/captures/036_magic_021_07_execute.png",
+      "bytes": 933491,
+      "sha256": "fa846a51e0daaaa951b8e4221878d1db4ef4ef161ad426d355da2539f77de3a6"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/captures/039_magic_021_08_play.png",
+      "bytes": 890246,
+      "sha256": "5cf2638b839b108f1e495fde02a8ef8d4d07807466194e2341190e82a52f188c"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/captures/040_magic_021_08_execute.png",
+      "bytes": 928237,
+      "sha256": "5dd51cb362e2d05df8b506a9228559cf44b36acaa24c61199ce2f6b860a04f9c"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/captures/043_magic_021_09_play.png",
+      "bytes": 897925,
+      "sha256": "fb4d3a5bdd0da61c910fef051d71c119791f060b150e9e769e6415bca9c8a00f"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/captures/044_magic_021_09_execute.png",
+      "bytes": 937921,
+      "sha256": "808c851e55ed912342548a329dfade207103a6974a4682b3d58ffa2c626dee84"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/captures/047_magic_021_10_play.png",
+      "bytes": 884916,
+      "sha256": "7e3c1686e7d8deddd6970a4885530dd744face1811d94b394b8aa6260e03aa3b"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/captures/048_magic_021_10_execute.png",
+      "bytes": 924311,
+      "sha256": "a0bb709cb8f8f6d3c4ced394467e028d7fda369e4a010672f87e892380223300"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/captures/051_magic_021_11_play.png",
+      "bytes": 891696,
+      "sha256": "76c31a9f3409904787e95b11a47dfe4ba245c860c2c9a8a184e995b049558720"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/captures/052_magic_021_11_operation_0.png",
+      "bytes": 891806,
+      "sha256": "1af999edf4042ca39be22d6c0e2c7b0256ea3bc38a8d6227e498bd8c0cf84a09"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/captures/053_magic_021_11_execute.png",
+      "bytes": 950817,
+      "sha256": "65522ad7e7bacf2c1b034fcd767ed7b1b7ad6b79195aa4f91d935db2d0f1170c"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/captures/056_magic_021_12_play.png",
+      "bytes": 891833,
+      "sha256": "ddb21bed7bf8a924c8137c4edd7faf31aa2c3e0b5b0941aa2ca381f21c73f927"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/captures/057_magic_021_12_operation_0.png",
+      "bytes": 909400,
+      "sha256": "07d1bd8a82d6af1ac3eb0952e3cefe9c46d3d02cc91aa40834b1418884b85779"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/captures/058_magic_021_12_execute.png",
+      "bytes": 951182,
+      "sha256": "b4d2cf14e9cc54866c77e36ad87fd766e6920b5d070320e2aafa86a1914848da"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/captures/061_magic_021_13_play.png",
+      "bytes": 894910,
+      "sha256": "3706a098b37a4040a036bfdca9b81a3253fb602d6935b9794b7da0eaa07af348"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/captures/062_magic_021_13_operation_0.png",
+      "bytes": 913329,
+      "sha256": "0164424a3e2bf09744d752b8905cdfb645bf0559b85004ba249ba48cd6b7da33"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/captures/063_magic_021_13_execute.png",
+      "bytes": 965275,
+      "sha256": "00f1ce420ac73a22a71b7d96e0bb5fc390a31a46f266fa8c6480f011a674282b"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/captures/066_magic_021_14_play.png",
+      "bytes": 884493,
+      "sha256": "e09a9110abf0364e6e92289d9fc9d221b59dcd56862230ab5a9205be98e07d5d"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/captures/067_magic_021_14_execute.png",
+      "bytes": 924434,
+      "sha256": "3992bc9ec2d670a1c55c0d067082ad44043ea15f936c2b0e415bd3c8586a21df"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/captures/070_magic_021_15_execute.png",
+      "bytes": 994818,
+      "sha256": "02022369c3eb892d0876c0d0c9ea0a4e2e786db12aa18107b2ada19bd66625f5"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/captures/073_magic_021_16_execute.png",
+      "bytes": 994670,
+      "sha256": "f77cc6e9c74cc83d4e8b3f5efdd562d5475bc7fb875a5bd8833d3139c40af024"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/captures/076_magic_021_17_execute.png",
+      "bytes": 991355,
+      "sha256": "c7b5f96349d9ef2db0e1416bcf916ffdfdc3d18ac4eab9099e8f42c69d1fd774"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/captures/079_magic_021_18_execute.png",
+      "bytes": 990685,
+      "sha256": "5864513e7bfdefe28f5d48f565d3bc6101f9446574424164b7865c1daec14371"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/captures/082_magic_021_19_execute.png",
+      "bytes": 989556,
+      "sha256": "b90096bad8984c6c2ee5dabb38729aa32d0381001ded02296c1994cc852c7368"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/captures/085_magic_021_20_play.png",
+      "bytes": 926239,
+      "sha256": "aac6ae32d0cec7c49c4b02a4301464a4c36502f73dfbfe136d8e619681a57b4f"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/captures/086_magic_021_20_execute.png",
+      "bytes": 989067,
+      "sha256": "f43ba6f45c71fac343387449f191d2ffa9098766fc1b10b8a47772594ea7da38"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/captures/089_magic_021_21_play.png",
+      "bytes": 888442,
+      "sha256": "90d3b6578b0152eeb7bb171e2d2d50e7e3a22154530ec1076b61d10105b51505"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/captures/090_magic_021_21_operation_0.png",
+      "bytes": 890655,
+      "sha256": "641669389916e84ef0d24cbaec6c4220d5fb0c638a25871b568fd073d6fcd89e"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/captures/091_magic_021_21_execute.png",
+      "bytes": 935508,
+      "sha256": "4b126bc57ee45f6b69827d14c942c5057d878d8c547723ed306e2320cc15ec6a"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/checkpoints/0001.json",
+      "bytes": 31215,
+      "sha256": "77c4f7e338f6f8a697b9a5a0e26dd42986358d15153d62dc927be4934fa57aeb"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/checkpoints/0002.json",
+      "bytes": 30976,
+      "sha256": "c30fbe4eb3ed94d23674b4eadae2cb9beb1358f2acd5371bade81ca7ff020013"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/checkpoints/0003.json",
+      "bytes": 31491,
+      "sha256": "e1717a9e881973766a2e0e1452ffddd603278f507470e39b678c6b9e4be85aed"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/checkpoints/0004.json",
+      "bytes": 35678,
+      "sha256": "e0708031409f70d1ddb13dfc7b90f68b6dae83a88d5214fcb30d1db48175b224"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/checkpoints/0005.json",
+      "bytes": 34687,
+      "sha256": "4433f4821616531eb14b485082cf30beba80528d3cc98aa164970be1b2adbf8a"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/checkpoints/0006.json",
+      "bytes": 34702,
+      "sha256": "638d0ed4d1068722bc0428bed2be9555e6ca76a378d083b4791f161d6d63c91c"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/checkpoints/0007.json",
+      "bytes": 34671,
+      "sha256": "b4491b397ded6c9f8f2088118c653d4083979128e8d8178725ab4edcb7a3e1fd"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/checkpoints/0008.json",
+      "bytes": 34686,
+      "sha256": "296524311c9eb4df0121ce81cae163dab6667d9ab08b136d835de575934c3e25"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/checkpoints/0009.json",
+      "bytes": 34667,
+      "sha256": "7416d9ff220bff76ddba960365e098466a144bc9dfabae66f03992326fc363b2"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/checkpoints/0010.json",
+      "bytes": 34682,
+      "sha256": "634fdcf87f4472934a91d6abffec3921e6dedfbe49989794ef7d5cf69e6d281f"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/checkpoints/0011.json",
+      "bytes": 34687,
+      "sha256": "ec85dd2750f8204cfb4c5c58778968281edc63332b56b9853d2d6f5c09b1c0a7"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/checkpoints/0012.json",
+      "bytes": 34702,
+      "sha256": "e12b8708047fecce6acd5b368969e8accfa3dc8e7d28b05f8dc492a708062f44"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/checkpoints/0013.json",
+      "bytes": 34415,
+      "sha256": "4b5f222ec63b0ea6c4bfbd08094e9468854fccbee375732523b1361e8fb957fe"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/checkpoints/0014.json",
+      "bytes": 35034,
+      "sha256": "82eedf050d099768d961c579999b4bc98b0f11e0e080f878cf8cd50227a63718"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/checkpoints/0015.json",
+      "bytes": 35983,
+      "sha256": "6fe309643e641cff6f91ee485afe85c817d9eb1d44f18f9cdaa9a3234026f35b"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/checkpoints/0016.json",
+      "bytes": 36265,
+      "sha256": "79c24db6bc88bd422ce30c7a5a56a7e815889556fbe36886859dd36f22b66a64"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/checkpoints/0017.json",
+      "bytes": 33174,
+      "sha256": "60324848abe5389eea573e5d464a58260a0dc48cbe5263e2464ab58b9c192a51"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/checkpoints/0018.json",
+      "bytes": 34207,
+      "sha256": "aa562d111343102d77e9a3da79edfff3042003dff3341cb9928767933964fdce"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/checkpoints/0019.json",
+      "bytes": 34207,
+      "sha256": "6fb7d05c85b7b0856508c1faddc6f75819bad1d44d4b5c6e85a56f3da8ee20fb"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/checkpoints/0020.json",
+      "bytes": 34050,
+      "sha256": "e01f20cb734b447bbf2c34c83aa9d9cea0d8cb492e8ee7c6177afff5013bd868"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/checkpoints/0021.json",
+      "bytes": 34050,
+      "sha256": "c3a0e2094c72df99be345248a141fcb6ecb3365be59dc079bf93d5f77c44e55d"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/checkpoints/0022.json",
+      "bytes": 34010,
+      "sha256": "9edcb2d1c5d4acf1ef8c0c2bdf58750983e22e062d1bcff92feb3682de2d7185"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/checkpoints/0023.json",
+      "bytes": 32668,
+      "sha256": "3c54ce6b60a59be5c2b55bef03b1999d6d36f83e17e4cf3ad7d45ef309227f45"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220743_42666613/magic/checkpoints/0024.json",
+      "bytes": 33257,
+      "sha256": "73d09e6241081328d67d5e2733a0c7067aa3f20aa40a05236ef8646d4d1c0f77"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220957_5f6c50b2/magic/effects.json",
+      "bytes": 49841,
+      "sha256": "305dc2dfabab98a21bbd6b5f2a170477efe0ee11adecd481cd7500a5acd57d2a"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220957_5f6c50b2/magic/report.json",
+      "bytes": 24650,
+      "sha256": "7085d9cfada471cae9a258419b385a6742c91de190d5d2b30f8a15444123dedd"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220957_5f6c50b2/magic/request.json",
+      "bytes": 4762,
+      "sha256": "c3e57bda27a8d7613b51ea6081c07cf916236e776b6972147b5f798154a6ec47"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220957_5f6c50b2/magic/逐例验收.md",
+      "bytes": 1872,
+      "sha256": "5ab21d21b48e4084746ed80687f0a483e76c07e3a72e9d62aa3599709f28b472"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220957_5f6c50b2/magic/captures/000_Scene Start.png",
+      "bytes": 930119,
+      "sha256": "0ccb1462b9878f7e2b65a877c5d1b8637799b5a153e0a392d89e16a40b78005e"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220957_5f6c50b2/magic/captures/002_magic_021_13_play.png",
+      "bytes": 893382,
+      "sha256": "f692efd37a3fe89bdf11cb21453504c55a9fa984d8508d488fe8b0beb40292cb"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220957_5f6c50b2/magic/captures/003_magic_021_13_operation_0.png",
+      "bytes": 911905,
+      "sha256": "1fed7495c70bcec524a7250584927e1d3d171330abb2f09eaf29219ad0e1d589"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220957_5f6c50b2/magic/captures/004_magic_021_13_execute.png",
+      "bytes": 967670,
+      "sha256": "8f8c6c0596696a0cf465d03e87228b87df58e48111496dd9eeaf9da3d891acba"
+    },
+    {
+      "path": "AutomationOutputs/AllOriginalCards/20260911_220957_5f6c50b2/magic/checkpoints/0001.json",
+      "bytes": 36239,
+      "sha256": "9b8a0801451db3274b6a593a4bec7c5be290b71dae9ed7911b3665f1da5ea5e7"
+    }
+  ],
+  "bytes": 48669595
+}

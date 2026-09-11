@@ -44228,6 +44228,2276 @@
           "fame": 3
         }
       ]
+    },
+    {
+      "id": "magic_021_02",
+      "cardId": "magic_021",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / Physical附身攻击其他敌人",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:White",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "operation:0:printed",
+          "value": "7"
+        },
+        {
+          "key": "operation:0:effective",
+          "value": "7"
+        },
+        {
+          "key": "operation:0:required",
+          "value": "7"
+        },
+        {
+          "key": "operation:0:kills",
+          "value": "1"
+        },
+        {
+          "key": "operation:0:wounds",
+          "value": "0"
+        },
+        {
+          "key": "Fame",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "played:MeleePool",
+          "value": "7"
+        },
+        {
+          "key": "played:attackElement",
+          "value": "Physical"
+        },
+        {
+          "key": "SkipAttackIndices:0",
+          "value": "True"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Attack",
+          "targetIndex": 1
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 7,
+          "element": "Physical",
+          "abilities": [
+            "Brutal",
+            "Swift",
+            "Poison"
+          ],
+          "fame": 3
+        },
+        {
+          "id": "规则目标",
+          "armor": 7,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_021_03",
+      "cardId": "magic_021",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / Physical附身攻击其他敌人并结算抗性",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:White",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "operation:0:printed",
+          "value": "7"
+        },
+        {
+          "key": "operation:0:effective",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:required",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:kills",
+          "value": "1"
+        },
+        {
+          "key": "operation:0:wounds",
+          "value": "0"
+        },
+        {
+          "key": "Fame",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "played:MeleePool",
+          "value": "7"
+        },
+        {
+          "key": "played:attackElement",
+          "value": "Physical"
+        },
+        {
+          "key": "SkipAttackIndices:0",
+          "value": "True"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Attack",
+          "targetIndex": 1
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 7,
+          "element": "Physical",
+          "abilities": [
+            "Brutal",
+            "Swift",
+            "Poison"
+          ],
+          "fame": 3
+        },
+        {
+          "id": "规则目标",
+          "armor": 3,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [
+            "PhysicalResist"
+          ],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_021_04",
+      "cardId": "magic_021",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / Fire附身攻击其他敌人",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:White",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "operation:0:printed",
+          "value": "7"
+        },
+        {
+          "key": "operation:0:effective",
+          "value": "7"
+        },
+        {
+          "key": "operation:0:required",
+          "value": "7"
+        },
+        {
+          "key": "operation:0:kills",
+          "value": "1"
+        },
+        {
+          "key": "operation:0:wounds",
+          "value": "0"
+        },
+        {
+          "key": "Fame",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "played:MeleePool",
+          "value": "7"
+        },
+        {
+          "key": "played:attackElement",
+          "value": "Fire"
+        },
+        {
+          "key": "SkipAttackIndices:0",
+          "value": "True"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Attack",
+          "targetIndex": 1
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 7,
+          "element": "Fire",
+          "abilities": [
+            "Brutal",
+            "Swift",
+            "Poison"
+          ],
+          "fame": 3
+        },
+        {
+          "id": "规则目标",
+          "armor": 7,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_021_05",
+      "cardId": "magic_021",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / Fire附身攻击其他敌人并结算抗性",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:White",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "operation:0:printed",
+          "value": "7"
+        },
+        {
+          "key": "operation:0:effective",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:required",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:kills",
+          "value": "1"
+        },
+        {
+          "key": "operation:0:wounds",
+          "value": "0"
+        },
+        {
+          "key": "Fame",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "played:MeleePool",
+          "value": "7"
+        },
+        {
+          "key": "played:attackElement",
+          "value": "Fire"
+        },
+        {
+          "key": "SkipAttackIndices:0",
+          "value": "True"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Attack",
+          "targetIndex": 1
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 7,
+          "element": "Fire",
+          "abilities": [
+            "Brutal",
+            "Swift",
+            "Poison"
+          ],
+          "fame": 3
+        },
+        {
+          "id": "规则目标",
+          "armor": 3,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [
+            "FireResist"
+          ],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_021_06",
+      "cardId": "magic_021",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / Ice附身攻击其他敌人",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:White",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "operation:0:printed",
+          "value": "7"
+        },
+        {
+          "key": "operation:0:effective",
+          "value": "7"
+        },
+        {
+          "key": "operation:0:required",
+          "value": "7"
+        },
+        {
+          "key": "operation:0:kills",
+          "value": "1"
+        },
+        {
+          "key": "operation:0:wounds",
+          "value": "0"
+        },
+        {
+          "key": "Fame",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "played:MeleePool",
+          "value": "7"
+        },
+        {
+          "key": "played:attackElement",
+          "value": "Ice"
+        },
+        {
+          "key": "SkipAttackIndices:0",
+          "value": "True"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Attack",
+          "targetIndex": 1
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 7,
+          "element": "Ice",
+          "abilities": [
+            "Brutal",
+            "Swift",
+            "Poison"
+          ],
+          "fame": 3
+        },
+        {
+          "id": "规则目标",
+          "armor": 7,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_021_07",
+      "cardId": "magic_021",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / Ice附身攻击其他敌人并结算抗性",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:White",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "operation:0:printed",
+          "value": "7"
+        },
+        {
+          "key": "operation:0:effective",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:required",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:kills",
+          "value": "1"
+        },
+        {
+          "key": "operation:0:wounds",
+          "value": "0"
+        },
+        {
+          "key": "Fame",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "played:MeleePool",
+          "value": "7"
+        },
+        {
+          "key": "played:attackElement",
+          "value": "Ice"
+        },
+        {
+          "key": "SkipAttackIndices:0",
+          "value": "True"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Attack",
+          "targetIndex": 1
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 7,
+          "element": "Ice",
+          "abilities": [
+            "Brutal",
+            "Swift",
+            "Poison"
+          ],
+          "fame": 3
+        },
+        {
+          "id": "规则目标",
+          "armor": 3,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [
+            "IceResist"
+          ],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_021_08",
+      "cardId": "magic_021",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / ColdFire附身攻击其他敌人",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:White",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "operation:0:printed",
+          "value": "7"
+        },
+        {
+          "key": "operation:0:effective",
+          "value": "7"
+        },
+        {
+          "key": "operation:0:required",
+          "value": "7"
+        },
+        {
+          "key": "operation:0:kills",
+          "value": "1"
+        },
+        {
+          "key": "operation:0:wounds",
+          "value": "0"
+        },
+        {
+          "key": "Fame",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "played:MeleePool",
+          "value": "7"
+        },
+        {
+          "key": "played:attackElement",
+          "value": "ColdFire"
+        },
+        {
+          "key": "SkipAttackIndices:0",
+          "value": "True"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Attack",
+          "targetIndex": 1
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 7,
+          "element": "ColdFire",
+          "abilities": [
+            "Brutal",
+            "Swift",
+            "Poison"
+          ],
+          "fame": 3
+        },
+        {
+          "id": "规则目标",
+          "armor": 7,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_021_09",
+      "cardId": "magic_021",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / ColdFire附身攻击其他敌人并结算抗性",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:White",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "operation:0:printed",
+          "value": "7"
+        },
+        {
+          "key": "operation:0:effective",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:required",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:kills",
+          "value": "1"
+        },
+        {
+          "key": "operation:0:wounds",
+          "value": "0"
+        },
+        {
+          "key": "Fame",
+          "value": "3"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "played:MeleePool",
+          "value": "7"
+        },
+        {
+          "key": "played:attackElement",
+          "value": "ColdFire"
+        },
+        {
+          "key": "SkipAttackIndices:0",
+          "value": "True"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Attack",
+          "targetIndex": 1
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 7,
+          "element": "ColdFire",
+          "abilities": [
+            "Brutal",
+            "Swift",
+            "Poison"
+          ],
+          "fame": 3
+        },
+        {
+          "id": "规则目标",
+          "armor": 3,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [
+            "FireResist",
+            "IceResist"
+          ],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_021_10",
+      "cardId": "magic_021",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 1,
+      "effectChoice": "",
+      "title": "强化 / 附身第二个敌人并用其攻击第一个敌人",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:White",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "operation:0:printed",
+          "value": "7"
+        },
+        {
+          "key": "operation:0:effective",
+          "value": "7"
+        },
+        {
+          "key": "operation:0:required",
+          "value": "7"
+        },
+        {
+          "key": "operation:0:kills",
+          "value": "1"
+        },
+        {
+          "key": "operation:0:wounds",
+          "value": "0"
+        },
+        {
+          "key": "Fame",
+          "value": "3"
+        },
+        {
+          "key": "SkipAttackIndices:1",
+          "value": "True"
+        },
+        {
+          "key": "played:attackElement",
+          "value": "Ice"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Attack",
+          "targetIndex": 0
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 7,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [],
+          "fame": 3
+        },
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 7,
+          "element": "Ice",
+          "abilities": [],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_021_11",
+      "cardId": "magic_021",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 禁止攻击附身来源且保留攻击供另一目标使用",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:White",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:exception",
+          "value": "没有可用于此阶段的攻击"
+        },
+        {
+          "key": "operation:0:MeleePool",
+          "value": "4"
+        },
+        {
+          "key": "operation:1:printed",
+          "value": "4"
+        },
+        {
+          "key": "operation:1:effective",
+          "value": "4"
+        },
+        {
+          "key": "operation:1:required",
+          "value": "4"
+        },
+        {
+          "key": "operation:1:kills",
+          "value": "1"
+        },
+        {
+          "key": "operation:1:wounds",
+          "value": "0"
+        },
+        {
+          "key": "Fame",
+          "value": "3"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Attack",
+          "targetIndex": 0
+        },
+        {
+          "kind": "Attack",
+          "targetIndex": 1
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 4,
+          "attack": 4,
+          "element": "Physical",
+          "abilities": [],
+          "fame": 3
+        },
+        {
+          "id": "规则目标",
+          "armor": 4,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_021_12",
+      "cardId": "magic_021",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 普通攻击击杀附身者后仍可使用借来的攻击",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "MeleePool",
+          "value": "4"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:White",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "operation:0:printed",
+          "value": "4"
+        },
+        {
+          "key": "operation:0:effective",
+          "value": "4"
+        },
+        {
+          "key": "operation:0:required",
+          "value": "4"
+        },
+        {
+          "key": "operation:0:kills",
+          "value": "1"
+        },
+        {
+          "key": "operation:0:wounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:MeleePool",
+          "value": "4"
+        },
+        {
+          "key": "operation:1:printed",
+          "value": "4"
+        },
+        {
+          "key": "operation:1:effective",
+          "value": "4"
+        },
+        {
+          "key": "operation:1:required",
+          "value": "4"
+        },
+        {
+          "key": "operation:1:kills",
+          "value": "1"
+        },
+        {
+          "key": "operation:1:wounds",
+          "value": "0"
+        },
+        {
+          "key": "Fame",
+          "value": "6"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Attack",
+          "targetIndex": 0
+        },
+        {
+          "kind": "Attack",
+          "targetIndex": 1
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 4,
+          "attack": 4,
+          "element": "Physical",
+          "abilities": [],
+          "fame": 3
+        },
+        {
+          "id": "规则目标",
+          "armor": 4,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_021_13",
+      "cardId": "magic_021",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 1,
+      "effectChoice": "",
+      "title": "强化 / 第二个敌人被附身不造成毒素伤牌且可用于攻击",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:White",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "operation:0:printed",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:effective",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:required",
+          "value": "8"
+        },
+        {
+          "key": "operation:0:kills",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:wounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:1:printed",
+          "value": "8"
+        },
+        {
+          "key": "operation:1:effective",
+          "value": "8"
+        },
+        {
+          "key": "operation:1:required",
+          "value": "8"
+        },
+        {
+          "key": "operation:1:kills",
+          "value": "1"
+        },
+        {
+          "key": "operation:1:wounds",
+          "value": "0"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "DiscardWounds",
+          "value": "0"
+        },
+        {
+          "key": "Fame",
+          "value": "3"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Block",
+          "targetIndex": 1
+        },
+        {
+          "kind": "Attack",
+          "targetIndex": 0
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 8,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [],
+          "fame": 3
+        },
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 8,
+          "element": "Fire",
+          "abilities": [
+            "Poison"
+          ],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_021_14",
+      "cardId": "magic_021",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 零攻击敌人不凭空产生攻击力",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:White",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:exception",
+          "value": "没有可用于此阶段的攻击"
+        },
+        {
+          "key": "SkipAttackIndices:0",
+          "value": "True"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Attack",
+          "targetIndex": 1
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [],
+          "fame": 3
+        },
+        {
+          "id": "规则目标",
+          "armor": 4,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [],
+          "fame": 3
+        }
+      ]
+    },
+    {
+      "id": "magic_021_15",
+      "cardId": "magic_021",
+      "batch": "magic",
+      "enhanced": true,
+      "option": -1,
+      "effectChoice": "",
+      "title": "强化 / 非法敌人索引在费用支付前拒绝",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Black",
+          "value": "2"
+        },
+        {
+          "key": "SkipAttackIndices:count",
+          "value": "0"
+        },
+        {
+          "key": "PossessedEnemyIndices:count",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "2"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "Reputation",
+          "value": "0"
+        },
+        {
+          "key": "unitReady",
+          "value": "False"
+        },
+        {
+          "key": "unitWounds",
+          "value": "0"
+        },
+        {
+          "key": "ManaCurseTriggered",
+          "value": "False"
+        }
+      ],
+      "limitations": [],
+      "expectedException": "InvalidOperationException: 附身必须选择当前战斗中的敌人"
+    },
+    {
+      "id": "magic_021_16",
+      "cardId": "magic_021",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 1,
+      "effectChoice": "",
+      "title": "强化 / 非法敌人索引在费用支付前拒绝",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Black",
+          "value": "2"
+        },
+        {
+          "key": "SkipAttackIndices:count",
+          "value": "0"
+        },
+        {
+          "key": "PossessedEnemyIndices:count",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "2"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "Reputation",
+          "value": "0"
+        },
+        {
+          "key": "unitReady",
+          "value": "False"
+        },
+        {
+          "key": "unitWounds",
+          "value": "0"
+        },
+        {
+          "key": "ManaCurseTriggered",
+          "value": "False"
+        }
+      ],
+      "limitations": [],
+      "expectedException": "InvalidOperationException: 附身必须选择当前战斗中的敌人"
+    },
+    {
+      "id": "magic_021_17",
+      "cardId": "magic_021",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 附身费用或昼夜条件不满足时原子拒绝",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "token:White",
+          "value": "0"
+        },
+        {
+          "key": "crystal:White",
+          "value": "0"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:White",
+          "value": "0"
+        },
+        {
+          "key": "token:Black",
+          "value": "2"
+        },
+        {
+          "key": "SkipAttackIndices:count",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "2"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "Reputation",
+          "value": "0"
+        },
+        {
+          "key": "unitReady",
+          "value": "False"
+        },
+        {
+          "key": "unitWounds",
+          "value": "0"
+        },
+        {
+          "key": "ManaCurseTriggered",
+          "value": "False"
+        }
+      ],
+      "limitations": [],
+      "expectedException": "InvalidOperationException: 法力不足，不能支付所选效果"
+    },
+    {
+      "id": "magic_021_18",
+      "cardId": "magic_021",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 附身费用或昼夜条件不满足时原子拒绝",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "token:Black",
+          "value": "0"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Black",
+          "value": "0"
+        },
+        {
+          "key": "SkipAttackIndices:count",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "2"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "Reputation",
+          "value": "0"
+        },
+        {
+          "key": "unitReady",
+          "value": "False"
+        },
+        {
+          "key": "unitWounds",
+          "value": "0"
+        },
+        {
+          "key": "ManaCurseTriggered",
+          "value": "False"
+        }
+      ],
+      "limitations": [],
+      "expectedException": "InvalidOperationException: 法力不足，不能支付所选效果"
+    },
+    {
+      "id": "magic_021_19",
+      "cardId": "magic_021",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 附身费用或昼夜条件不满足时原子拒绝",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "DayPart",
+          "value": "Day"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Black",
+          "value": "2"
+        },
+        {
+          "key": "SkipAttackIndices:count",
+          "value": "0"
+        },
+        {
+          "key": "token:Red",
+          "value": "2"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "Reputation",
+          "value": "0"
+        },
+        {
+          "key": "unitReady",
+          "value": "False"
+        },
+        {
+          "key": "unitWounds",
+          "value": "0"
+        },
+        {
+          "key": "ManaCurseTriggered",
+          "value": "False"
+        }
+      ],
+      "limitations": [],
+      "expectedException": "InvalidOperationException: 白昼不能施放强效法术"
+    },
+    {
+      "id": "magic_021_20",
+      "cardId": "magic_021",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 附身不能借转远程效果提前攻击",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "NextMeleeAsRanged",
+          "value": "True"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "4"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:White",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "NextMeleeAsRanged",
+          "value": "True"
+        }
+      ],
+      "limitations": [
+        "此例覆盖出牌、战斗资源及目标结算；整卡回合生命周期与其余条件仍按总表验收"
+      ],
+      "combatPhase": "Ranged",
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 4,
+          "element": "Physical",
+          "abilities": [],
+          "fame": 3
+        },
+        {
+          "id": "规则目标",
+          "armor": 4,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [],
+          "fame": 3
+        }
+      ],
+      "expectedException": "InvalidOperationException: 没有可用于此阶段的攻击"
+    },
+    {
+      "id": "magic_021_21",
+      "cardId": "magic_021",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 结束战斗后借来的攻击与跳过攻击标记过期",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:White",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "SkipAttackIndices:count",
+          "value": "0"
+        },
+        {
+          "key": "PossessedEnemyIndices:count",
+          "value": "0"
+        },
+        {
+          "key": "operation:1:success",
+          "value": "False"
+        },
+        {
+          "key": "operation:1:exception",
+          "value": "没有可用于此阶段的攻击"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "EndBattle"
+        },
+        {
+          "kind": "Attack",
+          "targetIndex": 1
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 4,
+          "element": "Physical",
+          "abilities": [],
+          "fame": 3
+        },
+        {
+          "id": "规则目标",
+          "armor": 4,
+          "attack": 0,
+          "element": "Physical",
+          "abilities": [],
+          "fame": 3
+        }
+      ]
     }
   ]
 }

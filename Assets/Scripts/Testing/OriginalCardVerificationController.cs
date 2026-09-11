@@ -322,6 +322,7 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
         _comparison.text = $"原卡已执行：移动力{_context.MovementPool}，影响力{_context.InfluencePool}\n"
             + (operation.kind == "Move" ? $"下一步移动至({operation.q},{operation.r})，实际费用{MovementService.GetCost(new AxialCoord(operation.q, operation.r), _context.MovementMap, _context.DayPart, _context)}"
             : operation.kind == "Ready" ? $"下一步重整目标部队{operation.targetIndex}；每级{_context.ReadyInfluencePerLevel}影响力，等级上限{_context.ReadyUnitMaxLevel}"
+            : operation.kind == "EndBattle" ? "下一步结束本场战斗，检查附身的攻击与不攻击标记过期。"
             : "下一步结束回合，检查临时减费与重整许可过期。")
             + "\n" + string.Join("；", _operationResults.Select(v => v.Key + "=" + v.Value));
         if (operation.kind == "Block" || operation.kind == "Attack")
@@ -333,7 +334,7 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
                 + "\n" + string.Join("；", _operationResults.Where(v => v.Key.EndsWith(":effective") || v.Key.EndsWith(":kills") || v.Key.EndsWith(":wounds")).Select(v => Label(v.Key) + "=" + v.Value));
         }
         _status.text = $"等待确认操作 {_operationIndex + 1}/{_case.operations.Length}";
-        _play.GetComponentInChildren<TextMeshProUGUI>().text = operation.kind == "Block" ? "确认敌人并格挡" : operation.kind == "Attack" ? "确认敌人并攻击" : operation.kind == "Move" ? "确认目标并移动" : operation.kind == "Ready" ? "确认部队并重整" : "确认结束回合";
+        _play.GetComponentInChildren<TextMeshProUGUI>().text = operation.kind == "Block" ? "确认敌人并格挡" : operation.kind == "Attack" ? "确认敌人并攻击" : operation.kind == "Move" ? "确认目标并移动" : operation.kind == "Ready" ? "确认部队并重整" : operation.kind == "EndBattle" ? "确认结束战斗" : "确认结束回合";
         if (_case.unitIds?.Length > 0)
         {
             _fixture.text = DamageFixture();
@@ -409,6 +410,7 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
                 _operationResults[key + ":exception"] = e.Message;
             }
             _operationResults[key + ":BlockPool"] = _context.BlockPool.ToString();
+            _operationResults[key + ":MeleePool"] = _context.MeleePool.ToString();
         }
         else if (operation.kind == "Move")
         {
@@ -508,7 +510,7 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
                 string prefix = "operation:" + i + ":";
                 if (_operationResults.TryGetValue(prefix + "exception", out string operationError) && operationError.Length > 0)
                 {
-                    lines.Add($"操作{i + 1}已拒绝：{operationError}；剩余格挡{_operationResults[prefix + "BlockPool"]}");
+                    lines.Add($"操作{i + 1}已拒绝：{operationError}；剩余格挡{_operationResults[prefix + "BlockPool"]}，近战{_operationResults[prefix + "MeleePool"]}");
                     continue;
                 }
                 var fields = checks.Where(c => c.key.StartsWith(prefix) && new[] { "printed", "effective", "required", "kills", "wounds" }.Contains(c.key.Substring(prefix.Length))).ToArray();

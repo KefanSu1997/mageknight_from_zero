@@ -91,6 +91,7 @@ namespace MK.Logic.Runtime
 
         /// <summary>本回合無法攻擊的敵人索引。</summary>
         public HashSet<int> SkipAttackIndices { get; } = new();
+        public HashSet<int> PossessedEnemyIndices { get; } = new();
 
         /// <summary>被移除火焰抗性的敵人索引。</summary>
         public HashSet<int> FireResistRemoved { get; } = new();

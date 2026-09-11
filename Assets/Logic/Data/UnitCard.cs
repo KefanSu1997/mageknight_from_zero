@@ -9,7 +9,8 @@ namespace MK.Logic.Data
         AttackType Type,            // 攻击所属阶段：近战 / 远程 / 攻城
         int        Value,           // 攻击力数值
         Element    Element,         // 元素类型
-        bool       IsSweep = false  // 是否带有“范围”效果
+        bool       IsSweep = false, // 是否带有“范围”效果
+        int ExcludedTargetIndex = -1 // 附身贡献不能攻击其来源敌人；仅在近战攻击阶段使用
     );
 
     public sealed record UnitCard
