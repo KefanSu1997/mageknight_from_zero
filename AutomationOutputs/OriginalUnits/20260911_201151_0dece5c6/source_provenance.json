@@ -1,0 +1,38 @@
+{
+  "sourceCommit": "bbb94cfd08ad43ba2b13287b60809fabc23e56da",
+  "branch": "feat/card-rules-completion",
+  "sourceSha256": {
+    "AGENTS.md": "7f139c4a16197917d0428f46960bba0c420de46645b1bbd7681ecbe86ebae81c",
+    "Assets/Logic/Runtime/AbilityRules.cs": "fabb8bd06a6239dd4ade50fde4d3c907281bb425181ef2729e1fb377729aa8e3",
+    "Assets/Logic/Runtime/ActionContext.cs": "bd5ad6fcc8f7229870d36d0f596b65ab09b2001773c0f59f44254204bba5a625",
+    "Assets/Logic/Runtime/BattleResolver.cs": "bc09d992b3aeefe5e8c7e20a2d59c8802489170adb63d4349a9949e9e1510e5c",
+    "Assets/Resources/CardVerification/unit_cases.json": "0f1291e6f9f09b2fdd7b696d487c068aa5efdb5e862fb818e6c453f48b4ced50",
+    "Assets/Scripts/Testing/UnitVerificationController.cs": "a39ba54a9ebd7e25998813a9c07658eaaf482b436db9d46160c8115d37fc1713",
+    "AutomationConfigs/AllOriginalCards/units.json": "1736c342584a3b7aaa72c80ef612bc4a7c684729b1c98e8e10ae7aeca5a27822",
+    "tools/build_unit_verification.py": "1bd47d137288f87f843a9bc98b38f122b9cb4b2eff6763f6a31bb26c179ef212",
+    "tools/verify_unit_scenes.py": "241390ae3dc98568525f03a6b9fe948165f2c8d685dfac6651168396c9569b11",
+    "vibe_coding/codex/worklog_2026-09-11_original_unit_damage.md": "bea55b77e0c2f00ecd6acb660ba216210ab965cb14f2e39ff551688b12012326",
+    "vibe_coding/codex/project_experience/original_unit_damage_allocation_2026-09-11.md": "362cd1e5a26f711f065fa89bcfeb669c2c04c0e7d22f69e2980d8ac56197c6ed",
+    "vibe_coding/codex/pr_card_rules_completion_2026-09-10.md": "d7814fc0ec931e49487fdb26cfbcfbe286979998ab8aafd8334241dcc5bde05e",
+    "Assets/Logic/Data/UnitDamageAllocation.cs": "2c75d9f6868346237cf7ad6e6892660099fff0b60967e686bc7a9099e7e9aaf1",
+    "Assets/Logic/Data/UnitDamageAllocation.cs.meta": "bb2fba6b9ef647b09f59bcba64b72b09fed53a214dfce57ba44d1951b1826b0b",
+    "Assets/Logic/Runtime/UnitDamageResolver.cs": "a899e506a7ef4a7631d2b9c968bb68df66d4ded21411f414ecd5e5301b6fdd3a",
+    "Assets/Logic/Runtime/UnitDamageResolver.cs.meta": "8968b3071c45ee129c6707ca11e8ad52181e7b4a79bc99460fdd2b48e74093d7",
+    "Assets/Tests/OriginalUnitDamageTests.cs": "bba21705ff29da59d0bbb4e80b38826ff29e8c347bc1b5d89d5c05b1e87e6b65",
+    "Assets/Tests/OriginalUnitDamageTests.cs.meta": "d03088fb655dff66917f9bef08071bce3989d327e2b4d3a1df315bd03271d353"
+  },
+  "rulebook": {
+    "path": "resources/rulebook/rulebook_chinese.PDF",
+    "sha256": "d3b7ceb6fb0790e224172198c78a798369b07b13e4b6c1a5a3609609134f51a4",
+    "reviewedPages": [
+      9,
+      10
+    ]
+  },
+  "editMode": "AutomationOutputs/EditMode/20260911_201105_2b05c37c",
+  "deedRegression": "AutomationOutputs/AllOriginalCards/20260911_201543_752adb07",
+  "adventureRegression": "AutomationOutputs/AdventureRegression/20260911_202138_3e2efa16",
+  "remotePush": "paused; no screenshot upload to repository",
+  "fullOriginalCardCompletion": false,
+  "supersededVisualFailure": "AutomationOutputs/OriginalUnits/20260911_200437_b4955b92"
+}

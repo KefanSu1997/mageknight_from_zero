@@ -1,0 +1,85 @@
+{
+  "baseline": "AutomationOutputs\\AllOriginalCards\\20260910_232109_6fc276ee",
+  "current": "AutomationOutputs\\AllOriginalCards\\20260911_201543_752adb07",
+  "identicalImages": 639,
+  "differentImages": [
+    {
+      "batch": "basic_card",
+      "label": "basic_card_014_00_execute",
+      "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\AllOriginalCards\\20260911_201543_752adb07\\basic_card\\captures\\005_basic_card_014_00_execute.png",
+      "differenceBounds": [
+        870,
+        967,
+        1220,
+        1032
+      ],
+      "changedPixels": 20888,
+      "review": "Difference confined to the existing execution button rectangle; source, rule and all existing effect-state fields unchanged."
+    },
+    {
+      "batch": "basic_card",
+      "label": "basic_card_001_00_execute",
+      "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\AllOriginalCards\\20260911_201543_752adb07\\basic_card\\captures\\008_basic_card_001_00_execute.png",
+      "differenceBounds": [
+        870,
+        967,
+        1220,
+        1032
+      ],
+      "changedPixels": 20285,
+      "review": "Difference confined to the existing execution button rectangle; source, rule and all existing effect-state fields unchanged."
+    },
+    {
+      "batch": "magic",
+      "label": "magic_008_07_play",
+      "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\AllOriginalCards\\20260911_201543_752adb07\\magic\\captures\\343_magic_008_07_play.png",
+      "differenceBounds": [
+        855,
+        104,
+        857,
+        105
+      ],
+      "changedPixels": 2,
+      "review": "Two changed pixels in the title area; cause not established; existing source/rule/effect-state values unchanged."
+    },
+    {
+      "batch": "magic",
+      "label": "magic_008_07_operation_0",
+      "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\AllOriginalCards\\20260911_201543_752adb07\\magic\\captures\\344_magic_008_07_operation_0.png",
+      "differenceBounds": [
+        855,
+        104,
+        857,
+        105
+      ],
+      "changedPixels": 2,
+      "review": "Two changed pixels in the title area; cause not established; existing source/rule/effect-state values unchanged."
+    },
+    {
+      "batch": "magic",
+      "label": "magic_008_07_execute",
+      "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\AllOriginalCards\\20260911_201543_752adb07\\magic\\captures\\345_magic_008_07_execute.png",
+      "differenceBounds": [
+        855,
+        104,
+        857,
+        105
+      ],
+      "changedPixels": 2,
+      "review": "Two changed pixels in the title area; cause not established; existing source/rule/effect-state values unchanged."
+    },
+    {
+      "batch": "items",
+      "label": "items_009_00_execute",
+      "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\AllOriginalCards\\20260911_201543_752adb07\\items\\captures\\056_items_009_00_execute.png",
+      "differenceBounds": [
+        751,
+        720,
+        774,
+        743
+      ],
+      "changedPixels": 437,
+      "review": "Unseeded Horn die changed White to Red and actual wound count changed consistently; full values retained in iteration_delta.json."
+    }
+  ]
+}

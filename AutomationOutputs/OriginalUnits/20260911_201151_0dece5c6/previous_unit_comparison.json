@@ -1,0 +1,8 @@
+{
+  "baseline": "AutomationOutputs\\OriginalUnits\\20260911_193332_c99cb476",
+  "current": "AutomationOutputs\\OriginalUnits\\20260911_201151_0dece5c6",
+  "previousOperations": 612,
+  "originalCasesUnchanged": 110,
+  "stateChangesExcludingSuiteHash": [],
+  "notes": "Suite hash changes because 46 cases were appended; text-fit assertions were added; UI layout was corrected, so pixel identity is not asserted."
+}
