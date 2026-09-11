@@ -35,6 +35,7 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
     private PlayerState _player;
     private ActionContext _context;
     private ActionSystem _system;
+    private UnitState[] _damageUnits;
     private int _index;
     private int _operationIndex;
     private readonly Dictionary<string, string> _operationResults = new();
@@ -154,9 +155,13 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
         // A declared fixture, not a new gameplay card: two exhausted level-2 units.
         var unit = new UnitCard("verification_unit", "验收部队", "Fixture", 2, 4, 6, RecruitLocation.Village,
             Array.Empty<AttackProfile>(), Array.Empty<Ability>());
-        foreach (int level in _case.unitLevels ?? new[] { 2, 2 })
-            _player.Units.Add(new UnitState(new UnitCard(unit.Id, unit.NameCn, "Fixture", level, 4, 6,
-                RecruitLocation.Village, Array.Empty<AttackProfile>(), Array.Empty<Ability>())));
+        if (_case.unitIds?.Length > 0)
+            foreach (string id in _case.unitIds) _player.Units.Add(new UnitState(CardJsonLoader.LoadUnit(id)));
+        else
+            foreach (int level in _case.unitLevels ?? new[] { 2, 2 })
+                _player.Units.Add(new UnitState(new UnitCard(unit.Id, unit.NameCn, "Fixture", level, 4, 6,
+                    RecruitLocation.Village, Array.Empty<AttackProfile>(), Array.Empty<Ability>())));
+        _damageUnits = _player.Units.ToArray();
         foreach (var u in _player.Units) u.Exhaust();
         _player.Units[0].AddWounds(_case.unitWounds);
         if (_case.unitInitiallyReady) _player.Units[0].Ready();
@@ -198,6 +203,7 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
         if (!string.IsNullOrEmpty(_case.combatPhase))
             _fixture.text = "目标：" + string.Join(" / ", _context.Enemies.Select(e => $"{e.Id} 护甲{e.Armor} 攻击{e.Attack}({e.AttackElement}) [{string.Join(",", e.Abilities)}]"))
                 + $"\n{_case.combatPhase}阶段 · 城防地点={_context.FortifiedSite} · {_context.DayPart} · 地形{_context.CurrentTerrain} · 移动费修正{(_context.TerrainCostOverride.TryGetValue(_context.CurrentTerrain, out int overrideCost) ? overrideCost.ToString() : "无")}";
+        if (_case.unitIds?.Length > 0) _fixture.text = DamageFixture();
         _play.interactable = false;
     }
 
@@ -286,7 +292,7 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
     {
         var operation = _case.operations[_operationIndex];
         _fixture.text = $"本次操作前：位置({_player.Position.Q},{_player.Position.R}) · {_context.DayPart} · 目标地形{_context.MovementMap.Placed[new AxialCoord(1, 0)].Edges[0]}"
-            + $"\n部队等级{_player.Units[0].Card.Level} · 伤牌{_player.Units[0].Wounds} · 就绪{_player.Units[0].IsReady}";
+            + $"\n部队等级{_damageUnits[0].Card.Level} · 伤牌{_damageUnits[0].Wounds} · 就绪{_damageUnits[0].IsReady}";
         _comparison.text = $"原卡已执行：移动力{_context.MovementPool}，影响力{_context.InfluencePool}\n"
             + (operation.kind == "Move" ? $"下一步移动至({operation.q},{operation.r})，实际费用{MovementService.GetCost(new AxialCoord(operation.q, operation.r), _context.MovementMap, _context.DayPart, _context)}"
             : operation.kind == "Ready" ? $"下一步重整目标部队{operation.targetIndex}；每级{_context.ReadyInfluencePerLevel}影响力，等级上限{_context.ReadyUnitMaxLevel}"
@@ -302,13 +308,57 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
         }
         _status.text = $"等待确认操作 {_operationIndex + 1}/{_case.operations.Length}";
         _play.GetComponentInChildren<TextMeshProUGUI>().text = operation.kind == "Block" ? "确认敌人并格挡" : operation.kind == "Attack" ? "确认敌人并攻击" : operation.kind == "Move" ? "确认目标并移动" : operation.kind == "Ready" ? "确认部队并重整" : "确认结束回合";
+        if (_case.unitIds?.Length > 0)
+        {
+            _fixture.text = DamageFixture();
+            string action = operation.kind == "Damage" ? $"敌人{operation.targetIndex}承伤；部队顺序[{string.Join(",", operation.unitTargets ?? Array.Empty<int>())}]"
+                : operation.kind == "EndBattle" ? "结束本场战斗" : operation.kind == "SelfWound" ? "测试非敌人来源伤牌" : "结束回合";
+            _comparison.text = $"下一步：{action}\n全抗性{_context.UnitsResistAll}；英雄首伤忽略待用{_context.IgnoreNextWound}\n" + DamageHistory();
+            _play.GetComponentInChildren<TextMeshProUGUI>().text = operation.kind == "Damage" ? "确认分配伤害" : "确认后续操作";
+        }
     }
+
+    private string DamageFixture() => "原版部队：" + string.Join(" / ", _damageUnits.Select((u, i) => $"{i}:{u.Card.NameCn} 护甲{u.Card.Armor} 伤牌{u.Wounds} 销毁{u.IsDestroyed}"))
+        + "\n敌人：" + string.Join(" / ", _context.Enemies.Select((e, i) => $"{i}:攻击{e.Attack}({e.AttackElement}) [{string.Join(",", e.Abilities)}]"));
+
+    private string DamageHistory() => string.Join("\n", Enumerable.Range(0, _operationIndex).Select(i =>
+    {
+        string p = "operation:" + i + ":";
+        return $"步骤{i + 1}：英雄伤牌{_operationResults.GetValueOrDefault(p + "heroWounds")} / 弃牌伤牌{_operationResults.GetValueOrDefault(p + "discardWounds")}；部队伤牌{_operationResults.GetValueOrDefault(p + "unitWounds")}；首伤待用{_operationResults.GetValueOrDefault(p + "ignoreWound")}";
+    }));
 
     private void ResolveOperation()
     {
         var operation = _case.operations[_operationIndex];
         string key = "operation:" + _operationIndex;
-        if (operation.kind == "Block" || operation.kind == "Attack")
+        if (operation.kind == "Damage")
+        {
+            var targets = (operation.unitTargets ?? Array.Empty<int>()).Select(i => _damageUnits[i]).ToArray();
+            try
+            {
+                BattleResolver.Resolve(_player, new[] { _context.Enemies[operation.targetIndex] },
+                    Array.Empty<BlockAllocation>(), Array.Empty<AttackAllocation>(), ctx: _context,
+                    damageAssignments: new[] { new UnitDamageAllocation(0, targets) });
+                _operationResults[key + ":success"] = "True";
+                _operationResults[key + ":exception"] = "";
+            }
+            catch (InvalidOperationException e)
+            {
+                _operationResults[key + ":success"] = "False";
+                _operationResults[key + ":exception"] = e.Message;
+            }
+        }
+        else if (operation.kind == "EndBattle")
+        {
+            UnitDamageResolver.EndBattle(_player, _context);
+            _operationResults[key + ":success"] = "True";
+        }
+        else if (operation.kind == "SelfWound")
+        {
+            _player.Wounds += 1;
+            _operationResults[key + ":success"] = "True";
+        }
+        else if (operation.kind == "Block" || operation.kind == "Attack")
         {
             try
             {
@@ -354,6 +404,15 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
             _operationResults[key + ":success"] = "True";
         }
         else throw new InvalidOperationException("Unknown verification operation " + operation.kind);
+        if (_case.unitIds?.Length > 0)
+        {
+            _operationResults[key + ":heroWounds"] = _player.Wounds.ToString();
+            _operationResults[key + ":discardWounds"] = _player.DiscardWounds.ToString();
+            _operationResults[key + ":unitWounds"] = string.Join(",", _damageUnits.Select(u => u.Wounds));
+            _operationResults[key + ":destroyed"] = string.Join(",", _damageUnits.Select(u => u.IsDestroyed));
+            _operationResults[key + ":ignoreWound"] = _context.IgnoreNextWound.ToString();
+            _operationResults[key + ":allResist"] = _context.UnitsResistAll.ToString();
+        }
         _operationIndex++;
         if (_operationIndex < _case.operations.Length) ShowNextOperation();
         else CompleteCase("", "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer");
@@ -444,6 +503,13 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
         if (_context.LastManaRolls.Count > 0)
             _comparison.text += "\n本次实际骰面：" + string.Join("、", _context.LastManaRolls.Select(c => c switch
                 { ManaColor.Red => "红", ManaColor.Blue => "蓝", ManaColor.Green => "绿", ManaColor.White => "白", ManaColor.Gold => "金", _ => "黑" }));
+        if (_case.unitIds?.Length > 0 && _operationIndex > 0)
+        {
+            _fixture.text = DamageFixture();
+            _comparison.text = "逐步承伤记录（实际牌区）\n" + DamageHistory()
+                + "\n费用：" + string.Join("；", checks.Where(c => c.key.StartsWith("token:")).Select(c => Label(c.key) + " " + _before[c.key] + "→" + c.actual + " [预期" + c.expected + "]"))
+                + $"\n独立效果断言：{checks.Count(c => c.passed)}/{checks.Count}；全抗性{_context.UnitsResistAll}；首伤待用{_context.IgnoreNextWound}";
+        }
         _status.color = status == "failed" ? new Color32(244, 142, 118, 255) : W.Gold;
         SaveResults();
     }
@@ -523,7 +589,7 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
         result["move:selectedCost"] = MovementService.GetCost(new AxialCoord(1, 0), _context.MovementMap, _context.DayPart, _context).ToString();
         result["move:otherCost"] = MovementService.GetCost(new AxialCoord(2, 0), _context.MovementMap, _context.DayPart, _context).ToString();
         result["position:q"] = _player.Position.Q.ToString(); result["position:r"] = _player.Position.R.ToString();
-        result["unitCanActivate"] = _player.Units[0].CanActivate.ToString();
+        result["unitCanActivate"] = _damageUnits[0].CanActivate.ToString();
         result["readyUnits"] = _player.Units.Count(u => u.IsReady).ToString();
         foreach (var operation in _operationResults) result[operation.Key] = operation.Value;
         result["attackElement"] = string.Join("+", _context.CombatPower.Attacks.Select(a => a.Element).Distinct().OrderBy(e => e));
@@ -543,19 +609,26 @@ public sealed class OriginalCardVerificationController : MonoBehaviour, ISceneAu
         result["hand"] = _player.Deck.Hand.Count.ToString();
         result["handWounds"] = _player.Deck.Hand.Count(c => c.Type == CardType.Wound).ToString();
         result["discard"] = _player.Deck.DiscardPile.Count.ToString();
-        result["unitReady"] = _player.Units[0].IsReady.ToString(); result["unitWounds"] = _player.Units[0].Wounds.ToString();
-        result["unitLevel"] = _player.Units[0].Card.Level.ToString();
-        result["unitPhysicalResist"] = _player.Units[0].PhysicalResistTemp.ToString();
+        result["unitReady"] = _damageUnits[0].IsReady.ToString(); result["unitWounds"] = _damageUnits[0].Wounds.ToString();
+        result["unitLevel"] = _damageUnits[0].Card.Level.ToString();
+        result["unitPhysicalResist"] = _damageUnits[0].PhysicalResistTemp.ToString();
         result["advancedOffer"] = _context.AdvActionSupply.Offer.Count.ToString(); result["spellOffer"] = _context.SpellSupply.Offer.Count.ToString();
         result["skillOffer"] = _context.SkillSupply.Offer.Count.ToString();
         return result;
     }
 
-    public Dictionary<string, string> ReadAutomationState() => new()
+    public Dictionary<string, string> ReadAutomationState()
     {
+        _comparison.ForceMeshUpdate(); _fixture.ForceMeshUpdate(); _printed.ForceMeshUpdate();
+        return new()
+        {
+        ["ui:textFits"] = (!_comparison.isTextTruncated && !_comparison.isTextOverflowing
+            && !_fixture.isTextTruncated && !_fixture.isTextOverflowing
+            && !_printed.isTextTruncated && !_printed.isTextOverflowing).ToString(),
         ["caseId"] = _case.id, ["cardId"] = _entry.source.Id, ["art"] = _art.sprite?.name ?? "",
         ["operationCount"] = _operationIndex.ToString(), ["played"] = _played.ToString(), ["ui:fixture"] = _fixture.text,
         ["selected"] = _selected.ToString(), ["executed"] = _executed.ToString(), ["completed"] = _results.Count.ToString(),
         ["ui:rule"] = _printed.text, ["ui:comparison"] = _comparison.text, ["ui:status"] = _status.text
-    };
+        };
+    }
 }

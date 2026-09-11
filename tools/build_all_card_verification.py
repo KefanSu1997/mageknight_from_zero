@@ -5,6 +5,7 @@ rules. A partial case is never promoted to a fully verified card.
 """
 from pathlib import Path
 import json
+import os
 
 ROOT = Path(__file__).resolve().parents[1]
 COLORS = ['Red', 'Blue', 'Green', 'White', 'Gold', 'Black']
@@ -589,10 +590,97 @@ for strong in [False,True]:
     case('items_020',strong,'拒绝单次与分次之外的选项',{},option=2,error='InvalidOperationException: 亡君之盾必须选择单次或分次格挡')
 
 
+# Original magic_014: independently authored downstream expectations, appended
+# without changing any of the previous 490 definitions.
+def mist_damage(title, enemies, operations, expected):
+    operation_case('magic_014', True, title, expected, operations,
+                   enemies=enemies, unitIds=['army_2_006', 'army_2_001'])
+
+
+def damage(target=0, units=()):
+    return dict(kind='Damage', targetIndex=target, unitTargets=list(units))
+
+
+def mist_state(index, hero=3, discard=0, wounds='0,0', ignored=True, resistance=True,
+               destroyed='False,False', success=True):
+    return {f'operation:{index}:{k}': v for k, v in dict(heroWounds=hero, discardWounds=discard,
+            unitWounds=wounds, ignoreWound=ignored, allResist=resistance, destroyed=destroyed, success=success).items()}
+
+
+for element in ['Physical', 'Fire', 'Ice', 'ColdFire']:
+    for attack, wounds, hero, ignored in [(3,'0,0',3,True),(4,'1,0',3,True),(6,'1,0',3,True),(7,'1,0',3,False),(9,'1,0',4,False)]:
+        mist_damage(element+'全抗性承伤'+str(attack), [enemy(5,attack,element)], [damage(units=[0])],
+                    {'Wounds':hero, 'unitWounds':int(wounds[0]), 'IgnoreNextWound':ignored,
+                     **mist_state(0,hero=hero,wounds=wounds,ignored=ignored)})
+mist_damage('所有原部队分别吸收且不消费英雄首伤', [enemy(5,3,'ColdFire'),enemy(5,3,'Fire')],
+            [damage(0,[0]),damage(1,[1])], {**mist_state(0),**mist_state(1), 'DamageAssignedUnits:count':2})
+mist_damage('同回合另一场战斗继续获得抗性', [enemy(5,3,'ColdFire')],
+            [damage(0,[0]),dict(kind='EndBattle'),damage(0,[0])],
+            {**mist_state(0),**mist_state(1),**mist_state(2)})
+mist_damage('本场重复分配被拒绝且资源不变', [enemy(5,3,'Ice')],
+            [damage(0,[0]),damage(0,[0])], {**mist_state(0),**mist_state(1,success=False),
+             'operation:1:exception':'同场战斗不能重复向该部队分配伤害'})
+mist_damage('跨战斗仍生效而结束回合后失效', [enemy(5,3,'ColdFire')],
+            [damage(0,[0]),dict(kind='EndBattle'),dict(kind='EndTurn'),damage(0,[0])],
+            {**mist_state(0),**mist_state(1),**mist_state(2,ignored=False,resistance=False),
+             **mist_state(3,wounds='1,0',ignored=False,resistance=False),
+             'token:Blue':0,'token:Black':0,'UnitsResistAll':False,'IgnoreNextWound':False})
+for trait in ['Poison','Paralyze']:
+    mist_damage('英雄第一伤忽略'+trait+'随后再次承伤', [enemy(5,2,abilities=[trait])],
+                [damage(),damage()], {**mist_state(0,ignored=False),
+                 **mist_state(1,hero=4,discard=1 if trait=='Poison' else 0,ignored=False),
+                 'Wounds':4,'hand':7 if trait=='Poison' else 4,'discard':3 if trait=='Poison' else 5})
+    mist_damage('同一攻击剩余伤牌仍触发'+trait, [enemy(5,4,abilities=[trait])], [damage()],
+                {**mist_state(0,hero=4,discard=1 if trait=='Poison' else 0,ignored=False),
+                 'Wounds':4,'hand':7 if trait=='Poison' else 4,'discard':3 if trait=='Poison' else 5})
+    mist_damage('全抗性避免部队伤牌及'+trait, [enemy(5,3,'ColdFire',[trait])], [damage(0,[0])], mist_state(0))
+    mist_damage('抗性超额部队仍受'+trait, [enemy(5,4,'ColdFire',[trait])], [damage(0,[0])],
+                mist_state(0,wounds='2,0' if trait=='Poison' else '0,0',destroyed='True,False' if trait=='Paralyze' else 'False,False'))
+mist_damage('非敌人创伤不消费首伤保护', [enemy(5,2,abilities=['Poison'])],
+            [dict(kind='SelfWound'),damage()], {**mist_state(0,hero=4),**mist_state(1,hero=4,ignored=False),'Wounds':4})
+
+for time in ['Day','Night']:
+    for terrain in ['Plains','Forest','Desert','Swamp','Wasteland','Lake','Hills','Mountain']:
+        allowed = terrain not in ['Hills','Mountain']
+        operation_case('magic_014',False,time+terrain+'两格移动后不得透支',
+            {'MovementPool':0 if allowed else 4,'position:q':2 if allowed else 0,
+             **{f'operation:{i}:success':allowed and i<2 for i in range(3)},
+             **{f'operation:{i}:cost':2 if allowed else 2147483647 for i in range(3)}},
+            [move(1),move(2),move(1)],setup={'DayPart':time},destinationTerrain=terrain)
+for terrain,cost in [('Lake',2147483647),('Hills',3),('Mountain',2147483647),('Forest',5)]:
+    operation_case('magic_014',False,'结束回合恢复'+terrain+'通行规则',
+        {'MovementPool':0,'MoveForbidden:count':0,
+         'move:selectedCost':cost,'operation:0:success':True,'operation:1:success':False,
+         'operation:1:cost':cost,'token:Blue':0},
+        [dict(kind='EndTurn'),move(1)],setup={'DayPart':'Night'},destinationTerrain=terrain)
+for strong in [False,True]:
+    case('magic_014',strong,'无效选项在支付前拒绝',{'UnitsResistAll':False,'IgnoreNextWound':False},option=1,
+         error='InvalidOperationException: 迷雾形态没有可选分支')
+    case('magic_014',strong,'缺蓝色费用原子拒绝',{'UnitsResistAll':False,'IgnoreNextWound':False},
+         setup={'token:Blue':0,'crystal:Blue':0},error='InvalidOperationException: 法力不足，不能支付所选效果')
+case('magic_014',True,'缺黑色费用不先扣蓝色',{'UnitsResistAll':False,'IgnoreNextWound':False},
+     setup={'token:Black':0},error='InvalidOperationException: 法力不足，不能支付所选效果')
+case('magic_014',True,'白昼拒绝强效法术',{'UnitsResistAll':False,'IgnoreNextWound':False},
+     setup={'DayPart':'Day'},error='InvalidOperationException: 白昼不能施放强效法术')
+operation_case('magic_014',True,'蓝晶加黑标记支付后实际忽略毒素首伤',
+    {'token:Blue':0,'crystal:Blue':0,'token:Black':1,**mist_state(0,ignored=False)},
+    [damage()],setup={'token:Blue':0},enemies=[enemy(5,2,abilities=['Poison'])],
+    unitIds=['army_2_006','army_2_001'])
+
+
+def write_json(path, value):
+    data = (json.dumps(value, ensure_ascii=False, indent=2) + '\n').encode('utf-8')
+    if path.exists() and path.read_bytes() == data:
+        return
+    temporary = path.with_suffix(path.suffix + '.tmp')
+    temporary.write_bytes(data)
+    os.replace(temporary, path)
+
+
 def export():
     target = ROOT / 'Assets/Resources/CardVerification'
     target.mkdir(exist_ok=True)
-    (target / 'cases.json').write_text(json.dumps({'cases': CASES}, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    write_json(target / 'cases.json', {'cases': CASES})
     counts = {}
     for batch in ['basic_card', 'advanced_card', 'magic', 'items']:
         group = [c for c in CASES if c['batch'] == batch]
@@ -617,13 +705,16 @@ def export():
                                   after=[expectation('operationCount', operation_index + 1), expectation('executed', False)]))
             steps.append(dict(label=c['id'] + '_execute', buttonPath='Canvas/UIRoot/Btn_Play',
                               before=[expectation('art', c['cardId'])], after=[expectation('executed', True), expectation('completed', i + 1)]))
+        for step in steps:
+            if step['label'].startswith('magic_014_'):
+                step.setdefault('after', []).append(expectation('ui:textFits', True))
         config = dict(scenePath=f'Assets/Scenes/Verification/{batch}.unity',
                       screenshotsDirectory=f'AutomationOutputs/AllOriginalCards/20260910/{batch}/captures',
                       reportPath=f'AutomationOutputs/AllOriginalCards/20260910/{batch}/report.json', useRunSubfolder=False,
                       captureInitialView=True, initialDelaySeconds=1.5, defaultWaitAfterSeconds=0.05, maxRunSeconds=900, steps=steps)
         folder = ROOT / 'AutomationConfigs/AllOriginalCards'
         folder.mkdir(exist_ok=True)
-        (folder / (batch + '.json')).write_text(json.dumps(config, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+        write_json(folder / (batch + '.json'), config)
     print(json.dumps({'cards': len(CARDS), 'cases': len(CASES), 'batches': counts}, ensure_ascii=False))
 
 

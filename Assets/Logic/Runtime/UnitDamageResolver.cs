@@ -24,7 +24,7 @@ namespace MK.Logic.Runtime
             if (damage < 0) throw new ArgumentOutOfRangeException(nameof(damage));
             if (damage == 0) return 0;
             int armor = Math.Max(1, unit.Card.Armor + context.UnitArmorBonus);
-            bool resistant = element switch
+            bool resistant = context.UnitsResistAll || (element switch
             {
                 Element.Physical => unit.PhysicalResistTemp || unit.Card.Abilities.Contains(Ability.PhysicalResist),
                 Element.Fire => unit.Card.Abilities.Contains(Ability.FireResist),
@@ -32,7 +32,7 @@ namespace MK.Logic.Runtime
                 Element.ColdFire => unit.Card.Abilities.Contains(Ability.ColdFireResist)
                     || (unit.Card.Abilities.Contains(Ability.FireResist) && unit.Card.Abilities.Contains(Ability.IceResist)),
                 _ => false
-            };
+            });
             context.DamageAssignedUnits.Add(unit);
             if (resistant) damage = Math.Max(0, damage - armor);
             if (damage > 0)

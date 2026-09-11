@@ -20,6 +20,7 @@ public sealed class CardVerificationCase
     public CardVerificationValue[] expected;
     public CardVerificationOperation[] operations;
     public int[] unitLevels;
+    public string[] unitIds;
     public int unitWounds;
     public bool unitInitiallyReady;
     public bool unitDestroyed;
@@ -35,4 +36,5 @@ public sealed class CardVerificationOperation
     public int q;
     public int r;
     public int targetIndex;
+    public int[] unitTargets;
 }

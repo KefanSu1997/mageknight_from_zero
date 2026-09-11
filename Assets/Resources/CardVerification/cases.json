@@ -31250,6 +31250,6509 @@
       ],
       "limitations": [],
       "expectedException": "InvalidOperationException: 亡君之盾必须选择单次或分次格挡"
+    },
+    {
+      "id": "magic_014_02",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / Physical全抗性承伤3",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "unitWounds",
+          "value": "0"
+        },
+        {
+          "key": "IgnoreNextWound",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:heroWounds",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:discardWounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:unitWounds",
+          "value": "0,0"
+        },
+        {
+          "key": "operation:0:ignoreWound",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:allResist",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:destroyed",
+          "value": "False,False"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Damage",
+          "targetIndex": 0,
+          "unitTargets": [
+            0
+          ]
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 3,
+          "element": "Physical",
+          "abilities": [],
+          "fame": 3
+        }
+      ],
+      "unitIds": [
+        "army_2_006",
+        "army_2_001"
+      ]
+    },
+    {
+      "id": "magic_014_03",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / Physical全抗性承伤4",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "unitWounds",
+          "value": "1"
+        },
+        {
+          "key": "IgnoreNextWound",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:heroWounds",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:discardWounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:unitWounds",
+          "value": "1,0"
+        },
+        {
+          "key": "operation:0:ignoreWound",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:allResist",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:destroyed",
+          "value": "False,False"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Damage",
+          "targetIndex": 0,
+          "unitTargets": [
+            0
+          ]
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 4,
+          "element": "Physical",
+          "abilities": [],
+          "fame": 3
+        }
+      ],
+      "unitIds": [
+        "army_2_006",
+        "army_2_001"
+      ]
+    },
+    {
+      "id": "magic_014_04",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / Physical全抗性承伤6",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "unitWounds",
+          "value": "1"
+        },
+        {
+          "key": "IgnoreNextWound",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:heroWounds",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:discardWounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:unitWounds",
+          "value": "1,0"
+        },
+        {
+          "key": "operation:0:ignoreWound",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:allResist",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:destroyed",
+          "value": "False,False"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Damage",
+          "targetIndex": 0,
+          "unitTargets": [
+            0
+          ]
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 6,
+          "element": "Physical",
+          "abilities": [],
+          "fame": 3
+        }
+      ],
+      "unitIds": [
+        "army_2_006",
+        "army_2_001"
+      ]
+    },
+    {
+      "id": "magic_014_05",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / Physical全抗性承伤7",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "unitWounds",
+          "value": "1"
+        },
+        {
+          "key": "IgnoreNextWound",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:heroWounds",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:discardWounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:unitWounds",
+          "value": "1,0"
+        },
+        {
+          "key": "operation:0:ignoreWound",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:allResist",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:destroyed",
+          "value": "False,False"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Damage",
+          "targetIndex": 0,
+          "unitTargets": [
+            0
+          ]
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 7,
+          "element": "Physical",
+          "abilities": [],
+          "fame": 3
+        }
+      ],
+      "unitIds": [
+        "army_2_006",
+        "army_2_001"
+      ]
+    },
+    {
+      "id": "magic_014_06",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / Physical全抗性承伤9",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "Wounds",
+          "value": "4"
+        },
+        {
+          "key": "unitWounds",
+          "value": "1"
+        },
+        {
+          "key": "IgnoreNextWound",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:heroWounds",
+          "value": "4"
+        },
+        {
+          "key": "operation:0:discardWounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:unitWounds",
+          "value": "1,0"
+        },
+        {
+          "key": "operation:0:ignoreWound",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:allResist",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:destroyed",
+          "value": "False,False"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Damage",
+          "targetIndex": 0,
+          "unitTargets": [
+            0
+          ]
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 9,
+          "element": "Physical",
+          "abilities": [],
+          "fame": 3
+        }
+      ],
+      "unitIds": [
+        "army_2_006",
+        "army_2_001"
+      ]
+    },
+    {
+      "id": "magic_014_07",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / Fire全抗性承伤3",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "unitWounds",
+          "value": "0"
+        },
+        {
+          "key": "IgnoreNextWound",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:heroWounds",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:discardWounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:unitWounds",
+          "value": "0,0"
+        },
+        {
+          "key": "operation:0:ignoreWound",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:allResist",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:destroyed",
+          "value": "False,False"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Damage",
+          "targetIndex": 0,
+          "unitTargets": [
+            0
+          ]
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 3,
+          "element": "Fire",
+          "abilities": [],
+          "fame": 3
+        }
+      ],
+      "unitIds": [
+        "army_2_006",
+        "army_2_001"
+      ]
+    },
+    {
+      "id": "magic_014_08",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / Fire全抗性承伤4",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "unitWounds",
+          "value": "1"
+        },
+        {
+          "key": "IgnoreNextWound",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:heroWounds",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:discardWounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:unitWounds",
+          "value": "1,0"
+        },
+        {
+          "key": "operation:0:ignoreWound",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:allResist",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:destroyed",
+          "value": "False,False"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Damage",
+          "targetIndex": 0,
+          "unitTargets": [
+            0
+          ]
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 4,
+          "element": "Fire",
+          "abilities": [],
+          "fame": 3
+        }
+      ],
+      "unitIds": [
+        "army_2_006",
+        "army_2_001"
+      ]
+    },
+    {
+      "id": "magic_014_09",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / Fire全抗性承伤6",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "unitWounds",
+          "value": "1"
+        },
+        {
+          "key": "IgnoreNextWound",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:heroWounds",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:discardWounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:unitWounds",
+          "value": "1,0"
+        },
+        {
+          "key": "operation:0:ignoreWound",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:allResist",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:destroyed",
+          "value": "False,False"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Damage",
+          "targetIndex": 0,
+          "unitTargets": [
+            0
+          ]
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 6,
+          "element": "Fire",
+          "abilities": [],
+          "fame": 3
+        }
+      ],
+      "unitIds": [
+        "army_2_006",
+        "army_2_001"
+      ]
+    },
+    {
+      "id": "magic_014_10",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / Fire全抗性承伤7",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "unitWounds",
+          "value": "1"
+        },
+        {
+          "key": "IgnoreNextWound",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:heroWounds",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:discardWounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:unitWounds",
+          "value": "1,0"
+        },
+        {
+          "key": "operation:0:ignoreWound",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:allResist",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:destroyed",
+          "value": "False,False"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Damage",
+          "targetIndex": 0,
+          "unitTargets": [
+            0
+          ]
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 7,
+          "element": "Fire",
+          "abilities": [],
+          "fame": 3
+        }
+      ],
+      "unitIds": [
+        "army_2_006",
+        "army_2_001"
+      ]
+    },
+    {
+      "id": "magic_014_11",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / Fire全抗性承伤9",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "Wounds",
+          "value": "4"
+        },
+        {
+          "key": "unitWounds",
+          "value": "1"
+        },
+        {
+          "key": "IgnoreNextWound",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:heroWounds",
+          "value": "4"
+        },
+        {
+          "key": "operation:0:discardWounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:unitWounds",
+          "value": "1,0"
+        },
+        {
+          "key": "operation:0:ignoreWound",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:allResist",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:destroyed",
+          "value": "False,False"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Damage",
+          "targetIndex": 0,
+          "unitTargets": [
+            0
+          ]
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 9,
+          "element": "Fire",
+          "abilities": [],
+          "fame": 3
+        }
+      ],
+      "unitIds": [
+        "army_2_006",
+        "army_2_001"
+      ]
+    },
+    {
+      "id": "magic_014_12",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / Ice全抗性承伤3",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "unitWounds",
+          "value": "0"
+        },
+        {
+          "key": "IgnoreNextWound",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:heroWounds",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:discardWounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:unitWounds",
+          "value": "0,0"
+        },
+        {
+          "key": "operation:0:ignoreWound",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:allResist",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:destroyed",
+          "value": "False,False"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Damage",
+          "targetIndex": 0,
+          "unitTargets": [
+            0
+          ]
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 3,
+          "element": "Ice",
+          "abilities": [],
+          "fame": 3
+        }
+      ],
+      "unitIds": [
+        "army_2_006",
+        "army_2_001"
+      ]
+    },
+    {
+      "id": "magic_014_13",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / Ice全抗性承伤4",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "unitWounds",
+          "value": "1"
+        },
+        {
+          "key": "IgnoreNextWound",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:heroWounds",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:discardWounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:unitWounds",
+          "value": "1,0"
+        },
+        {
+          "key": "operation:0:ignoreWound",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:allResist",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:destroyed",
+          "value": "False,False"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Damage",
+          "targetIndex": 0,
+          "unitTargets": [
+            0
+          ]
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 4,
+          "element": "Ice",
+          "abilities": [],
+          "fame": 3
+        }
+      ],
+      "unitIds": [
+        "army_2_006",
+        "army_2_001"
+      ]
+    },
+    {
+      "id": "magic_014_14",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / Ice全抗性承伤6",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "unitWounds",
+          "value": "1"
+        },
+        {
+          "key": "IgnoreNextWound",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:heroWounds",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:discardWounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:unitWounds",
+          "value": "1,0"
+        },
+        {
+          "key": "operation:0:ignoreWound",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:allResist",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:destroyed",
+          "value": "False,False"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Damage",
+          "targetIndex": 0,
+          "unitTargets": [
+            0
+          ]
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 6,
+          "element": "Ice",
+          "abilities": [],
+          "fame": 3
+        }
+      ],
+      "unitIds": [
+        "army_2_006",
+        "army_2_001"
+      ]
+    },
+    {
+      "id": "magic_014_15",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / Ice全抗性承伤7",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "unitWounds",
+          "value": "1"
+        },
+        {
+          "key": "IgnoreNextWound",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:heroWounds",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:discardWounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:unitWounds",
+          "value": "1,0"
+        },
+        {
+          "key": "operation:0:ignoreWound",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:allResist",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:destroyed",
+          "value": "False,False"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Damage",
+          "targetIndex": 0,
+          "unitTargets": [
+            0
+          ]
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 7,
+          "element": "Ice",
+          "abilities": [],
+          "fame": 3
+        }
+      ],
+      "unitIds": [
+        "army_2_006",
+        "army_2_001"
+      ]
+    },
+    {
+      "id": "magic_014_16",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / Ice全抗性承伤9",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "Wounds",
+          "value": "4"
+        },
+        {
+          "key": "unitWounds",
+          "value": "1"
+        },
+        {
+          "key": "IgnoreNextWound",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:heroWounds",
+          "value": "4"
+        },
+        {
+          "key": "operation:0:discardWounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:unitWounds",
+          "value": "1,0"
+        },
+        {
+          "key": "operation:0:ignoreWound",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:allResist",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:destroyed",
+          "value": "False,False"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Damage",
+          "targetIndex": 0,
+          "unitTargets": [
+            0
+          ]
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 9,
+          "element": "Ice",
+          "abilities": [],
+          "fame": 3
+        }
+      ],
+      "unitIds": [
+        "army_2_006",
+        "army_2_001"
+      ]
+    },
+    {
+      "id": "magic_014_17",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / ColdFire全抗性承伤3",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "unitWounds",
+          "value": "0"
+        },
+        {
+          "key": "IgnoreNextWound",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:heroWounds",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:discardWounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:unitWounds",
+          "value": "0,0"
+        },
+        {
+          "key": "operation:0:ignoreWound",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:allResist",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:destroyed",
+          "value": "False,False"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Damage",
+          "targetIndex": 0,
+          "unitTargets": [
+            0
+          ]
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 3,
+          "element": "ColdFire",
+          "abilities": [],
+          "fame": 3
+        }
+      ],
+      "unitIds": [
+        "army_2_006",
+        "army_2_001"
+      ]
+    },
+    {
+      "id": "magic_014_18",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / ColdFire全抗性承伤4",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "unitWounds",
+          "value": "1"
+        },
+        {
+          "key": "IgnoreNextWound",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:heroWounds",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:discardWounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:unitWounds",
+          "value": "1,0"
+        },
+        {
+          "key": "operation:0:ignoreWound",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:allResist",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:destroyed",
+          "value": "False,False"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Damage",
+          "targetIndex": 0,
+          "unitTargets": [
+            0
+          ]
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 4,
+          "element": "ColdFire",
+          "abilities": [],
+          "fame": 3
+        }
+      ],
+      "unitIds": [
+        "army_2_006",
+        "army_2_001"
+      ]
+    },
+    {
+      "id": "magic_014_19",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / ColdFire全抗性承伤6",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "unitWounds",
+          "value": "1"
+        },
+        {
+          "key": "IgnoreNextWound",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:heroWounds",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:discardWounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:unitWounds",
+          "value": "1,0"
+        },
+        {
+          "key": "operation:0:ignoreWound",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:allResist",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:destroyed",
+          "value": "False,False"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Damage",
+          "targetIndex": 0,
+          "unitTargets": [
+            0
+          ]
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 6,
+          "element": "ColdFire",
+          "abilities": [],
+          "fame": 3
+        }
+      ],
+      "unitIds": [
+        "army_2_006",
+        "army_2_001"
+      ]
+    },
+    {
+      "id": "magic_014_20",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / ColdFire全抗性承伤7",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "unitWounds",
+          "value": "1"
+        },
+        {
+          "key": "IgnoreNextWound",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:heroWounds",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:discardWounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:unitWounds",
+          "value": "1,0"
+        },
+        {
+          "key": "operation:0:ignoreWound",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:allResist",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:destroyed",
+          "value": "False,False"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Damage",
+          "targetIndex": 0,
+          "unitTargets": [
+            0
+          ]
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 7,
+          "element": "ColdFire",
+          "abilities": [],
+          "fame": 3
+        }
+      ],
+      "unitIds": [
+        "army_2_006",
+        "army_2_001"
+      ]
+    },
+    {
+      "id": "magic_014_21",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / ColdFire全抗性承伤9",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "Wounds",
+          "value": "4"
+        },
+        {
+          "key": "unitWounds",
+          "value": "1"
+        },
+        {
+          "key": "IgnoreNextWound",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:heroWounds",
+          "value": "4"
+        },
+        {
+          "key": "operation:0:discardWounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:unitWounds",
+          "value": "1,0"
+        },
+        {
+          "key": "operation:0:ignoreWound",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:allResist",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:destroyed",
+          "value": "False,False"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Damage",
+          "targetIndex": 0,
+          "unitTargets": [
+            0
+          ]
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 9,
+          "element": "ColdFire",
+          "abilities": [],
+          "fame": 3
+        }
+      ],
+      "unitIds": [
+        "army_2_006",
+        "army_2_001"
+      ]
+    },
+    {
+      "id": "magic_014_22",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 所有原部队分别吸收且不消费英雄首伤",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "operation:0:heroWounds",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:discardWounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:unitWounds",
+          "value": "0,0"
+        },
+        {
+          "key": "operation:0:ignoreWound",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:allResist",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:destroyed",
+          "value": "False,False"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:1:heroWounds",
+          "value": "3"
+        },
+        {
+          "key": "operation:1:discardWounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:1:unitWounds",
+          "value": "0,0"
+        },
+        {
+          "key": "operation:1:ignoreWound",
+          "value": "True"
+        },
+        {
+          "key": "operation:1:allResist",
+          "value": "True"
+        },
+        {
+          "key": "operation:1:destroyed",
+          "value": "False,False"
+        },
+        {
+          "key": "operation:1:success",
+          "value": "True"
+        },
+        {
+          "key": "DamageAssignedUnits:count",
+          "value": "2"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Damage",
+          "targetIndex": 0,
+          "unitTargets": [
+            0
+          ]
+        },
+        {
+          "kind": "Damage",
+          "targetIndex": 1,
+          "unitTargets": [
+            1
+          ]
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 3,
+          "element": "ColdFire",
+          "abilities": [],
+          "fame": 3
+        },
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 3,
+          "element": "Fire",
+          "abilities": [],
+          "fame": 3
+        }
+      ],
+      "unitIds": [
+        "army_2_006",
+        "army_2_001"
+      ]
+    },
+    {
+      "id": "magic_014_23",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 同回合另一场战斗继续获得抗性",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "operation:0:heroWounds",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:discardWounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:unitWounds",
+          "value": "0,0"
+        },
+        {
+          "key": "operation:0:ignoreWound",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:allResist",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:destroyed",
+          "value": "False,False"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:1:heroWounds",
+          "value": "3"
+        },
+        {
+          "key": "operation:1:discardWounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:1:unitWounds",
+          "value": "0,0"
+        },
+        {
+          "key": "operation:1:ignoreWound",
+          "value": "True"
+        },
+        {
+          "key": "operation:1:allResist",
+          "value": "True"
+        },
+        {
+          "key": "operation:1:destroyed",
+          "value": "False,False"
+        },
+        {
+          "key": "operation:1:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:2:heroWounds",
+          "value": "3"
+        },
+        {
+          "key": "operation:2:discardWounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:2:unitWounds",
+          "value": "0,0"
+        },
+        {
+          "key": "operation:2:ignoreWound",
+          "value": "True"
+        },
+        {
+          "key": "operation:2:allResist",
+          "value": "True"
+        },
+        {
+          "key": "operation:2:destroyed",
+          "value": "False,False"
+        },
+        {
+          "key": "operation:2:success",
+          "value": "True"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Damage",
+          "targetIndex": 0,
+          "unitTargets": [
+            0
+          ]
+        },
+        {
+          "kind": "EndBattle"
+        },
+        {
+          "kind": "Damage",
+          "targetIndex": 0,
+          "unitTargets": [
+            0
+          ]
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 3,
+          "element": "ColdFire",
+          "abilities": [],
+          "fame": 3
+        }
+      ],
+      "unitIds": [
+        "army_2_006",
+        "army_2_001"
+      ]
+    },
+    {
+      "id": "magic_014_24",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 本场重复分配被拒绝且资源不变",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "operation:0:heroWounds",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:discardWounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:unitWounds",
+          "value": "0,0"
+        },
+        {
+          "key": "operation:0:ignoreWound",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:allResist",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:destroyed",
+          "value": "False,False"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:1:heroWounds",
+          "value": "3"
+        },
+        {
+          "key": "operation:1:discardWounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:1:unitWounds",
+          "value": "0,0"
+        },
+        {
+          "key": "operation:1:ignoreWound",
+          "value": "True"
+        },
+        {
+          "key": "operation:1:allResist",
+          "value": "True"
+        },
+        {
+          "key": "operation:1:destroyed",
+          "value": "False,False"
+        },
+        {
+          "key": "operation:1:success",
+          "value": "False"
+        },
+        {
+          "key": "operation:1:exception",
+          "value": "同场战斗不能重复向该部队分配伤害"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Damage",
+          "targetIndex": 0,
+          "unitTargets": [
+            0
+          ]
+        },
+        {
+          "kind": "Damage",
+          "targetIndex": 0,
+          "unitTargets": [
+            0
+          ]
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 3,
+          "element": "Ice",
+          "abilities": [],
+          "fame": 3
+        }
+      ],
+      "unitIds": [
+        "army_2_006",
+        "army_2_001"
+      ]
+    },
+    {
+      "id": "magic_014_25",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 跨战斗仍生效而结束回合后失效",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "0"
+        },
+        {
+          "key": "token:Black",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:heroWounds",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:discardWounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:unitWounds",
+          "value": "0,0"
+        },
+        {
+          "key": "operation:0:ignoreWound",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:allResist",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:destroyed",
+          "value": "False,False"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:1:heroWounds",
+          "value": "3"
+        },
+        {
+          "key": "operation:1:discardWounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:1:unitWounds",
+          "value": "0,0"
+        },
+        {
+          "key": "operation:1:ignoreWound",
+          "value": "True"
+        },
+        {
+          "key": "operation:1:allResist",
+          "value": "True"
+        },
+        {
+          "key": "operation:1:destroyed",
+          "value": "False,False"
+        },
+        {
+          "key": "operation:1:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:2:heroWounds",
+          "value": "3"
+        },
+        {
+          "key": "operation:2:discardWounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:2:unitWounds",
+          "value": "0,0"
+        },
+        {
+          "key": "operation:2:ignoreWound",
+          "value": "False"
+        },
+        {
+          "key": "operation:2:allResist",
+          "value": "False"
+        },
+        {
+          "key": "operation:2:destroyed",
+          "value": "False,False"
+        },
+        {
+          "key": "operation:2:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:3:heroWounds",
+          "value": "3"
+        },
+        {
+          "key": "operation:3:discardWounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:3:unitWounds",
+          "value": "1,0"
+        },
+        {
+          "key": "operation:3:ignoreWound",
+          "value": "False"
+        },
+        {
+          "key": "operation:3:allResist",
+          "value": "False"
+        },
+        {
+          "key": "operation:3:destroyed",
+          "value": "False,False"
+        },
+        {
+          "key": "operation:3:success",
+          "value": "True"
+        },
+        {
+          "key": "UnitsResistAll",
+          "value": "False"
+        },
+        {
+          "key": "IgnoreNextWound",
+          "value": "False"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Damage",
+          "targetIndex": 0,
+          "unitTargets": [
+            0
+          ]
+        },
+        {
+          "kind": "EndBattle"
+        },
+        {
+          "kind": "EndTurn"
+        },
+        {
+          "kind": "Damage",
+          "targetIndex": 0,
+          "unitTargets": [
+            0
+          ]
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 3,
+          "element": "ColdFire",
+          "abilities": [],
+          "fame": 3
+        }
+      ],
+      "unitIds": [
+        "army_2_006",
+        "army_2_001"
+      ]
+    },
+    {
+      "id": "magic_014_26",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 英雄第一伤忽略Poison随后再次承伤",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "operation:0:heroWounds",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:discardWounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:unitWounds",
+          "value": "0,0"
+        },
+        {
+          "key": "operation:0:ignoreWound",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:allResist",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:destroyed",
+          "value": "False,False"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:1:heroWounds",
+          "value": "4"
+        },
+        {
+          "key": "operation:1:discardWounds",
+          "value": "1"
+        },
+        {
+          "key": "operation:1:unitWounds",
+          "value": "0,0"
+        },
+        {
+          "key": "operation:1:ignoreWound",
+          "value": "False"
+        },
+        {
+          "key": "operation:1:allResist",
+          "value": "True"
+        },
+        {
+          "key": "operation:1:destroyed",
+          "value": "False,False"
+        },
+        {
+          "key": "operation:1:success",
+          "value": "True"
+        },
+        {
+          "key": "Wounds",
+          "value": "4"
+        },
+        {
+          "key": "hand",
+          "value": "7"
+        },
+        {
+          "key": "discard",
+          "value": "3"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Damage",
+          "targetIndex": 0,
+          "unitTargets": []
+        },
+        {
+          "kind": "Damage",
+          "targetIndex": 0,
+          "unitTargets": []
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 2,
+          "element": "Physical",
+          "abilities": [
+            "Poison"
+          ],
+          "fame": 3
+        }
+      ],
+      "unitIds": [
+        "army_2_006",
+        "army_2_001"
+      ]
+    },
+    {
+      "id": "magic_014_27",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 同一攻击剩余伤牌仍触发Poison",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "operation:0:heroWounds",
+          "value": "4"
+        },
+        {
+          "key": "operation:0:discardWounds",
+          "value": "1"
+        },
+        {
+          "key": "operation:0:unitWounds",
+          "value": "0,0"
+        },
+        {
+          "key": "operation:0:ignoreWound",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:allResist",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:destroyed",
+          "value": "False,False"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        },
+        {
+          "key": "Wounds",
+          "value": "4"
+        },
+        {
+          "key": "hand",
+          "value": "7"
+        },
+        {
+          "key": "discard",
+          "value": "3"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Damage",
+          "targetIndex": 0,
+          "unitTargets": []
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 4,
+          "element": "Physical",
+          "abilities": [
+            "Poison"
+          ],
+          "fame": 3
+        }
+      ],
+      "unitIds": [
+        "army_2_006",
+        "army_2_001"
+      ]
+    },
+    {
+      "id": "magic_014_28",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 全抗性避免部队伤牌及Poison",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "operation:0:heroWounds",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:discardWounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:unitWounds",
+          "value": "0,0"
+        },
+        {
+          "key": "operation:0:ignoreWound",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:allResist",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:destroyed",
+          "value": "False,False"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Damage",
+          "targetIndex": 0,
+          "unitTargets": [
+            0
+          ]
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 3,
+          "element": "ColdFire",
+          "abilities": [
+            "Poison"
+          ],
+          "fame": 3
+        }
+      ],
+      "unitIds": [
+        "army_2_006",
+        "army_2_001"
+      ]
+    },
+    {
+      "id": "magic_014_29",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 抗性超额部队仍受Poison",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "operation:0:heroWounds",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:discardWounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:unitWounds",
+          "value": "2,0"
+        },
+        {
+          "key": "operation:0:ignoreWound",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:allResist",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:destroyed",
+          "value": "False,False"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Damage",
+          "targetIndex": 0,
+          "unitTargets": [
+            0
+          ]
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 4,
+          "element": "ColdFire",
+          "abilities": [
+            "Poison"
+          ],
+          "fame": 3
+        }
+      ],
+      "unitIds": [
+        "army_2_006",
+        "army_2_001"
+      ]
+    },
+    {
+      "id": "magic_014_30",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 英雄第一伤忽略Paralyze随后再次承伤",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "operation:0:heroWounds",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:discardWounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:unitWounds",
+          "value": "0,0"
+        },
+        {
+          "key": "operation:0:ignoreWound",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:allResist",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:destroyed",
+          "value": "False,False"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:1:heroWounds",
+          "value": "4"
+        },
+        {
+          "key": "operation:1:discardWounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:1:unitWounds",
+          "value": "0,0"
+        },
+        {
+          "key": "operation:1:ignoreWound",
+          "value": "False"
+        },
+        {
+          "key": "operation:1:allResist",
+          "value": "True"
+        },
+        {
+          "key": "operation:1:destroyed",
+          "value": "False,False"
+        },
+        {
+          "key": "operation:1:success",
+          "value": "True"
+        },
+        {
+          "key": "Wounds",
+          "value": "4"
+        },
+        {
+          "key": "hand",
+          "value": "4"
+        },
+        {
+          "key": "discard",
+          "value": "5"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Damage",
+          "targetIndex": 0,
+          "unitTargets": []
+        },
+        {
+          "kind": "Damage",
+          "targetIndex": 0,
+          "unitTargets": []
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 2,
+          "element": "Physical",
+          "abilities": [
+            "Paralyze"
+          ],
+          "fame": 3
+        }
+      ],
+      "unitIds": [
+        "army_2_006",
+        "army_2_001"
+      ]
+    },
+    {
+      "id": "magic_014_31",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 同一攻击剩余伤牌仍触发Paralyze",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "operation:0:heroWounds",
+          "value": "4"
+        },
+        {
+          "key": "operation:0:discardWounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:unitWounds",
+          "value": "0,0"
+        },
+        {
+          "key": "operation:0:ignoreWound",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:allResist",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:destroyed",
+          "value": "False,False"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        },
+        {
+          "key": "Wounds",
+          "value": "4"
+        },
+        {
+          "key": "hand",
+          "value": "4"
+        },
+        {
+          "key": "discard",
+          "value": "5"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Damage",
+          "targetIndex": 0,
+          "unitTargets": []
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 4,
+          "element": "Physical",
+          "abilities": [
+            "Paralyze"
+          ],
+          "fame": 3
+        }
+      ],
+      "unitIds": [
+        "army_2_006",
+        "army_2_001"
+      ]
+    },
+    {
+      "id": "magic_014_32",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 全抗性避免部队伤牌及Paralyze",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "operation:0:heroWounds",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:discardWounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:unitWounds",
+          "value": "0,0"
+        },
+        {
+          "key": "operation:0:ignoreWound",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:allResist",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:destroyed",
+          "value": "False,False"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Damage",
+          "targetIndex": 0,
+          "unitTargets": [
+            0
+          ]
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 3,
+          "element": "ColdFire",
+          "abilities": [
+            "Paralyze"
+          ],
+          "fame": 3
+        }
+      ],
+      "unitIds": [
+        "army_2_006",
+        "army_2_001"
+      ]
+    },
+    {
+      "id": "magic_014_33",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 抗性超额部队仍受Paralyze",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "operation:0:heroWounds",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:discardWounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:unitWounds",
+          "value": "0,0"
+        },
+        {
+          "key": "operation:0:ignoreWound",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:allResist",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:destroyed",
+          "value": "True,False"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Damage",
+          "targetIndex": 0,
+          "unitTargets": [
+            0
+          ]
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 4,
+          "element": "ColdFire",
+          "abilities": [
+            "Paralyze"
+          ],
+          "fame": 3
+        }
+      ],
+      "unitIds": [
+        "army_2_006",
+        "army_2_001"
+      ]
+    },
+    {
+      "id": "magic_014_34",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 非敌人创伤不消费首伤保护",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "operation:0:heroWounds",
+          "value": "4"
+        },
+        {
+          "key": "operation:0:discardWounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:unitWounds",
+          "value": "0,0"
+        },
+        {
+          "key": "operation:0:ignoreWound",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:allResist",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:destroyed",
+          "value": "False,False"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:1:heroWounds",
+          "value": "4"
+        },
+        {
+          "key": "operation:1:discardWounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:1:unitWounds",
+          "value": "0,0"
+        },
+        {
+          "key": "operation:1:ignoreWound",
+          "value": "False"
+        },
+        {
+          "key": "operation:1:allResist",
+          "value": "True"
+        },
+        {
+          "key": "operation:1:destroyed",
+          "value": "False,False"
+        },
+        {
+          "key": "operation:1:success",
+          "value": "True"
+        },
+        {
+          "key": "Wounds",
+          "value": "4"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "SelfWound"
+        },
+        {
+          "kind": "Damage",
+          "targetIndex": 0,
+          "unitTargets": []
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 2,
+          "element": "Physical",
+          "abilities": [
+            "Poison"
+          ],
+          "fame": 3
+        }
+      ],
+      "unitIds": [
+        "army_2_006",
+        "army_2_001"
+      ]
+    },
+    {
+      "id": "magic_014_35",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / DayPlains两格移动后不得透支",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "DayPart",
+          "value": "Day"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "position:q",
+          "value": "2"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:1:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:2:success",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:cost",
+          "value": "2"
+        },
+        {
+          "key": "operation:1:cost",
+          "value": "2"
+        },
+        {
+          "key": "operation:2:cost",
+          "value": "2"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        },
+        {
+          "kind": "Move",
+          "q": 2,
+          "r": 0
+        },
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        }
+      ],
+      "destinationTerrain": "Plains"
+    },
+    {
+      "id": "magic_014_36",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / DayForest两格移动后不得透支",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "DayPart",
+          "value": "Day"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "position:q",
+          "value": "2"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:1:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:2:success",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:cost",
+          "value": "2"
+        },
+        {
+          "key": "operation:1:cost",
+          "value": "2"
+        },
+        {
+          "key": "operation:2:cost",
+          "value": "2"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        },
+        {
+          "kind": "Move",
+          "q": 2,
+          "r": 0
+        },
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        }
+      ],
+      "destinationTerrain": "Forest"
+    },
+    {
+      "id": "magic_014_37",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / DayDesert两格移动后不得透支",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "DayPart",
+          "value": "Day"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "position:q",
+          "value": "2"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:1:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:2:success",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:cost",
+          "value": "2"
+        },
+        {
+          "key": "operation:1:cost",
+          "value": "2"
+        },
+        {
+          "key": "operation:2:cost",
+          "value": "2"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        },
+        {
+          "kind": "Move",
+          "q": 2,
+          "r": 0
+        },
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        }
+      ],
+      "destinationTerrain": "Desert"
+    },
+    {
+      "id": "magic_014_38",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / DaySwamp两格移动后不得透支",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "DayPart",
+          "value": "Day"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "position:q",
+          "value": "2"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:1:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:2:success",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:cost",
+          "value": "2"
+        },
+        {
+          "key": "operation:1:cost",
+          "value": "2"
+        },
+        {
+          "key": "operation:2:cost",
+          "value": "2"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        },
+        {
+          "kind": "Move",
+          "q": 2,
+          "r": 0
+        },
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        }
+      ],
+      "destinationTerrain": "Swamp"
+    },
+    {
+      "id": "magic_014_39",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / DayWasteland两格移动后不得透支",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "DayPart",
+          "value": "Day"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "position:q",
+          "value": "2"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:1:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:2:success",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:cost",
+          "value": "2"
+        },
+        {
+          "key": "operation:1:cost",
+          "value": "2"
+        },
+        {
+          "key": "operation:2:cost",
+          "value": "2"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        },
+        {
+          "kind": "Move",
+          "q": 2,
+          "r": 0
+        },
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        }
+      ],
+      "destinationTerrain": "Wasteland"
+    },
+    {
+      "id": "magic_014_40",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / DayLake两格移动后不得透支",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "DayPart",
+          "value": "Day"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "position:q",
+          "value": "2"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:1:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:2:success",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:cost",
+          "value": "2"
+        },
+        {
+          "key": "operation:1:cost",
+          "value": "2"
+        },
+        {
+          "key": "operation:2:cost",
+          "value": "2"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        },
+        {
+          "kind": "Move",
+          "q": 2,
+          "r": 0
+        },
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        }
+      ],
+      "destinationTerrain": "Lake"
+    },
+    {
+      "id": "magic_014_41",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / DayHills两格移动后不得透支",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "DayPart",
+          "value": "Day"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "4"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "position:q",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "False"
+        },
+        {
+          "key": "operation:1:success",
+          "value": "False"
+        },
+        {
+          "key": "operation:2:success",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:cost",
+          "value": "2147483647"
+        },
+        {
+          "key": "operation:1:cost",
+          "value": "2147483647"
+        },
+        {
+          "key": "operation:2:cost",
+          "value": "2147483647"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        },
+        {
+          "kind": "Move",
+          "q": 2,
+          "r": 0
+        },
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        }
+      ],
+      "destinationTerrain": "Hills"
+    },
+    {
+      "id": "magic_014_42",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / DayMountain两格移动后不得透支",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "DayPart",
+          "value": "Day"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "4"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "position:q",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "False"
+        },
+        {
+          "key": "operation:1:success",
+          "value": "False"
+        },
+        {
+          "key": "operation:2:success",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:cost",
+          "value": "2147483647"
+        },
+        {
+          "key": "operation:1:cost",
+          "value": "2147483647"
+        },
+        {
+          "key": "operation:2:cost",
+          "value": "2147483647"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        },
+        {
+          "kind": "Move",
+          "q": 2,
+          "r": 0
+        },
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        }
+      ],
+      "destinationTerrain": "Mountain"
+    },
+    {
+      "id": "magic_014_43",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / NightPlains两格移动后不得透支",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "DayPart",
+          "value": "Night"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "position:q",
+          "value": "2"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:1:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:2:success",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:cost",
+          "value": "2"
+        },
+        {
+          "key": "operation:1:cost",
+          "value": "2"
+        },
+        {
+          "key": "operation:2:cost",
+          "value": "2"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        },
+        {
+          "kind": "Move",
+          "q": 2,
+          "r": 0
+        },
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        }
+      ],
+      "destinationTerrain": "Plains"
+    },
+    {
+      "id": "magic_014_44",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / NightForest两格移动后不得透支",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "DayPart",
+          "value": "Night"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "position:q",
+          "value": "2"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:1:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:2:success",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:cost",
+          "value": "2"
+        },
+        {
+          "key": "operation:1:cost",
+          "value": "2"
+        },
+        {
+          "key": "operation:2:cost",
+          "value": "2"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        },
+        {
+          "kind": "Move",
+          "q": 2,
+          "r": 0
+        },
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        }
+      ],
+      "destinationTerrain": "Forest"
+    },
+    {
+      "id": "magic_014_45",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / NightDesert两格移动后不得透支",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "DayPart",
+          "value": "Night"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "position:q",
+          "value": "2"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:1:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:2:success",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:cost",
+          "value": "2"
+        },
+        {
+          "key": "operation:1:cost",
+          "value": "2"
+        },
+        {
+          "key": "operation:2:cost",
+          "value": "2"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        },
+        {
+          "kind": "Move",
+          "q": 2,
+          "r": 0
+        },
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        }
+      ],
+      "destinationTerrain": "Desert"
+    },
+    {
+      "id": "magic_014_46",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / NightSwamp两格移动后不得透支",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "DayPart",
+          "value": "Night"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "position:q",
+          "value": "2"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:1:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:2:success",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:cost",
+          "value": "2"
+        },
+        {
+          "key": "operation:1:cost",
+          "value": "2"
+        },
+        {
+          "key": "operation:2:cost",
+          "value": "2"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        },
+        {
+          "kind": "Move",
+          "q": 2,
+          "r": 0
+        },
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        }
+      ],
+      "destinationTerrain": "Swamp"
+    },
+    {
+      "id": "magic_014_47",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / NightWasteland两格移动后不得透支",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "DayPart",
+          "value": "Night"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "position:q",
+          "value": "2"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:1:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:2:success",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:cost",
+          "value": "2"
+        },
+        {
+          "key": "operation:1:cost",
+          "value": "2"
+        },
+        {
+          "key": "operation:2:cost",
+          "value": "2"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        },
+        {
+          "kind": "Move",
+          "q": 2,
+          "r": 0
+        },
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        }
+      ],
+      "destinationTerrain": "Wasteland"
+    },
+    {
+      "id": "magic_014_48",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / NightLake两格移动后不得透支",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "DayPart",
+          "value": "Night"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "position:q",
+          "value": "2"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:1:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:2:success",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:cost",
+          "value": "2"
+        },
+        {
+          "key": "operation:1:cost",
+          "value": "2"
+        },
+        {
+          "key": "operation:2:cost",
+          "value": "2"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        },
+        {
+          "kind": "Move",
+          "q": 2,
+          "r": 0
+        },
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        }
+      ],
+      "destinationTerrain": "Lake"
+    },
+    {
+      "id": "magic_014_49",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / NightHills两格移动后不得透支",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "DayPart",
+          "value": "Night"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "4"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "position:q",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "False"
+        },
+        {
+          "key": "operation:1:success",
+          "value": "False"
+        },
+        {
+          "key": "operation:2:success",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:cost",
+          "value": "2147483647"
+        },
+        {
+          "key": "operation:1:cost",
+          "value": "2147483647"
+        },
+        {
+          "key": "operation:2:cost",
+          "value": "2147483647"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        },
+        {
+          "kind": "Move",
+          "q": 2,
+          "r": 0
+        },
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        }
+      ],
+      "destinationTerrain": "Hills"
+    },
+    {
+      "id": "magic_014_50",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / NightMountain两格移动后不得透支",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "DayPart",
+          "value": "Night"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "4"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "1"
+        },
+        {
+          "key": "position:q",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "False"
+        },
+        {
+          "key": "operation:1:success",
+          "value": "False"
+        },
+        {
+          "key": "operation:2:success",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:cost",
+          "value": "2147483647"
+        },
+        {
+          "key": "operation:1:cost",
+          "value": "2147483647"
+        },
+        {
+          "key": "operation:2:cost",
+          "value": "2147483647"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        },
+        {
+          "kind": "Move",
+          "q": 2,
+          "r": 0
+        },
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        }
+      ],
+      "destinationTerrain": "Mountain"
+    },
+    {
+      "id": "magic_014_51",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / 结束回合恢复Lake通行规则",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "DayPart",
+          "value": "Night"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "0"
+        },
+        {
+          "key": "MoveForbidden:count",
+          "value": "0"
+        },
+        {
+          "key": "move:selectedCost",
+          "value": "2147483647"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:1:success",
+          "value": "False"
+        },
+        {
+          "key": "operation:1:cost",
+          "value": "2147483647"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "EndTurn"
+        },
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        }
+      ],
+      "destinationTerrain": "Lake"
+    },
+    {
+      "id": "magic_014_52",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / 结束回合恢复Hills通行规则",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "DayPart",
+          "value": "Night"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "0"
+        },
+        {
+          "key": "MoveForbidden:count",
+          "value": "0"
+        },
+        {
+          "key": "move:selectedCost",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:1:success",
+          "value": "False"
+        },
+        {
+          "key": "operation:1:cost",
+          "value": "3"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "EndTurn"
+        },
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        }
+      ],
+      "destinationTerrain": "Hills"
+    },
+    {
+      "id": "magic_014_53",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / 结束回合恢复Mountain通行规则",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "DayPart",
+          "value": "Night"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "0"
+        },
+        {
+          "key": "MoveForbidden:count",
+          "value": "0"
+        },
+        {
+          "key": "move:selectedCost",
+          "value": "2147483647"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:1:success",
+          "value": "False"
+        },
+        {
+          "key": "operation:1:cost",
+          "value": "2147483647"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "EndTurn"
+        },
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        }
+      ],
+      "destinationTerrain": "Mountain"
+    },
+    {
+      "id": "magic_014_54",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / 结束回合恢复Forest通行规则",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "DayPart",
+          "value": "Night"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "0"
+        },
+        {
+          "key": "MoveForbidden:count",
+          "value": "0"
+        },
+        {
+          "key": "move:selectedCost",
+          "value": "5"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        },
+        {
+          "key": "operation:1:success",
+          "value": "False"
+        },
+        {
+          "key": "operation:1:cost",
+          "value": "5"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "EndTurn"
+        },
+        {
+          "kind": "Move",
+          "q": 1,
+          "r": 0
+        }
+      ],
+      "destinationTerrain": "Forest"
+    },
+    {
+      "id": "magic_014_55",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 1,
+      "effectChoice": "",
+      "title": "基础 / 无效选项在支付前拒绝",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "UnitsResistAll",
+          "value": "False"
+        },
+        {
+          "key": "IgnoreNextWound",
+          "value": "False"
+        },
+        {
+          "key": "token:Red",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "token:Black",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "Reputation",
+          "value": "0"
+        },
+        {
+          "key": "unitReady",
+          "value": "False"
+        },
+        {
+          "key": "unitWounds",
+          "value": "0"
+        },
+        {
+          "key": "ManaCurseTriggered",
+          "value": "False"
+        }
+      ],
+      "limitations": [],
+      "expectedException": "InvalidOperationException: 迷雾形态没有可选分支"
+    },
+    {
+      "id": "magic_014_56",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": false,
+      "option": 0,
+      "effectChoice": "",
+      "title": "基础 / 缺蓝色费用原子拒绝",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "token:Blue",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "0"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "0"
+        },
+        {
+          "key": "UnitsResistAll",
+          "value": "False"
+        },
+        {
+          "key": "IgnoreNextWound",
+          "value": "False"
+        },
+        {
+          "key": "token:Red",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "token:Black",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "Reputation",
+          "value": "0"
+        },
+        {
+          "key": "unitReady",
+          "value": "False"
+        },
+        {
+          "key": "unitWounds",
+          "value": "0"
+        },
+        {
+          "key": "ManaCurseTriggered",
+          "value": "False"
+        }
+      ],
+      "limitations": [],
+      "expectedException": "InvalidOperationException: 法力不足，不能支付所选效果"
+    },
+    {
+      "id": "magic_014_57",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 1,
+      "effectChoice": "",
+      "title": "强化 / 无效选项在支付前拒绝",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Black",
+          "value": "2"
+        },
+        {
+          "key": "UnitsResistAll",
+          "value": "False"
+        },
+        {
+          "key": "IgnoreNextWound",
+          "value": "False"
+        },
+        {
+          "key": "token:Red",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "Reputation",
+          "value": "0"
+        },
+        {
+          "key": "unitReady",
+          "value": "False"
+        },
+        {
+          "key": "unitWounds",
+          "value": "0"
+        },
+        {
+          "key": "ManaCurseTriggered",
+          "value": "False"
+        }
+      ],
+      "limitations": [],
+      "expectedException": "InvalidOperationException: 迷雾形态没有可选分支"
+    },
+    {
+      "id": "magic_014_58",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 缺蓝色费用原子拒绝",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "token:Blue",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "0"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "0"
+        },
+        {
+          "key": "token:Black",
+          "value": "2"
+        },
+        {
+          "key": "UnitsResistAll",
+          "value": "False"
+        },
+        {
+          "key": "IgnoreNextWound",
+          "value": "False"
+        },
+        {
+          "key": "token:Red",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "Reputation",
+          "value": "0"
+        },
+        {
+          "key": "unitReady",
+          "value": "False"
+        },
+        {
+          "key": "unitWounds",
+          "value": "0"
+        },
+        {
+          "key": "ManaCurseTriggered",
+          "value": "False"
+        }
+      ],
+      "limitations": [],
+      "expectedException": "InvalidOperationException: 法力不足，不能支付所选效果"
+    },
+    {
+      "id": "magic_014_59",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 缺黑色费用不先扣蓝色",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "token:Black",
+          "value": "0"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Black",
+          "value": "0"
+        },
+        {
+          "key": "UnitsResistAll",
+          "value": "False"
+        },
+        {
+          "key": "IgnoreNextWound",
+          "value": "False"
+        },
+        {
+          "key": "token:Red",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "Reputation",
+          "value": "0"
+        },
+        {
+          "key": "unitReady",
+          "value": "False"
+        },
+        {
+          "key": "unitWounds",
+          "value": "0"
+        },
+        {
+          "key": "ManaCurseTriggered",
+          "value": "False"
+        }
+      ],
+      "limitations": [],
+      "expectedException": "InvalidOperationException: 法力不足，不能支付所选效果"
+    },
+    {
+      "id": "magic_014_60",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 白昼拒绝强效法术",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "DayPart",
+          "value": "Day"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "2"
+        },
+        {
+          "key": "token:Black",
+          "value": "2"
+        },
+        {
+          "key": "UnitsResistAll",
+          "value": "False"
+        },
+        {
+          "key": "IgnoreNextWound",
+          "value": "False"
+        },
+        {
+          "key": "token:Red",
+          "value": "2"
+        },
+        {
+          "key": "token:Green",
+          "value": "2"
+        },
+        {
+          "key": "token:White",
+          "value": "2"
+        },
+        {
+          "key": "token:Gold",
+          "value": "2"
+        },
+        {
+          "key": "crystal:Red",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Green",
+          "value": "1"
+        },
+        {
+          "key": "crystal:White",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Gold",
+          "value": "0"
+        },
+        {
+          "key": "crystal:Black",
+          "value": "0"
+        },
+        {
+          "key": "hand",
+          "value": "6"
+        },
+        {
+          "key": "discard",
+          "value": "2"
+        },
+        {
+          "key": "Wounds",
+          "value": "3"
+        },
+        {
+          "key": "handWounds",
+          "value": "3"
+        },
+        {
+          "key": "Fame",
+          "value": "0"
+        },
+        {
+          "key": "Reputation",
+          "value": "0"
+        },
+        {
+          "key": "unitReady",
+          "value": "False"
+        },
+        {
+          "key": "unitWounds",
+          "value": "0"
+        },
+        {
+          "key": "ManaCurseTriggered",
+          "value": "False"
+        }
+      ],
+      "limitations": [],
+      "expectedException": "InvalidOperationException: 白昼不能施放强效法术"
+    },
+    {
+      "id": "magic_014_61",
+      "cardId": "magic_014",
+      "batch": "magic",
+      "enhanced": true,
+      "option": 0,
+      "effectChoice": "",
+      "title": "强化 / 蓝晶加黑标记支付后实际忽略毒素首伤",
+      "followup": "",
+      "followupEnhanced": false,
+      "setup": [
+        {
+          "key": "token:Blue",
+          "value": "0"
+        }
+      ],
+      "expected": [
+        {
+          "key": "MovementPool",
+          "value": "0"
+        },
+        {
+          "key": "InfluencePool",
+          "value": "0"
+        },
+        {
+          "key": "MeleePool",
+          "value": "0"
+        },
+        {
+          "key": "RangedPool",
+          "value": "0"
+        },
+        {
+          "key": "BlockPool",
+          "value": "0"
+        },
+        {
+          "key": "token:Blue",
+          "value": "0"
+        },
+        {
+          "key": "token:Black",
+          "value": "1"
+        },
+        {
+          "key": "crystal:Blue",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:heroWounds",
+          "value": "3"
+        },
+        {
+          "key": "operation:0:discardWounds",
+          "value": "0"
+        },
+        {
+          "key": "operation:0:unitWounds",
+          "value": "0,0"
+        },
+        {
+          "key": "operation:0:ignoreWound",
+          "value": "False"
+        },
+        {
+          "key": "operation:0:allResist",
+          "value": "True"
+        },
+        {
+          "key": "operation:0:destroyed",
+          "value": "False,False"
+        },
+        {
+          "key": "operation:0:success",
+          "value": "True"
+        }
+      ],
+      "limitations": [
+        "已联验本例的实际操作与资源；完整卡区、其他组合及回合行动限制仍待联验"
+      ],
+      "operations": [
+        {
+          "kind": "Damage",
+          "targetIndex": 0,
+          "unitTargets": []
+        }
+      ],
+      "enemies": [
+        {
+          "id": "规则目标",
+          "armor": 5,
+          "attack": 2,
+          "element": "Physical",
+          "abilities": [
+            "Poison"
+          ],
+          "fame": 3
+        }
+      ],
+      "unitIds": [
+        "army_2_006",
+        "army_2_001"
+      ]
     }
   ]
 }

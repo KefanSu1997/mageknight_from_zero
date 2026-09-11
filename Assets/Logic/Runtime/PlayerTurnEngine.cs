@@ -73,6 +73,9 @@ namespace MK.Logic.Runtime
                 ctx.SpentCrystals.Clear();
                 ctx.RecycleToTop = ctx.RecycleToBottom = false;
                 ctx.ClearMovementAndReadyEffects();
+                // 迷雾帷幕持续本回合；完全由部队吸收的伤害不会消费英雄免伤。
+                ctx.UnitsResistAll = false;
+                ctx.IgnoreNextWound = false;
             }
             p.Mana.ResetTokens();
             if (ctx != null && ctx.SkipDraw)

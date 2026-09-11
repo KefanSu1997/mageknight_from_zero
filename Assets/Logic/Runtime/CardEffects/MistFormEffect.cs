@@ -5,13 +5,19 @@ namespace MK.Logic.Runtime.CardEffects
     /// <summary>
     /// 迷霧形態 / 迷霧帷幕：調整移動與抗性效果。
     /// </summary>
-    public sealed class MistFormEffect : ICardEffect
+    public sealed class MistFormEffect : ICardEffect, ICardEffectValidator
     {
         private readonly bool _enh;
         public MistFormEffect(bool enhanced) => _enh = enhanced;
 
+        public void Validate(PlayerState player, ActionContext ctx, int option)
+        {
+            if (option != 0) throw new System.InvalidOperationException("迷雾形态没有可选分支");
+        }
+
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
+            Validate(player, ctx, option);
             if (!_enh)
             {
                 ctx.MovementPool += 4;
@@ -28,7 +34,7 @@ namespace MK.Logic.Runtime.CardEffects
             else
             {
                 ctx.UnitsResistAll = true;
-                ctx.FirstWoundIgnored = true;
+                ctx.IgnoreNextWound = true;
             }
         }
     }

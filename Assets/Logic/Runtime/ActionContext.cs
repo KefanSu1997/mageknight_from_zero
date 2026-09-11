@@ -261,6 +261,8 @@ namespace MK.Logic.Runtime
         {
             HexMoveReduction.Clear();
             TerrainMoveReduction.Clear();
+            TerrainCostOverride.Clear();
+            MoveForbidden.Clear();
             TargetHex = null;
             TargetTerrain = null;
             ReadyInfluencePerLevel = ReadyUnitMaxLevel = 0;

@@ -30,6 +30,8 @@
 
 ## 经验索引
 
+- 迷雾全抗性实际承伤、英雄首伤附加效果隔离、战斗与回合失效分离 —— `vibe_coding/codex/project_experience/mist_form_damage_and_turn_lifetime_2026-09-11.md`
+
 - 部队承伤余量、抗性同场一次、毒素与麻痹释放指挥槽，以及TMP截断和配置原子替换 —— `vibe_coding/codex/project_experience/original_unit_damage_allocation_2026-09-11.md`
 
 - 原部队能力与费用、每轮重整和伤牌独立、供应资源后续联验及本地证据存档 —— `vibe_coding/codex/project_experience/original_unit_activation_and_round_reset_2026-09-11.md`
