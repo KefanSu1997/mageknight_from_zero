@@ -1,0 +1,13 @@
+{
+  "sameCases": 162,
+  "sameImages": 300,
+  "differentImages": [
+    "magic_000_00_execute",
+    "magic_000_01_execute",
+    "magic_001_00_execute"
+  ],
+  "previousInspected": [
+    "magic_014_25_execute",
+    "magic_014_33_execute"
+  ]
+}

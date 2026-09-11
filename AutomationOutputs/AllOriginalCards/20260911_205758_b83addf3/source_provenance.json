@@ -1,0 +1,43 @@
+{
+  "sourceCommit": "7f481d590e6c0add0df95fc101f87e5c18d910e2",
+  "branch": "feat/card-rules-completion",
+  "sourceSha256": {
+    "AGENTS.md": "b546f4c762dd969133f04ba6d79b9d1799aa3aad2ece7fa9b32117acbf296629",
+    "Assets/Logic/Runtime/ActionContext.cs": "cf39b95b355dfb34e29c9e9a234ea7f3cca8206ebe1d04faa3de921329ae0ad4",
+    "Assets/Logic/Runtime/CardEffects/MistFormEffect.cs": "97d1278fb5c3db56fee8690597d0f19df5644a85b812c24171af516c22ab13ca",
+    "Assets/Logic/Runtime/PlayerTurnEngine.cs": "2dd104d9606bdef949ec4386edbe1f441af530634fb3df85f7dc8ae452ad4c24",
+    "Assets/Logic/Runtime/UnitDamageResolver.cs": "e1681ea33858a90e41b1bc47de1ccf6e09635570bd4aef7d27714d018270ba05",
+    "Assets/Resources/CardVerification/cases.json": "49a1a217fe667995864da9f811bb836ae17fc59d064fc2b738d3faef50936e18",
+    "Assets/Scripts/Testing/CardVerificationCase.cs": "cb2c784bd36180d9212fa6976cf8961ed9926c5dd3c4ca9f062da64c8edb68cd",
+    "Assets/Scripts/Testing/OriginalCardVerificationController.cs": "cb6b48aeabd51050b8f074f7f5a31c8aa83e90ebeeea265611f4475d9e072b6d",
+    "AutomationConfigs/AllOriginalCards/magic.json": "65ece63a3ce727fa8904e19b3f335464f3ba633afc7f1bc8cc95fc57b2b93857",
+    "tools/build_all_card_verification.py": "71b4d9c3e02c006e38ecbd34377577b0810f505666d842b8c07a1168b7d7aa52",
+    "tools/verify_mist_scene.py": "d0896e8c3605716cae62a1a9744c544fda2a70cc8dc79576d751e74f43cbe505",
+    "Assets/Tests/MistFormResolutionTests.cs": "3e7bbc281adabaf68ad097bdb57687ede62bd2982e3a476230d5b786cea21712",
+    "Assets/Tests/MistFormResolutionTests.cs.meta": "9fd70c3853c1d4622130ded5960ade8a7dc308112609e277572e564285c6a4d1",
+    "vibe_coding/codex/worklog_2026-09-11_mist_form_resolution.md": "798acd1d7e3d27c73fed4fa7d9bf4a9fc7f536ac3bce46b7af80ad8029a9f0d5",
+    "vibe_coding/codex/project_experience/mist_form_damage_and_turn_lifetime_2026-09-11.md": "a54e64a4bfcff7bd6b3efc676fd353a9b0afc38ac3a7f3a9ab1c1417c1231b30",
+    "vibe_coding/codex/pr_card_rules_completion_2026-09-10.md": "0baa5450bc11e153a32b6bb4327b8d4abd1603ba71d1a5fbf9628c39196e8726",
+    "Assets/Logic/Runtime/BattleResolver.cs": "bc09d992b3aeefe5e8c7e20a2d59c8802489170adb63d4349a9949e9e1510e5c",
+    "Assets/Logic/Runtime/AbilityRules.cs": "fabb8bd06a6239dd4ade50fde4d3c907281bb425181ef2729e1fb377729aa8e3",
+    "Assets/Logic/Runtime/ActionSystem.cs": "904116762a95774b18d49f68b606f31cb0aa4ec6267559dc3c23175d8dbe6c57",
+    "Assets/GameData/CardsAssets/magic_014.asset": "f549f48f74d9282f45d277ed0ad019c24658e0cc75b2e0918270dacb52baaf91",
+    "Assets/GameData/cards/magic_014.png": "478d2d06191b479ccbe5fa7fb5a85474ca29b5f3780ab92e7efa5c3f0e0908b5",
+    "resources/text_json/magic.json": "fcd2f9ebe5741b50cb6e908dfde134f32e880e35d79637237fe9c9040b83e5e5",
+    "resources/text_json/army_2.json": "cf901dad2ffa3dbdd830b51006422155191b2a8591e7eb208f7dd37007c8aea7"
+  },
+  "fullRun": "AutomationOutputs/AllOriginalCards/20260911_205758_b83addf3",
+  "remotePush": "paused; no network archive performed",
+  "console": [
+    {
+      "path": "AutomationOutputs/MistForm/20260911/console_final_1.json",
+      "errors": 0,
+      "sha256": "b21abdd93106dc4f9fd3b6f688e83f05441fd1a4ea45669ba6102f6f1ad2e36d"
+    },
+    {
+      "path": "AutomationOutputs/MistForm/20260911/console_final_2.json",
+      "errors": 0,
+      "sha256": "b21abdd93106dc4f9fd3b6f688e83f05441fd1a4ea45669ba6102f6f1ad2e36d"
+    }
+  ]
+}

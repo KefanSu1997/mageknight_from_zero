@@ -1,0 +1,41 @@
+{
+  "scenes": {
+    "Combat": {
+      "operations": 45,
+      "assertions": 202,
+      "screenshots": 46,
+      "status": "success",
+      "startedAt": "2026-09-11T13:07:45.6087876Z"
+    },
+    "Exploration": {
+      "operations": 22,
+      "assertions": 76,
+      "screenshots": 23,
+      "status": "success",
+      "startedAt": "2026-09-11T13:08:10.2074836Z"
+    },
+    "Recruitment": {
+      "operations": 16,
+      "assertions": 58,
+      "screenshots": 17,
+      "status": "success",
+      "startedAt": "2026-09-11T13:08:25.6511180Z"
+    },
+    "Journey": {
+      "operations": 31,
+      "assertions": 141,
+      "screenshots": 32,
+      "status": "success",
+      "startedAt": "2026-09-11T13:08:38.9699199Z"
+    }
+  },
+  "operations": 114,
+  "assertions": 477,
+  "screenshots": 118,
+  "editMode": {
+    "passed": 243,
+    "failed": 0,
+    "skipped": 0
+  },
+  "testStartedAt": "2026-09-11 12:53:31Z"
+}

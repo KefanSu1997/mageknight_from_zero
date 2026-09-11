@@ -1,0 +1,1768 @@
+{
+  "samePngSha256": 498,
+  "differentPngSha256": 147,
+  "comparison": "645 previous captures compared; all magic case headers now show total162 instead of102; raw differences retained",
+  "changes": [
+    {
+      "batch": "basic_card",
+      "label": "basic_card_000_00_execute",
+      "bounds": [
+        870,
+        967,
+        1220,
+        1032
+      ]
+    },
+    {
+      "batch": "basic_card",
+      "label": "basic_card_014_00_execute",
+      "bounds": [
+        871,
+        968,
+        1219,
+        1031
+      ]
+    },
+    {
+      "batch": "basic_card",
+      "label": "basic_card_001_00_execute",
+      "bounds": [
+        870,
+        967,
+        1220,
+        1032
+      ]
+    },
+    {
+      "batch": "magic",
+      "label": "Scene Start",
+      "bounds": [
+        90,
+        91,
+        104,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_000_00_execute",
+      "bounds": [
+        90,
+        91,
+        104,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_000_01_execute",
+      "bounds": [
+        90,
+        91,
+        104,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_001_00_execute",
+      "bounds": [
+        90,
+        91,
+        104,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_001_01_execute",
+      "bounds": [
+        90,
+        91,
+        104,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_002_00_execute",
+      "bounds": [
+        90,
+        91,
+        104,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_002_01_execute",
+      "bounds": [
+        90,
+        91,
+        104,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_003_00_execute",
+      "bounds": [
+        90,
+        91,
+        104,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_003_01_execute",
+      "bounds": [
+        90,
+        91,
+        104,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_004_00_execute",
+      "bounds": [
+        90,
+        91,
+        104,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_004_01_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_005_00_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_005_01_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_006_00_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_006_01_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_007_00_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_007_01_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_008_00_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_008_01_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_009_00_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_009_01_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_010_00_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_010_01_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_011_00_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_011_01_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_012_00_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_012_01_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_013_00_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_013_01_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_014_00_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_014_01_execute",
+      "bounds": [
+        106,
+        91,
+        1152,
+        822
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": [
+        590,
+        477,
+        1152,
+        822
+      ]
+    },
+    {
+      "batch": "magic",
+      "label": "magic_015_00_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_015_01_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_016_00_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_016_01_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_017_00_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_017_01_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_018_00_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_018_01_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_019_00_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_019_01_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_020_00_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_020_01_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_021_00_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_021_01_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_022_00_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_022_01_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_023_00_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_023_01_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_000_02_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_000_03_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_006_02_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_006_03_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_012_02_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_012_03_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_018_02_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_018_03_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_009_02_play",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_009_02_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_009_03_play",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_009_03_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_009_04_play",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_009_04_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_009_05_play",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_009_05_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_009_06_play",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_009_06_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_009_07_play",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_009_07_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_009_08_play",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_009_08_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_009_09_play",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_009_09_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_015_02_play",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_015_02_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_015_03_play",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_015_03_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_015_04_play",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_015_04_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_015_05_play",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_015_05_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_015_06_play",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_015_06_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_015_07_play",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_015_07_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_015_08_play",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_015_08_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_015_09_play",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_015_09_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_017_02_play",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_017_02_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_017_03_play",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_017_03_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_017_04_play",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_017_04_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_017_05_play",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_017_05_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_017_06_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_017_07_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_017_08_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_010_02_play",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_010_02_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_010_03_play",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_010_03_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_010_04_play",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_010_04_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_010_05_play",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_010_05_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_010_06_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_017_09_play",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_017_09_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_017_10_play",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_017_10_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_017_11_play",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_017_11_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_017_12_play",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_017_12_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_017_13_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_017_14_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_017_15_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_010_07_play",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_010_07_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_010_08_play",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_010_08_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_010_09_play",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_010_09_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_010_10_play",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_010_10_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_010_11_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_008_02_play",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_008_02_operation_0",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_008_02_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_008_03_play",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_008_03_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_008_04_play",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_008_04_execute",
+      "bounds": [
+        106,
+        91,
+        119,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_008_05_play",
+      "bounds": [
+        121,
+        91,
+        135,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_008_05_execute",
+      "bounds": [
+        121,
+        91,
+        135,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_008_06_play",
+      "bounds": [
+        121,
+        91,
+        135,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_008_06_execute",
+      "bounds": [
+        121,
+        91,
+        135,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_008_07_play",
+      "bounds": [
+        121,
+        91,
+        135,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_008_07_operation_0",
+      "bounds": [
+        121,
+        91,
+        135,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "magic",
+      "label": "magic_008_07_execute",
+      "bounds": [
+        121,
+        91,
+        135,
+        112
+      ],
+      "outsideCaseTitleTop": null,
+      "outsideCaseTitleBelow": null
+    },
+    {
+      "batch": "items",
+      "label": "items_009_00_execute",
+      "bounds": [
+        751,
+        720,
+        774,
+        742
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "status": "verified_cases_only",
+  "caseCount": 62,
+  "caseResults": {
+    "partial": 56,
+    "passed": 6
+  },
+  "pointerOperations": 286,
+  "effectAssertions": 1246,
+  "screenshots": 162,
+  "originalArtSha256": "478d2d06191b479ccbe5fa7fb5a85474ca29b5f3780ab92e7efa5c3f0e0908b5",
+  "suiteSha256": "49a1a217fe667995864da9f811bb836ae17fc59d064fc2b738d3faef50936e18",
+  "remaining": "Full card-zone lifecycle, unsafe-hex forced retreat and other card combinations remain unverified."
+}

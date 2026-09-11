@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "unitDefinitions": 8,
+  "cases": 156,
+  "operations": 865,
+  "assertions": 6914,
+  "screenshots": 275,
+  "suiteSha256": "0f1291e6f9f09b2fdd7b696d487c068aa5efdb5e862fb818e6c453f48b4ced50",
+  "startedAt": "2026-09-11T13:04:38.5598876Z",
+  "finishedAt": "2026-09-11T13:07:01.5549831Z",
+  "damageCases": 46,
+  "scope": "八种原部队的招募/主动能力，以及列明的承伤案例；其余部队、完整元素抗性与复杂规则仍待验收"
+}

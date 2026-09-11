@@ -1,0 +1,30 @@
+{
+  "previous": "AutomationOutputs\\OriginalUnits\\20260911_201151_0dece5c6",
+  "current": "AutomationOutputs\\OriginalUnits\\20260911_210433_6cebc470",
+  "stateChanges": [],
+  "identicalImages": 273,
+  "differentImages": [
+    "unit_000_00_recruit",
+    "unit_000_02_use"
+  ],
+  "pixelDifferences": [
+    {
+      "label": "unit_000_00_recruit",
+      "bounds": [
+        970,
+        967,
+        1470,
+        1032
+      ]
+    },
+    {
+      "label": "unit_000_02_use",
+      "bounds": [
+        970,
+        967,
+        1470,
+        1032
+      ]
+    }
+  ]
+}

@@ -1,0 +1,230 @@
+{
+  "previousRun": "AutomationOutputs\\AllOriginalCards\\20260911_201543_752adb07",
+  "currentRun": "AutomationOutputs\\AllOriginalCards\\20260911_205758_b83addf3",
+  "oldCases": 490,
+  "identicalCompleteRecords": 487,
+  "changes": [
+    {
+      "id": "magic_014_01",
+      "oldStatus": "failed",
+      "newStatus": "partial",
+      "fields": {
+        "status": [
+          "failed",
+          "partial"
+        ],
+        "after": {
+          "IgnoreNextWound": [
+            "False",
+            "True"
+          ],
+          "FirstWoundIgnored": [
+            "True",
+            "False"
+          ]
+        },
+        "checks": [
+          [
+            {
+              "key": "MovementPool",
+              "expected": "0",
+              "actual": "0",
+              "passed": true
+            },
+            {
+              "key": "InfluencePool",
+              "expected": "0",
+              "actual": "0",
+              "passed": true
+            },
+            {
+              "key": "MeleePool",
+              "expected": "0",
+              "actual": "0",
+              "passed": true
+            },
+            {
+              "key": "RangedPool",
+              "expected": "0",
+              "actual": "0",
+              "passed": true
+            },
+            {
+              "key": "BlockPool",
+              "expected": "0",
+              "actual": "0",
+              "passed": true
+            },
+            {
+              "key": "token:Blue",
+              "expected": "1",
+              "actual": "1",
+              "passed": true
+            },
+            {
+              "key": "token:Black",
+              "expected": "1",
+              "actual": "1",
+              "passed": true
+            },
+            {
+              "key": "UnitsResistAll",
+              "expected": "True",
+              "actual": "True",
+              "passed": true
+            },
+            {
+              "key": "IgnoreNextWound",
+              "expected": "True",
+              "actual": "False",
+              "passed": false
+            },
+            {
+              "key": "originalArtwork",
+              "expected": "magic_014",
+              "actual": "magic_014",
+              "passed": true
+            },
+            {
+              "key": "printedEffectPresent",
+              "expected": "True",
+              "actual": "True",
+              "passed": true
+            },
+            {
+              "key": "executionException",
+              "expected": "",
+              "actual": "",
+              "passed": true
+            }
+          ],
+          [
+            {
+              "key": "MovementPool",
+              "expected": "0",
+              "actual": "0",
+              "passed": true
+            },
+            {
+              "key": "InfluencePool",
+              "expected": "0",
+              "actual": "0",
+              "passed": true
+            },
+            {
+              "key": "MeleePool",
+              "expected": "0",
+              "actual": "0",
+              "passed": true
+            },
+            {
+              "key": "RangedPool",
+              "expected": "0",
+              "actual": "0",
+              "passed": true
+            },
+            {
+              "key": "BlockPool",
+              "expected": "0",
+              "actual": "0",
+              "passed": true
+            },
+            {
+              "key": "token:Blue",
+              "expected": "1",
+              "actual": "1",
+              "passed": true
+            },
+            {
+              "key": "token:Black",
+              "expected": "1",
+              "actual": "1",
+              "passed": true
+            },
+            {
+              "key": "UnitsResistAll",
+              "expected": "True",
+              "actual": "True",
+              "passed": true
+            },
+            {
+              "key": "IgnoreNextWound",
+              "expected": "True",
+              "actual": "True",
+              "passed": true
+            },
+            {
+              "key": "originalArtwork",
+              "expected": "magic_014",
+              "actual": "magic_014",
+              "passed": true
+            },
+            {
+              "key": "printedEffectPresent",
+              "expected": "True",
+              "actual": "True",
+              "passed": true
+            },
+            {
+              "key": "executionException",
+              "expected": "",
+              "actual": "",
+              "passed": true
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "items_009_00",
+      "oldStatus": "partial",
+      "newStatus": "partial",
+      "fields": {
+        "after": {
+          "dice:faces": [
+            "Red",
+            "Blue"
+          ],
+          "handWounds": [
+            "4",
+            "3"
+          ],
+          "LastManaRolls:Blue": [
+            null,
+            "True"
+          ],
+          "Wounds": [
+            "4",
+            "3"
+          ],
+          "hand": [
+            "7",
+            "6"
+          ],
+          "LastManaRolls:Red": [
+            "True",
+            null
+          ]
+        }
+      }
+    },
+    {
+      "id": "items_011_00",
+      "oldStatus": "partial",
+      "newStatus": "partial",
+      "fields": {
+        "after": {
+          "crystal:Blue": [
+            "2",
+            "1"
+          ],
+          "crystal:Green": [
+            "2",
+            "3"
+          ]
+        }
+      }
+    }
+  ],
+  "newCases": 60
+}
