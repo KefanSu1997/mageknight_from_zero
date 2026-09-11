@@ -22,7 +22,7 @@ Ice Shield and Burning/Exploding Shield now bind success triggers to their actua
 
 Nature Force and Wrath Horn now create actual siege contributions. Horn dice retain all six faces at day/night and roll once per chosen bonus; actual rolled colors and wound cards are audited in scenes. Necro Shield splits block into separate contributions for distinct attacks, preserving unused parts and rejecting reuse on the same attack. Strong blocks retain cold-fire. Full multi-attack enemy and artifact lifecycle integration remains pending.
 
-Hero skills now preserve original source identity and printed timing. A shared owned-skill entry validates choices before execution and tracks turn/round uses on the player; reloading the same definition cannot refresh usage. Burning Power retains siege and physical/fire choices; Hot Sword retains physical/fire melee. The original skill sheet is shown in an independent scene suite. The source audit retains 82 skill records and 32 unit records, including two unit backs and one unit with missing JSON rules.
+Hero skills now preserve original source identity and printed timing. A shared owned-skill entry validates choices before execution and tracks turn/round uses on the player; reloading the same definition cannot refresh usage. Burning Power retains siege and physical/fire choices; Hot Sword retains physical/fire melee. The original skill sheet is shown in an independent scene suite. The source audit retains 82 skill records and 32 unit records, including two unit backs. The missing army_003 JSON rules have now been restored from its original face; the previous inventory remains a historical audit.
 
 ## How to test
 
@@ -41,3 +41,14 @@ This is an intermediate repair, not full original-card certification. Remaining 
 ## Related issues
 
 User request: continuously iterate until every original card passes in-scene validation. No issue number supplied. Remote PR creation/merge is pending authenticated GitHub access; the branch can be archived over SSH 443.
+
+
+## Original unit batch (2026-09-11, local archive)
+
+Why: original unit data omitted or misread abilities, resistance and recruitment icons; the legacy turn entry readied units every turn. What: restore eight original definitions, load typed paid abilities, validate ownership/readiness/wounds/options before payment, recruit from the actual offer and consume influence, and ready units only at the new-round boundary. Reuse original artwork. Complex abilities, unit damage allocation and complete combat-phase integration remain pending.
+
+How to test: run `python tools/restore_original_unit_data.py` and `python tools/build_unit_verification.py` outside Play Mode, then the Unity menu `Tools/Mage Knight/Original Cards/Run Units`. Verify the exact output with `python tools/verify_unit_scenes.py --output <run>`. The new run is `AutomationOutputs/OriginalUnits/20260911_193332_c99cb476`: 110 cases, 612 operations, 2937 assertions, 213 captures passed. EditMode212 passed. Hero39 cases and adventure4 scenes passed with all actual states and 282 regression images identical to their previous runs. Final Console two zero-error reads are retained. The older 490-deed result is a baseline, not a fresh run or a completion claim.
+
+Risks: this covers eight units' recruitment and active abilities, not all 30 valid unit cards or every rule. Existing failed/partial deed cases and unverified skills remain open. Related issues: user-requested all-original-card verification; no linked issue ID.
+
+Archive policy: remote push is paused following VPN quota exhaustion. Full captures and reports stay local; review and local commit contain source, concise evidence summaries and hashes. Estimate pending LFS transfers before any future push. No main/force push.

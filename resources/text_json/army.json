@@ -62,7 +62,23 @@
     "set": "army",
     "set_idx": 3,
     "image": "cards\\army_003.png",
-    "en_image": "cards\\army_en_003.png"
+    "en_image": "cards\\army_en_003.png",
+    "card_name_cn": "埃莫提普烈焰枪手",
+    "level": "III",
+    "influence_cost": "8",
+    "armor": "6",
+    "resistances": "",
+    "recruit_location": "城堡,城市",
+    "abilities": [
+      {
+        "mana_cost": "None",
+        "effect": "攻击或格挡5。"
+      },
+      {
+        "mana_cost": "红",
+        "effect": "远程火焰攻击6。"
+      }
+    ]
   },
   {
     "id": "army_004",

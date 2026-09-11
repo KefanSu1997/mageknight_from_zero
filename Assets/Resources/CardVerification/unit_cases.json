@@ -1,0 +1,8919 @@
+{
+  "cases": [
+    {
+      "id": "unit_000",
+      "cardId": "army_003",
+      "title": "能力0·选项0·招募到结算",
+      "location": "Keep",
+      "steps": [
+        {
+          "kind": "recruit",
+          "label": "支付原费用招募",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "offer",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "12"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "armor",
+              "value": "6"
+            },
+            {
+              "key": "level",
+              "value": "3"
+            },
+            {
+              "key": "physicalResist",
+              "value": "False"
+            },
+            {
+              "key": "outcome",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战并选择敌人",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "发动原版能力",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "melee",
+              "value": "5"
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "element",
+              "value": "Physical"
+            }
+          ]
+        },
+        {
+          "kind": "resolve",
+          "label": "结算攻击与真实击杀",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "effective",
+              "value": "5"
+            },
+            {
+              "key": "required",
+              "value": "3"
+            },
+            {
+              "key": "kills",
+              "value": "1"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_001",
+      "cardId": "army_003",
+      "title": "能力0·选项1·招募到结算",
+      "location": "Keep",
+      "steps": [
+        {
+          "kind": "recruit",
+          "label": "支付原费用招募",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "offer",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "12"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "armor",
+              "value": "6"
+            },
+            {
+              "key": "level",
+              "value": "3"
+            },
+            {
+              "key": "physicalResist",
+              "value": "False"
+            },
+            {
+              "key": "outcome",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战并选择敌人",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "发动原版能力",
+          "ability": 0,
+          "option": 1,
+          "expected": [
+            {
+              "key": "block",
+              "value": "5"
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "blockElement",
+              "value": "Physical"
+            }
+          ]
+        },
+        {
+          "kind": "resolve",
+          "label": "结算格挡与英雄伤牌",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "effective",
+              "value": "5"
+            },
+            {
+              "key": "required",
+              "value": "3"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_002",
+      "cardId": "army_003",
+      "title": "能力1·选项0·招募到结算",
+      "location": "Keep",
+      "steps": [
+        {
+          "kind": "recruit",
+          "label": "支付原费用招募",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "offer",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "12"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "armor",
+              "value": "6"
+            },
+            {
+              "key": "level",
+              "value": "3"
+            },
+            {
+              "key": "physicalResist",
+              "value": "False"
+            },
+            {
+              "key": "outcome",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战并选择敌人",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "发动原版能力",
+          "ability": 1,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ranged",
+              "value": "6"
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "Red",
+              "value": "1"
+            },
+            {
+              "key": "element",
+              "value": "Fire"
+            }
+          ]
+        },
+        {
+          "kind": "resolve",
+          "label": "结算攻击与真实击杀",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "effective",
+              "value": "6"
+            },
+            {
+              "key": "required",
+              "value": "3"
+            },
+            {
+              "key": "kills",
+              "value": "1"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_003",
+      "cardId": "army_003",
+      "title": "同轮不能重复使用，下一轮才重整",
+      "location": "Keep",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "持有就绪原部队",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "第一次发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "重复发动应被拒绝",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": "部队必须就绪、未受伤且未销毁"
+            }
+          ]
+        },
+        {
+          "kind": "nextTurn",
+          "label": "下一回合仍然横置",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "False"
+            }
+          ]
+        },
+        {
+          "kind": "legacyTurn",
+          "label": "旧回合入口同样不重整",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "False"
+            }
+          ]
+        },
+        {
+          "kind": "nextRound",
+          "label": "新一轮恢复指挥标记",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "canActivate",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "新一轮重新进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "新一轮允许发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_004",
+      "cardId": "army_003",
+      "title": "unowned状态禁止发动",
+      "location": "Keep",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "设置部队状态",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试非法发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "只能发动自有部队"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "Red",
+              "value": "2"
+            },
+            {
+              "key": "Blue",
+              "value": "2"
+            },
+            {
+              "key": "Green",
+              "value": "2"
+            }
+          ]
+        }
+      ],
+      "unowned": true
+    },
+    {
+      "id": "unit_005",
+      "cardId": "army_003",
+      "title": "wounds状态禁止发动",
+      "location": "Keep",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "设置部队状态",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试非法发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队必须就绪、未受伤且未销毁"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "Red",
+              "value": "2"
+            },
+            {
+              "key": "Blue",
+              "value": "2"
+            },
+            {
+              "key": "Green",
+              "value": "2"
+            }
+          ]
+        }
+      ],
+      "wounds": 1
+    },
+    {
+      "id": "unit_006",
+      "cardId": "army_003",
+      "title": "exhausted状态禁止发动",
+      "location": "Keep",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "设置部队状态",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试非法发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队必须就绪、未受伤且未销毁"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "Red",
+              "value": "2"
+            },
+            {
+              "key": "Blue",
+              "value": "2"
+            },
+            {
+              "key": "Green",
+              "value": "2"
+            }
+          ]
+        }
+      ],
+      "exhausted": true
+    },
+    {
+      "id": "unit_007",
+      "cardId": "army_003",
+      "title": "destroyed状态禁止发动",
+      "location": "Keep",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "设置部队状态",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试非法发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队必须就绪、未受伤且未销毁"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "Red",
+              "value": "2"
+            },
+            {
+              "key": "Blue",
+              "value": "2"
+            },
+            {
+              "key": "Green",
+              "value": "2"
+            }
+          ]
+        }
+      ],
+      "destroyed": true
+    },
+    {
+      "id": "unit_008",
+      "cardId": "army_003",
+      "title": "非法能力或选项不得横置",
+      "location": "Keep",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "持有就绪部队",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "拒绝无效选择",
+          "ability": 99,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队能力尚未接入或选择无效"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "随后正常发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_009",
+      "cardId": "army_003",
+      "title": "非法能力或选项不得横置",
+      "location": "Keep",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "持有就绪部队",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "拒绝无效选择",
+          "ability": 0,
+          "option": 2,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队能力选项无效"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "随后正常发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_010",
+      "cardId": "army_003",
+      "title": "招募资源不足保持供应与单位不变",
+      "location": "Keep",
+      "steps": [
+        {
+          "kind": "recruit",
+          "label": "尝试低于原费用招募",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "outcome",
+              "value": "False"
+            },
+            {
+              "key": "units",
+              "value": "0"
+            },
+            {
+              "key": "offer",
+              "value": "1"
+            },
+            {
+              "key": "influence",
+              "value": "7"
+            }
+          ]
+        }
+      ],
+      "influence": 7
+    },
+    {
+      "id": "unit_011",
+      "cardId": "army_003",
+      "title": "原图没有此招募地点",
+      "location": "Monastery",
+      "steps": [
+        {
+          "kind": "recruit",
+          "label": "尝试错误地点招募",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "outcome",
+              "value": "False"
+            },
+            {
+              "key": "units",
+              "value": "0"
+            },
+            {
+              "key": "offer",
+              "value": "1"
+            },
+            {
+              "key": "influence",
+              "value": "20"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_012",
+      "cardId": "army_003",
+      "title": "魔力不足不支付不横置",
+      "location": "Keep",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "持有部队但没有魔力",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "拒绝无法支付的能力",
+          "ability": 1,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队能力所需魔力不足"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "Red",
+              "value": "0"
+            },
+            {
+              "key": "Blue",
+              "value": "0"
+            },
+            {
+              "key": "Green",
+              "value": "0"
+            }
+          ]
+        }
+      ],
+      "mana": 0
+    },
+    {
+      "id": "unit_013",
+      "cardId": "army_2_001",
+      "title": "能力0·选项0·招募到结算",
+      "location": "MageTower",
+      "steps": [
+        {
+          "kind": "recruit",
+          "label": "支付原费用招募",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "offer",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "13"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "armor",
+              "value": "3"
+            },
+            {
+              "key": "level",
+              "value": "2"
+            },
+            {
+              "key": "physicalResist",
+              "value": "True"
+            },
+            {
+              "key": "outcome",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战并选择敌人",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "发动原版能力",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "melee",
+              "value": "2"
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "element",
+              "value": "Physical"
+            }
+          ]
+        },
+        {
+          "kind": "resolve",
+          "label": "结算攻击与真实击杀",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "effective",
+              "value": "2"
+            },
+            {
+              "key": "required",
+              "value": "3"
+            },
+            {
+              "key": "kills",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_014",
+      "cardId": "army_2_001",
+      "title": "能力0·选项1·招募到结算",
+      "location": "MageTower",
+      "steps": [
+        {
+          "kind": "recruit",
+          "label": "支付原费用招募",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "offer",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "13"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "armor",
+              "value": "3"
+            },
+            {
+              "key": "level",
+              "value": "2"
+            },
+            {
+              "key": "physicalResist",
+              "value": "True"
+            },
+            {
+              "key": "outcome",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战并选择敌人",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "发动原版能力",
+          "ability": 0,
+          "option": 1,
+          "expected": [
+            {
+              "key": "block",
+              "value": "2"
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "blockElement",
+              "value": "Physical"
+            }
+          ]
+        },
+        {
+          "kind": "resolve",
+          "label": "结算格挡与英雄伤牌",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "effective",
+              "value": "2"
+            },
+            {
+              "key": "required",
+              "value": "3"
+            },
+            {
+              "key": "heroWounds",
+              "value": "2"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_015",
+      "cardId": "army_2_001",
+      "title": "能力1·选项0·招募到结算",
+      "location": "MageTower",
+      "steps": [
+        {
+          "kind": "recruit",
+          "label": "支付原费用招募",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "offer",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "13"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "armor",
+              "value": "3"
+            },
+            {
+              "key": "level",
+              "value": "2"
+            },
+            {
+              "key": "physicalResist",
+              "value": "True"
+            },
+            {
+              "key": "outcome",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战并选择敌人",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "发动原版能力",
+          "ability": 1,
+          "option": 0,
+          "expected": [
+            {
+              "key": "block",
+              "value": "4"
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "Red",
+              "value": "1"
+            },
+            {
+              "key": "blockElement",
+              "value": "Fire"
+            }
+          ]
+        },
+        {
+          "kind": "resolve",
+          "label": "结算格挡与英雄伤牌",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "effective",
+              "value": "4"
+            },
+            {
+              "key": "required",
+              "value": "3"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_016",
+      "cardId": "army_2_001",
+      "title": "能力2·选项0·招募到结算",
+      "location": "MageTower",
+      "steps": [
+        {
+          "kind": "recruit",
+          "label": "支付原费用招募",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "offer",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "13"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "armor",
+              "value": "3"
+            },
+            {
+              "key": "level",
+              "value": "2"
+            },
+            {
+              "key": "physicalResist",
+              "value": "True"
+            },
+            {
+              "key": "outcome",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战并选择敌人",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "发动原版能力",
+          "ability": 2,
+          "option": 0,
+          "expected": [
+            {
+              "key": "block",
+              "value": "4"
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "Blue",
+              "value": "1"
+            },
+            {
+              "key": "blockElement",
+              "value": "Ice"
+            }
+          ]
+        },
+        {
+          "kind": "resolve",
+          "label": "结算格挡与英雄伤牌",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "effective",
+              "value": "4"
+            },
+            {
+              "key": "required",
+              "value": "3"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_017",
+      "cardId": "army_2_001",
+      "title": "同轮不能重复使用，下一轮才重整",
+      "location": "MageTower",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "持有就绪原部队",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "第一次发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "重复发动应被拒绝",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": "部队必须就绪、未受伤且未销毁"
+            }
+          ]
+        },
+        {
+          "kind": "nextTurn",
+          "label": "下一回合仍然横置",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "False"
+            }
+          ]
+        },
+        {
+          "kind": "legacyTurn",
+          "label": "旧回合入口同样不重整",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "False"
+            }
+          ]
+        },
+        {
+          "kind": "nextRound",
+          "label": "新一轮恢复指挥标记",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "canActivate",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "新一轮重新进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "新一轮允许发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_018",
+      "cardId": "army_2_001",
+      "title": "unowned状态禁止发动",
+      "location": "MageTower",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "设置部队状态",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试非法发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "只能发动自有部队"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "Red",
+              "value": "2"
+            },
+            {
+              "key": "Blue",
+              "value": "2"
+            },
+            {
+              "key": "Green",
+              "value": "2"
+            }
+          ]
+        }
+      ],
+      "unowned": true
+    },
+    {
+      "id": "unit_019",
+      "cardId": "army_2_001",
+      "title": "wounds状态禁止发动",
+      "location": "MageTower",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "设置部队状态",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试非法发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队必须就绪、未受伤且未销毁"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "Red",
+              "value": "2"
+            },
+            {
+              "key": "Blue",
+              "value": "2"
+            },
+            {
+              "key": "Green",
+              "value": "2"
+            }
+          ]
+        }
+      ],
+      "wounds": 1
+    },
+    {
+      "id": "unit_020",
+      "cardId": "army_2_001",
+      "title": "exhausted状态禁止发动",
+      "location": "MageTower",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "设置部队状态",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试非法发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队必须就绪、未受伤且未销毁"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "Red",
+              "value": "2"
+            },
+            {
+              "key": "Blue",
+              "value": "2"
+            },
+            {
+              "key": "Green",
+              "value": "2"
+            }
+          ]
+        }
+      ],
+      "exhausted": true
+    },
+    {
+      "id": "unit_021",
+      "cardId": "army_2_001",
+      "title": "destroyed状态禁止发动",
+      "location": "MageTower",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "设置部队状态",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试非法发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队必须就绪、未受伤且未销毁"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "Red",
+              "value": "2"
+            },
+            {
+              "key": "Blue",
+              "value": "2"
+            },
+            {
+              "key": "Green",
+              "value": "2"
+            }
+          ]
+        }
+      ],
+      "destroyed": true
+    },
+    {
+      "id": "unit_022",
+      "cardId": "army_2_001",
+      "title": "非法能力或选项不得横置",
+      "location": "MageTower",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "持有就绪部队",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "拒绝无效选择",
+          "ability": 99,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队能力尚未接入或选择无效"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "随后正常发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_023",
+      "cardId": "army_2_001",
+      "title": "非法能力或选项不得横置",
+      "location": "MageTower",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "持有就绪部队",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "拒绝无效选择",
+          "ability": 0,
+          "option": 2,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队能力选项无效"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "随后正常发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_024",
+      "cardId": "army_2_001",
+      "title": "招募资源不足保持供应与单位不变",
+      "location": "MageTower",
+      "steps": [
+        {
+          "kind": "recruit",
+          "label": "尝试低于原费用招募",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "outcome",
+              "value": "False"
+            },
+            {
+              "key": "units",
+              "value": "0"
+            },
+            {
+              "key": "offer",
+              "value": "1"
+            },
+            {
+              "key": "influence",
+              "value": "6"
+            }
+          ]
+        }
+      ],
+      "influence": 6
+    },
+    {
+      "id": "unit_025",
+      "cardId": "army_2_001",
+      "title": "原图没有此招募地点",
+      "location": "City",
+      "steps": [
+        {
+          "kind": "recruit",
+          "label": "尝试错误地点招募",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "outcome",
+              "value": "False"
+            },
+            {
+              "key": "units",
+              "value": "0"
+            },
+            {
+              "key": "offer",
+              "value": "1"
+            },
+            {
+              "key": "influence",
+              "value": "20"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_026",
+      "cardId": "army_2_001",
+      "title": "魔力不足不支付不横置",
+      "location": "MageTower",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "持有部队但没有魔力",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "拒绝无法支付的能力",
+          "ability": 1,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队能力所需魔力不足"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "Red",
+              "value": "0"
+            },
+            {
+              "key": "Blue",
+              "value": "0"
+            },
+            {
+              "key": "Green",
+              "value": "0"
+            }
+          ]
+        }
+      ],
+      "mana": 0
+    },
+    {
+      "id": "unit_027",
+      "cardId": "army_2_001",
+      "title": "魔力不足不支付不横置",
+      "location": "MageTower",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "持有部队但没有魔力",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "拒绝无法支付的能力",
+          "ability": 2,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队能力所需魔力不足"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "Red",
+              "value": "0"
+            },
+            {
+              "key": "Blue",
+              "value": "0"
+            },
+            {
+              "key": "Green",
+              "value": "0"
+            }
+          ]
+        }
+      ],
+      "mana": 0
+    },
+    {
+      "id": "unit_028",
+      "cardId": "army_2_005",
+      "title": "能力0·选项0·招募到结算",
+      "location": "Monastery",
+      "steps": [
+        {
+          "kind": "recruit",
+          "label": "支付原费用招募",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "offer",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "13"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "armor",
+              "value": "4"
+            },
+            {
+              "key": "level",
+              "value": "2"
+            },
+            {
+              "key": "physicalResist",
+              "value": "False"
+            },
+            {
+              "key": "outcome",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战并选择敌人",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "发动原版能力",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "melee",
+              "value": "3"
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "element",
+              "value": "Physical"
+            }
+          ]
+        },
+        {
+          "kind": "resolve",
+          "label": "结算攻击与真实击杀",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "effective",
+              "value": "3"
+            },
+            {
+              "key": "required",
+              "value": "3"
+            },
+            {
+              "key": "kills",
+              "value": "1"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_029",
+      "cardId": "army_2_005",
+      "title": "能力0·选项1·招募到结算",
+      "location": "Monastery",
+      "steps": [
+        {
+          "kind": "recruit",
+          "label": "支付原费用招募",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "offer",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "13"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "armor",
+              "value": "4"
+            },
+            {
+              "key": "level",
+              "value": "2"
+            },
+            {
+              "key": "physicalResist",
+              "value": "False"
+            },
+            {
+              "key": "outcome",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战并选择敌人",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "发动原版能力",
+          "ability": 0,
+          "option": 1,
+          "expected": [
+            {
+              "key": "block",
+              "value": "3"
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "blockElement",
+              "value": "Physical"
+            }
+          ]
+        },
+        {
+          "kind": "resolve",
+          "label": "结算格挡与英雄伤牌",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "effective",
+              "value": "3"
+            },
+            {
+              "key": "required",
+              "value": "3"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_030",
+      "cardId": "army_2_005",
+      "title": "能力1·选项0·招募到结算",
+      "location": "Monastery",
+      "steps": [
+        {
+          "kind": "recruit",
+          "label": "支付原费用招募",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "offer",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "13"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "armor",
+              "value": "4"
+            },
+            {
+              "key": "level",
+              "value": "2"
+            },
+            {
+              "key": "physicalResist",
+              "value": "False"
+            },
+            {
+              "key": "outcome",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战并选择敌人",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "发动原版能力",
+          "ability": 1,
+          "option": 0,
+          "expected": [
+            {
+              "key": "melee",
+              "value": "4"
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "Blue",
+              "value": "1"
+            },
+            {
+              "key": "element",
+              "value": "Ice"
+            }
+          ]
+        },
+        {
+          "kind": "resolve",
+          "label": "结算攻击与真实击杀",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "effective",
+              "value": "4"
+            },
+            {
+              "key": "required",
+              "value": "3"
+            },
+            {
+              "key": "kills",
+              "value": "1"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_031",
+      "cardId": "army_2_005",
+      "title": "能力1·选项1·招募到结算",
+      "location": "Monastery",
+      "steps": [
+        {
+          "kind": "recruit",
+          "label": "支付原费用招募",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "offer",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "13"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "armor",
+              "value": "4"
+            },
+            {
+              "key": "level",
+              "value": "2"
+            },
+            {
+              "key": "physicalResist",
+              "value": "False"
+            },
+            {
+              "key": "outcome",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战并选择敌人",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "发动原版能力",
+          "ability": 1,
+          "option": 1,
+          "expected": [
+            {
+              "key": "block",
+              "value": "4"
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "Blue",
+              "value": "1"
+            },
+            {
+              "key": "blockElement",
+              "value": "Ice"
+            }
+          ]
+        },
+        {
+          "kind": "resolve",
+          "label": "结算格挡与英雄伤牌",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "effective",
+              "value": "4"
+            },
+            {
+              "key": "required",
+              "value": "3"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_032",
+      "cardId": "army_2_005",
+      "title": "同轮不能重复使用，下一轮才重整",
+      "location": "Monastery",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "持有就绪原部队",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "第一次发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "重复发动应被拒绝",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": "部队必须就绪、未受伤且未销毁"
+            }
+          ]
+        },
+        {
+          "kind": "nextTurn",
+          "label": "下一回合仍然横置",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "False"
+            }
+          ]
+        },
+        {
+          "kind": "legacyTurn",
+          "label": "旧回合入口同样不重整",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "False"
+            }
+          ]
+        },
+        {
+          "kind": "nextRound",
+          "label": "新一轮恢复指挥标记",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "canActivate",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "新一轮重新进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "新一轮允许发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_033",
+      "cardId": "army_2_005",
+      "title": "unowned状态禁止发动",
+      "location": "Monastery",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "设置部队状态",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试非法发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "只能发动自有部队"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "Red",
+              "value": "2"
+            },
+            {
+              "key": "Blue",
+              "value": "2"
+            },
+            {
+              "key": "Green",
+              "value": "2"
+            }
+          ]
+        }
+      ],
+      "unowned": true
+    },
+    {
+      "id": "unit_034",
+      "cardId": "army_2_005",
+      "title": "wounds状态禁止发动",
+      "location": "Monastery",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "设置部队状态",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试非法发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队必须就绪、未受伤且未销毁"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "Red",
+              "value": "2"
+            },
+            {
+              "key": "Blue",
+              "value": "2"
+            },
+            {
+              "key": "Green",
+              "value": "2"
+            }
+          ]
+        }
+      ],
+      "wounds": 1
+    },
+    {
+      "id": "unit_035",
+      "cardId": "army_2_005",
+      "title": "exhausted状态禁止发动",
+      "location": "Monastery",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "设置部队状态",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试非法发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队必须就绪、未受伤且未销毁"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "Red",
+              "value": "2"
+            },
+            {
+              "key": "Blue",
+              "value": "2"
+            },
+            {
+              "key": "Green",
+              "value": "2"
+            }
+          ]
+        }
+      ],
+      "exhausted": true
+    },
+    {
+      "id": "unit_036",
+      "cardId": "army_2_005",
+      "title": "destroyed状态禁止发动",
+      "location": "Monastery",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "设置部队状态",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试非法发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队必须就绪、未受伤且未销毁"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "Red",
+              "value": "2"
+            },
+            {
+              "key": "Blue",
+              "value": "2"
+            },
+            {
+              "key": "Green",
+              "value": "2"
+            }
+          ]
+        }
+      ],
+      "destroyed": true
+    },
+    {
+      "id": "unit_037",
+      "cardId": "army_2_005",
+      "title": "非法能力或选项不得横置",
+      "location": "Monastery",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "持有就绪部队",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "拒绝无效选择",
+          "ability": 99,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队能力尚未接入或选择无效"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "随后正常发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_038",
+      "cardId": "army_2_005",
+      "title": "非法能力或选项不得横置",
+      "location": "Monastery",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "持有就绪部队",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "拒绝无效选择",
+          "ability": 0,
+          "option": 2,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队能力选项无效"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "随后正常发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_039",
+      "cardId": "army_2_005",
+      "title": "招募资源不足保持供应与单位不变",
+      "location": "Monastery",
+      "steps": [
+        {
+          "kind": "recruit",
+          "label": "尝试低于原费用招募",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "outcome",
+              "value": "False"
+            },
+            {
+              "key": "units",
+              "value": "0"
+            },
+            {
+              "key": "offer",
+              "value": "1"
+            },
+            {
+              "key": "influence",
+              "value": "6"
+            }
+          ]
+        }
+      ],
+      "influence": 6
+    },
+    {
+      "id": "unit_040",
+      "cardId": "army_2_005",
+      "title": "原图没有此招募地点",
+      "location": "City",
+      "steps": [
+        {
+          "kind": "recruit",
+          "label": "尝试错误地点招募",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "outcome",
+              "value": "False"
+            },
+            {
+              "key": "units",
+              "value": "0"
+            },
+            {
+              "key": "offer",
+              "value": "1"
+            },
+            {
+              "key": "influence",
+              "value": "20"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_041",
+      "cardId": "army_2_005",
+      "title": "魔力不足不支付不横置",
+      "location": "Monastery",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "持有部队但没有魔力",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "拒绝无法支付的能力",
+          "ability": 1,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队能力所需魔力不足"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "Red",
+              "value": "0"
+            },
+            {
+              "key": "Blue",
+              "value": "0"
+            },
+            {
+              "key": "Green",
+              "value": "0"
+            }
+          ]
+        }
+      ],
+      "mana": 0
+    },
+    {
+      "id": "unit_042",
+      "cardId": "army_2_006",
+      "title": "能力0·选项0·招募到结算",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "recruit",
+          "label": "支付原费用招募",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "offer",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "16"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "armor",
+              "value": "3"
+            },
+            {
+              "key": "level",
+              "value": "1"
+            },
+            {
+              "key": "physicalResist",
+              "value": "False"
+            },
+            {
+              "key": "outcome",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战并选择敌人",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "发动原版能力",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "melee",
+              "value": "2"
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "element",
+              "value": "Physical"
+            }
+          ]
+        },
+        {
+          "kind": "resolve",
+          "label": "结算攻击与真实击杀",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "effective",
+              "value": "2"
+            },
+            {
+              "key": "required",
+              "value": "3"
+            },
+            {
+              "key": "kills",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_043",
+      "cardId": "army_2_006",
+      "title": "能力0·选项1·招募到结算",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "recruit",
+          "label": "支付原费用招募",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "offer",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "16"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "armor",
+              "value": "3"
+            },
+            {
+              "key": "level",
+              "value": "1"
+            },
+            {
+              "key": "physicalResist",
+              "value": "False"
+            },
+            {
+              "key": "outcome",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战并选择敌人",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "发动原版能力",
+          "ability": 0,
+          "option": 1,
+          "expected": [
+            {
+              "key": "block",
+              "value": "2"
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "blockElement",
+              "value": "Physical"
+            }
+          ]
+        },
+        {
+          "kind": "resolve",
+          "label": "结算格挡与英雄伤牌",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "effective",
+              "value": "2"
+            },
+            {
+              "key": "required",
+              "value": "3"
+            },
+            {
+              "key": "heroWounds",
+              "value": "2"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_044",
+      "cardId": "army_2_006",
+      "title": "能力1·选项0·招募到结算",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "recruit",
+          "label": "支付原费用招募",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "offer",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "16"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "armor",
+              "value": "3"
+            },
+            {
+              "key": "level",
+              "value": "1"
+            },
+            {
+              "key": "physicalResist",
+              "value": "False"
+            },
+            {
+              "key": "outcome",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "发动原版能力",
+          "ability": 1,
+          "option": 0,
+          "expected": [
+            {
+              "key": "influence",
+              "value": "18"
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_045",
+      "cardId": "army_2_006",
+      "title": "能力2·选项0·招募到结算",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "recruit",
+          "label": "支付原费用招募",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "offer",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "16"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "armor",
+              "value": "3"
+            },
+            {
+              "key": "level",
+              "value": "1"
+            },
+            {
+              "key": "physicalResist",
+              "value": "False"
+            },
+            {
+              "key": "outcome",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "发动原版能力",
+          "ability": 2,
+          "option": 0,
+          "expected": [
+            {
+              "key": "move",
+              "value": "2"
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "move",
+          "label": "支付平原费用移动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "move",
+              "value": "0"
+            },
+            {
+              "key": "position",
+              "value": "1"
+            },
+            {
+              "key": "outcome",
+              "value": "True"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_046",
+      "cardId": "army_2_006",
+      "title": "同轮不能重复使用，下一轮才重整",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "持有就绪原部队",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "第一次发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "重复发动应被拒绝",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": "部队必须就绪、未受伤且未销毁"
+            }
+          ]
+        },
+        {
+          "kind": "nextTurn",
+          "label": "下一回合仍然横置",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "False"
+            }
+          ]
+        },
+        {
+          "kind": "legacyTurn",
+          "label": "旧回合入口同样不重整",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "False"
+            }
+          ]
+        },
+        {
+          "kind": "nextRound",
+          "label": "新一轮恢复指挥标记",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "canActivate",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "新一轮重新进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "新一轮允许发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_047",
+      "cardId": "army_2_006",
+      "title": "unowned状态禁止发动",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "设置部队状态",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试非法发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "只能发动自有部队"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "Red",
+              "value": "2"
+            },
+            {
+              "key": "Blue",
+              "value": "2"
+            },
+            {
+              "key": "Green",
+              "value": "2"
+            }
+          ]
+        }
+      ],
+      "unowned": true
+    },
+    {
+      "id": "unit_048",
+      "cardId": "army_2_006",
+      "title": "wounds状态禁止发动",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "设置部队状态",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试非法发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队必须就绪、未受伤且未销毁"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "Red",
+              "value": "2"
+            },
+            {
+              "key": "Blue",
+              "value": "2"
+            },
+            {
+              "key": "Green",
+              "value": "2"
+            }
+          ]
+        }
+      ],
+      "wounds": 1
+    },
+    {
+      "id": "unit_049",
+      "cardId": "army_2_006",
+      "title": "exhausted状态禁止发动",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "设置部队状态",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试非法发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队必须就绪、未受伤且未销毁"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "Red",
+              "value": "2"
+            },
+            {
+              "key": "Blue",
+              "value": "2"
+            },
+            {
+              "key": "Green",
+              "value": "2"
+            }
+          ]
+        }
+      ],
+      "exhausted": true
+    },
+    {
+      "id": "unit_050",
+      "cardId": "army_2_006",
+      "title": "destroyed状态禁止发动",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "设置部队状态",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试非法发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队必须就绪、未受伤且未销毁"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "Red",
+              "value": "2"
+            },
+            {
+              "key": "Blue",
+              "value": "2"
+            },
+            {
+              "key": "Green",
+              "value": "2"
+            }
+          ]
+        }
+      ],
+      "destroyed": true
+    },
+    {
+      "id": "unit_051",
+      "cardId": "army_2_006",
+      "title": "非法能力或选项不得横置",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "持有就绪部队",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "拒绝无效选择",
+          "ability": 99,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队能力尚未接入或选择无效"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "随后正常发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_052",
+      "cardId": "army_2_006",
+      "title": "非法能力或选项不得横置",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "持有就绪部队",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "拒绝无效选择",
+          "ability": 0,
+          "option": 2,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队能力选项无效"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "随后正常发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_053",
+      "cardId": "army_2_006",
+      "title": "招募资源不足保持供应与单位不变",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "recruit",
+          "label": "尝试低于原费用招募",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "outcome",
+              "value": "False"
+            },
+            {
+              "key": "units",
+              "value": "0"
+            },
+            {
+              "key": "offer",
+              "value": "1"
+            },
+            {
+              "key": "influence",
+              "value": "3"
+            }
+          ]
+        }
+      ],
+      "influence": 3
+    },
+    {
+      "id": "unit_054",
+      "cardId": "army_2_006",
+      "title": "原图没有此招募地点",
+      "location": "City",
+      "steps": [
+        {
+          "kind": "recruit",
+          "label": "尝试错误地点招募",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "outcome",
+              "value": "False"
+            },
+            {
+              "key": "units",
+              "value": "0"
+            },
+            {
+              "key": "offer",
+              "value": "1"
+            },
+            {
+              "key": "influence",
+              "value": "20"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_055",
+      "cardId": "army_2_007",
+      "title": "能力0·选项0·招募到结算",
+      "location": "Monastery",
+      "steps": [
+        {
+          "kind": "recruit",
+          "label": "支付原费用招募",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "offer",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "13"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "armor",
+              "value": "4"
+            },
+            {
+              "key": "level",
+              "value": "2"
+            },
+            {
+              "key": "physicalResist",
+              "value": "False"
+            },
+            {
+              "key": "outcome",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战并选择敌人",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "发动原版能力",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "melee",
+              "value": "3"
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "element",
+              "value": "Physical"
+            }
+          ]
+        },
+        {
+          "kind": "resolve",
+          "label": "结算攻击与真实击杀",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "effective",
+              "value": "3"
+            },
+            {
+              "key": "required",
+              "value": "3"
+            },
+            {
+              "key": "kills",
+              "value": "1"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_056",
+      "cardId": "army_2_007",
+      "title": "能力0·选项1·招募到结算",
+      "location": "Monastery",
+      "steps": [
+        {
+          "kind": "recruit",
+          "label": "支付原费用招募",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "offer",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "13"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "armor",
+              "value": "4"
+            },
+            {
+              "key": "level",
+              "value": "2"
+            },
+            {
+              "key": "physicalResist",
+              "value": "False"
+            },
+            {
+              "key": "outcome",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战并选择敌人",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "发动原版能力",
+          "ability": 0,
+          "option": 1,
+          "expected": [
+            {
+              "key": "block",
+              "value": "3"
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "blockElement",
+              "value": "Physical"
+            }
+          ]
+        },
+        {
+          "kind": "resolve",
+          "label": "结算格挡与英雄伤牌",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "effective",
+              "value": "3"
+            },
+            {
+              "key": "required",
+              "value": "3"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_057",
+      "cardId": "army_2_007",
+      "title": "能力1·选项0·招募到结算",
+      "location": "Monastery",
+      "steps": [
+        {
+          "kind": "recruit",
+          "label": "支付原费用招募",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "offer",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "13"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "armor",
+              "value": "4"
+            },
+            {
+              "key": "level",
+              "value": "2"
+            },
+            {
+              "key": "physicalResist",
+              "value": "False"
+            },
+            {
+              "key": "outcome",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战并选择敌人",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "发动原版能力",
+          "ability": 1,
+          "option": 0,
+          "expected": [
+            {
+              "key": "melee",
+              "value": "4"
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "Red",
+              "value": "1"
+            },
+            {
+              "key": "element",
+              "value": "Fire"
+            }
+          ]
+        },
+        {
+          "kind": "resolve",
+          "label": "结算攻击与真实击杀",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "effective",
+              "value": "4"
+            },
+            {
+              "key": "required",
+              "value": "3"
+            },
+            {
+              "key": "kills",
+              "value": "1"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_058",
+      "cardId": "army_2_007",
+      "title": "能力1·选项1·招募到结算",
+      "location": "Monastery",
+      "steps": [
+        {
+          "kind": "recruit",
+          "label": "支付原费用招募",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "offer",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "13"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "armor",
+              "value": "4"
+            },
+            {
+              "key": "level",
+              "value": "2"
+            },
+            {
+              "key": "physicalResist",
+              "value": "False"
+            },
+            {
+              "key": "outcome",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战并选择敌人",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "发动原版能力",
+          "ability": 1,
+          "option": 1,
+          "expected": [
+            {
+              "key": "block",
+              "value": "4"
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "Red",
+              "value": "1"
+            },
+            {
+              "key": "blockElement",
+              "value": "Fire"
+            }
+          ]
+        },
+        {
+          "kind": "resolve",
+          "label": "结算格挡与英雄伤牌",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "effective",
+              "value": "4"
+            },
+            {
+              "key": "required",
+              "value": "3"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_059",
+      "cardId": "army_2_007",
+      "title": "同轮不能重复使用，下一轮才重整",
+      "location": "Monastery",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "持有就绪原部队",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "第一次发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "重复发动应被拒绝",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": "部队必须就绪、未受伤且未销毁"
+            }
+          ]
+        },
+        {
+          "kind": "nextTurn",
+          "label": "下一回合仍然横置",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "False"
+            }
+          ]
+        },
+        {
+          "kind": "legacyTurn",
+          "label": "旧回合入口同样不重整",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "False"
+            }
+          ]
+        },
+        {
+          "kind": "nextRound",
+          "label": "新一轮恢复指挥标记",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "canActivate",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "新一轮重新进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "新一轮允许发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_060",
+      "cardId": "army_2_007",
+      "title": "unowned状态禁止发动",
+      "location": "Monastery",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "设置部队状态",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试非法发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "只能发动自有部队"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "Red",
+              "value": "2"
+            },
+            {
+              "key": "Blue",
+              "value": "2"
+            },
+            {
+              "key": "Green",
+              "value": "2"
+            }
+          ]
+        }
+      ],
+      "unowned": true
+    },
+    {
+      "id": "unit_061",
+      "cardId": "army_2_007",
+      "title": "wounds状态禁止发动",
+      "location": "Monastery",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "设置部队状态",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试非法发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队必须就绪、未受伤且未销毁"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "Red",
+              "value": "2"
+            },
+            {
+              "key": "Blue",
+              "value": "2"
+            },
+            {
+              "key": "Green",
+              "value": "2"
+            }
+          ]
+        }
+      ],
+      "wounds": 1
+    },
+    {
+      "id": "unit_062",
+      "cardId": "army_2_007",
+      "title": "exhausted状态禁止发动",
+      "location": "Monastery",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "设置部队状态",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试非法发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队必须就绪、未受伤且未销毁"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "Red",
+              "value": "2"
+            },
+            {
+              "key": "Blue",
+              "value": "2"
+            },
+            {
+              "key": "Green",
+              "value": "2"
+            }
+          ]
+        }
+      ],
+      "exhausted": true
+    },
+    {
+      "id": "unit_063",
+      "cardId": "army_2_007",
+      "title": "destroyed状态禁止发动",
+      "location": "Monastery",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "设置部队状态",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试非法发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队必须就绪、未受伤且未销毁"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "Red",
+              "value": "2"
+            },
+            {
+              "key": "Blue",
+              "value": "2"
+            },
+            {
+              "key": "Green",
+              "value": "2"
+            }
+          ]
+        }
+      ],
+      "destroyed": true
+    },
+    {
+      "id": "unit_064",
+      "cardId": "army_2_007",
+      "title": "非法能力或选项不得横置",
+      "location": "Monastery",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "持有就绪部队",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "拒绝无效选择",
+          "ability": 99,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队能力尚未接入或选择无效"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "随后正常发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_065",
+      "cardId": "army_2_007",
+      "title": "非法能力或选项不得横置",
+      "location": "Monastery",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "持有就绪部队",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "拒绝无效选择",
+          "ability": 0,
+          "option": 2,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队能力选项无效"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "随后正常发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_066",
+      "cardId": "army_2_007",
+      "title": "招募资源不足保持供应与单位不变",
+      "location": "Monastery",
+      "steps": [
+        {
+          "kind": "recruit",
+          "label": "尝试低于原费用招募",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "outcome",
+              "value": "False"
+            },
+            {
+              "key": "units",
+              "value": "0"
+            },
+            {
+              "key": "offer",
+              "value": "1"
+            },
+            {
+              "key": "influence",
+              "value": "6"
+            }
+          ]
+        }
+      ],
+      "influence": 6
+    },
+    {
+      "id": "unit_067",
+      "cardId": "army_2_007",
+      "title": "原图没有此招募地点",
+      "location": "City",
+      "steps": [
+        {
+          "kind": "recruit",
+          "label": "尝试错误地点招募",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "outcome",
+              "value": "False"
+            },
+            {
+              "key": "units",
+              "value": "0"
+            },
+            {
+              "key": "offer",
+              "value": "1"
+            },
+            {
+              "key": "influence",
+              "value": "20"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_068",
+      "cardId": "army_2_007",
+      "title": "魔力不足不支付不横置",
+      "location": "Monastery",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "持有部队但没有魔力",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "拒绝无法支付的能力",
+          "ability": 1,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队能力所需魔力不足"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "Red",
+              "value": "0"
+            },
+            {
+              "key": "Blue",
+              "value": "0"
+            },
+            {
+              "key": "Green",
+              "value": "0"
+            }
+          ]
+        }
+      ],
+      "mana": 0
+    },
+    {
+      "id": "unit_069",
+      "cardId": "army_2_008",
+      "title": "能力0·选项0·招募到结算",
+      "location": "Monastery",
+      "steps": [
+        {
+          "kind": "recruit",
+          "label": "支付原费用招募",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "offer",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "13"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "armor",
+              "value": "4"
+            },
+            {
+              "key": "level",
+              "value": "2"
+            },
+            {
+              "key": "physicalResist",
+              "value": "False"
+            },
+            {
+              "key": "outcome",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战并选择敌人",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "发动原版能力",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "melee",
+              "value": "3"
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "element",
+              "value": "Physical"
+            }
+          ]
+        },
+        {
+          "kind": "resolve",
+          "label": "结算攻击与真实击杀",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "effective",
+              "value": "3"
+            },
+            {
+              "key": "required",
+              "value": "3"
+            },
+            {
+              "key": "kills",
+              "value": "1"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_070",
+      "cardId": "army_2_008",
+      "title": "能力0·选项1·招募到结算",
+      "location": "Monastery",
+      "steps": [
+        {
+          "kind": "recruit",
+          "label": "支付原费用招募",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "offer",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "13"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "armor",
+              "value": "4"
+            },
+            {
+              "key": "level",
+              "value": "2"
+            },
+            {
+              "key": "physicalResist",
+              "value": "False"
+            },
+            {
+              "key": "outcome",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战并选择敌人",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "发动原版能力",
+          "ability": 0,
+          "option": 1,
+          "expected": [
+            {
+              "key": "block",
+              "value": "3"
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "blockElement",
+              "value": "Physical"
+            }
+          ]
+        },
+        {
+          "kind": "resolve",
+          "label": "结算格挡与英雄伤牌",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "effective",
+              "value": "3"
+            },
+            {
+              "key": "required",
+              "value": "3"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_071",
+      "cardId": "army_2_008",
+      "title": "能力1·选项0·招募到结算",
+      "location": "Monastery",
+      "steps": [
+        {
+          "kind": "recruit",
+          "label": "支付原费用招募",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "offer",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "13"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "armor",
+              "value": "4"
+            },
+            {
+              "key": "level",
+              "value": "2"
+            },
+            {
+              "key": "physicalResist",
+              "value": "False"
+            },
+            {
+              "key": "outcome",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战并选择敌人",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "发动原版能力",
+          "ability": 1,
+          "option": 0,
+          "expected": [
+            {
+              "key": "siege",
+              "value": "4"
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "Green",
+              "value": "1"
+            },
+            {
+              "key": "element",
+              "value": "Physical"
+            }
+          ]
+        },
+        {
+          "kind": "resolve",
+          "label": "结算攻击与真实击杀",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "effective",
+              "value": "4"
+            },
+            {
+              "key": "required",
+              "value": "3"
+            },
+            {
+              "key": "kills",
+              "value": "1"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_072",
+      "cardId": "army_2_008",
+      "title": "同轮不能重复使用，下一轮才重整",
+      "location": "Monastery",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "持有就绪原部队",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "第一次发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "重复发动应被拒绝",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": "部队必须就绪、未受伤且未销毁"
+            }
+          ]
+        },
+        {
+          "kind": "nextTurn",
+          "label": "下一回合仍然横置",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "False"
+            }
+          ]
+        },
+        {
+          "kind": "legacyTurn",
+          "label": "旧回合入口同样不重整",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "False"
+            }
+          ]
+        },
+        {
+          "kind": "nextRound",
+          "label": "新一轮恢复指挥标记",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "canActivate",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "新一轮重新进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "新一轮允许发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_073",
+      "cardId": "army_2_008",
+      "title": "unowned状态禁止发动",
+      "location": "Monastery",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "设置部队状态",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试非法发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "只能发动自有部队"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "Red",
+              "value": "2"
+            },
+            {
+              "key": "Blue",
+              "value": "2"
+            },
+            {
+              "key": "Green",
+              "value": "2"
+            }
+          ]
+        }
+      ],
+      "unowned": true
+    },
+    {
+      "id": "unit_074",
+      "cardId": "army_2_008",
+      "title": "wounds状态禁止发动",
+      "location": "Monastery",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "设置部队状态",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试非法发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队必须就绪、未受伤且未销毁"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "Red",
+              "value": "2"
+            },
+            {
+              "key": "Blue",
+              "value": "2"
+            },
+            {
+              "key": "Green",
+              "value": "2"
+            }
+          ]
+        }
+      ],
+      "wounds": 1
+    },
+    {
+      "id": "unit_075",
+      "cardId": "army_2_008",
+      "title": "exhausted状态禁止发动",
+      "location": "Monastery",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "设置部队状态",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试非法发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队必须就绪、未受伤且未销毁"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "Red",
+              "value": "2"
+            },
+            {
+              "key": "Blue",
+              "value": "2"
+            },
+            {
+              "key": "Green",
+              "value": "2"
+            }
+          ]
+        }
+      ],
+      "exhausted": true
+    },
+    {
+      "id": "unit_076",
+      "cardId": "army_2_008",
+      "title": "destroyed状态禁止发动",
+      "location": "Monastery",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "设置部队状态",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试非法发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队必须就绪、未受伤且未销毁"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "Red",
+              "value": "2"
+            },
+            {
+              "key": "Blue",
+              "value": "2"
+            },
+            {
+              "key": "Green",
+              "value": "2"
+            }
+          ]
+        }
+      ],
+      "destroyed": true
+    },
+    {
+      "id": "unit_077",
+      "cardId": "army_2_008",
+      "title": "非法能力或选项不得横置",
+      "location": "Monastery",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "持有就绪部队",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "拒绝无效选择",
+          "ability": 99,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队能力尚未接入或选择无效"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "随后正常发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_078",
+      "cardId": "army_2_008",
+      "title": "非法能力或选项不得横置",
+      "location": "Monastery",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "持有就绪部队",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "拒绝无效选择",
+          "ability": 0,
+          "option": 2,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队能力选项无效"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "随后正常发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_079",
+      "cardId": "army_2_008",
+      "title": "招募资源不足保持供应与单位不变",
+      "location": "Monastery",
+      "steps": [
+        {
+          "kind": "recruit",
+          "label": "尝试低于原费用招募",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "outcome",
+              "value": "False"
+            },
+            {
+              "key": "units",
+              "value": "0"
+            },
+            {
+              "key": "offer",
+              "value": "1"
+            },
+            {
+              "key": "influence",
+              "value": "6"
+            }
+          ]
+        }
+      ],
+      "influence": 6
+    },
+    {
+      "id": "unit_080",
+      "cardId": "army_2_008",
+      "title": "原图没有此招募地点",
+      "location": "City",
+      "steps": [
+        {
+          "kind": "recruit",
+          "label": "尝试错误地点招募",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "outcome",
+              "value": "False"
+            },
+            {
+              "key": "units",
+              "value": "0"
+            },
+            {
+              "key": "offer",
+              "value": "1"
+            },
+            {
+              "key": "influence",
+              "value": "20"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_081",
+      "cardId": "army_2_008",
+      "title": "魔力不足不支付不横置",
+      "location": "Monastery",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "持有部队但没有魔力",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "拒绝无法支付的能力",
+          "ability": 1,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队能力所需魔力不足"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "siege",
+              "value": "0"
+            },
+            {
+              "key": "Red",
+              "value": "0"
+            },
+            {
+              "key": "Blue",
+              "value": "0"
+            },
+            {
+              "key": "Green",
+              "value": "0"
+            }
+          ]
+        }
+      ],
+      "mana": 0
+    },
+    {
+      "id": "unit_082",
+      "cardId": "army_2_012",
+      "title": "能力0·选项0·招募到结算",
+      "location": "Keep",
+      "steps": [
+        {
+          "kind": "recruit",
+          "label": "支付原费用招募",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "offer",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "14"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "armor",
+              "value": "4"
+            },
+            {
+              "key": "level",
+              "value": "2"
+            },
+            {
+              "key": "physicalResist",
+              "value": "False"
+            },
+            {
+              "key": "outcome",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战并选择敌人",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "发动原版能力",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "melee",
+              "value": "3"
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "element",
+              "value": "Physical"
+            }
+          ]
+        },
+        {
+          "kind": "resolve",
+          "label": "结算攻击与真实击杀",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "effective",
+              "value": "3"
+            },
+            {
+              "key": "required",
+              "value": "3"
+            },
+            {
+              "key": "kills",
+              "value": "1"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_083",
+      "cardId": "army_2_012",
+      "title": "能力0·选项1·招募到结算",
+      "location": "Keep",
+      "steps": [
+        {
+          "kind": "recruit",
+          "label": "支付原费用招募",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "offer",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "14"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "armor",
+              "value": "4"
+            },
+            {
+              "key": "level",
+              "value": "2"
+            },
+            {
+              "key": "physicalResist",
+              "value": "False"
+            },
+            {
+              "key": "outcome",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战并选择敌人",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "发动原版能力",
+          "ability": 0,
+          "option": 1,
+          "expected": [
+            {
+              "key": "block",
+              "value": "3"
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "blockElement",
+              "value": "Physical"
+            }
+          ]
+        },
+        {
+          "kind": "resolve",
+          "label": "结算格挡与英雄伤牌",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "effective",
+              "value": "3"
+            },
+            {
+              "key": "required",
+              "value": "3"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_084",
+      "cardId": "army_2_012",
+      "title": "能力1·选项0·招募到结算",
+      "location": "Keep",
+      "steps": [
+        {
+          "kind": "recruit",
+          "label": "支付原费用招募",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "offer",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "14"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "armor",
+              "value": "4"
+            },
+            {
+              "key": "level",
+              "value": "2"
+            },
+            {
+              "key": "physicalResist",
+              "value": "False"
+            },
+            {
+              "key": "outcome",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战并选择敌人",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "发动原版能力",
+          "ability": 1,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ranged",
+              "value": "2"
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "element",
+              "value": "Physical"
+            }
+          ]
+        },
+        {
+          "kind": "resolve",
+          "label": "结算攻击与真实击杀",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "effective",
+              "value": "2"
+            },
+            {
+              "key": "required",
+              "value": "3"
+            },
+            {
+              "key": "kills",
+              "value": "0"
+            },
+            {
+              "key": "ranged",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_085",
+      "cardId": "army_2_012",
+      "title": "同轮不能重复使用，下一轮才重整",
+      "location": "Keep",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "持有就绪原部队",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "第一次发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "重复发动应被拒绝",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": "部队必须就绪、未受伤且未销毁"
+            }
+          ]
+        },
+        {
+          "kind": "nextTurn",
+          "label": "下一回合仍然横置",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "False"
+            }
+          ]
+        },
+        {
+          "kind": "legacyTurn",
+          "label": "旧回合入口同样不重整",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "False"
+            }
+          ]
+        },
+        {
+          "kind": "nextRound",
+          "label": "新一轮恢复指挥标记",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "canActivate",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "新一轮重新进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "新一轮允许发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_086",
+      "cardId": "army_2_012",
+      "title": "unowned状态禁止发动",
+      "location": "Keep",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "设置部队状态",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试非法发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "只能发动自有部队"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "Red",
+              "value": "2"
+            },
+            {
+              "key": "Blue",
+              "value": "2"
+            },
+            {
+              "key": "Green",
+              "value": "2"
+            }
+          ]
+        }
+      ],
+      "unowned": true
+    },
+    {
+      "id": "unit_087",
+      "cardId": "army_2_012",
+      "title": "wounds状态禁止发动",
+      "location": "Keep",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "设置部队状态",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试非法发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队必须就绪、未受伤且未销毁"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "Red",
+              "value": "2"
+            },
+            {
+              "key": "Blue",
+              "value": "2"
+            },
+            {
+              "key": "Green",
+              "value": "2"
+            }
+          ]
+        }
+      ],
+      "wounds": 1
+    },
+    {
+      "id": "unit_088",
+      "cardId": "army_2_012",
+      "title": "exhausted状态禁止发动",
+      "location": "Keep",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "设置部队状态",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试非法发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队必须就绪、未受伤且未销毁"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "Red",
+              "value": "2"
+            },
+            {
+              "key": "Blue",
+              "value": "2"
+            },
+            {
+              "key": "Green",
+              "value": "2"
+            }
+          ]
+        }
+      ],
+      "exhausted": true
+    },
+    {
+      "id": "unit_089",
+      "cardId": "army_2_012",
+      "title": "destroyed状态禁止发动",
+      "location": "Keep",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "设置部队状态",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试非法发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队必须就绪、未受伤且未销毁"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "Red",
+              "value": "2"
+            },
+            {
+              "key": "Blue",
+              "value": "2"
+            },
+            {
+              "key": "Green",
+              "value": "2"
+            }
+          ]
+        }
+      ],
+      "destroyed": true
+    },
+    {
+      "id": "unit_090",
+      "cardId": "army_2_012",
+      "title": "非法能力或选项不得横置",
+      "location": "Keep",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "持有就绪部队",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "拒绝无效选择",
+          "ability": 99,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队能力尚未接入或选择无效"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "随后正常发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_091",
+      "cardId": "army_2_012",
+      "title": "非法能力或选项不得横置",
+      "location": "Keep",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "持有就绪部队",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "拒绝无效选择",
+          "ability": 0,
+          "option": 2,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队能力选项无效"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "随后正常发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_092",
+      "cardId": "army_2_012",
+      "title": "招募资源不足保持供应与单位不变",
+      "location": "Keep",
+      "steps": [
+        {
+          "kind": "recruit",
+          "label": "尝试低于原费用招募",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "outcome",
+              "value": "False"
+            },
+            {
+              "key": "units",
+              "value": "0"
+            },
+            {
+              "key": "offer",
+              "value": "1"
+            },
+            {
+              "key": "influence",
+              "value": "5"
+            }
+          ]
+        }
+      ],
+      "influence": 5
+    },
+    {
+      "id": "unit_093",
+      "cardId": "army_2_012",
+      "title": "原图没有此招募地点",
+      "location": "City",
+      "steps": [
+        {
+          "kind": "recruit",
+          "label": "尝试错误地点招募",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "outcome",
+              "value": "False"
+            },
+            {
+              "key": "units",
+              "value": "0"
+            },
+            {
+              "key": "offer",
+              "value": "1"
+            },
+            {
+              "key": "influence",
+              "value": "20"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_094",
+      "cardId": "army_2_014",
+      "title": "能力0·选项0·招募到结算",
+      "location": "Keep",
+      "steps": [
+        {
+          "kind": "recruit",
+          "label": "支付原费用招募",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "offer",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "14"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "armor",
+              "value": "4"
+            },
+            {
+              "key": "level",
+              "value": "2"
+            },
+            {
+              "key": "physicalResist",
+              "value": "False"
+            },
+            {
+              "key": "outcome",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战并选择敌人",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "发动原版能力",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "melee",
+              "value": "3"
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "element",
+              "value": "Physical"
+            }
+          ]
+        },
+        {
+          "kind": "resolve",
+          "label": "结算攻击与真实击杀",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "effective",
+              "value": "3"
+            },
+            {
+              "key": "required",
+              "value": "3"
+            },
+            {
+              "key": "kills",
+              "value": "1"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_095",
+      "cardId": "army_2_014",
+      "title": "能力0·选项1·招募到结算",
+      "location": "Keep",
+      "steps": [
+        {
+          "kind": "recruit",
+          "label": "支付原费用招募",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "offer",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "14"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "armor",
+              "value": "4"
+            },
+            {
+              "key": "level",
+              "value": "2"
+            },
+            {
+              "key": "physicalResist",
+              "value": "False"
+            },
+            {
+              "key": "outcome",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战并选择敌人",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "发动原版能力",
+          "ability": 0,
+          "option": 1,
+          "expected": [
+            {
+              "key": "block",
+              "value": "3"
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "blockElement",
+              "value": "Physical"
+            }
+          ]
+        },
+        {
+          "kind": "resolve",
+          "label": "结算格挡与英雄伤牌",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "effective",
+              "value": "3"
+            },
+            {
+              "key": "required",
+              "value": "3"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_096",
+      "cardId": "army_2_014",
+      "title": "能力1·选项0·招募到结算",
+      "location": "Keep",
+      "steps": [
+        {
+          "kind": "recruit",
+          "label": "支付原费用招募",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "offer",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "14"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "armor",
+              "value": "4"
+            },
+            {
+              "key": "level",
+              "value": "2"
+            },
+            {
+              "key": "physicalResist",
+              "value": "False"
+            },
+            {
+              "key": "outcome",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战并选择敌人",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "发动原版能力",
+          "ability": 1,
+          "option": 0,
+          "expected": [
+            {
+              "key": "melee",
+              "value": "6"
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "wounds",
+              "value": "1"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "element",
+              "value": "Physical"
+            }
+          ]
+        },
+        {
+          "kind": "resolve",
+          "label": "结算攻击与真实击杀",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "effective",
+              "value": "6"
+            },
+            {
+              "key": "required",
+              "value": "3"
+            },
+            {
+              "key": "kills",
+              "value": "1"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_097",
+      "cardId": "army_2_014",
+      "title": "能力1·选项1·招募到结算",
+      "location": "Keep",
+      "steps": [
+        {
+          "kind": "recruit",
+          "label": "支付原费用招募",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "offer",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "14"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "armor",
+              "value": "4"
+            },
+            {
+              "key": "level",
+              "value": "2"
+            },
+            {
+              "key": "physicalResist",
+              "value": "False"
+            },
+            {
+              "key": "outcome",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战并选择敌人",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "发动原版能力",
+          "ability": 1,
+          "option": 1,
+          "expected": [
+            {
+              "key": "block",
+              "value": "6"
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "wounds",
+              "value": "1"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "blockElement",
+              "value": "Physical"
+            }
+          ]
+        },
+        {
+          "kind": "resolve",
+          "label": "结算格挡与英雄伤牌",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "effective",
+              "value": "6"
+            },
+            {
+              "key": "required",
+              "value": "3"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_098",
+      "cardId": "army_2_014",
+      "title": "同轮不能重复使用，下一轮才重整",
+      "location": "Keep",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "持有就绪原部队",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "第一次发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "重复发动应被拒绝",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": "部队必须就绪、未受伤且未销毁"
+            }
+          ]
+        },
+        {
+          "kind": "nextTurn",
+          "label": "下一回合仍然横置",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "False"
+            }
+          ]
+        },
+        {
+          "kind": "legacyTurn",
+          "label": "旧回合入口同样不重整",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "False"
+            }
+          ]
+        },
+        {
+          "kind": "nextRound",
+          "label": "新一轮恢复指挥标记",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "canActivate",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "新一轮重新进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "新一轮允许发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_099",
+      "cardId": "army_2_014",
+      "title": "unowned状态禁止发动",
+      "location": "Keep",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "设置部队状态",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试非法发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "只能发动自有部队"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "Red",
+              "value": "2"
+            },
+            {
+              "key": "Blue",
+              "value": "2"
+            },
+            {
+              "key": "Green",
+              "value": "2"
+            }
+          ]
+        }
+      ],
+      "unowned": true
+    },
+    {
+      "id": "unit_100",
+      "cardId": "army_2_014",
+      "title": "wounds状态禁止发动",
+      "location": "Keep",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "设置部队状态",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试非法发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队必须就绪、未受伤且未销毁"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "Red",
+              "value": "2"
+            },
+            {
+              "key": "Blue",
+              "value": "2"
+            },
+            {
+              "key": "Green",
+              "value": "2"
+            }
+          ]
+        }
+      ],
+      "wounds": 1
+    },
+    {
+      "id": "unit_101",
+      "cardId": "army_2_014",
+      "title": "exhausted状态禁止发动",
+      "location": "Keep",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "设置部队状态",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试非法发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队必须就绪、未受伤且未销毁"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "Red",
+              "value": "2"
+            },
+            {
+              "key": "Blue",
+              "value": "2"
+            },
+            {
+              "key": "Green",
+              "value": "2"
+            }
+          ]
+        }
+      ],
+      "exhausted": true
+    },
+    {
+      "id": "unit_102",
+      "cardId": "army_2_014",
+      "title": "destroyed状态禁止发动",
+      "location": "Keep",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "设置部队状态",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "尝试非法发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队必须就绪、未受伤且未销毁"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "Red",
+              "value": "2"
+            },
+            {
+              "key": "Blue",
+              "value": "2"
+            },
+            {
+              "key": "Green",
+              "value": "2"
+            }
+          ]
+        }
+      ],
+      "destroyed": true
+    },
+    {
+      "id": "unit_103",
+      "cardId": "army_2_014",
+      "title": "非法能力或选项不得横置",
+      "location": "Keep",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "持有就绪部队",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "拒绝无效选择",
+          "ability": 99,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队能力尚未接入或选择无效"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "随后正常发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_104",
+      "cardId": "army_2_014",
+      "title": "非法能力或选项不得横置",
+      "location": "Keep",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "持有就绪部队",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "拒绝无效选择",
+          "ability": 0,
+          "option": 2,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队能力选项无效"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "随后正常发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_105",
+      "cardId": "army_2_014",
+      "title": "招募资源不足保持供应与单位不变",
+      "location": "Keep",
+      "steps": [
+        {
+          "kind": "recruit",
+          "label": "尝试低于原费用招募",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "outcome",
+              "value": "False"
+            },
+            {
+              "key": "units",
+              "value": "0"
+            },
+            {
+              "key": "offer",
+              "value": "1"
+            },
+            {
+              "key": "influence",
+              "value": "5"
+            }
+          ]
+        }
+      ],
+      "influence": 5
+    },
+    {
+      "id": "unit_106",
+      "cardId": "army_2_014",
+      "title": "原图没有此招募地点",
+      "location": "City",
+      "steps": [
+        {
+          "kind": "recruit",
+          "label": "尝试错误地点招募",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "outcome",
+              "value": "False"
+            },
+            {
+              "key": "units",
+              "value": "0"
+            },
+            {
+              "key": "offer",
+              "value": "1"
+            },
+            {
+              "key": "influence",
+              "value": "20"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_107",
+      "cardId": "army_003",
+      "title": "物品栏魔晶可以支付部队能力",
+      "location": "Keep",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "仅有物品栏魔晶",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "redCrystal",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "以红色魔晶发动火焰远程",
+          "ability": 1,
+          "option": 0,
+          "expected": [
+            {
+              "key": "redCrystal",
+              "value": "0"
+            },
+            {
+              "key": "Red",
+              "value": "0"
+            },
+            {
+              "key": "ranged",
+              "value": "6"
+            },
+            {
+              "key": "element",
+              "value": "Fire"
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "mana": 0,
+      "crystals": 1
+    },
+    {
+      "id": "unit_108",
+      "cardId": "army_2_006",
+      "title": "部队影响力继续支付第二支原版部队",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "recruit",
+          "label": "招募第一支农民",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "influence",
+              "value": "2"
+            },
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "offer",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "农民产生影响力2",
+          "ability": 1,
+          "option": 0,
+          "expected": [
+            {
+              "key": "influence",
+              "value": "4"
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "recruit",
+          "label": "支付影响力招募另一支农民",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "influence",
+              "value": "0"
+            },
+            {
+              "key": "units",
+              "value": "2"
+            },
+            {
+              "key": "offer",
+              "value": "0"
+            },
+            {
+              "key": "outcome",
+              "value": "True"
+            }
+          ]
+        }
+      ],
+      "influence": 6,
+      "extraSlots": 1,
+      "offerCount": 2
+    },
+    {
+      "id": "unit_109",
+      "cardId": "army_2_014",
+      "title": "自伤后重整不能代替治疗",
+      "location": "Keep",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "持有乌顿剑士",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "自伤攻击6",
+          "ability": 1,
+          "option": 0,
+          "expected": [
+            {
+              "key": "melee",
+              "value": "6"
+            },
+            {
+              "key": "wounds",
+              "value": "1"
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "nextRound",
+          "label": "下一轮重整但伤牌保留",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "wounds",
+              "value": "1"
+            },
+            {
+              "key": "canActivate",
+              "value": "False"
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "受伤仍然不能发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": "部队必须就绪、未受伤且未销毁"
+            }
+          ]
+        },
+        {
+          "kind": "heal",
+          "label": "治疗后才允许发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "canActivate",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "重新进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "发动基础能力",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "melee",
+              "value": "3"
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

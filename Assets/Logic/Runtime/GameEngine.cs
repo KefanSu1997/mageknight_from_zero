@@ -45,6 +45,7 @@ namespace MK.Logic.Runtime
             foreach (var p in _players)
             {
                 SkillActions.StartRound(p);
+                foreach (var unit in p.Units) unit.NewRound();
                 int limit = p.Deck.HandLimit(
                     Clock.DayPart,
                     p.Reputation,

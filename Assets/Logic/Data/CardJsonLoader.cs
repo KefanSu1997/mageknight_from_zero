@@ -26,6 +26,8 @@ namespace MK.Logic.Data
             Folder = baseDir ?? Path.Combine(AppContext.BaseDirectory, "../../../../resources/text_json");
         }
 
+        public static UnitCard LoadUnit(string id) => UnitJsonLoader.Load(Folder, id);
+
         /// <summary>讀取普通行動牌。</summary>
         public static List<ActionCardData> LoadBasicActions()
         {

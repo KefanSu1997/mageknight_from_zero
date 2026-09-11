@@ -8,12 +8,11 @@ namespace MK.Logic.Runtime
     public sealed class TurnEngine
     {
         /// <summary>
-        /// 开始玩家的新回合：所有非重创部队就绪並摸牌至上限。
+        /// 开始玩家的新回合；部队仅在正式新一轮流程中重整。
         /// </summary>
         public void StartTurn(PlayerState player, int handLimit)
         {
-            foreach (var u in player.Units)
-                u.NewRound();
+            SkillActions.StartTurn(player);
             player.Deck.DrawToLimit(handLimit);
         }
     }

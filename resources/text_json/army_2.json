@@ -37,8 +37,8 @@
     "level": "II",
     "influence_cost": "7",
     "armor": "3",
-    "resistances": "",
-    "recruit_location": "城堡",
+    "resistances": "物理",
+    "recruit_location": "魔法塔,城堡",
     "abilities": [
       {
         "mana_cost": "None",
@@ -174,7 +174,7 @@
     "influence_cost": "7",
     "armor": "4",
     "resistances": "",
-    "recruit_location": "城市",
+    "recruit_location": "修道院",
     "abilities": [
       {
         "mana_cost": "None",
@@ -234,7 +234,7 @@
     "influence_cost": "7",
     "armor": "4",
     "resistances": "",
-    "recruit_location": "法师塔",
+    "recruit_location": "修道院",
     "abilities": [
       {
         "mana_cost": "None",
@@ -262,7 +262,7 @@
     "influence_cost": "7",
     "armor": "4",
     "resistances": "",
-    "recruit_location": "城堡",
+    "recruit_location": "修道院",
     "abilities": [
       {
         "mana_cost": "None",
@@ -386,7 +386,7 @@
     "influence_cost": "6",
     "armor": "4",
     "resistances": "",
-    "recruit_location": "城堡、城镇",
+    "recruit_location": "城堡,村庄",
     "abilities": [
       "攻击或格挡3。",
       "远程攻击2。"
