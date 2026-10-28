@@ -117,7 +117,11 @@ namespace MageKnight.Battle
             }
             foreach (var fact in _root.GetComponentsInChildren<RectTransform>().Where(t => t.name.StartsWith("Unit", StringComparison.Ordinal) && t.name.EndsWith("Fact", StringComparison.Ordinal)))
             {
-                StatusFolio66(fact.parent, "UnitStateFolio66", 4, -fact.anchoredPosition.y - 2, 344, 84);
+                // Keep the selected unit identity on the same stable surface
+                // as its live facts; do not leave the title over scenery.
+                StatusFolio66(fact.parent, "UnitStateFolio66", 4, -2, 344, 134);
+                var heading = fact.parent.Find("ContextTitle")?.GetComponent<TMP_Text>();
+                if (heading != null) heading.color = W.Cream;
                 MarkReadonlyFolio66(fact);
             }
             foreach (var group in _root.GetComponentsInChildren<RectTransform>()
