@@ -310,11 +310,25 @@ namespace MageKnight.Battle
         private void DrawEmbeddedParty()
         {
             bool fourAllies = _battle.Player.Units.Count == 4;
+            float partyInset = 0;
             var heroArt = Resources.Load<Texture2D>("UI/HeroCharacters/embedded_v1/" + _battle.Player.HeroId);
             if (heroArt != null)
             {
                 HideBattlePart("Hero"); HideBattlePart("HeroPortraitFrame");
-                var hero = Button(_root, "Btn_HeroActor", "", 8, 255, 245, 350,
+                // The layout frame uses alpha>=64 for consistent body scale,
+                // but the full original texture includes translucent cloaks and
+                // weapons outside that frame. Reserve their left margin too.
+                float heroLeft = 8;
+                var heroFrame = CharacterFrameFor(heroArt);
+                if (heroFrame != null && heroFrame.width > 0 && heroFrame.height > 0
+                    && heroFrame.textureWidth == heroArt.width && heroFrame.textureHeight == heroArt.height)
+                {
+                    float fit = Mathf.Min(245 / heroFrame.width, 350 / heroFrame.height);
+                    float frameX = MirrorCharacter(heroArt) ? heroArt.width - heroFrame.x - heroFrame.width : heroFrame.x;
+                    heroLeft += Mathf.Max(0, frameX * fit - (245 - heroFrame.width * fit) / 2);
+                }
+                partyInset = heroLeft - 8;
+                var hero = Button(_root, "Btn_HeroActor", "", heroLeft, 255, 245, 350,
                     () => { _fluentDiscardMode = false; _showSkills = !_showSkills; _showUnits = false; _selectedSkill = null; _selected = null; _selectedUnit = null; _selectMaterials = false; });
                 QuietGraphics(hero.transform);
                 hero.targetGraphic.enabled = true; hero.targetGraphic.color = Color.clear;
@@ -325,7 +339,7 @@ namespace MageKnight.Battle
                 HoverInfo(hero.gameObject, _battle.Player.Name + " · 英雄", StatusText() + "\n点击查看英雄技能。", true);
                 hero.GetComponent<BattleHoverInfo>().inspection = HeroInspection();
                 crest.GetComponent<BattleHoverInfo>().inspection = HeroInspection();
-                Place(_root.Find("HeroName"), 8, 606, 245, 40);
+                Place(_root.Find("HeroName"), heroLeft, 606, 245, 40);
                 var captionShade = W.Rect(_root, "HeroCaptionShade", 0, 600, 255, 48).gameObject.AddComponent<BattleRoundGraphic>();
                 captionShade.color = new Color(0, 0, 0, .94f); captionShade.feathered = true; captionShade.raycastTarget = false;
                 captionShade.transform.SetSiblingIndex(_root.Find("HeroName").GetSiblingIndex());
@@ -342,7 +356,9 @@ namespace MageKnight.Battle
                 float top = row == 0 ? 385 : 109;
                 // Preserve every ally's illustration and type size. Reclaim only
                 // the empty inter-figure gutters when all four slots are filled.
-                float left = fourAllies ? 255 + column * 135 : 260 + column * 160;
+                // Translate allies with the hero so restoring a translucent
+                // edge never pushes a weapon or cloak into the first ally.
+                float left = (fourAllies ? 255 + column * 135 : 260 + column * 160) + partyInset;
                 var button = Button(_root, "Btn_UnitActor_" + i, "", left, top, fourAllies ? 135 : 145, 316,
                     () => { _recovery = false; _selectedUnit = unit; _selected = null; _choice = null; _bannerMode = false; _unitUtilityPanel = false; });
                 QuietGraphics(button.transform);

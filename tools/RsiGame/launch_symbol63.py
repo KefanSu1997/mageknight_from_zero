@@ -16,7 +16,9 @@ def status():
   folder=ROOT/'AutomationOutputs/UiFluency/design_review';q=json.loads((folder/'editor_request.json').read_text(encoding='utf8'));assert q['operation']=='status'
   return delayed(folder/'editor_responses'/(q['id']+'.json'))
 def main():
- p=argparse.ArgumentParser();p.add_argument('--tag',required=True);a=p.parse_args()
+ p=argparse.ArgumentParser();p.add_argument('--tag',required=True);p.add_argument('--out',type=Path);a=p.parse_args()
+ out=a.out.resolve() if a.out else OUT
+ out.mkdir(parents=True,exist_ok=True)
  src=[ROOT/'Assets/Scripts/Battle'/n for n in ['PveBattleController.EmbeddedBattle.cs','PveBattleController.SymbolicField.cs','PveBattleController.BattlefieldReadability.cs','PveBattleController.CombatKnowledge.cs','PveBattleController.ManaInventory.cs']]+[ROOT/'Assets/Scripts/SceneAutomation/StructuredUiPilot.Evaluation.cs']
  for _ in range(20):
   s=status()
@@ -24,11 +26,11 @@ def main():
   time.sleep(2)
  else:raise RuntimeError('Compile/source freshness not proven')
  assert s['actualConsoleErrorCount']==0,s
- dest=OUT/('source_'+a.tag);dest.mkdir()
+ dest=out/('source_'+a.tag);dest.mkdir()
  for p in src:shutil.copy2(p,dest/p.name)
  s['sources']=[dict(path=str(p),sha256=hashlib.sha256(p.read_bytes()).hexdigest()) for p in src]
- (OUT/('compile_'+a.tag+'.json')).write_text(json.dumps(s,indent=2),encoding='utf8');print('Bound '+a.tag+' '+s['runtimeModuleVersionId'],flush=True)
- live=OUT/('live_'+a.tag)
+ (out/('compile_'+a.tag+'.json')).write_text(json.dumps(s,indent=2),encoding='utf8');print('Bound '+a.tag+' '+s['runtimeModuleVersionId'],flush=True)
+ live=out/('live_'+a.tag)
  try:CaptureDemo(live)
  except TimeoutError:
   req=json.loads((live/'request.json').read_text(encoding='utf8'));delayed(live/'responses'/(req['id']+'.json'))

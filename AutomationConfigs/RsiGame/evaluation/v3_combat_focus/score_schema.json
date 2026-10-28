@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "combat_focus_v3_2_contrast_review",
+  "title": "combat_focus_v3_3_density_and_design_review",
   "type": "object",
   "required": [
     "rubric_version",
@@ -17,7 +17,7 @@
   ],
   "properties": {
     "rubric_version": {
-      "const": "combat_focus_v3.2.0"
+      "const": "combat_focus_v3.3.0"
     },
     "input_status": {
       "enum": [
@@ -83,8 +83,8 @@
       "properties": {
         "A": {
           "type": "array",
-          "minItems": 32,
-          "maxItems": 32,
+          "minItems": 33,
+          "maxItems": 33,
           "items": {
             "type": "object",
             "required": [
@@ -118,6 +118,7 @@
                   "4.2",
                   "4.3",
                   "4.4",
+                  "4.5",
                   "5.1",
                   "5.2",
                   "5.3",
@@ -687,6 +688,21 @@
                 "properties": {
                   "id": {
                     "const": "8.4"
+                  }
+                }
+              },
+              "minContains": 1,
+              "maxContains": 1
+            },
+            {
+              "contains": {
+                "type": "object",
+                "required": [
+                  "id"
+                ],
+                "properties": {
+                  "id": {
+                    "const": "4.5"
                   }
                 }
               },
@@ -697,8 +713,8 @@
         },
         "B": {
           "type": "array",
-          "minItems": 32,
-          "maxItems": 32,
+          "minItems": 33,
+          "maxItems": 33,
           "items": {
             "type": "object",
             "required": [
@@ -732,6 +748,7 @@
                   "4.2",
                   "4.3",
                   "4.4",
+                  "4.5",
                   "5.1",
                   "5.2",
                   "5.3",
@@ -1301,6 +1318,21 @@
                 "properties": {
                   "id": {
                     "const": "8.4"
+                  }
+                }
+              },
+              "minContains": 1,
+              "maxContains": 1
+            },
+            {
+              "contains": {
+                "type": "object",
+                "required": [
+                  "id"
+                ],
+                "properties": {
+                  "id": {
+                    "const": "4.5"
                   }
                 }
               },

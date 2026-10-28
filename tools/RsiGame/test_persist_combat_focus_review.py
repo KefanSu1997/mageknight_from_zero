@@ -16,7 +16,8 @@ class PersistenceTests(unittest.TestCase):
         self.root = Path(self.tmp.name)
         repo = Path(__file__).resolve().parents[2]
         config = repo / 'AutomationConfigs/RsiGame/evaluation/v3_combat_focus'
-        self.packet = {'rubric_version': 'combat_focus_v3.0.0', 'required_images': [], 'required_text': []}
+        rubric = json.loads((config / 'rubric.json').read_text(encoding='utf-8-sig'))
+        self.packet = {'rubric_version': rubric['rubric_version'], 'required_images': [], 'required_text': []}
         for name, filename in [('sp', 'judge_system.txt'), ('rubric', 'rubric.json'), ('score_schema', 'score_schema.json')]:
             path = config / filename
             self.packet[name + '_path'] = str(path)
@@ -31,7 +32,7 @@ class PersistenceTests(unittest.TestCase):
         self.input.write_text(json.dumps(self.packet), encoding='utf8')
         row = dict(score=None, status='unverified', raw_metrics=[], visual_observations=[], denominator=None,
                    missing_reasons=['missing_dynamic_evidence'], unit_results=[], reason='Not measured', evidence=[])
-        rows = [dict(copy.deepcopy(row), id=f'{g}.{i}') for g in range(1, 9) for i in range(1, 5)]
+        rows = [dict(copy.deepcopy(row), id=item['id']) for item in rubric['items']]
         self.final = dict(rubric_version=self.packet['rubric_version'], input_status='valid', read_ledger=[],
                           blind_review={'preserved': True, 'limitations': []}, sides={'A': rows, 'B': copy.deepcopy(rows)},
                           hard_failures=[], unverified_gates=['dynamic'], gate_verdict='unverified',
@@ -99,6 +100,10 @@ class PersistenceTests(unittest.TestCase):
 
     def test_missing_id(self):
         self.final['sides']['A'].pop()
+        self.assertFalse(self.run_fixture()['verified'])
+
+    def test_new_density_item_required(self):
+        self.final['sides']['A'] = [x for x in self.final['sides']['A'] if x['id'] != '4.5']
         self.assertFalse(self.run_fixture()['verified'])
 
     def test_duplicate_id(self):

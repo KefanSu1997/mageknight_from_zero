@@ -72,22 +72,21 @@ def render(review_dir, output, mapping=None, packet_path=None):
         blocks.append('<details open><summary>证据阅读方法与个人直接查看范围</summary><pre>' + pretty(review['evidence_method']) + '</pre></details>')
     blocks.append('<table><thead><tr><th>条目</th><th>' + esc(names['B']) + '</th><th>' + esc(names['A']) + '</th></tr></thead><tbody>')
     rows = {side: {item['id']: item for item in review['sides'][side]} for side in ('A', 'B')}
-    for group in range(1, 9):
-        for number in range(1, 5):
-            rid = f'{group}.{number}'
-            definition = rubric_items.get(rid, {})
-            blocks.append('<tr><th>' + rid + '<br>' + esc(definition.get('name', '')) + '</th>')
-            for side in ('B', 'A'):
-                item = rows[side][rid]
-                score = '未评分' if item['score'] is None else str(item['score']) + '/5'
-                blocks.append('<td><div class="score">' + score + '</div><div>' + esc(item['status']) + '</div><p>' + esc(item['reason']) + '</p>')
-                if definition:
-                    blocks.append('<details><summary>评分锚点与原登记分母</summary><pre>' + pretty(definition) + '</pre></details>')
-                for label, field in [('缺件', 'missing_reasons'), ('分母', 'denominator'), ('原始指标', 'raw_metrics'),
-                                     ('视觉观察', 'visual_observations'), ('逐场景结果', 'unit_results'), ('证据', 'evidence')]:
-                    blocks.append('<details' + (' open' if field == 'missing_reasons' and item[field] else '') + '><summary>' + label + '</summary><pre>' + pretty(item[field]) + '</pre></details>')
-                blocks.append('</td>')
-            blocks.append('</tr>')
+    ordered_ids = list(rubric_items) if rubric_items else list(rows['A'])
+    for rid in ordered_ids:
+        definition = rubric_items.get(rid, {})
+        blocks.append('<tr><th>' + rid + '<br>' + esc(definition.get('name', '')) + '</th>')
+        for side in ('B', 'A'):
+            item = rows[side][rid]
+            score = '未评分' if item['score'] is None else str(item['score']) + '/5'
+            blocks.append('<td><div class="score">' + score + '</div><div>' + esc(item['status']) + '</div><p>' + esc(item['reason']) + '</p>')
+            if definition:
+                blocks.append('<details><summary>评分锚点与原登记分母</summary><pre>' + pretty(definition) + '</pre></details>')
+            for label, field in [('缺件', 'missing_reasons'), ('分母', 'denominator'), ('原始指标', 'raw_metrics'),
+                                 ('视觉观察', 'visual_observations'), ('逐场景结果', 'unit_results'), ('证据', 'evidence')]:
+                blocks.append('<details' + (' open' if field == 'missing_reasons' and item[field] else '') + '><summary>' + label + '</summary><pre>' + pretty(item[field]) + '</pre></details>')
+            blocks.append('</td>')
+        blocks.append('</tr>')
     blocks.append('</tbody></table>')
     if packet:
         gallery = {}

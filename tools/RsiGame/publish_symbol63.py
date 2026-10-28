@@ -21,8 +21,10 @@ def main():
   opts=''.join(f'<option value="{v}"'+(' selected' if v==candidate else '')+f'>{n}</option>' for v,n in versions)
   h.append(f'<section><h2>{name}</h2><select onchange="var p=this.parentNode;var u=this.value+\'/key_phases/{label}/screen.png\';p.querySelector(\'img\').src=u;p.querySelector(\'a.full\').href=u">{opts}</select><p><a class="full" href="{src}">打开原始截图</a></p><img loading="lazy" src="{src}"></section>')
  latest=read(OUT/'independent_payment_review.json') if (OUT/'independent_payment_review.json').exists() else {'status':'pending'}
+ h.append('<p><strong>后续设计门禁拒绝：</strong>2.2局部4分只说明辨识度。新版v3.3独立复查将2.4空间密度评3分、3.4控件设计评2分，当前黄色几何底座方案不作为认可设计。见<a href="independent_density_design_v3_3.json">独立密度与设计诊断</a>。两种rubric分数不混成总分。</p>')
  h.append('<h2>独立评分与未通过记录</h2><p>初稿虽分离了背景，复杂元素图标仍被独立审查判为黑团；后续卡牌模式/来源页仍只有3分。旧评分原文保留，不转写为后续版本得分。</p><p><a href="independent_contrast_before.json">黑团候选完整评分</a> · <a href="independent_contrast_final.json">中间候选评分（卡牌页3分）</a> · <a href="independent_payment_review.json">当前修正评分</a></p><pre>'+html.escape(json.dumps(latest,ensure_ascii=False,indent=2))+'</pre>')
- h.append('<h2>实际验证</h2><ul><li>六组同原生状态：'+str(audit.get('passed',False))+'；枚举黑色说明衬底实际不可见，原始立绘及手牌几何/UV保留。</li><li>符号悬浮入口：'+str(len(read(OUT/candidate/'symbol_readers.json')['rows']))+'个已实际进入并保持原生状态。</li><li>完整规则滚动、图鉴返回与守卫发动：'+str(details.get('passed',False))+'；以动态原始证据为准。</li></ul>')
+ h.append('<h2>实际验证</h2><ul><li>六组同原生状态：'+str(audit.get('passed',False))+'；枚举黑色说明衬底实际不可见，原始立绘及手牌几何/UV保留。</li><li>符号悬浮入口：'+str(len(read(OUT/candidate/'symbol_readers.json')['rows']))+'个已实际进入并保持原生状态。</li><li>完整规则展示、图鉴末行与返回、守卫发动：'+str(details.get('passed',False))+'；短全文实际一屏可容纳，未虚构滚动操作。</li></ul>')
+ h.append('<p><strong>扩查新增失败：</strong>六场景通过不能覆盖七英雄。七英雄检查发现5个原始图片矩形左越界，至少高蒂克斯非透明边缘确实越界。原始失败保留于<a href="seven_heroes_complete/manifest.json">七英雄完整记录</a>；后续在64另行修复与复审。</p>')
  h.append('<p><a href="geometry_and_information_audit.json">几何与信息核对</a> · <a href="'+candidate+'/symbol_readers.json">逐入口验证</a> · <a href="details_payment/manifest.json">全文/图鉴/正式消费</a> · <a href="compile_payment_fix.json">本轮源码及运行版本</a> · <a href="glyph_negative_space_diagnostic.json">两处图形留白诊断（非奖励或验收分）</a></p>')
  for label in ['card_reader_top','trait_reader_top','guide_top','guide_end','guard_ready','guard_consumed']:
   src=f'details_payment/key_phases/{label}/screen.png'

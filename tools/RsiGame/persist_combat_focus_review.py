@@ -123,7 +123,15 @@ def persist(packet_path, transcript, worker, out):
 
 def semantic_errors(final, packet):
     errors = []
-    ids = {f'{g}.{i}' for g in range(1, 9) for i in range(1, 5)}
+    # Bind to the packet's frozen rubric rather than today's active item count.
+    # This keeps old 32-item reviews replayable and admits the new density item.
+    try:
+        rubric = json.loads(Path(packet['rubric_path']).read_text(encoding='utf-8-sig'))
+        ids = {item['id'] for item in rubric['items']}
+        if rubric['rubric_version'] != packet.get('rubric_version'):
+            errors.append('Frozen rubric version mismatch')
+    except (OSError, ValueError, KeyError, TypeError) as exc:
+        return ['Cannot read frozen rubric items: ' + str(exc)]
     if final.get('rubric_version') != packet.get('rubric_version'):
         errors.append('Rubric version mismatch')
     if final.get('overall_numeric_score') is not None:
@@ -131,8 +139,8 @@ def semantic_errors(final, packet):
     incomplete = False
     for side in ('A', 'B'):
         rows = final.get('sides', {}).get(side, [])
-        if len(rows) != 32 or {x.get('id') for x in rows} != ids:
-            errors.append('Missing/duplicate32 IDs: ' + side)
+        if len(rows) != len(ids) or {x.get('id') for x in rows} != ids:
+            errors.append('Missing/duplicate rubric IDs: ' + side)
         for item in rows:
             missing = item.get('missing_reasons', [])
             status = item.get('status')
@@ -151,6 +159,12 @@ def semantic_errors(final, packet):
     if expected is not None and final.get('gate_verdict') != expected:
         errors.append('Gate verdict inconsistent; expected ' + expected)
     if final.get('gate_verdict') == 'passed_observed_scope':
+        if packet.get('rubric_version') == 'combat_focus_v3.3.0':
+            for side, rows in final.get('sides', {}).items():
+                for item in rows:
+                    if item.get('id') in ('2.2', '2.4', '3.4', '4.5') and item.get('status') != 'not_applicable':
+                        if item.get('score') is None or item['score'] < 4:
+                            errors.append('Joint visual gate below 4 or unscored: ' + side + '/' + item['id'])
         if any(item.get('score') is None and item.get('status') != 'not_applicable'
                for rows in final.get('sides', {}).values() for item in rows):
             errors.append('Passed verdict contains unscored applicable items')

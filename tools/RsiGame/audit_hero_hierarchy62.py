@@ -7,7 +7,7 @@ ROOT=Path(__file__).resolve().parents[2]
 BASE=ROOT/'AutomationOutputs/RsiGame/ui_iterations/20261024_embedded_battle_v1'
 OUT=BASE/'attempt62'
 def read(p):return json.loads(p.read_text(encoding='utf8'))
-def silhouettes(record):
+def silhouettes(record,require_on_canvas=True):
  rows=[]
  for im in record['evaluation']['rawImages']:
   if not im['path'].endswith(('/PartyFigure','/EnemyIllustration')):continue
@@ -20,13 +20,16 @@ def silhouettes(record):
   bounds=dict(left=r['x']+box[0]*sx,top=r['y']+box[1]*sy,right=r['x']+box[2]*sx,bottom=r['y']+box[3]*sy)
   # Original translucent pixels count too; exact source projection precedes
   # raster rounding. A tiny floating point epsilon is not a crop allowance.
-  assert bounds['left']>=-.01 and bounds['right']<=1920.01 and bounds['top']>=-.01 and bounds['bottom']<=1080.01,(im['texture'],bounds)
+  if require_on_canvas:
+   assert bounds['left']>=-.01 and bounds['right']<=1920.01 and bounds['top']>=-.01 and bounds['bottom']<=1080.01,(im['texture'],bounds)
   a=np.asarray(a.resize((round(r['width']),round(r['height'])),Image.Resampling.BILINEAR))
   m=np.zeros((1080,1920),np.uint8);x,y=round(r['x']),round(r['y']);l,t,rr,bb=max(0,x),max(0,y),min(1920,x+a.shape[1]),min(1080,y+a.shape[0]);m[t:bb,l:rr]=a[t-y:bb-y,l-x:rr-x]
   rows.append(dict(path=im['path'],texture=im['texture'],hero=hero,enemy=enemy,source_sha256=hashlib.sha256(src.read_bytes()).hexdigest(),bounds=bounds,mask=m))
  return rows
 def pair(before,after,label):
- a=silhouettes(read(before));b=silhouettes(read(after));old={x['path']:x for x in a};new={x['path']:x for x in b};assert old.keys()==new.keys()
+ # A baseline may contain the crop this comparison is intended to repair.
+ # Only the candidate must satisfy canvas containment; compare both masks.
+ a=silhouettes(read(before),require_on_canvas=False);b=silhouettes(read(after));old={x['path']:x for x in a};new={x['path']:x for x in b};assert old.keys()==new.keys()
  collisions=[]
  for i,x in enumerate(b):
   for y in b[i+1:]:

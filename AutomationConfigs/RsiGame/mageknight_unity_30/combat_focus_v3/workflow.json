@@ -1,5 +1,5 @@
 {
-  "version": "combat_focus_workflow_v3.0.0",
+  "version": "combat_focus_workflow_v3.3.0",
   "status": "configured_for_next_dispatch_not_yet_a_v3_game_acceptance",
   "effective_after_formal_round": 20,
   "total_requested_rounds": 30,
@@ -51,7 +51,9 @@
         "Wiki entry and content migration map",
         "log collapsed/open states",
         "compact portrait/current phase design",
-        "control visual language"
+        "control visual language",
+        "control role/group map and worst-case density layout",
+        "functional visual language: shape/material/hierarchy/state, beyond flat geometric mounts"
       ],
       "gate": "Do not propose another text-wall or giant portrait; preserve skills/mercenaries and real mana payments."
     },
@@ -94,12 +96,12 @@
       "owner": "independent_judge",
       "outputs": [
         "exact actual FINAL",
-        "32 items per side under same v3",
+        "33 items per side under same v3",
         "read ledger and input hashes",
         "raw measurements and scoped visual scores",
         "hard failures and precise missing evidence"
       ],
-      "gate": "Actual raw PNGs, blinded A/B identities, no old scores/editor opinions; no total or cross-version score delta."
+      "gate": "Actual raw PNGs, blinded A/B identities, no old scores/editor opinions; no total or cross-version score delta. Joint visual gate 2.2/2.4/3.4/4.5 required for every visible change; no contrast-only acceptance."
     },
     {
       "id": "promote_or_reject",
@@ -126,5 +128,15 @@
     "all v3 measurements collected"
   ],
   "local_reference": "AutomationOutputs\\RsiGame\\workflow_revisions\\20261023_combat_focus_v3\\local_reference.json",
-  "review_persistence_entry": "tools/RsiGame/persist_combat_focus_review.py"
+  "review_persistence_entry": "tools/RsiGame/persist_combat_focus_review.py",
+  "joint_visual_gate": {
+    "items": [
+      "2.2",
+      "2.4",
+      "3.4",
+      "4.5"
+    ],
+    "minimum_each": 4,
+    "rule": "每次可见UI修改必须联合审查；未测或有一项低于4不晋升。当前黄色几何底座方案仅为辨识度试验，不是认可设计。"
+  }
 }
