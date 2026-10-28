@@ -3,7 +3,7 @@ using MK.Logic.Core;
 namespace MK.Logic.Runtime.CardEffects
 {
     /// <summary>
-    /// 指揮旌旗：提供影響力並臨時增加指揮槽，強效免費招募並獲得名望。
+    /// 指挥旌旗：影响力4；实际附着在本回合新招募部队上代替其指挥标记。
     /// </summary>
     public sealed class CommandBannerEffect : ICardEffect
     {
@@ -15,12 +15,11 @@ namespace MK.Logic.Runtime.CardEffects
             if (!_once)
             {
                 ctx.InfluencePool += 4;
-                player.TempCommandSlots += 1;
             }
             else
             {
+                CardUnitActions.RecruitFree(player, ctx, option);
                 player.Fame += 2;
-                ctx.FreeRecruit = true;
             }
         }
     }

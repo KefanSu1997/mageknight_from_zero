@@ -180,6 +180,78 @@ def build():
         step('heal','治疗不能复活',wounds=0,canActivate='False'),step('nextRound','新一轮也不能复活',ready='False',units=0),
         step('use','不能发动已不属于玩家的消灭部队',exception='只能发动自有部队')],enemyTraits='Paralyze')
 
+    # Thug activation and damage are audited; reversed whole-interaction recruitment remains pending.
+    UNITS['army_2_011']=(5,'Village',1,5,[])
+    for ability in range(3):
+        actions=[step('prepare','持有原暴徒',units=1,ready='True',reputation=0),step('battle','进入交战',exception=''),
+                 step('use','发动原能力并核对声誉',ability,ready='False',reputation=-1 if ability else 0,
+                      block=3 if ability==0 else 0,melee=3 if ability==1 else 0,influence=4 if ability==2 else 0,exception=''),
+                 step('use','横置后拒绝重复发动',ability,reputation=-1 if ability else 0,exception='部队必须就绪、未受伤且未销毁')]
+        if ability<2:actions.append(step('resolve','实际格挡或攻击结算',effective=3,required=3,kills=ability,heroWounds=0,exception=''))
+        else:actions.append(hit(6,wounds=1,heroWounds=1,influence=2,damageAssigned=1,reputation=-1,exception=''))
+        add('army_2_011','原暴徒能力'+str(ability)+'与实际消费',actions,influence=0)
+    for funds,block in [(1,0),(2,0),(1,6)]:
+        refused=funds<2 and block==0
+        damage_case('army_2_011','影响力'+str(funds)+' / 格挡'+str(block)+'的承伤支付',[
+            hit(6,block=block,wounds=0 if refused or block else 1,heroWounds=0 if refused or block else 1,
+                influence=funds if refused or block else 0,damageAssigned=0 if refused or block else 1,
+                exception='向此部队分配伤害所需影响力不足' if refused else '')],influence=funds)
+    damage_case('army_2_011','两支暴徒承伤须一次验证全部费用',[
+        hit(6,[0,1],wounds=0,secondWounds=0,heroWounds=0,influence=3,damageAssigned=0,
+            exception='向此部队分配伤害所需影响力不足')],influence=3,extraUnitId='army_2_011',extraSlots=1)
+    damage_case('army_2_011','前一部队吸收全部伤害，未触及暴徒不付费',[
+        hit(6,[1,0],wounds=0,secondWounds=1,heroWounds=0,influence=0,damageAssigned=1,exception='')],
+        influence=0,extraUnitId='army_003',extraSlots=1)
+
+    recruitment_start = len(cases)
+    for reputation, funds, start in [(-2,9,8),(2,11,12)]:
+        modifier = 1 if reputation < 0 else -1
+        add('army_2_011','两支暴徒共享一次声誉反转与回合清理',[
+            step('beginInteraction','开始交涉并固定声誉修正',influence=start,interactionFrozen=-modifier,interactionReversed='False',exception=''),
+            step('recruit','支付第一次招募和整次反转差额',influence=5,units=1,offer=1,interactionModifier=modifier,interactionReversed='True',outcome='True',exception=''),
+            step('recruit','第二支只付牌面5，不能再次反转',influence=0,units=2,offer=0,interactionModifier=modifier,outcome='True',exception=''),
+            step('endTurn','结束回合，交涉修正全部清除',influence=0,interactionFrozen='None',interactionReversed='False',negotiating='False',units=2,exception='')
+        ],reputation=reputation,influence=funds,extraSlots=1,offerCount=2)
+    for farmers_first in (False,True):
+        add('army_2_011','农民与暴徒混合招募，先后顺序不重复计费',[
+            step('beginInteraction','开始负声誉交涉',influence=8,interactionModifier=-1,exception=''),
+            step('recruit','招募农民' if farmers_first else '招募暴徒',option=1 if farmers_first else 0,
+                 influence=4 if farmers_first else 5,units=1,offer=1,art='army_2_006' if farmers_first else 'army_2_011',outcome='True',exception=''),
+            step('recruit','招募暴徒' if farmers_first else '招募农民',influence=1,units=2,offer=0,interactionModifier=1,
+                 art='army_2_011' if farmers_first else 'army_2_006',outcome='True',exception='')
+        ],reputation=-2,influence=9,extraSlots=1,offerIds=['army_2_011','army_2_006'])
+    add('army_2_011','新部队立即发动，声誉变动不重算本次修正',[
+        step('beginInteraction','开始交涉，声誉2对应影响力加1',influence=9,interactionFrozen=1,exception=''),
+        step('recruit','招募暴徒，整次修正由加1变减1',influence=2,units=1,offer=1,outcome='True',exception=''),
+        step('use','发动原暴徒影响力4、声誉减1',ability=2,influence=6,reputation=1,interactionModifier=-1,ready='False',exception=''),
+        step('recruit','保持原修正，招募第二支暴徒',influence=1,reputation=1,units=2,offer=0,interactionModifier=-1,outcome='True',exception='')
+    ],reputation=2,influence=8,extraSlots=1,offerCount=2)
+    for funds,reputation,slots,location in [(5,2,0,'Village'),(30,-2,0,'Monastery'),(30,-2,-1,'Village')]:
+        before=funds+(1 if reputation>0 else -1)
+        add('army_2_011','费用不足/地点不符/槽位不足，招募不得提前反转',[
+            step('beginInteraction','开始交涉',influence=before,exception=''),
+            step('recruit','拒绝非法招募并保留全部资源',influence=before,units=0,offer=1,interactionReversed='False',outcome='False',exception='')
+        ],influence=funds,reputation=reputation,extraSlots=slots)
+        cases[-1]['location']=location
+    add('army_2_011','声誉X不能通过暴徒特例绕过交涉限制',[
+        step('beginInteraction','声誉X拒绝交涉',influence=20,interactionFrozen='None',exception='声誉位于X，不能交涉'),
+        step('recruit','仍不能招募暴徒',influence=20,units=0,offer=1,outcome='False',exception='')
+    ],reputation=-7)
+    add('army_2_011','结束交涉不能重新领取修正，下回合可重新开始',[
+        step('beginInteraction','首次声誉修正',influence=21,interactionModifier=1,exception=''),
+        step('beginInteraction','重复开始必须拒绝',influence=21,exception='本回合不能再次开始交涉'),
+        step('endInteraction','交涉结束剩余影响力作废',influence=0,negotiating='False',exception=''),
+        step('beginInteraction','同回合仍不能重新开始',influence=0,exception='本回合不能再次开始交涉'),
+        step('endTurn','回合结束清理状态',interactionFrozen='None',influence=0,exception=''),
+        step('beginInteraction','新回合重新获得一次修正',influence=1,interactionFrozen=1,exception='')
+    ],reputation=2)
+    for card,funds in [('army_2_011',5),('army_003',9)]:
+        add(card,'难民营费用按原招募图标计算',[
+            step('beginInteraction','开始难民营交涉',influence=funds,exception=''),
+            step('recruit','支付印刷费用与地点附加费',influence=0,units=1,offer=0,outcome='True',exception='')
+        ],influence=funds)
+        cases[-1]['location']='RefugeeCamp'
+
     suite = ROOT/'Assets/Resources/CardVerification/unit_cases.json'; write(suite,dict(cases=cases))
     sha = hashlib.sha256(suite.read_bytes()).hexdigest()
     config = dict(scenePath='Assets/Scenes/Verification/units.unity', useRunSubfolder=False, captureInitialView=True,
@@ -196,6 +268,16 @@ def build():
                 skipScreenshot=s['kind'] in ('prepare','battle','nextTurn','legacyTurn','heal'),before=checks(dict(caseId=c['id'],step=j)),
                 after=checks(dict(step=j+1,**{v['key']:v['value'] for v in s['expected']}))))
     write(ROOT/'AutomationConfigs/AllOriginalCards/units.json',config)
+    selected=cases[recruitment_start:]
+    focused=dict(config,caseIds=[c['id'] for c in selected],steps=[])
+    for index,c in enumerate(selected):
+        for original in config['steps']:
+            if not original['label'].startswith(c['id']+'_'):continue
+            if index==0 and original['label'].endswith('_next'):continue
+            s=dict(original)
+            s['skipScreenshot']=not s['label'].endswith(f"_{len(c['steps'])-1:02}_{c['steps'][-1]['kind']}")
+            focused['steps'].append(s)
+    write(ROOT/'AutomationConfigs/AllOriginalCards/units_focused.json',focused)
     print(json.dumps(dict(cases=len(cases),operations=len(config['steps']),captures=1+sum(not s['skipScreenshot'] for s in config['steps']))))
 
 

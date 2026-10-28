@@ -1,0 +1,11 @@
+# 全局混合任务与未知探索隔离
+
+用户纠正期望全局混合候选，旧认证小池不能覆盖未知合法构筑。保留task_feasibility严格获胜证书门禁不变，新增mixed_task_pool：真实reset的合法非终止训练任务作为legal_reset_unknown独立保存，不冒称可解；已认证tasks与unknown_tasks各成采样层，同一个PPO策略/优化器。任何已证明不可解/非法/陈旧/验证测试标签不能伪装合法未知准入；当前初始不可解solver仍缺，不能用策略失败排除根任务。
+
+全主209train候选均通过真实reset并出现在220任务混合池：24原证书、196新增未知，重合定义去重；33validation/30test未加入。每层默认各50%概率质量（不是每批固定一半），层内以英雄/任务访问次数及粗模式缺口加权，每项始终正概率。源规则/数据/catalog/root/hash绑定，未知入池不提供教师轨迹。成功目标及原native边界仍为完整声明敌群序列。
+
+模型显式迁移保持72参数/Adam数组、RNG和原实际历史，不伪造新任务访问。实际8局439步中6未知/2认证，1完整成功（认证任务）、10235有限规则审计零错，CPU34.551秒，272累计局11769步Adam141。未知六局失败保持未知，不即时晋升。保存类别与独立实际事件，下一100离线选择复现保存RNG/历史，离线模拟不作真实访问。全220项正支持/unknown不通过获胜certificate/假proven_unsolvable标签拒绝/heldout分区拒绝检查通过。
+
+冻结保留Goldyx烟测0/1，仅先赢一组后死路，不当整任务通过/泛化。测试仍未使用。模型结构/原规则/掩码/奖励/Unity场景未变；新增Python流程的Unity Console门禁尚未完成：本地无Unity.exe进程，原MCP6400连接拒绝，不假称两次零错，不命令行启动编辑器。本轮Python检查及真实训练通过不能替代最终Unity。
+
+证据AutomationOutputs/BattleRl/20261007_global_mixed_task_pool.json、global_mixed_pool_checks.json、global_mixed_checkpoint_migration/migration.json、global_mixed_training及sampler_restore_check。全部本轮进程正常terminal，完整范围/消费者/独立测试/Unity仍未达标；未知是分层记录和探索资格，与获胜证明分开。

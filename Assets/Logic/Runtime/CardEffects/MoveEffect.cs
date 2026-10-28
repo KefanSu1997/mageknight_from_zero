@@ -1,36 +1,14 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
 namespace MK.Logic.Runtime.CardEffects
 {
-    /// <summary>
-    /// 提供固定移動力的效果。
-    /// </summary>
-    public sealed class MoveEffect : ICardEffect
+    public sealed class MoveEffect : ICardEffect, IFixedCardOutput
     {
         private readonly int _value;
         public MoveEffect(int value) => _value = value;
-        public void Execute(PlayerState player, ActionContext ctx, int option = 0)
-        {
-            if (ctx.TransformMoveType == 1)
-            {
-                ctx.MeleePool += _value;
-            }
-            else if (ctx.TransformMoveType == 2)
-            {
-                ctx.BlockPool += _value;
-            }
-            else
-            {
-                ctx.MovementPool += _value;
-            }
-            ctx.TransformMoveType = 0;
-            if (ctx.MoveBonusNext != 0)
-            {
-                ctx.MovementPool += ctx.MoveBonusNext;
-                ctx.MoveBonusNext = 0;
-            }
-            if (ctx.MoveBonusAll != 0)
-            {
-                ctx.MovementPool += ctx.MoveBonusAll;
-            }
-        }
+        public IReadOnlyList<FixedCardOutput> FixedOutputs => new[] { new FixedCardOutput(0, FixedOutputKind.Movement, _value) };
+        public void Execute(PlayerState player, ActionContext context, int option = 0)
+            => FixedCardOutputs.Add(context, FixedOutputs.Single(o => o.Option == option));
     }
 }

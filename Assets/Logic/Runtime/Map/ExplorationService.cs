@@ -1,6 +1,7 @@
 using MK.Logic.Core;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace MK.Logic.Runtime.Map
 {
@@ -20,6 +21,14 @@ namespace MK.Logic.Runtime.Map
             _random = random ?? new Random();
         }
 
+        /// <summary>原技能常驻部分按实际持有者读取，与主动使用次数相互独立。</summary>
+        public static int Cost(PlayerState player, ActionContext context = null)
+        {
+            int discount = player.Skills.Any(s => s.SourceId == "hero_skill_pool_001:01") ? 1 : 0;
+            if (context?.DayPart == DayPart.Night && player.Skills.Any(s => s.SourceId == "hero_skill_pool_004:02")) discount++;
+            return Math.Max(0, 2 - discount);
+        }
+
         /// <summary>
         /// 探索新地块的完整流程
         /// </summary>
@@ -28,10 +37,23 @@ namespace MK.Logic.Runtime.Map
         /// <param name="rotation">地块旋转角度 (0, 60, 120, 180, 240, 300)</param>
         /// <param name="movementPoints">可用的移动力点数</param>
         /// <returns>探索结果，包括新地块和其他生成元素</returns>
-        public ExplorationResult Explore(PlayerState explorer, AxialCoord coord, int rotation, int movementPoints)
+        public ExplorationResult ExploreUsingPool(PlayerState explorer, AxialCoord coord, int rotation, ActionContext context)
         {
+            if (!ReferenceEquals(_map, context.MovementMap))
+                throw new InvalidOperationException("探索必须使用本回合的实际地图");
+            var result = Explore(explorer, coord, rotation, context.MovementPool, context);
+            if (result.Success) context.MovementPool = result.RemainingMovement;
+            return result;
+        }
+
+        public ExplorationResult Explore(PlayerState explorer, AxialCoord coord, int rotation, int movementPoints, ActionContext context = null)
+        {
+            // The legacy deck stores one-cell placeholders and random site events.
+            // Never mutate an original seven-cell map through that incompatible path.
+            if (_map.OriginalTiles.Count != 0 || _map.OriginalCells.Count != 0)
+                return ExplorationResult.FromError("原七格地图必须使用原版板块供给与放置接口，禁止简化探索");
             // Step 1: 检查探索是否可行
-            var validationResult = ValidateExploration(explorer, coord, movementPoints);
+            var validationResult = ValidateExploration(explorer, coord, movementPoints, context);
             if (!validationResult.IsValid)
                 return ExplorationResult.FromError(validationResult.ErrorMessage!);
             if (rotation < 0 || rotation >= 360 || rotation % 60 != 0)
@@ -41,7 +63,7 @@ namespace MK.Logic.Runtime.Map
                 return ExplorationResult.FromError("指定的坐标无法放置新地块");
 
             // Step 2: 支付移动力 (探索需要2点移动力)
-            int explorationCost = 2;
+            int explorationCost = Cost(explorer, context);
             int remainingMovement = movementPoints - explorationCost;
             
             // Step 3: 从相应的牌堆抽取新地块
@@ -70,15 +92,19 @@ namespace MK.Logic.Runtime.Map
         /// <summary>
         /// 验证探索条件
         /// </summary>
-        private ValidationResult ValidateExploration(PlayerState explorer, AxialCoord coord, int availableMovement)
+        private ValidationResult ValidateExploration(PlayerState explorer, AxialCoord coord, int availableMovement, ActionContext context)
         {
-            if (availableMovement < 2)
-                return ValidationResult.Invalid("探索需要2点移动力");
+            if (context?.InBattle == true || context?.TurnActionCommitted == true || context?.PendingRepeatedEffect != null)
+                return ValidationResult.Invalid("当前行动阶段不能探索");
+            int cost = Cost(explorer, context);
+            if (availableMovement < cost)
+                return ValidationResult.Invalid("探索需要" + cost + "点移动力");
             if (_map.Countryside.Count == 0 && _map.Core.Count == 0)
                 return ValidationResult.Invalid("地块牌堆已空");
             int dq = coord.Q - explorer.Position.Q;
             int dr = coord.R - explorer.Position.R;
-            if ((Math.Abs(dq) + Math.Abs(dr) + Math.Abs(dq + dr)) / 2 != 1)
+            int distance = (Math.Abs(dq) + Math.Abs(dr) + Math.Abs(dq + dr)) / 2;
+            if (distance != 1 && !(distance == 2 && (context?.SpaceBendingActive == true || context?.ScoutExplorationRange >= 2)))
                 return ValidationResult.Invalid("只能探索玩家相邻的空位");
                 
             // 使用空白tile验证放置可行性

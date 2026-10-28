@@ -2,9 +2,9 @@ namespace MK.Logic.Runtime.CardEffects
 {
     /// <summary>
     /// 野蠻收穫：提供移動力並允許在移動時棄牌獲得魔晶。
-    /// 具體棄牌與獲取由外部系統處理，此處僅標記次數。
+    /// 正式单格移动命令消费次数，按实际手牌材料结算魔晶。
     /// </summary>
-    public sealed class WildHarvestEffect : ICardEffect
+    public sealed class WildHarvestEffect : ICardEffect, IFixedCardOutput
     {
         private readonly int _move;
         private readonly int _maxTriggers; // -1 表示每格皆可觸發
@@ -14,10 +14,11 @@ namespace MK.Logic.Runtime.CardEffects
             _maxTriggers = maxTriggers;
         }
 
+        public System.Collections.Generic.IReadOnlyList<FixedCardOutput> FixedOutputs => new[] { new FixedCardOutput(0, FixedOutputKind.Movement, _move) };
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            ctx.MovementPool += _move;
-            // 触发次数与战斗资源独立；移动消费仍由后续集成负责。
+            FixedCardOutputs.Add(ctx, FixedOutputs[0]);
+            // 基础整回合一次，强化每次成功单格移动可选一次。
             ctx.HarvestTriggers = _maxTriggers;
         }
     }

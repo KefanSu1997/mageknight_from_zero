@@ -1,0 +1,99 @@
+{
+  "scope": "原奇袭队前两主要能力和护林人格挡3，实际不同敌群、同一Lv6托瓦克三单位正式跨轮两战；不重复奇袭第三能力或护林人移动",
+  "run": "20260929_164240_b5eac490",
+  "report": "AutomationOutputs/PveBattle/20260929_164240_b5eac490/report.json",
+  "status": "success",
+  "steps": 93,
+  "assertions": 141,
+  "sha256": "4860d354a68cf9125d8af9fbf9b1aac2f783c8db4f61499c5a80646829bee60c",
+  "unitIdentityChecks": [
+    {
+      "step": 28,
+      "instances": "army_2_010:-474999942,army_2_012:1596819162,army_2_000:-2009524224",
+      "ready": "True,True,True",
+      "samePlayer": true,
+      "fame": "35"
+    },
+    {
+      "step": 30,
+      "instances": "army_2_010:-474999942,army_2_012:1596819162,army_2_000:-2009524224",
+      "ready": "True,True,True",
+      "samePlayer": true,
+      "fame": "35"
+    },
+    {
+      "step": 46,
+      "instances": "army_2_010:-474999942,army_2_012:1596819162,army_2_000:-2009524224",
+      "ready": "False,False,True",
+      "samePlayer": true,
+      "fame": "35"
+    },
+    {
+      "step": 57,
+      "instances": "army_2_010:-474999942,army_2_012:1596819162,army_2_000:-2009524224",
+      "ready": "False,False,True",
+      "samePlayer": true,
+      "fame": "38"
+    },
+    {
+      "step": 60,
+      "instances": "army_2_010:-474999942,army_2_012:1596819162,army_2_000:-2009524224",
+      "ready": "True,True,True",
+      "samePlayer": true,
+      "fame": "38"
+    },
+    {
+      "step": 62,
+      "instances": "army_2_010:-474999942,army_2_012:1596819162,army_2_000:-2009524224",
+      "ready": "True,True,True",
+      "samePlayer": true,
+      "fame": "38"
+    },
+    {
+      "step": 78,
+      "instances": "army_2_010:-474999942,army_2_012:1596819162,army_2_000:-2009524224",
+      "ready": "False,True,True",
+      "samePlayer": true,
+      "fame": "38"
+    },
+    {
+      "step": 90,
+      "instances": "army_2_010:-474999942,army_2_012:1596819162,army_2_000:-2009524224",
+      "ready": "False,True,False",
+      "samePlayer": true,
+      "fame": "40"
+    },
+    {
+      "step": 92,
+      "instances": "army_2_010:-474999942,army_2_012:1596819162,army_2_000:-2009524224",
+      "ready": "False,True,False",
+      "samePlayer": true,
+      "fame": "40"
+    }
+  ],
+  "reviewedScreenshots": [
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_164240_b5eac490\\captures\\046_弩手2获原奇袭+1，合计4.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_164240_b5eac490\\captures\\060_同三部队正式重整.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_164240_b5eac490\\captures\\078_原甲和一次攻击各减1.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_164240_b5eac490\\captures\\090_原基础攻击2击杀减甲敌.png"
+  ],
+  "screenshotReview": "主代理已逐图查看正常；本索引记录由主代理回报的视觉核查",
+  "backendReused": {
+    "report": "AutomationOutputs/RulesState/20260923_023606_b1e4750f/results.xml",
+    "sha256": "6ebbfab4243a67fea44c4d00409e42474adda741e0dcdf203b51d9994784ec9f",
+    "passedCases": [
+      "MK.Tests.Battles.PveShockTroopsTests.RangedBuffUsesActualOtherUnitContributionsBeforeOrAfterActivation(True)",
+      "MK.Tests.Battles.PveShockTroopsTests.RangedBuffUsesActualOtherUnitContributionsBeforeOrAfterActivation(False)",
+      "MK.Tests.Battles.PveShockTroopsTests.WeakenedArmorAndAttackFeedActualBlockAndMeleeConsumers"
+    ]
+  },
+  "limitations": "五张原牌合法自定构筑，非标准16牌开局；既有演练地图敌群，不冒充完整原板块探索。只覆盖明确基本消费者，不宣称全组合或整个项目完成。",
+  "console": {
+    "path": "tmp/pve_puppet_shock_familiar_final_console.json",
+    "errorCounts": [
+      0,
+      0
+    ],
+    "source": "actual Unity read_console"
+  }
+}

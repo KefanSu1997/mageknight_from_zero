@@ -1,0 +1,23 @@
+{
+  "scope": "战斗外原手牌入口、活力焕发绿标记、再生实际治疗与同一农民再战、能量流转条件与原绿费用；非全部八种原卡完整场景验收",
+  "sceneRun": "20260923_041902_b67666b2",
+  "passedSteps": 81,
+  "passedAssertions": 127,
+  "displayRun": "20260923_042335_a7035b42",
+  "displayAssertions": 2,
+  "backend": [
+    "AutomationOutputs/RulesState/20260923_041326_0cb37116",
+    "AutomationOutputs/RulesState/20260923_041626_68cd684b"
+  ],
+  "backendEffectivePassed": 16,
+  "finalConsole": "tmp/pve_20260923_recovery_complete_console.json",
+  "sourceSha256": {
+    "Assets/Logic/Runtime/Battles/PveJourneySession.cs": "2a3a8205e4008aa1ddd80133820b2eaa2e01e5283aa9ada7f32f5c8bde01cc10",
+    "Assets/Logic/Runtime/Battles/PveBattleSession.cs": "22e1151134e6416ab3e60cf1adf2830a7720d1d671caf6f85363c511ef176a15",
+    "Assets/Scripts/Battle/PveBattleController.cs": "ba45c97f3e00d9c04232c9519e157353af462989a23d329c44515f7e53560d32",
+    "Assets/Scripts/Battle/PveBattleController.Journey.cs": "55d4c63489d6bc5625b79343cb5f764411bffd90e40fb8d98ca7aee81e10db7f",
+    "Assets/Scripts/Battle/PveBattleController.JourneyHand.cs": "add60cb8156952ef1790678d5a20035bc81ca31bc1b7a30db37084785c222c8b",
+    "Assets/Tests/RulesState/PveJourneyRecoveryTests.cs": "8aa0244adc14a4134dc941c3a458e5e627e4a98097e01deca6308f0f2eab24c8",
+    "tools/build_pve_journey_recovery_acceptance.py": "7af3ac118cce9fc1539bac231dacf53e486e7c1172263adab5c6856b182de229"
+  }
+}

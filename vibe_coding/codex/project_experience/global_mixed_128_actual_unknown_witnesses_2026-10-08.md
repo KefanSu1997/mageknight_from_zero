@@ -1,0 +1,11 @@
+# 全局混合128局与未知任务获胜证明
+
+先核实无活RL/Unity，才从真实混合272局检查点恢复；PID236864创建00:11:14、session35427完整命令16updates×8episodes×2epochs原LR.0002/terminal_sequence。过程中实核PID/CPU/输出更新，未因观察超时重启。原220池24获胜证书/196合法未知独立标签、原掩码/奖励/GRU/数据绑定均保持。
+
+自然完成128新局6583步25完整成功，67未知局覆盖60不同未知定义，155171有限规则审计零错误，CPU573.718秒；保存400累计局18352步Adam173。三个未知实际训练成功：Wolfhawk原025单战16步、Goldyx原009单战51步、Braevalar005→006双战54步。另起正式入口逐前后状态/动作/rawreward重放认证，taskID绑定完全一致；注册证明在独立目录，不热改原池标签，不把这些训练期见证说成最终保存模型胜利或教师数据。
+
+实际当前数据绑定148模式、30单位、47技能、106英雄敌人配对，累计149模式另存；所有30单位曾发动不证明每个能力/原费用/消费者/场景全部通过。未知剩余及未采样候选保留，60不同未知不冒称196全部跑过。冻结保留Goldyx双战seed8601四次2完整胜利，233步5442有限检查；仅一个经策略筛选组成，不能外推泛化，test未使用。
+
+新episode273魔法天赋基础41步：真实basic023实体15从hand到discard，本体advanced025实体17到played，红色许可产生，token/crystal池不变，后续无原法术消费；仅基本材料/许可片段通过，不是完整卡/Unity验收。所有模型/轨迹本地保留，未改规则/场景/代码，无原库重跑/下载上传/推远端/用户程序终止。Unity仍关闭，前次Python代码的Console两零错误门禁待补，不冒称完成。
+
+证据AutomationOutputs/BattleRl/20261008_global_mixed_128_iteration_summary.json、global_unknown_training_witnesses/certified_registry.json、magic_talent_base_material_review.json及训练/冻结目录。完整全原卡7英雄69敌/费用材料消费者/广独立测试/保存策略Unity仍未达标。

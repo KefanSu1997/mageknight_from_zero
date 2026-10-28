@@ -1,0 +1,4064 @@
+{
+  "schemaVersion": 2,
+  "algorithm": "PPO",
+  "status": "inventory_only_not_training_complete",
+  "counts": {
+    "basic_card": 28,
+    "advanced_card": 44,
+    "magic": 24,
+    "items": 25,
+    "army": 15,
+    "army_2": 15
+  },
+  "heroes": [
+    {
+      "Id": "Arythea",
+      "Name": "\u963F\u745E\u5E0C\u4E9A",
+      "StartingCards": [
+        "basic_card_024",
+        "basic_card_021",
+        "basic_card_016",
+        "basic_card_007",
+        "basic_card_007",
+        "basic_card_000",
+        "basic_card_000",
+        "basic_card_014",
+        "basic_card_014",
+        "basic_card_001",
+        "basic_card_008",
+        "basic_card_022",
+        "basic_card_015",
+        "basic_card_013",
+        "basic_card_002",
+        "basic_card_023"
+      ],
+      "skills": [
+        {
+          "SourceId": "hero_skill_pool_000:00",
+          "Id": "\u9ED1\u6697\u9053\u8DEF",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_000:01",
+          "Id": "\u71C3\u70E7\u4E4B\u529B",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_000:02",
+          "Id": "\u70BD\u70ED\u5251\u672F",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_000:03",
+          "Id": "\u79D8\u5BC6\u8C08\u5224",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_000:04",
+          "Id": "\u6697\u706B\u9B54\u6CD5",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_000:05",
+          "Id": "\u75DB\u82E6\u4E4B\u529B",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_000:06",
+          "Id": "\u9B54\u5492",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_000:07",
+          "Id": "\u4E24\u6781\u5206\u5316",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_000:08",
+          "Id": "\u6FC0\u52B1",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_000:09",
+          "Id": "\u75DB\u82E6\u4EEA\u5F0F/\u6CBB\u7597\u4EEA\u5F0F",
+          "status": "uncovered"
+        }
+      ]
+    },
+    {
+      "Id": "Tovak",
+      "Name": "\u6258\u74E6\u514B",
+      "StartingCards": [
+        "basic_card_021",
+        "basic_card_021",
+        "basic_card_020",
+        "basic_card_007",
+        "basic_card_007",
+        "basic_card_000",
+        "basic_card_000",
+        "basic_card_014",
+        "basic_card_014",
+        "basic_card_001",
+        "basic_card_008",
+        "basic_card_022",
+        "basic_card_015",
+        "basic_card_009",
+        "basic_card_002",
+        "basic_card_027"
+      ],
+      "skills": [
+        {
+          "SourceId": "hero_skill_pool_007:00",
+          "Id": "\u5FEB\u6B65\u524D\u884C",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_007:01",
+          "Id": "\u9ED1\u591C\u72D9\u51FB",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_007:02",
+          "Id": "\u5BD2\u51B0\u5251\u672F",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_007:03",
+          "Id": "\u76FE\u724C\u7CBE\u901A",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_007:04",
+          "Id": "\u6297\u6027\u5F31\u5316",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_007:05",
+          "Id": "\u65E0\u60E7\u75DB\u82E6",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_007:06",
+          "Id": "\u6F2B\u4E0D\u7ECF\u5FC3",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_007:07",
+          "Id": "\u9B54\u6CD5\u6297\u62D2",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_007:08",
+          "Id": "\u6FC0\u52B1",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_007:09",
+          "Id": "\u9B54\u529B\u9738\u4E3B",
+          "status": "uncovered"
+        }
+      ]
+    },
+    {
+      "Id": "Goldyx",
+      "Name": "\u9AD8\u8482\u514B\u65AF",
+      "StartingCards": [
+        "basic_card_021",
+        "basic_card_021",
+        "basic_card_016",
+        "basic_card_007",
+        "basic_card_007",
+        "basic_card_000",
+        "basic_card_000",
+        "basic_card_014",
+        "basic_card_014",
+        "basic_card_001",
+        "basic_card_008",
+        "basic_card_022",
+        "basic_card_019",
+        "basic_card_009",
+        "basic_card_006",
+        "basic_card_023"
+      ],
+      "skills": [
+        {
+          "SourceId": "hero_skill_pool_005:00",
+          "Id": "\u51B0\u5C01\u4E4B\u529B",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_005:01",
+          "Id": "\u836F\u5242\u5236\u4F5C",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_005:02",
+          "Id": "\u767D\u6676\u953B\u9020",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_005:03",
+          "Id": "\u7EFF\u6676\u953B\u9020",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_005:04",
+          "Id": "\u7EA2\u6676\u953B\u9020",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_005:05",
+          "Id": "\u8367\u5149\u7075\u8FD0",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_005:06",
+          "Id": "\u98DE\u884C",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_005:07",
+          "Id": "\u901A\u7528\u529B\u91CF",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_005:08",
+          "Id": "\u6FC0\u52B1",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_005:09",
+          "Id": "\u9B54\u529B\u5F00\u6E90/\u9B54\u6E90\u51B0\u5C01",
+          "status": "uncovered"
+        }
+      ]
+    },
+    {
+      "Id": "Norowas",
+      "Name": "\u8BFA\u6D1B\u74E6\u65AF",
+      "StartingCards": [
+        "basic_card_021",
+        "basic_card_021",
+        "basic_card_016",
+        "basic_card_007",
+        "basic_card_007",
+        "basic_card_000",
+        "basic_card_000",
+        "basic_card_014",
+        "basic_card_014",
+        "basic_card_005",
+        "basic_card_012",
+        "basic_card_022",
+        "basic_card_015",
+        "basic_card_009",
+        "basic_card_002",
+        "basic_card_023"
+      ],
+      "skills": [
+        {
+          "SourceId": "hero_skill_pool_002:00",
+          "Id": "\u5168\u519B\u884C\u8FDB",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_002:01",
+          "Id": "\u767D\u663C\u72D9\u51FB",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_002:02",
+          "Id": "\u91CD\u6574\u65D7\u9F13",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_002:03",
+          "Id": "\u516C\u5F00\u8C08\u5224",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_002:04",
+          "Id": "\u98CE\u4E2D\u6B8B\u53F6",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_002:05",
+          "Id": "\u6811\u68A2\u98CE\u8BED",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_002:06",
+          "Id": "\u9886\u5BFC",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_002:07",
+          "Id": "\u5FE0\u8BDA\u5951\u7EA6",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_002:08",
+          "Id": "\u6FC0\u52B1",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_002:09",
+          "Id": "\u98CE\u96E8\u5E73\u590D/\u98CE\u96E8\u7948\u7977",
+          "status": "uncovered"
+        }
+      ]
+    },
+    {
+      "Id": "Wolfhawk",
+      "Name": "Wolfhawk",
+      "StartingCards": [
+        "basic_card_021",
+        "basic_card_021",
+        "basic_card_016",
+        "basic_card_010",
+        "basic_card_007",
+        "basic_card_000",
+        "basic_card_000",
+        "basic_card_017",
+        "basic_card_014",
+        "basic_card_001",
+        "basic_card_008",
+        "basic_card_022",
+        "basic_card_015",
+        "basic_card_009",
+        "basic_card_002",
+        "basic_card_023"
+      ],
+      "skills": [
+        {
+          "SourceId": "hero_skill_pool_004:00",
+          "Id": "\u63D0\u795E\u6C90\u6D74",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_004:01",
+          "Id": "\u63D0\u795E\u5FAE\u98CE",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_004:02",
+          "Id": "\u795E\u9E70\u4E4B\u773C",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_004:03",
+          "Id": "\u7279\u7ACB\u72EC\u884C",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_004:04",
+          "Id": "\u767E\u6B65\u7A7F\u6768",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_004:05",
+          "Id": "\u6D1E\u6089\u730E\u7269",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_004:06",
+          "Id": "\u5632\u8BBD",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_004:07",
+          "Id": "\u51B3\u6597",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_004:08",
+          "Id": "\u6FC0\u52B1",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_004:09",
+          "Id": "\u7FA4\u72FC\u568E\u53EB/\u72FC\u568E",
+          "status": "uncovered"
+        }
+      ]
+    },
+    {
+      "Id": "Krang",
+      "Name": "Krang",
+      "StartingCards": [
+        "basic_card_021",
+        "basic_card_021",
+        "basic_card_016",
+        "basic_card_007",
+        "basic_card_007",
+        "basic_card_003",
+        "basic_card_000",
+        "basic_card_014",
+        "basic_card_014",
+        "basic_card_001",
+        "basic_card_008",
+        "basic_card_026",
+        "basic_card_015",
+        "basic_card_009",
+        "basic_card_002",
+        "basic_card_023"
+      ],
+      "skills": [
+        {
+          "SourceId": "hero_skill_pool_003:00",
+          "Id": "\u7075\u9B42\u5411\u5BFC",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_003:01",
+          "Id": "\u8EAB\u7ECF\u767E\u6218",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_003:02",
+          "Id": "\u6218\u6597\u72C2\u4E71",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_003:03",
+          "Id": "\u8428\u6EE1\u4EEA\u5F0F",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_003:04",
+          "Id": "\u518D\u751F",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_003:05",
+          "Id": "\u5965\u672F\u4F2A\u88C5",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_003:06",
+          "Id": "\u5080\u5121\u5927\u5E08",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_003:07",
+          "Id": "\u6DF7\u4E71\u5927\u5E08",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_003:08",
+          "Id": "\u8BC5\u5492",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_003:09",
+          "Id": "\u9B54\u529B\u5F3A\u5316/\u9B54\u529B\u6291\u5236",
+          "status": "uncovered"
+        }
+      ]
+    },
+    {
+      "Id": "Braevalar",
+      "Name": "Braevalar",
+      "StartingCards": [
+        "basic_card_021",
+        "basic_card_021",
+        "basic_card_016",
+        "basic_card_007",
+        "basic_card_007",
+        "basic_card_004",
+        "basic_card_000",
+        "basic_card_018",
+        "basic_card_014",
+        "basic_card_001",
+        "basic_card_008",
+        "basic_card_022",
+        "basic_card_015",
+        "basic_card_009",
+        "basic_card_002",
+        "basic_card_023"
+      ],
+      "skills": [
+        {
+          "SourceId": "hero_skill_pool_001:00",
+          "Id": "\u5143\u7D20\u6297\u6027",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_001:01",
+          "Id": "\u91CE\u6027\u76DF\u53CB",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_001:02",
+          "Id": "\u96F7\u4E91\u98CE\u66B4",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_001:03",
+          "Id": "\u95EA\u7535\u98CE\u66B4",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_001:04",
+          "Id": "\u8FF7\u9189",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_001:05",
+          "Id": "\u53C9\u5F62\u95EA\u7535",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_001:06",
+          "Id": "\u53D8\u6362\u8EAB\u5F62",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_001:07",
+          "Id": "\u9690\u79D8\u4E4B\u8DEF",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_001:08",
+          "Id": "\u518D\u751F",
+          "status": "uncovered"
+        },
+        {
+          "SourceId": "hero_skill_pool_001:09",
+          "Id": "\u81EA\u7136\u590D\u4EC7/\u81EA\u7136\u590D\u4EC7",
+          "status": "uncovered"
+        }
+      ]
+    }
+  ],
+  "enemies": [
+    {
+      "Id": "monster_001",
+      "Armor": 8,
+      "Attack": 6,
+      "AttackCount": 1,
+      "AttackElement": 1,
+      "Abilities": [
+        0,
+        6,
+        3
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_002",
+      "Armor": 5,
+      "Attack": 5,
+      "AttackCount": 1,
+      "AttackElement": 0,
+      "Abilities": [
+        3
+      ],
+      "TokenColor": 2,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_003",
+      "Armor": 3,
+      "Attack": 5,
+      "AttackCount": 1,
+      "AttackElement": 3,
+      "Abilities": [
+        0,
+        8,
+        9
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_004",
+      "Armor": 4,
+      "Attack": 2,
+      "AttackCount": 1,
+      "AttackElement": 2,
+      "Abilities": [
+        7,
+        15
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_005",
+      "Armor": 5,
+      "Attack": 3,
+      "AttackCount": 1,
+      "AttackElement": 0,
+      "Abilities": [
+        3
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_006",
+      "Armor": 3,
+      "Attack": 4,
+      "AttackCount": 1,
+      "AttackElement": 0,
+      "Abilities": [
+        15,
+        3
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_007",
+      "Armor": 4,
+      "Attack": 3,
+      "AttackCount": 1,
+      "AttackElement": 0,
+      "Abilities": [
+        1
+      ],
+      "TokenColor": 3,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_008",
+      "Armor": 8,
+      "Attack": 4,
+      "AttackCount": 1,
+      "AttackElement": 3,
+      "Abilities": [
+        15,
+        2,
+        3
+      ],
+      "TokenColor": 6,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_009",
+      "Armor": 9,
+      "Attack": 5,
+      "AttackCount": 1,
+      "AttackElement": 0,
+      "Abilities": [
+        3,
+        1
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_010",
+      "Armor": 7,
+      "Attack": 6,
+      "AttackCount": 1,
+      "AttackElement": 2,
+      "Abilities": [
+        7,
+        4
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_011",
+      "Armor": 4,
+      "Attack": 6,
+      "AttackCount": 1,
+      "AttackElement": 0,
+      "Abilities": [],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_012",
+      "Armor": 5,
+      "Attack": 4,
+      "AttackCount": 1,
+      "AttackElement": 2,
+      "Abilities": [],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_013",
+      "Armor": 4,
+      "Attack": 4,
+      "AttackCount": 1,
+      "AttackElement": 0,
+      "Abilities": [],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_014",
+      "Armor": 6,
+      "Attack": 7,
+      "AttackCount": 1,
+      "AttackElement": 1,
+      "Abilities": [
+        6,
+        9
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_015",
+      "Armor": 4,
+      "Attack": 3,
+      "AttackCount": 2,
+      "AttackElement": 1,
+      "Abilities": [
+        6,
+        7
+      ],
+      "TokenColor": 0,
+      "Faction": 1,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_016",
+      "Armor": 5,
+      "Attack": 3,
+      "AttackCount": 1,
+      "AttackElement": 0,
+      "Abilities": [
+        1
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_017",
+      "Armor": 4,
+      "Attack": 4,
+      "AttackCount": 1,
+      "AttackElement": 0,
+      "Abilities": [
+        0,
+        1
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_018",
+      "Armor": 5,
+      "Attack": 3,
+      "AttackCount": 1,
+      "AttackElement": 0,
+      "Abilities": [
+        6,
+        7,
+        3
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_019",
+      "Armor": 5,
+      "Attack": 3,
+      "AttackCount": 1,
+      "AttackElement": 0,
+      "Abilities": [
+        3
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_020",
+      "Armor": 7,
+      "Attack": 3,
+      "AttackCount": 2,
+      "AttackElement": 0,
+      "Abilities": [
+        2,
+        3
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_021",
+      "Armor": 6,
+      "Attack": 4,
+      "AttackCount": 1,
+      "AttackElement": 0,
+      "Abilities": [
+        6,
+        3
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_022",
+      "Armor": 8,
+      "Attack": 4,
+      "AttackCount": 1,
+      "AttackElement": 2,
+      "Abilities": [
+        8
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_023",
+      "Armor": 8,
+      "Attack": 5,
+      "AttackCount": 2,
+      "AttackElement": 0,
+      "Abilities": [
+        0,
+        8
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_024",
+      "Armor": 7,
+      "Attack": 4,
+      "AttackCount": 1,
+      "AttackElement": 2,
+      "Abilities": [
+        7,
+        4
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_025",
+      "Armor": 7,
+      "Attack": 3,
+      "AttackCount": 1,
+      "AttackElement": 0,
+      "Abilities": [
+        0
+      ],
+      "TokenColor": 1,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_026",
+      "Armor": 5,
+      "Attack": 2,
+      "AttackCount": 1,
+      "AttackElement": 0,
+      "Abilities": [],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_027",
+      "Armor": 5,
+      "Attack": 6,
+      "AttackCount": 1,
+      "AttackElement": 0,
+      "Abilities": [],
+      "TokenColor": 1,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_028",
+      "Armor": 6,
+      "Attack": 5,
+      "AttackCount": 1,
+      "AttackElement": 2,
+      "Abilities": [
+        7
+      ],
+      "TokenColor": 2,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_029",
+      "Armor": 4,
+      "Attack": 3,
+      "AttackCount": 1,
+      "AttackElement": 1,
+      "Abilities": [
+        6,
+        15,
+        3
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_030",
+      "Armor": 5,
+      "Attack": 6,
+      "AttackCount": 1,
+      "AttackElement": 1,
+      "Abilities": [
+        6
+      ],
+      "TokenColor": 2,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_031",
+      "Armor": 4,
+      "Attack": 1,
+      "AttackCount": 1,
+      "AttackElement": 2,
+      "Abilities": [],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_032",
+      "Armor": 3,
+      "Attack": 4,
+      "AttackCount": 1,
+      "AttackElement": 0,
+      "Abilities": [],
+      "TokenColor": 3,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_033",
+      "Armor": 7,
+      "Attack": 5,
+      "AttackCount": 1,
+      "AttackElement": 0,
+      "Abilities": [
+        0,
+        6,
+        7,
+        8
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_034",
+      "Armor": 7,
+      "Attack": 3,
+      "AttackCount": 1,
+      "AttackElement": 2,
+      "Abilities": [
+        6,
+        4
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_035",
+      "Armor": 6,
+      "Attack": 6,
+      "AttackCount": 1,
+      "AttackElement": 1,
+      "Abilities": [
+        7,
+        3
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_036",
+      "Armor": 7,
+      "Attack": 9,
+      "AttackCount": 1,
+      "AttackElement": 1,
+      "Abilities": [
+        6
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_037",
+      "Armor": 9,
+      "Attack": 6,
+      "AttackCount": 1,
+      "AttackElement": 2,
+      "Abilities": [
+        6,
+        7,
+        3
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_038",
+      "Armor": 4,
+      "Attack": 5,
+      "AttackCount": 1,
+      "AttackElement": 0,
+      "Abilities": [
+        0,
+        1
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_039",
+      "Armor": 6,
+      "Attack": 6,
+      "AttackCount": 1,
+      "AttackElement": 0,
+      "Abilities": [
+        0
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_040",
+      "Armor": 5,
+      "Attack": 5,
+      "AttackCount": 1,
+      "AttackElement": 0,
+      "Abilities": [
+        3
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_041",
+      "Armor": 5,
+      "Attack": 7,
+      "AttackCount": 1,
+      "AttackElement": 0,
+      "Abilities": [
+        1
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_042",
+      "Armor": 9,
+      "Attack": 7,
+      "AttackCount": 1,
+      "AttackElement": 0,
+      "Abilities": [
+        3
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_043",
+      "Armor": 8,
+      "Attack": 8,
+      "AttackCount": 1,
+      "AttackElement": 0,
+      "Abilities": [
+        4
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_044",
+      "Armor": 5,
+      "Attack": 4,
+      "AttackCount": 1,
+      "AttackElement": 0,
+      "Abilities": [
+        7,
+        3
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_045",
+      "Armor": 5,
+      "Attack": 5,
+      "AttackCount": 1,
+      "AttackElement": 0,
+      "Abilities": [
+        0
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_046",
+      "Armor": 6,
+      "Attack": 6,
+      "AttackCount": 1,
+      "AttackElement": 0,
+      "Abilities": [
+        8,
+        3
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_047",
+      "Armor": 4,
+      "Attack": 4,
+      "AttackCount": 1,
+      "AttackElement": 0,
+      "Abilities": [
+        3
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_048",
+      "Armor": 5,
+      "Attack": 1,
+      "AttackCount": 3,
+      "AttackElement": 0,
+      "Abilities": [
+        7,
+        3
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_049",
+      "Armor": 5,
+      "Attack": 0,
+      "AttackCount": 2,
+      "AttackElement": 2,
+      "Abilities": [
+        0
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_050",
+      "Armor": 4,
+      "Attack": 3,
+      "AttackCount": 1,
+      "AttackElement": 0,
+      "Abilities": [
+        6
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_051",
+      "Armor": 7,
+      "Attack": 5,
+      "AttackCount": 1,
+      "AttackElement": 0,
+      "Abilities": [
+        3
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_052",
+      "Armor": 7,
+      "Attack": 6,
+      "AttackCount": 1,
+      "AttackElement": 2,
+      "Abilities": [
+        6,
+        7,
+        9
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_053",
+      "Armor": 5,
+      "Attack": 4,
+      "AttackCount": 1,
+      "AttackElement": 0,
+      "Abilities": [
+        0,
+        3,
+        9
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_054",
+      "Armor": 7,
+      "Attack": 6,
+      "AttackCount": 1,
+      "AttackElement": 2,
+      "Abilities": [
+        7
+      ],
+      "TokenColor": 0,
+      "Faction": 1,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_055",
+      "Armor": 4,
+      "Attack": 3,
+      "AttackCount": 2,
+      "AttackElement": 1,
+      "Abilities": [
+        6,
+        7,
+        1
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_056",
+      "Armor": 4,
+      "Attack": 3,
+      "AttackCount": 1,
+      "AttackElement": 0,
+      "Abilities": [
+        6,
+        9
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_057",
+      "Armor": 1,
+      "Attack": 1,
+      "AttackCount": 2,
+      "AttackElement": 2,
+      "Abilities": [
+        7,
+        17,
+        18
+      ],
+      "TokenColor": 0,
+      "Faction": 1,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_058",
+      "Armor": 4,
+      "Attack": 1,
+      "AttackCount": 2,
+      "AttackElement": 0,
+      "Abilities": [],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_059",
+      "Armor": 3,
+      "Attack": 4,
+      "AttackCount": 1,
+      "AttackElement": 0,
+      "Abilities": [
+        3
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_060",
+      "Armor": 2,
+      "Attack": 7,
+      "AttackCount": 1,
+      "AttackElement": 0,
+      "Abilities": [
+        0,
+        3
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_061",
+      "Armor": 6,
+      "Attack": 3,
+      "AttackCount": 2,
+      "AttackElement": 0,
+      "Abilities": [
+        2
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_062",
+      "Armor": 5,
+      "Attack": 3,
+      "AttackCount": 2,
+      "AttackElement": 0,
+      "Abilities": [
+        1
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_063",
+      "Armor": 4,
+      "Attack": 4,
+      "AttackCount": 2,
+      "AttackElement": 0,
+      "Abilities": [
+        6
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_064",
+      "Armor": 4,
+      "Attack": 3,
+      "AttackCount": 2,
+      "AttackElement": 0,
+      "Abilities": [
+        7
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_065",
+      "Armor": 6,
+      "Attack": 6,
+      "AttackCount": 1,
+      "AttackElement": 0,
+      "Abilities": [
+        8,
+        3
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_066",
+      "Armor": 6,
+      "Attack": 2,
+      "AttackCount": 3,
+      "AttackElement": 0,
+      "Abilities": [
+        7
+      ],
+      "TokenColor": 5,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_067",
+      "Armor": 7,
+      "Attack": 8,
+      "AttackCount": 1,
+      "AttackElement": 1,
+      "Abilities": [
+        0
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_068",
+      "Armor": 6,
+      "Attack": 9,
+      "AttackCount": 1,
+      "AttackElement": 2,
+      "Abilities": [
+        0
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    },
+    {
+      "Id": "monster_069",
+      "Armor": 8,
+      "Attack": 5,
+      "AttackCount": 1,
+      "AttackElement": 2,
+      "Abilities": [
+        6,
+        7
+      ],
+      "TokenColor": 0,
+      "Faction": 0,
+      "status": "uncovered"
+    }
+  ],
+  "cards": [
+    {
+      "id": "basic_card_000",
+      "name": "\u884C\u8FDB",
+      "category": "basic_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "basic_card_001",
+      "name": "\u5B81\u9759",
+      "category": "basic_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "basic_card_002",
+      "name": "\u51DD\u7ED3",
+      "category": "basic_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "basic_card_003",
+      "name": "\u91CE\u86EE\u6536\u83B7",
+      "category": "basic_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [
+        "Krang"
+      ],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "basic_card_004",
+      "name": "\u5927\u5730\u4E4B\u5B50",
+      "category": "basic_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [
+        "Braevalar"
+      ],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "basic_card_005",
+      "name": "\u6D3B\u529B\u7115\u53D1",
+      "category": "basic_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [
+        "Norowas"
+      ],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "basic_card_006",
+      "name": "\u5168\u795E\u8D2F\u6CE8",
+      "category": "basic_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [
+        "Goldyx"
+      ],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "basic_card_007",
+      "name": "\u654F\u6377",
+      "category": "basic_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "basic_card_008",
+      "name": "\u627F\u8BFA",
+      "category": "basic_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "basic_card_009",
+      "name": "\u9B54\u529B\u6C72\u53D6",
+      "category": "basic_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "basic_card_010",
+      "name": "\u8FC5\u6377\u53CD\u5E94",
+      "category": "basic_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [
+        "Wolfhawk"
+      ],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "basic_card_011",
+      "name": "\u5229\u65A7\u6295\u63B7",
+      "category": "basic_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "basic_card_012",
+      "name": "\u9AD8\u8D35\u6C14\u8D28",
+      "category": "basic_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [
+        "Norowas"
+      ],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "basic_card_013",
+      "name": "\u9B54\u529B\u5F81\u5F15",
+      "category": "basic_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [
+        "Arythea"
+      ],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "basic_card_014",
+      "name": "\u8010\u529B",
+      "category": "basic_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "basic_card_015",
+      "name": "\u6676\u5316",
+      "category": "basic_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "basic_card_016",
+      "name": "\u51B3\u5FC3",
+      "category": "basic_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "basic_card_017",
+      "name": "\u6C38\u4E0D\u6B62\u6B65",
+      "category": "basic_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [
+        "Wolfhawk"
+      ],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "basic_card_018",
+      "name": "\u5FB7\u9C81\u4F0A\u4E4B\u9053",
+      "category": "basic_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [
+        "Braevalar"
+      ],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "basic_card_019",
+      "name": "\u6B22\u60A6\u9B54\u6676",
+      "category": "basic_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [
+        "Goldyx"
+      ],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "basic_card_020",
+      "name": "\u5BD2\u51B0\u62A4\u4F53",
+      "category": "basic_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [
+        "Tovak"
+      ],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "basic_card_021",
+      "name": "\u72C2\u6012",
+      "category": "basic_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "basic_card_022",
+      "name": "\u5A01\u80C1",
+      "category": "basic_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "basic_card_023",
+      "name": "\u968F\u673A\u5E94\u53D8",
+      "category": "basic_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "basic_card_024",
+      "name": "\u7075\u6D3B\u6218\u6597",
+      "category": "basic_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [
+        "Arythea"
+      ],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "basic_card_025",
+      "name": "\u6218\u6597\u4E4B\u6012",
+      "category": "basic_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "basic_card_026",
+      "name": "\u65E0\u60C5\u5A01\u538B",
+      "category": "basic_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [
+        "Krang"
+      ],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "basic_card_027",
+      "name": "\u672C\u80FD",
+      "category": "basic_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [
+        "Tovak"
+      ],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "advanced_card_000",
+      "name": "\u706B\u7130\u7BAD\u77E2",
+      "category": "advanced_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "advanced_card_001",
+      "name": "\u5BD2\u51B0\u7BAD\u77E2",
+      "category": "advanced_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "advanced_card_002",
+      "name": "\u8FC5\u6377\u7BAD\u77E2",
+      "category": "advanced_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "advanced_card_003",
+      "name": "\u7C89\u788E\u7BAD\u77E2",
+      "category": "advanced_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "advanced_card_004",
+      "name": "\u8840\u8272\u72C2\u6012",
+      "category": "advanced_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "advanced_card_005",
+      "name": "\u5BD2\u51B0\u4E4B\u76FE",
+      "category": "advanced_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "advanced_card_006",
+      "name": "\u7075\u52A8",
+      "category": "advanced_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "advanced_card_007",
+      "name": "\u63D0\u795E\u6F2B\u6B65",
+      "category": "advanced_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "advanced_card_008",
+      "name": "\u80C1\u8FEB",
+      "category": "advanced_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "advanced_card_009",
+      "name": "\u51B0\u971C\u4E4B\u6865",
+      "category": "advanced_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "advanced_card_010",
+      "name": "\u6E05\u98CE\u4E4B\u6B4C",
+      "category": "advanced_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "advanced_card_011",
+      "name": "\u8FF7\u9014\u5BFB\u8E2A",
+      "category": "advanced_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "advanced_card_012",
+      "name": "\u9C9C\u8840\u4EEA\u5F0F",
+      "category": "advanced_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "advanced_card_013",
+      "name": "\u7EAF\u51C0\u9B54\u6CD5",
+      "category": "advanced_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "advanced_card_014",
+      "name": "\u82F1\u96C4\u4E8B\u8FF9",
+      "category": "advanced_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "advanced_card_015",
+      "name": "\u518D\u751F",
+      "category": "advanced_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "advanced_card_016",
+      "name": "\u51B2\u950B\u9677\u9635",
+      "category": "advanced_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "advanced_card_017",
+      "name": "\u7A33\u6B65\u524D\u8FDB",
+      "category": "advanced_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "advanced_card_018",
+      "name": "\u5916\u4EA4",
+      "category": "advanced_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "advanced_card_019",
+      "name": "\u6C42\u63F4",
+      "category": "advanced_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "advanced_card_020",
+      "name": "\u5206\u89E3",
+      "category": "advanced_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "advanced_card_021",
+      "name": "\u9B54\u6676\u7CBE\u901A",
+      "category": "advanced_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "advanced_card_022",
+      "name": "\u9B54\u529B\u98CE\u66B4",
+      "category": "advanced_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "advanced_card_023",
+      "name": "\u4F0F\u51FB",
+      "category": "advanced_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "advanced_card_024",
+      "name": "\u6548\u80FD\u8FC7\u8F7D",
+      "category": "advanced_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "advanced_card_025",
+      "name": "\u9B54\u6CD5\u5929\u8D4B",
+      "category": "advanced_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "advanced_card_026",
+      "name": "\u5B66\u4E60",
+      "category": "advanced_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "advanced_card_027",
+      "name": "\u4FEE\u884C",
+      "category": "advanced_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "advanced_card_028",
+      "name": "\u53CD\u6208\u4E00\u51FB",
+      "category": "advanced_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "advanced_card_029",
+      "name": "\u4EEA\u5F0F\u653B\u51FB",
+      "category": "advanced_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "advanced_card_030",
+      "name": "\u8FDC\u53E4\u8840\u8109",
+      "category": "advanced_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "advanced_card_031",
+      "name": "\u76FE\u724C\u91CD\u51FB",
+      "category": "advanced_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "advanced_card_032",
+      "name": "\u65F6\u5149\u4F20\u9001",
+      "category": "advanced_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "advanced_card_033",
+      "name": "\u6CD5\u672F\u7194\u7089",
+      "category": "advanced_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "advanced_card_034",
+      "name": "\u9A91\u58EB\u7CBE\u795E",
+      "category": "advanced_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "advanced_card_035",
+      "name": "\u5B81\u9759\u65F6\u5149",
+      "category": "advanced_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "advanced_card_036",
+      "name": "\u8FC2\u56DE\u8EB2\u907F",
+      "category": "advanced_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "advanced_card_037",
+      "name": "\u4E0D\u5C48\u4E0D\u6320",
+      "category": "advanced_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "advanced_card_038",
+      "name": "\u81EA\u7136\u4E4B\u529B",
+      "category": "advanced_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "advanced_card_039",
+      "name": "\u5C71\u5DDD\u9038\u95FB",
+      "category": "advanced_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "advanced_card_040",
+      "name": "\u9B54\u6676\u529B\u91CF",
+      "category": "advanced_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "advanced_card_041",
+      "name": "\u7206\u88C2\u7BAD\u77E2",
+      "category": "advanced_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "advanced_card_042",
+      "name": "\u8840\u8109\u8D32\u5F20",
+      "category": "advanced_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "advanced_card_043",
+      "name": "\u51B7\u5CFB\u76EE\u5149",
+      "category": "advanced_card",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "magic_000",
+      "name": "\u80FD\u91CF\u6D41\u8F6C",
+      "category": "magic",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "magic_001",
+      "name": "\u75CA\u6108",
+      "category": "magic",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "magic_002",
+      "name": "\u51A5\u60F3",
+      "category": "magic",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "magic_003",
+      "name": "\u5730\u8109\u9707\u98A4",
+      "category": "magic",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "magic_004",
+      "name": "\u5730\u9053\u7A7F\u884C",
+      "category": "magic",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "magic_005",
+      "name": "\u590D\u539F",
+      "category": "magic",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "magic_006",
+      "name": "\u9B54\u529B\u7194\u6BC1",
+      "category": "magic",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "magic_007",
+      "name": "\u62C6\u6BC1",
+      "category": "magic",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "magic_008",
+      "name": "\u71C3\u70E7\u62A4\u76FE",
+      "category": "magic",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "magic_009",
+      "name": "\u706B\u7130\u9B54\u7403",
+      "category": "magic",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "magic_010",
+      "name": "\u70C8\u7130\u4E4B\u5899",
+      "category": "magic",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "magic_011",
+      "name": "\u732E\u796D",
+      "category": "magic",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "magic_012",
+      "name": "\u9B54\u529B\u5BA3\u593A",
+      "category": "magic",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "magic_013",
+      "name": "\u51B0\u51BB",
+      "category": "magic",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "magic_014",
+      "name": "\u8FF7\u96FE\u5F62\u6001",
+      "category": "magic",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "magic_015",
+      "name": "\u98CE\u96EA\u4EA4\u52A0",
+      "category": "magic",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "magic_016",
+      "name": "\u7A7A\u95F4\u626D\u66F2",
+      "category": "magic",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "magic_017",
+      "name": "\u9B54\u529B\u7BAD\u77E2",
+      "category": "magic",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "magic_018",
+      "name": "\u601D\u7EF4\u8BFB\u53D6",
+      "category": "magic",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "magic_019",
+      "name": "\u66B4\u9732",
+      "category": "magic",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "magic_020",
+      "name": "\u6218\u6597\u53F7\u53EC",
+      "category": "magic",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "magic_021",
+      "name": "\u9B45\u60D1",
+      "category": "magic",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "magic_022",
+      "name": "\u65CB\u98A8",
+      "category": "magic",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "magic_023",
+      "name": "\u6E05\u98CE\u4E4B\u7FFC",
+      "category": "magic",
+      "modes": [
+        "base",
+        "strong"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "items_000",
+      "name": "\u8363\u8A89\u65CC\u65D7",
+      "category": "items",
+      "modes": [
+        "normal",
+        "burn"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "items_001",
+      "name": "\u6050\u60E7\u65CC\u65D7",
+      "category": "items",
+      "modes": [
+        "normal",
+        "burn"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "items_002",
+      "name": "\u9632\u62A4\u65CC\u65D7",
+      "category": "items",
+      "modes": [
+        "normal",
+        "burn"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "items_003",
+      "name": "\u52C7\u6C14\u65CC\u65D7",
+      "category": "items",
+      "modes": [
+        "normal",
+        "burn"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "items_004",
+      "name": "\u7EA2\u5B9D\u77F3\u6212\u6307",
+      "category": "items",
+      "modes": [
+        "normal",
+        "burn"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "items_005",
+      "name": "\u84DD\u5B9D\u77F3\u6212\u6307",
+      "category": "items",
+      "modes": [
+        "normal",
+        "burn"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "items_006",
+      "name": "\u94BB\u77F3\u6212\u6307",
+      "category": "items",
+      "modes": [
+        "normal",
+        "burn"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "items_007",
+      "name": "\u7FE1\u7FE0\u6212\u6307",
+      "category": "items",
+      "modes": [
+        "normal",
+        "burn"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "items_008",
+      "name": "\u516C\u6B63\u4E4B\u5251",
+      "category": "items",
+      "modes": [
+        "normal",
+        "burn"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "items_009",
+      "name": "\u6124\u6012\u53F7\u89D2",
+      "category": "items",
+      "modes": [
+        "normal",
+        "burn"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "items_010",
+      "name": "\u65E0\u5C3D\u91D1\u5E01\u5305",
+      "category": "items",
+      "modes": [
+        "normal",
+        "burn"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "items_011",
+      "name": "\u65E0\u5C3D\u5B9D\u77F3\u888B",
+      "category": "items",
+      "modes": [
+        "normal",
+        "burn"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "items_012",
+      "name": "\u9EC4\u91D1\u5723\u676F",
+      "category": "items",
+      "modes": [
+        "normal",
+        "burn"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "items_013",
+      "name": "\u667A\u6167\u4E4B\u4E66",
+      "category": "items",
+      "modes": [
+        "normal",
+        "burn"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "items_014",
+      "name": "\u7693\u65E5\u62A4\u7B26",
+      "category": "items",
+      "modes": [
+        "normal",
+        "burn"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "items_015",
+      "name": "\u9ED1\u6697\u62A4\u7B26",
+      "category": "items",
+      "modes": [
+        "normal",
+        "burn"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "items_016",
+      "name": "\u661F\u8FB0\u4E4B\u5F13",
+      "category": "items",
+      "modes": [
+        "normal",
+        "burn"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "items_017",
+      "name": "\u6307\u6325\u65CC\u65D7",
+      "category": "items",
+      "modes": [
+        "normal",
+        "burn"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "items_018",
+      "name": "\u5F3A\u97E7\u65CC\u65D7",
+      "category": "items",
+      "modes": [
+        "normal",
+        "burn"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "items_019",
+      "name": "\u7075\u9B42\u6536\u5272\u8005",
+      "category": "items",
+      "modes": [
+        "normal",
+        "burn"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "items_020",
+      "name": "\u4EA1\u541B\u4E4B\u76FE",
+      "category": "items",
+      "modes": [
+        "normal",
+        "burn"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "items_021",
+      "name": "\u5FB7\u9C81\u4F0A\u6CD5\u6756",
+      "category": "items",
+      "modes": [
+        "normal",
+        "burn"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "items_022",
+      "name": "\u542F\u8FEA\u5934\u73AF",
+      "category": "items",
+      "modes": [
+        "normal",
+        "burn"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "items_023",
+      "name": "\u6CD5\u672F\u5B9D\u5178",
+      "category": "items",
+      "modes": [
+        "normal",
+        "burn"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "items_024",
+      "name": "\u795E\u79D8\u5B9D\u76D2",
+      "category": "items",
+      "modes": [
+        "normal",
+        "burn"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "army_000",
+      "name": "\u963F\u5C14\u8482\u59C6\u5B88\u62A4\u8005",
+      "category": "army",
+      "modes": [
+        "actual_unit_abilities"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "army_001",
+      "name": "\u963F\u5C14\u8482\u59C6\u6CD5\u5E08",
+      "category": "army",
+      "modes": [
+        "actual_unit_abilities"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "army_002",
+      "name": "\u57C3\u83AB\u63D0\u666E\u51B0\u971C\u5251\u58EB",
+      "category": "army",
+      "modes": [
+        "actual_unit_abilities"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "army_003",
+      "name": "\u57C3\u83AB\u63D0\u666E\u70C8\u7130\u67AA\u624B",
+      "category": "army",
+      "modes": [
+        "actual_unit_abilities"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "army_004",
+      "name": "\u6295\u77F3\u8F66",
+      "category": "army",
+      "modes": [
+        "actual_unit_abilities"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "army_005",
+      "name": "\u9EDB\u5C14\u6CD5\u7EB3\u5927\u5E08",
+      "category": "army",
+      "modes": [
+        "actual_unit_abilities"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "army_006",
+      "name": "\u706B\u7130\u9B54\u50CF",
+      "category": "army",
+      "modes": [
+        "actual_unit_abilities"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "army_007",
+      "name": "\u706B\u7130\u6CD5\u5E08",
+      "category": "army",
+      "modes": [
+        "actual_unit_abilities"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "army_008",
+      "name": "\u52C7\u8005",
+      "category": "army",
+      "modes": [
+        "actual_unit_abilities"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "army_009",
+      "name": "\u52C7\u8005",
+      "category": "army",
+      "modes": [
+        "actual_unit_abilities"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "army_010",
+      "name": "\u52C7\u8005",
+      "category": "army",
+      "modes": [
+        "actual_unit_abilities"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "army_011",
+      "name": "\u52C7\u8005",
+      "category": "army",
+      "modes": [
+        "actual_unit_abilities"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "army_012",
+      "name": "\u5BD2\u51B0\u9B54\u50CF",
+      "category": "army",
+      "modes": [
+        "actual_unit_abilities"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "army_013",
+      "name": "\u5BD2\u51B0\u6CD5\u5E08",
+      "category": "army",
+      "modes": [
+        "actual_unit_abilities"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "army_014",
+      "name": "\u5DEB\u5E08",
+      "category": "army",
+      "modes": [
+        "actual_unit_abilities"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "army_2_000",
+      "name": "\u62A4\u6797\u4EBA",
+      "category": "army_2",
+      "modes": [
+        "actual_unit_abilities"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "army_2_001",
+      "name": "\u5B88\u62A4\u8005\u9B54\u50CF",
+      "category": "army_2",
+      "modes": [
+        "actual_unit_abilities"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "army_2_002",
+      "name": "\u836F\u8349\u5E08",
+      "category": "army_2",
+      "modes": [
+        "actual_unit_abilities"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "army_2_003",
+      "name": "\u5E7B\u672F\u5E08",
+      "category": "army_2",
+      "modes": [
+        "actual_unit_abilities"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "army_2_004",
+      "name": "\u9B54\u5BA0",
+      "category": "army_2",
+      "modes": [
+        "actual_unit_abilities"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "army_2_005",
+      "name": "\u5317\u5730\u50E7\u4FA3",
+      "category": "army_2",
+      "modes": [
+        "actual_unit_abilities"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "army_2_006",
+      "name": "\u519C\u6C11",
+      "category": "army_2",
+      "modes": [
+        "actual_unit_abilities"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "army_2_007",
+      "name": "\u8D64\u888D\u50E7\u4FA3",
+      "category": "army_2",
+      "modes": [
+        "actual_unit_abilities"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "army_2_008",
+      "name": "\u51F6\u86EE\u50E7\u4FA3",
+      "category": "army_2",
+      "modes": [
+        "actual_unit_abilities"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "army_2_009",
+      "name": "\u65A5\u5019",
+      "category": "army_2",
+      "modes": [
+        "actual_unit_abilities"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "army_2_010",
+      "name": "\u5947\u88AD\u961F",
+      "category": "army_2",
+      "modes": [
+        "actual_unit_abilities"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "army_2_011",
+      "name": "\u66B4\u5F92",
+      "category": "army_2",
+      "modes": [
+        "actual_unit_abilities"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "army_2_012",
+      "name": "\u4E4C\u987F\u5F29\u624B",
+      "category": "army_2",
+      "modes": [
+        "actual_unit_abilities"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "army_2_013",
+      "name": "\u4E4C\u987F\u5B88\u536B",
+      "category": "army_2",
+      "modes": [
+        "actual_unit_abilities"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    },
+    {
+      "id": "army_2_014",
+      "name": "\u4E4C\u987F\u5251\u58EB",
+      "category": "army_2",
+      "modes": [
+        "actual_unit_abilities"
+      ],
+      "startingHeroOwners": [],
+      "status": "uncovered",
+      "requiredEvidence": [
+        "legal_training_transition",
+        "real_cost_and_material",
+        "downstream_consumer",
+        "ui_replay"
+      ]
+    }
+  ],
+  "requiredCombatContexts": [
+    "rampaging",
+    "fortified_site",
+    "city",
+    "dungeon",
+    "multi_enemy",
+    "day",
+    "night"
+  ],
+  "coverageFloors": [
+    "all seven heroes",
+    "all original enemies and relevant abilities",
+    "all card modes with real downstream use",
+    "all owned hero skills with legal acquisition",
+    "all unit abilities and artifact lifecycle",
+    "legal hero-card and hero-enemy pair strata",
+    "multiple turns and battles",
+    "real day/night round transition"
+  ],
+  "persistence": [
+    "same player and original card identities",
+    "hand/draw/discard/wounds",
+    "mana/crystals/source quota",
+    "unit exhaustion/wounds",
+    "skill turn/round frequency",
+    "artifact burn/banner ownership",
+    "random state"
+  ],
+  "excludedEvidence": [
+    "loaded metadata",
+    "put in deck but never drawn",
+    "drawn but never used",
+    "blocked or illegal operation",
+    "new snapshot passed off as continuation",
+    "pilot seed permutation passed off as held-out scenario"
+  ],
+  "pilotEvidenceScope": "dual032_arythea_level2_two_original_cards_v1"
+}

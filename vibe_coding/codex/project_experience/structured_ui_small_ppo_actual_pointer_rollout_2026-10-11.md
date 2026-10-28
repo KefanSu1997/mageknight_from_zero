@@ -1,0 +1,13 @@
+# 结构化 UI 小型 PPO 与实际指针对应
+
+源代码可访问的游戏无需训练视觉/computer-use模型即可做结构化UI策略：从实际界面导出控件，mask只取active/interactable/屏内中心/真实raycast命中，不用后台合法性oracle掩盖规则拒绝；执行器只发送策略选择的单次down/up/click。实际原开局前缀与脚本验证单列，不作为PPO样本。
+
+本次16,641参数CPU策略真实53点击2更新，保存后冻结28点击0更新，21参数/Adam数组保持。81自主点击完整候选概率/value/RNG选择重建差0、4374共享字段对照只证映射；18脚本点击单战胜利不冒称PPO获胜或流畅度改善。训练与冻结均未胜，全原范围与多战/跨轮仍欠。
+
+Unity File.Move三参并非当前项目可用API。后台Game View暂停和原英雄选择面板遮挡均须按真实运行处理，不伪造step或放宽mask。Windows请求文件短暂共享锁须下帧重读，不把读异常写到旧request ID；响应按ID不可变保存。JsonUtility会把null对象序列化成空对象，负例应核无指针字段与实际状态不变。三真实拒绝例通过，最终Console两读零error。
+
+实际等待含0.15秒稳定窗口，不当性能延迟；公开字段显式白名单隔离审计和隐藏状态。模型RNG保存与Unity完整原RNG/隐藏牌库恢复不同，当前只能重建保存策略分布/采样选择，不宣称原会话完整重跑。
+
+证据：AutomationOutputs/StructuredUiPpo/20261011；详情vibe_coding/codex/worklog_2026-10-11_structured_ui_small_ppo.md。
+
+后续用户要求长期保存映射：verified ZIP保留375文件及源码/实际DLL，99行索引分81策略与18脚本。manifest有逐文件SHA与schema。Windows Path字符串的反斜杠不能直接作为ZIP成员名索引，统一as_posix并实际读回验证；首失败档不覆盖。动作candidate_index是该步局部下标，控件路径及坐标仍需未来实际观测重新解析，不能当跨版本固定动作ID。state v2结构化费用/效果/实体/义务/记忆仅为提案，旧字符哈希输入不宣称理解规则。

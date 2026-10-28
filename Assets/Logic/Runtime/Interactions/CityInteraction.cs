@@ -127,6 +127,7 @@ public CityInteraction(PlaceState placeState, PlaceManager placeManager,
                 if (player.Units.Count > 0)
                 {
                     var lostUnit = player.Units[player.Units.Count - 1];
+                    lostUnit.Destroy();
                     player.Units.Remove(lostUnit);
                 }
             }

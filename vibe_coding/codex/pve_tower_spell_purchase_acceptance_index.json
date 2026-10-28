@@ -1,0 +1,242 @@
+{
+  "scope": "本人真实征服塔的自然购法术：7影响+原蓝晶实际付款、原供应立即补位、入实际牌库顶/正式抽回及下一回合蓝骰寒冰远程消费者",
+  "status": "passed",
+  "effectiveNewSteps": 27,
+  "assertions": 73,
+  "scene": {
+    "report": "AutomationOutputs/PveBattle/20260929_174109_5b424c0c/report.json",
+    "sha256": "669caff79768e6de68228974c90e5e64e13c64f8f0b670af06c47ae9c1e0ec2e",
+    "totalOperations": 87,
+    "newEvidenceRange": [
+      60,
+      86
+    ]
+  },
+  "reusedPrefix": {
+    "report": "AutomationOutputs/PveBattle/20260929_172048_1890cc47/report.json",
+    "acceptedRange": [
+      0,
+      59
+    ],
+    "countedAgain": false
+  },
+  "backend": {
+    "effectiveCases": 15,
+    "reports": [
+      {
+        "report": "AutomationOutputs/RulesState/20260929_173632_0f5e5129/results.xml",
+        "sha256": "992eef56eb1d6a54e2f7018b920b3ec99ce1cd4c0b977b393a9a12cf07ab05f2",
+        "tests": [
+          {
+            "case": "MK.Tests.Battles.PveNaturalSiteRecruitmentTests.CurrentOriginalSiteRecruitsRealSupplyAndSameScoutFightsFollowingTurn(Village,Village)",
+            "result": "Passed"
+          },
+          {
+            "case": "MK.Tests.Battles.PveNaturalSiteRecruitmentTests.CurrentOriginalSiteRecruitsRealSupplyAndSameScoutFightsFollowingTurn(Keep,Keep)",
+            "result": "Passed"
+          },
+          {
+            "case": "MK.Tests.Battles.PveNaturalSiteRecruitmentTests.CurrentOriginalSiteRecruitsRealSupplyAndSameScoutFightsFollowingTurn(MageTower,MageTower)",
+            "result": "Passed"
+          },
+          {
+            "case": "MK.Tests.Battles.PveNaturalSiteRecruitmentTests.CurrentOriginalSiteRecruitsRealSupplyAndSameScoutFightsFollowingTurn(City,City)",
+            "result": "Passed"
+          },
+          {
+            "case": "MK.Tests.Battles.PveSiteSpellPurchaseTests.InvalidPurchasePreservesOfferManaInfluenceAndDeck(\"copy\")",
+            "result": "Passed"
+          },
+          {
+            "case": "MK.Tests.Battles.PveSiteSpellPurchaseTests.InvalidPurchasePreservesOfferManaInfluenceAndDeck(\"influence\")",
+            "result": "Passed"
+          },
+          {
+            "case": "MK.Tests.Battles.PveSiteSpellPurchaseTests.InvalidPurchasePreservesOfferManaInfluenceAndDeck(\"mana\")",
+            "result": "Passed"
+          },
+          {
+            "case": "MK.Tests.Battles.PveSiteSpellPurchaseTests.InvalidPurchasePreservesOfferManaInfluenceAndDeck(\"whiteCity\")",
+            "result": "Passed"
+          },
+          {
+            "case": "MK.Tests.Battles.PveSiteSpellPurchaseTests.InvalidPurchasePreservesOfferManaInfluenceAndDeck(\"closed\")",
+            "result": "Passed"
+          },
+          {
+            "case": "MK.Tests.Battles.PveSiteSpellPurchaseTests.InvalidPurchasePreservesOfferManaInfluenceAndDeck(\"position\")",
+            "result": "Passed"
+          },
+          {
+            "case": "MK.Tests.Battles.PveSiteSpellPurchaseTests.InvalidPurchasePreservesOfferManaInfluenceAndDeck(\"supply\")",
+            "result": "Passed"
+          },
+          {
+            "case": "MK.Tests.Battles.PveSiteSpellPurchaseTests.InvalidPurchasePreservesOfferManaInfluenceAndDeck(\"unstarted\")",
+            "result": "Passed"
+          },
+          {
+            "case": "MK.Tests.Battles.PveSiteSpellPurchaseTests.RealPurchasePaysPrintedFeeReplenishesThenSameAcquiredSpellKillsNextTurn(False)",
+            "result": "Failed"
+          },
+          {
+            "case": "MK.Tests.Battles.PveSiteSpellPurchaseTests.RealPurchasePaysPrintedFeeReplenishesThenSameAcquiredSpellKillsNextTurn(True)",
+            "result": "Failed"
+          },
+          {
+            "case": "MK.Tests.Battles.PveSiteSpellPurchaseTests.TwoBlueCityPurchasesUseShieldsOnlyOnceAndStackRealAcquiredCardsOnTop",
+            "result": "Passed"
+          }
+        ]
+      },
+      {
+        "report": "AutomationOutputs/RulesState/20260929_173912_98d37a53/results.xml",
+        "sha256": "642925d3b8d60c03399afc8ed086d7db3a616a3572f157365c2a853a8c759c8f",
+        "tests": [
+          {
+            "case": "MK.Tests.Battles.PveSiteSpellPurchaseTests.RealPurchasePaysPrintedFeeReplenishesThenSameAcquiredSpellKillsNextTurn(False)",
+            "result": "Passed"
+          },
+          {
+            "case": "MK.Tests.Battles.PveSiteSpellPurchaseTests.RealPurchasePaysPrintedFeeReplenishesThenSameAcquiredSpellKillsNextTurn(True)",
+            "result": "Passed"
+          }
+        ]
+      }
+    ]
+  },
+  "supplyChecks": {
+    "before": "magic_001,magic_015,magic_000",
+    "after": "magic_001,magic_000,magic_022",
+    "selected": "magic_015",
+    "unselectedRetained": [
+      "magic_001",
+      "magic_000"
+    ],
+    "replenished": "magic_022"
+  },
+  "consumerChecks": [
+    {
+      "step": 60,
+      "journey.samePlayer": "True",
+      "hand.ids": "magic_011",
+      "deck.count": "0",
+      "influence": "8",
+      "blue": "1",
+      "power.attacks": null,
+      "fame": "43",
+      "journey.discardCount": "4"
+    },
+    {
+      "step": 63,
+      "journey.samePlayer": "True",
+      "hand.ids": "magic_011",
+      "deck.count": "1",
+      "influence": "1",
+      "blue": "0",
+      "power.attacks": null,
+      "fame": "43",
+      "journey.discardCount": "4"
+    },
+    {
+      "step": 66,
+      "journey.samePlayer": "True",
+      "hand.ids": "magic_011,magic_015",
+      "deck.count": "0",
+      "influence": "0",
+      "blue": "0",
+      "power.attacks": null,
+      "fame": "43",
+      "journey.discardCount": "4"
+    },
+    {
+      "step": 74,
+      "journey.samePlayer": "True",
+      "hand.ids": "magic_011,magic_015",
+      "deck.count": "0",
+      "influence": "0",
+      "blue": "0",
+      "power.attacks": null,
+      "fame": "43",
+      "journey.discardCount": "4"
+    },
+    {
+      "step": 79,
+      "journey.samePlayer": "True",
+      "hand.ids": "magic_011",
+      "deck.count": "0",
+      "influence": "0",
+      "blue": "0",
+      "power.attacks": "Ranged:Ice:5",
+      "fame": "43",
+      "journey.discardCount": "4"
+    },
+    {
+      "step": 81,
+      "journey.samePlayer": "True",
+      "hand.ids": "magic_011",
+      "deck.count": "0",
+      "influence": "0",
+      "blue": "0",
+      "power.attacks": "",
+      "fame": "45",
+      "journey.discardCount": "4"
+    },
+    {
+      "step": 86,
+      "journey.samePlayer": "True",
+      "hand.ids": "",
+      "deck.count": "0",
+      "influence": "0",
+      "blue": "0",
+      "power.attacks": null,
+      "fame": "45",
+      "journey.discardCount": "6"
+    }
+  ],
+  "samePlayerCheckedRange": [
+    60,
+    86
+  ],
+  "screenshots": [
+    {
+      "step": 62,
+      "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_174109_5b424c0c\\captures\\062_明确选择中间原蓝法术风雪交加，非默认第一张.png"
+    },
+    {
+      "step": 63,
+      "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_174109_5b424c0c\\captures\\063_整笔支付影响7及原蓝晶1，新原牌进牌库顶尚未入手.png"
+    },
+    {
+      "step": 79,
+      "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_174109_5b424c0c\\captures\\079_真实蓝token付款，产出原寒冰远程5.png"
+    }
+  ],
+  "visualReview": "三图原卡、费用、供应补位和消费者已查看；费用文案由174440步骤62补图纠正并查看正常",
+  "consoleCompile": "tmp/pve_site_spell_purchase_compile.json",
+  "consoleFinal": {
+    "path": "tmp/pve_site_spell_purchase_keep_final_console.json",
+    "sha256": "8d62f369865d478d110ffb57efc54be5aff20c4f4af96e654eba68ad28fb3864",
+    "actualErrorCounts": [
+      0,
+      0
+    ]
+  },
+  "limitations": "仅已存在演练实际法师塔的自然购买主要消费者；不代表蓝色城市购牌场景通过，也未声称原核心板块完整地图。未扩展边缘组合。",
+  "visualCorrection": {
+    "report": "AutomationOutputs/PveBattle/20260929_174440_358a8e43/report.json",
+    "sha256": "63039e660de5260bd2a51bb3635e5b957ca0f2acd3910eb6c5b1b0f64f372e08",
+    "totalOperations": 63,
+    "replayRange": [
+      0,
+      61
+    ],
+    "newEvidenceRange": [
+      62,
+      62
+    ],
+    "assertions": 1,
+    "screenshot": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_174440_358a8e43\\captures\\062_明确选择中间原蓝法术风雪交加，非默认第一张.png",
+    "review": "主代理已查看：费用蓝色魔力1正常，无重复文字；仅定向补62，规则消费者复用174109"
+  }
+}

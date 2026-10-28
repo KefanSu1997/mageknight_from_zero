@@ -1,0 +1,38 @@
+{
+  "scope": "121有效原卡目录；原法术费用及两场连续实际消费者，非全部原卡完整操作验收",
+  "passedSteps": 66,
+  "passedAssertions": 110,
+  "segments": [
+    {
+      "run": "20260923_040507_45a77f11",
+      "startInclusive": 0,
+      "endExclusive": 51
+    },
+    {
+      "run": "20260923_040658_719d568b",
+      "startInclusive": 51,
+      "endExclusive": 66
+    }
+  ],
+  "extraDisplayAssertions": 1,
+  "extraDisplayRun": "20260923_040658_719d568b",
+  "extraDisplayStep": 12,
+  "backend": [
+    "AutomationOutputs/RulesState/20260923_034558_93f2a050",
+    "AutomationOutputs/RulesState/20260923_034648_66109c88"
+  ],
+  "backendEffectivePassed": 22,
+  "finalConsole": "tmp/pve_20260923_deed_complete_console.json",
+  "sourceSha256": {
+    "Assets/Logic/Runtime/ActionSystem.cs": "23e43ae1b9c1ccf401dd26088b70932390d34d821fe0c1d67ef75235f0f02a3b",
+    "Assets/Logic/Runtime/Battles/PveBattleSession.cs": "131e089466be73ac29362766176d5715eac56abfd2463572af85c8a4571b3f71",
+    "Assets/Logic/Runtime/Battles/PveJourneySession.cs": "95244b0a0b771638567203698d236f51b93563b1855752aac67d93395792b80d",
+    "Assets/Scripts/Battle/BattleDeedDefinition.cs": "78dc027f3fd9f7ac2a937563db19b899e60befd5264e17861d8043a590ed1438",
+    "Assets/Scripts/Battle/PveBattleController.cs": "537fa41120f1769cd9680d7bbce8642f1e940cf73663a52a32c868b8f82379ba",
+    "Assets/Scripts/Battle/PveBattleController.Deeds.cs": "bfa0228b59e32ef34acd2f9e1d93f190962beee7c49d630172f7aa05fdb204a5",
+    "Assets/Scripts/Battle/PveBattleController.Journey.cs": "05a933b7772d34872232aea619ff78bdcd17f1e17937cc3b032c84619155182b",
+    "Assets/Scripts/SceneAutomation/Editor/PveBattleMenus.cs": "b8d1fb6b3a24220b0f5a51a45428d074420124cbd3f02233ee2e11f6967390fa",
+    "Assets/Tests/RulesState/PveOriginalDeedEntryTests.cs": "382922bacb498d1feddf34be37400e693d4fa6b364accfa5e336156c6b089193",
+    "tools/build_pve_original_deeds_acceptance.py": "8065596b886ff10b9aba3371a07726d04b114a5ecfaf604da430b87085a65613"
+  }
+}

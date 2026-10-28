@@ -15,11 +15,16 @@ def read(path):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, required=True)
-    run = parser.parse_args().output.resolve()
+    parser.add_argument('--config',type=Path,default=ROOT/'AutomationConfigs/AllOriginalCards/units.json')
+    args=parser.parse_args()
+    run = args.output.resolve()
     report, request = read(run/'report.json'), read(run/'request.json')
-    config = read(ROOT/'AutomationConfigs/AllOriginalCards/units.json')
+    config = read(args.config)
     suite_path = ROOT/'Assets/Resources/CardVerification/unit_cases.json'
     suite = read(suite_path)['cases']
+    if request.get('caseIds'):
+        suite=[c for c in suite if c['id'] in request['caseIds']]
+        assert len(suite)==len(set(request['caseIds']))==len(request['caseIds'])
     digest = hashlib.sha256(suite_path.read_text(encoding='utf-8').encode()).hexdigest()
     sources = {c['id']: c for f in ('army','army_2') for c in read(ROOT/f'resources/text_json/{f}.json')}
     cases = {c['id']: c for c in suite}
@@ -43,8 +48,13 @@ def main():
             assert state['suiteSha256']==digest
             assert state['ui:ruleFits']==state['ui:valuesFits']=='True', result['label']
             case = cases[state['caseId']]
-            assert state['cardId']==state['art']==case['cardId']
-            for ability in sources[case['cardId']]['abilities']:
+            assert state['cardId']==case['cardId']
+            expected_art=case['cardId']
+            for completed in case['steps'][:int(state['step'])]:
+                if completed['kind']=='recruit':
+                    expected_art=next((v['value'] for v in completed['expected'] if v['key']=='art'),case['cardId'])
+            assert state['art']==expected_art
+            for ability in sources[expected_art]['abilities']:
                 assert (ability if isinstance(ability,str) else ability['effect']) in state['ui:rule']
             if planned['buttonPath'].endswith('Btn_Execute'):
                 assert '本步骤断言通过' in state['ui:result']
@@ -62,7 +72,7 @@ def main():
     summary=dict(status='passed',unitDefinitions=len({c['cardId'] for c in suite}),cases=len(suite),operations=len(config['steps']),
                  assertions=assertions,screenshots=captures,suiteSha256=digest,startedAt=report['startedAt'],finishedAt=report['finishedAt'],
                  damageCases=sum(any(s['kind']=='suffer' for s in c['steps']) for c in suite),
-                 scope='八种原部队的招募/主动能力，以及列明的承伤案例；其余部队、完整元素抗性与复杂规则仍待验收')
+                 scope='仅所选原部队列明步骤的来源/能力/费用/招募与承伤证据；英雄互斥、免费获取、其他未列明能力与完整冒险仍待验收')
     (run/'summary.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(json.dumps(summary,ensure_ascii=False))
 

@@ -1,0 +1,59 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>Jev、RLCD与游戏PPO接入调研</title>
+<style>body{max-width:1100px;margin:36px auto;padding:0 24px;font:17px/1.75 system-ui;color:#202938;background:#fafbfc}table{border-collapse:collapse;width:100%;font-size:15px}td,th{border:1px solid #ccd4df;padding:10px;text-align:left;vertical-align:top}pre{white-space:pre-wrap;background:#eef2f7;padding:18px}a{color:#1457b0}h2{margin-top:36px}.note{border-left:4px solid #278166;padding:12px;background:#eaf6ef}</style>
+<h1>Jev、RLCD与上下文选项决策：调研及下一版准备</h1>
+<p>核查日期：2026-10-13。范围：官方文档、作者仓库、模型卡、论文与关键源码。当前实体文本PPO仍按原配置训练到300更新；本报告没有替换活轮、安装依赖或启动第二轮GPU训练。</p>
+<p class="note">结论：下一版应在线编码“公开局面＋问题＋完整动作描述”，读取每个选项标记的上下文表示，由PPO训练动作选择。校准的战斗结果预测应单独定义、训练和评价。Jev官方内部架构与RLCD配方没有在此次核查的官方材料中披露，不能将社区实现叫作官方复现。</p>
+<h2>1. 先纠正概念</h2>
+<p>Jev的可验证接口是state＋typed questions，返回Choice、Score、Noul。Choice返回全部选项概率，API的choice取最大概率；游戏训练可以用这份分布采样，但“采样某个文本token”并非官方公布的架构事实。Choice托管API最多255选项；这只是其服务接口约束。本项目自行训练且不调用Jev API，因此不设255选项上限。<a href="https://docs.typesafe.ai/primitives/choice">官方Choice文档</a></p>
+<p>RLCD在TypeSafe材料中指Reinforcement Learning for Calibrated Decisions，强调决策概率与真实正确率对应。材料没有提供可复现的损失公式、完整训练代码或权重，因此不能断言官方用了Brier、PPO、某种encoder或MASK头。它也不是早期同缩写的Reinforcement Learning from Contrastive Distillation。<a href="https://docs.typesafe.ai/introduction/machine-learning-primer">官方AI primer</a></p>
+<p>官方承认计数、算术、复杂间接推理、无关长上下文、选项顺序等弱点。对本游戏，精确费用、攻击防御和合法性继续由正式规则维护；模型接收计算后的公开事实，不让文本模型替代规则执行。<a href="https://docs.typesafe.ai/model-jaggedness/jev-1.13">官方已知局限</a></p>
+<h2>2. 开源路线比较</h2>
+<table><tr><th>方案</th><th>实际实现／训练</th><th>对本项目的用途与限制</th></tr>
+<tr><td><a href="https://github.com/NandhaKishorM/laya">Laya / Multilingual</a></td><td>双向encoder，state、问题与选项共同输入；每个选项前的MASK表示经决策头得到一个logit。Multilingual约322M，mmBERT-base，公开代码与权重。</td><td>最接近用户要求的小型在线上下文选项架构。默认选项文本预算及截断不能直接沿用；中文能力、游戏能力和8GB显存吞吐均须实测。</td></tr>
+<tr><td><a href="https://github.com/nokia-applied-research/AnyJev">AnyJev</a></td><td>Decider读取因果LM下一位置的选项标签logits；L0去标签先验、循环轮换选项顺序。Tacit另有自蒸馏模型。</td><td>适合作无需游戏训练的机制基线。K次轮换会随候选数增加成本；L0不是有标签校准。版本变化明显，0.3.0已移除旧L1/L2，不能混用旧教程。<a href="https://github.com/nokia-applied-research/AnyJev/blob/main/docs/levels.md">levels说明</a></td></tr>
+<tr><td><a href="https://github.com/jaredpalmer/kev">Kev</a> / <a href="https://github.com/robbalian/rev">Rev</a></td><td>上下文、问题、完整选项进入Qwen；LoRA＋选项pointer头，不生成答案文字。Kev有0.8B小模型，Rev从4B起。公开训练代码和校准温度。</td><td>已训练的上下文决策模型基线值得测。更大模型和LoRA训练费用高；原数据的分类准确率不可当游戏胜率。Kev的注意力隔离与Qwen3.5递归层缓存要按实际架构处理。</td></tr>
+<tr><td><a href="https://github.com/ZimmyGao/openjev-rlcd">OpenJev-RLCD</a></td><td>Qwen3-1.7B，先生成rationale，再读取Answer后的选项token分布；先校准readout，后以proper score强化推理，含KL锚点。</td><td>有论文、代码和多种子记录，适合研究校准训练。不是零生成的System One游戏执行方案，推理生成会增加rollout成本。作者声明非Jev内部算法复现。<a href="https://arxiv.org/abs/2609.38850">论文</a></td></tr>
+<tr><td><a href="https://github.com/anthony-maio/eve-rlcd">eve-rlcd</a></td><td>Qwen3-0.6B，字母选项logits；分类bandit仅反馈选中答案是否正确，r=c−p(a)，REINFORCE。SFT warmup与RL对照均公开。</td><td>反馈可见性与梯度验证很有参考价值。但分类正确答案不依赖采取何种行动，战斗未来结果会依赖动作，不能直接替换游戏奖励。仓库报告完整训练峰值11.4GB，不能承诺4060 8GB直接复跑。</td></tr>
+<tr><td><a href="https://github.com/arnabgho/rlcd-lite">rlcd-lite</a></td><td>因果LM＋字段隔离，选项和独立置信度字段；GRPO式组基线，正确性＋Brier等奖励，含校准评价。</td><td>适合参考解耦选择／置信度及失败消融。主要是一跳分类，不是完整多步游戏PPO；不能把置信度字段当已验证成功率。</td></tr>
+<tr><td><a href="https://github.com/Heman10x-NGU/Verdict-open-jev">Verdict</a></td><td>ModernBERT＋GLiClass相关分类头，约151M；领域分类训练和校准。</td><td>可作为轻量候选分类路线参考，不据此认定通用中文战斗决策能力；需要检查具体版本、权重可用性和训练／测试领域。</td></tr>
+<tr><td><a href="https://github.com/TheoLeeCJ/SemIf-OpenJev">SemIf</a> / <a href="https://huggingface.co/Meanblock/JEV-CPU">JEV-CPU</a> / <a href="https://huggingface.co/harshatheg/Qwen-2.5-1B-RLCD">Qwen-RLCD demo</a></td><td>主要是冻结因果LM的声明选项logit读取、共享前缀和并行受限推断。项目名带RLCD不等于执行过RLCD训练。</td><td>适合检查token标签、概率映射及缓存等推断机制；不能把基础模型／包装器误认成游戏决策已训练权重。</td></tr>
+<tr><td><a href="https://huggingface.co/Cloudflare/clef-flash">Cloudflare Clef</a></td><td>Clef-flash为9B Qwen骨干＋联合schema头，选项证据路由；发布权重与推断源码。厂商描述CE、Brier和第二阶段RLCD。</td><td>真实开源决策模型，但9B BF16仅权重就约18GB，超出本机8GB。先作设计参照，不把量化后可推断等同32环境可训练。<a href="https://blog.cloudflare.com/clef-decision-models/">作者训练概述</a></td></tr></table>
+<h2>3. 已阅读的源码告诉我们什么</h2>
+<p>Laya固定版本c73908d96ff73c0062c340a11bf7c54ec7d8bc4d：build_sequence把问题、逐选项MASK、state放入同一序列；DecisionModel读取marker_pos的隐藏表示打分。每个选项文字默认最多48token，预算不足还会进一步缩短，state也可能截断。我们必须检测描述碰撞和丢失字段，不能只确认输出概率长度正确。<a href="https://github.com/NandhaKishorM/laya/blob/c73908d96ff73c0062c340a11bf7c54ec7d8bc4d/laya/common.py">已核代码</a></p>
+<p>Laya train.py的rlcd_loss是高斯扰动logits的策略梯度项＋soft cross-entropy，proper_reward使用log score、spherical score和ordinal RPS；它依赖目标分布，既不是我们当前PPO，也不是官方Jev配方。剪裁log score还意味着极小概率区间不应照搬“严格proper”保证。<a href="https://github.com/NandhaKishorM/laya/blob/c73908d96ff73c0062c340a11bf7c54ec7d8bc4d/laya/train.py">训练代码</a></p>
+<p>Kev提供选项结束标记表示、决策query和pointer机制；Rev训练代码包含两种选项顺序的CE与对齐KL。这些措施针对排列偏差，与多步战斗信用分配是不同问题。<a href="https://github.com/jaredpalmer/kev/blob/main/kev/model.py">Kev模型</a>；<a href="https://github.com/robbalian/rev/blob/main/train/train.py">Rev训练</a></p>
+<h2>4. 本游戏特有的约束</h2>
+<p>本次只读抽样前10,000条完整atomic_supports记录（含训练及评估，不是全量轨迹）：合法候选中位数5，最大770；246条超过26，3条超过255。这些数量用于估算文本长度、显存与计算成本，不构成API兼容要求。自行训练的选项标记／指针头按实际K输出K个分数，无需固定字母表或255上限；保留全部合法动作。复合动作在本样本最多4个原生操作。</p>
+<p>候选文本必须包括实际实体与目标槽、基本／强化模式、付款来源和颜色、材料物理槽、分配及最终正式消费者。显示相同的卡牌不可丢失实际槽映射。state仅来自已验证公开协议，绝不把完整审计state字典、隐藏牌序、seed、未来胜败写入prompt。暂不声称已完成中文renderer的所有模式映射。</p>
+<p>顺序决策没有“一项唯一正确动作”的现成标签。同一state可以有多项成功动作，也可以全失败；策略分布π(a|s)的总和是1，而各动作之后的获胜概率q(s,a)不必和为1。不能把一条胜局中所选动作都标为唯一正确答案，也不能把未尝试动作都标失败。</p>
+<h2>5. 准备的下一版范式</h2>
+<pre>公开局面（阶段、资源、实体状态、公开历史）
+＋ 当前涉及的原卡／技能／敌人规则
+＋ 问题：“为完成这场战斗选择下一项完整合法操作”
+＋ [选项标记] 每项完整动作的中文描述
+                    ↓
+          在线多语言上下文编码器
+                    ↓
+      每选项的上下文token表示 h(s,a)
+           ↙                       ↘
+ PPO动作logit → 全合法集softmax       独立结果预测q(s,a)
+           ↓                       ↓
+ 正式atomicStep执行               实际胜败校准</pre>
+<p>优先准备两种机制门禁：已有mmBERT-small的在线state＋option marker原型，以及已训练的Laya Multilingual／Kev-0.8B离线基线。前者没有决策专用预训练，不能假装已训练pointer头；后者有决策训练但未见本游戏。先测中文费用、否定条件、目标与材料区分，再决定主训练骨干。</p>
+<p>主方案将公开state、问题和完整候选集合共同输入在线文本模型，读取每个候选标记的上下文表示，按动态K输出动作分布。先实测真实候选集合的token长度、显存和吞吐；仅当实测资源预算不足时，再考虑“同一公开state＋单个完整候选”的共享标记打分，分块处理所有候选、拼接全部logits后统一softmax。分块不是规避Jev的255限制，也不预先替代联合选项输入。它保全所有动作并使块划分不影响单候选分数，但不同于一次让所有选项互相注意，须明确标为工程变体。若选择组内交互，跨组logits可比性必须额外验证，不能简单拼接各组softmax。</p>
+<p>PPO目标、32环境、128有效完整局、128操作上限、原动力学和reward×.01保持。动态编码器冻结时只缓存完全相同的prompt及版本，不能再只缓存静态卡牌均值。随后LoRA＋动作头单独做实验；本机CUDA峰值、32环境吞吐与每更新完整墙钟时间尚未实测。</p>
+<p>预测目标先限定为“执行此动作后按指定冻结策略继续，在128完整操作时限内能否获胜”。这预测当前策略条件下的结果，不是任意最优策略成功率。先用训练任务的真实轨迹终局标签训练BCE/Brier辅助头；未选动作无标签。校准数据与最后评价任务必须分开，完整1000验证不能变成调温训练集。原任务split保持，必要时另从4000训练任务内划出开发校准组成。</p>
+<h2>6. 开始新训练前的验收清单</h2>
+<ol><li>真实状态／候选renderer：只读公开字段，所有消费者、支付、物理槽完整；相同文字不同动作报错，支持集与文本都绑定SHA。</li>
+<li>语义门禁：七英雄、中文原规则、费用颜色、基本／强化、目标、材料、承伤、收尾；文本删改及state改变必须产生可测决策敏感性。</li>
+<li>标记门禁：每候选恰好一个表示，padding排除；单候选、常见规模及真实770候选全支持；零丢失、零截断，超预算明确处理。</li>
+<li>排列／分块门禁：顺序重排后按正式动作ID逆映射，量化顺序偏差；需要严格置换等变时使用匹配的位置／注意力设计。若采用独立候选分块变体，再要求单块和多块分数相等。不使用top-k筛除。</li>
+<li>优化门禁：真实完整局采样、LSTM边界、终局回传、CUDA梯度、有限Adam、保存重载同概率、RNG与immutable支持恢复。</li>
+<li>能力评价：0步及每20固定1000胜率、reward、伤牌、击杀、超时；预测另报Brier/NLL、可靠性图及分阶段／候选数的校准误差。不得用actor softmax或critic EV替代成功预测。</li>
+<li>资源评价：完整prompt token长、候选数、每操作编码时长、峰值显存、完整更新时间；现有300轮结束后再做竞争GPU的实测。</li></ol>
+<p>目前准备阶段完成的是资料核查、关键源码快照、项目候选规模抽样和接入合同；尚未安装／下载新模型、验证新的在线决策模型或启动下一轮训练。</p>
+<h2>7. 可追溯资料</h2>
+<p>本地证据：H:/MageKnight_RL_Runs/20261013_jev_rlcd_research。已保存Laya common/train/calibrate源码和SHA。此次匿名GitHub API触发限流，partial clone无法按需取blob，改用固定commit的raw文件读取，没有执行第三方代码。</p>
+<p>查到的HEAD（2026-10-13，之后可能变化）：Laya c73908d96ff73c0062c340a11bf7c54ec7d8bc4d；AnyJev b03158e9ba18e84c01054aaa393481925088db07；Kev 85ccf56a0afb952323c621055b02876e8498d60c；OpenJev-RLCD 22db40ad3333f5cf0bc5139097da70e0f8c05018。其余快照及文件校验见research_manifest.json。</p>
+<p>模型卡／作者benchmark只作为该项目自报数据；没有把T4、B200、H200、4080的速度当4060实测，也未将分类任务提升外推到MageKnight。当前这轮PPO的300更新和最终固定评价仍由现有训练器与巡检持续完成。</p>
+</html>

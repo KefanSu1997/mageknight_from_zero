@@ -1,0 +1,46 @@
+{
+  "scope": "Forester forest discount; Illusionist white crystal paid Promise then same unit readied by Regeneration and influence paid actual healing of prior battle wounds",
+  "run": "20260929_153451_bcd0d5d3",
+  "steps": 95,
+  "assertions": 139,
+  "sha256": "b22a4ea6286dd4afc3680a9f7194b91ed81b752f1ece07f181eac12adc72b086",
+  "unitIdentityChecks": [
+    {
+      "step": 32,
+      "instances": "army_2_000:-1457006900,army_2_003:-1004329182"
+    },
+    {
+      "step": 35,
+      "instances": "army_2_000:-1457006900,army_2_003:-1004329182"
+    },
+    {
+      "step": 45,
+      "instances": "army_2_000:-1457006900,army_2_003:-1004329182"
+    },
+    {
+      "step": 61,
+      "instances": "army_2_000:-1457006900,army_2_003:-1004329182"
+    },
+    {
+      "step": 78,
+      "instances": "army_2_000:-1457006900,army_2_003:-1004329182"
+    },
+    {
+      "step": 83,
+      "instances": "army_2_000:-1457006900,army_2_003:-1004329182"
+    },
+    {
+      "step": 94,
+      "instances": "army_2_000:-1457006900,army_2_003:-1004329182"
+    }
+  ],
+  "reviewedScreenshots": [
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_153451_bcd0d5d3\\captures\\039_支付本格真实移动费用.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_153451_bcd0d5d3\\captures\\069_支付本格真实移动费用.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_153451_bcd0d5d3\\captures\\088_再次支付3，实际消费幻术师贡献.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_153451_bcd0d5d3\\captures\\092_治疗第二张真实伤.png"
+  ],
+  "backendReused": "20260923_021816_212ab687 Foresters10/10 and IllusionistSorcerer15/15",
+  "limitations": "Custom legal level4 two-unit five-card build; stop-attack and Forester block not covered by this scene",
+  "console": "tmp/pve_supply_primary_final_console.json"
+}

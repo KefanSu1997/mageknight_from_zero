@@ -1,0 +1,11 @@
+# 原英雄魔力技能：晶体/临时魔力与实际费用
+
+原skill_000第5行暗火魔法：每轮红晶1+红或黑标记1；skill_007第5/6行风中残叶/树梢风语分别绿晶+白标记、白晶+绿标记。正式DarkFireMagicEffect/LeavesInWindEffect/TreetopWhisperEffect、ManaPool和SkillActions复用；诺洛瓦斯两个无选项技能新增SkillOption.Require(0)前置验证，拒绝非法选项且不耗次数。没有重写规则或构造替代牌。
+
+PveBattleSession新增三个来源ID的合法选择，所有战斗阶段和战末允许魔力取得。PveBattleMenus新增54DarkFireRed/55DarkFireBlack/56LeavesWind/57TreetopWhisper，显式真实原卡/已招募部队/名望等级/已学技能快照。Hero原图裁区仅为已核对的Norowas索引5开放y=.022，仍来自skill_007同页原图；未知技能不猜图。共58出战/13遭遇，通用英雄立绘尚未替换。
+
+后台20260918_225141_624bd4ae的13项全部通过，9月22继续前核对相关源码SHA256仍与报告一致，无重跑。原红token优先付烈焰枪手火远程6、保留红晶后付狂怒4；黑token实际支付阿尔蒂姆法师攻城转换、红晶付狂怒4杀城防巨鹰；两项诺洛瓦斯技能各付敏捷远程3和凶蛮僧侣攻城4杀两个原哨卫。本轮再次发动拒绝。覆盖真实实例、费用、技能使用标记和最终名望6/7、创伤0。
+
+场景20260922_000419_bbdd7fee四条179真实点击/477检查首次通过，17图均查看，无截断；Console两次0，Unity idle停止。后台晶体溢出、非法选项/外来技能实例以及真实StartTurn/StartNewRound边界不冒充场景覆盖；萨满仪式有独立翻面恢复，未套用每轮逻辑。所有组合、完整招募/真实轮间场景仍未完成。
+
+生成器tools/build_pve_mana_skills_acceptance.py；证据索引pve_mana_skills_acceptance_index.json。飞书故障修复插入期间保留该批状态，不反复全库测试。没有推送截图日志，没有修改VPN、Unity包或直接启动Unity.exe。

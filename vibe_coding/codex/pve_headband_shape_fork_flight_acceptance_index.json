@@ -1,0 +1,71 @@
+{
+  "scope": "头环普通借用：变换同近战两次原卡（基础/蓝费强化）；叉形同近战两次独立实际敌人并消费；飞行一次两格2费及后续正常移动",
+  "backend": {
+    "run": "20260929_094145_2f54dcd0",
+    "passed": 49
+  },
+  "scenes": [
+    {
+      "mode": "Shape",
+      "run": "20260929_094751_79b94c8a",
+      "report": "AutomationOutputs/PveBattle/20260929_094751_79b94c8a/report.json",
+      "sha256": "51e9d6ec331fa23c44eea83e3198f98769fdb5510f444312b1a755cc1260b9b2",
+      "steps": 61,
+      "assertions": 20,
+      "extraFinalStateChecks": 5
+    },
+    {
+      "mode": "Fork",
+      "run": "20260929_094925_b466869e",
+      "report": "AutomationOutputs/PveBattle/20260929_094925_b466869e/report.json",
+      "sha256": "b180a056677a702aa747c9f7d375d90a4a7c90c326d3eaecc4a1b7e17a329309",
+      "steps": 66,
+      "assertions": 98,
+      "extraFinalStateChecks": 5
+    },
+    {
+      "mode": "Flight",
+      "run": "20260929_095050_227a9355",
+      "report": "AutomationOutputs/PveBattle/20260929_095050_227a9355/report.json",
+      "sha256": "25145a32c551df9d5407019d82c827586dc85d50422aceb7669e640257261961",
+      "steps": 66,
+      "assertions": 99,
+      "extraFinalStateChecks": 5
+    }
+  ],
+  "shapeValidPrefix": {
+    "run": "20260929_094603_c2db19e7",
+    "throughStep": 52,
+    "retainedFailureStep": 56,
+    "reason": "脚本选错原牌；敏捷攻击转攻击被正确禁用，修选耐力014"
+  },
+  "console": [
+    "tmp/pve_headband_braevalar_compile_console.json",
+    "tmp/pve_headband_braevalar_final_console.json"
+  ],
+  "reviewedImages": {
+    "Shape": [
+      "first-run:56",
+      "rerun:56",
+      "rerun:60"
+    ],
+    "Fork": [
+      51,
+      57,
+      63
+    ],
+    "Flight": [
+      60,
+      61,
+      63
+    ]
+  },
+  "remaining": [
+    "变换德鲁伊地图/地形输入",
+    "变换/叉形借用跨阶段组合",
+    "其他动态公共技能借用",
+    "原英雄独立图像和原地图"
+  ],
+  "fixtureRestored": true,
+  "pushed": false
+}

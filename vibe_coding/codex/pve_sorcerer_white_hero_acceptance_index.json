@@ -1,0 +1,61 @@
+{
+  "scope": "Sorcerer white removes fortification and green removes original physical/ice resistance; same white Heroes ranged7 third battle",
+  "run": "20260929_161107_a5453657",
+  "steps": 115,
+  "assertions": 173,
+  "sha256": "3eaa6a04da34cd874164c4ddf9734a6a6fa47c3b5e4a933a2a7af9d616bbe974",
+  "unitIdentityChecks": [
+    {
+      "step": 31,
+      "instances": "army_014:-569362010,army_011:-1437693310,army_2_003:166053302"
+    },
+    {
+      "step": 50,
+      "instances": "army_014:-569362010,army_011:-1437693310,army_2_003:166053302"
+    },
+    {
+      "step": 64,
+      "instances": "army_014:-569362010,army_011:-1437693310,army_2_003:166053302"
+    },
+    {
+      "step": 80,
+      "instances": "army_014:-569362010,army_011:-1437693310,army_2_003:166053302"
+    },
+    {
+      "step": 96,
+      "instances": "army_014:-569362010,army_011:-1437693310,army_2_003:166053302"
+    },
+    {
+      "step": 107,
+      "instances": "army_014:-569362010,army_011:-1437693310,army_2_003:166053302"
+    },
+    {
+      "step": 114,
+      "instances": "army_014:-569362010,army_011:-1437693310,army_2_003:166053302"
+    }
+  ],
+  "reviewedScreenshots": [
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_161107_a5453657\\captures\\050_白晶1变0，失去城防并贡献远程3.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_161107_a5453657\\captures\\064_正式新轮重整同三部队、抽回实际五牌.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_161107_a5453657\\captures\\080_绿标1变0，去除真实抗性并贡献远程3.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_161107_a5453657\\captures\\107_真实白晶1变0，原远程7.png"
+  ],
+  "displayStatus": "passed: actual removed fortification and ice/physical resistance text visible; no truncation",
+  "backendReused": "20260923_021816_212ab687 OriginalSorcererModes x3 and WhiteRangedSeven",
+  "limitations": "Custom legal Lv6 five-card snapshot; no standard opening deck claim",
+  "displaySupplement": {
+    "run": "20260929_161913_7c74e4b0",
+    "steps": [
+      50,
+      80
+    ],
+    "assertions": 2,
+    "sha256": "39ba88169c29d65ee97be2c3d6b26afa09651394708e0c2174c9167817458c7c",
+    "reviewedScreenshots": [
+      "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_161913_7c74e4b0\\captures\\050_白晶1变0，失去城防并贡献远程3.png",
+      "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_161913_7c74e4b0\\captures\\080_绿标1变0，去除真实抗性并贡献远程3.png"
+    ]
+  },
+  "failedDisplayRetained": "20260929_161557_6dc68287 step80",
+  "console": "tmp/pve_sorcerer_heroes_final_console.json"
+}

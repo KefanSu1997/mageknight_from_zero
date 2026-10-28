@@ -14,8 +14,27 @@ namespace MK.Logic.Data
         Element AttackElement,   // 左侧底色
         int Fame,             // 下方红框
         IReadOnlyCollection<Ability> Abilities, // 右侧图标
-        string MonsterType = "Unknown" // 額外：類型，用於特殊地點篩選
-    );
+        string MonsterType = "Unknown", // 額外：類型，用於特殊地點篩選
+        EnemyTokenColor TokenColor = EnemyTokenColor.Unknown,
+        IReadOnlyList<EnemyAttack> Attacks = null,
+        int ElusiveArmor = 0,
+        int DefendValue = 0,
+        EnemyFaction Faction = EnemyFaction.None,
+        bool SummonAttack = false,
+        int SummonCount = 1
+    )
+    {
+        public int AttackCount => SummonAttack ? 0 : Attacks?.Count ?? 1;
+
+        public EnemyAttack GetAttack(int index)
+        {
+            if (index < 0 || index >= AttackCount) throw new System.ArgumentOutOfRangeException(nameof(index));
+            // Keep the original scalar fields compatible with existing first-attack modifiers.
+            return index == 0 ? new EnemyAttack(Attack, AttackElement) : Attacks[index];
+        }
+    }
+
+    public sealed record EnemyAttack(int Value, Element Element);
 
     /// 针对单个敌人的格挡
     public sealed record BlockAllocation(
@@ -27,7 +46,16 @@ namespace MK.Logic.Data
           int ArmorReductionOnSuccess = 0,
           int AttackOnSuccess = 0,
           bool KillOnSuccess = false,
-          int DistinctAttackGroup = 0
+          int DistinctAttackGroup = 0,
+          bool DoubleAgainstSwift = false,
+          bool ReduceArmorByExcess = false,
+          int AttackIndex = 0,
+          Monster RequiredEnemy = null,
+          MK.Logic.Runtime.UnitState SourceUnit = null,
+          SkillCard SourceSkill = null,
+          bool FromUnitAbility = false,
+          int RequiredAttackIndex = -1,
+          object SourceCard = null
     );
 
         /// <summary>

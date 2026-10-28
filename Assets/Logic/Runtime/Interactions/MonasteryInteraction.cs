@@ -79,7 +79,7 @@ namespace MK.Logic.Runtime.Locations
             var selectedSkill = skillsToChoose[0];
             
             // 将技能添加到玩家的技能牌库
-            player.Skills.Add(selectedSkill);
+            HeroSkillAcquisition.Acquire(player, selectedSkill);
             
             // 从公共供应中移除
             // TODO: 查找要移除的具体技能牌

@@ -1,0 +1,24 @@
+{
+  "backend_effective": 25,
+  "scene_confirmed_entries": 64,
+  "total": 70,
+  "remaining_shared_scene": 6,
+  "runs": [
+    {
+      "run": "20260929_073731_a97d1911",
+      "status": "success",
+      "steps": 44,
+      "sha256": "076d5f82e317322c52f72b4029888819d7286e11b5768b808e93c694fb9ea942",
+      "report": "AutomationOutputs\\PveBattle\\20260929_073731_a97d1911\\report.json"
+    },
+    {
+      "run": "20260929_074012_7725ea1b",
+      "status": "success",
+      "steps": 54,
+      "sha256": "a0e87d45787372e1e5073265cb5ab3737d6c5fd7d574b76a785926f15270d78e",
+      "report": "AutomationOutputs\\PveBattle\\20260929_074012_7725ea1b\\report.json"
+    }
+  ],
+  "console": "tmp/pve_shared_ui_console_complete.json",
+  "notes": "七项共享生产/UI已写；只新增平静完整场景证据。其余缺口保留。"
+}

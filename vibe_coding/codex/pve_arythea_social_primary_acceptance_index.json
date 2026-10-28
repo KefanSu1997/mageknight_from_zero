@@ -1,0 +1,262 @@
+{
+  "status": "passed",
+  "scope": "Arythea本人000:03秘密谈判与000:08红激励两正式回合主要消费者；不包含全部昼夜/多人排列",
+  "backend": {
+    "run": "AutomationOutputs/RulesState/20260929_183304_2f681967",
+    "ownTestsPassed": 1,
+    "batchPassed": 2,
+    "batchFailed": 0,
+    "testClass": "MK.Tests.Battles.PveArytheaSocialPrimaryJourneyTests"
+  },
+  "preservedFailures": [
+    {
+      "run": "20260929_182938_ddc59fc3",
+      "reason": "错误测试原卡ID，修为本人原024与strong_attack"
+    },
+    {
+      "run": "20260929_183114_13350633",
+      "reason": "测试同名伤牌Contains按值相等，修为ReferenceEquals；同批其他成功项保留"
+    }
+  ],
+  "scene": {
+    "report": "AutomationOutputs/PveBattle/20260929_183516_348eea5e/report.json",
+    "status": "success",
+    "acceptedZeroBasedRange": [
+      0,
+      58
+    ],
+    "steps": 59,
+    "assertions": 113
+  },
+  "identityAndConsumers": [
+    {
+      "step": 17,
+      "label": "实际抽两原牌与红色标记",
+      "observed": {
+        "influence": "0",
+        "journey.discardCount": "0",
+        "journey.outsideSkill": "hero_skill_pool_000:08",
+        "journey.position": "0,0",
+        "movement": "0",
+        "site.discardWounds": "0",
+        "healing": "0",
+        "wounds": "0",
+        "journey.completedTurns": "0",
+        "journey.completedBattles": "0",
+        "journey.samePlayer": "True",
+        "hand": "8",
+        "deck.count": "8",
+        "hero.id": "Arythea",
+        "hero.skills": "2",
+        "hero.deckTotal": "16",
+        "hand.ids": "basic_card_024,basic_card_014,basic_card_000,basic_card_007,basic_card_023,basic_card_013,basic_card_021,basic_card_002",
+        "skills.used": "False,True",
+        "tokens.red": "1",
+        "red": "1"
+      }
+    },
+    {
+      "step": 28,
+      "label": "强化攻击4实际杀甲3",
+      "observed": {
+        "wounds": "2",
+        "influence": "0",
+        "hand": "9",
+        "red": "1",
+        "deck.count": "8",
+        "hand.ids": "basic_card_014,basic_card_000,basic_card_007,basic_card_023,basic_card_013,basic_card_021,basic_card_002,w,w",
+        "healing": "0",
+        "hero.id": "Arythea",
+        "tokens.red": "0",
+        "skills.used": "False,True",
+        "journey.discardCount": "0",
+        "journey.outsideSkill": "",
+        "journey.position": "0,0",
+        "movement": "0",
+        "site.discardWounds": "0",
+        "journey.completedTurns": "0",
+        "journey.completedBattles": "0",
+        "journey.samePlayer": "True",
+        "hero.skills": "2",
+        "hero.deckTotal": "18"
+      }
+    },
+    {
+      "step": 47,
+      "label": "原白昼影响2",
+      "observed": {
+        "influence": "2",
+        "journey.discardCount": "1",
+        "journey.outsideSkill": "hero_skill_pool_000:03",
+        "journey.position": "0,1",
+        "movement": "0",
+        "site.discardWounds": "0",
+        "healing": "0",
+        "wounds": "2",
+        "journey.completedTurns": "1",
+        "journey.completedBattles": "1",
+        "journey.samePlayer": "True",
+        "hand": "8",
+        "deck.count": "8",
+        "hero.id": "Arythea",
+        "hero.skills": "2",
+        "hero.deckTotal": "18",
+        "hand.ids": "basic_card_014,basic_card_007,basic_card_023,basic_card_013,basic_card_021,basic_card_002,w,w",
+        "skills.used": "True,True",
+        "tokens.red": "0",
+        "red": "1"
+      }
+    },
+    {
+      "step": 50,
+      "label": "原横置1补足治疗费用",
+      "observed": {
+        "influence": "3",
+        "journey.discardCount": "1",
+        "journey.outsideSkill": "hero_skill_pool_000:03",
+        "journey.position": "0,1",
+        "movement": "0",
+        "site.discardWounds": "0",
+        "healing": "0",
+        "wounds": "2",
+        "journey.completedTurns": "1",
+        "journey.completedBattles": "1",
+        "journey.samePlayer": "True",
+        "hand": "7",
+        "deck.count": "8",
+        "hero.id": "Arythea",
+        "hero.skills": "2",
+        "hero.deckTotal": "18",
+        "hand.ids": "basic_card_014,basic_card_007,basic_card_023,basic_card_013,basic_card_002,w,w",
+        "skills.used": "True,True",
+        "tokens.red": "0",
+        "red": "1"
+      }
+    },
+    {
+      "step": 53,
+      "label": "支付影响3，秘密谈判贡献不可缺",
+      "observed": {
+        "influence": "0",
+        "journey.discardCount": "1",
+        "journey.outsideSkill": "hero_skill_pool_000:03",
+        "journey.position": "0,1",
+        "movement": "0",
+        "site.discardWounds": "0",
+        "healing": "1",
+        "wounds": "2",
+        "journey.completedTurns": "1",
+        "journey.completedBattles": "1",
+        "journey.samePlayer": "True",
+        "hand": "7",
+        "deck.count": "8",
+        "hero.id": "Arythea",
+        "hero.skills": "2",
+        "hero.deckTotal": "18",
+        "hand.ids": "basic_card_014,basic_card_007,basic_card_023,basic_card_013,basic_card_002,w,w",
+        "skills.used": "True,True",
+        "tokens.red": "0",
+        "red": "1"
+      }
+    },
+    {
+      "step": 56,
+      "label": "治疗一张旧伤归公共供应，不是弃伤",
+      "observed": {
+        "influence": "0",
+        "journey.discardCount": "1",
+        "journey.outsideSkill": "hero_skill_pool_000:03",
+        "journey.position": "0,1",
+        "movement": "0",
+        "site.discardWounds": "0",
+        "healing": "0",
+        "wounds": "1",
+        "journey.completedTurns": "1",
+        "journey.completedBattles": "1",
+        "journey.samePlayer": "True",
+        "hand": "6",
+        "deck.count": "8",
+        "hero.id": "Arythea",
+        "hero.skills": "2",
+        "hero.deckTotal": "17",
+        "hand.ids": "basic_card_014,basic_card_007,basic_card_023,basic_card_013,basic_card_002,w",
+        "skills.used": "True,True",
+        "tokens.red": "0",
+        "red": "1"
+      }
+    },
+    {
+      "step": 58,
+      "label": "同原16牌与一剩余真伤保留",
+      "observed": {
+        "influence": "0",
+        "journey.discardCount": "3",
+        "journey.outsideSkill": "",
+        "journey.position": "0,1",
+        "movement": "0",
+        "site.discardWounds": "0",
+        "healing": "0",
+        "wounds": "1",
+        "journey.completedTurns": "2",
+        "journey.completedBattles": "1",
+        "journey.samePlayer": "True",
+        "hand": "6",
+        "deck.count": "8",
+        "hero.id": "Arythea",
+        "hero.skills": "2",
+        "hero.deckTotal": "17",
+        "hand.ids": "basic_card_014,basic_card_007,basic_card_023,basic_card_013,basic_card_002,w",
+        "skills.used": "True,True",
+        "tokens.red": "0",
+        "red": "1"
+      }
+    }
+  ],
+  "screenshots": [
+    {
+      "step": 17,
+      "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_183516_348eea5e\\captures\\017_实际抽两原牌与红色标记.png",
+      "visuallyReviewedBy": "parent /root",
+      "result": "normal"
+    },
+    {
+      "step": 28,
+      "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_183516_348eea5e\\captures\\028_强化攻击4实际杀甲3.png",
+      "visuallyReviewedBy": "parent /root",
+      "result": "normal"
+    },
+    {
+      "step": 56,
+      "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_183516_348eea5e\\captures\\056_治疗一张旧伤归公共供应，不是弃伤.png",
+      "visuallyReviewedBy": "parent /root",
+      "result": "normal"
+    }
+  ],
+  "compileConsole": {
+    "path": "tmp/pve_social_assault_compile_console.json",
+    "errorCounts": [
+      0,
+      0
+    ]
+  },
+  "finalConsole": {
+    "path": "tmp/pve_social_assault_final_console.json",
+    "status": "passed",
+    "errorCounts": [
+      0,
+      0
+    ],
+    "actualReadVerified": true
+  },
+  "files": {
+    "AutomationOutputs/PveBattle/20260929_183516_348eea5e/report.json": "83319085ef0bdf0aeba1084547e29b475b06981bbea82d7188b7dea4b539355b",
+    "AutomationOutputs/RulesState/20260929_183304_2f681967/results.xml": "6e0d5775046fcd917d6c1bc91c79824e509f0378190b3c892fc15e93a190e97d",
+    "AutomationOutputs/RulesState/20260929_183304_2f681967/summary.json": "b07b839f7ba30a1e5e114e9a2f0f39c901425abb3e8403cf855f6b01476d972b",
+    "tmp/pve_social_assault_final_console.json": "8d62f369865d478d110ffb57efc54be5aff20c4f4af96e654eba68ad28fb3864"
+  },
+  "limits": [
+    "既有演练地图，不冒充原新增板块探索",
+    "只计本方法1项后台；同批Goldyx单列",
+    "最终运行后Console待主代理完成全部当前场景后补齐"
+  ]
+}

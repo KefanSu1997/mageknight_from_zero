@@ -1,0 +1,60 @@
+{
+  "scope": "材料神器三种已选分支与原供应和实际消费者；不声明所有普通/焚毁或所有宝典法术通过",
+  "backendRuns": [
+    "20260923_064250_5dfb039c",
+    "20260923_064622_0c8f5392",
+    "20260923_064911_a20ef26f"
+  ],
+  "effectiveBackendPassed": 19,
+  "additionalSmoke": {
+    "run": "20260923_064013_0b7dfa22",
+    "passed": 4
+  },
+  "sceneSegments": [
+    {
+      "run": "20260923_065024_a1e46fb0",
+      "overallStatus": "failed",
+      "passedStepRange": "0-25",
+      "passedSteps": 26,
+      "passedAssertions": 31,
+      "reportSha256": "56dbaf2cc2c117eab9315c1f8c631af189d34d298863f889d5092ff8256deb82"
+    },
+    {
+      "run": "20260923_065159_d7b49c28",
+      "overallStatus": "success",
+      "passedStepRange": "26-60",
+      "passedSteps": 35,
+      "passedAssertions": 67,
+      "reportSha256": "feb88f49cba2ee1c0f274382e31c3496f7bfb7b7c61edb1fd2f4a75ab1770834"
+    }
+  ],
+  "effectiveSceneSteps": 61,
+  "effectiveSceneAssertions": 98,
+  "screenshotsReviewed": 5,
+  "screenshots": [
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_065024_a1e46fb0\\captures\\025_选择同绿山川逸闻原供应.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_065159_d7b49c28\\captures\\031_两颗晶体选白色.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_065159_d7b49c28\\captures\\039_实际支付移动2.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_065159_d7b49c28\\captures\\055_原烈焰浪涌攻击分支.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_065159_d7b49c28\\captures\\058_原火攻实际击败.png"
+  ],
+  "finalConsole": "tmp/pve_20260923_material_final_console.json",
+  "preservedFailures": [
+    "绿色材料取得蓝色冰霜之桥被正确拒绝，夹具改原绿色迷途寻踪",
+    "Unity AppContext默认规则路径指向D:/Unity，PVE启动改按Application.dataPath定位项目"
+  ],
+  "artifactEntryCount": 22,
+  "artifactTotal": 25,
+  "finiteFullBasicSceneBaseline": 10,
+  "sourceSha256": {
+    "Assets/Logic/Runtime/Battles/PveJourneySession.cs": "5117332ebb878330fdd4f70c8203dec0775dbc9d7a44124eecd2e2a4b04156e0",
+    "Assets/Logic/Runtime/Battles/PveJourneySession.MaterialArtifacts.cs": "e0173fa09a8c0de9049a53befd05a86a3151a5ce3695ede364c22b65a420ddba",
+    "Assets/Logic/Runtime/Battles/PveArtifactInputs.cs": "7a45ff0b9e5c26ee8c9b4c37e87da776592483a706e4e173df3c24376f6cd45a",
+    "Assets/Scripts/Battle/PveBattleController.cs": "e566145f365d987716e1014d4e08025168b836834031714220aec6e933b43a1c",
+    "Assets/Scripts/Battle/PveBattleController.MaterialArtifacts.cs": "34a640150cdbf4bb1ef0b7951447f6f82ec3c1d2f592f3c4519f13b778c74e2e",
+    "Assets/Scripts/Battle/PveBattleController.Journey.cs": "b5cf06742270d9b4a1bb4264c3772d0638186229a3c8e0225010c27ae50234c6",
+    "Assets/Scripts/Battle/PveBattleController.JourneyHand.cs": "8e7f2e19ce388f83599ddb101237948b6177b3d9aa6716424a96fc7645ac348b",
+    "Assets/Tests/RulesState/PveMaterialArtifactEntryTests.cs": "cb715343074ceb4db2f2818394affd3117d6999f5db129dc644b7c30389b229a",
+    "tools/build_pve_material_artifacts_acceptance.py": "35ce02ea8432f7d1ea6a6350ef6e45f33b2e9003dece1152aea83a5e9bc92385"
+  }
+}

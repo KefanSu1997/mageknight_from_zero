@@ -1,0 +1,104 @@
+{
+  "date": "2026-09-29",
+  "newEntries": [
+    "hero_skill_pool_001:00",
+    "hero_skill_pool_003:01",
+    "hero_skill_pool_003:08",
+    "hero_skill_pool_004:06"
+  ],
+  "backend": {
+    "passed": 26,
+    "runs": [
+      {
+        "id": "20260929_030431_f76491f7",
+        "passed": 23,
+        "failed": 1
+      },
+      {
+        "id": "20260929_030544_23c40ef6",
+        "passed": 1
+      },
+      {
+        "id": "20260929_030655_84ac4d79",
+        "passed": 2
+      }
+    ]
+  },
+  "scene": {
+    "runs": [
+      {
+        "hero": "Krang",
+        "report": "AutomationOutputs/PveBattle/20260929_030725_13d53cf1/report.json",
+        "sha256": "e2f8b5a1443cc3a2e35e33323c7d2a3fdd2e2f06cc9eec7fa2880ac7ad429957",
+        "acceptedSteps": [
+          0,
+          29
+        ],
+        "checks": 32,
+        "images": []
+      },
+      {
+        "hero": "Krang",
+        "report": "AutomationOutputs/PveBattle/20260929_031022_ee71ae18/report.json",
+        "sha256": "0e965af922040ce15c4fcfc118b9f11f64a74456c397ad1cbb1b1867f8d614c7",
+        "acceptedSteps": [
+          30,
+          63
+        ],
+        "checks": 48,
+        "images": [
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_031022_ee71ae18\\captures\\031_只调整实际攻击.png",
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_031022_ee71ae18\\captures\\041_正式承伤消费技能.png",
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_031022_ee71ae18\\captures\\050_原攻击完成击杀.png",
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_031022_ee71ae18\\captures\\061_支付原地形2.png"
+        ]
+      },
+      {
+        "hero": "Braevalar",
+        "report": "AutomationOutputs/PveBattle/20260929_031141_f0516565/report.json",
+        "sha256": "61b29f1ef8542fe50ae9eb0820b346bc6f5e9fd44eae8259e06f339dd4c220ce",
+        "acceptedSteps": [
+          0,
+          53
+        ],
+        "checks": 68,
+        "images": [
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_031141_f0516565\\captures\\031_正式承伤消费技能.png",
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_031141_f0516565\\captures\\040_原攻击完成击杀.png",
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_031141_f0516565\\captures\\051_支付原地形2.png"
+        ]
+      },
+      {
+        "hero": "Wolfhawk",
+        "report": "AutomationOutputs/PveBattle/20260929_031245_18d07726/report.json",
+        "sha256": "b313e01c099be5ff8e6799b20a9ddb089847a954ed5533aff296f936a1b4da44",
+        "acceptedSteps": [
+          0,
+          50
+        ],
+        "checks": 67,
+        "images": [
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_031245_18d07726\\captures\\028_实际敌人.png",
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_031245_18d07726\\captures\\029_只调整实际攻击.png",
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_031245_18d07726\\captures\\032_正式承伤消费技能.png",
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_031245_18d07726\\captures\\037_原攻击完成击杀.png",
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_031245_18d07726\\captures\\048_支付原地形2.png"
+        ]
+      }
+    ],
+    "steps": 169,
+    "checks": 215,
+    "reviewedImages": 12,
+    "failuresPreserved": [
+      "20260929_030725_13d53cf1 step30 label truncated",
+      "20260929_030902_e2015824 step30 label truncated"
+    ]
+  },
+  "console": "tmp/pve_20260929_enemy_skills_final_console.json",
+  "limits": [
+    "Physical single-slot original wolf scene; multi-slot, reference isolation and unit absorption backend only.",
+    "Elemental resistance fire/ice mode and Hardened nonphysical mode not newly scene-verified.",
+    "Hex armor mode and Taunt reduction mode not newly scene-verified; cancellation branches backend only.",
+    "40/70 skill mappings is not full skill acceptance; 30 entries still missing."
+  ]
+}

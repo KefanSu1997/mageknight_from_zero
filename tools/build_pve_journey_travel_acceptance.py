@@ -1,0 +1,48 @@
+"""One persistent terrain route: printed movement, selected discount, boost, lake fee and real recycle."""
+import json
+from pathlib import Path
+steps=[]
+def click(path,label,expected=None,capture=False):
+    steps.append(dict(buttonPath='Canvas/BattleTable/'+path,label=label,waitAfterSeconds=.3,skipScreenshot=not capture,
+        after=[dict(key=k,expected=str(v),rule='原移动卡费用/目标、真实坐标与点数消费、回合期限和同实例回收') for k,v in {'ui.truncated':'',**(expected or {})}.items()]))
+def open_hand():click('Btn_JourneyHand','打开当前真实手牌')
+def play(index,choice,expected=None):
+    click('JourneyHand/Btn_Hand_'+str(index),'选择当前原牌');click('JourneyHand/Btn_OutsideChoice_'+choice,'选择原移动效果');click('JourneyHand/Btn_PlayOutside','原牌实际出牌',expected)
+def close_hand():click('JourneyHand/Btn_CloseHand','返回当前回合')
+def map():click('Btn_JourneyMap','查看实际地图')
+def close_map():click('JourneyMap/Btn_CloseMap','返回当前回合')
+def select(id,cost=None):click('JourneyMap/Btn_Hex_'+id,'点选真实地图格 '+id,{'journey.moveCost':cost} if cost is not None else None)
+def move(expected=None,capture=False):click('JourneyMap/Btn_Move','确认原费用移动',expected,capture)
+(click('Btn_Menu', '打开战斗菜单'), click('Btn_Camp','选择本条构筑'))
+click('CampShade/Camp/Btn_Loadout','选择既有白晶1蓝晶2起点');click('CampShade/Picker/Btn_Select_1','选择原先发制人资源')
+click('CampShade/Camp/Btn_ChooseCards','选择7张原移动牌');p='CampShade/DeedPicker/'
+click(p+'Btn_ClearDeeds','清空自定起点');click(p+'Btn_ChooseDeed_basic_card_000','选择原行进')
+click(p+'Btn_DeedNext','基础行动第二页')
+for id in ('014','017','018'):click(p+'Btn_ChooseDeed_basic_card_'+id,'选择原移动牌')
+click(p+'Btn_DeedKind_1','原高级行动')
+for id in ('010','011'):click(p+'Btn_ChooseDeed_advanced_card_'+id,'选择原高级移动牌')
+click(p+'Btn_DeedNext','高级行动第二页');click(p+'Btn_ChooseDeed_advanced_card_017','选择原稳步前进')
+click(p+'Btn_DoneDeeds','确认原构筑');click('CampShade/Camp/Btn_Journey','进入连续旅程')
+click('Tactic_day_1/Btn_Tactic_day_1','选择原捷足先登');click('Btn_BeginTurn','第一回合')
+map();select('forest',3);move({'rejections':1,'movement':0,'journey.position':'0,0'});close_map()
+open_hand();click('JourneyHand/Btn_Hand_3','原德鲁伊之道')
+click('JourneyHand/Btn_SelectTravelTarget','为原卡选择实际地图目标');select('forest',3);close_map()
+click('JourneyHand/Btn_PlayOutside','原德鲁伊之道基础指定森林格减费',{'movement':2,'hand':6})
+close_hand();map();select('forest',2);move({'movement':0,'journey.position':'1,0','journey.terrain':'Forest'},True);close_map()
+open_hand();play(0,'base',{'movement':2});close_hand();map();select('plains',2);move({'movement':0,'journey.position':'0,1'});close_map()
+open_hand();play(1,'base',{'movement':2})
+click('JourneyHand/Btn_Hand_0','选择原耐力横置');click('JourneyHand/Btn_SidewaysMove','横置1接受原永不止步额外1',{'movement':4,'hand':3})
+close_hand();map();select('camp',2);move({'movement':2,'journey.position':'0,0'});close_map()
+open_hand();play(0,'strong',{'movement':4,'hand':2});close_hand()
+map();select('lake',0);move({'movement':4,'journey.position':'-1,0','blue':1},True)
+select('mountain',2147483647);move({'rejections':2,'movement':4,'journey.position':'-1,0'})
+select('camp',0);move({'movement':4,'journey.position':'0,0'});close_map()
+click('Btn_EndTurn','真实结束回合清理减费与剩余移动',{'journey.completedTurns':1,'movement':0,'hand':2,'blue':1})
+click('Btn_BeginTurn','同一玩家第二回合');map();select('forest',3);close_map()
+open_hand();play(1,'strong',{'movement':4,'blue':0});close_hand();map()
+click('JourneyMap/Btn_SteadyReturn_0','选择回合末回收实际稳步前进')
+select('forest',3);move({'movement':1,'journey.position':'1,0'},True);close_map()
+click('Btn_EndTurn','先实际原牌置顶再正式补牌',{'journey.completedTurns':2,'movement':0,'hand':2,'hand.ids':'advanced_card_011,advanced_card_017','journey.position':'1,0'},True)
+click('Btn_BeginTurn','下一回合沿用实际地形',{'journey.terrain':'Forest','journey.position':'1,0','movement':0})
+Path('AutomationConfigs/pve_battle.json').write_text(json.dumps(dict(scenePath='Assets/Scenes/Part1/Part1_PveBattle.unity',captureInitialView=False,initialDelaySeconds=2,defaultWaitAfterSeconds=.3,maxRunSeconds=240,useRunSubfolder=False,steps=steps),ensure_ascii=False,indent=2),encoding='utf-8')
+print(len(steps),'steps',sum(len(s['after']) for s in steps),'checks')

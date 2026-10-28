@@ -15,7 +15,9 @@ namespace MK.Tests.Cards
             var player = new PlayerState { Wounds = 3 };
             var action = new DeedCard("basic_card_000", CardType.Action);
             player.Deck.Hand.Add(action);
-            new HealOrDrawEffect(2, 2).Execute(player, new ActionContext());
+            var context = new ActionContext();
+            new HealOrDrawEffect(2, 2).Execute(player, context);
+            CardHealing.Spend(player, context, 2);
             Assert.That(player.Wounds, Is.EqualTo(1));
             Assert.That(player.Deck.Hand, Has.Count.EqualTo(2));
             Assert.That(player.Deck.Hand, Does.Contain(action));

@@ -1,0 +1,20 @@
+{
+  "scope": "部队接口及守护者魔像、埃莫提普烈焰枪手两场整合；非全目标完成",
+  "backend": "AutomationOutputs/RulesState/20260918_154700_84d4ac8b",
+  "backendPassed": 5,
+  "scene": "AutomationOutputs\\PveBattle\\20260918_155302_7f8eb312\\report.json",
+  "steps": 47,
+  "assertions": 129,
+  "files": {
+    "AutomationOutputs/PveBattle/20260918_155302_7f8eb312/report.json": "4a67f4578bfa0cca739f7c68e7bb761b2466790c102631c2f572f09cd912736f",
+    "AutomationOutputs/PveBattle/20260918_155302_7f8eb312/console_final.json": "04e35a30659f2b1de1a8f6422e097f8be39d900e26ecf5ba504ff5f625715dd2",
+    "AutomationOutputs/PveBattle/20260918_155302_7f8eb312/captures/006_查看原部队卡面.png": "b13a7b7238e3ad55917b3ea5490841aa2ef4252f24c4050a233192caaaa9ce11",
+    "AutomationOutputs/PveBattle/20260918_155302_7f8eb312/captures/009_蓝色支付寒冰格挡4.png": "71061a59d492aad1c82550d846f124ed04b199037fc855bade44eafa98d200b4",
+    "AutomationOutputs/PveBattle/20260918_155302_7f8eb312/captures/016_耗竭魔像预留第二次攻击承伤.png": "14c0496a95b8f689d97e66925ca7aa17b241a094c08f3e3e583e2ab0f0f243dc",
+    "AutomationOutputs/PveBattle/20260918_155302_7f8eb312/captures/017_推进正式阶段_Melee.png": "c605434be6eed177d2196c8021882dcd49dfb8ca467c9595f8da477b3f7b9a96",
+    "AutomationOutputs/PveBattle/20260918_155302_7f8eb312/captures/032_推进正式阶段_End.png": "521660438cea35c567d70807f52aad61267ed2c0bf88d0e724f5a5d0174cf43f",
+    "AutomationOutputs/PveBattle/20260918_155302_7f8eb312/captures/039_支付红色发动远程火焰6.png": "9b7c08bab5eed924a8b1787bfe55acf0e8d78d09ae613e2d9f9305b38692f9e7",
+    "AutomationOutputs/PveBattle/20260918_155302_7f8eb312/captures/042_火焰6不被物抗减半.png": "11be16a867178f3085f4ef5d7ed9cb37af73e3d32b0c34527819ef11f56accf9",
+    "AutomationOutputs/PveBattle/20260918_155302_7f8eb312/captures/046_推进正式阶段_End.png": "f5b1534f14a2a51d4847f8947345e8a6db71feecc99bed4437b7835ea7cec254"
+  }
+}

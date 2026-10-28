@@ -1,0 +1,47 @@
+{
+  "principles": {
+    "title": "MageKnight｜开发原则与执行约定",
+    "document_id": "W8sYdNTqLoYuxCxU3uZc775VnZf",
+    "source": "vibe_coding\\codex\\project_principles.md",
+    "sha256": "c1654f2d822288a10d4f06c23d54e14fe436939bfc9ebdf707f5eb205b86c3ad",
+    "blocks_written": 48,
+    "text_payload_bytes": 9638,
+    "shared_with_user": true,
+    "url": "https://cw87nvpswso.feishu.cn/docx/W8sYdNTqLoYuxCxU3uZc775VnZf",
+    "verified_paragraphs": 48,
+    "status": "published_and_readback_verified"
+  },
+  "design": {
+    "title": "MageKnight｜整体规则与游戏策划",
+    "document_id": "XexTdXGkhonvzuxbO81cvfzhnMf",
+    "source": "vibe_coding\\codex\\game_rules_and_design.md",
+    "sha256": "4594f6273c2fe094bd4ddfe98ab45228bcd813b7807b13c8ed3a367af0a0d1d2",
+    "blocks_written": 64,
+    "text_payload_bytes": 18074,
+    "shared_with_user": true,
+    "url": "https://cw87nvpswso.feishu.cn/docx/XexTdXGkhonvzuxbO81cvfzhnMf",
+    "verified_paragraphs": 64,
+    "status": "published_and_readback_verified"
+  },
+  "progress": {
+    "title": "MageKnight｜开发进度：规则—实现—验证",
+    "document_id": "YzvcdE0fuo4rI0xN2H8cxU1MnOh",
+    "source": "vibe_coding\\codex\\rules_progress_verification.md",
+    "sha256": "665151c10155d8398e5e57676f80b99379b8a07f121ebf6046f3130496a5e742",
+    "blocks_written": 663,
+    "text_payload_bytes": 140783,
+    "shared_with_user": true,
+    "url": "https://cw87nvpswso.feishu.cn/docx/YzvcdE0fuo4rI0xN2H8cxU1MnOh",
+    "verified_paragraphs": 663,
+    "status": "published_and_readback_verified",
+    "incremental_updates": {
+      "charm_20260915": {
+        "source": "vibe_coding/codex/progress_addendum_2026-09-15_charm.md",
+        "sha256": "6c38bc82777f7fb0f3893294d050046eae7b3a5249dc3304c51dd152ead76ccb",
+        "text_payload_bytes": 2176,
+        "blocks": 6,
+        "status": "readback_verified"
+      }
+    }
+  }
+}

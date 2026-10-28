@@ -1,0 +1,1652 @@
+{
+  "scenePath": "Assets/Scenes/Part1/Part1_PveBattle.unity",
+  "captureInitialView": false,
+  "initialDelaySeconds": 2,
+  "defaultWaitAfterSeconds": 0.3,
+  "maxRunSeconds": 180,
+  "useRunSubfolder": false,
+  "steps": [
+    {
+      "buttonPath": "Canvas/BattleTable/Btn_Menu",
+      "label": "打开战斗菜单",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "真实原牌/牌区与攻击来源；仅补玩家反馈的操作路径"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Btn_Camp",
+      "label": "打开起点配置",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "真实原牌/牌区与攻击来源；仅补玩家反馈的操作路径"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/CampShade/Camp/Btn_Loadout",
+      "label": "选择已有固定资源构筑",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "真实原牌/牌区与攻击来源；仅补玩家反馈的操作路径"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/CampShade/Picker/Btn_NextPage",
+      "label": "原构筑翻页",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "真实原牌/牌区与攻击来源；仅补玩家反馈的操作路径"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/CampShade/Picker/Btn_NextPage",
+      "label": "原构筑翻页",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "真实原牌/牌区与攻击来源；仅补玩家反馈的操作路径"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/CampShade/Picker/Btn_Select_39",
+      "label": "原HornGold，初始红蓝各1，无部队",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "真实原牌/牌区与攻击来源；仅补玩家反馈的操作路径"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/CampShade/Camp/Btn_ChooseCards",
+      "label": "设置原卡",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "真实原牌/牌区与攻击来源；仅补玩家反馈的操作路径"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/CampShade/DeedPicker/Btn_ClearDeeds",
+      "label": "清空待选",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "真实原牌/牌区与攻击来源；仅补玩家反馈的操作路径"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/CampShade/DeedPicker/Btn_ChooseDeed_basic_card_000",
+      "label": "原行军供横置",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "真实原牌/牌区与攻击来源；仅补玩家反馈的操作路径"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/CampShade/DeedPicker/Btn_DeedNext",
+      "label": "基础第二页",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "真实原牌/牌区与攻击来源；仅补玩家反馈的操作路径"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/CampShade/DeedPicker/Btn_ChooseDeed_basic_card_021",
+      "label": "原怒火",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "真实原牌/牌区与攻击来源；仅补玩家反馈的操作路径"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/CampShade/DeedPicker/Btn_DoneDeeds",
+      "label": "两张真实原牌",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "真实原牌/牌区与攻击来源；仅补玩家反馈的操作路径"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/CampShade/Camp/Btn_SmallDeckHeroBuild",
+      "label": "合法原技能构筑",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "真实原牌/牌区与攻击来源；仅补玩家反馈的操作路径"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/CampShade/HeroBuild/Btn_Hero_Arythea",
+      "label": "原阿瑞希亚，与炽热剑术归属一致",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "真实原牌/牌区与攻击来源；仅补玩家反馈的操作路径"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/CampShade/HeroBuild/Btn_Level_2",
+      "label": "合法等级2一个技能",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "真实原牌/牌区与攻击来源；仅补玩家反馈的操作路径"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/CampShade/HeroBuild/Btn_Skill_2",
+      "label": "本人原炽热剑术攻击2",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "真实原牌/牌区与攻击来源；仅补玩家反馈的操作路径"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/CampShade/HeroBuild/Btn_Begin",
+      "label": "同一玩家连续旅程",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "真实原牌/牌区与攻击来源；仅补玩家反馈的操作路径"
+        },
+        {
+          "key": "hand",
+          "expected": "2",
+          "rule": "真实原牌/牌区与攻击来源；仅补玩家反馈的操作路径"
+        },
+        {
+          "key": "red",
+          "expected": "1",
+          "rule": "真实原牌/牌区与攻击来源；仅补玩家反馈的操作路径"
+        },
+        {
+          "key": "fame",
+          "expected": "3",
+          "rule": "真实原牌/牌区与攻击来源；仅补玩家反馈的操作路径"
+        },
+        {
+          "key": "hero.id",
+          "expected": "Arythea",
+          "rule": "真实原牌/牌区与攻击来源；仅补玩家反馈的操作路径"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Tactic_day_1/Btn_Tactic_day_1",
+      "label": "正式选战术",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "真实原牌/牌区与攻击来源；仅补玩家反馈的操作路径"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Btn_BeginTurn",
+      "label": "正式回合",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "真实原牌/牌区与攻击来源；仅补玩家反馈的操作路径"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Btn_JourneyEncounter_2",
+      "label": "两个独立原032敌人",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "真实原牌/牌区与攻击来源；仅补玩家反馈的操作路径"
+        },
+        {
+          "key": "phase",
+          "expected": "Ranged",
+          "rule": "UI与RL初始真实战斗状态映射"
+        },
+        {
+          "key": "won",
+          "expected": "False",
+          "rule": "UI与RL初始真实战斗状态映射"
+        },
+        {
+          "key": "hero.id",
+          "expected": "Arythea",
+          "rule": "UI与RL初始真实战斗状态映射"
+        },
+        {
+          "key": "fame",
+          "expected": "3",
+          "rule": "UI与RL初始真实战斗状态映射"
+        },
+        {
+          "key": "hand",
+          "expected": "2",
+          "rule": "UI与RL初始真实战斗状态映射"
+        },
+        {
+          "key": "deck.count",
+          "expected": "0",
+          "rule": "UI与RL初始真实战斗状态映射"
+        },
+        {
+          "key": "wounds",
+          "expected": "0",
+          "rule": "UI与RL初始真实战斗状态映射"
+        },
+        {
+          "key": "kills",
+          "expected": "0",
+          "rule": "UI与RL初始真实战斗状态映射"
+        },
+        {
+          "key": "ranged",
+          "expected": "0",
+          "rule": "UI与RL初始真实战斗状态映射"
+        },
+        {
+          "key": "siege",
+          "expected": "0",
+          "rule": "UI与RL初始真实战斗状态映射"
+        },
+        {
+          "key": "melee",
+          "expected": "0",
+          "rule": "UI与RL初始真实战斗状态映射"
+        },
+        {
+          "key": "red",
+          "expected": "1",
+          "rule": "UI与RL初始真实战斗状态映射"
+        },
+        {
+          "key": "blue",
+          "expected": "1",
+          "rule": "UI与RL初始真实战斗状态映射"
+        },
+        {
+          "key": "green",
+          "expected": "0",
+          "rule": "UI与RL初始真实战斗状态映射"
+        },
+        {
+          "key": "white",
+          "expected": "0",
+          "rule": "UI与RL初始真实战斗状态映射"
+        },
+        {
+          "key": "tokens.red",
+          "expected": "0",
+          "rule": "UI与RL初始真实战斗状态映射"
+        },
+        {
+          "key": "tokens.blue",
+          "expected": "0",
+          "rule": "UI与RL初始真实战斗状态映射"
+        },
+        {
+          "key": "tokens.green",
+          "expected": "0",
+          "rule": "UI与RL初始真实战斗状态映射"
+        },
+        {
+          "key": "tokens.white",
+          "expected": "0",
+          "rule": "UI与RL初始真实战斗状态映射"
+        },
+        {
+          "key": "tokens.gold",
+          "expected": "0",
+          "rule": "UI与RL初始真实战斗状态映射"
+        },
+        {
+          "key": "tokens.black",
+          "expected": "0",
+          "rule": "UI与RL初始真实战斗状态映射"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Inspector/Btn_Next",
+      "label": "PPO正式推进阶段",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "phase",
+          "expected": "Block",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "won",
+          "expected": "False",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "hero.id",
+          "expected": "Arythea",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "fame",
+          "expected": "3",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "hand",
+          "expected": "2",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "deck.count",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "wounds",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "kills",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "ranged",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "siege",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "melee",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "red",
+          "expected": "1",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "blue",
+          "expected": "1",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "green",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "white",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.red",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.blue",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.green",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.white",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.gold",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.black",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Inspector/Btn_Next",
+      "label": "PPO正式推进阶段",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "phase",
+          "expected": "AssignDamage",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "won",
+          "expected": "False",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "hero.id",
+          "expected": "Arythea",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "fame",
+          "expected": "3",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "hand",
+          "expected": "2",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "deck.count",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "wounds",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "kills",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "ranged",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "siege",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "melee",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "red",
+          "expected": "1",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "blue",
+          "expected": "1",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "green",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "white",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.red",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.blue",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.green",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.white",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.gold",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.black",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Inspector/Btn_Next",
+      "label": "PPO正式推进阶段",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "phase",
+          "expected": "Melee",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "won",
+          "expected": "False",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "hero.id",
+          "expected": "Arythea",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "fame",
+          "expected": "3",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "hand",
+          "expected": "6",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "deck.count",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "wounds",
+          "expected": "4",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "kills",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "ranged",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "siege",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "melee",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "red",
+          "expected": "1",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "blue",
+          "expected": "1",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "green",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "white",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.red",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.blue",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.green",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.white",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.gold",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.black",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Hand/Btn_Card_basic_card_021_0",
+      "label": "PPO选择实际原牌",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Inspector/Btn_Choice_strong",
+      "label": "PPO选择原效果层",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Inspector/Btn_Play",
+      "label": "PPO正式费用与出牌",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "phase",
+          "expected": "Melee",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "won",
+          "expected": "False",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "hero.id",
+          "expected": "Arythea",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "fame",
+          "expected": "3",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "hand",
+          "expected": "5",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "deck.count",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "wounds",
+          "expected": "4",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "kills",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "ranged",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "siege",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "melee",
+          "expected": "4",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "red",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "blue",
+          "expected": "1",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "green",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "white",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.red",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.blue",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.green",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.white",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.gold",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.black",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Enemy_0/Btn_Target",
+      "label": "PPO选择原敌实例 0",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Inspector/Btn_Resolve",
+      "label": "PPO实际结算原敌护甲与奖励",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": false,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "phase",
+          "expected": "Melee",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "won",
+          "expected": "False",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "hero.id",
+          "expected": "Arythea",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "fame",
+          "expected": "5",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "hand",
+          "expected": "5",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "deck.count",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "wounds",
+          "expected": "4",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "kills",
+          "expected": "1",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "ranged",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "siege",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "melee",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "red",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "blue",
+          "expected": "1",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "green",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "white",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.red",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.blue",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.green",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.white",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.gold",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.black",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Hand/Btn_Card_basic_card_000_0",
+      "label": "PPO选择实际原牌",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Inspector/Btn_Sideways",
+      "label": "PPO正式横置",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "phase",
+          "expected": "Melee",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "won",
+          "expected": "False",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "hero.id",
+          "expected": "Arythea",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "fame",
+          "expected": "5",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "hand",
+          "expected": "4",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "deck.count",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "wounds",
+          "expected": "4",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "kills",
+          "expected": "1",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "ranged",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "siege",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "melee",
+          "expected": "1",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "red",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "blue",
+          "expected": "1",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "green",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "white",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.red",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.blue",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.green",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.white",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.gold",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.black",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Btn_Skills",
+      "label": "PPO原技能",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Skills/Btn_Skill_0",
+      "label": "选择本人实际技能",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Inspector/Btn_UseSkill",
+      "label": "PPO正式技能消费",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "phase",
+          "expected": "Melee",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "won",
+          "expected": "False",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "hero.id",
+          "expected": "Arythea",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "fame",
+          "expected": "5",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "hand",
+          "expected": "4",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "deck.count",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "wounds",
+          "expected": "4",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "kills",
+          "expected": "1",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "ranged",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "siege",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "melee",
+          "expected": "3",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "red",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "blue",
+          "expected": "1",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "green",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "white",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.red",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.blue",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.green",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.white",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.gold",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.black",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Btn_Skills",
+      "label": "回到原手牌",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Enemy_1/Btn_Target",
+      "label": "PPO选择原敌实例 1",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Inspector/Btn_AttackParts",
+      "label": "PPO选择实际攻击贡献",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/AttackSelection/Btn_None",
+      "label": "先保留全部实际来源",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/AttackSelection/Btn_Part_0",
+      "label": "PPO分配实际来源 0",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/AttackSelection/Btn_Part_1",
+      "label": "PPO分配实际来源 1",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/AttackSelection/Btn_Done",
+      "label": "完成来源分配",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Inspector/Btn_Resolve",
+      "label": "PPO实际结算原敌护甲与奖励",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": false,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "phase",
+          "expected": "Melee",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "won",
+          "expected": "False",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "hero.id",
+          "expected": "Arythea",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "fame",
+          "expected": "7",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "hand",
+          "expected": "4",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "deck.count",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "wounds",
+          "expected": "4",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "kills",
+          "expected": "2",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "ranged",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "siege",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "melee",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "red",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "blue",
+          "expected": "1",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "green",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "white",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.red",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.blue",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.green",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.white",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.gold",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.black",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Inspector/Btn_Next",
+      "label": "PPO正式推进阶段",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": false,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "phase",
+          "expected": "End",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "won",
+          "expected": "True",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "hero.id",
+          "expected": "Arythea",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "fame",
+          "expected": "7",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "hand",
+          "expected": "4",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "deck.count",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "wounds",
+          "expected": "4",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "kills",
+          "expected": "2",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "ranged",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "siege",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "melee",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "red",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "blue",
+          "expected": "1",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "green",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "white",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.red",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.blue",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.green",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.white",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.gold",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        },
+        {
+          "key": "tokens.black",
+          "expected": "0",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Btn_Menu",
+      "label": "返回菜单",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Btn_Camp",
+      "label": "准备继续试玩",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "保存并重新载入PPO模型输出；原卡原技能正式操作前后状态一致"
+        }
+      ]
+    }
+  ]
+}

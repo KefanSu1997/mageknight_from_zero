@@ -1,0 +1,11 @@
+# 真实前缀续搜索与战斗间休息/回合分支
+
+新增continue_actual_prefix_search.py，从冻结PPO保存尝试中选取正式完成首组后Outside的实际前缀。核源文件SHA、既定validation组成；从原Task入口逐步重放，对照before/after、完整动作定义和raw reward，且所选动作在实际合法表中。不重建玩家/单位/牌库、不导入快照、不将首战当整任务。原轨迹未存完整mask，因此不声称与历史完整mask逐行对照；当前每一步选中动作合法性实际检查。
+
+discover_task_witnesses.py支持initial_prefix，所有分支仍从原正式Task重放整个前缀，隐藏RNG/实体守恒由真实入口保留，完整声明序列成功才重放认证。续搜索记录源前缀路径/SHA/长度/前缀digest、独立验证调用数，专家/PPO前缀不进入训练教师数据。
+
+两源实际前缀19/12步精确通过，第一轮续搜索35秒674/1038调用后均unknown。实际边界诊断有合法fight/rest/play/source/nextTurn，旧Outside排序仍可能挤掉rest和nextTurn；保留这两个正式分支后同预算重探669/1035调用仍unknown。策略/搜索失败不证明初始无解，保留全部旧结果。两轮不是观察超时重启：第一会话确认terminal，且第二改了搜索策略并有独立输出。
+
+1项真实前缀/破坏状态、动作材料字段及reward负例检查，3项阶段/Outside保分支检查通过；Console最终两读0错误tmp/rl_prefix_rest_turn_final_console_20261007.json。证据20261007_validation_actual_prefix_continuation、20261007_validation_prefix_boundary_diagnosis.json、20261007_validation_prefix_rest_turn_branches。所有本轮进程正常结束。
+
+当前验证完整可解池仍空。新能力是可复用的真实失败前缀续探索，不代表泛化/多组验证成功；完整原范围及Unity仍需推进。

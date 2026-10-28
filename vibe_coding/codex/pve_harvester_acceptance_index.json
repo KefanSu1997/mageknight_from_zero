@@ -1,0 +1,27 @@
+{
+  "scope": "灵魂收割者原普通/焚毁、合法逐敌选晶、真实击杀与攻击/阶段奖励期限。非法选择/目标重映射/回合末清理只后台；非全部组合。",
+  "backend": "AutomationOutputs/RulesState/20260918_183710_2e79aa53",
+  "backendPassedUnique": 15,
+  "backendNew": 8,
+  "backendRegression": 7,
+  "scene": "AutomationOutputs/PveBattle/20260918_184248_e2f35e14/report.json",
+  "battles": 6,
+  "steps": 221,
+  "assertions": 543,
+  "visualReviewed": 10,
+  "files": {
+    "AutomationOutputs/PveBattle/20260918_184248_e2f35e14/report.json": "ec4268f4be3a19adb97c821088237ffe54dac697f798ab2772f588fe0fb91e0f",
+    "AutomationOutputs/PveBattle/20260918_184248_e2f35e14/console_final.json": "8d62f369865d478d110ffb57efc54be5aff20c4f4af96e654eba68ad28fb3864",
+    "AutomationOutputs/RulesState/20260918_183710_2e79aa53/summary.json": "33fd87b24803b33a8889c292be5b1764ba27507e9343c4c6b016de54634773d4",
+    "AutomationOutputs/PveBattle/20260918_184248_e2f35e14/captures/038_查看原灵魂收割者.png": "47f7f86360bc967acac48d28899f6a6d4b623ddc544e33eb299feea964d08eb5",
+    "AutomationOutputs/PveBattle/20260918_184248_e2f35e14/captures/047_击杀奖励选择_Green.png": "b1e6ff199c7aed6b6313940ae536f22a5a57c5eb69a47f25ad0d09b6f4b70fcc",
+    "AutomationOutputs/PveBattle/20260918_184248_e2f35e14/captures/049_进入_End.png": "c071d6cab70a237f3360b631b13e83ce25e97aea8ed3b6f70cf0d1d755327312",
+    "AutomationOutputs/PveBattle/20260918_184248_e2f35e14/captures/074_进入_End.png": "34c8bdc80e1c924bbf2ae597233a8a5bbf9a1d63f11e928f015eee96434614bf",
+    "AutomationOutputs/PveBattle/20260918_184248_e2f35e14/captures/111_进入_End.png": "0fba7723e1ed69965cfa4bd00bd2a7c4365ec77959656245f8c35530c281d665",
+    "AutomationOutputs/PveBattle/20260918_184248_e2f35e14/captures/146_进入_End.png": "d3d63b31a1aacf3103cd08310e0aa5f4d08c6e3db4e42cf1703c663a99c41294",
+    "AutomationOutputs/PveBattle/20260918_184248_e2f35e14/captures/174_进入_End.png": "ee170030465fe9d7cf03dfc7107b711c2de27d4379bae1076214cb3ea832f736",
+    "AutomationOutputs/PveBattle/20260918_184248_e2f35e14/captures/217_击杀奖励选择_Blue.png": "19f095ee250dadfa0a767a4782ffba8dd37c90e7451fba2ae7ada8a829017455",
+    "AutomationOutputs/PveBattle/20260918_184248_e2f35e14/captures/219_实际击杀与奖励.png": "55423a6aaf202ee0dbf7eeaf6ad8f9dae745a37c78cfc08942de39c7dfc0394b",
+    "AutomationOutputs/PveBattle/20260918_184248_e2f35e14/captures/220_进入_End.png": "eec519d03d526c0a85ecbda4a11e96999bea9800b4da744632b76755edda40ef"
+  }
+}

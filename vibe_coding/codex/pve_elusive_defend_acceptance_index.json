@@ -1,0 +1,108 @@
+{
+  "status": "scene_passed",
+  "scope": "Original 057 Elusive/Defend main consumer; faction rewards remain incomplete",
+  "implemented": true,
+  "backendPassed": true,
+  "scenePassed": true,
+  "source": {
+    "pdf": "tmp/pdfs/tezla_official_rules.pdf",
+    "pages": [
+      2,
+      4
+    ],
+    "originalToken": "Assets/GameData/cards/monster (57).jpg"
+  },
+  "backend": {
+    "uniquePassed": 11,
+    "assertions": 155,
+    "cases": {
+      "MK.Tests.Battles.PveForkedLightningTests.GroupAttackUsesOnlyBoundEnemyCapacityAndGenericRemainder(False)": {
+        "result": "Passed",
+        "assertions": 4,
+        "run": "20260929_204236_813269c0"
+      },
+      "MK.Tests.Battles.PveForkedLightningTests.GroupAttackUsesOnlyBoundEnemyCapacityAndGenericRemainder(True)": {
+        "result": "Passed",
+        "assertions": 3,
+        "run": "20260929_204236_813269c0"
+      },
+      "MK.Tests.Battles.PveForkedLightningTests.ThreeEnemyGroupUsesOriginalElusiveAndDefendArmorForActualFireAttack": {
+        "result": "Passed",
+        "assertions": 4,
+        "run": "20260929_204236_813269c0"
+      },
+      "MK.Tests.Battles.TezlaElementalistSourceDataTests.ThreeOriginalElementalistSymbolsAreMetadataNotRegenerationWithPrintedStatsPreserved": {
+        "result": "Passed",
+        "assertions": 49,
+        "run": "20260929_204236_813269c0"
+      },
+      "MK.Tests.Battles.TezlaEnemyDefenseRulesTests.CancelledAndUnblockedDamageNeverUnlockLowArmorButZeroBlockAttackDoes": {
+        "result": "Passed",
+        "assertions": 4,
+        "run": "20260929_204236_813269c0"
+      },
+      "MK.Tests.Battles.TezlaEnemyDefenseRulesTests.DefendPersistsAfterSourceDeathAndArmorModifiersAffectBothPrintedValues": {
+        "result": "Passed",
+        "assertions": 5,
+        "run": "20260929_204236_813269c0"
+      },
+      "MK.Tests.Battles.TezlaEnemyDefenseRulesTests.DifferentDefendersRequireRealChoicesAndDeadUnusedSourceNeverApplies": {
+        "result": "Passed",
+        "assertions": 6,
+        "run": "20260929_204236_813269c0"
+      },
+      "MK.Tests.Battles.TezlaEnemyDefenseRulesTests.InsightIgnoresOriginalDefenseAbilitiesAndCancelledSelectionHasNoEffect": {
+        "result": "Passed",
+        "assertions": 9,
+        "run": "20260929_204911_539f27ca"
+      },
+      "MK.Tests.Battles.TezlaEnemyDefenseRulesTests.OriginalBatDefendsRealGroupTargetThenBothIceAttacksMustBeBlocked": {
+        "result": "Passed",
+        "assertions": 16,
+        "run": "20260929_204236_813269c0"
+      },
+      "MK.Tests.Battles.TezlaEnemyDefenseRulesTests.OriginalSixCardsDefendGroupThenBothIceSlotsBlockedAndLowArmorConsumedInFormalJourney": {
+        "result": "Passed",
+        "assertions": 27,
+        "run": "20260929_204427_fa46138c"
+      },
+      "MK.Tests.Cards.HeadbandTargetMovementBorrowTests.TwoIndependentForkChoicesKeepRealTargetBindingsThroughActualKills": {
+        "result": "Passed",
+        "assertions": 28,
+        "run": "20260929_204236_813269c0"
+      }
+    }
+  },
+  "scene": {
+    "operations": 65,
+    "assertions": 139,
+    "segments": [
+      {
+        "report": "AutomationOutputs/PveBattle/20260929_205123_3c5c5e6c/report.json",
+        "sha256": "29c2cd83464598a0923961b437b7ebf936bea13a855ebf37cb29125fc9d41b69",
+        "startInclusive": 0,
+        "endExclusive": 44
+      },
+      {
+        "report": "AutomationOutputs/PveBattle/20260929_205418_bc96af68/report.json",
+        "sha256": "06769d1092c2039e68ea6db5bc06a5d260397885f7b209b710ff305b52288463",
+        "startInclusive": 44,
+        "endExclusive": 65
+      }
+    ],
+    "visualReview": "主代理已看两报告共5图，包含旧44失败图；原图双甲、明确目标分配、正式两槽全挡低甲及夜轮原六牌与资源正确，无截断。",
+    "final": "samePlayer; Night round 2; hand six original cards; crystals Red0 Blue0; wounds0; Fame41; one completed turn/battle"
+  },
+  "compileConsole": "tmp/pve_elusive_defend_compile_fixed_console.json",
+  "finalConsole": "tmp/pve_elusive_defend_final_console.json",
+  "retainedFailures": [
+    "204236 continuous expected Fame40 omitted original Throwing Axe reward; corrected expected41 only",
+    "tmp/pve_elusive_defend_compile_console.json: tests accessed internal helper; replaced with formal own hero skill acquisition/use",
+    "205123 step44 read successful-block history before formal defense resolution; corrected observation timing, replayed prefix without rechecking"
+  ],
+  "remaining": [
+    "Original later countryside/core tile source and actual exploration/elite supply",
+    "Normal headband borrowed Master of Chaos initialization source"
+  ],
+  "factionFollowup": "pve_faction_fame_acceptance_index.json: current Demo enables official Just Fame; historical printed-only evidence retained"
+}

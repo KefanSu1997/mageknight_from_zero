@@ -1,0 +1,9 @@
+# 格挡需要真实贡献分选与后续消费
+
+贡献生成不能代替消费者通过。实际领导格挡轨迹存在合法block但策略跳过；同时正式全池Block入口不支持分配多敌。新增分选必须沿用正式预览/结算，校验当前目标实际引用、非重复、分次组限制，整体足够才消费；同值clone、旧来源与不足不能修改池。
+
+RL位索引须绑定当前公开全局物理来源顺序，不能把过滤后的局部索引当全局槽。旧all行为保留，观察及旧完整Key明确核验；前8上限、单位来源元数据与UI未接入保持可见。
+
+用真实PPO前缀逐步对照，反事实选中领导来源保留另外两张原卡贡献，再用错误来源/丢未选/未消费负例确认新增审计实际执行。该预检不计训练或Unity使用。扩大回归出现旧失败时用冻结修改前DLL确认同案例，保留双方失败，不降预期或把未通过批写成通过。
+
+工作记录vibe_coding/codex/worklog_2026-10-04_ppo_selected_block_sources.md；证据AutomationOutputs/BattleRl/20261004_v50_selected_leadership_block_preflight.json、20261004_v50_selected_block_negative_audit.json。

@@ -1,0 +1,101 @@
+{
+  "date": "2026-09-29",
+  "newEntries": [
+    "hero_skill_pool_003:02",
+    "hero_skill_pool_003:03",
+    "hero_skill_pool_004:05"
+  ],
+  "backend": {
+    "passed": 47,
+    "runs": [
+      {
+        "id": "20260929_031855_3c9fa8df",
+        "accepted": 12
+      },
+      {
+        "id": "20260929_032112_3886413e",
+        "accepted": 26
+      },
+      {
+        "id": "20260929_032206_4375abb3",
+        "accepted": 1
+      },
+      {
+        "id": "20260929_032602_09197556",
+        "accepted": 8
+      }
+    ]
+  },
+  "scene": {
+    "runs": [
+      {
+        "hero": "Krang",
+        "report": "AutomationOutputs/PveBattle/20260929_032700_6a4576bc/report.json",
+        "sha256": "258428e4df547b84f637d0b90aacf545da62f9f12d399a0e45288eeaccc8fcf3",
+        "acceptedRanges": [
+          [
+            0,
+            72
+          ]
+        ],
+        "checks": 93,
+        "images": [
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_032700_6a4576bc\\captures\\028_萨满翻面得实际红魔力.png",
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_032700_6a4576bc\\captures\\038_持久翻面攻击4.png",
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_032700_6a4576bc\\captures\\042_实际萨满魔力付款.png",
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_032700_6a4576bc\\captures\\044_真实攻击完成击杀.png",
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_032700_6a4576bc\\captures\\051_实际休息只恢复狂乱.png",
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_032700_6a4576bc\\captures\\069_正式行动翻回萨满.png",
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_032700_6a4576bc\\captures\\072_连续流程完成.png"
+        ]
+      },
+      {
+        "hero": "Wolfhawk",
+        "report": "AutomationOutputs/PveBattle/20260929_032854_8f85076a/report.json",
+        "sha256": "86b8beb354d3bb0fa4c2b196ed9ff995ca1d8543ca2e9e7e8e41aba8fad84144",
+        "acceptedRanges": [
+          [
+            0,
+            28
+          ],
+          [
+            50,
+            62
+          ]
+        ],
+        "checks": 49,
+        "images": [
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_032854_8f85076a\\captures\\062_连续流程完成.png"
+        ]
+      },
+      {
+        "hero": "Wolfhawk",
+        "report": "AutomationOutputs/PveBattle/20260929_033318_18702561/report.json",
+        "sha256": "a3b60cfeec3b2cab102b4909c51bd3ed7910d113fd4c4887c1098cb0168f721d",
+        "acceptedRanges": [
+          [
+            29,
+            49
+          ]
+        ],
+        "checks": 25,
+        "images": [
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_033318_18702561\\captures\\029_忽略原迅捷.png",
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_033318_18702561\\captures\\037_去迅捷后实际格挡3成功.png",
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_033318_18702561\\captures\\049_真实攻击完成击杀.png"
+        ]
+      }
+    ],
+    "steps": 136,
+    "checks": 167,
+    "reviewedImages": 11
+  },
+  "console": "tmp/pve_20260929_flip_insight_final_console.json",
+  "limits": [
+    "Frenzy normal2 and Shaman other five colors backend only; scene covers flipped4 and red actual original-card payment.",
+    "Insight scene Swift only; resistance/fortification/other offensive abilities and single-slot element removal backend only.",
+    "Regenerate field has no consumer and unresolved original-image data concern, not supported or claimed complete.",
+    "Persistent flips across new round backend only; scene covers formal rest and action recovery across three turns.",
+    "43/70 entries including dynamic Insight, not full skill validation."
+  ]
+}

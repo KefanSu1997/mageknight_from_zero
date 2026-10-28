@@ -1,0 +1,130 @@
+{
+  "version": "combat_focus_workflow_v3.0.0",
+  "status": "configured_for_next_dispatch_not_yet_a_v3_game_acceptance",
+  "effective_after_formal_round": 20,
+  "total_requested_rounds": 30,
+  "models": {
+    "controller": "gpt-6.1-sol",
+    "editor": "gpt-6.1-sol",
+    "readers": "gpt-6.1-sol",
+    "independent_judge": "gpt-6.1-sol"
+  },
+  "rubric": "AutomationConfigs/RsiGame/evaluation/v3_combat_focus/rubric.json",
+  "judge_system": "AutomationConfigs/RsiGame/evaluation/v3_combat_focus/judge_system.txt",
+  "score_schema": "AutomationConfigs/RsiGame/evaluation/v3_combat_focus/score_schema.json",
+  "contract": "AutomationConfigs/RsiGame/mageknight_unity_30/combat_focus_v3/iteration_contract.txt",
+  "paper_alignment": {
+    "preserved": [
+      "role separation",
+      "actual game evidence",
+      "editor repair report parser",
+      "play-observe-edit-verify loop",
+      "immutable original messages"
+    ],
+    "user_requested_changes": [
+      "combat information architecture priority",
+      "new v3 rubric and evidence scope",
+      "optional Wiki/log task tracks",
+      "architecture review before visual patching",
+      "same-v3 blind paired review",
+      "fresh evidence binding before reuse"
+    ],
+    "claim": "User-directed Unity adaptation; do not call this an unchanged paper reproduction."
+  },
+  "stages": [
+    {
+      "id": "freeze",
+      "owner": "operator",
+      "outputs": [
+        "source/assets/DLL hashes",
+        "current actual screenshots",
+        "registered contexts and immediate/on-demand field responsibilities",
+        "baseline/candidate opaque A/B mapping kept outside judge packet"
+      ],
+      "gate": "Current evidence binding; historical images explicitly separate."
+    },
+    {
+      "id": "information_architecture",
+      "owner": "controller",
+      "outputs": [
+        "combat entity and decision layout",
+        "Wiki entry and content migration map",
+        "log collapsed/open states",
+        "compact portrait/current phase design",
+        "control visual language"
+      ],
+      "gate": "Do not propose another text-wall or giant portrait; preserve skills/mercenaries and real mana payments."
+    },
+    {
+      "id": "source_edit",
+      "owner": "editor",
+      "outputs": [
+        "versioned actual Unity source/assets",
+        "original repair JSON",
+        "runtime checks still pending"
+      ],
+      "gate": "Operator alone controls Unity; source editing may reorganize a meaningful region, not merely preserve every old label position."
+    },
+    {
+      "id": "compile_and_smoke",
+      "owner": "operator",
+      "outputs": [
+        "real compile receipt",
+        "two Console error observations",
+        "normal unselected/selected/payment original PNGs",
+        "critical label and glyph checks"
+      ],
+      "gate": "Reject missing labels, zero generated glyphs for visible required controls, required text overflow, blocked actions, state/rule errors. Capture-success is not UI-acceptance."
+    },
+    {
+      "id": "representative_evidence",
+      "owner": "operator",
+      "outputs": [
+        "all preregistered key phases",
+        "hero skill and mercenary actual consumption",
+        "mana take-consume-return",
+        "log closed/open/last-line/close",
+        "Wiki lookup/full reading/return",
+        "normal battle costs and optional knowledge costs separately"
+      ],
+      "gate": "No missing required case silently treated as pass; capture failures and UI failures remain distinct."
+    },
+    {
+      "id": "independent_review",
+      "owner": "independent_judge",
+      "outputs": [
+        "exact actual FINAL",
+        "32 items per side under same v3",
+        "read ledger and input hashes",
+        "raw measurements and scoped visual scores",
+        "hard failures and precise missing evidence"
+      ],
+      "gate": "Actual raw PNGs, blinded A/B identities, no old scores/editor opinions; no total or cross-version score delta."
+    },
+    {
+      "id": "promote_or_reject",
+      "owner": "operator",
+      "outputs": [
+        "all source/UI versions and failures preserved",
+        "before-after report",
+        "acceptance/rejection receipt",
+        "fresh next-iteration evidence manifest"
+      ],
+      "gate": "Hard failure beats aesthetics. Only update planning evidence at a completed formal round boundary; never interrupt verification merely to refresh auxiliary context."
+    }
+  ],
+  "initial_acceptance_questions": [
+    "Can the player locate cards/deck/discard/enemy threats/skills/mercenaries/mana without opening a tutorial panel?",
+    "Is phase represented once, with a clear legal continuation rather than a tab strip?",
+    "Does the compact hero identity leave combat entities and choices prominent?",
+    "Are log and Wiki separately discoverable, readable, closable and context-preserving?",
+    "Are controls visually integrated, with clear actionable/selected/disabled states and visible labels or discoverable explanations?"
+  ],
+  "not_yet_claimed": [
+    "Wiki/log implementation exists",
+    "new UI already passed",
+    "all v3 measurements collected"
+  ],
+  "local_reference": "AutomationOutputs\\RsiGame\\workflow_revisions\\20261023_combat_focus_v3\\local_reference.json",
+  "review_persistence_entry": "tools/RsiGame/persist_combat_focus_review.py"
+}

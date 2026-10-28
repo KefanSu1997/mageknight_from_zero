@@ -1,0 +1,28 @@
+{
+  "scope": "愤怒号角普通与焚毁实际PVE：攻城、额外0..5选择、正式六面骰与真实创伤、原卡区守恒和击杀。场景覆盖普通金/黑、近战及焚毁0/2/5；额外1/3/4仅后台，全部随机组合未穷举。",
+  "backend": "AutomationOutputs/RulesState/20260918_203800_323dbaef",
+  "backendPassed": 10,
+  "scene": "AutomationOutputs/PveBattle/20260918_204019_a01b856b/report.json",
+  "battles": 6,
+  "steps": 129,
+  "assertions": 411,
+  "visualReviewed": 9,
+  "consoleErrors": [
+    0,
+    0
+  ],
+  "files": {
+    "AutomationOutputs/PveBattle/20260918_204019_a01b856b/report.json": "96c340773a8a1201f82131cc7c152344287408dc0b4691d5b87c3d4892e25592",
+    "AutomationOutputs/PveBattle/20260918_204019_a01b856b/console_final.json": "8d62f369865d478d110ffb57efc54be5aff20c4f4af96e654eba68ad28fb3864",
+    "AutomationOutputs/RulesState/20260918_203800_323dbaef/summary.json": "1df6c5237ddc8b51ea0a59ceeb596e45f676e1f3f916ebe0d4bafbcf25dec7e5",
+    "AutomationOutputs/PveBattle/20260918_204019_a01b856b/captures/051_正式出牌投骰与创伤.png": "7a545488a6639edc5d323fe042b04aa75d807a0a9769293f169edaf7d37c061b",
+    "AutomationOutputs/PveBattle/20260918_204019_a01b856b/captures/069_正式出牌投骰与创伤.png": "ef588ba52e8fc852e4556638edd55a6e7cc8c67533b5839849c70cf73f5af5df",
+    "AutomationOutputs/PveBattle/20260918_204019_a01b856b/captures/080_正式出牌投骰与创伤.png": "501fc16b7cd6cc247b3eb07fa1ae33e448ceac6be9fb71a60db570c3ce085da6",
+    "AutomationOutputs/PveBattle/20260918_204019_a01b856b/captures/086_进入_End.png": "64a297b996780f3201c1df83bc1a906641ac3eb2324dc036aac019dfdc8e646a",
+    "AutomationOutputs/PveBattle/20260918_204019_a01b856b/captures/093_正式出牌投骰与创伤.png": "435dacefa149410056d6131d7a06ed4308d9d26627db5da0ec9af93f49913b31",
+    "AutomationOutputs/PveBattle/20260918_204019_a01b856b/captures/105_正式出牌投骰与创伤.png": "169f5b7506fd853831a5fd7982760201fd622a8cd13f0538d875b7273fe3dc99",
+    "AutomationOutputs/PveBattle/20260918_204019_a01b856b/captures/111_进入_End.png": "117f6bd45d512f1bfd933edc23238053fb76e38187422cceca5d919440a9a440",
+    "AutomationOutputs/PveBattle/20260918_204019_a01b856b/captures/122_正式出牌投骰与创伤.png": "0c0bebc4a0c25dd136f8e4d16c5781c8d4dca5b2780dff7fa5fe00b7e9be6927",
+    "AutomationOutputs/PveBattle/20260918_204019_a01b856b/captures/128_进入_End.png": "5cb088a842b305e8429b2e95069cfec1ac052b9c530f44a74041e83bc57e14fb"
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "entries": [
+    {
+      "sourceId": "hero_skill_pool_000:02",
+      "sheet": "skill_000",
+      "x": 0.025,
+      "y": 0.509,
+      "width": 0.95,
+      "height": 0.153
+    },
+    {
+      "sourceId": "hero_skill_pool_000:01",
+      "sheet": "skill_000",
+      "x": 0.025,
+      "y": 0.671,
+      "width": 0.95,
+      "height": 0.153
+    },
+    {
+      "sourceId": "hero_skill_pool_000:04",
+      "sheet": "skill_000",
+      "x": 0.025,
+      "y": 0.186,
+      "width": 0.95,
+      "height": 0.153
+    },
+    {
+      "sourceId": "hero_skill_pool_005:02",
+      "sheet": "skill_017",
+      "x": 0.025,
+      "y": 0.509,
+      "width": 0.95,
+      "height": 0.153
+    },
+    {
+      "sourceId": "hero_skill_pool_005:00",
+      "sheet": "skill_017",
+      "x": 0.025,
+      "y": 0.834,
+      "width": 0.95,
+      "height": 0.153
+    },
+    {
+      "sourceId": "hero_skill_pool_005:03",
+      "sheet": "skill_017",
+      "x": 0.025,
+      "y": 0.345,
+      "width": 0.95,
+      "height": 0.153
+    },
+    {
+      "sourceId": "hero_skill_pool_005:04",
+      "sheet": "skill_017",
+      "x": 0.025,
+      "y": 0.186,
+      "width": 0.95,
+      "height": 0.153
+    },
+    {
+      "sourceId": "hero_skill_pool_005:01",
+      "sheet": "skill_017",
+      "x": 0.025,
+      "y": 0.671,
+      "width": 0.95,
+      "height": 0.153
+    },
+    {
+      "sourceId": "hero_skill_pool_002:02",
+      "sheet": "skill_007",
+      "x": 0.025,
+      "y": 0.509,
+      "width": 0.95,
+      "height": 0.153
+    },
+    {
+      "sourceId": "hero_skill_pool_002:01",
+      "sheet": "skill_007",
+      "x": 0.025,
+      "y": 0.671,
+      "width": 0.95,
+      "height": 0.153
+    },
+    {
+      "sourceId": "hero_skill_pool_002:04",
+      "sheet": "skill_007",
+      "x": 0.025,
+      "y": 0.186,
+      "width": 0.95,
+      "height": 0.153
+    },
+    {
+      "sourceId": "hero_skill_pool_002:05",
+      "sheet": "skill_007",
+      "x": 0.025,
+      "y": 0.022,
+      "width": 0.95,
+      "height": 0.153
+    },
+    {
+      "sourceId": "hero_skill_pool_007:02",
+      "sheet": "skill_021",
+      "x": 0.025,
+      "y": 0.509,
+      "width": 0.95,
+      "height": 0.153
+    },
+    {
+      "sourceId": "hero_skill_pool_007:01",
+      "sheet": "skill_021",
+      "x": 0.025,
+      "y": 0.671,
+      "width": 0.95,
+      "height": 0.153
+    },
+    {
+      "sourceId": "hero_skill_pool_007:03",
+      "sheet": "skill_021",
+      "x": 0.025,
+      "y": 0.345,
+      "width": 0.95,
+      "height": 0.153
+    },
+    {
+      "sourceId": "hero_skill_pool_007:04",
+      "sheet": "skill_021",
+      "x": 0.025,
+      "y": 0.186,
+      "width": 0.95,
+      "height": 0.153
+    },
+    {
+      "sourceId": "hero_skill_pool_004:02",
+      "sheet": "skill_014",
+      "x": 0.025,
+      "y": 0.509,
+      "width": 0.95,
+      "height": 0.153
+    },
+    {
+      "sourceId": "hero_skill_pool_004:00",
+      "sheet": "skill_014",
+      "x": 0.025,
+      "y": 0.834,
+      "width": 0.95,
+      "height": 0.153
+    },
+    {
+      "sourceId": "hero_skill_pool_004:01",
+      "sheet": "skill_014",
+      "x": 0.025,
+      "y": 0.684,
+      "width": 0.95,
+      "height": 0.153
+    }
+  ]
+}

@@ -1,0 +1,271 @@
+{
+  "schema": "required-ui-information-spec-v1",
+  "version": "cycle02-v1",
+  "declaration": "Declared for cycle02 before its capture/review. Cycle01 application is diagnostic calibration only; roles grounded in existing capture semantics, not a retrospective score anchor.",
+  "scope": "Limited necessary textual roles in the 17 fixed contexts. This is not the denominator of all necessary game information. Card-hover artwork and complete native card-face costs/effects require independent original-image reading.",
+  "limits": [
+    "No score thresholds or human-result claims.",
+    "Role count is explicit; repeated enemy components are separately enumerated but does not prove native enemy completeness.",
+    "fullText presence is not visible coverage. TMP generated character matching detects ellipsis/substitution; screen quad containment is only geometry.",
+    "Actual visible glyph coverage remains null pending independent screenshot reading or glyph pixel masks with draw-order/clip/occlusion evidence.",
+    "Text semantic truth and full inventory require native-state assertions; keyword checks are limited content checks.",
+    "Optional future result-recall inspector is outside this v1 denominator; declare a new spec version before evaluating it."
+  ],
+  "roles": {
+    "phase": {
+      "path_regex": "/PhaseTrack/PhaseStep_[0-9]+/Phase$",
+      "meaning": "当前战斗阶段",
+      "required_tokens": [
+        "当前"
+      ]
+    },
+    "guidance": {
+      "path_regex": "/Inspector/Details$",
+      "meaning": "当前步骤或所选行动的完整费用效果说明",
+      "required_tokens": []
+    },
+    "feedback": {
+      "path_regex": "/Inspector/Feedback$",
+      "meaning": "最近操作的确认、拒绝或当前阶段反馈",
+      "required_tokens": []
+    },
+    "resources": {
+      "path_regex": "/Status$",
+      "meaning": "英雄护甲、创伤、晶体和魔力库存",
+      "required_tokens": [
+        "护甲",
+        "创伤",
+        "晶体",
+        "魔力"
+      ]
+    },
+    "enemy_rules": {
+      "path_regex": "/Enemy_[0-9]+/Numbers$",
+      "meaning": "当前各个显示敌人的攻击、护甲、名望及能力行",
+      "required_tokens": [
+        "攻击",
+        "护甲",
+        "名望"
+      ]
+    },
+    "enemy_names": {
+      "path_regex": "/Enemy_[0-9]+/Name$",
+      "meaning": "各个显示敌人的名称",
+      "required_tokens": []
+    },
+    "hand_inventory": {
+      "path_regex": "/HandLabel$",
+      "meaning": "手牌、牌库、弃牌计数",
+      "required_tokens": [
+        "手牌",
+        "牌库",
+        "弃牌"
+      ]
+    },
+    "source_title": {
+      "path_regex": "/SourceTitle$",
+      "meaning": "公共魔力源选择说明",
+      "required_tokens": [
+        "公共魔力"
+      ]
+    },
+    "source_gold": {
+      "path_regex": "/GoldChoice$",
+      "meaning": "金骰支付颜色规则",
+      "required_tokens": [
+        "金骰",
+        "基本色"
+      ]
+    },
+    "receipt": {
+      "path_regex": "/ResolutionReceipt/Result$",
+      "meaning": "已消费行动的结果回执完整文本",
+      "required_tokens": []
+    },
+    "result_heading": {
+      "path_regex": "/Inspector/Heading$",
+      "meaning": "战斗结局",
+      "required_tokens": []
+    },
+    "journey_status": {
+      "path_regex": "/JourneyStatus$",
+      "meaning": "战后延续玩家与牌区、回合状态",
+      "required_tokens": [
+        "名望",
+        "创伤",
+        "手牌",
+        "牌库"
+      ]
+    },
+    "encounter_prompt": {
+      "path_regex": "/EncounterPrompt$",
+      "meaning": "选择敌群与幸存敌人规则",
+      "required_tokens": [
+        "敌群",
+        "幸存"
+      ]
+    }
+  },
+  "contexts": {
+    "ranged": [
+      "phase",
+      "guidance",
+      "feedback",
+      "resources",
+      "enemy_names",
+      "enemy_rules",
+      "hand_inventory"
+    ],
+    "block": [
+      "phase",
+      "guidance",
+      "feedback",
+      "resources",
+      "enemy_names",
+      "enemy_rules",
+      "hand_inventory"
+    ],
+    "source_play": [
+      "phase",
+      "guidance",
+      "feedback",
+      "resources",
+      "enemy_names",
+      "enemy_rules",
+      "hand_inventory"
+    ],
+    "source_taken": [
+      "phase",
+      "guidance",
+      "feedback",
+      "resources",
+      "enemy_names",
+      "enemy_rules",
+      "hand_inventory"
+    ],
+    "selected_action_payment": [
+      "phase",
+      "guidance",
+      "feedback",
+      "resources",
+      "enemy_names",
+      "enemy_rules",
+      "hand_inventory"
+    ],
+    "source_consumed": [
+      "phase",
+      "guidance",
+      "feedback",
+      "resources",
+      "enemy_names",
+      "enemy_rules",
+      "hand_inventory",
+      "receipt"
+    ],
+    "assign_damage": [
+      "phase",
+      "guidance",
+      "feedback",
+      "resources",
+      "enemy_names",
+      "enemy_rules",
+      "hand_inventory"
+    ],
+    "damage_toggle": [
+      "phase",
+      "guidance",
+      "feedback",
+      "resources",
+      "enemy_names",
+      "enemy_rules",
+      "hand_inventory"
+    ],
+    "melee_two_enemies": [
+      "phase",
+      "guidance",
+      "feedback",
+      "resources",
+      "enemy_names",
+      "enemy_rules",
+      "hand_inventory"
+    ],
+    "hand_page_two": [
+      "phase",
+      "guidance",
+      "feedback",
+      "resources",
+      "enemy_names",
+      "enemy_rules",
+      "hand_inventory"
+    ],
+    "won_result": [
+      "phase",
+      "guidance",
+      "feedback",
+      "resources",
+      "enemy_names",
+      "enemy_rules",
+      "hand_inventory",
+      "result_heading"
+    ],
+    "end": [
+      "phase",
+      "guidance",
+      "feedback",
+      "resources",
+      "enemy_names",
+      "enemy_rules",
+      "hand_inventory",
+      "result_heading"
+    ],
+    "end_mixed": [
+      "phase",
+      "guidance",
+      "feedback",
+      "resources",
+      "enemy_names",
+      "enemy_rules",
+      "hand_inventory",
+      "result_heading"
+    ],
+    "three_enemies": [
+      "phase",
+      "guidance",
+      "feedback",
+      "resources",
+      "enemy_names",
+      "enemy_rules",
+      "hand_inventory"
+    ],
+    "source_panel": [
+      "phase",
+      "feedback",
+      "resources",
+      "source_title",
+      "source_gold"
+    ],
+    "card_hover": [
+      "phase",
+      "resources",
+      "hand_inventory"
+    ],
+    "outside": [
+      "journey_status",
+      "encounter_prompt"
+    ]
+  },
+  "minimum_component_counts": {
+    "three_enemies": {
+      "enemy_names": 3,
+      "enemy_rules": 3
+    },
+    "melee_two_enemies": {
+      "enemy_names": 2,
+      "enemy_rules": 2
+    },
+    "hand_page_two": {
+      "enemy_names": 2,
+      "enemy_rules": 2
+    }
+  }
+}

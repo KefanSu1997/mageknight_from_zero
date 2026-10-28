@@ -1,0 +1,11 @@
+# PPO 正式战斗开局混合课程
+
+v70 完成32768步，固定贪心及相同权重单次采样各7局都0完整敌群胜利。Braevalar固定seed100001连续241次承伤规划至步数上限；采样缩短循环但仍0胜，不能把换解码方式当策略质量达标。
+
+v71增加 opt-in `--mixed-combat-start`：按训练局序号交替保留原开局、经真实合法 fight 正式进入战斗。没有直接修改游戏状态、掩码、规则、奖励或替玩家选战斗内动作；不缩小原英雄/敌人/合法构筑采样。后续仍使用原正式回合和跨昼夜入口。
+
+初始化prefix保存真实before/action/after/reward，标记curriculum_initialization；不加入PPO batch及其奖励、也不加入CoverageSampler的发动计数。完整轨迹独立审计保留该prefix，报告分别列curriculum_prefix_operations和policy_selected_fights，避免把课程参战冒充模型自行选择参战。固定评估不强制进入战斗。
+
+真实7英雄种子250000..250006逐一对照helper结果与重新reset后直接正式fight，整个协议输出（包含特征/合法mask）完全相等；未启用时保留原reset同对象，牌区、部队、回合/轮次未重建。证据 AutomationOutputs/BattleRl/20261005_v71_formal_curriculum_checks.json。Python编译通过，实际Unity Console两次零错误 tmp/rl_v71_mixed_curriculum_console_20261005.json。纯训练初始化变化不等于场景验收或胜率提升。
+
+有界8192步实验从v70实际最终策略恢复；DLL规则保持v70，所以旧实际原要素使用历史可以单独继承，Adam仍未恢复。先比较原未强制评估和新保存真实消费者，再决定是否继续；不靠扩大训练时长掩盖失败。

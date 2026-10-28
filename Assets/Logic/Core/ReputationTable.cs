@@ -12,11 +12,10 @@ namespace MK.Logic.Core
         /// <param name="reputation">玩家当前声望</param>
         public static int CalcRecruitModifier(int reputation)
         {
-            // 正声望降低费用，负声望提高费用
-            int adj = -reputation;
-            if (adj > 3) adj = 3;
-            if (adj < -3) adj = -3;
-            return adj;
+            if (reputation <= -7)
+                throw new System.InvalidOperationException("声誉位于X，不能交涉");
+            // 声誉是从起始格移动的格数，不是格上印刷的影响力修正。
+            return reputation < 0 ? (-reputation + 1) / 2 : -System.Math.Min(3, reputation / 2);
         }
     }
 }

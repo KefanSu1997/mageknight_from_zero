@@ -1,0 +1,389 @@
+{
+  "scope": "Braevalar本人元素抗性真实寒冰承伤、迷醉真实征服塔内交涉招募消费者",
+  "status": "scene_passed",
+  "sourceIds": [
+    "hero_skill_pool_001:00",
+    "hero_skill_pool_001:04"
+  ],
+  "backend": {
+    "assertions": 29,
+    "test": "MK.Tests.Battles.PveBraevalarPrimaryConsumersTests.ActualTowerTranceCompletesRecruitmentFeeThenElementalResistancePreventsOriginalIceHit",
+    "report": "AutomationOutputs/RulesState/20260929_190215_2f8f77e5/results.xml",
+    "sha256": "00b1402d1e76c2bc88185b27cadbd6fd57d7f1903f21d6e76f8a4c73c98a691c",
+    "passed": 1,
+    "failed": 0
+  },
+  "sceneSegments": [
+    {
+      "excludedFailedStep": 24,
+      "report": "AutomationOutputs/PveBattle/20260929_191318_2c01832d/report.json",
+      "failedStepAssertionsCounted": 0,
+      "acceptedZeroBasedRange": [
+        0,
+        23
+      ],
+      "sha256": "d300213afc113722331b546851087ba59b04cfd2499bd0ce68db352f9c3be698",
+      "originalStatus": "failed",
+      "effectiveAssertions": 24,
+      "effectiveSteps": 24
+    },
+    {
+      "effectiveAssertions": 21,
+      "sha256": "f8696cd475190480b055f4dbcb0d579e8f9a15942fd3c58861b42a6d2397b000",
+      "replayedPrefix": [
+        0,
+        23
+      ],
+      "replayAssertionsCounted": 0,
+      "excludedRange": [
+        32,
+        43
+      ],
+      "effectiveSteps": 8,
+      "acceptedZeroBasedRange": [
+        24,
+        31
+      ],
+      "report": "AutomationOutputs/PveBattle/20260929_191610_f1016803/report.json",
+      "originalStatus": "failed",
+      "reason": "32之后护符颜色输入需改变，不能保留为最终有效前缀；43失败整步不计"
+    },
+    {
+      "replayedPrefix": [
+        0,
+        31
+      ],
+      "reason": "主代理修正时误认White枚举索引为2，实际为3；第三槽42以后点击改动，旧步骤均不采纳",
+      "sha256": "ecdb7ac06a8c1ca3bcc0222721fef5b36eecc6055d7e0712baac4d13ae27fe72",
+      "effectiveAssertions": 10,
+      "report": "AutomationOutputs/PveBattle/20260929_191822_61a34c0e/report.json",
+      "effectiveSteps": 10,
+      "originalStatus": "failed",
+      "excludedRange": [
+        42,
+        46
+      ],
+      "replayAssertionsCounted": 0,
+      "acceptedZeroBasedRange": [
+        32,
+        41
+      ]
+    },
+    {
+      "report": "AutomationOutputs/PveBattle/20260929_192114_c90c4425/report.json",
+      "sha256": "b17c32dd4f5e8b0c7f709800beaf660a33abe2f886300c0b6f9c8eb5d025a44f",
+      "originalStatus": "success",
+      "acceptedZeroBasedRange": [
+        42,
+        105
+      ],
+      "effectiveSteps": 64,
+      "effectiveAssertions": 147,
+      "replayedPrefix": [
+        0,
+        41
+      ],
+      "replayAssertionsCounted": 0
+    }
+  ],
+  "effectiveSceneSteps": 106,
+  "effectiveSceneAssertions": 202,
+  "preservedFailure": {
+    "cause": "战外观测键不提供skills.ids；实际已有upgrade.skillSources包含完整匹配SourceId",
+    "expected": "hero_skill_pool_001:00,hero_skill_pool_001:04",
+    "repair": "主代理只改生成器观察键为upgrade.skillSources，保持两原SourceId期望；从24补验，未放宽规则",
+    "step": 24,
+    "key": "skills.ids",
+    "actual": "<missing>",
+    "status": "resolved_by_later_effective_segments_original_failure_preserved"
+  },
+  "scenePassed": true,
+  "limitations": [
+    "合法Lv6、七张原牌自定构筑，不冒充标准16牌开局或一级自然成长。",
+    "复用既有演练地图和真实征服过程，不代表原版地图探索验收。",
+    "主要模式为元素抗性寒冰2实际承伤及迷醉城防地点2实际招募；其他元素与地点变体保留既有证据和后续范围。",
+    "三份原失败完整保留；改变输入后的旧步骤和重放前缀不重复计数。"
+  ],
+  "worklog": "vibe_coding/codex/worklog_2026-09-29_braevalar_primary_consumers.md",
+  "secondPreservedFailure": {
+    "nextRun": "从32补验，新计划107步；后缀32..106待结果",
+    "cause": "原默认槽为Red/Blue/White，第一二槽都点5次实际选Black/Red，第三仍White",
+    "step": 43,
+    "repair": "主代理依原输入源码改slot0点5至Black、slot1点4至Black、slot2点4至Red；原资源期望不变",
+    "expected": "2",
+    "actual": "1",
+    "report": "AutomationOutputs/PveBattle/20260929_191610_f1016803/report.json",
+    "key": "tokens.black",
+    "resolution": "第一修正仍误认White索引，第三原失败保留；第四实际两黑一红通过。"
+  },
+  "thirdPreservedFailure": {
+    "nextRun": "从42补验，最新计划106步、后缀147断言，42..105待",
+    "repair": "第三槽改3次至Red，保留Black/Black/Red全部原期望；前两槽保持",
+    "step": 46,
+    "expected": "1",
+    "key": "tokens.red",
+    "actual": "0",
+    "cause": "主代理首次修正误认White索引，实际Enum顺序Red Blue Green White Gold Black；白索引3",
+    "resolution": "第四run42..105全部通过；未改Black/Black/Red原期望。"
+  },
+  "actualConsumerSnapshots": [
+    {
+      "step": 61,
+      "label": "实际征服并把原守军弃置，未预置Conquered",
+      "after": {
+        "hero.id": "Braevalar",
+        "hero.level": "6",
+        "journey.samePlayer": "True",
+        "journey.completedTurns": "0",
+        "journey.completedBattles": "0",
+        "journey.position": "-1,-1",
+        "world.conquered": "-1:-1",
+        "influence": "0",
+        "red": "1",
+        "blue": "1",
+        "green": "1",
+        "units.instances": "",
+        "units.ready": "",
+        "units.wounds": "",
+        "wounds": "0",
+        "fame": "40",
+        "skills.used": "False,False",
+        "power.attacks": "",
+        "journey.offerCount": "3"
+      }
+    },
+    {
+      "step": 77,
+      "label": "迷醉贡献真实欠缺的2，恰好达到招募7",
+      "after": {
+        "hero.id": "Braevalar",
+        "hero.level": "6",
+        "journey.samePlayer": "True",
+        "journey.completedTurns": "1",
+        "journey.completedBattles": "1",
+        "journey.position": "-1,-1",
+        "world.conquered": "-1:-1",
+        "influence": "7",
+        "red": "1",
+        "blue": "1",
+        "green": "1",
+        "units.instances": "",
+        "units.ready": "",
+        "units.wounds": "",
+        "wounds": "0",
+        "fame": "42",
+        "skills.used": "False,True",
+        "journey.offerCount": "3"
+      }
+    },
+    {
+      "step": 82,
+      "label": "金币4+承诺2+迷醉2-声誉1，真实全部付款",
+      "after": {
+        "hero.id": "Braevalar",
+        "hero.level": "6",
+        "journey.samePlayer": "True",
+        "journey.completedTurns": "1",
+        "journey.completedBattles": "1",
+        "journey.position": "-1,-1",
+        "world.conquered": "-1:-1",
+        "influence": "0",
+        "red": "1",
+        "blue": "1",
+        "green": "1",
+        "units.instances": "army_2_001:1030400042",
+        "units.ready": "True",
+        "units.wounds": "0",
+        "wounds": "0",
+        "fame": "42",
+        "skills.used": "False,True",
+        "journey.offerCount": "2"
+      }
+    },
+    {
+      "step": 94,
+      "label": "原寒冰2实际承伤全免，英雄保持零伤",
+      "after": {
+        "hero.id": "Braevalar",
+        "hero.level": "6",
+        "journey.samePlayer": "True",
+        "journey.completedTurns": "2",
+        "journey.completedBattles": "1",
+        "journey.position": "-1,-1",
+        "world.conquered": "-1:-1",
+        "influence": "0",
+        "red": "1",
+        "blue": "1",
+        "green": "1",
+        "units.instances": "army_2_001:1030400042",
+        "units.ready": "True",
+        "units.wounds": "0",
+        "wounds": "0",
+        "fame": "42",
+        "skills.used": "True,False",
+        "power.attacks": "",
+        "journey.offerCount": "2"
+      }
+    },
+    {
+      "step": 97,
+      "label": "原物理攻击2，冰巫妖物抗后有效1",
+      "after": {
+        "hero.id": "Braevalar",
+        "hero.level": "6",
+        "journey.samePlayer": "True",
+        "journey.completedTurns": "2",
+        "journey.completedBattles": "1",
+        "journey.position": "-1,-1",
+        "world.conquered": "-1:-1",
+        "influence": "0",
+        "red": "1",
+        "blue": "1",
+        "green": "1",
+        "units.instances": "army_2_001:1030400042",
+        "units.ready": "False",
+        "units.wounds": "0",
+        "wounds": "0",
+        "fame": "42",
+        "skills.used": "True,False",
+        "power.attacks": "Melee:Physical:2",
+        "journey.offerCount": "2"
+      }
+    },
+    {
+      "step": 101,
+      "label": "支付一直保留的红晶1",
+      "after": {
+        "hero.id": "Braevalar",
+        "hero.level": "6",
+        "journey.samePlayer": "True",
+        "journey.completedTurns": "2",
+        "journey.completedBattles": "1",
+        "journey.position": "-1,-1",
+        "world.conquered": "-1:-1",
+        "influence": "0",
+        "red": "0",
+        "blue": "1",
+        "green": "1",
+        "units.instances": "army_2_001:1030400042",
+        "units.ready": "False",
+        "units.wounds": "0",
+        "wounds": "0",
+        "fame": "42",
+        "skills.used": "True,False",
+        "power.attacks": "Melee:Physical:2,Ranged:Fire:3",
+        "journey.offerCount": "2"
+      }
+    },
+    {
+      "step": 103,
+      "label": "火焰3加物抗后魔像1，实际击败护甲4",
+      "after": {
+        "hero.id": "Braevalar",
+        "hero.level": "6",
+        "journey.samePlayer": "True",
+        "journey.completedTurns": "2",
+        "journey.completedBattles": "1",
+        "journey.position": "-1,-1",
+        "world.conquered": "-1:-1",
+        "influence": "0",
+        "red": "0",
+        "blue": "1",
+        "green": "1",
+        "units.instances": "army_2_001:1030400042",
+        "units.ready": "False",
+        "units.wounds": "0",
+        "wounds": "0",
+        "fame": "47",
+        "skills.used": "True,False",
+        "power.attacks": "",
+        "journey.offerCount": "2"
+      }
+    },
+    {
+      "step": 105,
+      "label": "三回合同英雄/同魔像与实际征服塔，零伤费用守恒",
+      "after": {
+        "hero.id": "Braevalar",
+        "hero.level": "6",
+        "journey.samePlayer": "True",
+        "journey.completedTurns": "3",
+        "journey.completedBattles": "2",
+        "journey.position": "-1,-1",
+        "world.conquered": "-1:-1",
+        "influence": "0",
+        "red": "0",
+        "blue": "1",
+        "green": "1",
+        "units.instances": "army_2_001:1030400042",
+        "units.ready": "False",
+        "units.wounds": "0",
+        "wounds": "0",
+        "fame": "47",
+        "skills.used": "True,False",
+        "journey.offerCount": "2"
+      }
+    }
+  ],
+  "identityAndPaymentChecks": {
+    "sameUnitSteps": [
+      82,
+      94,
+      97,
+      101,
+      103,
+      105
+    ],
+    "sameUnitInstance": "army_2_001:1030400042",
+    "recruitment": "金币4+承诺2+实际塔迷醉2-声誉1=7；实际供应魔像7全额付款，影响7→0。",
+    "combat": "同魔像物理2经物抗有效1，加原火焰箭矢火焰远程3，红库存晶1→0，击败护甲4原寒冰巫妖。",
+    "defense": "原寒冰2由本人元素抗性2忽略，英雄及同魔像创伤均0。",
+    "final": "同Braevalar三正式回合两战，魔像耗竭但无伤，名望47；原塔实际征服和当前位置保留。"
+  },
+  "screenshots": [
+    {
+      "step": 61,
+      "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_192114_c90c4425\\captures\\061_实际征服并把原守军弃置，未预置Conquered.png",
+      "exists": true
+    },
+    {
+      "step": 77,
+      "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_192114_c90c4425\\captures\\077_迷醉贡献真实欠缺的2，恰好达到招募7.png",
+      "exists": true
+    },
+    {
+      "step": 82,
+      "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_192114_c90c4425\\captures\\082_金币4+承诺2+迷醉2-声誉1，真实全部付款.png",
+      "exists": true
+    },
+    {
+      "step": 94,
+      "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_192114_c90c4425\\captures\\094_原寒冰2实际承伤全免，英雄保持零伤.png",
+      "exists": true
+    },
+    {
+      "step": 103,
+      "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_192114_c90c4425\\captures\\103_火焰3加物抗后魔像1，实际击败护甲4.png",
+      "exists": true
+    },
+    {
+      "step": 105,
+      "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_192114_c90c4425\\captures\\105_三回合同英雄_同魔像与实际征服塔，零伤费用守恒.png",
+      "exists": true
+    }
+  ],
+  "visualReview": {
+    "reviewer": "主代理 /root",
+    "result": "六关键图61/77/82/94/103/105已目视正常；本代理核索引及状态证据。"
+  },
+  "finalConsole": {
+    "report": "tmp/pve_special_primary_final_console.json",
+    "sha256": "8d62f369865d478d110ffb57efc54be5aff20c4f4af96e654eba68ad28fb3864",
+    "reads": 2,
+    "errorCounts": [
+      0,
+      0
+    ],
+    "passed": true
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "scope": "basic003、advanced032、magic014/016真实入口及消费者",
+  "backendPassed": 17,
+  "backendCases": {
+    "MK.Tests.Battles.PveMistTravelEntryTests.MistPaysPrintedBlueCrossesActualLakeAndCannotEnterHillsThenExpires": "20260923_083840_39901522",
+    "MK.Tests.Battles.PveMistTravelEntryTests.MistShroudPaysBlueBlackAndProtectsActualFarmerThenHeroFirstWound": "20260923_083840_39901522",
+    "MK.Tests.Battles.PveTravelChoiceEntryTests.BaseHarvestDiscardsActualGreenThenCrystalPaysMarchAndPersistsThroughEndTurn": "20260923_083840_39901522",
+    "MK.Tests.Battles.PveTravelChoiceEntryTests.InvalidHarvestMaterialOrDestinationPreservesActualHandMovementAndCrystal(False)": "20260923_083840_39901522",
+    "MK.Tests.Battles.PveTravelChoiceEntryTests.InvalidHarvestMaterialOrDestinationPreservesActualHandMovementAndCrystal(True)": "20260923_083840_39901522",
+    "MK.Tests.Battles.PveTravelChoiceEntryTests.MistFormPaysBlueAndActualLakeCostsTwoWhileHillsRemainForbidden": "20260923_083840_39901522",
+    "MK.Tests.Battles.PveTravelChoiceEntryTests.PortalCannotReplaceRestActionOrPayBlueAfterRest": "20260923_083840_39901522",
+    "MK.Tests.Battles.PveTravelChoiceEntryTests.PortalChoicesConsumeBlueAndUseActualNextRefill(\"base\",1,6)": "20260923_083840_39901522",
+    "MK.Tests.Battles.PveTravelChoiceEntryTests.PortalChoicesConsumeBlueAndUseActualNextRefill(\"strong_range\",2,6)": "20260923_083840_39901522",
+    "MK.Tests.Battles.PveTravelChoiceEntryTests.PortalChoicesConsumeBlueAndUseActualNextRefill(\"strong_draw\",1,7)": "20260923_083840_39901522",
+    "MK.Tests.Battles.PveTravelChoiceEntryTests.PortalRejectsUnsafeLakeWithoutLosingPendingThenMayDeclineAndStillRefill": "20260923_083840_39901522",
+    "MK.Tests.Battles.PveTravelChoiceEntryTests.SpaceBendingPaysEachRealDestinationAndDoesNotSurviveTurn": "20260923_083840_39901522",
+    "MK.Tests.Battles.PveTravelChoiceEntryTests.StrongHarvestMaySkipOneStepThenDiscardActualArtifactForChosenRed": "20260923_083840_39901522",
+    "MK.Tests.Battles.PveTravelChoiceEntryTests.TimeBendingReturnsOnlyPlayedInstancesAndActualExtraTurnKeepsPosition": "20260923_083840_39901522",
+    "MK.Tests.Battles.PveJourneyTravelTests.DiscountCannotOpenLakeOrAllowNonAdjacentOrPostBattleMovement": "20260923_083953_d28c7909",
+    "MK.Tests.Battles.PveJourneyTravelTests.DruidSelectedHexAndTerrainUsePrintedCostAndRejectMissingChoiceBeforeFee": "20260923_083953_d28c7909",
+    "MK.Tests.Battles.PveJourneyTravelTests.WindSongRequiresSeparateRealBlueForLakeAndClearsPermission": "20260923_083953_d28c7909"
+  },
+  "sceneSteps": 76,
+  "sceneAssertions": 123,
+  "sceneRuns": [
+    {
+      "run": "20260923_084336_7f974ed2",
+      "reportStatus": "failed",
+      "acceptedSteps": [
+        0,
+        73
+      ],
+      "assertions": 115,
+      "reportSha256": "7299cd8267512bccc6bde8436e6ac99f397a8bfc376db18cce94670e4a45bf0e"
+    },
+    {
+      "run": "20260923_084435_c0d1f844",
+      "reportStatus": "success",
+      "acceptedSteps": [
+        74,
+        75
+      ],
+      "assertions": 8,
+      "reportSha256": "f188c31c23fd6922668ea45cbf76ed900c7aaa9f3510e7b76eb99d3e94c28db8"
+    }
+  ],
+  "screenshotsReviewed": 8,
+  "screenshots": [
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_084336_7f974ed2\\captures\\030_原绿色耐力作为材料.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_084336_7f974ed2\\captures\\032_实际移动弃同一耐力得绿晶.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_084336_7f974ed2\\captures\\049_空间跨两格到真实湖泊，迷雾仍付2.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_084336_7f974ed2\\captures\\051_再次跨两格，真实森林也付2.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_084336_7f974ed2\\captures\\063_结束第一回合保留两伤，清移动许可.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_084336_7f974ed2\\captures\\068_实际出牌 base.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_084336_7f974ed2\\captures\\072_传送到已揭示安全村庄且不花移动.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_084435_c0d1f844\\captures\\075_正式结束传送回合，空库无虚构补牌.png"
+  ],
+  "failedScreenshotReviewed": "AutomationOutputs/PveBattle/20260923_084336_7f974ed2/captures/074_传送占本回合行动不能再战.png",
+  "console": "tmp/pve_20260923_travel_choices_final_console.json",
+  "sourceSha256": {
+    "Assets/Logic/Runtime/Battles/PveBattleSession.cs": "b34befae682ea865112859bcb6b5733b8fbcddf2fd05c7653f894c861f7acd8d",
+    "Assets/Logic/Runtime/Battles/PveJourneySession.cs": "744d21aae64db1506c6991f6cb72cf47f5f070a968d65a89232338b9b6b7dc95",
+    "Assets/Scripts/Battle/PveBattleController.Journey.cs": "14e09432629b66c59be9440248609ed48d7e74e14bfce01cad01679017099eb1",
+    "Assets/Scripts/Battle/PveBattleController.JourneyHand.cs": "67a54ae38ca5daaf60ff126fbbfc7bf37abc538fa5ce2b028f51f35356a46d09",
+    "Assets/Scripts/Battle/PveBattleController.JourneyMap.cs": "bc7bcf45bef5e96874b144cb05233e9333f8333425e1b902e8012be032f835a2",
+    "Assets/Scripts/Battle/PveBattleController.Harvest.cs": "41b1cadea33c44e72ba9dbc9b849d4e4e7c8a1e49ec73f381ae80e643919502e",
+    "Assets/Tests/RulesState/PveTravelChoiceEntryTests.cs": "d43945993a8128350199387e1a1fb005ccf8490daed2a45ef9f15e1623b70ba7",
+    "Assets/Tests/RulesState/PveMistTravelEntryTests.cs": "3232354fa8db36768a9861c1344da780004e72492cec673d35e01955487bee63",
+    "tools/build_pve_travel_choices_acceptance.py": "808ad817a21de77efd7c8b5e8e27e8af90b67ec88ff668f29986d262fc704fab"
+  },
+  "mappedDeedIds": 84,
+  "pending": [
+    "野蛮收获强化与神器选色新Demo场景",
+    "时光传送强化两分支、放弃落点与真实有库补牌+1/+2场景",
+    "迷雾帷幕强效真实承伤场景",
+    "时间扭曲强效同原牌额外回合场景",
+    "完整原板块探索及肆虐触发战斗衔接"
+  ],
+  "notes": [
+    "前74步骤有效证据保留，仅补误点禁用入口的末2步骤。",
+    "原basic001名称宁静，早期生成标签误耐力；实际卡面/ID/绿晶正确，生成器文字已修正，旧报告保留。",
+    "84映射包含历史非官方2，不能当完整全卡通过。目标active，未上传/推送。"
+  ]
+}

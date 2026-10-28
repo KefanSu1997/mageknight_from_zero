@@ -1,0 +1,490 @@
+{
+  "schemaVersion": 1,
+  "status": "visual_transcription_partial_catalog_not_runtime_integrated",
+  "coordinates": {
+    "type": "axial",
+    "rotationAllowed": false
+  },
+  "verification": "Visual cell transcription from archived scans; site symbols cross-checked against local original printed place cards.",
+  "reference_discrepancies": [
+    {
+      "tile": "7",
+      "position": "SE",
+      "reference": "Tomb",
+      "printed": "Dungeon"
+    },
+    {
+      "tile": "9",
+      "position": "NW",
+      "reference": "Tomb",
+      "printed": "Dungeon"
+    }
+  ],
+  "tiles": [
+    {
+      "id": "3",
+      "kind": "Countryside",
+      "orientation": "printed_upright",
+      "source_image": "H:\\MageKnight_RL_Runs\\20261021_solo_conquest_prepare\\tile_source_images\\MK_map_tiles_01-3.png",
+      "source_sha256": "6ecc70f9eafe4ea0e66de86396cc672435dcb31b392da4d948dcf7569d152690",
+      "cells": [
+        {
+          "q": 0,
+          "r": 0,
+          "terrain": "Forest"
+        },
+        {
+          "q": 1,
+          "r": -1,
+          "terrain": "Hills",
+          "site": "Keep",
+          "ruleId": "place_011"
+        },
+        {
+          "q": 1,
+          "r": 0,
+          "terrain": "Hills"
+        },
+        {
+          "q": 0,
+          "r": 1,
+          "terrain": "Hills",
+          "site": "CrystalMine",
+          "ruleId": "place_006",
+          "manaColor": "White"
+        },
+        {
+          "q": -1,
+          "r": 1,
+          "terrain": "Plains",
+          "site": "Village",
+          "ruleId": "place_003"
+        },
+        {
+          "q": -1,
+          "r": 0,
+          "terrain": "Plains"
+        },
+        {
+          "q": 0,
+          "r": -1,
+          "terrain": "Plains"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "kind": "Countryside",
+      "orientation": "printed_upright",
+      "source_image": "H:\\MageKnight_RL_Runs\\20261021_solo_conquest_prepare\\tile_source_images\\MK_map_tiles_01-4.png",
+      "source_sha256": "0d2657e05ae4b0411e9aa70ca59a089bc593d8fb383b3936332a9fd593e8ad7d",
+      "cells": [
+        {
+          "q": 0,
+          "r": 0,
+          "terrain": "Desert",
+          "site": "MageTower",
+          "ruleId": "place_010"
+        },
+        {
+          "q": 1,
+          "r": -1,
+          "terrain": "Desert"
+        },
+        {
+          "q": 1,
+          "r": 0,
+          "terrain": "Mountain"
+        },
+        {
+          "q": 0,
+          "r": 1,
+          "terrain": "Plains",
+          "site": "Village",
+          "ruleId": "place_003"
+        },
+        {
+          "q": -1,
+          "r": 1,
+          "terrain": "Plains"
+        },
+        {
+          "q": -1,
+          "r": 0,
+          "terrain": "Hills",
+          "site": "RampagingOrcs",
+          "ruleId": "place_000",
+          "enemyTokenColor": "Green"
+        },
+        {
+          "q": 0,
+          "r": -1,
+          "terrain": "Desert"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "kind": "Countryside",
+      "orientation": "printed_upright",
+      "source_image": "H:\\MageKnight_RL_Runs\\20261021_solo_conquest_prepare\\tile_source_images\\MK_map_tiles_01-5.png",
+      "source_sha256": "ddcae93af7e611d5b6f8c514e05bab929dc9b7d9993c61149d3a5dacbaa032f4",
+      "cells": [
+        {
+          "q": 0,
+          "r": 0,
+          "terrain": "Lake"
+        },
+        {
+          "q": 1,
+          "r": -1,
+          "terrain": "Plains",
+          "site": "Monastery",
+          "ruleId": "place_002"
+        },
+        {
+          "q": 1,
+          "r": 0,
+          "terrain": "Plains",
+          "site": "RampagingOrcs",
+          "ruleId": "place_000",
+          "enemyTokenColor": "Green"
+        },
+        {
+          "q": 0,
+          "r": 1,
+          "terrain": "Hills",
+          "site": "CrystalMine",
+          "ruleId": "place_006",
+          "manaColor": "Blue"
+        },
+        {
+          "q": -1,
+          "r": 1,
+          "terrain": "Forest"
+        },
+        {
+          "q": -1,
+          "r": 0,
+          "terrain": "Forest",
+          "site": "MagicalGlade",
+          "ruleId": "place_006"
+        },
+        {
+          "q": 0,
+          "r": -1,
+          "terrain": "Forest"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "kind": "Countryside",
+      "orientation": "printed_upright",
+      "source_image": "H:\\MageKnight_RL_Runs\\20261021_solo_conquest_prepare\\tile_source_images\\MK_map_tiles_01-6.png",
+      "source_sha256": "aeb6eaddf94837d00d4e4ca7aff072e624c8b405c888d14c7d2194662058439a",
+      "cells": [
+        {
+          "q": 0,
+          "r": 0,
+          "terrain": "Hills",
+          "site": "CrystalMine",
+          "ruleId": "place_006",
+          "manaColor": "Red"
+        },
+        {
+          "q": 1,
+          "r": -1,
+          "terrain": "Forest"
+        },
+        {
+          "q": 1,
+          "r": 0,
+          "terrain": "Plains"
+        },
+        {
+          "q": 0,
+          "r": 1,
+          "terrain": "Forest",
+          "site": "RampagingOrcs",
+          "ruleId": "place_000",
+          "enemyTokenColor": "Green"
+        },
+        {
+          "q": -1,
+          "r": 1,
+          "terrain": "Hills"
+        },
+        {
+          "q": -1,
+          "r": 0,
+          "terrain": "Hills",
+          "site": "MonsterDen",
+          "ruleId": "place_014"
+        },
+        {
+          "q": 0,
+          "r": -1,
+          "terrain": "Mountain"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "kind": "Countryside",
+      "orientation": "printed_upright",
+      "source_image": "H:\\MageKnight_RL_Runs\\20261021_solo_conquest_prepare\\tile_source_images\\MK_map_tiles_01-7.png",
+      "source_sha256": "89d3dcd3a2eeed49ad41958549d73b8f4d68f7d63ef0f0e86993ccc61714f534",
+      "cells": [
+        {
+          "q": 0,
+          "r": 0,
+          "terrain": "Swamp"
+        },
+        {
+          "q": 1,
+          "r": -1,
+          "terrain": "Forest",
+          "site": "RampagingOrcs",
+          "ruleId": "place_000",
+          "enemyTokenColor": "Green"
+        },
+        {
+          "q": 1,
+          "r": 0,
+          "terrain": "Forest",
+          "site": "MagicalGlade",
+          "ruleId": "place_006"
+        },
+        {
+          "q": 0,
+          "r": 1,
+          "terrain": "Plains",
+          "site": "Dungeon",
+          "ruleId": "place_008"
+        },
+        {
+          "q": -1,
+          "r": 1,
+          "terrain": "Plains"
+        },
+        {
+          "q": -1,
+          "r": 0,
+          "terrain": "Plains",
+          "site": "Monastery",
+          "ruleId": "place_002"
+        },
+        {
+          "q": 0,
+          "r": -1,
+          "terrain": "Lake"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "kind": "Countryside",
+      "orientation": "printed_upright",
+      "source_image": "H:\\MageKnight_RL_Runs\\20261021_solo_conquest_prepare\\tile_source_images\\MK_map_tiles_01-8.png",
+      "source_sha256": "f5826a6ae04cb45f73026c5fb8e6e83a28add1c81f27ba9b3b1595a23fcbf2e6",
+      "cells": [
+        {
+          "q": 0,
+          "r": 0,
+          "terrain": "Swamp",
+          "site": "RampagingOrcs",
+          "ruleId": "place_000",
+          "enemyTokenColor": "Green"
+        },
+        {
+          "q": 1,
+          "r": -1,
+          "terrain": "Forest",
+          "site": "AncientRuin",
+          "ruleId": "place_005"
+        },
+        {
+          "q": 1,
+          "r": 0,
+          "terrain": "Plains"
+        },
+        {
+          "q": 0,
+          "r": 1,
+          "terrain": "Swamp",
+          "site": "Village",
+          "ruleId": "place_003"
+        },
+        {
+          "q": -1,
+          "r": 1,
+          "terrain": "Swamp"
+        },
+        {
+          "q": -1,
+          "r": 0,
+          "terrain": "Forest"
+        },
+        {
+          "q": 0,
+          "r": -1,
+          "terrain": "Forest",
+          "site": "MagicalGlade",
+          "ruleId": "place_006"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "kind": "Countryside",
+      "orientation": "printed_upright",
+      "source_image": "H:\\MageKnight_RL_Runs\\20261021_solo_conquest_prepare\\tile_source_images\\MK_map_tiles_01-9.png",
+      "source_sha256": "98c6d08f16a38e72601fb49d028f5a5fada925666734220e33d15f1cb2e96c55",
+      "cells": [
+        {
+          "q": 0,
+          "r": 0,
+          "terrain": "Mountain"
+        },
+        {
+          "q": 1,
+          "r": -1,
+          "terrain": "Mountain"
+        },
+        {
+          "q": 1,
+          "r": 0,
+          "terrain": "Wasteland",
+          "site": "Keep",
+          "ruleId": "place_011"
+        },
+        {
+          "q": 0,
+          "r": 1,
+          "terrain": "Plains"
+        },
+        {
+          "q": -1,
+          "r": 1,
+          "terrain": "Wasteland",
+          "site": "MageTower",
+          "ruleId": "place_010"
+        },
+        {
+          "q": -1,
+          "r": 0,
+          "terrain": "Plains"
+        },
+        {
+          "q": 0,
+          "r": -1,
+          "terrain": "Wasteland",
+          "site": "Dungeon",
+          "ruleId": "place_008"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "kind": "Countryside",
+      "orientation": "printed_upright",
+      "source_image": "H:\\MageKnight_RL_Runs\\20261021_solo_conquest_prepare\\tile_source_images\\MK_map_tiles_01-10.png",
+      "source_sha256": "fd2d9e00da530c2bcc69a7b4f12f1984615c7196dca8aa103db46ee23aa5dd60",
+      "cells": [
+        {
+          "q": 0,
+          "r": 0,
+          "terrain": "Mountain"
+        },
+        {
+          "q": 1,
+          "r": -1,
+          "terrain": "Forest"
+        },
+        {
+          "q": 1,
+          "r": 0,
+          "terrain": "Plains"
+        },
+        {
+          "q": 0,
+          "r": 1,
+          "terrain": "Hills",
+          "site": "AncientRuin",
+          "ruleId": "place_005"
+        },
+        {
+          "q": -1,
+          "r": 1,
+          "terrain": "Hills",
+          "site": "Keep",
+          "ruleId": "place_011"
+        },
+        {
+          "q": -1,
+          "r": 0,
+          "terrain": "Hills"
+        },
+        {
+          "q": 0,
+          "r": -1,
+          "terrain": "Hills",
+          "site": "MonsterDen",
+          "ruleId": "place_014"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "kind": "Countryside",
+      "orientation": "printed_upright",
+      "source_image": "H:\\MageKnight_RL_Runs\\20261021_solo_conquest_prepare\\tile_source_images\\MK_map_tiles_01-11.png",
+      "source_sha256": "24c43748e39b2e691442789594e8ddb748419945529e3950b939e82509dabd3a",
+      "cells": [
+        {
+          "q": 0,
+          "r": 0,
+          "terrain": "Plains",
+          "site": "MageTower",
+          "ruleId": "place_010"
+        },
+        {
+          "q": 1,
+          "r": -1,
+          "terrain": "Lake"
+        },
+        {
+          "q": 1,
+          "r": 0,
+          "terrain": "Lake"
+        },
+        {
+          "q": 0,
+          "r": 1,
+          "terrain": "Hills",
+          "site": "RampagingOrcs",
+          "ruleId": "place_000",
+          "enemyTokenColor": "Green"
+        },
+        {
+          "q": -1,
+          "r": 1,
+          "terrain": "Lake"
+        },
+        {
+          "q": -1,
+          "r": 0,
+          "terrain": "Plains",
+          "site": "AncientRuin",
+          "ruleId": "place_005"
+        },
+        {
+          "q": 0,
+          "r": -1,
+          "terrain": "Hills"
+        }
+      ]
+    }
+  ]
+}

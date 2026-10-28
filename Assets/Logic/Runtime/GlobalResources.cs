@@ -14,6 +14,10 @@ namespace MK.Logic.Runtime
         public AdvActionSupply AdvActions { get; } = new();
         public SpellSupply Spells { get; } = new();
         public ArtifactSupply Artifacts { get; } = new();
+        public SkillSupply Skills { get; } = new();
+        public UnitSupply Units { get; } = new();
+        public EnemyTokenSupply Enemies { get; set; } = new();
+        public RuinTokenSupply Ruins { get; set; }
         /// <summary>修道院提供的額外高級行動牌。</summary>
         public List<AdvActionCard> MonasteryOffer { get; } = new();
 
@@ -21,15 +25,23 @@ namespace MK.Logic.Runtime
         {
             Mana = new ManaSource(playerCount, timeProvider, rnd);
         }
+        public void RefreshMonasteryOffer(int activeMonasteries)
+        {
+            if(activeMonasteries<0)throw new ArgumentOutOfRangeException(nameof(activeMonasteries));
+            foreach(var card in MonasteryOffer)AdvActions.PutUnder(card);
+            MonasteryOffer.Clear();
+            for(int i=0;i<activeMonasteries&&AdvActions.TryDraw(out var card);i++)MonasteryOffer.Add(card);
+        }
 
         /// <summary>
-        /// 結束回合時刷新所有公共資源。
+        /// 轮次结束时轮换公共供给；每种供给仅最底一张回到对应牌库底。
         /// </summary>
-        public void EndRound(bool coreRevealed)
+        public void EndRound(bool coreRevealed, bool advancedBottomTransferredToDummy = false)
         {
+            Mana.ReturnRoundClaims();
             Mana.ResetSource();
-            AdvActions.Refill(coreRevealed);
-            Spells.DiscardUnchosen();
+            if (advancedBottomTransferredToDummy) AdvActions.FillVacancies();
+            else AdvActions.Refill(coreRevealed);
             Spells.Refill();
         }
     }

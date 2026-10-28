@@ -1,0 +1,9 @@
+# 保留组成完整见证与独立评估失败
+
+冻结数据绑定152局九任务保存策略，在四个既定validation组成上实际13局687步：Goldyx005→006 ranged_siege构筑43步完整成功，当前规则/JSON证书通过，其余三项unknown。构筑与train组合隔离；test未触碰，验证轨迹不入train。
+
+该策略本身筛选了可解子集，存在选择偏差，不能当整个validation分布表现。另seed8601独立冻结评估4局254步、0完整/1首战、5921有限检查零异常，参数/源checkpoint不变。见证证明可解，重复失败说明策略不稳定，不判初始无解或把首战算完整。
+
+evaluate_recurrent_ppo.py未来manifest/summary记录feasibility_selection与unresolved_pool_entries；旧报告保持原字段，20261007_withheld_evaluation_selection_scope.json独立记范围。四项受影响检查通过，Console两读0错误tmp/rl_first_withheld_eval_console_20261007.json。
+
+证据20261007_current_data_validation_policy_discovery、20261007_first_data_bound_withheld_eval。会话7421/79479正常结束。原费用消费者/69敌/更大独立验证、未调参测试和Unity仍缺。

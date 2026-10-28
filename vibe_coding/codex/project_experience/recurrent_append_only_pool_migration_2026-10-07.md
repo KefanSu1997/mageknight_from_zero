@@ -1,0 +1,15 @@
+# 可解训练池扩展必须保留真实优化器与采样历史
+
+新增expand_recurrent_task_pool.py，显式校验旧池/新池的完整任务当前证书、原Task绑定、既定train组成、规则/catalog/schema/架构/源码签名；只允许追加，不允许删除旧任务、重复、未知或偷渡验证测试。只能从实际episode边界迁移，源检查点保持原样。
+
+迁移仅改变pool哈希、采样器任务词表和可追溯扩池来源，72模型/Adam数组、optimizer step26、RNG、累计36局1492步、旧attempts/events/首次实际证据逐项完全不变。新任务零访问，不借可解见证充训练覆盖。重新加载新checkpoint核对全部数组/历史；train_recurrent_ppo.py manifest补源checkpoint路径SHA与扩池记录，无训练数学变更。
+
+实际从2任务扩到5任务，完整续训10新episode485步，三新英雄Goldyx4/Krang3/Norowas3次；新增完整任务1（Norowas单组），另Krang只完成第一组，后续失败不能计整任务胜利。11787有限审计无异常；累计46局1977步/Adam32。原两英雄旧尝试18次各保留，均衡优先补新英雄，是实际历史均衡而非每个批次五英雄各一次。
+
+冻结新五任务保存策略：采样2/5（Braevalar、Norowas），267步6304有限检查；joint MAP0/5，149步3383检查。多组任务均未完成，成功见证与策略能力分开。结果不能外推held-out或全原覆盖。
+
+另两英雄既定候选保留：Tovak/021→022在40秒457调用unknown，Wolfhawk/061→062在40秒416调用unknown。Tovak曾较小预算未知，本次新绑定/更大预算重探仍无证；未删除、放宽或判无解。测试组成仍未运行。
+
+证据：20261007_recurrent_five_task_migration/migration.json、20261007_recurrent_five_task_training、20261007_recurrent_five_task_sampled_calibration、20261007_recurrent_five_task_map_calibration、20261007_discovery_remaining_heroes。2项扩池负例/当前证书测试及3项受影响采样检查通过，Console两读零错误tmp/rl_pool_expansion_console_20261007.json。所有本轮进程正常完成。
+
+剩余：七英雄完整训练、更多原要素模式费用材料消费者、首个保留验证可解池、真正未调参测试、多组稳定成功、真实Unity操作；不因迁移闭环通过缩小最终目标。

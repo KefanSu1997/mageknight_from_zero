@@ -1,0 +1,265 @@
+{
+  "scope": "四地图技能合法主要输入与连续消费者；抽象地图探索不算原七格板块通过",
+  "backendEffectivePasses": 31,
+  "backendRuns": [
+    "20260929_044431_0eb5e1e0",
+    "20260929_044731_09fafe24",
+    "20260929_045054_33c5c00e"
+  ],
+  "sceneRuns": [
+    {
+      "report": "AutomationOutputs\\PveBattle\\20260929_045233_86884621\\report.json",
+      "sha256": "17e4d2376cfef7c39d07eff0af1142289caab1b3ff2515dc79385c14447e70f9",
+      "originalStatus": "failed",
+      "acceptedZeroBasedSteps": [
+        0,
+        32
+      ],
+      "checks": 38,
+      "screenshots": [
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_045233_86884621\\captures\\026_自有原技能.png",
+          "sha256": "9068b4124ae80fc1e6d58e46d8720fb40fb50afe3a5f5c33a0df7638d5d01870",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_045233_86884621\\captures\\028_正式技能入口.png",
+          "sha256": "4379abff588c1a4837d4679437651ce2801835d4829c2ef5b8bb040ff11d999d",
+          "visuallyInspected": true
+        }
+      ]
+    },
+    {
+      "report": "AutomationOutputs\\PveBattle\\20260929_045342_65b12ec2\\report.json",
+      "sha256": "ee0421a755bfde2f329e1beb6c795ae546143609d0c4728061eb9eb3be08ddbb",
+      "originalStatus": "failed",
+      "acceptedZeroBasedSteps": [
+        33,
+        48
+      ],
+      "checks": 19,
+      "screenshots": [
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_045342_65b12ec2\\captures\\037_实际目的地.png",
+          "sha256": "ac6d87b528d646ac4af9a0c5eee02f186e3caaf8b09f66e565205002816c0ba9",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_045342_65b12ec2\\captures\\038_实际移动与费用消费.png",
+          "sha256": "141e196d4339f184f25bf03d9d509fe80267939aa6522aaa304316ce361c2520",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_045342_65b12ec2\\captures\\045_正式原技能消费.png",
+          "sha256": "a5cbdbdd16dc4cf155d8c61627096ca97cf2a0a54e7a956c7ffaffc84bfded28",
+          "visuallyInspected": true
+        }
+      ]
+    },
+    {
+      "report": "AutomationOutputs\\PveBattle\\20260929_045505_44e53719\\report.json",
+      "sha256": "ef6179e45013b9a9141d5d41a6abd003ec3ed95b50463777ac739753def001e4",
+      "originalStatus": "success",
+      "acceptedZeroBasedSteps": [
+        49,
+        96
+      ],
+      "checks": 61,
+      "screenshots": [
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_045505_44e53719\\captures\\054_红费强化实际击杀.png",
+          "sha256": "1ae061efb7f0d907ed606d0c2419305c0809222298d59dd3bc7eb5d0383bb5c2",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_045505_44e53719\\captures\\056_正式回合结束.png",
+          "sha256": "bc3efe6ae622a13de7887664edaf977b88151116abea875c2cdb56cba5b8d5e4",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_045505_44e53719\\captures\\060_自有原技能.png",
+          "sha256": "3fae1ea727448174f28e9aa0281a2de555058bee0dae8c34849249eb443b98e3",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_045505_44e53719\\captures\\062_正式技能入口.png",
+          "sha256": "e94029808fd800c1e3029d4a0449bd89a4660a51d175e53950ad708168fc62b1",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_045505_44e53719\\captures\\076_实际目的地.png",
+          "sha256": "914a5432a0d5533df58c92326323630b5ca2020843dce168a28be2eac04b2c0e",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_045505_44e53719\\captures\\077_实际移动与费用消费.png",
+          "sha256": "58a8b521d15a34da4caa631010fbff9afeab92c224b761867ad2e6cfa8a0ac4f",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_045505_44e53719\\captures\\086_正式原技能消费.png",
+          "sha256": "6361d3ebc95d1b957237fa4a2c58130bc62f2d41e49b45d7b828fabcaa2156ad",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_045505_44e53719\\captures\\094_技能与原牌实际击杀.png",
+          "sha256": "544d655d0aa8b48e074095cc3ef574043ab8779ee6357769c8c71005f05ef376",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_045505_44e53719\\captures\\096_同玩家两回合.png",
+          "sha256": "4ca8967dff3998b5270d71b0d262fcf6f4a0b54c2269031d58af7d855603b999",
+          "visuallyInspected": true
+        }
+      ]
+    },
+    {
+      "report": "AutomationOutputs\\PveBattle\\20260929_045628_eda7e4e2\\report.json",
+      "sha256": "ef9f554638c27eddf9406f31fab66ed3db85576d08e8e33c0bfcd09aa9db0fc0",
+      "originalStatus": "success",
+      "acceptedZeroBasedSteps": [
+        0,
+        62
+      ],
+      "checks": 76,
+      "screenshots": [
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_045628_eda7e4e2\\captures\\024_两格实际法师塔.png",
+          "sha256": "c26557fbd8532fc76a3ba7a51cd25fb7456f58b5598ddbc704023f0c59564747",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_045628_eda7e4e2\\captures\\025_查看同一实际公开守军.png",
+          "sha256": "a3c2118338d55a587318a9add90a2ee592dde8503987639683014724f3af2815",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_045628_eda7e4e2\\captures\\030_自有原技能.png",
+          "sha256": "a2bd3474b26c7d2f9c29c24b90deee98dd3ff59243e271af64e1ef79607172cd",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_045628_eda7e4e2\\captures\\032_正式技能入口.png",
+          "sha256": "66c877e89eff3168564851218b12b9ceaa19a68d4d452eff501d22fd0182c24a",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_045628_eda7e4e2\\captures\\041_实际目的地.png",
+          "sha256": "b189e14944feebb6c8ae2ad65dfb4924915bac431d89c021f88e02ff5c02cadd",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_045628_eda7e4e2\\captures\\042_实际移动与费用消费.png",
+          "sha256": "5ac59b13f20b0caf68dac2b6847e3bdc23d6e3e1f691f2f2ed076bbda08774db",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_045628_eda7e4e2\\captures\\044_正式下一回合.png",
+          "sha256": "3485647ca8a6478d7dd9f8f2c939446de064fdd67eede5c61ac2178dd143e8c9",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_045628_eda7e4e2\\captures\\048_自有原技能.png",
+          "sha256": "fa87abbcb18aa94b48c0f4e7e47100638b63f0bc58160ee49633261241974909",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_045628_eda7e4e2\\captures\\050_正式技能入口.png",
+          "sha256": "db64579c253ecf2dd85f6dce16944534ed7ea3cc77b46303278394ba8475538f",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_045628_eda7e4e2\\captures\\059_实际目的地.png",
+          "sha256": "6584a65e885dfa7f9457cb1ad139758bf9bb1c418ff207d9415eff1ccddbc6df",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_045628_eda7e4e2\\captures\\060_实际移动与费用消费.png",
+          "sha256": "b9f8bd1faa5f74fd9dee29f22efd23fe55161bf5c6a07b276d8fbb839a5ef97d",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_045628_eda7e4e2\\captures\\062_持续真实位置与牌区.png",
+          "sha256": "88e81e99db1c3c3fb2c746578a63d89acb85da3a8336b336df0a7ae88dcf233a",
+          "visuallyInspected": true
+        }
+      ]
+    },
+    {
+      "report": "AutomationOutputs\\PveBattle\\20260929_045727_d90db61e\\report.json",
+      "sha256": "b8ea9ca8afd75e1ae80c505bd772ef143f663047ac7b418ea8a3257f0efda7ad",
+      "originalStatus": "success",
+      "acceptedZeroBasedSteps": [
+        0,
+        60
+      ],
+      "checks": 73,
+      "screenshots": [
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_045727_d90db61e\\captures\\029_实际目的地.png",
+          "sha256": "a7ad895dc135f0db764a72e6d7dbc6378f23eb5cb7dedbf38e8741b3bed6ef31",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_045727_d90db61e\\captures\\030_实际移动与费用消费.png",
+          "sha256": "a09e4239d2f3bb775ddc99d8192a3f95b1d2d31e74526e2b9ab7c2b558369af0",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_045727_d90db61e\\captures\\039_自有原技能.png",
+          "sha256": "b2ff0f5937a3401065aea80b82dfd224c0ea6e6c892fb023fa0d44cd3229f048",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_045727_d90db61e\\captures\\040_正式技能入口.png",
+          "sha256": "dbe6718f3aa25660a18d3d54e0a191708d38c00cb9e1a637d7013e45cd50c7f9",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_045727_d90db61e\\captures\\041_两格安全落点.png",
+          "sha256": "9b7c1031e3c70caf19965828d3fdeace95fb848930e9b3f1449eecdc5521c381",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_045727_d90db61e\\captures\\042_实际飞行消费2移动.png",
+          "sha256": "2d118941600e4270ef9e9e3c27d5448d9e38d69761bc346d3a081355e8920b3a",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_045727_d90db61e\\captures\\044_保留本轮次数.png",
+          "sha256": "35c2a6b1e32d8a6f751231cab63d0885becfe30d3a241a6fb3b1966b4bc6397f",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_045727_d90db61e\\captures\\048_本轮已使用.png",
+          "sha256": "b5c45453e2f4c7397e113a83c1507a4174b2119f8088c4d6de420721cc592354",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_045727_d90db61e\\captures\\057_实际目的地.png",
+          "sha256": "3c4a50b48ea42bcd5871337dfffedf593d7f164a43caa6a23145db1d6322d4b6",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_045727_d90db61e\\captures\\058_实际移动与费用消费.png",
+          "sha256": "94e72f64e703fa03ced1eb19ada3aa58c90af4ff8055ae0732cd28fd81319402",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_045727_d90db61e\\captures\\060_实际普通移动后结束.png",
+          "sha256": "f0ff4d7385455ffe697eb0762d1be5bd4e2851c4bc44f309bf516621b16bb193",
+          "visuallyInspected": true
+        }
+      ]
+    }
+  ],
+  "remaining": [
+    "原七格板块定义和正式探索未接入",
+    "夜探索减费与一格免费飞行本批仅后台",
+    "其余16英雄技能入口及既有各项分支缺口仍未完成"
+  ],
+  "acceptedSteps": 221,
+  "acceptedChecks": 267,
+  "acceptedImages": 37,
+  "console": "tmp/pve_20260929_map_skills_final_console.json"
+}

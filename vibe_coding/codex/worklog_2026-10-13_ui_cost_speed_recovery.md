@@ -1,0 +1,17 @@
+# UI cost replay speed and transport recovery
+
+The active fixed plan retains all 1,009 Kind pairs with at most five samples per group: 4,083 samples versus the preserved original 12,350. Parameter/phase strata, sample IDs and estimator weights remain frozen. Reducing the cap reduces precision and does not guarantee every parameter or phase within each group.
+
+The earlier exact-case speed comparison (`AutomationOutputs/UiFluency/20261012_speed_comparison.json`) checked ten samples and fifty actual clicks: 34.953 s control versus 11.875 s fast, 2.943x. Click paths, geometry and native effects agreed. One ordered trial, excluding launch/shutdown; not a stable full-workload throughput estimate.
+
+Added a current-pilot attachment option to the sampled worker. It requires the authoritative active directory and an existing launch record, then a fresh successful observe. It does not replay the launch menu or trust an old observation. The pending boxReveal→rest case was recovered using this option, completed with eleven clicks, and passed two independently checked native snapshots. Evidence: `20261013_speed_attach_box/results.json`, SHA `0b1a0498bdf557962a3eb1c0c8e4bea3288293eef237962593636ee18281be07`; exact-result gate passed before ingestion. Progress became 1,206 measured, 212 fully measured groups, 58 verified incompatible; full baseline remains incomplete.
+
+That case's measured worker times: archive decode 0.359 s, native reset/prefix setup 12.672 s, pointer operations plus checks 6.515 s, total 19.672 s. These are orchestration times, separate from first-rendered-frame UI response metrics. They identify fixture setup as the largest component in this single case, without generalizing to all groups.
+
+Added a bounded eight-document cache keyed by archive volume, member path and expected SHA. Each first read is SHA checked; cached decoded source documents are reused read-only. Added per-case archive/setup/pointer/total timing and cache-hit counts; no runtime speed factor is claimed for this cache yet. Box reveal now participates in all-mapped-group selection.
+
+Added a transport timeout circuit break: save the failed fixed case and aggregate results immediately, stop attempting subsequent cases against an unresponsive transport, and leave the current pilot/request intact for explicit fresh-observe recovery. Unattempted samples remain pending; no costs or failures are fabricated for them. This avoids a separate timeout for every remaining sample and another stop request with an unknown outcome. The branch has syntax validation but awaits an actual timeout-path runtime exercise. The successful fresh-observe attachment path was exercised as above.
+
+No BattleRL training core, weights, RNG, native game rules or unrelated processes were changed. Existing failed launches and timeout evidence are retained.
+
+Follow-up bounded artifact batch (`20261013_speed_tome_pilot`) attempted all four pending selected cases in the requested five Kind groups, 13.750 s excluding pilot launch/close. All four failed with retained pointer evidence (missing original mode, unimplemented material panel, or missing selected die control); no measured cost was added. They were ingested as failed attempts only. The zero-snapshot verifier result certifies no successful effect snapshots and must not be described as artifact acceptance. Native setup ranged 1.093–4.390 s here, demonstrating that the earlier 12.672 s is not representative. Pilot closed normally. Cache hits remained zero; cache speedup remains unmeasured.

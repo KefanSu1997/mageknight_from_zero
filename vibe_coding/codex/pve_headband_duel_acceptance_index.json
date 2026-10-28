@@ -1,0 +1,26 @@
+{
+  "scope": "Original public Duel from real level reward; physical Headband compound same-target block/attack/fame and formal turns",
+  "steps": 59,
+  "assertions": 108,
+  "run": "20260929_145739_e062eacb",
+  "sha256": "b601a309fe3d4114c3e3f9117784e7b503889231a55fbaa7182d6b0a90bc34b9",
+  "backendEffective": 20,
+  "backendReports": [
+    "20260929_144936_8967a9d0",
+    "20260929_145031_e0c66234",
+    "20260929_145119_ce22d8e0",
+    "20260929_145629_8bc24d48"
+  ],
+  "backendNote": "10 new +10 owned regression; final test-public-API repair rechecked only10, not additional cases",
+  "reviewedScreenshots": [
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_145739_e062eacb\\captures\\029_实际红费攻击4击杀与真实两张创伤.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_145739_e062eacb\\captures\\034_目标原技能进入公共供应，奖励留在实际牌库.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_145739_e062eacb\\captures\\044_一次完成同敌双用，公共技能未转为自有.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_145739_e062eacb\\captures\\049_头环格挡2加原决心基础格挡2合4，完整格挡原攻击4.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_145739_e062eacb\\captures\\051_完整格挡无新伤，同敌获得原决斗双用攻击2.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_145739_e062eacb\\captures\\055_限定同敌攻击2加横置1击杀甲3；原名望2加双用奖励2.png"
+  ],
+  "console": "tmp/pve_headband_duel_final_console.json",
+  "abortedRun": "20260929_145303_2eaf173e",
+  "fixture": "HornGold restored exact original bytes seed0"
+}

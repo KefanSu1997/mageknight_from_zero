@@ -12,17 +12,9 @@ namespace MK.Logic.Runtime.CardEffects
 
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            if (!_once)
-            {
-                ctx.UnitArmorBonus += 1;
-                ctx.UnitsResistAll = true;
-            }
-            else
-            {
-                player.Wounds = 0;
-                foreach (var u in player.Units)
-                    u.Heal(int.MaxValue);
-            }
+            if (!_once) throw new System.InvalidOperationException("防护旌旗必须通过真实手牌入口附着");
+            ctx.ProtectionBannerBurned = true;
+            ctx.RemoveNewWoundsAtTurnEnd = true;
         }
     }
 }

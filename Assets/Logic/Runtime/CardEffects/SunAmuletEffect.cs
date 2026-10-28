@@ -1,4 +1,5 @@
 using MK.Logic.Core;
+using System.Collections.Generic;
 
 namespace MK.Logic.Runtime.CardEffects
 {
@@ -16,8 +17,10 @@ namespace MK.Logic.Runtime.CardEffects
             player.Mana.AddToken(ManaColor.Gold, count);
             if (ctx.DayPart == DayPart.Night)
             {
-                ctx.TerrainCostOverride[TerrainType.Forest] = 3;
+                ctx.TerrainCostOverride[TerrainType.Forest] = System.Math.Min(3, ctx.TerrainCostOverride.GetValueOrDefault(TerrainType.Forest, 3));
                 ctx.AllowGoldAtNight = true;
+                ctx.RevealSitesAsDay = true;
+                Map.SiteVisibility.RevealVisible(player, ctx.MovementMap, ctx.DayPart, ctx);
             }
         }
     }

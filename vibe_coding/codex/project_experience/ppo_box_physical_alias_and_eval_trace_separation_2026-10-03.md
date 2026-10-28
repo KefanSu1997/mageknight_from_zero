@@ -1,0 +1,9 @@
+# 宝盒物理来源及评估/训练轨迹口径
+
+神秘宝盒不能按普通手牌神器调用。先用正式RevealBox将本体放入已打出区并保留实际供应顶牌，再用pending的原效果ID选择输入；付款、贡献、焚毁和附旗仍属于本体items_024，原神器只暂时借用并在回合末回供应。材料选择排除物理本体，已用禁止重复；借原戒指要分别核算戒指名望与宝盒额外名望。
+
+实际旗帜实体可能是items_024，而BannerEffectId是被借原旗，UI/策略与审计不能只用实体ID判断规则。审计字段与策略观察分开，隐藏供应顺序不可进入actor。没有验证供应底部顺序时，只能报告数量归还通过。
+
+固定7局贪心评估5/7与同检查点保留随机训练轨迹0整组胜利可以同时成立。前者也不能证明反复悔棋已解决；保留轨迹实测最长计划236及3次超时须明确报告。训练中环境和审计已加载冻结版本，随后源码修改不改变其实际scope或历史结论。
+
+证据：`AutomationOutputs/BattleRl/20261003_mystic_box.json`、`20261003_box_nonbox_exact_replay.json`、`20261003_coverage_offered_units_ppo/behavior_review_4096.json`；工作记录：`vibe_coding/codex/worklog_2026-10-03_ppo_mystic_box_and_long_run.md`。

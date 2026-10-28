@@ -1,0 +1,448 @@
+{
+  "schemaVersion": 1,
+  "status": "visual_transcription_not_runtime_integrated",
+  "coordinates": {
+    "type": "axial",
+    "rotationAllowed": false
+  },
+  "verification": "Independent visual transcription of archived original printed scans, core 1-8.",
+  "scope": "Base-game core tiles only; expansion core tiles and walls remain separate pending transcription.",
+  "tiles": [
+    {
+      "id": "core_1",
+      "printedNumber": 1,
+      "kind": "Core",
+      "orientation": "printed_upright",
+      "source_image": "H:\\MageKnight_RL_Runs\\20261021_solo_conquest_prepare\\tile_source_images\\MK_map_tiles_02-1.png",
+      "source_sha256": "ceaf682ad70bfce0ffa3e5301f95c920aa98ebad8dbec297fb37a413f8c2ae6d",
+      "cells": [
+        {
+          "q": 0,
+          "r": 0,
+          "terrain": "Desert",
+          "site": "Monastery",
+          "ruleId": "place_002"
+        },
+        {
+          "q": 1,
+          "r": -1,
+          "terrain": "Desert",
+          "site": "Tomb",
+          "ruleId": "place_009"
+        },
+        {
+          "q": 1,
+          "r": 0,
+          "terrain": "Desert"
+        },
+        {
+          "q": 0,
+          "r": 1,
+          "terrain": "Desert"
+        },
+        {
+          "q": -1,
+          "r": 1,
+          "terrain": "Hills"
+        },
+        {
+          "q": -1,
+          "r": 0,
+          "terrain": "Hills",
+          "site": "SpawningGround",
+          "ruleId": "place_015"
+        },
+        {
+          "q": 0,
+          "r": -1,
+          "terrain": "Mountain"
+        }
+      ]
+    },
+    {
+      "id": "core_2",
+      "printedNumber": 2,
+      "kind": "Core",
+      "orientation": "printed_upright",
+      "source_image": "H:\\MageKnight_RL_Runs\\20261021_solo_conquest_prepare\\tile_source_images\\MK_map_tiles_02-2.png",
+      "source_sha256": "388274f2e112a32038ada285926a75dc9c19e4182b3f6c1218380e4cef59d27c",
+      "cells": [
+        {
+          "q": 0,
+          "r": 0,
+          "terrain": "Lake"
+        },
+        {
+          "q": 1,
+          "r": -1,
+          "terrain": "Swamp",
+          "site": "AncientRuin",
+          "ruleId": "place_005"
+        },
+        {
+          "q": 1,
+          "r": 0,
+          "terrain": "Hills",
+          "site": "CrystalMine",
+          "ruleId": "place_006",
+          "manaColor": "Green"
+        },
+        {
+          "q": 0,
+          "r": 1,
+          "terrain": "Swamp",
+          "site": "RampagingDragon",
+          "ruleId": "place_001",
+          "enemyTokenColor": "Red"
+        },
+        {
+          "q": -1,
+          "r": 1,
+          "terrain": "Swamp",
+          "site": "MageTower",
+          "ruleId": "place_010"
+        },
+        {
+          "q": -1,
+          "r": 0,
+          "terrain": "Forest"
+        },
+        {
+          "q": 0,
+          "r": -1,
+          "terrain": "Lake"
+        }
+      ]
+    },
+    {
+      "id": "core_3",
+      "printedNumber": 3,
+      "kind": "Core",
+      "orientation": "printed_upright",
+      "source_image": "H:\\MageKnight_RL_Runs\\20261021_solo_conquest_prepare\\tile_source_images\\MK_map_tiles_02-3.png",
+      "source_sha256": "28eb4e411ce2e37685c377462e286f8f1f24fb1e8c18d312173817cc0a66e157",
+      "cells": [
+        {
+          "q": 0,
+          "r": 0,
+          "terrain": "Wasteland"
+        },
+        {
+          "q": 1,
+          "r": -1,
+          "terrain": "Wasteland",
+          "site": "AncientRuin",
+          "ruleId": "place_005"
+        },
+        {
+          "q": 1,
+          "r": 0,
+          "terrain": "Hills",
+          "site": "MageTower",
+          "ruleId": "place_010"
+        },
+        {
+          "q": 0,
+          "r": 1,
+          "terrain": "Wasteland"
+        },
+        {
+          "q": -1,
+          "r": 1,
+          "terrain": "Hills",
+          "site": "CrystalMine",
+          "ruleId": "place_006",
+          "manaColor": "White"
+        },
+        {
+          "q": -1,
+          "r": 0,
+          "terrain": "Wasteland",
+          "site": "Tomb",
+          "ruleId": "place_009"
+        },
+        {
+          "q": 0,
+          "r": -1,
+          "terrain": "Mountain"
+        }
+      ]
+    },
+    {
+      "id": "core_4",
+      "printedNumber": 4,
+      "kind": "Core",
+      "orientation": "printed_upright",
+      "source_image": "H:\\MageKnight_RL_Runs\\20261021_solo_conquest_prepare\\tile_source_images\\MK_map_tiles_02-4.png",
+      "source_sha256": "af632295091f7e1255433f666ec88cb718496f6534e45cfb79bcf9e6193838ac",
+      "cells": [
+        {
+          "q": 0,
+          "r": 0,
+          "terrain": "Mountain",
+          "site": "RampagingDragon",
+          "ruleId": "place_001",
+          "enemyTokenColor": "Red"
+        },
+        {
+          "q": 1,
+          "r": -1,
+          "terrain": "Hills"
+        },
+        {
+          "q": 1,
+          "r": 0,
+          "terrain": "Wasteland",
+          "site": "Keep",
+          "ruleId": "place_011"
+        },
+        {
+          "q": 0,
+          "r": 1,
+          "terrain": "Wasteland"
+        },
+        {
+          "q": -1,
+          "r": 1,
+          "terrain": "Wasteland",
+          "site": "AncientRuin",
+          "ruleId": "place_005"
+        },
+        {
+          "q": -1,
+          "r": 0,
+          "terrain": "Wasteland"
+        },
+        {
+          "q": 0,
+          "r": -1,
+          "terrain": "Hills",
+          "site": "CrystalMine",
+          "ruleId": "place_006",
+          "manaColor": "Blue"
+        }
+      ]
+    },
+    {
+      "id": "core_5",
+      "printedNumber": 5,
+      "kind": "Core",
+      "orientation": "printed_upright",
+      "source_image": "H:\\MageKnight_RL_Runs\\20261021_solo_conquest_prepare\\tile_source_images\\MK_map_tiles_02-5.png",
+      "source_sha256": "3ca257091ccb5547b4b0d59d5b3ad1d3410c15140a8ce4a531b3518241dea72e",
+      "cells": [
+        {
+          "q": 0,
+          "r": 0,
+          "terrain": "Swamp",
+          "site": "City",
+          "cityColor": "Green"
+        },
+        {
+          "q": 1,
+          "r": -1,
+          "terrain": "Swamp",
+          "site": "Village",
+          "ruleId": "place_003"
+        },
+        {
+          "q": 1,
+          "r": 0,
+          "terrain": "Swamp",
+          "site": "RampagingOrcs",
+          "ruleId": "place_000",
+          "enemyTokenColor": "Green"
+        },
+        {
+          "q": 0,
+          "r": 1,
+          "terrain": "Swamp"
+        },
+        {
+          "q": -1,
+          "r": 1,
+          "terrain": "Forest",
+          "site": "RampagingOrcs",
+          "ruleId": "place_000",
+          "enemyTokenColor": "Green"
+        },
+        {
+          "q": -1,
+          "r": 0,
+          "terrain": "Lake"
+        },
+        {
+          "q": 0,
+          "r": -1,
+          "terrain": "Forest",
+          "site": "MagicalGlade",
+          "ruleId": "place_006"
+        }
+      ]
+    },
+    {
+      "id": "core_6",
+      "printedNumber": 6,
+      "kind": "Core",
+      "orientation": "printed_upright",
+      "source_image": "H:\\MageKnight_RL_Runs\\20261021_solo_conquest_prepare\\tile_source_images\\MK_map_tiles_02-6.png",
+      "source_sha256": "57ea5522e97037bdff93a4f4a4428b86d5545bd5429b3efdf79c251625f6abaf",
+      "cells": [
+        {
+          "q": 0,
+          "r": 0,
+          "terrain": "Plains",
+          "site": "City",
+          "cityColor": "Blue"
+        },
+        {
+          "q": 1,
+          "r": -1,
+          "terrain": "Plains",
+          "site": "Monastery",
+          "ruleId": "place_002"
+        },
+        {
+          "q": 1,
+          "r": 0,
+          "terrain": "Lake"
+        },
+        {
+          "q": 0,
+          "r": 1,
+          "terrain": "Lake"
+        },
+        {
+          "q": -1,
+          "r": 1,
+          "terrain": "Hills"
+        },
+        {
+          "q": -1,
+          "r": 0,
+          "terrain": "Mountain",
+          "site": "RampagingDragon",
+          "ruleId": "place_001",
+          "enemyTokenColor": "Red"
+        },
+        {
+          "q": 0,
+          "r": -1,
+          "terrain": "Forest"
+        }
+      ]
+    },
+    {
+      "id": "core_7",
+      "printedNumber": 7,
+      "kind": "Core",
+      "orientation": "printed_upright",
+      "source_image": "H:\\MageKnight_RL_Runs\\20261021_solo_conquest_prepare\\tile_source_images\\MK_map_tiles_02-7.png",
+      "source_sha256": "fe7edec970274af30fe39bcaa17bc09c13c2b38bd0f7f9ac1bec125f9572bec4",
+      "cells": [
+        {
+          "q": 0,
+          "r": 0,
+          "terrain": "Plains",
+          "site": "City",
+          "cityColor": "White"
+        },
+        {
+          "q": 1,
+          "r": -1,
+          "terrain": "Plains"
+        },
+        {
+          "q": 1,
+          "r": 0,
+          "terrain": "Forest"
+        },
+        {
+          "q": 0,
+          "r": 1,
+          "terrain": "Lake",
+          "site": "RampagingDragon",
+          "ruleId": "place_001",
+          "enemyTokenColor": "Red"
+        },
+        {
+          "q": -1,
+          "r": 1,
+          "terrain": "Lake"
+        },
+        {
+          "q": -1,
+          "r": 0,
+          "terrain": "Wasteland",
+          "site": "Keep",
+          "ruleId": "place_011"
+        },
+        {
+          "q": 0,
+          "r": -1,
+          "terrain": "Wasteland",
+          "site": "SpawningGround",
+          "ruleId": "place_015"
+        }
+      ]
+    },
+    {
+      "id": "core_8",
+      "printedNumber": 8,
+      "kind": "Core",
+      "orientation": "printed_upright",
+      "source_image": "H:\\MageKnight_RL_Runs\\20261021_solo_conquest_prepare\\tile_source_images\\MK_map_tiles_02-8.png",
+      "source_sha256": "967795a9e37b24f8b4d88feb0026a0a7e80af1b170dd063be7a9129643aa58a1",
+      "cells": [
+        {
+          "q": 0,
+          "r": 0,
+          "terrain": "Wasteland",
+          "site": "City",
+          "cityColor": "Red"
+        },
+        {
+          "q": 1,
+          "r": -1,
+          "terrain": "Hills",
+          "site": "CrystalMine",
+          "ruleId": "place_006",
+          "manaColor": "Red"
+        },
+        {
+          "q": 1,
+          "r": 0,
+          "terrain": "Desert"
+        },
+        {
+          "q": 0,
+          "r": 1,
+          "terrain": "Desert",
+          "site": "RampagingDragon",
+          "ruleId": "place_001",
+          "enemyTokenColor": "Red"
+        },
+        {
+          "q": -1,
+          "r": 1,
+          "terrain": "Wasteland"
+        },
+        {
+          "q": -1,
+          "r": 0,
+          "terrain": "Wasteland",
+          "site": "RampagingDragon",
+          "ruleId": "place_001",
+          "enemyTokenColor": "Red"
+        },
+        {
+          "q": 0,
+          "r": -1,
+          "terrain": "Desert",
+          "site": "AncientRuin",
+          "ruleId": "place_005"
+        }
+      ]
+    }
+  ]
+}

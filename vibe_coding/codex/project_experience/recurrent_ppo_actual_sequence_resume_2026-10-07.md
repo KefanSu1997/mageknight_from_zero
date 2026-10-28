@@ -1,0 +1,11 @@
+# 序列PPO须真实反传记忆、按完整历史重算并恢复整个训练过程
+
+`train_ppo.py`仅增加可选输入梯度返回，默认损失、原参数梯度与KL保持逐数组一致，复用既有分类型门/条件参数熵和正式合法列并集。新 `recurrent_policy.py` 将三层256/256/128编码、GRU256、上一步真实动作32维嵌入和原始公开reward/20接到原PPO actor/critic头；无隐藏审计zone输入。完整sequence PPO梯度对核心、GRU、actor/critic和动作历史坐标有限差分通过；逐步推断与整段历史一致。episode_start同时清记忆及上一动作/reward，不能只清hidden而让旧局信息经新encoder漏入。
+
+新 `train_recurrent_ppo.py` 只采纳同冻结规则/同catalog/schema且准入有效的可解见证任务；策略独立采样，没有执行见证动作。PPO按同一冻结策略收集整段episode，多episode按样本数加权梯度；每次epoch完整重算本episode历史，不打散时间步、不用更新前缓存hidden伪装更新后概率。仅真实episode结束清记忆，nextTurn/fight/roundFinish不清。完整rollout非负KL超过.03停止更新。原训练回报与原环境reward分存，正式规则审计失败保留真实trace/尝试动作。
+
+实际本地原规则冻结v94集成：第一episode13步/一次更新0正式胜利；恢复后的第二episode82步/一次更新2次正式整组胜利，规则检查1961项0异常，经历12次nextTurn和6次fight，但0次roundFinish。以同随机起点连续跑两次update对照，73个checkpoint数组（包括全部参数、Adam动量/step、RNG及回放元数据）与两段完整真实trace完全相同。证据 `AutomationOutputs/BattleRl/20261007_recurrent_full_resume_equivalence.json`；不恢复Adam的旧流程已不用于该新训练器。
+
+成功scope只是单个legacy-seed可解池上的集成校准，不是训练达标。双胜利是当前策略随机采样，不是保存策略独立评估/全原库/跨昼夜/实际Unity验收。仍复用原93661组合动作/43类型门，未实现实体Transformer或新的参数化动作头；独立任务因子reset、不可解求解器、覆盖池扩大及独立测试仍缺。CPU NumPy无需大下载，速度不外推显卡或全范围训练。
+
+随后checkpoint元数据添加记忆核心/策略/PPO损失/奖励代码SHA，避免规则相同但模型方程变动时静默恢复不兼容checkpoint；历史集成产物保留，未声明旧签名可以直接恢复到新签名。Unity Console两读0错误，无原规则/场景修改，未重复全库验证。

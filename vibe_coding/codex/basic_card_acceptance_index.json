@@ -1,0 +1,2164 @@
+{
+  "asOf": "2026-09-18 06:03",
+  "scope": "121张有效原行动/法术/神器的有限基本验收；复用历史场景＋新增定向证据，不代表全边界或当前代码全库重新认证。部队/技能另表。",
+  "total": 121,
+  "basicAccepted": 121,
+  "remaining": 0,
+  "newBatch": {
+    "cards": 1,
+    "backendUniquePassed": 12,
+    "sceneCases": 4,
+    "effectChecks": 384,
+    "runs": [
+      "20260918_060021_7a1ab21d/items"
+    ]
+  },
+  "cards": [
+    {
+      "cardId": "basic_card_000",
+      "name": "行进",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "basic_card_001",
+      "name": "宁静",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "basic_card_002",
+      "name": "凝结",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "basic_card_003",
+      "name": "野蛮收获",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": [],
+      "resolvedGaps": [
+        {
+          "kind": "主效果缺口",
+          "description": "缺逐格移动后弃实际同色手牌换魔晶；基础一次、强化每步的正常触发。"
+        }
+      ],
+      "newEvidence": {
+        "runs": [
+          "20260918_014627_6712d213/basic_card"
+        ],
+        "caseIds": [
+          "basic_card_003_02",
+          "basic_card_003_03"
+        ],
+        "backendRuns": [
+          "20260918_014248_860f45b2"
+        ],
+        "scope": "单格移动原卡材料弃牌得同色晶，基础一次/强化逐格，神器选择基本色；实际支付行进/狂怒，费用/牌区/击杀及回合清理。",
+        "effectsSha256": "ed19d703b9986ec89fca9e9ae633176a5475fd76d944070c59f7ec93e855d632",
+        "reportSha256": "b286ade70d76cedd3b7e4a69a854b61b91fc98f78fbbc0cd3b5fe6e9ed4aaccf"
+      }
+    },
+    {
+      "cardId": "basic_card_004",
+      "name": "大地之子",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "basic_card_005",
+      "name": "活力焕发",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "basic_card_006",
+      "name": "全神贯注",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": [],
+      "resolvedGaps": [
+        {
+          "kind": "消费补证",
+          "description": "已验四种基础资源选择和复制原狂怒强效加3；补一次实际攻击，确认加值进入结算。"
+        }
+      ],
+      "newEvidence": {
+        "runs": [
+          "20260917_223708_990b27de/basic_card"
+        ],
+        "caseIds": [
+          "basic_card_006_08"
+        ]
+      }
+    },
+    {
+      "cardId": "basic_card_007",
+      "name": "敏捷",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "basic_card_008",
+      "name": "承诺",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "basic_card_009",
+      "name": "魔力汲取",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": [],
+      "resolvedGaps": [
+        {
+          "kind": "主效果缺口",
+          "description": "缺真实魔力源额外取骰；强化取出一骰、转色、得到两标记及不重掷归还。"
+        }
+      ],
+      "newEvidence": {
+        "runs": [
+          "20260918_013301_2a358349/basic_card"
+        ],
+        "caseIds": [
+          "basic_card_009_02",
+          "basic_card_009_03"
+        ],
+        "backendRuns": [
+          "20260918_012305_5c049619",
+          "20260918_012411_944df47f"
+        ],
+        "scope": "真实普通/额外骰；强化原骰转色和印刷费用；实际行进/狂怒消费；回合末原骰归还及转换面保留。首后台失败三项由第二次定向补验闭合。",
+        "effectsSha256": "3ab22f8a40815e11c027d5e21a4a00578e936c24620e977b143e0a60696a2ae3",
+        "reportSha256": "eda94026eaf5fbc3179926b8ee887f7a09095787942cc74be959e6ab6dc9dd24"
+      }
+    },
+    {
+      "cardId": "basic_card_010",
+      "name": "迅捷反应",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": [],
+      "basicEvidence": {
+        "source": "Assets/GameData/cards/basic_card_010.png; resources/text_json/basic_card.json（强化蓝魔力）",
+        "scope": "既有移动/远程分支证据＋新增基础/强化减攻真实目标、原决心格挡、实际承伤；不代表罕见叠加和全边界通过",
+        "backend": [
+          "20260918_003713_be27dfc7（基础、期限和必要格挡回归通过；强化夹具初败保留）",
+          "20260918_003834_e52b17ac（强化与蓝魔力选择守恒2/2）"
+        ],
+        "sceneRun": "AutomationOutputs/AllOriginalCards/20260918_004205_834f4f30/basic_card",
+        "caseIds": [
+          "basic_card_010_06",
+          "basic_card_010_07"
+        ],
+        "checks": 150,
+        "effectsSha256": "3383792b0372458406099569bac0166cf9d96cb452880ff138df643901a6e2f0",
+        "visualReview": "两张最终截图及两张减攻关键帧核对；原卡和敌人素材、攻击3→2/1、格挡4/2、最终伤3/2一致",
+        "console": "场景前后各两次error=0，2026-09-18 00:42/00:44"
+      },
+      "lastAffectedRegression": {
+        "run": "20260918_010704_22a8f568/basic_card",
+        "cases": [
+          "basic_card_010_06",
+          "basic_card_010_07"
+        ],
+        "checks": 150,
+        "proof": {
+          "path": "AutomationOutputs/AllOriginalCards/20260918_010704_22a8f568/basic_card/effects.json",
+          "sha256": "738bd73bebd2576e9cabbe0c7a853ef51139534719c4bda49fd99a2dc8d4a93f"
+        },
+        "reason": "减攻索引升级为敌人＋攻击槽，正式格挡消费者受影响。后台2例、两场景及最终截图核对通过。"
+      }
+    },
+    {
+      "cardId": "basic_card_011",
+      "name": "利斧投掷",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "basic_card_012",
+      "name": "高贵气质",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": [],
+      "resolvedGaps": [
+        {
+          "kind": "消费补证",
+          "description": "已验交涉内外影响力/名望/声誉；补真实交涉招募以消费影响力，避免仅设置InNegotiation。"
+        }
+      ],
+      "newEvidence": {
+        "runs": [
+          "20260917_223708_990b27de/basic_card"
+        ],
+        "caseIds": [
+          "basic_card_022_02"
+        ]
+      }
+    },
+    {
+      "cardId": "basic_card_013",
+      "name": "魔力征引",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": [],
+      "resolvedGaps": [
+        {
+          "kind": "主效果缺口",
+          "description": "缺真实额外取骰及黑骰任意基本色；强化两骰各转色、真实移出/归还且不重掷。"
+        }
+      ],
+      "newEvidence": {
+        "runs": [
+          "20260918_013301_2a358349/basic_card"
+        ],
+        "caseIds": [
+          "basic_card_013_02",
+          "basic_card_013_03"
+        ],
+        "backendRuns": [
+          "20260918_012305_5c049619",
+          "20260918_012411_944df47f"
+        ],
+        "scope": "真实普通/额外骰；强化原骰转色和印刷费用；实际行进/狂怒消费；回合末原骰归还及转换面保留。首后台失败三项由第二次定向补验闭合。",
+        "effectsSha256": "3ab22f8a40815e11c027d5e21a4a00578e936c24620e977b143e0a60696a2ae3",
+        "reportSha256": "eda94026eaf5fbc3179926b8ee887f7a09095787942cc74be959e6ab6dc9dd24"
+      }
+    },
+    {
+      "cardId": "basic_card_014",
+      "name": "耐力",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "basic_card_015",
+      "name": "晶化",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": [],
+      "resolvedGaps": [
+        {
+          "kind": "消费补证",
+          "description": "已验四种基本色支付转晶及强化选色；补所得魔晶实际支付下一张原卡。"
+        }
+      ],
+      "newEvidence": {
+        "runs": [
+          "20260917_223708_990b27de/basic_card"
+        ],
+        "caseIds": [
+          "basic_card_015_08"
+        ]
+      }
+    },
+    {
+      "cardId": "basic_card_016",
+      "name": "决心",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "basic_card_017",
+      "name": "永不止步",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": [],
+      "resolvedGaps": [
+        {
+          "kind": "主效果缺口",
+          "description": "已验随后一张行进加1；基础下一张与强化所有后续卡的差异、原文明确含横置，缺最小正常续牌证据。"
+        }
+      ],
+      "newEvidence": {
+        "runs": [
+          "20260918_002221_3c3c72e8/basic_card"
+        ],
+        "caseIds": [
+          "basic_card_017_02",
+          "basic_card_017_03",
+          "basic_card_017_04"
+        ],
+        "backendRuns": [
+          "20260918_001839_c21332d7",
+          "20260918_001948_8a1caab8"
+        ],
+        "scope": "原卡及横置续牌实际消费与实体守恒"
+      }
+    },
+    {
+      "cardId": "basic_card_018",
+      "name": "德鲁伊之道",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "basic_card_019",
+      "name": "欢悦魔晶",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": [],
+      "newEvidence": {
+        "runs": [
+          "20260917_185557_56ea3e1d/basic_card"
+        ],
+        "caseIds": [
+          "basic_card_019_08",
+          "basic_card_019_09",
+          "basic_card_019_10"
+        ]
+      }
+    },
+    {
+      "cardId": "basic_card_020",
+      "name": "寒冰护体",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "basic_card_021",
+      "name": "狂怒",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "basic_card_022",
+      "name": "威胁",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": [],
+      "resolvedGaps": [
+        {
+          "kind": "消费补证",
+          "description": "已验影响力2/5与强化声誉-1；补实际招募消费所得影响力。"
+        }
+      ],
+      "newEvidence": {
+        "runs": [
+          "20260917_223708_990b27de/basic_card"
+        ],
+        "caseIds": [
+          "basic_card_022_02"
+        ]
+      }
+    },
+    {
+      "cardId": "basic_card_023",
+      "name": "随机应变",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": [],
+      "resolvedGaps": [
+        {
+          "kind": "消费补证",
+          "description": "已有基础/强化四种资源及弃牌结果；补一次选定资源的实际移动、交涉或战斗消费，并核对实际弃牌实体。"
+        }
+      ],
+      "newEvidence": {
+        "runs": [
+          "20260917_223708_990b27de/basic_card"
+        ],
+        "caseIds": [
+          "basic_card_015_08"
+        ]
+      }
+    },
+    {
+      "cardId": "basic_card_024",
+      "name": "灵活战斗",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "basic_card_025",
+      "name": "战斗之怒",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": [],
+      "resolvedGaps": [
+        {
+          "kind": "主效果缺口",
+          "description": "只有攻击2/4及加值额度；缺真实受伤后攻击增长，基础最多+1、强化最多+4的正常战斗结算。"
+        }
+      ],
+      "newEvidence": {
+        "runs": [
+          "20260918_002221_3c3c72e8/basic_card"
+        ],
+        "caseIds": [
+          "basic_card_008_02",
+          "basic_card_008_03",
+          "basic_card_025_02",
+          "basic_card_025_03"
+        ],
+        "backendRuns": [
+          "20260918_001353_4b25ffba"
+        ],
+        "scope": "含承诺008_02/03起始场景：先实际受伤，再打出原战斗之怒；以及025_02/03先出牌后分次承伤，实际攻击消费"
+      }
+    },
+    {
+      "cardId": "basic_card_026",
+      "name": "无情威压",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": [],
+      "resolvedGaps": [
+        {
+          "kind": "主效果缺口",
+          "description": "强化按部队等级支付影响力重整已验；基础真实招募折扣2和使用后声誉-1未验。"
+        }
+      ],
+      "newEvidence": {
+        "runs": [
+          "20260917_232047_ce1ecab5/basic_card"
+        ],
+        "caseIds": [
+          "basic_card_026_14"
+        ],
+        "backendRuns": [
+          "20260917_231742_741bcc84"
+        ]
+      },
+      "reusedEvidence": {
+        "run": "20260911_205758_b83addf3/basic_card",
+        "caseIds": [
+          "basic_card_026_02",
+          "basic_card_026_03",
+          "basic_card_026_06"
+        ],
+        "scope": "强化实际重整I/II级部队与合计支付；没有重新执行"
+      }
+    },
+    {
+      "cardId": "basic_card_027",
+      "name": "本能",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "advanced_card_000",
+      "name": "火焰箭矢",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "advanced_card_001",
+      "name": "寒冰箭矢",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "advanced_card_002",
+      "name": "迅捷箭矢",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": [],
+      "resolvedGaps": [
+        {
+          "kind": "消费补证",
+          "description": "基础白晶与强化远程4有数值证据；补一次实际远程攻击。"
+        }
+      ],
+      "newEvidence": {
+        "runs": [
+          "20260917_224720_2aed42b5/advanced_card"
+        ],
+        "caseIds": [
+          "advanced_card_002_03"
+        ]
+      }
+    },
+    {
+      "cardId": "advanced_card_003",
+      "name": "粉碎箭矢",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "advanced_card_004",
+      "name": "血色狂怒",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": [],
+      "resolvedGaps": [
+        {
+          "kind": "消费补证",
+          "description": "已验基础/强化不受伤和主动受伤的四个数值分支；补一次实际攻击消费。"
+        }
+      ],
+      "newEvidence": {
+        "runs": [
+          "20260917_223708_990b27de/basic_card"
+        ],
+        "caseIds": [
+          "basic_card_006_08"
+        ]
+      }
+    },
+    {
+      "cardId": "advanced_card_005",
+      "name": "寒冰之盾",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "advanced_card_006",
+      "name": "灵动",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": [],
+      "resolvedGaps": [
+        {
+          "kind": "主效果缺口",
+          "description": "仅移动点和转化费率标记；补基础移动转近战、强化移动转远程的实际支付及攻击。"
+        }
+      ],
+      "newEvidence": {
+        "runs": [
+          "20260918_000450_0baf81a1/advanced_card"
+        ],
+        "caseIds": [
+          "advanced_card_006_02",
+          "advanced_card_006_03",
+          "advanced_card_006_04",
+          "advanced_card_006_05"
+        ],
+        "backendRuns": [
+          "20260918_000027_cafc84aa",
+          "20260918_000129_d73d73db"
+        ]
+      }
+    },
+    {
+      "cardId": "advanced_card_007",
+      "name": "提神漫步",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "advanced_card_008",
+      "name": "胁迫",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": [],
+      "resolvedGaps": [
+        {
+          "kind": "消费补证",
+          "description": "已验攻击/影响力与声誉两种分支；补一次真实攻击或招募结算。"
+        }
+      ],
+      "newEvidence": {
+        "runs": [
+          "20260917_224720_2aed42b5/advanced_card"
+        ],
+        "caseIds": [
+          "advanced_card_008_04"
+        ]
+      }
+    },
+    {
+      "cardId": "advanced_card_009",
+      "name": "冰霜之桥",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": [],
+      "resolvedGaps": [
+        {
+          "kind": "主效果缺口",
+          "description": "仅移动/地形标记；补实际进入沼泽成本1，以及强化允许进入湖泊成本1。"
+        }
+      ],
+      "newEvidence": {
+        "runs": [
+          "20260917_231054_01943684/advanced_card"
+        ],
+        "caseIds": [
+          "advanced_card_009_02",
+          "advanced_card_009_03"
+        ],
+        "backendRuns": [
+          "20260917_230630_5a1c832a",
+          "20260917_230808_7f7c1cd6"
+        ]
+      }
+    },
+    {
+      "cardId": "advanced_card_010",
+      "name": "清风之歌",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": [],
+      "resolvedGaps": [
+        {
+          "kind": "主效果缺口",
+          "description": "补平原/沙漠/荒原按原减费实际移动；强化支付蓝魔力穿湖费用0的普通流程。"
+        }
+      ],
+      "newEvidence": {
+        "runs": [
+          "20260917_231054_01943684/advanced_card"
+        ],
+        "caseIds": [
+          "advanced_card_010_02",
+          "advanced_card_010_03"
+        ],
+        "backendRuns": [
+          "20260917_230630_5a1c832a",
+          "20260917_230808_7f7c1cd6"
+        ]
+      },
+      "supersededEvidence": [
+        {
+          "caseId": "advanced_card_010_01",
+          "scope": "旧蓝色强化费用不再有效；原图白色费用由新_03实际出牌及另付蓝色穿湖代替"
+        }
+      ]
+    },
+    {
+      "cardId": "advanced_card_011",
+      "name": "迷途寻踪",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": [],
+      "resolvedGaps": [
+        {
+          "kind": "主效果缺口",
+          "description": "仅减费属性；补基本减1最低2、强化费用2各一次实际移动。"
+        }
+      ],
+      "newEvidence": {
+        "runs": [
+          "20260917_231054_01943684/advanced_card"
+        ],
+        "caseIds": [
+          "advanced_card_011_02",
+          "advanced_card_011_03"
+        ],
+        "backendRuns": [
+          "20260917_230630_5a1c832a",
+          "20260917_230808_7f7c1cd6"
+        ]
+      }
+    },
+    {
+      "cardId": "advanced_card_012",
+      "name": "鲜血仪式",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": [],
+      "resolvedGaps": [
+        {
+          "kind": "主效果缺口",
+          "description": "当前固定红色例未覆盖任意颜色选择及强化可选支付基本色转晶；需实际材料、伤牌、颜色/额外费用的正常选择。"
+        }
+      ],
+      "newEvidence": {
+        "runs": [
+          "20260918_021452_3cac5217/advanced_card"
+        ],
+        "caseIds": [
+          "advanced_card_012_02",
+          "advanced_card_012_03",
+          "advanced_card_012_04",
+          "advanced_card_012_05"
+        ],
+        "backendRuns": [
+          "20260918_020149_493c43ba"
+        ],
+        "scope": "三色独立选择，可选放弃/新产色/原有色转晶，完整费用与真实伤牌；原行进、狂怒、火焰风暴/风雪交加真实消费。最终界面选择与攻击摘要另补验。",
+        "effectsSha256": "8ebc6ff07c75a652932b55d04efc26734fe19ee24611154bb9c7060f966c23f4",
+        "reportSha256": "6aae8801221aae27f1f235c18eb17d848907e2864e27157b0d2bb71a4036333c"
+      }
+    },
+    {
+      "cardId": "advanced_card_013",
+      "name": "纯净魔法",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": [],
+      "resolvedGaps": [
+        {
+          "kind": "主效果缺口",
+          "description": "仅默认攻击输出；缺绿/白/蓝/红实际额外支付与移动/影响/格挡/攻击四种对应，强化印刷费用与额外费用分开。"
+        }
+      ],
+      "newEvidence": {
+        "runs": [
+          "20260918_020847_3f59a82d/advanced_card"
+        ],
+        "caseIds": [
+          "advanced_card_013_02",
+          "advanced_card_013_03",
+          "advanced_card_013_04",
+          "advanced_card_013_05",
+          "advanced_card_013_06",
+          "advanced_card_013_07",
+          "advanced_card_013_08",
+          "advanced_card_013_09"
+        ],
+        "backendRuns": [
+          "20260918_020149_493c43ba"
+        ],
+        "scope": "正文所选色与强化蓝费整笔支付；四主资源4/7，原平原/森林移动、农民招募及013/027格挡和近战，实际牌区与回合末结果。",
+        "effectsSha256": "b159b609cfc4ded4246d8f4e753e8e7bd2a69e862e1487069bf509fb6593ac0a",
+        "reportSha256": "45bcf6abb315e75c514dc7c26d0414e6433d836d4a8448dc6cf5b1899d429ac4"
+      }
+    },
+    {
+      "cardId": "advanced_card_014",
+      "name": "英雄事迹",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": [],
+      "resolvedGaps": [
+        {
+          "kind": "主效果缺口",
+          "description": "仅设置每招募奖励；补一次正常原部队招募，核对基础声誉+1及强化另名望+1。"
+        }
+      ],
+      "newEvidence": {
+        "runs": [
+          "20260917_232227_64ff0ebd/advanced_card"
+        ],
+        "caseIds": [
+          "advanced_card_014_02",
+          "advanced_card_014_03"
+        ],
+        "backendRuns": [
+          "20260917_231742_741bcc84"
+        ]
+      }
+    },
+    {
+      "cardId": "advanced_card_015",
+      "name": "再生",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "advanced_card_016",
+      "name": "冲锋陷阵",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "advanced_card_017",
+      "name": "稳步前进",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "resolvedGaps": [
+        {
+          "kind": "主效果缺口",
+          "description": "缺回合末本卡实际置底/置顶以及随后抽牌；不能仅验RecycleToBottom/Top。"
+        }
+      ],
+      "gaps": [],
+      "newEvidence": {
+        "runs": [
+          "20260918_023141_62aec360/advanced_card"
+        ],
+        "caseIds": [
+          "advanced_card_017_02",
+          "advanced_card_017_03",
+          "advanced_card_017_04",
+          "advanced_card_017_05"
+        ],
+        "backendRuns": [
+          "20260918_022344_d3cd8521"
+        ],
+        "scope": "真实本卡基础置底/强化置顶，原蓝费与移动实际消费，可选放弃及基础空库限制；补牌实际顺序和唯一实例守恒。",
+        "provenance": [
+          {
+            "run": "20260918_023141_62aec360/advanced_card",
+            "caseIds": [
+              "advanced_card_017_02",
+              "advanced_card_017_03",
+              "advanced_card_017_04",
+              "advanced_card_017_05"
+            ],
+            "effectsSha256": "8b88f9feb156fa4ffa19cd932c4e8369dc568e03ffb5523414f50b51c76c8021",
+            "reportSha256": "252bad2103794e45eb5f9db9a28caa29553ecf7acb0a938a5eea8abd11833ac5"
+          }
+        ]
+      }
+    },
+    {
+      "cardId": "advanced_card_018",
+      "name": "外交",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": [],
+      "resolvedGaps": [
+        {
+          "kind": "主效果缺口",
+          "description": "缺影响力实际转普通格挡；强化火/冰互斥选择及一次目标格挡结算。"
+        }
+      ],
+      "newEvidence": {
+        "runs": [
+          "20260918_000450_0baf81a1/advanced_card"
+        ],
+        "caseIds": [
+          "advanced_card_018_02",
+          "advanced_card_018_03",
+          "advanced_card_018_04"
+        ],
+        "backendRuns": [
+          "20260918_000027_cafc84aa"
+        ]
+      }
+    },
+    {
+      "cardId": "advanced_card_019",
+      "name": "求援",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": [],
+      "resolvedGaps": [
+        {
+          "kind": "消费补证",
+          "description": "已验按手牌和部队伤牌计算影响力；补一次实际交涉消费所得影响力。"
+        }
+      ],
+      "newEvidence": {
+        "runs": [
+          "20260917_223708_990b27de/basic_card"
+        ],
+        "caseIds": [
+          "basic_card_022_02"
+        ]
+      }
+    },
+    {
+      "cardId": "advanced_card_020",
+      "name": "分解",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "advanced_card_021",
+      "name": "魔晶精通",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "resolvedGaps": [
+        {
+          "kind": "主效果缺口",
+          "description": "基础奖励有数值证据；强化仅开ReturnSpentCrystals，缺实际花晶及回合末返还。"
+        }
+      ],
+      "gaps": [],
+      "newEvidence": {
+        "runs": [
+          "20260918_023141_62aec360/advanced_card",
+          "20260918_024439_02d43cb2/basic_card"
+        ],
+        "caseIds": [
+          "advanced_card_021_02",
+          "basic_card_000_02"
+        ],
+        "backendRuns": [
+          "20260918_022344_d3cd8521"
+        ],
+        "scope": "基础库存同色增晶并付原行进；强化蓝1，真实出牌之前/自身/之后三色花费同回合返还，下一回合实际再花绿且不返。basic_card_000_02中途实际打出021，证据归021。",
+        "provenance": [
+          {
+            "run": "20260918_023141_62aec360/advanced_card",
+            "caseIds": [
+              "advanced_card_021_02"
+            ],
+            "effectsSha256": "8b88f9feb156fa4ffa19cd932c4e8369dc568e03ffb5523414f50b51c76c8021",
+            "reportSha256": "252bad2103794e45eb5f9db9a28caa29553ecf7acb0a938a5eea8abd11833ac5"
+          },
+          {
+            "run": "20260918_024439_02d43cb2/basic_card",
+            "caseIds": [
+              "basic_card_000_02"
+            ],
+            "effectsSha256": "03e7447020c0baf2ac737d02c9a207b93d2747cb1380cc56e7296ecdf3dc40d1",
+            "reportSha256": "e128ca5117109caaea9a133c7a1c6b6501d2ae1f94387eca7908d5b26daee830"
+          }
+        ]
+      }
+    },
+    {
+      "cardId": "advanced_card_022",
+      "name": "魔力风暴",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": [],
+      "resolvedGaps": [
+        {
+          "kind": "主效果缺口",
+          "description": "缺基础实际选源骰取晶并重掷；强化全源重掷、额外三骰使用以及正常黑/金通用颜色。"
+        }
+      ],
+      "newEvidence": {
+        "runs": [
+          "20260918_025819_49226360/advanced_card"
+        ],
+        "caseIds": [
+          "advanced_card_022_02",
+          "advanced_card_022_03",
+          "advanced_card_022_04"
+        ],
+        "backendRuns": [
+          "20260918_025328_a868ad2e"
+        ],
+        "scope": "原源骰基本色得晶/六面重掷，强化白费1、普通加三额外骰、Day/Night黑金作基本色、原行进狂怒消费及实际回合归还。",
+        "effectsSha256": "cec4abf6f95429e47e838a7d52a49f5cbe818c0fe7c3fa07b2dbd8eb59cd8ffc",
+        "reportSha256": "03cbf217eecba84605af63afb05b17a7e153391d11fe118fd7bc7e96d2214cbd"
+      }
+    },
+    {
+      "cardId": "advanced_card_023",
+      "name": "伏击",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": [],
+      "resolvedGaps": [
+        {
+          "kind": "主效果缺口",
+          "description": "仅移动和伏击标记；缺原伏击出牌后首张攻击或首张格挡的互斥触发与实际消费。"
+        }
+      ],
+      "newEvidence": {
+        "runs": [
+          "20260918_025819_49226360/advanced_card"
+        ],
+        "caseIds": [
+          "advanced_card_023_02",
+          "advanced_card_023_03",
+          "advanced_card_023_04",
+          "advanced_card_023_05"
+        ],
+        "backendRuns": [
+          "20260918_025135_8f8a263f",
+          "20260918_025328_a868ad2e"
+        ],
+        "scope": "基础/强化移动与首次攻击/格挡互斥，敏捷远程4/5、决心格挡4/6或失去奖励后2、狂怒后续4、真实013伤牌和名望；未使用许可回合末清理另有后台证据。",
+        "effectsSha256": "cec4abf6f95429e47e838a7d52a49f5cbe818c0fe7c3fa07b2dbd8eb59cd8ffc",
+        "reportSha256": "03cbf217eecba84605af63afb05b17a7e153391d11fe118fd7bc7e96d2214cbd"
+      }
+    },
+    {
+      "cardId": "advanced_card_024",
+      "name": "效能过载",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "advanced_card_025",
+      "name": "魔法天赋",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "advanced_card_026",
+      "name": "学习",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "advanced_card_027",
+      "name": "修行",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "advanced_card_028",
+      "name": "反戈一击",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": [],
+      "resolvedGaps": [
+        {
+          "kind": "主效果缺口",
+          "description": "仅初始攻击及每格挡加值标记；补先真实格挡，再近战使用基础+2/强化+3。"
+        }
+      ],
+      "newEvidence": {
+        "runs": [
+          "20260917_233519_83e1c865/basic_card"
+        ],
+        "caseIds": [
+          "basic_card_016_04",
+          "basic_card_016_05"
+        ],
+        "backendRuns": [
+          "20260917_233111_3f52be1b"
+        ],
+        "scope": "真实决心先格挡，然后实际打出反戈一击基础/强化取得历史奖励并攻击；原反戈卡面作为关联原卡展示"
+      }
+    },
+    {
+      "cardId": "advanced_card_029",
+      "name": "仪式攻击",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "advanced_card_030",
+      "name": "远古血脉",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "advanced_card_031",
+      "name": "盾牌重击",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": [],
+      "resolvedGaps": [
+        {
+          "kind": "主效果缺口",
+          "description": "仅格挡池及SwiftBlockBonus；补对迅捷实际格挡，强化超额格挡导致真实目标减甲。"
+        }
+      ],
+      "newEvidence": {
+        "runs": [
+          "20260917_233708_456dd150/advanced_card",
+          "20260917_234611_3ff9f913/advanced_card"
+        ],
+        "caseIds": [
+          "advanced_card_031_02",
+          "advanced_card_031_03",
+          "advanced_card_031_04",
+          "advanced_card_031_05"
+        ],
+        "backendRuns": [
+          "20260917_233111_3f52be1b",
+          "20260917_233204_d90e79fb",
+          "20260917_234331_9c26efab"
+        ]
+      }
+    },
+    {
+      "cardId": "advanced_card_032",
+      "name": "时光传送",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "advanced_card_033",
+      "name": "法术熔炉",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": [],
+      "resolvedGaps": [
+        {
+          "kind": "消费补证",
+          "description": "已验供给选色取得1/2晶；补明确原供给实体选择、所得晶实际支付后续原卡。"
+        }
+      ],
+      "newEvidence": {
+        "runs": [
+          "20260917_224720_2aed42b5/advanced_card",
+          "20260917_225701_9b61de63/advanced_card"
+        ],
+        "caseIds": [
+          "advanced_card_033_02",
+          "advanced_card_033_03"
+        ],
+        "note": "正式供给选择实现改变，基础和强化均取得新后台及场景证据。"
+      }
+    },
+    {
+      "cardId": "advanced_card_034",
+      "name": "骑士精神",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "advanced_card_035",
+      "name": "宁静时光",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": [],
+      "resolvedGaps": [
+        {
+          "kind": "主效果缺口",
+          "description": "只有影响力及费率/重整许可；补作为回合行动支付2影响治1，以及强化按2倍等级重整。"
+        }
+      ],
+      "basicEvidence": {
+        "source": "Assets/GameData/cards/advanced_card_035.png；原中英图与既有JSON/SO，强化白1",
+        "scope": "原印刷主分支、费用和真实消费，有限基本验收，不代表罕见组合或全边界。基础连续治疗及强化治疗/III级重整、同部队下一回合真实攻击5；基础/强化普通影响招募。",
+        "backend": [
+          "20260918_031454_1529b446",
+          "20260918_031548_9cedaff5（共用重整4例）"
+        ],
+        "sceneCases": [
+          "advanced_card_035_02",
+          "advanced_card_035_03",
+          "advanced_card_035_04",
+          "advanced_card_035_05"
+        ],
+        "effectChecks": 471,
+        "proofs": [
+          {
+            "path": "AutomationOutputs/AllOriginalCards/20260918_032442_541c348e/advanced_card/effects.json",
+            "sha256": "89ac1725fbaefc63601e885ce9aa162eaaae6fa7ebe9a4571d1708b0c347eb0c"
+          },
+          {
+            "path": "AutomationOutputs/AllOriginalCards/20260918_032442_541c348e/advanced_card/report.json",
+            "sha256": "7c473381582a42ecb730907994a38708af6d0fe3fc0f55d16e9f4c717a2d52d1"
+          },
+          {
+            "path": "AutomationOutputs/AllOriginalCards/20260918_032025_3edd686d/advanced_card/checkpoint_audit.json",
+            "sha256": "94c5a40e1a24cbca83320c4566ace4be462ba8774efc59e19829c460fcd2f7bb"
+          }
+        ],
+        "visualReview": "全部最终图已核对；035另核对连续治疗、实际III级重整和招募剩余影响1/2关键图。原图、材料区域、攻击/格挡及实际资源对应。",
+        "console": "2026-09-18 03:20、03:24、03:27各阶段Console两次error=0；最终Scripts DLL03:22:51。",
+        "interruptedRun": "032025整体仍failed；仅已完整完成的035_02检查点和8 UI步骤审计保留；035_03排版失败后定向补，其余未执行接续。未重跑035_02。"
+      }
+    },
+    {
+      "cardId": "advanced_card_036",
+      "name": "迂回躲避",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": [],
+      "basicEvidence": {
+        "source": "Assets/GameData/cards/advanced_card_036.png；resources/text_json/advanced_card.json，强化白魔力",
+        "scope": "基础减2＋无新伤攻击1；强化一次减4、两敌各减2、同一原敌人双攻击各减2＋无新伤攻击2；实际防御、原狂怒续牌和击杀名望。有限基本验收，不代表罕见组合或全边界。",
+        "backend": [
+          "20260918_005214_b1860ffc（9/9）",
+          "20260918_005425_8bcca203（城市/部队2/2）"
+        ],
+        "sceneCases": [
+          "advanced_card_036_02",
+          "advanced_card_036_03",
+          "advanced_card_036_04",
+          "advanced_card_036_05"
+        ],
+        "effectChecks": 333,
+        "proofs": [
+          {
+            "path": "AutomationOutputs/AllOriginalCards/20260918_005913_4a1ddaf0/advanced_card/checkpoint_audit.json",
+            "sha256": "f5d6a88247d8c135e502761ef47ee2e1ef65d1a793e6aaabba5fd744a7cea78d"
+          },
+          {
+            "path": "AutomationOutputs/AllOriginalCards/20260918_010436_e2b8a3ff/advanced_card/effects.json",
+            "sha256": "1fcebd34687c8a034bf9715a51dd4ad053cbf28698719137ea87793dae68dc8b"
+          }
+        ],
+        "interruptedRun": "005913整体仍failed；仅02/03完成的检查点和全部UI序列审计保留，04显示失败和05未执行均排除。补场04/05规则、UI全部通过。",
+        "visualReview": "四张最终图及四张防御后奖励关键帧均查看；原卡/敌人双攻击1/1、减后0/0、实得奖励2及一次名望2对应。",
+        "console": "2026-09-18 00:59、01:04、01:09，各阶段按Console error两次0。"
+      }
+    },
+    {
+      "cardId": "advanced_card_037",
+      "name": "不屈不挠",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": [],
+      "resolvedGaps": [
+        {
+          "kind": "主效果缺口",
+          "description": "仅默认移动分支；补四类资源正常选择、基础弃伤+1及强化实际弃牌每张+2。"
+        }
+      ],
+      "basicEvidence": {
+        "source": "Assets/GameData/cards/advanced_card_037.png；原中英图与既有JSON/SO，强化绿1",
+        "scope": "原印刷主分支、费用和真实消费，有限基本验收，不代表罕见组合或全边界。基础/强化四主选项实际移动/招募/战斗，普通材料或至多一张旧伤，实际弃牌及新伤守恒。",
+        "backend": [
+          "20260918_030732_c9d6b020（6通过5失败）",
+          "20260918_031003_f96a68e7（仅补5失败通过）"
+        ],
+        "sceneCases": [
+          "advanced_card_037_02",
+          "advanced_card_037_03",
+          "advanced_card_037_04",
+          "advanced_card_037_05",
+          "advanced_card_037_06",
+          "advanced_card_037_07",
+          "advanced_card_037_08",
+          "advanced_card_037_09"
+        ],
+        "effectChecks": 900,
+        "proofs": [
+          {
+            "path": "AutomationOutputs/AllOriginalCards/20260918_032442_541c348e/advanced_card/effects.json",
+            "sha256": "89ac1725fbaefc63601e885ce9aa162eaaae6fa7ebe9a4571d1708b0c347eb0c"
+          },
+          {
+            "path": "AutomationOutputs/AllOriginalCards/20260918_032442_541c348e/advanced_card/report.json",
+            "sha256": "7c473381582a42ecb730907994a38708af6d0fe3fc0f55d16e9f4c717a2d52d1"
+          }
+        ],
+        "visualReview": "全部最终图已核对；035另核对连续治疗、实际III级重整和招募剩余影响1/2关键图。原图、材料区域、攻击/格挡及实际资源对应。",
+        "console": "2026-09-18 03:20、03:24、03:27各阶段Console两次error=0；最终Scripts DLL03:22:51。"
+      }
+    },
+    {
+      "cardId": "advanced_card_038",
+      "name": "自然之力",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": [],
+      "resolvedGaps": [
+        {
+          "kind": "主效果缺口",
+          "description": "强化攻城/格挡已有实际结算；基础指定自有部队获得物抗后的真实承伤未验。"
+        }
+      ],
+      "basicEvidence": {
+        "source": "Assets/GameData/cards/advanced_card_038.png；原中英牌面及SO/JSON原绿费1",
+        "scope": "基础选择原农民甲3获物抗，正式承原007物攻3零单位/英雄伤，狂怒红1攻击4击杀名望3，战末清抗性；后台同一部队下一战实际得1伤。强化主效果复用既有审计证据，不重复运行。",
+        "backend": [
+          "20260918_033735_10bbe173（1例）"
+        ],
+        "sceneCases": [
+          "advanced_card_038_07"
+        ],
+        "effectChecks": 184,
+        "proofs": [
+          {
+            "path": "AutomationOutputs/AllOriginalCards/20260918_034150_e8b39fc5/advanced_card/effects.json",
+            "sha256": "3541a1bbd460a759fab3a202a78305b6aa2ac84ef042bd6f3cf579df34c22d58"
+          },
+          {
+            "path": "AutomationOutputs/AllOriginalCards/20260918_034150_e8b39fc5/advanced_card/report.json",
+            "sha256": "d757485e63c1ae9209d709349faefeb243336b8dbbd9c9958f379b9166ccf695"
+          }
+        ],
+        "visualReview": "五张最终图及自然之力实际承伤/山川上山两张关键图核对；源原卡、单位/敌人素材、移动费、5/6/7原手牌顺序与实值一致。",
+        "console": "2026-09-18 03:41与03:44各两次error=0；Logic DLL03:39:47、Scripts/Tests03:39:50。"
+      }
+    },
+    {
+      "cardId": "advanced_card_039",
+      "name": "山川逸闻",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": [],
+      "resolvedGaps": [
+        {
+          "kind": "主效果缺口",
+          "description": "缺实际上山支付5并安全结束回合；丘陵/山脉驻留后实际下次补牌+1/+2。"
+        }
+      ],
+      "basicEvidence": {
+        "source": "Assets/GameData/cards/advanced_card_039.png；原中英牌面及SO/JSON原绿费1",
+        "scope": "基础/强化按实际回合末地形补5/6/7真实原牌，强化实际花5进入山脉并经正式安全查询合法驻留，奖励消费一次与期限；不代表通用不安全格强制撤退已完成。",
+        "backend": [
+          "20260918_033828_dc4d24c0（6本卡＋3直接共享回归）"
+        ],
+        "sceneCases": [
+          "advanced_card_039_02",
+          "advanced_card_039_03",
+          "advanced_card_039_04",
+          "advanced_card_039_05"
+        ],
+        "effectChecks": 408,
+        "proofs": [
+          {
+            "path": "AutomationOutputs/AllOriginalCards/20260918_034150_e8b39fc5/advanced_card/effects.json",
+            "sha256": "3541a1bbd460a759fab3a202a78305b6aa2ac84ef042bd6f3cf579df34c22d58"
+          },
+          {
+            "path": "AutomationOutputs/AllOriginalCards/20260918_034150_e8b39fc5/advanced_card/report.json",
+            "sha256": "d757485e63c1ae9209d709349faefeb243336b8dbbd9c9958f379b9166ccf695"
+          }
+        ],
+        "visualReview": "五张最终图及自然之力实际承伤/山川上山两张关键图核对；源原卡、单位/敌人素材、移动费、5/6/7原手牌顺序与实值一致。",
+        "console": "2026-09-18 03:41与03:44各两次error=0；Logic DLL03:39:47、Scripts/Tests03:39:50。"
+      }
+    },
+    {
+      "cardId": "advanced_card_040",
+      "name": "魔晶力量",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": [],
+      "resolvedGaps": [
+        {
+          "kind": "主效果缺口",
+          "description": "仅基础魔晶奖励和强化默认移动；缺原色库存限制、强化治疗/抽牌两选项及四色综合的正常结算。"
+        }
+      ],
+      "basicEvidence": {
+        "source": "原中英040牌面与SO/JSON；Green或Blue择一费用，四色库存及独立套奖按原文。",
+        "scope": "基础缺色得晶并由原行进消费；强化移动/治疗/抽牌三主分支及独立三种奖励、治疗原农民与手伤、抽得原牌继续打出；非完整边界组合。",
+        "backend": [
+          "20260918_035557_1897f7ed 首14中12通过、2夹具失败",
+          "20260918_035703_318e91e5 仅补两失败和新增战斗治疗拒绝，共3通过；合计040九项、041择一费用四项、两付款直接回归"
+        ],
+        "sceneCases": [
+          "advanced_card_040_02",
+          "advanced_card_040_03",
+          "advanced_card_040_04",
+          "advanced_card_040_05"
+        ],
+        "effectChecks": 626,
+        "uiSteps": 29,
+        "proofs": [
+          {
+            "path": "AutomationOutputs/AllOriginalCards/20260918_040105_c9db6bef/advanced_card/effects.json",
+            "sha256": "cf2dd61822865483b67491eab3438a4622fe30859d21f0c7e9acbb8dce0f395a"
+          },
+          {
+            "path": "AutomationOutputs/AllOriginalCards/20260918_040105_c9db6bef/advanced_card/report.json",
+            "sha256": "95b43b8d7f6ddd53b937060e611a7527f5a19b80d234d7c7c86f63f04f262591"
+          },
+          {
+            "path": "AutomationOutputs/RulesState/20260918_035557_1897f7ed/results.xml",
+            "sha256": "131c8397d3de8a1051fbc284fa1de8a5754e2ecdd38d905bc1cc90c904485133"
+          },
+          {
+            "path": "AutomationOutputs/RulesState/20260918_035703_318e91e5/results.xml",
+            "sha256": "2d2b590cb1894da6b877961e824589a54b8b33dfa14c48490f6426e74da0f88a"
+          }
+        ],
+        "visualReview": "四最终图及独立治疗抽牌/原农民发动移动/抽得原行进实际打出三关键图核对。",
+        "console": "2026-09-18 04:06最终两次error=0；场景前04:00两次0。Logic03:58:28、Scripts03:58:32、Tests03:58:33。"
+      }
+    },
+    {
+      "cardId": "advanced_card_041",
+      "name": "爆裂箭矢",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": [],
+      "resolvedGaps": [
+        {
+          "kind": "主效果缺口",
+          "description": "基础伤牌/红白晶有结果；强化远程击杀后指定另一敌人减甲的主效果缺实际操作。"
+        }
+      ],
+      "basicEvidence": {
+        "source": "原中英041牌面、SO/JSON；White或Red择一付费，远程攻击3及红色附效。",
+        "scope": "基础实际获伤/红白晶并由原敏捷狂怒消费；强化实际攻击击杀032后选原027护甲5→4，再由原狂怒4实杀。减甲按真实敌人引用、实际攻击贡献、红附效免疫及战末清理；非完整边界组合。",
+        "backend": [
+          "20260918_041247_2ca01767 本卡4＋两项斧头贡献回归，6/6",
+          "20260918_041408_1068e9e4 实际实例/红附效免疫/战末清理1/1；合计7"
+        ],
+        "sceneCases": [
+          "advanced_card_041_02",
+          "advanced_card_041_03"
+        ],
+        "effectChecks": 479,
+        "uiSteps": 22,
+        "proofs": [
+          {
+            "path": "AutomationOutputs/AllOriginalCards/20260918_041724_77c3eb63/advanced_card/effects.json",
+            "sha256": "f04512031870bb24a797e588a064cc71fcc88a0119242601f230438f15765596"
+          },
+          {
+            "path": "AutomationOutputs/AllOriginalCards/20260918_041724_77c3eb63/advanced_card/report.json",
+            "sha256": "0512c21cd605f5c565d4a95e171e0b7d4e3bc634cb4b723ce20375febed29bff"
+          },
+          {
+            "path": "AutomationOutputs/AllOriginalCards/20260918_042559_267e855c/advanced_card/effects.json",
+            "sha256": "dac841a47425f46082d2da3246522c44ee92181c287286b0040f248c39ef7e44"
+          },
+          {
+            "path": "AutomationOutputs/AllOriginalCards/20260918_042559_267e855c/advanced_card/report.json",
+            "sha256": "f2a6c38ff086aeade110d5b206309e9dcf71c90cb3e78fc2c075ee55a438447d"
+          },
+          {
+            "path": "AutomationOutputs/AllOriginalCards/20260918_041724_77c3eb63/advanced_card/visual_review.json",
+            "sha256": "c8cefaade23d10355ab1177289b69d62dfc49cce5251de0ccfd8e3def824eee0"
+          },
+          {
+            "path": "AutomationOutputs/RulesState/20260918_041247_2ca01767/results.xml",
+            "sha256": "5ba7b4495ac6e026446a37f81d4a329fb336a716ecf99e585d73ec4db01d807f"
+          },
+          {
+            "path": "AutomationOutputs/RulesState/20260918_041408_1068e9e4/results.xml",
+            "sha256": "9a5df78bab677cbe3d215287c9c616691879eed326a692543c4fe7b8c47aaac3"
+          }
+        ],
+        "visualReview": "基础沿用首场233检查及两图；首场强化数字246通过但显示已败032及错误中间数字，visual_review保留失败。仅修强化目标图与TMP刷新后，042559补强246检查、12UI步骤全部通过；中间027原图/5→4/攻击3及最终狂怒4实杀/名望6两图实看通过。",
+        "console": "2026-09-18 04:28最终Console两次error=0；补场前04:25两次0。Scripts DLL04:21:50。"
+      }
+    },
+    {
+      "cardId": "advanced_card_042",
+      "name": "血脉贲张",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": [],
+      "resolvedGaps": [
+        {
+          "kind": "主效果缺口",
+          "description": "仅伤牌触发额度标记；补实际伤牌入手后抽实际牌，强化首张伤移除并抽牌，后续三次正常触发。"
+        }
+      ],
+      "basicEvidence": {
+        "source": "原042中英牌面/SO/JSON；红或绿择一费用。",
+        "scope": "基础前三张实际新手伤抽牌，强化首张先入手再移除并抽牌＋后三张抽牌，真实原041自伤/原032实际承伤、抽得原狂怒决心继续实杀；旧伤保留、毒弃伤不触发、回合解订阅；不包含晚打追溯或复制组合。",
+        "backend": [
+          "20260918_043027_8b7c07a4 三主/期限3/3",
+          "20260918_043303_9f664b0a 红费和毒伤区分1/1；合计4独立通过"
+        ],
+        "sceneCases": [
+          "advanced_card_042_02",
+          "advanced_card_042_03"
+        ],
+        "effectChecks": 508,
+        "uiSteps": 24,
+        "proofs": [
+          {
+            "path": "AutomationOutputs/RulesState/20260918_043027_8b7c07a4/results.xml",
+            "sha256": "9c22c20b7898f93af8de1dc9c68b75677656e5a32bbd3b55a4b390caf258c920"
+          },
+          {
+            "path": "AutomationOutputs/RulesState/20260918_043303_9f664b0a/results.xml",
+            "sha256": "b9605d0b5d295f1e9ad980c9126ad442ef438518aaac13e7a01f395d484e90f5"
+          },
+          {
+            "path": "AutomationOutputs/AllOriginalCards/20260918_043549_134f6c7d/advanced_card/effects.json",
+            "sha256": "4e57e9f5d8dc437feebd7fbf14ef75a30ee738d3beff594afc92f26076b564b4"
+          },
+          {
+            "path": "AutomationOutputs/AllOriginalCards/20260918_043549_134f6c7d/advanced_card/report.json",
+            "sha256": "b83d73645cde148cc9f35f3d025e5e90d29f1e62274dbf38834d5bea7614dc96"
+          }
+        ],
+        "visualReview": "两条场景各一张防御后抽牌中间图及最终图均实看；基础抽3/余库2/伤6/移除0，强化抽4/余库1/伤5/移除1，原狂怒和决心合6实杀两原敌，名望4。",
+        "console": "2026-09-18 04:39 最终两次error=0；场景前04:35两次0。DLL Logic/Scripts/Tests04:33:48/51/52。"
+      }
+    },
+    {
+      "cardId": "advanced_card_043",
+      "name": "冷峻目光",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_actions_2026-09-17.json",
+      "gaps": [],
+      "resolvedGaps": [
+        {
+          "kind": "主效果缺口",
+          "description": "仅影响力分支；缺基础去一次攻击能力而保留颜色、强化敌人本回合停攻及实际承伤。"
+        }
+      ],
+      "basicEvidence": {
+        "source": "原043中英牌面/SO/JSON；蓝白择一費，蓝色附效免疫不因White付款而绕过。",
+        "scope": "两模式影响力实招原农民；基础只去原001一次攻击进攻能力、保留Fire6和防御，物理格挡5有效2承伤3且无毒弃伤，双狂怒8实杀；强化原058两槽全停而原032仍伤2，狂怒4实杀058；同ID实际引用/一次消费/回合期限，非全边界组合。",
+        "backend": [
+          "20260918_044109_4405dc82 五项首次全过",
+          "20260918_044235_a3216e8c 新增双原敌Swift范围＋强化追加期限，仅两项全过；共六独立用例"
+        ],
+        "sceneCases": [
+          "advanced_card_043_02",
+          "advanced_card_043_03",
+          "advanced_card_043_04",
+          "advanced_card_043_05"
+        ],
+        "effectChecks": 548,
+        "uiSteps": 31,
+        "proofs": [
+          {
+            "path": "AutomationOutputs/RulesState/20260918_044109_4405dc82/results.xml",
+            "sha256": "4bdabc49696aee9236a9ac1d7f38d2c56aa9cc2b2f5fcfd1b69362c0ccd1eb17"
+          },
+          {
+            "path": "AutomationOutputs/RulesState/20260918_044235_a3216e8c/results.xml",
+            "sha256": "dbfc058d538df1506b63393cc6ab12e4aabbfeb924cb55da756ff4537e6eccce"
+          },
+          {
+            "path": "AutomationOutputs/AllOriginalCards/20260918_045317_f062e366/advanced_card/effects.json",
+            "sha256": "84a63076d2c362e6c8b8724a5345c8a7f46e757efc0a1bda26b53264ae18b804"
+          },
+          {
+            "path": "AutomationOutputs/AllOriginalCards/20260918_045317_f062e366/advanced_card/report.json",
+            "sha256": "f736be65a1f05d936aaaf6be738e8f9baacab6e8218826e5fd323c6c74ab2edc"
+          },
+          {
+            "path": "AutomationOutputs/AllOriginalCards/20260918_044646_aa200918/advanced_card/report.json",
+            "sha256": "a18c91902a27c25a52fac39916788028bef7f5b3c4e546b5680cf4b5a5717c15"
+          }
+        ],
+        "visualReview": "四最终＋两招募后余影响1＋两实际防御关键图核对。原卡/原农民/原敌001与058素材、Fire6去能力与承伤3、单敌停攻及另一敌承伤2、最终8/8与4/4击杀一致。首场玩家夹具字段错误初始化失败，无完成例，原failed保留。",
+        "console": "2026-09-18 04:58 最终两次error=0；补场前04:53两次0。Logic04:44:18、Scripts04:50:27、Tests04:44:21。"
+      }
+    },
+    {
+      "cardId": "magic_000",
+      "name": "能量流转",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_spells_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "magic_001",
+      "name": "痊愈",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_spells_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "magic_002",
+      "name": "冥想",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_spells_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "magic_003",
+      "name": "地脉震颤",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_spells_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "magic_004",
+      "name": "地道穿行",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_spells_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "magic_005",
+      "name": "复原",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_spells_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "magic_006",
+      "name": "魔力熔毁",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_spells_2026-09-17.json",
+      "gaps": [],
+      "newEvidence": {
+        "runs": [
+          "20260917_185802_792638b7/magic",
+          "20260917_190927_c819e92c/magic"
+        ],
+        "caseIds": [
+          "magic_006_04",
+          "magic_006_05",
+          "magic_006_06",
+          "magic_006_07",
+          "magic_006_08",
+          "magic_006_09",
+          "magic_006_10"
+        ],
+        "retainedAudit": "AutomationOutputs/AllOriginalCards/20260917_185802_792638b7/magic/incremental_audit.json"
+      }
+    },
+    {
+      "cardId": "magic_007",
+      "name": "拆毁",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_spells_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "magic_008",
+      "name": "燃烧护盾",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_spells_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "magic_009",
+      "name": "火焰魔球",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_spells_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "magic_010",
+      "name": "烈焰之墙",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_spells_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "magic_011",
+      "name": "献祭",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_spells_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "magic_012",
+      "name": "魔力宣夺",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_spells_2026-09-17.json",
+      "gaps": [],
+      "resolvedGaps": [
+        "基础：从真实魔力源取指定基本色骰并保留至轮末；立即3魔力/下回合起每回合1魔力两个正常选项。",
+        "强化：其他玩家实际花费该色魔力触发一次伤牌，同回合再次花费不重复；轮末解除并归还骰。"
+      ],
+      "newEvidence": {
+        "runs": [
+          "20260917_224922_6f3804f2/magic"
+        ],
+        "caseIds": [
+          "magic_012_04",
+          "magic_012_05",
+          "magic_012_06",
+          "magic_012_07"
+        ]
+      }
+    },
+    {
+      "cardId": "magic_013",
+      "name": "冰冻",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_spells_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "magic_014",
+      "name": "迷雾形态",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_spells_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "magic_015",
+      "name": "风雪交加",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_spells_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "magic_016",
+      "name": "空间扭曲",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_spells_2026-09-17.json",
+      "resolvedGaps": [
+        "基础：实际跨2格移动和探索，跳过格不生效且不激怒肆虐敌人。",
+        "强化：真实回合结束将本卡隔离至轮末，其余已打出牌回手、弃掉/移除牌不回手、跳过补牌并实际开始额外回合。"
+      ],
+      "gaps": [],
+      "basicEvidence": {
+        "source": "原016牌面/SO/JSON与WarpEffect、MovementService、ExplorationService、GameEngine正式流程。",
+        "scope": "两次跨二格仍付目的地费；实际板块供给距二探索；不激怒期限与原肆虐敌真实战斗；引擎A→A→B、已打出返手、弃除隔离、首次跳补/再次正常补牌、轮末同实例恢复。非全边界。",
+        "backend": [
+          "053200_002a5ae4 三主例3/3",
+          "053413_85289fea 两新增+三相关回归5/5"
+        ],
+        "sceneCases": [
+          "magic_016_02",
+          "magic_016_03",
+          "magic_016_04",
+          "magic_016_05"
+        ],
+        "effectChecks": 525,
+        "uiSteps": 50,
+        "proofs": [
+          {
+            "path": "AutomationOutputs/RulesState/20260918_053200_002a5ae4/results.xml",
+            "sha256": "de819d351947885bd1cfb313b7230db148f2945c6c9a5d9a3ac75373bd32a4a3"
+          },
+          {
+            "path": "AutomationOutputs/RulesState/20260918_053413_85289fea/results.xml",
+            "sha256": "17daff35040be4e31f9464bf10c5ba29964b0b44d36a00dacce2767c5c3b14d0"
+          },
+          {
+            "path": "AutomationOutputs/AllOriginalCards/20260918_054631_093a69c1/magic/effects.json",
+            "sha256": "d802514faff6e9bc4a5fdfeecc05734d6aa51f97b281c3eaccf2570422cf6d9c"
+          },
+          {
+            "path": "AutomationOutputs/AllOriginalCards/20260918_054631_093a69c1/magic/report.json",
+            "sha256": "dfe8eb6a49cfa5c17ff4d1718dc0f14ca9e7b4d772ab611461f64c548a35b1d4"
+          }
+        ],
+        "sceneRun": "20260918_054631_093a69c1/magic",
+        "visualReview": "四张最终、肆虐实际触发、首次返手暂存、额外回合结束补牌共7张已查看；原牌和敌素材、数值文字清晰；Console最终两次0。"
+      }
+    },
+    {
+      "cardId": "magic_017",
+      "name": "魔力箭矢",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_spells_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "magic_018",
+      "name": "思维读取",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_spells_2026-09-17.json",
+      "gaps": [],
+      "resolvedGaps": [
+        "基础：四个基本色选择、其他玩家实际弃同色行动/法术，无同色牌则展示，不改变无关牌区。",
+        "强化：可选择不偷取或将一张实际弃掉的行动牌永久转入施法者手牌，不能偷法术。"
+      ],
+      "basicEvidence": {
+        "source": "原018中英牌面、既有SO/JSON和正式MindReadEffect；白费/夜间白黑费。",
+        "scope": "明确基本色、逐位选择实际同色行动/法术或无同色展示；强化显式取得第二位玩家弃下的原行动实例/放弃；所得绿晶强化实际行进，真实两步各费2移动；轮末偷牌永久归属和全体原牌引用守恒。非全组合边界。",
+        "backend": [
+          "050200_ee22b0ff 8/8",
+          "050652_8f70d4fd 新增同ID实际第二张选择与伪引用拒绝1/1"
+        ],
+        "sceneCases": [
+          "magic_018_04",
+          "magic_018_05",
+          "magic_018_06"
+        ],
+        "effectChecks": 289,
+        "uiSteps": 21,
+        "proofs": [
+          {
+            "path": "AutomationOutputs/RulesState/20260918_050200_ee22b0ff/results.xml",
+            "sha256": "0f579181d1391e0c3fb39fda1bb21e2311c76b62aca10e321f31ef6a5d23b205"
+          },
+          {
+            "path": "AutomationOutputs/RulesState/20260918_050652_8f70d4fd/results.xml",
+            "sha256": "78a88491d5e636ad56b957822bca72769fc18b37f4841480dba4531436a311a3"
+          },
+          {
+            "path": "AutomationOutputs/AllOriginalCards/20260918_051128_492d17e9/magic/effects.json",
+            "sha256": "f00afe7dc450500061522030efe50395a61647c54a78f83851ebc0b5f6cb215d"
+          },
+          {
+            "path": "AutomationOutputs/AllOriginalCards/20260918_051128_492d17e9/magic/report.json",
+            "sha256": "08bc1b856e436edcce460203e9cb9d3095288c9f7958aac0cf08095f5c5a0360"
+          }
+        ],
+        "visualReview": "三最终和三行进消费后图均核对：原018/000素材、展示狂怒决心、复原/宁静/行进选择及实际原主/本人牌区、绿晶0移动4到逐格2+2结束0，与独立状态断言一致。",
+        "console": "2026-09-18 05:14 最终两次error=0；场景前05:11两次0。Logic05:09:45/Scripts05:09:48/Tests05:09:49。"
+      }
+    },
+    {
+      "cardId": "magic_019",
+      "name": "暴露",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_spells_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "magic_020",
+      "name": "战斗号召",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_spells_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "magic_021",
+      "name": "魅惑",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_spells_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "magic_022",
+      "name": "旋風",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_spells_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "magic_023",
+      "name": "清风之翼",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_spells_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "items_000",
+      "name": "荣誉旌旗",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_artifacts_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "items_001",
+      "name": "恐惧旌旗",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_artifacts_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "items_002",
+      "name": "防护旌旗",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_artifacts_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "items_003",
+      "name": "勇气旌旗",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_artifacts_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "items_004",
+      "name": "红宝石戒指",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_artifacts_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "items_005",
+      "name": "蓝宝石戒指",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_artifacts_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "items_006",
+      "name": "钻石戒指",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_artifacts_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "items_007",
+      "name": "翡翠戒指",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_artifacts_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "items_008",
+      "name": "公正之剑",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_artifacts_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "items_009",
+      "name": "愤怒号角",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_artifacts_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "items_010",
+      "name": "无尽金币包",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_artifacts_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "items_011",
+      "name": "无尽宝石袋",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_artifacts_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "items_012",
+      "name": "黄金圣杯",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_artifacts_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "items_013",
+      "name": "智慧之书",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_artifacts_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "items_014",
+      "name": "皓日护符",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_artifacts_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "items_015",
+      "name": "黑暗护符",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_artifacts_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "items_016",
+      "name": "星辰之弓",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_artifacts_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "items_017",
+      "name": "指挥旌旗",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_artifacts_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "items_018",
+      "name": "强韧旌旗",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_artifacts_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "items_019",
+      "name": "灵魂收割者",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_artifacts_2026-09-17.json",
+      "gaps": [],
+      "newEvidence": {
+        "runs": [
+          "20260917_191115_56da5986/items"
+        ],
+        "caseIds": [
+          "items_019_02",
+          "items_019_03",
+          "items_019_04",
+          "items_019_05",
+          "items_019_06"
+        ],
+        "deferred": [
+          "多抗敌人自由选色",
+          "同次多敌逐个不同选色",
+          "多个收割者不同选色同时结算"
+        ]
+      }
+    },
+    {
+      "cardId": "items_020",
+      "name": "亡君之盾",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_artifacts_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "items_021",
+      "name": "德鲁伊法杖",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_artifacts_2026-09-17.json",
+      "gaps": [],
+      "resolvedGaps": [],
+      "newEvidence": {
+        "runs": [
+          "20260917_225117_538fa50d/items"
+        ],
+        "caseIds": [
+          "items_021_02",
+          "items_021_03",
+          "items_021_04",
+          "items_021_05",
+          "items_021_06",
+          "items_021_07"
+        ]
+      }
+    },
+    {
+      "cardId": "items_022",
+      "name": "启迪头环",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_artifacts_2026-09-17.json",
+      "gaps": [],
+      "followupAudit": "tmp/artifact_022_024_remaining_audit.md",
+      "resolvedGaps": [
+        "正式神器实例出牌映射；公共非互动技能实际选择、必要选项与每回合双用/每轮单用频次；焚毁取得同一原技能后正式发动与消费。"
+      ],
+      "basicEvidence": {
+        "source": "原022牌面/SO/JSON；原技能hero_skill_pool_000:00黑暗道路、:04暗火魔法及skill_000原图区域。互动限制来自原技能来源独立核定。",
+        "scope": "正常借每回合技能两次，白昼2移动支付平原2；正常每轮技能一次，红晶1和红标记1，标记付原狂怒4击杀原032护甲3获名望2；焚毁取得同一公共技能，之后夜间正式用一次产移动2并消费，跨回合仍持有。互动正常拒绝/焚毁允许取得只后台，非所有技能效果和边界组合。",
+        "backend": [
+          "051833_99faf6c9 4/5，原032护甲预期误写4失败，原文3后修正",
+          "051914_e1fc530b 仅失败项1/1；3主用例+2直接旧技能回归最终全过"
+        ],
+        "sceneCases": [
+          "items_022_02",
+          "items_022_03",
+          "items_022_04"
+        ],
+        "effectChecks": 184,
+        "uiSteps": 19,
+        "proofs": [
+          {
+            "path": "AutomationOutputs/RulesState/20260918_051833_99faf6c9/results.xml",
+            "sha256": "e3b62efaf4abaa7aad92ca6a4b8dc1ed53af1dc2444eff518b6024a4db3c5cc3"
+          },
+          {
+            "path": "AutomationOutputs/RulesState/20260918_051914_e1fc530b/results.xml",
+            "sha256": "2493948b280cff0663e16e0cf8c89dec9ad65bb573ee9b169e0913e962b5ba89"
+          },
+          {
+            "path": "AutomationOutputs/AllOriginalCards/20260918_052233_eb415683/items/effects.json",
+            "sha256": "a02bf6126b63d0e560eba06c2ffa3799533f26302cdd280d1b1825f90c76fec4"
+          },
+          {
+            "path": "AutomationOutputs/AllOriginalCards/20260918_052233_eb415683/items/report.json",
+            "sha256": "1c948d7c1b255f800e5750e402014f68d34ec154634b88f22632e5e8533fd874"
+          }
+        ],
+        "visualReview": "三最终图与暗火红标记付原狂怒后关键图核对：原头环/选中原技能行/狂怒/032素材、普通次数、实际费用、4攻击与3护甲击杀名望2、技能供给/自有及头环弃牌/永久移除对应。",
+        "console": "2026-09-18 05:25 最终两次error=0；05:22场景前两次0；DLL Logic05:20:47/Scripts50/Tests51。"
+      }
+    },
+    {
+      "cardId": "items_023",
+      "name": "法术宝典",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_artifacts_2026-09-17.json",
+      "gaps": []
+    },
+    {
+      "cardId": "items_024",
+      "name": "神秘宝盒",
+      "basicAccepted": true,
+      "audit": "vibe_coding/codex/basic_acceptance_artifacts_2026-09-17.json",
+      "followupAudit": "tmp/artifact_022_024_remaining_audit.md",
+      "resolvedGaps": [
+        "原牌是连续揭示/可选借用/回合末归还流程；缺实际神器暂存、普通/焚毁借用及本体牌区、未用回手、旌旗临时附着与回合末卸下。"
+      ],
+      "gaps": [],
+      "basicEvidence": {
+        "source": "原024/010/003牌面、既有SO/JSON及实际农民；共享正式ArtifactEffect映射、招募/部队/移动/回合末。",
+        "scope": "揭示原供应顶后未用返手；借金币包普通/焚毁名望3/4、影响4/9真实招募费用4后余0/5；借勇气旗附实际盒、重整和部队移动2、轮末卸盒；原神器同实例归供应底。非所有借用/嵌套组合。",
+        "backend": [
+          "055027_a8d2b633 四主例4/4",
+          "055124_880ba994 六种普通旌旗各一及金币包两去向8/8必要回归"
+        ],
+        "sceneCases": [
+          "items_024_02",
+          "items_024_03",
+          "items_024_04",
+          "items_024_05"
+        ],
+        "effectChecks": 384,
+        "uiSteps": 28,
+        "proofs": [
+          {
+            "path": "AutomationOutputs/RulesState/20260918_055027_a8d2b633/results.xml",
+            "sha256": "cd2f7de58ef4315cceb01bbf3e034d07c600167e61957a8bcda2fff2c6a622f7"
+          },
+          {
+            "path": "AutomationOutputs/RulesState/20260918_055124_880ba994/results.xml",
+            "sha256": "12018db0ce07b79e11af8c116b418a7b767f0c45e053105a95d9ba7ba7585d92"
+          },
+          {
+            "path": "AutomationOutputs/AllOriginalCards/20260918_060021_7a1ab21d/items/effects.json",
+            "sha256": "8d22910b043e6ad02db58ef3076b76c575e909ed7cb5155e6506ab7111ad04ff"
+          },
+          {
+            "path": "AutomationOutputs/AllOriginalCards/20260918_060021_7a1ab21d/items/report.json",
+            "sha256": "711e42f9f7bd510507812ec1f8970a3ae2a8fc9aa56dca630333c9fa0362031f"
+          }
+        ],
+        "sceneRun": "20260918_060021_7a1ab21d/items",
+        "visualReview": "最终四图及金币包费用、借旗原实体/部队实际移动关键图已核对；Unity最终Console两次0。",
+        "retainedFailedRun": "20260918_055729_ca3f3e89/items：配置误把玩家字段写入回合状态，出牌前停止；修player:前缀后仅重入未完成范围。"
+      }
+    }
+  ],
+  "completedBasicBatches": [
+    {
+      "cards": 3,
+      "backendUniquePassed": 26,
+      "sceneCases": 15,
+      "effectChecks": 471
+    },
+    {
+      "cards": 12,
+      "backendUniquePassed": 19,
+      "sceneCases": 17,
+      "effectChecks": 885,
+      "runs": [
+        "20260917_223708_990b27de/basic_card",
+        "20260917_224720_2aed42b5/advanced_card",
+        "20260917_224922_6f3804f2/magic",
+        "20260917_225117_538fa50d/items",
+        "20260917_225701_9b61de63/advanced_card"
+      ]
+    },
+    {
+      "cards": 3,
+      "backendUniquePassed": 6,
+      "sceneCases": 6,
+      "effectChecks": 346,
+      "runs": [
+        "20260917_231054_01943684/advanced_card"
+      ]
+    },
+    {
+      "cards": 2,
+      "backendUniquePassed": 3,
+      "sceneCases": 3,
+      "effectChecks": 179,
+      "runs": [
+        "20260917_232047_ce1ecab5/basic_card",
+        "20260917_232227_64ff0ebd/advanced_card"
+      ]
+    },
+    {
+      "cards": 2,
+      "backendUniquePassed": 9,
+      "sceneCases": 6,
+      "effectChecks": 424,
+      "runs": [
+        "20260917_233519_83e1c865/basic_card",
+        "20260917_233708_456dd150/advanced_card",
+        "20260917_234611_3ff9f913/advanced_card"
+      ]
+    },
+    {
+      "cards": 2,
+      "backendUniquePassed": 9,
+      "sceneCases": 7,
+      "effectChecks": 445,
+      "runs": [
+        "20260918_000450_0baf81a1/advanced_card"
+      ]
+    },
+    {
+      "cards": 2,
+      "backendUniquePassed": 10,
+      "sceneCases": 7,
+      "effectChecks": 487,
+      "runs": [
+        "20260918_002221_3c3c72e8/basic_card"
+      ]
+    },
+    {
+      "cards": 2,
+      "backendUniquePassed": 6,
+      "sceneCases": 4,
+      "effectChecks": 538,
+      "runs": [
+        "20260918_013301_2a358349/basic_card"
+      ]
+    },
+    {
+      "cards": 1,
+      "backendUniquePassed": 6,
+      "sceneCases": 2,
+      "effectChecks": 278,
+      "runs": [
+        "20260918_014627_6712d213/basic_card"
+      ]
+    }
+  ]
+}

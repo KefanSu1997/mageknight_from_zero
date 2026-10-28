@@ -1,0 +1,23 @@
+{
+  "scope": "原凶蛮僧侣/乌顿弩手普通攻挡、攻城或远程先手实际击杀；近战消费专用攻击、缺绿/错阶段/城防拒绝仅后台。本批不含招募及全部组合。",
+  "backendPassedUnique": 12,
+  "backend": "AutomationOutputs/RulesState/20260918_175617_6bfda6aa",
+  "scene": "AutomationOutputs/PveBattle/20260918_175803_f99e17ac/report.json",
+  "battles": 6,
+  "steps": 130,
+  "assertions": 411,
+  "visualReviewed": 8,
+  "files": {
+    "AutomationOutputs/PveBattle/20260918_175803_f99e17ac/report.json": "f2d42858630eb9d4a4fabc99b0298ea7210fc7db3e099875919d74c54352cfa8",
+    "AutomationOutputs/PveBattle/20260918_175803_f99e17ac/console_final.json": "8d62f369865d478d110ffb57efc54be5aff20c4f4af96e654eba68ad28fb3864",
+    "AutomationOutputs/RulesState/20260918_175617_6bfda6aa/summary.json": "af98d507ff3f46f96d92350e9213e899e03ce094ff5f08a20ed7cd99630f240d",
+    "AutomationOutputs/PveBattle/20260918_175803_f99e17ac/captures/032_进入_End.png": "4cf65d2488d97dfc80cbd6156069876400a41d68e96a7a2ecf01e3a0f4897574",
+    "AutomationOutputs/PveBattle/20260918_175803_f99e17ac/captures/052_进入_End.png": "85d94b387a5f1e4fecf793ca76d48183921c311e2cf6791fdeb04bd6b1a1631a",
+    "AutomationOutputs/PveBattle/20260918_175803_f99e17ac/captures/067_凶蛮_siege.png": "4c4844a41b08e2889cc1816f038d152c73b556097cb8049111d36c46bcb75f98",
+    "AutomationOutputs/PveBattle/20260918_175803_f99e17ac/captures/074_进入_End.png": "7e3df1d9d1884be228b973fa123bee4c57f0cdd3aef27d4c8cfa44ad89d807a2",
+    "AutomationOutputs/PveBattle/20260918_175803_f99e17ac/captures/093_进入_End.png": "9f2b1269d166191d68d20b010bdd742673a09006c0fd682bf5b6156cfe6194e9",
+    "AutomationOutputs/PveBattle/20260918_175803_f99e17ac/captures/113_进入_End.png": "cbf98094b9216a258cebbf5660b46a54efc70e58604fe198cd2e8803ace1bb65",
+    "AutomationOutputs/PveBattle/20260918_175803_f99e17ac/captures/118_弩手_ranged.png": "ee82378ef9645fa96b39b0fb1f2fd1d8db8949c4bc5699f21d69965ae1df369c",
+    "AutomationOutputs/PveBattle/20260918_175803_f99e17ac/captures/129_进入_End.png": "fe84a912bcccf69136ad3b5b80a4a87fc2fdbd5dd773f60941a4ab88ae0d90e9"
+  }
+}

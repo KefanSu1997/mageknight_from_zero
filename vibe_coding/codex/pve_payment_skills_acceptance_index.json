@@ -1,0 +1,99 @@
+{
+  "scope": "原魔咒伤牌/非伤牌当次费用，两极蓝晶支付白费，正式两回合移动与两战；非全部消费者或全部技能验收",
+  "backendEffectivePasses": 55,
+  "backendRuns": [
+    "20260929_051025_036a4875",
+    "20260929_051154_5192dac0",
+    "20260929_051353_9d03ea9c",
+    "20260929_051430_7c349d88"
+  ],
+  "sceneRuns": [
+    {
+      "report": "AutomationOutputs\\PveBattle\\20260929_051541_d7ab8ba0\\report.json",
+      "sha256": "7584168fda681b55d49c7f4b9c8d219d3ea146d79414a49262266a2d966d4150",
+      "originalStatus": "failed",
+      "acceptedZeroBasedSteps": [
+        0,
+        65
+      ],
+      "checks": 98,
+      "screenshots": [
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_051541_d7ab8ba0\\captures\\033_实际新伤材料.png",
+          "sha256": "5c88b8a223a6f28ba3e3039b7f010d07b590232cbb00d2a487fffb5499fef31d",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_051541_d7ab8ba0\\captures\\035_真实弃伤支付强化狂怒.png",
+          "sha256": "fbc83de940b4dbca990ec817656757c09fcb30a0dfe2a520672b57d5c8b6db1c",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_051541_d7ab8ba0\\captures\\037_原攻击4实际击杀.png",
+          "sha256": "c37a90cf8a9e6e7254fbc84a7719dcba4ac2b6a74f8081dda029f9e541619195",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_051541_d7ab8ba0\\captures\\046_实际宁静材料.png",
+          "sha256": "113a9a639b59a583a6c91ef289a5aa293395adf90d208df1ebbcd3cab1875f24",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_051541_d7ab8ba0\\captures\\048_真实弃普通牌支付原移动.png",
+          "sha256": "5af0cdf5ffcec92e03d9ace9589be0d68790835ee40466903cf7e8a369700cfe",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_051541_d7ab8ba0\\captures\\060_实际蓝晶变换.png",
+          "sha256": "449fbc1b26c0c60e2548a0a26a19fc5e68bb8be2dd55e59f70b41aa545e8d8b9",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_051541_d7ab8ba0\\captures\\062_实际蓝晶支付原白费.png",
+          "sha256": "43fc3c994ac428dea05fff6b2c3771183aa50535ccf6cdda1df5a8e3d6bf5ad2",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_051541_d7ab8ba0\\captures\\064_远程3实际击杀.png",
+          "sha256": "bb5495a071d15b6523dbe7a43bca7e770f7061e3de9a9b9c95ac74745e9e9db4",
+          "visuallyInspected": true
+        }
+      ]
+    },
+    {
+      "report": "AutomationOutputs\\PveBattle\\20260929_051732_1ae3872f\\report.json",
+      "sha256": "bd7fca3e2f1970fcae20ae6fb0628f4f7ee426b59bdd9baf318dad780660836b",
+      "originalStatus": "success",
+      "acceptedZeroBasedSteps": [
+        66,
+        69
+      ],
+      "checks": 7,
+      "screenshots": [
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_051732_1ae3872f\\captures\\069_两回合两战正式连续.png",
+          "sha256": "efd2babcd6c51496e6d29fbf24a9404343952f2f5fb04393fd7e561e75803f96",
+          "visuallyInspected": true
+        }
+      ]
+    }
+  ],
+  "effectiveSteps": 70,
+  "effectiveChecks": 105,
+  "inspectedAcceptedScreenshots": 9,
+  "console": "tmp/pve_20260929_payment_final_console.json",
+  "consoleErrorCounts": [
+    0,
+    0
+  ],
+  "failuresPreserved": [
+    "初批后台3失败和Unity测试internal setter编译失败已修；定向证据见后台记录",
+    "场景首轮第66步脚本漏走战斗阶段：原报告保留，只补66–69，未改变规则或断言"
+  ],
+  "remaining": [
+    "神器与内部后付款卡尚不支持本次技能输入",
+    "实际源骰/夜金强法术/部队支付本批仅后台",
+    "英雄入口56/70不等于所有分支通过",
+    "原七格探索与共享立绘仍有缺口"
+  ]
+}

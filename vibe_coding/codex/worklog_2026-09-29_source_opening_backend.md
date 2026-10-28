@@ -1,0 +1,2 @@
+# 2026-09-29 魔力开源后台
+新增SharedSkillArea.SourceOpening.cs；ManaSource按原骰保存可选重掷决定并返还清理；PlayerTurnEngine在任何变更前拒绝未决。新增5个定向测试，未运行CLI/Unity。接口与经验见project_experience/source_opening_real_die_optional_return_2026-09-29.md。共享主文件、GameEngine、UI未改。

@@ -1,0 +1,308 @@
+{
+  "scope": "Tovak本人007:05无惧痛苦与007:08激励，前战真伤/正式次回合/实际抽牌与蓝费及移动消费者；非全技能边界",
+  "status": "passed",
+  "backend": {
+    "run": "AutomationOutputs/RulesState/20260929_181842_1d35fa05",
+    "passed": 1,
+    "failed": 0,
+    "method": "MK.Tests.Battles.PveTovakRecoveryPrimaryJourneyTests.ActualBattleWoundThenOwnFearlessPainAndInspirationPayOriginalMovement"
+  },
+  "scene": {
+    "report": "AutomationOutputs/PveBattle/20260929_182034_f35c6ed5/report.json",
+    "status": "success",
+    "steps": 48,
+    "assertions": 125,
+    "acceptedZeroBasedRange": [
+      0,
+      47
+    ]
+  },
+  "identityAndConsumers": [
+    {
+      "step": 11,
+      "label": "保留同一真实原英雄和牌库",
+      "observed": {
+        "journey.discardCount": "0",
+        "journey.outsideSkill": "",
+        "journey.outsideSkillUsed": "False",
+        "journey.position": "0,0",
+        "movement": "0",
+        "site.discardWounds": "0",
+        "wounds": "0",
+        "journey.completedTurns": "0",
+        "journey.completedBattles": "0",
+        "journey.samePlayer": "True",
+        "hand": "6",
+        "deck.count": "10",
+        "hero.id": "Tovak",
+        "hero.skills": "2",
+        "hero.deckTotal": "16",
+        "hand.ids": "basic_card_021,basic_card_014,basic_card_000,basic_card_007,basic_card_027,basic_card_009",
+        "skills.used": "False,False",
+        "tokens.blue": "0",
+        "blue": "1"
+      }
+    },
+    {
+      "step": 26,
+      "label": "第一回合正式弃已打出牌，两伤实际跨回合",
+      "observed": {
+        "journey.discardCount": "2",
+        "journey.outsideSkill": "",
+        "journey.outsideSkillUsed": "False",
+        "journey.position": "0,0",
+        "movement": "0",
+        "site.discardWounds": "0",
+        "wounds": "2",
+        "journey.completedTurns": "1",
+        "journey.completedBattles": "1",
+        "journey.samePlayer": "True",
+        "hand": "6",
+        "deck.count": "10",
+        "hero.id": "Tovak",
+        "hero.skills": "2",
+        "hero.deckTotal": "18",
+        "hand.ids": "basic_card_014,basic_card_007,basic_card_027,basic_card_009,w,w",
+        "skills.used": "False,False",
+        "tokens.blue": "0",
+        "blue": "1"
+      }
+    },
+    {
+      "step": 31,
+      "label": "按正式默认弃第一张实际伤至弃牌堆并抽下一张原狂怒",
+      "observed": {
+        "journey.discardCount": "3",
+        "journey.outsideSkill": "hero_skill_pool_007:05",
+        "journey.outsideSkillUsed": "True",
+        "journey.position": "0,0",
+        "movement": "0",
+        "site.discardWounds": "1",
+        "wounds": "1",
+        "journey.completedTurns": "1",
+        "journey.completedBattles": "1",
+        "journey.samePlayer": "True",
+        "hand": "6",
+        "deck.count": "9",
+        "hero.id": "Tovak",
+        "hero.skills": "2",
+        "hero.deckTotal": "18",
+        "hand.ids": "basic_card_014,basic_card_007,basic_card_027,basic_card_009,w,basic_card_021",
+        "skills.used": "True,False",
+        "tokens.blue": "0",
+        "blue": "1"
+      }
+    },
+    {
+      "step": 33,
+      "label": "实际抽两张原牌，并记录本轮次数和蓝标",
+      "observed": {
+        "journey.discardCount": "3",
+        "journey.outsideSkill": "hero_skill_pool_007:08",
+        "journey.outsideSkillUsed": "True",
+        "journey.position": "0,0",
+        "movement": "0",
+        "site.discardWounds": "1",
+        "wounds": "1",
+        "journey.completedTurns": "1",
+        "journey.completedBattles": "1",
+        "journey.samePlayer": "True",
+        "hand": "8",
+        "deck.count": "7",
+        "hero.id": "Tovak",
+        "hero.skills": "2",
+        "hero.deckTotal": "18",
+        "hand.ids": "basic_card_014,basic_card_007,basic_card_027,basic_card_009,w,basic_card_021,basic_card_002,basic_card_007",
+        "skills.used": "True,True",
+        "tokens.blue": "1",
+        "blue": "1"
+      }
+    },
+    {
+      "step": 37,
+      "label": "优先支付激励蓝标，库存蓝晶仍1",
+      "observed": {
+        "journey.discardCount": "3",
+        "journey.outsideSkill": "hero_skill_pool_007:08",
+        "journey.outsideSkillUsed": "True",
+        "journey.position": "0,0",
+        "movement": "4",
+        "site.discardWounds": "1",
+        "wounds": "1",
+        "journey.completedTurns": "1",
+        "journey.completedBattles": "1",
+        "journey.samePlayer": "True",
+        "hand": "7",
+        "deck.count": "7",
+        "hero.id": "Tovak",
+        "hero.skills": "2",
+        "hero.deckTotal": "18",
+        "hand.ids": "basic_card_007,basic_card_027,basic_card_009,w,basic_card_021,basic_card_002,basic_card_007",
+        "skills.used": "True,True",
+        "tokens.blue": "0",
+        "blue": "1"
+      }
+    },
+    {
+      "step": 39,
+      "label": "消费新抽狂怒，移动增为5",
+      "observed": {
+        "journey.discardCount": "3",
+        "journey.outsideSkill": "hero_skill_pool_007:08",
+        "journey.outsideSkillUsed": "True",
+        "journey.position": "0,0",
+        "movement": "5",
+        "site.discardWounds": "1",
+        "wounds": "1",
+        "journey.completedTurns": "1",
+        "journey.completedBattles": "1",
+        "journey.samePlayer": "True",
+        "hand": "6",
+        "deck.count": "7",
+        "hero.id": "Tovak",
+        "hero.skills": "2",
+        "hero.deckTotal": "18",
+        "hand.ids": "basic_card_007,basic_card_027,basic_card_009,w,basic_card_002,basic_card_007",
+        "skills.used": "True,True",
+        "tokens.blue": "0",
+        "blue": "1"
+      }
+    },
+    {
+      "step": 41,
+      "label": "消费激励新抽原牌，移动增为6",
+      "observed": {
+        "journey.discardCount": "3",
+        "journey.outsideSkill": "hero_skill_pool_007:08",
+        "journey.outsideSkillUsed": "True",
+        "journey.position": "0,0",
+        "movement": "6",
+        "site.discardWounds": "1",
+        "wounds": "1",
+        "journey.completedTurns": "1",
+        "journey.completedBattles": "1",
+        "journey.samePlayer": "True",
+        "hand": "5",
+        "deck.count": "7",
+        "hero.id": "Tovak",
+        "hero.skills": "2",
+        "hero.deckTotal": "18",
+        "hand.ids": "basic_card_007,basic_card_027,basic_card_009,w,basic_card_007",
+        "skills.used": "True,True",
+        "tokens.blue": "0",
+        "blue": "1"
+      }
+    },
+    {
+      "step": 45,
+      "label": "真实支付平原移动2",
+      "observed": {
+        "journey.discardCount": "3",
+        "journey.outsideSkill": "hero_skill_pool_007:08",
+        "journey.outsideSkillUsed": "True",
+        "journey.position": "0,1",
+        "movement": "4",
+        "site.discardWounds": "1",
+        "wounds": "1",
+        "journey.completedTurns": "1",
+        "journey.completedBattles": "1",
+        "journey.samePlayer": "True",
+        "hand": "5",
+        "deck.count": "7",
+        "hero.id": "Tovak",
+        "hero.skills": "2",
+        "hero.deckTotal": "18",
+        "hand.ids": "basic_card_007,basic_card_027,basic_card_009,w,basic_card_007",
+        "skills.used": "True,True",
+        "tokens.blue": "0",
+        "blue": "1"
+      }
+    },
+    {
+      "step": 47,
+      "label": "两正式回合：弃伤未去除、两个新抽消费者及蓝费用守恒",
+      "observed": {
+        "journey.discardCount": "6",
+        "journey.outsideSkill": "",
+        "journey.outsideSkillUsed": "False",
+        "journey.position": "0,1",
+        "movement": "0",
+        "site.discardWounds": "1",
+        "wounds": "1",
+        "journey.completedTurns": "2",
+        "journey.completedBattles": "1",
+        "journey.samePlayer": "True",
+        "hand": "6",
+        "deck.count": "6",
+        "hero.id": "Tovak",
+        "hero.skills": "2",
+        "hero.deckTotal": "18",
+        "hand.ids": "basic_card_007,basic_card_027,basic_card_009,w,basic_card_007,basic_card_001",
+        "skills.used": "True,True",
+        "tokens.blue": "0",
+        "blue": "1"
+      }
+    }
+  ],
+  "screenshots": [
+    {
+      "step": 26,
+      "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_182034_f35c6ed5\\captures\\026_第一回合正式弃已打出牌，两伤实际跨回合.png",
+      "visuallyReviewedBy": "parent /root",
+      "result": "normal"
+    },
+    {
+      "step": 31,
+      "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_182034_f35c6ed5\\captures\\031_按正式默认弃第一张实际伤至弃牌堆并抽下一张原狂怒.png",
+      "visuallyReviewedBy": "parent /root",
+      "result": "normal"
+    },
+    {
+      "step": 33,
+      "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_182034_f35c6ed5\\captures\\033_实际抽两张原牌，并记录本轮次数和蓝标.png",
+      "visuallyReviewedBy": "parent /root",
+      "result": "normal"
+    },
+    {
+      "step": 37,
+      "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_182034_f35c6ed5\\captures\\037_优先支付激励蓝标，库存蓝晶仍1.png",
+      "visuallyReviewedBy": "parent /root",
+      "result": "normal"
+    },
+    {
+      "step": 47,
+      "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_182034_f35c6ed5\\captures\\047_两正式回合：弃伤未去除、两个新抽消费者及蓝费用守恒.png",
+      "visuallyReviewedBy": "parent /root",
+      "result": "normal"
+    }
+  ],
+  "console": {
+    "path": "tmp/pve_primary_delta_final_console.json",
+    "errorCounts": [
+      0,
+      0
+    ],
+    "actualReadVerified": true
+  },
+  "files": {
+    "AutomationOutputs/PveBattle/20260929_182034_f35c6ed5/report.json": "fa3c5c9ee5782160ed0c9d286bbef836ffa558c392583e0f459eba2acc84f7ad",
+    "AutomationOutputs/RulesState/20260929_181842_1d35fa05/results.xml": "043da8771c0f0e1b6a7a4ab391cea6418903d755a90e9818baf1634eb3875adb",
+    "AutomationOutputs/RulesState/20260929_181842_1d35fa05/summary.json": "b16ca61e00876c3a25e661345f978276e26e3b8aa21981ff9e9ae164ffcdc9fd",
+    "tmp/pve_primary_delta_final_console.json": "8d62f369865d478d110ffb57efc54be5aff20c4f4af96e654eba68ad28fb3864"
+  },
+  "labelCorrection": {
+    "cardId": "basic_card_002",
+    "originalName": "凝结",
+    "sources": [
+      "resources/text_json/basic_card.json",
+      "Assets/GameData/CardsAssets/basic_card_002.asset"
+    ],
+    "oldGeneratorLabel": "魔力结晶",
+    "action": "只修生成器/说明标签；原report及截图不改，不重新执行动作",
+    "actualConsumer": "本次横置移动1，未发动凝结基础/强化效果"
+  },
+  "limits": [
+    "已有演练地图与敌人，不宣称原探索完成",
+    "两技能本次主要消费者通过，不扩大为全部频率/多人激励排列场景通过"
+  ]
+}

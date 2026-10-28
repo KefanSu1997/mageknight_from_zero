@@ -1,0 +1,10 @@
+{
+  "scenePath": "Assets/Scenes/Verification/units.unity",
+  "useRunSubfolder": false,
+  "captureInitialView": true,
+  "initialDelaySeconds": 1.5,
+  "defaultWaitAfterSeconds": 0.05,
+  "maxRunSeconds": 900,
+  "steps": [],
+  "caseIds": []
+}

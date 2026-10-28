@@ -1,0 +1,23 @@
+{
+  "scope": "强韧旌旗原附着、预选/取消免伤、剑士自伤、毒素实际承伤、重复免伤拒绝；战中焚毁拒绝，真实战斗结束后焚毁治疗两部队且不重整。全轮生命周期/麻痹/全部组合未在本PVE场景覆盖，既有后台证据保留。",
+  "backend": "AutomationOutputs/RulesState/20260918_193846_f964b395",
+  "backendPassedUnique": 5,
+  "scene": "AutomationOutputs/PveBattle/20260918_194125_fa8382ec/report.json",
+  "battles": 4,
+  "steps": 129,
+  "assertions": 316,
+  "visualReviewed": 8,
+  "files": {
+    "AutomationOutputs/PveBattle/20260918_194125_fa8382ec/report.json": "db1c449d770979b83e627f2dca3af900edc4f42f2f87734fca3e2f5e1df0e5d3",
+    "AutomationOutputs/PveBattle/20260918_194125_fa8382ec/console_final.json": "8d62f369865d478d110ffb57efc54be5aff20c4f4af96e654eba68ad28fb3864",
+    "AutomationOutputs/RulesState/20260918_193846_f964b395/summary.json": "daff49b3c3ffbde3a5481a3ddf5ca608b01ade7a792331959c053be25f5de42c",
+    "AutomationOutputs/PveBattle/20260918_194125_fa8382ec/captures/031_原强韧旌旗附着第一支部队.png": "7c18fdf5ea5f1bcb62aa55ffaf199b6394c7ccae495003f83bc3d124bd4d065e",
+    "AutomationOutputs/PveBattle/20260918_194125_fa8382ec/captures/043_乌顿剑士原能力自伤.png": "61145d5dc16d6ad7244a14e204ab5ee7560c6cc95bec2bf1f7082bfe5ee51c5e",
+    "AutomationOutputs/PveBattle/20260918_194125_fa8382ec/captures/064_乌顿剑士原能力自伤.png": "c08bc8ea8612b6dcd6e8ef688c8e6f6b702d1b73cf9fa0ec6628ecccf554f99f",
+    "AutomationOutputs/PveBattle/20260918_194125_fa8382ec/captures/082_进入_Melee.png": "734592bdf7e084b1f8fa846cce43b4a75ea3159564ad489981d839518c562a68",
+    "AutomationOutputs/PveBattle/20260918_194125_fa8382ec/captures/106_战斗中拒绝治疗.png": "5fecb02d21fd284ea2325801b85656a5fcf1f3fe48a199a99364c75b30b7c0e4",
+    "AutomationOutputs/PveBattle/20260918_194125_fa8382ec/captures/119_两支真实部队分别自伤.png": "41a93e32b0ae9892b8c25fb21a8939829993b0750de6869c0e411fe5c50d1bc5",
+    "AutomationOutputs/PveBattle/20260918_194125_fa8382ec/captures/126_原神器永久移除并完全治疗.png": "cc5f41609714fca2e2de6414a37ddb6df5fc535b50c766af2949d1519b1135c8",
+    "AutomationOutputs/PveBattle/20260918_194125_fa8382ec/captures/128_核对治疗不重整.png": "8e6e2a29dd7b275404c1675b88f51125415a5502ad16ffa73fa157b07178051b"
+  }
+}

@@ -1,0 +1,5 @@
+# 原英雄图按真实玩家绑定
+
+旧DrawStage只判断_originalStartHero，自定原英雄与合作构筑因此回退同一秘法剑士。改从实际战斗Player.HeroId解析OriginalHeroes，将原专属牌上半插画作为身份头像；使用Sprite.rect换算UV并保留比例，不改卡面或重复生成纹理。七种已存在原卡资源可直接复用，不能声称它们是透明全身立绘。
+
+显示证据须读取实际挂载的RawImage.texture，而非重复返回预期映射。20260929_095724_59a58ef2七自定身份加一标准入口56步80断言，8关键图逐张检查，Console双0。纯呈现改变不重跑CLI规则库；调试切换只验显示，不冒充连续玩家证据。详见vibe_coding/codex/pve_original_hero_portrait_acceptance_index.json。

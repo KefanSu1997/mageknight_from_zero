@@ -1,0 +1,65 @@
+{
+  "scope": "Original Learning strong, SpellForge strong, acquired ManaStorm base real crystal consumers; Practice base removed material and actual acquired IceShield through formal round to block and kill",
+  "segments": [
+    {
+      "route": "learning",
+      "run": "20260929_153808_43aaa703",
+      "startInclusive": 0,
+      "endExclusive": 25,
+      "steps": 25,
+      "assertions": 38,
+      "sha256": "6f88907926c2a2829da37a5fff57b2cd50ca0d6037cd66a10e83ddbdcc100497",
+      "reviewedScreenshots": []
+    },
+    {
+      "route": "learning",
+      "run": "20260929_154009_a5d68cb4",
+      "startInclusive": 25,
+      "endExclusive": 72,
+      "steps": 47,
+      "assertions": 78,
+      "sha256": "5a401ec1b59504b404b615ea2d13edb4d0c903d68767520c859197da91978722",
+      "reviewedScreenshots": [
+        "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_154009_a5d68cb4\\captures\\030_第二张不同实际白色法术.png",
+        "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_154009_a5d68cb4\\captures\\049_选择实际魔力风暴.png",
+        "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_154009_a5d68cb4\\captures\\065_从实际位置支付平原2移动，8余6.png"
+      ]
+    },
+    {
+      "route": "practice",
+      "run": "20260929_154128_12abbc7f",
+      "startInclusive": 0,
+      "endExclusive": 65,
+      "steps": 65,
+      "assertions": 103,
+      "sha256": "ecfbd8798004d40f8111b5002dbce80365b11c0b7722375c525d691a1f550e7b",
+      "reviewedScreenshots": [
+        "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_154128_12abbc7f\\captures\\027_选择同色实际寒冰之盾.png",
+        "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_154128_12abbc7f\\captures\\058_原盾成功格挡后减甲，旧玩家无伤.png"
+      ]
+    },
+    {
+      "route": "practice",
+      "run": "20260929_154515_7c5dff05",
+      "startInclusive": 65,
+      "endExclusive": 66,
+      "steps": 1,
+      "assertions": 8,
+      "sha256": "43b48553c787de5613703620eca6c1a1b0674107c493db942eebbb10a1ff32cc",
+      "reviewedScreenshots": [
+        "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_154515_7c5dff05\\captures\\065_同一原盾回弃牌，原材料永久去除且真实两回合完成.png"
+      ]
+    }
+  ],
+  "steps": 138,
+  "assertions": 227,
+  "backendNew": "20260929_153255_242e91eb 2/2 continuous cases",
+  "backendReused": [
+    "20260923_075415_8d6b81d4 three original mode cases",
+    "20260923_072400_47a3fe82 Storm base"
+  ],
+  "console": "tmp/pve_supply_primary_final_console.json",
+  "fix": "Keep selected actual end-turn discards when entering battle in the same turn; clear at real turn/round boundaries",
+  "fixture": "No Unity asset mutations; prior AutomationConfigs restored exact bytes",
+  "limitations": "Custom seven/five-card snapshots, not standard original hero start; no claim all unit/card/copy modes passed"
+}

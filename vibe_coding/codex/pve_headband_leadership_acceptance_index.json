@@ -1,0 +1,30 @@
+{
+  "scope": "头环借公共领导，两支合法招募部队近战4+5真实击杀",
+  "run": "20260929_092637_558d5cdc",
+  "steps": 81,
+  "assertions": 130,
+  "additionalStateChecks": 11,
+  "screenshotsReviewed": [
+    39,
+    54,
+    61,
+    74,
+    76,
+    78,
+    80
+  ],
+  "reportSha256": "d3ae0d596921a2b588a2ec13cc8d3439f80a3237f733c27b35d9928f0edc8f77",
+  "backendEffectivePassed": 11,
+  "backendRuns": [
+    "20260929_091915_b129e613",
+    "20260929_092010_3152081d",
+    "20260929_092235_bbab7e1a"
+  ],
+  "console": "tmp/pve_headband_leadership_final_console.json",
+  "fixtureRestored": true,
+  "remaining": [
+    "领导借用远程与格挡分支仅后台，场景未单独覆盖",
+    "指挥旌旗供应超过三张时缺分页，后续需修",
+    "其他动态头环与原地图/英雄美术仍未全完成"
+  ]
+}

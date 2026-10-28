@@ -1,0 +1,25 @@
+{
+  "scope": "阿瑞希亚燃烧之力、高蒂克斯冰封之力各普通/元素攻城及诺洛瓦斯白昼狙击昼夜分支。近战混合元素、非法选项/归属/阶段和真实回合次数重置仅后台；专属英雄立绘待补。",
+  "backend": "AutomationOutputs/RulesState/20260918_191023_9389629f",
+  "backendPassedUnique": 12,
+  "scene": "AutomationOutputs/PveBattle/20260918_191340_69a313cc/report.json",
+  "battles": 6,
+  "steps": 142,
+  "assertions": 438,
+  "visualReviewed": 10,
+  "files": {
+    "AutomationOutputs/PveBattle/20260918_191340_69a313cc/report.json": "a50a1831bc4cee0eb2f1fe5a51a881fdd85d106843f9bf965ea2ccf5aff77aee",
+    "AutomationOutputs/PveBattle/20260918_191340_69a313cc/console_final.json": "8d62f369865d478d110ffb57efc54be5aff20c4f4af96e654eba68ad28fb3864",
+    "AutomationOutputs/RulesState/20260918_191023_9389629f/summary.json": "9a1ca47f47d24125205f81ed8be82f4e45c8850eb6966f1207d3fe78114e13b0",
+    "AutomationOutputs/PveBattle/20260918_191340_69a313cc/captures/039_正式发动原技能.png": "f803431b497e38c213d5e87dfa68b7715e7cc240af0340f43408a66c84274b0b",
+    "AutomationOutputs/PveBattle/20260918_191340_69a313cc/captures/055_正式发动原技能.png": "00243f2ab333052d74b23e35443813c91a87cdce2dea3f280aa2753ccadd70cf",
+    "AutomationOutputs/PveBattle/20260918_191340_69a313cc/captures/072_正式发动原技能.png": "7ee56a8f3c1ad7e6a3aee4f8a1b0f3a5cf3e41acab3209d3f046b1b9e81570a4",
+    "AutomationOutputs/PveBattle/20260918_191340_69a313cc/captures/088_正式发动原技能.png": "bd10c12ec883a1baef17c914c35212adab2d79d9a80e5bd0405e961f93678904",
+    "AutomationOutputs/PveBattle/20260918_191340_69a313cc/captures/108_正式发动原技能.png": "4155432dcdac25a0e02b093010a0a6dd1141aea1814f96de04362fd4dcd3f3ce",
+    "AutomationOutputs/PveBattle/20260918_191340_69a313cc/captures/130_正式发动原技能.png": "f33cb7b060fbfa34803bd8faacedcf8cb5d52d9cc56d345ccd415a37d316d287",
+    "AutomationOutputs/PveBattle/20260918_191340_69a313cc/captures/045_结算真实击杀.png": "73959a6fef1510ecbd0a40af4aece7bf31c028b763a7b44b7f3ff912aed70b36",
+    "AutomationOutputs/PveBattle/20260918_191340_69a313cc/captures/094_结算真实击杀.png": "1c6fe952656f1a66cf5d0d9dd03e665e2f9e9dd560ad3b55fead0091e04215e5",
+    "AutomationOutputs/PveBattle/20260918_191340_69a313cc/captures/119_进入_End.png": "e1c6b57fd1e2236460aaabf3214028e66f6f0da1759c681e0c623081c5589b11",
+    "AutomationOutputs/PveBattle/20260918_191340_69a313cc/captures/141_进入_End.png": "bde27cad30bb564881b24b8647fea758af8dc169fc3586d6105c2eff2fe67a78"
+  }
+}

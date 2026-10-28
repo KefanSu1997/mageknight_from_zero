@@ -1,0 +1,3162 @@
+{
+  "asOf": "2026-09-29",
+  "scope": "25原神器逐ID普通/焚毁有限主要模式；历史基本场景+当前实际入口/连续消费者证据映射，不是全组合/全边界或当前全库重新认证",
+  "summary": {
+    "originalArtifacts": 25,
+    "modeRows": 50,
+    "historicalBasicAccepted": 25,
+    "currentEntryImplemented": 25,
+    "modeRowsWithRetainedPrimarySceneEvidence": 50,
+    "knownCurrentDemoGap": [
+      {
+        "cardId": "items_022",
+        "mode": "normal",
+        "gap": "普通借混乱"
+      }
+    ],
+    "newTestsRun": 0,
+    "newScreenshots": 0,
+    "currentEntryLimitation": "25仅表示原神器种类已有操作入口；items_022.normal公共混乱动态初始化例外见knownCurrentDemoGap，不能宣称所有必要输入完成。"
+  },
+  "policy": [
+    "历史partial/失败按原文件保留；只引用其中已审计检查点，不篡改整批状态",
+    "没有最新PVE截图不等于待重测；原图路径与已有截图审阅证据保留",
+    "本台账解决映射，不把原basicAccepted=true解释为每个新动态入口已全验",
+    "宝盒/宝典复用单层主要输入和原消费者，不扩为全排列或多层复制",
+    "当前无依据要求重跑任何已过基本模式，混乱明确排入主代理当前缺口"
+  ],
+  "sources": {
+    "vibe_coding/codex/basic_acceptance_artifacts_2026-09-17.json": {
+      "sha256": "c39ac7c05914a8dcdfcffbb7f761960c009e172e243c22708c077c7827ed8efd"
+    },
+    "vibe_coding/codex/basic_card_acceptance_index.json": {
+      "sha256": "7acd2c0d929aba60776ee45b782ad8559077db536c6727b8d75f98460f663280"
+    },
+    "vibe_coding/codex/artifact_basic_entry_audit_2026-09-29.md": {
+      "sha256": "32ed5216ba8e49703e9d8f7962ee7615890e8a6adb6ea07c6f2981fc98091bfe"
+    },
+    "resources/text_json/items.json": {
+      "sha256": "ad439a4ba6172038f5abce10ab9e5e112494dc47b97bd766dbfb60993eb98ad6"
+    }
+  },
+  "currentEvidenceIndexRegistry": {
+    "vibe_coding/codex/pve_artifact_acceptance_index.json": {
+      "sha256": "59e2a6eaa919c5396969ef125adb05d24a2bfe78d74c9e905048b117105b17d9",
+      "scope": "荣誉旌旗/公正之剑普通与焚毁的PVE交互；其他神器仍未完成",
+      "interpretation": "仅复用该索引明确通过的步骤/分段；其失败、partial、限制与截图审阅记录保持原值"
+    },
+    "vibe_coding/codex/pve_fear_acceptance_index.json": {
+      "sha256": "d7f8a53822a3b15288f86564d76fe7d126279fe0e07a33744270b358ef281569",
+      "scope": "恐惧旌旗普通效果精确取消一次攻击、保留另一次真实承伤、已格挡攻击拒绝与焚毁至多三敌；后台另验证攻击槽重映射和回合清理，未声称全部组合完成。",
+      "interpretation": "仅复用该索引明确通过的步骤/分段；其失败、partial、限制与截图审阅记录保持原值"
+    },
+    "vibe_coding/codex/pve_artifact_resources_acceptance_index.json": {
+      "sha256": "6c438b5cb1968830583d5006f6e42986b364b3c6f9e2b75f017347a675c77665",
+      "scope": "原资源神器/防护旗所选分支与真实消费者；入口覆盖不等于全部正常/焚毁场景通过",
+      "interpretation": "仅复用该索引明确通过的步骤/分段；其失败、partial、限制与截图审阅记录保持原值"
+    },
+    "vibe_coding/codex/pve_courage_acceptance_index.json": {
+      "sha256": "6d7d2650fa222b232dc67de826fd054993719596531ecaf02c1e75776aede0bd",
+      "scope": "勇气旌旗普通仅附旗部队与焚毁全部部队；实际战后健康/受伤各两分支，战中使用/重复次数拒绝。重整不治疗，原实例附着或永久移除。完整轮间次数重置、后续新战斗及全部组合未在此场景验证。",
+      "interpretation": "仅复用该索引明确通过的步骤/分段；其失败、partial、限制与截图审阅记录保持原值"
+    },
+    "vibe_coding/codex/pve_natural_site_recruitment_acceptance_index.json": {
+      "sha256": "52239985ef4b2457dd347e86e589fc42c13ce272f45bf69f27478fbf253fcd1b",
+      "scope": "Actual tower conquest and formal reward, next-turn original unit recruitment, same-unit and retained reward-card combat consumer",
+      "interpretation": "仅复用该索引明确通过的步骤/分段；其失败、partial、限制与截图审阅记录保持原值"
+    },
+    "vibe_coding/codex/pve_star_bow_acceptance_index.json": {
+      "sha256": "f9b790dcc9f4942cafee31aec679fac87118df2a24cbaa3e75d3dd63f894eefd",
+      "scope": "原items_016星辰之弓普通真实弃牌/当前阶段名望、焚毁逐笔远程翻倍或攻城/攻城翻倍变远程、同元素与城防、真实消耗和回合期限。",
+      "interpretation": "仅复用该索引明确通过的步骤/分段；其失败、partial、限制与截图审阅记录保持原值"
+    },
+    "vibe_coding/codex/pve_horn_acceptance_index.json": {
+      "sha256": "4834294204149523da462488c4c81b72d92d399a58d508b622dbaf74b0259338",
+      "scope": "愤怒号角普通与焚毁实际PVE：攻城、额外0..5选择、正式六面骰与真实创伤、原卡区守恒和击杀。场景覆盖普通金/黑、近战及焚毁0/2/5；额外1/3/4仅后台，全部随机组合未穷举。",
+      "interpretation": "仅复用该索引明确通过的步骤/分段；其失败、partial、限制与截图审阅记录保持原值"
+    },
+    "vibe_coding/codex/pve_tower_spell_purchase_acceptance_index.json": {
+      "sha256": "a964bc20786afcef17757438eb20eabe8af3f3801e27bb6e548344e754d96f90",
+      "scope": "本人真实征服塔的自然购法术：7影响+原蓝晶实际付款、原供应立即补位、入实际牌库顶/正式抽回及下一回合蓝骰寒冰远程消费者",
+      "interpretation": "仅复用该索引明确通过的步骤/分段；其失败、partial、限制与截图审阅记录保持原值"
+    },
+    "vibe_coding/codex/pve_keep_recruitment_acceptance_index.json": {
+      "sha256": "6349861de4c6238a5c1f387097983ddd3d69bd0459364d3739caa748d0666662",
+      "scope": "Actual original025 Keep conquest, next-turn natural Keep recruitment, same Guardian Golem across formal round with paid Ice block and actual spell kill",
+      "interpretation": "仅复用该索引明确通过的步骤/分段；其失败、partial、限制与截图审阅记录保持原值"
+    },
+    "vibe_coding/codex/pve_grail_acceptance_index.json": {
+      "sha256": "d9755977359918a086ca675c8d9b2cd0a654dcfaf082182469469e888afe07a5",
+      "scope": "原黄金圣杯PVE战后普通/焚毁，实际战斗产生英雄及II级部队伤牌、治疗点消费、来源名望、真实牌库抽牌和药草师混合治疗。",
+      "interpretation": "仅复用该索引明确通过的步骤/分段；其失败、partial、限制与截图审阅记录保持原值"
+    },
+    "vibe_coding/codex/pve_material_artifacts_acceptance_index.json": {
+      "sha256": "bb94b23dfa4fd7e80fd82b998505680a2dff081c0fcf0671b1b0d9a92c73aeb5",
+      "scope": "材料神器三种已选分支与原供应和实际消费者；不声明所有普通/焚毁或所有宝典法术通过",
+      "interpretation": "仅复用该索引明确通过的步骤/分段；其失败、partial、限制与截图审阅记录保持原值"
+    },
+    "vibe_coding/codex/pve_special_artifacts_acceptance_index.json": {
+      "sha256": "70b8d497955cfa22d860dff987d8f4067ddd59224bc6a1a7dc8c94f2d7bf3886",
+      "scope": "原指挥旗普通实际招募与跨回合、宝盒借荣誉旗焚毁实际消费者。头环效果仅后台，场景只核对空公共区。",
+      "interpretation": "仅复用该索引明确通过的步骤/分段；其失败、partial、限制与截图审阅记录保持原值"
+    },
+    "vibe_coding/codex/pve_command_offer_pages_acceptance_index.json": {
+      "sha256": "7a38fe875702c7bb9dcd4d4505bded9dec74f063b3d1007d2ff25a49beafd220",
+      "scope": "指挥旌旗实际供应分页及原第四张取得后消费",
+      "interpretation": "仅复用该索引明确通过的步骤/分段；其失败、partial、限制与截图审阅记录保持原值"
+    },
+    "vibe_coding/codex/pve_fortitude_acceptance_index.json": {
+      "sha256": "3fdb235a48573d76249f91ca43fff9a77c4157d22ff9c6f59020761d34cfb40c",
+      "scope": "强韧旌旗原附着、预选/取消免伤、剑士自伤、毒素实际承伤、重复免伤拒绝；战中焚毁拒绝，真实战斗结束后焚毁治疗两部队且不重整。全轮生命周期/麻痹/全部组合未在本PVE场景覆盖，既有后台证据保留。",
+      "interpretation": "仅复用该索引明确通过的步骤/分段；其失败、partial、限制与截图审阅记录保持原值"
+    },
+    "vibe_coding/codex/pve_harvester_acceptance_index.json": {
+      "sha256": "c16274d4a607861c288b200a8f264dd62ac1c99688c38a72420c80519e4d9510",
+      "scope": "灵魂收割者原普通/焚毁、合法逐敌选晶、真实击杀与攻击/阶段奖励期限。非法选择/目标重映射/回合末清理只后台；非全部组合。",
+      "interpretation": "仅复用该索引明确通过的步骤/分段；其失败、partial、限制与截图审阅记录保持原值"
+    },
+    "vibe_coding/codex/pve_shield_acceptance_index.json": {
+      "sha256": "110b75d206e745865be88a94f0fd6d929244d84989be3e6619a6493a54c169aa",
+      "scope": "亡君之盾原四模式与同敌多攻击分次格挡；战末/回合清理与错误阶段/外来卡拒绝另有后台证据，未含全部组合。",
+      "interpretation": "仅复用该索引明确通过的步骤/分段；其失败、partial、限制与截图审阅记录保持原值"
+    },
+    "vibe_coding/codex/pve_headband_progression_acceptance_index.json": {
+      "sha256": "2044f4dc039834fa7ffce6a8c1ed3149f2220503449b0f156a830958ec90ce38",
+      "scope": "真实原托瓦克升级公共快步前行，经头环普通借用/焚毁取得，正式技能发动和实际地形移动、回合末神器去向。其他公共技能组合不在本次范围。",
+      "interpretation": "仅复用该索引明确通过的步骤/分段；其失败、partial、限制与截图审阅记录保持原值"
+    },
+    "vibe_coding/codex/pve_headband_dynamic_acceptance_index.json": {
+      "sha256": "3e43b21b20359c9bf3e8c5edf7250bdd27041c095279cc28c840be7f7d04ea6b",
+      "scope": "原头环普通动态借用第一组：百步穿杨/漫不经心/通用力量/魔法抗拒实际场景，不等于全头环通过",
+      "interpretation": "仅复用该索引明确通过的步骤/分段；其失败、partial、限制与截图审阅记录保持原值"
+    },
+    "vibe_coding/codex/pve_headband_targets_acceptance_index.json": {
+      "sha256": "1a5f99a7c2a7b0fcc9402c05520dcdcf77ce515b246469718f7dc3dd812e4c35",
+      "scope": "头环两种再生、无惧痛苦及重整旗鼓重整分支的真实目标连续消费者；非全头环或全Demo通过",
+      "interpretation": "仅复用该索引明确通过的步骤/分段；其失败、partial、限制与截图审阅记录保持原值"
+    },
+    "vibe_coding/codex/pve_headband_rally_heal_acceptance_index.json": {
+      "sha256": "df34ae62a1bde7574939ba5880155ce5c595f9714b7bb012b5571e37db8dbdc2",
+      "scope": "头环借重整旗鼓治疗分支：真实农民承伤→治疗仍耗竭→正式跨轮→原移动消费",
+      "interpretation": "仅复用该索引明确通过的步骤/分段；其失败、partial、限制与截图审阅记录保持原值"
+    },
+    "vibe_coding/codex/pve_headband_pain_acceptance_index.json": {
+      "sha256": "4cc218669138977437fcb85a6a70d4baabd66545fa36e26035f382bb5b67bc04",
+      "scope": "头环痛苦之力真实伤牌及原伤牌素材显示",
+      "interpretation": "仅复用该索引明确通过的步骤/分段；其失败、partial、限制与截图审阅记录保持原值"
+    },
+    "vibe_coding/codex/pve_headband_leadership_acceptance_index.json": {
+      "sha256": "c77eefb4af4495075ec8eba94877901843423309635ca9f01e10f4eb0ed380af",
+      "scope": "头环借公共领导，两支合法招募部队近战4+5真实击杀",
+      "interpretation": "仅复用该索引明确通过的步骤/分段；其失败、partial、限制与截图审阅记录保持原值"
+    },
+    "vibe_coding/codex/pve_headband_shape_fork_flight_acceptance_index.json": {
+      "sha256": "b89c206b3ac72c99665962cccd57b4eacceaf29694bfbeafff554bcb89e98e4b",
+      "scope": "头环普通借用：变换同近战两次原卡（基础/蓝费强化）；叉形同近战两次独立实际敌人并消费；飞行一次两格2费及后续正常移动",
+      "interpretation": "仅复用该索引明确通过的步骤/分段；其失败、partial、限制与截图审阅记录保持原值"
+    },
+    "vibe_coding/codex/pve_headband_social_acceptance_index.json": {
+      "sha256": "268ec2e98d97a3dc85339d6f0fcc6c835f70bf60fef5023714bc5aa4b65c0465",
+      "scope": "特立独行逐次影响与禁招募/真实治疗；奥术伪装仅普通2+2影响与真实招募",
+      "interpretation": "仅复用该索引明确通过的步骤/分段；其失败、partial、限制与截图审阅记录保持原值"
+    },
+    "vibe_coding/codex/pve_headband_payment_acceptance_index.json": {
+      "sha256": "852c84704a10d4da7568c957eec07a47727b9feb0f690872c905f3c172dbcde4",
+      "scope": "头环公共魔咒两次实际材料/两极实际晶体和源骰付款→原治疗与移动消费者",
+      "interpretation": "仅复用该索引明确通过的步骤/分段；其失败、partial、限制与截图审阅记录保持原值"
+    },
+    "vibe_coding/codex/pve_headband_unit_payment_acceptance_index.json": {
+      "sha256": "786dec8fba8dab951413fc9ed65e9af8b25eadbf01ab52ab3df6760c3fd54223",
+      "scope": "头环借用两极分化的正式部队付款及与原手牌混用；实际招募后续战斗消费",
+      "interpretation": "仅复用该索引明确通过的步骤/分段；其失败、partial、限制与截图审阅记录保持原值"
+    },
+    "vibe_coding/codex/pve_headband_outside_unit_payment_acceptance_index.json": {
+      "sha256": "9f8939e7becebc348c9a28eea8f5d11c3455adc55b1b6b2ed390cd7e612ff1c7",
+      "scope": "头环战外药草师与原承诺两笔付款、实际治疗和村庄交涉",
+      "interpretation": "仅复用该索引明确通过的步骤/分段；其失败、partial、限制与截图审阅记录保持原值"
+    },
+    "vibe_coding/codex/pve_headband_flip_acceptance_index.json": {
+      "sha256": "635e5885842ba90ffbc5dad26be7b4b883be6e13694065cf1782dea22190940c",
+      "scope": "Original public Krang skills via actual level reward and physical Headband: frenzy flip, ritual green token, disguise flip; formal consumers and turns",
+      "interpretation": "仅复用该索引明确通过的步骤/分段；其失败、partial、限制与截图审阅记录保持原值"
+    },
+    "vibe_coding/codex/pve_headband_duel_acceptance_index.json": {
+      "sha256": "7221c24a0ff756aa9f4de640a67bb69156322258f070a5d12e2d8f9689aea1d0",
+      "scope": "Original public Duel from real level reward; physical Headband compound same-target block/attack/fame and formal turns",
+      "interpretation": "仅复用该索引明确通过的步骤/分段；其失败、partial、限制与截图审阅记录保持原值"
+    },
+    "vibe_coding/codex/pve_headband_puppet_acceptance_index.json": {
+      "sha256": "084cbb24ccff48da19b2637f067a0b221ca473b2d32214e63e51d74e66d905da",
+      "scope": "Public original Puppet from real Krang level reward; same battle real enemy keep then consume from physical headband, actual second kill and end-turn unkept cleanup",
+      "interpretation": "仅复用该索引明确通过的步骤/分段；其失败、partial、限制与截图审阅记录保持原值"
+    },
+    "vibe_coding/codex/pve_tome_dynamic_acceptance_index.json": {
+      "sha256": "b24ef5b6950de5b7d242bbc6fc1b7d5c8bd8393863a582bbc6c87f28e3592cc6",
+      "scope": "tome blue claim and nonfirst honor summon real consumers",
+      "interpretation": "仅复用该索引明确通过的步骤/分段；其失败、partial、限制与截图审阅记录保持原值"
+    },
+    "vibe_coding/codex/pve_tome_materials_acceptance_index.json": {
+      "sha256": "384a586958ea38af1f6f5d0dd423a7f061473b1a0af66259089b9fb3b8986254",
+      "scope": "Tome sacrifice separate payment/materials, crystal movement consumers, Trance exact discard return and formal draw consumption",
+      "interpretation": "仅复用该索引明确通过的步骤/分段；其失败、partial、限制与截图审阅记录保持原值"
+    },
+    "vibe_coding/codex/pve_tome_world_acceptance_index.json": {
+      "sha256": "5c24aea7620d2ccfca4439e501d20e8faf270d6a0e8523232b30798abca1be51",
+      "scope": "Tome Wings real movement cost then formal round Tunnel actual guard, ranged kill, conquest and formal spell reward",
+      "interpretation": "仅复用该索引明确通过的步骤/分段；其失败、partial、限制与截图审阅记录保持原值"
+    },
+    "vibe_coding/codex/pve_restore_honor_inputs_acceptance_index.json": {
+      "sha256": "55e114a062886d96f807ea9ccefb9be4fcac3e9615c0a20e80896ee35ba99b3a",
+      "scope": "Tome multi-unit Rebirth persistent consumers and Honor fourth actual offer paging",
+      "interpretation": "仅复用该索引明确通过的步骤/分段；其失败、partial、限制与截图审阅记录保持原值"
+    },
+    "vibe_coding/codex/pve_mind_responses_acceptance_index.json": {
+      "sha256": "e4431dc7a001205bee2084fb08cf4ca615c40e3eaedcbf8f60ce24af1b5300e3",
+      "scope": "Original multiplayer Mind Read/Steal shared-device responses, permanent ownership and actual consumers",
+      "interpretation": "仅复用该索引明确通过的步骤/分段；其失败、partial、限制与截图审阅记录保持原值"
+    },
+    "vibe_coding/codex/pve_box_weapon_acceptance_index.json": {
+      "sha256": "108987012b06db777e3fdbd3d1a14e0bbb5719983bb1b11ab05c7dfaa721a87b",
+      "scope": "box shield normal and horn burn continuous scene; other new inputs backend only",
+      "interpretation": "仅复用该索引明确通过的步骤/分段；其失败、partial、限制与截图审阅记录保持原值"
+    },
+    "vibe_coding/codex/pve_polarization_special_primary_acceptance_index.json": {
+      "sha256": "8b61573b3d72d887d7e4ae1250152d2daf99c4c9fe7be3544b6523897058bb1e",
+      "scope": "本次只映射黑暗护符本面实际原魔力付款消费者，具体采纳步骤见artifact_deed_final_delta_2026-09-29.md",
+      "interpretation": "保留各索引原通过/失败及范围，不将整报告归给单卡"
+    },
+    "vibe_coding/codex/pve_heroes_assault_fee_acceptance_index.json": {
+      "sha256": "38828a4c9b323723a3b67737f201e1fdd2349dbe948b6b1c7590478ffb26d33b",
+      "scope": "本次只映射黑暗护符本面实际原魔力付款消费者，具体采纳步骤见artifact_deed_final_delta_2026-09-29.md",
+      "interpretation": "保留各索引原通过/失败及范围，不将整报告归给单卡"
+    }
+  },
+  "cards": [
+    {
+      "cardId": "items_000",
+      "name": "荣誉旌旗",
+      "definition": "Assets/GameData/CardsAssets/items_000.asset",
+      "artwork": "Assets/GameData/cards/items_000.png",
+      "originalJson": "resources/text_json/items.json#items_000",
+      "entryImplemented": true,
+      "historicalBasicAccepted": true,
+      "historicalAuditStatusPreserved": "basic_scene_evidence_available",
+      "historicalAuditGapsPreserved": [],
+      "historicalGapResolution": null,
+      "modes": {
+        "normal": {
+          "printedRule": "将本卡牌分配给一支你控制的部队。被分配到的部队获得护甲+1，且他们的任何攻击或格挡+1。每次这支部队攻击或格挡时，名望+1。",
+          "currentEntry": [
+            "PveJourneySession.PlayOutsideArtifact",
+            "PveBattleSession.PlayArtifact"
+          ],
+          "actualInputs": "实际自有单位附旗",
+          "actualConsumer": "部队攻挡加值/护甲及名望",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_000_00",
+              "title": "基础 / 两支原农民攻击并击杀原人类战士，名望与旗帜范围对应",
+              "mode": "normal",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_085839_eee0a9da/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_085839_eee0a9da/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 29,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 5,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            },
+            {
+              "caseId": "items_000_02",
+              "title": "基础 / 实际农民格挡加值按附着范围生效",
+              "mode": "normal",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_085839_eee0a9da/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_085839_eee0a9da/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 23,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 5,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            },
+            {
+              "caseId": "items_000_04",
+              "title": "基础 / 实际伤害依次分给两支部队，护甲加值影响剩余英雄伤牌",
+              "mode": "normal",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_090149_b915f34c/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_090149_b915f34c/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 23,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 4,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_artifact_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片",
+          "unverified": []
+        },
+        "burn": {
+          "printedRule": "本回合中你控制的所有部队获得护甲+1，且他们的任何攻击或格挡+1。本回合每有一支进行攻击或格挡的部队，名望+1。",
+          "currentEntry": [
+            "PveJourneySession.PlayOutsideArtifact",
+            "PveBattleSession.PlayArtifact"
+          ],
+          "actualInputs": "全体实际自有单位本回合",
+          "actualConsumer": "多部队攻挡与整回合清理",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_000_01",
+              "title": "强化 / 两支原农民攻击并击杀原人类战士，名望与旗帜范围对应",
+              "mode": "burn",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_085839_eee0a9da/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_085839_eee0a9da/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 29,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 6,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            },
+            {
+              "caseId": "items_000_05",
+              "title": "强化 / 实际农民格挡加值按附着范围生效",
+              "mode": "burn",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_085839_eee0a9da/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_085839_eee0a9da/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 23,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 5,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            },
+            {
+              "caseId": "items_000_07",
+              "title": "强化 / 实际伤害依次分给两支部队，护甲加值影响剩余英雄伤牌",
+              "mode": "burn",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_085839_eee0a9da/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_085839_eee0a9da/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 22,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 5,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            },
+            {
+              "caseId": "items_000_12",
+              "title": "强化 / 焚毁增益跨战斗持续，回合末清除并永久移除神器",
+              "mode": "burn",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_085839_eee0a9da/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_085839_eee0a9da/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 24,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 8,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_artifact_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片",
+          "unverified": []
+        }
+      },
+      "sharedLifecycleEvidence": {
+        "worklog": "vibe_coding/codex/worklog_2026-09-29_banner_round_return.md",
+        "report": "AutomationOutputs/PveBattle/20260929_124823_e5d4678a/report.json",
+        "scope": "六旗共用正式轮末入口；荣誉/指挥代表性真实保留取回再消费，不宣称六旗逐张新场景重验"
+      }
+    },
+    {
+      "cardId": "items_001",
+      "name": "恐惧旌旗",
+      "definition": "Assets/GameData/CardsAssets/items_001.asset",
+      "artwork": "Assets/GameData/cards/items_001.png",
+      "originalJson": "resources/text_json/items.json#items_001",
+      "entryImplemented": true,
+      "historicalBasicAccepted": true,
+      "historicalAuditStatusPreserved": "basic_scene_evidence_available",
+      "historicalAuditGapsPreserved": [],
+      "historicalGapResolution": null,
+      "modes": {
+        "normal": {
+          "printedRule": "将本卡牌分配给一支你控制的部队。在战斗格挡阶段，你可以让该部队精力耗尽，以取消一次敌人的攻击。如果这么做，名望+1。",
+          "currentEntry": [
+            "PveJourneySession.PlayOutsideArtifact",
+            "PveBattleSession.UseFearBanner / BurnFearBanner"
+          ],
+          "actualInputs": "附旗单位、实际敌人及攻击槽",
+          "actualConsumer": "取消指定攻击而其他攻击真实伤害",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_001_00",
+              "title": "基础 / 附着不耗尽，指定第3个敌人取消；再用拒绝，其余三次攻击实际造成6伤",
+              "mode": "normal",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_105735_71c3ac0a/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_105735_71c3ac0a/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 25,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 7,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_fear_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片",
+          "unverified": []
+        },
+        "burn": {
+          "printedRule": "本次战斗中最多3个敌人不攻击。",
+          "currentEntry": [
+            "PveJourneySession.PlayOutsideArtifact",
+            "PveBattleSession.UseFearBanner / BurnFearBanner"
+          ],
+          "actualInputs": "至多三个不同真实敌人",
+          "actualConsumer": "多目标停止攻击、剩余实际承伤",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_001_01",
+              "title": "强化 / 焚毁指定第4/2/3个敌人，仅第1个攻击造成2伤，战斗结束清除停攻",
+              "mode": "burn",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_105735_71c3ac0a/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_105735_71c3ac0a/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 22,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 5,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_fear_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片",
+          "unverified": []
+        }
+      },
+      "sharedLifecycleEvidence": {
+        "worklog": "vibe_coding/codex/worklog_2026-09-29_banner_round_return.md",
+        "report": "AutomationOutputs/PveBattle/20260929_124823_e5d4678a/report.json",
+        "scope": "六旗共用正式轮末入口；荣誉/指挥代表性真实保留取回再消费，不宣称六旗逐张新场景重验"
+      }
+    },
+    {
+      "cardId": "items_002",
+      "name": "防护旌旗",
+      "definition": "Assets/GameData/CardsAssets/items_002.asset",
+      "artwork": "Assets/GameData/cards/items_002.png",
+      "originalJson": "resources/text_json/items.json#items_002",
+      "entryImplemented": true,
+      "historicalBasicAccepted": true,
+      "historicalAuditStatusPreserved": "basic_scene_evidence_available",
+      "historicalAuditGapsPreserved": [],
+      "historicalGapResolution": null,
+      "modes": {
+        "normal": {
+          "printedRule": "将本卡牌分配给一支你控制的部队。被分配到的部队获得护甲+1、火焰抗性和寒冰抗性。",
+          "currentEntry": [
+            "PveJourneySession.PlayOutsideArtifact",
+            "PveBattleSession.PlayArtifact"
+          ],
+          "actualInputs": "附旗实际单位及真实元素承伤",
+          "actualConsumer": "真实物理/火焰/寒冰承伤与抗性",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_002_00",
+              "title": "基础 / 原物理攻击3仍令附着农民受伤，护甲4不代表物理抗性",
+              "mode": "normal",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_101823_5550c2ac/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_101823_5550c2ac/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 23,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 3,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            },
+            {
+              "caseId": "items_002_02",
+              "title": "基础 / 火焰毒素攻击6先吸收4，再受毒素双伤且无英雄余伤",
+              "mode": "normal",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_101823_5550c2ac/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_101823_5550c2ac/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 22,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 4,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            },
+            {
+              "caseId": "items_002_03",
+              "title": "基础 / 寒冰麻痹攻击3完全吸收，部队不被销毁",
+              "mode": "normal",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_101823_5550c2ac/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_101823_5550c2ac/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 22,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 4,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_artifact_resources_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片",
+          "unverified": []
+        },
+        "burn": {
+          "printedRule": "你回合结束时，可以去除所有本回合中受到的创伤。",
+          "currentEntry": [
+            "PveJourneySession.PlayOutsideArtifact",
+            "PveBattleSession.PlayArtifact"
+          ],
+          "actualInputs": "本回合真实新伤身份及正式回合末",
+          "actualConsumer": "手牌/弃牌中新伤清理、旧伤保留",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_002_01",
+              "title": "强化 / 焚毁后毒素产生手中与弃牌新伤，战斗结束不移除，回合末只清新伤",
+              "mode": "burn",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_101823_5550c2ac/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_101823_5550c2ac/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 28,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 6,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_artifact_resources_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片",
+          "unverified": []
+        }
+      },
+      "sharedLifecycleEvidence": {
+        "worklog": "vibe_coding/codex/worklog_2026-09-29_banner_round_return.md",
+        "report": "AutomationOutputs/PveBattle/20260929_124823_e5d4678a/report.json",
+        "scope": "六旗共用正式轮末入口；荣誉/指挥代表性真实保留取回再消费，不宣称六旗逐张新场景重验"
+      }
+    },
+    {
+      "cardId": "items_003",
+      "name": "勇气旌旗",
+      "definition": "Assets/GameData/CardsAssets/items_003.asset",
+      "artwork": "Assets/GameData/cards/items_003.png",
+      "originalJson": "resources/text_json/items.json#items_003",
+      "entryImplemented": true,
+      "historicalBasicAccepted": true,
+      "historicalAuditStatusPreserved": "basic_scene_evidence_available",
+      "historicalAuditGapsPreserved": [],
+      "historicalGapResolution": null,
+      "modes": {
+        "normal": {
+          "printedRule": "将本卡牌分配给一支你控制的部队。每轮一次，战斗中除外，你可以将本卡牌翻面至正面朝下，以重整此部队。每轮开始时，将本卡牌再次翻面至正面朝上。",
+          "currentEntry": [
+            "PveJourneySession.PlayOutsideArtifact",
+            "PveBattleSession.UseCourage"
+          ],
+          "actualInputs": "附旗实际耗竭单位、每轮主动翻旗",
+          "actualConsumer": "原农民重整后移动2",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_003_00",
+              "title": "基础 / 附着不自动重整；主动翻旗后原农民移动2，同轮再次翻旗拒绝",
+              "mode": "normal",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_095613_8fd07d99/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_095613_8fd07d99/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 25,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 6,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_courage_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片",
+          "unverified": []
+        },
+        "burn": {
+          "printedRule": "你可以在战斗之外的任何时候打出本卡牌，以重整所有你控制的部队。",
+          "currentEntry": [
+            "PveJourneySession.PlayOutsideArtifact",
+            "PveBattleSession.UseCourage"
+          ],
+          "actualInputs": "实际自有全部单位，不清创伤",
+          "actualConsumer": "两原农民重整后移动4",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_003_01",
+              "title": "强化 / 实际焚毁后两支原农民均可发动，合计移动4",
+              "mode": "burn",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_095613_8fd07d99/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_095613_8fd07d99/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 20,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 5,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_courage_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片",
+          "unverified": []
+        }
+      },
+      "sharedLifecycleEvidence": {
+        "worklog": "vibe_coding/codex/worklog_2026-09-29_banner_round_return.md",
+        "report": "AutomationOutputs/PveBattle/20260929_124823_e5d4678a/report.json",
+        "scope": "六旗共用正式轮末入口；荣誉/指挥代表性真实保留取回再消费，不宣称六旗逐张新场景重验"
+      }
+    },
+    {
+      "cardId": "items_004",
+      "name": "红宝石戒指",
+      "definition": "Assets/GameData/CardsAssets/items_004.asset",
+      "artwork": "Assets/GameData/cards/items_004.png",
+      "originalJson": "resources/text_json/items.json#items_004",
+      "entryImplemented": true,
+      "historicalBasicAccepted": true,
+      "historicalAuditStatusPreserved": "basic_scene_evidence_available",
+      "historicalAuditGapsPreserved": [],
+      "historicalGapResolution": null,
+      "modes": {
+        "normal": {
+          "printedRule": "获得一个红色魔力标记和一颗红色魔晶，将魔晶放入物品栏。名望+1。",
+          "currentEntry": [
+            "PveJourneySession.PlayOutsideArtifact",
+            "PveBattleSession.PlayResourceArtifact"
+          ],
+          "actualInputs": "固定红晶/红标记",
+          "actualConsumer": "晶/标记及正式回合末保留库存",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_004_02",
+              "title": "基础 / 原戒指基础效果，结束回合只保留魔晶与名望",
+              "mode": "normal",
+              "historicalStatus": "passed",
+              "run": "AutomationOutputs/AllOriginalCards/20260916_225538_33def055/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260916_225538_33def055/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 28,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 3,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_artifact_resources_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片",
+          "unverified": []
+        },
+        "burn": {
+          "printedRule": "本回合中你拥有无尽的红色和黑色魔力。本回合中你每施放一个红色法术，名望+1。",
+          "currentEntry": [
+            "PveJourneySession.PlayOutsideArtifact",
+            "PveBattleSession.PlayResourceArtifact"
+          ],
+          "actualInputs": "本回合无限红黑、原同色法术",
+          "actualConsumer": "夜间连续同色原法术基础/强化付款与名望",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_004_04",
+              "title": "强化 / 夜间连续施放同色原法术，基础与强化各奖励一次名望",
+              "mode": "burn",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260916_225538_33def055/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260916_225538_33def055/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 33,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 5,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            },
+            {
+              "caseId": "items_004_06",
+              "title": "强化 / 回合结束后无尽魔力和施法奖励清除，零费用再施法应拒绝",
+              "mode": "burn",
+              "historicalStatus": "passed",
+              "run": "AutomationOutputs/AllOriginalCards/20260916_225538_33def055/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260916_225538_33def055/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 31,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 5,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_artifact_resources_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片",
+          "unverified": []
+        }
+      }
+    },
+    {
+      "cardId": "items_005",
+      "name": "蓝宝石戒指",
+      "definition": "Assets/GameData/CardsAssets/items_005.asset",
+      "artwork": "Assets/GameData/cards/items_005.png",
+      "originalJson": "resources/text_json/items.json#items_005",
+      "entryImplemented": true,
+      "historicalBasicAccepted": true,
+      "historicalAuditStatusPreserved": "basic_scene_evidence_available",
+      "historicalAuditGapsPreserved": [],
+      "historicalGapResolution": null,
+      "modes": {
+        "normal": {
+          "printedRule": "获得一个蓝色魔力标记和一颗蓝色魔晶，将魔晶放入物品栏。名望+1。",
+          "currentEntry": [
+            "PveJourneySession.PlayOutsideArtifact",
+            "PveBattleSession.PlayResourceArtifact"
+          ],
+          "actualInputs": "固定蓝晶/蓝标记",
+          "actualConsumer": "原蓝资源和后续原法术费用",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_005_02",
+              "title": "基础 / 原戒指基础效果，结束回合只保留魔晶与名望",
+              "mode": "normal",
+              "historicalStatus": "passed",
+              "run": "AutomationOutputs/AllOriginalCards/20260916_225538_33def055/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260916_225538_33def055/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 28,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 4,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_artifact_resources_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片",
+          "unverified": []
+        },
+        "burn": {
+          "printedRule": "本回合中你拥有无尽的蓝色和黑色魔力。本回合中你每施放一个蓝色法术，名望+1。",
+          "currentEntry": [
+            "PveJourneySession.PlayOutsideArtifact",
+            "PveBattleSession.PlayResourceArtifact"
+          ],
+          "actualInputs": "本回合无限蓝黑、原同色法术",
+          "actualConsumer": "夜间原法术真实费用/名望",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_005_04",
+              "title": "强化 / 夜间连续施放同色原法术，基础与强化各奖励一次名望",
+              "mode": "burn",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260916_231342_48493c95/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260916_231342_48493c95/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 33,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 4,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            },
+            {
+              "caseId": "items_005_06",
+              "title": "强化 / 回合结束后无尽魔力和施法奖励清除，零费用再施法应拒绝",
+              "mode": "burn",
+              "historicalStatus": "passed",
+              "run": "AutomationOutputs/AllOriginalCards/20260916_225538_33def055/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260916_225538_33def055/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 31,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 5,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_artifact_resources_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片",
+          "unverified": []
+        }
+      }
+    },
+    {
+      "cardId": "items_006",
+      "name": "钻石戒指",
+      "definition": "Assets/GameData/CardsAssets/items_006.asset",
+      "artwork": "Assets/GameData/cards/items_006.png",
+      "originalJson": "resources/text_json/items.json#items_006",
+      "entryImplemented": true,
+      "historicalBasicAccepted": true,
+      "historicalAuditStatusPreserved": "basic_scene_evidence_available",
+      "historicalAuditGapsPreserved": [],
+      "historicalGapResolution": null,
+      "modes": {
+        "normal": {
+          "printedRule": "获得一个白色魔力标记和一颗白色魔晶，将魔晶放入物品栏。名望+1。",
+          "currentEntry": [
+            "PveJourneySession.PlayOutsideArtifact",
+            "PveBattleSession.PlayResourceArtifact"
+          ],
+          "actualInputs": "固定白晶/白标记",
+          "actualConsumer": "原白资源",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_006_02",
+              "title": "基础 / 原戒指基础效果，结束回合只保留魔晶与名望",
+              "mode": "normal",
+              "historicalStatus": "passed",
+              "run": "AutomationOutputs/AllOriginalCards/20260916_225538_33def055/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260916_225538_33def055/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 28,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 4,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_artifact_resources_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片",
+          "unverified": []
+        },
+        "burn": {
+          "printedRule": "本回合中你拥有无尽的白色和黑色魔力。本回合中你每施放一个白色法术，名望+1。",
+          "currentEntry": [
+            "PveJourneySession.PlayOutsideArtifact",
+            "PveBattleSession.PlayResourceArtifact"
+          ],
+          "actualInputs": "本回合无限白黑、原同色法术",
+          "actualConsumer": "夜间原法术真实费用/名望",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_006_04",
+              "title": "强化 / 夜间连续施放同色原法术，基础与强化各奖励一次名望",
+              "mode": "burn",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260916_225538_33def055/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260916_225538_33def055/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 31,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 5,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            },
+            {
+              "caseId": "items_006_06",
+              "title": "强化 / 回合结束后无尽魔力和施法奖励清除，零费用再施法应拒绝",
+              "mode": "burn",
+              "historicalStatus": "passed",
+              "run": "AutomationOutputs/AllOriginalCards/20260916_225538_33def055/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260916_225538_33def055/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 31,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 5,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_artifact_resources_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片",
+          "unverified": []
+        }
+      }
+    },
+    {
+      "cardId": "items_007",
+      "name": "翡翠戒指",
+      "definition": "Assets/GameData/CardsAssets/items_007.asset",
+      "artwork": "Assets/GameData/cards/items_007.png",
+      "originalJson": "resources/text_json/items.json#items_007",
+      "entryImplemented": true,
+      "historicalBasicAccepted": true,
+      "historicalAuditStatusPreserved": "basic_scene_evidence_available",
+      "historicalAuditGapsPreserved": [],
+      "historicalGapResolution": null,
+      "modes": {
+        "normal": {
+          "printedRule": "获得一个绿色魔力标记和一颗绿色魔晶，将魔晶放入物品栏。名望+1。",
+          "currentEntry": [
+            "PveJourneySession.PlayOutsideArtifact",
+            "PveBattleSession.PlayResourceArtifact"
+          ],
+          "actualInputs": "固定绿晶/绿标记",
+          "actualConsumer": "实际招募及后续原卡费用",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_007_02",
+              "title": "基础 / 原戒指基础效果，结束回合只保留魔晶与名望",
+              "mode": "normal",
+              "historicalStatus": "passed",
+              "run": "AutomationOutputs/AllOriginalCards/20260916_225538_33def055/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260916_225538_33def055/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 28,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 4,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_artifact_resources_acceptance_index.json",
+            "vibe_coding/codex/pve_natural_site_recruitment_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片",
+          "unverified": []
+        },
+        "burn": {
+          "printedRule": "本回合中你拥有无尽的绿色和黑色魔力。本回合中你每施放一个绿色法术，名望+1。",
+          "currentEntry": [
+            "PveJourneySession.PlayOutsideArtifact",
+            "PveBattleSession.PlayResourceArtifact"
+          ],
+          "actualInputs": "本回合无限绿黑、原同色法术",
+          "actualConsumer": "夜间原法术真实费用/名望",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_007_04",
+              "title": "强化 / 夜间连续施放同色原法术，基础与强化各奖励一次名望",
+              "mode": "burn",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_005531_addd6739/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_005531_addd6739/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 32,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 6,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            },
+            {
+              "caseId": "items_007_06",
+              "title": "强化 / 回合结束后无尽魔力和施法奖励清除，零费用再施法应拒绝",
+              "mode": "burn",
+              "historicalStatus": "passed",
+              "run": "AutomationOutputs/AllOriginalCards/20260916_230458_aa421ea1/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260916_230458_aa421ea1/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 31,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 5,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_artifact_resources_acceptance_index.json",
+            "vibe_coding/codex/pve_natural_site_recruitment_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片",
+          "unverified": []
+        }
+      }
+    },
+    {
+      "cardId": "items_008",
+      "name": "公正之剑",
+      "definition": "Assets/GameData/CardsAssets/items_008.asset",
+      "artwork": "Assets/GameData/cards/items_008.png",
+      "originalJson": "resources/text_json/items.json#items_008",
+      "entryImplemented": true,
+      "historicalBasicAccepted": true,
+      "historicalAuditStatusPreserved": "basic_scene_evidence_available",
+      "historicalAuditGapsPreserved": [],
+      "historicalGapResolution": null,
+      "modes": {
+        "normal": {
+          "printedRule": "打出本卡牌时，从手牌中弃掉任意数量的行动卡牌。以此方式弃掉的每张卡牌使你获得攻击3。本回合中你每击败一个敌人，名望+1。",
+          "currentEntry": [
+            "PveBattleSession.PlayArtifact"
+          ],
+          "actualInputs": "真实手牌弃牌材料",
+          "actualConsumer": "实际材料弃牌、击杀两敌/名望",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_008_03",
+              "title": "基础 / 实际弃2张牌，武器回合末进入弃牌堆",
+              "mode": "normal",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260916_002158_4e77bce8/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260916_002158_4e77bce8/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 14,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 4,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            },
+            {
+              "caseId": "items_008_04",
+              "title": "基础 / 两张弃牌形成一笔攻击，击败两敌各加一名望",
+              "mode": "normal",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260916_002158_4e77bce8/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260916_002158_4e77bce8/items/effects.json",
+              "executionPath": "ActionSystem.Play -> CardCombatActions -> production combat resolver",
+              "effectChecksPassed": 23,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 4,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_artifact_acceptance_index.json",
+            "vibe_coding/codex/pve_star_bow_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片",
+          "unverified": []
+        },
+        "burn": {
+          "printedRule": "本回合中你在攻击阶段打出的所有物理攻击总数值翻倍。本回合中所有敌人失去物理抗性。本回合中你每击败一个敌人，名望+1。",
+          "currentEntry": [
+            "PveBattleSession.PlayArtifact"
+          ],
+          "actualInputs": "真实攻击贡献及抗性/倍率",
+          "actualConsumer": "原攻击抗性/倍率后击杀及回合末清理",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_008_11",
+              "title": "强化 / 焚毁：Melee阶段原卡basic_card_021对抗PhysicalResist",
+              "mode": "burn",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260916_003109_d7655706/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260916_003109_d7655706/items/effects.json",
+              "executionPath": "ActionSystem.Play -> CardCombatActions -> production combat resolver",
+              "effectChecksPassed": 26,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 4,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            },
+            {
+              "caseId": "items_008_14",
+              "title": "强化 / 焚毁武器不进弃牌，结束回合持续效果失效",
+              "mode": "burn",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260916_003109_d7655706/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260916_003109_d7655706/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 17,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 5,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_artifact_acceptance_index.json",
+            "vibe_coding/codex/pve_star_bow_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片",
+          "unverified": []
+        }
+      }
+    },
+    {
+      "cardId": "items_009",
+      "name": "愤怒号角",
+      "definition": "Assets/GameData/CardsAssets/items_009.asset",
+      "artwork": "Assets/GameData/cards/items_009.png",
+      "originalJson": "resources/text_json/items.json#items_009",
+      "entryImplemented": true,
+      "historicalBasicAccepted": true,
+      "historicalAuditStatusPreserved": "basic_scene_evidence_available",
+      "historicalAuditGapsPreserved": [],
+      "historicalGapResolution": null,
+      "modes": {
+        "normal": {
+          "printedRule": "攻城攻击5。投掷一颗魔力骰子。如果掷到黑色或红色，受到一点创伤。",
+          "currentEntry": [
+            "PveBattleSession.PlayHorn"
+          ],
+          "actualInputs": "实际六面骰结果和真实伤牌",
+          "actualConsumer": "原城防敌实际攻城击杀/真实伤牌",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_009_00",
+              "title": "基础 / 基础原号角红骰受1伤，重复同实体拒绝，攻城击败原城防目标后跨轮回手",
+              "mode": "normal",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_104853_0490841d/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_104853_0490841d/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 32,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 9,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_horn_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片",
+          "unverified": []
+        },
+        "burn": {
+          "printedRule": "攻城攻击5。本次攻城攻击你可以最多+5攻击力。每+1攻击力你需要投掷一颗魔力骰子。每次掷到黑色或红色，受到一点创伤。",
+          "currentEntry": [
+            "PveBattleSession.PlayHorn"
+          ],
+          "actualInputs": "原额外攻城0..5选择、相应骰数/伤牌",
+          "actualConsumer": "可选追加攻城、昏迷真实伤牌、实际城防击杀",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_009_01",
+              "title": "强化 / 零额外攻城仍为5且不掷骰，未用攻城战后清理，焚毁跨轮不回手",
+              "mode": "burn",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_104023_993b04b3/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_104023_993b04b3/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 24,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 8,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            },
+            {
+              "caseId": "items_009_24",
+              "title": "强化 / 焚毁额外5全红触发昏迷，未打出原卡弃掉，现有攻城10仍击败原城防目标",
+              "mode": "burn",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_104853_0490841d/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_104853_0490841d/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 29,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 5,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_horn_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片",
+          "unverified": []
+        }
+      }
+    },
+    {
+      "cardId": "items_010",
+      "name": "无尽金币包",
+      "definition": "Assets/GameData/CardsAssets/items_010.asset",
+      "artwork": "Assets/GameData/cards/items_010.png",
+      "originalJson": "resources/text_json/items.json#items_010",
+      "entryImplemented": true,
+      "historicalBasicAccepted": true,
+      "historicalAuditStatusPreserved": "basic_scene_evidence_available",
+      "historicalAuditGapsPreserved": [],
+      "historicalGapResolution": null,
+      "modes": {
+        "normal": {
+          "printedRule": "影响力4，名望+2。",
+          "currentEntry": [
+            "PveJourneySession.PlayOutsideArtifact",
+            "PveBattleSession.PlayResourceArtifact"
+          ],
+          "actualInputs": "实际影响4/名望2",
+          "actualConsumer": "真实原单位招募后发动",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_010_02",
+              "title": "基础 / 基础金币包回合弃牌、轮末重洗、次轮抽回同实体再次使用",
+              "mode": "normal",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_102637_9e6d204c/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_102637_9e6d204c/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 23,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 7,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            },
+            {
+              "caseId": "items_010_05",
+              "title": "基础 / 金币包影响力真实支付原农民费用4，获得部队后实际发动影响力2",
+              "mode": "normal",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_102637_9e6d204c/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_102637_9e6d204c/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 25,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 5,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_artifact_resources_acceptance_index.json",
+            "vibe_coding/codex/pve_natural_site_recruitment_acceptance_index.json",
+            "vibe_coding/codex/pve_tower_spell_purchase_acceptance_index.json",
+            "vibe_coding/codex/pve_keep_recruitment_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片",
+          "unverified": []
+        },
+        "burn": {
+          "printedRule": "影响力9，名望+3。",
+          "currentEntry": [
+            "PveJourneySession.PlayOutsideArtifact",
+            "PveBattleSession.PlayResourceArtifact"
+          ],
+          "actualInputs": "实际影响9/名望3",
+          "actualConsumer": "实际塔/要塞招募同魔像再战；法师塔购法术后下一回合击杀",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_010_03",
+              "title": "强化 / 焚毁金币包回合末影响力清零，跨轮不回手、名望保留",
+              "mode": "burn",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_102637_9e6d204c/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_102637_9e6d204c/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 21,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 7,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            },
+            {
+              "caseId": "items_010_06",
+              "title": "强化 / 金币包影响力真实支付原农民费用4，获得部队后实际发动影响力2",
+              "mode": "burn",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_102637_9e6d204c/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_102637_9e6d204c/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 25,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 5,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_artifact_resources_acceptance_index.json",
+            "vibe_coding/codex/pve_natural_site_recruitment_acceptance_index.json",
+            "vibe_coding/codex/pve_tower_spell_purchase_acceptance_index.json",
+            "vibe_coding/codex/pve_keep_recruitment_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片",
+          "unverified": []
+        }
+      },
+      "currentExactConsumerEvidence": {
+        "report": "AutomationOutputs/PveBattle/20260929_174623_6a3a489e/report.json",
+        "mode": "burn",
+        "acceptedRange": [
+          61,
+          70
+        ],
+        "keySteps": [
+          61,
+          63,
+          64,
+          68,
+          70
+        ],
+        "followup": "同报告后续正式跨轮魔像真实蓝费格挡；另tower_spell_purchase索引60..86证明实际法术购买与下一回合击杀"
+      }
+    },
+    {
+      "cardId": "items_011",
+      "name": "无尽宝石袋",
+      "definition": "Assets/GameData/CardsAssets/items_011.asset",
+      "artwork": "Assets/GameData/cards/items_011.png",
+      "originalJson": "resources/text_json/items.json#items_011",
+      "entryImplemented": true,
+      "historicalBasicAccepted": true,
+      "historicalAuditStatusPreserved": "basic_scene_evidence_available",
+      "historicalAuditGapsPreserved": [],
+      "historicalGapResolution": null,
+      "modes": {
+        "normal": {
+          "printedRule": "投掷一颗魔力骰子两次。获得以此方式掷到的同色魔晶（掷到金色时你可以选择颜色）。如果掷到黑色，不获得魔晶，名望+1。",
+          "currentEntry": [
+            "PveJourneySession.PlayOutsideArtifact",
+            "PveBattleSession.PlayResourceArtifact"
+          ],
+          "actualInputs": "实际两骰结果、金色结果各自基本色选择",
+          "actualConsumer": "原骰红/金/黑结果、晶/标记分区与回合末",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_011_02",
+              "title": "基础 / Day两次掷出Red，完整六面骰结果",
+              "mode": "normal",
+              "historicalStatus": "passed",
+              "run": "AutomationOutputs/AllOriginalCards/20260916_231342_48493c95/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260916_231342_48493c95/items/effects.json",
+              "executionPath": "CardPlayActions.PlayArtifact / actual hand -> played or permanently removed",
+              "effectChecksPassed": 26,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 3,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            },
+            {
+              "caseId": "items_011_06",
+              "title": "基础 / Day两次掷出Gold，完整六面骰结果",
+              "mode": "normal",
+              "historicalStatus": "passed",
+              "run": "AutomationOutputs/AllOriginalCards/20260916_231342_48493c95/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260916_231342_48493c95/items/effects.json",
+              "executionPath": "CardPlayActions.PlayArtifact / actual hand -> played or permanently removed",
+              "effectChecksPassed": 26,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 3,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            },
+            {
+              "caseId": "items_011_07",
+              "title": "基础 / Day两次掷出Black，完整六面骰结果",
+              "mode": "normal",
+              "historicalStatus": "passed",
+              "run": "AutomationOutputs/AllOriginalCards/20260916_231342_48493c95/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260916_231342_48493c95/items/effects.json",
+              "executionPath": "CardPlayActions.PlayArtifact / actual hand -> played or permanently removed",
+              "effectChecksPassed": 26,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 3,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            },
+            {
+              "caseId": "items_011_15",
+              "title": "基础 / 蓝色加黑色结果，结束回合保留魔晶名望并弃掉真实宝石袋",
+              "mode": "normal",
+              "historicalStatus": "passed",
+              "run": "AutomationOutputs/AllOriginalCards/20260916_231342_48493c95/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260916_231342_48493c95/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 28,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 4,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_artifact_resources_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片",
+          "unverified": []
+        },
+        "burn": {
+          "printedRule": "获得每种基本色魔力标记各一个。同时（在白昼时）获得一个金色或（在黑夜中）黑色魔力标记。",
+          "currentEntry": [
+            "PveJourneySession.PlayOutsideArtifact",
+            "PveBattleSession.PlayResourceArtifact"
+          ],
+          "actualInputs": "按昼夜固定五色标记",
+          "actualConsumer": "实际支付原狂怒/风雪费用",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_011_17",
+              "title": "强化 / Day焚毁后结束回合：临时魔力归零，神器永久移除",
+              "mode": "burn",
+              "historicalStatus": "passed",
+              "run": "AutomationOutputs/AllOriginalCards/20260916_231342_48493c95/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260916_231342_48493c95/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 27,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 4,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            },
+            {
+              "caseId": "items_011_18",
+              "title": "强化 / Day所得魔力实际支付原卡强化费用：basic_card_021",
+              "mode": "burn",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260916_231342_48493c95/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260916_231342_48493c95/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 27,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 4,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            },
+            {
+              "caseId": "items_011_20",
+              "title": "强化 / Night焚毁后结束回合：临时魔力归零，神器永久移除",
+              "mode": "burn",
+              "historicalStatus": "passed",
+              "run": "AutomationOutputs/AllOriginalCards/20260916_231342_48493c95/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260916_231342_48493c95/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 27,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 4,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            },
+            {
+              "caseId": "items_011_21",
+              "title": "强化 / Night所得魔力实际支付原卡强化费用：magic_015",
+              "mode": "burn",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260916_231342_48493c95/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260916_231342_48493c95/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 27,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 4,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_artifact_resources_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片",
+          "unverified": []
+        }
+      }
+    },
+    {
+      "cardId": "items_012",
+      "name": "黄金圣杯",
+      "definition": "Assets/GameData/CardsAssets/items_012.asset",
+      "artwork": "Assets/GameData/cards/items_012.png",
+      "originalJson": "resources/text_json/items.json#items_012",
+      "entryImplemented": true,
+      "historicalBasicAccepted": true,
+      "historicalAuditStatusPreserved": "basic_scene_evidence_available",
+      "historicalAuditGapsPreserved": [],
+      "historicalGapResolution": null,
+      "modes": {
+        "normal": {
+          "printedRule": "治疗2。本回合中你每花费一点本牌提供的治疗，名望+1。",
+          "currentEntry": [
+            "PveJourneySession.PlayOutsideArtifact",
+            "PveBattleSession.PlayArtifact"
+          ],
+          "actualInputs": "实际手伤或自有单位及其等级",
+          "actualConsumer": "按等级治部队/手伤、名望",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_012_03",
+              "title": "基础 / 选择原版二级魔像，治疗一伤消耗2点并获得名望2，不重整",
+              "mode": "normal",
+              "historicalStatus": "passed",
+              "run": "AutomationOutputs/AllOriginalCards/20260916_232830_5b3491d7/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260916_232830_5b3491d7/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 16,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 4,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            },
+            {
+              "caseId": "items_012_04",
+              "title": "基础 / 两点分别治疗一张手牌伤牌和原版一级农民",
+              "mode": "normal",
+              "historicalStatus": "passed",
+              "run": "AutomationOutputs/AllOriginalCards/20260916_232830_5b3491d7/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260916_232830_5b3491d7/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 20,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 5,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            },
+            {
+              "caseId": "items_012_16",
+              "title": "基础 / 未使用的圣杯治疗回合末归零，原神器进弃牌，名望不凭空增加",
+              "mode": "normal",
+              "historicalStatus": "passed",
+              "run": "AutomationOutputs/AllOriginalCards/20260916_232830_5b3491d7/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260916_232830_5b3491d7/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 17,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 4,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_grail_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片",
+          "unverified": []
+        },
+        "burn": {
+          "printedRule": "治疗6。本回合中每次治疗手牌中的一点创伤，抽取一张卡牌。",
+          "currentEntry": [
+            "PveJourneySession.PlayOutsideArtifact",
+            "PveBattleSession.PlayArtifact"
+          ],
+          "actualInputs": "实际手伤/单位，手伤治疗后真实抽牌",
+          "actualConsumer": "真实手伤抽牌、单位治疗不额外抽牌",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_012_05",
+              "title": "强化 / 先治疗二级魔像两张毒伤花费4点不抽牌，再治手牌一伤抽一张",
+              "mode": "burn",
+              "historicalStatus": "passed",
+              "run": "AutomationOutputs/AllOriginalCards/20260916_232830_5b3491d7/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260916_232830_5b3491d7/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 21,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 5,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            },
+            {
+              "caseId": "items_012_06",
+              "title": "强化 / 治疗三张实际手牌伤牌，逐张获得抽牌，保留剩余治疗3",
+              "mode": "burn",
+              "historicalStatus": "passed",
+              "run": "AutomationOutputs/AllOriginalCards/20260916_232830_5b3491d7/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260916_232830_5b3491d7/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 18,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 6,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_grail_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片",
+          "unverified": []
+        }
+      }
+    },
+    {
+      "cardId": "items_013",
+      "name": "智慧之书",
+      "definition": "Assets/GameData/CardsAssets/items_013.asset",
+      "artwork": "Assets/GameData/cards/items_013.png",
+      "originalJson": "resources/text_json/items.json#items_013",
+      "entryImplemented": true,
+      "historicalBasicAccepted": true,
+      "historicalAuditStatusPreserved": "basic_scene_evidence_available",
+      "historicalAuditGapsPreserved": [],
+      "historicalGapResolution": null,
+      "modes": {
+        "normal": {
+          "printedRule": "从手牌中去除一张行动卡牌。从高级行动供应区中获得一张与去除卡牌同色的高级行动卡牌，加入你的手牌。",
+          "currentEntry": [
+            "PveJourneySession.PlayMaterialArtifact",
+            "PveBattleController.MaterialArtifacts"
+          ],
+          "actualInputs": "实际移除同色材料、公开高级行动引用",
+          "actualConsumer": "取得原火焰箭矢后立即出牌",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_013_00",
+              "title": "基础 / Red材料永久移除，同色原供给进手牌；结束回合核对神器去向",
+              "mode": "normal",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_113229_c59ac9d7/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_113229_c59ac9d7/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 24,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 3,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            },
+            {
+              "caseId": "items_013_29",
+              "title": "基础 / 取得原火焰箭矢后立即实际出牌，获得1红晶并在回合末弃两张牌",
+              "mode": "normal",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_113525_415d05cd/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_113525_415d05cd/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 22,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 5,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_material_artifacts_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片",
+          "unverified": []
+        },
+        "burn": {
+          "printedRule": "从手牌中去除一张行动卡牌。从法术供应区中获得一张与去除卡牌同色的法术卡牌，加入你的手牌，并且获得一颗同色魔晶，放入物品栏。",
+          "currentEntry": [
+            "PveJourneySession.PlayMaterialArtifact",
+            "PveBattleController.MaterialArtifacts"
+          ],
+          "actualInputs": "实际移除同色材料、公开法术引用",
+          "actualConsumer": "取得原火焰魔球、遵守日夜，真实红晶支付普通效果",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_013_01",
+              "title": "强化 / Red材料永久移除，同色原供给进手牌；结束回合核对神器去向",
+              "mode": "burn",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_113229_c59ac9d7/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_113229_c59ac9d7/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 24,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 4,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            },
+            {
+              "caseId": "items_013_30",
+              "title": "强化 / 取得原火焰魔球不豁免白昼强效限制；拒绝后实际用新红晶支付基础效果",
+              "mode": "burn",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_113229_c59ac9d7/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_113229_c59ac9d7/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 24,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 5,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_material_artifacts_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片",
+          "unverified": []
+        }
+      }
+    },
+    {
+      "cardId": "items_014",
+      "name": "皓日护符",
+      "definition": "Assets/GameData/CardsAssets/items_014.asset",
+      "artwork": "Assets/GameData/cards/items_014.png",
+      "originalJson": "resources/text_json/items.json#items_014",
+      "entryImplemented": true,
+      "historicalBasicAccepted": true,
+      "historicalAuditStatusPreserved": "basic_scene_evidence_available",
+      "historicalAuditGapsPreserved": [],
+      "historicalGapResolution": null,
+      "modes": {
+        "normal": {
+          "printedRule": "获得一个金色魔力标记。在黑夜中打出本卡牌，森林的移动费用降低至3，你可以使用金色魔力，并且你可以翻开相邻城防地点和遗迹中的驻军，就好像现在是白昼。",
+          "currentEntry": [
+            "PveJourneySession.PlayOutsideArtifact",
+            "PveBattleSession.PlayResourceArtifact"
+          ],
+          "actualInputs": "金色标记实际转换、夜间日间许可/地形",
+          "actualConsumer": "夜间森林实际移动及守军揭示",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_014_00",
+              "title": "基础 / 黑夜森林实际付3移动；回合末恢复5费用、弃牌与金色许可失效",
+              "mode": "normal",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_111725_3fc9e653/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_111725_3fc9e653/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 23,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 5,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            },
+            {
+              "caseId": "items_014_06",
+              "title": "基础 / 皓日从夜间翻开相邻要塞和远方已探索遗迹；空地移动后揭示魔法塔",
+              "mode": "normal",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_111725_3fc9e653/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_111725_3fc9e653/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 26,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 5,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_artifact_resources_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片",
+          "unverified": []
+        },
+        "burn": {
+          "printedRule": "与基本效果相同，但你得到三个金色魔力标记而非一个。",
+          "currentEntry": [
+            "PveJourneySession.PlayOutsideArtifact",
+            "PveBattleSession.PlayResourceArtifact"
+          ],
+          "actualInputs": "三金实际选色付款及回合许可",
+          "actualConsumer": "夜间金转红实际支付原火焰魔球",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_014_01",
+              "title": "强化 / 黑夜焚毁得3金，实际选红支付原火焰魔球，剩2金且神器永久移除",
+              "mode": "burn",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_112110_1e51b6d2/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_112110_1e51b6d2/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 20,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 4,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            },
+            {
+              "caseId": "items_014_08",
+              "title": "强化 / 实际原护符重复使用拒绝，回合末基础弃牌或焚毁保留移除区",
+              "mode": "burn",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_111725_3fc9e653/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_111725_3fc9e653/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 17,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 5,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_artifact_resources_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片",
+          "unverified": []
+        }
+      }
+    },
+    {
+      "cardId": "items_015",
+      "name": "黑暗护符",
+      "definition": "Assets/GameData/CardsAssets/items_015.asset",
+      "artwork": "Assets/GameData/cards/items_015.png",
+      "originalJson": "resources/text_json/items.json#items_015",
+      "entryImplemented": true,
+      "historicalBasicAccepted": true,
+      "historicalAuditStatusPreserved": "basic_scene_evidence_available",
+      "historicalAuditGapsPreserved": [],
+      "historicalGapResolution": null,
+      "modes": {
+        "normal": {
+          "printedRule": "获得一个任意颜色的魔力标记。在白昼中打出本卡牌，沙漠的移动费用降低至3并且你可以使用黑色魔力，就好像现在是黑夜。",
+          "currentEntry": [
+            "PveJourneySession.PlayOutsideArtifact",
+            "PveBattleSession.PlayResourceArtifact"
+          ],
+          "actualInputs": "独立选择一色，白昼黑色许可",
+          "actualConsumer": "昼沙漠实际移动及白昼黑施法",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_015_00",
+              "title": "基础 / 白昼黑暗护符给黑魔力，沙漠实际付3，回合末恢复5和黑色许可失效",
+              "mode": "normal",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_111725_3fc9e653/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_111725_3fc9e653/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 21,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 5,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_artifact_resources_acceptance_index.json",
+            "vibe_coding/codex/pve_keep_recruitment_acceptance_index.json",
+            "vibe_coding/codex/pve_polarization_special_primary_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片",
+          "unverified": []
+        },
+        "burn": {
+          "printedRule": "与基本效果相同，但你得到三个任意颜色的魔力标记而非一个。",
+          "currentEntry": [
+            "PveJourneySession.PlayOutsideArtifact",
+            "PveBattleSession.PlayResourceArtifact"
+          ],
+          "actualInputs": "三个独立颜色，实际法术同色费用",
+          "actualConsumer": "黑黑红支付地道/火球，攻城8击杀原城防025，保留实际红晶至下轮",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_015_01",
+              "title": "强化 / 白昼选择红黑黑，实际支付红黑施放原火焰风暴并得1伤；真实昼夜不变",
+              "mode": "burn",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_112110_1e51b6d2/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_112110_1e51b6d2/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 20,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 4,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            },
+            {
+              "caseId": "items_015_17",
+              "title": "强化 / 实际原护符重复使用拒绝，回合末基础弃牌或焚毁保留移除区",
+              "mode": "burn",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_111725_3fc9e653/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_111725_3fc9e653/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 17,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 5,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_artifact_resources_acceptance_index.json",
+            "vibe_coding/codex/pve_keep_recruitment_acceptance_index.json",
+            "vibe_coding/codex/pve_heroes_assault_fee_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片",
+          "unverified": []
+        }
+      },
+      "currentExactConsumerEvidence": {
+        "report": "AutomationOutputs/PveBattle/20260929_174623_6a3a489e/report.json",
+        "mode": "burn",
+        "acceptedRange": [
+          26,
+          50
+        ],
+        "keySteps": [
+          26,
+          40,
+          45,
+          47,
+          48,
+          50
+        ],
+        "scope": "黑黑红独立选择→真实绿黑/红黑两笔付款→原025城防攻城8击杀；未把26之前重放计入新增"
+      }
+    },
+    {
+      "cardId": "items_016",
+      "name": "星辰之弓",
+      "definition": "Assets/GameData/CardsAssets/items_016.asset",
+      "artwork": "Assets/GameData/cards/items_016.png",
+      "originalJson": "resources/text_json/items.json#items_016",
+      "entryImplemented": true,
+      "historicalBasicAccepted": true,
+      "historicalAuditStatusPreserved": "basic_scene_evidence_available",
+      "historicalAuditGapsPreserved": [],
+      "historicalGapResolution": null,
+      "modes": {
+        "normal": {
+          "printedRule": "打出本卡牌时，从手牌中弃掉任意数量的卡牌。以此方式弃掉的每张卡牌使你获得远程攻击2。当前战斗阶段中你每击败一个敌人名望+1。",
+          "currentEntry": [
+            "PveBattleSession.PlayArtifact"
+          ],
+          "actualInputs": "实际弃牌材料、原远程阶段击杀",
+          "actualConsumer": "弃材料后实际攻击/名望",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_016_03",
+              "title": "基础 / 实际弃2张牌，武器回合末进入弃牌堆",
+              "mode": "normal",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260916_002158_4e77bce8/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260916_002158_4e77bce8/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 14,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 4,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            },
+            {
+              "caseId": "items_016_04",
+              "title": "基础 / 两张弃牌形成一笔攻击，击败两敌各加一名望",
+              "mode": "normal",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260916_002158_4e77bce8/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260916_002158_4e77bce8/items/effects.json",
+              "executionPath": "ActionSystem.Play -> CardCombatActions -> production combat resolver",
+              "effectChecksPassed": 23,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 4,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_star_bow_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片",
+          "unverified": []
+        },
+        "burn": {
+          "printedRule": "本回合中你每次远程攻击或翻倍，或变为同样元素的攻城攻击。你也可以使任何攻城攻击翻倍，但这些攻击会变成同样元素的远程攻击。",
+          "currentEntry": [
+            "PveBattleSession.PlayArtifact"
+          ],
+          "actualInputs": "每笔原攻击选择转换或倍率",
+          "actualConsumer": "火球远程翻倍、远程/攻城逐笔转换击杀",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_016_12",
+              "title": "强化 / 焚毁武器不进弃牌，结束回合持续效果失效",
+              "mode": "burn",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260916_003109_d7655706/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260916_003109_d7655706/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 17,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 5,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            },
+            {
+              "caseId": "items_016_13",
+              "title": "强化 / 焚毁后火球远程翻倍，再按火抗合计减半",
+              "mode": "burn",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260916_003109_d7655706/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260916_003109_d7655706/items/effects.json",
+              "executionPath": "ActionSystem.Play -> CardCombatActions -> production combat resolver",
+              "effectChecksPassed": 23,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 4,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            },
+            {
+              "caseId": "items_016_14",
+              "title": "强化 / 逐笔选择：远程转攻城",
+              "mode": "burn",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260916_003109_d7655706/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260916_003109_d7655706/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 20,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 5,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            },
+            {
+              "caseId": "items_016_15",
+              "title": "强化 / 逐笔选择：攻城翻倍变远程",
+              "mode": "burn",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260916_003109_d7655706/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260916_003109_d7655706/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 20,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 5,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            },
+            {
+              "caseId": "items_016_16",
+              "title": "强化 / 逐笔选择：攻城保持原值",
+              "mode": "burn",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260916_003109_d7655706/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260916_003109_d7655706/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 20,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 5,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_star_bow_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片",
+          "unverified": []
+        }
+      }
+    },
+    {
+      "cardId": "items_017",
+      "name": "指挥旌旗",
+      "definition": "Assets/GameData/CardsAssets/items_017.asset",
+      "artwork": "Assets/GameData/cards/items_017.png",
+      "originalJson": "resources/text_json/items.json#items_017",
+      "entryImplemented": true,
+      "historicalBasicAccepted": true,
+      "historicalAuditStatusPreserved": "basic_scene_evidence_available",
+      "historicalAuditGapsPreserved": [],
+      "historicalGapResolution": null,
+      "modes": {
+        "normal": {
+          "printedRule": "影响力4。本回合中如果你招募部队，可以将本卡牌分配给这支部队，代替指挥标记。部队精力耗尽时将本卡牌翻面，重整部队时将本卡牌翻回正面。",
+          "currentEntry": [
+            "PveJourneySession.PlaySpecialArtifact",
+            "PveJourneySession.SpecialArtifacts",
+            "PveBattleController.SpecialArtifacts"
+          ],
+          "actualInputs": "实际指挥旗实体、单位/招募标记",
+          "actualConsumer": "真实满编招募、跨回合/轮指挥归属",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_017_09",
+              "title": "基础 / 满编时预选真实旗帜，支付影响力4招募原农民并代替指挥标记",
+              "mode": "normal",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_091827_52663815/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_091827_52663815/items/checkpoints/0002.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 28,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 6,
+              "wholeReportStatus": "failed",
+              "checkpointOnly": true
+            },
+            {
+              "caseId": "items_017_18",
+              "title": "基础 / 实际发动使旗帜翻背面，跨回合/轮末保留，新轮随部队重整翻正面",
+              "mode": "normal",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_092302_ab0beb9e/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_092302_ab0beb9e/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 25,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 9,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_special_artifacts_acceptance_index.json",
+            "vibe_coding/codex/pve_command_offer_pages_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片",
+          "unverified": []
+        },
+        "burn": {
+          "printedRule": "获得名望+2。从部队供应区免费招募任意一支部队。(如果你已经达到指挥上限，你必须先解散你的一支部队。)",
+          "currentEntry": [
+            "PveJourneySession.PlaySpecialArtifact",
+            "PveJourneySession.SpecialArtifacts",
+            "PveBattleController.SpecialArtifacts"
+          ],
+          "actualInputs": "实际单位供应引用、必要实际解散",
+          "actualConsumer": "实际供给取得、立即发动及正式去向",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_017_03",
+              "title": "强化 / 满编真实解散、立即发动新部队、重复出牌拒绝及回合卡区",
+              "mode": "burn",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_080337_4e8eb8d7/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_080337_4e8eb8d7/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 33,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 6,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_special_artifacts_acceptance_index.json",
+            "vibe_coding/codex/pve_command_offer_pages_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片",
+          "unverified": []
+        }
+      },
+      "sharedLifecycleEvidence": {
+        "worklog": "vibe_coding/codex/worklog_2026-09-29_banner_round_return.md",
+        "report": "AutomationOutputs/PveBattle/20260929_124823_e5d4678a/report.json",
+        "scope": "六旗共用正式轮末入口；荣誉/指挥代表性真实保留取回再消费，不宣称六旗逐张新场景重验"
+      }
+    },
+    {
+      "cardId": "items_018",
+      "name": "强韧旌旗",
+      "definition": "Assets/GameData/CardsAssets/items_018.asset",
+      "artwork": "Assets/GameData/cards/items_018.png",
+      "originalJson": "resources/text_json/items.json#items_018",
+      "entryImplemented": true,
+      "historicalBasicAccepted": true,
+      "historicalAuditStatusPreserved": "basic_scene_evidence_available",
+      "historicalAuditGapsPreserved": [],
+      "historicalGapResolution": null,
+      "modes": {
+        "normal": {
+          "printedRule": "将本卡牌分配给一支你控制的部队。每轮一次，这支部队即将受到创伤时，将本卡牌翻面，忽略这点创伤以及其产生的任何附加效果。每次战斗中这支部队仍然只能被分配一次伤害。",
+          "currentEntry": [
+            "PveJourneySession.PlayOutsideArtifact",
+            "PveBattleSession.PlayArtifact"
+          ],
+          "actualInputs": "实际附旗单位、明确下一伤保护",
+          "actualConsumer": "毒素承伤免疫与同场重复拒绝",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_018_00",
+              "title": "基础 / 原毒素攻击3被防护，不获得双伤牌，同场再次承伤拒绝",
+              "mode": "normal",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_093953_b277775c/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_093953_b277775c/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 23,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 5,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_fortitude_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片",
+          "unverified": []
+        },
+        "burn": {
+          "printedRule": "任何时候，战斗中除外：完全治疗你所有的部队。",
+          "currentEntry": [
+            "PveJourneySession.PlayOutsideArtifact",
+            "PveBattleSession.PlayArtifact"
+          ],
+          "actualInputs": "实际自有单位创伤治疗，不治疗英雄",
+          "actualConsumer": "所有自有实际单位治疗且耗竭保留",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_018_01",
+              "title": "强化 / 实际治疗所有自有部队，不治疗英雄，也不直接重整耗竭部队",
+              "mode": "burn",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_093953_b277775c/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_093953_b277775c/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 21,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 4,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_fortitude_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片",
+          "unverified": []
+        }
+      },
+      "sharedLifecycleEvidence": {
+        "worklog": "vibe_coding/codex/worklog_2026-09-29_banner_round_return.md",
+        "report": "AutomationOutputs/PveBattle/20260929_124823_e5d4678a/report.json",
+        "scope": "六旗共用正式轮末入口；荣誉/指挥代表性真实保留取回再消费，不宣称六旗逐张新场景重验"
+      }
+    },
+    {
+      "cardId": "items_019",
+      "name": "灵魂收割者",
+      "definition": "Assets/GameData/CardsAssets/items_019.asset",
+      "artwork": "Assets/GameData/cards/items_019.png",
+      "originalJson": "resources/text_json/items.json#items_019",
+      "entryImplemented": true,
+      "historicalBasicAccepted": true,
+      "historicalAuditStatusPreserved": "needs_basic_scene_work",
+      "historicalAuditGapsPreserved": [
+        "正常持有神器出牌与焚毁实体去向",
+        "实际击杀后选择白/对应抗性色魔晶",
+        "基础本次攻击与焚毁当前阶段的奖励期限"
+      ],
+      "historicalGapResolution": {
+        "runs": [
+          "20260917_191115_56da5986/items"
+        ],
+        "caseIds": [
+          "items_019_02",
+          "items_019_03",
+          "items_019_04",
+          "items_019_05",
+          "items_019_06"
+        ],
+        "deferred": [
+          "多抗敌人自由选色",
+          "同次多敌逐个不同选色",
+          "多个收割者不同选色同时结算"
+        ]
+      },
+      "modes": {
+        "normal": {
+          "printedRule": "攻击3。本次攻击每击败一个敌人获得一颗魔晶，加入物品栏。如果敌人具有火焰抗性你可以选择红色，具有寒冰抗性你可以选择蓝色，具有物理抗性你可以选择绿色。你永远可以选择白色。",
+          "currentEntry": [
+            "PveBattleSession.PlayArtifact / ChooseKillCrystal"
+          ],
+          "actualInputs": "实际攻击3与每个击败敌人的合法奖励色",
+          "actualConsumer": "原敌击杀、实际选合法魔晶奖励",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_019_02",
+              "title": "基础 / 基本验收：击败原敌人monster_027获得White魔晶",
+              "mode": "normal",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_191115_56da5986/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_191115_56da5986/items/effects.json",
+              "effectChecksPassed": 32,
+              "failedChecks": 0,
+              "wholeReportStatus": "success",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "limitations": [
+                "本阶段验证原卡基本效果与直接结算；罕见组合、多层复制和完整边界保留扩展验收"
+              ],
+              "evidenceSha256": "0653e170d529ca754122f5ae0a129e346651225de66c7eef204a6f87891830e8"
+            },
+            {
+              "caseId": "items_019_06",
+              "title": "基础 / 基本验收：击败原敌人monster_030获得White魔晶",
+              "mode": "normal",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_191115_56da5986/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_191115_56da5986/items/effects.json",
+              "effectChecksPassed": 32,
+              "failedChecks": 0,
+              "wholeReportStatus": "success",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "limitations": [
+                "本阶段验证原卡基本效果与直接结算；罕见组合、多层复制和完整边界保留扩展验收"
+              ],
+              "evidenceSha256": "0653e170d529ca754122f5ae0a129e346651225de66c7eef204a6f87891830e8"
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_harvester_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片",
+          "unverified": []
+        },
+        "burn": {
+          "printedRule": "攻击8。在当前战斗阶段中每击败一个敌人获得一颗魔晶，效果同上。",
+          "currentEntry": [
+            "PveBattleSession.PlayArtifact / ChooseKillCrystal"
+          ],
+          "actualInputs": "实际当前攻击阶段击杀奖励",
+          "actualConsumer": "原阶段奖励、真实击杀、期限清理",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_019_03",
+              "title": "强化 / 基本验收：击败原敌人monster_008获得Green魔晶",
+              "mode": "burn",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_191115_56da5986/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_191115_56da5986/items/effects.json",
+              "effectChecksPassed": 32,
+              "failedChecks": 0,
+              "wholeReportStatus": "success",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "limitations": [
+                "本阶段验证原卡基本效果与直接结算；罕见组合、多层复制和完整边界保留扩展验收"
+              ],
+              "evidenceSha256": "0653e170d529ca754122f5ae0a129e346651225de66c7eef204a6f87891830e8"
+            },
+            {
+              "caseId": "items_019_04",
+              "title": "强化 / 基本验收：击败原敌人monster_030获得Red魔晶",
+              "mode": "burn",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_191115_56da5986/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_191115_56da5986/items/effects.json",
+              "effectChecksPassed": 32,
+              "failedChecks": 0,
+              "wholeReportStatus": "success",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "limitations": [
+                "本阶段验证原卡基本效果与直接结算；罕见组合、多层复制和完整边界保留扩展验收"
+              ],
+              "evidenceSha256": "0653e170d529ca754122f5ae0a129e346651225de66c7eef204a6f87891830e8"
+            },
+            {
+              "caseId": "items_019_05",
+              "title": "强化 / 基本验收：击败原敌人monster_028获得Blue魔晶",
+              "mode": "burn",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_191115_56da5986/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_191115_56da5986/items/effects.json",
+              "effectChecksPassed": 32,
+              "failedChecks": 0,
+              "wholeReportStatus": "success",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "limitations": [
+                "本阶段验证原卡基本效果与直接结算；罕见组合、多层复制和完整边界保留扩展验收"
+              ],
+              "evidenceSha256": "0653e170d529ca754122f5ae0a129e346651225de66c7eef204a6f87891830e8"
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_harvester_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片",
+          "unverified": []
+        }
+      }
+    },
+    {
+      "cardId": "items_020",
+      "name": "亡君之盾",
+      "definition": "Assets/GameData/CardsAssets/items_020.asset",
+      "artwork": "Assets/GameData/cards/items_020.png",
+      "originalJson": "resources/text_json/items.json#items_020",
+      "entryImplemented": true,
+      "historicalBasicAccepted": true,
+      "historicalAuditStatusPreserved": "basic_scene_evidence_available",
+      "historicalAuditGapsPreserved": [],
+      "historicalGapResolution": null,
+      "modes": {
+        "normal": {
+          "printedRule": "格挡6，或对两次不同的攻击格挡4。",
+          "currentEntry": [
+            "PveBattleSession.PlayShield"
+          ],
+          "actualInputs": "单次/分次格挡，实际不同攻击槽",
+          "actualConsumer": "实际单/多攻击槽完整格挡",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_020_02",
+              "title": "基础 / 单次格挡对Physical",
+              "mode": "normal",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260911_205758_b83addf3/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260911_205758_b83addf3/items/effects.json",
+              "executionPath": "ActionSystem.Play -> CardCombatActions -> production combat resolver",
+              "effectChecksPassed": 19,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 4,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            },
+            {
+              "caseId": "items_020_06",
+              "title": "基础 / 分次格挡必须分别消耗在不同攻击上",
+              "mode": "normal",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260911_205758_b83addf3/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260911_205758_b83addf3/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 23,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 5,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            },
+            {
+              "caseId": "items_020_18",
+              "title": "基础 / 正式阶段机连续两场：首场原盾免伤，下场无卡承伤，回合末检查去向",
+              "mode": "normal",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_021043_336ff138/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_021043_336ff138/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 24,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 7,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_shield_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片",
+          "unverified": []
+        },
+        "burn": {
+          "printedRule": "冰火格挡8，或对最多三次不同的攻击冰火格挡4。",
+          "currentEntry": [
+            "PveBattleSession.PlayShield"
+          ],
+          "actualInputs": "强化单次/分次格挡，实际不同攻击槽",
+          "actualConsumer": "强化单/多攻击槽完整格挡",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_020_09",
+              "title": "强化 / 单次格挡对Physical",
+              "mode": "burn",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260911_205758_b83addf3/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260911_205758_b83addf3/items/effects.json",
+              "executionPath": "ActionSystem.Play -> CardCombatActions -> production combat resolver",
+              "effectChecksPassed": 19,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 4,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            },
+            {
+              "caseId": "items_020_13",
+              "title": "强化 / 分次格挡必须分别消耗在不同攻击上",
+              "mode": "burn",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260911_205758_b83addf3/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260911_205758_b83addf3/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 29,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 6,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            },
+            {
+              "caseId": "items_020_19",
+              "title": "强化 / 正式阶段机连续两场：首场原盾免伤，下场无卡承伤，回合末检查去向",
+              "mode": "burn",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_021043_336ff138/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_021043_336ff138/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 24,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 8,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_shield_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片",
+          "unverified": []
+        }
+      }
+    },
+    {
+      "cardId": "items_021",
+      "name": "德鲁伊法杖",
+      "definition": "Assets/GameData/CardsAssets/items_021.asset",
+      "artwork": "Assets/GameData/cards/items_021.png",
+      "originalJson": "resources/text_json/items.json#items_021",
+      "entryImplemented": true,
+      "historicalBasicAccepted": true,
+      "historicalAuditStatusPreserved": "needs_basic_scene_work",
+      "historicalAuditGapsPreserved": [
+        "基础真实弃四色原卡分别移动安全格/任意色2晶/重整最高3级/治疗3",
+        "焚毁无须弃牌，选择两项并实际结算",
+        "神器基础弃牌与焚毁永久移除"
+      ],
+      "historicalGapResolution": {
+        "runs": [
+          "20260917_225117_538fa50d/items"
+        ],
+        "caseIds": [
+          "items_021_02",
+          "items_021_03",
+          "items_021_04",
+          "items_021_05",
+          "items_021_06",
+          "items_021_07"
+        ]
+      },
+      "modes": {
+        "normal": {
+          "printedRule": "弃掉一张卡牌。根据该卡牌颜色，你获得：白色：在已翻开的地图上移动最多2格，停留在安全格上；蓝色：获得任意一种颜色的2颗魔晶；红色：重整一支最高3级的部队；绿色：治疗3。",
+          "currentEntry": [
+            "PveJourneySession.PlayMaterialArtifact",
+            "PveBattleController.MaterialArtifacts"
+          ],
+          "actualInputs": "真实弃牌颜色；路径/晶色/最高3级单位/伤牌",
+          "actualConsumer": "白安全路径、蓝2晶、红单位重整、绿真实治疗",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_021_02",
+              "title": "基础 / 基本验收：弃原敏捷白卡，沿已揭示路径免费移动两格并检查弃牌",
+              "mode": "normal",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_225117_538fa50d/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_225117_538fa50d/items/effects.json",
+              "effectChecksPassed": 52,
+              "failedChecks": 0,
+              "wholeReportStatus": "success",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "limitations": [
+                "本阶段验证原卡基本效果与直接结算；罕见组合、多层复制和完整边界保留扩展验收"
+              ],
+              "evidenceSha256": "f4a418ee7d5f71b687bb5c93ba762dd816f6b6a97c478224bbe3dfe95aed1972"
+            },
+            {
+              "caseId": "items_021_03",
+              "title": "基础 / 基本验收：弃原决心蓝卡取得两红晶，再实际支付原狂怒强效",
+              "mode": "normal",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_225117_538fa50d/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_225117_538fa50d/items/effects.json",
+              "effectChecksPassed": 58,
+              "failedChecks": 0,
+              "wholeReportStatus": "success",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "limitations": [
+                "本阶段验证原卡基本效果与直接结算；罕见组合、多层复制和完整边界保留扩展验收"
+              ],
+              "evidenceSha256": "f4a418ee7d5f71b687bb5c93ba762dd816f6b6a97c478224bbe3dfe95aed1972"
+            },
+            {
+              "caseId": "items_021_04",
+              "title": "基础 / 基本验收：弃原狂怒红卡，重整原三级烈焰枪手并实际发动攻击5",
+              "mode": "normal",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_225117_538fa50d/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_225117_538fa50d/items/effects.json",
+              "effectChecksPassed": 57,
+              "failedChecks": 0,
+              "wholeReportStatus": "success",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "limitations": [
+                "本阶段验证原卡基本效果与直接结算；罕见组合、多层复制和完整边界保留扩展验收"
+              ],
+              "evidenceSha256": "f4a418ee7d5f71b687bb5c93ba762dd816f6b6a97c478224bbe3dfe95aed1972"
+            },
+            {
+              "caseId": "items_021_05",
+              "title": "基础 / 基本验收：弃原行进绿卡，治疗3分别消费于英雄1伤及原二级魔像1伤",
+              "mode": "normal",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_225117_538fa50d/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_225117_538fa50d/items/effects.json",
+              "effectChecksPassed": 62,
+              "failedChecks": 0,
+              "wholeReportStatus": "success",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "limitations": [
+                "本阶段验证原卡基本效果与直接结算；罕见组合、多层复制和完整边界保留扩展验收"
+              ],
+              "evidenceSha256": "f4a418ee7d5f71b687bb5c93ba762dd816f6b6a97c478224bbe3dfe95aed1972"
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_material_artifacts_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片",
+          "unverified": []
+        },
+        "burn": {
+          "printedRule": "在以上选项中选择两项，但无须弃掉卡牌。",
+          "currentEntry": [
+            "PveJourneySession.PlayMaterialArtifact",
+            "PveBattleController.MaterialArtifacts"
+          ],
+          "actualInputs": "两个不同原项及实际路径/颜色/单位/伤牌",
+          "actualConsumer": "不弃材料的两个不同原项实际结算/移除",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_021_06",
+              "title": "强化 / 基本验收：焚毁选择白色移动和蓝色得晶，不弃材料且原法杖永久移除",
+              "mode": "burn",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_225117_538fa50d/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_225117_538fa50d/items/effects.json",
+              "effectChecksPassed": 53,
+              "failedChecks": 0,
+              "wholeReportStatus": "success",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "limitations": [
+                "本阶段验证原卡基本效果与直接结算；罕见组合、多层复制和完整边界保留扩展验收"
+              ],
+              "evidenceSha256": "f4a418ee7d5f71b687bb5c93ba762dd816f6b6a97c478224bbe3dfe95aed1972"
+            },
+            {
+              "caseId": "items_021_07",
+              "title": "强化 / 基本验收：焚毁红绿两项，重整后治疗原三级部队，随后真实发动攻击5",
+              "mode": "burn",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_225117_538fa50d/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_225117_538fa50d/items/effects.json",
+              "effectChecksPassed": 63,
+              "failedChecks": 0,
+              "wholeReportStatus": "success",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "limitations": [
+                "本阶段验证原卡基本效果与直接结算；罕见组合、多层复制和完整边界保留扩展验收"
+              ],
+              "evidenceSha256": "f4a418ee7d5f71b687bb5c93ba762dd816f6b6a97c478224bbe3dfe95aed1972"
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_material_artifacts_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片",
+          "unverified": []
+        }
+      }
+    },
+    {
+      "cardId": "items_022",
+      "name": "启迪头环",
+      "definition": "Assets/GameData/CardsAssets/items_022.asset",
+      "artwork": "Assets/GameData/cards/items_022.png",
+      "originalJson": "resources/text_json/items.json#items_022",
+      "entryImplemented": true,
+      "historicalBasicAccepted": true,
+      "historicalAuditStatusPreserved": "needs_basic_scene_work",
+      "historicalAuditGapsPreserved": [
+        "实际公共供应原技能身份与非互动限制",
+        "正常使用技能及每回合技能效果两次的实际收益",
+        "焚毁取得所选技能后按自有技能发动与神器移除"
+      ],
+      "historicalGapResolution": {
+        "source": "原022牌面/SO/JSON；原技能hero_skill_pool_000:00黑暗道路、:04暗火魔法及skill_000原图区域。互动限制来自原技能来源独立核定。",
+        "scope": "正常借每回合技能两次，白昼2移动支付平原2；正常每轮技能一次，红晶1和红标记1，标记付原狂怒4击杀原032护甲3获名望2；焚毁取得同一公共技能，之后夜间正式用一次产移动2并消费，跨回合仍持有。互动正常拒绝/焚毁允许取得只后台，非所有技能效果和边界组合。",
+        "backend": [
+          "051833_99faf6c9 4/5，原032护甲预期误写4失败，原文3后修正",
+          "051914_e1fc530b 仅失败项1/1；3主用例+2直接旧技能回归最终全过"
+        ],
+        "sceneCases": [
+          "items_022_02",
+          "items_022_03",
+          "items_022_04"
+        ],
+        "effectChecks": 184,
+        "uiSteps": 19,
+        "proofs": [
+          {
+            "path": "AutomationOutputs/RulesState/20260918_051833_99faf6c9/results.xml",
+            "sha256": "e3b62efaf4abaa7aad92ca6a4b8dc1ed53af1dc2444eff518b6024a4db3c5cc3"
+          },
+          {
+            "path": "AutomationOutputs/RulesState/20260918_051914_e1fc530b/results.xml",
+            "sha256": "2493948b280cff0663e16e0cf8c89dec9ad65bb573ee9b169e0913e962b5ba89"
+          },
+          {
+            "path": "AutomationOutputs/AllOriginalCards/20260918_052233_eb415683/items/effects.json",
+            "sha256": "a02bf6126b63d0e560eba06c2ffa3799533f26302cdd280d1b1825f90c76fec4"
+          },
+          {
+            "path": "AutomationOutputs/AllOriginalCards/20260918_052233_eb415683/items/report.json",
+            "sha256": "1c948d7c1b255f800e5750e402014f68d34ec154634b88f22632e5e8533fd874"
+          }
+        ],
+        "visualReview": "三最终图与暗火红标记付原狂怒后关键图核对：原头环/选中原技能行/狂怒/032素材、普通次数、实际费用、4攻击与3护甲击杀名望2、技能供给/自有及头环弃牌/永久移除对应。",
+        "console": "2026-09-18 05:25 最终两次error=0；05:22场景前两次0；DLL Logic05:20:47/Scripts50/Tests51。"
+      },
+      "modes": {
+        "normal": {
+          "printedRule": "使用公共技能供应区中任意一个（包括你自己的）非互动技能。如果该技能每回合均能使用（不会翻面的技能），使用两次技能效果。",
+          "currentEntry": [
+            "PveJourneySession.PlaySpecialArtifact",
+            "PveJourneySession.SpecialArtifacts / UseHeadband* / HeadbandBorrowResolution",
+            "PveBattleController.SpecialArtifacts"
+          ],
+          "actualInputs": "实际公共非互动原技能、物理头环、各次原材料与费用",
+          "actualConsumer": "每回合双用/每轮单用，真实移动/攻防/材料/付款；混乱未接",
+          "status": "finite_primary_evidence_retained_with_known_demo_gap",
+          "historicalEvidence": [
+            {
+              "caseId": "items_022_02",
+              "title": "基础 / 基本验收：公共原黑暗道路白昼执行两次，支付平原移动并弃头环",
+              "mode": "normal",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260918_052233_eb415683/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260918_052233_eb415683/items/effects.json",
+              "effectChecksPassed": 53,
+              "failedChecks": 0,
+              "wholeReportStatus": "success",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "limitations": [
+                "本阶段验证原卡基本效果与直接结算；罕见组合、多层复制和完整边界保留扩展验收"
+              ],
+              "evidenceSha256": "a02bf6126b63d0e560eba06c2ffa3799533f26302cdd280d1b1825f90c76fec4"
+            },
+            {
+              "caseId": "items_022_03",
+              "title": "基础 / 基本验收：公共原暗火魔法仅一次，实际支付红标记发动原狂怒，实际击杀原兽人骷髅战士",
+              "mode": "normal",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260918_052233_eb415683/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260918_052233_eb415683/items/effects.json",
+              "effectChecksPassed": 71,
+              "failedChecks": 0,
+              "wholeReportStatus": "success",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "limitations": [
+                "本阶段验证原卡基本效果与直接结算；罕见组合、多层复制和完整边界保留扩展验收"
+              ],
+              "evidenceSha256": "a02bf6126b63d0e560eba06c2ffa3799533f26302cdd280d1b1825f90c76fec4"
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_headband_progression_acceptance_index.json",
+            "vibe_coding/codex/pve_headband_dynamic_acceptance_index.json",
+            "vibe_coding/codex/pve_headband_targets_acceptance_index.json",
+            "vibe_coding/codex/pve_headband_rally_heal_acceptance_index.json",
+            "vibe_coding/codex/pve_headband_pain_acceptance_index.json",
+            "vibe_coding/codex/pve_headband_leadership_acceptance_index.json",
+            "vibe_coding/codex/pve_headband_shape_fork_flight_acceptance_index.json",
+            "vibe_coding/codex/pve_headband_social_acceptance_index.json",
+            "vibe_coding/codex/pve_headband_payment_acceptance_index.json",
+            "vibe_coding/codex/pve_headband_unit_payment_acceptance_index.json",
+            "vibe_coding/codex/pve_headband_outside_unit_payment_acceptance_index.json",
+            "vibe_coding/codex/pve_headband_flip_acceptance_index.json",
+            "vibe_coding/codex/pve_headband_duel_acceptance_index.json",
+            "vibe_coding/codex/pve_headband_puppet_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片；最新来源未决复核：vibe_coding/codex/headband_chaos_bounded_source_audit_2026-09-29.md，未取得专项裁定，不升级通过。",
+          "unverified": [
+            "普通借混乱的临时颜色/原频率状态尚未接入与验证；焚毁取得混乱或自有混乱证据不能替代。"
+          ]
+        },
+        "burn": {
+          "printedRule": "拿取公共技能供应区中任意一个（包括你自己的）技能，保留至游戏结束，如同升级时获得一样。",
+          "currentEntry": [
+            "PveJourneySession.PlaySpecialArtifact",
+            "PveJourneySession.SpecialArtifacts / UseHeadband* / HeadbandBorrowResolution",
+            "PveBattleController.SpecialArtifacts"
+          ],
+          "actualInputs": "取得真实公共原技能后本人正式发动",
+          "actualConsumer": "原技能取得后实际发动消费并跨回合持有",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_022_04",
+              "title": "强化 / 基本验收：焚毁取得公共原黑暗道路，再正式发动并移动，跨回合持有",
+              "mode": "burn",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260918_052233_eb415683/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260918_052233_eb415683/items/effects.json",
+              "effectChecksPassed": 60,
+              "failedChecks": 0,
+              "wholeReportStatus": "success",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "limitations": [
+                "本阶段验证原卡基本效果与直接结算；罕见组合、多层复制和完整边界保留扩展验收"
+              ],
+              "evidenceSha256": "a02bf6126b63d0e560eba06c2ffa3799533f26302cdd280d1b1825f90c76fec4"
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_headband_progression_acceptance_index.json",
+            "vibe_coding/codex/pve_headband_dynamic_acceptance_index.json",
+            "vibe_coding/codex/pve_headband_targets_acceptance_index.json",
+            "vibe_coding/codex/pve_headband_rally_heal_acceptance_index.json",
+            "vibe_coding/codex/pve_headband_pain_acceptance_index.json",
+            "vibe_coding/codex/pve_headband_leadership_acceptance_index.json",
+            "vibe_coding/codex/pve_headband_shape_fork_flight_acceptance_index.json",
+            "vibe_coding/codex/pve_headband_social_acceptance_index.json",
+            "vibe_coding/codex/pve_headband_payment_acceptance_index.json",
+            "vibe_coding/codex/pve_headband_unit_payment_acceptance_index.json",
+            "vibe_coding/codex/pve_headband_outside_unit_payment_acceptance_index.json",
+            "vibe_coding/codex/pve_headband_flip_acceptance_index.json",
+            "vibe_coding/codex/pve_headband_duel_acceptance_index.json",
+            "vibe_coding/codex/pve_headband_puppet_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片",
+          "unverified": []
+        }
+      }
+    },
+    {
+      "cardId": "items_023",
+      "name": "法术宝典",
+      "definition": "Assets/GameData/CardsAssets/items_023.asset",
+      "artwork": "Assets/GameData/cards/items_023.png",
+      "originalJson": "resources/text_json/items.json#items_023",
+      "entryImplemented": true,
+      "historicalBasicAccepted": true,
+      "historicalAuditStatusPreserved": "basic_scene_evidence_available",
+      "historicalAuditGapsPreserved": [],
+      "historicalGapResolution": null,
+      "modes": {
+        "normal": {
+          "printedRule": "弃掉一张任意颜色的卡牌。使用法术供应区中一张同色法术卡牌的基本效果，但无需支付其魔力费用。",
+          "currentEntry": [
+            "PveJourneySession.PlayMaterialArtifact",
+            "PveBattleController.MaterialArtifacts"
+          ],
+          "actualInputs": "实际同色弃牌、原法术供应引用、上半原选择",
+          "actualConsumer": "同色材料弃置、四原供应法术上半及动态消费者",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_023_02",
+              "title": "基础 / 弃同色原卡，免费使用供给magic_009",
+              "mode": "normal",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260916_004516_cd8fb968/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260916_004516_cd8fb968/items/effects.json",
+              "executionPath": "CardPlayActions.PlayArtifact / actual hand -> played or permanently removed",
+              "effectChecksPassed": 27,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 3,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            },
+            {
+              "caseId": "items_023_03",
+              "title": "基础 / 弃同色原卡，免费使用供给magic_015",
+              "mode": "normal",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260916_004516_cd8fb968/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260916_004516_cd8fb968/items/effects.json",
+              "executionPath": "CardPlayActions.PlayArtifact / actual hand -> played or permanently removed",
+              "effectChecksPassed": 27,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 3,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            },
+            {
+              "caseId": "items_023_04",
+              "title": "基础 / 弃同色原卡，免费使用供给magic_001",
+              "mode": "normal",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260917_003031_b5fc3387/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260917_003031_b5fc3387/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 29,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 3,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            },
+            {
+              "caseId": "items_023_05",
+              "title": "基础 / 弃同色原卡，免费使用供给magic_021",
+              "mode": "normal",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260916_004516_cd8fb968/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260916_004516_cd8fb968/items/effects.json",
+              "executionPath": "CardPlayActions.PlayArtifact / actual hand -> played or permanently removed",
+              "effectChecksPassed": 26,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 3,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            },
+            {
+              "caseId": "items_023_19",
+              "title": "基础 / 实际出牌后回合末宝典进入弃牌，供给法术仍在原位",
+              "mode": "normal",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260916_004516_cd8fb968/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260916_004516_cd8fb968/items/effects.json",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "effectChecksPassed": 26,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 4,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_material_artifacts_acceptance_index.json",
+            "vibe_coding/codex/pve_tome_dynamic_acceptance_index.json",
+            "vibe_coding/codex/pve_tome_materials_acceptance_index.json",
+            "vibe_coding/codex/pve_tome_world_acceptance_index.json",
+            "vibe_coding/codex/pve_restore_honor_inputs_acceptance_index.json",
+            "vibe_coding/codex/pve_mind_responses_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片；多人读取/多单位重生当前引用为共用输入消费者，未把这些都记成宝典逐项独立场景。",
+          "unverified": []
+        },
+        "burn": {
+          "printedRule": "弃掉一张任意颜色的卡牌。使用法术供应区中一张同色法术卡牌的强力效果，但无需支付其魔力费用。即使在白昼时也可以这么做。",
+          "currentEntry": [
+            "PveJourneySession.PlayMaterialArtifact",
+            "PveBattleController.MaterialArtifacts"
+          ],
+          "actualInputs": "实际同色弃牌、原法术供应引用、下半原选择",
+          "actualConsumer": "白昼借原下半实际击败城防；材料/回收/世界路径消费者",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_023_06",
+              "title": "强化 / Day焚毁宝典，零魔力施放强效并实际击败城防敌人",
+              "mode": "burn",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260916_004516_cd8fb968/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260916_004516_cd8fb968/items/effects.json",
+              "executionPath": "ActionSystem.Play -> CardCombatActions -> production combat resolver",
+              "effectChecksPassed": 37,
+              "expectedMatchesCurrentCase": true,
+              "uiCaseStepsPassed": 4,
+              "wholeReportStatus": "success",
+              "checkpointOnly": false
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_material_artifacts_acceptance_index.json",
+            "vibe_coding/codex/pve_tome_dynamic_acceptance_index.json",
+            "vibe_coding/codex/pve_tome_materials_acceptance_index.json",
+            "vibe_coding/codex/pve_tome_world_acceptance_index.json",
+            "vibe_coding/codex/pve_restore_honor_inputs_acceptance_index.json",
+            "vibe_coding/codex/pve_mind_responses_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片",
+          "unverified": []
+        }
+      }
+    },
+    {
+      "cardId": "items_024",
+      "name": "神秘宝盒",
+      "definition": "Assets/GameData/CardsAssets/items_024.asset",
+      "artwork": "Assets/GameData/cards/items_024.png",
+      "originalJson": "resources/text_json/items.json#items_024",
+      "entryImplemented": true,
+      "historicalBasicAccepted": true,
+      "historicalAuditStatusPreserved": "needs_basic_scene_work",
+      "historicalAuditGapsPreserved": [
+        "揭示真实神器牌库顶并将宝盒作为该神器使用、实际名望奖励",
+        "回合末被揭示神器置底；未使用宝盒回手",
+        "将宝盒作为原旌旗附着时回合末宝盒弃牌"
+      ],
+      "historicalGapResolution": {
+        "source": "原024/010/003牌面、既有SO/JSON及实际农民；共享正式ArtifactEffect映射、招募/部队/移动/回合末。",
+        "scope": "揭示原供应顶后未用返手；借金币包普通/焚毁名望3/4、影响4/9真实招募费用4后余0/5；借勇气旗附实际盒、重整和部队移动2、轮末卸盒；原神器同实例归供应底。非所有借用/嵌套组合。",
+        "backend": [
+          "055027_a8d2b633 四主例4/4",
+          "055124_880ba994 六种普通旌旗各一及金币包两去向8/8必要回归"
+        ],
+        "sceneCases": [
+          "items_024_02",
+          "items_024_03",
+          "items_024_04",
+          "items_024_05"
+        ],
+        "effectChecks": 384,
+        "uiSteps": 28,
+        "proofs": [
+          {
+            "path": "AutomationOutputs/RulesState/20260918_055027_a8d2b633/results.xml",
+            "sha256": "cd2f7de58ef4315cceb01bbf3e034d07c600167e61957a8bcda2fff2c6a622f7"
+          },
+          {
+            "path": "AutomationOutputs/RulesState/20260918_055124_880ba994/results.xml",
+            "sha256": "12018db0ce07b79e11af8c116b418a7b767f0c45e053105a95d9ba7ba7585d92"
+          },
+          {
+            "path": "AutomationOutputs/AllOriginalCards/20260918_060021_7a1ab21d/items/effects.json",
+            "sha256": "8d22910b043e6ad02db58ef3076b76c575e909ed7cb5155e6506ab7111ad04ff"
+          },
+          {
+            "path": "AutomationOutputs/AllOriginalCards/20260918_060021_7a1ab21d/items/report.json",
+            "sha256": "711e42f9f7bd510507812ec1f8970a3ae2a8fc9aa56dca630333c9fa0362031f"
+          }
+        ],
+        "sceneRun": "20260918_060021_7a1ab21d/items",
+        "visualReview": "最终四图及金币包费用、借旗原实体/部队实际移动关键图已核对；Unity最终Console两次0。",
+        "retainedFailedRun": "20260918_055729_ca3f3e89/items：配置误把玩家字段写入回合状态，出牌前停止；修player:前缀后仅重入未完成范围。"
+      },
+      "modes": {
+        "normal": {
+          "printedRule": "回合结束时，将翻开的神器放到神器牌库底；如果你没有使用神秘宝盒，则神秘宝盒返回手牌中；如果你将其作为旌旗分配给部队，则将神秘宝盒弃掉。",
+          "currentEntry": [
+            "PveJourneySession.PlaySpecialArtifact",
+            "PveJourneySession.SpecialArtifacts",
+            "PveBattleController.SpecialArtifacts"
+          ],
+          "actualInputs": "真实神器供应顶及其原普通输入，物理盒身份",
+          "actualConsumer": "揭示未用回手、借金币/旗/盾/剑材料并真实消费",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_024_02",
+              "title": "基础 / 基本验收：揭示原金币包但不使用，盒回手且同一神器回供应底",
+              "mode": "normal",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260918_060021_7a1ab21d/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260918_060021_7a1ab21d/items/effects.json",
+              "effectChecksPassed": 68,
+              "failedChecks": 0,
+              "wholeReportStatus": "success",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "limitations": [
+                "本阶段验证原卡基本效果与直接结算；罕见组合、多层复制和完整边界保留扩展验收"
+              ],
+              "evidenceSha256": "8d22910b043e6ad02db58ef3076b76c575e909ed7cb5155e6506ab7111ad04ff"
+            },
+            {
+              "caseId": "items_024_03",
+              "title": "基础 / 基本验收：借原金币包普通实际招募，移动盒本体并归还原供应卡",
+              "mode": "normal",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260918_060021_7a1ab21d/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260918_060021_7a1ab21d/items/effects.json",
+              "effectChecksPassed": 102,
+              "failedChecks": 0,
+              "wholeReportStatus": "success",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "limitations": [
+                "本阶段验证原卡基本效果与直接结算；罕见组合、多层复制和完整边界保留扩展验收"
+              ],
+              "evidenceSha256": "8d22910b043e6ad02db58ef3076b76c575e909ed7cb5155e6506ab7111ad04ff"
+            },
+            {
+              "caseId": "items_024_05",
+              "title": "基础 / 基本验收：借原勇气旌旗附盒，重整原农民并支付移动，回合末卸盒弃牌",
+              "mode": "normal",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260918_060021_7a1ab21d/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260918_060021_7a1ab21d/items/effects.json",
+              "effectChecksPassed": 112,
+              "failedChecks": 0,
+              "wholeReportStatus": "success",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "limitations": [
+                "本阶段验证原卡基本效果与直接结算；罕见组合、多层复制和完整边界保留扩展验收"
+              ],
+              "evidenceSha256": "8d22910b043e6ad02db58ef3076b76c575e909ed7cb5155e6506ab7111ad04ff"
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_special_artifacts_acceptance_index.json",
+            "vibe_coding/codex/pve_box_weapon_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片；单层代表性复制已验，未要求25神器全部复制矩阵，嵌套复制保留后续。",
+          "unverified": []
+        },
+        "burn": {
+          "printedRule": "移除并翻开神器牌库顶的一张卡牌。本回合中，你可以将神秘宝盒作为该神器使用。如果这么做，名望+1。",
+          "currentEntry": [
+            "PveJourneySession.PlaySpecialArtifact",
+            "PveJourneySession.SpecialArtifacts",
+            "PveBattleController.SpecialArtifacts"
+          ],
+          "actualInputs": "真实揭示神器原焚毁输入，移除物理盒而非供应神器",
+          "actualConsumer": "借金币/荣誉/号角/恐惧后真实费用、攻城/取消攻击，物理盒移除，揭示牌归底",
+          "status": "finite_primary_scene_evidence_retained",
+          "historicalEvidence": [
+            {
+              "caseId": "items_024_04",
+              "title": "基础 / 基本验收：借原金币包焚毁实际招募，移动盒本体并归还原供应卡",
+              "mode": "burn",
+              "historicalStatus": "partial",
+              "run": "AutomationOutputs/AllOriginalCards/20260918_060021_7a1ab21d/items",
+              "effectEvidence": "AutomationOutputs/AllOriginalCards/20260918_060021_7a1ab21d/items/effects.json",
+              "effectChecksPassed": 102,
+              "failedChecks": 0,
+              "wholeReportStatus": "success",
+              "executionPath": "ActionSystem.Play -> real per-step combat / movement / unit / turn consumer",
+              "limitations": [
+                "本阶段验证原卡基本效果与直接结算；罕见组合、多层复制和完整边界保留扩展验收"
+              ],
+              "evidenceSha256": "8d22910b043e6ad02db58ef3076b76c575e909ed7cb5155e6506ab7111ad04ff"
+            }
+          ],
+          "currentPveIndexes": [
+            "vibe_coding/codex/pve_special_artifacts_acceptance_index.json",
+            "vibe_coding/codex/pve_box_weapon_acceptance_index.json"
+          ],
+          "mappingNote": "按本模式历史 case 与 PVE 索引明确范围复用，不把所列整份索引所有分支算给本模式，也不要求重拍已有图片",
+          "unverified": []
+        }
+      },
+      "additionalEvidence": {
+        "worklog": "vibe_coding/codex/worklog_2026-09-29_box_material_fear_scene.md",
+        "report": "AutomationOutputs/PveBattle/20260929_132009_6511948a/report.json",
+        "scope": "普通借公正剑真实材料/击杀；焚毁借恐惧双目标/物理盒去向/真实跨轮"
+      }
+    }
+  ]
+}

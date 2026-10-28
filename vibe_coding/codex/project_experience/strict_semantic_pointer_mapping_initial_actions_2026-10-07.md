@@ -1,0 +1,9 @@
+# 初始语义动作映射须拒绝未支持参数
+
+新增semantic_ui_actions.py：advance仅Ranged/Block/Melee中性无参，sideways仅Block/Melee实际非伤手牌、按正式play-by-ID首实体对应occurrence0；七张当前首页依据现有HandPageSize=7，分页仍缺当前页映射。任何非空Input或Targets/Parts/Option非零、未知kind/choice/phase均拒绝，不丢付款/材料/目标，不默认改advance。
+
+生成实际按钮配置：两advance＋sideways两点击共四映射步骤，AssignDamage另外一准备步骤明确未映射。五真实EventSystem点击全部成功，270共享字段前后零差异，hand7→6/melee1截图已视觉检查。语义动作由比较案例选择，不冒称由保存PPO在等价全观察上自主选定；此为映射验收，非全策略UI回放。
+
+首次新Editor菜单尚不可用，未快速重试；按本地RefreshUnity源码请求scripts compile后Console两读0错误，再调用菜单成功并实际报告确认。无编辑器重启/batchmode/包变动，原scene与pve_battle.json不改。
+
+两项重复卡首实例、付款/目标/分页/伤牌/未知kind阶段负例通过；最终Console两读0错误tmp/rl_semantic_ui_final_console_20261007.json。证据20261007_unity_generated_semantics/report.json/comparison/capture、20261007_semantic_sideways_actual_ui_mapping.json。剩余kind/材料/费用/目标/全观察/跨回合映射与完整原范围保持缺口。

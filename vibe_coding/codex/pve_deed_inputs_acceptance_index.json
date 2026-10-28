@@ -1,0 +1,300 @@
+{
+  "scope": "八种原卡共用真实源骰、材料、弃牌与独立颜色输入；正式费用、战斗及移动消费、回合返晶和实际弃牌回收。并非全部基础/强化分支场景完成。",
+  "backendHistory": [
+    {
+      "run": "20260923_072400_47a3fe82",
+      "passed": 17,
+      "failed": [
+        "MK.Tests.Battles.PveDeedInputTests.MeditationReturnsActualEarlierCardsThenFormalNextDrawConsumesBonus(True)"
+      ],
+      "sha256": "45a11b3011bbc3bac149a67c6ada19b8e92d209e61b8e000336ac4fc7a85ba21"
+    },
+    {
+      "run": "20260923_072457_d480d2c3",
+      "passed": 2,
+      "failed": [],
+      "sha256": "8a6fa36f4ed94b4f5f59f4c35ccf2342eb3127810e645af6aecda803c23f7df5"
+    },
+    {
+      "run": "20260923_072917_2005d9ac",
+      "passed": 1,
+      "failed": [],
+      "sha256": "93851c144f6d7d37a182889b1bc6139459c13fa3a663356713c721566dab316f"
+    }
+  ],
+  "backendLatest": {
+    "MK.Tests.Battles.PveDeedInputTests.BaseExtraDieUsesActualBudgetAndCannotBeClaimedTwice(\"basic_card_009\")": {
+      "run": "20260923_072400_47a3fe82",
+      "result": "Passed"
+    },
+    "MK.Tests.Battles.PveDeedInputTests.BaseExtraDieUsesActualBudgetAndCannotBeClaimedTwice(\"basic_card_013\")": {
+      "run": "20260923_072400_47a3fe82",
+      "result": "Passed"
+    },
+    "MK.Tests.Battles.PveDeedInputTests.BloodRitualRealWoundAndIndependentColorsPayMovement(False)": {
+      "run": "20260923_072400_47a3fe82",
+      "result": "Passed"
+    },
+    "MK.Tests.Battles.PveDeedInputTests.BloodRitualRealWoundAndIndependentColorsPayMovement(True)": {
+      "run": "20260923_072400_47a3fe82",
+      "result": "Passed"
+    },
+    "MK.Tests.Battles.PveDeedInputTests.ContinuousResourceChainUsesOnePlayerAndLeavesLaterImprovisationMaterials": {
+      "run": "20260923_072457_d480d2c3",
+      "result": "Passed"
+    },
+    "MK.Tests.Battles.PveDeedInputTests.ConvertedActualDicePayOriginalAttackAndReturnUnrerolled(\"basic_card_009\",1,2)": {
+      "run": "20260923_072400_47a3fe82",
+      "result": "Passed"
+    },
+    "MK.Tests.Battles.PveDeedInputTests.ConvertedActualDicePayOriginalAttackAndReturnUnrerolled(\"basic_card_013\",2,1)": {
+      "run": "20260923_072400_47a3fe82",
+      "result": "Passed"
+    },
+    "MK.Tests.Battles.PveDeedInputTests.DuplicateOrGoldTransformRejectsBeforePrintedFeeAndRestoresInput": {
+      "run": "20260923_072400_47a3fe82",
+      "result": "Passed"
+    },
+    "MK.Tests.Battles.PveDeedInputTests.ImprovisationExactMaterialCreatesRealAttack(False)": {
+      "run": "20260923_072400_47a3fe82",
+      "result": "Passed"
+    },
+    "MK.Tests.Battles.PveDeedInputTests.ImprovisationExactMaterialCreatesRealAttack(True)": {
+      "run": "20260923_072400_47a3fe82",
+      "result": "Passed"
+    },
+    "MK.Tests.Battles.PveDeedInputTests.ImprovisationRejectsSelfWoundAndForeignMaterialBeforeRedFee": {
+      "run": "20260923_072400_47a3fe82",
+      "result": "Passed"
+    },
+    "MK.Tests.Battles.PveDeedInputTests.MasteryBaseRequiresOwnedColorAndCapsActualInventory": {
+      "run": "20260923_072400_47a3fe82",
+      "result": "Passed"
+    },
+    "MK.Tests.Battles.PveDeedInputTests.MasteryTracksPrintedFeeAndLaterAttackButDoesNotLeakNextTurn": {
+      "run": "20260923_072400_47a3fe82",
+      "result": "Passed"
+    },
+    "MK.Tests.Battles.PveDeedInputTests.MeditationReturnsActualEarlierCardsThenFormalNextDrawConsumesBonus(False)": {
+      "run": "20260923_072400_47a3fe82",
+      "result": "Passed"
+    },
+    "MK.Tests.Battles.PveDeedInputTests.MeditationReturnsActualEarlierCardsThenFormalNextDrawConsumesBonus(True)": {
+      "run": "20260923_072457_d480d2c3",
+      "result": "Passed"
+    },
+    "MK.Tests.Battles.PveDeedInputTests.StormUsesActualSourceAndExtraClaims(False)": {
+      "run": "20260923_072400_47a3fe82",
+      "result": "Passed"
+    },
+    "MK.Tests.Battles.PveDeedInputTests.StormUsesActualSourceAndExtraClaims(True)": {
+      "run": "20260923_072400_47a3fe82",
+      "result": "Passed"
+    },
+    "MK.Tests.Cards.BasicCardConsumptionStateTests.CrystallizedManaPaysImprovisationAndActualDiscardAttack": {
+      "run": "20260923_072400_47a3fe82",
+      "result": "Passed"
+    },
+    "MK.Tests.Battles.PveDeedInputTests.ContinuousSourceAllowancesAndStormThenMeditationRecoversRealPreviousTurnCards": {
+      "run": "20260923_072917_2005d9ac",
+      "result": "Passed"
+    }
+  },
+  "backendPassed": 19,
+  "sceneSegments": [
+    {
+      "run": "20260923_072730_ac83fd8c",
+      "kind": "rules",
+      "passedStepIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69
+      ],
+      "steps": 70,
+      "assertions": 109,
+      "sha256": "3cbafaf007bfa5ff99b5e2e1c96cc382b985c7c17470026314a8a05ad8bbbb2f"
+    },
+    {
+      "run": "20260923_073042_e6e0051d",
+      "kind": "rules",
+      "passedStepIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62
+      ],
+      "steps": 63,
+      "assertions": 100,
+      "sha256": "7fe7e414c8915cfd6de1ebc6827e534676d6a15f51b7fba672fd6dffb09961b6"
+    },
+    {
+      "run": "20260923_073431_02d973f7",
+      "kind": "display",
+      "passedStepIndices": [
+        32,
+        33
+      ],
+      "steps": 2,
+      "assertions": 2,
+      "sha256": "6c22b59b040c3c965815842a4f7154b902b6965275075f46ccedf725f2af18f2"
+    }
+  ],
+  "ruleSteps": 133,
+  "ruleAssertions": 209,
+  "displayChecks": 2,
+  "screenshotsReviewed": 13,
+  "screenshots": [
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_072730_ac83fd8c\\captures\\026_选择实际骰，转蓝得两标.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_072730_ac83fd8c\\captures\\035_鲜血仪式真实新伤、红晶与白标.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_072730_ac83fd8c\\captures\\043_白标支付征引，实际两骰转红绿.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_072730_ac83fd8c\\captures\\052_蓝印刷费加红额外费原子支付，攻击7.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_072730_ac83fd8c\\captures\\056_本回合真蓝晶返还、三骰原实例归还.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_072730_ac83fd8c\\captures\\062_原魔力风暴作为实际非伤材料.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_072730_ac83fd8c\\captures\\067_真实移动消费2.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_073042_e6e0051d\\captures\\035_额外额度获得蓝标，普通位置不覆盖.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_073042_e6e0051d\\captures\\040_风暴强化原文.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_073042_e6e0051d\\captures\\046_白昼原黑骰按许可提供绿标.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_073042_e6e0051d\\captures\\057_原冥想选择实际牌库底.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_073042_e6e0051d\\captures\\062_查看本局实际回收牌.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_073431_02d973f7\\captures\\033_原魔力源完整选色：Black.png"
+  ],
+  "finalConsole": "tmp/pve_20260923_deed_colors_final_console.json",
+  "sourceSha256": {
+    "Assets/Logic/Runtime/Battles/PveDeedInputs.cs": "936bb59d0f343cfd5794acdcd4298ae18071ca61ea870bb0c844fbaff93301cf",
+    "Assets/Logic/Runtime/Battles/PveBattleSession.cs": "9f565911661934e12402af6090b130cc81963140b585f4c4a3f98f9fb29d0d72",
+    "Assets/Logic/Runtime/CardEffects/ImprovisationEffect.cs": "fee82fcae56b92a4d2dfcc4552e2fcb00eb3db65b5e765ad6797aefa0b21461c",
+    "Assets/Scripts/Battle/PveBattleController.DeedInputs.cs": "aefc991f44a595e9a8abc0d558cc5475a98de212b66a2c39d2e00bb4399902c0",
+    "Assets/Scripts/Battle/PveBattleController.Journey.cs": "db190ee9c7f7f74ade4abbc04aa37e1640db389d9b19f144d51312cad93bbd28",
+    "Assets/Scripts/Battle/PveBattleController.JourneyHand.cs": "2fa1fadb142eebe1c028a31e26bcfd9d1370ff41b5ec180f1d3f0efbd3e830bf",
+    "Assets/Tests/RulesState/PveDeedInputTests.cs": "1523f16cb780002daeec8c2db6eefca60cb3f3b6273649e843678457717c20e8",
+    "tools/build_pve_deed_inputs_acceptance.py": "1c457ff4fd467f5765d0f7e1524fa4672b424eb45e0529c389d7c5a68cad9def",
+    "tools/build_pve_source_meditation_acceptance.py": "58c994c69a50ad049c522732865ee48e8445c423cf2a25336f3ac7eb3cb785d4"
+  },
+  "remaining": "魔力风暴基础、神游指定两张、鲜血仪式强化等未跑分支后续集中场景；其余未接原卡、部队技能与原世界继续。历史有限完整基本场景基线不自动增加。"
+}

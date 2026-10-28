@@ -1,0 +1,9 @@
+# 原付款观察与动作的显式权重迁移
+
+新付款选择和公开回合义务增加26个观察维度、157个动作。旧权重不能按新目录下标直接加载，类型头也必须按原Kind名称重新对应。
+
+`tools/BattleRl/migrate_turn_action_observation.py` 只接受已知旧/新schema、相同原能力布局、完全相同的旧观察前缀和原动作完整Key及定义。旧动作列及类型列按语义对应，新输入行、新动作和新类型列初始化为零。未知schema、能力变化、旧坐标变化、新增非付款动作、原动作改变均拒绝。
+
+实际v52检查点24576与9个真实初始化状态的对照48项通过，原状态、原观察前缀、原合法动作及仅投影至原合法动作时的策略概率/价值保持；5项拒绝检查通过。证据：`AutomationOutputs/BattleRl/20261004_v55_explicit_native_migration_review.json`、`AutomationOutputs/BattleRl/20261004_v55_migration_rejection_review.json`。Python编译通过；实际Console两次零错误：`tmp/rl_native_migration_console_20261004.json`。
+
+这是兼容性验证，不是新模型训练或规则/场景验收。新合法付款动作会改变完整策略分布，不能宣称完整行为不变。现有活v52进程保持冻结，结束后才考虑以最终检查点生成新的迁移产物；不能把旧24576测试权重当作最终训练结果。

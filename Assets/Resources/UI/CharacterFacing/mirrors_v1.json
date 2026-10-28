@@ -1,0 +1,109 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "monster_009",
+      "category": "EnemyCharacters",
+      "resourceVersion": "embedded_v1",
+      "sha256": "b826830672e1e40fbe8a143fa7b4671756283696dd5686d927f187f7f29f6df7",
+      "mirrorHorizontal": true,
+      "reason": "龙吻长伸到右侧，单侧眼和毒气口向右，尾巴在左。"
+    },
+    {
+      "id": "monster_017",
+      "category": "EnemyCharacters",
+      "resourceVersion": "embedded_v1",
+      "sha256": "be1c0c8bd0852374457c7d1f32e8afe0d2dd3eaa2a356b8d0624b8d0d126bccd",
+      "mirrorHorizontal": true,
+      "reason": "鹰喙明确向右伸出，单侧眼可见，头在身体右前方。"
+    },
+    {
+      "id": "monster_022",
+      "category": "EnemyCharacters",
+      "resourceVersion": "embedded_v1",
+      "sha256": "7725ae80f48fdee1eae3de806f0de22785a405f568ab1e51779900d62fefc27f",
+      "mirrorHorizontal": true,
+      "reason": "头部鼻口轮廓突出向右，右侧方向的侧脸可见；躯干偏正面，左伸爪不等同朝左。"
+    },
+    {
+      "id": "monster_039",
+      "category": "EnemyCharacters",
+      "resourceVersion": "embedded_v1",
+      "sha256": "9cbf283186291d8820fa0e9478bc0e625b40565584a72b901052a0cc7649667d",
+      "mirrorHorizontal": true,
+      "reason": "无眼蠕虫两个口端都位于右侧并向右张开，长躯尾从左弯来，依身体前端判右向。"
+    },
+    {
+      "id": "monster_049",
+      "category": "EnemyCharacters",
+      "resourceVersion": "embedded_v1",
+      "sha256": "b6fa6b0f185aa3d9fc4cfa5d9ef3b6a39d92537f2a8482a310b1fede22973253",
+      "mirrorHorizontal": true,
+      "reason": "骷髅鼻骨牙列与下颌清楚转右上，单侧颊骨明显；左抬手不是左向。背景为棕色。"
+    },
+    {
+      "id": "monster_052",
+      "category": "EnemyCharacters",
+      "resourceVersion": "embedded_v1",
+      "sha256": "9b8d1464f5adab98474227a0c650f626df91fe483b232e00d558456c88cb9b2b",
+      "mirrorHorizontal": true,
+      "reason": "蛇头弯到颈右侧，鼻吻朝右下、单侧眼可见，尾盘在左。"
+    },
+    {
+      "id": "monster_056",
+      "category": "EnemyCharacters",
+      "resourceVersion": "embedded_v1",
+      "sha256": "aa08f407482cbb2d7e7c562d6cf1f7e2f203f02eda7c9b2d47eb75964676769b",
+      "mirrorHorizontal": true,
+      "reason": "金发人形鼻尖和眼神向右，左耳更显，头转向右肩；横持弓不作为视线。"
+    },
+    {
+      "id": "monster_063",
+      "category": "EnemyCharacters",
+      "resourceVersion": "embedded_v1",
+      "sha256": "adf62539fdaf3b2150c2247c1c8f75fad6cebf809a17788a632acf71873a7eb0",
+      "mirrorHorizontal": true,
+      "reason": "女刺客侧脸鼻尖下颌及视线明确向右，左耳清楚；剑也朝右但非唯一依据。"
+    },
+    {
+      "id": "monster_069",
+      "category": "EnemyCharacters",
+      "resourceVersion": "embedded_v1",
+      "sha256": "fbd16f1f38afeeaca7b23ec067b8ee36b0f7b02899f4f6e837033976910177b4",
+      "mirrorHorizontal": true,
+      "reason": "女性法师鼻尖、嘴唇与眼神向右，左侧耳颊明显，躯干亦三分之二向右。"
+    },
+    {
+      "id": "army_010",
+      "category": "UnitCharacters",
+      "resourceVersion": "embedded_v1",
+      "sha256": "f3d0cdbc0e3a85eefa0206766899d459989cbbbdaefc7478e6d5c670079aa443",
+      "mirrorHorizontal": true,
+      "reason": "绿袍女法师抬头看左上，鼻尖和脸部转向画面左侧；右边持杖不等于朝右。"
+    },
+    {
+      "id": "army_013",
+      "category": "UnitCharacters",
+      "resourceVersion": "embedded_v1",
+      "sha256": "88692be867f0331c0e16c89b81c8fee6c7dc686d032c1867ee311cb55c80c9da",
+      "mirrorHorizontal": true,
+      "reason": "冰法师鼻尖及眼神轻向画面左侧，脸部左转；双手蓝焰近对称。"
+    },
+    {
+      "id": "army_014",
+      "category": "UnitCharacters",
+      "resourceVersion": "embedded_v1",
+      "sha256": "46c5d9a6556924272ea02eac55c1fb52789c49ab187e63b8857b40dd5c3bb19d",
+      "mirrorHorizontal": true,
+      "reason": "紫袍男法师低头看左侧光球，鼻尖、眉眼及脸部偏左；右手外伸不据此判右。"
+    },
+    {
+      "id": "army_2_008",
+      "category": "UnitCharacters",
+      "resourceVersion": "embedded_v1",
+      "sha256": "ec19187ce619b6db53f52a5f57973b6861a3b921275d1f7a5c527a2226eb396a",
+      "mirrorHorizontal": true,
+      "reason": "紫衣僧侣躯干侧转向左、双爪伸左，头回望观者但鼻尖仍略偏左；动作与躯干整体偏左。"
+    }
+  ]
+}

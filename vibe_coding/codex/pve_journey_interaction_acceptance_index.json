@@ -1,0 +1,48 @@
+{
+  "scope": "原村庄影响力招募、同单位后续战斗、原卡奖励与付费治疗/重整、实际供应跨轮。自定地图和每定义一实体供应，不声明全桌游原物理副本完成。",
+  "backendRuns": [
+    "20260923_055159_69d3f9c6",
+    "20260923_055449_1b62bbda"
+  ],
+  "effectiveBackendPassed": 60,
+  "sceneSegments": [
+    {
+      "run": "20260923_055818_52ce31a4",
+      "overallStatus": "failed",
+      "passedStepRange": "0-24",
+      "passedSteps": 25,
+      "passedAssertions": 28
+    },
+    {
+      "run": "20260923_060015_becfdc12",
+      "overallStatus": "success",
+      "passedStepRange": "25-103",
+      "passedSteps": 79,
+      "passedAssertions": 147
+    }
+  ],
+  "effectiveSceneSteps": 104,
+  "effectiveSceneAssertions": 175,
+  "screenshotsReviewed": 6,
+  "finalConsole": "tmp/pve_20260923_interaction_final_console.json",
+  "preservedFailure": "供应UnitCost文本截断，原失败报告保留；增加文本区后只补第25步及后续。",
+  "sourceSha256": {
+    "Assets/Logic/Runtime/UnitSupply.cs": "464782a904ae4534eb31d63582876cb2a02784a1d1d3025fc0b92028ee5bf9e7",
+    "Assets/Logic/Runtime/GlobalResources.cs": "9eadaa11a1aa449f345e894591d0f25a82633fde478f4183bd1e720fe1bec75a",
+    "Assets/Logic/Runtime/GameEngine.cs": "92e29aca778d10422079816a2ce8a49d34181e7958b68793fb9e28731f8aa9a3",
+    "Assets/Logic/Runtime/RecruitmentService.cs": "aaa430efa0850401f3c5a302267ef8aef2086a2a3ff26caed2411cb3d9e5ba42",
+    "Assets/Logic/Runtime/ActionContext.cs": "01c2c5afc73907223c273a9a5cfe6bf216922a6f60e7227cba6092e54e76dff5",
+    "Assets/Logic/Runtime/Battles/PveJourneySession.cs": "18e8cd6eaa695f552840a442206f402c349335710e9a17fa08b5c2c9c4044bd7",
+    "Assets/Logic/Runtime/Battles/PveJourneySession.Interaction.cs": "820d964f8b0ca609a9b7414d203f533d6fcc5137c2ac57c29c3feb3b178a2024",
+    "Assets/Logic/Runtime/Battles/PveBattleSession.cs": "027e10df772f4a23c35428795cdbc4c42be01bd12111b78d931b286d0f171565",
+    "Assets/Scripts/Battle/PveBattleController.JourneyInteraction.cs": "ffdb086965bacfee8c096f9360b33813c5d7d48bb72069876d813dd41beb72db",
+    "Assets/Scripts/Battle/PveBattleController.Journey.cs": "bbdcac7ee4fe2038cb4a72b4a3eb1f56041f9bc850c83939ff90431acb71b81b",
+    "Assets/Scripts/Battle/PveBattleController.JourneyMap.cs": "c0910f717c5a29eec3275dbdb38664f72d2141d0f33ba11a2cb6adad6296aa85",
+    "Assets/Scripts/Battle/PveBattleController.JourneyHand.cs": "c2b87420e18249dad19874950a4caae5e564a91800e350ffb55b60ddb53a02b9",
+    "Assets/Scripts/Battle/PveBattleController.cs": "c0cbdde62000fadc446cdeb2786927abb51da7db2d3e853b81050586377e9f47",
+    "Assets/Scripts/SceneAutomation/Editor/PveBattleMenus.cs": "dbf750301c1cce7409dc39317a6f9e07bba7011faae7545af0f71849b9382106",
+    "Assets/Tests/RulesState/JourneyInteractionTests.cs": "cb8036d0a52fb0b5dd55580bef5d2f93ad747c97b18aac1e13b7938b7235b75b",
+    "tools/build_pve_journey_interaction_acceptance.py": "812bb9e9470bd5702cbfd1fe6d397f3ab737ce48b10dc7f3ccddbaeb840e5a38",
+    "Assets/GameData/BattleDemo/JourneyRoute.asset": "72a6c258a75fd7cce1dee2814828b2f0d7f29a8315055bfe247df4eae3e65918"
+  }
+}

@@ -1,0 +1,365 @@
+{
+  "fixture_only": true,
+  "warning": "Only JSON shape examples. References are intentionally unregistered. Never promote from these records.",
+  "messages": [
+    {
+      "schema_version": "ui-rsi/0.1",
+      "prompt_bundle_version": "ui-rsi-prompts/0.1-draft",
+      "run_id": "schema-demo-only",
+      "round_id": 0,
+      "call_id": "controller-in",
+      "role": "controller",
+      "message_type": "input",
+      "task": {
+        "phase": "plan",
+        "run_contract_ref": "demo_contract",
+        "checklist_ref": "demo_checklist",
+        "cost_hotspots_ref": "demo_hotspots",
+        "history_refs": [],
+        "exploration_bundle_ref": null
+      },
+      "allowed_artifact_ids": [],
+      "budget": {
+        "max_tool_calls": 0,
+        "max_ui_operations": 0,
+        "max_output_tokens": 1500
+      }
+    },
+    {
+      "schema_version": "ui-rsi/0.1",
+      "prompt_bundle_version": "ui-rsi-prompts/0.1-draft",
+      "run_id": "schema-demo-only",
+      "round_id": 0,
+      "call_id": "controller-out",
+      "role": "controller",
+      "message_type": "output",
+      "in_reply_to": "controller-in",
+      "status": "done",
+      "result": {
+        "phase": "plan",
+        "exploration_request": {
+          "primary_issue_id": "demo_mana_navigation",
+          "question": "核查取公共魔力再强化卡牌的导航负担；此例未实际执行。",
+          "scenario_ids": [
+            "demo_mana_then_card"
+          ],
+          "intent_refs": [
+            "demo_intent"
+          ],
+          "requested_checks": [
+            "restore_same_state",
+            "resolve_controls",
+            "preserve_payment_semantics"
+          ],
+          "evidence_refs": []
+        },
+        "repair_packet": null
+      },
+      "evidence_refs": [],
+      "needs": [],
+      "limitations": [
+        "SYNTHETIC SCHEMA EXAMPLE; not execution evidence"
+      ]
+    },
+    {
+      "schema_version": "ui-rsi/0.1",
+      "prompt_bundle_version": "ui-rsi-prompts/0.1-draft",
+      "run_id": "schema-demo-only",
+      "round_id": 0,
+      "call_id": "explorer-in",
+      "role": "explorer",
+      "message_type": "input",
+      "task": {
+        "exploration_request_ref": "demo_request",
+        "build_ref": "demo_build",
+        "scenario_refs": [
+          "demo_mana_then_card"
+        ],
+        "intent_catalog_ref": "demo_intents",
+        "adapter_capabilities_ref": "demo_capabilities",
+        "state_certificate_ref": "demo_state_certificate",
+        "action_bindings_ref": "demo_full_actions",
+        "transition_context_ref": "demo_A_end_to_B_start"
+      },
+      "allowed_artifact_ids": [],
+      "budget": {
+        "max_tool_calls": 0,
+        "max_ui_operations": 0,
+        "max_output_tokens": 1500
+      }
+    },
+    {
+      "schema_version": "ui-rsi/0.1",
+      "prompt_bundle_version": "ui-rsi-prompts/0.1-draft",
+      "run_id": "schema-demo-only",
+      "round_id": 0,
+      "call_id": "explorer-out",
+      "role": "explorer",
+      "message_type": "output",
+      "in_reply_to": "explorer-in",
+      "status": "done",
+      "result": {
+        "findings": [
+          {
+            "issue_id": "demo_mana_navigation",
+            "classification": "unobserved",
+            "description": "此为合成结构示例；无真实新观察。",
+            "scenario_id": "demo_mana_then_card",
+            "intent_ref": "demo_intent",
+            "evidence_refs": [],
+            "reproduction_ref": null
+          }
+        ],
+        "observed_scenarios": [],
+        "unobserved": [
+          "demo_mana_then_card"
+        ],
+        "tool_log_refs": []
+      },
+      "evidence_refs": [],
+      "needs": [],
+      "limitations": [
+        "SYNTHETIC SCHEMA EXAMPLE; not execution evidence"
+      ]
+    },
+    {
+      "schema_version": "ui-rsi/0.1",
+      "prompt_bundle_version": "ui-rsi-prompts/0.1-draft",
+      "run_id": "schema-demo-only",
+      "round_id": 0,
+      "call_id": "editor-in",
+      "role": "editor",
+      "message_type": "input",
+      "task": {
+        "repair_packet_ref": "demo_packet",
+        "parent_version": "demo_parent",
+        "candidate_version": "demo_candidate",
+        "parent_archive_ref": "demo_archive",
+        "source_snapshot_ref": "demo_source",
+        "allowed_write_paths": [
+          "demo_only/PveBattleController.FluentUi.cs"
+        ]
+      },
+      "allowed_artifact_ids": [],
+      "budget": {
+        "max_tool_calls": 0,
+        "max_ui_operations": 0,
+        "max_output_tokens": 1500
+      }
+    },
+    {
+      "schema_version": "ui-rsi/0.1",
+      "prompt_bundle_version": "ui-rsi-prompts/0.1-draft",
+      "run_id": "schema-demo-only",
+      "round_id": 0,
+      "call_id": "editor-out",
+      "role": "editor",
+      "message_type": "output",
+      "in_reply_to": "editor-in",
+      "status": "done",
+      "result": {
+        "parent_version": "demo_parent",
+        "candidate_version": "demo_candidate",
+        "attempts": [
+          {
+            "issue_id": "demo_mana_navigation",
+            "attempted": false,
+            "reason": "结构示例，没有编辑游戏。"
+          }
+        ],
+        "changed_files": [],
+        "change_summary": "没有实际修改。",
+        "known_risks": [],
+        "todo": [
+          "需要真实repair_packet及parent归档"
+        ]
+      },
+      "evidence_refs": [],
+      "needs": [],
+      "limitations": [
+        "SYNTHETIC SCHEMA EXAMPLE; not execution evidence"
+      ]
+    },
+    {
+      "schema_version": "ui-rsi/0.1",
+      "prompt_bundle_version": "ui-rsi-prompts/0.1-draft",
+      "call_id": "verifier-in",
+      "role": "verifier",
+      "message_type": "input",
+      "task": {
+        "issues_ref": "demo_issues",
+        "requirements_ref": "demo_requirements",
+        "scenario_refs": [
+          "demo_mana_then_card"
+        ],
+        "current_frame_ids": [],
+        "action_evidence_refs": [],
+        "current_build_alias": "opaque_demo_build",
+        "state_certificate_ref": "a_00000000000000000000000000000000"
+      },
+      "allowed_artifact_ids": [],
+      "budget": {
+        "max_tool_calls": 0,
+        "max_ui_operations": 0,
+        "max_output_tokens": 1500
+      },
+      "review_session_id": "0123456789abcdef0123456789abcdef"
+    },
+    {
+      "schema_version": "ui-rsi/0.1",
+      "prompt_bundle_version": "ui-rsi-prompts/0.1-draft",
+      "call_id": "verifier-out",
+      "role": "verifier",
+      "message_type": "output",
+      "in_reply_to": "verifier-in",
+      "status": "done",
+      "result": {
+        "observations": [
+          {
+            "issue_id": "demo_mana_navigation",
+            "observed": "not_exercised",
+            "evidence_refs": [],
+            "note": "没有当前场景图像或动作证据。"
+          }
+        ],
+        "new_issue_candidates": [],
+        "unobserved": [
+          "demo_mana_then_card"
+        ]
+      },
+      "evidence_refs": [],
+      "needs": [],
+      "limitations": [
+        "SYNTHETIC SCHEMA EXAMPLE; not execution evidence"
+      ],
+      "review_session_id": "0123456789abcdef0123456789abcdef"
+    },
+    {
+      "schema_version": "ui-rsi/0.1",
+      "prompt_bundle_version": "ui-rsi-prompts/0.1-draft",
+      "call_id": "visual_reviewer-in",
+      "role": "visual_reviewer",
+      "message_type": "input",
+      "task": {
+        "pairs": [
+          {
+            "pair_id": "demo_pair",
+            "A_frame_ids": [],
+            "B_frame_ids": [],
+            "required_information_ref": "demo_requirements",
+            "comparison_conditions_ref": "demo_conditions"
+          }
+        ]
+      },
+      "allowed_artifact_ids": [],
+      "budget": {
+        "max_tool_calls": 0,
+        "max_ui_operations": 0,
+        "max_output_tokens": 1500
+      },
+      "review_session_id": "0123456789abcdef0123456789abcdef"
+    },
+    {
+      "schema_version": "ui-rsi/0.1",
+      "prompt_bundle_version": "ui-rsi-prompts/0.1-draft",
+      "call_id": "visual_reviewer-out",
+      "role": "visual_reviewer",
+      "message_type": "output",
+      "in_reply_to": "visual_reviewer-in",
+      "status": "done",
+      "result": {
+        "pairs": [
+          {
+            "pair_id": "demo_pair",
+            "inspected_frames": [],
+            "scores": {
+              "A": null,
+              "B": null
+            },
+            "findings": [],
+            "blocking_findings": [],
+            "unobserved": [
+              "缺少两侧图像，不评分"
+            ]
+          }
+        ]
+      },
+      "evidence_refs": [],
+      "needs": [],
+      "limitations": [
+        "SYNTHETIC SCHEMA EXAMPLE; not execution evidence"
+      ],
+      "review_session_id": "0123456789abcdef0123456789abcdef"
+    },
+    {
+      "schema_version": "ui-rsi/0.1",
+      "prompt_bundle_version": "ui-rsi-prompts/0.1-draft",
+      "run_id": "schema-demo-only",
+      "round_id": 0,
+      "call_id": "monitor-in",
+      "role": "monitor",
+      "message_type": "input",
+      "task": {
+        "validated_cost_summary_ref": "demo_cost_unknown",
+        "hard_gates_ref": "demo_gates_unknown",
+        "issue_verdicts_ref": "demo_verdicts",
+        "visual_review_refs": [],
+        "checklist_ref": "demo_checklist",
+        "history_refs": [],
+        "promotion_policy_ref": "demo_policy"
+      },
+      "allowed_artifact_ids": [],
+      "budget": {
+        "max_tool_calls": 0,
+        "max_ui_operations": 0,
+        "max_output_tokens": 1500
+      }
+    },
+    {
+      "schema_version": "ui-rsi/0.1",
+      "prompt_bundle_version": "ui-rsi-prompts/0.1-draft",
+      "run_id": "schema-demo-only",
+      "round_id": 0,
+      "call_id": "monitor-out",
+      "role": "monitor",
+      "message_type": "output",
+      "in_reply_to": "monitor-in",
+      "status": "done",
+      "result": {
+        "recommendation": "request_evidence",
+        "reason": "缺少有效成本、动作及图像证据，不更新champion。",
+        "evidence_refs": [],
+        "remaining_issues": [
+          "demo_mana_navigation"
+        ],
+        "next_direction": "coverage",
+        "stage_saturated": false,
+        "saturation_reason": "没有有效比较，不计饱和"
+      },
+      "evidence_refs": [],
+      "needs": [],
+      "limitations": [
+        "SYNTHETIC SCHEMA EXAMPLE; not execution evidence"
+      ]
+    },
+    {
+      "schema_version": "ui-rsi/0.1",
+      "prompt_bundle_version": "ui-rsi-prompts/0.1-draft",
+      "run_id": "schema-demo-only",
+      "round_id": 0,
+      "call_id": "controller-select-out",
+      "role": "controller",
+      "message_type": "output",
+      "in_reply_to": "controller-select-in",
+      "status": "needs_evidence",
+      "result": null,
+      "evidence_refs": [],
+      "needs": [
+        "真实当前版本问题证据；合成样例不能生成可执行repair_packet"
+      ],
+      "limitations": [
+        "SYNTHETIC SCHEMA EXAMPLE; must fail real evidence validation"
+      ]
+    }
+  ]
+}

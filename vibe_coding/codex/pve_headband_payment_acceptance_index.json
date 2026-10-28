@@ -1,0 +1,62 @@
+{
+  "scope": "头环公共魔咒两次实际材料/两极实际晶体和源骰付款→原治疗与移动消费者",
+  "backend": {
+    "first": "20260929_102741_92b2ca86",
+    "firstPassed": 38,
+    "sessions": "20260929_103213_df84897c",
+    "sessionsPassed": 4,
+    "sessionsFailed": 1,
+    "repair": "20260929_103604_783808ac",
+    "repairPassed": 1,
+    "finish": "20260929_104001_a79088a9",
+    "finishPassed": 3,
+    "effectivePassed": 46
+  },
+  "scenes": [
+    {
+      "mode": "Invocation",
+      "run": "20260929_103649_4bd63602",
+      "steps": 68,
+      "assertions": 111,
+      "extraFinalChecks": 5,
+      "report": "AutomationOutputs/PveBattle/20260929_103649_4bd63602/report.json",
+      "sha256": "da520bd43ccae2fe43ab4f9ef85820ee1b8f20f0c0d3db7655d4c180fa1fad28"
+    },
+    {
+      "mode": "Polarization",
+      "run": "20260929_104111_1fd5bcd1",
+      "steps": 68,
+      "assertions": 113,
+      "extraFinalChecks": 5,
+      "report": "AutomationOutputs/PveBattle/20260929_104111_1fd5bcd1/report.json",
+      "sha256": "283c1fb44cacc9681310fa99f0607d71de495a951da20e64baa86889fd3ca2fb"
+    },
+    {
+      "mode": "NoConsumerFinish",
+      "run": "20260929_104413_41dee53c",
+      "steps": 73,
+      "reusedPrefixThrough": 40,
+      "assertions": 53,
+      "extraFinalChecks": 5,
+      "report": "AutomationOutputs/PveBattle/20260929_104413_41dee53c/report.json",
+      "sha256": "4c192a5badd98f542876925e88b94e94492541f9b874c63ad97841af1b820c6c"
+    }
+  ],
+  "reviewedImages": [
+    "Invocation:52,59,65",
+    "Polarization:50,52,57",
+    "Finish:63,65,66"
+  ],
+  "console": [
+    "tmp/pve_headband_payment_compile_final_console.json",
+    "tmp/pve_headband_payment_final_console.json"
+  ],
+  "unverified": [
+    "普通部队付款仅后台typed入口，未接场景UI",
+    "有卡或ready单位但实际无法付款时仍Unknown",
+    "神器内部/供应/复制付款及大师特殊费用未接",
+    "强法术/战斗借用仅后台，未补新场景"
+  ],
+  "fixtureRestored": true,
+  "pushed": false
+}

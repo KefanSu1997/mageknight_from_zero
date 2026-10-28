@@ -1,0 +1,61 @@
+{
+  "scope": "原资源神器/防护旗所选分支与真实消费者；入口覆盖不等于全部正常/焚毁场景通过",
+  "backendRuns": [
+    "20260923_062422_38bdf541",
+    "20260923_062633_39ec404e",
+    "20260923_063122_852a3fac"
+  ],
+  "effectiveBackendPassed": 16,
+  "sceneSegments": [
+    {
+      "run": "20260923_062855_9e7e0b2e",
+      "status": "success",
+      "passedSteps": 55,
+      "passedAssertions": 101,
+      "reportSha256": "5147c78fe1e7610cb36158245281e6d3d73a99918278ca78e49b94dbeecf2545"
+    },
+    {
+      "run": "20260923_063240_e2fd3da9",
+      "status": "success",
+      "passedSteps": 75,
+      "passedAssertions": 117,
+      "reportSha256": "ed7c050cbcbc74d975e1d9c447ec94a74bdb9486ac95dee5870033f315f7ccc6"
+    }
+  ],
+  "effectiveSceneSteps": 130,
+  "effectiveSceneAssertions": 218,
+  "screenshotsReviewed": 10,
+  "screenshots": [
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_062855_9e7e0b2e\\captures\\023_蓝色标记与库存蓝晶分开增加.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_062855_9e7e0b2e\\captures\\032_获得黑色并开放白昼下半法术.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_062855_9e7e0b2e\\captures\\035_永久移除红戒，获得本回合无尽红黑.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_062855_9e7e0b2e\\captures\\041_实际费用与法术结算.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_062855_9e7e0b2e\\captures\\048_实际费用与法术结算.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_062855_9e7e0b2e\\captures\\054_正式结束回合：清掉许可与临时魔力，保留库存和原伤牌.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_063240_e2fd3da9\\captures\\039_实际支付金币包影响力4招募同一原农民.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_063240_e2fd3da9\\captures\\044_实际附旗，原牌离开手牌并绑定部队.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_063240_e2fd3da9\\captures\\057_实际一金转红，来源守恒.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_063240_e2fd3da9\\captures\\066_实际护甲3加旗1吸收4，部队真实创伤而英雄无伤.png"
+  ],
+  "finalConsole": "tmp/pve_20260923_artifact_resources_final_console.json",
+  "preservedFailures": [
+    "空手空库不合法下一回合的夹具，保留真实基本牌后定向修正",
+    "金色不是自动基本色支付，补实际转换操作及消费者"
+  ],
+  "artifactEntryCount": 19,
+  "artifactTotal": 25,
+  "finiteFullBasicSceneBaseline": 10,
+  "sourceSha256": {
+    "Assets/Logic/Runtime/Battles/PveArtifactInputs.cs": "a8b228242294a8600edfbbced21c0b738a32440d16e90d8cf42c2d3281212486",
+    "Assets/Logic/Runtime/Battles/PveJourneySession.Artifacts.cs": "c5dd234001d2ae8a12abce86558bead63c50848868c8b71a7d0d7690986e6b38",
+    "Assets/Logic/Runtime/Battles/PveBattleSession.cs": "8a533e4db7913976dfaf987b3c0d87d15fbd74bf2ad871f76cf1772558d2293b",
+    "Assets/Scripts/Battle/PveBattleController.ArtifactResources.cs": "31183e5832a7a8966167275f5ea456c5f13c3902b5c50f149b51bcec6f1abb06",
+    "Assets/Scripts/Battle/PveBattleController.cs": "0675bededeee1460ff666eab895db6a8dca2d3d2c04976c9795243d22e1de4f9",
+    "Assets/Scripts/Battle/PveBattleController.Deeds.cs": "4950381a97bb1fad146b77bc2c4a68716b5d0023d5e1978249156800ff244f9a",
+    "Assets/Scripts/Battle/PveBattleController.JourneyHand.cs": "dd8328e476b31d19f9bdf0196e1b3417c1fb8115bbd80aba94c810792ef4e1d6",
+    "Assets/Scripts/Battle/PveBattleController.Journey.cs": "690d49a9af1a29403f03517ff3a2e1994b02d0d687b0a7468a24cca747ae7d9a",
+    "Assets/Tests/RulesState/PveResourceArtifactEntryTests.cs": "c7995198ebcfe264346691d1f2db4d09dd0315762a308f4632db9c98d241aaf7",
+    "tools/build_pve_artifact_resources_acceptance.py": "425b4c836c70f49863e9a2a7f70c6a3034e205dfbf2602cfd8465ac6120c5fad",
+    "tools/build_pve_artifact_village_acceptance.py": "d0a603cb860b6860f604129712cfac9c0e53c4fb1e3bd5348d66c6f05181bee4"
+  }
+}

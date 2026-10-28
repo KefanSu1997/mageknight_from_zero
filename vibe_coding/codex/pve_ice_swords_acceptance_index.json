@@ -1,0 +1,41 @@
+{
+  "scope": "冰霜剑士普通攻击/格挡5、蓝费取消敌人攻击与减甲3最低1、实际零伤/击杀结算和寒冰免疫拒绝。缺费/缺目标/承伤阶段拒绝只后台；完整招募、奥术免疫场景及全部组合未覆盖。",
+  "backendRuns": [
+    "AutomationOutputs/RulesState/20260918_192512_eb351331",
+    "AutomationOutputs/RulesState/20260918_192838_67ac22d2"
+  ],
+  "backendPassedUnique": 9,
+  "backendNew": 8,
+  "backendRegression": 1,
+  "backendCases": {
+    "MK.Tests.Battles.PveIceSwordsmenTests.AssignmentPhaseCannotRetroactivelyFreezeAnAttack": "Passed",
+    "MK.Tests.Battles.PveIceSwordsmenTests.BlueAbilityCancelsRealDamageAndReducesArmorToAtLeastOne(\"monster_032\",2)": "Passed",
+    "MK.Tests.Battles.PveIceSwordsmenTests.BlueAbilityCancelsRealDamageAndReducesArmorToAtLeastOne(\"monster_029\",5)": "Passed",
+    "MK.Tests.Battles.PveIceSwordsmenTests.IceResistanceRejectsBeforePaymentAndExhaustion(\"monster_004\")": "Passed",
+    "MK.Tests.Battles.PveIceSwordsmenTests.IceResistanceRejectsBeforePaymentAndExhaustion(\"monster_015\")": "Passed",
+    "MK.Tests.Battles.PveIceSwordsmenTests.MissingFeeAndMissingTargetAreAtomic": "Passed",
+    "MK.Tests.Battles.PveIceSwordsmenTests.PrintedPhysicalAttackAndBlockAreFive(False)": "Passed",
+    "MK.Tests.Battles.PveIceSwordsmenTests.PrintedPhysicalAttackAndBlockAreFive(True)": "Passed",
+    "MK.Tests.Cards.DiseaseStateTests.BattleEndRemovesDiseaseWithoutOverwritingOtherArmorReduction": "Passed"
+  },
+  "scene": "AutomationOutputs/PveBattle/20260918_192940_537a7154/report.json",
+  "completedBattles": 4,
+  "rejectionScenarios": 1,
+  "steps": 110,
+  "assertions": 329,
+  "visualReviewed": 8,
+  "files": {
+    "AutomationOutputs/PveBattle/20260918_192940_537a7154/report.json": "ed84319493b8db7f22c0e4a8f795befdb187ae1b7d30d511f5cd11898600c055",
+    "AutomationOutputs/PveBattle/20260918_192940_537a7154/console_final.json": "8d62f369865d478d110ffb57efc54be5aff20c4f4af96e654eba68ad28fb3864",
+    "AutomationOutputs/RulesState/20260918_192512_eb351331/results.xml": "aae32904fc6fa6019c0b4e717c704344aac69c57f5b3e163ab4e49deafcb0273",
+    "AutomationOutputs/RulesState/20260918_192838_67ac22d2/results.xml": "d383c88bce7f617449520d144ba06d87b62bd832dcea9a712c83816eca66f652",
+    "AutomationOutputs/PveBattle/20260918_192940_537a7154/captures/039_发动原能力.png": "0e219a27794fcd751697c0810653d3e6288225950ac2fb08ddbe24656ca6c514",
+    "AutomationOutputs/PveBattle/20260918_192940_537a7154/captures/049_发动原能力.png": "2c3a3c9cc16df0af6dabb93fe27589b426ca2a49b241e1fba975d18636283917",
+    "AutomationOutputs/PveBattle/20260918_192940_537a7154/captures/068_发动原能力.png": "7c249a1b9777f871bb1832b99f25b053cced414bb2ca31738166babd8b4af54d",
+    "AutomationOutputs/PveBattle/20260918_192940_537a7154/captures/091_发动原能力.png": "242400ad4b92bd856cc81e4b0e44f2f39805c46f787287259a033a281b0a1324",
+    "AutomationOutputs/PveBattle/20260918_192940_537a7154/captures/094_进入_Melee.png": "30655a212cdb56aa13d5600120cfcb4182b4e3975bcf3df0c8a058cfe6413d29",
+    "AutomationOutputs/PveBattle/20260918_192940_537a7154/captures/100_实际击杀.png": "eefd0881a1c3515ac30b0ae5535b4850c9009d11fa4db534fb351b56f438d1e0",
+    "AutomationOutputs/PveBattle/20260918_192940_537a7154/captures/101_进入_End.png": "75983d59da511882b618f312eb510a506e7a082a5888f764e990672c4e5b155f",
+    "AutomationOutputs/PveBattle/20260918_192940_537a7154/captures/109_寒冰抗性拒绝控制.png": "9b02a3be2e05f4a6074384302a90e30a79a3e85e506cee2a913118081c6d65d3"
+  }
+}

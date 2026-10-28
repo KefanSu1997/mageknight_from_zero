@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee4aa6fca28083944af06e7d1543142e, type: 3}
+  m_Name: FortifiedEagle
+  m_EditorClassIdentifier: MageKnight.Scripts::MageKnight.Battle.BattleEncounter
+  displayName: "\u5DE8\u9E70\u57CE\u9632"
+  originalMonsterJson: {fileID: 4900000, guid: 1195e7de584f2f1428f58a7ec6cd347c, type: 3}
+  enemies:
+  - originalId: monster_017
+    displayName: "\u5DE8\u9E70"
+    originalToken: {fileID: 2800000, guid: 8920aba47dec21249874d11e6c41b249, type: 3}
+  background: {fileID: 2800000, guid: 06a939b592349e141ac9ff2eadfcdaa6, type: 3}
+  dayPart: 0

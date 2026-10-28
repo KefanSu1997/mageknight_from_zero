@@ -1,0 +1,39 @@
+{
+  "scope": "原暗火魔法红/黑分支、风中残叶、树梢风语的晶体与临时魔力、真实原卡/部队支付、每轮次数及PVE最终击杀。",
+  "backendPassed": 13,
+  "backend": "AutomationOutputs\\RulesState\\20260918_225141_624bd4ae",
+  "backendSourceHashesRechecked": true,
+  "scene": "AutomationOutputs\\PveBattle\\20260922_000419_bbdd7fee\\report.json",
+  "battles": 4,
+  "steps": 179,
+  "assertions": 477,
+  "visualReviewed": 17,
+  "consoleErrors": [
+    0,
+    0
+  ],
+  "limitations": "晶体溢出、非法选项/外来实例、真实新回合不重置/新轮恢复仅后台；跨战斗/完整轮间场景与所有组合未完成。萨满仪式与其他53原技能仍待接入，英雄专属立绘尚未替换。",
+  "files": {
+    "AutomationOutputs/RulesState/20260918_225141_624bd4ae/summary.json": "a14c1cd08bf2de6b13889e36e3231484db6797a0699a906b164b389c3ee5c75b",
+    "AutomationOutputs/RulesState/20260918_225141_624bd4ae/results.xml": "118c2b2c4566bc74dc7ffc65ea4b318dd5020b62b354d2c7e9eba4a153e009f8",
+    "AutomationOutputs/PveBattle/20260922_000419_bbdd7fee/report.json": "77b8ca83572a5011694f62688dda6d6ed5dfdb9b5d6f0ffd76162589dcec6966",
+    "AutomationOutputs/PveBattle/20260922_000419_bbdd7fee/console_final.json": "8d62f369865d478d110ffb57efc54be5aff20c4f4af96e654eba68ad28fb3864",
+    "AutomationOutputs/PveBattle/20260922_000419_bbdd7fee/captures/061_原技能取得晶体与临时魔力.png": "c1c153ef79c3db26ace7ee56eb8a544e39122544c6cceeb922fa8c19288db5b8",
+    "AutomationOutputs/PveBattle/20260922_000419_bbdd7fee/captures/066_消费技能临时魔力.png": "a1409f731968cc2f47f413189b2c1cb9a638ee91c4931113858a14c273292a56",
+    "AutomationOutputs/PveBattle/20260922_000419_bbdd7fee/captures/073_实际支付原卡费用.png": "3dfa29b8566e038be43c0169f98c9d481b7f20fbd784f430395022053ab98c5f",
+    "AutomationOutputs/PveBattle/20260922_000419_bbdd7fee/captures/080_实际支付原卡费用.png": "7864244fe66607554ee088edda45acfa15875e68997a6e88f7172c7dbad114d2",
+    "AutomationOutputs/PveBattle/20260922_000419_bbdd7fee/captures/083_实际战斗最终结果.png": "943e31a9628568ab599be452e54450783dac1d00547abd1bbf5159a5b05ccdf6",
+    "AutomationOutputs/PveBattle/20260922_000419_bbdd7fee/captures/101_原技能取得晶体与临时魔力.png": "36f73ce3e4d21f86d0491c4e0bf06c721e18947d472f2f0aee0897d29b6d4fc6",
+    "AutomationOutputs/PveBattle/20260922_000419_bbdd7fee/captures/108_消费技能临时魔力.png": "99b5e0835df6266c898fc82dcadec7ee1f710b5c6d08444dcbc816e12475d7d3",
+    "AutomationOutputs/PveBattle/20260922_000419_bbdd7fee/captures/112_实际支付原卡费用.png": "ec92a193b884e7ad73017d7fc2929d8d168febaf9e245637c8cc1baaae303140",
+    "AutomationOutputs/PveBattle/20260922_000419_bbdd7fee/captures/118_实际战斗最终结果.png": "6430bc5d00715f00eaef7bc3100f0e77f09c0eef827f107cc58553505069b3a3",
+    "AutomationOutputs/PveBattle/20260922_000419_bbdd7fee/captures/133_原技能取得晶体与临时魔力.png": "cf3612658954a653bc79f3b500234638fd79be866825ce192c3dcf5ca8ac040a",
+    "AutomationOutputs/PveBattle/20260922_000419_bbdd7fee/captures/138_实际支付原卡费用.png": "b46346eb30d0fd50b9b47fc7bb093a0e0ed5abc964956d90b31dce58a7364834",
+    "AutomationOutputs/PveBattle/20260922_000419_bbdd7fee/captures/143_消费技能绿色资源发动攻城.png": "7f94c477a7de2aa01006f0398f3e111c3529180b7f87e9c5b91173479b98c464",
+    "AutomationOutputs/PveBattle/20260922_000419_bbdd7fee/captures/149_实际战斗最终结果.png": "deb3193d415b458bbf72e96bafc2f15d33f504c0b08af68dc6c34c7dd9b39fd8",
+    "AutomationOutputs/PveBattle/20260922_000419_bbdd7fee/captures/159_原技能取得晶体与临时魔力.png": "5e1756c48e83e0d0af41b63ab74ccb65a05d5f0c97a2266b3e18489a8d788f7d",
+    "AutomationOutputs/PveBattle/20260922_000419_bbdd7fee/captures/164_实际支付原卡费用.png": "4480b1175cd7e3e0c7d06fcb23216b3545160fcf2f7b117cf4ccfc2d19d492d6",
+    "AutomationOutputs/PveBattle/20260922_000419_bbdd7fee/captures/169_消费技能绿色资源发动攻城.png": "7f94c477a7de2aa01006f0398f3e111c3529180b7f87e9c5b91173479b98c464",
+    "AutomationOutputs/PveBattle/20260922_000419_bbdd7fee/captures/175_实际战斗最终结果.png": "deb3193d415b458bbf72e96bafc2f15d33f504c0b08af68dc6c34c7dd9b39fd8"
+  }
+}

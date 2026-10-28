@@ -1,0 +1,86 @@
+{
+  "date": "2026-09-29",
+  "newEntries": [
+    "hero_skill_pool_002:02",
+    "hero_skill_pool_000:08",
+    "hero_skill_pool_002:08",
+    "hero_skill_pool_004:08",
+    "hero_skill_pool_005:08",
+    "hero_skill_pool_007:08"
+  ],
+  "backend": {
+    "runs": [
+      {
+        "accepted": "9 inspiration",
+        "id": "20260929_022702_87753db7"
+      },
+      {
+        "accepted": "5 rally rejection",
+        "id": "20260929_022819_1b7ec4d0"
+      },
+      {
+        "accepted": "3 rally success and formal healing consumer",
+        "id": "20260929_022948_9ac3bb48"
+      },
+      {
+        "accepted": "5 real journey consumers",
+        "id": "20260929_023014_2d4a1e11"
+      }
+    ],
+    "passed": 22
+  },
+  "scene": {
+    "runs": [
+      {
+        "report": "AutomationOutputs/PveBattle/20260929_023228_cb7c5108/report.json",
+        "sha256": "56DB61BE3637D3EE6EBA3720C4D5128E6EAA91954394F012DECC9D7FBBCB0194",
+        "acceptedSteps": [
+          0,
+          31
+        ],
+        "checks": 46,
+        "images": [
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_023228_cb7c5108\\captures\\015_正式旅程起点.png",
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_023228_cb7c5108\\captures\\026_正式技能效果.png"
+        ]
+      },
+      {
+        "report": "AutomationOutputs/PveBattle/20260929_023423_2e757eee/report.json",
+        "sha256": "B4BC44CEA8388FE89C272970D6EDAEE986B2FE2CFFF709984F704B1EAF8E07ED",
+        "acceptedSteps": [
+          32,
+          82
+        ],
+        "checks": 78,
+        "images": [
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_023423_2e757eee\\captures\\042_正式技能效果.png",
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_023423_2e757eee\\captures\\054_原农民攻击2再次耗竭.png",
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_023423_2e757eee\\captures\\060_原攻击4击杀.png",
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_023423_2e757eee\\captures\\071_正式技能效果.png",
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_023423_2e757eee\\captures\\078_治疗同玩家上一战真实伤牌.png",
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_023423_2e757eee\\captures\\082_两回合真实牌库_部队保留.png"
+        ]
+      }
+    ],
+    "effectiveImages": 8,
+    "consoleErrors": [
+      0,
+      0
+    ],
+    "console": "tmp/pve_20260929_recovery_final_console.json",
+    "effectiveChecks": 124,
+    "pending": [
+      "Rally heal branch",
+      "other four heroes inspiration scenes",
+      "shared inspiration lock scene",
+      "multiplayer response window"
+    ],
+    "effectiveSteps": 83,
+    "passedBranches": [
+      "Norowas inspiration actual draws, white fee, new cards consumed",
+      "Norowas rally ready same farmer, actual attack after movement",
+      "Norowas public negotiation daytime influence buys actual healing"
+    ]
+  },
+  "failure": "First script requested nonexistent Swift enhanced movement. Corrected to printed ranged3; old report retained. Final attack7 versus armor4, old capture label attack4 is stale."
+}

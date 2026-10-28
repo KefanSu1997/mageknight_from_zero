@@ -1,0 +1,27 @@
+{
+  "scope": "box shield normal and horn burn continuous scene; other new inputs backend only",
+  "segments": [
+    {
+      "run": "20260929_130936_e5a0a2f3",
+      "start": 0,
+      "endExclusive": 46,
+      "assertions": 62
+    },
+    {
+      "run": "20260929_131100_8ff4af16",
+      "start": 46,
+      "endExclusive": 62,
+      "assertions": 40
+    },
+    {
+      "run": "20260929_131200_3bf7198d",
+      "start": 62,
+      "endExclusive": 68,
+      "assertions": 16
+    }
+  ],
+  "steps": 68,
+  "assertions": 118,
+  "failuresPreserved": true,
+  "console": "tmp/pve_box_weapon_console_final.json"
+}

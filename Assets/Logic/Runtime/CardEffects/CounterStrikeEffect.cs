@@ -12,12 +12,12 @@ namespace MK.Logic.Runtime.CardEffects
         {
             if (_enh)
             {
-                ctx.MeleePool += 4;
+                ctx.MeleePool += 4 + 3 * ctx.BlockedEnemiesThisTurn;
                 ctx.AttackBonusPerBlock = 3;
             }
             else
             {
-                ctx.MeleePool += 2;
+                ctx.MeleePool += 2 + 2 * ctx.BlockedEnemiesThisTurn;
                 ctx.AttackBonusPerBlock = 2;
             }
         }

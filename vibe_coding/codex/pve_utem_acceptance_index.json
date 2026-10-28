@@ -1,0 +1,27 @@
+{
+  "scope": "乌顿守卫攻击/普通与迅捷格挡；乌顿剑士普通/自伤攻击与格挡。其他部队独立跟进。",
+  "backendPassedUnique": 8,
+  "backendNew": 7,
+  "backendAffectedRegression": 1,
+  "backend": "AutomationOutputs/RulesState/20260918_164027_1bb2e819",
+  "failedScene": "AutomationOutputs/PveBattle/20260918_164258_217f84e5/report.json",
+  "scene": "AutomationOutputs/PveBattle/20260918_164602_f66ae9e4/report.json",
+  "battles": 7,
+  "steps": 151,
+  "assertions": 377,
+  "visualReviewed": 9,
+  "files": {
+    "AutomationOutputs/PveBattle/20260918_164602_f66ae9e4/report.json": "eb16a43856e0ca4247f0d53fec4fbff2a235fbf61bb980dc33555fe112416739",
+    "AutomationOutputs/PveBattle/20260918_164602_f66ae9e4/console_final.json": "d4d75fb30316ccbe7b289d7808a4bd701f2e1bcc8c9ad3e1fa822852ba9bec0f",
+    "AutomationOutputs/RulesState/20260918_164027_1bb2e819/summary.json": "b8247a5f4c01d31a4f5da637cbadea73bc95caf8638bf3d5d53d677874471cc1",
+    "AutomationOutputs/PveBattle/20260918_164602_f66ae9e4/captures/013_守卫普通敌人格挡.png": "8ae592c83e7647dbd199654489923cd26de42421e8342fe701a6133f7f27c11e",
+    "AutomationOutputs/PveBattle/20260918_164602_f66ae9e4/captures/025_进入_End.png": "f2592cee64d58cf8efc254d381a48a10bb198b8a392ec3dff1a3209372e46775",
+    "AutomationOutputs/PveBattle/20260918_164602_f66ae9e4/captures/037_格挡需求及贡献核对.png": "43f8fe97ce1d9c9608ebd7217e4e2df5b591f74384eae82fbafef2999ba29b16",
+    "AutomationOutputs/PveBattle/20260918_164602_f66ae9e4/captures/067_进入_End.png": "7fc83765038392c30ab1f6c592cadb9ec278d7f5bf151aaaddfed15094ee29a7",
+    "AutomationOutputs/PveBattle/20260918_164602_f66ae9e4/captures/099_剑士自伤格挡.png": "fc94c8e4b448bcda3ee8d1a0a43639c28540bf32b3515b56e4a9c8738f8e0ca3",
+    "AutomationOutputs/PveBattle/20260918_164602_f66ae9e4/captures/112_进入_End.png": "df6e2cc0c1883f89c5a903922802698f63c7e49d09b5cb7fcab29072da3e3c6b",
+    "AutomationOutputs/PveBattle/20260918_164602_f66ae9e4/captures/126_剑士普通攻击.png": "6b4aaf6370bb62328aeeb70d976d0ba7215dfb3dc9aa3cb9903731ab49bebf75",
+    "AutomationOutputs/PveBattle/20260918_164602_f66ae9e4/captures/146_剑士自伤攻击.png": "2cdf27ddd13397c5acbf7c15a923c5d2f3325e9781f11f03c6cd90b50c6b5417",
+    "AutomationOutputs/PveBattle/20260918_164602_f66ae9e4/captures/150_进入_End.png": "bfb2c770f8d20ef4d57d2be528eaf0543f29c88fc318042b014063b02b388ede"
+  }
+}

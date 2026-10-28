@@ -1,0 +1,11 @@
+# 分家族扩池与费用审查、外部数据冻结缺口
+
+实际缺口队列按不同既定train家族分散，而不是继续只调八校准。冻结终局奖励模型探索四候选共14实际尝试，units/physical/ranged_siege未取得完整见证，Krang elemental/018取得24步完整证书。成员定义未修改，训练/验证/test不交叉；发现阶段不计学习覆盖。
+
+显式8→9扩池保持72参数/Adam数组、step67、95局3812步、RNG/真实计数；继续6局238步1完整任务，累计101局4050步Adam71。实际下界73模式、11单位、12本人技能、12hero-enemy配对，仍不代表模式全分支/原费用消费者或Unity通过。新增可解是单组，不冒充扩大多组稳定胜率。
+
+原Mana Draw/basic009强化印刷蓝费，真实47步Tovak见证step12：蓝token1→0，晶体/held不变，绿色实际source数量减1，红token+2、原黑token不变，claimedDice追加Red，普通source额度/extraDice不增，物理card instance1手牌→played。step18实际EndTurn未使用标记消失。红标记未被后续花费，不能计为消费完成；source面值集合出现Red也不足证明该骰实体不重掷，保持物理身份/no-reroll独立缺口。证据20261007_original_mana_draw_fee_conversion_review.json。
+
+源代码复核CardJsonLoader.cs使用File.ReadAllText动态读resources/text_json，因此仅DLL SHA不足以冻结数据。捕获当前10JSON SHA组合bc14de318bd39969d4d5e7ad82fbbf0e9697dfba997939b52b5538b9c2d1cfa3，20261007_current_external_rule_data_fingerprint.json。只能证明当前文件，不伪造过去未保存的数据指纹；下一步绑定未来证书/checkpoint，并通过实际旧证据重放/严格迁移处理历史。
+
+产物20261007_policy_distinct_family_discovery、20261007_recurrent_nine_task_migration/training、20261007_actual_gaps_after_nine_task_training.json。所有进程43591/60314正常结束。本轮未改规则/场景/代码文件，复用既有检查，不无依据全库/Console重跑。完整原范围、保留验证/未调参测试与Unity仍缺。

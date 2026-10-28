@@ -1,0 +1,7 @@
+# 决斗正式防御时点与傀儡真实格挡
+
+PveBattleSession.Block将实际贡献保存在ReservedBlocks，确认格挡UI先显示已格挡；单位参与历史与奖励由Advance经TurnMachine.ResolveDefense正式结算。直接CardCombatActions.Block的后台时序不能套给UI断言。应在近战进入后核duel.unitAffected=True，并用真实击杀仅获印刷名望验证，不能删除奖励条件。
+
+自有傀儡另一主要用途须以真实击败标记保存后跨回合消费格挡；本次哨卫甲3向上取半2、蓝费原决心5合7挡狼骑迅捷6、旧伤2保留，后续原牌攻4击杀。仅复用后台已过物理格挡/库存/单位介入用例，不重跑所有英雄或原卡。特殊头环借用另行处理，不由自有技能通过推论。
+
+证据：../pve_persistent_primary_acceptance_index.json，142操作189断言、6图、Console双0。duel原失败144017保留，后缀144158通过；puppet144309一次通过。

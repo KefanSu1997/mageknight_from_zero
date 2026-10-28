@@ -1,0 +1,170 @@
+{
+  "scope": "Actual original025 Keep conquest, next-turn natural Keep recruitment, same Guardian Golem across formal round with paid Ice block and actual spell kill",
+  "status": "scene passed",
+  "report": "AutomationOutputs/PveBattle/20260929_174623_6a3a489e/report.json",
+  "sha256": "ed5cc8d6923481c14096f3f7f5762684032b8e2bf4daff647b97a27bf30b421c",
+  "totalExecutedSteps": 93,
+  "replayedPrefixSteps": 26,
+  "newVerifiedSteps": 67,
+  "newVerifiedRange": [
+    26,
+    92
+  ],
+  "assertions": 170,
+  "identityChecks": [
+    {
+      "step": 55,
+      "units.instances": "",
+      "units.ready": "",
+      "journey.samePlayer": "True",
+      "journey.position": "-1,1",
+      "world.conquered": "-1:1",
+      "wounds": "1",
+      "removed.ids": "items_015"
+    },
+    {
+      "step": 56,
+      "units.instances": "",
+      "units.ready": "",
+      "journey.samePlayer": "True",
+      "journey.position": "-1,1",
+      "world.conquered": "-1:1",
+      "wounds": "1",
+      "removed.ids": "items_015"
+    },
+    {
+      "step": 68,
+      "units.instances": "army_2_001:-1128408124",
+      "units.ready": "True",
+      "journey.samePlayer": "True",
+      "journey.position": "-1,1",
+      "world.conquered": "-1:1",
+      "wounds": "1",
+      "removed.ids": "items_015,items_010"
+    },
+    {
+      "step": 70,
+      "units.instances": "army_2_001:-1128408124",
+      "units.ready": "True",
+      "journey.samePlayer": "True",
+      "journey.position": "-1,1",
+      "world.conquered": "-1:1",
+      "wounds": "1",
+      "removed.ids": "items_015,items_010"
+    },
+    {
+      "step": 72,
+      "units.instances": "army_2_001:-1128408124",
+      "units.ready": "True",
+      "journey.samePlayer": "True",
+      "journey.position": "-1,1",
+      "world.conquered": "-1:1",
+      "wounds": "0",
+      "removed.ids": "items_015,items_010"
+    },
+    {
+      "step": 73,
+      "units.instances": "army_2_001:-1128408124",
+      "units.ready": "True",
+      "journey.samePlayer": "True",
+      "journey.position": "-1,1",
+      "world.conquered": "-1:1",
+      "wounds": "1",
+      "removed.ids": "items_015,items_010"
+    },
+    {
+      "step": 75,
+      "units.instances": "army_2_001:-1128408124",
+      "units.ready": "True",
+      "journey.samePlayer": "True",
+      "journey.position": "-1,1",
+      "world.conquered": "-1:1",
+      "wounds": "1",
+      "removed.ids": "items_015,items_010"
+    },
+    {
+      "step": 80,
+      "units.instances": "army_2_001:-1128408124",
+      "units.ready": "False",
+      "journey.samePlayer": "True",
+      "journey.position": "-1,1",
+      "world.conquered": "-1:1",
+      "wounds": "1",
+      "removed.ids": "items_015,items_010"
+    },
+    {
+      "step": 84,
+      "units.instances": "army_2_001:-1128408124",
+      "units.ready": "False",
+      "journey.samePlayer": "True",
+      "journey.position": "-1,1",
+      "world.conquered": "-1:1",
+      "wounds": "1",
+      "removed.ids": "items_015,items_010"
+    },
+    {
+      "step": 92,
+      "units.instances": "army_2_001:-1128408124",
+      "units.ready": "False",
+      "journey.samePlayer": "True",
+      "journey.position": "-1,1",
+      "world.conquered": "-1:1",
+      "wounds": "1",
+      "removed.ids": "items_015,items_010"
+    }
+  ],
+  "reviewedScreenshots": [
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_174623_6a3a489e\\captures\\048_真实红标优先支付与第二黑标，保留原红晶.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_174623_6a3a489e\\captures\\055_真实登记本人要塞归属、弃置同025，无塔法术奖励.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_174623_6a3a489e\\captures\\068_实际支付7取得供应实体.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_174623_6a3a489e\\captures\\080_另付实际蓝晶发动寒冰格挡4.png"
+  ],
+  "visualReview": "Main agent reviewed all four screenshots as normal; indexing subagent independently checked report assertions and persistent identity",
+  "backendReused": [
+    {
+      "report": "AutomationOutputs/RulesState/20260923_094343_07fe883b/results.xml",
+      "method": "PveWorldJourneyEntryTests.OriginalTunnelAttachesSameGuardAndSettlesActualSiteBeforeFormalTurnReward(Keep,\"monster_027\")",
+      "result": "Passed",
+      "scope": "Real guard binding/conquest/owner/turn lifecycle; guard differs from actual scene025"
+    },
+    {
+      "report": "AutomationOutputs/RulesState/20260929_171747_fa03220e/results.xml",
+      "method": "PveNaturalSiteRecruitmentTests.CurrentOriginalSiteRecruitsRealSupplyAndSameScoutFightsFollowingTurn(Keep,Keep)",
+      "result": "Passed"
+    }
+  ],
+  "directAffectedRegression": {
+    "report": "AutomationOutputs/RulesState/20260929_173632_0f5e5129/results.xml",
+    "cases": [
+      {
+        "name": "MK.Tests.Battles.PveNaturalSiteRecruitmentTests.CurrentOriginalSiteRecruitsRealSupplyAndSameScoutFightsFollowingTurn(Village,Village)",
+        "result": "Passed"
+      },
+      {
+        "name": "MK.Tests.Battles.PveNaturalSiteRecruitmentTests.CurrentOriginalSiteRecruitsRealSupplyAndSameScoutFightsFollowingTurn(Keep,Keep)",
+        "result": "Passed"
+      },
+      {
+        "name": "MK.Tests.Battles.PveNaturalSiteRecruitmentTests.CurrentOriginalSiteRecruitsRealSupplyAndSameScoutFightsFollowingTurn(MageTower,MageTower)",
+        "result": "Passed"
+      },
+      {
+        "name": "MK.Tests.Battles.PveNaturalSiteRecruitmentTests.CurrentOriginalSiteRecruitsRealSupplyAndSameScoutFightsFollowingTurn(City,City)",
+        "result": "Passed"
+      }
+    ],
+    "note": "Only these four old natural-recruitment cases are claimed passed here. The same run contains two separate new spell-purchase failures; this index does not erase or mark them passed."
+  },
+  "console": "tmp/pve_site_spell_purchase_keep_final_console.json",
+  "consoleSha256": "8d62f369865d478d110ffb57efc54be5aff20c4f4af96e654eba68ad28fb3864",
+  "consoleErrors": [
+    0,
+    0
+  ],
+  "limitations": [
+    "Legal custom Lv6 five-original-card build and existing demonstration map; not full original tile exploration",
+    "Keep ownership must arise from actual scene conquest, not preconfigured Conquered",
+    "No assertion of Keep retreat/replacement, enemy-owned PvP or city completion",
+    "26 shared setup steps are not counted as new verification"
+  ]
+}

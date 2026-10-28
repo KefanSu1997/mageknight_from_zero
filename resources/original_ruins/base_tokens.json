@@ -1,0 +1,194 @@
+{
+  "version": 1,
+  "edition": "base",
+  "verification": "provisional_user_authorized_v1",
+  "sources": [
+    {
+      "id": "decisions_v1",
+      "file": "decisions_v1.md",
+      "sha256": "fc1f2efcb80fe0026bfb8a8592a95d2536f96bb0f43e7722ac7faf68fe7ae45a"
+    }
+  ],
+  "tokens": [
+    {
+      "id": "base_altar_red",
+      "source_id": "decisions_v1",
+      "source_location": "base_altar_red",
+      "verification": "provisional_v1",
+      "mana_cost": [
+        "Red",
+        "Red",
+        "Red"
+      ],
+      "fame": 7,
+      "enemies": [],
+      "rewards": []
+    },
+    {
+      "id": "base_altar_blue",
+      "source_id": "decisions_v1",
+      "source_location": "base_altar_blue",
+      "verification": "provisional_v1",
+      "mana_cost": [
+        "Blue",
+        "Blue",
+        "Blue"
+      ],
+      "fame": 7,
+      "enemies": [],
+      "rewards": []
+    },
+    {
+      "id": "base_altar_green",
+      "source_id": "decisions_v1",
+      "source_location": "base_altar_green",
+      "verification": "provisional_v1",
+      "mana_cost": [
+        "Green",
+        "Green",
+        "Green"
+      ],
+      "fame": 7,
+      "enemies": [],
+      "rewards": []
+    },
+    {
+      "id": "base_altar_white",
+      "source_id": "decisions_v1",
+      "source_location": "base_altar_white",
+      "verification": "provisional_v1",
+      "mana_cost": [
+        "White",
+        "White",
+        "White"
+      ],
+      "fame": 7,
+      "enemies": [],
+      "rewards": []
+    },
+    {
+      "id": "base_encounter_green_brown",
+      "source_id": "decisions_v1",
+      "source_location": "base_encounter_green_brown",
+      "verification": "provisional_v1",
+      "mana_cost": [],
+      "fame": 0,
+      "enemies": [
+        "Green",
+        "Brown"
+      ],
+      "rewards": [
+        "Artifact"
+      ]
+    },
+    {
+      "id": "base_encounter_gray_purple",
+      "source_id": "decisions_v1",
+      "source_location": "base_encounter_gray_purple",
+      "verification": "provisional_v1",
+      "mana_cost": [],
+      "fame": 0,
+      "enemies": [
+        "Gray",
+        "Purple"
+      ],
+      "rewards": [
+        "Unit"
+      ]
+    },
+    {
+      "id": "base_encounter_green_green",
+      "source_id": "decisions_v1",
+      "source_location": "base_encounter_green_green",
+      "verification": "provisional_v1",
+      "mana_cost": [],
+      "fame": 0,
+      "enemies": [
+        "Green",
+        "Green"
+      ],
+      "rewards": [
+        "FourBasicCrystals"
+      ]
+    },
+    {
+      "id": "base_encounter_gray_brown",
+      "source_id": "decisions_v1",
+      "source_location": "base_encounter_gray_brown",
+      "verification": "provisional_v1",
+      "mana_cost": [],
+      "fame": 0,
+      "enemies": [
+        "Gray",
+        "Brown"
+      ],
+      "rewards": [
+        "Artifact"
+      ]
+    },
+    {
+      "id": "base_encounter_green_red",
+      "source_id": "decisions_v1",
+      "source_location": "base_encounter_green_red",
+      "verification": "provisional_v1",
+      "mana_cost": [],
+      "fame": 0,
+      "enemies": [
+        "Green",
+        "Red"
+      ],
+      "rewards": [
+        "Artifact",
+        "AdvancedAction"
+      ]
+    },
+    {
+      "id": "base_encounter_brown_purple",
+      "source_id": "decisions_v1",
+      "source_location": "base_encounter_brown_purple",
+      "verification": "provisional_v1",
+      "mana_cost": [],
+      "fame": 0,
+      "enemies": [
+        "Brown",
+        "Purple"
+      ],
+      "rewards": [
+        "Spell",
+        "FourBasicCrystals"
+      ]
+    },
+    {
+      "id": "base_encounter_brown_red",
+      "source_id": "decisions_v1",
+      "source_location": "base_encounter_brown_red",
+      "verification": "provisional_v1",
+      "mana_cost": [],
+      "fame": 0,
+      "enemies": [
+        "Brown",
+        "Red"
+      ],
+      "rewards": [
+        "Artifact",
+        "Artifact"
+      ]
+    },
+    {
+      "id": "base_encounter_gray_white",
+      "source_id": "decisions_v1",
+      "source_location": "base_encounter_gray_white",
+      "verification": "provisional_v1",
+      "mana_cost": [],
+      "fame": 0,
+      "enemies": [
+        "Gray",
+        "White"
+      ],
+      "rewards": [
+        "Artifact",
+        "Spell"
+      ]
+    }
+  ]
+}

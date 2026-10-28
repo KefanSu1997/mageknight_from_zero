@@ -1,0 +1,99 @@
+{
+  "scenePath": "Assets/Scenes/Part1/Part1_PveBattle.unity",
+  "reportPath": "AutomationOutputs/BattleRl/20261007_unity_semantic_attack_neutral/report.json",
+  "screenshotsDirectory": "AutomationOutputs/BattleRl/20261007_unity_semantic_attack_neutral/captures",
+  "captureInitialView": false,
+  "useRunSubfolder": false,
+  "initialDelaySeconds": 2,
+  "defaultWaitAfterSeconds": 0.4,
+  "maxRunSeconds": 60,
+  "steps": [
+    {
+      "buttonPath": "Canvas/BattleTable/Inspector/Btn_Next",
+      "label": "语义advance · Ranged",
+      "skipScreenshot": true
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Inspector/Btn_Next",
+      "label": "语义advance · Block",
+      "skipScreenshot": true
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Inspector/Btn_Next",
+      "label": "承伤输入单独保留未映射步骤",
+      "skipScreenshot": true
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Hand/Btn_Card_basic_card_000_0",
+      "label": "选择语义动作的实际手牌 basic_card_000",
+      "skipScreenshot": true
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Inspector/Btn_Sideways",
+      "label": "语义sideways · basic_card_000",
+      "skipScreenshot": true
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Hand/Btn_Card_basic_card_014_0",
+      "label": "选择语义动作的实际手牌 basic_card_014",
+      "skipScreenshot": true
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Inspector/Btn_Sideways",
+      "label": "语义sideways · basic_card_014",
+      "skipScreenshot": true
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Hand/Btn_Card_basic_card_008_0",
+      "label": "选择语义动作的实际手牌 basic_card_008",
+      "skipScreenshot": true
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Inspector/Btn_Sideways",
+      "label": "语义sideways · basic_card_008",
+      "skipScreenshot": true
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Enemy_0/Btn_Target",
+      "label": "语义attack · 选择实际敌人",
+      "skipScreenshot": true
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Inspector/Btn_AttackParts",
+      "label": "打开真实贡献选择",
+      "skipScreenshot": true
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/AttackSelection/Btn_All",
+      "label": "明确全部贡献用于本次",
+      "skipScreenshot": true
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/AttackSelection/Btn_Done",
+      "label": "确认贡献选择",
+      "skipScreenshot": true
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Inspector/Btn_Resolve",
+      "label": "语义attack · 正式消费贡献",
+      "skipScreenshot": false,
+      "after": [
+        {
+          "key": "kills",
+          "expected": "1",
+          "rule": "原敌实际击败"
+        },
+        {
+          "key": "melee",
+          "expected": "0",
+          "rule": "三贡献正式消费不能残留"
+        },
+        {
+          "key": "attacks.sources",
+          "expected": "",
+          "rule": "原来源全部消费"
+        }
+      ]
+    }
+  ]
+}

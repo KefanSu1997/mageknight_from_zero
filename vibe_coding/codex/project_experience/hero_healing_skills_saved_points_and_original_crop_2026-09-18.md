@@ -1,0 +1,11 @@
+# 英雄治疗技能：获得治疗点、真实目标与原图裁切
+
+skill_014前两项和skill_017第二项原图确认：提神沐浴/微风每轮一次战斗外获得治疗1及蓝/白魔晶；药剂制作战斗外每轮治疗2。旧效果直接CardHealing.Heal英雄，错失存点和部队目标且无战斗时机验证。正式三效果改ICardEffectValidator，拒绝InBattle/非0选项，再Healing.Add与原AddCrystal；SkillActions已有失败不翻面的守恒。绝不另写演示规则。
+
+PveBattleSession仅End提供三选项，Controller复用战后真实Healing消费，并在技能点选时退出恢复面板。HealingSkillLoadout绑定已有原json/技能图及实际部队，分别46RefreshBath、47RefreshBreeze、48PotionCraft。完整地图/后续回合还未整合，Camp重开不等同真实新回合。
+
+后台213044_7c64e8c5 14/14通过。英雄/部队都由实际monster032承伤后击杀进入End；获得点数不自动减少伤牌，I/II级部队分别消费1/2且不重整，普通治疗不加名望。后台另证战斗/非法选项不耗次数，晶体3上限溢出魔力，实际StartTurn不重置、StartNewRound重置。首CLI缺System限定已修复，Unity Console双零。
+
+场景213235_1d880f2d六场181真实点击534检查全过，12图人工核对发现微风标题裁切，不能仅因report success宣告视觉通过。Wolfhawk原图行位置与其他英雄不同：仅skillIndex1 y改0.684，原素材不重绘；保存visual_review.json部分失败。其余原图及结果有效。用--breeze-visual-only生成单条补验20260918_213851_768b34e1，66点击162检查及3图通过，最终Console双0。保留旧后台/五个无关路径，不重跑全批或全卡库。
+
+证据索引pve_healing_skills_acceptance_index.json。新晶体下一战消费、完整轮间与全组合及英雄专属立绘不在已通过结论内。

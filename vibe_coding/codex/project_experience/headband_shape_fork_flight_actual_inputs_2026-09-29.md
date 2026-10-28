@@ -1,0 +1,7 @@
+# 头环固定输出、目标绑定和真实飞行
+
+借用共用正式ShapeshiftActions、ForkedLightningActions和FlightSkillActions，只在当前PendingHeadbandBorrow的同玩家/同上下文/同公共技能执行窗口授权；个人拥有与次数不能伪造。每回合技能两次独立输入，每轮飞行仅一次。叉形使用实际敌人引用追加绑定贡献，不能把总数覆盖前笔或交换同名敌人。飞行直接调用正式MovementService，真实位置和剩余移动继续供普通移动消费。
+
+变换候选随实际手牌缩减；不可凭ID猜原牌：007是敏捷，014才是耐力。第一次场景误选敏捷，攻击转攻击被正确禁用。保留失败证据，核原卡图后修选择2，仅补53之后断言。后台过不等于场景过。原德鲁伊地形输入与跨阶段组合仍未验。
+
+验证索引：vibe_coding/codex/pve_headband_shape_fork_flight_acceptance_index.json。49/49后台；三组场景完成，9关键图目视与15附加真实牌区/归属/同玩家断言；Console最终两次0。临时种子每组原字节恢复，不改原数据/规则满足脚本。

@@ -1,0 +1,9 @@
+# 策略观察须包含正式回合义务
+
+新增真实轨迹seed95399和95246在只剩伤牌、activity为0时进入战斗，最终Phase.End没有合法后续。保留原回合末至少打出或弃牌的正式要求与失败，不把场景战斗提交当作完成牌义务，也不禁止本来合法的战斗。
+
+状态JSON已有activity，但原策略向量没有直接包含CardsPlayedOrDiscardedThisTurn谓词。新原付款分支追加一个公开布尔观察，并明确改变schema；旧冻结v52保持。只有描述可见状态发生变化，没有修改原规则、动作掩码或奖励。
+
+独立v55与v54比较真实选择、原付款出牌、正式下一回合，共18项对照通过：状态/掩码/全部旧观察列相同，选择仍为0，实际出牌为1，下一回合为0。独立.NET编译零警告零错误，Console两次零错误。不能把新增观察当作训练已改善；新保存模型与Unity回放仍待验收。
+
+证据：`AutomationOutputs/BattleRl/20261004_v55_turn_obligation_observation_review.json`、`AutomationOutputs/BattleRl/20261004_v52_new_all_wound_dead_end_review_24576.json`；详细记录见本日PPO工作日志。

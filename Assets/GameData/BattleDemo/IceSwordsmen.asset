@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c959fe233c2091549a05abb464742f9b, type: 3}
+  m_Name: IceSwordsmen
+  m_EditorClassIdentifier: MageKnight.Scripts::MageKnight.Battle.BattleLoadout
+  displayName: "\u57C3\u83AB\u63D0\u666E\u51B0\u971C\u5251\u58EB"
+  openingHand:
+  - {fileID: 11400000, guid: 3e584250539a61540aa8a664e6a1b619, type: 2}
+  - {fileID: 11400000, guid: 36d7a414fcca5af4f9c143855c72934e, type: 2}
+  - {fileID: 11400000, guid: 3aa680b08bf52354ba83c4f171bec5ab, type: 2}
+  - {fileID: 11400000, guid: 8f982eacfc3148e693a2fc0dcb1e87bf, type: 2}
+  redCrystals: 2
+  blueCrystals: 2
+  whiteCrystals: 0
+  greenCrystals: 0
+  heroArtwork: {fileID: 21300000, guid: 772c492518603f745a68e50b882e0ae8, type: 3}
+  units:
+  - {fileID: 11400000, guid: 0bf5a45d136f3284592be3897bc0d7dd, type: 2}
+  artifacts: []
+  hero: {fileID: 0}
+  startingFame: 0
+  learnedSkills: 

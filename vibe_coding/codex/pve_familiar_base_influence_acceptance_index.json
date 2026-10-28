@@ -1,0 +1,223 @@
+{
+  "scope": "原迷醉001:04实际林地影响4参与招募；同一红标魔宠基础影响3在村庄消费治疗上一战真实旧伤",
+  "status": "scene_passed",
+  "backend": {
+    "xml": "AutomationOutputs/RulesState/20260929_195848_27e5a6fe/results.xml",
+    "sha256": "a0266f1ad37b695bf866ebf5d2c6365af677baf0c95bdc3138f7b583c809c89a",
+    "method": "MK.Tests.Battles.PveFamiliarBaseInfluenceJourneyTests.OriginalGladeTranceRecruitsRedFamiliarThenBaseInfluenceHealsRealPreviousBattleWound",
+    "result": "Passed",
+    "total": 1,
+    "passed": 1,
+    "failed": 0,
+    "assertions": 37
+  },
+  "compileConsole": {
+    "path": "tmp/pve_glade_insight_compile_console.json",
+    "sha256": "8d62f369865d478d110ffb57efc54be5aff20c4f4af96e654eba68ad28fb3864",
+    "status": "passed",
+    "reads": 2,
+    "errorCounts": [
+      0,
+      0
+    ]
+  },
+  "plan": {
+    "generator": "tools/build_pve_familiar_base_influence_acceptance.py",
+    "totalOperations": 128,
+    "replayedPrefixOperations": 63,
+    "newAcceptanceOperations": 65,
+    "assertions": 120,
+    "captures": 4,
+    "prefixDefinition": "0-based steps 0..62 have no assertions/screenshots; new checks start at step63"
+  },
+  "scene": {
+    "run": "20260929_200051_5d478abe",
+    "status": "passed",
+    "report": "AutomationOutputs/PveBattle/20260929_200051_5d478abe/report.json",
+    "sha256": "aeaedd7b3589bc397027b99874557b65042e4b1be1444042b86572061215c532",
+    "operations": 128,
+    "newAcceptanceOperations": 65,
+    "replayedPrefixOperations": 63,
+    "assertions": 120,
+    "allAssertionsPassed": true,
+    "identityChecks": [
+      {
+        "step": 78,
+        "influence": "0",
+        "journey.position": "1,-3",
+        "healing": "0",
+        "wounds": "0",
+        "journey.completedTurns": "1",
+        "journey.completedBattles": "0",
+        "journey.samePlayer": "True",
+        "hand.ids": "basic_card_000,advanced_card_018,advanced_card_039,basic_card_014",
+        "red": "0",
+        "blue": "1",
+        "units.ready": "True",
+        "units.attunements": "army_2_004:Red:False",
+        "units.instances": "army_2_004:748256168"
+      },
+      {
+        "step": 80,
+        "influence": "0",
+        "journey.position": "1,-3",
+        "healing": "0",
+        "wounds": "0",
+        "journey.completedTurns": "2",
+        "journey.completedBattles": "0",
+        "journey.samePlayer": "True",
+        "hand.ids": "basic_card_000,advanced_card_018,advanced_card_039,basic_card_014",
+        "red": "0",
+        "blue": "1",
+        "units.ready": "True",
+        "units.attunements": "army_2_004:Red:False",
+        "units.instances": "army_2_004:748256168"
+      },
+      {
+        "step": 81,
+        "influence": "0",
+        "journey.position": "1,-3",
+        "healing": "0",
+        "wounds": "0",
+        "journey.completedTurns": "2",
+        "journey.completedBattles": "0",
+        "journey.samePlayer": "True",
+        "hand.ids": "basic_card_000,advanced_card_018,advanced_card_039,basic_card_014",
+        "red": "0",
+        "blue": "1",
+        "units.ready": "True",
+        "units.attunements": "army_2_004:Red:False",
+        "units.instances": "army_2_004:748256168"
+      },
+      {
+        "step": 99,
+        "influence": "0",
+        "journey.position": "1,-3",
+        "healing": "0",
+        "wounds": "1",
+        "journey.completedTurns": "3",
+        "journey.completedBattles": "1",
+        "journey.samePlayer": "True",
+        "hand.ids": "basic_card_000,w",
+        "red": "0",
+        "blue": "1",
+        "units.ready": "True",
+        "units.attunements": "army_2_004:Red:False",
+        "units.instances": "army_2_004:748256168"
+      },
+      {
+        "step": 100,
+        "influence": "0",
+        "journey.position": "1,-3",
+        "healing": "0",
+        "wounds": "1",
+        "journey.completedTurns": "3",
+        "journey.completedBattles": "1",
+        "journey.samePlayer": "True",
+        "hand.ids": "basic_card_000,w",
+        "red": "0",
+        "blue": "1",
+        "units.ready": "True",
+        "units.attunements": "army_2_004:Red:False",
+        "units.instances": "army_2_004:748256168"
+      },
+      {
+        "step": 115,
+        "influence": "3",
+        "journey.position": "2,-3",
+        "healing": "0",
+        "wounds": "1",
+        "journey.completedTurns": "3",
+        "journey.completedBattles": "1",
+        "journey.samePlayer": "True",
+        "hand.ids": "w",
+        "red": "0",
+        "blue": "1",
+        "units.ready": "False",
+        "units.attunements": "army_2_004:Red:False",
+        "units.instances": "army_2_004:748256168"
+      },
+      {
+        "step": 122,
+        "influence": "0",
+        "journey.position": "2,-3",
+        "healing": "1",
+        "wounds": "1",
+        "journey.completedTurns": "3",
+        "journey.completedBattles": "1",
+        "journey.samePlayer": "True",
+        "hand.ids": "w",
+        "red": "0",
+        "blue": "1",
+        "units.ready": "False",
+        "units.attunements": "army_2_004:Red:False",
+        "units.instances": "army_2_004:748256168"
+      },
+      {
+        "step": 125,
+        "influence": "0",
+        "journey.position": "2,-3",
+        "healing": "0",
+        "wounds": "0",
+        "journey.completedTurns": "3",
+        "journey.completedBattles": "1",
+        "journey.samePlayer": "True",
+        "hand.ids": "",
+        "red": "0",
+        "blue": "1",
+        "units.ready": "False",
+        "units.attunements": "army_2_004:Red:False",
+        "units.instances": "army_2_004:748256168"
+      },
+      {
+        "step": 127,
+        "influence": "0",
+        "journey.position": "2,-3",
+        "healing": "0",
+        "wounds": "0",
+        "journey.completedTurns": "4",
+        "journey.completedBattles": "1",
+        "journey.samePlayer": "True",
+        "hand.ids": "",
+        "red": "0",
+        "blue": "1",
+        "units.ready": "False",
+        "units.attunements": "army_2_004:Red:False",
+        "units.instances": "army_2_004:748256168"
+      }
+    ],
+    "captures": [
+      {
+        "step": 67,
+        "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_200051_5d478abe\\captures\\067_原迷醉在林地影响4.png",
+        "review": "主代理逐图目视通过，原素材/数值/费用/旧伤消费正常，无截断"
+      },
+      {
+        "step": 99,
+        "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_200051_5d478abe\\captures\\099_保留另一张真实旧伤.png",
+        "review": "主代理逐图目视通过，原素材/数值/费用/旧伤消费正常，无截断"
+      },
+      {
+        "step": 115,
+        "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_200051_5d478abe\\captures\\115_原基础影响3并耗竭.png",
+        "review": "主代理逐图目视通过，原素材/数值/费用/旧伤消费正常，无截断"
+      },
+      {
+        "step": 125,
+        "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_200051_5d478abe\\captures\\125_真实旧伤去除.png",
+        "review": "主代理逐图目视通过，原素材/数值/费用/旧伤消费正常，无截断"
+      }
+    ],
+    "woundIdentityNote": "场景连续手牌w从上一战2伤经林地去1后保留，最终1→0；后台37断言另以ReferenceEquals核同一旧伤，场景未提供独立wound instance字段不夸大其观察能力"
+  },
+  "finalConsole": {
+    "path": "tmp/pve_glade_insight_final_console.json",
+    "sha256": "8d62f369865d478d110ffb57efc54be5aff20c4f4af96e654eba68ad28fb3864",
+    "status": "passed",
+    "reads": 2,
+    "errorCounts": [
+      0,
+      0
+    ]
+  }
+}

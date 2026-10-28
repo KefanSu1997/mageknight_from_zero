@@ -20,8 +20,8 @@ namespace MK.Logic.Runtime.CardEffects
             }
             else
             {
-                ctx.RangedPool += 3;
-                ctx.ArmorReducePerKill = 1;
+                ctx.CombatPower.AddAttack(3, Element.Physical, AttackType.Ranged,
+                    armorReductionsPerDefeatedEnemy: 1);
             }
         }
     }

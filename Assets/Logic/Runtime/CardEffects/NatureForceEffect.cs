@@ -13,6 +13,7 @@ namespace MK.Logic.Runtime.CardEffects
 
         public void Validate(PlayerState player, ActionContext ctx, int option)
         {
+            if (!_enh) UnitParticipation.Require(player, ctx, ctx.TargetUnit);
             if (option < 0 || option > (_enh ? 1 : 0)) throw new System.InvalidOperationException("自然之力选项无效");
             if (!_enh && (ctx.TargetUnit == null || !player.Units.Contains(ctx.TargetUnit) || ctx.TargetUnit.IsDestroyed))
                 throw new System.InvalidOperationException("自然之力必须选择自有且未销毁的部队");

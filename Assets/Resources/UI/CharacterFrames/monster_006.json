@@ -1,0 +1,11 @@
+{
+  "id": "monster_006",
+  "x": 269,
+  "y": 100,
+  "width": 784,
+  "height": 1047,
+  "textureWidth": 1254,
+  "textureHeight": 1254,
+  "source_sha256": "44592cabaea29c875ca948de94bd45437655b022e3d1a67ec1cb5694ee9dc627",
+  "method": "alpha>=64 layout bounds only; renderer keeps full texture UV and all original pixels"
+}

@@ -1,0 +1,3683 @@
+{
+  "asOf": "2026-09-29",
+  "scope": "30原单位主要模式证据硬差集；复用有限历史场景和当日连续消费者，不重跑、不复验截图、不宣称完整规则全通过",
+  "statusDefinitions": {
+    "implemented": "已有正式入口，不等于验证通过",
+    "referenced_passed_scope": "以所引后台有效范围为准；索引无确切方法的仍需映射",
+    "passed_finite_scope": "所列实际消费者已由索引确认；共享模式注明代表UnitID",
+    "mapping_needed": "当前有限索引未给出该模式确切消费者，不等于生产失败，不直接安排重测",
+    "not_scene_verified": "明确场景尚缺",
+    "backend_only": "后台证据，场景未覆盖",
+    "scene_needed": "已完成本轮定向历史映射，所查有效范围无该确切场景消费者；需要后续合法连续路线补齐，不重复已过其它能力。",
+    "partial_scope_passed": "分支消费者部分已验，未验子分支在remainingSceneBranches明确保留。"
+  },
+  "sharedWorldStatus": {
+    "village": "已有真实招募/治疗场景",
+    "glade": "魔宠真实招募/维持及四色消费者已验",
+    "conqueredMageTower": "自然招募同守护魔像后续攻击已验，见natural_site_recruitment",
+    "ownedConqueredKeep": "下一回合真实招募，同魔像跨轮蓝格挡已验，见keep_recruitment",
+    "city": "正式入口已接入，真实城市自然招募场景未定位",
+    "monastery": "当前原A/1/2和authored route无入口；服务尚缺，见monastery_original_rules_and_entry_audit_2026-09-29.md",
+    "offeredAbilities": "真实分页/非首攻击槽缺口已修并验，见worklog_2026-09-29_offered_unit_selection.md；不以自有能力证据替代供应能力",
+    "naturalEliteSupply": "依赖实际Map.Placed Core和正式新轮，当前原后续板块/探索同一阻塞；详见unit_remaining_scope_after_special_2026-09-29.md。"
+  },
+  "evidenceCatalog": {
+    "altem_guard": {
+      "index": "vibe_coding/codex/pve_altem_guard_acceptance_index.json",
+      "scope": "原army_000阿尔蒂姆守护者：攻击5、格挡8对迅捷翻倍、绿费本回合全体部队所有抗性。",
+      "backend": {
+        "backend": "AutomationOutputs\\RulesState\\20260918_214621_6d1bc57d",
+        "backendPassed": 13
+      },
+      "scene": {
+        "scene": "AutomationOutputs\\PveBattle\\20260918_214841_1e1458fd\\report.json"
+      },
+      "limitations": "场景覆盖普通攻挡/迅捷、原物理/火/冰敌人、源部队自身和队友实际承伤及击杀；冰火承伤、缺费/非法选项、战外使用与真正EndTurn含SkipDraw失效仅后台。原招募/后续回合/所有组合和英雄专属立绘未完成。"
+    },
+    "altem_mages": {
+      "index": "vibe_coding/codex/pve_altem_mages_acceptance_index.json",
+      "scope": "原army_001阿尔蒂姆法师：独立两枚任意色魔力、红/蓝任选或同时付费的冰火攻挡5/7/9、黑费本战斗攻击转换。",
+      "backend": {
+        "backend": "AutomationOutputs\\RulesState\\20260918_221151_483b6de6",
+        "backendPassed": 20,
+        "backendNew": 17,
+        "backendDirectRegression": 3
+      },
+      "scene": {
+        "scene": "AutomationOutputs\\PveBattle\\20260918_221422_c30b95fd\\report.json"
+      },
+      "limitations": "17/30部队有限PVE证据。原招募/真实轮间流程/所有组合及英雄专属立绘仍未完成；同色重复/绿白自选、非法输入/双费用不足原子性、真正EndTurn清理仅后台。金标记保存已场景，后续实际金色转换不在此批。转换与其他神器/全部英雄技能组合尚未全面验收。"
+    },
+    "blood_illusion_stop": {
+      "index": "vibe_coding/codex/pve_blood_illusion_stop_acceptance_index.json",
+      "scope": "Blood Ritual strong independent colours and crystal conversion paid actual movement/Illusionist stop; same unit ready and old wound healed next turn",
+      "backend": {
+        "backendReused": [
+          "20260923_072400_47a3fe82",
+          "20260923_021816_212ab687"
+        ]
+      },
+      "scene": {
+        "segments": [
+          {
+            "run": "20260929_155416_f125ae71",
+            "start": 0,
+            "end": 50,
+            "assertions": 67,
+            "sha256": "02b83068fccc93648bdd77a8fbe930d61ab04df57a775cb4034f99aac7d2664c"
+          },
+          {
+            "run": "20260929_160132_d419382d",
+            "start": 51,
+            "end": 79,
+            "assertions": 66,
+            "sha256": "4547377efd4c1488b4303342c7a7c86d8cbcabc38d4faa843332b86b4c9c3919"
+          }
+        ]
+      },
+      "limitations": "Legal custom level4 five-card snapshot, not standard opening deck; failure51 retained"
+    },
+    "commoner": {
+      "index": "vibe_coding/codex/pve_commoner_acceptance_index.json",
+      "scope": "农民/暴徒原攻击与格挡、影响力真实产出及暴徒承伤付款、声誉、重复/受伤拒绝与战斗结算。",
+      "backend": {
+        "backendPassed": 9,
+        "backend": "AutomationOutputs\\RulesState\\20260922_114901_9917ea05"
+      },
+      "scene": {
+        "sceneEvidence": [
+          {
+            "report": "AutomationOutputs\\PveBattle\\20260922_115231_36e7bfbd\\report.json",
+            "overallStatus": "failed",
+            "acceptedSteps": [
+              0,
+              155
+            ],
+            "completedBattles": 5
+          },
+          {
+            "report": "AutomationOutputs\\PveBattle\\20260922_115426_03cb450e\\report.json",
+            "overallStatus": "success",
+            "completedBattles": 1
+          }
+        ]
+      },
+      "limitations": "有限PVE接入。农民地图移动、完整招募交涉、跨战斗与真实新轮不在本批场景范围；原卡基本验收121/121历史证据单独保留。"
+    },
+    "elite_golem": {
+      "index": "vibe_coding/codex/pve_elite_golem_acceptance_index.json",
+      "scope": "投石车三攻城能力、火/冰魔像普通攻挡及元素攻击、两元素实际承伤。新部队物理承伤/缺费/错误阶段拒绝只后台，招募流程与全部组合未覆盖。",
+      "backend": {
+        "backend": "AutomationOutputs/RulesState/20260918_185232_fb65b4e4",
+        "backendPassedUnique": 19,
+        "backendNew": 18,
+        "backendRegression": 1
+      },
+      "scene": {
+        "scene": "AutomationOutputs/PveBattle/20260918_185453_ebb04442/report.json"
+      },
+      "limitations": null
+    },
+    "familiar_consumers": {
+      "index": "vibe_coding/codex/pve_familiar_consumers_acceptance_index.json",
+      "scope": "Original Magic Familiar main four-color consumers, real R5 recruitment and R6 inventory upkeep",
+      "backend": {
+        "backendReused": {
+          "report": "AutomationOutputs/RulesState/20260923_025452_e400c660/results.xml",
+          "fixture": "MK.Tests.Cards.MagicFamiliarsStateTests",
+          "passed": 24,
+          "methods": [
+            "AttackUsesPaidMarkerAndActualEnemyConsumerWithoutAnotherManaCost(Red,5)",
+            "BlockMarkerFeedsFormalBlockAndPreventsActualWounds(Blue,7)",
+            "WhiteAbilityChoosesMovementOrInfluenceAndSpendsItOnRealConsumer(0)",
+            "WhiteAbilityChoosesMovementOrInfluenceAndSpendsItOnRealConsumer(1)",
+            "HealingPaysForRealWoundCardsAndDoesNotHealTheUnitByReadying(Green,3)",
+            "NextRoundRequiresInventoryCrystalBeforeTacticsAndPreservesSameWoundedUnit"
+          ]
+        }
+      },
+      "scene": {
+        "routes": {
+          "red-blue": {
+            "run": "20260929_164701_f27ebd7a",
+            "report": "AutomationOutputs/PveBattle/20260929_164701_f27ebd7a/report.json",
+            "sha256": "914acde960837929ac39479281bbe373d843384fa017be14f5591ed9c3ab5079",
+            "totalReplayAndNewSteps": 139,
+            "replayedPrefixSteps": 82,
+            "newVerifiedSteps": 57,
+            "assertions": 114,
+            "newVerifiedRange": [
+              82,
+              138
+            ],
+            "unitIdentityChecks": [
+              {
+                "step": 79,
+                "instances": "army_2_004:1400056976",
+                "attunements": "army_2_004:Red:False",
+                "ready": "True"
+              },
+              {
+                "step": 82,
+                "instances": "army_2_004:1400056976",
+                "attunements": "army_2_004:Red:False",
+                "ready": "True"
+              },
+              {
+                "step": 91,
+                "instances": "army_2_004:1400056976",
+                "attunements": "army_2_004:Red:False",
+                "ready": "False"
+              },
+              {
+                "step": 101,
+                "instances": "army_2_004:1400056976",
+                "attunements": "army_2_004:Red:False",
+                "ready": "False"
+              },
+              {
+                "step": 104,
+                "instances": "army_2_004:1400056976",
+                "attunements": "army_2_004:Red:True",
+                "ready": "True"
+              },
+              {
+                "step": 105,
+                "instances": "army_2_004:1400056976",
+                "attunements": "army_2_004:Blue:False",
+                "ready": "True"
+              },
+              {
+                "step": 121,
+                "instances": "army_2_004:1400056976",
+                "attunements": "army_2_004:Blue:False",
+                "ready": "False"
+              },
+              {
+                "step": 125,
+                "instances": "army_2_004:1400056976",
+                "attunements": "army_2_004:Blue:False",
+                "ready": "False"
+              },
+              {
+                "step": 138,
+                "instances": "army_2_004:1400056976",
+                "attunements": "army_2_004:Blue:False",
+                "ready": "False"
+              }
+            ],
+            "reviewedScreenshots": [
+              "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_164701_f27ebd7a\\captures\\091_红标原攻击3+2，无额外魔力费.png",
+              "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_164701_f27ebd7a\\captures\\121_蓝标原格挡4+3，不再次收费.png",
+              "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_164701_f27ebd7a\\captures\\137_实际原狼骑移除与声誉奖励.png"
+            ],
+            "visualReview": "Main agent confirmed all three screenshots normal; this indexing subagent checked actual report and identity"
+          },
+          "white-green": {
+            "run": "20260929_164905_7185da75",
+            "report": "AutomationOutputs/PveBattle/20260929_164905_7185da75/report.json",
+            "sha256": "665b1b6f4451e28f01495b083d6a9f8480a1c420e240b62f5e82bcf40a4a137c",
+            "totalReplayAndNewSteps": 173,
+            "replayedPrefixSteps": 69,
+            "newVerifiedSteps": 104,
+            "newVerifiedRange": [
+              69,
+              172
+            ],
+            "assertions": 199,
+            "unitIdentityChecks": [
+              {
+                "step": 89,
+                "instances": "army_2_004:193960694",
+                "attunements": "army_2_004:White:False",
+                "ready": "True"
+              },
+              {
+                "step": 99,
+                "instances": "army_2_004:193960694",
+                "attunements": "army_2_004:White:False",
+                "ready": "False"
+              },
+              {
+                "step": 110,
+                "instances": "army_2_004:193960694",
+                "attunements": "army_2_004:White:False",
+                "ready": "True"
+              },
+              {
+                "step": 115,
+                "instances": "army_2_004:193960694",
+                "attunements": "army_2_004:White:False",
+                "ready": "False"
+              },
+              {
+                "step": 125,
+                "instances": "army_2_004:193960694",
+                "attunements": "army_2_004:White:False",
+                "ready": "False"
+              },
+              {
+                "step": 128,
+                "instances": "army_2_004:193960694",
+                "attunements": "army_2_004:White:True",
+                "ready": "True"
+              },
+              {
+                "step": 129,
+                "instances": "army_2_004:193960694",
+                "attunements": "army_2_004:Green:False",
+                "ready": "True"
+              },
+              {
+                "step": 160,
+                "instances": "army_2_004:193960694",
+                "attunements": "army_2_004:Green:False",
+                "ready": "True"
+              },
+              {
+                "step": 166,
+                "instances": "army_2_004:193960694",
+                "attunements": "army_2_004:Green:False",
+                "ready": "False"
+              },
+              {
+                "step": 170,
+                "instances": "army_2_004:193960694",
+                "attunements": "army_2_004:Green:False",
+                "ready": "False"
+              },
+              {
+                "step": 172,
+                "instances": "army_2_004:193960694",
+                "attunements": "army_2_004:Green:False",
+                "ready": "False"
+              }
+            ],
+            "reviewedScreenshots": [
+              "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_164905_7185da75\\captures\\099_正式发动并耗竭，不再支付调谐费.png",
+              "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_164905_7185da75\\captures\\115_正式发动并耗竭，不再支付调谐费.png",
+              "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_164905_7185da75\\captures\\166_正式发动并耗竭，不再支付调谐费.png",
+              "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_164905_7185da75\\captures\\170_逐张消费真实英雄伤牌.png"
+            ],
+            "visualReview": "Main agent confirmed all four screenshots normal; indexing subagent checked actual successful report and same-unit identity"
+          }
+        }
+      },
+      "limitations": [
+        "Configured original-card builds, not original 16-card starts",
+        "Previously verified recruitment/movement prefix steps are replayed but not recounted as new scene operations",
+        "Main four-color abilities and consumers passed; not a claim of exhaustive combinations or entire-game completion",
+        "White influence purchases a real healing point; the pooled healing consumption does not distinguish that point from the Regeneration point"
+      ]
+    },
+    "forester_illusionist": {
+      "index": "vibe_coding/codex/pve_forester_illusionist_acceptance_index.json",
+      "scope": "Forester forest discount; Illusionist white crystal paid Promise then same unit readied by Regeneration and influence paid actual healing of prior battle wounds",
+      "backend": {
+        "backendReused": "20260923_021816_212ab687 Foresters10/10 and IllusionistSorcerer15/15"
+      },
+      "scene": {
+        "run": "20260929_153451_bcd0d5d3",
+        "report": "AutomationOutputs/PveBattle/20260929_153451_bcd0d5d3/report.json"
+      },
+      "limitations": "Custom legal level4 two-unit five-card build; stop-attack and Forester block not covered by this scene"
+    },
+    "herbalist": {
+      "index": "vibe_coding/codex/pve_herbalist_acceptance_index.json",
+      "scope": "原药草师三个能力：绿费治疗2、战外免费重整I/II、免费绿色token；实际手牌与II级部队治疗消费，重整保留伤牌，token支付原攻城并击杀。",
+      "backend": {
+        "backend": "AutomationOutputs/RulesState/20260918_205345_d2801ca8",
+        "backendPassed": 11
+      },
+      "scene": {
+        "scene": "AutomationOutputs/PveBattle/20260918_205616_e65217a6/report.json"
+      },
+      "limitations": "战斗中禁用、缺费、非法目标和治疗点不足仅后台；同一玩家进入下一场并消费重整部队仅后台。完整招募、轮间恢复、供应部队重整及全部组合未包含本批场景结论。"
+    },
+    "heroes_village": {
+      "index": "vibe_coding/codex/pve_heroes_village_acceptance_index.json",
+      "scope": "原勇者影响5与交涉声誉加1、原暴徒影响4、村庄真实招募/治疗，正式跨轮同三单位后续格挡及击杀",
+      "backend": {
+        "backendReused": "AutomationOutputs/RulesState/20260923_021816_212ab687/results.xml; exact passed cases in worklog"
+      },
+      "scene": {
+        "run": "20260929_170129_8822695c",
+        "report": "AutomationOutputs/PveBattle/20260929_170129_8822695c/report.json"
+      },
+      "limitations": [
+        "合法原牌自定构筑；非标准16牌开局",
+        "此为已有勇者能力消费；不替代精英勇者实际招募声誉翻倍",
+        "既有真实村庄演练地图，非后续原核心板块探索",
+        "未更改生产规则或fixture，旧后台复用未重跑"
+      ]
+    },
+    "ice_swords": {
+      "index": "vibe_coding/codex/pve_ice_swords_acceptance_index.json",
+      "scope": "冰霜剑士普通攻击/格挡5、蓝费取消敌人攻击与减甲3最低1、实际零伤/击杀结算和寒冰免疫拒绝。缺费/缺目标/承伤阶段拒绝只后台；完整招募、奥术免疫场景及全部组合未覆盖。",
+      "backend": {
+        "backendRuns": [
+          "AutomationOutputs/RulesState/20260918_192512_eb351331",
+          "AutomationOutputs/RulesState/20260918_192838_67ac22d2"
+        ],
+        "backendPassedUnique": 9,
+        "backendNew": 8,
+        "backendRegression": 1,
+        "backendCases": {
+          "MK.Tests.Battles.PveIceSwordsmenTests.AssignmentPhaseCannotRetroactivelyFreezeAnAttack": "Passed",
+          "MK.Tests.Battles.PveIceSwordsmenTests.BlueAbilityCancelsRealDamageAndReducesArmorToAtLeastOne(\"monster_032\",2)": "Passed",
+          "MK.Tests.Battles.PveIceSwordsmenTests.BlueAbilityCancelsRealDamageAndReducesArmorToAtLeastOne(\"monster_029\",5)": "Passed",
+          "MK.Tests.Battles.PveIceSwordsmenTests.IceResistanceRejectsBeforePaymentAndExhaustion(\"monster_004\")": "Passed",
+          "MK.Tests.Battles.PveIceSwordsmenTests.IceResistanceRejectsBeforePaymentAndExhaustion(\"monster_015\")": "Passed",
+          "MK.Tests.Battles.PveIceSwordsmenTests.MissingFeeAndMissingTargetAreAtomic": "Passed",
+          "MK.Tests.Battles.PveIceSwordsmenTests.PrintedPhysicalAttackAndBlockAreFive(False)": "Passed",
+          "MK.Tests.Battles.PveIceSwordsmenTests.PrintedPhysicalAttackAndBlockAreFive(True)": "Passed",
+          "MK.Tests.Cards.DiseaseStateTests.BattleEndRemovesDiseaseWithoutOverwritingOtherArmorReduction": "Passed"
+        }
+      },
+      "scene": {
+        "scene": "AutomationOutputs/PveBattle/20260918_192940_537a7154/report.json"
+      },
+      "limitations": null
+    },
+    "journey_interaction": {
+      "index": "vibe_coding/codex/pve_journey_interaction_acceptance_index.json",
+      "scope": "原村庄影响力招募、同单位后续战斗、原卡奖励与付费治疗/重整、实际供应跨轮。自定地图和每定义一实体供应，不声明全桌游原物理副本完成。",
+      "backend": {
+        "backendRuns": [
+          "20260923_055159_69d3f9c6",
+          "20260923_055449_1b62bbda"
+        ]
+      },
+      "scene": {},
+      "limitations": null
+    },
+    "keep_recruitment": {
+      "index": "vibe_coding/codex/pve_keep_recruitment_acceptance_index.json",
+      "scope": "Actual original025 Keep conquest, next-turn natural Keep recruitment, same Guardian Golem across formal round with paid Ice block and actual spell kill",
+      "backend": {
+        "backendReused": [
+          {
+            "report": "AutomationOutputs/RulesState/20260923_094343_07fe883b/results.xml",
+            "method": "PveWorldJourneyEntryTests.OriginalTunnelAttachesSameGuardAndSettlesActualSiteBeforeFormalTurnReward(Keep,\"monster_027\")",
+            "result": "Passed",
+            "scope": "Real guard binding/conquest/owner/turn lifecycle; guard differs from actual scene025"
+          },
+          {
+            "report": "AutomationOutputs/RulesState/20260929_171747_fa03220e/results.xml",
+            "method": "PveNaturalSiteRecruitmentTests.CurrentOriginalSiteRecruitsRealSupplyAndSameScoutFightsFollowingTurn(Keep,Keep)",
+            "result": "Passed"
+          }
+        ]
+      },
+      "scene": {
+        "report": "AutomationOutputs/PveBattle/20260929_174623_6a3a489e/report.json"
+      },
+      "limitations": [
+        "Legal custom Lv6 five-original-card build and existing demonstration map; not full original tile exploration",
+        "Keep ownership must arise from actual scene conquest, not preconfigured Conquered",
+        "No assertion of Keep retreat/replacement, enemy-owned PvP or city completion",
+        "26 shared setup steps are not counted as new verification"
+      ]
+    },
+    "mage": {
+      "index": "vibe_coding/codex/pve_mage_acceptance_index.json",
+      "scope": "火焰/寒冰法师全部基本战斗能力：红/蓝费用、远程/攻城元素、攻挡、魔力+魔晶、实际原卡消费、耗竭及同元素抗性承伤。招募、完整轮间及全部组合未场景验收。",
+      "backend": {
+        "backend": "AutomationOutputs/RulesState/20260918_201740_f5dfa883",
+        "backendRepair": "AutomationOutputs/RulesState/20260918_202102_e053e66a",
+        "backendPassedUnique": 17,
+        "backendNote": "首次17通过；Unity发现internal许可赋值问题，改走正式BattleSummonsEffect后只补该1例，累计不重复计数。"
+      },
+      "scene": {
+        "scene": "AutomationOutputs/PveBattle/20260918_202203_24f618b6/report.json"
+      },
+      "limitations": null
+    },
+    "masters_blue_hero": {
+      "index": "vibe_coding/codex/pve_masters_blue_hero_acceptance_index.json",
+      "scope": "Original Masters white/green to ranged kill, same units formal round, blue stop and red full-block kill with blue Heroes ColdFire8",
+      "backend": {
+        "backendReused": [
+          "20260923_021816_212ab687 PrintedWhiteAndGreen",
+          "20260923_021930_708b3d12 AllFourDifferentAbilities"
+        ]
+      },
+      "scene": {
+        "run": "20260929_160315_d71d8430",
+        "report": "AutomationOutputs/PveBattle/20260929_160315_d71d8430/report.json"
+      },
+      "limitations": "Legal custom Lv6 five-card build; white removes actual fortification, no resistance target in this route; other Heroes colours not covered"
+    },
+    "monks": {
+      "index": "vibe_coding/codex/pve_monks_acceptance_index.json",
+      "scope": "北地僧侣/赤袍僧侣普通与元素攻击、格挡的基本战斗能力；未包括招募或其他单位组合。",
+      "backend": {
+        "backendPassedUnique": 10,
+        "backend": "AutomationOutputs/RulesState/20260918_171905_2e9686ca"
+      },
+      "scene": {
+        "scene": "AutomationOutputs/PveBattle/20260918_172149_14585266/report.json"
+      },
+      "limitations": null
+    },
+    "natural_site_recruitment": {
+      "index": "vibe_coding/codex/pve_natural_site_recruitment_acceptance_index.json",
+      "scope": "Actual tower conquest and formal reward, next-turn original unit recruitment, same-unit and retained reward-card combat consumer",
+      "backend": {
+        "backend": {
+          "report": "AutomationOutputs/RulesState/20260929_171747_fa03220e/results.xml",
+          "passed": 46,
+          "new": 21
+        }
+      },
+      "scene": {
+        "scene": "AutomationOutputs/PveBattle/20260929_172048_1890cc47/report.json"
+      },
+      "limitations": [
+        "Keep and City/white-city recruitment implemented with backend evidence only in this batch; tower is actual scene scope",
+        "Existing authored training world with real guards and original rules, not completed original seven-hex map exploration",
+        "Monastery burn lifecycle and city special purchases remain incomplete",
+        "No fixture/seed change or remote push"
+      ]
+    },
+    "outside_units": {
+      "index": "vibe_coding/codex/pve_outside_units_acceptance_index.json",
+      "scope": null,
+      "backend": {
+        "backend": {
+          "reused": "AutomationOutputs/RulesState/20260923_100318_20787bba",
+          "scout_replaced_by": "AutomationOutputs/RulesState/20260929_014411_f944f1d9",
+          "unique_passed": 17
+        }
+      },
+      "scene": {},
+      "limitations": [
+        "other unit-specific branches",
+        "familiar actual recruitment",
+        "original tile exploration",
+        "offered shocktroop attack-slot UI",
+        "remaining hero skills"
+      ]
+    },
+    "ranged_units": {
+      "index": "vibe_coding/codex/pve_ranged_units_acceptance_index.json",
+      "scope": "原凶蛮僧侣/乌顿弩手普通攻挡、攻城或远程先手实际击杀；近战消费专用攻击、缺绿/错阶段/城防拒绝仅后台。本批不含招募及全部组合。",
+      "backend": {
+        "backendPassedUnique": 12,
+        "backend": "AutomationOutputs/RulesState/20260918_175617_6bfda6aa"
+      },
+      "scene": {
+        "scene": "AutomationOutputs/PveBattle/20260918_175803_f99e17ac/report.json"
+      },
+      "limitations": null
+    },
+    "red_green_heroes": {
+      "index": "vibe_coding/codex/pve_red_green_heroes_acceptance_index.json",
+      "scope": "Red Heroes actual red ColdFire6 kill; Green Heroes actual green healing4 paid unit level and original wound without readiness; formal round same units free block5/attack5",
+      "backend": {
+        "backendReused": "20260923_021816_212ab687 RedColdFire / GreenHealing / OrdinaryAttackOrBlock"
+      },
+      "scene": {
+        "run": "20260929_162047_17f0577f",
+        "report": "AutomationOutputs/PveBattle/20260929_162047_17f0577f/report.json"
+      },
+      "limitations": "Legal custom Lv6 five-card snapshot; common Heroes interaction not covered by this scene"
+    },
+    "remaining_units": {
+      "index": "vibe_coding/codex/pve_remaining_units_acceptance_index.json",
+      "scope": "仅补魔像普通攻挡/火焰格挡与烈焰枪手普通攻挡；沿用前批冰挡/火焰远程。未包含招募或全组合。",
+      "backend": {
+        "backend": "AutomationOutputs/RulesState/20260918_180556_10b7d988",
+        "backendPassedUnique": 7
+      },
+      "scene": {
+        "scene": "AutomationOutputs/PveBattle/20260918_180816_cda81c32/report.json"
+      },
+      "limitations": null
+    },
+    "shock_forester": {
+      "index": "vibe_coding/codex/pve_shock_forester_acceptance_index.json",
+      "scope": "原奇袭队前两主要能力和护林人格挡3，实际不同敌群、同一Lv6托瓦克三单位正式跨轮两战；不重复奇袭第三能力或护林人移动",
+      "backend": {
+        "backendReused": {
+          "report": "AutomationOutputs/RulesState/20260923_023606_b1e4750f/results.xml",
+          "sha256": "6ebbfab4243a67fea44c4d00409e42474adda741e0dcdf203b51d9994784ec9f",
+          "passedCases": [
+            "MK.Tests.Battles.PveShockTroopsTests.RangedBuffUsesActualOtherUnitContributionsBeforeOrAfterActivation(True)",
+            "MK.Tests.Battles.PveShockTroopsTests.RangedBuffUsesActualOtherUnitContributionsBeforeOrAfterActivation(False)",
+            "MK.Tests.Battles.PveShockTroopsTests.WeakenedArmorAndAttackFeedActualBlockAndMeleeConsumers"
+          ]
+        }
+      },
+      "scene": {
+        "run": "20260929_164240_b5eac490",
+        "report": "AutomationOutputs/PveBattle/20260929_164240_b5eac490/report.json"
+      },
+      "limitations": "五张原牌合法自定构筑，非标准16牌开局；既有演练地图敌群，不冒充完整原板块探索。只覆盖明确基本消费者，不宣称全组合或整个项目完成。"
+    },
+    "shock_third": {
+      "worklog": "vibe_coding/codex/worklog_2026-09-23_shocktroops_and_roster.md",
+      "scene": "AutomationOutputs/PveBattle/20260923_024535_dcde4ea8/report.json",
+      "acceptedScope": "13步骤35断言，强制实际承伤；前两次失败保留，旧成功前缀复用"
+    },
+    "sorcerer_white_hero": {
+      "index": "vibe_coding/codex/pve_sorcerer_white_hero_acceptance_index.json",
+      "scope": "Sorcerer white removes fortification and green removes original physical/ice resistance; same white Heroes ranged7 third battle",
+      "backend": {
+        "backendReused": "20260923_021816_212ab687 OriginalSorcererModes x3 and WhiteRangedSeven"
+      },
+      "scene": {
+        "run": "20260929_161107_a5453657",
+        "report": "AutomationOutputs/PveBattle/20260929_161107_a5453657/report.json"
+      },
+      "limitations": "Custom legal Lv6 five-card snapshot; no standard opening deck claim"
+    },
+    "thug_original_recruit": {
+      "scene": "AutomationOutputs/OriginalUnits/20260917_074532_7cfa77c5/report.json",
+      "acceptedSteps": [
+        24,
+        25,
+        26,
+        27
+      ],
+      "status": "success",
+      "note": "本次定向读取24步真实原规则/状态；并复用旧审计24–27的正式交涉证据"
+    },
+    "unit": {
+      "index": "vibe_coding/codex/pve_unit_acceptance_index.json",
+      "scope": "部队接口及守护者魔像、埃莫提普烈焰枪手两场整合；非全目标完成",
+      "backend": {
+        "backend": "AutomationOutputs/RulesState/20260918_154700_84d4ac8b",
+        "backendPassed": 5
+      },
+      "scene": {
+        "scene": "AutomationOutputs\\PveBattle\\20260918_155302_7f8eb312\\report.json"
+      },
+      "limitations": null
+    },
+    "utem": {
+      "index": "vibe_coding/codex/pve_utem_acceptance_index.json",
+      "scope": "乌顿守卫攻击/普通与迅捷格挡；乌顿剑士普通/自伤攻击与格挡。其他部队独立跟进。",
+      "backend": {
+        "backendPassedUnique": 8,
+        "backendNew": 7,
+        "backendAffectedRegression": 1,
+        "backend": "AutomationOutputs/RulesState/20260918_164027_1bb2e819"
+      },
+      "scene": {
+        "scene": "AutomationOutputs/PveBattle/20260918_164602_f66ae9e4/report.json"
+      },
+      "limitations": null
+    },
+    "glade_base_movement": {
+      "worklog": "vibe_coding/codex/worklog_2026-09-29_glade_recruitment.md",
+      "scene": "AutomationOutputs/PveBattle/20260929_122149_cee7cf11/report.json",
+      "status": "success",
+      "steps": [
+        90,
+        95,
+        97,
+        114,
+        119
+      ],
+      "actualConsumer": "第90步已红调谐魔宠移动2→5，95/97实际走两格到1；第114步已蓝调谐魔宠移动3→6，119实际丘陵花3。均是合法已付色费魔宠的非白色基础移动3，不是未调谐单位。"
+    },
+    "remaining_unit_primary": {
+      "index": "vibe_coding/codex/pve_remaining_unit_primary_acceptance_index.json",
+      "scope": "原巫师免费远程3、原斥候移动2/攻城1，同玩家两单位正式跨轮连续实际消费者",
+      "scene": {
+        "report": "AutomationOutputs/PveBattle/20260929_181557_d1629d33/report.json",
+        "status": "passed"
+      },
+      "console": "pending"
+    },
+    "heroes_assault_fee": {
+      "index": "vibe_coding/codex/pve_heroes_assault_fee_acceptance_index.json",
+      "scope": "原白勇者代表四原勇者共用实际突袭附费；真实法师塔地道/承诺付款/同守军击杀/征服领奖/正式次回合同实体",
+      "scene": {
+        "report": "AutomationOutputs/PveBattle/20260929_184358_8671e144/report.json",
+        "representativeUnitId": "army_011"
+      },
+      "backend": {
+        "xml": "AutomationOutputs/RulesState/20260929_183114_13350633/results.xml",
+        "method": "MK.Tests.Battles.PveHeroesRealAssaultJourneyTests.ActualTowerTunnelKeepsAssaultFeeThenSameHeroesAndRewardSurviveFormalTurn",
+        "result": "Passed",
+        "note": "同批另一Arythea方法Failed；不记整批2/2"
+      },
+      "finalConsole": "pending"
+    },
+    "familiar_base_influence": {
+      "index": "vibe_coding/codex/pve_familiar_base_influence_acceptance_index.json",
+      "backend": "AutomationOutputs/RulesState/20260929_195848_27e5a6fe/results.xml",
+      "report": "AutomationOutputs/PveBattle/20260929_200051_5d478abe/report.json",
+      "acceptedZeroBasedRanges": [
+        [
+          63,
+          127
+        ]
+      ],
+      "effectiveOperations": 65,
+      "effectiveAssertions": 120,
+      "scope": "原迷醉林地4+承诺2实际红晶招魔宠；同单位基础影响3买治疗并移除上一战旧伤"
+    }
+  },
+  "units": [
+    {
+      "unitId": "army_000",
+      "name": "阿尔蒂姆守护者",
+      "original": {
+        "definition": "resources/text_json/army.json",
+        "jsonSelector": "id=army_000",
+        "art": "Assets/GameData/cards/army_000.png",
+        "printedAbilities": [
+          "攻击5。",
+          "格挡8。对抗迅捷攻击时计算两次。",
+          {
+            "mana_cost": "绿",
+            "effect": "本回合中你所有的部队获得所有抗性。"
+          }
+        ],
+        "recruitLocations": "城市",
+        "level": "IV",
+        "influenceCost": "11",
+        "armor": "7",
+        "resistances": ""
+      },
+      "implemented": {
+        "status": "formal_entry_present",
+        "definitionLoader": "Assets/Logic/Data/UnitJsonLoader.cs",
+        "effects": "Assets/Logic/Runtime/CardUnitActions.cs",
+        "battleEntry": "Assets/Logic/Runtime/Battles/PveBattleSession.cs::UseUnit",
+        "outsideEntry": "Assets/Logic/Runtime/Battles/PveJourneySession.Units.cs::UseOutsideUnitCore",
+        "note": "按实际能力类型提供战内/战外入口；不表示各地点自然招募全验"
+      },
+      "primaryModes": [
+        {
+          "mode": "攻击5",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "altem_guard"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "altem_guard"
+            ],
+            "actualConsumer": "实际近战击杀"
+          }
+        },
+        {
+          "mode": "格挡8及对迅捷两次计算",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "altem_guard"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "altem_guard"
+            ],
+            "actualConsumer": "普通/迅捷敌人正式防御"
+          }
+        },
+        {
+          "mode": "绿费全体部队所有抗性",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "altem_guard"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "altem_guard"
+            ],
+            "actualConsumer": "源单位及队友真实物理/火/冰承伤"
+          }
+        }
+      ],
+      "unverified": []
+    },
+    {
+      "unitId": "army_001",
+      "name": "阿尔蒂姆法师",
+      "original": {
+        "definition": "resources/text_json/army.json",
+        "jsonSelector": "id=army_001",
+        "art": "Assets/GameData/cards/army_001.png",
+        "printedAbilities": [
+          "获得两个任意颜色的魔力标记。",
+          "冰火攻击或冰火格挡5。你可以支付一点蓝色或红色魔力将此数值提升至7，或支付蓝红各一点提升至9。",
+          {
+            "mana_cost": "黑",
+            "effect": "选择一项：本次战斗中你所有的攻击变为冰火攻击，或所有攻击附加攻城属性。"
+          }
+        ],
+        "recruitLocations": "城市",
+        "level": "IV",
+        "influenceCost": "12",
+        "armor": "5",
+        "resistances": "火焰,寒冰"
+      },
+      "implemented": {
+        "status": "formal_entry_present",
+        "definitionLoader": "Assets/Logic/Data/UnitJsonLoader.cs",
+        "effects": "Assets/Logic/Runtime/CardUnitActions.cs",
+        "battleEntry": "Assets/Logic/Runtime/Battles/PveBattleSession.cs::UseUnit",
+        "outsideEntry": "Assets/Logic/Runtime/Battles/PveJourneySession.Units.cs::UseOutsideUnitCore",
+        "note": "按实际能力类型提供战内/战外入口；不表示各地点自然招募全验"
+      },
+      "primaryModes": [
+        {
+          "mode": "两枚自选魔力",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "altem_mages"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "altem_mages"
+            ],
+            "actualConsumer": "原卡实际付款；同色/绿白选择仅后台"
+          }
+        },
+        {
+          "mode": "冰火攻击/格挡5、红或蓝7、红蓝9",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "altem_mages"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "altem_mages"
+            ],
+            "actualConsumer": "真实费用及攻挡结算"
+          }
+        },
+        {
+          "mode": "黑费全部攻击转冰火",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "altem_mages"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "altem_mages"
+            ],
+            "actualConsumer": "真实贡献转换后结算"
+          }
+        },
+        {
+          "mode": "黑费全部攻击附攻城",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "altem_mages"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "altem_mages"
+            ],
+            "actualConsumer": "真实攻城贡献结算"
+          }
+        }
+      ],
+      "unverified": []
+    },
+    {
+      "unitId": "army_002",
+      "name": "埃莫提普冰霜剑士",
+      "original": {
+        "definition": "resources/text_json/army.json",
+        "jsonSelector": "id=army_002",
+        "art": "Assets/GameData/cards/army_002.png",
+        "printedAbilities": [
+          "攻击或格挡5。",
+          {
+            "mana_cost": "蓝",
+            "effect": "本次战斗中目标敌人不攻击，且受到护甲-3（最低至1）。"
+          }
+        ],
+        "recruitLocations": "城堡与城市",
+        "level": "III",
+        "influenceCost": "8",
+        "armor": "6",
+        "resistances": ""
+      },
+      "implemented": {
+        "status": "formal_entry_present",
+        "definitionLoader": "Assets/Logic/Data/UnitJsonLoader.cs",
+        "effects": "Assets/Logic/Runtime/CardUnitActions.cs",
+        "battleEntry": "Assets/Logic/Runtime/Battles/PveBattleSession.cs::UseUnit",
+        "outsideEntry": "Assets/Logic/Runtime/Battles/PveJourneySession.Units.cs::UseOutsideUnitCore",
+        "note": "按实际能力类型提供战内/战外入口；不表示各地点自然招募全验"
+      },
+      "primaryModes": [
+        {
+          "mode": "攻击/格挡5",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "ice_swords"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "ice_swords"
+            ],
+            "actualConsumer": "原攻挡及最终结算"
+          }
+        },
+        {
+          "mode": "蓝费停攻且护甲-3最低1",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "ice_swords"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "ice_swords"
+            ],
+            "actualConsumer": "同目标零伤和实际击杀"
+          }
+        }
+      ],
+      "unverified": []
+    },
+    {
+      "unitId": "army_003",
+      "name": "埃莫提普烈焰枪手",
+      "original": {
+        "definition": "resources/text_json/army.json",
+        "jsonSelector": "id=army_003",
+        "art": "Assets/GameData/cards/army_003.png",
+        "printedAbilities": [
+          {
+            "mana_cost": "None",
+            "effect": "攻击或格挡5。"
+          },
+          {
+            "mana_cost": "红",
+            "effect": "远程火焰攻击6。"
+          }
+        ],
+        "recruitLocations": "城堡,城市",
+        "level": "III",
+        "influenceCost": "8",
+        "armor": "6",
+        "resistances": ""
+      },
+      "implemented": {
+        "status": "formal_entry_present",
+        "definitionLoader": "Assets/Logic/Data/UnitJsonLoader.cs",
+        "effects": "Assets/Logic/Runtime/CardUnitActions.cs",
+        "battleEntry": "Assets/Logic/Runtime/Battles/PveBattleSession.cs::UseUnit",
+        "outsideEntry": "Assets/Logic/Runtime/Battles/PveJourneySession.Units.cs::UseOutsideUnitCore",
+        "note": "按实际能力类型提供战内/战外入口；不表示各地点自然招募全验"
+      },
+      "primaryModes": [
+        {
+          "mode": "攻击/格挡5",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "remaining_units"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "remaining_units"
+            ],
+            "actualConsumer": "普通攻击击杀及格挡防伤"
+          }
+        },
+        {
+          "mode": "红费远程火焰6",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "unit"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "unit"
+            ],
+            "actualConsumer": "实际红费与物理抗性敌人远程击杀"
+          }
+        }
+      ],
+      "unverified": []
+    },
+    {
+      "unitId": "army_004",
+      "name": "投石车",
+      "original": {
+        "definition": "resources/text_json/army.json",
+        "jsonSelector": "id=army_004",
+        "art": "Assets/GameData/cards/army_004.png",
+        "printedAbilities": [
+          "攻城攻击3。",
+          {
+            "mana_cost": "红",
+            "effect": "攻城火焰攻击5。"
+          },
+          {
+            "mana_cost": "蓝",
+            "effect": "攻城寒冰攻击5。"
+          }
+        ],
+        "recruitLocations": "城市与城堡",
+        "level": "III",
+        "influenceCost": "9",
+        "armor": "4",
+        "resistances": ""
+      },
+      "implemented": {
+        "status": "formal_entry_present",
+        "definitionLoader": "Assets/Logic/Data/UnitJsonLoader.cs",
+        "effects": "Assets/Logic/Runtime/CardUnitActions.cs",
+        "battleEntry": "Assets/Logic/Runtime/Battles/PveBattleSession.cs::UseUnit",
+        "outsideEntry": "Assets/Logic/Runtime/Battles/PveJourneySession.Units.cs::UseOutsideUnitCore",
+        "note": "按实际能力类型提供战内/战外入口；不表示各地点自然招募全验"
+      },
+      "primaryModes": [
+        {
+          "mode": "免费攻城3",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "elite_golem"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "elite_golem"
+            ],
+            "actualConsumer": "真实攻城击杀"
+          }
+        },
+        {
+          "mode": "红费火焰攻城5",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "elite_golem"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "elite_golem"
+            ],
+            "actualConsumer": "真实红费元素攻城结算"
+          }
+        },
+        {
+          "mode": "蓝费寒冰攻城5",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "elite_golem"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "elite_golem"
+            ],
+            "actualConsumer": "真实蓝费元素攻城结算"
+          }
+        }
+      ],
+      "unverified": []
+    },
+    {
+      "unitId": "army_005",
+      "name": "黛尔法纳大师",
+      "original": {
+        "definition": "resources/text_json/army.json",
+        "jsonSelector": "id=army_005",
+        "art": "Assets/GameData/cards/army_005.png",
+        "printedAbilities": [
+          "激活这支部队时，你可以对同一个或不同的目标使用多个不同的能力。",
+          {
+            "mana_cost": "蓝",
+            "effect": "目标敌人不攻击。"
+          },
+          {
+            "mana_cost": "红",
+            "effect": "如果目标敌人被格挡，消灭目标敌人。"
+          },
+          {
+            "mana_cost": "绿",
+            "effect": "目标敌人护甲降低5点（最低至1）。"
+          },
+          {
+            "mana_cost": "白",
+            "effect": "目标敌人失去所有城防和抗性。"
+          }
+        ],
+        "recruitLocations": "城市",
+        "level": "IV",
+        "influenceCost": "13",
+        "armor": "3",
+        "resistances": "火焰,寒冰,物理"
+      },
+      "implemented": {
+        "status": "formal_entry_present",
+        "definitionLoader": "Assets/Logic/Data/UnitJsonLoader.cs",
+        "effects": "Assets/Logic/Runtime/CardUnitActions.cs",
+        "battleEntry": "Assets/Logic/Runtime/Battles/PveBattleSession.cs::UseUnit",
+        "outsideEntry": "Assets/Logic/Runtime/Battles/PveJourneySession.Units.cs::UseOutsideUnitCore",
+        "note": "按实际能力类型提供战内/战外入口；不表示各地点自然招募全验"
+      },
+      "primaryModes": [
+        {
+          "mode": "同次激活多个不同能力",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "masters_blue_hero"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "masters_blue_hero"
+            ],
+            "actualConsumer": "同实体白绿和新轮蓝红逐次付款"
+          }
+        },
+        {
+          "mode": "白费去全部城防/抗性",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "masters_blue_hero"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "masters_blue_hero"
+            ],
+            "actualConsumer": "场景实际去城防后远程击杀；抗性分支后台，勿泛化"
+          }
+        },
+        {
+          "mode": "绿费减甲5最低1",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "masters_blue_hero"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "masters_blue_hero"
+            ],
+            "actualConsumer": "真实护甲4降1并击杀"
+          }
+        },
+        {
+          "mode": "蓝费停攻",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "masters_blue_hero"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "masters_blue_hero"
+            ],
+            "actualConsumer": "实际敌人不攻击，不计成功格挡"
+          }
+        },
+        {
+          "mode": "红费完整格挡后消灭",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "masters_blue_hero"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "masters_blue_hero"
+            ],
+            "actualConsumer": "同蓝勇者冰火8完成真正防御结算后消灭"
+          }
+        }
+      ],
+      "unverified": []
+    },
+    {
+      "unitId": "army_006",
+      "name": "火焰魔像",
+      "original": {
+        "definition": "resources/text_json/army.json",
+        "jsonSelector": "id=army_006",
+        "art": "Assets/GameData/cards/army_006.png",
+        "printedAbilities": [
+          "攻击或格挡3",
+          {
+            "mana_cost": "红",
+            "effect": "远程火焰攻击4。"
+          }
+        ],
+        "recruitLocations": "魔法塔,城堡",
+        "level": "III",
+        "influenceCost": "8",
+        "armor": "4",
+        "resistances": "火焰,物理"
+      },
+      "implemented": {
+        "status": "formal_entry_present",
+        "definitionLoader": "Assets/Logic/Data/UnitJsonLoader.cs",
+        "effects": "Assets/Logic/Runtime/CardUnitActions.cs",
+        "battleEntry": "Assets/Logic/Runtime/Battles/PveBattleSession.cs::UseUnit",
+        "outsideEntry": "Assets/Logic/Runtime/Battles/PveJourneySession.Units.cs::UseOutsideUnitCore",
+        "note": "按实际能力类型提供战内/战外入口；不表示各地点自然招募全验"
+      },
+      "primaryModes": [
+        {
+          "mode": "攻击/格挡3",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "elite_golem"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "elite_golem"
+            ],
+            "actualConsumer": "实际普通攻挡消费者"
+          }
+        },
+        {
+          "mode": "红费火焰远程4",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "elite_golem"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "elite_golem"
+            ],
+            "actualConsumer": "实际费用、元素攻击击杀及相应抗性承伤"
+          }
+        }
+      ],
+      "unverified": []
+    },
+    {
+      "unitId": "army_007",
+      "name": "火焰法师",
+      "original": {
+        "definition": "resources/text_json/army.json",
+        "jsonSelector": "id=army_007",
+        "art": "Assets/GameData/cards/army_007.png",
+        "printedAbilities": [
+          {
+            "mana_cost": "None",
+            "effect": "远程火焰攻击3。"
+          },
+          {
+            "mana_cost": "红",
+            "effect": "火焰攻击或火焰格挡6。"
+          },
+          {
+            "mana_cost": "None",
+            "effect": "获得一个红色魔力标记和一颗红色魔晶。将魔晶放入物品栏。"
+          }
+        ],
+        "recruitLocations": "魔法塔,要塞",
+        "level": "III",
+        "influenceCost": "9",
+        "armor": "4",
+        "resistances": "火焰"
+      },
+      "implemented": {
+        "status": "formal_entry_present",
+        "definitionLoader": "Assets/Logic/Data/UnitJsonLoader.cs",
+        "effects": "Assets/Logic/Runtime/CardUnitActions.cs",
+        "battleEntry": "Assets/Logic/Runtime/Battles/PveBattleSession.cs::UseUnit",
+        "outsideEntry": "Assets/Logic/Runtime/Battles/PveJourneySession.Units.cs::UseOutsideUnitCore",
+        "note": "按实际能力类型提供战内/战外入口；不表示各地点自然招募全验"
+      },
+      "primaryModes": [
+        {
+          "mode": "火焰远程3",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "mage",
+              "outside_units"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "mage",
+              "outside_units"
+            ],
+            "actualConsumer": "实际远程结算"
+          }
+        },
+        {
+          "mode": "红费火焰攻击/格挡6",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "mage",
+              "outside_units"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "mage",
+              "outside_units"
+            ],
+            "actualConsumer": "实际费用与攻挡"
+          }
+        },
+        {
+          "mode": "红标记+红晶体",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "mage",
+              "outside_units"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "mage",
+              "outside_units"
+            ],
+            "actualConsumer": "原卡优先消费临时标记并保留库存晶体"
+          }
+        }
+      ],
+      "unverified": []
+    },
+    {
+      "unitId": "army_008",
+      "name": "勇者",
+      "original": {
+        "definition": "resources/text_json/army.json",
+        "jsonSelector": "id=army_008",
+        "art": "Assets/GameData/cards/army_008.png",
+        "printedAbilities": [
+          "在任何突袭或攻击其他玩家时，你必须支付2点影响力才能激活这支部队。",
+          "攻击或格挡5。",
+          {
+            "mana_cost": "蓝",
+            "effect": "冰火格挡8。"
+          },
+          "影响力5。如果用于交涉，声誉+1。"
+        ],
+        "recruitLocations": "村庄、要塞、城市",
+        "level": "III",
+        "influenceCost": "9",
+        "armor": "4",
+        "resistances": "寒冰"
+      },
+      "implemented": {
+        "status": "formal_entry_present",
+        "definitionLoader": "Assets/Logic/Data/UnitJsonLoader.cs",
+        "effects": "Assets/Logic/Runtime/CardUnitActions.cs",
+        "battleEntry": "Assets/Logic/Runtime/Battles/PveBattleSession.cs::UseUnit",
+        "outsideEntry": "Assets/Logic/Runtime/Battles/PveJourneySession.Units.cs::UseOutsideUnitCore",
+        "note": "按实际能力类型提供战内/战外入口；不表示各地点自然招募全验"
+      },
+      "primaryModes": [
+        {
+          "mode": "攻击/格挡5",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "heroes_village",
+              "red_green_heroes"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "heroes_village",
+              "red_green_heroes"
+            ],
+            "actualConsumer": "同蓝/红勇者攻5击杀、同绿勇者格挡5；共同实现的代表消费者",
+            "sharedImplementationRepresentative": [
+              "army_008",
+              "army_009",
+              "army_010"
+            ]
+          }
+        },
+        {
+          "mode": "影响5且交涉声誉+1",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "heroes_village"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "heroes_village"
+            ],
+            "actualConsumer": "同蓝勇者实际村庄招募/治疗付款及整次交涉声誉一次变化",
+            "sharedImplementationRepresentative": [
+              "army_008"
+            ]
+          }
+        },
+        {
+          "mode": "突袭/进攻玩家激活额外影响2",
+          "implemented": true,
+          "backend": {
+            "status": "passed_exact_methods",
+            "xml": "AutomationOutputs/RulesState/20260923_021816_212ab687/results.xml",
+            "methods": [
+              "MK.Tests.Battles.PveHeroesUnitTests.AssaultManaAndInfluenceAreBothRequiredBeforeEitherIsSpent(True)",
+              "MK.Tests.Battles.PveHeroesUnitTests.AssaultManaAndInfluenceAreBothRequiredBeforeEitherIsSpent(False)",
+              "MK.Tests.Battles.PveHeroesUnitTests.ExistingTunnelPlayerAttackIdentityAlsoRequiresInfluence",
+              "MK.Tests.Battles.PveHeroesUnitTests.InfluenceAbilityCannotPayItsOwnActivationFeeRetroactively"
+            ],
+            "additionalActualJourney": {
+              "xml": "AutomationOutputs/RulesState/20260929_183114_13350633/results.xml",
+              "method": "MK.Tests.Battles.PveHeroesRealAssaultJourneyTests.ActualTowerTunnelKeepsAssaultFeeThenSameHeroesAndRewardSurviveFormalTurn",
+              "result": "Passed",
+              "note": "同批另一Arythea方法Failed；不记整批2/2"
+            }
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "heroes_assault_fee"
+            ],
+            "actualConsumer": "实际法师塔地道忽略地点城防仍收2影响，白标2→1/影响2→0/远程7→实际守军击杀→征服领奖→次回合同白勇者；一般PVP调度不在本场景范围",
+            "sharedImplementationRepresentative": [
+              "army_011"
+            ],
+            "sharedRule": "四ID共用突袭附费，不重复计为四色场景",
+            "sharedCoverageId": "heroes_assault_influence_fee"
+          },
+          "sharedImplementation": {
+            "loader": "Assets/Logic/Data/UnitJsonLoader.cs:57",
+            "consumer": "Assets/Logic/Runtime/CardUnitActions.cs:13",
+            "rule": "四ID相同AssaultActivationInfluenceCost=2，由实际CombatSite或TunnelTargetPlayer判断；各颜色独有魔力与能力已分列验证"
+          }
+        },
+        {
+          "mode": "原精英招募整次声誉修正翻倍",
+          "implemented": true,
+          "backend": {
+            "status": "passed_exact_methods",
+            "xml": "AutomationOutputs/RulesState/20260929_052835_8f50a877/results.xml",
+            "methods": [
+              "MK.Tests.Cards.HeroesRecruitmentTests.FailedRecruitDoesNotDoubleModifierOrConsumeOffer(0)",
+              "MK.Tests.Cards.HeroesRecruitmentTests.FailedRecruitDoesNotDoubleModifierOrConsumeOffer(1)",
+              "MK.Tests.Cards.HeroesRecruitmentTests.FailedRecruitDoesNotDoubleModifierOrConsumeOffer(2)",
+              "MK.Tests.Cards.HeroesRecruitmentTests.HeroesAndThugsCannotBothBeRecruitedInOneInteraction(False)",
+              "MK.Tests.Cards.HeroesRecruitmentTests.HeroesAndThugsCannotBothBeRecruitedInOneInteraction(True)",
+              "MK.Tests.Cards.HeroesRecruitmentTests.HeroInfluenceAbilityChangesReputationWithoutRepricingTheInteraction",
+              "MK.Tests.Cards.HeroesRecruitmentTests.OrdinaryRecruitBeforeOrAfterHeroHasSameInteractionTotal(False,2,9)",
+              "MK.Tests.Cards.HeroesRecruitmentTests.OrdinaryRecruitBeforeOrAfterHeroHasSameInteractionTotal(True,2,9)",
+              "MK.Tests.Cards.HeroesRecruitmentTests.OrdinaryRecruitBeforeOrAfterHeroHasSameInteractionTotal(False,-2,5)",
+              "MK.Tests.Cards.HeroesRecruitmentTests.OrdinaryRecruitBeforeOrAfterHeroHasSameInteractionTotal(True,-2,5)",
+              "MK.Tests.Cards.HeroesRecruitmentTests.TwoHeroesDoubleFrozenWholeInteractionModifierOnlyOnce(2,16,2)",
+              "MK.Tests.Cards.HeroesRecruitmentTests.TwoHeroesDoubleFrozenWholeInteractionModifierOnlyOnce(-2,20,-2)"
+            ],
+            "note": "既存12方法只读映射，不重复执行；四ID共用规则不乘4计数。"
+          },
+          "scene": {
+            "status": "not_scene_verified",
+            "evidence": [],
+            "actualConsumer": "未验证自然精英招募；GameEngine需实际Core翻开后新轮才供精英。当前地图无Core/合法原后续探索，与原板块来源同一阻塞，不能伪造供给。"
+          }
+        },
+        {
+          "mode": "蓝费冰火格挡8",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "masters_blue_hero"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "masters_blue_hero"
+            ],
+            "actualConsumer": "真实蓝晶支出且完整格挡，与大师红消灭连接"
+          }
+        }
+      ],
+      "unverified": [
+        "原精英招募整次声誉修正翻倍"
+      ]
+    },
+    {
+      "unitId": "army_009",
+      "name": "勇者",
+      "original": {
+        "definition": "resources/text_json/army.json",
+        "jsonSelector": "id=army_009",
+        "art": "Assets/GameData/cards/army_009.png",
+        "printedAbilities": [
+          "在任何突袭或攻击其他玩家时，你必须支付2点影响力才能激活这支部队。",
+          "攻击或格挡5。",
+          {
+            "mana_cost": "红",
+            "effect": "冰火攻击6。"
+          },
+          "影响力5。如果用于交涉，声誉+1。"
+        ],
+        "recruitLocations": "村庄、要塞、城市",
+        "level": "III",
+        "influenceCost": "9",
+        "armor": "4",
+        "resistances": "火焰"
+      },
+      "implemented": {
+        "status": "formal_entry_present",
+        "definitionLoader": "Assets/Logic/Data/UnitJsonLoader.cs",
+        "effects": "Assets/Logic/Runtime/CardUnitActions.cs",
+        "battleEntry": "Assets/Logic/Runtime/Battles/PveBattleSession.cs::UseUnit",
+        "outsideEntry": "Assets/Logic/Runtime/Battles/PveJourneySession.Units.cs::UseOutsideUnitCore",
+        "note": "按实际能力类型提供战内/战外入口；不表示各地点自然招募全验"
+      },
+      "primaryModes": [
+        {
+          "mode": "攻击/格挡5",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "heroes_village",
+              "red_green_heroes"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "heroes_village",
+              "red_green_heroes"
+            ],
+            "actualConsumer": "同蓝/红勇者攻5击杀、同绿勇者格挡5；共同实现的代表消费者",
+            "sharedImplementationRepresentative": [
+              "army_008",
+              "army_009",
+              "army_010"
+            ]
+          }
+        },
+        {
+          "mode": "影响5且交涉声誉+1",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "heroes_village"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "heroes_village"
+            ],
+            "actualConsumer": "同蓝勇者实际村庄招募/治疗付款及整次交涉声誉一次变化",
+            "sharedImplementationRepresentative": [
+              "army_008"
+            ]
+          }
+        },
+        {
+          "mode": "突袭/进攻玩家激活额外影响2",
+          "implemented": true,
+          "backend": {
+            "status": "passed_exact_methods",
+            "xml": "AutomationOutputs/RulesState/20260923_021816_212ab687/results.xml",
+            "methods": [
+              "MK.Tests.Battles.PveHeroesUnitTests.AssaultManaAndInfluenceAreBothRequiredBeforeEitherIsSpent(True)",
+              "MK.Tests.Battles.PveHeroesUnitTests.AssaultManaAndInfluenceAreBothRequiredBeforeEitherIsSpent(False)",
+              "MK.Tests.Battles.PveHeroesUnitTests.ExistingTunnelPlayerAttackIdentityAlsoRequiresInfluence",
+              "MK.Tests.Battles.PveHeroesUnitTests.InfluenceAbilityCannotPayItsOwnActivationFeeRetroactively"
+            ],
+            "additionalActualJourney": {
+              "xml": "AutomationOutputs/RulesState/20260929_183114_13350633/results.xml",
+              "method": "MK.Tests.Battles.PveHeroesRealAssaultJourneyTests.ActualTowerTunnelKeepsAssaultFeeThenSameHeroesAndRewardSurviveFormalTurn",
+              "result": "Passed",
+              "note": "同批另一Arythea方法Failed；不记整批2/2"
+            }
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "heroes_assault_fee"
+            ],
+            "actualConsumer": "实际法师塔地道忽略地点城防仍收2影响，白标2→1/影响2→0/远程7→实际守军击杀→征服领奖→次回合同白勇者；一般PVP调度不在本场景范围",
+            "sharedImplementationRepresentative": [
+              "army_011"
+            ],
+            "sharedRule": "四ID共用突袭附费，不重复计为四色场景",
+            "sharedCoverageId": "heroes_assault_influence_fee"
+          },
+          "sharedImplementation": {
+            "loader": "Assets/Logic/Data/UnitJsonLoader.cs:57",
+            "consumer": "Assets/Logic/Runtime/CardUnitActions.cs:13",
+            "rule": "四ID相同AssaultActivationInfluenceCost=2，由实际CombatSite或TunnelTargetPlayer判断；各颜色独有魔力与能力已分列验证"
+          }
+        },
+        {
+          "mode": "原精英招募整次声誉修正翻倍",
+          "implemented": true,
+          "backend": {
+            "status": "passed_exact_methods",
+            "xml": "AutomationOutputs/RulesState/20260929_052835_8f50a877/results.xml",
+            "methods": [
+              "MK.Tests.Cards.HeroesRecruitmentTests.FailedRecruitDoesNotDoubleModifierOrConsumeOffer(0)",
+              "MK.Tests.Cards.HeroesRecruitmentTests.FailedRecruitDoesNotDoubleModifierOrConsumeOffer(1)",
+              "MK.Tests.Cards.HeroesRecruitmentTests.FailedRecruitDoesNotDoubleModifierOrConsumeOffer(2)",
+              "MK.Tests.Cards.HeroesRecruitmentTests.HeroesAndThugsCannotBothBeRecruitedInOneInteraction(False)",
+              "MK.Tests.Cards.HeroesRecruitmentTests.HeroesAndThugsCannotBothBeRecruitedInOneInteraction(True)",
+              "MK.Tests.Cards.HeroesRecruitmentTests.HeroInfluenceAbilityChangesReputationWithoutRepricingTheInteraction",
+              "MK.Tests.Cards.HeroesRecruitmentTests.OrdinaryRecruitBeforeOrAfterHeroHasSameInteractionTotal(False,2,9)",
+              "MK.Tests.Cards.HeroesRecruitmentTests.OrdinaryRecruitBeforeOrAfterHeroHasSameInteractionTotal(True,2,9)",
+              "MK.Tests.Cards.HeroesRecruitmentTests.OrdinaryRecruitBeforeOrAfterHeroHasSameInteractionTotal(False,-2,5)",
+              "MK.Tests.Cards.HeroesRecruitmentTests.OrdinaryRecruitBeforeOrAfterHeroHasSameInteractionTotal(True,-2,5)",
+              "MK.Tests.Cards.HeroesRecruitmentTests.TwoHeroesDoubleFrozenWholeInteractionModifierOnlyOnce(2,16,2)",
+              "MK.Tests.Cards.HeroesRecruitmentTests.TwoHeroesDoubleFrozenWholeInteractionModifierOnlyOnce(-2,20,-2)"
+            ],
+            "note": "既存12方法只读映射，不重复执行；四ID共用规则不乘4计数。"
+          },
+          "scene": {
+            "status": "not_scene_verified",
+            "evidence": [],
+            "actualConsumer": "未验证自然精英招募；GameEngine需实际Core翻开后新轮才供精英。当前地图无Core/合法原后续探索，与原板块来源同一阻塞，不能伪造供给。"
+          }
+        },
+        {
+          "mode": "红费冰火攻击6",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "red_green_heroes"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "red_green_heroes"
+            ],
+            "actualConsumer": "真实红晶支出并击杀"
+          }
+        }
+      ],
+      "unverified": [
+        "原精英招募整次声誉修正翻倍"
+      ]
+    },
+    {
+      "unitId": "army_010",
+      "name": "勇者",
+      "original": {
+        "definition": "resources/text_json/army.json",
+        "jsonSelector": "id=army_010",
+        "art": "Assets/GameData/cards/army_010.png",
+        "printedAbilities": [
+          "在任何突袭或攻击其他玩家时，你必须支付2点影响力才能激活这支部队。",
+          "攻击或格挡5。",
+          {
+            "mana_cost": "绿",
+            "effect": "治疗4。"
+          },
+          "影响力5。如果用于交涉，声誉+1。"
+        ],
+        "recruitLocations": "村庄、要塞、城市",
+        "level": "III",
+        "influenceCost": "9",
+        "armor": "3",
+        "resistances": "物理"
+      },
+      "implemented": {
+        "status": "formal_entry_present",
+        "definitionLoader": "Assets/Logic/Data/UnitJsonLoader.cs",
+        "effects": "Assets/Logic/Runtime/CardUnitActions.cs",
+        "battleEntry": "Assets/Logic/Runtime/Battles/PveBattleSession.cs::UseUnit",
+        "outsideEntry": "Assets/Logic/Runtime/Battles/PveJourneySession.Units.cs::UseOutsideUnitCore",
+        "note": "按实际能力类型提供战内/战外入口；不表示各地点自然招募全验"
+      },
+      "primaryModes": [
+        {
+          "mode": "攻击/格挡5",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "heroes_village",
+              "red_green_heroes"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "heroes_village",
+              "red_green_heroes"
+            ],
+            "actualConsumer": "同蓝/红勇者攻5击杀、同绿勇者格挡5；共同实现的代表消费者",
+            "sharedImplementationRepresentative": [
+              "army_008",
+              "army_009",
+              "army_010"
+            ]
+          }
+        },
+        {
+          "mode": "影响5且交涉声誉+1",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "heroes_village"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "heroes_village"
+            ],
+            "actualConsumer": "同蓝勇者实际村庄招募/治疗付款及整次交涉声誉一次变化",
+            "sharedImplementationRepresentative": [
+              "army_008"
+            ]
+          }
+        },
+        {
+          "mode": "突袭/进攻玩家激活额外影响2",
+          "implemented": true,
+          "backend": {
+            "status": "passed_exact_methods",
+            "xml": "AutomationOutputs/RulesState/20260923_021816_212ab687/results.xml",
+            "methods": [
+              "MK.Tests.Battles.PveHeroesUnitTests.AssaultManaAndInfluenceAreBothRequiredBeforeEitherIsSpent(True)",
+              "MK.Tests.Battles.PveHeroesUnitTests.AssaultManaAndInfluenceAreBothRequiredBeforeEitherIsSpent(False)",
+              "MK.Tests.Battles.PveHeroesUnitTests.ExistingTunnelPlayerAttackIdentityAlsoRequiresInfluence",
+              "MK.Tests.Battles.PveHeroesUnitTests.InfluenceAbilityCannotPayItsOwnActivationFeeRetroactively"
+            ],
+            "additionalActualJourney": {
+              "xml": "AutomationOutputs/RulesState/20260929_183114_13350633/results.xml",
+              "method": "MK.Tests.Battles.PveHeroesRealAssaultJourneyTests.ActualTowerTunnelKeepsAssaultFeeThenSameHeroesAndRewardSurviveFormalTurn",
+              "result": "Passed",
+              "note": "同批另一Arythea方法Failed；不记整批2/2"
+            }
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "heroes_assault_fee"
+            ],
+            "actualConsumer": "实际法师塔地道忽略地点城防仍收2影响，白标2→1/影响2→0/远程7→实际守军击杀→征服领奖→次回合同白勇者；一般PVP调度不在本场景范围",
+            "sharedImplementationRepresentative": [
+              "army_011"
+            ],
+            "sharedRule": "四ID共用突袭附费，不重复计为四色场景",
+            "sharedCoverageId": "heroes_assault_influence_fee"
+          },
+          "sharedImplementation": {
+            "loader": "Assets/Logic/Data/UnitJsonLoader.cs:57",
+            "consumer": "Assets/Logic/Runtime/CardUnitActions.cs:13",
+            "rule": "四ID相同AssaultActivationInfluenceCost=2，由实际CombatSite或TunnelTargetPlayer判断；各颜色独有魔力与能力已分列验证"
+          }
+        },
+        {
+          "mode": "原精英招募整次声誉修正翻倍",
+          "implemented": true,
+          "backend": {
+            "status": "passed_exact_methods",
+            "xml": "AutomationOutputs/RulesState/20260929_052835_8f50a877/results.xml",
+            "methods": [
+              "MK.Tests.Cards.HeroesRecruitmentTests.FailedRecruitDoesNotDoubleModifierOrConsumeOffer(0)",
+              "MK.Tests.Cards.HeroesRecruitmentTests.FailedRecruitDoesNotDoubleModifierOrConsumeOffer(1)",
+              "MK.Tests.Cards.HeroesRecruitmentTests.FailedRecruitDoesNotDoubleModifierOrConsumeOffer(2)",
+              "MK.Tests.Cards.HeroesRecruitmentTests.HeroesAndThugsCannotBothBeRecruitedInOneInteraction(False)",
+              "MK.Tests.Cards.HeroesRecruitmentTests.HeroesAndThugsCannotBothBeRecruitedInOneInteraction(True)",
+              "MK.Tests.Cards.HeroesRecruitmentTests.HeroInfluenceAbilityChangesReputationWithoutRepricingTheInteraction",
+              "MK.Tests.Cards.HeroesRecruitmentTests.OrdinaryRecruitBeforeOrAfterHeroHasSameInteractionTotal(False,2,9)",
+              "MK.Tests.Cards.HeroesRecruitmentTests.OrdinaryRecruitBeforeOrAfterHeroHasSameInteractionTotal(True,2,9)",
+              "MK.Tests.Cards.HeroesRecruitmentTests.OrdinaryRecruitBeforeOrAfterHeroHasSameInteractionTotal(False,-2,5)",
+              "MK.Tests.Cards.HeroesRecruitmentTests.OrdinaryRecruitBeforeOrAfterHeroHasSameInteractionTotal(True,-2,5)",
+              "MK.Tests.Cards.HeroesRecruitmentTests.TwoHeroesDoubleFrozenWholeInteractionModifierOnlyOnce(2,16,2)",
+              "MK.Tests.Cards.HeroesRecruitmentTests.TwoHeroesDoubleFrozenWholeInteractionModifierOnlyOnce(-2,20,-2)"
+            ],
+            "note": "既存12方法只读映射，不重复执行；四ID共用规则不乘4计数。"
+          },
+          "scene": {
+            "status": "not_scene_verified",
+            "evidence": [],
+            "actualConsumer": "未验证自然精英招募；GameEngine需实际Core翻开后新轮才供精英。当前地图无Core/合法原后续探索，与原板块来源同一阻塞，不能伪造供给。"
+          }
+        },
+        {
+          "mode": "绿费治疗4",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "red_green_heroes"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "red_green_heroes"
+            ],
+            "actualConsumer": "按实际II级治疗受伤幻术师与旧手伤；治疗不重整"
+          }
+        }
+      ],
+      "unverified": [
+        "原精英招募整次声誉修正翻倍"
+      ]
+    },
+    {
+      "unitId": "army_011",
+      "name": "勇者",
+      "original": {
+        "definition": "resources/text_json/army.json",
+        "jsonSelector": "id=army_011",
+        "art": "Assets/GameData/cards/army_011.png",
+        "printedAbilities": [
+          "在任何突袭或攻击其他玩家时，你必须支付2点影响力才能激活这支部队。",
+          "攻击或格挡5。",
+          {
+            "mana_cost": "白",
+            "effect": "远程攻击7。"
+          },
+          "影响力5。如果用于交涉，声誉+1。"
+        ],
+        "recruitLocations": "村庄、要塞、城市",
+        "level": "III",
+        "influenceCost": "9",
+        "armor": "6",
+        "resistances": ""
+      },
+      "implemented": {
+        "status": "formal_entry_present",
+        "definitionLoader": "Assets/Logic/Data/UnitJsonLoader.cs",
+        "effects": "Assets/Logic/Runtime/CardUnitActions.cs",
+        "battleEntry": "Assets/Logic/Runtime/Battles/PveBattleSession.cs::UseUnit",
+        "outsideEntry": "Assets/Logic/Runtime/Battles/PveJourneySession.Units.cs::UseOutsideUnitCore",
+        "note": "按实际能力类型提供战内/战外入口；不表示各地点自然招募全验"
+      },
+      "primaryModes": [
+        {
+          "mode": "攻击/格挡5",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "heroes_village",
+              "red_green_heroes"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "heroes_village",
+              "red_green_heroes"
+            ],
+            "actualConsumer": "同蓝/红勇者攻5击杀、同绿勇者格挡5；共同实现的代表消费者",
+            "sharedImplementationRepresentative": [
+              "army_008",
+              "army_009",
+              "army_010"
+            ]
+          }
+        },
+        {
+          "mode": "影响5且交涉声誉+1",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "heroes_village"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "heroes_village"
+            ],
+            "actualConsumer": "同蓝勇者实际村庄招募/治疗付款及整次交涉声誉一次变化",
+            "sharedImplementationRepresentative": [
+              "army_008"
+            ]
+          }
+        },
+        {
+          "mode": "突袭/进攻玩家激活额外影响2",
+          "implemented": true,
+          "backend": {
+            "status": "passed_exact_methods",
+            "xml": "AutomationOutputs/RulesState/20260923_021816_212ab687/results.xml",
+            "methods": [
+              "MK.Tests.Battles.PveHeroesUnitTests.AssaultManaAndInfluenceAreBothRequiredBeforeEitherIsSpent(True)",
+              "MK.Tests.Battles.PveHeroesUnitTests.AssaultManaAndInfluenceAreBothRequiredBeforeEitherIsSpent(False)",
+              "MK.Tests.Battles.PveHeroesUnitTests.ExistingTunnelPlayerAttackIdentityAlsoRequiresInfluence",
+              "MK.Tests.Battles.PveHeroesUnitTests.InfluenceAbilityCannotPayItsOwnActivationFeeRetroactively"
+            ],
+            "additionalActualJourney": {
+              "xml": "AutomationOutputs/RulesState/20260929_183114_13350633/results.xml",
+              "method": "MK.Tests.Battles.PveHeroesRealAssaultJourneyTests.ActualTowerTunnelKeepsAssaultFeeThenSameHeroesAndRewardSurviveFormalTurn",
+              "result": "Passed",
+              "note": "同批另一Arythea方法Failed；不记整批2/2"
+            }
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "heroes_assault_fee"
+            ],
+            "actualConsumer": "实际法师塔地道忽略地点城防仍收2影响，白标2→1/影响2→0/远程7→实际守军击杀→征服领奖→次回合同白勇者；一般PVP调度不在本场景范围",
+            "sharedImplementationRepresentative": [
+              "army_011"
+            ],
+            "sharedRule": "四ID共用突袭附费，不重复计为四色场景",
+            "sharedCoverageId": "heroes_assault_influence_fee"
+          },
+          "sharedImplementation": {
+            "loader": "Assets/Logic/Data/UnitJsonLoader.cs:57",
+            "consumer": "Assets/Logic/Runtime/CardUnitActions.cs:13",
+            "rule": "四ID相同AssaultActivationInfluenceCost=2，由实际CombatSite或TunnelTargetPlayer判断；各颜色独有魔力与能力已分列验证"
+          }
+        },
+        {
+          "mode": "原精英招募整次声誉修正翻倍",
+          "implemented": true,
+          "backend": {
+            "status": "passed_exact_methods",
+            "xml": "AutomationOutputs/RulesState/20260929_052835_8f50a877/results.xml",
+            "methods": [
+              "MK.Tests.Cards.HeroesRecruitmentTests.FailedRecruitDoesNotDoubleModifierOrConsumeOffer(0)",
+              "MK.Tests.Cards.HeroesRecruitmentTests.FailedRecruitDoesNotDoubleModifierOrConsumeOffer(1)",
+              "MK.Tests.Cards.HeroesRecruitmentTests.FailedRecruitDoesNotDoubleModifierOrConsumeOffer(2)",
+              "MK.Tests.Cards.HeroesRecruitmentTests.HeroesAndThugsCannotBothBeRecruitedInOneInteraction(False)",
+              "MK.Tests.Cards.HeroesRecruitmentTests.HeroesAndThugsCannotBothBeRecruitedInOneInteraction(True)",
+              "MK.Tests.Cards.HeroesRecruitmentTests.HeroInfluenceAbilityChangesReputationWithoutRepricingTheInteraction",
+              "MK.Tests.Cards.HeroesRecruitmentTests.OrdinaryRecruitBeforeOrAfterHeroHasSameInteractionTotal(False,2,9)",
+              "MK.Tests.Cards.HeroesRecruitmentTests.OrdinaryRecruitBeforeOrAfterHeroHasSameInteractionTotal(True,2,9)",
+              "MK.Tests.Cards.HeroesRecruitmentTests.OrdinaryRecruitBeforeOrAfterHeroHasSameInteractionTotal(False,-2,5)",
+              "MK.Tests.Cards.HeroesRecruitmentTests.OrdinaryRecruitBeforeOrAfterHeroHasSameInteractionTotal(True,-2,5)",
+              "MK.Tests.Cards.HeroesRecruitmentTests.TwoHeroesDoubleFrozenWholeInteractionModifierOnlyOnce(2,16,2)",
+              "MK.Tests.Cards.HeroesRecruitmentTests.TwoHeroesDoubleFrozenWholeInteractionModifierOnlyOnce(-2,20,-2)"
+            ],
+            "note": "既存12方法只读映射，不重复执行；四ID共用规则不乘4计数。"
+          },
+          "scene": {
+            "status": "not_scene_verified",
+            "evidence": [],
+            "actualConsumer": "未验证自然精英招募；GameEngine需实际Core翻开后新轮才供精英。当前地图无Core/合法原后续探索，与原板块来源同一阻塞，不能伪造供给。"
+          }
+        },
+        {
+          "mode": "白费远程7",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "sorcerer_white_hero"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "sorcerer_white_hero"
+            ],
+            "actualConsumer": "真实白晶支出并远程击杀"
+          }
+        }
+      ],
+      "unverified": [
+        "原精英招募整次声誉修正翻倍"
+      ]
+    },
+    {
+      "unitId": "army_012",
+      "name": "寒冰魔像",
+      "original": {
+        "definition": "resources/text_json/army.json",
+        "jsonSelector": "id=army_012",
+        "art": "Assets/GameData/cards/army_012.png",
+        "printedAbilities": [
+          "攻击或格挡3",
+          {
+            "mana_cost": "蓝",
+            "effect": "寒冰攻击6。"
+          }
+        ],
+        "recruitLocations": "魔法塔,城堡",
+        "level": "III",
+        "influenceCost": "8",
+        "armor": "4",
+        "resistances": "寒冰,物理"
+      },
+      "implemented": {
+        "status": "formal_entry_present",
+        "definitionLoader": "Assets/Logic/Data/UnitJsonLoader.cs",
+        "effects": "Assets/Logic/Runtime/CardUnitActions.cs",
+        "battleEntry": "Assets/Logic/Runtime/Battles/PveBattleSession.cs::UseUnit",
+        "outsideEntry": "Assets/Logic/Runtime/Battles/PveJourneySession.Units.cs::UseOutsideUnitCore",
+        "note": "按实际能力类型提供战内/战外入口；不表示各地点自然招募全验"
+      },
+      "primaryModes": [
+        {
+          "mode": "攻击/格挡3",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "elite_golem"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "elite_golem"
+            ],
+            "actualConsumer": "实际普通攻挡消费者"
+          }
+        },
+        {
+          "mode": "蓝费寒冰攻击6",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "elite_golem"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "elite_golem"
+            ],
+            "actualConsumer": "实际费用、元素攻击击杀及相应抗性承伤"
+          }
+        }
+      ],
+      "unverified": []
+    },
+    {
+      "unitId": "army_013",
+      "name": "寒冰法师",
+      "original": {
+        "definition": "resources/text_json/army.json",
+        "jsonSelector": "id=army_013",
+        "art": "Assets/GameData/cards/army_013.png",
+        "printedAbilities": [
+          {
+            "mana_cost": "None",
+            "effect": "寒冰攻击或寒冰格挡4。"
+          },
+          {
+            "mana_cost": "蓝",
+            "effect": "攻城寒冰攻击4。"
+          },
+          {
+            "mana_cost": "None",
+            "effect": "获得一个蓝色魔力标记和一颗蓝色魔晶。将魔晶放入物品栏。"
+          }
+        ],
+        "recruitLocations": "魔法塔,要塞",
+        "level": "III",
+        "influenceCost": "9",
+        "armor": "4",
+        "resistances": "寒冰"
+      },
+      "implemented": {
+        "status": "formal_entry_present",
+        "definitionLoader": "Assets/Logic/Data/UnitJsonLoader.cs",
+        "effects": "Assets/Logic/Runtime/CardUnitActions.cs",
+        "battleEntry": "Assets/Logic/Runtime/Battles/PveBattleSession.cs::UseUnit",
+        "outsideEntry": "Assets/Logic/Runtime/Battles/PveJourneySession.Units.cs::UseOutsideUnitCore",
+        "note": "按实际能力类型提供战内/战外入口；不表示各地点自然招募全验"
+      },
+      "primaryModes": [
+        {
+          "mode": "寒冰攻击/格挡4",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "mage"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "mage"
+            ],
+            "actualConsumer": "实际攻挡及抗性承伤"
+          }
+        },
+        {
+          "mode": "蓝费寒冰攻城4",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "mage"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "mage"
+            ],
+            "actualConsumer": "实际费用及攻城击杀"
+          }
+        },
+        {
+          "mode": "蓝标记+蓝晶体",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "mage"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "mage"
+            ],
+            "actualConsumer": "原卡实际费用消费"
+          }
+        }
+      ],
+      "unverified": []
+    },
+    {
+      "unitId": "army_014",
+      "name": "巫师",
+      "original": {
+        "definition": "resources/text_json/army.json",
+        "jsonSelector": "id=army_014",
+        "art": "Assets/GameData/cards/army_014.png",
+        "printedAbilities": [
+          {
+            "mana_cost": "None",
+            "effect": "远程攻击3。"
+          },
+          {
+            "mana_cost": "白",
+            "effect": "目标敌人失去所有城防。远程攻击3。"
+          },
+          {
+            "mana_cost": "绿",
+            "effect": "目标敌人失去所有抗性。远程攻击3。"
+          }
+        ],
+        "recruitLocations": "魔法塔、修道院",
+        "level": "III",
+        "influenceCost": "9",
+        "armor": "4",
+        "resistances": "火焰,寒冰"
+      },
+      "implemented": {
+        "status": "formal_entry_present",
+        "definitionLoader": "Assets/Logic/Data/UnitJsonLoader.cs",
+        "effects": "Assets/Logic/Runtime/CardUnitActions.cs",
+        "battleEntry": "Assets/Logic/Runtime/Battles/PveBattleSession.cs::UseUnit",
+        "outsideEntry": "Assets/Logic/Runtime/Battles/PveJourneySession.Units.cs::UseOutsideUnitCore",
+        "note": "按实际能力类型提供战内/战外入口；不表示各地点自然招募全验"
+      },
+      "primaryModes": [
+        {
+          "mode": "免费远程3",
+          "implemented": true,
+          "backend": {
+            "status": "passed_exact_methods",
+            "xml": "AutomationOutputs/RulesState/20260923_021816_212ab687/results.xml",
+            "methods": [
+              "MK.Tests.Battles.PveIllusionistSorcererTests.OriginalSorcererModesPayTheirOwnFeesAndFeedRealRangedAttack(0,\"monster_032\",2)"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "remaining_unit_primary"
+            ],
+            "actualConsumer": "原032甲3被免费远程3单独击杀，名望15到17"
+          }
+        },
+        {
+          "mode": "白费去城防并远程3",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "sorcerer_white_hero"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "sorcerer_white_hero"
+            ],
+            "actualConsumer": "同敌真实城防移除与远程击杀及显示"
+          }
+        },
+        {
+          "mode": "绿费去抗性并远程3",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "sorcerer_white_hero"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "sorcerer_white_hero"
+            ],
+            "actualConsumer": "同敌原物理/冰抗性移除与远程击杀及显示"
+          }
+        }
+      ],
+      "unverified": []
+    },
+    {
+      "unitId": "army_2_000",
+      "name": "护林人",
+      "original": {
+        "definition": "resources/text_json/army_2.json",
+        "jsonSelector": "id=army_2_000",
+        "art": "Assets/GameData/cards/army_2_000.png",
+        "printedAbilities": [
+          {
+            "mana_cost": "None",
+            "effect": "移动力2。本回合中森林、丘陵和沼泽的移动费用降低1点，最低至0。"
+          },
+          {
+            "mana_cost": "None",
+            "effect": "格挡3。"
+          }
+        ],
+        "recruitLocations": "村庄",
+        "level": "I",
+        "influenceCost": "5",
+        "armor": "4",
+        "resistances": ""
+      },
+      "implemented": {
+        "status": "formal_entry_present",
+        "definitionLoader": "Assets/Logic/Data/UnitJsonLoader.cs",
+        "effects": "Assets/Logic/Runtime/CardUnitActions.cs",
+        "battleEntry": "Assets/Logic/Runtime/Battles/PveBattleSession.cs::UseUnit",
+        "outsideEntry": "Assets/Logic/Runtime/Battles/PveJourneySession.Units.cs::UseOutsideUnitCore",
+        "note": "按实际能力类型提供战内/战外入口；不表示各地点自然招募全验"
+      },
+      "primaryModes": [
+        {
+          "mode": "移动2及森林/丘陵/沼泽减费1",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "forester_illusionist"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "forester_illusionist"
+            ],
+            "actualConsumer": "实际森林移动减费；其他地形参数共用规则后台范围保留"
+          }
+        },
+        {
+          "mode": "格挡3",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "shock_forester"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "shock_forester"
+            ],
+            "actualConsumer": "同护林人实际格挡并防伤"
+          }
+        }
+      ],
+      "unverified": []
+    },
+    {
+      "unitId": "army_2_001",
+      "name": "守护者魔像",
+      "original": {
+        "definition": "resources/text_json/army_2.json",
+        "jsonSelector": "id=army_2_001",
+        "art": "Assets/GameData/cards/army_2_001.png",
+        "printedAbilities": [
+          {
+            "mana_cost": "None",
+            "effect": "攻击或格挡2。"
+          },
+          {
+            "mana_cost": "红",
+            "effect": "火焰格挡4。"
+          },
+          {
+            "mana_cost": "蓝",
+            "effect": "寒冰格挡4。"
+          }
+        ],
+        "recruitLocations": "魔法塔,城堡",
+        "level": "II",
+        "influenceCost": "7",
+        "armor": "3",
+        "resistances": "物理"
+      },
+      "implemented": {
+        "status": "formal_entry_present",
+        "definitionLoader": "Assets/Logic/Data/UnitJsonLoader.cs",
+        "effects": "Assets/Logic/Runtime/CardUnitActions.cs",
+        "battleEntry": "Assets/Logic/Runtime/Battles/PveBattleSession.cs::UseUnit",
+        "outsideEntry": "Assets/Logic/Runtime/Battles/PveJourneySession.Units.cs::UseOutsideUnitCore",
+        "note": "按实际能力类型提供战内/战外入口；不表示各地点自然招募全验"
+      },
+      "primaryModes": [
+        {
+          "mode": "攻击/格挡2",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "unit",
+              "remaining_units",
+              "natural_site_recruitment",
+              "keep_recruitment"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "unit",
+              "remaining_units",
+              "natural_site_recruitment",
+              "keep_recruitment"
+            ],
+            "actualConsumer": "旧普通攻挡；新塔招募同单位攻击2"
+          }
+        },
+        {
+          "mode": "红费火焰格挡4",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "unit",
+              "remaining_units",
+              "natural_site_recruitment",
+              "keep_recruitment"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "unit",
+              "remaining_units",
+              "natural_site_recruitment",
+              "keep_recruitment"
+            ],
+            "actualConsumer": "实际红费及火焰格挡"
+          }
+        },
+        {
+          "mode": "蓝费寒冰格挡4",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "unit",
+              "remaining_units",
+              "natural_site_recruitment",
+              "keep_recruitment"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "unit",
+              "remaining_units",
+              "natural_site_recruitment",
+              "keep_recruitment"
+            ],
+            "actualConsumer": "旧冰挡和新要塞招募同单位跨轮蓝晶支付冰挡"
+          }
+        }
+      ],
+      "unverified": []
+    },
+    {
+      "unitId": "army_2_002",
+      "name": "药草师",
+      "original": {
+        "definition": "resources/text_json/army_2.json",
+        "jsonSelector": "id=army_2_002",
+        "art": "Assets/GameData/cards/army_2_002.png",
+        "printedAbilities": [
+          {
+            "mana_cost": "绿",
+            "effect": "治疗2。"
+          },
+          {
+            "mana_cost": "None",
+            "effect": "重整一支1或2级部队。"
+          },
+          {
+            "mana_cost": "None",
+            "effect": "获得一个绿色魔力标记。"
+          }
+        ],
+        "recruitLocations": "村庄,修道院",
+        "level": "I",
+        "influenceCost": "3",
+        "armor": "2",
+        "resistances": ""
+      },
+      "implemented": {
+        "status": "formal_entry_present",
+        "definitionLoader": "Assets/Logic/Data/UnitJsonLoader.cs",
+        "effects": "Assets/Logic/Runtime/CardUnitActions.cs",
+        "battleEntry": "Assets/Logic/Runtime/Battles/PveBattleSession.cs::UseUnit",
+        "outsideEntry": "Assets/Logic/Runtime/Battles/PveJourneySession.Units.cs::UseOutsideUnitCore",
+        "note": "按实际能力类型提供战内/战外入口；不表示各地点自然招募全验"
+      },
+      "primaryModes": [
+        {
+          "mode": "绿费治疗2",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "herbalist",
+              "outside_units"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "herbalist",
+              "outside_units"
+            ],
+            "actualConsumer": "实际手伤/II级单位消费"
+          }
+        },
+        {
+          "mode": "免费重整I/II",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "herbalist",
+              "outside_units"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "herbalist",
+              "outside_units"
+            ],
+            "actualConsumer": "同受伤农民恢复就绪但保留创伤，后续实际能力"
+          }
+        },
+        {
+          "mode": "绿标记",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "herbalist",
+              "outside_units"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "herbalist",
+              "outside_units"
+            ],
+            "actualConsumer": "原攻城牌实际付款并击杀"
+          }
+        }
+      ],
+      "unverified": []
+    },
+    {
+      "unitId": "army_2_003",
+      "name": "幻术师",
+      "original": {
+        "definition": "resources/text_json/army_2.json",
+        "jsonSelector": "id=army_2_003",
+        "art": "Assets/GameData/cards/army_2_003.png",
+        "printedAbilities": [
+          {
+            "mana_cost": "None",
+            "effect": "影响力4。"
+          },
+          {
+            "mana_cost": "白",
+            "effect": "本次战斗中无城防的目标敌人不攻击。"
+          },
+          {
+            "mana_cost": "None",
+            "effect": "获得一颗白色魔晶，放入物品栏。"
+          }
+        ],
+        "recruitLocations": "魔法塔、修道院",
+        "level": "II",
+        "influenceCost": "7",
+        "armor": "2",
+        "resistances": "物理"
+      },
+      "implemented": {
+        "status": "formal_entry_present",
+        "definitionLoader": "Assets/Logic/Data/UnitJsonLoader.cs",
+        "effects": "Assets/Logic/Runtime/CardUnitActions.cs",
+        "battleEntry": "Assets/Logic/Runtime/Battles/PveBattleSession.cs::UseUnit",
+        "outsideEntry": "Assets/Logic/Runtime/Battles/PveJourneySession.Units.cs::UseOutsideUnitCore",
+        "note": "按实际能力类型提供战内/战外入口；不表示各地点自然招募全验"
+      },
+      "primaryModes": [
+        {
+          "mode": "影响4",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "forester_illusionist"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "forester_illusionist"
+            ],
+            "actualConsumer": "同单位实际影响买治疗并消除既有伤牌"
+          }
+        },
+        {
+          "mode": "白费无城防目标停攻",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "blood_illusion_stop"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "blood_illusion_stop"
+            ],
+            "actualConsumer": "实际白费与非城防敌人停止攻击"
+          }
+        },
+        {
+          "mode": "白晶体",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "forester_illusionist"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "forester_illusionist"
+            ],
+            "actualConsumer": "真实晶体支付承诺，原单位重整再消费影响"
+          }
+        }
+      ],
+      "unverified": []
+    },
+    {
+      "unitId": "army_2_004",
+      "name": "魔宠",
+      "original": {
+        "definition": "resources/text_json/army_2.json",
+        "jsonSelector": "id=army_2_004",
+        "art": "Assets/GameData/cards/army_2_004.png",
+        "printedAbilities": [
+          {
+            "mana_cost": "None",
+            "effect": "攻击3 (红 +2)"
+          },
+          {
+            "mana_cost": "None",
+            "effect": "格挡4 (蓝 +3)"
+          },
+          {
+            "mana_cost": "None",
+            "effect": "移动力或影响力3 (白 +2)"
+          },
+          {
+            "mana_cost": "None",
+            "effect": "治疗2 (绿 +1)"
+          },
+          {
+            "mana_cost": "None",
+            "effect": "招募时支付一点基本色魔力，并将一个魔力标记放在部队该颜色能力上。对应的能力获得提升。每轮开始时，使用你物品栏中一颗任意颜色的魔晶替换该标记，或去除这支部队。"
+          }
+        ],
+        "recruitLocations": "魔法塔、修道院、魔法空地",
+        "level": "II",
+        "influenceCost": "6",
+        "armor": "5",
+        "resistances": ""
+      },
+      "implemented": {
+        "status": "formal_entry_present",
+        "definitionLoader": "Assets/Logic/Data/UnitJsonLoader.cs",
+        "effects": "Assets/Logic/Runtime/CardUnitActions.cs",
+        "battleEntry": "Assets/Logic/Runtime/Battles/PveBattleSession.cs::UseUnit",
+        "outsideEntry": "Assets/Logic/Runtime/Battles/PveJourneySession.Units.cs::UseOutsideUnitCore",
+        "note": "按实际能力类型提供战内/战外入口；不表示各地点自然招募全验"
+      },
+      "primaryModes": [
+        {
+          "mode": "红调谐攻击5",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "familiar_consumers"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "familiar_consumers"
+            ],
+            "actualConsumer": "同招募魔宠真实攻击5击杀"
+          }
+        },
+        {
+          "mode": "蓝调谐格挡7",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "familiar_consumers"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "familiar_consumers"
+            ],
+            "actualConsumer": "同魔宠跨轮真实库存蓝晶维持后防御迅捷狼"
+          }
+        },
+        {
+          "mode": "白调谐移动5",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "familiar_consumers"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "familiar_consumers"
+            ],
+            "actualConsumer": "同招募魔宠实际移动到村庄"
+          }
+        },
+        {
+          "mode": "白调谐影响5",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "familiar_consumers"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "familiar_consumers"
+            ],
+            "actualConsumer": "同魔宠重整后真实买治疗"
+          }
+        },
+        {
+          "mode": "绿调谐治疗3",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "familiar_consumers"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "familiar_consumers"
+            ],
+            "actualConsumer": "同魔宠绿晶维持后治疗三张实际伤牌"
+          }
+        },
+        {
+          "mode": "招募基本色费/色标及每轮库存换色",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "familiar_consumers"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "familiar_consumers"
+            ],
+            "actualConsumer": "真实林地招募与正式轮前红→蓝、白→绿，不直接赋状态"
+          }
+        },
+        {
+          "mode": "非对应色基础攻击3/格挡4/移动或影响3/治疗2",
+          "implemented": true,
+          "backend": {
+            "status": "passed_exact_methods",
+            "xml": "AutomationOutputs/RulesState/20260923_025452_e400c660/results.xml",
+            "methods": [
+              "MK.Tests.Cards.MagicFamiliarsStateTests.AttackUsesPaidMarkerAndActualEnemyConsumerWithoutAnotherManaCost(White,3)",
+              "MK.Tests.Cards.MagicFamiliarsStateTests.BlockMarkerFeedsFormalBlockAndPreventsActualWounds(Red,4)",
+              "MK.Tests.Cards.MagicFamiliarsStateTests.HealingPaysForRealWoundCardsAndDoesNotHealTheUnitByReadying(Blue,2)"
+            ],
+            "additionalEvidence": {
+              "xml": "AutomationOutputs/RulesState/20260929_195848_27e5a6fe/results.xml",
+              "method": "MK.Tests.Battles.PveFamiliarBaseInfluenceJourneyTests.OriginalGladeTranceRecruitsRedFamiliarThenBaseInfluenceHealsRealPreviousBattleWound",
+              "result": "Passed"
+            }
+          },
+          "scene": {
+            "status": "partial_scope_passed",
+            "evidence": [
+              "glade_base_movement",
+              "familiar_consumers",
+              "familiar_base_influence"
+            ],
+            "actualConsumer": "原林地已红/蓝调谐同魔宠各提供基础移动3且真实移动消费（90→97、114→119）。原文基础值用于调谐颜色与该能力不匹配时；不得创建未调谐魔宠。 本批同一真实招募红调谐魔宠基础影响3全部支付村庄治疗1，上一战旧伤1→0；四正式回合和同单位实例保留。",
+            "remainingSceneBranches": [
+              "已非红调谐：攻击3",
+              "已非蓝调谐：格挡4",
+              "已非绿调谐：治疗2"
+            ]
+          },
+          "sharedImplementation": {
+            "path": "Assets/Logic/Runtime/FamiliarActions.cs:13",
+            "rule": "ability.Value + (标记色匹配能力色 ? 原AttunementBonus : 0)，共享公式；只将实际基础移动3记场景通过。 基础影响3现也已实际场景消费；攻击3/格挡4/治疗2保留后台参数+共享场景证据边界，不伪称精确值直接场景。"
+          }
+        },
+        {
+          "mode": "拒绝维持移除",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "familiar_consumers"
+            ]
+          },
+          "scene": {
+            "status": "backend_only",
+            "evidence": [
+              "familiar_consumers"
+            ],
+            "actualConsumer": "旧后台拒付移除；不纳入主要正常消费者重测"
+          }
+        }
+      ],
+      "unverified": [
+        "非对应色基础攻击3/格挡4/治疗2尚无该精确值直接场景；已有后台参数和共享分支证据",
+        "拒绝维持移除"
+      ]
+    },
+    {
+      "unitId": "army_2_005",
+      "name": "北地僧侣",
+      "original": {
+        "definition": "resources/text_json/army_2.json",
+        "jsonSelector": "id=army_2_005",
+        "art": "Assets/GameData/cards/army_2_005.png",
+        "printedAbilities": [
+          {
+            "mana_cost": "None",
+            "effect": "攻击或格挡3。"
+          },
+          {
+            "mana_cost": "蓝",
+            "effect": "寒冰攻击或寒冰格挡4。"
+          }
+        ],
+        "recruitLocations": "修道院",
+        "level": "II",
+        "influenceCost": "7",
+        "armor": "4",
+        "resistances": ""
+      },
+      "implemented": {
+        "status": "formal_entry_present",
+        "definitionLoader": "Assets/Logic/Data/UnitJsonLoader.cs",
+        "effects": "Assets/Logic/Runtime/CardUnitActions.cs",
+        "battleEntry": "Assets/Logic/Runtime/Battles/PveBattleSession.cs::UseUnit",
+        "outsideEntry": "Assets/Logic/Runtime/Battles/PveJourneySession.Units.cs::UseOutsideUnitCore",
+        "note": "按实际能力类型提供战内/战外入口；不表示各地点自然招募全验"
+      },
+      "primaryModes": [
+        {
+          "mode": "攻击/格挡3",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "monks"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "monks"
+            ],
+            "actualConsumer": "实际普通攻挡结算"
+          }
+        },
+        {
+          "mode": "蓝寒冰攻击/格挡4",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "monks"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "monks"
+            ],
+            "actualConsumer": "真实费用及元素攻挡结算"
+          }
+        }
+      ],
+      "unverified": []
+    },
+    {
+      "unitId": "army_2_006",
+      "name": "农民",
+      "original": {
+        "definition": "resources/text_json/army_2.json",
+        "jsonSelector": "id=army_2_006",
+        "art": "Assets/GameData/cards/army_2_006.png",
+        "printedAbilities": [
+          {
+            "mana_cost": "None",
+            "effect": "攻击或格挡2。"
+          },
+          {
+            "mana_cost": "None",
+            "effect": "影响力2。"
+          },
+          {
+            "mana_cost": "None",
+            "effect": "移动力2。"
+          }
+        ],
+        "recruitLocations": "村庄",
+        "level": "I",
+        "influenceCost": "4",
+        "armor": "3",
+        "resistances": ""
+      },
+      "implemented": {
+        "status": "formal_entry_present",
+        "definitionLoader": "Assets/Logic/Data/UnitJsonLoader.cs",
+        "effects": "Assets/Logic/Runtime/CardUnitActions.cs",
+        "battleEntry": "Assets/Logic/Runtime/Battles/PveBattleSession.cs::UseUnit",
+        "outsideEntry": "Assets/Logic/Runtime/Battles/PveJourneySession.Units.cs::UseOutsideUnitCore",
+        "note": "按实际能力类型提供战内/战外入口；不表示各地点自然招募全验"
+      },
+      "primaryModes": [
+        {
+          "mode": "攻击/格挡2",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "commoner",
+              "outside_units",
+              "journey_interaction"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "commoner",
+              "outside_units",
+              "journey_interaction"
+            ],
+            "actualConsumer": "实际近战及防御"
+          }
+        },
+        {
+          "mode": "影响2",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "commoner",
+              "outside_units",
+              "journey_interaction"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "commoner",
+              "outside_units",
+              "journey_interaction"
+            ],
+            "actualConsumer": "实际承伤付款/村庄交涉"
+          }
+        },
+        {
+          "mode": "移动2",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "commoner",
+              "outside_units",
+              "journey_interaction"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "commoner",
+              "outside_units",
+              "journey_interaction"
+            ],
+            "actualConsumer": "正式地图实际费用移动"
+          }
+        }
+      ],
+      "unverified": []
+    },
+    {
+      "unitId": "army_2_007",
+      "name": "赤袍僧侣",
+      "original": {
+        "definition": "resources/text_json/army_2.json",
+        "jsonSelector": "id=army_2_007",
+        "art": "Assets/GameData/cards/army_2_007.png",
+        "printedAbilities": [
+          {
+            "mana_cost": "None",
+            "effect": "攻击或格挡3"
+          },
+          {
+            "mana_cost": "红",
+            "effect": "火焰攻击或火焰格挡4"
+          }
+        ],
+        "recruitLocations": "修道院",
+        "level": "II",
+        "influenceCost": "7",
+        "armor": "4",
+        "resistances": ""
+      },
+      "implemented": {
+        "status": "formal_entry_present",
+        "definitionLoader": "Assets/Logic/Data/UnitJsonLoader.cs",
+        "effects": "Assets/Logic/Runtime/CardUnitActions.cs",
+        "battleEntry": "Assets/Logic/Runtime/Battles/PveBattleSession.cs::UseUnit",
+        "outsideEntry": "Assets/Logic/Runtime/Battles/PveJourneySession.Units.cs::UseOutsideUnitCore",
+        "note": "按实际能力类型提供战内/战外入口；不表示各地点自然招募全验"
+      },
+      "primaryModes": [
+        {
+          "mode": "攻击/格挡3",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "monks"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "monks"
+            ],
+            "actualConsumer": "实际普通攻挡结算"
+          }
+        },
+        {
+          "mode": "红火焰攻击/格挡4",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "monks"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "monks"
+            ],
+            "actualConsumer": "真实费用及元素攻挡结算"
+          }
+        }
+      ],
+      "unverified": []
+    },
+    {
+      "unitId": "army_2_008",
+      "name": "凶蛮僧侣",
+      "original": {
+        "definition": "resources/text_json/army_2.json",
+        "jsonSelector": "id=army_2_008",
+        "art": "Assets/GameData/cards/army_2_008.png",
+        "printedAbilities": [
+          {
+            "mana_cost": "None",
+            "effect": "攻击或格挡3。"
+          },
+          {
+            "mana_cost": "绿",
+            "effect": "攻城攻击4。"
+          }
+        ],
+        "recruitLocations": "修道院",
+        "level": "II",
+        "influenceCost": "7",
+        "armor": "4",
+        "resistances": ""
+      },
+      "implemented": {
+        "status": "formal_entry_present",
+        "definitionLoader": "Assets/Logic/Data/UnitJsonLoader.cs",
+        "effects": "Assets/Logic/Runtime/CardUnitActions.cs",
+        "battleEntry": "Assets/Logic/Runtime/Battles/PveBattleSession.cs::UseUnit",
+        "outsideEntry": "Assets/Logic/Runtime/Battles/PveJourneySession.Units.cs::UseOutsideUnitCore",
+        "note": "按实际能力类型提供战内/战外入口；不表示各地点自然招募全验"
+      },
+      "primaryModes": [
+        {
+          "mode": "攻击/格挡3",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "ranged_units"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "ranged_units"
+            ],
+            "actualConsumer": "实际普通攻挡"
+          }
+        },
+        {
+          "mode": "绿费攻城4",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "ranged_units"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "ranged_units"
+            ],
+            "actualConsumer": "实际绿费并先手击杀"
+          }
+        }
+      ],
+      "unverified": []
+    },
+    {
+      "unitId": "army_2_009",
+      "name": "斥候",
+      "original": {
+        "definition": "resources/text_json/army_2.json",
+        "jsonSelector": "id=army_2_009",
+        "art": "Assets/GameData/cards/army_2_009.png",
+        "printedAbilities": [
+          {
+            "mana_cost": "None",
+            "effect": "攻城攻击1。"
+          },
+          {
+            "mana_cost": "None",
+            "effect": "查看地图上3格之内一个正面朝下的标记，或者任何敌人标记堆顶部的一个标记。如果本回合中击败该标记，获得名望+1。"
+          },
+          {
+            "mana_cost": "None",
+            "effect": "移动力2。你可以在2格距离翻开一块新的板块。"
+          }
+        ],
+        "recruitLocations": "村庄、要塞、魔法塔、修道院、城市",
+        "level": "I",
+        "influenceCost": "4",
+        "armor": "2",
+        "resistances": ""
+      },
+      "implemented": {
+        "status": "formal_entry_present",
+        "definitionLoader": "Assets/Logic/Data/UnitJsonLoader.cs",
+        "effects": "Assets/Logic/Runtime/CardUnitActions.cs",
+        "battleEntry": "Assets/Logic/Runtime/Battles/PveBattleSession.cs::UseUnit",
+        "outsideEntry": "Assets/Logic/Runtime/Battles/PveJourneySession.Units.cs::UseOutsideUnitCore",
+        "note": "按实际能力类型提供战内/战外入口；不表示各地点自然招募全验"
+      },
+      "primaryModes": [
+        {
+          "mode": "攻城1",
+          "implemented": true,
+          "backend": {
+            "status": "passed_exact_methods",
+            "xml": "AutomationOutputs/RulesState/20260923_030209_f193d1c4/results.xml",
+            "methods": [
+              "MK.Tests.Cards.ScoutsStateTests.PrintedSiegeAddsOneToActualOriginalRangedAttack"
+            ],
+            "note": "只引用该Passed方法，不将030209原31/40混合结果写为全通过。"
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "remaining_unit_primary"
+            ],
+            "actualConsumer": "同斥候正式跨轮重整，攻城1与蓝费利斧3合计4恰杀甲4狼骑；名望21、蓝0、声誉0"
+          }
+        },
+        {
+          "mode": "私看三格内标记或堆顶及击败+1",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "outside_units"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "outside_units"
+            ],
+            "actualConsumer": "实际私看不公开；同守军战斗击杀且名望+1；堆顶分支后台"
+          }
+        },
+        {
+          "mode": "移动2",
+          "implemented": true,
+          "backend": {
+            "status": "passed_exact_methods",
+            "xml": "AutomationOutputs/RulesState/20260923_100318_20787bba/results.xml",
+            "methods": [
+              "MK.Tests.Battles.PveJourneyOutsideUnitTests.OriginalMovementEntersSharedPoolAndMovesSamePlayer(\"army_2_009\",2,3)"
+            ],
+            "note": "只引用该Passed方法，不将030209原31/40混合结果写为全通过。"
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "remaining_unit_primary"
+            ],
+            "actualConsumer": "真实原移动2付平原2到0,1，斥候耗竭"
+          }
+        },
+        {
+          "mode": "两格距离探索原新板块",
+          "implemented": true,
+          "backend": {
+            "status": "mapping_needed",
+            "evidence": []
+          },
+          "scene": {
+            "status": "not_scene_verified",
+            "evidence": [],
+            "actualConsumer": "原后续板块与合法探索消费者尚缺，不以自定单格揭示替代"
+          },
+          "implementationNote": "后台能力许可已有；原后续板块场景路线缺失，formal_entry_present不等于完整探索可玩。"
+        }
+      ],
+      "unverified": [
+        "两格距离探索原新板块"
+      ]
+    },
+    {
+      "unitId": "army_2_010",
+      "name": "奇袭队",
+      "original": {
+        "definition": "resources/text_json/army_2.json",
+        "jsonSelector": "id=army_2_010",
+        "art": "Assets/GameData/cards/army_2_010.png",
+        "printedAbilities": [
+          {
+            "mana_cost": "None",
+            "effect": "远程攻击1。本回合中你所有其他部队的所有攻击+1。"
+          },
+          {
+            "mana_cost": "None",
+            "effect": "使一个敌人的护甲和一次攻击降低1点。"
+          },
+          {
+            "mana_cost": "None",
+            "effect": "使一次敌人的攻击降低3点。即使敌人具有刺杀，此次攻击造成的伤害必须先分配给这支部队。"
+          }
+        ],
+        "recruitLocations": "要塞",
+        "level": "II",
+        "influenceCost": "6",
+        "armor": "3",
+        "resistances": ""
+      },
+      "implemented": {
+        "status": "formal_entry_present",
+        "definitionLoader": "Assets/Logic/Data/UnitJsonLoader.cs",
+        "effects": "Assets/Logic/Runtime/CardUnitActions.cs",
+        "battleEntry": "Assets/Logic/Runtime/Battles/PveBattleSession.cs::UseUnit",
+        "outsideEntry": "Assets/Logic/Runtime/Battles/PveJourneySession.Units.cs::UseOutsideUnitCore",
+        "note": "按实际能力类型提供战内/战外入口；不表示各地点自然招募全验"
+      },
+      "primaryModes": [
+        {
+          "mode": "远程1且其他部队攻击+1",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "shock_forester"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "shock_forester"
+            ],
+            "actualConsumer": "真实弩手2→3合计4击杀"
+          }
+        },
+        {
+          "mode": "减一敌护甲和一次攻击各1",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "shock_forester"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "shock_forester"
+            ],
+            "actualConsumer": "实际目标护甲/攻击各减1，护林人格挡及原卡击杀"
+          }
+        },
+        {
+          "mode": "一次攻击-3并强制自身先承伤",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "shock_third"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "shock_third"
+            ],
+            "actualConsumer": "原敌攻击4→1、原奇袭创伤1/英雄手伤0"
+          }
+        }
+      ],
+      "unverified": []
+    },
+    {
+      "unitId": "army_2_011",
+      "name": "暴徒",
+      "original": {
+        "definition": "resources/text_json/army_2.json",
+        "jsonSelector": "id=army_2_011",
+        "art": "Assets/GameData/cards/army_2_011.png",
+        "printedAbilities": [
+          {
+            "mana_cost": "None",
+            "effect": "格挡3"
+          },
+          {
+            "mana_cost": "None",
+            "effect": "攻击3，声誉-1"
+          },
+          {
+            "mana_cost": "None",
+            "effect": "影响力4，声誉-1"
+          }
+        ],
+        "recruitLocations": "村庄,城堡",
+        "level": "I",
+        "influenceCost": "5",
+        "armor": "5",
+        "resistances": ""
+      },
+      "implemented": {
+        "status": "formal_entry_present",
+        "definitionLoader": "Assets/Logic/Data/UnitJsonLoader.cs",
+        "effects": "Assets/Logic/Runtime/CardUnitActions.cs",
+        "battleEntry": "Assets/Logic/Runtime/Battles/PveBattleSession.cs::UseUnit",
+        "outsideEntry": "Assets/Logic/Runtime/Battles/PveJourneySession.Units.cs::UseOutsideUnitCore",
+        "note": "按实际能力类型提供战内/战外入口；不表示各地点自然招募全验"
+      },
+      "primaryModes": [
+        {
+          "mode": "格挡3",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "commoner",
+              "heroes_village"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "commoner",
+              "heroes_village"
+            ],
+            "actualConsumer": "真实防御消费者"
+          }
+        },
+        {
+          "mode": "攻击3声誉-1",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "commoner",
+              "heroes_village"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "commoner",
+              "heroes_village"
+            ],
+            "actualConsumer": "真实攻击和声誉支出"
+          }
+        },
+        {
+          "mode": "影响4声誉-1",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "commoner",
+              "heroes_village"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "commoner",
+              "heroes_village"
+            ],
+            "actualConsumer": "实际村庄购买治疗"
+          }
+        },
+        {
+          "mode": "承伤前支付影响2",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "commoner",
+              "heroes_village"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "commoner",
+              "heroes_village"
+            ],
+            "actualConsumer": "真实农民影响2支付暴徒承伤"
+          }
+        },
+        {
+          "mode": "招募整次声誉反转一次",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "thug_original_recruit"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "thug_original_recruit"
+            ],
+            "actualConsumer": "旧原单位场景24–27真实招募与交涉消费；非新PVE截图但有效有限证据"
+          }
+        }
+      ],
+      "unverified": []
+    },
+    {
+      "unitId": "army_2_012",
+      "name": "乌顿弩手",
+      "original": {
+        "definition": "resources/text_json/army_2.json",
+        "jsonSelector": "id=army_2_012",
+        "art": "Assets/GameData/cards/army_2_012.png",
+        "printedAbilities": [
+          "攻击或格挡3。",
+          "远程攻击2。"
+        ],
+        "recruitLocations": "城堡,村庄",
+        "level": "II",
+        "influenceCost": "6",
+        "armor": "4",
+        "resistances": ""
+      },
+      "implemented": {
+        "status": "formal_entry_present",
+        "definitionLoader": "Assets/Logic/Data/UnitJsonLoader.cs",
+        "effects": "Assets/Logic/Runtime/CardUnitActions.cs",
+        "battleEntry": "Assets/Logic/Runtime/Battles/PveBattleSession.cs::UseUnit",
+        "outsideEntry": "Assets/Logic/Runtime/Battles/PveJourneySession.Units.cs::UseOutsideUnitCore",
+        "note": "按实际能力类型提供战内/战外入口；不表示各地点自然招募全验"
+      },
+      "primaryModes": [
+        {
+          "mode": "攻击/格挡3",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "ranged_units",
+              "shock_forester"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "ranged_units",
+              "shock_forester"
+            ],
+            "actualConsumer": "真实普通攻挡"
+          }
+        },
+        {
+          "mode": "远程2",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "ranged_units",
+              "shock_forester"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "ranged_units",
+              "shock_forester"
+            ],
+            "actualConsumer": "先手真实击杀；新奇袭同部队加值"
+          }
+        }
+      ],
+      "unverified": []
+    },
+    {
+      "unitId": "army_2_013",
+      "name": "乌顿守卫",
+      "original": {
+        "definition": "resources/text_json/army_2.json",
+        "jsonSelector": "id=army_2_013",
+        "art": "Assets/GameData/cards/army_2_013.png",
+        "printedAbilities": [
+          "攻击2。",
+          "格挡4。对抗迅捷攻击时计算两次。"
+        ],
+        "recruitLocations": "城堡、城镇",
+        "level": "II",
+        "influenceCost": "5",
+        "armor": "5",
+        "resistances": ""
+      },
+      "implemented": {
+        "status": "formal_entry_present",
+        "definitionLoader": "Assets/Logic/Data/UnitJsonLoader.cs",
+        "effects": "Assets/Logic/Runtime/CardUnitActions.cs",
+        "battleEntry": "Assets/Logic/Runtime/Battles/PveBattleSession.cs::UseUnit",
+        "outsideEntry": "Assets/Logic/Runtime/Battles/PveJourneySession.Units.cs::UseOutsideUnitCore",
+        "note": "按实际能力类型提供战内/战外入口；不表示各地点自然招募全验"
+      },
+      "primaryModes": [
+        {
+          "mode": "攻击2",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "utem"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "utem"
+            ],
+            "actualConsumer": "实际近战击杀"
+          }
+        },
+        {
+          "mode": "格挡4及对迅捷两次计算",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "utem"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "utem"
+            ],
+            "actualConsumer": "真实普通与迅捷防御需求"
+          }
+        }
+      ],
+      "unverified": []
+    },
+    {
+      "unitId": "army_2_014",
+      "name": "乌顿剑士",
+      "original": {
+        "definition": "resources/text_json/army_2.json",
+        "jsonSelector": "id=army_2_014",
+        "art": "Assets/GameData/cards/army_2_014.png",
+        "printedAbilities": [
+          "攻击或格挡3。",
+          "攻击或格挡6。这支队伍受到一点创伤。"
+        ],
+        "recruitLocations": "城堡",
+        "level": "II",
+        "influenceCost": "6",
+        "armor": "4",
+        "resistances": ""
+      },
+      "implemented": {
+        "status": "formal_entry_present",
+        "definitionLoader": "Assets/Logic/Data/UnitJsonLoader.cs",
+        "effects": "Assets/Logic/Runtime/CardUnitActions.cs",
+        "battleEntry": "Assets/Logic/Runtime/Battles/PveBattleSession.cs::UseUnit",
+        "outsideEntry": "Assets/Logic/Runtime/Battles/PveJourneySession.Units.cs::UseOutsideUnitCore",
+        "note": "按实际能力类型提供战内/战外入口；不表示各地点自然招募全验"
+      },
+      "primaryModes": [
+        {
+          "mode": "攻击/格挡3",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "utem"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "utem"
+            ],
+            "actualConsumer": "真实普通攻挡"
+          }
+        },
+        {
+          "mode": "自伤攻击/格挡6",
+          "implemented": true,
+          "backend": {
+            "status": "referenced_passed_scope",
+            "evidence": [
+              "utem"
+            ]
+          },
+          "scene": {
+            "status": "passed_finite_scope",
+            "evidence": [
+              "utem"
+            ],
+            "actualConsumer": "原部队真实创伤及攻挡结算"
+          }
+        }
+      ],
+      "unverified": []
+    }
+  ],
+  "summary": {
+    "unitCount": 30,
+    "modeCount": 98,
+    "sceneStatusCounts": {
+      "passed_finite_scope": 91,
+      "not_scene_verified": 5,
+      "partial_scope_passed": 1,
+      "backend_only": 1
+    },
+    "note": "计数为模式记录非测试数，四勇者共享模式按UnitID重复列示，不重复计后台/场景断言。并非30/30全部规则结论。"
+  },
+  "mappingAudit": {
+    "worklog": "vibe_coding/codex/worklog_2026-09-29_unit_evidence_mapping.md",
+    "status": "8个待映射记录已定向查证，不再停留mapping_needed",
+    "historicalOriginalUnits": "读6个request中art列；旧8单位+暴徒/枪手/农民批次无本次目标ID，未扫大report",
+    "result": "魔宠基础移动3已有场景；7记录升级明确scene_needed，其中4勇者是同一共享费用需求。魔宠其他基础分支保留partial。",
+    "followup": "20260929_181557_d1629d33已补巫师免费远程3、斥候攻城1/移动2，三项退出待测；最终tmp/pve_primary_delta_final_console.json实际两次零错误。",
+    "heroesAssaultFollowup": "184358白勇者实际突袭已验，共用收费四记录退出待测；pve_heroes_assault_fee_acceptance_index.json已记录最终Console通过。精英招募翻倍仍未验。",
+    "remainingScopeAudit": "vibe_coding/codex/unit_remaining_scope_after_special_2026-09-29.md",
+    "finalDeltaAudit": "vibe_coding/codex/unit_final_delta_2026-09-29.md",
+    "currentBackendMappingLimitation": "唯一backend.mapping_needed为斥候完整原板块探索消费者，属于真实世界依赖，非要求重新扫描旧日志。"
+  }
+}

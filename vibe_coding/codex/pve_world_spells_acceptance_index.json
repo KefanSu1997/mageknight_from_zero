@@ -1,0 +1,124 @@
+{
+  "scope": "Original004/023, persistent world guards, conquest/reward and actual movement/battle/healing",
+  "backendPassed": 21,
+  "backendCases": {
+    "MK.Tests.Battles.PveWorldJourneyEntryTests.InnateFortificationSurvivesTunnelAndRetreatDrawsNextActualGuardNextTurn": "20260923_094234_80390e0d",
+    "MK.Tests.Battles.PveWorldJourneyEntryTests.MissingGreenFeeDoesNotDrawReplacementOrMovePlayer": "20260923_094234_80390e0d",
+    "MK.Tests.Battles.PveWorldJourneyEntryTests.MissingPhysicalDefenderRejectsBeforeFeesPositionOrCardsChange(\"empty\")": "20260923_094234_80390e0d",
+    "MK.Tests.Battles.PveWorldJourneyEntryTests.MissingPhysicalDefenderRejectsBeforeFeesPositionOrCardsChange(\"foreign\")": "20260923_094234_80390e0d",
+    "MK.Tests.Battles.PveWorldJourneyEntryTests.MissingPhysicalDefenderRejectsBeforeFeesPositionOrCardsChange(\"replacement_without_supply\")": "20260923_094234_80390e0d",
+    "MK.Tests.Battles.PveWorldJourneyEntryTests.OfferedTunnelConsumesOriginalGreenPermissionAndAttachesSameWorldBattle": "20260923_094234_80390e0d",
+    "MK.Tests.Battles.PveWorldJourneyEntryTests.OriginalTunnelAttachesSameGuardAndSettlesActualSiteBeforeFormalTurnReward(MageTower,\"monster_002\")": "20260923_094234_80390e0d",
+    "MK.Tests.Battles.PveWorldJourneyEntryTests.PlayerOccupiedDestinationRejectsUnsupportedPvpBeforeOriginalPayment": "20260923_094234_80390e0d",
+    "MK.Tests.Battles.PveWorldSpellInputTests.NightWingsRejectsActuallyDefeatedOrOriginalArcaneImmuneTargetBeforePayment(False)": "20260923_094234_80390e0d",
+    "MK.Tests.Battles.PveWorldSpellInputTests.NightWingsRejectsActuallyDefeatedOrOriginalArcaneImmuneTargetBeforePayment(True)": "20260923_094234_80390e0d",
+    "MK.Tests.Battles.PveWorldSpellInputTests.NightWingsSelectsNonPrefixLiveEnemiesAndOnlyOthersActuallyDamageHero(2,1)": "20260923_094234_80390e0d",
+    "MK.Tests.Battles.PveWorldSpellInputTests.NightWingsSelectsNonPrefixLiveEnemiesAndOnlyOthersActuallyDamageHero(3,3)": "20260923_094234_80390e0d",
+    "MK.Tests.Battles.PveWorldSpellInputTests.TunnelRejectsForbiddenIntermediateTerrainBeforeManaOrCardConsumption(Lake)": "20260923_094234_80390e0d",
+    "MK.Tests.Battles.PveWorldSpellInputTests.TunnelRejectsForbiddenIntermediateTerrainBeforeManaOrCardConsumption(Swamp)": "20260923_094234_80390e0d",
+    "MK.Tests.Battles.PveWorldSpellInputTests.WindWingsRejectsDisconnectedPathOrUnsafeActualEndpointAtomically(False)": "20260923_094234_80390e0d",
+    "MK.Tests.Battles.PveWorldSpellInputTests.WindWingsRejectsDisconnectedPathOrUnsafeActualEndpointAtomically(True)": "20260923_094234_80390e0d",
+    "MK.Tests.Battles.PveWorldSpellInputTests.WindWingsSpendsPrintedWhiteAndOneActualMovePerPathStep(1)": "20260923_094234_80390e0d",
+    "MK.Tests.Battles.PveWorldSpellInputTests.WindWingsSpendsPrintedWhiteAndOneActualMovePerPathStep(5)": "20260923_094234_80390e0d",
+    "MK.Tests.Battles.PveWorldJourneyEntryTests.OriginalTunnelAttachesSameGuardAndSettlesActualSiteBeforeFormalTurnReward(Keep,\"monster_027\")": "20260923_094343_07fe883b",
+    "MK.Tests.Battles.PveWorldSpellInputTests.TunnelBasePaysGreenAndMovesActualPathWithoutSpendingMovement(1)": "20260923_094343_07fe883b",
+    "MK.Tests.Battles.PveWorldSpellInputTests.TunnelBasePaysGreenAndMovesActualPathWithoutSpendingMovement(3)": "20260923_094343_07fe883b"
+  },
+  "sceneSteps": 130,
+  "sceneAssertions": 192,
+  "sceneRuns": [
+    {
+      "run": "20260923_094922_80ac5dff",
+      "reportStatus": "failed",
+      "acceptedSteps": [
+        0,
+        42
+      ],
+      "assertions": 52,
+      "reportSha256": "752ad167aa3d4ce958b799e85b8543363a1b0a3483209e9e9479a2bf1b31855a"
+    },
+    {
+      "run": "20260923_095116_b159f35f",
+      "reportStatus": "success",
+      "acceptedSteps": [
+        43,
+        62
+      ],
+      "assertions": 41,
+      "reportSha256": "174de7a3f6c0664ee71a65fb02142a92866916133fc8525d6761d848ebbbb457"
+    },
+    {
+      "run": "20260923_095251_5c319d7d",
+      "reportStatus": "success",
+      "acceptedSteps": [
+        0,
+        66
+      ],
+      "assertions": 99,
+      "reportSha256": "c19bb8a5b88797a54a38777ec279d30795362d5f86849a055e896fd7927fd42d"
+    }
+  ],
+  "rewardStateAudit": {
+    "sourceReport": "20260923_095116_b159f35f",
+    "selectedStep": 61,
+    "endTurnStep": 62,
+    "selectedOriginal": "magic_005",
+    "beforeHand": "basic_card_000",
+    "afterHand": "basic_card_000,magic_005",
+    "supplyAfter": "magic_014,magic_000,magic_021",
+    "passed": true,
+    "note": "已有实际操作报告的补充状态核对；未重跑场景，未修改原报告，不计入192项运行中断言"
+  },
+  "screenshotsReviewed": [
+    "AutomationOutputs/PveBattle/20260923_095116_b159f35f/captures/044_终点实际法师塔.png",
+    "AutomationOutputs/PveBattle/20260923_095116_b159f35f/captures/045_原地道绿黑费用、真实守军进入同一战斗.png",
+    "AutomationOutputs/PveBattle/20260923_095116_b159f35f/captures/049_选择实际法师塔守军.png",
+    "AutomationOutputs/PveBattle/20260923_095116_b159f35f/captures/050_支付白黑；首目标不额外花移动.png",
+    "AutomationOutputs/PveBattle/20260923_095116_b159f35f/captures/056_正式费用与火焰攻击.png",
+    "AutomationOutputs/PveBattle/20260923_095116_b159f35f/captures/060_征服地点，弃置实际守军，待领奖励.png",
+    "AutomationOutputs/PveBattle/20260923_095116_b159f35f/captures/061_选择实际供应首张原法术.png",
+    "AutomationOutputs/PveBattle/20260923_095116_b159f35f/captures/062_正式回合末取得奖励并补牌，持续地图保留.png",
+    "AutomationOutputs/PveBattle/20260923_095251_5c319d7d/captures/032_终点安全沙漠.png",
+    "AutomationOutputs/PveBattle/20260923_095251_5c319d7d/captures/033_地道绿标费用，不产生也不扣移动.png",
+    "AutomationOutputs/PveBattle/20260923_095251_5c319d7d/captures/045_第四格安全平原.png",
+    "AutomationOutputs/PveBattle/20260923_095251_5c319d7d/captures/046_飞翼白标加4移动，越山湖仍逐格付费.png",
+    "AutomationOutputs/PveBattle/20260923_095251_5c319d7d/captures/058_正式回合结束保留位置与真实伤牌.png",
+    "AutomationOutputs/PveBattle/20260923_095251_5c319d7d/captures/064_原宁静消费一点治疗，仅移除一张伤.png",
+    "AutomationOutputs/PveBattle/20260923_095251_5c319d7d/captures/066_第二回合保留另一真实伤牌.png"
+  ],
+  "supersededScreenshotsReviewed": [
+    "AutomationOutputs/PveBattle/20260923_094922_80ac5dff/captures/044_终点实际法师塔.png",
+    "AutomationOutputs/PveBattle/20260923_094922_80ac5dff/captures/046_黑夜之翼.png"
+  ],
+  "console": "tmp/pve_20260923_world_final_console.json",
+  "sourceSha256": {
+    "Assets/Logic/Runtime/Battles/PveDeedInputs.cs": "650c256aae30c6584159a490eb9e28553688b4fb0f762aa30d312b279aaa26ae",
+    "Assets/Logic/Runtime/Battles/PveBattleSession.cs": "9ea67e14a42f92c78e509760f478163e23cd21efe8d38fc8c6daf67c919ac6e3",
+    "Assets/Logic/Runtime/Battles/PveJourneySession.cs": "53ea36a487c814db0f9efeebd6665ecd496c62a71ec9c2a45f1711f6334cd343",
+    "Assets/Logic/Runtime/Battles/PveJourneySession.World.cs": "bcfcbdea2ab7deabaf636a7bd9b4a02b4ca7201fc22237e310a4188e57c89ed7",
+    "Assets/Logic/Runtime/Battles/PveJourneySession.OfferedSpells.cs": "ddf408fd8e64f780f4592a726cef895845eb93beabe688c89815b08cda7d472e",
+    "Assets/Scripts/Battle/PveBattleController.cs": "14008c211179418cb9e744485eea59e8aaa41185245968ecd576d9f30475fd60",
+    "Assets/Scripts/Battle/PveBattleController.DeedInputs.cs": "a2ede4e65915c1ed0718ee693bef47c728e57a2291dfd858a95fd0f2e8205662",
+    "Assets/Scripts/Battle/PveBattleController.Journey.cs": "fd468b2a502dec6cd8cb41e3ab1b9194185a7cce067d931b19b445d7146eccc1",
+    "Assets/Scripts/Battle/PveBattleController.JourneyMap.cs": "dd70570da2a4951255e6dbd9d4f88075b741b8176854d26e9aa5d794dca96f9b",
+    "Assets/Scripts/Battle/PveBattleController.WorldSpells.cs": "17f148c52300f7ecfd0a39fe59c1d55f69b6dd509fac62482a3e31c57b5f1233",
+    "Assets/Scripts/Adventure/Content/AdventureDefinition.cs": "fa5167da4f07f2e9f01a1220e3775954bc720e24056dc6817e2257b8a3c6684a",
+    "Assets/GameData/BattleDemo/JourneyRoute.asset": "0f3f6b682ed996048c4c796199c26c115b2134598a33ebd4ed1e8115fa30f844",
+    "Assets/Scenes/Part1/Part1_PveBattle.unity": "fb4f3be1ec78ec4ce8489ad0785ec9568cf37253bd5900c5948ddedb77ec196c",
+    "Assets/Tests/RulesState/PveWorldJourneyEntryTests.cs": "4b0fd1f5563981adf27207fb1deca9878d6e50e3e2d28cd7a82314e8a1436fbd",
+    "Assets/Tests/RulesState/PveWorldSpellInputTests.cs": "5e323a4ccca694857108f5765c1ea3575e8fac34d27d8265f9f806142e154f87",
+    "tools/build_pve_world_spells_acceptance.py": "fcc3c2efb46859b7df9d7a0ad59f8ff0424c3425caad5fe14c6309112d2dc5e8",
+    "tools/build_pve_world_travel_acceptance.py": "1f738f72d80046f988493916816dbfe0bc654dc15dfc60a622394711f5ed3233"
+  },
+  "pending": [
+    "自定已揭示地形布局、有限4守军供给；完整原世界探索、普通地点突袭及城市多守军仍未接入本Demo",
+    "004要塞撤退/实际换守军重攻仅本批后台，023多目标递增消费仅本批后台，待分组连续场景",
+    "其他卡的未覆盖分支、其余部队技能与独立地点美术仍待；不能从选择映射数推导全量完成"
+  ],
+  "notes": [
+    "第一次后台18/21；仅3个缺真实余牌的跨回合夹具修正后补3/3，失败保留",
+    "场景初次46发生按钮文字截断，另44路径标题碰卡面；修正标签/标题位置后仅43起断言与截图。前置操作仍重放",
+    "15有效关键图及2旧失败/布局图已看；正式费用规则未因UI修复改变",
+    "整体active，未上传或推送；已通过无影响范围不重跑"
+  ]
+}

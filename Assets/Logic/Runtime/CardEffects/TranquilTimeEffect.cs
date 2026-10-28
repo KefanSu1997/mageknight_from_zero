@@ -14,8 +14,9 @@ namespace MK.Logic.Runtime.CardEffects
         {
             ctx.InfluencePool += _enh ? 6 : 3;
             ctx.HealInfluenceRate = 2;
+            ctx.PeacefulMomentAvailable = true;
             if (_enh)
-                ctx.ReadyInfluencePerLevel = 2;
+                ctx.PeacefulMomentReady = true;
         }
     }
 }

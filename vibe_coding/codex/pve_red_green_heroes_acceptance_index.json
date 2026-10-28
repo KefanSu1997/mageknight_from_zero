@@ -1,0 +1,46 @@
+{
+  "scope": "Red Heroes actual red ColdFire6 kill; Green Heroes actual green healing4 paid unit level and original wound without readiness; formal round same units free block5/attack5",
+  "run": "20260929_162047_17f0577f",
+  "steps": 105,
+  "assertions": 168,
+  "sha256": "8f2eeeeda9b4377be436b2fbdfb5062bbf7766a874e81714921c116f7e766f5f",
+  "unitIdentityChecks": [
+    {
+      "step": 31,
+      "instances": "army_009:1235942472,army_010:-1353414204,army_2_003:-2042418952"
+    },
+    {
+      "step": 58,
+      "instances": "army_009:1235942472,army_010:-1353414204,army_2_003:-2042418952"
+    },
+    {
+      "step": 60,
+      "instances": "army_009:1235942472,army_010:-1353414204,army_2_003:-2042418952"
+    },
+    {
+      "step": 69,
+      "instances": "army_009:1235942472,army_010:-1353414204,army_2_003:-2042418952"
+    },
+    {
+      "step": 75,
+      "instances": "army_009:1235942472,army_010:-1353414204,army_2_003:-2042418952"
+    },
+    {
+      "step": 96,
+      "instances": "army_009:1235942472,army_010:-1353414204,army_2_003:-2042418952"
+    },
+    {
+      "step": 104,
+      "instances": "army_009:1235942472,army_010:-1353414204,army_2_003:-2042418952"
+    }
+  ],
+  "reviewedScreenshots": [
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_162047_17f0577f\\captures\\058_真正承伤：幻术师创伤1，旧手伤仍1.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_162047_17f0577f\\captures\\060_实际红晶2变1，原冰火攻击6.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_162047_17f0577f\\captures\\069_按真实等级2支付，治疗不重整.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_162047_17f0577f\\captures\\075_同三单位正式重整、无伤状态保留.png"
+  ],
+  "backendReused": "20260923_021816_212ab687 RedColdFire / GreenHealing / OrdinaryAttackOrBlock",
+  "console": "tmp/pve_sorcerer_heroes_final_console.json",
+  "limitations": "Legal custom Lv6 five-card snapshot; common Heroes interaction not covered by this scene"
+}

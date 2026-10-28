@@ -58,7 +58,8 @@ namespace MK.Tests.game
             
             var pickedCard = _advActionSupply.Take(0); // Take bottom card
             Assert.AreEqual("card1", pickedCard.Id);
-            Assert.AreEqual(2, _advActionSupply.Offer.Count);
+            Assert.AreEqual(3, _advActionSupply.Offer.Count, "Gaining from the offer immediately replenishes it (rulebook p.5).");
+            Assert.AreEqual("card4", _advActionSupply.Offer[2].Id);
         }
 
         [Test]

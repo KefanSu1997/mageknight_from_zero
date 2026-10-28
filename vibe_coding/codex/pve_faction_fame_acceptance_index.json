@@ -1,0 +1,47 @@
+{
+  "status": "scene_passed_official_just_fame_variant",
+  "mode": "TezlaJustFame",
+  "implemented": true,
+  "backendPassed": true,
+  "scenePassed": true,
+  "fullFactionTokensImplemented": false,
+  "source": {
+    "pdf": "tmp/pdfs/tezla_official_rules.pdf",
+    "page": 3,
+    "variant": "Just Fame"
+  },
+  "backend": {
+    "xml": "AutomationOutputs/RulesState/20260929_210703_b366fb02/results.xml",
+    "passed": 4,
+    "assertions": 62,
+    "methods": [
+      "MK.Tests.Battles.TezlaJustFameRewardTests.DefaultModeAndNonFactionEnemyKeepPrintedRewardsAndIdentityIsNotRemovableAbility",
+      "MK.Tests.Battles.TezlaJustFameRewardTests.JustFameOriginalSixCardBattleAndNextFormalRoundKeepSamePlayerWithoutOldRewardReplay",
+      "MK.Tests.Battles.TezlaJustFameRewardTests.OriginalFactionKillsUseRangedMeleeAndDirectPathsExactlyOnce",
+      "MK.Tests.Battles.TezlaJustFameRewardTests.SuccessfulBlockDestructionAlsoGrantsOfficialFactionBonusOnce"
+    ]
+  },
+  "scene": {
+    "report": "AutomationOutputs/PveBattle/20260929_211247_008eb6e8/report.json",
+    "sha256": "b3288dd5ebccd8280c2060f54fce4970bebb63611549aeac8f43e52162f6940b",
+    "replayOperations": 65,
+    "checkedSteps": 6,
+    "assertions": 30,
+    "captures": [
+      "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_211247_008eb6e8\\captures\\024_原057与两个独立032，可复用战斗遭遇非原图探索.png",
+      "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_211247_008eb6e8\\captures\\057_原攻击3实际击杀低甲1蝠.png",
+      "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_211247_008eb6e8\\captures\\064_同玩家下一轮开始且已花晶不恢复.png"
+    ],
+    "visualReview": "主代理核对原蝠双甲/三能力与名望1+1可见；实际击杀名望42；正式夜轮同六牌/红蓝0/奖励模式说明均符合。",
+    "scope": "Actual bat melee kill earns exactly one faction bonus; non-faction group gets none; original Throwing Axe reward remains separate; formal next round preserves42."
+  },
+  "compileConsole": "tmp/pve_faction_fame_compile_console.json",
+  "layoutCompileConsole": "tmp/pve_faction_fame_layout_compile_console.json",
+  "finalConsole": "tmp/pve_faction_fame_final_console.json",
+  "retainedFailure": "AutomationOutputs/PveBattle/20260929_210916_1ee7112b/report.json: first check24 Numbers overflow, only display shortened; no rule/expectation weakened",
+  "remaining": [
+    "Full faction reward token abilities not implemented; Demo explicitly uses official Just Fame variant",
+    "Original later countryside/core map tile sources and actual exploration/elite supply",
+    "Normal Headband borrowing Master of Chaos initialization requires reliable source or explicitly accepted interpretation"
+  ]
+}

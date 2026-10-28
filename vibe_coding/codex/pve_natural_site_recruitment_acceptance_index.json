@@ -1,0 +1,87 @@
+{
+  "scope": "Actual tower conquest and formal reward, next-turn original unit recruitment, same-unit and retained reward-card combat consumer",
+  "backend": {
+    "report": "AutomationOutputs/RulesState/20260929_171747_fa03220e/results.xml",
+    "passed": 46,
+    "new": 21
+  },
+  "scene": "AutomationOutputs/PveBattle/20260929_172048_1890cc47/report.json",
+  "sha256": "a351e362dff0fffe22b3a77a1556f1d242bf906ba1ce2d8cfa252367597d0f6d",
+  "steps": 80,
+  "assertions": 157,
+  "identityChecks": [
+    {
+      "step": 48,
+      "units.instances": "",
+      "journey.samePlayer": "True",
+      "journey.position": "-1,-1",
+      "world.conquered": "-1:-1",
+      "journey.siteRecruitLocation": "MageTower"
+    },
+    {
+      "step": 50,
+      "units.instances": "",
+      "journey.samePlayer": "True",
+      "journey.position": "-1,-1",
+      "world.conquered": "-1:-1",
+      "journey.siteRecruitLocation": "MageTower"
+    },
+    {
+      "step": 53,
+      "units.instances": "",
+      "journey.samePlayer": "True",
+      "journey.position": "-1,-1",
+      "world.conquered": "-1:-1",
+      "journey.siteRecruitLocation": "MageTower"
+    },
+    {
+      "step": 62,
+      "units.instances": "army_2_001:-996623390",
+      "journey.samePlayer": "True",
+      "journey.position": "-1,-1",
+      "world.conquered": "-1:-1",
+      "journey.siteRecruitLocation": "MageTower"
+    },
+    {
+      "step": 64,
+      "units.instances": "army_2_001:-996623390",
+      "journey.samePlayer": "True",
+      "journey.position": "-1,-1",
+      "world.conquered": "-1:-1",
+      "journey.siteRecruitLocation": "MageTower"
+    },
+    {
+      "step": 72,
+      "units.instances": "army_2_001:-996623390",
+      "journey.samePlayer": "True",
+      "journey.position": "-1,-1",
+      "world.conquered": "-1:-1",
+      "journey.siteRecruitLocation": "MageTower"
+    },
+    {
+      "step": 79,
+      "units.instances": "army_2_001:-996623390",
+      "journey.samePlayer": "True",
+      "journey.position": "-1,-1",
+      "world.conquered": "-1:-1",
+      "journey.siteRecruitLocation": "MageTower"
+    }
+  ],
+  "reviewedScreenshots": [
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_172048_1890cc47\\captures\\048_实际征服并把原守军弃置，未预置Conquered.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_172048_1890cc47\\captures\\062_支付7实际招募同供应原魔像.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_172048_1890cc47\\captures\\072_原免费普通攻击2且同单位耗竭.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_172048_1890cc47\\captures\\079_三回合持续地点归属、新单位及原伤.png"
+  ],
+  "console": "tmp/pve_site_recruitment_final_console.json",
+  "consoleErrors": [
+    0,
+    0
+  ],
+  "limitations": [
+    "Keep and City/white-city recruitment implemented with backend evidence only in this batch; tower is actual scene scope",
+    "Existing authored training world with real guards and original rules, not completed original seven-hex map exploration",
+    "Monastery burn lifecycle and city special purchases remain incomplete",
+    "No fixture/seed change or remote push"
+  ]
+}

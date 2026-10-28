@@ -1,0 +1,109 @@
+{
+  "scope": "037/038/040/041原操作输入与实际消费者",
+  "backendPassed": 26,
+  "backendCases": {
+    "MK.Tests.Battles.PveCrystalBoltEntryTests.CrystalPowerRejectsExistingBaseColorAndCombatHealingBeforeFees": "20260923_081744_b847cdd0",
+    "MK.Tests.Battles.PveCrystalBoltEntryTests.ExplosiveLastEnemyRewardCanBeDeclinedAndBaseWoundCrystalsAreReal": "20260923_081744_b847cdd0",
+    "MK.Tests.Battles.PveCrystalBoltEntryTests.MissingCrystalIsActuallyPaidByFollowingOriginalCard": "20260923_081744_b847cdd0",
+    "MK.Tests.Battles.PveCrystalBoltEntryTests.PayingLastBlueCrystalBreaksSetBeforeChoosingDrawBonus": "20260923_081744_b847cdd0",
+    "MK.Tests.Battles.PveMaterialUnitEntryTests.NatureRequiresActualOwnedUnitBeforePlaying": "20260923_081744_b847cdd0",
+    "MK.Tests.Battles.PveMaterialUnitEntryTests.NatureStrongOriginalGreenFeeAndActualSiegeOrSwiftBlockConsumer(False)": "20260923_081744_b847cdd0",
+    "MK.Tests.Battles.PveMaterialUnitEntryTests.NatureStrongOriginalGreenFeeAndActualSiegeOrSwiftBlockConsumer(True)": "20260923_081744_b847cdd0",
+    "MK.Tests.Battles.PveMaterialUnitEntryTests.PerseveranceAttackConsumesRealMaterialAndAttackPower(False)": "20260923_081744_b847cdd0",
+    "MK.Tests.Battles.PveMaterialUnitEntryTests.PerseveranceAttackConsumesRealMaterialAndAttackPower(True)": "20260923_081744_b847cdd0",
+    "MK.Tests.Battles.PveMaterialUnitEntryTests.PerseveranceBlockConsumesOptionalOrdinaryCardsAndPreventsWounds(False)": "20260923_081744_b847cdd0",
+    "MK.Tests.Battles.PveMaterialUnitEntryTests.PerseveranceBlockConsumesOptionalOrdinaryCardsAndPreventsWounds(True)": "20260923_081744_b847cdd0",
+    "MK.Tests.Battles.PveMaterialUnitEntryTests.PerseveranceIllegalMaterialsRejectBeforeFeeOrCardMutation": "20260923_081744_b847cdd0",
+    "MK.Tests.Battles.PveMaterialUnitEntryTests.PerseveranceMovementOptionalMaterialPaysActualForest(False)": "20260923_081744_b847cdd0",
+    "MK.Tests.Battles.PveMaterialUnitEntryTests.PerseveranceMovementOptionalMaterialPaysActualForest(True)": "20260923_081744_b847cdd0",
+    "MK.Tests.Battles.PveCrystalBoltEntryTests.ExplosiveKillTargetsActualSurvivorThenOriginalAttackConsumesArmor(\"strong_white\",White)": "20260923_082005_6b16d848",
+    "MK.Tests.Battles.PveCrystalBoltEntryTests.ExplosiveKillTargetsActualSurvivorThenOriginalAttackConsumesArmor(\"strong_red\",Red)": "20260923_082005_6b16d848",
+    "MK.Tests.Battles.PveCrystalBoltEntryTests.IndependentSetChoicesUsePostPaymentTokensAndActualDrawHealMove(Blue)": "20260923_082005_6b16d848",
+    "MK.Tests.Battles.PveCrystalBoltEntryTests.IndependentSetChoicesUsePostPaymentTokensAndActualDrawHealMove(Green)": "20260923_082005_6b16d848",
+    "MK.Tests.Battles.PveMaterialUnitEntryTests.NatureChosenFarmerResistanceExpiresForSameSurvivingEnemyNextTurn": "20260923_082005_6b16d848",
+    "MK.Tests.Battles.PveMaterialUnitEntryTests.PerseveranceInfluenceActualDiscardFundsVillageHealing(False)": "20260923_082005_6b16d848",
+    "MK.Tests.Battles.PveMaterialUnitEntryTests.PerseveranceInfluenceActualDiscardFundsVillageHealing(True)": "20260923_082005_6b16d848",
+    "MK.Tests.Battles.PveCrystalBoltEntryTests.ContinuousFourOriginalCardsMoveReduceArmorProtectFarmerAndHealSameUnit": "20260923_082310_a71910de",
+    "MK.Tests.Battles.PveCrystalBoltEntryTests.ContinuousPrintedBaseWoundFundsSplitPaymentAndIndependentMoveBonusThenDiscardedWoundAttacks": "20260923_082310_a71910de",
+    "MK.Tests.Battles.PveDeedInputTests.ImprovisationExactMaterialCreatesRealAttack(False)": "20260923_082310_a71910de",
+    "MK.Tests.Battles.PveDeedInputTests.ImprovisationExactMaterialCreatesRealAttack(True)": "20260923_082310_a71910de",
+    "MK.Tests.Battles.PveDeedInputTests.ImprovisationRejectsSelfWoundAndForeignMaterialBeforeRedFee": "20260923_082310_a71910de"
+  },
+  "sceneSteps": 150,
+  "sceneAssertions": 207,
+  "sceneRuns": [
+    {
+      "run": "20260923_082448_f0457cab",
+      "reportStatus": "failed",
+      "acceptedStepRange": [
+        0,
+        86
+      ],
+      "assertions": 120,
+      "sha256": "779bbc1283d79c916bc88a547a7f4efc5c7fdcc32dc3a94c3c8c2b8d0b69374a",
+      "note": ""
+    },
+    {
+      "run": "20260923_082814_9f69caad",
+      "reportStatus": "success",
+      "acceptedStepRange": [
+        0,
+        62
+      ],
+      "assertions": 87,
+      "sha256": "17734419e0f44cc06d232b9eb0a8601680015f0cda37945d2eb67073972c72c9",
+      "note": ""
+    },
+    {
+      "run": "20260923_083024_0b305efe",
+      "reportStatus": "success",
+      "acceptedStepRange": [
+        0,
+        54
+      ],
+      "assertions": 2,
+      "sha256": "e0a69c24a3b2e516bf49ce5c8ee1683c78bf27fc86ffda629df6c7515fd0987d",
+      "note": "前53步仅重放必要状态，新增2个显示检查"
+    }
+  ],
+  "screenshotsReviewed": 15,
+  "screenshots": [
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_082448_f0457cab\\captures\\031_不屈不挠不弃牌，原移动2.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_082448_f0457cab\\captures\\042_爆裂箭矢红费远程3击杀第一敌人.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_082448_f0457cab\\captures\\044_实际目标护甲3降至2.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_082448_f0457cab\\captures\\048_选择实际自有农民原图.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_082448_f0457cab\\captures\\056_抗性吸收后农民一伤，英雄无伤.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_082448_f0457cab\\captures\\070_按原等级1治疗，恢复发动资格.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_082448_f0457cab\\captures\\079_治疗后实际攻击2并耗竭.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_082448_f0457cab\\captures\\086_同玩家两战两回合保留伤牌和耗竭.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_082814_9f69caad\\captures\\031_治疗主效果独立选择套色移动奖励.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_082814_9f69caad\\captures\\032_真实蓝晶2变1仍保留一套四色：治疗2加移动2.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_082814_9f69caad\\captures\\052_选择一张实际伤牌作为可选材料.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_082814_9f69caad\\captures\\053_基础2加弃伤1，实际伤进弃牌不算治疗.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_082814_9f69caad\\captures\\062_伤牌弃置与手牌创伤分开保留.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_083024_0b305efe\\captures\\053_同名第二张伤牌独立选中，第一张取消.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_083024_0b305efe\\captures\\054_改选同名第一张伤牌，第二张取消.png"
+  ],
+  "console": "tmp/pve_20260923_choice_identity_final_console.json",
+  "sourceSha256": {
+    "Assets/Logic/Runtime/Battles/PveBattleSession.cs": "61ed0a53d361be95d8aeb29a059807230027f40be496abcb25528ad53a1e8679",
+    "Assets/Logic/Runtime/Battles/PveDeedInputs.cs": "6538197f83cd3dfc4e77e1a40c290d5eff6febaab2e98ea1512e92b5656aa5f4",
+    "Assets/Scripts/Battle/PveBattleController.DeedInputs.cs": "0ba6201b78bf6fedc54ae72c8717116929310dd0847b9d6d18a0bde8bcc0e2a1",
+    "Assets/Scripts/Battle/PveBattleController.DeedBonuses.cs": "bf18aaeaeec4875b139e004b75955d495f922f6c19cc51c12567abe56a7d315f",
+    "Assets/Scripts/Battle/PveBattleController.cs": "4c079d045e5548af81793cd80026f594fafe4d563a1f66eb2b98dd5143c3b632",
+    "Assets/Tests/RulesState/PveMaterialUnitEntryTests.cs": "711a410859ed10fbde2fc09991b7202e4fa3715d5030c410c668520891876f36",
+    "Assets/Tests/RulesState/PveCrystalBoltEntryTests.cs": "02b3ccec9749e3204215db3ef0586295647a55b886c1530a260ebea644f75674",
+    "tools/build_pve_choice_consumers_acceptance.py": "aea222f7f645a9500c8b37e307b6d22eb33d380a2c64b0d0aee0010dd2e3c765"
+  },
+  "pending": [
+    "不屈不挠强化多材料及基础影响/格挡新Demo场景",
+    "自然之力强化攻城新Demo场景",
+    "魔晶力量基础缺色、其他主效果及多套独立奖励新Demo场景",
+    "爆裂箭矢白费、放弃减甲新Demo场景"
+  ],
+  "notes": [
+    "后台失败与第一场景Camp入口失败保留，仅补失败/受影响范围。",
+    "第二场景数值通过但同名材料选中显示失败；引用选择修复后补两张关键截图通过。",
+    "80个行动/法术ID有至少一入口，含2历史非原卡，不是所有分支完成。整体目标active，未传截图或推送远端。"
+  ]
+}

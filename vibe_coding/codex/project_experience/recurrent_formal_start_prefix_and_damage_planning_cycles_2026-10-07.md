@@ -1,0 +1,11 @@
+# RNN混合正式开战前缀与承伤规划循环
+
+真实Tovak丢失双战的51步失败重放：开战前多张原牌基础用于移动，movement8在fight失效；首个攻击池非空却无合法attack。不能用攻击池总量猜可击杀机会，也不能把此处称原费用错误。
+
+train_recurrent_ppo复用prepare_training_start，新增opt-in mixed-combat-start：按累计原episode奇偶交替无前缀与真实合法fight初始化。原认证root先校验，prefix真实before/action/after/rawreward独立保存、与首PPO样本衔接；audit包含prefix，模型样本/reward/actual_events覆盖不包含prefix。actor从初始化状态开始，此后nextTurn/fight/roundFinish不重置GRU。checkpoint replay保存课程开关与累计prefix计数，恢复改变须显式change-start-curriculum，manifest记录变更；默认无课程保持。
+
+当前独立Tovak任务，helper后整个协议state/features/fullmask/reward/done与reset后直接fight严格相等，未开启返回原对象。未显式改变课程的resume负例在更新前拒绝。32真实局16prefix按奇偶与样本前置状态全部核对，原权重/Adam/RNG完整恢复，Console两读零错误。没有规则/场景/策略架构变更。
+
+实验32新局1546PPO步、12完整成功、36659有限审计零错，CPU134.429秒，保存296局12876PPO步Adam153及16独立初始化。未强制开战冻结校准仍5/13，但1223步且四step_limit；固定四validation全部256步step_limit/0完整胜利。主要反复unitDamage::2与::102在AssignDamage添加/撤销同一预选，单局212..243次；不能把规划选择算发动/承伤消费者。
+
+新实验与全部失败保留，不晋升新权重；下一实验基线明确指向真实pre-experiment264局检查点（原固定验证2/4），参数/Adam/RNG未伪造复制重建。汇总AutomationOutputs/BattleRl/20261007_recurrent_mixed_start_iteration_summary.json；prefix、implicit-change负例及Tovak诊断独立存。广泛原要素、消费者、69敌、初始不可解证明、untuned test与完整保存策略Unity仍缺。下一步处理真实规划循环，不用继续增时或强制评估掩盖失败。

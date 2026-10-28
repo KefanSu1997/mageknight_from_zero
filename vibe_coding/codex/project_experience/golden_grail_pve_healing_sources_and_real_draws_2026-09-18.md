@@ -1,0 +1,11 @@
+# 黄金圣杯：治疗来源、真实抽牌与战后操作
+
+原items_012中英牌面：普通治疗2，本回合只对实际消费本牌治疗点加名望；焚毁治疗6，治疗手牌每张创伤抽一牌。HolyGrailEffect与CardHealing已有正确实现，不改正式效果，PVE补战后出牌和目标/消费顺序。
+
+通用战后治疗入口按需出现；混合圣杯与普通治疗点时才显示消费顺序按钮。HealWound传递grailFirst给正式CardHealing.Spend，保留原调用默认行为。治疗英雄每伤1点、部队按等级；不重整部队、不治疗弃牌。只有治疗手牌触发DrawPerHeal，普通圣杯仅自身治疗池计名望。
+
+BattleLoadout新增原ActionCardDefinition牌库顶序列，PutOnTop按反序构造，使用真实Deck.DrawExact抽取。Controller的原卡定义与美术绑定同时包含初始手牌和真实牌库，防止抽到的正常牌被误画为创伤。默认空牌库保留旧快照行为。原卡实例普通入Played、焚毁进Removed，不创建假抽牌。
+
+8新增后台210800_d8890e57+2药草师治疗消费直接回归210829_a9c9ad5c通过。五场211203_b60d5cae共155真实点击437检查首次成功，13图核对、Console双0，DLL Logic21:11:00/Scripts21:11:03/Tests21:11:04。证据pve_grail_acceptance_index.json，生成器tools/build_pve_grail_acceptance.py。
+
+普通治疗两英雄伤或一II级部队伤都加2名望，焚毁治疗手牌实际抽两原卡、治疗II级单位不抽且不重整。混合药草师2普通+圣杯2点，先消费普通治疗英雄不加名望，随后圣杯治疗II级单位加2。场景验实际目标/费用/牌区，混合另一顺序仅后台。完整回合失效/后续回合以及所有组合尚未包含当前PVE场景范围，保留旧基本验收证据不重复全库。

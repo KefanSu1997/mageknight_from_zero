@@ -1,0 +1,21 @@
+{
+  "scope": "Tome Wings real movement cost then formal round Tunnel actual guard, ranged kill, conquest and formal spell reward",
+  "steps": 69,
+  "assertions": 131,
+  "segments": [
+    {
+      "run": "20260929_135508_b194a29a",
+      "start": 0,
+      "endExclusive": 69,
+      "assertions": 131
+    }
+  ],
+  "screenshotsReviewed": [
+    34,
+    35,
+    55,
+    66
+  ],
+  "console": "tmp/pve_tome_material_world_console_final.json",
+  "fixtureRestored": true
+}

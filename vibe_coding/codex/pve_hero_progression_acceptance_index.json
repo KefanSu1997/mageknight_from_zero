@@ -1,0 +1,26 @@
+{
+  "scope": "原英雄回合末升级与原技能/高级行动真实奖励、次回合卡牌消费；非全部技能效果通过",
+  "backend": "AutomationOutputs/RulesState/20260923_051025_643f5f58",
+  "backendPassed": 53,
+  "sceneRun": "20260923_051416_fa081f02",
+  "passedSteps": 34,
+  "passedAssertions": 89,
+  "screenshotsReviewed": 4,
+  "retainedFailure": "20260923_051249_42652abf",
+  "finalConsole": "tmp/pve_20260923_progression_final_console.json",
+  "sourceSha256": {
+    "Assets/Logic/Runtime/HeroProgression.cs": "88ebdf92ad3ae8d0fab569e3699b6e6567bdeeb73ff8649590803828b6fcb0e5",
+    "Assets/Logic/Runtime/GameEngine.cs": "e9acb38d58266647370fa2b9f3dfa8db5e66ca272b2d6bb7e0505f543010d260",
+    "Assets/Logic/Runtime/PlayerTurnEngine.cs": "d8329ec3fc730abd54bd11dcb09837ae10bc10238f202cb87c94098908588cf6",
+    "Assets/Logic/Runtime/GameState.cs": "f38e2bb4d549d1749a2f7ea8c4ef284bcd42a63cd2c784454d5096765bbbfce1",
+    "Assets/Logic/Runtime/GlobalResources.cs": "52cb0aa8f1b25e13e6075cb4d948737fb05b4d0a3b7e16714ba60df5c1881e63",
+    "Assets/Logic/Runtime/Battles/PveJourneySession.cs": "716ef48bfa6c947cff95d2830fdb4b50ac9ff0c9e2fe35137c76d5ecda025677",
+    "Assets/Scripts/Battle/PveBattleController.Progression.cs": "e998a332ea50cb2678104ea232f622d82678a5be230280b1f43f1e397e097b07",
+    "Assets/Scripts/Battle/PveBattleController.Journey.cs": "bb96170c6e5b326c2c5141ed1360c291edcee104ebf8b15c8d13a3d938c53e8d",
+    "Assets/Scripts/Battle/PveBattleController.cs": "95880576119389eb783de3d34449b87647de0e7da1707c72482395056b86083e",
+    "Assets/Scripts/SceneAutomation/Editor/PveBattleMenus.cs": "a3068e2750a7fd355ebf6b8e39212fd5a5763e7984bdf440b7b3dc2d00d0fe16",
+    "Assets/Scripts/SceneAutomation/SceneAutomationOrchestrator.cs": "1cc5a0d1b2dbe30d4c765c56d7de09dd854c4d0074e5b8a81ce3f68d8253cec2",
+    "Assets/Tests/RulesState/HeroProgressionTests.cs": "5db509fb743ced73c13a71448159c3041611935d8e146ab382f999208018ab06",
+    "tools/build_pve_hero_progression_acceptance.py": "ff4bf44e5a7a27264ef05bd7985d10c2b3f2a717188912d828d1f992ada08459"
+  }
+}

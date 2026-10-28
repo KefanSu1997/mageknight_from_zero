@@ -1,0 +1,54 @@
+{
+  "scope": "头环两种再生、无惧痛苦及重整旗鼓重整分支的真实目标连续消费者；非全头环或全Demo通过",
+  "backendEffective": 47,
+  "backendNew": 15,
+  "backendRegression": 32,
+  "backendRuns": [
+    "20260929_084500_bd4100f5",
+    "20260929_084651_851b6873"
+  ],
+  "retainedBackendFailure": "初次弃牌堆栈顶预期错误，修正后仅补失败及新增受影响范围",
+  "sceneOperations": 285,
+  "sceneAssertions": 467,
+  "additionalStateChecks": 17,
+  "screenshotsReviewed": 14,
+  "segments": [
+    {
+      "hero": "Braevalar",
+      "run": "20260929_084910_379d2814",
+      "steps": 63,
+      "assertions": 107,
+      "sha256": "3d3b6b41f977737a00ddebded9fdb4ba0549a590de1dc8b83d84480ce7e02acc"
+    },
+    {
+      "hero": "Krang",
+      "run": "20260929_085034_6ada2f5b",
+      "steps": 63,
+      "assertions": 107,
+      "sha256": "c8a14bca3ff7e36a58cfa17d7434299a4e6a3065537e4070ca35290a432d94a8"
+    },
+    {
+      "hero": "Tovak",
+      "run": "20260929_085142_d67c6535",
+      "steps": 61,
+      "assertions": 107,
+      "sha256": "1b1d1b538892d3ec68125b94b2157cc0e24f4a725ce790ca0c0fdfc669f47329"
+    },
+    {
+      "hero": "Norowas",
+      "run": "20260929_085300_69acfa46",
+      "steps": 98,
+      "assertions": 146,
+      "sha256": "a2d24c8bad3e322d054b117f7e92f5f722c15698aaa08e5c4787f36bb79c21eb"
+    }
+  ],
+  "console": "tmp/pve_headband_targets_final_console.json",
+  "retainedCompileFailure": "tmp/pve_headband_targets_compile.json",
+  "fixtureRestored": true,
+  "remaining": [
+    "痛苦之力/领导等其余动态技能借用",
+    "特殊翻面/傀儡与宝盒嵌套范围分开",
+    "独立伤牌/英雄素材及原地图缺口"
+  ],
+  "rallyHealSupplement": "pve_headband_rally_heal_acceptance_index.json"
+}

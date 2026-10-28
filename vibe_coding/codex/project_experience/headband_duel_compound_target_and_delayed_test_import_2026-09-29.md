@@ -1,0 +1,11 @@
+# 头环决斗复合目标及延迟测试导入
+
+头环双用原决斗须绑定同一敌人同一攻击，typed授权一次完成2份，避免逐次UI允许先消费/再换敌。DuelActions共享目标验证与Strength，自有1借用2；正式近战及击杀沿同一实际敌引用，单位介入历史取消整个奖励。SkillSupply仍持有实际公共技能，玩家个人使用次数不变。
+
+PveBattleSession.Block先保存ReservedBlocks，Context.SuccessfullyBlockedAttacks直到ResolveDefense才写；新增借用Session必须同时用Battle.IsBlocked拒绝已确认攻击，不能只看后者。
+
+场景五原牌000014016021+头环足够：狂怒原红费4杀狼骑，升级未选决斗进入公共供应；次战借用2+决心基础2挡4，近战2+行进横置1杀3，名望3→7；旧伤2持续，不需七张超手限构筑。重放seed29仅决定正式升级供应，结束精确恢复seed0。
+
+新NUnit不得直接读PlayerState内部SkillsUsedThisTurn；CLI同程序集可见而Unity独立测试程序集报错。使用公开SkillActions.IsUsed。首次刷新立即Console双0可能先于新测试文件导入，实际场景启动揭露3编译错并中止；保留中止请求，修测试后再次编译、定向CLI，再取最终Console双0。
+
+证据 ../pve_headband_duel_acceptance_index.json：后台20有效，59操作108断言，6关键图已看。仅该正常借用主路径通过，不推广未实现翻面/傀儡/混乱。

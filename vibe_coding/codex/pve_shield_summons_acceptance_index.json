@@ -1,0 +1,106 @@
+{
+  "scope": "magic008/011/020/021 new PVE entry and shared offer consumer",
+  "backendPassed": 21,
+  "backendCases": {
+    "MK.Tests.Battles.PveShieldCharmEntryTests.BurningShieldActuallyBlocksThenItsFireAttackKillsDifferentOriginalEnemy": "20260923_085213_fa7e1158",
+    "MK.Tests.Battles.PveShieldCharmEntryTests.CharmChosenCrystalActuallyPaysNextOriginalSpellInSameVillageInteraction": "20260923_085213_fa7e1158",
+    "MK.Tests.Battles.PveShieldCharmEntryTests.CharmOutsideNegotiationHasInfluenceButNoFreeCrystalOrDiscount": "20260923_085213_fa7e1158",
+    "MK.Tests.Battles.PveShieldCharmEntryTests.CharmVillageDiscountIsConsumedByRealOriginalFarmerRecruitment": "20260923_085213_fa7e1158",
+    "MK.Tests.Battles.PveShieldCharmEntryTests.ExplodingShieldPaysPrintedNightCostAndDestroysOnlySuccessfullyBlockedEnemyOnce": "20260923_085213_fa7e1158",
+    "MK.Tests.Battles.PveShieldCharmEntryTests.PossessionArcaneImmuneSourceRejectsBeforeAnyManaCardOrSkipMutation": "20260923_085213_fa7e1158",
+    "MK.Tests.Battles.PveShieldCharmEntryTests.PossessionKeepsOriginalSourceForbiddenAndUsesItsActualNormalAttackAgainstOtherEnemy": "20260923_085213_fa7e1158",
+    "MK.Tests.Battles.PveShieldCharmEntryTests.ShieldWrongPhaseOrDayStrongRejectsWithoutSpending(False)": "20260923_085213_fa7e1158",
+    "MK.Tests.Battles.PveShieldCharmEntryTests.ShieldWrongPhaseOrDayStrongRejectsWithoutSpending(True)": "20260923_085213_fa7e1158",
+    "MK.Tests.Battles.PveSacrificeSummonsEntryTests.HonorSummonsValidatesFullSlotBeforePaymentThenReplacesAndActivatesActualUnit": "20260923_085433_2d6a3bb9",
+    "MK.Tests.Battles.PveSacrificeSummonsEntryTests.OfferedFarmerRemainsInSupplyAndCannotAttackBeforeMeleeThenHitsActualEnemy": "20260923_085433_2d6a3bb9",
+    "MK.Tests.Battles.PveSacrificeSummonsEntryTests.OfferedHerbalistReadiesActualWoundedOwnedUnitWithoutHealingIt": "20260923_085433_2d6a3bb9",
+    "MK.Tests.Battles.PveSacrificeSummonsEntryTests.SacrificeCountsPairsAfterPrintedPaymentAndConsumesActualTypedAttack(Green,Red,4,1,Siege,Fire)": "20260923_085433_2d6a3bb9",
+    "MK.Tests.Battles.PveSacrificeSummonsEntryTests.SacrificeCountsPairsAfterPrintedPaymentAndConsumesActualTypedAttack(Green,Blue,8,2,Siege,Ice)": "20260923_085433_2d6a3bb9",
+    "MK.Tests.Battles.PveSacrificeSummonsEntryTests.SacrificeCountsPairsAfterPrintedPaymentAndConsumesActualTypedAttack(White,Red,6,1,Ranged,Fire)": "20260923_085433_2d6a3bb9",
+    "MK.Tests.Battles.PveSacrificeSummonsEntryTests.SacrificeCountsPairsAfterPrintedPaymentAndConsumesActualTypedAttack(White,Blue,12,2,Ranged,Ice)": "20260923_085433_2d6a3bb9",
+    "MK.Tests.Battles.PveSacrificeSummonsEntryTests.SacrificeExactMaterialsAndIndependentArtifactColorsPayNextOriginalSpell": "20260923_085433_2d6a3bb9",
+    "MK.Tests.Battles.PveSacrificeSummonsEntryTests.SacrificeRejectsSelfMaterialAndInvalidColorsBeforePayment": "20260923_085433_2d6a3bb9",
+    "MK.Tests.Cards.CallToArmsStateTests.DelayedAbilityUsesActualOfferOnceWithoutRecruitment(1,2,0)": "20260923_085433_2d6a3bb9",
+    "MK.Tests.Cards.CallToArmsStateTests.DelayedAbilityUsesActualOfferOnceWithoutRecruitment(2,0,2)": "20260923_085433_2d6a3bb9",
+    "MK.Tests.Cards.CallToArmsStateTests.SelectedOriginalFireRangedAbilityReachesRealCombatResolver": "20260923_085433_2d6a3bb9"
+  },
+  "sceneSteps": 75,
+  "sceneAssertions": 130,
+  "sceneRuns": [
+    {
+      "run": "20260923_085936_b87056c1",
+      "reportStatus": "failed",
+      "acceptedSteps": [
+        0,
+        48
+      ],
+      "assertions": 64,
+      "reportSha256": "7810303c43710470b47ed8d224017cafc2160611cb544663d3cbb7413b1bf792"
+    },
+    {
+      "run": "20260923_090122_256e46b9",
+      "reportStatus": "failed",
+      "acceptedSteps": [
+        49,
+        52
+      ],
+      "assertions": 12,
+      "reportSha256": "1b306f377bed0ff889b4d4ed1a2d7b2c585ec2d61ff19bfb1a764264506bc96b"
+    },
+    {
+      "run": "20260923_090358_c312a782",
+      "reportStatus": "success",
+      "acceptedSteps": [
+        53,
+        74
+      ],
+      "assertions": 54,
+      "reportSha256": "05beddb059da6e8f74f3519721f98f84dda67acdd502426bcdb91966a8879756"
+    }
+  ],
+  "screenshotsReviewed": 9,
+  "screenshots": [
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_085936_b87056c1\\captures\\033_实际出牌 base_discount.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_085936_b87056c1\\captures\\037_原费用4减3，实际支付1.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_085936_b87056c1\\captures\\048_为此神器独立选择白色.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_090122_256e46b9\\captures\\049_支付红晶1再得红晶1；宁静和剑弃牌得绿白晶.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_090358_c312a782\\captures\\061_火焰格挡4挡住原攻击4.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_090358_c312a782\\captures\\065_护盾火焰攻击4击杀原护甲3.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_090358_c312a782\\captures\\069_实际近战攻击3.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_090358_c312a782\\captures\\070_使用后供应不入队不耗竭.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_090358_c312a782\\captures\\074_正式结束第二回合保留伤牌、农民及七张原牌去向.png"
+  ],
+  "failedScreenshotsReviewed": [
+    "AutomationOutputs\\PveBattle\\20260923_085936_b87056c1\\captures\\049_支付红晶1；宁静和剑弃牌得绿白，法术得红标记.png",
+    "AutomationOutputs\\PveBattle\\20260923_090122_256e46b9\\captures\\053_所得白晶实际支付战斗号召.png"
+  ],
+  "console": "tmp/pve_20260923_shield_summons_final_console.json",
+  "mappedDeedIds": 88,
+  "sourceSha256": {
+    "Assets/Logic/Runtime/Battles/PveBattleSession.cs": "bfd0c06e22f7539410e912d46725f7b751cb02ad86422e60c433347bbe26b05f",
+    "Assets/Logic/Runtime/Battles/PveDeedInputs.cs": "797c5916b666af507fa1652f53ff0332a89b8bcf5fe033560a9709f87aa16385",
+    "Assets/Logic/Runtime/Battles/PveJourneySession.OfferedUnits.cs": "cac19894c153fb44b7f03b61877a1732e458a5f2e72461ee70f845bc0e0c7537",
+    "Assets/Logic/Runtime/CardUnitActions.cs": "4c3387a3b25bd95858b3804ef0492161109d340508dca890cb4c95445d4358c9",
+    "Assets/Scripts/Battle/PveBattleController.cs": "2e58ef643c244bd61d8c0685835f1b10b95d8fda3f3b7feeae51a1736518b0f2",
+    "Assets/Scripts/Battle/PveBattleController.Journey.cs": "2dbe37abe75e3cc26036ed3fc4579814cf8946613f145937e6cd9339ffbb7a35",
+    "Assets/Scripts/Battle/PveBattleController.DeedInputs.cs": "01cee3c64b8fda7867215785627f9fe690c8ed910059aa5695774cda9ab73991",
+    "Assets/Scripts/Battle/PveBattleController.SpellInputs.cs": "f2a29cafc5bc6ab0a7fc0d7ce97333efae726297519b7925833d62d39708ef23",
+    "Assets/Scripts/Battle/PveBattleController.OfferedUnits.cs": "feea035dfd5ebf68228df0266087c91fe60ad5bd0c499057cad1d12811cc17ba",
+    "Assets/Tests/RulesState/PveShieldCharmEntryTests.cs": "249339822c004334b486f6e2e68e8e4d503e8fabca77347cd4a1e71333fc6c5a",
+    "Assets/Tests/RulesState/PveSacrificeSummonsEntryTests.cs": "ec70bd34a299eda4e03b21640938b8af3f072670678e191130f833232eb73ba3",
+    "tools/build_pve_shield_sacrifice_summons_acceptance.py": "97108acb0eda04c1954314b62e283fc253349b1ddefedfdc196521fd431e121b"
+  },
+  "pending": [
+    "四法术强化分支的新Demo场景",
+    "魅惑四色魔晶选择及其他基本分支新Demo场景",
+    "供应复杂部队全部目标/攻击槽/侦察消费者",
+    "剩余复制行动/法术、部队技能与原世界"
+  ],
+  "notes": [
+    "献祭场景首个预期误写临时标记；原卡/实现/后台一致是库存魔晶，保留失败并纠正预期。",
+    "旅程供应能力矮按钮截断已改高度字号，仅补53以后；原有效前段保留。",
+    "重放入口仍执行前置真实操作恢复状态，省去已通过断言/截图，不声称跳过了全部前置操作。",
+    "映射数含历史非官方2，只表示至少一分支，不能当全部原规则场景通过。",
+    "下一批只读审计 tmp/pve_copy_inputs_audit_20260923.md。整体目标active，未上传/推送。"
+  ]
+}

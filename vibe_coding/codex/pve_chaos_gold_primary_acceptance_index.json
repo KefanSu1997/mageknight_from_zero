@@ -1,0 +1,239 @@
+{
+  "status": "scene_passed",
+  "scope": "Krang本人003:07，seed0实际Gold经三正式空转后White/Red/Gold，金明确选冰火远程并真实消费",
+  "generator": "tools/build_pve_chaos_gold_primary_acceptance.py",
+  "backend": {
+    "report": "AutomationOutputs/RulesState/20260929_193838_08b01bcf/results.xml",
+    "sha256": "e625dc17594324c86046d38eb2d33d4c331ce3a7c1891aa2900bcbd4a9a15c7b",
+    "method": "MK.Tests.Battles.PveChaosGoldPrimaryJourneyTests.SeededOwnChaosWhiteRecruitRedAttackThenGoldColdFireRangedConsumer",
+    "status": "Passed",
+    "passed": 1,
+    "failed": 0,
+    "assertions": 43
+  },
+  "preservedFailure": {
+    "report": "AutomationOutputs/RulesState/20260929_193416_6420e9c9/results.xml",
+    "sha256": "575657e27c6e08840da4ef6597a4496a417e0ec9042149cb47981299c036f055",
+    "reason": "Line25 expected historical Black but current actual Random(0) initial color is Gold",
+    "correction": "Keep seed0; actual movement turn and two original-card rest turns create three legal unused rotation windows Gold/Blue/Green/Black; no initial-color assignment, fixture or production changes"
+  },
+  "seedVerification": {
+    "asset": "HornGold.asset",
+    "replayEffectRandom": 1,
+    "effectRandomSeed": 0,
+    "review": "parent_verified_current_asset"
+  },
+  "scene": {
+    "status": "success",
+    "report": "AutomationOutputs/PveBattle/20260929_194206_5c29a0ca/report.json",
+    "sha256": "e197e7ae2c4dacb4ddc75d713f583447e37b0d9f4e0a7fb544edb007755baf03",
+    "effectiveSteps": 105,
+    "effectiveAssertions": 184,
+    "failedSteps": 0,
+    "screenshots": [
+      {
+        "step": 68,
+        "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_194206_5c29a0ca\\captures\\068_影响4实际取得原部队.png",
+        "visualReview": "parent_confirmed_pass"
+      },
+      {
+        "step": 92,
+        "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_194206_5c29a0ca\\captures\\092_金色明确选择黑奖励冰火远程1.png",
+        "visualReview": "parent_confirmed_pass"
+      },
+      {
+        "step": 93,
+        "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_194206_5c29a0ca\\captures\\093_先转Gold并保留Gold，非转到Black.png",
+        "visualReview": "parent_confirmed_pass"
+      },
+      {
+        "step": 99,
+        "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_194206_5c29a0ca\\captures\\099_冰火1加火焰3真实远程击杀原甲4.png",
+        "visualReview": "parent_confirmed_pass"
+      },
+      {
+        "step": 104,
+        "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_194206_5c29a0ca\\captures\\104_同玩家六回合两战，轮盘与实际伤牌_单位保留.png",
+        "visualReview": "parent_confirmed_pass"
+      }
+    ]
+  },
+  "expectedConsumers": [
+    "Actual own skill acquired with Random(0), no direct ChaosColor assignment",
+    "T1 original March2 moves to Village then unused Gold-to-Blue rotation",
+    "T2 original001 rest to discard, unused Blue-to-Green rotation",
+    "T3 original014 rest to discard, unused Green-to-Black rotation",
+    "T4 originalPromise008 influence2 plus White2 recruits actual army_2_006 for4",
+    "T5 real032 attack4 causes2 wounds; Red2 plus originalFury2 kills",
+    "T6 Red-to-Gold choice2 creates Ranged:ColdFire:1; red-paid advanced000 Ranged:Fire:3 kills original007 armor4",
+    "Final same player/unit; turns6 battles2 fame40 hand2/deck0/discard6 total8,2 real wounds,red0blue1"
+  ],
+  "worklog": "vibe_coding/codex/worklog_2026-09-29_chaos_gold_primary_route.md",
+  "actualConsumerEvidence": [
+    {
+      "step": 68,
+      "label": "影响4实际取得原部队",
+      "observed": {
+        "journey.discardCount": "3",
+        "wounds": "0",
+        "journey.completedTurns": "3",
+        "journey.completedBattles": "0",
+        "journey.samePlayer": "True",
+        "hand": "2",
+        "deck.count": "0",
+        "hero.id": "Krang",
+        "hero.deckTotal": "6",
+        "units.count": "1",
+        "hand.ids": "basic_card_021,advanced_card_000",
+        "skills.chaosColor": "White",
+        "skills.chaosPending": "False",
+        "fame": "35",
+        "red": "1",
+        "blue": "1",
+        "units.ready": "True",
+        "units.wounds": "0",
+        "units.instances": "army_2_006:-2080709720"
+      }
+    },
+    {
+      "step": 93,
+      "label": "先转Gold并保留Gold，非转到Black",
+      "observed": {
+        "fame": "37",
+        "wounds": "2",
+        "hand": "3",
+        "red": "1",
+        "blue": "1",
+        "kills": "0",
+        "deck.count": "0",
+        "hand.ids": "advanced_card_000,w,w",
+        "hero.id": "Krang",
+        "units.count": "1",
+        "units.ready": "True",
+        "units.wounds": "0",
+        "power.attacks": "Ranged:ColdFire:1",
+        "journey.discardCount": "5",
+        "journey.completedTurns": "5",
+        "journey.completedBattles": "1",
+        "journey.samePlayer": "True",
+        "hero.deckTotal": "8",
+        "skills.chaosColor": "Gold",
+        "skills.chaosPending": "False",
+        "units.instances": "army_2_006:-2080709720"
+      }
+    },
+    {
+      "step": 97,
+      "label": "真实原费用与贡献",
+      "observed": {
+        "fame": "37",
+        "wounds": "2",
+        "hand": "2",
+        "red": "0",
+        "blue": "1",
+        "kills": "0",
+        "deck.count": "0",
+        "hand.ids": "w,w",
+        "hero.id": "Krang",
+        "units.count": "1",
+        "units.ready": "True",
+        "units.wounds": "0",
+        "power.attacks": "Ranged:ColdFire:1,Ranged:Fire:3",
+        "journey.discardCount": "5",
+        "journey.completedTurns": "5",
+        "journey.completedBattles": "1",
+        "journey.samePlayer": "True",
+        "hero.deckTotal": "8",
+        "skills.chaosColor": "Gold",
+        "skills.chaosPending": "False",
+        "units.instances": "army_2_006:-2080709720"
+      }
+    },
+    {
+      "step": 99,
+      "label": "冰火1加火焰3真实远程击杀原甲4",
+      "observed": {
+        "fame": "40",
+        "wounds": "2",
+        "hand": "2",
+        "red": "0",
+        "blue": "1",
+        "kills": "1",
+        "deck.count": "0",
+        "hand.ids": "w,w",
+        "hero.id": "Krang",
+        "units.count": "1",
+        "units.ready": "True",
+        "units.wounds": "0",
+        "power.attacks": "",
+        "journey.discardCount": "5",
+        "journey.completedTurns": "5",
+        "journey.completedBattles": "1",
+        "journey.samePlayer": "True",
+        "hero.deckTotal": "8",
+        "skills.chaosColor": "Gold",
+        "skills.chaosPending": "False",
+        "units.instances": "army_2_006:-2080709720"
+      }
+    },
+    {
+      "step": 104,
+      "label": "同玩家六回合两战，轮盘与实际伤牌/单位保留",
+      "observed": {
+        "journey.discardCount": "6",
+        "wounds": "2",
+        "journey.completedTurns": "6",
+        "journey.completedBattles": "2",
+        "journey.samePlayer": "True",
+        "hand": "2",
+        "deck.count": "0",
+        "hero.id": "Krang",
+        "hero.deckTotal": "8",
+        "units.count": "1",
+        "hand.ids": "w,w",
+        "skills.chaosColor": "Gold",
+        "skills.chaosPending": "False",
+        "fame": "40",
+        "red": "0",
+        "blue": "1",
+        "units.ready": "True",
+        "units.wounds": "0",
+        "units.instances": "army_2_006:-2080709720"
+      }
+    }
+  ],
+  "identityVerification": {
+    "unit": "army_2_006:-2080709720",
+    "comparedSteps": [
+      68,
+      92,
+      93,
+      99,
+      104
+    ],
+    "sameInstance": true,
+    "samePlayer": true,
+    "finalCards": "6 original cards discarded + 2 real wounds in hand = total8",
+    "note": "Exact original card/wound reference preservation also asserted by passed backend combination"
+  },
+  "compileConsole": {
+    "status": "passed",
+    "report": "tmp/pve_chaos_gold_compile_console.json",
+    "sha256": "8d62f369865d478d110ffb57efc54be5aff20c4f4af96e654eba68ad28fb3864",
+    "checks": 2,
+    "errorCounts": [
+      0,
+      0
+    ]
+  },
+  "finalConsole": {
+    "status": "passed",
+    "report": "tmp/pve_chaos_gold_final_console.json",
+    "sha256": "8d62f369865d478d110ffb57efc54be5aff20c4f4af96e654eba68ad28fb3864",
+    "checks": 2,
+    "errorCounts": [
+      0,
+      0
+    ]
+  }
+}

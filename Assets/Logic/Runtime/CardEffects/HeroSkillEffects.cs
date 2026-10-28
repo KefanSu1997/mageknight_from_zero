@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using MK.Logic.Core;
@@ -76,10 +77,12 @@ namespace MK.Logic.Runtime.CardEffects
     /// <summary>
     /// 痛苦之力：允許本回合以值2橫置打出創傷牌。
     /// </summary>
-    public sealed class PainPowerEffect : ICardEffect
+    public sealed class PainPowerEffect : ICardEffect, ICardEffectValidator
     {
+        public void Validate(PlayerState player, ActionContext ctx, int option) => SkillOption.Require(option, 0);
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
+            Validate(player, ctx, option);
             ctx.SidewaysWoundValue = 2;
         }
     }
@@ -92,49 +95,28 @@ namespace MK.Logic.Runtime.CardEffects
     public sealed class CurseMagicEffect : ICardEffect
     {
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
-        {
-            if (ctx.CardToDiscard == null)
-                throw new System.InvalidOperationException("未指定要棄掉的卡牌");
-            var card = ctx.CardToDiscard;
-            player.Deck.Discard(card);
-            ctx.CardToDiscard = null;
-
-            bool wound = card.Type == CardType.Wound;
-            ManaColor color = wound
-                ? (option == 1 ? ManaColor.Black : ManaColor.Red)
-                : (option == 1 ? ManaColor.Green : ManaColor.White);
-            player.Mana.AddToken(color, 1);
-        }
+            => throw new System.InvalidOperationException("魔咒必须随实际费用选择材料并立即支付");
     }
 
-    /// <summary>
-    /// 兩極分化：白晝黑色任意色，黑夜金色任意色(近似處理)。
-    /// </summary>
+    /// <summary>两极分化只替换一次真实费用，不设置全回合通用许可。</summary>
     public sealed class PolarizationEffect : ICardEffect
     {
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
-        {
-            if (ctx.DayPart == DayPart.Day)
-                ctx.BlackManaWild = true;
-            else
-                ctx.GoldManaWild = true;
-        }
+            => throw new System.InvalidOperationException("两极分化必须随实际费用选择源色并立即支付");
     }
 
     /// <summary>
     /// 激勵：抽二牌並在最低名望時獲得紅色法力。
     /// </summary>
-    public sealed class MotivationEffect : ICardEffect
+    public sealed class MotivationEffect : ICardEffect, ICardEffectValidator
     {
+        public void Validate(PlayerState player, ActionContext ctx, int option) => InspirationSkillRules.Validate(player, option);
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            player.Deck.DrawExact(2);
-            bool lowest = true;
-            foreach (var p in ctx.OtherPlayers)
-                if (p.Reputation <= player.Reputation)
-                    lowest &= p.Reputation > player.Reputation;
-            if (lowest)
-                player.Mana.AddToken(ManaColor.Red, 1);
+            Validate(player, ctx, option);
+            bool lowest = InspirationSkillRules.IsStrictlyLowest(player, ctx);
+            InspirationSkillRules.DrawAndLock(player);
+            if (lowest) player.Mana.AddToken(ManaColor.Red, 1);
         }
     }
 
@@ -186,14 +168,19 @@ namespace MK.Logic.Runtime.CardEffects
     /// 元素抗性：忽略下一次指定傷害。
     /// option 0 表火焰或寒冰 2 點；1 表其他 1 點。
     /// </summary>
-    public sealed class ElementalResistEffect : ICardEffect
+    public sealed class ElementalResistEffect : ICardEffect, ICardEffectValidator
     {
+        public void Validate(PlayerState player, ActionContext ctx, int option)
+        {
+            HeroAttackSkillRules.Mode(option);
+            if (!ctx.InBattle || ctx.CombatPhase != Phase.AssignDamage)
+                throw new InvalidOperationException("元素抗性须在分配伤害阶段发动");
+        }
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            if (option == 0)
-                ctx.IgnoreFireIceDamage = 2;
-            else
-                ctx.IgnoreOtherDamage = 1;
+            Validate(player, ctx, option);
+            if (option == 0) ctx.IgnoreFireIceDamage = 2;
+            else ctx.IgnoreOtherDamage = 1;
         }
     }
 
@@ -201,18 +188,20 @@ namespace MK.Logic.Runtime.CardEffects
     /// 野性盟友：探索減費並提供攻擊或減傷。
     /// option 0 攻擊1；1 降低1點敵人攻擊。
     /// </summary>
-    public sealed class WildAllyEffect : ICardEffect
+    public sealed class WildAllyEffect : ICardEffect, ICardEffectValidator
     {
+        public void Validate(PlayerState player, ActionContext ctx, int option)
+        {
+            HeroAttackSkillRules.Mode(option);
+            if (option == 1) HeroAttackSkillRules.Target(ctx, true);
+            else if (!ctx.InBattle || ctx.CombatPhase != Phase.Melee && !(ctx.CombatPhase == Phase.Ranged && ctx.AllAttacksSiege))
+                throw new InvalidOperationException("野性盟友攻击须在合法攻击阶段使用");
+        }
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            ctx.ExploreMoveDiscount = 1;
-            if (option == 0)
-                ctx.MeleePool += 1;
-            else
-            {
-                ctx.AttackReduction += 1;
-                ctx.AttackReductionTimes = 1;
-            }
+            Validate(player, ctx, option);
+            if (option == 0) ctx.CombatPower.AddAttack(1);
+            else ctx.AddSkillAttackAdjustment(ctx.SelectedEnemy, ctx.SelectedEnemyAttackIndex, -1);
         }
     }
 
@@ -220,10 +209,16 @@ namespace MK.Logic.Runtime.CardEffects
     /// 雷雲風暴：獲得兩顆指定顏色法力標記。
     /// option 低8位第一顆 0綠1藍；次8位第二顆 0綠1白。
     /// </summary>
-    public sealed class ThunderstormEffect : ICardEffect
+    public sealed class ThunderstormEffect : ICardEffect, ICardEffectValidator
     {
+        public void Validate(PlayerState player, ActionContext ctx, int option)
+        {
+            if (option != 0 && option != 1 && option != 256 && option != 257)
+                throw new System.InvalidOperationException("请选择两枚原技能许可颜色的魔力标记");
+        }
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
+            Validate(player, ctx, option);
             int c1 = option & 0xFF;
             int c2 = (option >> 8) & 0xFF;
             ManaColor t1 = c1 == 1 ? ManaColor.Blue : ManaColor.Green;
@@ -237,10 +232,16 @@ namespace MK.Logic.Runtime.CardEffects
     /// 閃電風暴：與雷雲風暴類似的配色組合。
     /// option 低8位 0藍1綠；次8位 0藍1紅。
     /// </summary>
-    public sealed class LightningStormEffect : ICardEffect
+    public sealed class LightningStormEffect : ICardEffect, ICardEffectValidator
     {
+        public void Validate(PlayerState player, ActionContext ctx, int option)
+        {
+            if (option != 0 && option != 1 && option != 256 && option != 257)
+                throw new System.InvalidOperationException("请选择两枚原技能许可颜色的魔力标记");
+        }
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
+            Validate(player, ctx, option);
             int c1 = option & 0xFF;
             int c2 = (option >> 8) & 0xFF;
             ManaColor t1 = c1 == 1 ? ManaColor.Green : ManaColor.Blue;
@@ -250,48 +251,64 @@ namespace MK.Logic.Runtime.CardEffects
         }
     }
 
-    /// <summary>
-    /// 迷醉：固定提供影響力3，地形判定尚未實作。
-    /// </summary>
-    public sealed class TranceEffect : ICardEffect
+    /// <summary>迷醉：按玩家实际所在地点产生影响力，城防2、魔法林地4、其他3。</summary>
+    public sealed class TranceEffect : ICardEffect, ICardEffectValidator
     {
+        public void Validate(PlayerState player, ActionContext ctx, int option) => SkillOption.Require(option, 0);
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            ctx.InfluencePool += 3;
+            Validate(player, ctx, option);
+            int influence = 3;
+            if (ctx.MovementMap != null && ctx.MovementMap.Places.TryGetValue(player.Position, out var site))
+            {
+                if (site.Type == PlaceType.Keep || site.Type == PlaceType.MageTower || site.Type == PlaceType.City)
+                    influence = 2;
+                else if (site.Type == PlaceType.MagicalGlade) influence = 4;
+            }
+            ctx.InfluencePool += influence;
         }
     }
 
     /// <summary>
-    /// 叉形閃電：遠程冰火攻擊1×3，簡化為攻擊力3處理。
+    /// 叉形闪电：由真实多目标入口分别建立冰火远程贡献。
     /// </summary>
-    public sealed class ForkedLightningEffect : ICardEffect
+    public sealed class ForkedLightningEffect : ICardEffect, ICardEffectValidator
     {
-        public void Execute(PlayerState player, ActionContext ctx, int option = 0)
-        {
-            ctx.RangedPool += 3;
-        }
+        public void Validate(PlayerState player,ActionContext ctx,int option)
+            => throw new InvalidOperationException("叉形闪电需要选择至多三名实际敌人");
+        public void Execute(PlayerState player,ActionContext ctx,int option=0)=>Validate(player,ctx,option);
     }
 
     /// <summary>
     /// 變換身形：下張移動牌改為攻擊或格擋。
     /// option 0 攻擊，1 格擋。
     /// </summary>
-    public sealed class ShapeshiftEffect : ICardEffect
+    public sealed class ShapeshiftEffect : ICardEffect, ICardEffectValidator
     {
-        public void Execute(PlayerState player, ActionContext ctx, int option = 0)
-        {
-            ctx.TransformMoveType = option == 1 ? 2 : 1;
-        }
+        public void Validate(PlayerState player, ActionContext ctx, int option)
+            => throw new InvalidOperationException("变换身形需要选择实际基本行动牌、原效果与转换项");
+        public void Execute(PlayerState player, ActionContext ctx, int option = 0) => Validate(player, ctx, option);
     }
 
     /// <summary>
     /// 隱秘之路：提供移動力並修改山脈與湖泊花費。
     /// option 0 不付藍色；1 付藍色並可進湖泊。
     /// </summary>
-    public sealed class HiddenPathEffect : ICardEffect
+    public sealed class HiddenPathEffect : ICardEffect, ICardEffectValidator
     {
+        public void Validate(PlayerState player, ActionContext ctx, int option)
+        {
+            RepeatedEffectResolution.RequireCompleted(ctx);
+            if (option < 0 || option > 1 || ctx.InBattle || ctx.TurnActionCommitted || ctx.RestedThisTurn)
+                throw new InvalidOperationException("隐秘之路须在可移动的战斗外回合选择无费用或支付蓝色魔力");
+            if (option == 1 && !player.Mana.TryPreviewExactColors(new[] { ManaColor.Blue }, ctx, out _))
+                throw new InvalidOperationException("隐秘之路穿湖需要支付一点蓝色魔力");
+        }
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
+            Validate(player, ctx, option);
+            if (option == 1 && !player.Mana.TryPayExactColors(new[] { ManaColor.Blue }, ctx, player))
+                throw new InvalidOperationException("隐秘之路蓝色魔力不足");
             ctx.MovementPool += 1;
             ctx.TerrainCostOverride[TerrainType.Mountain] = 5;
             ctx.MountainSafe = true;
@@ -299,6 +316,7 @@ namespace MK.Logic.Runtime.CardEffects
             {
                 ctx.TerrainCostOverride[TerrainType.Lake] = 2;
                 ctx.LakeSafe = true;
+                ctx.RequireBlueForLake = false;
             }
         }
     }
@@ -307,33 +325,12 @@ namespace MK.Logic.Runtime.CardEffects
     /// 再生：支付任意法力移除創傷，若綠色或最低名望則抽牌。
     /// option 為支付的顏色索引。
     /// </summary>
-    public sealed class RegenerationSkillEffect : ICardEffect
+    public sealed class RegenerationSkillEffect : ICardEffect, ICardEffectValidator
     {
+        public void Validate(PlayerState player, ActionContext ctx, int option) => RegenerationSkillRules.Validate(player, ctx, option);
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            ManaColor color = (ManaColor)option;
-            var cost = new ManaCost(new Dictionary<Element,int>{{color.ToElement(),1}});
-            if (!player.Mana.Pay(cost, player)) return;
-
-            foreach (var c in player.Deck.Hand.ToArray())
-            {
-                if (c.Type == CardType.Wound)
-                {
-                    player.Deck.RemoveFromHand(c);
-                    if (color == ManaColor.Green || IsLowest(player, ctx))
-                        player.Deck.DrawExact(1);
-                    break;
-                }
-            }
-        }
-
-        private static bool IsLowest(PlayerState p, ActionContext ctx)
-        {
-            bool lowest = true;
-            foreach (var o in ctx.OtherPlayers)
-                if (o.Reputation <= p.Reputation)
-                    lowest &= o.Reputation > p.Reputation;
-            return lowest;
+            RegenerationSkillRules.Execute(player, ctx, option, ManaColor.Green);
         }
     }
 
@@ -368,10 +365,12 @@ public sealed class NatureRevengeEffect : ICardEffect
     /// <summary>
     /// 白晝狙擊：白晝遠程攻擊2，黑夜遠程攻擊1。
     /// </summary>
-    public sealed class DaySniperEffect : ICardEffect
+    public sealed class DaySniperEffect : ICardEffect, ICardEffectValidator
     {
+        public void Validate(PlayerState player, ActionContext ctx, int option) => SkillOption.Require(option, 0);
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
+            Validate(player, ctx, option);
             ctx.RangedPool += ctx.DayPart == DayPart.Day ? 2 : 1;
         }
     }
@@ -380,26 +379,78 @@ public sealed class NatureRevengeEffect : ICardEffect
     /// 重整旗鼓：翻面以重整或治療一支部隊，需在 ctx.TargetUnit 指定。
     /// option 0 重整，1 治療1點。
     /// </summary>
-    public sealed class RallyEffect : ICardEffect
+    public sealed class RallyEffect : ICardEffect, ICardEffectValidator
     {
+        public void Validate(PlayerState player, ActionContext ctx, int option)
+        {
+            SkillOption.Require(option, 1);
+            var unit = ctx.TargetUnit;
+            if (ctx.InBattle || unit == null || !player.Units.Any(u => ReferenceEquals(u, unit)) || unit.IsDestroyed)
+                throw new System.InvalidOperationException("重整旗鼓须在战斗外选择实际自有部队");
+            if (option == 0 && unit.IsReady || option == 1 && unit.Wounds == 0)
+                throw new System.InvalidOperationException("目标不需要所选的重整或治疗");
+        }
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            var unit = ctx.TargetUnit;
-            if (unit == null || ctx.InBattle) return;
-            if (option == 0)
-                unit.Ready();
-            else
-                unit.Heal(1);
+            Validate(player, ctx, option);
+            if (option == 0) ctx.TargetUnit.Ready();
+            else CardHealing.HealUnit(player, ctx, ctx.TargetUnit, 1);
+        }
+    }
+
+    internal static class RegenerationSkillRules
+    {
+        internal static void Validate(PlayerState player, ActionContext ctx, int option)
+        {
+            if (!System.Enum.IsDefined(typeof(ManaColor), option))
+                throw new System.InvalidOperationException("请选择实际支付的魔力颜色");
+            var wound = ctx.SelectedSkillWound;
+            if (wound == null || wound.Type != CardType.Wound || !player.Deck.Hand.Any(c => ReferenceEquals(c, wound)))
+                throw new System.InvalidOperationException("请选择本人手牌中的实际创伤");
+            if (!player.Mana.TryPreviewExactColors(new[] { (ManaColor)option }, ctx, out _))
+                throw new System.InvalidOperationException("不足以支付所选颜色的魔力");
+        }
+        internal static void Execute(PlayerState player, ActionContext ctx, int option, ManaColor drawColor)
+        {
+            Validate(player, ctx, option);
+            var color = (ManaColor)option;
+            var wound = ctx.SelectedSkillWound;
+            if (!player.Mana.TryPayExactColors(new[] { color }, ctx, player))
+                throw new System.InvalidOperationException("不足以支付所选颜色的魔力");
+            // Removing a wound is not healing and must preserve all same-ID unselected copies.
+            int index = player.Deck.Hand.FindIndex(card => ReferenceEquals(card, wound));
+            player.Deck.Hand.RemoveAt(index);
+            if (color == drawColor || InspirationSkillRules.IsStrictlyLowest(player, ctx))
+                player.Deck.DrawExact(1);
+        }
+    }
+
+    internal static class InspirationSkillRules
+    {
+        internal static void Validate(PlayerState player, int option)
+        {
+            SkillOption.Require(option, 0);
+            if (player.CompletedPersonalTurns < player.InspirationBlockedUntilTurnEnd)
+                throw new System.InvalidOperationException("下回合结束前不能使用其它激励技能");
+        }
+        internal static bool IsStrictlyLowest(PlayerState player, ActionContext ctx) =>
+            ctx.OtherPlayers.Where(other => !ReferenceEquals(other, player)).All(other => player.Fame < other.Fame);
+        internal static void DrawAndLock(PlayerState player)
+        {
+            player.Deck.DrawExact(2);
+            player.InspirationBlockedUntilTurnEnd = player.CompletedPersonalTurns + (player.IsPersonalTurnActive ? 2 : 1);
         }
     }
 
     /// <summary>
     /// 公開談判：白晝影響力3，黑夜影響力2。
     /// </summary>
-    public sealed class PublicNegotiationEffect : ICardEffect
+    public sealed class PublicNegotiationEffect : ICardEffect, ICardEffectValidator
     {
+        public void Validate(PlayerState player, ActionContext ctx, int option) => SkillOption.Require(option, 0);
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
+            Validate(player, ctx, option);
             ctx.InfluencePool += ctx.DayPart == DayPart.Day ? 3 : 2;
         }
     }
@@ -407,10 +458,12 @@ public sealed class NatureRevengeEffect : ICardEffect
     /// <summary>
     /// 風中殘葉：獲得綠色晶體並取得白色法力。
     /// </summary>
-    public sealed class LeavesInWindEffect : ICardEffect
+    public sealed class LeavesInWindEffect : ICardEffect, ICardEffectValidator
     {
+        public void Validate(PlayerState player, ActionContext ctx, int option) => SkillOption.Require(option, 0);
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
+            Validate(player, ctx, option);
             player.Mana.AddCrystal(ManaColor.Green, 1);
             player.Mana.AddToken(ManaColor.White, 1);
         }
@@ -419,10 +472,12 @@ public sealed class NatureRevengeEffect : ICardEffect
     /// <summary>
     /// 樹梢風語：獲得白色晶體並取得綠色法力。
     /// </summary>
-    public sealed class TreetopWhisperEffect : ICardEffect
+    public sealed class TreetopWhisperEffect : ICardEffect, ICardEffectValidator
     {
+        public void Validate(PlayerState player, ActionContext ctx, int option) => SkillOption.Require(option, 0);
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
+            Validate(player, ctx, option);
             player.Mana.AddCrystal(ManaColor.White, 1);
             player.Mana.AddToken(ManaColor.Green, 1);
         }
@@ -435,20 +490,7 @@ public sealed class NatureRevengeEffect : ICardEffect
     public sealed class LeadershipSkillEffect : ICardEffect
     {
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
-        {
-            switch (option)
-            {
-                case 0:
-                    ctx.UnitBlockBonus += 3;
-                    break;
-                case 1:
-                    ctx.UnitAttackBonus += 2;
-                    break;
-                default:
-                    ctx.RangedPool += 1;
-                    break;
-            }
-        }
+            => throw new InvalidOperationException("领导需要选择实际部队能力并一同激活");
     }
 
     /// <summary>
@@ -458,25 +500,22 @@ public sealed class NatureRevengeEffect : ICardEffect
     {
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            player.ExtraCommandSlots += 1;
-            ctx.RecruitDiscount += 5;
+            throw new InvalidOperationException("忠诚契约在真实取得时生效；招募时请选择专属指挥槽");
         }
     }
 
     /// <summary>
     /// 激勵（白色）：抽二牌，名望最低時得白色法力。
     /// </summary>
-    public sealed class MotivationWhiteEffect : ICardEffect
+    public sealed class MotivationWhiteEffect : ICardEffect, ICardEffectValidator
     {
+        public void Validate(PlayerState player, ActionContext ctx, int option) => InspirationSkillRules.Validate(player, option);
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            player.Deck.DrawExact(2);
-            bool lowest = true;
-            foreach (var p in ctx.OtherPlayers)
-                if (p.Reputation <= player.Reputation)
-                    lowest &= p.Reputation > player.Reputation;
-            if (lowest)
-                player.Mana.AddToken(ManaColor.White, 1);
+            Validate(player, ctx, option);
+            bool lowest = InspirationSkillRules.IsStrictlyLowest(player, ctx);
+            InspirationSkillRules.DrawAndLock(player);
+            if (lowest) player.Mana.AddToken(ManaColor.White, 1);
         }
     }
 
@@ -516,12 +555,19 @@ public sealed class WindPrayerEffect : ICardEffect
     /// <summary>
     /// 靈魂向導：移動力1並增加1點格擋值。
     /// </summary>
-    public sealed class SoulGuideEffect : ICardEffect
+    public sealed class SoulGuideEffect : ICardEffect, ICardEffectValidator
     {
+        public void Validate(PlayerState player, ActionContext ctx, int option)
+        {
+            RepeatedEffectResolution.RequireCompleted(ctx);
+            if(option!=0 || ctx.InBattle && ctx.CombatPhase!=Phase.Block)
+                throw new InvalidOperationException("灵魂向导请在战斗外或格挡阶段发动");
+        }
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
+            Validate(player,ctx,option);
             ctx.MovementPool += 1;
-            ctx.BlockPool += 1;
+            ctx.SoulGuideBlockPending = true;
         }
     }
 
@@ -529,14 +575,26 @@ public sealed class WindPrayerEffect : ICardEffect
     /// 身經百戰：忽略物理2或非物理1點傷害。
     /// option 0 物理、1 非物理。
     /// </summary>
-    public sealed class BattleHardenedEffect : ICardEffect
+    public sealed class BattleHardenedEffect : ICardEffect, ICardEffectValidator
     {
+        public void Validate(PlayerState player, ActionContext ctx, int option)
+        {
+            HeroAttackSkillRules.Mode(option);
+            if (ctx.CombatPhase != Phase.AssignDamage)
+                throw new InvalidOperationException("身经百战须在分配伤害阶段发动");
+            int index = HeroAttackSkillRules.Target(ctx, true);
+            var element = CardCombatActions.DefenseProfile(ctx.SelectedEnemy, index, ctx, ctx.SelectedEnemyAttackIndex).AttackElement;
+            if (ctx.AttackElementChange.TryGetValue(index, out var replacement)) element = replacement;
+            if ((element == Element.Physical) != (option == 0))
+                throw new InvalidOperationException("身经百战选择必须匹配该次攻击类型");
+        }
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            if (option == 0)
-                ctx.IgnorePhysicalDamage += 2;
-            else
-                ctx.IgnoreNonPhysicalDamage += 1;
+            Validate(player, ctx, option);
+            ctx.HardenedEnemy = ctx.SelectedEnemy;
+            ctx.HardenedAttack = ctx.SelectedEnemyAttackIndex;
+            if (option == 0) ctx.IgnorePhysicalDamage = 2;
+            else ctx.IgnoreNonPhysicalDamage = 1;
         }
     }
 
@@ -544,11 +602,24 @@ public sealed class WindPrayerEffect : ICardEffect
     /// 戰鬥狂亂：攻擊2或4點。
     /// option 0 普通，1 翻面強化。
     /// </summary>
-    public sealed class BattleFrenzyEffect : ICardEffect
+    public sealed class BattleFrenzyEffect : ICardEffect, ICardEffectValidator
     {
+        public void Validate(PlayerState player,ActionContext ctx,int option) => ValidateCore(player,ctx,option,false);
+        private static void ValidateCore(PlayerState player,ActionContext ctx,int option,bool borrowed)
+        {
+            if(!ctx.InBattle || ctx.CombatPhase!=Phase.Melee || option<0 || option>1 || !borrowed && player.FlippedSkills.Contains("hero_skill_pool_003:02"))
+                throw new InvalidOperationException("战斗狂乱须在近战阶段使用正面技能标记");
+        }
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
+            ExecuteCore(player,ctx,option,false);
+        }
+        internal static void Borrow(PlayerState player,ActionContext ctx,int option) => ExecuteCore(player,ctx,option,true);
+        private static void ExecuteCore(PlayerState player,ActionContext ctx,int option,bool borrowed)
+        {
+            ValidateCore(player,ctx,option,borrowed);
             ctx.MeleePool += option == 1 ? 4 : 2;
+            if(option==1 && !borrowed)player.FlippedSkills.Add("hero_skill_pool_003:02");
         }
     }
 
@@ -556,60 +627,59 @@ public sealed class WindPrayerEffect : ICardEffect
     /// 薩滿儀式：取得任意顏色法力標記。
     /// option 為顏色索引。
     /// </summary>
-    public sealed class ShamanRitualEffect : ICardEffect
+    public sealed class ShamanRitualEffect : ICardEffect, ICardEffectValidator
     {
+        public void Validate(PlayerState player,ActionContext ctx,int option) => ValidateCore(player,ctx,option,false);
+        private static void ValidateCore(PlayerState player,ActionContext ctx,int option,bool borrowed)
+        {
+            if(borrowed && option==100) throw new InvalidOperationException("借用不能恢复个人萨满仪式标记");
+            bool flipped=!borrowed && player.FlippedSkills.Contains("hero_skill_pool_003:03");
+            if(option==100)
+            {
+                if(!flipped || ctx.InBattle || ctx.TurnActionCommitted || ctx.RestedThisTurn)
+                    throw new InvalidOperationException("须以未使用的战斗外回合行动翻回萨满仪式");
+                RepeatedEffectResolution.RequireCompleted(ctx);
+            }
+            else if(flipped || !System.Enum.IsDefined(typeof(ManaColor),option))
+                throw new InvalidOperationException("请选择正面萨满仪式的一种实际魔力颜色");
+        }
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
+            ExecuteCore(player,ctx,option,false);
+        }
+        internal static void Borrow(PlayerState player,ActionContext ctx,int option) => ExecuteCore(player,ctx,option,true);
+        private static void ExecuteCore(PlayerState player,ActionContext ctx,int option,bool borrowed)
+        {
+            ValidateCore(player,ctx,option,borrowed);
+            if(option==100){ctx.TurnActionCommitted=true;player.FlippedSkills.Remove("hero_skill_pool_003:03");return;}
             ManaColor color = (ManaColor)option;
             player.Mana.AddToken(color, 1);
+            if(!borrowed)player.FlippedSkills.Add("hero_skill_pool_003:03");
         }
     }
 
     /// <summary>
     /// 再生（紅）：支付法力移除創傷，使用紅色或最低名望時抽牌。
     /// </summary>
-    public sealed class RegenerationRedEffect : ICardEffect
+    public sealed class RegenerationRedEffect : ICardEffect, ICardEffectValidator
     {
+        public void Validate(PlayerState player, ActionContext ctx, int option) => RegenerationSkillRules.Validate(player, ctx, option);
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            ManaColor color = (ManaColor)option;
-            var cost = new ManaCost(new System.Collections.Generic.Dictionary<Element, int>{{color.ToElement(),1}});
-            if (!player.Mana.Pay(cost, player)) return;
-
-            foreach (var c in player.Deck.Hand.ToArray())
-            {
-                if (c.Type == CardType.Wound)
-                {
-                    player.Deck.RemoveFromHand(c);
-                    if (color == ManaColor.Red || IsLowest(player, ctx))
-                        player.Deck.DrawExact(1);
-                    break;
-                }
-            }
-        }
-
-        private static bool IsLowest(PlayerState p, ActionContext ctx)
-        {
-            bool lowest = true;
-            foreach (var o in ctx.OtherPlayers)
-                if (o.Reputation <= p.Reputation)
-                    lowest &= o.Reputation > p.Reputation;
-            return lowest;
+            RegenerationSkillRules.Execute(player, ctx, option, ManaColor.Red);
         }
     }
 
     /// <summary>
-    /// 奧術偽裝：影響力2或本回合忽略聲望變化。
+    /// 奧術偽裝：影響力2或本回合忽略聲譽軌位置的作用，仍保留聲譽增減。
     /// option 0 影響力、1 忽略聲望。
     /// </summary>
     public sealed class ArcaneDisguiseEffect : ICardEffect
     {
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            if (option == 0)
-                ctx.InfluencePool += 2;
-            else
-                ctx.IgnoreReputationChange = true;
+            var skill=player.Skills.FirstOrDefault(s=>s.SourceId==HeroSocialSkillRules.Disguise);
+            HeroSocialSkillRules.Use(player,ctx,skill,option);
         }
     }
 
@@ -617,103 +687,40 @@ public sealed class WindPrayerEffect : ICardEffect
     /// 傀儡大師：保存或棄置敵人標記獲得攻擊/格擋。
     /// option 0 保存 ctx.KillEnemyIndex 指定的敵人；1 消耗獲得攻擊；2 消耗獲得格擋。
     /// </summary>
-    public sealed class PuppetMasterEffect : ICardEffect
+    public sealed class PuppetMasterEffect : ICardEffect, ICardEffectValidator
     {
-        public void Execute(PlayerState player, ActionContext ctx, int option = 0)
-        {
-            if (option == 0)
-            {
-                if (ctx.Enemies != null && ctx.KillEnemyIndex.HasValue)
-                {
-                    int idx = ctx.KillEnemyIndex.Value;
-                    if (idx >= 0 && idx < ctx.Enemies.Count)
-                        player.StoredEnemy = ctx.Enemies[idx];
-                }
-            }
-            else if (player.StoredEnemy != null)
-            {
-                var m = player.StoredEnemy;
-                if (option == 1)
-                    ctx.MeleePool += (m.Attack + 1) / 2;
-                else
-                    ctx.BlockPool += (m.Armor + 1) / 2;
-                player.StoredEnemy = null;
-            }
-        }
+        public void Validate(PlayerState player,ActionContext ctx,int option)
+            => throw new InvalidOperationException("傀儡大师需要选择实际击败或已保存的敌人标记");
+        public void Execute(PlayerState player,ActionContext ctx,int option=0)=>Validate(player,ctx,option);
     }
 
     /// <summary>
     /// 混亂大師：每次旋轉顏色獲得對應效果，金色由 option 決定。
     /// </summary>
-    public sealed class ChaosMasterEffect : ICardEffect
+    public sealed class ChaosMasterEffect : ICardEffect, ICardEffectValidator
     {
-        private static readonly ManaColor[] Cycle = { ManaColor.Blue, ManaColor.Green, ManaColor.Black, ManaColor.White, ManaColor.Red, ManaColor.Gold };
-        private static readonly System.Random Rng = new();
-
-        public void Execute(PlayerState player, ActionContext ctx, int option = 0)
-        {
-            if (player.ChaosColor == null)
-            {
-                player.ChaosColor = Cycle[Rng.Next(Cycle.Length)];
-            }
-            else
-            {
-                int idx = System.Array.IndexOf(Cycle, player.ChaosColor.Value);
-                player.ChaosColor = Cycle[(idx + 1) % Cycle.Length];
-            }
-
-            var color = player.ChaosColor.Value;
-            switch (color)
-            {
-                case ManaColor.Blue:
-                    ctx.BlockPool += 3;
-                    break;
-                case ManaColor.Green:
-                    ctx.MovementPool += 1;
-                    break;
-                case ManaColor.Black:
-                    ctx.RangedPool += 1;
-                    break;
-                case ManaColor.White:
-                    ctx.InfluencePool += 2;
-                    break;
-                case ManaColor.Red:
-                    ctx.MeleePool += 2;
-                    break;
-                case ManaColor.Gold:
-                    switch (option)
-                    {
-                        case 0: ctx.BlockPool += 3; break;
-                        case 1: ctx.MovementPool += 1; break;
-                        case 2: ctx.RangedPool += 1; break;
-                        case 3: ctx.InfluencePool += 2; break;
-                        default: ctx.MeleePool += 2; break;
-                    }
-                    break;
-            }
-        }
+        public void Validate(PlayerState player,ActionContext ctx,int option)=>ChaosSkillRules.Validate(player,ctx,option);
+        public void Execute(PlayerState player,ActionContext ctx,int option=0)=>ChaosSkillRules.Apply(player,ctx,option);
     }
 
     /// <summary>
     /// 詛咒：降低敵人攻擊或護甲。
-    /// option 低8位目標索引，次位1表示護甲。
+    /// option 0 减攻，1 减甲；目标来自实际选敌和攻击槽。
     /// </summary>
-    public sealed class HexCurseEffect : ICardEffect
+    public sealed class HexCurseEffect : ICardEffect, ICardEffectValidator
     {
+        public void Validate(PlayerState player, ActionContext ctx, int option)
+        {
+            HeroAttackSkillRules.Mode(option);
+            int index = HeroAttackSkillRules.Target(ctx, option == 0);
+            if (ctx.CombatPhase == Phase.Ranged && CombatMath.IsFortified(ctx.SelectedEnemy, index, ctx))
+                throw new InvalidOperationException("诅咒在远程和攻城阶段不能选择有城防敌人");
+        }
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            int idx = option & 0xFF;
-            bool armor = (option >> 8) == 1;
-            if (armor)
-            {
-                int cur = ctx.ArmorReduction.GetValueOrDefault(idx);
-                ctx.ArmorReduction[idx] = cur + 1;
-            }
-            else
-            {
-                ctx.AttackReduction += 1;
-                ctx.AttackReductionTimes = 1;
-            }
+            Validate(player, ctx, option);
+            if (option == 1) ctx.AddSkillArmorReduction(ctx.SelectedEnemy, 1);
+            else ctx.AddSkillAttackAdjustment(ctx.SelectedEnemy, ctx.SelectedEnemyAttackIndex, -1);
         }
     }
 
@@ -725,9 +732,7 @@ public sealed class WindPrayerEffect : ICardEffect
     {
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            ManaColor color = (ManaColor)option;
-            player.Mana.AddToken(color, 1);
-            player.Mana.AddCrystal(color, 1);
+            throw new System.InvalidOperationException("互动技能必须通过实际游戏的共享技能区发动");
         }
     }
 
@@ -749,11 +754,16 @@ public sealed class ManaSuppressEffect : ICardEffect
     /// <summary>
     /// 提神沐浴：治療1並獲得藍色晶體。
     /// </summary>
-    public sealed class RefreshBathEffect : ICardEffect
+    public sealed class RefreshBathEffect : ICardEffect, ICardEffectValidator
     {
+        public void Validate(PlayerState player, ActionContext ctx, int option = 0)
+        {
+            if (ctx.InBattle || option != 0) throw new System.InvalidOperationException("提神沐浴只能在战斗外按原效果使用");
+        }
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            CardHealing.Heal(player, ctx, 1);
+            Validate(player, ctx, option);
+            ctx.Healing.Add(1);
             player.Mana.AddCrystal(ManaColor.Blue, 1);
         }
     }
@@ -761,11 +771,16 @@ public sealed class ManaSuppressEffect : ICardEffect
     /// <summary>
     /// 提神微風：治療1並獲得白色晶體。
     /// </summary>
-    public sealed class RefreshBreezeEffect : ICardEffect
+    public sealed class RefreshBreezeEffect : ICardEffect, ICardEffectValidator
     {
+        public void Validate(PlayerState player, ActionContext ctx, int option = 0)
+        {
+            if (ctx.InBattle || option != 0) throw new System.InvalidOperationException("提神微风只能在战斗外按原效果使用");
+        }
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            CardHealing.Heal(player, ctx, 1);
+            Validate(player, ctx, option);
+            ctx.Healing.Add(1);
             player.Mana.AddCrystal(ManaColor.White, 1);
         }
     }
@@ -773,26 +788,30 @@ public sealed class ManaSuppressEffect : ICardEffect
     /// <summary>
     /// 神鷹之眼：移動力1，夜晚探索減費1，白晝可偵查城防。
     /// </summary>
-    public sealed class EagleEyeEffect : ICardEffect
+    public sealed class EagleEyeEffect : ICardEffect, ICardEffectValidator
     {
+        public void Validate(PlayerState player, ActionContext ctx, int option)
+        {
+            if (option != 0 || ctx.InBattle || ctx.TurnActionCommitted || ctx.RestedThisTurn)
+                throw new InvalidOperationException("神鹰之眼移动只能在行动前使用");
+            RepeatedEffectResolution.RequireCompleted(ctx);
+        }
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
+            Validate(player, ctx, option);
             ctx.MovementPool += 1;
-            if (ctx.DayPart == DayPart.Night)
-                ctx.ExploreMoveDiscount = System.Math.Max(ctx.ExploreMoveDiscount, 1);
-            else
-                ctx.CastleRevealRange = 2;
         }
     }
 
     /// <summary>
-    /// 特立獨行：若本回合未招募則影響力3，否則1。
+    /// 特立獨行：影響力1，或承諾本回合不以影響力招募而取得3。
     /// </summary>
     public sealed class LoneWolfEffect : ICardEffect
     {
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            ctx.InfluencePool += ctx.HasRecruited ? 1 : 3;
+            var skill=player.Skills.FirstOrDefault(s=>s.SourceId==HeroSocialSkillRules.LoneWolf);
+            HeroSocialSkillRules.Use(player,ctx,skill,option);
         }
     }
 
@@ -803,85 +822,79 @@ public sealed class ManaSuppressEffect : ICardEffect
     public sealed class BullseyeEffect : ICardEffect
     {
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
-        {
-            if (option == 0)
-                ctx.RangedPool += 1;
-            else
-                ctx.MeleePool += 2;
-        }
-    }
-
-    /// <summary>
-    /// 洞悉獵物：忽略敵人能力或改變攻擊元素。
-    /// option 高位0x1忽略能力，0x2改變元素；低8位敵人索引，其餘為值。
-    /// </summary>
-    public sealed class InsightPreyEffect : ICardEffect
-    {
-        public void Execute(PlayerState player, ActionContext ctx, int option = 0)
-        {
-            int mode = (option >> 16) & 0xFF;
-            int idx = option & 0xFF;
-            int val = (option >> 8) & 0xFF;
-            if (mode == 1)
-            {
-                ctx.IgnoredAbilities[idx] = (Ability)val;
-            }
-            else if (mode == 2)
-            {
-                ctx.AttackElementChange[idx] = (Element)val;
-            }
-        }
+            => throw new InvalidOperationException("百步穿杨需要选择真实原牌的攻击贡献");
     }
 
     /// <summary>
     /// 嘲諷：降低敵人攻擊或提高攻擊並削弱護甲。
-    /// option 0x1 減少，0x2 增加；低8位敵人索引。
+    /// option 0 减攻，1 增攻并减甲；目标来自实际选敌和攻击槽。
     /// </summary>
-    public sealed class TauntEffect : ICardEffect
+    public sealed class TauntEffect : ICardEffect, ICardEffectValidator
     {
+        public void Validate(PlayerState player, ActionContext ctx, int option)
+        {
+            HeroAttackSkillRules.Mode(option);
+            if (ctx.CombatPhase != Phase.Block) throw new InvalidOperationException("嘲讽须在格挡阶段发动");
+            HeroAttackSkillRules.Target(ctx, true);
+        }
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            int mode = (option >> 8) & 0xFF;
-            int idx = option & 0xFF;
-            if (mode == 1)
-            {
-                ctx.EnemyAttackAdjust[idx] = ctx.EnemyAttackAdjust.GetValueOrDefault(idx) - 1;
-            }
-            else if (mode == 2)
-            {
-                ctx.EnemyAttackAdjust[idx] = ctx.EnemyAttackAdjust.GetValueOrDefault(idx) + 2;
-                ctx.ArmorReduction[idx] = ctx.ArmorReduction.GetValueOrDefault(idx) + 2;
-            }
+            Validate(player, ctx, option);
+            ctx.AddSkillAttackAdjustment(ctx.SelectedEnemy, ctx.SelectedEnemyAttackIndex, option == 0 ? -1 : 2);
+            if (option == 1) ctx.AddTauntArmorReduction(ctx.SelectedEnemy, ctx.SelectedEnemyAttackIndex);
+        }
+    }
+
+    internal static class HeroAttackSkillRules
+    {
+        internal static void Mode(int option)
+        {
+            if (option != 0 && option != 1) throw new InvalidOperationException("请选择技能的两种原版效果之一");
+        }
+        internal static int Target(ActionContext ctx, bool attack)
+        {
+            int index = ctx.Enemies == null ? -1 : Enumerable.Range(0, ctx.Enemies.Count)
+                .Where(i => ReferenceEquals(ctx.Enemies[i], ctx.SelectedEnemy)).DefaultIfEmpty(-1).First();
+            if (!ctx.InBattle || index < 0 || ctx.DefeatedEnemyIndices.Contains(index)
+                || ctx.CombatPhase == Phase.End)
+                throw new InvalidOperationException("必须选择本场存活的实际敌人");
+            if (attack && (ctx.CombatPhase == Phase.Melee || ctx.SelectedEnemyAttackIndex < 0
+                || ctx.SelectedEnemyAttackIndex >= ctx.SelectedEnemy.AttackCount
+                || ctx.SkipAttackIndices.Contains(index) || ctx.ColdStareSkips(ctx.SelectedEnemy)
+                || ctx.IsAttackCancelled(index, ctx.SelectedEnemyAttackIndex)
+                || ctx.SuccessfullyBlockedAttacks.Contains((index, ctx.SelectedEnemyAttackIndex))))
+                throw new InvalidOperationException("必须选择尚可发动的实际攻击");
+            return index;
         }
     }
 
     /// <summary>
     /// 決鬥：格擋1並對同一敵人攻擊1，擊殺額外得名望1。
     /// </summary>
-    public sealed class DuelEffect : ICardEffect
+    public sealed class DuelEffect : ICardEffect, ICardEffectValidator
     {
-        public void Execute(PlayerState player, ActionContext ctx, int option = 0)
+        private static SkillCard Owned(PlayerState player) => player.Skills.SingleOrDefault(s=>s.SourceId=="hero_skill_pool_004:07");
+        public void Validate(PlayerState player,ActionContext ctx,int option)
         {
-            ctx.BlockPool += 1;
-            ctx.MeleePool += 1;
-            ctx.PendingFameOnKill += 1;
+            if(option!=0)throw new InvalidOperationException("请选择原决斗效果");
+            DuelActions.Validate(player,ctx,Owned(player));
         }
+        public void Execute(PlayerState player,ActionContext ctx,int option=0)
+        { Validate(player,ctx,option);DuelActions.Use(player,ctx,Owned(player)); }
     }
 
     /// <summary>
     /// 激勵（名望）：抽二牌，名望最低時獲得1點名望。
     /// </summary>
-    public sealed class MotivationFameEffect : ICardEffect
+    public sealed class MotivationFameEffect : ICardEffect, ICardEffectValidator
     {
+        public void Validate(PlayerState player, ActionContext ctx, int option) => InspirationSkillRules.Validate(player, option);
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            player.Deck.DrawExact(2);
-            bool lowest = true;
-            foreach (var p in ctx.OtherPlayers)
-                if (p.Reputation <= player.Reputation)
-                    lowest &= p.Reputation > player.Reputation;
-            if (lowest)
-                player.Fame += 1;
+            Validate(player, ctx, option);
+            bool lowest = InspirationSkillRules.IsStrictlyLowest(player, ctx);
+            InspirationSkillRules.DrawAndLock(player);
+            if (lowest) player.Fame += 1;
         }
     }
 
@@ -918,22 +931,29 @@ public sealed class ManaSuppressEffect : ICardEffect
     /// <summary>
     /// 冰封之力：提供1點攻城攻擊，可視為寒冰。
     /// </summary>
-    public sealed class FrozenPowerEffect : ICardEffect
+    public sealed class FrozenPowerEffect : ICardEffect, ICardEffectValidator
     {
+        public void Validate(PlayerState player, ActionContext ctx, int option) => SkillOption.Require(option, 1);
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            ctx.RangedPool += 1;
+            Validate(player, ctx, option);
+            ctx.CombatPower.AddAttack(1, option == 0 ? Element.Physical : Element.Ice, AttackType.Siege);
         }
     }
 
     /// <summary>
-    /// 藥劑製作：治療2點英雄傷口。
+    /// 藥劑製作：戰鬥外獲得治療2，供玩家選擇英雄或部隊消費。
     /// </summary>
-    public sealed class PotionCraftEffect : ICardEffect
+    public sealed class PotionCraftEffect : ICardEffect, ICardEffectValidator
     {
+        public void Validate(PlayerState player, ActionContext ctx, int option = 0)
+        {
+            if (ctx.InBattle || option != 0) throw new System.InvalidOperationException("药剂制作只能在战斗外按原效果使用");
+        }
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            CardHealing.Heal(player, ctx, 2);
+            Validate(player, ctx, option);
+            ctx.Healing.Add(2);
         }
     }
 
@@ -976,11 +996,17 @@ public sealed class ManaSuppressEffect : ICardEffect
     /// <summary>
     /// 熒光靈運：交涉時依持有晶體種類數獲得影響力。
     /// </summary>
-    public sealed class CrystalLuckEffect : ICardEffect
+    public sealed class CrystalLuckEffect : ICardEffect, ICardEffectValidator
     {
+        public void Validate(PlayerState player, ActionContext ctx, int option)
+        {
+            SkillOption.Require(option, 0);
+            if (!ctx.InNegotiation || ctx.InteractionClosed || ctx.InBattle)
+                throw new System.InvalidOperationException("荧光灵运只能在实际交涉期间使用");
+        }
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            if (!ctx.InNegotiation) return;
+            Validate(player, ctx, option);
             int kinds = 0;
             foreach (var kv in player.Mana.Crystals)
                 if (kv.Value > 0) kinds++;
@@ -995,39 +1021,33 @@ public sealed class ManaSuppressEffect : ICardEffect
     public sealed class FlightEffect : ICardEffect
     {
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
-        {
-            ctx.TeleportRange = option == 1 ? 2 : 1;
-            ctx.TeleportMustEndSafe = true;
-            ctx.IgnoreRampaging = true;
-        }
+            => throw new InvalidOperationException("飞行需要选择真实安全落点并按距离支付移动力");
     }
 
     /// <summary>
     /// 通用力量：橫置牌支付魔力後值提升為3或4。
-    /// option 0 不同色，1 同色。
+    /// 必须通过 SkillActions.PlaySideways 选择实际牌、用途与魔力。
     /// </summary>
     public sealed class UniversalPowerEffect : ICardEffect
     {
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            ctx.SidewaysCardValue = option == 1 ? 4 : 3;
+            throw new InvalidOperationException("通用力量须选择真实手牌、横置用途和魔力");
         }
     }
 
     /// <summary>
     /// 激勵（綠色）：抽兩牌，若名望最低則得綠色法力。
     /// </summary>
-    public sealed class MotivationGreenEffect : ICardEffect
+    public sealed class MotivationGreenEffect : ICardEffect, ICardEffectValidator
     {
+        public void Validate(PlayerState player, ActionContext ctx, int option) => InspirationSkillRules.Validate(player, option);
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            player.Deck.DrawExact(2);
-            bool lowest = true;
-            foreach (var p in ctx.OtherPlayers)
-                if (p.Reputation <= player.Reputation)
-                    lowest &= p.Reputation > player.Reputation;
-            if (lowest)
-                player.Mana.AddToken(ManaColor.Green, 1);
+            Validate(player, ctx, option);
+            bool lowest = InspirationSkillRules.IsStrictlyLowest(player, ctx);
+            InspirationSkillRules.DrawAndLock(player);
+            if (lowest) player.Mana.AddToken(ManaColor.Green, 1);
         }
     }
 
@@ -1039,11 +1059,7 @@ public sealed class ManaSuppressEffect : ICardEffect
     {
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            var source = ctx.ManaSource;
-            if (source == null || source.Dice.Count == 0) return;
-            int idx = System.Math.Clamp(option, 0, source.Dice.Count - 1);
-            source.Dice[idx].Roll(ctx.DayPart);
-            ctx.ExtraManaDice += 1;
+            throw new System.InvalidOperationException("互动技能必须通过实际游戏的共享技能区发动");
         }
     }
 
@@ -1274,10 +1290,12 @@ public sealed class ManaSuppressEffect : ICardEffect
     /// <summary>
     /// 黑夜狙擊：依日夜提供遠程攻擊。
     /// </summary>
-    public sealed class NightSniperEffect : ICardEffect
+    public sealed class NightSniperEffect : ICardEffect, ICardEffectValidator
     {
+        public void Validate(PlayerState player, ActionContext ctx, int option) => SkillOption.Require(option, 0);
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
+            Validate(player, ctx, option);
             ctx.RangedPool += ctx.DayPart == DayPart.Day ? 1 : 2;
         }
     }
@@ -1286,13 +1304,13 @@ public sealed class ManaSuppressEffect : ICardEffect
     /// 寒冰劍術：攻擊2或寒冰攻擊2。
     /// option 0 物理，1 寒冰。
     /// </summary>
-    public sealed class IceSwordEffect : ICardEffect
+    public sealed class IceSwordEffect : ICardEffect, ICardEffectValidator
     {
+        public void Validate(PlayerState player, ActionContext ctx, int option) => SkillOption.Require(option, 1);
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            ctx.MeleePool += 2;
-            if (option == 1)
-                ctx.AttackElementChange[-1] = Element.Ice;
+            Validate(player, ctx, option);
+            ctx.CombatPower.AddAttack(2, option == 0 ? Element.Physical : Element.Ice);
         }
     }
 
@@ -1300,24 +1318,14 @@ public sealed class ManaSuppressEffect : ICardEffect
     /// 盾牌精通：格擋3，寒冰格擋2或火焰格擋2。
     /// option 0 物理，1 冰，2 火。
     /// </summary>
-    public sealed class ShieldMasteryEffect : ICardEffect
+    public sealed class ShieldMasteryEffect : ICardEffect, ICardEffectValidator
     {
+        public void Validate(PlayerState player, ActionContext ctx, int option) => SkillOption.Require(option, 2);
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            if (option == 1)
-            {
-                ctx.BlockPool += 2;
-                ctx.InfluenceBlockElement = Element.Ice;
-            }
-            else if (option == 2)
-            {
-                ctx.BlockPool += 2;
-                ctx.InfluenceBlockElement = Element.Fire;
-            }
-            else
-            {
-                ctx.BlockPool += 3;
-            }
+            Validate(player, ctx, option);
+            ctx.CombatPower.AddBlock(option == 0 ? 3 : 2,
+                option == 1 ? Element.Ice : option == 2 ? Element.Fire : Element.Physical);
         }
     }
 
@@ -1325,39 +1333,43 @@ public sealed class ManaSuppressEffect : ICardEffect
     /// 抗性弱化：按抗性種類降低敵人護甲。
     /// option 目標索引。
     /// </summary>
-    public sealed class ResistWeakeningEffect : ICardEffect
+    public sealed class ResistWeakeningEffect : ICardEffect, ICardEffectValidator
     {
+        public void Validate(PlayerState player, ActionContext ctx, int option)
+        {
+            if (!ctx.InBattle || ctx.Enemies == null || option < 0 || option >= ctx.Enemies.Count || ctx.DefeatedEnemyIndices.Contains(option))
+                throw new System.InvalidOperationException("请选择本场战斗中存活的敌人");
+        }
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            if (ctx.Enemies == null || option < 0 || option >= ctx.Enemies.Count) return;
+            Validate(player, ctx, option);
             var m = ctx.Enemies[option];
-            int count = 0;
-            foreach (var a in m.Abilities)
-            {
-                if (a == Ability.FireResist || a == Ability.IceResist || a == Ability.MagicResist)
-                    count += 1;
-                else if (a == Ability.ColdFireResist)
-                    count += 2;
-            }
-            int reduce = System.Math.Max(0, count);
-            int cur = ctx.ArmorReduction.GetValueOrDefault(option);
-            ctx.ArmorReduction[option] = cur + reduce;
+            int count = new[] { Element.Physical, Element.Fire, Element.Ice }
+                .Count(element => CombatMath.HasResistance(m, option, element, ctx));
+            ctx.AddSkillArmorReduction(m, count);
         }
     }
 
     /// <summary>
     /// 無懼痛苦：戰鬥外棄傷牌並抽牌。
     /// </summary>
-    public sealed class FearlessPainEffect : ICardEffect
+    public sealed class FearlessPainEffect : ICardEffect, ICardEffectValidator
     {
+        public void Validate(PlayerState player, ActionContext ctx, int option)
+        {
+            SkillOption.Require(option,0);
+            var selected = ctx.SelectedSkillWound;
+            if(ctx.InBattle || (selected == null ? !player.Deck.Hand.Any(c=>c.Type==CardType.Wound)
+                : selected.Type != CardType.Wound || !player.Deck.Hand.Any(c=>ReferenceEquals(c,selected))))
+                throw new System.InvalidOperationException("无惧痛苦只能在战斗外弃掉一张实际手牌创伤");
+        }
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            if (ctx.InBattle) return;
-            var w = player.Deck.Hand.FirstOrDefault(c => c.Type == CardType.Wound);
+            Validate(player,ctx,option);
+            var w = ctx.SelectedSkillWound ?? player.Deck.Hand.FirstOrDefault(c => c.Type == CardType.Wound);
             if (w != null)
             {
-                player.Deck.RemoveFromHand(w);
-                player.Deck.GainToDiscard(w);
+                player.Deck.TryDiscardExact(w);
                 player.Deck.DrawExact(1);
             }
         }
@@ -1365,13 +1377,13 @@ public sealed class ManaSuppressEffect : ICardEffect
 
     /// <summary>
     /// 漫不經心：橫置牌+2或+3。
-    /// option 0 普通牌，1 高級/法術/神器。
+    /// 必须通过 SkillActions.PlaySideways 从实际原卡判定类别。
     /// </summary>
     public sealed class CarelessEffect : ICardEffect
     {
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            ctx.SidewaysCardValue = option == 1 ? 3 : 2;
+            throw new InvalidOperationException("漫不经心须选择真实手牌与横置用途");
         }
     }
 
@@ -1381,25 +1393,21 @@ public sealed class ManaSuppressEffect : ICardEffect
     public sealed class MagicRepelEffect : ICardEffect
     {
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
-        {
-            ctx.SidewaysCardValue = player.HeldManaDie == null ? 3 : 2;
-        }
+            => throw new InvalidOperationException("魔法抗拒必须选择实际横置手牌及是否本回合放弃源骰");
     }
 
     /// <summary>
     /// 激勵（藍色）：名望最低時獲得藍色法力。
     /// </summary>
-    public sealed class MotivationBlueEffect : ICardEffect
+    public sealed class MotivationBlueEffect : ICardEffect, ICardEffectValidator
     {
+        public void Validate(PlayerState player, ActionContext ctx, int option) => InspirationSkillRules.Validate(player, option);
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            player.Deck.DrawExact(2);
-            bool lowest = true;
-            foreach (var p in ctx.OtherPlayers)
-                if (p.Reputation <= player.Reputation)
-                    lowest &= p.Reputation > player.Reputation;
-            if (lowest)
-                player.Mana.AddToken(ManaColor.Blue, 1);
+            Validate(player, ctx, option);
+            bool lowest = InspirationSkillRules.IsStrictlyLowest(player, ctx);
+            InspirationSkillRules.DrawAndLock(player);
+            if (lowest) player.Mana.AddToken(ManaColor.Blue, 1);
         }
     }
 
@@ -1411,11 +1419,7 @@ public sealed class ManaSuppressEffect : ICardEffect
     {
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            var color = (ManaColor)option;
-            if (color == ManaColor.Gold) return;
-            player.Mana.AddToken(color, 1);
-            ctx.OverlordColor = color;
-            ctx.OverlordPending = true;
+            throw new System.InvalidOperationException("互动技能必须通过实际游戏的共享技能区发动");
         }
     }
 }

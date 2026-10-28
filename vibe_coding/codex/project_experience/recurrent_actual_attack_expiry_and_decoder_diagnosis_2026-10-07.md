@@ -1,0 +1,11 @@
+# 实际攻击机会失效与冻结解码诊断
+
+不能由攻击池非零直接推断策略错过可击杀机会：原抗性/护甲/攻击类型可能让完整正式mask没有attack。新增diagnose_actual_attack_expiry.py从认证任务真实reset逐步重放实际before/action/after/rawreward，带完整历史重建GRU，核对保存选择概率；在advance处记录实际legal attack和概率，随后从同一真实前缀执行该合法替代，不修改模型。
+
+新Arythea失败45步：17/36/43无合法attack，22唯一attack概率.198079、选中advance概率.141848；实际同前缀attack击败原021并消费来源，但仍Melee/won=false。Goldyx64步19唯一attack概率.588819，同前缀能击败；48无合法攻击。只证明即时反事实，不证明整任务胜利或初始任务可解。损坏before与保存概率两负例拒绝，不能接受伪前缀。
+
+冻结同一200局检查点，12认证训练任务：sampled4/12、hierarchical_greedy6/12、joint_map0/12；319/298步7517/6878有限审计检查。后者会跳回合/不打牌；层级贪心只改变解码，不等于联合MAP，也不证明权重学习改善。已认证Goldyx保留双战层级43步完整成功、993检查；其余三既有unknown保留构筑用该新解码尝试仍无见证，不回填训练，测试不碰。
+
+discover_policy_witnesses新增显式mode、默认sampled保持，确定性模式每任务只允许一次，重复在载入前拒绝并实测；每份manifest记录mode。未知不是不可解。新旧失败均保留，Console两读零错误，规则/模型/观察/场景未改。
+
+证据：AutomationOutputs/BattleRl/20261007_actual_attack_decoder_diagnostic_summary.json、arythea/goldyx_actual_attack_expiry_diagnostic.json及相关冻结评估/保留未知目录。下一步保持原范围继续真实覆盖、学习信用诊断与完整策略UI；本轮不能宣称通用策略达标。

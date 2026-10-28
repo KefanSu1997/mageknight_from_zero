@@ -14,8 +14,8 @@ namespace MK.Logic.Runtime
         /// <summary>倒數是否已經開始。</summary>
         public bool CountdownStarted => _remaining >= 0;
 
-        /// <summary>開始倒數，數值等於玩家人數。</summary>
-        public void StartCountdown(int playerCount) => _remaining = playerCount;
+        /// <summary>開始倒數剩餘的最後回合，不包含已跳過回合的聲明者。</summary>
+        public void StartCountdown(int remainingTurns) => _remaining = remainingTurns;
 
         /// <summary>通知有玩家結束回合，倒數遞減。</summary>
         public void NotifyTurnFinished()
@@ -27,4 +27,3 @@ namespace MK.Logic.Runtime
         public void Reset() => _remaining = -1;
     }
 }
-

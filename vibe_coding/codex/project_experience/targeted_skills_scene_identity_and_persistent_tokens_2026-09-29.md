@@ -1,0 +1,9 @@
+# 目标限定技能连续场景与同名实例UI
+
+叉形闪电/决斗需让贡献绑定Monster引用，不能按模板ID或值相等转借。UI List.Contains/Remove以及IList.IndexOf对record Monster会把同名同值标记混淆；选中集合、取消与回到战斗索引都必须ReferenceEquals。实际两只相同骷髅选择触发此失败，修复后仅补受影响41–57，历史失败保留。
+
+傀儡大师的标记不是模板：真实击杀登记候选，公共供给预留不可重抽；每回合保存或消费二选一，多库存跨回合保留；正式EndTurn释放未选候选。源技能贡献不能误标为原卡，否则会被卡牌加成消费者识别。
+
+Unity与CLI测试程序集不同：不能直接赋值内部许可/读取使用集，应通过正式BattleSummonsEffect与SkillActions.IsUsed。实际Console两次0必要，CLI编译不能代替。
+
+三英雄分合法构筑，188操作215断言；分别真实格挡/同敌名望、两敌分笔消费、保存标记后跨回合消费并击杀。索引vibe_coding/codex/pve_targeted_combat_skills_acceptance_index.json。后台42有效，未场景的分支明确列出，不将入口接入当作全规则通过。

@@ -1,0 +1,18 @@
+# 原供应四卡主要模式连续验收
+
+上一轮头环三路径有真实场景证据，属于有效进展。本轮不重跑全库，处理 `remaining_primary_modes_2026-09-29.md` 中已存在合法入口但缺当前场景消费者的026强化、027基础、033强化、022基础。
+
+主代理实际解析历史XML确认：RulesState/20260923_075415_8d6b81d4 的 LearningOptionalPurchasePaysOriginalInfluenceAndPreservesSupply(True)、PracticeOriginalSameColorMaterialAndSupplyGoToRealZones(False)、SpellForgeUsesActualDifferentSpellsWithoutTakingThem(True)，以及20260923_072400_47a3fe82 的StormUsesActualSourceAndExtraClaims(False)，均为Passed，直接复用。
+
+新增仅两条连续后台预演以核构筑、费用来源、供应实体和正式换轮，不重复四张单卡测试。供应先排除已持有高级牌再洗混，所以固定seed并不保证不同构筑同供应；保留原026/027/033构筑再核实际005/022/003供应。原单卡无规则修改。
+
+分两条合法自定快照，不能称标准16牌开局：第一条七原牌，熔炉蓝费选两法术得绿/白晶、学习白费和真实白骰付款承诺、威吓凑10实际付9入手风暴、实际蓝源骰得晶再付原耐力移动4，绿晶付行进移动4，合8实际移动扣费；另一条五原牌，修行同色材料永久移除、原盾进弃牌，正式结束/换轮抽回后真实格挡减甲与原狂怒击杀。所有场景状态尚待实际验证。
+
+并行仅准备下一组部队脚本，不并发Unity或CLI。物理空余约1GB，保持串行执行；不关闭用户程序、不修改VPN、不推送。
+
+后台最终两路线153255_242e91eb 2/2，共38断言；先前失败保留详见worklog_2026-09-29_supply_primary_route_backend.md。Unity新测试程序集导入后实际Console两次0（tmp/pve_supply_primary_compile.json），首次部队路线前再次双0。learning场景运行中，不提前记通过。
+
+learning首次153808_43aaa703停25（第七张未翻页）；补翻页后154009_a5d68cb4仅25起78新断言通过，合72操作116断言，三图已看。practice154128_12abbc7f前65步通过，末65手牌0/弃牌5失败为开战UI丢弃选择。生产仅PveBattleController.Journey.cs增加可选preserveEndTurnDiscards参数，StartJourneyBattle传true；其他正式生命周期继续清理。Domain reload短暂拒绝连接，等待4秒后refresh(wait_for_ready)恢复，实际Console双0 tmp/pve_supply_discard_compile.json；末65八断言一图增量运行中。
+
+
+15:47最终：供应两路线138有效操作227断言，六图已看。learning前25步旧证据+补25..71；practice前65步旧证据+154515_7c5dff05末65八断言一图。原材料永久去除、原盾正式跨轮抽回、实际格挡减甲后击杀、手牌0弃牌5与末选0全部通过；初次失败均保留。最终Console双0 tmp/pve_supply_primary_final_console.json，配置恢复原字节，无fixture修改。加护林人/幻术师95/139，本轮共233有效操作366断言、10关键图。见两份acceptance_index；新后台2/2，复用四原卡和两类部队原后台，无整库回归/无push。整体目标仍active。

@@ -1,0 +1,11 @@
+{
+  "id": "army_004",
+  "x": 140,
+  "y": 100,
+  "width": 988,
+  "height": 1020,
+  "textureWidth": 1254,
+  "textureHeight": 1254,
+  "source_sha256": "39d594476597aa79c58245e0726e3552fd38afbf0d0fb03a6bb0a1e8355749b6",
+  "method": "alpha>=64 layout bounds only; renderer keeps full texture UV and all original pixels"
+}

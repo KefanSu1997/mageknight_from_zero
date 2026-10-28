@@ -62,7 +62,7 @@ namespace MK.Tests.Cards
         }
 
         [Test]
-        public void ForbiddenRangedTargetPreservesPowerButLowAttackSpendsIt()
+        public void ForbiddenRangedTargetAndInsufficientAttackPreserveActualPower()
         {
             var player = new PlayerState();
             var context = new ActionContext();
@@ -70,11 +70,13 @@ namespace MK.Tests.Cards
             Assert.Throws<InvalidOperationException>(() => CardCombatActions.Attack(player, context,
                 new[] { Enemy(3, Ability.Fortified) }, new[] { 0 }, Phase.Ranged));
             Assert.That(context.RangedPool, Is.EqualTo(5));
-            var result = CardCombatActions.Attack(player, context, new[] { Enemy(3, Ability.FireResist) }, new[] { 0 }, Phase.Ranged);
-            Assert.That(result.EffectivePower, Is.EqualTo(2));
-            Assert.That(result.Kills, Is.Zero);
-            Assert.That(context.RangedPool, Is.Zero);
+            var part=context.CombatPower.Attacks[0];
+            Assert.Throws<InvalidOperationException>(()=>CardCombatActions.Attack(player, context, new[] { Enemy(3, Ability.FireResist) }, new[] { 0 }, Phase.Ranged));
+            Assert.That(context.RangedPool, Is.EqualTo(5));
+            Assert.That(context.CombatPower.Attacks[0],Is.SameAs(part));
             Assert.That(player.Fame, Is.Zero);
+            Assert.That(CardCombatActions.Attack(player,context,new[]{Enemy(3)},new[]{0},Phase.Ranged).Kills,Is.EqualTo(1));
+            Assert.That(context.RangedPool,Is.Zero);
         }
 
         [Test]

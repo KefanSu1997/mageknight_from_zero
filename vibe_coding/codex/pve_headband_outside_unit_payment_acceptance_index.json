@@ -1,0 +1,31 @@
+{
+  "scope": "头环战外药草师与原承诺两笔付款、实际治疗和村庄交涉",
+  "backendReused": "20260929_105241_57b4a9f6",
+  "scene": {
+    "run": "20260929_111016_f65943d1",
+    "steps": 90,
+    "assertions": 140,
+    "report": "AutomationOutputs/PveBattle/20260929_111016_f65943d1/report.json",
+    "sha256": "b0e673a9fffed5bacc0c365bda4d67a5ea69d3ff5e0bfa02c5d8ec251e0167e3"
+  },
+  "extraStateChecks": {
+    "same_player": true,
+    "poison_discard_two": true,
+    "headband_discard_once": true,
+    "personal_skills_unused": true,
+    "no_source_die_used": true,
+    "unit_still_exhausted": true,
+    "unit_unwounded": true,
+    "no_hand_wounds": true,
+    "original_sword_removed": true,
+    "actual_reward_drawn": true
+  },
+  "reviewedImages": [
+    63,
+    71,
+    84
+  ],
+  "console": "tmp/pve_headband_outside_unit_payment_console.json",
+  "fixtureRestored": true,
+  "pushed": false
+}

@@ -1,0 +1,10 @@
+{
+  "x": 131,
+  "y": 227,
+  "width": 800,
+  "height": 1060,
+  "textureWidth": 1058,
+  "textureHeight": 1486,
+  "source_sha256": "9a8f8d2b69eb0538924a3ca469302b475d85f4d48b61f5054585bc919c8ed9bb",
+  "method": "alpha>=64 layout bounds only; renderer keeps full texture UV and all original pixels"
+}

@@ -1,0 +1,17 @@
+{
+  "scope": "指挥旌旗实际供应分页及原第四张取得后消费",
+  "run": "20260929_093238_e7101fd8",
+  "steps": 84,
+  "replayedVerifiedPrefix": 60,
+  "newSteps": 24,
+  "assertions": 51,
+  "backend": "仅UI分页变化，复用已通过免费招募/头环领导后台，无重测",
+  "screenshotsReviewed": [
+    60,
+    63,
+    79
+  ],
+  "sha256": "9966deefe7f9c15d45ef21c0e240417bf3cbaa9f2dbc116a05345fdbecc77ece",
+  "console": "tmp/pve_command_offer_pages_final_console.json",
+  "fixtureRestored": true
+}

@@ -1,0 +1,11 @@
+# 通用战斗必须核对原怪物标记和实际阶段
+
+PveBattleSession接收正式PlayerState和Monster实例，调度既有CardPlayActions、TurnMachine、CombatPowerPool、BattleResolver。格挡预留保存原始贡献，目标相关增益只在正式承伤结算时计算一次；远程击败保留稳定索引，后续承伤与近战跳过死敌，避免重发奖励。场景配置、原卡绑定、敌群和展示独立，Builder首次创建后保留用户配置。
+
+同源测试通过仍不能替代原素材审查。本次初版第二场150项脚本检查通过，但逐张查看monster (6).jpg发现护甲旁有物理抗性盾牌图标，原monster.json的resist却为空。修正原数据，保留失败语义记录；用原敏捷3+利斧投掷3合并，按物抗减半为3后击败护甲3，且校验利斧击杀奖励1。不能通过换简单敌人、取消抗性或改称全通过回避问题。仅补该敌人及其实际消费者，不重复已通过的第一场。
+
+Game View文本应同时检查实际渲染和TMP截断。Status两行和HeroName初版矩形过矮，截断了资源和名字；修正本场景矩形，不修改全局公共组件。自动验收启动时可临时启用Application.runInBackground，退出恢复原值，避免失焦时协程停在首帧；不改ProjectSettings，不为此重启编辑器或电脑。
+
+场景原怪物JSON以TextAsset打包，复用MonsterJsonLoader.ParseMonsters同一解析器。纯行动牌场景向真实出牌入口注入ActionSystem(false)，不在运行时无谓读取法术工程文件，原调用默认行为保留。
+
+本次完整证据、剩余范围与运行目录见`vibe_coding/codex/worklog_2026-09-18_pve_battle.md`。该demo的有限交互覆盖不等同全卡库复杂材料、法术、神器、部队与技能的UI接入。

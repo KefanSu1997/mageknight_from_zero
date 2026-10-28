@@ -57,6 +57,11 @@ def main():
         if index == 0:
             steps = [s for s in steps if s['label'] != case['id']+'_prepare']
         for step in steps:
+            # Final views contain the per-operation rule comparisons. Keep every
+            # action/assertion; SceneAutomationOrchestrator still captures failures.
+            step['skipScreenshot'] = not step['label'].endswith('_execute')
+            if step['label'] in {case['id']+'_operation_'+str(i) for i in case.get('captureAfterOperations', [])}:
+                step['skipScreenshot'] = False
             for assertion in step.get('after', []):
                 if assertion['key'] == 'completed':
                     assertion['expected'] = str(index+1)

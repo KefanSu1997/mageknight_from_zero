@@ -7,4 +7,10 @@ namespace MK.Logic.Runtime.CardEffects
     {
         ManaColor[] GetAdditionalManaCost(int option);
     }
+
+    /// <summary>Costs selected from a real offer depend on the current action context.</summary>
+    public interface ICardContextualManaCost
+    {
+        ManaColor[] GetAdditionalManaCost(PlayerState player, ActionContext context, int option);
+    }
 }

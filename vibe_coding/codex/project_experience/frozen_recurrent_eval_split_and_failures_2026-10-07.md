@@ -1,0 +1,13 @@
+# 冻结保存策略评估与组成隔离
+
+新增 evaluate_recurrent_ppo.py：从保存检查点加载当前原规则/动作/schema/三层GRU架构及源码签名一致的参数，使用独立评估RNG，禁止优化器更新；实际逐动作走正式入口并保存完整前后状态、失败和有限审计。评估前后参数SHA及检查点SHA均相同。跨正式回合/fight/roundFinish带同一GRU记忆，仅episode重置。
+
+calibration只能评估训练组成，不冒充held-out。validation/test按coverage_tasks的组成哈希（忽略seed和顺序变化）检查既定split且与训练组成不交叉；仍须当前完整任务可解见证。改变ShuffleSeed不产生独立未见组成。最终测试尚未运行，不拿校准充当未调参测试。
+
+保存的实际四episode/两更新检查点：joint MAP确定性两项0/2，44真实步，1018项有限审计无异常；实际到全伤牌End、activity0、未出牌情况下无法继续。此前采样胜利不代表greedy有效。冻结随机采样独立seed7001，4局3完整成功，131步、3108项有限审计；同两训练组成，只有小规模校准，不能外推胜率或泛化。
+
+随机失败一局原stopReason空字符串、Outside/turns6；旧产物原样保留，不猜测不可解原因。之后评估器增加native_done记录与缺原因终止明确标识，未回写旧报告冒充新字段。失败初始任务仍已有可解见证，策略失败不移出可解池。
+
+discover_task_witnesses.py允许独立partition搜索与缓存筛选，训练默认不变。首项保留验证组成45秒494规则调用未得到完整见证，保持unknown/排除胜利池，测试组成未触碰；结果20261007_validation_first_discovery。
+
+3项组成泄漏/分区/推断参数不变测试、2项受影响证据缓存检查通过；最终Console两读0错误tmp/rl_evaluation_partition_final_console_20261007.json。产物20261007_recurrent_frozen_joint_map_calibration、20261007_recurrent_frozen_sampled_calibration。多组可解扩池、独立验证/测试的实际模型结果、全原费用材料消费者及真实Unity验收仍缺。

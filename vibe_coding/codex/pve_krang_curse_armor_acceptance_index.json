@@ -1,0 +1,39 @@
+{
+  "status": "scene_passed",
+  "scope": "原克朗自身诅咒降甲，实际原狼骑兵护甲4到3，真实攻击3击杀及同玩家旧伤和原卡跨回合移动；非完整游戏规则穷举",
+  "sourceIds": [
+    "hero_skill_pool_003:08"
+  ],
+  "generator": "tools/build_pve_krang_curse_armor_acceptance.py",
+  "backend": {
+    "report": "AutomationOutputs/RulesState/20260929_190011_18c19a2b/results.xml",
+    "test": "MK.Tests.Battles.PveKrangCurseArmorJourneyTests.CurseReducesActualWolfArmorThenThreeAttackKillsAndOldWoundSurvivesNextTurn"
+  },
+  "scene": {
+    "report": "AutomationOutputs/PveBattle/20260929_190440_0bc54ec8/report.json",
+    "sha256": "76af5b76e964c251c7509d92065f2343223643fbbd28c7bc20b7521de5e19753",
+    "status": "success",
+    "operations": 53,
+    "assertions": 76,
+    "acceptedZeroBasedRanges": [
+      [
+        0,
+        52
+      ]
+    ],
+    "screenshotsViewed": [
+      31,
+      39,
+      50
+    ]
+  },
+  "compileConsole": "tmp/pve_special_primary_compile_console.json",
+  "finalConsole": {
+    "path": "tmp/pve_special_primary_final_console.json",
+    "sha256": "8d62f369865d478d110ffb57efc54be5aff20c4f4af96e654eba68ad28fb3864",
+    "errorCounts": [
+      0,
+      0
+    ]
+  }
+}

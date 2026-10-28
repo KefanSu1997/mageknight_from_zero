@@ -1,0 +1,9 @@
+# 十六任务冻结退化与激励原实体审查
+
+实际无旧活进程，再以相同16认证任务分层冻结比较真实扩池前后检查点。前6/16、955步/23294有限检查、1步数上限；后4/16、1973步/47911检查、7步数上限。固定四validation新权重1/4（Goldyx），相比此前2/4丢失Wolfhawk；三未知保留，不将失败称不可解。小样本不证明因果，新候选不晋升，下一基线真实sixteen_task_checkpoint_expansion（264局、未更新扩池权重），不是伪造恢复。
+
+新增Norowas激励真实训练episode268第2步手6→8/库9→7，实体12 basic007与13 basic002实际draw→hand，usedSkillsRound真实增加。后来同名basic007强化使用的是实体4，不能归给激励抽出的12；第40步basic002确用实体13进入played。原白标记1→2，下步nextTurn全部失效；后续白费来自别次收入，不冒称激励收入消费者。
+
+读取原skill.json及InspirationSkillRules：文本严格最低名望且不能立即使用其它激励；实现OtherPlayers.All严格比较。当前单人白奖励条件独立原依据尚未核定，不把抽牌/计数当全技能通过。官方WizKids页面列FAQ链接，原PDFfetch超时、官网walkthrough不可读，未依赖第三方搜索摘要认定规则，保留条件缺口；不因未知修改规则。
+
+证据AutomationOutputs/BattleRl/20261007_sixteen_task_frozen_review_summary.json、actual_norowas_inspiration_draw_identity_review.json及冻结目录。无代码/场景修改，不重复旧测试/Console。所有进程正常terminal，未上传/推远端或用户进程终止。完整原要素/69敌、真实费用消费者、广泛独立测试和完整保存策略Unity未达标。

@@ -1,0 +1,39 @@
+{
+  "scope": "正式休息/缓慢恢复及提神沐浴战斗外与新轮使用；新4种技能效果仅后台",
+  "backendRuns": [
+    "20260923_052148_b1cc084b",
+    "20260923_052243_35e02af0",
+    "20260923_052740_f79cbf7e"
+  ],
+  "effectiveBackendPassed": 56,
+  "sceneSegments": [
+    {
+      "run": "20260923_052427_7693c536",
+      "passedStepRange": "0-44",
+      "passedSteps": 45,
+      "passedAssertions": 69,
+      "nextStepFailure": "错误Camp按钮路径；原报告保持failed"
+    },
+    {
+      "run": "20260923_052556_944287a5",
+      "passedSteps": 25,
+      "passedAssertions": 38
+    }
+  ],
+  "screenshotsReviewed": 5,
+  "finalConsole": "tmp/pve_20260923_rest_final_console.json",
+  "sourceSha256": {
+    "Assets/Logic/Runtime/RestActions.cs": "9aa9f5df1fae90b9c1922686de93ab146b6c9291c43f984e8c403ece93b2beb9",
+    "Assets/Logic/Runtime/ActionContext.cs": "4b3cf9d8f1f3020644834f88038511c087491992f0a60a5a93eb0b747f40a6d3",
+    "Assets/Logic/Runtime/MovementService.cs": "12fed49690810548115f7dd2e7e3e221f95ead57facc16ee1f251e594cedd960",
+    "Assets/Logic/Runtime/PlayerTurnEngine.cs": "54d180bf43be4a9cdac7b756271f6132de5d4b7cb4d95424a7742f82e00ccf3d",
+    "Assets/Logic/Runtime/CardEffects/HeroSkillEffects.cs": "b0fbe9c08e966b3ad20b75dab556882e1d6b21c034da784fd92580ef332e701f",
+    "Assets/Logic/Runtime/Battles/PveJourneySession.cs": "d333151dc69e4059b33d329c6c55b40f7e026fa0dfba32af31f891e27b823d5a",
+    "Assets/Logic/Runtime/Battles/PveBattleSession.cs": "bf838102d2d1535dc1be1e033afeb8e7008cd4ef5b265509731009d578ee23cd",
+    "Assets/Scripts/Battle/PveBattleController.Journey.cs": "1ecaef9b18a4d1ab99d4ea62880bfdce492592c146103250b602df1d65ffa6d0",
+    "Assets/Scripts/Battle/PveBattleController.JourneySupport.cs": "49fe4d483cb79c5a7f9149f7e4fe28c87f69e576b1276545e2eeb1025d6ce0fb",
+    "Assets/Scripts/Battle/PveBattleController.JourneyHand.cs": "c3dd211e67ee121564a7a95f5d6c929bc573c0d5f775eb48575ebf545054296a",
+    "Assets/Tests/RulesState/JourneyRestSkillTests.cs": "67798d31a54c0268fe3e670f53a8f24fc6ea85c29bc36d81297400630317c321",
+    "tools/build_pve_journey_rest_acceptance.py": "811fbd8c2dd2222087ec47091d43d8eb1e6d91be1239e64665a4bfb7a239f2e8"
+  }
+}

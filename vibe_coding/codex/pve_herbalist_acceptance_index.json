@@ -1,0 +1,35 @@
+{
+  "scope": "原药草师三个能力：绿费治疗2、战外免费重整I/II、免费绿色token；实际手牌与II级部队治疗消费，重整保留伤牌，token支付原攻城并击杀。",
+  "backend": "AutomationOutputs/RulesState/20260918_205345_d2801ca8",
+  "backendPassed": 11,
+  "regression": "AutomationOutputs/RulesState/20260918_205558_12e455e0",
+  "regressionPassed": 4,
+  "regressionReason": "共享CardUnitActions和部队魔力UI发生变化，仅补火冰法师token/crystal产生与实际消费/溢出的4个直接相关后台。",
+  "scene": "AutomationOutputs/PveBattle/20260918_205616_e65217a6/report.json",
+  "battles": 5,
+  "steps": 155,
+  "assertions": 414,
+  "visualReviewed": 11,
+  "consoleErrors": [
+    0,
+    0
+  ],
+  "limitations": "战斗中禁用、缺费、非法目标和治疗点不足仅后台；同一玩家进入下一场并消费重整部队仅后台。完整招募、轮间恢复、供应部队重整及全部组合未包含本批场景结论。",
+  "files": {
+    "AutomationOutputs/PveBattle/20260918_205616_e65217a6/report.json": "b791c58de963b1b5d15d055a86cbd6e977b3b61325030bd5a69d36fa7e81a9b3",
+    "AutomationOutputs/PveBattle/20260918_205616_e65217a6/console_final.json": "8d62f369865d478d110ffb57efc54be5aff20c4f4af96e654eba68ad28fb3864",
+    "AutomationOutputs/RulesState/20260918_205345_d2801ca8/summary.json": "c026a3ec938fc0acf8d26cb574907750530f3bf9fa2725af57fe81ecf241fe4a",
+    "AutomationOutputs/RulesState/20260918_205558_12e455e0/summary.json": "56df272e71cbf8a845511d3458deed69e1bf068de77e8c2e62312cf27c5bb270",
+    "AutomationOutputs/PveBattle/20260918_205616_e65217a6/captures/055_绿色魔力生成治疗点.png": "0524ba814f8fd4a9aba3f9a9e69369f220f274106561affc624d65e52ba72445",
+    "AutomationOutputs/PveBattle/20260918_205616_e65217a6/captures/058_治疗第二张真实手牌创伤.png": "fc6f3f4abc3b71b321eb3a41e32a5bc61aacdd018a83342d8024cc233cd7325d",
+    "AutomationOutputs/PveBattle/20260918_205616_e65217a6/captures/078_绿色魔力生成治疗点.png": "dedef83d01647e216d2fb832ed740173a133603dfbcc9eaec8d2db0717537c61",
+    "AutomationOutputs/PveBattle/20260918_205616_e65217a6/captures/080_按等级二消耗两点治疗.png": "d860317458b5b79de8b52b2b775f15335a81588f50ba674b79e97022e223e332",
+    "AutomationOutputs/PveBattle/20260918_205616_e65217a6/captures/104_战后重整.png": "fe9aa4126525acfce0f34288656efad9c609c3d8de1f65fc7fba4661f6be9f80",
+    "AutomationOutputs/PveBattle/20260918_205616_e65217a6/captures/106_核对重整后的真实部队.png": "57db8859c1c071aea0120e1f548d33580f4f56d533c831546def5a2ce8ad7205",
+    "AutomationOutputs/PveBattle/20260918_205616_e65217a6/captures/128_战后重整.png": "fc869eb8c7d109cc0518d9f785f7f1f1a7da33a8d81603ecb3600c2c3be5fc7a",
+    "AutomationOutputs/PveBattle/20260918_205616_e65217a6/captures/130_核对重整后的真实部队.png": "16957aef0486a78032936fc0791b3172f64bdea1a8c1c5031e354d7f3f43f65e",
+    "AutomationOutputs/PveBattle/20260918_205616_e65217a6/captures/146_发动原部队能力.png": "9c1f3f09e0d165e249a72d56a3483320e2560ed2bfca0cf2a941b86f04f14d06",
+    "AutomationOutputs/PveBattle/20260918_205616_e65217a6/captures/148_发动原部队能力.png": "9d1f7e3b27d2a9c9ac3cdadb43341ac65966d8674bf1bcdce2296e8fe3406e46",
+    "AutomationOutputs/PveBattle/20260918_205616_e65217a6/captures/154_进入_End.png": "5dff6de5338c63a0aa3b3592b87845459344ac9d9b1732a2e3346f1eb65f4b1d"
+  }
+}

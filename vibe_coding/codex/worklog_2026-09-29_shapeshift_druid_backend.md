@@ -1,0 +1,7 @@
+﻿# 变换身形原德鲁伊输入接入
+
+原 basic_card_018 基础固定移动2并选实际一格减费1（最低2），蓝费强化固定移动4并选一种地形减费1。原技能仅转换固定项，其余动态减费保留。此前面板及各正式Session签名不传TargetHex/TargetTerrain，元数据可列出德鲁伊但实际验证失败。
+
+ShapeshiftActions.Play/Borrow及Journey/Battle/头环正式入口尾增可选hex/terrain，旧参数兼容；实际原验证和执行期间临时设置，在成功/失败finally恢复。FixedCardOutputs和DruidicPathsEffect原实现未改。头环HasBorrowInput现用真实Placed格或原TerrainType只读预检，避免只剩德鲁伊时误判无合法选择。
+
+新增ShapeshiftDruidInputTests共6项，与现有PveShapeshiftSkillTests 13项及HeadbandShapeshiftBorrowTests 3项同批CLI：20260929_123121_81ebadf1初次20/22通过。两失败是用例选择id和非法战后移动预期：决心格挡应传block；战斗已经占用正式行动，减费保留但不得移动。未放宽生产；修正后仅补失败两项，20260929_123221_42d8b012为2/2通过。旧通过项不重跑。新覆盖实际格挡/击杀、蓝费、原地图减费、正式移动拒绝守恒、错误输入守恒和临时输入恢复、头环第二次实际地图只读probe及续用。CLI完成，未操作Unity；场景由主代理接UI后验证。

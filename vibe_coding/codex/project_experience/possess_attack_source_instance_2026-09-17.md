@@ -1,0 +1,9 @@
+# 附身攻击来源必须绑定敌人实例
+
+附身的原规则限定攻击只能用于“其他敌人”。列表下标不能充当稳定来源：远程删除前面的敌人会移动来源；来源自身死亡时，后一敌人会占据同一位置。
+
+AttackProfile记录ExcludedEnemy引用，正式CharmEffect传入真实目标。目标选择、CombatMath合法性、BattleResolver底层保护、可转换远程判定以及附身贡献清理统一使用HasExcludedTarget/Excludes。ReferenceEquals避免把两只数值完全相同的record怪物当成一只。旧ExcludedTargetIndex仅在没有来源引用的旧构造调用中兜底。
+
+验证必须包含拒绝前后资源一致、来源仍可被普通原狂怒攻击且不消费借来攻击、随后选其他敌人真正击杀、来源先死亡后无关存活敌人不被误禁，以及借来攻击仍只能在攻击阶段使用。底层直接传AttackAllocation也不能绕过来源限制。原卡面、费用、真实卡区另在场景验证。
+
+详情见 `vibe_coding/codex/worklog_2026-09-17_possess_source_identity.md`。该结论不等于附身所有前置条件或整个战斗系统通过；同牌面敌人必须是独立运行实例，静态模板/地图生成与正式冒险接入仍按原目标继续审计。

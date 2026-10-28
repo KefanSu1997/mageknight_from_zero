@@ -1,0 +1,197 @@
+{
+  "scope": "Original Magic Familiar main four-color consumers, real R5 recruitment and R6 inventory upkeep",
+  "status": "both main-consumer routes scene passed",
+  "routes": {
+    "red-blue": {
+      "run": "20260929_164701_f27ebd7a",
+      "report": "AutomationOutputs/PveBattle/20260929_164701_f27ebd7a/report.json",
+      "sha256": "914acde960837929ac39479281bbe373d843384fa017be14f5591ed9c3ab5079",
+      "totalReplayAndNewSteps": 139,
+      "replayedPrefixSteps": 82,
+      "newVerifiedSteps": 57,
+      "assertions": 114,
+      "newVerifiedRange": [
+        82,
+        138
+      ],
+      "unitIdentityChecks": [
+        {
+          "step": 79,
+          "instances": "army_2_004:1400056976",
+          "attunements": "army_2_004:Red:False",
+          "ready": "True"
+        },
+        {
+          "step": 82,
+          "instances": "army_2_004:1400056976",
+          "attunements": "army_2_004:Red:False",
+          "ready": "True"
+        },
+        {
+          "step": 91,
+          "instances": "army_2_004:1400056976",
+          "attunements": "army_2_004:Red:False",
+          "ready": "False"
+        },
+        {
+          "step": 101,
+          "instances": "army_2_004:1400056976",
+          "attunements": "army_2_004:Red:False",
+          "ready": "False"
+        },
+        {
+          "step": 104,
+          "instances": "army_2_004:1400056976",
+          "attunements": "army_2_004:Red:True",
+          "ready": "True"
+        },
+        {
+          "step": 105,
+          "instances": "army_2_004:1400056976",
+          "attunements": "army_2_004:Blue:False",
+          "ready": "True"
+        },
+        {
+          "step": 121,
+          "instances": "army_2_004:1400056976",
+          "attunements": "army_2_004:Blue:False",
+          "ready": "False"
+        },
+        {
+          "step": 125,
+          "instances": "army_2_004:1400056976",
+          "attunements": "army_2_004:Blue:False",
+          "ready": "False"
+        },
+        {
+          "step": 138,
+          "instances": "army_2_004:1400056976",
+          "attunements": "army_2_004:Blue:False",
+          "ready": "False"
+        }
+      ],
+      "reviewedScreenshots": [
+        "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_164701_f27ebd7a\\captures\\091_红标原攻击3+2，无额外魔力费.png",
+        "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_164701_f27ebd7a\\captures\\121_蓝标原格挡4+3，不再次收费.png",
+        "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_164701_f27ebd7a\\captures\\137_实际原狼骑移除与声誉奖励.png"
+      ],
+      "visualReview": "Main agent confirmed all three screenshots normal; this indexing subagent checked actual report and identity"
+    },
+    "white-green": {
+      "run": "20260929_164905_7185da75",
+      "report": "AutomationOutputs/PveBattle/20260929_164905_7185da75/report.json",
+      "sha256": "665b1b6f4451e28f01495b083d6a9f8480a1c420e240b62f5e82bcf40a4a137c",
+      "totalReplayAndNewSteps": 173,
+      "replayedPrefixSteps": 69,
+      "newVerifiedSteps": 104,
+      "newVerifiedRange": [
+        69,
+        172
+      ],
+      "assertions": 199,
+      "unitIdentityChecks": [
+        {
+          "step": 89,
+          "instances": "army_2_004:193960694",
+          "attunements": "army_2_004:White:False",
+          "ready": "True"
+        },
+        {
+          "step": 99,
+          "instances": "army_2_004:193960694",
+          "attunements": "army_2_004:White:False",
+          "ready": "False"
+        },
+        {
+          "step": 110,
+          "instances": "army_2_004:193960694",
+          "attunements": "army_2_004:White:False",
+          "ready": "True"
+        },
+        {
+          "step": 115,
+          "instances": "army_2_004:193960694",
+          "attunements": "army_2_004:White:False",
+          "ready": "False"
+        },
+        {
+          "step": 125,
+          "instances": "army_2_004:193960694",
+          "attunements": "army_2_004:White:False",
+          "ready": "False"
+        },
+        {
+          "step": 128,
+          "instances": "army_2_004:193960694",
+          "attunements": "army_2_004:White:True",
+          "ready": "True"
+        },
+        {
+          "step": 129,
+          "instances": "army_2_004:193960694",
+          "attunements": "army_2_004:Green:False",
+          "ready": "True"
+        },
+        {
+          "step": 160,
+          "instances": "army_2_004:193960694",
+          "attunements": "army_2_004:Green:False",
+          "ready": "True"
+        },
+        {
+          "step": 166,
+          "instances": "army_2_004:193960694",
+          "attunements": "army_2_004:Green:False",
+          "ready": "False"
+        },
+        {
+          "step": 170,
+          "instances": "army_2_004:193960694",
+          "attunements": "army_2_004:Green:False",
+          "ready": "False"
+        },
+        {
+          "step": 172,
+          "instances": "army_2_004:193960694",
+          "attunements": "army_2_004:Green:False",
+          "ready": "False"
+        }
+      ],
+      "reviewedScreenshots": [
+        "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_164905_7185da75\\captures\\099_正式发动并耗竭，不再支付调谐费.png",
+        "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_164905_7185da75\\captures\\115_正式发动并耗竭，不再支付调谐费.png",
+        "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_164905_7185da75\\captures\\166_正式发动并耗竭，不再支付调谐费.png",
+        "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_164905_7185da75\\captures\\170_逐张消费真实英雄伤牌.png"
+      ],
+      "visualReview": "Main agent confirmed all four screenshots normal; indexing subagent checked actual successful report and same-unit identity"
+    }
+  },
+  "backendReused": {
+    "report": "AutomationOutputs/RulesState/20260923_025452_e400c660/results.xml",
+    "fixture": "MK.Tests.Cards.MagicFamiliarsStateTests",
+    "passed": 24,
+    "methods": [
+      "AttackUsesPaidMarkerAndActualEnemyConsumerWithoutAnotherManaCost(Red,5)",
+      "BlockMarkerFeedsFormalBlockAndPreventsActualWounds(Blue,7)",
+      "WhiteAbilityChoosesMovementOrInfluenceAndSpendsItOnRealConsumer(0)",
+      "WhiteAbilityChoosesMovementOrInfluenceAndSpendsItOnRealConsumer(1)",
+      "HealingPaysForRealWoundCardsAndDoesNotHealTheUnitByReadying(Green,3)",
+      "NextRoundRequiresInventoryCrystalBeforeTacticsAndPreservesSameWoundedUnit"
+    ]
+  },
+  "console": "tmp/pve_puppet_shock_familiar_final_console.json",
+  "limitations": [
+    "Configured original-card builds, not original 16-card starts",
+    "Previously verified recruitment/movement prefix steps are replayed but not recounted as new scene operations",
+    "Main four-color abilities and consumers passed; not a claim of exhaustive combinations or entire-game completion",
+    "White influence purchases a real healing point; the pooled healing consumption does not distinguish that point from the Regeneration point"
+  ],
+  "consoleSha256": "8d62f369865d478d110ffb57efc54be5aff20c4f4af96e654eba68ad28fb3864",
+  "totals": {
+    "totalExecutedSteps": 312,
+    "replayedPrefixSteps": 151,
+    "newVerifiedSteps": 161,
+    "assertions": 313,
+    "reviewedScreenshots": 7
+  }
+}

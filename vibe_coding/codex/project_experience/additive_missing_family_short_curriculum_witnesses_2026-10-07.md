@@ -1,0 +1,9 @@
+# 欠覆盖家族短课程须追加而非替代长目标
+
+13认证池缺block_heal/draw_cycle/mana/control。按当前实际缺口选择四不同英雄未试train构筑，四个原六战任务454步零完整成功/10434有限检查；局部组胜与全部任务不同，四项继续unknown。配置脚本首次遇OriginalOpening无Build修正为安全get，未启动实际discovery；不将准备失败算探索结果。
+
+追加同真实构筑/随机流短课程，只更换声明EnemyGroups为原弱敌001/002/003，逐组成重新split检验train；原六战定义/失败保持。分层四次563步得Norowas魔力20步见证；另外三unknown改用有界采样，八次464步得Braevalar格挡治疗38步、Arythea抽牌循环44步见证，控制仍unknown。各真实root全前缀重放当前规则认证，未代打/伪造规则。三见证只用原牌与部队，未实际发动该家族附加法术/高级牌，不按载入牌库记卡覆盖。
+
+13→16当前数据池append-only迁移保持72参数/Adam数组、RNG与历史、真实264局Adam137。三新任务各实际进入8局PPO续训（分别2/2/1次），318步2完整成功、7493有限审计零错，CPU65.534秒，保存272局11648步Adam141。当前数据绑定模式87、单位19、技能21、英雄敌人配对19，累计模式89另列；真正新增使用与构筑家族目录分开。
+
+本轮未宣称冻结改善，候选还需评估；没有规则/源码/场景改变、无需重复旧Console/Unity场景。证据AutomationOutputs/BattleRl/20261007_missing_family_iteration_summary.json与three discovery目录/sixteen_task_training，全部进程自然terminal。六战/控制未知、全费用材料消费者、69敌、广泛独立测试与完整保存策略Unity仍缺，原目标不缩小。

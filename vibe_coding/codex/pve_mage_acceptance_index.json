@@ -1,0 +1,41 @@
+{
+  "scope": "火焰/寒冰法师全部基本战斗能力：红/蓝费用、远程/攻城元素、攻挡、魔力+魔晶、实际原卡消费、耗竭及同元素抗性承伤。招募、完整轮间及全部组合未场景验收。",
+  "backend": "AutomationOutputs/RulesState/20260918_201740_f5dfa883",
+  "backendRepair": "AutomationOutputs/RulesState/20260918_202102_e053e66a",
+  "backendPassedUnique": 17,
+  "backendNote": "首次17通过；Unity发现internal许可赋值问题，改走正式BattleSummonsEffect后只补该1例，累计不重复计数。",
+  "scene": "AutomationOutputs/PveBattle/20260918_202203_24f618b6/report.json",
+  "battles": 10,
+  "steps": 246,
+  "assertions": 697,
+  "uiFollowup": {
+    "report": "AutomationOutputs/PveBattle/20260918_202647_11f5bec6/report.json",
+    "steps": 48,
+    "assertions": 105,
+    "reason": "仅去除魔力按钮重复文案，未重跑整场战斗或后台"
+  },
+  "visualReviewed": 16,
+  "files": {
+    "AutomationOutputs/PveBattle/20260918_202203_24f618b6/report.json": "906a30bf02668d0fadcdf874de7415d53a3e0b073c0cb15ce8eaace5ef8179d9",
+    "AutomationOutputs/PveBattle/20260918_202647_11f5bec6/report.json": "149fe9c785422e320dab01b6f0825d742c5d6ab487e9d6c9d4fe93adca550b9c",
+    "AutomationOutputs/PveBattle/20260918_202647_11f5bec6/console_final.json": "8d62f369865d478d110ffb57efc54be5aff20c4f4af96e654eba68ad28fb3864",
+    "AutomationOutputs/RulesState/20260918_201740_f5dfa883/summary.json": "6a9d464016794a9b6e6ee483c24cee1d606a1270e03c5c4124768d61e96f9a50",
+    "AutomationOutputs/RulesState/20260918_202102_e053e66a/summary.json": "63451a1acbf5b39b028b84036ecd62a3109620677b27721ea5b8df4f91e6154d",
+    "AutomationOutputs/PveBattle/20260918_202203_24f618b6/captures/038_发动原部队能力.png": "3294ef43cf4558a5eb42edd798aecc67c92e010a0590936dd69c7f453bac0445",
+    "AutomationOutputs/PveBattle/20260918_202203_24f618b6/captures/061_发动原部队能力.png": "73ecc601c005332f3980ad4aa0e3ac460addfbb139f7713f9c5b346cf1060a32",
+    "AutomationOutputs/PveBattle/20260918_202203_24f618b6/captures/076_承伤阶段生成实际魔力.png": "fd65ea886820908d309eb79a1524c8df5b7ea717abae975cb50b2182742ec406",
+    "AutomationOutputs/PveBattle/20260918_202203_24f618b6/captures/078_进入_Melee.png": "e18f6f822ad8f10b2840d3b91d01f657899599ba86d448ff3acf5fe1aacb8b74",
+    "AutomationOutputs/PveBattle/20260918_202203_24f618b6/captures/097_发动原部队能力.png": "ea684af16e8f457d4ac8d0422b187de1179993504874ad3e0822568669b4ff7f",
+    "AutomationOutputs/PveBattle/20260918_202203_24f618b6/captures/122_发动原部队能力.png": "a1b4ea09a091295f86dc62ee118261a169a7608b49ae221d5f5ac10a6c943ad5",
+    "AutomationOutputs/PveBattle/20260918_202203_24f618b6/captures/148_发动原部队能力.png": "dbeb9811e0b1c5249e0b563fbf1c8b21c5622011f14bd2994f2038c32862087d",
+    "AutomationOutputs/PveBattle/20260918_202203_24f618b6/captures/161_发动原部队能力.png": "addc9237010a96cdb0aa6c6fdc5dd56fe86ce3fc640cb396c9c22c7a8f2dcea4",
+    "AutomationOutputs/PveBattle/20260918_202203_24f618b6/captures/186_承伤阶段生成实际魔力.png": "b3c2427357626010e6a48b2cd7d28f13a7b4c8e8d352c89c994dc4ac01f85d61",
+    "AutomationOutputs/PveBattle/20260918_202203_24f618b6/captures/188_进入_Melee.png": "497f00309be70c58aeecdceeed51da478285880313fbc58fc65a74650194f99a",
+    "AutomationOutputs/PveBattle/20260918_202203_24f618b6/captures/212_发动原部队能力.png": "a7234a28bd8cf51966c01ea86b5b969e877702cabefb4b5570e8c5822544790b",
+    "AutomationOutputs/PveBattle/20260918_202203_24f618b6/captures/228_进入_End.png": "ab08a077a21f1374ed8fb8c419ca4cc5e100aca83fff90a31c7511b908750f7c",
+    "AutomationOutputs/PveBattle/20260918_202203_24f618b6/captures/234_发动原部队能力.png": "577f779110a54a1acd0b2382f7dff5bb0641a1a482451a9f2f6a97e502758216",
+    "AutomationOutputs/PveBattle/20260918_202203_24f618b6/captures/245_进入_End.png": "f9d5e9bae99803e1a27214074574589d1341a7dc9edf1bbf167fa34302836494",
+    "AutomationOutputs/PveBattle/20260918_202647_11f5bec6/captures/043_核对原法师能力按钮.png": "d69e137d405a3b4210d6311faff12a230836c277a60dae6603c59c6626ed54cc",
+    "AutomationOutputs/PveBattle/20260918_202647_11f5bec6/captures/047_核对承伤阶段魔力按钮.png": "666d3b7f0d2c1ecbe8bab51d1e72d99ec83e809fec640c127ef7eccd795028b6"
+  }
+}

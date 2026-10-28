@@ -1,0 +1,22 @@
+# 宝典借用冥想的真实付款顺序审查
+
+v43 PID161752实际已退出，stderr为Independent transition audit failed，失败seed64001、step1：items_023 normal，materialSlot=2，magic_002 top。原失败JSON完整保留，不改写。上一更新1024步14局，未保存4096步模型；本轮已学权重无法恢复，不冒充已保存检查点。
+
+查看原图items_023法术宝典与magic_002冥想/神游及正式SpellTomeEffect、MeditationEffect：宝典先弃掉同色实际材料，借用冥想基础从当时弃牌堆随机取两张到顶/底。实际材料实例2与此前弃牌实例5一起进入牌库，因此旧“材料必须仍在discard”断言错误。
+
+只修改trajectory_audit.py的宝典借用magic002分支：从真实原弃牌+实际付款实体构建候选，取回数必须min(2,候选数)，剩余弃牌必须原候选，牌库必须恰好原牌库+取回实体，材料不得仍留手牌。其他神器材料断言不变，同色实际供应断言仍执行。没有修改原费用、效果或失败门禁。
+
+原85操作逐步用冻结v41正式DLL重放，所有前后状态逐值一致，新2016检查无错误。漏取材料、未付款留手、额外移入无关牌三个负例均触发新断言。证据：AutomationOutputs/BattleRl/20261004_tome_meditation_payment_audit_check.json及20261004_tome_meditation_actual_prefix_replay.json。仅区划快照仍不能独立证明顶/底顺序和下次抽牌+2，限度明确保留；不是全部宝典消费者验收。
+
+Unity refresh idle，Console两次error=0，留档tmp/rl_tome_meditation_audit_console_20261004.json。游戏与Unity场景未修改。
+
+修复及门禁通过后恢复：新进程PID 234892，目录20261004_long_return_tome_audit_v44_warm_ppo，8192步，seed64025，实际恢复v42最终权重；同v41冻结DLL继承v43最后真实使用历史，当前轮选择另列，参数仍gamma0.995/GAE0.99和原全范围两构筑家族。原失败/停止结果未改写。
+
+
+## v44中途检查与新实际消费者轨迹
+
+进程PID234892、启动2026-10-04 13:46:14.75635+08:00再次实测存活，未重复启动。4096/8192步、69训练局，检查点policy_checkpoint_4096.npz已保存；固定7英雄评估仍0/7完整战斗胜利，2局有击杀、0完整敌群胜利。长收益窗口实验尚未证明胜率改善，继续当前授权8192步，不将覆盖量当作可用模型。
+
+只阅读新保存seed65000 first_actual_mystic_box_normal_use.json。对照原防护旌旗、皓日护符、神秘宝盒、无情威压卡图及正式MysticBoxEffect/SunAmuletEffect，16项直接断言通过，记录AutomationOutputs/BattleRl/20261004_v44_box_banner_night_sun_actual_review.json及原轨迹SHA。第44操作物理宝盒14从手牌揭示原items002；第46操作仅实际单位1取得宝盒本体附旗与items002效果别名，名望+1；第49正式回合末解除附旗、同实体宝盒进弃牌、揭示供应数量恢复。间隔没有实际防御承伤消费者，不计防护旌旗防御完成。
+
+第66操作夜间借用items014焚毁：物理宝盒14永久移除，取得原3Gold且名望+1；第68操作原basic026强化真实消费Gold3到2，产生原影响6，实际牌16进入已打出区；第71正式回合末借用神器归还，剩余Gold与影响清空，物理宝盒仍在removed。没有预先把金色改成红色。声誉未在轨迹观察中记录，basic026声誉-1、招募/重整消费者仍缺证据；森林移动与邻接地点揭示、供应底部顺序、保存模型Unity回放仍未验收。没有游戏代码、规则或场景改动，此轮不重复Unity编译和旧库测试。

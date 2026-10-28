@@ -409,6 +409,26 @@ namespace MageKnight.SceneAutomation
             }
 
             var go = GameObject.Find(path);
+            // Resolve one visible original card after a real shuffle. Ambiguous copies
+            // require an explicit instance selection rather than silently picking one.
+            int cardSlot = path.LastIndexOf("/@card=", StringComparison.Ordinal);
+            if (go == null && cardSlot > 0)
+            {
+                var parent = GameObject.Find(path.Substring(0, cardSlot));
+                if (parent == null) return null;
+                var matches = parent.GetComponentsInChildren<Button>()
+                    .Where(b => b.transform.Find("OriginalCard_" + path.Substring(cardSlot + 7)) != null).ToArray();
+                return matches.Length == 1 ? matches[0] : null;
+            }
+            // A shuffled hand has unpredictable card IDs. Resolve its actual visible child
+            // by index, then invoke the same Button as a player; never inject game state.
+            int slot = path.LastIndexOf("/#", StringComparison.Ordinal);
+            if (go == null && slot > 0 && int.TryParse(path.Substring(slot + 2), out int index))
+            {
+                var parent = GameObject.Find(path.Substring(0, slot));
+                if (parent != null && index >= 0 && index < parent.transform.childCount)
+                    go = parent.transform.GetChild(index).gameObject;
+            }
             if (go == null)
             {
                 return null;

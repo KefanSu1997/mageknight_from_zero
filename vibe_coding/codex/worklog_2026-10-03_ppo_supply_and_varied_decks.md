@@ -1,0 +1,63 @@
+# PPO 正式供应与多种原牌库存
+
+## 已结束批次
+
+v9训练16384步、230条轨迹、602.71秒，实际60敌、85原牌效果选项、47输入选择、29技能选项、204消费者记录；七英雄小样本3/7至少赢一次。输出AutomationOutputs/BattleRl/20261003_actual_inputs_ppo，不替代完整泛化评估。
+
+## 供应与法术入口
+
+tools/BattleRl新增实际材料选择（020/029/025）、修行027的实际材料/供应、远古血脉030基础供应、天赋025强化与法术熔炉033的实际法术供应，以及学习026授予权限后的显式购牌。获得新实体仅接受本次原输入指定的供给ID，写入acquired；预检完整还原该记录，不能把预检奖励留入实际游戏。审计检查原供应来源、取得数量、材料弃牌/永久移除、学习印刷6/9影响力与手牌/弃牌去向。强效复制、更多独立颜色、多人/部队/地图等输入仍未完全暴露。
+
+法术必须同时包装原SpellCardData与原ActionCardData印刷描述：正式PveBattleSession.Play仍查原deed字典，仅传spells会让合法预检悄悄拒绝所有法术。初次v10烟测只覆盖原开局，不能证明法术已接入；核查正式Play入口后补齐双定义，全部文本、费用、图片路径复用原数据。目标枚举同时接入EnemyIndex和EnemyAttack，实际攻击槽不再默认丢失。
+
+## 合法中盘库存课程
+
+v11引入三类种子课程：原16张；原16+3高级+2法术共21张；原16+6高级+4法术共26张。后两者是明确标记的自定中盘库存快照，绝不说成标准开局免费获得，也不证明它们的获得过程已验收。保留本人原基础牌；高级行动和法术不重复；每色魔晶0～3；等级1与0技能数量匹配；正式供应排除初始自有唯一牌。开始后同一玩家、牌区、资源与实体沿用正式跨回合/跨夜间流程。
+
+v12用独立随机子流抽取高级/法术组合，替代按敌人序号/固定步幅取牌，降低英雄/敌人与构筑之间的固定关联。16/21/26三种牌数仍保留。coverage.inventory_families与starting_decks单列实际初始构筑，不将它们当成效果通过。完整范围仍缺神器、部队、全部技能专用输入和真实地图/场地。
+
+## 验证与性能
+
+v11烟测1024步119.48秒，实际已打出magic_001/013/014/020基础，并执行advanced_card_027强化，去除实际basic_card_000并取得实际advanced_card_040。这里只记入口/主要模式使用，不能说全部消费者已验证。输出AutomationOutputs/BattleRl/20261003_varied_deeds_smoke。
+
+缓存静态输入轮廓与语义Key索引，避免每次预检线性扫描15752个动作；不缓存游戏合法性、不绕过正式校验。变更后v11完整含法术的78操作跨夜间逐状态/奖励精确重放通过：该目录exact_fast_inventory_replay.json。
+
+v12烟测1024步51.66秒，1607观察维度、15752动作，实际17套初始库存、15输入选择；打出magic_005/006/014/016基础，定时6465断言零失败。输出AutomationOutputs/BattleRl/20261003_random_inventory_smoke。7英雄×3库存的21配置、232断言通过，证据AutomationOutputs/BattleRl/20261003_inventory_curriculum_checks.json（当前v12）。原材料/骰子4项8操作111断言在v10复核通过，20261003_actual_deed_input_checks.json现为v10范围；旧v9同项通过是历史执行结果，不再把这份更新后的文件称为v9原始文件。
+
+初次C#使用不存在的PlayerDeck.AllCards产生2条编译错误，改为读取实际七牌区后编译零警告零错误；没有改变PlayerDeck规则或覆盖旧训练DLL。Unity Console两次零错误：tmp/rl_supply_spell_console_20261003.json，工具源码不属于Unity程序集。本轮没有更改UI，完整新范围UI映射和场景回放仍待完成。
+
+## 当前长训练
+
+从v12烟测权重训练16384步，种子2441起；DLL tmp/battle_rl_v12/BattleRl.dll，协议--serve-journey-builds，输出AutomationOutputs/BattleRl/20261003_random_inventory_ppo，日志20261003_random_inventory_stdout.log。每条完成训练轨迹独立检查；约60秒保存各英雄最新未保存的已检查实际训练轨迹，停止额外生成七场仅用于重复规则审查的游戏。4096步模型评估仍保留。首次真实供应取得和首次原法术攻击消费者各保存一条完整证据；未预期协议错误保存当时状态/动作/轨迹并停止，不只留堆栈。
+
+当前目标active。上述配置与后台证明不替代所有原版要素、多种构筑的训练/泛化评估，也不替代Unity真实操作验收。
+
+## 轨迹实查发现及停止/恢复
+
+检查seed2449的first_actual_spell_attack_consumer.json发现magic_001是横置物理近战1，不能当成法术效果消费。原文件保留，SHA和更正见同目录first_actual_spell_attack_consumer_correction.json。新增按实际物理牌实例与play/sideways动作分类的消费者，后续文件名first_actual_spell_effect_attack_consumer.json只接受真正play模式。已保留30条轨迹重审：19种原效果攻击消费者、13种横置消费者、未知模式0；该子集中真正法术效果攻击消费者0，不能据卡牌类型虚报。retained_attack_consumer_modes.json明确仅是留存样本子集。
+
+旧进程在10240步记录后、seed2602完成轨迹时正常门禁停训，错误是我新增的断言将法术熔炉033当成获得法术牌。原卡JSON明确获得供应牌颜色的魔晶，原失败training_rule_failure.json保留。修正为所选一/两张不同实际供应牌、供应与acquired不变、魔晶颜色与数量、印刷强化费用。完整71操作含夜间精确重放通过，failure_exact_replay_with_correct_oracle.json；原951检查复审零失败，原报告不改写。
+
+进一步定向检查暴露审查器误把满3后的魔晶视为丢弃。已查看原完整规则第5页“获得”第2条（tmp/feishu_docs/rulebook-05.jpg）：第四颗同色魔晶变为临时同色魔力。这与轮末矿山时机不同，不能套用矿山检查。未改ManaPool或SpellForgeEffect；改独立断言精确计算同色溢出token及先付蓝/金费用。base/strong共3操作45断言通过，并拒绝同一供应法术重复选择，证据20261003_spell_forge_original_oracle_checks.json；先前错误审查的定向失败文件20261003_spell_forge_oracle_fixture_failure.json保留。
+
+恢复训练从旧8192步checkpoint权重（不把未保存梯度说成恢复）、失败seed2602开始，追加16384步，输出20261003_random_inventory_corrected_ppo，DLL tmp/battle_rl_v12_checked/BattleRl.dll。新进程使用更正后的原规则审查与消费者分类。工具独立编译零警告零错误；Console再次两次零错误：tmp/rl_corrected_supply_oracle_console_20261003.json。仍不宣称本轮已有完整模型胜率或UI验收。
+
+## 续训结果与胜利口径更正
+
+更正批次已完成：16384步、217条训练轨迹、541.25秒、30.27步/秒；7英雄、58敌、166效果选项、118输入、34技能选项、249消费者键、153套起始牌库。42条定时保留实际轨迹45277现有断言零失败，不能代表所有原规则已证明。权重policy_ppo.npz共9016294字节，训练下一种子2820。rollout278.54秒、PPO更新224.23秒；目前CPU/NumPy，尚未使用4060。速度只对应当前接口范围。
+
+实际法术攻击消费者seed2671：magic_017 play:base_Green之后的实际攻击消费monster_050。完整47操作到夜间精确重放状态/奖励一致，first_spell_effect_exact_replay.json；原轨迹SHA c69394cd9bff06c10a450d98d0407952d7aa892311299eadcc604a71db961653。纯后台重放不算UI场景通过。
+
+发现旧评估把顶层won=Kills>0误当胜利。原历史报告保留并更正解释，包括此前记录的v8等胜率：它们都是至少击杀一次的比例，不能称完整战斗胜率。新evaluate函数和483情境评估统计正式state.won从false到true，每场一次，分别记录击杀成功/完整获胜/开始场数。42条保留训练样本中10条至少完整赢一场、16次完整获胜、2条仅击杀无完整胜利；文件retained_actual_battle_results.json，不外推整批训练。
+
+新483情境评估：协议--serve-journey-builds，DLL tmp/battle_rl_v12_checked/BattleRl.dll，当前新权重，目录AutomationOutputs/BattleRl/20261003_v12_true_battle_evaluation，日志同名_stdout.log，session48521。7英雄×69原敌配对，每个新种子使用实际16/21/26库存、1/2/3敌、连续跨回合/昼夜；评估新种子不等于严格保留构筑集泛化。每完成69项保存进度，失败留完整重现并停止。初69项20条至少完整赢一场、30场完整获胜、208次开战，尚不是最终结果。
+
+Python统计修改未改Assets/规则、训练奖励或权重；Unity Console两次零错误，tmp/rl_true_win_metrics_console_20261003.json。当前继续保持目标active，全神器/部队/技能输入与新范围UI回放仍待完成。
+
+## 第152情境的原伏击消费者补正
+
+seed100615第9操作狂怒基础格挡实际6，独立断言漏算第6操作原伏击强化的首次格挡+4。原resources/text_json/advanced_card.json明确先出现的攻击+2或格挡+4。审查器按真实原操作重建并消费该一次许可，正式换回合清理，仍保留精确数值断言；游戏实现正确、没有修改Assets。原失败pair_rule_failure_100615.json保留，完整73操作跨夜间状态和奖励逐项精确重放通过ambush_rage_exact_replay.json，原轨迹SHA ce030c00f59db8bd1c87a1b0b4c103ea3780f0a25719bd5e7940f6ad271ed818。
+
+前138通过汇总：51/138条至少完整赢一场（36.96%），93/426次开战完整清场（21.83%）。这不是最终483情境指标。前缀只有69/138检查点汇总而没有每条持久行，退出后第139～151的13条详细通过结果已丢失，不能假装完整复用。新增逐项通过持久verified_rows.jsonl；复用prefix_138_verified_summary.json，仅重新执行无法恢复的13项并续跑失败之后范围。输出20261003_v12_true_battle_evaluation_resume，session59902，模型、DLL不变且manifest记录SHA；最终全483总胜利指标可精确合并，但英雄/平均击杀/伤牌/轨迹审查等详细指标明确只覆盖新345条后缀。未重复前138通过项。
+
+本轮代码仅改Python工具统计、审查和证据持久化。Console两次零错误，tmp/rl_ambush_oracle_console_20261003.json。正式新范围Unity模型回放仍未通过；完整goal保持active。

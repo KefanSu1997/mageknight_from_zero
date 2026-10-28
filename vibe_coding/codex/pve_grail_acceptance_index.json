@@ -1,0 +1,37 @@
+{
+  "scope": "原黄金圣杯PVE战后普通/焚毁，实际战斗产生英雄及II级部队伤牌、治疗点消费、来源名望、真实牌库抽牌和药草师混合治疗。",
+  "backend": "AutomationOutputs/RulesState/20260918_210800_d8890e57",
+  "backendPassed": 8,
+  "regression": "AutomationOutputs/RulesState/20260918_210829_a9c9ad5c",
+  "regressionPassed": 2,
+  "regressionReason": "PveBattleSession.HealWound新增可选来源顺序，仅补药草师手牌/部队两个既有消费者。",
+  "scene": "AutomationOutputs/PveBattle/20260918_211203_b60d5cae/report.json",
+  "battles": 5,
+  "steps": 155,
+  "assertions": 437,
+  "visualReviewed": 13,
+  "consoleErrors": [
+    0,
+    0
+  ],
+  "limitations": "普通优先/圣杯优先均后台，混合场景只跑普通优先；战斗禁用、重复出牌仅后台。旧121原卡基本证据保留，本批不代表全回合生命周期或所有治疗/抽牌组合已场景验证。",
+  "files": {
+    "AutomationOutputs/PveBattle/20260918_211203_b60d5cae/report.json": "8b48b099723f15d0079ef610c5e96e7067df53b69f07554129be48c4ed2be80a",
+    "AutomationOutputs/PveBattle/20260918_211203_b60d5cae/console_final.json": "8d62f369865d478d110ffb57efc54be5aff20c4f4af96e654eba68ad28fb3864",
+    "AutomationOutputs/RulesState/20260918_210800_d8890e57/summary.json": "c8a1db6f8f86836b31a1f0ce7d31dd3c663736514c6b9dc9cb9017d67b897dfe",
+    "AutomationOutputs/RulesState/20260918_210829_a9c9ad5c/summary.json": "22cc86ae2b73553caf343a3c707963b178c99a788cab71473d4688e003c3e354",
+    "AutomationOutputs/PveBattle/20260918_211203_b60d5cae/captures/055_选择原黄金圣杯.png": "8575c7bfd7de39f7455df32b3fb44edbc37bcc2b805b1c447ede81d46024dd7a",
+    "AutomationOutputs/PveBattle/20260918_211203_b60d5cae/captures/057_打出实际原圣杯.png": "b64da676eb4a131dd50cf7370e519ad817c1a5b97f5db055ec1ab2e95b8a1ff7",
+    "AutomationOutputs/PveBattle/20260918_211203_b60d5cae/captures/060_治疗真实手牌创伤.png": "f19273a2692b4fa56ba03d74e2953ec8203577d28749bd050d0d4211684a6ed9",
+    "AutomationOutputs/PveBattle/20260918_211203_b60d5cae/captures/081_打出实际原圣杯.png": "67d4ba3ce8ef33e82d238386b730a203d47941bcdb020ef523299e3d6fed623f",
+    "AutomationOutputs/PveBattle/20260918_211203_b60d5cae/captures/084_按II级支付两点治疗.png": "613234d5b54492f7093446b71d2a80597932edf800d50a809df45d212966cf2d",
+    "AutomationOutputs/PveBattle/20260918_211203_b60d5cae/captures/099_打出实际原圣杯.png": "b05bd74fbf996a1455689babd509bd0a49589431eaecfca9b860039c9daaff31",
+    "AutomationOutputs/PveBattle/20260918_211203_b60d5cae/captures/102_治疗真实手牌创伤.png": "0fff1c79b9ae8941199266c3e57169d9e41456fd235ee56386170d636aa0fcd3",
+    "AutomationOutputs/PveBattle/20260918_211203_b60d5cae/captures/103_查看真实抽出的原牌.png": "17a7014c38c470ef159f605758c0d6111f2cd19675226975edf5bb71ec416ea1",
+    "AutomationOutputs/PveBattle/20260918_211203_b60d5cae/captures/123_打出实际原圣杯.png": "cd587fd22cc086d35786f12b7f0a2734e2e7e9e5e65f4ab2a0289a47ff557525",
+    "AutomationOutputs/PveBattle/20260918_211203_b60d5cae/captures/126_按II级支付两点治疗.png": "90f2463ef665f998624e52c0db551e39ee0fe3f1a2280cb81c3f3f9b6b454bc6",
+    "AutomationOutputs/PveBattle/20260918_211203_b60d5cae/captures/142_打出实际原圣杯.png": "ec5da00ba6d356910cece2bb4c00814e40b96e529ac071df2d7c6d53fef2b0f7",
+    "AutomationOutputs/PveBattle/20260918_211203_b60d5cae/captures/150_治疗真实手牌创伤.png": "fca54d4c9487f215a4799bfe88d675a617c501f07ece2a7c1856c823892ee5b6",
+    "AutomationOutputs/PveBattle/20260918_211203_b60d5cae/captures/153_按II级支付两点治疗.png": "70e57668df21a58a46a833a24cb469bc01fd9a2862c19caa8f62452febb29435"
+  }
+}

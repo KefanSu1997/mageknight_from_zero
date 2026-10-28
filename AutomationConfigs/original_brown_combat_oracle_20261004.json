@@ -1,0 +1,299 @@
+{
+  "scope": "Printed attack slots/armor/resistances/offensive abilities; core effects require separate tests and Unity acceptance",
+  "rule_source": "resources/rulebook/rulebook_chinese.PDF page 24",
+  "entries": [
+    {
+      "id": "monster_011",
+      "armor": 4,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [],
+      "abilities": [
+        "paralyze"
+      ],
+      "attacks": [
+        [
+          6,
+          "Physical"
+        ]
+      ],
+      "source_image_sha256": "5e74088b1ebceb6e5c1184eab614ceb3d3e5826f0c3cad39245dc8c449c190fa"
+    },
+    {
+      "id": "monster_014",
+      "armor": 6,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [
+        "Fire"
+      ],
+      "abilities": [],
+      "attacks": [
+        [
+          7,
+          "Fire"
+        ]
+      ],
+      "source_image_sha256": "7b961acccb90ef9c92d2f9f33a545998dca6f2aaf6b88760bb7b314ca409c044"
+    },
+    {
+      "id": "monster_021",
+      "armor": 6,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [
+        "Fire"
+      ],
+      "abilities": [
+        "poison",
+        "swift"
+      ],
+      "attacks": [
+        [
+          4,
+          "Physical"
+        ]
+      ],
+      "source_image_sha256": "88f05597c3616d18caef716142839c66c653c654f7c592aa268167928ba9158b"
+    },
+    {
+      "id": "monster_022",
+      "armor": 4,
+      "elusive": 8,
+      "fortified": false,
+      "resist": [],
+      "abilities": [
+        "magic resist"
+      ],
+      "attacks": [
+        [
+          4,
+          "ColdFire"
+        ]
+      ],
+      "source_image_sha256": "5a91ba7b7c6b715d85934aaa4ecf859defd9aedd664af05ed1a3ed2aab2472f1"
+    },
+    {
+      "id": "monster_038",
+      "armor": 4,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [
+        "Physical"
+      ],
+      "abilities": [],
+      "attacks": [
+        [
+          5,
+          "Physical"
+        ]
+      ],
+      "source_image_sha256": "fbeb504b40f8a0da07c5db19b46e90da7e59b28e1ec333929ec376c8ef848381"
+    },
+    {
+      "id": "monster_039",
+      "armor": 6,
+      "elusive": 0,
+      "fortified": true,
+      "resist": [],
+      "abilities": [],
+      "attacks": [
+        [
+          6,
+          "Physical"
+        ]
+      ],
+      "source_image_sha256": "6d33cc8c073e44104e1c2110ad8e80a91936d22ae531cc79bce574439ebd891a"
+    },
+    {
+      "id": "monster_040",
+      "armor": 5,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [],
+      "abilities": [
+        "brutal"
+      ],
+      "attacks": [
+        [
+          5,
+          "Physical"
+        ]
+      ],
+      "source_image_sha256": "ef26829705ec519650aa638e929a20b96b09ad8805854a07a2da12b58e026345"
+    },
+    {
+      "id": "monster_041",
+      "armor": 5,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [],
+      "abilities": [
+        "swift"
+      ],
+      "attacks": [
+        [
+          7,
+          "Physical"
+        ]
+      ],
+      "source_image_sha256": "86206b195c7810865b1001854212c742695bf7bf1d067d217754b1753ef48c4b"
+    },
+    {
+      "id": "monster_044",
+      "armor": 5,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [
+        "Ice",
+        "Physical"
+      ],
+      "abilities": [
+        "poison"
+      ],
+      "attacks": [
+        [
+          4,
+          "Physical"
+        ]
+      ],
+      "source_image_sha256": "dd8c1b1a944b4da735810686c8990a750ad4b281d0d162bcadf6d8696531a3f3"
+    },
+    {
+      "id": "monster_045",
+      "armor": 0,
+      "elusive": 5,
+      "fortified": false,
+      "resist": [],
+      "abilities": [
+        "vampirism"
+      ],
+      "attacks": [
+        [
+          5,
+          "Physical"
+        ]
+      ],
+      "source_image_sha256": "bdd73fdc8f142bb4657c755c01107cd7c4c8989c7c8635c496132e7fd9ddddfb"
+    },
+    {
+      "id": "monster_046",
+      "armor": 6,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [
+        "Fire"
+      ],
+      "abilities": [
+        "brutal",
+        "magic resist"
+      ],
+      "attacks": [
+        [
+          6,
+          "Physical"
+        ]
+      ],
+      "source_image_sha256": "e674289531613ca5ab91e384e84f1fc4109b22bcf49cbb2beff5d99b19fc50de"
+    },
+    {
+      "id": "monster_047",
+      "armor": 4,
+      "elusive": 8,
+      "fortified": false,
+      "resist": [],
+      "abilities": [
+        "paralyze"
+      ],
+      "attacks": [
+        [
+          4,
+          "Physical"
+        ]
+      ],
+      "source_image_sha256": "de05df1293ed1f123a68f99cf61366f8588aa8c4ac623d184845ab855aa2551d"
+    },
+    {
+      "id": "monster_053",
+      "armor": 5,
+      "elusive": 0,
+      "fortified": true,
+      "resist": [
+        "Physical"
+      ],
+      "abilities": [
+        "brutal",
+        "cumbersome"
+      ],
+      "attacks": [
+        [
+          4,
+          "Physical"
+        ]
+      ],
+      "source_image_sha256": "d2297683148fcf52ac4aeba8940dd790ee660a331355eb13e1f9cbfc6c205d89"
+    },
+    {
+      "id": "monster_054",
+      "armor": 7,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [
+        "Ice"
+      ],
+      "abilities": [],
+      "attacks": [
+        [
+          6,
+          "Ice"
+        ]
+      ],
+      "source_image_sha256": "a497abddeee4a40d1b0779bb408b1f494879b2eb72ab80c277f6a99558e95f34"
+    },
+    {
+      "id": "monster_055",
+      "armor": 4,
+      "elusive": 8,
+      "fortified": false,
+      "resist": [
+        "Fire",
+        "Ice"
+      ],
+      "abilities": [
+        "swift"
+      ],
+      "attacks": [
+        [
+          3,
+          "ColdFire"
+        ]
+      ],
+      "source_image_sha256": "c5fcf494770399fbe99a785740d13e4850cdb3e63c1016cee3eb4d49ae27902b"
+    },
+    {
+      "id": "monster_066",
+      "armor": 6,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [
+        "Ice"
+      ],
+      "abilities": [],
+      "attacks": [
+        [
+          2,
+          "Physical"
+        ],
+        [
+          2,
+          "Physical"
+        ],
+        [
+          2,
+          "Physical"
+        ]
+      ],
+      "source_image_sha256": "8eb986b0f61a2d626ad80cc3c12d57f10deb8b4954cd3471994ac79804185b85"
+    }
+  ]
+}

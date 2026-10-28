@@ -1,0 +1,9 @@
+# 冻结 mmBERT 接实际 UI PPO
+
+实际预训练encoder须固定revision/文件SHA、拒绝缺失/错形状权重。eval/无梯度之外还核完整state_dict SHA；优化器只持有动作/value头。缓存绑定原文、pooling、dtype与模型签名，长文本分块全编码，不因truncation静默丢弃条件。
+
+旧global/candidate追加文字维须保持原行布局和Adam/RNG，新增行零初始化。6真实UI输入完整概率/value差0只证暖入口；57真点击2新更新/49152文字权重非零只证更新，encoder140493696参数不变与90369头可训练，不当规则理解或胜率提升。
+
+首冻结4步Ranged打开原魔力汲取DeedInputs后无支持候选，必须保失败，不能当End或删除该控件。显式scope新增4实际按钮并记录恢复合同；另一29步未进入该面板不能当回归通过。另条件实际UI入场后policy2点击基础/确认才证该面板映射，脚本前缀不计PPO覆盖。90主步与2条件步分报，训练/冻结均未胜，最终Console两读零错。
+
+新版Transformers的ModernBertModel构造不接受reference_compile旧参数；载AutoModel时预训练MLM输出头4参数可明确不用，但编码器missing/mismatched不可忽略。CPU冻结reader可先验证链路，不冒称4060 GPU训练。详情vibe_coding/codex/worklog_2026-10-12_frozen_text_ui_ppo.md。

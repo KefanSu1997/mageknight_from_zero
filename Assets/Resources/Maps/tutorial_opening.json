@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "scope": "Original tutorial initial revealed tiles only; no exploration supply or complete scenario claimed.",
+  "readiness": "visually_verified_source_data_not_runtime_integrated",
+  "source": {
+    "path": "resources/rulebook/rulebook_chinese_quick_start.PDF",
+    "sha256": "3fb2b980e9a16942e1581e5bf0676047c7e513b88dd2321acc5242f1a7b3ba2f",
+    "printedPages": [
+      2,
+      3
+    ],
+    "figure": "Page 3 lower-left initial setup A/1/2",
+    "pageImagePixels": [
+      2506,
+      3261
+    ],
+    "figureBoundsPixels": [
+      0,
+      2478,
+      902,
+      3261
+    ]
+  },
+  "coordinates": {
+    "type": "axial",
+    "q": "right",
+    "r": "down-right",
+    "displayX": "q + r / 2",
+    "displayY": "r",
+    "origin": "starting portal",
+    "rotationAllowed": false
+  },
+  "verification": {
+    "date": "2026-09-29",
+    "reviewers": [
+      "primary",
+      "headband_dynamic_audit"
+    ],
+    "method": "Independent visual transcription of all 21 cells and original joining marks; coordinate union and three shared hex edges per tile pair checked.",
+    "cautions": [
+      "Sea is not Lake and must remain unoccupiable under terrain-opening effects.",
+      "All three tiles are revealed during setup, not paid exploration.",
+      "Source is a rulebook figure, not separated production artwork."
+    ]
+  },
+  "tiles": [
+    {
+      "id": "A",
+      "kind": "Starting",
+      "orientation": "printed_upright",
+      "cells": [
+        {
+          "q": 0,
+          "r": 0,
+          "terrain": "Plains",
+          "site": "Portal"
+        },
+        {
+          "q": 1,
+          "r": 0,
+          "terrain": "Plains"
+        },
+        {
+          "q": 0,
+          "r": 1,
+          "terrain": "Sea"
+        },
+        {
+          "q": -1,
+          "r": 1,
+          "terrain": "Sea"
+        },
+        {
+          "q": -1,
+          "r": 0,
+          "terrain": "Sea"
+        },
+        {
+          "q": 0,
+          "r": -1,
+          "terrain": "Plains"
+        },
+        {
+          "q": 1,
+          "r": -1,
+          "terrain": "Forest"
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "kind": "Countryside",
+      "orientation": "printed_upright",
+      "cells": [
+        {
+          "q": 0,
+          "r": 0,
+          "terrain": "Forest",
+          "site": "MagicalGlade"
+        },
+        {
+          "q": 1,
+          "r": 0,
+          "terrain": "Plains",
+          "site": "Village",
+          "ruleId": "place_003"
+        },
+        {
+          "q": 0,
+          "r": 1,
+          "terrain": "Plains"
+        },
+        {
+          "q": -1,
+          "r": 1,
+          "terrain": "Plains"
+        },
+        {
+          "q": -1,
+          "r": 0,
+          "terrain": "Forest"
+        },
+        {
+          "q": 0,
+          "r": -1,
+          "terrain": "Forest",
+          "site": "RampagingOrcs",
+          "ruleId": "place_000",
+          "enemyTokenColor": "Green"
+        },
+        {
+          "q": 1,
+          "r": -1,
+          "terrain": "Lake"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "kind": "Countryside",
+      "orientation": "printed_upright",
+      "cells": [
+        {
+          "q": 0,
+          "r": 0,
+          "terrain": "Hills"
+        },
+        {
+          "q": 1,
+          "r": 0,
+          "terrain": "Plains",
+          "site": "Village",
+          "ruleId": "place_003"
+        },
+        {
+          "q": 0,
+          "r": 1,
+          "terrain": "Plains"
+        },
+        {
+          "q": -1,
+          "r": 1,
+          "terrain": "Hills",
+          "site": "CrystalMine",
+          "ruleId": "place_006",
+          "manaColor": "Green"
+        },
+        {
+          "q": -1,
+          "r": 0,
+          "terrain": "Plains"
+        },
+        {
+          "q": 0,
+          "r": -1,
+          "terrain": "Hills",
+          "site": "RampagingOrcs",
+          "ruleId": "place_000",
+          "enemyTokenColor": "Green"
+        },
+        {
+          "q": 1,
+          "r": -1,
+          "terrain": "Forest",
+          "site": "MagicalGlade"
+        }
+      ]
+    }
+  ],
+  "initialPlacement": [
+    {
+      "tileId": "A",
+      "anchorQ": 0,
+      "anchorR": 0
+    },
+    {
+      "tileId": "1",
+      "anchorQ": 1,
+      "anchorR": -3
+    },
+    {
+      "tileId": "2",
+      "anchorQ": 3,
+      "anchorR": -2
+    }
+  ],
+  "remaining": [
+    "Original countryside 3 and later numbered tile layouts/artwork",
+    "Core tiles and scenario-specific supply",
+    "Starting B layout",
+    "Runtime seven-cell placement, Sea exclusion and legal exploration",
+    "Actual site consumers and Unity scene evidence"
+  ]
+}

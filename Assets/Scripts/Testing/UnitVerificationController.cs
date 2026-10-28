@@ -19,7 +19,8 @@ public sealed class UnitVerificationController : MonoBehaviour, ISceneAutomation
     [Serializable] public sealed class Case
     {
         public string id, cardId, title, location, enemyElement, resistance, enemyTraits, extraUnitId, changedElement, ignoredAbility;
-        public int mana = 2, crystals, influence = 20, wounds, extraSlots, offerCount = 1;
+        public int mana = 2, crystals, influence = 20, wounds, extraSlots, offerCount = 1, reputation;
+        public string[] offerIds;
         public bool destroyed, exhausted, unowned;
         public bool noUnitDamage;
         public int unitArmorBonus;
@@ -56,6 +57,12 @@ public sealed class UnitVerificationController : MonoBehaviour, ISceneAutomation
         CardJsonLoader.SetBaseDirectory(Path.Combine(Application.dataPath, "../resources/text_json"));
         string json = Resources.Load<TextAsset>("CardVerification/unit_cases").text;
         _cases = JsonUtility.FromJson<Suite>(json).cases;
+        var selectedCases = SceneAutomationRuntimeState.PendingRequest?.caseIds;
+        if (selectedCases?.Length > 0)
+        {
+            _cases = _cases.Where(c=>selectedCases.Contains(c.id)).ToArray();
+            if (_cases.Length != selectedCases.Distinct().Count()) throw new InvalidOperationException("部队定向用例不完整");
+        }
         using (var sha = System.Security.Cryptography.SHA256.Create())
             _hash = BitConverter.ToString(sha.ComputeHash(System.Text.Encoding.UTF8.GetBytes(json.Replace("\r\n", "\n")))).Replace("-", "").ToLowerInvariant();
         if (EventSystem.current == null) new GameObject("EventSystem", typeof(EventSystem), typeof(StandaloneInputModule));
@@ -83,8 +90,9 @@ public sealed class UnitVerificationController : MonoBehaviour, ISceneAutomation
     private void LoadCase()
     {
         _case = _cases[_index]; _step = 0; _selected = false;
-        _card = CardJsonLoader.LoadUnit(_case.cardId); _offer = Enumerable.Repeat(_card, _case.offerCount).ToList();
-        _player = new PlayerState(1, "部队验收玩家") { ExtraCommandSlots = _case.extraSlots };
+        _card = CardJsonLoader.LoadUnit(_case.cardId);
+        _offer = _case.offerIds?.Length > 0 ? _case.offerIds.Select(CardJsonLoader.LoadUnit).ToList() : Enumerable.Repeat(_card, _case.offerCount).ToList();
+        _player = new PlayerState(1, "部队验收玩家") { ExtraCommandSlots = _case.extraSlots, Reputation = _case.reputation };
         _context = new ActionContext { InfluencePool = _case.influence, NoUnitDamage = _case.noUnitDamage, UnitArmorBonus = _case.unitArmorBonus };
         if (!string.IsNullOrEmpty(_case.changedElement)) _context.AttackElementChange[0] = (Element)Enum.Parse(typeof(Element), _case.changedElement);
         if (!string.IsNullOrEmpty(_case.ignoredAbility)) _context.IgnoredAbilities[0] = (Ability)Enum.Parse(typeof(Ability), _case.ignoredAbility);
@@ -93,13 +101,20 @@ public sealed class UnitVerificationController : MonoBehaviour, ISceneAutomation
         _unit = new UnitState(_card); _exception = _outcome = ""; _effective = _kills = _required = 0;
         _damageTargets = new List<UnitState> { _unit }; _enemyAttack = 0;
         if (!string.IsNullOrEmpty(_case.extraUnitId)) _damageTargets.Add(new UnitState(CardJsonLoader.LoadUnit(_case.extraUnitId)));
-        _art.sprite = artwork.Single(s => s.name == _case.cardId);
         _title.text = $"{_index + 1}/{_cases.Length} · {_card.NameCn} · {_case.title} · {_case.id}";
-        _rule.text = $"等级{_card.Level} · 护甲{_card.Armor} · 招募影响力{_card.InfluenceCost} · 地点{_card.RecruitLocationMask}\n" + string.Join("\n", _card.Actions.Select(a => $"{(a.Cost.Length == 0 ? "免费" : string.Join("/", a.Cost))}：{a.PrintedRule}"));
-        if (_case.steps.Any(s => s.kind == "suffer"))
-            _rule.text += "\n规则书第9—10页：每次承伤一张；抗性先吸收护甲；剩余伤害继续分配。\n毒素替换为两张，麻痹直接消灭；同一部队同场战斗只能承伤一次。";
+        ShowCard(_card);
         _values.text = "选择原版部队，从招募与能力操作开始验收。"; _result.text = "未执行";
         _buttonText.text = _case.steps[0].label; _execute.interactable = false;
+    }
+
+    private void ShowCard(UnitCard card)
+    {
+        _art.sprite = artwork.Single(s => s.name == card.Id);
+        _rule.text = $"{card.NameCn} · 等级{card.Level} · 护甲{card.Armor} · 招募影响力{card.InfluenceCost} · 地点{card.RecruitLocationMask}\n" + string.Join("\n", card.Actions.Select(a => $"{(a.Cost.Length == 0 ? "免费" : string.Join("/", a.Cost))}：{a.PrintedRule}"));
+        if (card.DamageInfluenceCost > 0) _rule.text += $"\n原卡脚注：分配伤害前支付{card.DamageInfluenceCost}点影响力。";
+        if (card.ReverseRecruitReputation) _rule.text += "\n特殊招募：反转整次交涉声誉修正，多支暴徒只反转一次。";
+        if (_case.steps.Any(s => s.kind == "suffer"))
+            _rule.text += "\n规则书第9—10页：每次承伤一张；抗性先吸收护甲；剩余伤害继续分配。\n毒素替换为两张，麻痹直接消灭；同一部队同场战斗只能承伤一次。";
     }
 
     private void Execute()
@@ -111,9 +126,16 @@ public sealed class UnitVerificationController : MonoBehaviour, ISceneAutomation
             switch (step.kind)
             {
                 case "recruit":
-                    _outcome = CardUnitActions.TryRecruit(_player, _context, _offer, 0, (RecruitLocation)Enum.Parse(typeof(RecruitLocation), _case.location)).ToString();
+                    if (step.option >= 0 && step.option < _offer.Count) ShowCard(_offer[step.option]);
+                    _outcome = CardUnitActions.TryRecruit(_player, _context, _offer, step.option, (RecruitLocation)Enum.Parse(typeof(RecruitLocation), _case.location)).ToString();
                     if (_player.Units.Count > 0) { _unit = _player.Units[0]; _damageTargets[0] = _unit; }
                     break;
+                case "beginInteraction":
+                    RecruitmentService.BeginInteraction(_player, _context, (RecruitLocation)Enum.Parse(typeof(RecruitLocation), _case.location)); break;
+                case "endInteraction": RecruitmentService.EndInteraction(_context); break;
+                case "endTurn":
+                    _context.SkipDraw = true;
+                    new PlayerTurnEngine().EndTurn(_player, DayPart.Day, null, _context); break;
                 case "prepare":
                     if (!_case.unowned) _player.Units.Add(_unit);
                     foreach (var other in _damageTargets.Skip(1)) _player.Units.Add(other);
@@ -190,7 +212,8 @@ public sealed class UnitVerificationController : MonoBehaviour, ISceneAutomation
         "Red" => "红色魔力", "Blue" => "蓝色魔力", "Green" => "绿色魔力", "redCrystal" => "红色魔晶",
         "destroyed" => "部队已消灭", "damageAssigned" => "本场已承伤部队", "secondWounds" => "第二支部队伤牌",
         "heroDiscardWounds" => "英雄弃牌区伤牌", "freeSlots" => "空闲指挥槽", "enemyAttack" => "敌人原攻击",
-        "physicalResistTemp" => "本场临时物理抗性", _ => key
+        "physicalResistTemp" => "本场临时物理抗性", "interactionModifier" => "整次交涉修正",
+        "interactionFrozen" => "开始时声誉修正", "interactionReversed" => "暴徒反转已生效", "negotiating" => "交涉中", _ => key
     };
 
     public Dictionary<string, string> ReadAutomationState()
@@ -202,6 +225,10 @@ public sealed class UnitVerificationController : MonoBehaviour, ISceneAutomation
         ["selected"] = _selected.ToString(), ["step"] = _step.ToString(), ["exception"] = _exception, ["outcome"] = _outcome,
         ["ready"] = _unit.IsReady.ToString(), ["canActivate"] = _unit.CanActivate.ToString(), ["wounds"] = _unit.Wounds.ToString(),
         ["units"] = _player.Units.Count.ToString(), ["offer"] = _offer.Count.ToString(), ["influence"] = _context.InfluencePool.ToString(),
+        ["reputation"] = _player.Reputation.ToString(),
+        ["interactionModifier"] = _context.InteractionAppliedModifier.ToString(),
+        ["interactionFrozen"] = _context.InteractionReputationModifier?.ToString() ?? "None",
+        ["interactionReversed"] = _context.InteractionReversed.ToString(), ["negotiating"] = _context.InNegotiation.ToString(),
         ["armor"] = _card.Armor.ToString(), ["level"] = _card.Level.ToString(), ["physicalResist"] = _card.Abilities.Contains(Ability.PhysicalResist).ToString(),
         ["move"] = _context.MovementPool.ToString(), ["position"] = _player.Position.Q.ToString(), ["melee"] = _context.MeleePool.ToString(),
         ["ranged"] = _context.RangedPool.ToString(), ["siege"] = _context.SiegePool.ToString(), ["block"] = _context.BlockPool.ToString(),

@@ -1,0 +1,54 @@
+{
+  "scope": "原头环普通动态借用第一组：百步穿杨/漫不经心/通用力量/魔法抗拒实际场景，不等于全头环通过",
+  "backendEffective": 73,
+  "backendRuns": [
+    "20260929_082112_04a931e2",
+    "20260929_082213_9bf6e2bc",
+    "20260929_082425_49baca17"
+  ],
+  "backendAccounting": "14新增+59受影响回归，身份2例及4项Unity测试修复复测不重复计数",
+  "sceneOperations": 230,
+  "sceneAssertions": 338,
+  "additionalStateChecks": 26,
+  "segments": [
+    {
+      "hero": "Wolfhawk",
+      "run": "20260929_082532_ce7c1fc3",
+      "steps": 59,
+      "assertions": 82,
+      "sha256": "f833878a13b06d074e696b46d7f2e39771e251ff50a0ccd7c12afb4393189bbf"
+    },
+    {
+      "hero": "Tovak",
+      "run": "20260929_082710_85e22fce",
+      "steps": 54,
+      "assertions": 79,
+      "sha256": "0b049c672849e862a3a3aea0de475783aeab41c76117ee5cdbce707a2a7c71c3"
+    },
+    {
+      "hero": "Goldyx",
+      "run": "20260929_082841_42bb45ad",
+      "steps": 56,
+      "assertions": 81,
+      "sha256": "26b5ef4a321165dde406b31b305d7a44f4fbb8cace88e49d73e5cc9f6895a563"
+    },
+    {
+      "hero": "Tovak",
+      "mode": "MagicRepel",
+      "run": "20260929_083735_34567de7",
+      "steps": 61,
+      "assertions": 96,
+      "sha256": "f78a5ea908b87cfdbeb4ceca58719f447b0a1ba7dbb692e510596ad092de35ad"
+    }
+  ],
+  "screenshotsReviewed": 18,
+  "console": "tmp/pve_headband_repel_console.json",
+  "retainedCompileFailure": "tmp/pve_headband_dynamic_compile.json",
+  "fixtureRestored": true,
+  "remaining": [
+    "其余动态技能真实输入（伤牌/单位/付款/转换等）",
+    "翻面/傀儡/特殊持久借用原规则核对",
+    "宝盒借头环及其他多层组合延后",
+    "原地图/英雄与伤牌美术缺口"
+  ]
+}

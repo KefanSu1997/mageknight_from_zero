@@ -1,0 +1,53 @@
+# 新真实PPO轨迹查出召唤攻击缺失
+
+## 原规则与失败
+
+实际v35 PPO seed38375 first_actual_skillSideways_use.json，op63开战包含monster_049，后续进入格挡/承伤时该敌两条Ice0/Fire0，被当成无需应对的普通零点攻击。原敌图Assets/GameData/cards/monster (49).jpg：护甲5城防、名望3、左侧特殊召唤图标，没有两条数值攻击。resources/text_json/monster.json却写Ice0/Fire0、无召唤能力；Enum/MonsterJsonLoader及运行时无召唤攻击入口。
+
+原中文规则书resources/rulebook/rulebook_chinese.PDF第24页“召唤攻击”：格挡阶段开始时为此敌随机抽取一个棕色标记，在格挡和分配伤害阶段由它代替敌人，随后弃掉该标记。通过bundled pypdf仅提取本地扫描页图查看；tmp/pdfs/rulebook_page_24_0_Im0.jpg是本地审查用，不上传。原卡标记图标与规则书对应，已确认缺失，不能把内部一致性审计0error当原规则正确。
+
+失败证据AutomationOutputs/BattleRl/20261004_original_summon_rule_failure.json保存seed、动作前后状态op63..71、原PPO文件哈希与来源路径。该文件状态confirmed_original_rule_failure，不改写先前执行证据，但明确旧版本含此敌人的防御/整体胜率不能证明原召唤规则通过。目录遇到69敌不等于原69能力全实现。
+
+## 训练停止与范围
+
+确认本任务训练器PID215136、启动2026-10-04 03:19:12和命令行输出目录，再停止此进程及其两个确切子进程217480/220192（均同v35 DLL）。没有操作用户其他程序、VPN或电脑重启。不是观察超时、性能原因或重复启动；是已核实规则异常后停止错误规则训练。停止前1024检查11279/0内部错误，2048为10370/0/2gap，仍不能替代原规则审查。该目标保持active，未使用goal pause/complete/blocked。
+
+## 必要修复范围（尚未实施）
+
+复用EnemyTokenSupply真实颜色供给与可重放随机状态，正式Ranged→Block抽取、Block/AssignDamage临时代替、Melee前归还并恢复原召唤者。同物理棕色标记抽取/占用/归还守恒，不能生成随机数字/模板替身。召唤物没有原召唤者的护甲/名望归属；特殊停攻、直接消灭、成功格挡、承伤/抗性、傀儡和原敌击杀归属必须检查，避免仅把原0改成固定攻击。
+
+现有BattleResolver/PveBattleSession以Enemies[i].AttackCount生成攻击槽，需要真实召唤物攻击槽、能力和物理身份进入策略/审计及UI。同名实体按引用，召唤者远程被击杀不抽标记，召唤物结束后回到原供给、近战仍攻原召唤者。正式多次攻击、单位预留和取消记录不能指向原零槽。
+
+还有供给前提缺口：目前69敌仅9个token_color核对，棕色仅monster_066；不能据怪物名称猜颜色，也不能声称完整棕色原供给已有。需核对受影响原图并明确配置真实供给。新Ability枚举若增项会插入旧Features块，须维护语义兼容或明确重训，不让仅按state.N的假前缀校验把不同字段权重错配。
+
+下一步先实现正式召唤生命周期和必要后台定向用例，取得Unity Console双0并验证受影响UI/操作后续训；全部原要素、可变实体条件动作、完整构筑holdout、最终Unity模型回放目标保留。
+
+## 正式阶段接入与本轮验证（2026-10-04）
+
+已纠正049原召唤字段（不再把图标当Ice0/Fire0），Monster.AttackCount=0不再提供伪攻击。EnemyTokenSupply.DrawRandom从真实棕色物理供给抽取；SummoningState在Block开始占用同标记并临时替换Context.Enemies同列表位置，在Melee开始归还并恢复同原召唤者。ActionContext.EnemyReplacement按所替换位置隔离原索引修正，保留其它敌人在防御阶段新增修正，召唤物的死亡/停攻/减甲/攻击槽取消不会传给原敌人。按物理引用存储的效果仍按原物理引用读取。
+
+CardCombatActions.EnterPhase接入正式阶段切换；直接消灭临时召唤物不发原敌击杀奖励。BattleResolver把临时召唤物击杀与正式敌人战果分开，不计原名望/神器击杀/傀儡候选与整场全灭。TurnMachine旧合并API先完成真实防御、恢复召唤者，再进行近战，防止近战打错实体。缺棕色供给时拒绝进入Block并保留Ranged阶段，不允许绕过失败按零点攻击推进。移除原临时构造器全拒绝，允许远程阶段先击杀召唤者。
+
+验证：RulesCli编译0错误0警告。先前组件5/5与供给/Tezla受影响16/16；新增物理索引隔离、正式阶段实际承伤后击杀原敌、直接消灭不误奖、旧合并API、格挡击杀不误计战果。本轮10召唤用例全部通过，合并供给/Tezla/战斗入口为30/31。证据AutomationOutputs/RulesState/20261004_040501_86bd830b。失败PveBattleSessionTests.InsufficientAttackDoesNotChipArmorAndFortifiedRejectsRanged旧断言要求攻击2对护甲4也消费、两次都0击杀；现有共享正式CardCombatActions.Attack明确拒绝不足并保留贡献（此次没有修改该不足攻击分支）。不改旧预期、不删失败，保留分歧与异常证据；不能报告整个选择回归全绿。
+
+Unity曾两次refresh MCP等待超时，未迅速重试或重启，激活同编辑器并通过界面Ctrl+R刷新后恢复Console读取。组件Console双0为tmp/rl_original_summon_component_console_20261004.json；正式接入Console文件单独保存。本地截图和轨迹未上传。
+
+尚未完成：真实Unity操作中的召唤物卡面/攻击槽显示验收、完整原棕色供给核图与RL确定性随机状态/新轨迹观测接入、旧seed38375纠错重放、全部原敌召唤相关技能特例。10个定向后台通过不证明这些完成。PPO仍未恢复，目标保持active；不跳过049缩小正式范围。
+
+最终源修改后经Unity界面刷新，Console以count=1000、error、includeStacktrace=true独立读取两次均data=[]：tmp/rl_original_summon_formal_final_console_20261004.json。此为编译门禁证据，尚不是Play场景召唤验收。
+
+## 完整颜色与召唤图标核图、双召唤（2026-10-04后续）
+
+69张原敌原图均已直接查看颜色和召唤图标。原颜色分组69项及每张原图SHA在AutomationConfigs/original_enemy_color_summon_audit_20261004.json；此范围仅颜色/召唤，不声明全部攻击和能力已核对。16种棕色原ID已确定，原标记实体复制数量未核对，不能把每种一枚训练子集宣称原盒完整物理分布。纠正原颜色字段，不据旧monster_type推断。
+
+召唤原敌实际是003/023/031/049，023有两个召唤图标。003和023还存在伪城防/冰火抗性，原图是物抗，023另有奥术免疫；已按原图纠正这两个召唤敌的防御字段。Monster新增SummonCount（不加Ability枚举以避免插入旧actor字段）。SummoningState以OriginalIndex和实际防御Index分别记录，023抽两个互不重复的真实棕色标记，扩展同敌人列表并重映射其它原敌修正，Melee还原原列表和索引。供给不足两个时先拒绝、不先拿走第一个。正式替换要求可变实际敌人列表；真实整敌冷凝跳攻不取召唤标记。原失败证据和旧模型均保持独立。
+
+后台：最终构建0错误0警告，再运行最新DLL：16个召唤及16个供给/Tezla受影响用例32/32通过，AutomationOutputs/RulesState/20261004_042329_13badb6f。新增包括全部4原召唤ID/印刷数量、双实体占用/归还、后续原敌索引修正恢复及不足两枚供给原子拒绝。先前两条Does.Not.Contain使用了本地NUnit字符串重载产生CS1503，已改集合Contains布尔断言。编译失败后误调用旧DLL的20261004_041925_8e676194（26项）不作为新改动通过证据，最终32项来自编译成功的新DLL；不改旧输出以伪装通过。
+
+关键新增原规则失败：16种棕色原图的核心战斗字段进一步核对，12种现有JSON错误。AutomationOutputs/BattleRl/20261004_original_brown_metadata_failures.json已保存各字段原图预期、当前值和差异。包括011麻痹漏失、014伪奥术免疫、021迅捷漏失、022冰火攻击/双甲/免疫误识、038城防/迅捷误识且漏物抗、040残暴误记毒素、044漏物抗、045吸血/低甲0与高甲5漏失且伪城防、046残暴/火抗/奥术免疫误记、047麻痹/双甲误记、053笨重/残暴/物抗误记、055单冰火攻击误当两攻击且漏双甲。现阶段未修这些12项，尚未把此池接入训练；否则虽真随机抽标记，仍会训练假规则。
+
+PPO进程核实无活训练器，仍停止。下一步按保留失败修正棕色字段，补原吸血/原笨重实际消费者（现有枚举和解析器没有这两项），核对其它已见原敌字段差异，必要受影响后台/Unity门禁通过，再接入seeded真实供给与训练前后状态审计/重放。原多召唤可导致敌人超过actor/动作当前3槽，必须显式补通用实体/动作能力，不能丢弃额外目标或屏蔽原023。原召唤前单攻击取消的原技能许可仍需独立检查，AttackCount0不代表原召唤图标没有可取消的攻击。Unity真实操作、旧seed38375纠错回放、全范围PPO可用模型仍未完成。
+
+双召唤最新源经Unity界面Ctrl+R后Console两次0 error（count1000+stacktrace）：tmp/rl_original_double_summon_console_20261004.json。
+
+另外原图核查已直接看到其它敌人同类问题，不能把“只修棕色”当全部原敌正确：017原图为4/8双甲、迅捷与忽略地点城防，并非旧PveBattleSessionTests当作的普通城防敌；042原图麻痹图标、当前JSON毒素。003/023旧防御字段也严重错误且已修。旧不足攻击测试与原017素材的前提亦需独立纠正/保留，不能只归因旧操作预期。恢复全69范围PPO之前需补其余原敌核心字段的来源审计与必要修复，正式原笨重/吸血/不受城防都不能仅画图标或沿用无效元数据。

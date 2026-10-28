@@ -1,0 +1,24 @@
+{
+  "scope": "阿瑞希亚炽热剑术、托瓦克寒冰剑术；各普通/元素分支与每回合次数。其余技能未完成。",
+  "backendPassedUnique": 5,
+  "backend": "AutomationOutputs/RulesState/20260918_162848_a19ff3f8",
+  "scene": "AutomationOutputs/PveBattle/20260918_163116_73265a64/report.json",
+  "battles": 4,
+  "steps": 110,
+  "assertions": 278,
+  "visualReviewed": 9,
+  "files": {
+    "AutomationOutputs/PveBattle/20260918_163116_73265a64/report.json": "d7695bbb21e0e7e914e84a8875dbb6d0aae2a2a4d91ae5e2752c2e65eab2d6cd",
+    "AutomationOutputs/PveBattle/20260918_163116_73265a64/console_final.json": "54653af127210182274409ae3ede975fac059844cd6299d4c3ceddcbe656bfad",
+    "AutomationOutputs/RulesState/20260918_162848_a19ff3f8/summary.json": "2cb3e24283c22ad6e8a706caf44b1a31e0cd9b7a863cf9735d761bccd3e31318",
+    "AutomationOutputs/PveBattle/20260918_163116_73265a64/captures/009_技能时机核对.png": "068bb3ddc0d25db277d2e185cde42c385985f9f319e52270e00b1b9d4a28434e",
+    "AutomationOutputs/PveBattle/20260918_163116_73265a64/captures/022_确认实际使用.png": "4febd9ab564f850d2cdaa2d5cf0635523eb80d8fccb0a169861400f940dfb4e6",
+    "AutomationOutputs/PveBattle/20260918_163116_73265a64/captures/029_战末保留技能次数.png": "f7d548513332b7775b1486a742675f0191f01c4622c6eb18670089dd3ffb31e8",
+    "AutomationOutputs/PveBattle/20260918_163116_73265a64/captures/054_核对原敌人有效攻击.png": "20d61e4170a5bd8c9b4e4e32e228946698544b9fbc7e0032f82bd673043aea82",
+    "AutomationOutputs/PveBattle/20260918_163116_73265a64/captures/056_战末保留技能次数.png": "c87bffbebc8f801f7482c585c03f5a0b685d88c768786f2fd0b08624c903416b",
+    "AutomationOutputs/PveBattle/20260918_163116_73265a64/captures/082_战末保留技能次数.png": "bda9b51a3102a4e6aab3005e1592af7bfd2e76a2cc27a7822819d06c8d3a9b80",
+    "AutomationOutputs/PveBattle/20260918_163116_73265a64/captures/102_确认实际使用.png": "7cbf915f8d68a19282a82af3f635e5faac2d06a457422a62044b543089c083b4",
+    "AutomationOutputs/PveBattle/20260918_163116_73265a64/captures/107_核对原敌人有效攻击.png": "a9078ff2bbc75dd84c1adc318061e93b28257210a2dec13d9f0a8daf37972277",
+    "AutomationOutputs/PveBattle/20260918_163116_73265a64/captures/109_战末保留技能次数.png": "7f068554e4ebb20f17b2e270156e53e99cfec71dee6601a68ee23f5cea22bdc4"
+  }
+}

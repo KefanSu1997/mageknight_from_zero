@@ -1,0 +1,7 @@
+# 原法术宝典物理来源与正式回合收入
+
+宝典必须支付实际同色手牌材料，选择真实供应法术；借用不取得供应牌，贡献来源仍为物理宝典。不要把借来效果当作拥有并打出法术。通过正式材料神器入口执行，保留基础/强化与实际目标输入；白天焚毁强化由原规则允许，不额外加夜间限制。
+
+nextTurn 是结束旧回合再开启新回合的复合入口。PlayerTurnEngine.EndTurn清临时魔力，StartTurn按TokensPerTurn发放宣夺收入。审计返回状态应等于新回合真实收入，而不是一律零；终止未开启回合则仍为零。必须同时观察收入和本轮占有骰，避免策略隐藏状态。
+
+原失败保留；seed25真实宝典宣夺Green骰、下一回合收入验证后，缺收入/多残留两个负例仍拒绝。证据见 `AutomationOutputs/BattleRl/20261003_spell_tome_inputs.json`、`20261003_spell_tome_inputs_failure.json`、`20261003_tome_income_audit_negative_checks.json`。本批定向验证不代表复杂法术全覆盖或Unity验收。

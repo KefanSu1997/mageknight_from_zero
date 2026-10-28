@@ -1,0 +1,46 @@
+# PPO正式回合行动占用观察
+
+## 依据与修改
+
+v44保存权重4096步的seed100000实际57操作中，克朗先发动萨满仪式，再option100翻回，消耗正式回合行动，此后fight消失。原技能文本与ShamanRitualEffect相符。原Features没有显式TurnActionCommitted，虽掩码能限制选牌，策略/价值网络没有直接得到这个可见状态；不能据此认定它是唯一避战原因。
+
+tools/BattleRl/JourneyTraining.cs仅在State添加turnActionCommitted、Features末尾追加同字段0/1；5590变5591。保留原特征位置、规则、费用、动作及奖励。featureSchema改为original_combat_six_targets_summon_parents_turn_action_v46，旧模型默认校验拒绝；下一轮恢复必须先提供明确的语义迁移和验证，不能静默套用错误维度。活v44仍用冻结v41 DLL，未重启或换规则。
+
+## 验证
+
+dotnet build --no-restore输出tmp/battle_rl_v46_turn_action_observation，0警告0错误。相同真实seed与57操作，在冻结v45和新v46逐步执行：58帧全部原状态、合法动作下标、reward/done/won、5590旧观察坐标完全一致，新末尾等于正式Context字段。实际萨满取魔力后为false，翻回行动后为true。旧权重schema拒绝已实测。证据AutomationOutputs/BattleRl/20261004_v46_turn_action_observation_actual_prefix.json；新DLL SHA fab01ce8599cbab6975d9f30f15eb4a4883bac60948a9484d6b950109ea691be。
+
+Unity refresh idle，按count1000/includeStacktrace=true获取Console error两次均0，证据tmp/rl_turn_action_observation_console_20261004.json。没有Unity场景修改，不重复原库与截图。
+
+## 当前进度与缺口
+
+活训练PID234892启动时间不变，7168/8192步117局，实际遇敌种69、7英雄。4096步固定评估仍0/7完整胜利；目录覆盖数与完整规则/泛化/Unity验收分开。新v46未训练，不能宣称观察补全已改善胜率。下一步完成旧轮结果核实、必要的明确迁移，然后继续原全范围PPO与新轨迹规则审查。
+
+
+## 明确迁移与恢复训练
+
+新增tools/BattleRl/migrate_turn_action_observation.py，只接受已验证v37 -> v46布局、相同原能力枚举和完整动作目录、原5590坐标+末尾state.5590。保留全部旧权重，仅w1追加一行零，使新公开标记的任意0/1初值都不改变原策略/价值。四个负例（未知schema、能力枚举改变、动作重排、错误坐标）拒绝。真实57个非终止状态包括标记0/1，迁移前后概率、价值、贪心动作完全相等；终止critic也相同。第一次检查误对终止空动作掩码调用inputs报错，留档initial_check_failure.json后仅修正检查遍历，不改环境/预期。证据20261004_v46_turn_action_migration_check/report.json。
+
+v44完整8192步132局，1488.19秒、5.50步/秒；最终保存模型加载评估仍0/7完整胜利、1局至少击杀；seed123456回放38操作0击杀，未达到可用目标。PID234892实际退出、metrics存在、查询没有其他活PPO训练后，迁移其最终policy_ppo.npz：原SHA abaa80e68c4c60dd03252a08c015d89c8c0afbdee3f3fc8d804b5ffde7958b0b，新8c494d21d57572e5262514810a13ceecaaba6dc8f94c8486e04734c36c23ce32。原失败与轨迹保留。
+
+新轮PID237080于2026-10-04 14:16:01启动，目录AutomationOutputs/BattleRl/20261004_turn_action_observation_v46_warm_ppo，真实v46 DLL，8192步、seed67749从上一轮next_cursor续选；同PPO两构筑家族、7英雄、原全要素词表，gamma0.995/GAE0.99，学习率0.0004，60秒审查。因DLL变更，不越过现有严格覆盖历史校验，旧实际使用证据保留为独立历史，新轮从零统计，不冒充新轮已通过。该历史计数仅采样优先用途，后续如需跨版本合并应先明确验证映射。
+
+迁移代码后Unity refresh idle，Console两次0 error，tmp/rl_turn_action_migration_console_20261004.json。没有场景改动、不重复旧库检查或截图。不声称新状态已提高胜率，等待真实训练与独立评估。
+
+
+## 新轮新真实轨迹及原ID缺口快照
+
+v46 PID237080及子规则进程实测存活。seed67862首次百步穿杨，对照原Wolfhawk每回合远程+1/近战+2文本和ContributionSkillActions：实际basic007实体4的远程3加至4、来源/元素/类型不变、无费且每回合次数锁定；下一操作advance放弃攻击，不能计为攻击消费者通过。真实后续nextTurn清技能次数和行动占用。7定向断言通过，记录20261004_v46_actual_bullseye_review.json。
+
+seed67751实际投石车army004免费普通攻城3、同原部队耗竭；正式已格挡巫妖monster045，在防御结束时双甲由有效5切至原低甲0，原图确实印5/0，不是零甲异常。一次选择monster032甲3和045甲0，总甲3，恰好消费该投石车唯一攻城3，原019仍存活，不是全战斗胜利；真实后续回合恢复行动占用。11定向断言通过，原巫妖与投石车图片检查，记录20261004_v46_actual_siege_elusive_consumer_review.json。红/蓝部队付费分支与保存PPO Unity回放仍缺证据。
+
+独立留存v44累计实际ID差集20261004_v44_original_ID_gap_snapshot.json：含明确继承的同冻结规则旧训练历史，不是v46本轮覆盖。原69敌曾实际fight，但不代表全原能力验收。70技能中57个ID有成功发动计数、13个缺失（包括七个共享09和地图/特殊技能）；高级42/44、法术21/24有原ID发动，仍缺advanced012/024、magic000/004/023；七原英雄标准26基础中25有使用，018地图入口缺失，011/025另列来源/归属问题。25神器与30部队原ID有计数不等于全部模式、付款/消费者/UI通过。rampaging/fortified_site/city/dungeon正式场地上下文、未见构筑独立评估与保存模型Unity最终验收继续保留缺口。没有代码修改，不重跑旧审计与Unity编译。
+
+
+## v46中点仍无完整胜利；重整旗鼓新真实跨轮分支
+
+4096步62局固定7英雄评估仍0/7，1局有击杀；新增行动状态尚未证明改善。进程237080实测存活，保留到授权8192步，不能因为观察超时重启。
+
+新seed69485真实轨迹核对原重整旗鼓：第19操作轮1战外恢复非首slot1 army008，其他单位不变、无魔力费、每轮锁定；第20实际同槽原单位再发动并耗竭。轮2第50操作选择slot0 army004治疗实际1伤至0，战外无费并重新锁定每轮次数，其他单位不变。10定向断言通过，记录20261004_v46_native_rally_round_ready_heal_review.json。没有本记录中的同轮拒绝重复操作，治疗后army004消费者未证明，Unity最终验收保持缺口。
+
+源码核查另一个入口缺失：advanced024仅有空输入，而正式PveCopyInputs要求另一张实际行动材料、BorrowedChoice/BorrowedInputs及PendingRepeatedEffect后续逐次Continue。仅去除材料自动重复相同效果会违背动态选择语义；下一步应增加合法原供体模式与逐次继续动作，观察真实pending原ID/剩余次数，并复用正式PveCopyInputs/Continue入口。其他复制嵌套明确保留blocked，不以范围扩展替代当前单层原卡验证。

@@ -1,0 +1,65 @@
+{
+  "scope": "忠诚取得、供应、专属招募、拒绝解散、地下城部队限制、实际格挡承伤、法术奖励与同玩家次回合；非全部分支",
+  "backendEffective": 70,
+  "sceneOperations": 84,
+  "sceneAssertions": 121,
+  "segments": [
+    {
+      "run": "20260929_061505_da1a6cf9",
+      "acceptedSteps": [
+        0,
+        16
+      ],
+      "assertions": 17,
+      "sha256": "f39ff88ebdb05ccbec39255fe64ae6f10f5294d6a321f894ae31bf5cc6069d23"
+    },
+    {
+      "run": "20260929_061658_714c563e",
+      "acceptedSteps": [
+        17,
+        34
+      ],
+      "assertions": 25,
+      "sha256": "44bed8e370fc431a9ec9c7e81a3323d021ff896cd776d8249a6df6064bc04f99"
+    },
+    {
+      "run": "20260929_062316_f2a51ee3",
+      "acceptedSteps": [
+        35,
+        57
+      ],
+      "assertions": 37,
+      "sha256": "8a43b186f818c67101ad9887498aad31967fb247861346e9a34be6f4bdf0e6c6"
+    },
+    {
+      "run": "20260929_062447_41997205",
+      "acceptedSteps": [
+        58,
+        65
+      ],
+      "assertions": 10,
+      "sha256": "43c712b943762feba9c0e644498364ac9c2f3a82827664a61df2b88ea49cf78a"
+    },
+    {
+      "run": "20260929_062724_c79f3946",
+      "acceptedSteps": [
+        66,
+        83
+      ],
+      "assertions": 32,
+      "sha256": "21510b175197df60be9b04f6d16fb8757258505e8a118069a234440e8d8de51e"
+    }
+  ],
+  "recordedStateAdditionalChecks": {
+    "step82.rewardInHand": "magic_002",
+    "step82.offerReplenished": "magic_010,magic_017,magic_003"
+  },
+  "console": "tmp/pve_loyalty_dungeon_slot_compile.json",
+  "remaining": [
+    "地下城神器奖励UI尚未场景验收",
+    "完整棕敌目录尚未校对",
+    "原地图板块与英雄独立立绘仍缺",
+    "忠诚原技能图需集中场景补核",
+    "10英雄技能缺合法入口；见tmp/hero_final_entries_audit_20260929.md"
+  ]
+}

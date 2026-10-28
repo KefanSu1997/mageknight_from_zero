@@ -1,0 +1,9 @@
+# 同一RNN策略的解码差异与真实承伤规划循环
+
+新增评估模式hierarchical_greedy复用既有Policy.greedy，先以全部合法参数概率求动作类型边际，再选该类型最大参数概率；joint_map保持默认，两者与sampled显式区分，未知模式拒绝。不改模型、训练分布、规则或合法掩码。每步仅记录选中概率、类型质量、两解码Key及前三类型的合法参数数，不把audit状态输入actor。
+
+同一20261007_recurrent_five_task_training保存检查点：旧joint MAP0/5，sampled2/5；新增类型优先3/5（Braevalar/Arythea/Norowas单组完整），Goldyx/Krang双组分别227/228次unitDamage规划操作至256步上限。566实际步/14401有限审计无异常；参数和源checkpoint SHA保持。
+
+实际AssignDamage类型质量：unitDamage约0.501，advance约0.499；unitDamage有16合法参数，单参数约0.032，advance单一合法参数约0.499。因此MAP偏advance，类型优先偏unitDamage。后者在合法计划201↔20或102↔02间改选，正式伤害尚未提交，不能把原规则允许的规划反悔循环改成规则错误/不可解。单组成功改善只证明当前解码对照，不能证明新学习或全场景泛化。
+
+证据20261007_recurrent_hierarchical_decoder_calibration、20261007_recurrent_decoder_diagnosis.json。4项评估分区/冻结推断/解码区别测试通过，Console两读0错误tmp/rl_decoder_final_console_20261007.json。未热换活训练/规则，所有进程正常结束。仍需训练解决规划提交/长期信用、其余两英雄、多组稳定成功、保留组成验证和全原费用材料消费者/Unity验收；保留旧失败，不切默认解码以掩盖0/5。

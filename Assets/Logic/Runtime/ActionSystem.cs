@@ -28,11 +28,11 @@ namespace MK.Logic.Runtime
         /// <summary>
         /// 初始化時注入各牌 ID 與對應效果。
         /// </summary>
-        public ActionSystem(bool loadSpellMetadata = true)
+        public ActionSystem(bool loadSpellMetadata = true, IEnumerable<SpellCardData> originalSpells = null)
         {
             // 纯行动牌场景直接持有原 ActionCardSO，无需读取磁盘法术 JSON。
-            if (loadSpellMetadata)
-                foreach (var s in CardJsonLoader.LoadSpells())
+            if (originalSpells != null || loadSpellMetadata)
+                foreach (var s in originalSpells ?? CardJsonLoader.LoadSpells())
                 {
                     _spellColor[s.Id] = s.ManaColor;
                     _spells[s.Id] = s;
@@ -295,8 +295,36 @@ namespace MK.Logic.Runtime
         /// 執行指定行動牌的效果。
         /// </summary>
         public void Play(ActionCardData card, PlayerState player, ActionContext ctx, bool enhanced, int option = 0)
+            => PlayCore(card, player, ctx, enhanced, option, false, null);
+
+        /// <summary>Resolve an original offered Advanced Action through the formal strong-effect map.</summary>
+        internal ICardEffect ResolveAdvancedStrongEffect(ActionCardData card)
         {
+            if (card.Set != CardSet.AdvancedAction || !_enhMap.TryGetValue(card.Id, out var id))
+                throw new System.InvalidOperationException("供给卡没有有效原版高级行动强效");
+            return CardEffectFactory.Get(id);
+        }
+
+        /// <summary>Resolve a real Action material through the same maps used for ordinary play.</summary>
+        internal ICardEffect ResolveActionEffect(ActionCardData card, bool enhanced)
+        {
+            var map = enhanced ? _enhMap : _baseMap;
+            if ((card.Set != CardSet.BasicAction && card.Set != CardSet.AdvancedAction)
+                || !map.TryGetValue(card.Id, out var id))
+                throw new System.InvalidOperationException("材料没有有效原版行动效果");
+            return CardEffectFactory.Get(id);
+        }
+
+        internal void PlayFromTome(ActionCardData spell, PlayerState player, ActionContext ctx, bool enhanced,
+            int option, System.Action discardPayment)
+            => PlayCore(spell, player, ctx, enhanced, option, true, discardPayment);
+
+        private void PlayCore(ActionCardData card, PlayerState player, ActionContext ctx, bool enhanced,
+            int option, bool tome, System.Action beforeEffect)
+        {
+            RepeatedEffectResolution.RequireCompleted(ctx);
             bool isSpell = card.Set == CardSet.Spell;
+            using var paymentPurpose = ManaSkillPaymentActions.StrongSpellScope(ctx, isSpell && enhanced && !tome);
             bool freeEnhancedAction = ctx.NextCardEnhanced && !isSpell;
             bool useEnh = enhanced || freeEnhancedAction;
             var map = useEnh ? _enhMap : _baseMap;
@@ -308,40 +336,65 @@ namespace MK.Logic.Runtime
             {
                 if (!_spells.TryGetValue(card.Id, out var spell))
                     throw new System.InvalidOperationException("缺少原法术费用定义: " + card.Id);
-                if (enhanced && ctx.DayPart != DayPart.Night && !ctx.AllowBlackAtDay)
+                if (enhanced && !tome && ctx.DayPart != DayPart.Night && !ctx.AllowBlackAtDay)
                     throw new System.InvalidOperationException("白昼不能施放强效法术");
-                cost = enhanced ? spell.Bottom.ManaCost : spell.Top.ManaCost;
+                cost = tome ? System.Array.Empty<ManaColor>() : enhanced ? spell.Bottom.ManaCost : spell.Top.ManaCost;
             }
-            else if (enhanced && !freeEnhancedAction) cost = card.RequiredCrystals;
-            bool overlord = false;
-            if (useEnh && ctx.OverlordPending && ctx.OverlordColor.HasValue)
+            else if (enhanced && !freeEnhancedAction)
             {
-                foreach (var c in card.RequiredCrystals)
-                    if (c == ctx.OverlordColor.Value)
-                        overlord = true;
+                cost = card.RequiredCrystals;
+                // These original split icons mean either printed color, not both colors.
+                if (card.Id == "advanced_card_040" || card.Id == "advanced_card_041" || card.Id == "advanced_card_042" || card.Id == "advanced_card_043")
+                {
+                    if (ctx.SelectedActionManaColor is not ManaColor selected || !cost.Contains(selected))
+                        throw new System.InvalidOperationException("请选择原卡双色费用中的一种魔力");
+                    cost = new[] { selected };
+                }
             }
-
             var effect = CardEffectFactory.Get(id);
             if (effect is ICardEffectValidator validator) validator.Validate(player, ctx, option);
             if (effect is ICardAdditionalManaCost additional)
                 cost = cost.Concat(additional.GetAdditionalManaCost(option)).ToArray();
+            if (effect is ICardContextualManaCost contextual)
+                cost = cost.Concat(contextual.GetAdditionalManaCost(player, ctx, option)).ToArray();
+            if (effect is ManaPowerEffect manaPower) manaPower.ValidatePayment(player, ctx, option, cost);
+            var sharedOverload = ctx.SharedSkills?.EligibleOverload(cost.Where(c => !ctx.InfiniteMana.Contains(c)).ToArray());
+            var originalSource = ctx.CurrentSourceCard;
             if (!PayColors(player, ctx, cost))
                 throw new System.InvalidOperationException("法力不足，不能支付所选效果");
-            if (!useEnh)
-                overlord = false;
+            ctx.SelectedActionManaColor = null;
+
 
             int preMove = ctx.MovementPool;
+            int preMoveBonusNext = ctx.MoveBonusNext;
+            int preMoveBonusAll = ctx.MoveBonusAll;
             int preInf  = ctx.InfluencePool;
             int preMelee = ctx.MeleePool;
             int firstCombatContribution = ctx.CombatPower.Attacks.Count;
+            int firstBlockContribution = ctx.CombatPower.Blocks.Count;
             int preRanged = ctx.RangedPool;
             int preSiege = ctx.SiegePool;
             int preBlock = ctx.BlockPool;
             int preUnitAtk = ctx.UnitAttackBonus;
             int preUnitBlk = ctx.UnitBlockBonus;
+            beforeEffect?.Invoke();
             effect.Execute(player, ctx, option);
+            if (ctx.PendingRepeatedEffect != null)
+                ctx.PendingRepeatedEffect.AfterCompletion += CompleteEffect;
+            else CompleteEffect();
+
+            void CompleteEffect()
+            {
+            if (ctx.MovementPool > preMove)
+            {
+                // Only permissions from before this card apply; a newly played Keep Moving
+                // must not boost itself or lose the new permission it grants to the next card.
+                ctx.MovementPool += preMoveBonusNext + preMoveBonusAll;
+                if (preMoveBonusNext != 0)
+                    ctx.MoveBonusNext = id == ActionEffectId.MoveBoostBase ? 1 : 0;
+            }
             if (ctx.NextMeleeAsRanged && ctx.CombatPower.Attacks.Skip(firstCombatContribution)
-                .Any(a => a.Type == AttackType.Melee && a.ExcludedTargetIndex < 0))
+                .Any(a => a.Type == AttackType.Melee && !a.HasExcludedTarget))
             {
                 ctx.CombatPower.ConvertNewMeleeToRanged(firstCombatContribution);
                 ctx.NextMeleeAsRanged = false;
@@ -375,28 +428,9 @@ namespace MK.Logic.Runtime
                     }
                 }
             }
-            if (overlord && ctx.OverlordPending)
-            {
-                if (ctx.MovementPool > preMove)
-                    ctx.MovementPool += 4;
-                else if (ctx.InfluencePool > preInf)
-                    ctx.InfluencePool += 4;
-                else if (ctx.RangedPool > preRanged)
-                    ctx.CombatPower.BoostAttack(AttackType.Ranged, 4);
-                else if (ctx.SiegePool > preSiege)
-                    ctx.CombatPower.BoostAttack(AttackType.Siege, 4);
-                else if (ctx.MeleePool > preMelee)
-                    ctx.CombatPower.BoostAttack(AttackType.Melee, 4);
-                else if (ctx.BlockPool > preBlock)
-                    ctx.CombatPower.BoostBlock(4);
-                else if (ctx.UnitAttackBonus > preUnitAtk)
-                    ctx.UnitAttackBonus += 4;
-                else if (ctx.UnitBlockBonus > preUnitBlk)
-                    ctx.UnitBlockBonus += 4;
-                ctx.OverlordPending = false;
-            }
-
-            if (ctx.NextCardEnhanced && !enhanced)
+            // Consume the permission captured before execution, even when the UI explicitly
+            // selected the strong branch. A newly created focus permission is not this payment.
+            if (freeEnhancedAction && effect is not BoostNextCardEffect)
                 ctx.NextCardEnhanced = false;
 
             // 若設置了加值，則根據效果類型增加數值
@@ -413,17 +447,24 @@ namespace MK.Logic.Runtime
                 ctx.BoostValue = 0;
             }
 
+            ctx.SharedSkills?.CompleteOverload(player, ctx, sharedOverload, originalSource,
+                ctx.MovementPool > preMove, ctx.InfluencePool > preInf,
+                ctx.CombatPower.Attacks.Skip(firstCombatContribution).ToArray(),
+                ctx.CombatPower.Blocks.Skip(firstBlockContribution).ToArray());
+
             if (card.Set == CardSet.Spell && _spellColor.TryGetValue(card.Id, out var sc) &&
                 ctx.FamePerSpell.TryGetValue(sc, out int fameAdd) && fameAdd > 0)
             {
                 player.Fame += fameAdd;
+            }
             }
         }
 
         /// <summary>以移動力換取指定次數的近戰攻擊。</summary>
         public bool ConvertMoveToAttack(ActionContext ctx, int times = 1)
         {
-            if (ctx.MoveCostAttack <= 0) return false;
+            if (!ctx.InBattle || ctx.MoveCostAttack <= 0 || times <= 0
+                || times > ctx.MovementPool / ctx.MoveCostAttack) return false;
             int cost = ctx.MoveCostAttack * times;
             if (ctx.MovementPool < cost) return false;
             ctx.MovementPool -= cost;
@@ -434,7 +475,8 @@ namespace MK.Logic.Runtime
         /// <summary>以移動力換取指定次數的遠程攻擊。</summary>
         public bool ConvertMoveToRanged(ActionContext ctx, int times = 1)
         {
-            if (ctx.MoveCostRanged <= 0) return false;
+            if (!ctx.InBattle || ctx.MoveCostRanged <= 0 || times <= 0
+                || times > ctx.MovementPool / ctx.MoveCostRanged) return false;
             int cost = ctx.MoveCostRanged * times;
             if (ctx.MovementPool < cost) return false;
             ctx.MovementPool -= cost;
@@ -442,31 +484,44 @@ namespace MK.Logic.Runtime
             return true;
         }
 
+        /// <summary>外交许可下，将实际影响力一比一转换为所选元素的格挡。</summary>
+        public bool ConvertInfluenceToBlock(ActionContext ctx, int amount = 1)
+        {
+            if (!ctx.InBattle || !ctx.InfluenceAsBlock || amount <= 0 || ctx.InfluencePool < amount)
+                return false;
+            ctx.CombatPower.AddBlock(amount, ctx.InfluenceBlockElement);
+            ctx.InfluencePool -= amount;
+            return true;
+        }
+
         /// <summary>
         /// 將任意手牌橫置打出並獲得基礎數值；創傷卡需允許方可使用。
         /// </summary>
         public bool PlaySideways(DeedCard card, PlayerState player, ActionContext ctx, SidewaysType type)
+            => PlaySideways(card, player, ctx, type, null);
+
+        // Only an already-validated skill transaction can replace this one card's value.
+        internal bool PlaySideways(DeedCard card, PlayerState player, ActionContext ctx, SidewaysType type, int? skillValue)
         {
-            if (!player.Deck.RemoveFromHand(card))
+            RepeatedEffectResolution.RequireCompleted(ctx);
+            if (card == null || !System.Enum.IsDefined(typeof(SidewaysType), type)
+                || !player.Deck.Hand.Any(c => ReferenceEquals(c, card))
+                || (card.Type == CardType.Wound && ctx.SidewaysWoundValue <= 0))
                 return false;
 
-            int val = 1;
-            if (card.Type == CardType.Wound)
-            {
-                if (ctx.SidewaysWoundValue <= 0)
-                    return false;
-                val = ctx.SidewaysWoundValue;
-            }
-            else if (ctx.SidewaysCardValue > 0)
-            {
-                val = ctx.SidewaysCardValue;
+            int val = skillValue ?? (card.Type == CardType.Wound ? ctx.SidewaysWoundValue
+                : ctx.SidewaysCardValue > 0 ? ctx.SidewaysCardValue : 1);
+            if (!player.Deck.TryPutInPlay(card)) return false;
+            if (card.Type == CardType.Wound) ctx.SidewaysWoundValue = 0;
+            if (card.Type != CardType.Wound && ctx.SidewaysCardValue > 0)
                 ctx.SidewaysCardValue = 0;
-            }
 
+            using var source = CardContributionSource.Scope(ctx, card);
             switch (type)
             {
                 case SidewaysType.Move:
-                    ctx.MovementPool += val;
+                    ctx.MovementPool += val + ctx.MoveBonusNext + ctx.MoveBonusAll;
+                    ctx.MoveBonusNext = 0;
                     break;
                 case SidewaysType.Influence:
                     ctx.InfluencePool += val;
@@ -480,7 +535,6 @@ namespace MK.Logic.Runtime
                     break;
             }
 
-            player.Deck.Discard(card);
             return true;
         }
     }

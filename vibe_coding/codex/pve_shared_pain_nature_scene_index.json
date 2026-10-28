@@ -1,0 +1,25 @@
+{
+  "run": "20260929_075314_67d2efce",
+  "report": "AutomationOutputs\\PveBattle\\20260929_075314_67d2efce\\report.json",
+  "sha256": "fc9000c644368bb18eb80953d175e6dc1dbbaf8fec78bd4a6b5175bb009129f9",
+  "status": "success",
+  "steps": 112,
+  "assertions": 151,
+  "images_viewed": [
+    32,
+    49,
+    66,
+    68,
+    79,
+    85,
+    95,
+    109
+  ],
+  "images_saved": 12,
+  "console": "tmp/pve_shared_final_scene_console.json",
+  "backend_reused": [
+    "20260929_070921_24484a72",
+    "20260929_071539_4d133fdc"
+  ],
+  "scope": "痛苦真实去伤/跨玩家伤牌格挡3，自然实际减攻/笨重移动及下一玩家领取；非所有分支/美术完成"
+}

@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "status": "environment_integration_required_not_started",
+  "scenario": "official_solo_conquest",
+  "rounds": 6,
+  "city_levels": [5, 8],
+  "initial_build": "each_hero_original_16_card_deck",
+  "policy_family": "baseline_A_structured_state_and_candidate_text",
+  "llm_lora": false,
+  "rule_decisions": {
+    "dummy_dual_color": "MaximumMatchingCrystals",
+    "provenance": "user_selected_convention",
+    "ambiguity_policy": "implement_documented_version_without_waiting_for_confirmation",
+    "ruin_inventory": "provisional_user_authorized_v1",
+    "decision_log": "resources/original_ruins/decisions_v1.md",
+    "printed_face_verification_required_to_start": false
+  },
+  "split": {
+    "unit": "canonical_world_family_all_heroes_together",
+    "train_worlds": 1000,
+    "validation_worlds": 100,
+    "test_worlds": 100,
+    "heroes_per_world": 7,
+    "validation_episodes": 700,
+    "test_episodes": 700,
+    "test_locked_until_final_selection": true
+  },
+  "reward": {
+    "objective": "official_solo_final_score",
+    "implementation": "telescoping_score_difference_terminal_time_bonus_once",
+    "scale": 0.01,
+    "gamma": 1.0,
+    "extra_kill_win_heal_rewards": false,
+    "score_never_written_to_native_fame": true
+  },
+  "training": {
+    "device": "remote_cuda_only",
+    "environments": 32,
+    "effective_minibatch_samples": 128,
+    "recurrent_state_reset": "scenario_boundary_only",
+    "save_every_updates": 10,
+    "save_final": true,
+    "old_battle_128_action_limit_is_not_scenario_terminal": true
+  },
+  "evaluation": {
+    "independent_checkpoint_workers": 32,
+    "updates": "0_and_every_20_and_final",
+    "episodes": 700,
+    "fixed_validation_tasks": true,
+    "failures_retained_in_denominator": true,
+    "engineering_truncation_separate_from_rule_terminal": true
+  },
+  "tracking": {
+    "timing_seconds": ["collection", "ppo", "save", "archive", "full_update_wall", "evaluation_wall", "evaluation_queue_wait"],
+    "values": ["pre_update_ev", "mse", "bias", "target_variance", "valid_samples", "kl", "accepted_optimizer_steps"],
+    "outcomes": ["reward", "official_score", "fame", "level", "cities", "scenario_success", "new_wounds", "remaining_wounds", "wounded_units", "healing_used", "rest_turns", "ending_round"],
+    "ev_diagnostic_threshold": 0.5,
+    "ev_review_start_update": 20,
+    "ev_recent_window_updates": 5,
+    "reward_trend_review_by_update": 50,
+    "reward_review_method": "rolling50_slope_and_last10_minus_first10; nonpositive_triggers_rollout_review",
+    "wall_time_regression_review_ratio": 1.5,
+    "thresholds_are_diagnostics_not_guarantees": true
+  },
+  "trajectory_audit": {
+    "every_update": true,
+    "retain": "complete_support_actions_rng_native_states_score_components",
+    "inspect": ["highest_reward", "failed_scenarios", "random_sample", "repeated_state_cycles", "reward_reconciliation", "time_progress", "inventory_persistence", "duplicate_rewards", "hidden_information_leakage"],
+    "anomaly_action": "preserve_reproduction_isolate_affected_data_fix_gate_then_versioned_restart"
+  },
+  "launch_gates": [
+    "source_verified_full_map_catalog_and_city_defenders",
+    "native_dummy_player_clock_and_six_round_terminal",
+    "seven_hero_original_opening",
+    "world_family_split_disjoint_and_deterministic",
+    "persistent_wounds_inventory_rewards_and_levelups",
+    "all_legal_world_and_battle_actions_and_public_observations",
+    "independent_score_reconciliation_and_no_reward_cycle",
+    "real_complete_scenario_replay_and_restore",
+    "real_cuda_ppo_update_and_checkpoint_reload",
+    "full_wall_timing_and_tracking"
+  ]
+}

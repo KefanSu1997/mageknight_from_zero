@@ -1,0 +1,778 @@
+{
+  "schema": 1,
+  "status": "proposal_only_not_active_not_calibrated",
+  "benchmark_version": "benchmark_v2_proposal",
+  "language": "zh-CN",
+  "created": "2026-10-23",
+  "source_inputs": [
+    {
+      "path": "AutomationOutputs/RsiGame/evaluation_iterations/20261023_cycle02/review_v2/protocol.json",
+      "sha256": "3932ca0fded548af11f96022056d1513886f4792fa6c59038dbfd58c1ffd1c2c",
+      "role": "原32项目语义与旧协议边界"
+    },
+    {
+      "path": "AutomationOutputs/RsiGame/evaluation_iterations/20261023_cycle01/review_v3/attempt_01/review.json",
+      "sha256": "58603a1d2996895312d949b82a3e19a68241d5e7d3dc707ae416e185a424f11b",
+      "role": "只识别历史证据缺口；不复用分数、不据结果拟合阈值"
+    }
+  ],
+  "activation": "须先独立审核本提案；在采集任何新候选结果前冻结具体fixture/种子/实体清单/字段与控件注册表/题目答案/设备/工具版本/阈值文件及SHA。未完成冻结不得称benchmark_v2已执行。",
+  "scope": {
+    "canvas": [
+      1920,
+      1080
+    ],
+    "contexts": [
+      "outside",
+      "ranged",
+      "block",
+      "source_play",
+      "assign_damage",
+      "damage_toggle",
+      "melee_two_enemies",
+      "won_result",
+      "end",
+      "end_mixed",
+      "three_enemies",
+      "card_hover",
+      "selected_action_payment",
+      "source_panel",
+      "hand_page_two",
+      "source_taken",
+      "source_consumed"
+    ],
+    "context_count": 17,
+    "claims": "有限公开UI工程benchmark；不代表全部69敌、七英雄全部技能、全规则或真人体验。不存在全游戏总体分母的伪承诺。",
+    "registry_expansion": "分母表达式中的字段、实体、文本、标签、路径节点需在采集前展开为有唯一ID的JSON行并冻结精确N；本提案不是已完成清单，禁止边采边挑或发现失败后删分母。"
+  },
+  "engineering_anchor_notice": "以下所有数值阈值、任务数与1–5映射均为待审核工程约定；不是文献结论、不是WCAG/人体工学认证，也不是依据当前成绩调参。优先采用通用完成率、相对有限图最优和独立环境预算；冻结后完整公开每分子分母、失败与缺项。",
+  "evidence_policy": {
+    "missing": "缺动态证据、未测几何、缺锚点分别记录；未采集、采集损坏、未知、超时、已观察失败分开。除专门覆盖项8.1/8.2外，缺任一预声明测量单元时整项score=null，保留已测原值。",
+    "no_imputation": "无测量不自动满分，不补0/中间分；置信区间/计数随原值报告。",
+    "hard_gates": "必要信息丢失、字形缩小规避、意外主体裁切/明显变形、规则/资源错误、画布变化等立即failed；分数及其他高分不可抵消。老版本已有也不豁免；已修中间失败单独保留。",
+    "coverage_vs_quality": "覆盖项的缺件可确定为证据未覆盖，不等于UI失败；已执行但失败用例计执行覆盖并独立标失败。",
+    "aggregation": "不生成无权重32项均分/总分。报告32行score|null、原值、分母、范围、缺口与硬门禁；复合项缺任一必要维度则整体null，子指标单列。"
+  },
+  "score_profiles": {
+    "pass_rate": {
+      "basis": "预注册有限单元的合格率，所有单元完成测量；硬门禁独立",
+      "5": "P=100%",
+      "4": "95%≤P<100%",
+      "3": "90%≤P<95%",
+      "2": "75%≤P<90%",
+      "1": "P<75%",
+      "notice": "小样本允许跳档，禁止插值凑分；任何未测单元使整体null，非将未测算失败。"
+    },
+    "coverage": {
+      "basis": "证据执行覆盖率K/N；N固定，缺文件是已知未覆盖而非UI失败",
+      "5": "100%",
+      "4": "≥95%且<100%",
+      "3": "≥90%且<95%",
+      "2": "≥75%且<90%",
+      "1": "<75%"
+    },
+    "path_ratio": {
+      "basis": "每意图比值r=实际成本/经证明有限图最小成本；转换数使用+1平滑；取全部意图最差档，另保留中位/全行",
+      "5": "r=1",
+      "4": "1<r≤1.25",
+      "3": "1.25<r≤1.5",
+      "2": "1.5<r≤2",
+      "1": "r>2",
+      "unknown": "有限图未闭包/未证最优则score=null，保留参考路径原值；C*=0仅适用+1定义或另列零动作任务，禁止除零。 r<1表示最优证书/成本定义有误，结果无效并修复新版本，不可判5。"
+    },
+    "latency_ms": {
+      "basis": "36事件全量，P95按ceil(.95N)次序统计；各类与总体取最差档",
+      "5": "P95≤100ms",
+      "4": "100<P95≤200ms",
+      "3": "200<P95≤400ms",
+      "2": "400<P95≤800ms",
+      "1": "P95>800ms；已知>5秒超时下界可定档时记录右删失",
+      "notice": "仅工程响应预算，非人体反应文献；时钟无法映射呈现或删失跨档则null。"
+    },
+    "visual_fixed": {
+      "basis": "逐单元两位独立盲评；分歧保留两值与理由，未独立复核则null；整项报较低中位档和全分布",
+      "5": "全部必要内容清楚，组内风格/语义/重点一致；无观察问题",
+      "4": "可清楚完成阅读，有轻微局部层级或分组问题",
+      "3": "可用但需反复定位或明显密集/风格混杂",
+      "2": "关键层级或分组明显混淆，阅读/识别有困难",
+      "1": "无法可靠识别必要内容；同时触发适用硬门禁"
+    },
+    "recovery": {
+      "basis": "可恢复任务按path_ratio；合法不可逆任务按预声明提示/状态保全布尔检查pass_rate，整项取两子项低档；缺任一子项null",
+      "notice": "不得为实际错误资源损失创造不可逆豁免。"
+    },
+    "performance": {
+      "basis": "至少90秒连续负载数据：3次完整8意图回放，每次至少30秒；不足30秒保持最终合法状态至30秒，超过则保留全部且报告实际时长。性能档取最差次P95档，再与稳定性档取低者。",
+      "5": "P95≤16.7ms",
+      "4": "16.7<P95≤25ms",
+      "3": "25<P95≤33.4ms",
+      "2": "33.4<P95≤50ms",
+      "1": "P95>50ms",
+      "stability": "所有预注册画布/边界/刷新/异常检查正确为5；非必要视觉小瑕疵≤1单元为4、≤3为3、>3为2；崩溃/必要状态错误为1并硬失败。须报告P99、长停顿和警告；不得只用P95隐去异常。",
+      "notice": "特定设备与构建环境工程预算，不与空闲Editor60帧或其他机器直接比。"
+    }
+  },
+  "registries": {
+    "common_fields": [
+      "hero_identity",
+      "phase",
+      "day_night_round",
+      "armor",
+      "fame",
+      "hand_deck_discard_wound_counts",
+      "crystals_by_color",
+      "mana_tokens_by_color"
+    ],
+    "context_fields": {
+      "outside": [
+        "encounter_entry",
+        "turn_end_entry"
+      ],
+      "ranged": [
+        "ranged_points",
+        "enemy_name_attack_armor_fame_abilities"
+      ],
+      "block": [
+        "block_points",
+        "enemy_target",
+        "block_confirm"
+      ],
+      "source_play": [
+        "selected_card",
+        "mode",
+        "printed_cost",
+        "effective_cost",
+        "selected_payment_source"
+      ],
+      "assign_damage": [
+        "incoming_damage_by_enemy",
+        "damage_recipients",
+        "damage_confirm"
+      ],
+      "damage_toggle": [
+        "selected_damage_plan",
+        "recipient_physical_id"
+      ],
+      "melee_two_enemies": [
+        "two_enemy_physical_ids",
+        "attack_contributions",
+        "attack_confirm"
+      ],
+      "won_result": [
+        "won_flag",
+        "defeated_ids",
+        "fame_delta"
+      ],
+      "end": [
+        "turn_end_result",
+        "wounds",
+        "next_turn_entry"
+      ],
+      "end_mixed": [
+        "survivors",
+        "defeated_ids",
+        "end_summary"
+      ],
+      "three_enemies": [
+        "three_enemy_physical_ids",
+        "abilities_each"
+      ],
+      "card_hover": [
+        "card_full_name",
+        "base_and_enhanced_full_effect",
+        "printed_cost"
+      ],
+      "selected_action_payment": [
+        "selected_card_physical_id",
+        "target_physical_id",
+        "mode",
+        "effective_cost",
+        "payment_source"
+      ],
+      "source_panel": [
+        "dice_physical_ids_colors",
+        "selected_die",
+        "normal_extra_quota",
+        "return_entry"
+      ],
+      "hand_page_two": [
+        "current_total_pages",
+        "visible_card_physical_ids",
+        "page_controls"
+      ],
+      "source_taken": [
+        "source_receipt",
+        "consumed_die_id",
+        "new_tokens",
+        "quota_delta"
+      ],
+      "source_consumed": [
+        "persistent_effect_full_conditions",
+        "payment_receipt",
+        "resource_delta",
+        "consumer_result"
+      ]
+    },
+    "intents": [
+      "普通卡基本效果正式提交",
+      "同卡强化并从公共魔力取费后正式消费",
+      "公共魔力无额度拒绝后返回并继续原选卡",
+      "选择敌人后正式远程攻击",
+      "选择目标后正式格挡",
+      "承伤分配预选并正式确认",
+      "手牌翻页并悬浮阅读再选择指定物理卡",
+      "战斗结算并正式EndTurn收尾"
+    ],
+    "transitions_12": [
+      "Outside→fight",
+      "Ranged→Block",
+      "Block→AssignDamage",
+      "AssignDamage→Melee",
+      "Melee→End",
+      "End→nextTurn",
+      "selectedCard→sourcePanel",
+      "sourcePanel→selectedCard",
+      "handPage1→page2",
+      "hand→played→discard",
+      "unitReady→spent",
+      "woundedCard→discard→nextDraw"
+    ],
+    "control_probes": [
+      "advance_phase",
+      "confirm_card",
+      "enhanced_mode",
+      "enemy_target",
+      "unit_target",
+      "damage_toggle",
+      "confirm_damage",
+      "confirm_attack",
+      "use_source",
+      "source_die",
+      "hand_next_page",
+      "end_turn"
+    ],
+    "payment_cases": [
+      "基础效果零费",
+      "单色token足额",
+      "同色晶体足额",
+      "可用公共骰转换token",
+      "普通取骰额度耗尽拒绝",
+      "额外额度合法使用",
+      "同色多来源显式选择",
+      "强化最终费用含持续修正"
+    ],
+    "handoffs": [
+      "取骰正式提交→原卡强化正式消费",
+      "格挡正式提交→承伤确认",
+      "翻页结束→指定物理卡正式消费",
+      "敌人击败反馈→EndTurn正式收尾"
+    ],
+    "feedback_events": {
+      "selection": [
+        "卡",
+        "敌人",
+        "模式",
+        "承伤接收者"
+      ],
+      "success": [
+        "取骰",
+        "强化消费",
+        "攻击命中/击败",
+        "EndTurn"
+      ],
+      "rejection": [
+        "无取骰额度",
+        "费用不足",
+        "未选必要目标",
+        "无合法阶段提交"
+      ]
+    },
+    "animation_cases": [
+      "选择后立即合法提交",
+      "成功提示期间下一合法点击",
+      "拒绝后修正并重新提交",
+      "两次合法快速连续操作",
+      "重复提交被拒绝",
+      "提示刷新/翻页后回查完整效果"
+    ],
+    "rejection_cases": [
+      "无取骰额度",
+      "费用不足",
+      "未选必要目标",
+      "不匹配阶段动作",
+      "重复正式提交",
+      "不合法承伤接收者"
+    ],
+    "stress_cases": [
+      "最长公开能力正文",
+      "三敌同屏",
+      "双敌不同目标",
+      "11手牌第二页",
+      "合法最大手牌构筑翻页",
+      "同名不同物理卡",
+      "同色多骰",
+      "零普通取骰额度",
+      "单一剩余费用资源",
+      "双击正式提交100ms间隔",
+      "提示期间翻页/切阶段",
+      "长正文下完整持续效果回查"
+    ],
+    "registry_feasibility": "所有用例必须由原规则合法reset/动作到达。不存在的控制或非法构筑在预注册审核前修订提案版本；冻结后无法达到记缺项或失败，不得换简单任务。所有实际字段/控件别名、实体实例、正确答案、选择路径和场景SHA须追加到独立冻结执行manifest，本提案未伪造这些实际数据。"
+  },
+  "items": [
+    {
+      "id": "1.1",
+      "group": "信息完整性",
+      "name": "必要信息覆盖率",
+      "method": "可见且完整的必要字段数/该状态必要字段总数；必须先按阶段定义字段清单，关键字段缺失即失败。",
+      "finite_scope": "17状态中逐状态必要字段实例；common字段8×17=136，加context_fields逐项展开；卡/敌按冻结实体表逐个计，不用全部组件数",
+      "predeclared_denominator": "17状态中逐状态必要字段实例；common字段8×17=136，加context_fields逐项展开；卡/敌按冻结实体表逐个计，不用全部组件数",
+      "evidence_collection": "字段原文、正式状态、可见着墨mask与原图人工核对；覆盖=完整可读实例/已冻结必要实例",
+      "existing_evidence_reuse": "可重算部分；现有图与字段有基础，缺逐状态必要字段表，不能追认原分母",
+      "new_evidence_needed": "需冻结字段表；存在/几何不等于可见",
+      "score_profile": "pass_rate",
+      "hard_gate_or_limit": "任何必要字段丢失硬失败",
+      "score_now": null
+    },
+    {
+      "id": "1.2",
+      "group": "信息完整性",
+      "name": "文字截断率",
+      "method": "被省略、裁断的必要文本项/必要文本总项；检查完整原文与实际可见文本。",
+      "finite_scope": "与1.1相同的必要文本实例子集，N在采集前由注册表展开冻结",
+      "predeclared_denominator": "与1.1相同的必要文本实例子集，N在采集前由注册表展开冻结",
+      "evidence_collection": "逐实例原文、TMP overflow、可见文本和原图核对；完好率=1−截断数/N",
+      "existing_evidence_reuse": "部分：已有overflow与图，非必要组件总数不能直接作分母",
+      "new_evidence_needed": "需补必要文本分类，不需假装动态已测",
+      "score_profile": "pass_rate",
+      "hard_gate_or_limit": "必要规则文本截断硬失败",
+      "score_now": null
+    },
+    {
+      "id": "1.3",
+      "group": "信息完整性",
+      "name": "遮挡与重叠",
+      "method": "必要文本、控件或怪物区域中非预期遮挡项数及遮挡面积；预期悬浮层单列。",
+      "finite_scope": "17状态×3逻辑区=51检查单元：敌人区、操作/费用区、手牌/状态区；预期悬浮遮挡独立标注",
+      "predeclared_denominator": "17状态×3逻辑区=51检查单元：敌人区、操作/费用区、手牌/状态区；预期悬浮遮挡独立标注",
+      "evidence_collection": "逐图标记必要主体/字形mask和上层遮挡mask，保存交集面积与实例数；51单元合格率",
+      "existing_evidence_reuse": "部分：原图可重标；矩形与presence不证明无遮挡",
+      "new_evidence_needed": "需像素或人工边界标注；允许遮挡须预先写入注册表",
+      "score_profile": "pass_rate",
+      "hard_gate_or_limit": "必要信息被意外遮挡或控件不可达硬失败",
+      "score_now": null
+    },
+    {
+      "id": "1.4",
+      "group": "信息完整性",
+      "name": "跨阶段实体连续性",
+      "method": "连续操作前后英雄、物理卡/单位ID和归属正确保留的转换数/应保留转换数；静态图无法证明。",
+      "finite_scope": "12个预定义转换×全部应保留实体关系；实体ID/归属/物理槽按转换前正式状态展开冻结",
+      "predeclared_denominator": "12个预定义转换×全部应保留实体关系；实体ID/归属/物理槽按转换前正式状态展开冻结",
+      "evidence_collection": "连续事件前后native完整状态、实体ID、行动输入与RNG；逐关系保持/合法迁移核对",
+      "existing_evidence_reuse": "不能全算；现有选择保留只覆盖单分支",
+      "new_evidence_needed": "必须真实跨阶段/页面/抽弃牌/部队转换，截图不能替代",
+      "score_profile": "pass_rate",
+      "hard_gate_or_limit": "实体串换、非法归属或重复消费硬失败",
+      "score_now": null
+    },
+    {
+      "id": "2.1",
+      "group": "文字与视觉可读性",
+      "name": "字号与原尺寸阅读",
+      "method": "记录原1920×1080实际文字高度，并由同锚点评审判断能否读取；不以整体缩小取巧。",
+      "finite_scope": "17状态各4个必要文本任务=68，按字段注册表固定问题与答案",
+      "predeclared_denominator": "17状态各4个必要文本任务=68，按字段注册表固定问题与答案",
+      "evidence_collection": "1920×1080无缩放原图；固定阅读者设置，逐问题准确转录；另报字号/字形quad与着墨高度分布",
+      "existing_evidence_reuse": "部分：几何可算，68阅读任务未预注册；既有专家视觉分数独立保留",
+      "new_evidence_needed": "新固定模型阅读实验；真人阅读另列，二者不得混合",
+      "score_profile": "pass_rate",
+      "hard_gate_or_limit": "同必要实例字号下降或缩整体规避布局硬失败；必要字不可读硬失败",
+      "score_now": null
+    },
+    {
+      "id": "2.2",
+      "group": "文字与视觉可读性",
+      "name": "文字背景对比度",
+      "method": "依据实际文本前景与局部底色估计对比度，纹理背景报告分布；不从截图主观分数推算。",
+      "finite_scope": "17状态×3区域=51文本/背景配对样本：阶段、敌人数字、当前行动正文；边界/纹理采样规则冻结",
+      "predeclared_denominator": "17状态×3区域=51文本/背景配对样本：阶段、敌人数字、当前行动正文；边界/纹理采样规则冻结",
+      "evidence_collection": "实际glyph着墨mask内前景、邻近未污染背景；报告像素定义、P10/中位对比度；每区域达到预声明C≥4.5记合格",
+      "existing_evidence_reuse": "不能完整计算；现有quad/ring仅proxy，不升级成实际mask结果",
+      "new_evidence_needed": "需新增前景分割/验证，禁用样式另报；阈值仅工程约定非合规认证",
+      "score_profile": "pass_rate",
+      "hard_gate_or_limit": "缺mask则null；不可读必要文本仍硬失败",
+      "score_now": null
+    },
+    {
+      "id": "2.3",
+      "group": "文字与视觉可读性",
+      "name": "信息搜索负担",
+      "method": "固定问题找阶段/资源/目标/费用的正确率与耗时；模型测试和真人测试分开。",
+      "finite_scope": "17状态×4固定搜索题=68；每题独立会话；模型实验固定模型/温度/图像尺寸与请求超时60秒",
+      "predeclared_denominator": "17状态×4固定搜索题=68；每题独立会话；模型实验固定模型/温度/图像尺寸与请求超时60秒",
+      "evidence_collection": "答案正确率、完整任务耗时中位/P95、超时率分别报；分数仅准确率，延迟不给跨模型推论",
+      "existing_evidence_reuse": "不能；现有非预注册阅读不可追认68题",
+      "new_evidence_needed": "真实受控行为：模型输入输出与计时；真人需另招募并固定设备任务顺序",
+      "score_profile": "pass_rate",
+      "hard_gate_or_limit": "不把模型工具/网络耗时叫人类搜索时间",
+      "score_now": null
+    },
+    {
+      "id": "2.4",
+      "group": "文字与视觉可读性",
+      "name": "密度与分组",
+      "method": "关键区域留白、元素间距与分组对应关系；几何值和1—5主观评分分别保存。",
+      "finite_scope": "17状态×3区域=51分组判定单元；预声明资源/实体/行动三语义组",
+      "predeclared_denominator": "17状态×3区域=51分组判定单元；预声明资源/实体/行动三语义组",
+      "evidence_collection": "边界框、留白面积、组内/组间间距原值；独立盲评51单元是否语义分组明确且无需跨组猜读",
+      "existing_evidence_reuse": "部分：可重标几何，原主观分保留原口径",
+      "new_evidence_needed": "需固定注释规范与双评审分歧记录；几何阈值不代替美感",
+      "score_profile": "visual_fixed",
+      "hard_gate_or_limit": "必要信息/控件被挤出仍硬失败",
+      "score_now": null
+    },
+    {
+      "id": "3.1",
+      "group": "素材与构图",
+      "name": "主体完整性",
+      "method": "头部、肢体、关键武器意外裁切逐项判定；设计允许的遮挡需明确。",
+      "finite_scope": "17状态全部敌人插画实例，实例表在采集前冻结N；源图可见解剖/关键道具清单逐图预标",
+      "predeclared_denominator": "17状态全部敌人插画实例，实例表在采集前冻结N；源图可见解剖/关键道具清单逐图预标",
+      "evidence_collection": "源图与最终原尺寸图配对，独立标头/肢体/关键武器可见性，记录允许遮挡原因",
+      "existing_evidence_reuse": "部分：图可再标，fullUV不能证明主体完整",
+      "new_evidence_needed": "需源图主体标注和可见性核对；不外推全部69敌",
+      "score_profile": "pass_rate",
+      "hard_gate_or_limit": "意外裁切关键主体硬失败",
+      "score_now": null
+    },
+    {
+      "id": "3.2",
+      "group": "素材与构图",
+      "name": "印刷残留",
+      "method": "主插画中数字、图标、圆边残留项数；保留完整独立规则标记不与主插画混淆。",
+      "finite_scope": "同3.1插画实例N；每实例检查数字、图标、圆边三类别=3N",
+      "predeclared_denominator": "同3.1插画实例N；每实例检查数字、图标、圆边三类别=3N",
+      "evidence_collection": "源/显示图配对逐项记录印刷残留；独立规则标记不算残留",
+      "existing_evidence_reuse": "部分：现有图可复核；新N不得追认为旧全素材分母",
+      "new_evidence_needed": "不需动态，但需实际原尺寸视觉检查",
+      "score_profile": "pass_rate",
+      "hard_gate_or_limit": "必要规则图标被误删仍规则硬失败",
+      "score_now": null
+    },
+    {
+      "id": "3.3",
+      "group": "素材与构图",
+      "name": "比例与留边",
+      "method": "图像显示宽高比对源图偏差，及主体距框边最小距离；不强求统一填满。",
+      "finite_scope": "同3.1每实例两项：显示/源图比例偏差与主体最小留边=2N",
+      "predeclared_denominator": "同3.1每实例两项：显示/源图比例偏差与主体最小留边=2N",
+      "evidence_collection": "主体mask预标；比例偏差≤1%，主体最小留边≥框短边1%为工程合格；特定合法贴边必须事前登记",
+      "existing_evidence_reuse": "部分：比例已测，主体mask与留边缺失",
+      "new_evidence_needed": "需补主体mask；不是强求所有图满框",
+      "score_profile": "pass_rate",
+      "hard_gate_or_limit": "明显变形或意外裁切硬失败优先，不能由平均值掩盖",
+      "score_now": null
+    },
+    {
+      "id": "3.4",
+      "group": "素材与构图",
+      "name": "风格与层级",
+      "method": "同组截图评价画风、色彩、视觉重点与整体美感，锚点固定1—5。",
+      "finite_scope": "17原图固定顺序乱序种子，按风格/色彩/重点/层级四轴=68盲评单元",
+      "predeclared_denominator": "17原图固定顺序乱序种子，按风格/色彩/重点/层级四轴=68盲评单元",
+      "evidence_collection": "保留逐图四轴理由和两位独立评审；标识为专家视觉判断，不称客观美感",
+      "existing_evidence_reuse": "可重新视觉判断；不得搬旧分数作为新结果",
+      "new_evidence_needed": "不需动态；版本/轮次隐藏、评审模型固定并留完整原始final",
+      "score_profile": "visual_fixed",
+      "hard_gate_or_limit": "硬失败不被美感分抵消",
+      "score_now": null
+    },
+    {
+      "id": "4.1",
+      "group": "可发现性与语义",
+      "name": "下一步可识别",
+      "method": "固定状态下指出下一合法操作的正确率；标注评审模型或真人。",
+      "finite_scope": "17状态每状态一个正式合法下一动作问题=17；合法集合由同状态native服务生成",
+      "predeclared_denominator": "17状态每状态一个正式合法下一动作问题=17；合法集合由同状态native服务生成",
+      "evidence_collection": "独立读图回答动作+目标+必要参数，再以native合法集合验证；正确题/17",
+      "existing_evidence_reuse": "不能；现有阶段文案不是行为正确率",
+      "new_evidence_needed": "受控模型行为必需；真人另列；仅静态推断合法不算实际执行",
+      "score_profile": "pass_rate",
+      "hard_gate_or_limit": "错误引导到规则非法动作另记硬失败",
+      "score_now": null
+    },
+    {
+      "id": "4.2",
+      "group": "可发现性与语义",
+      "name": "可点击与禁用识别",
+      "method": "控件状态分类正确率、视觉样式一致性；截图分类不替代功能点击。",
+      "finite_scope": "12固定控件探针×可用/禁用两条件=24；逻辑控件见control_probes",
+      "predeclared_denominator": "12固定控件探针×可用/禁用两条件=24；逻辑控件见control_probes",
+      "evidence_collection": "先盲读图分类再真实raycast点击/拒绝核对；分类正确率、功能符合率分报，整项取较低档",
+      "existing_evidence_reuse": "部分：可见样式和个别拒绝存在，缺24全探针",
+      "new_evidence_needed": "必须真实点击、禁用保护与输入后正式状态",
+      "score_profile": "pass_rate",
+      "hard_gate_or_limit": "禁用仍非法消费、错误目标或误报成功硬失败",
+      "score_now": null
+    },
+    {
+      "id": "4.3",
+      "group": "可发现性与语义",
+      "name": "标签清晰度",
+      "method": "名称、图标、术语与正式规则一致的比例，歧义项留证。",
+      "finite_scope": "17状态逐必要字段中的标签/图标实体展开冻结术语N；同名跨状态出现逐实例计",
+      "predeclared_denominator": "17状态逐必要字段中的标签/图标实体展开冻结术语N；同名跨状态出现逐实例计",
+      "evidence_collection": "以原规则公开词典逐项对照；歧义、同名异义逐实例留原图证据",
+      "existing_evidence_reuse": "部分：可从原图重新核对，未冻结术语总表",
+      "new_evidence_needed": "需预建正式术语词典；不得后删不一致条目",
+      "score_profile": "pass_rate",
+      "hard_gate_or_limit": "误导规则/费用/目标语义硬失败",
+      "score_now": null
+    },
+    {
+      "id": "4.4",
+      "group": "可发现性与语义",
+      "name": "选择与费用可解释性",
+      "method": "能否正确读出选中卡、目标、模式、支付来源及最终费用；逐场景判定。",
+      "finite_scope": "8个支付场景×5问=40：卡、目标、模式、付款来源、最终净费用；见payment_cases",
+      "predeclared_denominator": "8个支付场景×5问=40：卡、目标、模式、付款来源、最终净费用；见payment_cases",
+      "evidence_collection": "独立读图答题，结合该场景native实际费用/分池流水核对；来源不足不得用印刷费用代替",
+      "existing_evidence_reuse": "部分：已有单场景印刷费，非40题完整证据",
+      "new_evidence_needed": "需受控读图+真实付款流水，来源存在多解时答案须列实际选源",
+      "score_profile": "pass_rate",
+      "hard_gate_or_limit": "展示费用与实际消费不符硬失败",
+      "score_now": null
+    },
+    {
+      "id": "5.1",
+      "group": "操作负担",
+      "name": "同意图点击次数",
+      "method": "同一起止条件、相同结果下最短合法UI路径点击数；一次复选/正式提交均计入。",
+      "finite_scope": "8个完整微意图各一次认证最短路径+3次真实回放=24回放；见intents",
+      "predeclared_denominator": "8个完整微意图各一次认证最短路径+3次真实回放=24回放；见intents",
+      "evidence_collection": "完整起终native状态/指针/页面；冻结有限UI图最短点击证书C*，比值C/C*逐意图取最差档",
+      "existing_evidence_reuse": "仅旧参考路径原值可保留；缺最短证书，不能升级为最优",
+      "new_evidence_needed": "真实UI逐步回放；有限图闭包/状态投影合法性审核；未闭包则整项null，可另报参考路径",
+      "score_profile": "path_ratio",
+      "hard_gate_or_limit": "省掉正式消费/结果不同路径无效；失败不删除",
+      "score_now": null
+    },
+    {
+      "id": "5.2",
+      "group": "操作负担",
+      "name": "鼠标移动距离",
+      "method": "按实际点击/悬浮坐标累加欧氏距离，并报告像素与画布对角线归一化距离。",
+      "finite_scope": "同8意图×3回放=24；所有任务初指针固定画布中心(960,540)",
+      "predeclared_denominator": "同8意图×3回放=24；所有任务初指针固定画布中心(960,540)",
+      "evidence_collection": "真实点击/必要悬浮坐标逐段累计，px与对角线归一；有限图节点固定控件命中中心，最短距离D*证书；比值D/D*取最差档",
+      "existing_evidence_reuse": "旧路径内距离可重报；未知初始段不能补0，缺完整24条和D*",
+      "new_evidence_needed": "真实坐标轨迹与同结果；有限离散命中中心最优不等于连续空间/人类最优",
+      "score_profile": "path_ratio",
+      "hard_gate_or_limit": "不隐去页面切换或强制悬浮的路径段",
+      "score_now": null
+    },
+    {
+      "id": "5.3",
+      "group": "操作负担",
+      "name": "页面与弹层切换",
+      "method": "同意图路径的跨页、打开关闭弹层、返回次数；常驻区域切换另记。",
+      "finite_scope": "同8意图×3=24；面板转换按open/close/page/return/persistent_focus分类",
+      "predeclared_denominator": "同8意图×3=24；面板转换按open/close/page/return/persistent_focus分类",
+      "evidence_collection": "真实前后页面状态日志；open/close/page/return累计，常驻焦点另报；有限图最少转换S*，用(S+1)/(S*+1)取最差档",
+      "existing_evidence_reuse": "部分：已有单路径转换数，缺统一分类与有限图证书",
+      "new_evidence_needed": "必须动态页面轨迹；自动返回记实际一次转换，不再虚计关闭",
+      "score_profile": "path_ratio",
+      "hard_gate_or_limit": "结果/正式消费不相同则比较无效",
+      "score_now": null
+    },
+    {
+      "id": "5.4",
+      "group": "操作负担",
+      "name": "A到B衔接代价",
+      "method": "从A真实结束时的指针、面板与选择状态出发，到B完成；共享操作不重复计费。",
+      "finite_scope": "4个预定义A→B边界各3回放=12；handoffs列表固定，边界包含A真实末状态",
+      "predeclared_denominator": "4个预定义A→B边界各3回放=12；handoffs列表固定，边界包含A真实末状态",
+      "evidence_collection": "从A提交后的指针/选择/页面状态计到B正式完成；报点击、px、转换；采用有限图衔接点击比值，距离另报；禁止重复加进总意图",
+      "existing_evidence_reuse": "部分：已有取骰→选卡局部段，非12完整轨迹",
+      "new_evidence_needed": "必须动态连续边界，不能reset后拼接；B参数/消费相同",
+      "score_profile": "path_ratio",
+      "hard_gate_or_limit": "不把旧5点击、新边界点击双计",
+      "score_now": null
+    },
+    {
+      "id": "6.1",
+      "group": "响应与反馈",
+      "name": "反馈覆盖率",
+      "method": "输入后出现与实际结果一致反馈的事件数/需反馈事件数；选择、成功、拒绝分报。",
+      "finite_scope": "12事件类型×3回放=36；选择/成功/拒绝各4种，见feedback_events",
+      "predeclared_denominator": "12事件类型×3回放=36；选择/成功/拒绝各4种，见feedback_events",
+      "evidence_collection": "每事件预写应反馈字段和首有效反馈定义；缺反馈与错误反馈分开；覆盖正确事件/36",
+      "existing_evidence_reuse": "部分：已有三类例子，10事件不是36分母",
+      "new_evidence_needed": "必须真实输入与反馈帧序列；超时按采集规则留存",
+      "score_profile": "pass_rate",
+      "hard_gate_or_limit": "拒绝报成功/必要结果信息丢失硬失败",
+      "score_now": null
+    },
+    {
+      "id": "6.2",
+      "group": "响应与反馈",
+      "name": "反馈延迟",
+      "method": "真实输入时间到首个有效反馈帧的毫秒差，报告样本量、中位数和P95。",
+      "finite_scope": "同36事件，每类3次；预热一次单独留档不进分母",
+      "predeclared_denominator": "同36事件，每类3次；预热一次单独留档不进分母",
+      "evidence_collection": "同一单调时钟记录输入提交至首个有效反馈呈现帧；有效=字段正确可见非旧帧；P95最近秩法，分别报选择/成功/拒绝及总体",
+      "existing_evidence_reuse": "不能；60空闲帧间隔不是输入反馈延迟",
+      "new_evidence_needed": "需真实输入时戳和逐帧呈现；工具轮询延迟不能替代呈现时刻",
+      "score_profile": "latency_ms",
+      "hard_gate_or_limit": "超时5秒为右删失；若P95无法定界整项null，另报已确认失败与删失数",
+      "score_now": null
+    },
+    {
+      "id": "6.3",
+      "group": "响应与反馈",
+      "name": "反馈真实性",
+      "method": "反馈与正式规则状态一致率；准备点数不能算命中，拒绝不能算成功。",
+      "finite_scope": "同36事件×预写反馈字段展开冻结N；选择准备量、最终消费与拒绝原因独立字段",
+      "predeclared_denominator": "同36事件×预写反馈字段展开冻结N；选择准备量、最终消费与拒绝原因独立字段",
+      "evidence_collection": "反馈声明与正式native前后差异逐字段核对，正确字段/N；按事件类型另报",
+      "existing_evidence_reuse": "部分：现有两个消费者/拒绝可核对，不是完整分母",
+      "new_evidence_needed": "必须动态正式状态、反馈原文、事件ID关联",
+      "score_profile": "pass_rate",
+      "hard_gate_or_limit": "准备当命中、拒绝当成功、费用虚报硬失败",
+      "score_now": null
+    },
+    {
+      "id": "6.4",
+      "group": "响应与反馈",
+      "name": "动画阻塞与持续性",
+      "method": "提示是否挡点击、遮信息、过早消失或错误叠加；需真实帧序列。",
+      "finite_scope": "6种反馈序列×3=18，见animation_cases；每序列需完整2秒呈现帧与输入命中",
+      "predeclared_denominator": "6种反馈序列×3=18，见animation_cases；每序列需完整2秒呈现帧与输入命中",
+      "evidence_collection": "逐帧记录遮挡、raycast命中、过早消失、叠加；信息提示最短可回看2秒或永久历史入口；合格序列/18",
+      "existing_evidence_reuse": "不能；静态位置不能证动画时间行为",
+      "new_evidence_needed": "真实帧序列和输入命中；无动画仍要验证提示持续/堆叠行为",
+      "score_profile": "pass_rate",
+      "hard_gate_or_limit": "提示挡住必要操作/规则信息或成功态被旧帧覆盖硬失败",
+      "score_now": null
+    },
+    {
+      "id": "7.1",
+      "group": "错误与恢复",
+      "name": "误操作暴露",
+      "method": "同一意图中容易混淆目标、模式、费用的机会数；实际误操作率需行为测试。",
+      "finite_scope": "8意图×3风险点（目标/模式/付款）=24机会；不适用须预先固定场景而非事后删项",
+      "predeclared_denominator": "8意图×3风险点（目标/模式/付款）=24机会；不适用须预先固定场景而非事后删项",
+      "evidence_collection": "盲评每风险点是否能唯一辨认，再真实选择验证；视觉暴露率和受控误选率分报；主分为无歧义机会率",
+      "existing_evidence_reuse": "部分：已知风险可列，不是24机会完整测量",
+      "new_evidence_needed": "真实行为错误率另做24选择×固定参与者组；模型不冒充真人",
+      "score_profile": "pass_rate",
+      "hard_gate_or_limit": "同位置实体混淆导致错误正式消费硬失败",
+      "score_now": null
+    },
+    {
+      "id": "7.2",
+      "group": "错误与恢复",
+      "name": "拒绝说明可操作性",
+      "method": "拒绝原因是否准确并指出可修正事项，固定锚点评审。",
+      "finite_scope": "6个预先合法可触发拒绝×3问=18：原因/可改条件/可继续入口，见rejection_cases",
+      "predeclared_denominator": "6个预先合法可触发拒绝×3问=18：原因/可改条件/可继续入口，见rejection_cases",
+      "evidence_collection": "真实触发并核对native拒绝原因，独立阅读者答18题；正确题/18",
+      "existing_evidence_reuse": "部分：重复取骰例子可保留；需六类拒绝",
+      "new_evidence_needed": "必须动态拒绝；不能强造不存在的错误状态",
+      "score_profile": "pass_rate",
+      "hard_gate_or_limit": "错误原因诱导非法操作/拒绝后资源损失硬失败",
+      "score_now": null
+    },
+    {
+      "id": "7.3",
+      "group": "错误与恢复",
+      "name": "撤销与恢复成本",
+      "method": "从规定错误状态恢复到可继续正确任务的点击数、移动距离及不可逆影响。",
+      "finite_scope": "6恢复任务各3回放=18，覆盖可撤销/无变化拒绝/合法不可逆动作；每类边界事前登记",
+      "predeclared_denominator": "6恢复任务各3回放=18，覆盖可撤销/无变化拒绝/合法不可逆动作；每类边界事前登记",
+      "evidence_collection": "错误后native状态到可继续正确任务完整轨迹；点击/px/永久影响分报；可恢复任务采用点击最短证书比值，合法不可逆任务只评分提示与原状态保全是否符合预声明合同",
+      "existing_evidence_reuse": "不能完整算；只有返回成功无完整恢复坐标",
+      "new_evidence_needed": "必须真实错误/撤销/重新提交；不可逆合法动作不虚构撤销，误消费不豁免",
+      "score_profile": "recovery",
+      "hard_gate_or_limit": "错误提交造成未告知不可逆损失硬失败",
+      "score_now": null
+    },
+    {
+      "id": "7.4",
+      "group": "错误与恢复",
+      "name": "规则与资源守恒",
+      "method": "UI操作前后正式状态、费用、目标及消费一致；用真实规则服务核验。",
+      "finite_scope": "8意图×开始/中间正式提交/结束三检查点=24；每点全公开资源+物理实体+目标流水",
+      "predeclared_denominator": "8意图×开始/中间正式提交/结束三检查点=24；每点全公开资源+物理实体+目标流水",
+      "evidence_collection": "同种子/输入native oracle精确状态差异；拒绝必须零变化；符合检查点/24，另报每字段",
+      "existing_evidence_reuse": "部分：单路径几步有核对；非全规则",
+      "new_evidence_needed": "必须真实UI→正式服务输入及消费，多敌与分池分别核对",
+      "score_profile": "pass_rate",
+      "hard_gate_or_limit": "任一非法资源/实体/目标差异硬失败",
+      "score_now": null
+    },
+    {
+      "id": "8.1",
+      "group": "状态覆盖与稳定性",
+      "name": "代表性场景覆盖",
+      "method": "实际验过的必选场景/预先列出的场景；至少单/双/三敌、悬浮、选卡、付款、魔力池、结束。",
+      "finite_scope": "固定17代表性上下文；每上下文原图+正式状态+必要字段表+采集凭据四件套",
+      "predeclared_denominator": "固定17代表性上下文；每上下文原图+正式状态+必要字段表+采集凭据四件套",
+      "evidence_collection": "已取得且可验证四件套的上下文/17；该项评价证据覆盖，非场景质量",
+      "existing_evidence_reuse": "可回查是否存在，但新四件套未必齐；原14/14只属于旧口径",
+      "new_evidence_needed": "截图覆盖可计算；互动成功另由动态条目验证，不冒充全游戏覆盖",
+      "score_profile": "coverage",
+      "hard_gate_or_limit": "满覆盖不抵消任何已观察硬失败",
+      "score_now": null
+    },
+    {
+      "id": "8.2",
+      "group": "状态覆盖与稳定性",
+      "name": "边界压力覆盖",
+      "method": "长能力、多目标、满手牌/翻页、稀缺资源、禁用、快速操作等逐项记录，不以普通场景外推。",
+      "finite_scope": "固定12压力用例，每用例原图+native快照+真实操作轨迹，见stress_cases",
+      "predeclared_denominator": "固定12压力用例，每用例原图+native快照+真实操作轨迹，见stress_cases",
+      "evidence_collection": "可验证完成用例/12；失败尝试也算执行覆盖，结果失败另列；缺证据不是运行失败",
+      "existing_evidence_reuse": "部分：长文/三敌/翻页样本已存在；缺快速/边界等完整集",
+      "new_evidence_needed": "至少快速连点、资源边界和刷新需动态；静态项目需几何",
+      "score_profile": "coverage",
+      "hard_gate_or_limit": "压力中出现信息损失/裁切/规则错误仍硬失败",
+      "score_now": null
+    },
+    {
+      "id": "8.3",
+      "group": "状态覆盖与稳定性",
+      "name": "显示与性能稳定性",
+      "method": "固定画布边界、状态刷新、帧时间与异常；性能测量标记环境，截图不能证性能。",
+      "finite_scope": "固定单机环境3次完整8意图负载回放，每次至少30秒连续帧，总计至少90秒；超时/执行失败保留全部帧和实际时长，不裁尾；另17视图画布/边界检查",
+      "predeclared_denominator": "固定单机环境3次完整8意图负载回放，每次至少30秒连续帧，总计至少90秒；超时/执行失败保留全部帧和实际时长，不裁尾；另17视图画布/边界检查",
+      "evidence_collection": "帧呈现P95/P99、>100ms停顿、刷新滞后、Console新增异常、画布边界逐项；评分性能档与功能稳定档取低者",
+      "existing_evidence_reuse": "部分：画布/空闲60帧可原值保存；不足90秒负载",
+      "new_evidence_needed": "真实负载与逐帧；设备/构建模式/分辨率/垂直同步/后台负载冻结",
+      "score_profile": "performance",
+      "hard_gate_or_limit": "画布变化、必要内容越界、崩溃、规则刷新错乱硬失败",
+      "score_now": null
+    },
+    {
+      "id": "8.4",
+      "group": "状态覆盖与稳定性",
+      "name": "证据与版本绑定",
+      "method": "每项结果绑定源码/资源SHA、编译模块、场景、截图/轨迹和评审模型；未知不可补0。",
+      "finite_scope": "冻结结果包清单全部文件N：源码/资源/DLL/模块/场景/fixture/RNG/事件/帧/评审/SP/protocol；manifest枚举后冻结N",
+      "predeclared_denominator": "冻结结果包清单全部文件N：源码/资源/DLL/模块/场景/fixture/RNG/事件/帧/评审/SP/protocol；manifest枚举后冻结N",
+      "evidence_collection": "独立逐文件重哈希、MVID/DLL映射、每结果到证据与版本连通检查；绑定完整项/N",
+      "existing_evidence_reuse": "部分：现有可重哈希；旧评审未核对的备份不追认为其已读",
+      "new_evidence_needed": "需要已完成真实编译/运行凭据；离线hash不等于当前加载runtime",
+      "score_profile": "pass_rate",
+      "hard_gate_or_limit": "SHA冲突/版本错配使所涉结论无效；未知不补0",
+      "score_now": null
+    }
+  ],
+  "comparability": {
+    "original_preserved": "不改旧SP/protocol/原始final/分数/门禁；本提案不重算或替代cycle01/02。历史数值仅按原分母/原方法引用。",
+    "new_baseline": "同一冻结v2在基线与候选重新采集；同fixture/种子/目标参数/正式结果/设备/输入计时方式。只对两边都有效且预注册的对应单元作配对比较，全分母与无效项同时报告。",
+    "breaking_changes": "分母、主体mask、像素方法、最短路径证明、阈值、模型版本、硬件/构建、题目或状态变化均新增benchmark版本；不同版本1–5不可直接排行或接曲线。",
+    "no_current_score": "本提案所有score_now=null；不根据历史review挑最优阈值，不把14/14或8→6直接映射新满分。"
+  }
+}

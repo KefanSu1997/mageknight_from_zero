@@ -11,6 +11,7 @@ namespace MK.Logic.Core
     /// 供公共魔力池與法力相關系統使用。
     /// </summary>
     public enum ManaColor { Red, Blue, Green, White, Gold, Black }
+    public enum EnemyTokenColor { Unknown, Gray, Purple, Green, Red, Brown, White }
 
     /// <summary>攻击方式；Siege 在战斗第一阶段即可作用于 Fortified 敌人</summary>
     public enum AttackType { Ranged, Siege, Melee }
@@ -55,8 +56,19 @@ namespace MK.Logic.Core
         Negate,      // 否决：取消特殊效果
         Sweep,       // 范围：近战阶段可同时攻击多个目标
         Enduring,    // 坚毅：受到创伤时降低数量
-        PhysicalResist // 追加以保留已有序列化数值；物理抗性
+        PhysicalResist, // 追加以保留已有序列化数值；物理抗性
+        Assassination, // 未格挡的伤害只能分配给英雄；原奇袭队能力有明确例外
+        Elusive, // 双护甲：全攻击实际格挡后近战使用低甲
+        Defend, // 首次被攻击的不同敌人获得持续护甲
+        Cumbersome, // 原笨重：格挡阶段支付真实移动逐点减攻
+        Vampirism, // 原吸血：实际部队受伤/英雄获得手伤时增加本场护甲
+        IgnoreSiteFortification // 原不受城防：忽略地点城防，保留自身能力
     }
+
+    /// <summary>Tezla faction identity is metadata, never a removable enemy ability.</summary>
+    public enum EnemyFaction { None, Elementalist, DarkCrusader }
+    public enum EnemyRewardMode { PrintedFameOnly, TezlaJustFame }
+    public enum EnemyDefeatSource { Ranged, Melee, BlockEffect, DirectEffect }
 
     /// <summary>
     /// 单位在回合中的就绪状态。
@@ -77,7 +89,8 @@ namespace MK.Logic.Core
         /// <summary>魔法塔，可招募常规单位与学习法术</summary>
         MageTower = 1 << 4,
         /// <summary>难民营，视为拥有所有招募图标</summary>
-        RefugeeCamp = 1 << 5
+        RefugeeCamp = 1 << 5,
+        MagicalGlade = 1 << 6
     }
 
     /// <summary>
@@ -106,6 +119,8 @@ namespace MK.Logic.Core
     /// </summary>
     public enum TileSet { Countryside, Core, City }
 
+    public enum CityColor { None, White, Blue, Red, Green }
+
     /// <summary>
     /// 行動牌橫置時指定的增益類型。
     /// </summary>
@@ -133,7 +148,14 @@ namespace MK.Logic.Core
         /// <summary>單色魔晶礦山</summary>
         ManaMine,
         /// <summary>雙色深層礦山</summary>
-        DeepMine
+        DeepMine,
+        MageTower,
+        /// <summary>魔法空地：独立地点，供原技能与招募规则识别。</summary>
+        MagicalGlade,
+        // Append only: existing serialized enum values must remain stable.
+        Tomb,
+        MonsterDen,
+        SpawningGround
     }
 
     /// <summary>

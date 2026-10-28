@@ -1,0 +1,10 @@
+{
+  "scope": "阿瑞希亚实际战斗试玩入口，三思后行换两张后进兽人战团",
+  "backend": "AutomationOutputs/RulesState/20260930_003852_7e0e06e9",
+  "scene": "AutomationOutputs/PveBattle/20260930_004113_53e4a394/report.json",
+  "operations": 10,
+  "assertions": 25,
+  "status": "scene_passed",
+  "console": "tmp/pve_full_deck_entry_final_console.json",
+  "limits": "不表示全卡库/整局验收；高级演练小牌库仍按真实库存执行，不凭空补牌"
+}

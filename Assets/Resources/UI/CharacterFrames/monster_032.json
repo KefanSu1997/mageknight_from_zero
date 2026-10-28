@@ -1,0 +1,10 @@
+{
+  "x": 332,
+  "y": 9,
+  "width": 904,
+  "height": 997,
+  "textureWidth": 1536,
+  "textureHeight": 1024,
+  "source_sha256": "d0e79a7274acd5e6bf98e7016c665f68b27a99196ee8de67b604e54dffe37c0d",
+  "method": "alpha>=64 layout bounds only; renderer keeps full image UV; no image pixels edited"
+}

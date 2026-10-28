@@ -6,14 +6,13 @@ using MK.Logic.Runtime;
 using MK.Logic.Runtime.CardEffects;
 using MK.Logic.Runtime.Map;
 using NUnit.Framework;
-using UnityEngine;
 using Monster = MK.Logic.Data.Monster;
 
 namespace MageKnight.Tests
 {
     public sealed class MistFormResolutionTests
     {
-        [SetUp] public void SetUp() => CardJsonLoader.SetBaseDirectory(Path.Combine(Application.dataPath, "../resources/text_json"));
+        [SetUp] public void SetUp() => CardJsonLoader.SetBaseDirectory(Path.Combine(Directory.GetCurrentDirectory(), "resources/text_json"));
 
         private static void Hit(PlayerState player, ActionContext context, int attack, Element element,
             UnitState[] units, params Ability[] traits)

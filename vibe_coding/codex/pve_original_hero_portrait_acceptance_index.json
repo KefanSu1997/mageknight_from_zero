@@ -1,0 +1,33 @@
+{
+  "scope": "原英雄真实身份图：7自定英雄+1标准开局；只验呈现，不冒充连续游戏规则复测",
+  "run": "20260929_095724_59a58ef2",
+  "steps": 56,
+  "assertions": 80,
+  "report": "AutomationOutputs/PveBattle/20260929_095724_59a58ef2/report.json",
+  "sha256": "e1bf77ddd506ae10cfe79002535091db8013469a4bc7a4f87dc670d36e24a83f",
+  "reviewedImages": [
+    6,
+    13,
+    20,
+    27,
+    34,
+    41,
+    48,
+    55
+  ],
+  "sources": {
+    "Arythea": "013",
+    "Tovak": "020",
+    "Goldyx": "019",
+    "Norowas": "012",
+    "Wolfhawk": "010",
+    "Krang": "026",
+    "Braevalar": "004"
+  },
+  "console": [
+    "tmp/pve_hero_portrait_compile_console.json",
+    "tmp/pve_hero_portrait_final_console.json"
+  ],
+  "newArtFiles": 0,
+  "remaining": "地图原板块与动态借用仍未完成；合作切换本轮未专门验收"
+}

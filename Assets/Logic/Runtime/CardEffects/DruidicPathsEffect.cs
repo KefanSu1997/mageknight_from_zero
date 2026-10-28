@@ -6,7 +6,7 @@ namespace MK.Logic.Runtime.CardEffects
     /// <summary>
     /// 德魯伊之道：移動並降低移動成本。
     /// </summary>
-    public sealed class DruidicPathsEffect : ICardEffect, ICardEffectValidator
+    public sealed class DruidicPathsEffect : ICardEffect, IFixedCardOutput, ICardEffectValidator
     {
         private readonly int _move;
         private readonly bool _terrain;
@@ -24,10 +24,11 @@ namespace MK.Logic.Runtime.CardEffects
                 throw new System.InvalidOperationException("德鲁伊之道必须选择有效六角格或地形");
         }
 
+        public System.Collections.Generic.IReadOnlyList<FixedCardOutput> FixedOutputs => new[] { new FixedCardOutput(0, FixedOutputKind.Movement, _move) };
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
             Validate(player, ctx, option);
-            ctx.MovementPool += _move;
+            FixedCardOutputs.Add(ctx, FixedOutputs[0]);
             if (_terrain)
                 ctx.TerrainMoveReduction[ctx.TargetTerrain.Value] = ctx.TerrainMoveReduction.GetValueOrDefault(ctx.TargetTerrain.Value) + 1;
             else

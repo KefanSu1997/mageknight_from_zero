@@ -1,0 +1,49 @@
+{
+  "scope": "托瓦克黑夜狙击昼/夜、盾牌精通普通/冰/火、抗性弱化两个原敌人的实际战斗。仅本批基本交互。",
+  "backendPassedUnique": 13,
+  "backendNew": 12,
+  "backendAffectedRegression": 1,
+  "backendInitial": "AutomationOutputs/RulesState/20260918_170318_db4ddabb",
+  "backendInitialPassed": 12,
+  "backendRetest": "AutomationOutputs/RulesState/20260918_170742_b19e197b",
+  "backendRetestPassed": 1,
+  "backendCorrection": "强化利斧参与击杀额外名望1，盾牌寒冰分支最终9；只修独立预期补失败例。",
+  "scenes": [
+    {
+      "report": "AutomationOutputs/PveBattle/20260918_170933_4fc68a48/report.json",
+      "retainedStepIndices": [
+        0,
+        129
+      ],
+      "battles": 5,
+      "note": "总报告failed，前5场130步311项检查有效；第6场Numbers文字溢出后中断。"
+    },
+    {
+      "report": "AutomationOutputs/PveBattle/20260918_171212_265db713/report.json",
+      "battles": 2,
+      "note": "只补抗性弱化两场，63步152检查success；不重跑后台。"
+    }
+  ],
+  "battles": 7,
+  "steps": 193,
+  "assertions": 463,
+  "visualReviewed": 11,
+  "files": {
+    "AutomationOutputs/PveBattle/20260918_170933_4fc68a48/report.json": "d6b86ca85db7762e6ee4e400c25468db3bdecff7b5d4f7e67afdd6485fe76e22",
+    "AutomationOutputs/PveBattle/20260918_171212_265db713/report.json": "67f181b8444e28f5effb2f6ce127d018f5b13e89d1db94487e1e974662fd9b3a",
+    "AutomationOutputs/PveBattle/20260918_171212_265db713/console_final.json": "8d62f369865d478d110ffb57efc54be5aff20c4f4af96e654eba68ad28fb3864",
+    "AutomationOutputs/RulesState/20260918_170318_db4ddabb/summary.json": "0ccf96693de268747c1476097242c8f3731bf4780ec0f89adc17f235ed3971f5",
+    "AutomationOutputs/RulesState/20260918_170742_b19e197b/summary.json": "0dc0d4dcffc46b3742d8d59e82c004c9402996d1d12dd218cc8e9d46df93ba75",
+    "AutomationOutputs/PveBattle/20260918_170933_4fc68a48/captures/014_黑夜狙击按实际昼夜取值.png": "d1d66755c3895bc26d397175c8fde7838d15a3ff89df3d8f04a8cc8cbdc892c3",
+    "AutomationOutputs/PveBattle/20260918_170933_4fc68a48/captures/035_黑夜狙击按实际昼夜取值.png": "74d84559f6b6c6b01cc708d421aaddc13408e93d36b9316341089f1ad292cfc0",
+    "AutomationOutputs/PveBattle/20260918_170933_4fc68a48/captures/057_盾牌精通独立元素贡献.png": "978796d9f7a029aa6796dd346d4025c343240fab3be697747b16292d38395410",
+    "AutomationOutputs/PveBattle/20260918_170933_4fc68a48/captures/083_盾牌精通独立元素贡献.png": "f99990bb0dbddc04e30776f61d7bc39837af67d3512271c1ee7e035b555dbfdb",
+    "AutomationOutputs/PveBattle/20260918_170933_4fc68a48/captures/110_盾牌精通独立元素贡献.png": "b739528176f1d4774f67318d04bc6fd732f5b3e4e1379f4afbf2d6ca0c3ef25f",
+    "AutomationOutputs/PveBattle/20260918_170933_4fc68a48/captures/102_进入_End.png": "fab84660ebd713b82a9b9d5b76100e1f43bafc989f330b5ac1eca51ef72b0a7f",
+    "AutomationOutputs/PveBattle/20260918_170933_4fc68a48/captures/129_进入_End.png": "5f975196856b00dfc206090af813c6cd7c1bfe6923e6d5c99022027f9f45217b",
+    "AutomationOutputs/PveBattle/20260918_171212_265db713/captures/021_按敌人实际抗性降低护甲.png": "c2f02c4d6a10192ff24cac9b142d3e71c722c7adea573d66aca9932a9a5bf94c",
+    "AutomationOutputs/PveBattle/20260918_171212_265db713/captures/036_进入_End.png": "a72d5a545ca440f3f7ba2d2f68624eadc7c4dcc5b36b845511f1dd1936ab78e8",
+    "AutomationOutputs/PveBattle/20260918_171212_265db713/captures/047_按敌人实际抗性降低护甲.png": "aadbdbd036076677e70e782e25bb0e506aaedb6f7bb7284896285e9602d75567",
+    "AutomationOutputs/PveBattle/20260918_171212_265db713/captures/062_进入_End.png": "04c751ff7ae6081d2e8b0551d8bb0f700a1c2019f358d22f124fd5afb48650cf"
+  }
+}

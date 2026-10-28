@@ -1,0 +1,15 @@
+{
+  "run": "20260929_075205_3fe390bf",
+  "report": "AutomationOutputs\\PveBattle\\20260929_075205_3fe390bf\\report.json",
+  "sha256": "7da9a4c804ff35ab6bebb6a282ad629932bce02d5521e1c07d1cb2f2e443879e",
+  "status": "success",
+  "steps": 79,
+  "assertions": 154,
+  "images_viewed": 6,
+  "backend_reused": "20260929_073349_b33fbf55",
+  "confirmed_entries": 68,
+  "remaining_shared": [
+    "000:09",
+    "001:09"
+  ]
+}

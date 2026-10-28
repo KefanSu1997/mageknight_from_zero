@@ -18,10 +18,16 @@ namespace MK.Logic.Data
         /// <summary>
         /// 讀取並轉換所有怪物資料。若資料不完整則跳過。
         /// </summary>
-        public static List<Monster> LoadMonsters()
+        public static List<Monster> LoadMonsters(string baseDirectory = null)
         {
             // 以 JArray 輕量解析，避免 System.Text.Json 在 IL2CPP 下的限制
-            var json = File.ReadAllText(Path.Combine(Folder, "monster.json"));
+            var json = File.ReadAllText(Path.Combine(baseDirectory ?? Folder, "monster.json"));
+            return ParseMonsters(json);
+        }
+
+        /// <summary>同一正式解析器可读取打包的 TextAsset，运行时不依赖工程目录。</summary>
+        public static List<Monster> ParseMonsters(string json)
+        {
             var doc = JArray.Parse(json);
             var list = new List<Monster>();
             foreach (var element in doc)
@@ -36,6 +42,9 @@ namespace MK.Logic.Data
                 int atkVal = (int)atkArr[0]["value"]!;
                 string elemStr = (string)atkArr[0]["element"]!;
                 Element elem = ParseElement(elemStr);
+                var attacks = new List<EnemyAttack>();
+                foreach (var attack in atkArr)
+                    attacks.Add(new EnemyAttack((int)attack["value"]!, ParseElement((string)attack["element"]!)));
                 int armor = (int)armorObj["value"]!;
                 var abilities = new List<Ability>();
                 if ((bool?)armorObj["fortified"] == true)
@@ -61,9 +70,15 @@ namespace MK.Logic.Data
                     }
                 }
 
+                int elusiveArmor = (int?)armorObj["elusive"] ?? 0;
+                int defendValue = (int?)element["defend"] ?? 0;
+                if (elusiveArmor > 0) abilities.Add(Ability.Elusive);
+                if (defendValue > 0) abilities.Add(Ability.Defend);
+                Enum.TryParse<EnemyFaction>((string?)element["faction"], out var faction);
                 int fame = (int)element["fame"]!;
                 string type = (string?)element["monster_type"] ?? "Unknown";
-                list.Add(new Monster(id, armor, atkVal, elem, fame, abilities, type));
+                Enum.TryParse<EnemyTokenColor>((string?)element["token_color"], out var tokenColor);
+                list.Add(new Monster(id, armor, atkVal, elem, fame, abilities, type, tokenColor, attacks, elusiveArmor, defendValue, faction, (bool?)element["summon_attack"] ?? false, (int?)element["summon_count"] ?? 1));
             }
             return list;
         }
@@ -76,6 +91,7 @@ namespace MK.Logic.Data
 
         private static Ability? ParseResist(string s) => s switch
         {
+            "Physical" => Ability.PhysicalResist,
             "Fire" => Ability.FireResist,
             "Ice" => Ability.IceResist,
             "Cold Fire" => Ability.ColdFireResist,
@@ -93,6 +109,10 @@ namespace MK.Logic.Data
                 "paralyze" => Ability.Paralyze,
                 "regenerate" => Ability.Regenerate,
                 "magic resist" => Ability.MagicResist,
+                "assassination" => Ability.Assassination,
+                "cumbersome" => Ability.Cumbersome,
+                "vampirism" => Ability.Vampirism,
+                "ignore site fortification" => Ability.IgnoreSiteFortification,
                 _ => Ability.Fortified // placeholder
             };
             return s switch
@@ -102,7 +122,8 @@ namespace MK.Logic.Data
                 "poison" or
                 "paralyze" or
                 "regenerate" or
-                "magic resist" => true,
+                "magic resist" or
+                "assassination" or "cumbersome" or "vampirism" or "ignore site fortification" => true,
                 _ => false
             };
         }

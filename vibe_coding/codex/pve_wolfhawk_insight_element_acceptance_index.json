@@ -1,0 +1,92 @@
+{
+  "status": "scene_passed",
+  "scope": "Wolfhawk本人洞悉一次真实冰攻击去色Physical→原物理格挡2成功，原防御抗性保留及正式次回合移动",
+  "backend": {
+    "report": "AutomationOutputs/RulesState/20260929_195902_5343cd1e/results.xml",
+    "sha256": "6a2d98f531490ffad647bb2be8d1154477491ead63e4c1264464ab76d2d88f67",
+    "method": "MK.Tests.Battles.PveWolfhawkInsightElementJourneyTests.OwnInsightRemovesActualIceAttackElementThenOriginalPhysicalBlockPreventsWound",
+    "passed": 1,
+    "failed": 0,
+    "assertions": 26
+  },
+  "scene": {
+    "report": "AutomationOutputs/PveBattle/20260929_200254_3319e02c/report.json",
+    "sha256": "79b49a7998b23d9a22a960029db0575d7eca20e25280a824f9e793481cf2ac8f",
+    "status": "success",
+    "effectiveOperations": 57,
+    "effectiveAssertions": 100,
+    "functionalStatus": "passed",
+    "visualStatus": "passed",
+    "screenshots": [
+      {
+        "step": 29,
+        "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_200254_3319e02c\\captures\\029_移除冰元素变物理，非移除抗性.png",
+        "review": "parent_found_overlap_preserved"
+      },
+      {
+        "step": 30,
+        "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_200254_3319e02c\\captures\\030_原攻击2去色，保留原防御能力.png",
+        "review": "parent_reviewed_functional_result"
+      },
+      {
+        "step": 35,
+        "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_200254_3319e02c\\captures\\035_实际防御消费，无新增伤.png",
+        "review": "parent_reviewed_functional_result"
+      },
+      {
+        "step": 43,
+        "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_200254_3319e02c\\captures\\043_火3加物理2经抗性有效1，合4击杀.png",
+        "review": "parent_reviewed_functional_result"
+      },
+      {
+        "step": 56,
+        "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_200254_3319e02c\\captures\\056_两正式回合保留本人原牌与无伤结果.png",
+        "review": "parent_reviewed_functional_result"
+      }
+    ]
+  },
+  "visualIssue": {
+    "step": 29,
+    "originalScreenshot": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_200254_3319e02c\\captures\\029_移除冰元素变物理，非移除抗性.png",
+    "issue": "Third choice y382..427 overlaps target text starting387; ui.truncated did not detect overlap",
+    "parentFix": "targeted && options.Length==3: single-column step35,height31; other layout unchanged",
+    "verification": "passed: parent viewed new29; all three options, target and attackSlot are separate and readable",
+    "functionalRerun": "not required; retain original57/100"
+  },
+  "generator": "tools/build_pve_wolfhawk_insight_element_acceptance.py",
+  "worklog": "vibe_coding/codex/worklog_2026-09-29_wolfhawk_insight_element_route.md",
+  "displayVerification": {
+    "report": "AutomationOutputs/PveBattle/20260929_200906_b688388a/report.json",
+    "sha256": "3d4076eae024184f19d5a5939d449192837b563cfb0d89272caaf3fb88e15b5d",
+    "status": "success",
+    "totalOperations": 30,
+    "replayedPrefix": [
+      0,
+      28
+    ],
+    "newAssertions": 1,
+    "screenshot": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_200906_b688388a\\captures\\029_移除冰元素变物理，非移除抗性.png",
+    "parentVisualReview": "passed",
+    "note": "Retain functional57/100; do not count replay as new functional operations; supersedes old29 visually"
+  },
+  "compileConsole": {
+    "status": "passed",
+    "report": "tmp/pve_insight_layout_compile_console.json",
+    "sha256": "8d62f369865d478d110ffb57efc54be5aff20c4f4af96e654eba68ad28fb3864",
+    "checks": 2,
+    "errorCounts": [
+      0,
+      0
+    ]
+  },
+  "finalConsole": {
+    "status": "passed",
+    "report": "tmp/pve_glade_insight_final_console.json",
+    "sha256": "8d62f369865d478d110ffb57efc54be5aff20c4f4af96e654eba68ad28fb3864",
+    "checks": 2,
+    "errorCounts": [
+      0,
+      0
+    ]
+  }
+}

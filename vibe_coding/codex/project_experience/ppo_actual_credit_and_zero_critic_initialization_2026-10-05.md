@@ -1,0 +1,9 @@
+# 真实策略信用诊断与价值头初始化实验
+
+对已保存策略的真实采样轨迹，必须用相同冻结正式入口逐步重放确认before/after和reward，再按真实done边界重算GAE/折扣回报。固定7轨迹的均值或反事实不能冒充实际训练batch，更不能单独证明价值估计是策略失败根因。
+
+本次发现v60承伤规划6/8优势估计正，但实际后续回报均值负；相同真实奖励的零critic计算对照仅1/8正。它支持有界初始化试验，尚不证明改进。v61相对v59只重置wv/bv；所有actor/shared/kind张量和原元数据精确保留，7个实际状态179合法列概率相等，新价值全零。v60分支覆盖不混入v59模型继承历史；旧进程退出后再启动，记录Adam没有恢复。
+
+证据：`AutomationOutputs/BattleRl/20261005_actual_policy_action_credit_diagnosis.json`、`AutomationOutputs/BattleRl/20261005_zero_critic_credit_counterfactual.json`、`AutomationOutputs/BattleRl/20261005_v61_zero_critic_actual_initial_state_preflight.json`。本实验未完成，模型可用性与完整原要素/Unity验收缺口保持。
+
+后续：v61完成8192步，固定保存策略贪心3/7、新seed贪心1/7，4个新seed未参战。已保留实际失败；小样本变化不能证明价值头重置因果有效或通用性。v62只继承已训练后的actor/critic继续，未再次重置；详见worklog与20261005_v62_start_review.json。

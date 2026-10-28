@@ -1,0 +1,25 @@
+# PPO 原牌实际输入与额度消费者
+
+v8续训已完成32768步、509条轨迹、711.19秒，实际69敌、109个原牌效果选项、51个技能选项、437个攻击/格挡消费者记录；定时49471条断言零失败。重载七英雄小样本3/7至少赢一场，不能替代483组评估或全部构筑泛化。模型：AutomationOutputs/BattleRl/20261003_seeded_attack_guard_continue_ppo/policy_ppo.npz。
+
+## 新接入
+
+本轮没有改写游戏规则，扩展tools/BattleRl适配器，仍调用正式PveDeedInputs和CardManaActions。Move追加可选Input；空输入保留旧Key，原动作和观察前缀可继续加载旧PPO。随机应变选择实际手牌材料；魔力汲取/征引强化选择真实可用源骰及各自转换色；高级行动021/040基础选择颜色。按实际脸色解析不同原骰，重复脸色仍选择不同实例，不创建替代材料或骰子。同ID材料目前选另一张实际引用，未提供全部同名实体选择，这是后续缺口。
+
+基础魔力汲取/征引原额度有了extraSource消费者，使用正式额外取骰入口，普通持骰与额外额度分离；金骰保留金色通用标记，黑骰额外许可仍由正式规则校验。观察追加额外额度、黑色许可与本人真实持有源骰脸色，共1502维；5977个语义动作。新增独立检查实际材料进入弃牌、转换骰/非金目标、输出与印刷费用守恒、普通与额外额度分离、金色不提前定色。
+
+## 验证
+
+独立编译输出tmp/battle_rl_v9零警告零错误，没有覆盖活跃v8程序集。Rules支持BATTLE_RL_DLL，启动manifest记录实际DLL哈希。
+
+tools/BattleRl/verify_deed_inputs.py使用真实原16牌开局，4项8操作111断言通过，证据AutomationOutputs/BattleRl/20261003_actual_deed_input_checks.json。初次脚本错误地给魔力征引用蓝/金付款，70个开局无可用双骰强化样例（exec会话89853的AssertionError，原失败未作为通过记录）；修正为读取resources/text_json/basic_card.json的required_crystals原白费，并为后续失败加入本地证据保存，不是修改费用或添加免费资源。
+
+1024步烟测55.35秒，定时5447条断言零失败，输出AutomationOutputs/BattleRl/20261003_actual_inputs_smoke。只证明新入口可训练，不能算各原牌全部模式或真实UI已验收。Unity Console两次零错误：tmp/rl_actual_inputs_console_20261003.json；本轮仅tools源码变更，没有改场景或Unity规则源码。最终模型全范围UI映射和实际回放仍待完成。
+
+## 当前训练与缺口
+
+从已结束v8续训权重启动v9训练16384步，种子2178起，输出AutomationOutputs/BattleRl/20261003_actual_inputs_ppo，日志AutomationOutputs/BattleRl/20261003_actual_inputs_stdout.log。实际输入单列coverage.inputs，额外源骰独立消费者记录；目录加载不记为效果已见过。完成轨迹逐条审查，定时七英雄审查，失败停训留证。最新3072步实际19个输入选择、5451条定时断言零失败。
+
+完整目标仍包含所有原版战斗、七英雄、多种合法构筑、多回合多轮、法术/神器/部队/全部技能，以及最终Unity真实操作，不得将本轮局部扩展当作完成。
+
+烟测中包含额外取骰与跨夜间的seed100464完整65操作逐状态/奖励精确重放通过：AutomationOutputs/BattleRl/20261003_actual_inputs_smoke/exact_replay.json。v9长训练进程PID200768、16:37:23启动，已核实到6144步、87条轨迹、31个实际输入选项；最新定时5815条断言零失败。全量训练仍在运行，不能预先记录最终训练结果。最终Console复核文件tmp/rl_actual_inputs_final_console_20261003.json。

@@ -1,0 +1,13 @@
+# 实际缺口队列、冻结PPO跨昼夜见证与扩池训练
+
+discover_policy_witnesses.py新增显式使用selected_train_drafts，避免按最便宜任务又抽已知校准。保持分区核验，train缺口队列不能用作validation；两项顺序/分区负例通过。后补候选源/训练池SHA只用于未来报告，不回写之前运行的源码签名。
+
+冻结七任务保存模型在两个既定欠覆盖train构筑各至多4局探索：Wolfhawk013→014仍unknown，Tovak061→062第3次完整成功，47步。见证额外含items022/023/024、army000/001/002和Tovak自有技能；成员不算使用，见证也不算训练。实际step21正式nextTurn跨Day→Night，同玩家/牌区延续、部队正式重整，GRU保持；2正式整组胜利与完整任务完成均成立，有限审计及独立再重放通过。证据20261007_policy_two_group_night_evidence.json。
+
+定向原军队文本与真实状态：army001阿尔蒂姆法师能力0获得两个任意色标记且耗竭。step2选Black/Black、step35选Black/Gold实际各产生对应2标记，晶体/已持骰/源骰/取骰额度未变、ready→false。colors是输出选色而非付款，不从Input文字臆测花了黑费。仅核这两个生产转移，不算另外能力、后续标记消费者或Unity。证据20261007_original_altem_mage_gift_review.json。
+
+同时完整续训七任务18局632步3完整任务后，显式7→8追加认证池保持72数组/Adam55/RNG/78局3151步/旧计数。新池训练5局199步1完整任务，真实新构筑参与；累计83局3350步Adam59。实际发动下界70模式/11单位/11本人技能/10hero-enemy配对，较此前62/8/9/9增长；完整费用、分支及消费仍未认证。
+
+最新八项保存策略类型优先冻结校准3/8，886步22030有限审计；Goldyx/Krang及新增Tovak双战失败，旧较优候选/失败都保留，不把此前随机见证或覆盖增长当可靠策略改善。验证/test未进入训练，保留验证池仍缺完整见证。
+
+证据20261007_policy_actual_gap_discovery、20261007_recurrent_seven_hero_continued、20261007_recurrent_eight_task_migration/training、20261007_actual_coverage_after_eight_task_training.json、20261007_recurrent_eight_task_frozen_calibration。Console两读0错误tmp/rl_selected_queue_final_console_20261007.json。所有本轮进程正常完成，完整目标仍未达标。

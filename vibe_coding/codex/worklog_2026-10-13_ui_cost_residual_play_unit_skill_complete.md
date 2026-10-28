@@ -1,0 +1,7 @@
+# Residual play/unit/skill100 terminal results
+
+Human asked for current progress. Poll exact session43562:terminal exit0,100 attempted,72 complete and28 failed. Independent verifier passed144 full native snapshots, SHAd9e200a73dd4c2cbbf55692da96a81deb50ba3bd6ae6e783476da37e179ad91a. All72 costs ingested after terminal verification.
+
+Separate exact native before/action/after certifies eight UI incompatibilities (one play hidden in AssignDamage, seven unsupported atomic conversion amounts). Proof SHA0c9c5b50fc22dc6ac6bbf3c2c376d28ee0ad721abb58ebbeb32e06994c901180, eight ingested. Twenty other failed cases remain unclassified/pending, no replacement or zero costs. Native proof pilot retained idle atH:/MageKnight_RL_Backups/UiFluency_future/20261013_play_acquisition_regression/live. No active measurement process now.
+
+Report/DB3,301 actual measured costs +161 incompatible =3,462 resolved sample results /4,083 (84.8%),621 pending.732 fully measured groups,833 all-sample-resolved groups /1,009. Overall baseline not ready. Runtime note explicitly reports batch ended/no worker rather than implying automatic progress. Payment/cancel, turn/round and remaining mappings still incomplete; app persistent goal status remains blocked and no unsupported resume call/duplicate goal is made. User status request does not cancel original full-baseline intent. Preserve original cohorts/weights, cap-five fixed IDs and cap-twenty archived plan.

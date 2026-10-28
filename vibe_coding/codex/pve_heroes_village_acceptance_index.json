@@ -1,0 +1,69 @@
+{
+  "scope": "原勇者影响5与交涉声誉加1、原暴徒影响4、村庄真实招募/治疗，正式跨轮同三单位后续格挡及击杀",
+  "status": "passed",
+  "run": "20260929_170129_8822695c",
+  "report": "AutomationOutputs/PveBattle/20260929_170129_8822695c/report.json",
+  "sha256": "333ba342902c9ccb90b17c49a10b2fd69bed802db4918e736c5feeb4db96db54",
+  "steps": 111,
+  "assertions": 172,
+  "identityChecks": [
+    {
+      "step": 57,
+      "instances": "army_2_011:-61991820,army_008:-1429205068",
+      "samePlayer": "True"
+    },
+    {
+      "step": 62,
+      "instances": "army_2_011:-61991820,army_008:-1429205068,army_2_006:-348331550",
+      "samePlayer": "True"
+    },
+    {
+      "step": 75,
+      "instances": "army_2_011:-61991820,army_008:-1429205068,army_2_006:-348331550",
+      "samePlayer": "True"
+    },
+    {
+      "step": 78,
+      "instances": "army_2_011:-61991820,army_008:-1429205068,army_2_006:-348331550",
+      "samePlayer": "True"
+    },
+    {
+      "step": 81,
+      "instances": "army_2_011:-61991820,army_008:-1429205068,army_2_006:-348331550",
+      "samePlayer": "True"
+    },
+    {
+      "step": 99,
+      "instances": "army_2_011:-61991820,army_008:-1429205068,army_2_006:-348331550",
+      "samePlayer": "True"
+    },
+    {
+      "step": 108,
+      "instances": "army_2_011:-61991820,army_008:-1429205068,army_2_006:-348331550",
+      "samePlayer": "True"
+    },
+    {
+      "step": 110,
+      "instances": "army_2_011:-61991820,army_008:-1429205068,army_2_006:-348331550",
+      "samePlayer": "True"
+    }
+  ],
+  "reviewedScreenshots": [
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_170129_8822695c\\captures\\057_真实影响5，交涉声誉+1且单位耗竭.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_170129_8822695c\\captures\\062_实际支付4占第三合法槽，勇者声誉变化不重算.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_170129_8822695c\\captures\\075_治疗真实手伤归供应.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_170129_8822695c\\captures\\108_同勇者新轮真实攻击击杀.png"
+  ],
+  "backendReused": "AutomationOutputs/RulesState/20260923_021816_212ab687/results.xml; exact passed cases in worklog",
+  "console": "tmp/pve_heroes_village_final_console.json",
+  "consoleErrorCounts": [
+    0,
+    0
+  ],
+  "limitations": [
+    "合法原牌自定构筑；非标准16牌开局",
+    "此为已有勇者能力消费；不替代精英勇者实际招募声誉翻倍",
+    "既有真实村庄演练地图，非后续原核心板块探索",
+    "未更改生产规则或fixture，旧后台复用未重跑"
+  ]
+}

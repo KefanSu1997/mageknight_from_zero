@@ -12562,6 +12562,1797 @@
         }
       ],
       "enemyTraits": "Paralyze"
+    },
+    {
+      "id": "unit_156",
+      "cardId": "army_2_011",
+      "title": "原暴徒能力0与实际消费",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "持有原暴徒",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "reputation",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "发动原能力并核对声誉",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "reputation",
+              "value": "0"
+            },
+            {
+              "key": "block",
+              "value": "3"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "横置后拒绝重复发动",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "reputation",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": "部队必须就绪、未受伤且未销毁"
+            }
+          ]
+        },
+        {
+          "kind": "resolve",
+          "label": "实际格挡或攻击结算",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "effective",
+              "value": "3"
+            },
+            {
+              "key": "required",
+              "value": "3"
+            },
+            {
+              "key": "kills",
+              "value": "0"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "influence": 0
+    },
+    {
+      "id": "unit_157",
+      "cardId": "army_2_011",
+      "title": "原暴徒能力1与实际消费",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "持有原暴徒",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "reputation",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "发动原能力并核对声誉",
+          "ability": 1,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "reputation",
+              "value": "-1"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "3"
+            },
+            {
+              "key": "influence",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "横置后拒绝重复发动",
+          "ability": 1,
+          "option": 0,
+          "expected": [
+            {
+              "key": "reputation",
+              "value": "-1"
+            },
+            {
+              "key": "exception",
+              "value": "部队必须就绪、未受伤且未销毁"
+            }
+          ]
+        },
+        {
+          "kind": "resolve",
+          "label": "实际格挡或攻击结算",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "effective",
+              "value": "3"
+            },
+            {
+              "key": "required",
+              "value": "3"
+            },
+            {
+              "key": "kills",
+              "value": "1"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "influence": 0
+    },
+    {
+      "id": "unit_158",
+      "cardId": "army_2_011",
+      "title": "原暴徒能力2与实际消费",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "持有原暴徒",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "ready",
+              "value": "True"
+            },
+            {
+              "key": "reputation",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入交战",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "发动原能力并核对声誉",
+          "ability": 2,
+          "option": 0,
+          "expected": [
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "reputation",
+              "value": "-1"
+            },
+            {
+              "key": "block",
+              "value": "0"
+            },
+            {
+              "key": "melee",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "4"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "横置后拒绝重复发动",
+          "ability": 2,
+          "option": 0,
+          "expected": [
+            {
+              "key": "reputation",
+              "value": "-1"
+            },
+            {
+              "key": "exception",
+              "value": "部队必须就绪、未受伤且未销毁"
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击6的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "6"
+            },
+            {
+              "key": "wounds",
+              "value": "1"
+            },
+            {
+              "key": "heroWounds",
+              "value": "1"
+            },
+            {
+              "key": "influence",
+              "value": "2"
+            },
+            {
+              "key": "damageAssigned",
+              "value": "1"
+            },
+            {
+              "key": "reputation",
+              "value": "-1"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 6,
+          "unitTargets": [
+            0
+          ],
+          "block": 0
+        }
+      ],
+      "influence": 0
+    },
+    {
+      "id": "unit_159",
+      "cardId": "army_2_011",
+      "title": "影响力1 / 格挡0的承伤支付",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击6的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "6"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "1"
+            },
+            {
+              "key": "damageAssigned",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": "向此部队分配伤害所需影响力不足"
+            }
+          ],
+          "damage": 6,
+          "unitTargets": [
+            0
+          ],
+          "block": 0
+        }
+      ],
+      "influence": 1
+    },
+    {
+      "id": "unit_160",
+      "cardId": "army_2_011",
+      "title": "影响力2 / 格挡0的承伤支付",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击6的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "6"
+            },
+            {
+              "key": "wounds",
+              "value": "1"
+            },
+            {
+              "key": "heroWounds",
+              "value": "1"
+            },
+            {
+              "key": "influence",
+              "value": "0"
+            },
+            {
+              "key": "damageAssigned",
+              "value": "1"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 6,
+          "unitTargets": [
+            0
+          ],
+          "block": 0
+        }
+      ],
+      "influence": 2
+    },
+    {
+      "id": "unit_161",
+      "cardId": "army_2_011",
+      "title": "影响力1 / 格挡6的承伤支付",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击6的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "6"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "1"
+            },
+            {
+              "key": "damageAssigned",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 6,
+          "unitTargets": [
+            0
+          ],
+          "block": 6
+        }
+      ],
+      "influence": 1
+    },
+    {
+      "id": "unit_162",
+      "cardId": "army_2_011",
+      "title": "两支暴徒承伤须一次验证全部费用",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击6的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "6"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "secondWounds",
+              "value": "0"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "3"
+            },
+            {
+              "key": "damageAssigned",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": "向此部队分配伤害所需影响力不足"
+            }
+          ],
+          "damage": 6,
+          "unitTargets": [
+            0,
+            1
+          ],
+          "block": 0
+        }
+      ],
+      "influence": 3,
+      "extraUnitId": "army_2_011",
+      "extraSlots": 1
+    },
+    {
+      "id": "unit_163",
+      "cardId": "army_2_011",
+      "title": "前一部队吸收全部伤害，未触及暴徒不付费",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "prepare",
+          "label": "选择原部队作为承伤目标",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "battle",
+          "label": "进入同一场战斗",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "suffer",
+          "label": "确认敌人攻击6的伤害分配",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "enemyAttack",
+              "value": "6"
+            },
+            {
+              "key": "wounds",
+              "value": "0"
+            },
+            {
+              "key": "secondWounds",
+              "value": "1"
+            },
+            {
+              "key": "heroWounds",
+              "value": "0"
+            },
+            {
+              "key": "influence",
+              "value": "0"
+            },
+            {
+              "key": "damageAssigned",
+              "value": "1"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ],
+          "damage": 6,
+          "unitTargets": [
+            1,
+            0
+          ],
+          "block": 0
+        }
+      ],
+      "influence": 0,
+      "extraUnitId": "army_003",
+      "extraSlots": 1
+    },
+    {
+      "id": "unit_164",
+      "cardId": "army_2_011",
+      "title": "两支暴徒共享一次声誉反转与回合清理",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "beginInteraction",
+          "label": "开始交涉并固定声誉修正",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "influence",
+              "value": "8"
+            },
+            {
+              "key": "interactionFrozen",
+              "value": "-1"
+            },
+            {
+              "key": "interactionReversed",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "recruit",
+          "label": "支付第一次招募和整次反转差额",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "influence",
+              "value": "5"
+            },
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "offer",
+              "value": "1"
+            },
+            {
+              "key": "interactionModifier",
+              "value": "1"
+            },
+            {
+              "key": "interactionReversed",
+              "value": "True"
+            },
+            {
+              "key": "outcome",
+              "value": "True"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "recruit",
+          "label": "第二支只付牌面5，不能再次反转",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "influence",
+              "value": "0"
+            },
+            {
+              "key": "units",
+              "value": "2"
+            },
+            {
+              "key": "offer",
+              "value": "0"
+            },
+            {
+              "key": "interactionModifier",
+              "value": "1"
+            },
+            {
+              "key": "outcome",
+              "value": "True"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "endTurn",
+          "label": "结束回合，交涉修正全部清除",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "influence",
+              "value": "0"
+            },
+            {
+              "key": "interactionFrozen",
+              "value": "None"
+            },
+            {
+              "key": "interactionReversed",
+              "value": "False"
+            },
+            {
+              "key": "negotiating",
+              "value": "False"
+            },
+            {
+              "key": "units",
+              "value": "2"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "reputation": -2,
+      "influence": 9,
+      "extraSlots": 1,
+      "offerCount": 2
+    },
+    {
+      "id": "unit_165",
+      "cardId": "army_2_011",
+      "title": "两支暴徒共享一次声誉反转与回合清理",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "beginInteraction",
+          "label": "开始交涉并固定声誉修正",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "influence",
+              "value": "12"
+            },
+            {
+              "key": "interactionFrozen",
+              "value": "1"
+            },
+            {
+              "key": "interactionReversed",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "recruit",
+          "label": "支付第一次招募和整次反转差额",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "influence",
+              "value": "5"
+            },
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "offer",
+              "value": "1"
+            },
+            {
+              "key": "interactionModifier",
+              "value": "-1"
+            },
+            {
+              "key": "interactionReversed",
+              "value": "True"
+            },
+            {
+              "key": "outcome",
+              "value": "True"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "recruit",
+          "label": "第二支只付牌面5，不能再次反转",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "influence",
+              "value": "0"
+            },
+            {
+              "key": "units",
+              "value": "2"
+            },
+            {
+              "key": "offer",
+              "value": "0"
+            },
+            {
+              "key": "interactionModifier",
+              "value": "-1"
+            },
+            {
+              "key": "outcome",
+              "value": "True"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "endTurn",
+          "label": "结束回合，交涉修正全部清除",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "influence",
+              "value": "0"
+            },
+            {
+              "key": "interactionFrozen",
+              "value": "None"
+            },
+            {
+              "key": "interactionReversed",
+              "value": "False"
+            },
+            {
+              "key": "negotiating",
+              "value": "False"
+            },
+            {
+              "key": "units",
+              "value": "2"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "reputation": 2,
+      "influence": 11,
+      "extraSlots": 1,
+      "offerCount": 2
+    },
+    {
+      "id": "unit_166",
+      "cardId": "army_2_011",
+      "title": "农民与暴徒混合招募，先后顺序不重复计费",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "beginInteraction",
+          "label": "开始负声誉交涉",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "influence",
+              "value": "8"
+            },
+            {
+              "key": "interactionModifier",
+              "value": "-1"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "recruit",
+          "label": "招募暴徒",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "influence",
+              "value": "5"
+            },
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "offer",
+              "value": "1"
+            },
+            {
+              "key": "art",
+              "value": "army_2_011"
+            },
+            {
+              "key": "outcome",
+              "value": "True"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "recruit",
+          "label": "招募农民",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "influence",
+              "value": "1"
+            },
+            {
+              "key": "units",
+              "value": "2"
+            },
+            {
+              "key": "offer",
+              "value": "0"
+            },
+            {
+              "key": "interactionModifier",
+              "value": "1"
+            },
+            {
+              "key": "art",
+              "value": "army_2_006"
+            },
+            {
+              "key": "outcome",
+              "value": "True"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "reputation": -2,
+      "influence": 9,
+      "extraSlots": 1,
+      "offerIds": [
+        "army_2_011",
+        "army_2_006"
+      ]
+    },
+    {
+      "id": "unit_167",
+      "cardId": "army_2_011",
+      "title": "农民与暴徒混合招募，先后顺序不重复计费",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "beginInteraction",
+          "label": "开始负声誉交涉",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "influence",
+              "value": "8"
+            },
+            {
+              "key": "interactionModifier",
+              "value": "-1"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "recruit",
+          "label": "招募农民",
+          "ability": 0,
+          "option": 1,
+          "expected": [
+            {
+              "key": "influence",
+              "value": "4"
+            },
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "offer",
+              "value": "1"
+            },
+            {
+              "key": "art",
+              "value": "army_2_006"
+            },
+            {
+              "key": "outcome",
+              "value": "True"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "recruit",
+          "label": "招募暴徒",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "influence",
+              "value": "1"
+            },
+            {
+              "key": "units",
+              "value": "2"
+            },
+            {
+              "key": "offer",
+              "value": "0"
+            },
+            {
+              "key": "interactionModifier",
+              "value": "1"
+            },
+            {
+              "key": "art",
+              "value": "army_2_011"
+            },
+            {
+              "key": "outcome",
+              "value": "True"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "reputation": -2,
+      "influence": 9,
+      "extraSlots": 1,
+      "offerIds": [
+        "army_2_011",
+        "army_2_006"
+      ]
+    },
+    {
+      "id": "unit_168",
+      "cardId": "army_2_011",
+      "title": "新部队立即发动，声誉变动不重算本次修正",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "beginInteraction",
+          "label": "开始交涉，声誉2对应影响力加1",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "influence",
+              "value": "9"
+            },
+            {
+              "key": "interactionFrozen",
+              "value": "1"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "recruit",
+          "label": "招募暴徒，整次修正由加1变减1",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "influence",
+              "value": "2"
+            },
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "offer",
+              "value": "1"
+            },
+            {
+              "key": "outcome",
+              "value": "True"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "use",
+          "label": "发动原暴徒影响力4、声誉减1",
+          "ability": 2,
+          "option": 0,
+          "expected": [
+            {
+              "key": "influence",
+              "value": "6"
+            },
+            {
+              "key": "reputation",
+              "value": "1"
+            },
+            {
+              "key": "interactionModifier",
+              "value": "-1"
+            },
+            {
+              "key": "ready",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "recruit",
+          "label": "保持原修正，招募第二支暴徒",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "influence",
+              "value": "1"
+            },
+            {
+              "key": "reputation",
+              "value": "1"
+            },
+            {
+              "key": "units",
+              "value": "2"
+            },
+            {
+              "key": "offer",
+              "value": "0"
+            },
+            {
+              "key": "interactionModifier",
+              "value": "-1"
+            },
+            {
+              "key": "outcome",
+              "value": "True"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "reputation": 2,
+      "influence": 8,
+      "extraSlots": 1,
+      "offerCount": 2
+    },
+    {
+      "id": "unit_169",
+      "cardId": "army_2_011",
+      "title": "费用不足/地点不符/槽位不足，招募不得提前反转",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "beginInteraction",
+          "label": "开始交涉",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "influence",
+              "value": "6"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "recruit",
+          "label": "拒绝非法招募并保留全部资源",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "influence",
+              "value": "6"
+            },
+            {
+              "key": "units",
+              "value": "0"
+            },
+            {
+              "key": "offer",
+              "value": "1"
+            },
+            {
+              "key": "interactionReversed",
+              "value": "False"
+            },
+            {
+              "key": "outcome",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "influence": 5,
+      "reputation": 2,
+      "extraSlots": 0
+    },
+    {
+      "id": "unit_170",
+      "cardId": "army_2_011",
+      "title": "费用不足/地点不符/槽位不足，招募不得提前反转",
+      "location": "Monastery",
+      "steps": [
+        {
+          "kind": "beginInteraction",
+          "label": "开始交涉",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "influence",
+              "value": "29"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "recruit",
+          "label": "拒绝非法招募并保留全部资源",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "influence",
+              "value": "29"
+            },
+            {
+              "key": "units",
+              "value": "0"
+            },
+            {
+              "key": "offer",
+              "value": "1"
+            },
+            {
+              "key": "interactionReversed",
+              "value": "False"
+            },
+            {
+              "key": "outcome",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "influence": 30,
+      "reputation": -2,
+      "extraSlots": 0
+    },
+    {
+      "id": "unit_171",
+      "cardId": "army_2_011",
+      "title": "费用不足/地点不符/槽位不足，招募不得提前反转",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "beginInteraction",
+          "label": "开始交涉",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "influence",
+              "value": "29"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "recruit",
+          "label": "拒绝非法招募并保留全部资源",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "influence",
+              "value": "29"
+            },
+            {
+              "key": "units",
+              "value": "0"
+            },
+            {
+              "key": "offer",
+              "value": "1"
+            },
+            {
+              "key": "interactionReversed",
+              "value": "False"
+            },
+            {
+              "key": "outcome",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "influence": 30,
+      "reputation": -2,
+      "extraSlots": -1
+    },
+    {
+      "id": "unit_172",
+      "cardId": "army_2_011",
+      "title": "声誉X不能通过暴徒特例绕过交涉限制",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "beginInteraction",
+          "label": "声誉X拒绝交涉",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "influence",
+              "value": "20"
+            },
+            {
+              "key": "interactionFrozen",
+              "value": "None"
+            },
+            {
+              "key": "exception",
+              "value": "声誉位于X，不能交涉"
+            }
+          ]
+        },
+        {
+          "kind": "recruit",
+          "label": "仍不能招募暴徒",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "influence",
+              "value": "20"
+            },
+            {
+              "key": "units",
+              "value": "0"
+            },
+            {
+              "key": "offer",
+              "value": "1"
+            },
+            {
+              "key": "outcome",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "reputation": -7
+    },
+    {
+      "id": "unit_173",
+      "cardId": "army_2_011",
+      "title": "结束交涉不能重新领取修正，下回合可重新开始",
+      "location": "Village",
+      "steps": [
+        {
+          "kind": "beginInteraction",
+          "label": "首次声誉修正",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "influence",
+              "value": "21"
+            },
+            {
+              "key": "interactionModifier",
+              "value": "1"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "beginInteraction",
+          "label": "重复开始必须拒绝",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "influence",
+              "value": "21"
+            },
+            {
+              "key": "exception",
+              "value": "本回合不能再次开始交涉"
+            }
+          ]
+        },
+        {
+          "kind": "endInteraction",
+          "label": "交涉结束剩余影响力作废",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "influence",
+              "value": "0"
+            },
+            {
+              "key": "negotiating",
+              "value": "False"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "beginInteraction",
+          "label": "同回合仍不能重新开始",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "influence",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": "本回合不能再次开始交涉"
+            }
+          ]
+        },
+        {
+          "kind": "endTurn",
+          "label": "回合结束清理状态",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "interactionFrozen",
+              "value": "None"
+            },
+            {
+              "key": "influence",
+              "value": "0"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "beginInteraction",
+          "label": "新回合重新获得一次修正",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "influence",
+              "value": "1"
+            },
+            {
+              "key": "interactionFrozen",
+              "value": "1"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "reputation": 2
+    },
+    {
+      "id": "unit_174",
+      "cardId": "army_2_011",
+      "title": "难民营费用按原招募图标计算",
+      "location": "RefugeeCamp",
+      "steps": [
+        {
+          "kind": "beginInteraction",
+          "label": "开始难民营交涉",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "influence",
+              "value": "5"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "recruit",
+          "label": "支付印刷费用与地点附加费",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "influence",
+              "value": "0"
+            },
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "offer",
+              "value": "0"
+            },
+            {
+              "key": "outcome",
+              "value": "True"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "influence": 5
+    },
+    {
+      "id": "unit_175",
+      "cardId": "army_003",
+      "title": "难民营费用按原招募图标计算",
+      "location": "RefugeeCamp",
+      "steps": [
+        {
+          "kind": "beginInteraction",
+          "label": "开始难民营交涉",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "influence",
+              "value": "9"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "kind": "recruit",
+          "label": "支付印刷费用与地点附加费",
+          "ability": 0,
+          "option": 0,
+          "expected": [
+            {
+              "key": "influence",
+              "value": "0"
+            },
+            {
+              "key": "units",
+              "value": "1"
+            },
+            {
+              "key": "offer",
+              "value": "0"
+            },
+            {
+              "key": "outcome",
+              "value": "True"
+            },
+            {
+              "key": "exception",
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "influence": 9
     }
   ]
 }

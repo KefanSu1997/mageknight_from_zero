@@ -1,0 +1,7 @@
+﻿# 供应奇袭原能力/攻击槽后台
+
+核实现有UseOfferedUnit→UseFromOffer已有attackIndex透传；复用原Weaken/Intercept规则，不改减攻/减甲或供给费用。正式入口补RepeatedEffectResolution.RequireCompleted，避免真实头环尚待第二次时插入供应能力。
+
+新增PveOfferedShockTroopsTests四例：原法术magic_020真实白费取得一次许可，真实部队供给追加第四张原奇袭队；选择原monster_058的攻击槽1，只该槽减攻，另槽实际承伤；原减甲4→3由真实狂怒2+横置1完成击杀。非法槽及Intercept需要实际自有承伤单位的失败保留许可/魔力/供应；同Card留供应、不入队。额外真实头环首借后插入供应操作被拒绝且保留许可。
+
+CLI 20260929_125416_e8d7d96e：6/6（3新增+3直接回归）；20260929_125453_be17f403：仅追加待决守卫新例1/1。共7有效通过，无重复全库。未操作Unity，UI分页/攻击槽与最终场景由主代理负责。

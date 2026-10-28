@@ -1,0 +1,121 @@
+{
+  "scope": "原白勇者代表四原勇者共用实际突袭附费；真实法师塔地道/承诺付款/同守军击杀/征服领奖/正式次回合同实体",
+  "status": "passed",
+  "run": "20260929_184358_8671e144",
+  "report": "AutomationOutputs/PveBattle/20260929_184358_8671e144/report.json",
+  "sha256": "7b9fd79fd0577a9bdee23fa6dfb1a216f2e19516a129c73d342402495f1e43bf",
+  "totalOperations": 62,
+  "unassertedSetupOperations": 20,
+  "assertedOperations": 42,
+  "assertions": 95,
+  "representativeUnitId": "army_011",
+  "sharedCoverage": [
+    "army_008",
+    "army_009",
+    "army_010",
+    "army_011"
+  ],
+  "coverageNote": "仅执行白勇者一条路线；四ID由相同AssaultActivationInfluenceCost字段和CardUnitActions.ActivationInfluenceCost/Use共用收费路径覆盖，不声称四色各自重跑；各色专属能力沿用既有独立证据。",
+  "unitIdentityChecks": [
+    {
+      "step": 23,
+      "instances": "army_011:1617467962",
+      "samePlayer": "True",
+      "ready": "True",
+      "position": "0,0"
+    },
+    {
+      "step": 51,
+      "instances": "army_011:1617467962",
+      "samePlayer": "True",
+      "ready": "False",
+      "position": "-1,-1"
+    },
+    {
+      "step": 58,
+      "instances": "army_011:1617467962",
+      "samePlayer": "True",
+      "ready": "False",
+      "position": "-1,-1"
+    },
+    {
+      "step": 60,
+      "instances": "army_011:1617467962",
+      "samePlayer": "True",
+      "ready": "False",
+      "position": "-1,-1"
+    },
+    {
+      "step": 61,
+      "instances": "army_011:1617467962",
+      "samePlayer": "True",
+      "ready": "False",
+      "position": "-1,-1"
+    }
+  ],
+  "payment": {
+    "step": 51,
+    "influence": [
+      2,
+      0
+    ],
+    "whiteTokens": [
+      2,
+      1
+    ],
+    "ranged": [
+      0,
+      7
+    ],
+    "ready": [
+      "True",
+      "False"
+    ],
+    "actualSite": "MageTower at -1,-1",
+    "ignoreSiteFortifications": true,
+    "guard": "monster_002"
+  },
+  "final": {
+    "step": 61,
+    "position": "-1,-1",
+    "conquered": "-1:-1",
+    "fame": 20,
+    "hand": 2,
+    "unitsReady": false,
+    "samePlayer": true
+  },
+  "reviewedScreenshots": [
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_184358_8671e144\\captures\\051_实际白魔力1和影响2整笔支付，地道不豁免费用.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_184358_8671e144\\captures\\058_正式征服与原守军弃置，不预设Conquered.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_184358_8671e144\\captures\\061_正式次回合同一玩家和同一勇者保留真实征服位置.png"
+  ],
+  "visualReview": "主代理逐图目视正常；51费用显示与真实状态一致，索引代理核实际报告身份",
+  "backend": {
+    "xml": "AutomationOutputs/RulesState/20260929_183114_13350633/results.xml",
+    "method": "MK.Tests.Battles.PveHeroesRealAssaultJourneyTests.ActualTowerTunnelKeepsAssaultFeeThenSameHeroesAndRewardSurviveFormalTurn",
+    "result": "Passed",
+    "note": "同批另一Arythea方法Failed；不记整批2/2"
+  },
+  "compileConsole": {
+    "path": "tmp/pve_social_assault_compile_console.json",
+    "errorCounts": [
+      0,
+      0
+    ]
+  },
+  "finalConsole": {
+    "status": "passed",
+    "path": "tmp/pve_social_assault_final_console.json",
+    "errorCounts": [
+      0,
+      0
+    ],
+    "sha256": "8d62f369865d478d110ffb57efc54be5aff20c4f4af96e654eba68ad28fb3864",
+    "verification": "已读实际两次success且result.success=true、data=[]"
+  },
+  "limitations": [
+    "合法自定五牌/已招单位构筑，不是标准16牌起点或自然招募",
+    "不覆盖原精英勇者招募声誉修正翻倍，该缺口保留",
+    "不声明一般PVP完整调度或所有勇者规则通过"
+  ]
+}

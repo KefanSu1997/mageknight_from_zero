@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79ae6b4bf9821204284282bb291c5abd, type: 3}
+  m_Name: items_002
+  m_EditorClassIdentifier: MageKnight.Scripts::MageKnight.Battle.BattleArtifactDefinition
+  source: {fileID: 11400000, guid: 25da0d8effbbf9140aab530fcf23d0c5, type: 2}
+  artwork: {fileID: 21300000, guid: bd75790f441b4294487d215b77065011, type: 3}

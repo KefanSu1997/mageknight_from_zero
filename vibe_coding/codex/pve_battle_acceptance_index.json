@@ -1,0 +1,115 @@
+{
+  "status": "accepted_demo",
+  "recorded_at": "2026-09-18T11:14:32.370718+08:00",
+  "scope": "可替换原版手牌与敌群的PVE战斗演练；不等同全卡库复杂交互、完整游戏或所有组合已接入",
+  "backend_unique_cases": 5,
+  "backend_fix_retested_cases": 1,
+  "scene_pointer_actions": 40,
+  "scene_assertions": 161,
+  "scenarios": [
+    {
+      "id": "Guard-Patrol",
+      "report": "AutomationOutputs/PveBattle/20260918_110009_d0dc44d5/report.json",
+      "accepted_steps_inclusive": [
+        1,
+        14
+      ],
+      "fame": 2,
+      "wounds": 0
+    },
+    {
+      "id": "Ranged-Warband",
+      "report": "AutomationOutputs/PveBattle/20260918_110943_60bf8490/report.json",
+      "accepted_steps_inclusive": [
+        0,
+        25
+      ],
+      "fame": 8,
+      "wounds": 2
+    }
+  ],
+  "superseded": [
+    {
+      "report": "AutomationOutputs/PveBattle/20260918_110009_d0dc44d5/report.json",
+      "steps_inclusive": [
+        15,
+        36
+      ],
+      "reason": "自动检查通过，但原图复核发现monster_006漏了物理抗性；第二场语义验收否决，已由新报告替代"
+    }
+  ],
+  "console_error_counts": [
+    0,
+    0
+  ],
+  "evidence": [
+    {
+      "path": "AutomationOutputs/RulesState/20260918_104814_1b9b7162/results.xml",
+      "sha256": "86a91c4b2eeb8b96d4b252a636900a52fa761cb5410188002d750cf063c30b2d"
+    },
+    {
+      "path": "AutomationOutputs/RulesState/20260918_110534_9c1a708a/results.xml",
+      "sha256": "6819bce03cc5cde95844992ca3a54a74a9c23b59d94b26a4de65f1d0dfa051cf"
+    },
+    {
+      "path": "AutomationOutputs/PveBattle/20260918_110009_d0dc44d5/report.json",
+      "sha256": "2bcbd78010f3bac9f420c04984f8c4dd0d5a033b46d241974dffa8ccf5972821"
+    },
+    {
+      "path": "AutomationOutputs/PveBattle/20260918_110943_60bf8490/report.json",
+      "sha256": "44641c3fc7910d801f79db5f82c541d4b1b4a91a1a3b1a07259126d8acbccd7d"
+    },
+    {
+      "path": "AutomationOutputs/PveBattle/20260918_110943_60bf8490/console_final.json",
+      "sha256": "8d62f369865d478d110ffb57efc54be5aff20c4f4af96e654eba68ad28fb3864"
+    },
+    {
+      "path": "resources/text_json/monster.json",
+      "sha256": "4a25655246a3a209de872f18e549176535b271a99912d98b361cc56249a97d82"
+    },
+    {
+      "path": "Assets/Scenes/Part1/Part1_PveBattle.unity",
+      "sha256": "2a276f8288da4ca9bfc86641f9085037dcfa444edd28b3e1d29156c06c7c5f9a"
+    },
+    {
+      "path": "Assets/Logic/Runtime/Battles/PveBattleSession.cs",
+      "sha256": "a0c961cd7b58a31fe500625f5f3c639f7f79084d80a8369967f247ef1a0dd920"
+    },
+    {
+      "path": "Assets/Scripts/Battle/PveBattleController.cs",
+      "sha256": "c1c81db980e00b192ff20f28991d8d6c32dd692a42d564350eb64aa2981dd5b0"
+    },
+    {
+      "path": "AutomationOutputs/PveBattle/20260918_110009_d0dc44d5/captures/001_推进正式阶段.png",
+      "sha256": "6d3b72b3359a5316d445a6f51cc4faa418b1fcfc4f1c041d97c281c5a7aac87d"
+    },
+    {
+      "path": "AutomationOutputs/PveBattle/20260918_110009_d0dc44d5/captures/004_确认原卡与费用.png",
+      "sha256": "3560e94884d5d6a78e6f68758efff411da8ebc4792dab87b3d8b4ae23e8598c4"
+    },
+    {
+      "path": "AutomationOutputs/PveBattle/20260918_110009_d0dc44d5/captures/014_推进正式阶段.png",
+      "sha256": "d3e1036cfa37f0502ee0b8241f8b31f134b1edd4f1c0232592fa8e1979b4d605"
+    },
+    {
+      "path": "AutomationOutputs/PveBattle/20260918_110943_60bf8490/captures/003_同场景重建第二场.png",
+      "sha256": "797ef9915ab92ef2a5b1fc55d5c5033784566104adf7953312d98303dd848170"
+    },
+    {
+      "path": "AutomationOutputs/PveBattle/20260918_110943_60bf8490/captures/010_物抗令6减半为3击杀且利斧奖励1.png",
+      "sha256": "114a8609e555fb48f22780509f530470b7a81d7a46fc25eccf29c2c4e0f19def"
+    },
+    {
+      "path": "AutomationOutputs/PveBattle/20260918_110943_60bf8490/captures/017_迅捷6拒绝格挡5且资源保留.png",
+      "sha256": "b695280e7b1cc7b00a38c20a323a3fbc5bf7db78ebd646f558a57d2e81db8583"
+    },
+    {
+      "path": "AutomationOutputs/PveBattle/20260918_110943_60bf8490/captures/019_推进正式阶段.png",
+      "sha256": "1ec74c0b3aac9e4dd6039bfa2f7234e48af5cb4324da95cc0bfea67720c46e98"
+    },
+    {
+      "path": "AutomationOutputs/PveBattle/20260918_110943_60bf8490/captures/025_推进正式阶段.png",
+      "sha256": "0d80a28f6ce03c663b8e2a73ae0fbc9e3ffd23007660b88fb97f5a244c84d790"
+    }
+  ]
+}

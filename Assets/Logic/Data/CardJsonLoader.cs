@@ -27,6 +27,7 @@ namespace MK.Logic.Data
         }
 
         public static UnitCard LoadUnit(string id) => UnitJsonLoader.Load(Folder, id);
+        public static List<Monster> LoadMonsters() => MonsterJsonLoader.LoadMonsters(Folder);
 
         /// <summary>讀取普通行動牌。</summary>
         public static List<ActionCardData> LoadBasicActions()
@@ -111,13 +112,31 @@ namespace MK.Logic.Data
         private record SpellHalf(string name, string effect, string mana_cost);
         private record SpellRaw(string id, string image, string en_image, string mana_color, SpellHalf spell_top, SpellHalf spell_bottom);
 
-        /// <summary>
-        /// 讀取指定的英雄技能池，目前已支援多個池子。
-        /// </summary>
+        // 原技能图/文字核定的独立分类；flip与频率均不能代替互动属性。
+        private static bool? OriginalSkillInteraction(string poolId, int index)
+        {
+            int knownCount = poolId switch
+            {
+                "hero_skill_pool_000" or "hero_skill_pool_001" or "hero_skill_pool_002"
+                    or "hero_skill_pool_003" or "hero_skill_pool_004" or "hero_skill_pool_005"
+                    or "hero_skill_pool_007" => 10,
+                "hero_skill_pool_006" => 12,
+                _ => 0
+            };
+            if (index < 0 || index >= knownCount) return null;
+            return $"{poolId}:{index:00}" is "hero_skill_pool_000:09" or "hero_skill_pool_001:09"
+                or "hero_skill_pool_002:09" or "hero_skill_pool_003:09" or "hero_skill_pool_004:09"
+                or "hero_skill_pool_005:09" or "hero_skill_pool_007:09";
+        }
+
+        /// <summary>讀取指定的英雄技能池，目前已支援多個池子。</summary>
         public static List<SkillCard> LoadHeroSkills(string poolId)
+            => ParseHeroSkills(File.ReadAllText(Path.Combine(Folder, "skill.json")), poolId);
+
+        /// <summary>Use the same original parser for packaged runtime data and local rule tests.</summary>
+        public static List<SkillCard> ParseHeroSkills(string json, string poolId)
         {
             // 直接以 JObject/JArray 解析，避免 AOT 下的反射限制
-            var json = File.ReadAllText(Path.Combine(Folder, "skill.json"));
             var doc = JArray.Parse(json);
             foreach (var element in doc)
             {
@@ -224,11 +243,20 @@ namespace MK.Logic.Data
                     };
 
                     string printed = (string?)s["total_description"] ?? "";
+                    // The original cooperative interactive skills keep their rules on side1,
+                    // while Tovak's cooperative skill has a top-level description.
+                    if (string.IsNullOrWhiteSpace(printed) && OriginalSkillInteraction(poolId, skillIndex) == true)
+                        printed = (string?)s["side1_skill"]?["total_description"] ?? "";
                     // Double-sided and multi-frequency skills need their own timing contract.
                     // Missing metadata must never silently grant unlimited activations.
                     var frequency = printed.StartsWith("每回合一次") ? SkillFrequency.OncePerTurn
                         : printed.StartsWith("每轮一次") ? SkillFrequency.OncePerRound : SkillFrequency.Unspecified;
-                    list.Add(new SkillCard(name, eff, true, $"{poolId}:{skillIndex++:00}", printed, frequency));
+                    string sourceId = $"{poolId}:{skillIndex:00}";
+                    if(sourceId=="hero_skill_pool_003:03")frequency=SkillFrequency.ManualFlip;
+                    if(sourceId is "hero_skill_pool_001:01" or "hero_skill_pool_003:07")frequency=SkillFrequency.OncePerTurn;
+                    list.Add(new SkillCard(name, eff, true, sourceId, printed, frequency,
+                        OriginalSkillInteraction(poolId, skillIndex)));
+                    skillIndex++;
                 }
                 return list;
             }

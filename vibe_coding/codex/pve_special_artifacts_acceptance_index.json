@@ -1,0 +1,61 @@
+{
+  "scope": "原指挥旗普通实际招募与跨回合、宝盒借荣誉旗焚毁实际消费者。头环效果仅后台，场景只核对空公共区。",
+  "backendRuns": [
+    "20260923_065812_8426e96f",
+    "20260923_065926_4eb4c3e9",
+    "20260923_070218_1f09d794",
+    "20260923_070543_64f1d883"
+  ],
+  "effectiveBackendPassed": 13,
+  "sceneSegments": [
+    {
+      "run": "20260923_070341_4faa1071",
+      "overallStatus": "failed",
+      "passedStepRange": "0-58",
+      "passedSteps": 59,
+      "passedAssertions": 80,
+      "reportSha256": "51474726f5a9b5a98bc56678e8672be2895a974cbfcc8a1439b6b6e4a4b1a95c"
+    },
+    {
+      "run": "20260923_070618_395b24da",
+      "overallStatus": "success",
+      "passedStepRange": "59-67",
+      "passedSteps": 9,
+      "passedAssertions": 23,
+      "reportSha256": "e5703eb325d1e84cb2d98211df8e5bd63e7b98eed08f3732864232774e1995b3"
+    }
+  ],
+  "effectiveSceneSteps": 68,
+  "effectiveSceneAssertions": 103,
+  "screenshotsReviewed": 6,
+  "screenshots": [
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_070341_4faa1071\\captures\\032_检查实际公共技能区，不伪造供应.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_070341_4faa1071\\captures\\040_明确选择旗代替新单位指挥标记.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_070341_4faa1071\\captures\\042_真实支付招募并绑定指挥旗.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_070341_4faa1071\\captures\\049_从实际牌堆揭示原荣誉旗.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_070618_395b24da\\captures\\059_原农民攻击2加荣誉1，并得一次名望.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_070618_395b24da\\captures\\067_原神器归底，宝盒永久移除，原指挥旗与同部队保留.png"
+  ],
+  "finalConsole": "tmp/pve_20260923_special_final_console.json",
+  "preservedFailures": [
+    "预期遗漏原荣誉旌旗焚毁攻击加1；农民应3，合并狂怒应5，保留规则，只补59以后"
+  ],
+  "artifactEntryCount": 25,
+  "artifactTotal": 25,
+  "finiteFullBasicSceneBaseline": 10,
+  "remaining": "头环实际选择/使用场景；宝盒5武器/恐惧旗焚毁多目标输入、其他借用分支；指挥旗轮末主动取回入口及其他主要分支场景",
+  "sourceSha256": {
+    "Assets/Logic/Runtime/Battles/PveArtifactInputs.cs": "8e736300a37479e603c008b5498231cd0f3ad841fb8ad7e3188875946e037223",
+    "Assets/Logic/Runtime/Battles/PveJourneySession.SpecialArtifacts.cs": "0d2c043e73749399c50af8ce31e91f3f1196920324bfab06656c61b456e452ab",
+    "Assets/Logic/Runtime/Battles/PveJourneySession.MaterialArtifacts.cs": "bf9908a181ca67a7f9bdc71a10465ed904226f42c5e734ee296332a3b9408a41",
+    "Assets/Scripts/Battle/PveBattleController.cs": "a10751e67b413d47b7a8b320342577672d33f326871fcdcaa855a6c6417cf99f",
+    "Assets/Scripts/Battle/PveBattleController.SpecialArtifacts.cs": "6dc60eab86a5791760d06f06ba1943ecf085cc99effe1326302807a3f8433358",
+    "Assets/Scripts/Battle/PveBattleController.ArtifactResources.cs": "2f16e3a03665ef435a067dad2728cbe917f87ad189601fb31c0e45c4e2f3a1be",
+    "Assets/Scripts/Battle/PveBattleController.MaterialArtifacts.cs": "3c90ca3aebeffb838644e11c982b2b49a7904bb8f59ca08bd3172d7108317e3c",
+    "Assets/Scripts/Battle/PveBattleController.Journey.cs": "32aa283b887dd0fbefc0c749f6dfec5d8599a4a815d1adc1cf9b63bd936e5a41",
+    "Assets/Scripts/Battle/PveBattleController.JourneyHand.cs": "898f33299ce5fd075475c49972f8b268e282d81701e2c5190c3d279ad9593743",
+    "Assets/Scripts/Battle/PveBattleController.JourneyInteraction.cs": "6c30b28f8b95f40c51fe50e464ce843f7da89ba049fe348219a4ea09422366a0",
+    "Assets/Tests/RulesState/PveSpecialArtifactEntryTests.cs": "798bef885ecd65eafe7969223686697d4dc798772051a69a59dac72d5ef31d53",
+    "tools/build_pve_special_artifacts_acceptance.py": "a94bce3f08eaa7828c02b5e454d24be2cb11b8622dab82d9a571eb01edf7dbc4"
+  }
+}

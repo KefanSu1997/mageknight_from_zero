@@ -264,3 +264,55 @@ MonoBehaviour:
   - source: {fileID: 11400000, guid: a7f7ad7ff3bb6924b8bcbbc816299ccd, type: 2}
     artwork: {fileID: 21300000, guid: 1674f5473cab5424f8e464ce1af2a479, type: 3}
   cases: {fileID: 4900000, guid: 56260ad81395ec64680eb80c6c2db71c, type: 3}
+  unitArtwork:
+  - {fileID: 21300000, guid: b09a025ccb8760d49875f4e3191f5ca9, type: 3}
+  - {fileID: 21300000, guid: 5b2605d337a13bb4084a40569fd0bcf8, type: 3}
+  - {fileID: 21300000, guid: 7a70accb1742658468ec25cbc782aa4b, type: 3}
+  - {fileID: 21300000, guid: 8f4b3db79f48a8f4faad1ea31361f355, type: 3}
+  - {fileID: 21300000, guid: 5516f3ada26336742a8677857b08e40c, type: 3}
+  - {fileID: 21300000, guid: fd906c4fb29ff7c4390f26b29cf668e4, type: 3}
+  - {fileID: 21300000, guid: bb46d777ceee581488b080d724aac210, type: 3}
+  - {fileID: 21300000, guid: b02b751fc660a6847bbb11a818cfd32f, type: 3}
+  - {fileID: 21300000, guid: aa95a7f251b559840b8527fe091b09eb, type: 3}
+  originalSkillSheet000: {fileID: 21300000, guid: 1093be0149b5e4842b07d632364a5ac9, type: 3}
+  enemyArtwork:
+  - id: monster_001
+    artwork: {fileID: 21300000, guid: 79c3d262c1bc27f4782701c5764d0486, type: 3}
+  - id: monster_002
+    artwork: {fileID: 21300000, guid: ef38b53738dd74248bf9b6e8aeb73ee0, type: 3}
+  - id: monster_003
+    artwork: {fileID: 21300000, guid: fc77f1cf82b0af3488830b2f7d800cbf, type: 3}
+  - id: monster_005
+    artwork: {fileID: 21300000, guid: f74a70de3abfbd44fbeb34e374f55b4c, type: 3}
+  - id: monster_007
+    artwork: {fileID: 21300000, guid: d437fb68f211e6446af4d627ca84b1a8, type: 3}
+  - id: monster_008
+    artwork: {fileID: 21300000, guid: 36b2fb6cb1f96c546904fee4955c7c5f, type: 3}
+  - id: monster_012
+    artwork: {fileID: 21300000, guid: aa21fd3963eed524994f8f6b6bc9f245, type: 3}
+  - id: monster_013
+    artwork: {fileID: 21300000, guid: 70f350780774ce443a55d1df60d9dec8, type: 3}
+  - id: monster_014
+    artwork: {fileID: 21300000, guid: bd06992ffd5834b409a69468aac56cba, type: 3}
+  - id: monster_017
+    artwork: {fileID: 21300000, guid: 8920aba47dec21249874d11e6c41b249, type: 3}
+  - id: monster_025
+    artwork: {fileID: 21300000, guid: a18471c75c528f44186a0fa384610c3d, type: 3}
+  - id: monster_027
+    artwork: {fileID: 21300000, guid: 1c7d62b74dd2721438dbaea6fbed8030, type: 3}
+  - id: monster_028
+    artwork: {fileID: 21300000, guid: d9e97e3b294bc704cb5c53027844863a, type: 3}
+  - id: monster_029
+    artwork: {fileID: 21300000, guid: d33c134bc688c0f418943e9d3ee219dc, type: 3}
+  - id: monster_030
+    artwork: {fileID: 21300000, guid: 6465b36fa58f6d640ba3a8450e9995de, type: 3}
+  - id: monster_032
+    artwork: {fileID: 21300000, guid: ea13897e26326be47ba794365b8ea863, type: 3}
+  - id: monster_034
+    artwork: {fileID: 21300000, guid: 61274d4724d7fd44f9f9e30590b50645, type: 3}
+  - id: monster_036
+    artwork: {fileID: 21300000, guid: f0ef7e4ddc87d1c48b5598d33b78c8f8, type: 3}
+  - id: monster_058
+    artwork: {fileID: 21300000, guid: 901ea2b8e22ad9943b172bb2d24cfa7f, type: 3}
+  - id: monster_067
+    artwork: {fileID: 21300000, guid: 8f29c65a76c36bc48989c69aa8411c50, type: 3}

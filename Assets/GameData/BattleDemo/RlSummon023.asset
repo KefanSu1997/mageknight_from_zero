@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee4aa6fca28083944af06e7d1543142e, type: 3}
+  m_Name: RlSummon023
+  m_EditorClassIdentifier: MageKnight.Scripts::MageKnight.Battle.BattleEncounter
+  displayName: "\u539F023\u53CC\u53EC\u5524 \xB7 \u5B9E\u9645\u4F9B\u7ED9\u573A\u666F\u9A8C\u8BC1"
+  originalMonsterJson: {fileID: 4900000, guid: 1195e7de584f2f1428f58a7ec6cd347c, type: 3}
+  enemies:
+  - originalId: monster_023
+    displayName: "\u5229\u722A\u9F99"
+    originalToken: {fileID: 2800000, guid: cf8c4814d43990549ae0b47031cd028d, type: 3}
+  background: {fileID: 2800000, guid: 06a939b592349e141ac9ff2eadfcdaa6, type: 3}
+  dayPart: 0

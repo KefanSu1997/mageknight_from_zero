@@ -1,0 +1,434 @@
+{
+  "status": "passed",
+  "scope": "Goldyx自身005:05荧光、005:06一格飞行、005:08绿激励实际连续消费者",
+  "backend": {
+    "run": "AutomationOutputs/RulesState/20260929_183304_2f681967",
+    "ownTestsPassed": 1,
+    "batchPassed": 2,
+    "batchFailed": 0,
+    "testClass": "MK.Tests.Battles.PveGoldyxPrimaryConsumersJourneyTests"
+  },
+  "scene": {
+    "effectiveSteps": 69,
+    "effectiveAssertions": 151,
+    "segments": [
+      {
+        "report": "AutomationOutputs/PveBattle/20260929_183703_9e33b41e/report.json",
+        "originalStatus": "failed",
+        "acceptedZeroBasedRange": [
+          0,
+          36
+        ],
+        "steps": 37,
+        "assertions": 73
+      },
+      {
+        "report": "AutomationOutputs/PveBattle/20260929_184109_56c849b2/report.json",
+        "originalStatus": "success",
+        "acceptedZeroBasedRange": [
+          37,
+          68
+        ],
+        "steps": 32,
+        "assertions": 78,
+        "replayedPrefix": [
+          0,
+          36
+        ],
+        "replayAssertionsCounted": 0
+      }
+    ]
+  },
+  "preservedFailure": {
+    "report": "AutomationOutputs/PveBattle/20260929_183703_9e33b41e/report.json",
+    "step": 37,
+    "reason": "Button not found: actual007,023,009,w,w,021,006 seven-card hand;006 on second page",
+    "correction": "Only add NextHand before selecting actual006; no production/rules/expectation relaxation"
+  },
+  "identityAndConsumers": [
+    {
+      "report": "AutomationOutputs/PveBattle/20260929_183703_9e33b41e/report.json",
+      "step": 12,
+      "label": "同一原玩家开始",
+      "observed": {
+        "influence": "0",
+        "journey.discardCount": "0",
+        "journey.outsideSkill": "",
+        "journey.position": "0,0",
+        "movement": "0",
+        "site.discardWounds": "0",
+        "healing": "0",
+        "wounds": "0",
+        "green": "0",
+        "journey.completedTurns": "0",
+        "journey.completedBattles": "0",
+        "journey.samePlayer": "True",
+        "hand": "6",
+        "deck.count": "10",
+        "hero.id": "Goldyx",
+        "hero.skills": "3",
+        "hero.deckTotal": "16",
+        "hand.ids": "basic_card_021,basic_card_014,basic_card_000,basic_card_007,basic_card_023,basic_card_009",
+        "skills.used": "False,False,False",
+        "tokens.green": "0",
+        "red": "1",
+        "blue": "1"
+      }
+    },
+    {
+      "report": "AutomationOutputs/PveBattle/20260929_183703_9e33b41e/report.json",
+      "step": 27,
+      "label": "保留两张战伤及同一原16牌",
+      "observed": {
+        "influence": "0",
+        "journey.discardCount": "2",
+        "journey.outsideSkill": "",
+        "journey.position": "0,0",
+        "movement": "0",
+        "site.discardWounds": "0",
+        "healing": "0",
+        "wounds": "2",
+        "green": "0",
+        "journey.completedTurns": "1",
+        "journey.completedBattles": "1",
+        "journey.samePlayer": "True",
+        "hand": "6",
+        "deck.count": "10",
+        "hero.id": "Goldyx",
+        "hero.skills": "3",
+        "hero.deckTotal": "18",
+        "hand.ids": "basic_card_000,basic_card_007,basic_card_023,basic_card_009,w,w",
+        "skills.used": "False,False,False",
+        "tokens.green": "0",
+        "red": "1",
+        "blue": "1"
+      }
+    },
+    {
+      "report": "AutomationOutputs/PveBattle/20260929_183703_9e33b41e/report.json",
+      "step": 32,
+      "label": "抽实际狂怒和全神贯注，获得绿标",
+      "observed": {
+        "influence": "0",
+        "journey.discardCount": "2",
+        "journey.outsideSkill": "hero_skill_pool_005:08",
+        "journey.position": "0,0",
+        "movement": "0",
+        "site.discardWounds": "0",
+        "healing": "0",
+        "wounds": "2",
+        "green": "0",
+        "journey.completedTurns": "1",
+        "journey.completedBattles": "1",
+        "journey.samePlayer": "True",
+        "hand": "8",
+        "deck.count": "8",
+        "hero.id": "Goldyx",
+        "hero.skills": "3",
+        "hero.deckTotal": "18",
+        "hand.ids": "basic_card_000,basic_card_007,basic_card_023,basic_card_009,w,w,basic_card_021,basic_card_006",
+        "skills.used": "False,False,True",
+        "tokens.green": "1",
+        "red": "1",
+        "blue": "1"
+      }
+    },
+    {
+      "report": "AutomationOutputs/PveBattle/20260929_183703_9e33b41e/report.json",
+      "step": 36,
+      "label": "实际支付绿激励标记",
+      "observed": {
+        "influence": "0",
+        "journey.discardCount": "2",
+        "journey.outsideSkill": "hero_skill_pool_005:08",
+        "journey.position": "0,0",
+        "movement": "4",
+        "site.discardWounds": "0",
+        "healing": "0",
+        "wounds": "2",
+        "green": "0",
+        "journey.completedTurns": "1",
+        "journey.completedBattles": "1",
+        "journey.samePlayer": "True",
+        "hand": "7",
+        "deck.count": "8",
+        "hero.id": "Goldyx",
+        "hero.skills": "3",
+        "hero.deckTotal": "18",
+        "hand.ids": "basic_card_007,basic_card_023,basic_card_009,w,w,basic_card_021,basic_card_006",
+        "skills.used": "False,False,True",
+        "tokens.green": "0",
+        "red": "1",
+        "blue": "1"
+      }
+    },
+    {
+      "report": "AutomationOutputs/PveBattle/20260929_184109_56c849b2/report.json",
+      "step": 40,
+      "label": "新抽原牌消费者；红蓝绿三种库存与临时标记分离",
+      "observed": {
+        "influence": "0",
+        "journey.discardCount": "2",
+        "journey.outsideSkill": "hero_skill_pool_005:08",
+        "journey.position": "0,0",
+        "movement": "4",
+        "site.discardWounds": "0",
+        "healing": "0",
+        "wounds": "2",
+        "green": "1",
+        "journey.completedTurns": "1",
+        "journey.completedBattles": "1",
+        "journey.samePlayer": "True",
+        "hand": "6",
+        "deck.count": "8",
+        "hero.id": "Goldyx",
+        "hero.skills": "3",
+        "hero.deckTotal": "18",
+        "hand.ids": "basic_card_007,basic_card_023,basic_card_009,w,w,basic_card_021",
+        "skills.used": "False,False,True",
+        "tokens.green": "0",
+        "red": "1",
+        "blue": "1"
+      }
+    },
+    {
+      "report": "AutomationOutputs/PveBattle/20260929_184109_56c849b2/report.json",
+      "step": 44,
+      "label": "实际消费行进移动3，剩1",
+      "observed": {
+        "influence": "0",
+        "journey.discardCount": "2",
+        "journey.outsideSkill": "hero_skill_pool_005:08",
+        "journey.position": "1,0",
+        "movement": "1",
+        "site.discardWounds": "0",
+        "healing": "0",
+        "wounds": "2",
+        "green": "1",
+        "journey.completedTurns": "1",
+        "journey.completedBattles": "1",
+        "journey.samePlayer": "True",
+        "hand": "6",
+        "deck.count": "8",
+        "hero.id": "Goldyx",
+        "hero.skills": "3",
+        "hero.deckTotal": "18",
+        "hand.ids": "basic_card_007,basic_card_023,basic_card_009,w,w,basic_card_021",
+        "skills.used": "False,False,True",
+        "tokens.green": "0",
+        "red": "1",
+        "blue": "1"
+      }
+    },
+    {
+      "report": "AutomationOutputs/PveBattle/20260929_184109_56c849b2/report.json",
+      "step": 51,
+      "label": "原一格飞行0费用，移动1保留而非支付普通平原2",
+      "observed": {
+        "influence": "0",
+        "journey.discardCount": "2",
+        "journey.outsideSkill": "hero_skill_pool_005:06",
+        "journey.position": "0,1",
+        "movement": "1",
+        "site.discardWounds": "0",
+        "healing": "0",
+        "wounds": "2",
+        "green": "1",
+        "journey.completedTurns": "1",
+        "journey.completedBattles": "1",
+        "journey.samePlayer": "True",
+        "hand": "6",
+        "deck.count": "8",
+        "hero.id": "Goldyx",
+        "hero.skills": "3",
+        "hero.deckTotal": "18",
+        "hand.ids": "basic_card_007,basic_card_023,basic_card_009,w,w,basic_card_021",
+        "skills.used": "False,True,True",
+        "tokens.green": "0",
+        "red": "1",
+        "blue": "1"
+      }
+    },
+    {
+      "report": "AutomationOutputs/PveBattle/20260929_184109_56c849b2/report.json",
+      "step": 59,
+      "label": "红蓝绿三种库存晶体产生原影响3",
+      "observed": {
+        "influence": "3",
+        "journey.discardCount": "2",
+        "journey.outsideSkill": "hero_skill_pool_005:05",
+        "journey.position": "0,1",
+        "movement": "1",
+        "site.discardWounds": "0",
+        "healing": "0",
+        "wounds": "2",
+        "green": "1",
+        "journey.completedTurns": "1",
+        "journey.completedBattles": "1",
+        "journey.samePlayer": "True",
+        "hand": "6",
+        "deck.count": "8",
+        "hero.id": "Goldyx",
+        "hero.skills": "3",
+        "hero.deckTotal": "18",
+        "hand.ids": "basic_card_007,basic_card_023,basic_card_009,w,w,basic_card_021",
+        "skills.used": "True,True,True",
+        "tokens.green": "0",
+        "red": "1",
+        "blue": "1"
+      }
+    },
+    {
+      "report": "AutomationOutputs/PveBattle/20260929_184109_56c849b2/report.json",
+      "step": 63,
+      "label": "实际支付影响3购买治疗1",
+      "observed": {
+        "influence": "0",
+        "journey.discardCount": "2",
+        "journey.outsideSkill": "hero_skill_pool_005:05",
+        "journey.position": "0,1",
+        "movement": "1",
+        "site.discardWounds": "0",
+        "healing": "1",
+        "wounds": "2",
+        "green": "1",
+        "journey.completedTurns": "1",
+        "journey.completedBattles": "1",
+        "journey.samePlayer": "True",
+        "hand": "6",
+        "deck.count": "8",
+        "hero.id": "Goldyx",
+        "hero.skills": "3",
+        "hero.deckTotal": "18",
+        "hand.ids": "basic_card_007,basic_card_023,basic_card_009,w,w,basic_card_021",
+        "skills.used": "True,True,True",
+        "tokens.green": "0",
+        "red": "1",
+        "blue": "1"
+      }
+    },
+    {
+      "report": "AutomationOutputs/PveBattle/20260929_184109_56c849b2/report.json",
+      "step": 66,
+      "label": "治疗上回合实际伤牌1，第二伤仍保留",
+      "observed": {
+        "influence": "0",
+        "journey.discardCount": "2",
+        "journey.outsideSkill": "hero_skill_pool_005:05",
+        "journey.position": "0,1",
+        "movement": "1",
+        "site.discardWounds": "0",
+        "healing": "0",
+        "wounds": "1",
+        "green": "1",
+        "journey.completedTurns": "1",
+        "journey.completedBattles": "1",
+        "journey.samePlayer": "True",
+        "hand": "5",
+        "deck.count": "8",
+        "hero.id": "Goldyx",
+        "hero.skills": "3",
+        "hero.deckTotal": "17",
+        "hand.ids": "basic_card_007,basic_card_023,basic_card_009,w,basic_card_021",
+        "skills.used": "True,True,True",
+        "tokens.green": "0",
+        "red": "1",
+        "blue": "1"
+      }
+    },
+    {
+      "report": "AutomationOutputs/PveBattle/20260929_184109_56c849b2/report.json",
+      "step": 68,
+      "label": "两回合同一Goldyx，三技能及实际费用/治疗消费者完成",
+      "observed": {
+        "influence": "0",
+        "journey.discardCount": "4",
+        "journey.outsideSkill": "",
+        "journey.position": "0,1",
+        "movement": "0",
+        "site.discardWounds": "0",
+        "healing": "0",
+        "wounds": "1",
+        "green": "1",
+        "journey.completedTurns": "2",
+        "journey.completedBattles": "1",
+        "journey.samePlayer": "True",
+        "hand": "6",
+        "deck.count": "7",
+        "hero.id": "Goldyx",
+        "hero.skills": "3",
+        "hero.deckTotal": "17",
+        "hand.ids": "basic_card_007,basic_card_023,basic_card_009,w,basic_card_021,basic_card_007",
+        "skills.used": "True,True,True",
+        "tokens.green": "0",
+        "red": "1",
+        "blue": "1"
+      }
+    }
+  ],
+  "screenshots": [
+    {
+      "report": "AutomationOutputs/PveBattle/20260929_183703_9e33b41e/report.json",
+      "step": 32,
+      "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_183703_9e33b41e\\captures\\032_抽实际狂怒和全神贯注，获得绿标.png",
+      "visuallyReviewedBy": "parent /root",
+      "result": "normal"
+    },
+    {
+      "report": "AutomationOutputs/PveBattle/20260929_184109_56c849b2/report.json",
+      "step": 40,
+      "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_184109_56c849b2\\captures\\040_新抽原牌消费者；红蓝绿三种库存与临时标记分离.png",
+      "visuallyReviewedBy": "parent /root",
+      "result": "normal"
+    },
+    {
+      "report": "AutomationOutputs/PveBattle/20260929_184109_56c849b2/report.json",
+      "step": 51,
+      "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_184109_56c849b2\\captures\\051_原一格飞行0费用，移动1保留而非支付普通平原2.png",
+      "visuallyReviewedBy": "parent /root",
+      "result": "normal"
+    },
+    {
+      "report": "AutomationOutputs/PveBattle/20260929_184109_56c849b2/report.json",
+      "step": 59,
+      "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_184109_56c849b2\\captures\\059_红蓝绿三种库存晶体产生原影响3.png",
+      "visuallyReviewedBy": "parent /root",
+      "result": "normal"
+    },
+    {
+      "report": "AutomationOutputs/PveBattle/20260929_184109_56c849b2/report.json",
+      "step": 68,
+      "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_184109_56c849b2\\captures\\068_两回合同一Goldyx，三技能及实际费用_治疗消费者完成.png",
+      "visuallyReviewedBy": "parent /root",
+      "result": "normal"
+    }
+  ],
+  "compileConsole": {
+    "path": "tmp/pve_social_assault_compile_console.json",
+    "errorCounts": [
+      0,
+      0
+    ]
+  },
+  "finalConsole": {
+    "path": "tmp/pve_social_assault_final_console.json",
+    "status": "passed",
+    "errorCounts": [
+      0,
+      0
+    ],
+    "actualReadVerified": true
+  },
+  "files": {
+    "AutomationOutputs/PveBattle/20260929_183703_9e33b41e/report.json": "856b6dfdb34b33066e69a604e5dae96a05fa39e239fc62794bb13a5cba1e7988",
+    "AutomationOutputs/PveBattle/20260929_184109_56c849b2/report.json": "86f84e09115da12406c2fa2f1011bb153bf31d0765105f1c7dadbb6d0736c258",
+    "AutomationOutputs/RulesState/20260929_183304_2f681967/results.xml": "6e0d5775046fcd917d6c1bc91c79824e509f0378190b3c892fc15e93a190e97d",
+    "AutomationOutputs/RulesState/20260929_183304_2f681967/summary.json": "b07b839f7ba30a1e5e114e9a2f0f39c901425abb3e8403cf855f6b01476d972b",
+    "tmp/pve_social_assault_final_console.json": "8d62f369865d478d110ffb57efc54be5aff20c4f4af96e654eba68ad28fb3864"
+  },
+  "limits": [
+    "既有演练地图，不冒充原新增板块探索",
+    "只计本Goldyx方法1项后台；同批Arythea另列",
+    "最终运行后Console待本批所有场景结束后统一补齐"
+  ]
+}

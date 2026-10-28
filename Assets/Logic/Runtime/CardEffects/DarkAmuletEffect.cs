@@ -1,4 +1,5 @@
 using MK.Logic.Core;
+using System.Collections.Generic;
 
 namespace MK.Logic.Runtime.CardEffects
 {
@@ -14,14 +15,20 @@ namespace MK.Logic.Runtime.CardEffects
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
             int count = _once ? 3 : 1;
+            // Validate the complete selection before granting any token or turn permission.
+            if (option < 0 || (option >> (8 * count)) != 0)
+                throw new System.InvalidOperationException("黑暗护符必须选择正确数量的魔力颜色");
+            for (int i = 0; i < count; i++)
+                if (((option >> (8 * i)) & 0xFF) > 5)
+                    throw new System.InvalidOperationException("黑暗护符的魔力颜色无效");
             for (int i = 0; i < count; i++)
             {
-                ManaColor color = (ManaColor)System.Math.Clamp((option >> (8 * i)) & 0xFF, 0, 5);
+                ManaColor color = (ManaColor)((option >> (8 * i)) & 0xFF);
                 player.Mana.AddToken(color, 1);
             }
             if (ctx.DayPart == DayPart.Day)
             {
-                ctx.TerrainCostOverride[TerrainType.Desert] = 3;
+                ctx.TerrainCostOverride[TerrainType.Desert] = System.Math.Min(3, ctx.TerrainCostOverride.GetValueOrDefault(TerrainType.Desert, 3));
                 ctx.AllowBlackAtDay = true;
             }
         }

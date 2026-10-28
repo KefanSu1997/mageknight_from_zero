@@ -1,0 +1,16 @@
+{
+  "status": "required_contract_not_runner_implementation",
+  "rules": [
+    {"id":"input_scope","owner":"runner","requirement":"Each artifact reference must resolve inside the role allowlist; enforce tool/file scope beyond prompt text."},
+    {"id":"immutable_provenance","owner":"runner","requirement":"Verify SHA256, source/resource build and loaded assembly identity, scenario, state and action parameters before reusing evidence."},
+    {"id":"blind_metadata","owner":"runner","requirement":"Verifier/visual calls use unrelated random review_session_id and artifact aliases. Exclude chronology, intended change, editor attempted report, benefit predictions, revealing paths and EXIF/metadata. Keep private mapping only in runner logs."},
+    {"id":"state_certificate","owner":"runner","requirement":"Bind full action parameters, physical entity IDs, native pre/post state, RNG, UI panel/page/selection and A-end pointer continuity. Native restore alone never proves an actual pointer route."},
+    {"id":"image_receipt","owner":"runner","requirement":"Every scored side or visual observation must cite an image actually attached or successfully opened in that role session. Match frame ID and checksum to the corresponding anonymous pair."},
+    {"id":"current_issue_evidence","owner":"runner","requirement":"A confirmed issue/repair_packet must reference current-build evidence; speculative or mismatched findings cannot authorize an edit."},
+    {"id":"cost_independence","owner":"runner","requirement":"Calculate costs independently of Editor, from actual candidate geometry and legal route mappings. A layout outside v2-v7 transform support requires a new independently checked compiler, not reuse of stale hardcoded coordinates."},
+    {"id":"denominator","owner":"runner","requirement":"Preserve frozen original-completable population and frequency weights; any newly unavailable candidate intent fails the gate. Original unavailable and unobserved stay separate and null-valued."},
+    {"id":"promotion","owner":"runner","requirement":"A promote recommendation cannot execute without complete evidence, all required hard gates pass, validated same-intent results, fixed denominator, valid blind reviews and the pre-frozen promotion policy."},
+    {"id":"infrastructure","owner":"runner","requirement":"Missing image, invalid JSON, bridge timeout or stale assembly yields unknown/needs_evidence; it is not a product pass, verified failure or a no-gain checkpoint."},
+    {"id":"fixture_rejection","owner":"runner","requirement":"Never admit fixture_only examples or unregistered demo references into a real decision, checklist certification or champion update."}
+  ]
+}

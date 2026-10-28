@@ -1,0 +1,62 @@
+{
+  "scope": "三合法英雄原技能主要入口与真实连续消费者，非所有分支",
+  "implementedHeroEntries": 63,
+  "backendEffective": 42,
+  "backendReports": [
+    "20260929_064218_44476d64",
+    "20260929_064412_67c047c2",
+    "20260929_064713_ba60fbf1"
+  ],
+  "operations": 188,
+  "assertions": 215,
+  "segments": [
+    {
+      "mode": "duel",
+      "run": "20260929_064940_942ac299",
+      "steps": [
+        0,
+        55
+      ],
+      "assertions": 64,
+      "sha256": "97c17418c891ca57e054635fee71969f443601167c3ff8bdf663ee510c28c18b"
+    },
+    {
+      "mode": "fork",
+      "run": "20260929_065114_a2fe638a",
+      "steps": [
+        0,
+        40
+      ],
+      "assertions": 43,
+      "sha256": "319e40e698ba58f2901325b77fc001e64a2f08ff62f825dd54332f8df19dea0e"
+    },
+    {
+      "mode": "fork",
+      "run": "20260929_065456_5e0a0ee8",
+      "steps": [
+        41,
+        57
+      ],
+      "assertions": 23,
+      "sha256": "7b53805eb6e98a9d8f680f1e9deb60a6f99d290233594a5bd7ae259dc707ea48"
+    },
+    {
+      "mode": "puppet",
+      "run": "20260929_065622_33f9e052",
+      "steps": [
+        0,
+        73
+      ],
+      "assertions": 85,
+      "sha256": "4826877ff697c900fbe54c8ab63276bdc396b048abeedb7c0aae271ac78c58e1"
+    }
+  ],
+  "console": "tmp/pve_target_skills_identity_compile.json",
+  "remaining": [
+    "七英雄互动技能需实际双玩家共享标记生命周期",
+    "傀儡元素/格挡、多token库存、公共敌堆归还本批后台通过但未场景",
+    "决斗单位影响失奖本批后台通过但未场景",
+    "叉形三目标/组攻/抗性本批后台通过但未场景",
+    "动态技能头环普通借用、地下城神器分支及既有地图/立绘缺口仍在"
+  ]
+}

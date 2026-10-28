@@ -1,0 +1,59 @@
+MageKnight UI RSI 提示词与输入输出组织 v0.1 草案
+
+范围
+先冻结角色职责、输入可见性、输出结构和交接规则；尚未启动优化循环，也未实现新的Unity adapter、通用路线编译器或调度器。所有角色模型建议为当前环境的gpt-6-luna；每个调用使用新上下文及当前有限材料，不继承长期聊天。
+
+与RSIGame对齐
+来源：论文 https://arxiv.org/html/2609.39045v1 ，代码 https://github.com/WenyiWU0111/RSIGame ，读取commit1214b342fce22e97fe19bfc56be189d06f44634b。
+沿用Controller→Explorer→Editor→Verifier的局部循环、证据checklist和独立全局Monitor。controller/verify.py将视觉观察与Editor是否尝试分开；程序合并成逐issue结果。monitor/live.py区分当前开发版本与champion，默认live关闭；不能把“保留最好版本”误认为自动回滚。
+本项目额外拆出Visual Reviewer；同意图跨版执行取代同像素脚本；必要信息及规则等价采用硬门禁。以上是项目适配，不宣称论文原样实现。
+
+消息拼装
+system = system_common.txt + 当前角色system文件。system在同一实验内不变；改动创建新的prompt_bundle_version。
+user = 一个input JSON包：envelope + task + allowed_artifact_ids。目标、版本、证据、预算放user包；不能每轮改写system。
+附图 = user包指定artifact_id对应的实际图像，逐张标frame_id、pair_id、side、phase、hover状态。路径不等于模型已收到/已查看图像；传图或view_image成功记录由harness归档。
+assistant最终 = 一个output JSON。工具调用/日志单独归档，不混入最终JSON。
+所有artifact由注册表解析为绝对路径或内存附件，并携带SHA256、producer、build_hash、state_hash、scenario_id、时间、证据类别。旧证据只能在匹配指纹时复用。未经注册的证据引用不可通过。
+
+交接顺序
+0 runner固定run_contract、prompt_bundle、原始基线、champion和预算，记录源码/程序集/场景状态指纹。
+1 Controller(plan)→exploration_request。
+2 Explorer→evidence_bundle。runner校验来源、权限、状态及原始输出格式。
+3 Controller(select)→repair_packet。诊断证据不足则补证，不把假设传给Editor当事实。
+4 runner创建parent不可变归档，授予单一Editor写入UI范围→Editor输出edit_report。
+5 runner冻结候选，独立检查差异、编译、运行程序集、路线几何、少量正式动作结果、截图和页面/信息约束。不能用源码SHA代替已加载程序集证明。
+6 Verifier盲查问题是否存在；Visual Reviewer匿名评成对截图。这两个任务可并行只读，Unity实际操作必须单一执行者串行。
+7 runner计算逐issue verdict、成本与硬门禁→Monitor建议→runner应用预先冻结的采用策略，更新checklist，保留所有候选及失败版本。
+
+输入可见性
+Controller：目标、checklist、成本热点、摘要；select阶段额外看探索证据。不写UI。
+Explorer：待观察问题、授权场景、动作完整参数、现有截图与控件；不写UI。
+Editor：一个主问题、至多两个相关小问题、证据、允许文件、必须保留项及验收要求。不看隐蔽验收样本，不改测量代码。
+Verifier：原问题描述及当前匿名版本的可观察证据。剥离Editor报告、diff、预期收益、是否尝试及新旧映射。
+Visual Reviewer：匿名A/B原图、必要信息清单、配对条件；剥离版本名、路径中的版本、实现者说明和指标。不可仅在文本中说匿名而保留v10/candidate文件名。
+Monitor：runner验证的结构化摘要，不给原图和Editor辩解。
+同一Luna模型可担任全部角色，但验证/审美会话独立。单纯“system里要求不看”不构成读取权限隔离；runner必须裁剪输入和工具权限。
+Verifier和Visual Reviewer不接收run_id/round_id；只接收独立随机review_session_id。artifact_id使用随机匿名别名，私有日志保管其与真实run、版本、源码和文件的映射，不能从文件名或元数据解盲。
+Explorer输入额外明确state_certificate_ref、action_bindings_ref、transition_context_ref：证书必须绑定build/场景/原生状态与RNG指纹、完整动作参数和实体ID、A结束指针/面板/选择与B初态。Verifier读取匿名build别名及当前状态证书，不读取版本先后。
+
+三种程序对象不得混进模型输出
+run_contract：目标点击降30%/路径降20%、固定1920×1080、必要信息与规则语义、页面计数规则、固定频率/样本及预算。阶段内不修改阈值或分母。
+runner_evidence：真实动作日志、完整参数、原生前后状态、截图/控件、代码/资源/程序集SHA、静态和运行时门禁。模型只引用。
+decision_record：证据有效性、逐issue结果、候选是否采用、champion与停止原因，由程序写。模型不能直接生成accepted=true。
+
+成本口径
+历史850374转移与1009行为组合保持固定。此前有限成本权重836420.25、原UI不可完成13953.75、未分类0仅为v10归档事实，不直接填作新轮测量。原UI不可完成不填0；单列可达性账本，验收口径仍待用户确定，不阻止本次prompt/IO设计。
+对固定基线可完成集合比较候选；任何新不可达项使门禁失败，不得从集合删除。新解锁的路径记录功能收益；无原有限成本，不捏造百分比下降。两个旧几何投影继续标估算，不当作实际点击。
+calculate_context_ui_cost.py含v2—v7硬编码转换，不能用于任意新布局。新布局需要读取实际控件/页面图，编译同意图路线后独立计算；否则成本输出unknown，不更新champion。
+每个行为记录clicks、page_visits、page_switches、mouse_path_px；A→B需保留A结束坐标/面板/分页/选择，不重置到屏幕中心。静态几何不能推断延迟、动画等待、误点率或真实主观流畅度。
+
+状态组织
+checklist issue状态：hypothesis / confirmed / in_progress / verified / reopened / unobserved。模型返回观察；runner按证据转移。verified后发现退化则reopened。
+Verifier观察：still_there / gone / not_exercised。
+程序合并：attempted=true且gone→fixed；true且still_there→failed；false且gone→fixed_incidentally；false且still_there→not_attempted；任意且not_exercised→unobserved；缺Editor报告则attempt_unknown（本项目采取比源代码更严格的处理）。
+硬门禁：pass / fail / unknown。unknown既不是pass，也不是产品故障。缺图、连接失败、版本未加载、无规则结果证据时先补证；不得当作饱和。
+Monitor推荐不等于决定。promotion政策需在启动循环前冻结；不得直接照抄论文允许任务半分数下降0.05的容忍，项目必要信息不允许被抵消。
+
+落地边界
+contract.schema.json描述统一消息；examples.json是合成的结构示例，不含真实新测量、不是一次已执行迭代。schemas只检结构；还需runner校验引用SHA/版本/角色读写白名单、状态配对、输出字段与真实工具日志对应。禁止schema通过就宣称循环跑通。
+validation_rules.json列出启动前必须实现的语义校验；当前为契约要求，不是假定已有的执行能力。gone/still_there需要证据引用，截图评分需要已查看frame，promote需要有效引用，且程序仍须确认实际证据存在、两侧配对及所有门禁通过。

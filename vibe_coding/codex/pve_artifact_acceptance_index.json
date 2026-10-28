@@ -1,0 +1,28 @@
+{
+  "scope": "荣誉旌旗/公正之剑普通与焚毁的PVE交互；其他神器仍未完成",
+  "backendPassedUnique": 5,
+  "backend": [
+    "AutomationOutputs/RulesState/20260918_160135_ba2def9c",
+    "AutomationOutputs/RulesState/20260918_160927_0469c31b"
+  ],
+  "scene": "AutomationOutputs\\PveBattle\\20260918_161038_f27be9ac\\report.json",
+  "steps": 106,
+  "assertions": 270,
+  "files": {
+    "AutomationOutputs/PveBattle/20260918_161038_f27be9ac/report.json": "beecd8fbafbda6f0c30a31d3cab4cb2ba35888c2c89628edd1d4794ec37ae028",
+    "AutomationOutputs/PveBattle/20260918_161038_f27be9ac/console_final.json": "248c335e7f637718d744d59d41adbec8a3ccee54c7e5a97fe41172c2861727f0",
+    "AutomationOutputs/PveBattle/20260918_161038_f27be9ac/captures/010_荣誉旌旗实际去向.png": "1a1c826544ec091b2a6cf2784808762be9cf43ebc7515730d5cac551cec5ef5f",
+    "AutomationOutputs/PveBattle/20260918_161038_f27be9ac/captures/014_旌旗令寒冰格挡加一并奖励名望.png": "d47ba9f3fd182b60287bedc0c3ac50de310822b9711e2878d0c1fca178d6b84a",
+    "AutomationOutputs/PveBattle/20260918_161038_f27be9ac/captures/021_推进_Melee.png": "96904fc8bf5300215af08ab586103812d5dca4a13d7e8e221283d3947788a017",
+    "AutomationOutputs/PveBattle/20260918_161038_f27be9ac/captures/034_推进_End.png": "e4d2f9d84624d38da445c20fdc0c8dc80c7cdf6ef79546be4ceaf2e2062b94b2",
+    "AutomationOutputs/PveBattle/20260918_161038_f27be9ac/captures/039_荣誉旌旗实际去向.png": "499fa84b3ea0735eb8c7d106543baa527c636275cbe0b899739c999f4380d294",
+    "AutomationOutputs/PveBattle/20260918_161038_f27be9ac/captures/043_旌旗令寒冰格挡加一并奖励名望.png": "6dff14a5ac58cb699356efb7f309adff2a86fe28a5daea209787b7b670665633",
+    "AutomationOutputs/PveBattle/20260918_161038_f27be9ac/captures/050_推进_Melee.png": "96904fc8bf5300215af08ab586103812d5dca4a13d7e8e221283d3947788a017",
+    "AutomationOutputs/PveBattle/20260918_161038_f27be9ac/captures/063_推进_End.png": "e4d2f9d84624d38da445c20fdc0c8dc80c7cdf6ef79546be4ceaf2e2062b94b2",
+    "AutomationOutputs/PveBattle/20260918_161038_f27be9ac/captures/080_确认所选真实材料.png": "5b01db14d42fb65d73beb84c3892e894bf05630cc93f62f5b51ae07fb74c4b36",
+    "AutomationOutputs/PveBattle/20260918_161038_f27be9ac/captures/081_正义之剑普通或焚毁去向.png": "6213e01d395a058802f0b74311168c0ba910310498d077a9ac3cd2334a684892",
+    "AutomationOutputs/PveBattle/20260918_161038_f27be9ac/captures/084_推进_End.png": "7d4d2977883f18a061735c491fb8ddb0e196bc5428af1e209b56c6779415fbac",
+    "AutomationOutputs/PveBattle/20260918_161038_f27be9ac/captures/100_正义之剑普通或焚毁去向.png": "d7b0879e59ae90cd2e197dcbfba71447c496bbefc23ee163bc4271531fb71ce0",
+    "AutomationOutputs/PveBattle/20260918_161038_f27be9ac/captures/105_推进_End.png": "e1a666db9508922eaef8a8aeccb0c289910d76c06759180d9e31553e7dad4d54"
+  }
+}

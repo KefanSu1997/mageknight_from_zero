@@ -1,0 +1,41 @@
+{
+  "scope": "Owned Puppet actual stored token block consumer and Duel actual unit block disqualification; not headband special borrowing",
+  "steps": 142,
+  "assertions": 189,
+  "segments": [
+    {
+      "mode": "duel",
+      "run": "20260929_144017_61ee8618",
+      "start": 0,
+      "endExclusive": 40,
+      "assertions": 50,
+      "sha256": "b9e9fb83d5bb856e1f6be32c823d75060394cdd57882962f59aa931b4f919751"
+    },
+    {
+      "mode": "duel",
+      "run": "20260929_144158_40543f20",
+      "start": 40,
+      "endExclusive": 62,
+      "assertions": 33,
+      "sha256": "c22af9de07a0c8256ec32e53730952f29338b7bc711094e60380addc29ef54ab"
+    },
+    {
+      "mode": "puppet",
+      "run": "20260929_144309_d8f29876",
+      "start": 0,
+      "endExclusive": 80,
+      "assertions": 106,
+      "sha256": "12c6e4ea636b47be2a49348a7af53ce8d287d1ff38ed1c924925f6118901a0b1"
+    }
+  ],
+  "reviewedScreenshots": [
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_144158_40543f20\\captures\\040_实际单位贡献参与同敌完整格挡.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_144158_40543f20\\captures\\048_单位已作用该敌，仅原名望2，没有决斗额外1.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_144309_d8f29876\\captures\\048_保存实际标记至以后回合.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_144309_d8f29876\\captures\\059_哨卫护甲3向上取半产生物理格挡2.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_144309_d8f29876\\captures\\065_傀儡加真实蓝费原决心完整格挡迅捷6.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_144309_d8f29876\\captures\\076_真实攻击4击败原狼骑兵.png"
+  ],
+  "console": "tmp/pve_persistent_primary_console_final.json",
+  "backendReused": "tmp/persistent_primary_scene_gap_20260929.md"
+}

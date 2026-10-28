@@ -1,0 +1,9 @@
+# 多敌RL必须显式适配每个正式输入
+
+只增加敌人列表不能形成完整多敌操作空间。攻击需要分开编码目标集合和实际贡献集合，格挡与针对攻击的技能需要真实敌人和攻击槽；同名敌人和跨回合幸存者按实例识别。
+
+EnemyDefenseState.PreviewAssignments在多个Defend来源/目标尚未选定时会拒绝攻击。若合法掩码只预演AttackSelected，这些可通过正式选择解决的攻击会被错误地当作不可执行。适配DefendChoices/ChooseDefend和ClearDefendChoices，观察预选与已应用关系，预演恢复须比较这些关系。
+
+运行旧批次时可以编辑下一版源代码，但不覆盖旧进程程序集；run_manifest按启动源码和DLL哈希定位证据。动作范围、课程改变后，旧配对胜率不能转记到新模型或作为公平提升。
+
+代码及记录：tools/BattleRl/JourneyTraining.cs；tools/BattleRl/trajectory_audit.py；vibe_coding/codex/worklog_2026-10-03_ppo_multi_enemy.md。

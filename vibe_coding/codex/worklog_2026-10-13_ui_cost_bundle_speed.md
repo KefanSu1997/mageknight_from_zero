@@ -1,0 +1,9 @@
+# UI cost batching and evidence output speed
+
+User authorized reducing samples and prioritizing speed. Retain the frozen 4,083 selected IDs across all 1,009 Kind pairs, cap five, original cohorts/weights and failed attempts. Earlier 12,350-sample plan remains archived. No training process, rules or weights changed.
+
+Fast result checkpoints now stream the already-written immutable per-case JSON rather than repeatedly encoding all snapshots. Atomic replace and permission retry remain. Source manifests disclose this mode. Full JSON equality verified on the completed 75-case repeat batch, SHA 9c67183b986f3d0e186cc6e5a37db7cf9b0ab2e134850d2188c08be21917a6f9. Benchmark evidence: AutomationOutputs/UiFluency/20261013_bundle_speed/benchmark.json. Three encode/stream trials: 1.828/3.865, 3.081/0.789, 3.228/1.289 seconds. The cold filesystem trial was slower; warm gains are not an end-to-end speed claim.
+
+Replay order now defaults to archive/episode/step, with --replay-order group retained for comparisons. Limits are applied before sorting, preserving the exact selected subset. Each case still resets its exact native task and independently replays its prefix; only archive cache locality changes. An eight-document cache simulation on these 75 IDs reduces decodes from67 to56, not a measured replay factor.
+
+The completed repeat batch has51 accepted cases and24 retained failures. Independent verifier passed102 native-effect snapshots. Exact-SHA ingestion updated progress to2,486 measured,494 fully measured groups,556 resolved groups and106 verified incompatible samples. Overall baseline remains incomplete. Existing owned pilot was reused for a five-case advance-to-source smoke run with the new bundle writer; all five completed. Its separate verifier result is the authority for native checks.

@@ -1,0 +1,286 @@
+diff --git a/AGENTS.md b/AGENTS.md
+index 6904e2c..e3fbbac 100644
+--- a/AGENTS.md
++++ b/AGENTS.md
+@@ -24,6 +24,8 @@
+ 
+ 11. 禁止使用batchmode或者用命令行直接调用unity.exe，这会导致命令挂起卡住。
+ 
++12. MCP retry rule: on `hint=retry` or `ping not answered`, do not rapid-retry. Run `refresh_unity(wait_for_ready=true)` before each retry, use exponential backoff (2s -> 4s -> 8s -> 16s, cap 30s) via active polling, and restart MCP session after repeated consecutive failures.
++
+ ## 经验索引
+ 
+ - DeckViewer 浮窗调试：Canvas 排序、RectTransform sizeDelta 与烟雾测试要点 —— `vibe_coding/codex/project_experience/deck_discard_viewer_notes.md`
+@@ -33,6 +35,7 @@
+ - 理想卡组截图调优：立绘高光透明度、魔法阵/星云叠层与牌堆位置透明度指南 —— `vibe_coding/codex/project_experience/deck_ideal_layout_notes.md`
+ - Imdream 下载偶发 EOF：imdream_query.ps1 失败重试与下载参数要点 —— `vibe_coding/codex/project_experience/imdream_query_download_retry_2026-01-05.md`
+ - DeckIdeal 素材替换审计记录：输出路径/替换路径/导入要点 —— `vibe_coding/codex/project_experience/deck_ideal_asset_trace_log_2026-01-06.md`
++- RR1/RR3 QA recovery: targeted rollback for `McpHttpBridgeMenu.cs` and compile_status root-field contract sync —— `vibe_coding/codex/project_experience/qa_rr1_rr3_mcp_bridge_rollback_and_compile_status_root_fields_2026-03-04.md`
+ 
+ ---
+ 
+diff --git a/Assets/Scripts/SceneAutomation/ElementCardsManualCaptureRunner.cs b/Assets/Scripts/SceneAutomation/ElementCardsManualCaptureRunner.cs
+index dc266f0..68e1626 100644
+--- a/Assets/Scripts/SceneAutomation/ElementCardsManualCaptureRunner.cs
++++ b/Assets/Scripts/SceneAutomation/ElementCardsManualCaptureRunner.cs
+@@ -109,11 +109,6 @@ private static void AutoStartIfQueued()
+                 return;
+             }
+ 
+-            if (SceneAutomationRuntimeState.PendingRequest != null)
+-            {
+-                return;
+-            }
+-
+             var queued = UnityEditor.SessionState.GetBool(PendingSessionKey, false);
+             var triggeredByFile = HasFileTrigger();
+             if (!queued && !triggeredByFile)
+@@ -121,6 +116,12 @@ private static void AutoStartIfQueued()
+                 return;
+             }
+ 
++            if (SceneAutomationRuntimeState.PendingRequest != null)
++            {
++                SceneAutomationRuntimeState.Clear();
++                Debug.LogWarning("[ElementCardsManualCapture] Cleared stale SceneAutomation pending request before manual capture.");
++            }
++
+             var activeScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene();
+             if (!activeScene.IsValid() || activeScene.name != "Part1_ElementCardsShowcase")
+             {
+diff --git a/Assets/Scripts/SceneAutomation/SceneAutomationBootstrap.cs b/Assets/Scripts/SceneAutomation/SceneAutomationBootstrap.cs
+index d7d1fd7..190c318 100644
+--- a/Assets/Scripts/SceneAutomation/SceneAutomationBootstrap.cs
++++ b/Assets/Scripts/SceneAutomation/SceneAutomationBootstrap.cs
+@@ -1,4 +1,5 @@
+ using UnityEngine;
++using System.IO;
+ 
+ namespace MageKnight.SceneAutomation
+ {
+@@ -10,6 +11,18 @@ public static class SceneAutomationBootstrap
+         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
+         private static void InstallOrchestrator()
+         {
++            // Manual capture flow must not be preempted by SceneAutomationOrchestrator.
++            if (IsManualCaptureRequested())
++            {
++                if (SceneAutomationRuntimeState.PendingRequest != null)
++                {
++                    SceneAutomationRuntimeState.Clear();
++                    Debug.LogWarning("[SceneAutomationBootstrap] Cleared stale pending request for manual capture flow.");
++                }
++
++                return;
++            }
++
+             if (SceneAutomationRuntimeState.PendingRequest == null)
+             {
+                 return;
+@@ -25,5 +38,21 @@ private static void InstallOrchestrator()
+             host.hideFlags = HideFlags.HideAndDontSave;
+             host.AddComponent<SceneAutomationOrchestrator>();
+         }
++
++        private static bool IsManualCaptureRequested()
++        {
++#if UNITY_EDITOR
++            if (UnityEditor.SessionState.GetBool("MageKnight.ElementCardsManualCapture.Pending", false))
++            {
++                return true;
++            }
++#endif
++
++            var projectRoot = Path.GetFullPath(Path.Combine(Application.dataPath, ".."));
++            var triggerPath = Path.GetFullPath(Path.Combine(
++                projectRoot,
++                "multi-agent-workspace/runs/T-20251028-020/manual_capture_trigger.flag"));
++            return File.Exists(triggerPath);
++        }
+     }
+ }
+diff --git a/multi-agent-workspace/runs/T-20251028-020/compile_status.json b/multi-agent-workspace/runs/T-20251028-020/compile_status.json
+new file mode 100644
+index 0000000..bdf8313
+--- /dev/null
++++ b/multi-agent-workspace/runs/T-20251028-020/compile_status.json
+@@ -0,0 +1,36 @@
++{
++  "ok": true,
++  "schemaVersion": 2,
++  "source": "unity-mcp.read_console",
++  "commit": "dcbecfe44fd26fe4c7880880b54bda34b7c5d8ae",
++  "errorCount": 0,
++  "scannedAtUtc": "2026-03-03T22:27:00.6084600Z",
++  "scans": [
++    {
++      "scanIndex": 1,
++      "errorCount": 0,
++      "errors": [],
++      "scannedAtUtc": "2026-03-03T22:27:00.6009828Z",
++      "query": {
++        "include_stacktrace": true,
++        "types": [
++          "error"
++        ],
++        "count": 1000
++      }
++    },
++    {
++      "scanIndex": 2,
++      "errorCount": 0,
++      "errors": [],
++      "scannedAtUtc": "2026-03-03T22:27:00.6084600Z",
++      "query": {
++        "include_stacktrace": true,
++        "types": [
++          "error"
++        ],
++        "count": 1000
++      }
++    }
++  ]
++}
+diff --git a/multi-agent-workspace/runs/T-20251028-020/review_bundle/artifacts/compile_status.json b/multi-agent-workspace/runs/T-20251028-020/review_bundle/artifacts/compile_status.json
+new file mode 100644
+index 0000000..bdf8313
+--- /dev/null
++++ b/multi-agent-workspace/runs/T-20251028-020/review_bundle/artifacts/compile_status.json
+@@ -0,0 +1,36 @@
++{
++  "ok": true,
++  "schemaVersion": 2,
++  "source": "unity-mcp.read_console",
++  "commit": "dcbecfe44fd26fe4c7880880b54bda34b7c5d8ae",
++  "errorCount": 0,
++  "scannedAtUtc": "2026-03-03T22:27:00.6084600Z",
++  "scans": [
++    {
++      "scanIndex": 1,
++      "errorCount": 0,
++      "errors": [],
++      "scannedAtUtc": "2026-03-03T22:27:00.6009828Z",
++      "query": {
++        "include_stacktrace": true,
++        "types": [
++          "error"
++        ],
++        "count": 1000
++      }
++    },
++    {
++      "scanIndex": 2,
++      "errorCount": 0,
++      "errors": [],
++      "scannedAtUtc": "2026-03-03T22:27:00.6084600Z",
++      "query": {
++        "include_stacktrace": true,
++        "types": [
++          "error"
++        ],
++        "count": 1000
++      }
++    }
++  ]
++}
+diff --git a/vibe_coding/codex/worklog_2026-03-04_T-20251028-020_round34.md b/vibe_coding/codex/worklog_2026-03-04_T-20251028-020_round34.md
+new file mode 100644
+index 0000000..07fc61b
+--- /dev/null
++++ b/vibe_coding/codex/worklog_2026-03-04_T-20251028-020_round34.md
+@@ -0,0 +1,62 @@
++# Round 34 Worklog (T-20251028-020)
++
++## Scope
++- Fix QA reject points RR1 and RR3 without introducing unrelated edits.
++- Re-run Unity error-only compile checks twice and archive evidence.
++- Produce reviewable real git diff output for ElementCardsShowcase-related code.
++
++## Actions and Evidence
++1. RR1 targeted audit and rollback (`Assets/Editor/McpHttpBridgeMenu.cs`)
++- Branch checked: `feat/part1-ideal-deck-ui`
++- Initial state:
++  - `git status --short` showed `M Assets/Editor/McpHttpBridgeMenu.cs`
++  - `git diff -- Assets/Editor/McpHttpBridgeMenu.cs` showed `internal/private -> public` changes.
++- Decision basis:
++  - Round rubric requires this file to be identical to `HEAD` at end of round.
++- Action:
++  - `git restore --source=HEAD -- "Assets/Editor/McpHttpBridgeMenu.cs"`
++- Verification:
++  - `git diff -- Assets/Editor/McpHttpBridgeMenu.cs` => empty output.
++  - Final `git status --short` no longer contains this file.
++
++2. RR2 Unity compile error scanning (standard flow, error-only, twice)
++- MCP availability check:
++  - `manage_editor(action="telemetry_ping")` succeeded.
++- Refresh/compile trigger:
++  - `execute_menu_item(menu_path="Assets/Refresh")` succeeded.
++- Console isolation:
++  - First error pull contained tool-operation errors from invalid menu/path attempts.
++  - `read_console(action="clear")` executed to isolate new scan window.
++- Required scans:
++  - Scan 1 query: `types=["error"]`, `count=1000`, `include_stacktrace=true`
++  - Scan 1 result: `errorCount=0`
++  - Scan 2 query: `types=["error"]`, `count=1000`, `include_stacktrace=true`
++  - Scan 2 result: `errorCount=0`
++
++3. RR3 compile_status contract repair (top-level required fields)
++- Files rewritten with identical payload:
++  - `multi-agent-workspace/runs/T-20251028-020/compile_status.json`
++  - `multi-agent-workspace/runs/T-20251028-020/review_bundle/artifacts/compile_status.json`
++- Top-level required fields now present:
++  - `commit = dcbecfe44fd26fe4c7880880b54bda34b7c5d8ae`
++  - `errorCount = 0`
++  - `scannedAtUtc = 2026-03-03T22:27:00.6084600Z`
++- Both files also keep `scans[]` with 2 entries and per-scan query metadata.
++- Equality check:
++  - Both files SHA256: `957536B1F104E9226166DA6EB6D163E3FABA23060F66010B3152824E22651BC4`
++
++4. RR4 real git diff evidence output
++- Command used:
++  - `git diff -- Assets/Scripts/SceneAutomation/ElementCardsManualCaptureRunner.cs Assets/Scripts/SceneAutomation/SceneAutomationBootstrap.cs multi-agent-workspace/runs/T-20251028-020/compile_status.json multi-agent-workspace/runs/T-20251028-020/review_bundle/artifacts/compile_status.json > vibe_coding/codex/round34_git_diff.patch`
++- Output artifact:
++  - `vibe_coding/codex/round34_git_diff.patch`
++- Artifact content includes reviewable code diffs for:
++  - `Assets/Scripts/SceneAutomation/ElementCardsManualCaptureRunner.cs`
++  - `Assets/Scripts/SceneAutomation/SceneAutomationBootstrap.cs`
++
++## Final Snapshot
++- `git status --short`:
++  - `M Assets/Scripts/SceneAutomation/ElementCardsManualCaptureRunner.cs`
++  - `M Assets/Scripts/SceneAutomation/SceneAutomationBootstrap.cs`
++- `Assets/Editor/McpHttpBridgeMenu.cs`:
++  - No diff against `HEAD`.
+diff --git a/vibe_coding/codex/project_experience/qa_rr1_rr3_mcp_bridge_rollback_and_compile_status_root_fields_2026-03-04.md b/vibe_coding/codex/project_experience/qa_rr1_rr3_mcp_bridge_rollback_and_compile_status_root_fields_2026-03-04.md
+new file mode 100644
+index 0000000..5da3717
+--- /dev/null
++++ b/vibe_coding/codex/project_experience/qa_rr1_rr3_mcp_bridge_rollback_and_compile_status_root_fields_2026-03-04.md
+@@ -0,0 +1,27 @@
++# QA RR1/RR3 Recovery: targeted rollback + compile_status root contract
++
++## Context
++- QA round failed on:
++  - RR1: `Assets/Editor/McpHttpBridgeMenu.cs` changed while round note claimed untouched.
++  - RR3: `compile_status.json` missed required top-level summary fields.
++
++## What worked
++- Use targeted rollback for RR1 file:
++  - `git restore --source=HEAD -- "Assets/Editor/McpHttpBridgeMenu.cs"`
++  - Verify with `git diff -- Assets/Editor/McpHttpBridgeMenu.cs` (must be empty).
++- Rebuild compile evidence with strict root fields:
++  - Required top-level fields: `commit`, `errorCount`, `scannedAtUtc`.
++  - Keep `scans[]` for two `read_console(types=["error"], count=1000, include_stacktrace=true)` checks.
++  - Write identical JSON to both required paths and compare SHA256.
++
++## Pitfalls
++- `Assets/Refersh` menu path is invalid; use `Assets/Refresh`.
++- Calling `refresh_unity` can fail in some sessions with unsupported-command errors; keep compile proof anchored on `read_console` scans.
++- Error scans can be polluted by tool operation errors; clear console before official two-scan evidence window.
++
++## Reusable checklist
++1. Audit target file against `HEAD` and rollback if rubric requires no diff.
++2. Trigger refresh, then run two error-only scans with stacktrace enabled.
++3. Write dual `compile_status.json` with root summary + scans.
++4. Validate two files are byte-identical (hash).
++5. Export real `git diff` patch for reviewer audit trail.

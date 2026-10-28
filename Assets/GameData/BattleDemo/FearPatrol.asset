@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee4aa6fca28083944af06e7d1543142e, type: 3}
+  m_Name: FearPatrol
+  m_EditorClassIdentifier: MageKnight.Scripts::MageKnight.Battle.BattleEncounter
+  displayName: "\u5973\u5DEB\u4E0E\u53CC\u54E8\u536B"
+  originalMonsterJson: {fileID: 4900000, guid: 1195e7de584f2f1428f58a7ec6cd347c, type: 3}
+  enemies:
+  - originalId: monster_015
+    displayName: "\u5E7D\u9B42\u5973\u5DEB"
+    originalToken: {fileID: 2800000, guid: 1d5d7aefdd64be246a7fdd46ac8e7cfe, type: 3}
+  - originalId: monster_032
+    displayName: "\u517D\u4EBA\u9AB7\u9AC5\u6218\u58EB"
+    originalToken: {fileID: 2800000, guid: ea13897e26326be47ba794365b8ea863, type: 3}
+  - originalId: monster_032
+    displayName: "\u517D\u4EBA\u9AB7\u9AC5\u6218\u58EB"
+    originalToken: {fileID: 2800000, guid: ea13897e26326be47ba794365b8ea863, type: 3}
+  background: {fileID: 2800000, guid: 06a939b592349e141ac9ff2eadfcdaa6, type: 3}
+  dayPart: 0

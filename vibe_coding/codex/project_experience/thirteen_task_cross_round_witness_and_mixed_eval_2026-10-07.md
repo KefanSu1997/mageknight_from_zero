@@ -1,0 +1,11 @@
+# 多战新见证与相反方向的评估变化
+
+按实际欠覆盖意图选七英雄各一个未试训练构筑，七次654步得到Tovak017→018完整59步见证，跨Day→Night且同物理实体保留；其余六未知（无合法后续或回合上限），不是初始不可解。14997有限审计零错误。训练池12→13当前数据认证，显式迁移72参数/Adam数组与RNG/历史完全不变、Adam121/episode200。
+
+真实Recurrent PPO64新局2962步25完整成功/28组胜、69795有限检查零错误，CPU224.198秒，自然退出并保存264局11330步Adam137。累计模式87/单位14/技能19/配对16；严格当前数据绑定85/14/19/16，费用材料消费者、UI验收仍另行记录。只选中、装入、生成不等于消费。
+
+新见证魔法天赋强效：原蓝费用实际Blue晶1，另Green标记1取得Green原magic001，从供应移除、本体手→played、新物理39出生discard，正式昼夜轮次后同39到draw；原图已读取。没有后续发动该法术，基础模式/Unity缺口不补假证据。
+
+同13任务冻结分层校准7/13→5/13，丢失Tovak新双战与Wolfhawk单战成功，失败保留。预先固定四validation构筑全结果（不只成功子集）新模型2/4：Goldyx与Wolfhawk双战成功、Braevalar/Arythea未知。发展验证不是untuned test；样本小而指标方向相反，不能宣布新模型整体更好或通用通过，保留两实际检查点与来源SHA。旧覆盖与新训练记录不篡改为同一权重行为。
+
+证据：AutomationOutputs/BattleRl/20261007_thirteen_task_iteration_summary.json、seven_hero_unattempted_hierarchical_discovery、thirteen_task_training、thirteen_task_four_fixed_validation、tovak_magic_talent_real_acquisition_review.json。无源码/规则/场景修改，不重复旧Unity检查；没有活进程观察超时重启、上传/远端推送或用户程序终止。下一步实际失败决策信用、更多原消费者、广验证与完整保存策略Unity仍待推进。

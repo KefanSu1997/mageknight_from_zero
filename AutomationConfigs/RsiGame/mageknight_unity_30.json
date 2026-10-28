@@ -1,0 +1,64 @@
+{
+  "experiment_id": "20261021_mageknight_unity_30",
+  "target": {
+    "engine": "Unity",
+    "project_path": "D:/study_and_work/unity-MK-test/MageKnight_from_zero",
+    "game": "MageKnight",
+    "use_external_benchmark_game": false
+  },
+  "rounds": 30,
+  "stop_after_first_round": false,
+  "model_policy": {
+    "default": "gpt-6-luna",
+    "overrides": {
+      "editor": "gpt-6.1-sol"
+    },
+    "aliases": {
+      "repair": "editor",
+      "coding_agent": "editor"
+    },
+    "other_roles": [
+      "controller",
+      "explorer",
+      "checklist_reader",
+      "grounder",
+      "ranker",
+      "polish_reader",
+      "polish_goal",
+      "verifier",
+      "comparator",
+      "monitor",
+      "proxy_estimator",
+      "director"
+    ],
+    "record_requested_and_executed_model_per_call": true,
+    "silent_model_fallback_allowed": false
+  },
+  "method_basis": {
+    "repository": "https://github.com/WenyiWU0111/RSIGame",
+    "commit": "1214b342fce22e97fe19bfc56be189d06f44634b",
+    "preserve_original_substeps_and_prompt_contracts": true,
+    "preserve_conditional_branches": true,
+    "quality_directions": [
+      "correctness",
+      "completeness",
+      "feedback",
+      "presentation"
+    ],
+    "ui_click_or_mouse_path_target": null,
+    "checkpoint_interval": 3,
+    "archive_every_round": true,
+    "model_and_unity_backend_changes_recorded_separately": true
+  },
+  "execution": {
+    "state": "starting_original_unity_loop",
+    "single_unity_operator": true,
+    "single_editor_writer": true,
+    "retain_existing_user_changes": true,
+    "retain_rejected_versions_and_failure_evidence": true,
+    "completed_rounds": 0,
+    "compile_gate": "two actual Console zero-error observations passed",
+    "baseline_actual_clicks": 5
+  },
+  "supersedes_wrong_target_experiment": "AutomationOutputs/RsiGame/experiments/20261021_luna_original_01"
+}

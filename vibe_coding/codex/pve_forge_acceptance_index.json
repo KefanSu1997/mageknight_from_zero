@@ -1,0 +1,24 @@
+{
+  "scope": "高蒂克斯白/绿/红晶锻造正式蓝晶与临时魔力，实际原卡与部队消费、同轮重复拒绝、溢出蓝魔力优先支付、真实击杀及战后次数保留。轮间重置仅后台，完整轮间场景与全部组合未完成。",
+  "backend": "AutomationOutputs/RulesState/20260918_200652_4ff1ed0b",
+  "backendPassedUnique": 8,
+  "scene": "AutomationOutputs/PveBattle/20260918_200827_a1b61c82/report.json",
+  "battles": 4,
+  "steps": 136,
+  "assertions": 373,
+  "visualReviewed": 9,
+  "files": {
+    "AutomationOutputs/PveBattle/20260918_200827_a1b61c82/report.json": "15141237e9a59b193d50375ef5eed390234c54ef9253de15e250519b9e4759b0",
+    "AutomationOutputs/PveBattle/20260918_200827_a1b61c82/console_final.json": "8d62f369865d478d110ffb57efc54be5aff20c4f4af96e654eba68ad28fb3864",
+    "AutomationOutputs/RulesState/20260918_200652_4ff1ed0b/summary.json": "e039b49faf1495c6362ed148f1e1cd03f9279a63f5b20e2c7cc2b81b1ab56fdf",
+    "AutomationOutputs/PveBattle/20260918_200827_a1b61c82/captures/035_实际锻造蓝晶与临时魔力.png": "aba2ec9da337c4fbd31e551300d9358395008f16358bbc9f92cf7fcb243a5558",
+    "AutomationOutputs/PveBattle/20260918_200827_a1b61c82/captures/040_消费锻造资源发动原卡.png": "d3a7967b5027a06018f890836de1e9b7198639f7b575286d8dbaca9e6252df78",
+    "AutomationOutputs/PveBattle/20260918_200827_a1b61c82/captures/066_实际锻造蓝晶与临时魔力.png": "669ca8ef110307706179720f62975949cc62e71b18a326a411f5dfc318dab97b",
+    "AutomationOutputs/PveBattle/20260918_200827_a1b61c82/captures/071_消费绿色魔力发动攻城.png": "8e6cf0435e99d7c805f29c81871bce0effeb972b27f32495b918249c028ab0f8",
+    "AutomationOutputs/PveBattle/20260918_200827_a1b61c82/captures/090_实际锻造蓝晶与临时魔力.png": "25501ea886afecfe02db0dde0503d13a281ea2420842de3645224838b1613e1e",
+    "AutomationOutputs/PveBattle/20260918_200827_a1b61c82/captures/103_消费锻造资源发动原卡.png": "60ee47a76d596c88ed4d4bbafb5e2213191ff1c94ab0a87f53f4bc2bc9407f53",
+    "AutomationOutputs/PveBattle/20260918_200827_a1b61c82/captures/116_实际锻造蓝晶与临时魔力.png": "06127a165685f9b7bd733cfcf5d522c662d17a4607a65aabb327fa6727da5922",
+    "AutomationOutputs/PveBattle/20260918_200827_a1b61c82/captures/122_消费锻造资源发动原卡.png": "449eaa8d3315c0e77aaeaaf0f1100c6db5c380873a2870ebd5833634465d1f34",
+    "AutomationOutputs/PveBattle/20260918_200827_a1b61c82/captures/132_进入_End.png": "cf54d94448cc64a8c4625381dd5afa925dd58bcf2671dc196497803cf2c3acb2"
+  }
+}

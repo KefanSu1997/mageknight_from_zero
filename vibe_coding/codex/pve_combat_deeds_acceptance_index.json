@@ -1,0 +1,254 @@
+{
+  "scope": "十种原高级行动入口；后台本批26+直接回归2。场景分解基础、伏击基础、寒冰之盾强化、反戈基础、仪式攻击蓝材料强化，跨两回合同一玩家和幸存敌人。",
+  "backendPassed": 28,
+  "backendHistory": [
+    {
+      "run": "20260923_074100_3369926e",
+      "passed": 21,
+      "failed": [
+        "MK.Tests.Battles.PveCombatDeedEntryTests.BloodRageActualWoundAndPrintedRedPayRealAttack(False,False,2)",
+        "MK.Tests.Battles.PveCombatDeedEntryTests.BloodSurgeRealSelfWoundDrawAndOriginalPayment(\"base\",False)",
+        "MK.Tests.Battles.PveCombatDeedEntryTests.BloodSurgeRealSelfWoundDrawAndOriginalPayment(\"strong_red\",True)",
+        "MK.Tests.Battles.PveCombatDeedEntryTests.BloodSurgeRealSelfWoundDrawAndOriginalPayment(\"strong_green\",True)"
+      ],
+      "sha256": "14c220d3dcfe250a0d3daf34b2d0e37b52ccc6d8f0e4cbc6dfcd41472540dfe3"
+    },
+    {
+      "run": "20260923_074140_88485609",
+      "passed": 4,
+      "failed": [],
+      "sha256": "6af0c22151e44bd0780934832d1c7f9c7da3ac7885ef811ff2d2d10ac53a8174"
+    },
+    {
+      "run": "20260923_074326_5558b0a8",
+      "passed": 3,
+      "failed": [],
+      "sha256": "82d261469cf3c433bfd92a1500704826b2f2b47282b89af3bb72a9301dd0f7d4"
+    }
+  ],
+  "backendLatest": {
+    "MK.Tests.Battles.PveCombatDeedEntryTests.AmbushIceShieldCounterstrikeUsesRealBlockAndExpires(False)": {
+      "run": "20260923_074100_3369926e",
+      "result": "Passed"
+    },
+    "MK.Tests.Battles.PveCombatDeedEntryTests.AmbushIceShieldCounterstrikeUsesRealBlockAndExpires(True)": {
+      "run": "20260923_074100_3369926e",
+      "result": "Passed"
+    },
+    "MK.Tests.Battles.PveCombatDeedEntryTests.BloodRageActualWoundAndPrintedRedPayRealAttack(False,False,2)": {
+      "run": "20260923_074140_88485609",
+      "result": "Passed"
+    },
+    "MK.Tests.Battles.PveCombatDeedEntryTests.BloodRageActualWoundAndPrintedRedPayRealAttack(False,True,5)": {
+      "run": "20260923_074100_3369926e",
+      "result": "Passed"
+    },
+    "MK.Tests.Battles.PveCombatDeedEntryTests.BloodRageActualWoundAndPrintedRedPayRealAttack(True,False,4)": {
+      "run": "20260923_074100_3369926e",
+      "result": "Passed"
+    },
+    "MK.Tests.Battles.PveCombatDeedEntryTests.BloodRageActualWoundAndPrintedRedPayRealAttack(True,True,9)": {
+      "run": "20260923_074100_3369926e",
+      "result": "Passed"
+    },
+    "MK.Tests.Battles.PveCombatDeedEntryTests.BloodSurgeRealSelfWoundDrawAndOriginalPayment(\"base\",False)": {
+      "run": "20260923_074140_88485609",
+      "result": "Passed"
+    },
+    "MK.Tests.Battles.PveCombatDeedEntryTests.BloodSurgeRealSelfWoundDrawAndOriginalPayment(\"strong_red\",True)": {
+      "run": "20260923_074140_88485609",
+      "result": "Passed"
+    },
+    "MK.Tests.Battles.PveCombatDeedEntryTests.BloodSurgeRealSelfWoundDrawAndOriginalPayment(\"strong_green\",True)": {
+      "run": "20260923_074140_88485609",
+      "result": "Passed"
+    },
+    "MK.Tests.Battles.PveCombatDeedEntryTests.ChargeActualUnitConsumerAndLatePlayRejects(False)": {
+      "run": "20260923_074100_3369926e",
+      "result": "Passed"
+    },
+    "MK.Tests.Battles.PveCombatDeedEntryTests.ChargeActualUnitConsumerAndLatePlayRejects(True)": {
+      "run": "20260923_074100_3369926e",
+      "result": "Passed"
+    },
+    "MK.Tests.Battles.PveCombatDeedEntryTests.DecomposeActualMaterialPaysNextOriginalCardAndStaysRemoved(False)": {
+      "run": "20260923_074100_3369926e",
+      "result": "Passed"
+    },
+    "MK.Tests.Battles.PveCombatDeedEntryTests.DecomposeActualMaterialPaysNextOriginalCardAndStaysRemoved(True)": {
+      "run": "20260923_074100_3369926e",
+      "result": "Passed"
+    },
+    "MK.Tests.Battles.PveCombatDeedEntryTests.PermanentMaterialRejectsSelfWoundForeignBeforeFee(\"advanced_card_020\")": {
+      "run": "20260923_074100_3369926e",
+      "result": "Passed"
+    },
+    "MK.Tests.Battles.PveCombatDeedEntryTests.PermanentMaterialRejectsSelfWoundForeignBeforeFee(\"advanced_card_029\")": {
+      "run": "20260923_074100_3369926e",
+      "result": "Passed"
+    },
+    "MK.Tests.Battles.PveCombatDeedEntryTests.RitualActualMaterialColorProducesOriginalTypedContribution(False,\"basic_card_021\",5,Physical,Melee)": {
+      "run": "20260923_074100_3369926e",
+      "result": "Passed"
+    },
+    "MK.Tests.Battles.PveCombatDeedEntryTests.RitualActualMaterialColorProducesOriginalTypedContribution(True,\"basic_card_021\",6,Fire,Melee)": {
+      "run": "20260923_074100_3369926e",
+      "result": "Passed"
+    },
+    "MK.Tests.Battles.PveCombatDeedEntryTests.RitualActualMaterialColorProducesOriginalTypedContribution(False,\"basic_card_014\",3,Ice,Melee)": {
+      "run": "20260923_074100_3369926e",
+      "result": "Passed"
+    },
+    "MK.Tests.Battles.PveCombatDeedEntryTests.RitualActualMaterialColorProducesOriginalTypedContribution(True,\"basic_card_014\",4,ColdFire,Melee)": {
+      "run": "20260923_074100_3369926e",
+      "result": "Passed"
+    },
+    "MK.Tests.Battles.PveCombatDeedEntryTests.RitualActualMaterialColorProducesOriginalTypedContribution(False,\"basic_card_008\",3,Physical,Ranged)": {
+      "run": "20260923_074100_3369926e",
+      "result": "Passed"
+    },
+    "MK.Tests.Battles.PveCombatDeedEntryTests.RitualActualMaterialColorProducesOriginalTypedContribution(True,\"basic_card_008\",4,Fire,Ranged)": {
+      "run": "20260923_074100_3369926e",
+      "result": "Passed"
+    },
+    "MK.Tests.Battles.PveCombatDeedEntryTests.RitualActualMaterialColorProducesOriginalTypedContribution(False,\"basic_card_000\",2,Physical,Siege)": {
+      "run": "20260923_074100_3369926e",
+      "result": "Passed"
+    },
+    "MK.Tests.Battles.PveCombatDeedEntryTests.RitualActualMaterialColorProducesOriginalTypedContribution(True,\"basic_card_000\",3,Fire,Siege)": {
+      "run": "20260923_074100_3369926e",
+      "result": "Passed"
+    },
+    "MK.Tests.Battles.PveCombatDeedEntryTests.ShieldBashOriginalSwiftTargetAndKnightlyReward(False)": {
+      "run": "20260923_074100_3369926e",
+      "result": "Passed"
+    },
+    "MK.Tests.Battles.PveCombatDeedEntryTests.ShieldBashOriginalSwiftTargetAndKnightlyReward(True)": {
+      "run": "20260923_074100_3369926e",
+      "result": "Passed"
+    },
+    "MK.Tests.Battles.PveCombatDeedEntryTests.ContinuousMaterialAmbushCounterstrikeThenSameSurvivorRitual": {
+      "run": "20260923_074326_5558b0a8",
+      "result": "Passed"
+    },
+    "MK.Tests.Battles.PveDeedInputTests.ImprovisationExactMaterialCreatesRealAttack(False)": {
+      "run": "20260923_074326_5558b0a8",
+      "result": "Passed"
+    },
+    "MK.Tests.Battles.PveDeedInputTests.ImprovisationExactMaterialCreatesRealAttack(True)": {
+      "run": "20260923_074326_5558b0a8",
+      "result": "Passed"
+    }
+  },
+  "sceneSegments": [
+    {
+      "run": "20260923_074450_e42c5a4c",
+      "reportStatus": "failed",
+      "passedStepIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54
+      ],
+      "steps": 55,
+      "assertions": 79,
+      "sha256": "2a516d75796f838359a84055d9c9f0e81dd072eadc395add0b362d9e896123db"
+    },
+    {
+      "run": "20260923_074652_f9273e0e",
+      "reportStatus": "success",
+      "passedStepIndices": [
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63
+      ],
+      "steps": 9,
+      "assertions": 22,
+      "sha256": "63665e52e3c5238f4b31cee8f9fa14786a7a40b0ecff2782738deae8ef14964c"
+    }
+  ],
+  "sceneSteps": 64,
+  "sceneAssertions": 101,
+  "screenshotsReviewed": 8,
+  "screenshots": [
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_074450_e42c5a4c\\captures\\025_永久去除实际红色狂怒.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_074450_e42c5a4c\\captures\\026_同色两红晶与永久去除区.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_074450_e42c5a4c\\captures\\038_蓝晶付费，寒冰格挡3加伏击2.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_074450_e42c5a4c\\captures\\042_第一敌成功格挡减甲，第二敌造成真实两伤.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_074450_e42c5a4c\\captures\\049_留下实际幸存者，保留四张手牌含两伤.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_074652_f9273e0e\\captures\\055_选择实际原牌 advanced_card_029.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_074652_f9273e0e\\captures\\058_选择真实蓝色体力材料.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_074652_f9273e0e\\captures\\059_支付分解所得红晶，去除蓝材料得到冰火攻击4.png"
+  ],
+  "preservedFailure": {
+    "run": "20260923_074450_e42c5a4c",
+    "step": 55,
+    "reason": "仪式攻击按钮Label截断；仅缩短文案，55以后补验"
+  },
+  "finalConsole": "tmp/pve_20260923_combat_deeds_final_console.json",
+  "sourceSha256": {
+    "Assets/Logic/Runtime/Battles/PveDeedInputs.cs": "02deb7028dbf616c548a4ebbc464cdeef0bb980cdb397a761ad986ad5cf6ef6a",
+    "Assets/Logic/Runtime/Battles/PveBattleSession.cs": "47df62c2f5fc2eb9fd10fad94bd30e2d83d1781524d1591b8b618ab46fdef304",
+    "Assets/Scripts/Battle/PveBattleController.DeedInputs.cs": "4323ea6ece8ff440ea07af8fce289c12054b59423e540631a3b849f6557224a5",
+    "Assets/Tests/RulesState/PveCombatDeedEntryTests.cs": "6bd43960b36251890399a7f21523983882621e55befb4f9ffc0b7250b93bae77",
+    "tools/build_pve_combat_deeds_acceptance.py": "75ff0e26464622373d8c5aaba9aa25eb172646a687014d8139de738a341e1277"
+  },
+  "remaining": "新增其他分支及血色狂怒/冲锋/盾牌重击/骑士精神/血脉贲张集中场景仍待；其余原卡、部队、英雄技能、原世界继续，整体active。"
+}

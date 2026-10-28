@@ -1,0 +1,40 @@
+{
+  "scope": "Tome sacrifice separate payment/materials, crystal movement consumers, Trance exact discard return and formal draw consumption",
+  "steps": 85,
+  "assertions": 151,
+  "segments": [
+    {
+      "run": "20260929_134836_9ed4f314",
+      "start": 0,
+      "endExclusive": 31,
+      "assertions": 37
+    },
+    {
+      "run": "20260929_134942_da904d48",
+      "start": 31,
+      "endExclusive": 57,
+      "assertions": 53
+    },
+    {
+      "run": "20260929_135105_ddd18a9d",
+      "start": 57,
+      "endExclusive": 84,
+      "assertions": 50
+    },
+    {
+      "run": "20260929_135336_c467385b",
+      "start": 84,
+      "endExclusive": 85,
+      "assertions": 11
+    }
+  ],
+  "failuresPreserved": true,
+  "screenshotsReviewed": [
+    "20260929_134836_9ed4f314/030",
+    "20260929_134942_da904d48/038",
+    "20260929_135105_ddd18a9d/068",
+    "20260929_135105_ddd18a9d/082"
+  ],
+  "console": "tmp/pve_tome_material_world_console_final.json",
+  "fixtureRestored": true
+}

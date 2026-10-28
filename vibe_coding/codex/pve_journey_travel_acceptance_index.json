@@ -1,0 +1,27 @@
+{
+  "scope": "自定地形布局中的原移动卡实际位置/点数消费、减费与额外蓝费、同一牌回合末回收；非原版板块探索完成",
+  "sceneRun": "20260923_043515_4c99751a",
+  "passedSteps": 84,
+  "passedAssertions": 136,
+  "displayRun": "20260923_044030_0300aa44",
+  "displaySteps": 19,
+  "displayAssertions": 8,
+  "displayFixtureFailure": "20260923_043957_00775cbe",
+  "backend": [
+    "AutomationOutputs/RulesState/20260923_043246_f013891a"
+  ],
+  "backendPassed": 19,
+  "finalConsole": "tmp/pve_20260923_travel_final_console.json",
+  "screenshotsReviewed": 6,
+  "sourceSha256": {
+    "Assets/Logic/Runtime/Battles/PveJourneySession.cs": "37a8e56bb699eef1736bcdc791a71d32855979a4b425894f0b0c12f65609e9e9",
+    "Assets/Logic/Runtime/Battles/PveBattleSession.cs": "54c25d6bd6606d06b6bc6082c4624f81e3fca8714faf51e587de3cd63bfab1f4",
+    "Assets/Logic/Runtime/ActionContext.cs": "8e25200743e36225c609a135841ddf1bc8b22445df1ae598bfc5c39baff2d910",
+    "Assets/Scripts/Battle/PveBattleController.JourneyMap.cs": "0b48f814a85599d2c405cf73cee8111a3563944eaa0bb25eb2ac5a4085c66ea7",
+    "Assets/Scripts/Battle/PveBattleController.Journey.cs": "7ee3a1bc7cec1d7f243c5a30b462f92d48c9aa08305b2127eaf9d60d47fdcd11",
+    "Assets/Scripts/Battle/PveBattleController.JourneyHand.cs": "6b01fd6dfcb192376fd1ac2ea15f9e0a3919985efc5cfbcfe7604daf4a22b937",
+    "Assets/Scripts/SceneAutomation/Editor/PveBattleMenus.cs": "531c4232e2a0510e6dc5a61194e0b0d3f4ef521a9a052a17d533c36710fc8af5",
+    "Assets/Tests/RulesState/PveJourneyTravelTests.cs": "1e594db9bdaa67d871676e9b4ed6a6d12d59426dc82f410f89edc9f5d973ab01",
+    "tools/build_pve_journey_travel_acceptance.py": "043e73a99504b5012b95fdd435fe35cfec55cf1f8e408a11176a502df5d2c055"
+  }
+}

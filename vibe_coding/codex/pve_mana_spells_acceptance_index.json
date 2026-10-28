@@ -1,0 +1,79 @@
+{
+  "scope": "magic006/012/018 original legal solo inputs and actual consumers",
+  "backendPassed": 12,
+  "backendCases": {
+    "MK.Tests.Battles.PveManaSpellEntryTests.AbsentClaimColorRejectsBeforeBlueFeeOrActualCardMovement": "20260923_092723_2e1cb76c",
+    "MK.Tests.Battles.PveManaSpellEntryTests.BaseMeltdownPaysLastRedCrystalThenReceivesARealWoundWithoutOtherPlayers": "20260923_092723_2e1cb76c",
+    "MK.Tests.Battles.PveManaSpellEntryTests.DeferredClaimStartsNextFormalTurnAndReturnsTheSameDieAtRoundEnd(False)": "20260923_092723_2e1cb76c",
+    "MK.Tests.Battles.PveManaSpellEntryTests.DeferredClaimStartsNextFormalTurnAndReturnsTheSameDieAtRoundEnd(True)": "20260923_092723_2e1cb76c",
+    "MK.Tests.Battles.PveManaSpellEntryTests.ImmediateClaimTakesActualDieAndThreeTokensPayAnOriginalSpell": "20260923_092723_2e1cb76c",
+    "MK.Tests.Battles.PveManaSpellEntryTests.SoloMindReadChoosesOriginalBasicColorAndItsCrystalPaysAnOriginalCard(Red,False)": "20260923_092723_2e1cb76c",
+    "MK.Tests.Battles.PveManaSpellEntryTests.SoloMindReadChoosesOriginalBasicColorAndItsCrystalPaysAnOriginalCard(Blue,True)": "20260923_092723_2e1cb76c",
+    "MK.Tests.Battles.PveManaSpellEntryTests.SoloMindReadChoosesOriginalBasicColorAndItsCrystalPaysAnOriginalCard(Green,False)": "20260923_092723_2e1cb76c",
+    "MK.Tests.Battles.PveManaSpellEntryTests.SoloMindReadChoosesOriginalBasicColorAndItsCrystalPaysAnOriginalCard(White,True)": "20260923_092723_2e1cb76c",
+    "MK.Tests.Battles.PveManaSpellEntryTests.StrongMeltdownPaysRedBlackThenWoundsOldBlueStockBeforeGivingTwoSpendableCrystals": "20260923_092723_2e1cb76c",
+    "MK.Tests.Battles.PveManaSpellEntryTests.StrongMeltdownRejectsDayOrMissingBlackBeforeAnyCostOrWound(False)": "20260923_092723_2e1cb76c",
+    "MK.Tests.Battles.PveManaSpellEntryTests.StrongMeltdownRejectsDayOrMissingBlackBeforeAnyCostOrWound(True)": "20260923_092723_2e1cb76c"
+  },
+  "sceneSteps": 80,
+  "sceneAssertions": 128,
+  "sceneRuns": [
+    {
+      "run": "20260923_092907_d23640f2",
+      "reportStatus": "failed",
+      "acceptedSteps": [
+        0,
+        27
+      ],
+      "assertions": 29,
+      "reportSha256": "ba28a27b6b104db75a14556bf7190b1366f691258c7e1f89b05e4179f4583cb6"
+    },
+    {
+      "run": "20260923_093056_6f2218c4",
+      "reportStatus": "success",
+      "acceptedSteps": [
+        28,
+        79
+      ],
+      "assertions": 99,
+      "reportSha256": "5f41e4ff9b7d0dbcabcf84e4b7420db0940e3821fb02470042cb1a162bee3279"
+    }
+  ],
+  "screenshotsReviewed": [
+    "AutomationOutputs/PveBattle/20260923_092907_d23640f2/captures/027_选择实际蓝色源骰.png",
+    "AutomationOutputs/PveBattle/20260923_093056_6f2218c4/captures/028_付蓝晶，实际源骰保留至轮末，本回合尚无收益.png",
+    "AutomationOutputs/PveBattle/20260923_093056_6f2218c4/captures/032_普通白骰正常取得.png",
+    "AutomationOutputs/PveBattle/20260923_093056_6f2218c4/captures/039_思维读取白费换红晶；当前单人无其他目标.png",
+    "AutomationOutputs/PveBattle/20260923_093056_6f2218c4/captures/052_辐射先付红黑，旧红库存1受伤，再获两红晶.png",
+    "AutomationOutputs/PveBattle/20260923_093056_6f2218c4/captures/055_正式下一回合首次得到延期蓝魔力.png",
+    "AutomationOutputs/PveBattle/20260923_093056_6f2218c4/captures/065_延期蓝标实际支付原法术.png",
+    "AutomationOutputs/PveBattle/20260923_093056_6f2218c4/captures/073_辐射所得红晶支付原狂怒.png",
+    "AutomationOutputs/PveBattle/20260923_093056_6f2218c4/captures/079_正式轮末归还宣夺原骰并清理延期收益.png"
+  ],
+  "failedScreenshotsReviewed": [
+    "AutomationOutputs/PveBattle/20260923_092907_d23640f2/captures/028_付蓝晶，实际源骰保留至轮末，本回合尚无收益.png"
+  ],
+  "console": "tmp/pve_20260923_mana_spells_final_console.json",
+  "mappedDeedIds": 94,
+  "sourceSha256": {
+    "Assets/Logic/Runtime/Battles/PveBattleSession.cs": "76966f3dbbfbcfe7a1e233b228f5c21c704592ee4b19cdc51b88f2ce796f46e8",
+    "Assets/Logic/Runtime/Battles/PveDeedInputs.cs": "492c1076ce09e59cf8b0c6d9a5a896032d2c235ac37a008b09aa70c6cb67a757",
+    "Assets/Scripts/Battle/PveBattleController.DeedInputs.cs": "58bc1af86f732f48ce4e82f360c346bf25da935245db8160e313d04497aaaabe",
+    "Assets/Scripts/Battle/PveBattleController.Journey.cs": "5d35148ca76e02b7607bdf85256fde17d713558562b567d66a56cce2fbcc8395",
+    "Assets/Scripts/Battle/PveBattleController.ManaSpells.cs": "082c7fb6a192e12053c79135d609dae619691632e6c67bf4bee9ee8b1a61f379",
+    "Assets/Tests/RulesState/PveManaSpellEntryTests.cs": "c83afb68fc7bd7a5635c67769ef2d5d494e8493bb42b86218485ae890ac1ea89",
+    "tools/build_pve_mana_spells_acceptance.py": "826b0e0cb60fa5838f9a2780f6c66e74c5a49bf90db7adc99544cfbf42d105c3"
+  },
+  "pending": [
+    "多人丢晶后选择、思维读取真实响应/偷牌、诅咒实际其他玩家消费者",
+    "本批未跑的其他原基础/强化分支新Demo场景",
+    "地道/飞行输入及真实地图地点；其余部队技能和场景覆盖",
+    "既有主菜单最后一行遭遇与手牌按钮约6px重叠，待整体布局修正"
+  ],
+  "notes": [
+    "保留失败；修正普通骰观测字段，正式规则未改；原015牌面5的预期在执行前纠正。",
+    "重放前置实际操作保留，仅省去已通过前段断言/截图。",
+    "映射包括历史非官方2，仅证明有至少一分支，非全部通过。",
+    "整体active，未上传推送。"
+  ]
+}

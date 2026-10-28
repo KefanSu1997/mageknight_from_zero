@@ -1,0 +1,59 @@
+{
+  "scope": "tome blue claim and nonfirst honor summon real consumers",
+  "steps": 82,
+  "assertions": 153,
+  "segments": [
+    {
+      "run": "20260929_133150_ad76e581",
+      "start": 0,
+      "endExclusive": 48,
+      "assertions": 81
+    },
+    {
+      "run": "20260929_133348_97045e7b",
+      "start": 48,
+      "endExclusive": 49,
+      "assertions": 4
+    },
+    {
+      "run": "20260929_133541_ab035014",
+      "start": 49,
+      "endExclusive": 52,
+      "assertions": 6
+    },
+    {
+      "run": "20260929_134028_de2c928c",
+      "start": 52,
+      "endExclusive": 82,
+      "assertions": 62
+    }
+  ],
+  "units": [
+    [
+      61,
+      "army_2_008:34337938",
+      "True",
+      "0"
+    ],
+    [
+      77,
+      "army_2_008:34337938",
+      "False",
+      "0"
+    ],
+    [
+      79,
+      "army_2_008:34337938",
+      "False",
+      "0"
+    ],
+    [
+      81,
+      "army_2_008:34337938",
+      "False",
+      "0"
+    ]
+  ],
+  "failuresPreserved": true,
+  "console": "tmp/pve_tome_dynamic_console_final.json"
+}

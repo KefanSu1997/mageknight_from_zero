@@ -1,0 +1,11 @@
+# 阿尔蒂姆守护者：原绿费与全体部队回合抗性
+
+原army_000中文牌面：IV级、招募11城市、护甲7；免费攻击5或格挡8（对迅捷翻倍）；绿费本回合全部部队全抗性。旧army.json漏第三项费用，不能因为文本数组能解析就免费执行。仅第三项改为带绿费对象，UnitJsonLoader严格原文解析为新增AllUnitResistance，保留既有枚举序号。
+
+CardUnitActions仍先验证真实部队/选项/费用再设置已有ActionContext.UnitsResistAll与耗竭。复用UnitDamageResolver消费以及PlayerTurnEngine.EndTurn既有失效，不写第二套抗性算法，不把回合抗性写进部队原固定抗性，不附赠迷雾英雄免伤。
+
+PveBattleSession开放此工具能力；Controller复用补给能力位置为utilityAbility，分配伤害时可先激活再排承伤；End仍能合法发动。全抗性只按需在部队详情展示，按钮短标签保留费用/范围/期限，原部队图完整保留。新49AltemGuardians两真实原部队、四原行动卡，现50出战/13遭遇。
+
+后台214621_6d1bc57d 13/13首过。场景214841_1e1458fd七场221真实点击555检查首过，16图查看、最终Console双0；Unity DLL Logic21:47:54、Scripts21:47:56、Tests21:47:57。源部队耗竭仍能承伤，队友未受伤故可继续激活；物理4/火3/冰2被真实抗性吸收，毒素未凭空造成伤牌。抗性持续战末，真正EndTurn以及SkipDraw失效仅后台；冰火元素独立承伤也仅后台，不称全场景覆盖。
+
+证据pve_altem_guard_acceptance_index.json，生成器tools/build_pve_altem_guard_acceptance.py。没有改公共承伤消费者，未重跑此前通过卡库。完整招募、后续回合和所有组合仍须补齐。

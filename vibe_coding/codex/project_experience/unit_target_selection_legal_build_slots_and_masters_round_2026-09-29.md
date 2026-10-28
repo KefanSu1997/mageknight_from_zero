@@ -1,0 +1,9 @@
+# 部队选目标、合法构筑槽与连续消费者
+
+先点可发动部队再点敌人，不能清掉actor；大师耗竭但仍能继续不同能力也须保留。普通已耗竭单位选敌应退出能力面板，以便实际格挡/攻击结算；恐惧旌旗多目标保持原逻辑。修复PveBattleController目标回调，用CanActivate或DelphanaMastersActions.CanContinue界定，而不是无条件永久保留所有单位。
+
+自定英雄构筑选单位必须用_buildFame对应真实CommandSlots，不能沿用所选旧loadout的低等级。新增HeroBuild选部队入口、返回原构筑页面；普通Camp仍按原loadout限制，CompleteHeroBuild最终合法性检查保留。
+
+停攻观察不能冒充成功格挡。新增只读attacks.successfullyBlocked直接读取正式集合。幻术师白停攻与大师蓝停止均无成功格挡记录；大师红需要另一敌实际完整格挡后在正式防御结算消灭。用两敌、真实蓝勇者ColdFire8贡献验证，不能仅看pending效果标志。
+
+本批两个连续路线187操作309有效断言、7关键图目视。blood首51失败保留，仅补51..79；大师107/176一次通过。两报告分别5/7处同单位实例一致，正式跨回合/跨轮保留原伤，未重建出战快照。最终实际Console两次0。详情worklog_2026-09-29_blood_illusionist_scene.md、worklog_2026-09-29_masters_blue_hero_route.md及各acceptance_index。无规则核心改动，复用后台有效XML，未重复旧单卡/整库。白去抗性、其它颜色勇者不在本次场景范围。

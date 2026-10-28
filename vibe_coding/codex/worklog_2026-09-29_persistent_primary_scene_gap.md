@@ -1,0 +1,12 @@
+# 自有持久战斗技能有限场景补验计划
+
+已核查既有targeted场景证据：自有傀儡格挡与决斗因实际部队作用失去额外名望尚无场景通过记录；对应后台物理格挡/跨回合标记及owned-unit取消奖励XML为Passed，可复用而不重跑。
+
+新增独立 `tools/build_pve_persistent_primary_acceptance.py` 两variant，复用Commoners真实部队与正式Lv4自身技能、五原牌构筑。duel路线实际农民格挡触发取消奖励，再同玩家下一回合移动；puppet路线僧侣真实击杀保存、下一回合消耗库存格挡与蓝费原决心共同防御狼骑兵，然后原牌攻击击杀。没有改生产、fixture、配置或启动测试。生成器待主代理集中Unity验收，不记为通过。
+
+精确按钮、数值与后台报告见 `tmp/persistent_primary_scene_gap_20260929.md`。脚本支持失败后缀--from，关键转折截屏，按最小必要复用旧证据。
+
+主代理运行duel：144017_61ee8618在第40步断言unitAffected失败。源码确认PveBattleSession.Block先保存原贡献，正式Advance至近战调用ResolveDefense才记录实际单位介入；原后台直接CardCombatActions.Block的时序不能照搬UI。已把此断言移至实际防御结算后，并从40补验，未修改生产规则或预期True。
+
+
+14:46增量：自有决斗部队参与失奖与傀儡库存实际格挡两合法构筑场景完成，共142有效操作189断言、6关键图已看、Console双0；后台定向XML复核复用未重跑。农民贡献正式防御结算后取消决斗奖励；同一玩家保存哨卫跨回合转物理格挡2+真实蓝费决心5挡迅捷6，旧伤2保留并原牌击杀。见pve_persistent_primary_acceptance_index.json。无生产规则/fixture改动，duel第40步时点失败保留，仅后段补验。头环特殊借用仍未解决，headband_remaining_basic_scope_2026-09-29.md区分原发行复合规则与社区线索；狂乱强化部分提交风险、决斗同敌复合、傀儡本回合库存限制待处理。无运行测试/代理，无push，目标active。

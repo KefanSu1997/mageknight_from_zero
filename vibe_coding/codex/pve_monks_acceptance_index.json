@@ -1,0 +1,23 @@
+{
+  "scope": "北地僧侣/赤袍僧侣普通与元素攻击、格挡的基本战斗能力；未包括招募或其他单位组合。",
+  "backendPassedUnique": 10,
+  "backend": "AutomationOutputs/RulesState/20260918_171905_2e9686ca",
+  "scene": "AutomationOutputs/PveBattle/20260918_172149_14585266/report.json",
+  "battles": 8,
+  "steps": 185,
+  "assertions": 559,
+  "visualReviewed": 8,
+  "files": {
+    "AutomationOutputs/PveBattle/20260918_172149_14585266/report.json": "5ef7dacd7261e38a20b9b64414a9ea406c221d8095224cac3678e55eee94e54d",
+    "AutomationOutputs/PveBattle/20260918_172149_14585266/console_final.json": "8d62f369865d478d110ffb57efc54be5aff20c4f4af96e654eba68ad28fb3864",
+    "AutomationOutputs/RulesState/20260918_171905_2e9686ca/summary.json": "b97741bb3ef831fa460ce330a0a6fefe3dd0cb5d8a48f187ffa3b461ea50e974",
+    "AutomationOutputs/PveBattle/20260918_172149_14585266/captures/070_北地元素攻击.png": "3cf779ae0163aeeaba0f8ee161201dbc8e8033077b50080edd8c4f58f98b72ef",
+    "AutomationOutputs/PveBattle/20260918_172149_14585266/captures/080_北地元素格挡.png": "e0484f5b5c6f7cc6b38bceedc0275546859d2c1e9cee9e3a0ebb1e11f6991ced",
+    "AutomationOutputs/PveBattle/20260918_172149_14585266/captures/157_赤袍元素攻击.png": "23c3f57039aa820b661f1da0a8893da0f319cd44fa5b14e7c5c44cb8dae7817e",
+    "AutomationOutputs/PveBattle/20260918_172149_14585266/captures/167_赤袍元素格挡.png": "fbe4e9935c1b2d02b0b94da630b6fee690e15e1999866555fd04e25cff30ff74",
+    "AutomationOutputs/PveBattle/20260918_172149_14585266/captures/029_进入_End.png": "a61e68caa4735614e046a8f96f0fc2482e94ac8aac2338604a8c39447cb53ba2",
+    "AutomationOutputs/PveBattle/20260918_172149_14585266/captures/049_进入_End.png": "f664121aa4d9adb3aa8b32854478e6741b49e1545a9c1323861ca8ff4fc5af65",
+    "AutomationOutputs/PveBattle/20260918_172149_14585266/captures/161_进入_End.png": "986516a79c2afff9e21de0da3389e3e04d899a4118044400c883243025860027",
+    "AutomationOutputs/PveBattle/20260918_172149_14585266/captures/184_进入_End.png": "cd0ac95ec0f75781710960ef4c2d97cf8445386cb23d9469c0deda833e7672ac"
+  }
+}

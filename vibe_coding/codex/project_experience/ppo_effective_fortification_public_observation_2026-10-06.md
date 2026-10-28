@@ -1,0 +1,11 @@
+# 有效城防与印刷城防分别映射，策略须看见公开生效状态
+
+实际seed458357：黛尔法纳大师army005白费能力3移除实际目标0原068城防，规则允许原敏捷受百步加成远程4与骑兵火攻城5合笔攻击。旧RL raw state/特征只含印刷Fortified与洞悉忽略项，没公开FortificationsRemoved的实际有效城防；不能以原标签误判攻击非法，也不能让策略仅靠合法mask猜目标取消城防。
+
+JourneyTraining.cs仅补raw敌effectiveFortified/fortificationRemoved、末尾六个实际敌槽CombatMath.IsFortified公共布尔观察，印刷abilities保留不改。原规则、资源、动作词表/完整mask不改，观察5704→5710，显式v94schema拒绝错误旧输入。迁移严格保持所有原完整动作与顺序、旧坐标/原能力类型，六新w1行0，其他全部数组精确复制。
+
+57操作旧/新DLL实际配对：原其余状态/旧坐标/完整mask/rawreward/done逐步相同；目标0生效城防true→false、removedtrue且印刷Fortified仍在，其他目标保持true；真实白晶1付款及后续攻击消费者对应。以实际24576保存模型配对57状态，概率最大误差0，价值保持；这是初始化输入补齐，不是学会新状态或赢战改善。4负例（错旧坐标、少新坐标、修改完整动作、错类型头映射）检出。CLI构建0警告0错误，Console两读0错误。
+
+证据AutomationOutputs/BattleRl/20261006_v94_effective_fortification_checks/report.json与negative_checks.json、tmp/rl_v94_effective_fortification_console_20261006.json。活v93始终用旧冻结DLL，不热换/重复启动，自然退出后只迁移实际最终32768模型，v94_final_model_migrated/migration.json另记原SHA。v93固定3/7但独立14失败种子复测仍0/14，原失败及泛化/所有原要素/70自身技能/最终Unity验收缺口保留。
+
+新DLL使用历史不绕哈希门禁，旧计数单独保留。未修改Unity场景，Console不替代最终保存策略场景验证。

@@ -1,0 +1,11 @@
+{
+  "id": "army_003",
+  "x": 365,
+  "y": 49,
+  "width": 574,
+  "height": 1132,
+  "textureWidth": 1254,
+  "textureHeight": 1254,
+  "source_sha256": "9a2fdb03f44eda46f4be209bcea23fd033488319a8d9d63309e46a34579cdfa8",
+  "method": "alpha>=64 layout bounds only; full UV and original unedited PNG retained"
+}

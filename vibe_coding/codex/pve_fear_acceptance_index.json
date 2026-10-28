@@ -1,0 +1,28 @@
+{
+  "scope": "恐惧旌旗普通效果精确取消一次攻击、保留另一次真实承伤、已格挡攻击拒绝与焚毁至多三敌；后台另验证攻击槽重映射和回合清理，未声称全部组合完成。",
+  "backendPassedUnique": 10,
+  "backendNew": 5,
+  "backendRegression": 5,
+  "backend": [
+    "AutomationOutputs/RulesState/20260918_173641_2b59691b",
+    "AutomationOutputs/RulesState/20260918_173820_b67526a3"
+  ],
+  "scene": "AutomationOutputs/PveBattle/20260918_174055_7f2f6ffe/report.json",
+  "battles": 3,
+  "steps": 107,
+  "assertions": 248,
+  "visualReviewed": 7,
+  "files": {
+    "AutomationOutputs/PveBattle/20260918_174055_7f2f6ffe/report.json": "943d26419b8aa752a0f73be729c87105b3ca75677b472d8522b37fb3a8a74d93",
+    "AutomationOutputs/PveBattle/20260918_174055_7f2f6ffe/console_final.json": "8d62f369865d478d110ffb57efc54be5aff20c4f4af96e654eba68ad28fb3864",
+    "AutomationOutputs/RulesState/20260918_173641_2b59691b/summary.json": "4b9158cf9538b60b2d959b9912650b62032bbf2f8dbd59229903e5490864e054",
+    "AutomationOutputs/RulesState/20260918_173820_b67526a3/summary.json": "5c6e6e463ff59e5439a8c8510d479b6a97364b079d7849acc26a80a7a3a35413",
+    "AutomationOutputs/PveBattle/20260918_174055_7f2f6ffe/captures/033_取消所选一次攻击.png": "ba2b8cb7706ec7f4d42eff019b46ffc635d38dceda445a97b7a2bc633b6f7654",
+    "AutomationOutputs/PveBattle/20260918_174055_7f2f6ffe/captures/041_进入_Melee.png": "8f5ff5cc9dc9ba1a40a98d42feeff00ca73add5125f69b3100215e717a0800fc",
+    "AutomationOutputs/PveBattle/20260918_174055_7f2f6ffe/captures/068_取消所选一次攻击.png": "bd963c6409d130b946e0d499572323bbde83aae556762a007b3a1a10b50e77f7",
+    "AutomationOutputs/PveBattle/20260918_174055_7f2f6ffe/captures/087_三名敌人全部攻击被取消.png": "db8b7fa053891c2fe5a9aabb8fc9147f040b767afda63c9a8b683fcba0918f2e",
+    "AutomationOutputs/PveBattle/20260918_174055_7f2f6ffe/captures/048_进入_End.png": "a6875850d0712f609d99b9122d39ae1b2f90e0eb7e76807c97dea8630cef93d9",
+    "AutomationOutputs/PveBattle/20260918_174055_7f2f6ffe/captures/078_进入_End.png": "1e7474282648ea19217e7147ae46a059b5c2f9180b817a589792addfeefdf30f",
+    "AutomationOutputs/PveBattle/20260918_174055_7f2f6ffe/captures/106_进入_End.png": "f1ca5bc0ec2cca72951c6cdc3892b531362ac38f707828d5a9e14dd04bd75a5e"
+  }
+}

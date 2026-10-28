@@ -1,0 +1,80 @@
+{
+  "status": "partial_scope_passed",
+  "backend": {
+    "reused": "AutomationOutputs/RulesState/20260923_100318_20787bba",
+    "scout_replaced_by": "AutomationOutputs/RulesState/20260929_014411_f944f1d9",
+    "unique_passed": 17
+  },
+  "scenes": [
+    {
+      "report": "AutomationOutputs/PveBattle/20260929_015129_c40c7493/report.json",
+      "sha256": "50125b1ef4cc567a2afeb5730bbc4bce4c2c9731b489f48f26c0da474d20981d",
+      "accepted_steps": [
+        0,
+        26
+      ],
+      "checks": 5,
+      "key_images_reviewed": []
+    },
+    {
+      "report": "AutomationOutputs/PveBattle/20260929_015408_8c473e87/report.json",
+      "sha256": "e731820b399d4ebd328787381f8ec166145bbe7cae91d2962af6296c4e8b2cc9",
+      "accepted_steps": [
+        27,
+        74
+      ],
+      "checks": 24,
+      "key_images_reviewed": [
+        "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_015408_8c473e87\\captures\\031_私看不公开、不抽走，真实斥候耗竭.png",
+        "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_015408_8c473e87\\captures\\070_同一被侦察守军真实击杀额外名望1.png",
+        "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_015408_8c473e87\\captures\\074_正式回合保留同一耗竭斥候与征服结果.png"
+      ]
+    },
+    {
+      "report": "AutomationOutputs/PveBattle/20260929_015637_7e6e225b/report.json",
+      "sha256": "40ee9d30805a35c0e783e9f330ec300ddf66ad3c587b0f99b8973cb900488ac6",
+      "accepted_steps": [
+        0,
+        79
+      ],
+      "checks": 113,
+      "key_images_reviewed": [
+        "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_015637_7e6e225b\\captures\\029_原农民移动2并耗竭.png",
+        "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_015637_7e6e225b\\captures\\060_原药草师重整，不改变创伤.png",
+        "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_015637_7e6e225b\\captures\\063_同一农民交涉影响力2.png",
+        "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_015637_7e6e225b\\captures\\073_消费治疗，真实伤牌归供应.png",
+        "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_015637_7e6e225b\\captures\\079_两回合保留实际两部队耗竭和无伤结果.png"
+      ]
+    },
+    {
+      "report": "AutomationOutputs/PveBattle/20260929_015916_b4e6ac07/report.json",
+      "sha256": "a1f287cb730b8e1d34c9b63588a3b39ca29e06626085dc0ca8577469bdf89447",
+      "accepted_steps": [
+        0,
+        58
+      ],
+      "checks": 86,
+      "key_images_reviewed": [
+        "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_015916_b4e6ac07\\captures\\032_战前原烈焰法师红标1与红晶1.png",
+        "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_015916_b4e6ac07\\captures\\045_优先消费真实红标，保留库存红晶.png",
+        "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_015916_b4e6ac07\\captures\\053_药草师支付原绿费治疗2并耗竭.png",
+        "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_015916_b4e6ac07\\captures\\056_治疗第二张实际伤牌.png",
+        "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_015916_b4e6ac07\\captures\\058_正式回合耗竭与库存保留.png"
+      ]
+    }
+  ],
+  "console": "tmp/pve_20260929_owned_units_final_console.json",
+  "not_completed": [
+    "other unit-specific branches",
+    "familiar actual recruitment",
+    "original tile exploration",
+    "offered shocktroop attack-slot UI",
+    "remaining hero skills"
+  ],
+  "files": {
+    "Assets/Logic/Runtime/Battles/PveJourneySession.Units.cs": "ead57c56d7c7a305675cc03c814c67c231753688b8b75383dad1f61f5606156a",
+    "Assets/Scripts/Battle/PveBattleController.OwnedUnits.cs": "94c9e4bb5e2bed384b19d502cbd394ccfa4632a56c530f4452346f496931b0e9",
+    "Assets/Tests/RulesState/PveJourneyOutsideUnitTests.cs": "d44694389d41ff95f440d4bb9d9978266ac445c2e5b3fb84530271e9fb7a0a60"
+  },
+  "valid_checks": 228
+}

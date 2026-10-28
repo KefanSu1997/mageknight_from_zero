@@ -1,0 +1,7 @@
+# Actual Box reveal UI costs, 2026-10-13
+
+Box reveal maps the actual physical items_024 card to original special-artifact panel and reveal confirmation. First sixty fixed samples: 27 accepted, 54 independently checked native snapshots. After adding actual CloseSpecial return before subsequent intent, same pending thirty-three cases accepted twenty-eight more, with fifty-six native snapshots. Original failed attempts retained; no sample substitution. Reveal is distinct from borrowing/using the revealed artifact; boxUse remains unmapped.
+
+One boxReveal→rest response timeout remains. Its attempted fresh launch returned MCP menu TimeoutError; outcome is unknown, so no duplicate launch. Existing-directory observe probe also timed out. Unity PID 345144 still exists with matching project/window and Responding=True; bridge PID 88036 has port60022 Listen/Established. Purpose-built Console RPC reports no session / ping not answered / command timeout. Do not infer the Editor exited, kill unrelated processes, or fabricate a measured transition. User was asked asynchronously whether a popup/pause/restart is visible; answer pending. Full goal remains active.
+
+Current active plan: 1,205 measured / 4,083; 211 fully measured groups; 58 independently verified incompatible. Evidence: box_reveal_routes, box_reveal_modal_return result SHA-bound effect gates; failed box_rest_timeout_replay launch and observe timeout files retained. Full baseline incomplete.

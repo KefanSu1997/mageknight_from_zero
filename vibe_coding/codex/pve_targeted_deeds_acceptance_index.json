@@ -1,0 +1,48 @@
+{
+  "scope": "原卡选择实际敌人/群体互斥、原印刷颜色支付与真实攻击减值。连续场景仅当前5种新原卡所选分支，不声明全部8种全部分支通过。",
+  "backendRuns": [
+    "20260923_060925_d3ec0e99",
+    "20260923_061007_e88abe34",
+    "20260923_061253_17b65d20"
+  ],
+  "effectiveBackendPassed": 28,
+  "sceneSegments": [
+    {
+      "run": "20260923_061333_615ca8ad",
+      "overallStatus": "failed",
+      "passedStepRange": "0-34",
+      "passedSteps": 35,
+      "passedAssertions": 46
+    },
+    {
+      "run": "20260923_061453_61533dc7",
+      "overallStatus": "failed",
+      "passedStepRange": "35-60",
+      "passedSteps": 26,
+      "passedAssertions": 45
+    },
+    {
+      "run": "20260923_061631_df985c31",
+      "overallStatus": "success",
+      "passedStepRange": "61-69",
+      "passedSteps": 9,
+      "passedAssertions": 25
+    }
+  ],
+  "effectiveSceneSteps": 70,
+  "effectiveSceneAssertions": 116,
+  "screenshotsReviewed": 5,
+  "finalConsole": "tmp/pve_20260923_targeted_final_console.json",
+  "preservedFailures": [
+    "迅捷夹具费用颜色修正",
+    "旧UI点敌取消所选牌",
+    "完整迂回原规则反馈截断"
+  ],
+  "sourceSha256": {
+    "Assets/Logic/Runtime/Battles/PveBattleSession.cs": "c795c76f0f07e9ab534d90f0c7ef44b71aa1f7f27b7dcad78d8bc87722e24807",
+    "Assets/Logic/Runtime/Battles/PveJourneySession.cs": "e3b5acb876a14cd6a00c00550ecc32db36b2d71fdcb15b65c459f51b0a54c37a",
+    "Assets/Scripts/Battle/PveBattleController.cs": "16e95cab81bc659004f55fad138e158aa96d827635e8b1cf96c31c2ed86d10c1",
+    "Assets/Tests/RulesState/PveTargetedDeedEntryTests.cs": "4fc29e2fac03f8bf3495b5ebc933fe8092ee85796030af99d9a0edcb3ac8ef24",
+    "tools/build_pve_targeted_deeds_acceptance.py": "4aaf1801aab56e1ee98bec5bdb11439299debdc8643fad45e3869e83767c54b0"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "scope": "Tome multi-unit Rebirth persistent consumers and Honor fourth actual offer paging",
+  "steps": 134,
+  "assertions": 200,
+  "segments": [
+    {
+      "run": "20260929_140728_252dfbdc",
+      "start": 0,
+      "endExclusive": 51,
+      "assertions": 80
+    },
+    {
+      "run": "20260929_140850_1f427f42",
+      "start": 0,
+      "endExclusive": 56,
+      "assertions": 76
+    },
+    {
+      "run": "20260929_141043_b82b79f6",
+      "start": 56,
+      "endExclusive": 83,
+      "assertions": 44
+    }
+  ],
+  "unitIdentity": [
+    {
+      "step": 42,
+      "instances": "army_2_006:-954396732,army_2_005:1493417252",
+      "ready": "False,False",
+      "wounds": "0,0"
+    },
+    {
+      "step": 54,
+      "instances": "army_2_006:-954396732,army_2_005:1493417252",
+      "ready": "True,True",
+      "wounds": "0,0"
+    },
+    {
+      "step": 63,
+      "instances": "army_2_006:-954396732,army_2_005:1493417252",
+      "ready": "False,True",
+      "wounds": "0,0"
+    },
+    {
+      "step": 78,
+      "instances": "army_2_006:-954396732,army_2_005:1493417252",
+      "ready": "False,False",
+      "wounds": "0,0"
+    },
+    {
+      "step": 82,
+      "instances": "army_2_006:-954396732,army_2_005:1493417252",
+      "ready": "False,False",
+      "wounds": "0,0"
+    }
+  ],
+  "failuresPreserved": true,
+  "console": "tmp/pve_restore_honor_console_final.json",
+  "screenshotsReviewed": 7,
+  "fixturesRestored": true
+}

@@ -1,0 +1,13 @@
+# 实际Unity规则状态/UI字段与阶段悔棋
+
+新增PveBattleController.RlAudit.cs只读实际PveBattleSession/Player/Context，CaptureAutomationState增加rl.sharedRuleState；与CLI共享字段格式对应，不重建玩家或更改规则。context.InBattle与battleSessionPresent分别记录，因独立演练存在session但没有Journey.InBattle，projection按真实捕获路径区分，不伪称原版连续游玩。
+
+新增独立Editor菜单和两个rl_ui_*配置，复用SceneAutomation真实EventSystem点击、原前后状态/断言/截图；不调用Build重建素材、不覆盖既有pve_battle.json、不保存场景或直接启动Unity.exe。
+
+实际3阶段点击success，27共享字段×前后×3=162对照零差异，承伤后增加两张原伤牌。另6操作在Melee选择原basic000/横置：手7→6、近战0→1；Btn_ResetPhase恢复手7、近战0、已有伤2保留；27×2×6=324对照零差异。两关键原截图已视觉阅读。范围是当前非标准演练快照的共享字段/阶段操作，非完整PPO UI回放，也不证明牌对象身份/RNG全部规则已验。
+
+compare_unity_state_report.py要求实际点击success/raycast命中、有真实rule snapshot，全部映射值一致才通过。实际报告及破坏手牌值/删snapshot/点击失败负例检查通过，2项projection检查通过；Console最终两读0错误tmp/rl_actual_ui_final_console_20261007.json。
+
+证据20261007_unity_ui_bridge/report.json与shared_state_comparison.json、20261007_unity_phase_reset/report.json与comparison/captures。最初refresh wait_ready一次超时，实际Console/菜单确认已就绪，无快速重试/编辑器重启；后refresh无等待返回idle。当前场景仍Part1_PveBattle且isDirty=false，运行正常退出。
+
+保留完整原卡/7英雄69敌/费用材料消费者、连续多轮、保存策略真实UI操作及独立未调参测试缺口，不因486字段比对冒称目标完成。

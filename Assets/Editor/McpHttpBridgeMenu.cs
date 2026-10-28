@@ -10,11 +10,28 @@ namespace MageKnight.EditorTools
         [MenuItem("Tools/MCP/Start HTTP Bridge")]
         private static void StartHttpBridge()
         {
+            StartBridge(true);
+        }
+
+        [MenuItem("Tools/MCP/Start Local Stdio Bridge")]
+        private static void StartLocalBridge()
+        {
+            StartBridge(false);
+        }
+
+        private static void StartBridge(bool useHttp)
+        {
             try
             {
-                EditorPrefs.SetBool("MCPForUnity.UseHttpTransport", true);
-                EditorPrefs.SetBool("MCPForUnity.ResumeHttpAfterReload", true);
-                EditorPrefs.SetString("MCPForUnity.HttpUrl", "http://localhost:60022");
+                EditorPrefs.SetBool("MCPForUnity.UseHttpTransport", useHttp);
+                EditorPrefs.SetBool("MCPForUnity.ResumeHttpAfterReload", useHttp);
+                if (useHttp)
+                    EditorPrefs.SetString("MCPForUnity.HttpUrl", "http://localhost:60022");
+
+                // The transport resolver uses a cache, not EditorPrefs directly.
+                var cacheType = Type.GetType("MCPForUnity.Editor.Services.EditorConfigurationCache, MCPForUnity.Editor");
+                var cache = cacheType?.GetProperty("Instance", BindingFlags.Public | BindingFlags.Static)?.GetValue(null);
+                cacheType?.GetMethod("Refresh", BindingFlags.Public | BindingFlags.Instance)?.Invoke(cache, null);
 
                 var locatorType = Type.GetType("MCPForUnity.Editor.Services.MCPServiceLocator, MCPForUnity.Editor");
                 if (locatorType == null)
@@ -42,7 +59,7 @@ namespace MageKnight.EditorTools
             }
             catch (Exception ex)
             {
-                Debug.LogWarning($"[MCP] Start HTTP Bridge failed: {ex.Message}");
+                Debug.LogWarning($"[MCP] Start {(useHttp ? "HTTP" : "local Stdio")} Bridge failed: {ex.Message}");
             }
         }
     }

@@ -1,0 +1,49 @@
+# PPO效能过载逐次原效果入口
+
+## 修改依据与实现
+
+advanced024过去只有空RL输入，而正式PveCopyInputs要求真实其他行动材料、BorrowedChoice/BorrowedInputs与逐次Continue。JourneyTraining增加原供体/模式/已有正式输入组合，绑定实际手牌引用；初次仍通过PveJourneySession/PveBattleSession出牌，后续repeat复用各自ContinueCopiedEffect。多层复制advanced024/030仍是既有blocked，不伪造供体或自动代选后续分支。
+
+原供体目标类型决定敌人/攻击槽候选，避免无目标效果枚举所有敌人。State记录pending原ID、强化、剩余和已完成次数；公开观察在旧5591坐标后追加pending是否存在、剩余、强化及原行动ID。总5670观察、86544动作，schema original_combat_six_targets_summon_parents_repeated_v48，旧权重不能直接套用；需明确追加坐标与原动作Key迁移。正在运行的旧轮不换DLL。
+
+coverage_sampler单列advanced024重复原效果模式，不能把去除的供体记为再次物理出牌。trajectory_audit核对真实pending供体、逐次次数和完成清理，回合不能结束于未完成效果。源审计仍不足以证明全部复制付款与消费者，明确留缺口。
+
+## 发现真实掩码异常并修复
+
+seed81242基础复制原行进后剩2次，nextTurn被列合法。真实动作实验发现正式结束已拒绝“必须先完成当前卡牌的重复效果”，保留状态，但RL会因此以formal_end_turn_denied停止；不是实际成功结束或丢失剩余次数。原失败完整留AutomationOutputs/BattleRl/20261004_overload_pending_turn_end_failure.json，不改写为成功。
+
+GameEngine.ValidateEndCurrentTurn增加既有RepeatedEffectResolution.RequireCompleted，与实际结束校验一致。PveCopyDeedEntryTests增加预检与实际结束都拒绝、保持同pending引用/次数且不进入结束流程，完成原动态draw/draw/heal后预检允许的断言。
+
+## 验证
+
+两个.NET构建均0警告0错误；运行受影响PveCopyDeedEntryTests、OverloadContinuationStateTests、TurnMinimumActivityTests、UnusedCombatTurnEndTests共33/33通过，证据AutomationOutputs/RulesState/20261004_144751_a3bddee6。
+
+冻结tmp/battle_rl_v49_overload_formal_end_mask真实seed81242：基础原行进2逐次3次得到6、强化原行进4逐次2次得到8；同实体供体只永久去除一次、宿主已打出，强化只付宿主红费、原供体绿费免付，重复不再付款、不重复材料。pending精确计数直到完成，提前结束与多余repeat拒绝，完成后允许结束。34断言通过，20261004_v49_overload_actual_repeated_move_check.json。首次检查误读零库存稀疏字典Blue键，改用get(color,0)，保留诊断，未改变规则或值预期。
+
+新增审计对原真实轨迹通过，错误供体、次数未递减、最终未清理3负例被新断言识别；两次宿主实际play、三次重复效果、零次供体物理重打分别计数。证据20261004_v49_repeat_audit_and_coverage_check.json。预检不算PPO训练覆盖。
+
+Unity编译时MCP临时断连，未rapid retry；确认端口恢复后refresh idle，Console两次0错误，tmp/rl_overload_end_preview_console_20261004.json；Python审计修改后再refresh/Console两次0，tmp/rl_overload_audit_console_20261004.json。没有场景配置修改或旧整库/截图重跑。
+
+## 本轮终态与未完成工作
+
+v46 PID237080实际已退出，最终metrics存在：8192步131局、1410.72秒、5.81步/秒，最终加载评估0/7完整胜利且0击杀局，保存模型seed123456回放40操作0击杀。新增行动占用观察尚未带来可用策略。
+
+新训练尚未启动。需先核对动态不同原选择、实际材料/目标与攻击消费分支，明确验证观察追加及原动作Key迁移；完整原技能/地图场地/未见构筑评估与保存模型Unity真实操作仍未完成，不以基础复制移动或33后台测试替代全目标。
+
+## 15:06 新版本实际续训
+
+seed83123真实效能过载复制宁静，逐次选择draw、draw、heal；11断言通过，前两次各从真实牌库抽一张，第三次治疗值+1，供体仅永久去除一次。证据20261004_v49_overload_dynamic_draw_draw_heal.json；治疗后续伤牌消费与Unity操作尚未补齐。
+
+迁移工具明确支持v46到v48观察/动作schema：保留5591旧坐标，追加79零权重坐标，45160原动作按完整Key与完整定义匹配至86544动作，kind头按原标签映射，新增动作和kind中性初始化。双DLL执行实际57操作，公共掩码策略/critic最大误差8.33e-17；错误坐标、能力枚举、动作定义和缺失动作4负例均拒绝，未迁移恢复拒绝。新合法动作可改变分布，不能据迁移通过声称策略改善。证据20261004_v49_repeated_policy_migration_check/report.json。
+
+refresh完成idle，Console两次零错误：tmp/rl_v49_migration_console_20261004.json。模型迁移保存至20261004_v49_repeated_migrated_v46，含源/目标SHA和明确范围。确认无活训练进程后于15:06:52启动v49 PID238408，并用实际进程CreationDate/CommandLine核实。输出20261004_v49_repeated_warm_ppo，8192步，seed接续实际next_cursor71445；PPO gamma.995/GAE.99、学习率.0004、28候选合法构筑、原开局/中期家族、60秒新增真实轨迹审查与7局独立评估。旧不同DLL覆盖证据独立保存，不作为新轮计数继承。目前尚无新模型效果结论。
+
+新训练seed71447完整操作前缀已保存，通用审计1996检查无错误。定向查看原投石车army004、乌顿弩手army2_012与原敌064图，核对步骤7/8/9：投石车实际蓝晶2->1、同单位耗竭、冰攻城5；弩手无费远程2同单位耗竭；原敌冰抗甲4，冰5折半取整2加物理2正好4，选敌实例0击败、另两敌不变，两笔原来源消费清空。9断言保存20261004_v49_actual_ice_resistance_unit_review.json。原阵营奖励另留缺口，不以局部击杀充当整战或Unity通过。最新实际进程仍存活，stderr为空。
+
+首1024步17局227.86秒，自动新增轨迹11219检查零错误，3项gap均为策略未尝试战斗，不能记为可用测试模型。抽取七英雄最新前缀，4条进入1/2/3/4次战斗仍零整战胜利，另3条未战斗；合法规划最长7步，暂非旧无限规划循环。持续保留策略质量问题，不以规则审计通过替代胜率。
+
+新seed71633智慧之书原图定向审查10项：步骤10材料原行进instance10永久去除，同智慧之书instance8进入played，实际供应advanced007进入手牌instance59并补位，无额外费用；跨真实回合后步骤74同instance59实际打出，战外移动+2治疗+1符合提神漫步原图。证据20261004_v49_actual_book_physical_supply_review.json。文件名acquired_card_consumer仅检测后续play，不代表生成的移动/治疗已消费；本轨迹无该步之后治疗/移动操作，明确保留。没有新规则代码修改，不重复已通过33用例或Unity检查。
+
+4096独立评价7英雄仍0/7整战胜利、1击杀局、mean_steps109.14，实际PID238408未结束继续训练。当前实际使用计数advanced012为5、024为3，三个强化复制各有一次后续repeat；只计实际PPO成功操作，与预检分开。source审计补查seed71900：12断言验证效能过载实际耐力供体永久去除、宿主只付红晶免原蓝费，两次移动4合8并最终pending清理；鲜血仪式两次强化各实际新增一张手伤，生成红白金三标记，第一次可选红转晶在红费用后补回红晶、第二次不转晶保留三标记。原图已查看。证据20261004_v49_actual_overload_bloodritual_training_review.json。该轨迹全局未进入战斗，移动无正式地图消费者，不记整战、完整模式或Unity通过。
+
+另补查新seed72587法术真实消费者：原风雪交加magic015实体23进入played、蓝晶2->1、原冰远程5；加原巫师army014物理远程3，选原046甲6火抗魔抗目标，冰/物理未抵抗合8，精确两源消费、只有目标击败、印刷名望+5，魔抗保留；9断言通过，20261004_v49_actual_blizzard_magicresist_consumer_review.json。不记强化模式或整战通过。

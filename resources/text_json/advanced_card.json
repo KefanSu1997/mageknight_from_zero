@@ -147,7 +147,7 @@
     "en_image": "cards\\advanced_card_en_010.png",
     "card_name": "清风之歌",
     "base_effect": "移动力2。本回合中平原、沙漠和荒原的移动费用降低1点，最低至0。",
-    "required_crystals": "蓝",
+    "required_crystals": "白",
     "enhanced_effect": "移动力2。本回合中平原、沙漠和荒原的移动费用降低2点，最低至0。本回合中，你可以支付一点蓝色魔力穿越湖泊，湖泊的移动费用为0。",
     "wiki": {}
   },
@@ -297,7 +297,7 @@
     "en_image": "cards\\advanced_card_en_021.png",
     "card_name": "魔晶精通",
     "base_effect": "获得一颗你已拥有魔晶的同色魔晶，加入物品栏。",
-    "required_crystals": "绿、蓝、红",
+    "required_crystals": "蓝",
     "enhanced_effect": "回合结束时，本回合你支付的所有魔晶返回你的物品栏。",
     "wiki": {
       "wiki_text": "nothing to say for the normal effect"
@@ -491,7 +491,7 @@
     "en_image": "cards\\advanced_card_en_035.png",
     "card_name": "宁静时光",
     "base_effect": "影响力3。你可以作为回合行动使用：如果你这么做，你每支付2点影响力可以获得治疗1。",
-    "required_crystals": "白、黑",
+    "required_crystals": "白",
     "enhanced_effect": "影响力6。你可以作为回合行动使用：如果你这么做，你每支付2点影响力可以获得治疗1，并/或支付部队等级2倍的影响力重整一支部队。",
     "wiki": {
       "wiki_text": "No notes for this card yet."

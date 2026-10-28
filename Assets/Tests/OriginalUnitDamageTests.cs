@@ -4,13 +4,12 @@ using MK.Logic.Core;
 using MK.Logic.Data;
 using MK.Logic.Runtime;
 using NUnit.Framework;
-using UnityEngine;
 
 namespace MageKnight.Tests
 {
     public sealed class OriginalUnitDamageTests
     {
-        [SetUp] public void SetUp() => CardJsonLoader.SetBaseDirectory(Path.Combine(Application.dataPath, "../resources/text_json"));
+        [SetUp] public void SetUp() => CardJsonLoader.SetBaseDirectory(Path.Combine(Directory.GetCurrentDirectory(), "resources/text_json"));
 
         private static UnitState Own(PlayerState player, string id)
         {

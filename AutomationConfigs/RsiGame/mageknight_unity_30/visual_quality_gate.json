@@ -1,0 +1,26 @@
+{
+  "schema": 2,
+  "effective_from_round": 9,
+  "authority": "User explicitly rejected enlarged cropped monster-token main art and authorized regenerated illustrations",
+  "scope": "Auxiliary independent visual acceptance; upstream role JSON schemas and pinned algorithms remain unchanged",
+  "hard_checks": [
+    {"id": "main_art_is_illustration", "fail_if": "The main monster image is a magnified or cropped printed token scan, with visible numeral/icon/rim fragments or the same rejected scan presentation"},
+    {"id": "composition_and_framing", "fail_if": "Essential anatomy or weapons are accidentally cut off, framing feels cramped or arbitrary, or the subject is distorted to fill the rectangle"},
+    {"id": "full_required_information", "fail_if": "Necessary enemy values or abilities, player resources or important controls are missing, hidden, overlapped, or ellipsized; include three-enemy states"},
+    {"id": "readable_fixed_canvas", "fail_if": "Canvas differs from 1920x1080, the whole interface is shrunk, or readability/density is sacrificed to obtain an apparent optimization"},
+    {"id": "actual_asset_integration", "fail_if": "An illustration is claimed as an in-game improvement without actual imported Unity screenshots showing that monster ID using it"}
+  ],
+  "subjective_scores_1_to_5": ["subject composition", "style coherence", "information clarity", "visual balance", "overall aesthetics"],
+  "decision": "Any observed hard failure means failed, even if subjective scores are high. Missing relevant evidence means unverified. Do not average a hard failure away.",
+  "comparison": {
+    "baseline": "Actual pre-iteration baseline/key_phases images",
+    "previous": "Previous recorded version in the same fixture and display mode",
+    "candidate": "Actual currently compiled Unity screenshots",
+    "extra_contexts": ["single enemy", "two enemies", "three enemies", "card hover", "selected action and payment", "source panel"],
+    "limit": "Different fixtures/modes cannot prove cross-version improvement; standalone art cannot prove UI integration"
+  },
+  "asset_provenance": ["existing monster source ID", "original reference path and SHA256", "actual generation prompt", "built-in tool/native output path", "versioned workspace output and SHA256", "candidate versus accepted status"],
+  "review_output": ["actual images viewed", "pass/fail/unverified per hard check", "specific visual evidence", "baseline and previous-version subjective comparison", "unresolved risks", "scope limits"],
+  "known_negative_controls": ["round08/ranged main art is cropped printed-token presentation", "round07 and round08 three-enemy images truncate poison-assassin ability"],
+  "history": "Rounds1-8 and all previous scores remain archived unchanged; their strategy is now explicitly rejected by the user, not retroactively counted as successful art optimization"
+}

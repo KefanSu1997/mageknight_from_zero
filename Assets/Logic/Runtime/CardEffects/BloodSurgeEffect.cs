@@ -1,7 +1,7 @@
 namespace MK.Logic.Runtime.CardEffects
 {
     /// <summary>
-    /// 血脈賁張：創傷進手牌時抽牌，強效首次忽略創傷。
+    /// 血脈賁張：新傷進手後抽牌；強效移除首次新傷，另留三次抽牌。
     /// </summary>
     public sealed class BloodSurgeEffect : ICardEffect
     {
@@ -10,9 +10,7 @@ namespace MK.Logic.Runtime.CardEffects
 
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            ctx.WoundDrawRemaining = 3;
-            if (_enh)
-                ctx.FirstWoundIgnored = true;
+            ctx.BeginBloodSurge(player, _enh);
         }
     }
 }

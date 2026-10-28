@@ -1,0 +1,31 @@
+{
+  "scope": "头环痛苦之力真实伤牌及原伤牌素材显示",
+  "backendEffectivePassed": 12,
+  "backendRuns": [
+    "20260929_090351_430f4006",
+    "20260929_090517_15e0d3d2"
+  ],
+  "sceneRuns": [
+    {
+      "run": "20260929_091115_e01dbc8f",
+      "steps": 56,
+      "sha256": "be7ff345427597d64f74e2794c5d28e391f08486924d6868a07ea90e58b3ed84"
+    },
+    {
+      "run": "20260929_091225_cc4a5845",
+      "steps": 63,
+      "sha256": "4e82bb66e15d5539535376fe8f8bd85bdb40027562ebea7039290b487005b75f"
+    },
+    {
+      "run": "20260929_091321_218804a7",
+      "steps": 46,
+      "sha256": "7f2a672dfcbad072aeffa940acbbf4935a5bfb3733001206692343723439ea4e"
+    }
+  ],
+  "additionalStateChecks": 10,
+  "retainedFailure": "20260929_090957_6eda5d7f: seed未刷新，第39步公共技能错误",
+  "visualIssue": "nPOTScale=1压成方形；改0后最终显示补验通过",
+  "console": "tmp/pve_headband_pain_final_console.json",
+  "fixtureRestored": true,
+  "remaining": "领导、其他动态借用、英雄图及原地图等未全完成"
+}

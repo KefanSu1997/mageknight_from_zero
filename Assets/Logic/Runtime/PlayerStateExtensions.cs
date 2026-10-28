@@ -124,9 +124,14 @@ namespace MK.Logic.Runtime
         /// <summary>
         /// 交换手牌上限
         /// </summary>
+        public static int UnmodifiedHandLimit(this PlayerState player)
+            => 5 + (System.Math.Clamp(player.Level, 1, 10) - 1) / 4;
+
         public static int HandLimit(this PlayerState player)
         {
-            return 5 + player.TacticHandBonus + player.ExtraHandBonus;
+            // 等级标记：1–4级为5，5–8级为6，9–10级为7。声望与昼夜不改变上限。
+            return System.Math.Max(0, player.UnmodifiedHandLimit()
+                + player.TacticHandBonus + player.ExtraHandBonus);
         }
 
         /// <summary>

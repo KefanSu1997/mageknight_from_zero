@@ -1,0 +1,418 @@
+# 最新目标迭代记录
+
+用户要求直接迭代：至少三层编码与RNN记忆（Transformer可对照）、英雄/合法构筑/原敌群独立采样、以基本原要素及重要交互覆盖减少任务量、及时隔离不可解任务，不拿策略失败/搜索超时当不可解。完整原规则/7英雄69敌/原牌模式费用材料消费者/部队神器技能及真实Unity验收继续是最终范围。
+
+已创建新的active goal，并通过automation工具更新原mageknight-ppo心跳提示，停止默认重复跑旧单层MLP随机seed。已实核没有活train_ppo，不终止用户程序；旧v103无最终模型不假称续训成功。
+
+本次改动：
+- `task_feasibility.py`：正式入口重放的可解见证与严格胜利池准入。规则/动作/schema/初始状态/证据SHA绑定，未知隔离；当前仅legacy-seed、至少一正式整组目标，不冒充独立构筑生成或不可解证明。
+- `recurrent_core.py`：三层256/256/128编码器和256维GRU、跨序列记忆及完整解析BPTT。现有NumPy运行，不下载大依赖，不宣称GPU/完整PPO已运行。
+- `recurrent_checkpoint.py`：完整参数/Adam历史/step/RNG及正式回放元数据保存恢复，严格签名校验；保留参数遍历次序修复首次精确续训对照失败。
+- `AutomationConfigs/rl_recurrent_task_contract.json`：机器可读新契约及明确pending项目，非完成报告。
+
+验证：4项真实规则可解门测试、3项记忆/序列梯度测试、1项完整断点后更新逐数组等价测试均通过。实际原训练seed488901的12步合法获胜见证进入 `AutomationOutputs/BattleRl/20261007_recurrent_task_gate/solvable_pool.json`；一任务只是入口校准，不代表范围覆盖。Unity Console最终两读0错误，未改变Unity场景，不重复旧卡库/截图。
+
+下一步：连接连续序列Recurrent PPO actor/critic、checkpoint和真实规则协议；改造正式reset使英雄/构筑/敌群独立配置并验证法律约束；以原覆盖缺口和交互集合生成任务池，获胜见证/不可解证据/未知分开；按当前策略重新采样，不用旧见证代打；扩大并分离训练/验证/未调参测试，补实际Unity回放。核心记忆、checkpoint和准入已可运行，完整训练器/独立任务生成/不可解求解器/Transformer对照/最终验收仍未完成。新goal保持active。
+
+经验见 `project_experience/recurrent_sequence_gate_checkpoint_2026-10-07.md`。没有推远端、上传截图轨迹、操作VPN、重启电脑或安装Unity packages。
+
+## 第二次goal迭代：完整序列PPO真实规则集成
+
+前turn为实质进展。本turn先确认无活训练进程，读当前源码；没有重复启动旧MLP。`train_ppo.py`仅新增可选输入梯度供序列核心反传，默认损失/梯度/KL逐数组一致；新 `recurrent_policy.py` 连接三层编码/GRU256/上一真实动作嵌入及原rawreward，4项头梯度/全序列有限差分/逐步一致性/episode输入隔离检查通过。
+
+`train_recurrent_ppo.py` 已接真实冻结DLL、准入任务池、on-policy整段采样、Actor/Critic完整序列反传、完整更新后KL、规则审计、失败前缀保存、完整checkpoint及恢复。每个epoch重新执行完整当前episode历史；跨回合/战斗不清记忆，没有teacher强制轨迹。第一真实episode13步0胜、恢复第二82步2正式整组胜利（1961限定规则检查0异常，12nextTurn/6fight/0roundFinish）。保存/恢复两update与不中断两update73数组及全部真实前后状态/动作/奖励轨迹完全一致，证据 `20261007_recurrent_full_resume_equivalence.json`。四组新检查通过，Unity最终Console两读0错误。
+
+实际集成尚只有一个已认证legacy-seed任务；不能认证任务因子独立/全部原要素/不可解证明/未见组合泛化或Unity操作验收。保持原93661组合目录/43类型门，头是既有64维投影；Transformer/candidate-action头仍待对照。随机轨迹两胜利不是保存策略胜率。没有下载大依赖、没有操作用户程序。
+
+之后为后续方程变化防误恢复，在checkpoint元数据加入recurrent_policy/core/PPO loss/reward代码SHA。现存已通过集成等价产物属于此前元数据版本，保留且不冒充新签名恢复已通过。下一turn先以新签名取得必要集成证据，再实现正式独立task reset与覆盖驱动任务池。新goal保持active，未缩小全范围目标。
+
+本turn随后补齐新签名实际集成，而非只留计划：从旧真实训练audit（不取7/14验证集）有限选取各英雄一个有正式获胜前缀的候选，全部经实际冻结规则重放得到7可解见证/0未知，写 `20261007_recurrent_task_gate/seven_hero_solvable_pool.json`。只覆盖六种初始敌人、每英雄一构筑，仍是入口校准不是全部英雄×构筑×69敌覆盖。
+
+新源码SHA签名下从新RecurrentPolicy初始化、收集两个完整on-policy episode97步后一次更新，1次正式整组胜利，KL1.09177e-7；再从完整checkpoint恢复、收集两episode110步并一次更新，累计4episode207步、Adam step2，新增0胜利，规则审计均0异常，manifest.optimizer_state_restored为true。产物 `20261007_recurrent_seven_hero_signature_v2` 与 `_resumed`。见证动作只用于准入证明，训练策略自行采样；不把训练采样胜利当保存策略效果或独立评估。下一turn优先实现正式独立任务因子reset/覆盖池，不默认长跑这7个校准任务。当前无长期训练进程需终止，新goal保持active。
+
+## 第三次goal迭代：正式独立任务入口与完整任务成功门
+
+先实核无活训练进程，上一turn为实质进展。新增TaskDefinition正式入口（hero/库存种子/原开局/原敌群/独立洗牌魔力供应升级效果召唤随机流），`reset_task`不能向旧冻结DLL静默回退；严格字段、原ID、支持容量和指挥槽校验。任务敌群换组经正式EndTurn/NextTurn保留实际玩家/牌实体/伤牌/部队/名望，序列耗尽正式任务结束。每组1-3不同定义及≤16组是当前适配容量，不是全原世界组合证明；Night直接参数拒绝，后续需正式生命周期入口。
+
+追加公开task存在/总组数/当前组索引三观察，5710→5713且featureSchema变更，旧原坐标/全部mask/状态/reward在真实12步对照保持、新legacy三行0。原checkpoint不直接错载到新架构。六项实际规则测试通过：敌群/库存/英雄/洗牌独立、非法/未知字段拒绝、同实体跨组和完整任务终止。首次测试误标原Arythea为Wolfhawk遭专属动作拒绝，按真实原英雄修正测试，未放宽规则；经验保留。
+
+可解门版本2：独立任务默认须完整声明序列/正式回合收尾，不用首战胜利代替。真实13步单组完整Task见证两个通过，12步已战斗胜利但未EndTurn截断拒绝；缓存证据/初始状态/动作/目标与source对应。旧legacy门4项检查、序列policy4项检查均通过。新冻结DLL `tmp/battle_rl_independent_tasks/BattleRl.dll` 构建0警告0错误，Console两读0错误。
+
+新5713观察/新DLL/独立Task完整目标下真实RecurrentPPO采样2episode31步、规则审计无异常、声明任务完成1、正式整组胜利1，一次更新非负KL3.823881e-7；记录 `20261007_recurrent_independent_sequence_integration`。不是策略泛化或全部覆盖。初版两个Task仍同英雄及库存，覆盖模板/原要素交互任务生成、可解搜索/不可解证明与未知池、独立分层测试、跨昼夜实证/最终Unity仍缺。既有门/特征schema修改使旧证书及旧checkpoint不能误作当前兼容，历史证据保留，不自动绕守卫继承。
+
+下一turn重点扩展显式合法构筑配置与覆盖驱动生成；保持新goal完整active，未将校准范围作为最终目标。经验见 `project_experience/independent_original_task_reset_and_sequence_goal_2026-10-07.md`。
+
+## 第四次goal迭代：显式构筑及覆盖驱动草案
+
+先实核无活训练进程，上一turn为实质进展。Task协议v2新增Build，可明确定义家族/Fame/原追加卡/原单位/本人技能/基本晶体/既有伤牌；原16牌不改，原开局不能凭空授予中期资源，唯一原额外ID/等级技能数/普通指挥槽严格验证。初始伤牌经正式GainWound/PrepareRound，魔宠真实维持扣晶调谐；不凭手工赋伤牌类型或免费取骰偷换规则。
+
+新冻结DLL `tmp/battle_rl_explicit_build_tasks/BattleRl.dll` 独立构建0警告0错误；显式Build4项与新版下独立/旧原坐标/完整mask状态reward6项通过。C#Enum.TryParse本可接受数字颜色别名，额外加原命名颜色验证及负例，0/金/超过3均拒绝。Console最终两读0错误，未修改原Unity场景，无截图/全库重测。
+
+覆盖驱动生成272候选（均unknown/胜利池排除），八家族带实际支持原卡而非只有标签；组合签名把RNG/顺序变体放同split，不拿保留组合填训练缺口。所有草案计划涵盖483个hero-enemy格，额外添加20不同训练组成锚点后训练pair计划补齐；成本加权覆盖选择149训练候选，仅纸面意图仍缺原基础011/025 base/strong共4项。原当前七英雄starting均不含两卡，禁止任意给其他英雄增添Basic，需求不删除，来源研究/正式取得路径保留待办。细费用/材料/消费者和高阶组合、更多等级/地点上下文未由该纸面覆盖认证。
+
+272候选实际inspectTask全部初始化通过、追加原牌唯一/技能单位/活动伤对应，报告 `20261007_coverage_task_drafts/initialization_review.json`；可解0、胜利池准入0，不在未知上开启胜利训练。三项覆盖设计/数据隔离测试通过。法术强力草案采用较长真实序列尝试跨Night，不直接造黑晶/修改昼夜；实际跨昼夜与获胜仍须见证验证。
+
+下一turn优先实现有预算、只走正式规则的可解见证发现/缓存与不可解/未知分流；不能把搜索失败当不可解。其后接actual mode/fee/consumer覆盖反馈和Recurrent任务采样/独立评估，保留全原Scope及最终Unity验收。新goal保持active，未缩小成272初始化或149纸面覆盖即可成功。经验 `project_experience/explicit_build_drafts_coverage_split_2026-10-07.md`。
+
+## 第五次goal迭代：真实预算搜索与终止检查点证明
+
+新增 discover_task_witnesses.py：每个分支从正式任务入口重放实际前缀，检查完整动作合法性；有界搜索只排序，不改规则。完整声明序列获胜后再次独立重放认证，证据与训练数据分开，搜索预算耗尽仅 unknown。最初两次264/740次规则调用未得到见证，保留结果；第二次实际已败敌但排序仍偏增加无用攻击资源，修正完成后优先正式阶段/回合收尾，189次搜索规则调用找到第一项 Braevalar/原068训练草案的完整可解见证，产物 20261007_discovery_complete_priority。该旧报告的调用数是搜索调用数，后加验证调用字段不回写旧证据。
+
+新增 terminal_checkpoint_proof.py：旧 Shaman 真实90步死路前缀精确重放，native Done/无合法动作/未胜利，证明该终止检查点不能继续获胜；明确 initial_task_unsolvable=False，不能据此排除初始任务。证据 20261007_terminal_shaman_continuation_proof.json。一般初始任务不可解求解器仍缺，不把超时或失败改名为证明。
+
+认证任务上真实 Recurrent PPO 两个 episode145步、一更新、零完整胜利，KL3.3488587e-7，规则审计通过，产物 20261007_recurrent_discovered_task。见证不作教师；已知可解却策略失败继续训练，不按失败排除原任务。下一候选独立30秒预算326次调用后 unknown，产物 20261007_discovery_next_candidate；不重复已认证任务、不将它误判为无解。
+
+新增预算发现/终止检查点各两项检查通过，最终 Unity Console 两读0错误见 tmp/rl_discovery_final_console_20261007.json；无原规则/Unity场景修改，未重复全库或上传轨迹。所有本turn启动作业已正常结束，无长期活训练需重启。新goal保持active，下一步继续新任务的缓存与见证发现、实际模式费用消费者覆盖反馈及独立评估。272草案仅一项自动获胜认证，完整原范围与真实Unity验收仍未达标。经验见 project_experience/bounded_witness_and_terminal_continuation_2026-10-07.md。
+
+## 第六次goal迭代：证据复用与第二可解构筑
+
+开头实核没有活 BattleRl/训练进程，上一轮有实质进展。新增 discovery_cache.py，复用严格 eligible 的完整见证，按完整定义含随机流去重；聚合池仅接受当前 train 组成，不借验证测试任务。同定义/规则/搜索代码/预算的 unknown 不重复跑，变更预算/算法可再探；不完整旧报告不得伪造绑定以跳过。discover_task_witnesses.py 新增 --prior-pool，--max-tasks 计新增搜索任务，不计缓存命中；每个新结果含实际任务定义。
+
+缓存负例/真实证书复用2项及受影响预算发现2项通过。实跑任务索引2、3：Krang 原013→014双组35秒668次调用未知；Arythea原021单组189次搜索调用、9步完整获胜认证。旧 Braevalar原068证书严格复用，聚合2项可解证据；scope仍单组为主，不冒充多组/跨昼夜已通过。产物 20261007_discovery_cached_candidates，搜索会话67685正常结束。
+
+新池真实 Recurrent PPO 2episode64步一更新：随机两次均选Arythea，同一任务分别21/43步，2次正式完整任务完成；496/988项有限审计零异常。更新后完整序列KL5.1464e-7，保存模型/Adam/RNG检查点，产物20261007_recurrent_two_discovered_tasks。进程338520、正式规则70448及会话68704正常完成；没有因观察等待启动重复进程。采样成功不等于保存策略独立胜率，也不等于池中两项已都训练。
+
+Unity Console两读0错误见tmp/rl_discovery_cache_console_20261007.json。未改场景/原规则，不重复旧库/截图，无下载上传或远端推送。当前无长期活训练，新goal保持active。下一步以真实使用缺口驱动任务选择，扩大可解多组任务并独立评估保存策略；全部原范围/费用材料消费者覆盖/跨昼夜与真实Unity验收仍未达标。经验见project_experience/discovery_bound_cache_unknown_budget_2026-10-07.md。
+
+## 第七次goal迭代：真实任务均衡与覆盖事件随检查点恢复
+
+开头实核无活训练/搜索/正式规则进程，上一轮实质进展。针对随机两次同任务，新增certified_task_sampler.py，以实际训练尝试按英雄/任务均衡，平局优先追加原卡未见模式需求，再RNG；见证只准入，不代替训练动作。train_recurrent_ppo.py 接入该选择/真实采样事件/首次episode-step证据与完整checkpoint历史，源码SHA守卫不把旧checkpoint伪作兼容。
+
+事件范围保守：手牌实际减少的原play/artifact Choice、单位ready耗竭、本人技能使用/翻转标记变化、正式fight原敌、正式回合与昼夜变化；牌库/规划/横置不是原模式使用。数量守卫会漏同一步抽回同名牌，复杂Choice粗模式映射/费用材料/消费者仍需补，不据42事件宣称全规则或全原覆盖。
+
+3项任务均衡/真实提交负例/采样恢复检查与1项优化器受影响检查通过。真实新签名采样2episode97步，分别两英雄，1任务完整完成；保存后恢复2episode77步，新增1完成。累计4episode174步，两英雄各2次训练、完整任务成功2，包含Day→Night及多次正式回合/战斗，规则有限审计通过。产物20261007_recurrent_balanced_tasks与_resumed，会话25088/36911完成。
+
+独立不中断两更新（会话59389正常完成）与保存恢复作必要端到端对照，72模型/Adam数组、完整header/RNG/采样计数、4条真实前后状态动作奖励审计、实际训练事件完全相等。报告20261007_balanced_sampler_full_resume_equivalence.json，42个原Choice/单位技能/生命周期事件键；不是42原卡或42消费者验收。两次采样胜利不是保存模型独立胜率，更不是泛化。
+
+Console两读0错误tmp/rl_certified_sampler_console_20261007.json，未修改场景/原规则，无全库重测/下载/上传推送。所有本轮训练正常退出，未重复启动或终止用户进程。完整goal active，下一步保存策略独立分层评估、扩展真实多组可解池/全原要素费用材料消费者反馈与最终Unity验收仍缺。经验project_experience/certified_balanced_actual_events_resume_2026-10-07.md。
+
+## 第八次goal迭代：冻结保存模型评估与保留分区准入
+
+开头实核无活训练/搜索/正式规则进程，上一轮实质进展。新增evaluate_recurrent_ppo.py，真实加载保存三层GRU参数，核规则/动作/schema/架构及源码签名、训练池绑定，评估使用独立RNG、不更新参数/Adam，完整真实轨迹与失败保留；参数和源检查点SHA前后不变。按组成而非seed区分calibration/validation/test，训练组成校准不可改名为held-out；验证测试必须自身完整见证、既定split且不与训练组成重叠。
+
+实际保存模型20261007_recurrent_balanced_tasks_resumed/checkpoint.npz确定性joint MAP校准两项0/2、44真实步、1018项有限审计0异常；原失败到Night第6回合全伤牌End/活动0/未胜利/no_legal_continuation，反复advance不出牌/攻击，不能用此前训练采样胜利掩盖。产物20261007_recurrent_frozen_joint_map_calibration。
+
+独立评估seed7001采样各任务两局，共4局131步、完整任务3，3108有限审计零异常，源模型/参数未变；仍是两训练组成校准，非泛化或稳定策略证明。产物20261007_recurrent_frozen_sampled_calibration，会话93767正常结束。失败一局stopReason原空字符串/Outside turn6，没有凭空解释成不可解；后新增native_done及空原因终止标签仅用于未来报告，不回写旧证据。该最后展示字段变更后的模块测试通过，不冒充旧运行带新字段。
+
+discover_task_witnesses.py新增--partition，仅本分区组成缓存准入及选择，默认train保持；按既定候选成本顺序搜索首项validation，45秒494规则调用后unknown。产物20261007_validation_first_discovery，会话13382正常结束；未见证仍排除胜利池，不放宽完整任务标准，test分区未运行。三项相关组成泄漏/分区/推断不改参数检查、两项受影响缓存检查通过；最终Console两读0错误tmp/rl_evaluation_partition_final_console_20261007.json。
+
+当前所有本轮进程均正常完成。无Unity场景/原规则修改，不重复全库，无网络传输/远端推送。完整goal保持active；保存策略仍不可靠且训练范围小，下一步扩大可解多组任务与继续PPO、真实费用材料消费者覆盖及独立保留评估/最终Unity。经验project_experience/frozen_recurrent_eval_split_and_failures_2026-10-07.md。
+
+## 第九次goal迭代：完整续训及双敌群可解扩池
+
+开头实核无活进程，上一轮冻结评估是实质证据。完整恢复20261007_recurrent_balanced_tasks_resumed检查点并继续8update×4episode×3epoch，源规则/签名/奖励不改；训练PID345920、规则54548、会话30679正常完成。产物20261007_recurrent_balanced_continued新增32局1318步/15完整任务、31147项有限审计零异常，累计36局1492步、Adam26步，130秒。只有旧两训练组成，吞吐不外推全范围/GPU适足性。
+
+新保存策略以相同两组成/独立seed7001冻结评估：joint MAP0/2、45实际步、1000有限审计；采样2/4、155步、3672检查，Arythea0/2、Braevalar2/2。旧采样3/4保留，不据训练15胜宣称策略改善；小样本不证明统计显著退化。新旧检查点与失败均保留。产物20261007_recurrent_continued_joint_map_calibration、20261007_recurrent_continued_sampled_calibration，会话18118正常结束。
+
+并行新组成搜索20261007_discovery_next_compositions：Norowas/015九步可解（189搜索调用），Wolfhawk/017→018在35秒575调用后unknown，保持原失败标准，会话44767正常结束。其后从原草案中筛选未尝试的两组train任务形成20261007_two_group_discovery_queue.json，原TaskDefinition/分区不变，源SHA保留；不是改敌人规则或随意换牌以做简单假任务。
+
+实际搜索20261007_discovery_two_groups：Goldyx/049→050、Krang/005→006均18步完整胜利，分别756搜索规则调用、再独立见证认证。通过正式EndTurn承接第二组，同真实玩家/牌/资源/部队持续；会话77918正常完成。聚合5可解任务/5英雄，其中两双敌群。新三英雄证书未进入已运行PPO，不能记为已训练/发动覆盖。新goal保持active，下一步显式扩池迁移保留Adam/RNG/旧采样计数后训练多战斗任务及独立保留评估，最终全原范围/费用材料消费者/Unity仍缺。
+
+本轮没有代码/场景修改，复用先前Console与已通过模块检查，不无理由重复全库或Unity编译。无下载上传、远端推送或用户程序终止。经验project_experience/recurrent_continuation_two_group_witnesses_2026-10-07.md。
+
+## 第十次goal迭代：显式扩池保全检查点与真实新英雄训练
+
+开头实核无活进程，上一轮新增双敌群证据为实质进展。新增expand_recurrent_task_pool.py与两项负例/当前证书检查，旧任务只追加、当前完整证书/原绑定/既定train分区严格校验，不能以移除旧任务或借验证集扩大训练。规则/动作/schema/三层GRU架构与源码签名相同，实际episode边界迁移后重载：72参数/Adam数组、step26、RNG、36局1492步、旧attempt/events/首次实际证据完全不变。新任务不虚造使用，源文件SHA与新SHA记录20261007_recurrent_five_task_migration/migration.json。
+
+train_recurrent_ppo.py仅manifest新增resume源路径SHA/扩池来源，不改PPO方程；三项受影响采样测试通过。新签名五任务恢复后实际训练2update×5episode×3epoch，10新局485步/11787有限审计零异常。Goldyx4次、Krang3次、Norowas3次，旧两英雄各18历史保留，均衡优先补新英雄。1完整任务胜利为Norowas单组，Krang一次只赢首组后失败，formal_group_wins2不改写成双任务完成。累计46局1977步Adam32。产物20261007_recurrent_five_task_training，会话5628正常完成。
+
+保存模型冻结五项训练组成评估：sampled2/5、267步6304有限检查，Braevalar/Norowas成功，Goldyx/Krang双组未完成；joint MAP0/5、149步3383检查，五项均no_legal_continuation。新检查点/参数始终不变，仍是校准非泛化。产物20261007_recurrent_five_task_sampled_calibration、20261007_recurrent_five_task_map_calibration，会话5782/54293正常完成。
+
+原组成队列20261007_remaining_heroes_discovery_queue.json保留Task/分区及源SHA：Tovak021→022（此前较小预算未知，本次40秒2000调用预算重探）457实际调用后unknown；Wolfhawk061→062416调用后unknown，均保持原完整标准/失败。产物20261007_discovery_remaining_heroes，会话87381正常结束。仍仅5英雄训练，7英雄目标未改，测试组成未动。
+
+Console两读0错误tmp/rl_pool_expansion_console_20261007.json，未改场景/原规则，未重复旧库，无下载/上传推送。所有本轮进程正常完成。新goal active，下一步处理分层动作解码与实际策略失败、其余英雄及保留多组可解任务、全原模式费用材料消费者和真实Unity验收仍缺。经验project_experience/recurrent_append_only_pool_migration_2026-10-07.md。
+
+## 第十一次goal迭代：解码对照与原承伤计划循环诊断
+
+开头实核无活训练/搜索/正式规则进程，上一轮扩池与实际5英雄训练为实质进展。本轮evaluate_recurrent_ppo.py复用既有head.greedy提供显式hierarchical_greedy对照，joint_map默认不变；增加逐操作选中概率/类型概率、两解码Key、前三类型及合法参数数量诊断，不改actor输入/参数/PPO/原规则/完整mask。test_recurrent_evaluation.py新增边际最大与联合MAP不同、未知模式拒绝，四项检查通过。
+
+实际同一保存checkpoint五项组成类型优先评估3/5（Braevalar/Arythea/Norowas单组完整），4整组胜利不写成四完整任务，566步14401有限审计零异常，参数与源检查点不变。Goldyx/Krang第二场AssignDamage分别227/228次unitDamage规划操作，256步step_limit失败；合法原计划201↔20/102↔02切换，不把规划当已承伤。实际类型概率0.501对advance0.499，16规划参数分摊每项约0.032对advance唯一项0.499，说明解码口径与基数影响。不能把同权重3/5写为模型学习改进，也不能用新对照抹旧MAP0/5或采样2/5。
+
+证据20261007_recurrent_hierarchical_decoder_calibration与20261007_recurrent_decoder_diagnosis.json，会话66615正常完成。Console最终两读0错误tmp/rl_decoder_final_console_20261007.json。未改Unity场景或规则，不重复旧库/截图，无下载上传/推远端/终止用户程序。新goal保持active，下一步定向训练规划提交/长期信用和扩大剩余英雄/保留组成可解池，实际多组稳定成功、完整原费用材料消费者/最终Unity仍缺。经验project_experience/recurrent_decoder_cardinality_and_damage_loop_2026-10-07.md。
+
+## 第十二次goal迭代：步长配对、冻结保存策略首次双组成功
+
+开头实核无活进程，上一轮3/5及规划循环是实际新证据。train_recurrent_ppo.py新增可选--learning-rate，在完整恢复后只改Adam步长并manifest登记旧/新值及settings，默认不变；2项保全部参数momentum/step与非法数值检查通过。规则、动作掩码、奖励与完整任务成功标准未改。
+
+同一20261007_recurrent_five_task_training检查点恢复两支基线5e-5/实验2e-4，各2update×5episode×4epoch；首批5真实链逐JSON相等，完整KL1.174182e-6对1.859009e-5，约16倍，证明实际更新幅度不同而非重新初始化。后批数据并非逐链全相等，报告20261007_recurrent_learning_rate_pair_report.json明确false。两支各10新局432步2完整任务，累计56局2409步Adam40，运行约49秒（配对并发不外推完整范围吞吐）。会话5084/20411正常结束，参数与真实失败产物都保留。
+
+冻结同五组成类型优先对照：基线3/5、567步14426限定审计；实验4/5、344步8115限定审计。实验Goldyx33真实步两战049→050正式End上升沿与两次EndTurn完整收尾成功，跨回合/fight实际GRU保持；Krang仍步数规划失败，6正式整组胜利只算4完整任务。参数/源checkpoint验证未变化，没有teacher替代策略或原规则修补。两支都为训练组成校准，不能称held-out泛化或统计充分改善。产物20261007_recurrent_lr_baseline_hierarchical_eval、20261007_recurrent_lr_4x_hierarchical_eval，会话86084/43089正常结束。
+
+另按原272草案真实原16牌开局队列补剩余英雄：Tovak/Wolfhawk对002在35秒预算后1241/1272实际调用unknown；保持中期难任务及旧失败，不补自制牌/单位/晶体或改split。队列20261007_original_opening_missing_heroes_queue.json源SHA/原组成保留，产物20261007_discovery_original_opening_missing_heroes，会话5837正常结束。全部本轮进程确认terminal，无观察超时重启。
+
+Console两读0错误tmp/rl_learning_rate_pair_console_20261007.json，无Unity场景/原规则修改，不重复旧库或网络传输。新goal active，实验检查点只是下一候选；仍缺七英雄、保留组成完整可解池/模型评估、全原模式费用材料消费者与实际Unity验收。下一步定向改进正式规则搜索阶段分支保留以覆盖原开局/剩余英雄，并继续验证多战斗策略。经验project_experience/recurrent_learning_rate_paired_frozen_improvement_2026-10-07.md。
+
+## 第十三次goal迭代：原开局真实见证与七英雄实际采样
+
+开头实核无活进程，上一轮学习率配对取得真实双战模型成功为实质进展。discover_task_witnesses.py新增search_branches保留合法advance/roundFinish/End-nextTurn，不让高排序大量格挡/横置参数挤掉handoff；phase_diverse_frontier按真实阶段/敌群索引保有限多样性，不合并隐藏状态或改变正式掩码。两项分支/前沿检查与两项受影响预算检查通过。
+
+实际新搜索两原开局各35秒，Tovak979/Wolfhawk928规则调用仍unknown；20261007_discovery_phase_diverse_openings会话37713正常结束，未宣称改进自动搜索已成功。定向专家真实入口路径：Tovak原16牌对毒巫师002，跳过格挡保攻击牌，真实承伤后原021/027基础攻击与007横置，正式攻击/End/EndTurn10步完整成功；Wolfhawk同既定开局经合法横置与原消费12步完整成功。两个tmp专家脚本失败会留原状态，未自造卡/单位/资源。证书独立重放/准入通过，221/264有限审计零异常，产物20261007_original_tovak_handoff_witness、20261007_original_wolfhawk_handoff_witness及20261007_original_handoff_witness_audits.json。见证不送PPO作教师，不把专家成功冒称自动搜索成功。
+
+七英雄可解池20261007_seven_hero_certified_pool.json保留原组成/train分区、源池及历史unknown；已解旧尝试只分类到historical_attempts，原文件不修改，4未解尝试仍quarantine。采用上轮4x保存候选明确5→7扩池，72模型/Adam数组、step40、RNG、56episode2409steps旧计数精确保持，产物20261007_recurrent_seven_hero_migration。不是默认全局换学习率或重新初始化。
+
+真实恢复训练一update×4episode×3epoch，两新增英雄Wolfhawk/Tovak各2实际采样、110步，0完整任务/0整组胜利，2512有限审计零异常，累计60episode2519steps Adam43，完整KL1.196075e-5。会话82580正常完成，产物20261007_recurrent_seven_hero_training。至此七英雄都有实际训练episode，但两新原开局仍不会赢，中期难双战未知不撤销，不能把七英雄seen算全要素达标。
+
+Console最终两读0错误tmp/rl_phase_diverse_final_console_20261007.json；未改Unity场景/原规则，不重复旧库，无下载上传/推远端/用户程序终止。所有本轮进程terminal，goal active。下一步七英雄保存策略冻结分层校准、继续基本模式费用材料消费者覆盖与保留多组可解任务验证；69敌/全部原构筑技能神器/跨昼夜成功与最终Unity验收仍缺。经验project_experience/phase_handoff_expert_witness_seven_hero_training_2026-10-07.md。
+
+## 第十四次goal迭代：七英雄冻结校准与保留组成PPO见证探索
+
+开头实核无活进程，上一轮原开局见证/七英雄实际采样为实质进展。先现有保存模型类型优先冻结七项训练组成校准4/7、397步9282有限审计，保留Krang step_limit、Tovak/Wolfhawk no_legal_continuation。源参数/检查点不变，不是七英雄泛化通过，20261007_recurrent_seven_hero_frozen_calibration会话8462正常结束。
+
+并行保留validation新两组成actual规则搜索各35秒，644/266调用后unknown，20261007_discovery_validation_next_compositions会话85911正常结束。未缩小完整声明序列或借验证组成训练。
+
+新增discover_policy_witnesses.py：冻结保存actor作真实合法动作探索器，候选事先按既定split/成本/taskID选定，独立seed8001、每任务三局预算，源训练组成不交叉。任务descriptor仅结构约束非伪造证书；只有完整序列胜利才独立重放认证，失败/部分胜利路径SHA全保留，unknown不无解，optimizer不更新且训练反馈false。工具不允许test探索；策略条件筛得的见证子集标明选择偏差，不作整个验证分布成绩。
+
+evaluate_recurrent_ppo.py抽出同签名load_frozen_policy复用，默认actor/规则/算法不变。新增实际冻结checkpoint逐参数相同、推断不改权重、旧训练池拒绝测试通过；四项受影响分区/解码检查通过。
+
+实际冻结PPO验证探索2既定候选×3局=6局336步，2次正式首组胜利、0整序列完成，7929限定审计0异常，参数/源检查点不变/optimizer_updates0。20261007_frozen_policy_validation_discovery全部失败原链保存，会话1057正常完成。验证可解池仍空，不能将首战成功冒充完整任务；两实际胜利前缀可用于后续正式续搜索。discovery_summary.json记录真实范围，未改变原模型或未知分类标准。
+
+Console两读0错误tmp/rl_policy_witness_discovery_console_20261007.json，未改Unity场景/原规则，无旧库重复/网络传输。所有本轮进程terminal，goal active。下一步从新实际前缀续搜完整保留任务并定向核原费用材料/消费者；完整69敌/原构筑技能神器/未调参测试及Unity仍缺。经验project_experience/frozen_policy_withheld_witness_discovery_2026-10-07.md。
+
+## 第十五次goal迭代：实际胜利前缀续搜索与战斗间分支
+
+开头实核无活进程，上一轮冻结策略保留组成真实胜利前缀为实质新证据。新增continue_actual_prefix_search.py验证源SHA/validation组成，从同原Task逐步重放19/12步原链，对照before/after、完整动作定义、raw reward及实际选中动作合法，不重建第二组出战快照。历史未存完整mask，不声称历史整mask逐行相等。discover_task_witnesses.py新增initial_prefix入口，各分支仍全真实根重放；完整双组成功方可认证，源前缀指纹/独立核验调用数留存，不供PPO作教师。
+
+两真实前缀精确重放通过，第一次35秒搜索674/1038规则调用后unknown，20261007_validation_actual_prefix_continuation会话39899正常结束。随后实际战斗边界诊断20261007_validation_prefix_boundary_diagnosis.json显示两任务Outside均有合法rest/nextTurn，但旧优先序可将其挤掉；search_branches补保这两分支，不改原规则/掩码或强迫PPO操作。不同策略、不同输出目录重探两前缀各35秒669/1035调用仍unknown，20261007_validation_prefix_rest_turn_branches会话21702正常结束，未因观察超时重启。
+
+1项真实前缀/坏状态、动作字段、reward拒绝检查及3项阶段分支检查通过。验证完整可解池仍空，首战胜利/续搜能力不冒充完整验证或不可解证明；原模型、优化器与训练数据未更新。Console最终两读0错误tmp/rl_prefix_rest_turn_final_console_20261007.json。未改Unity场景，未重复旧库，无下载上传/推远端或用户程序终止。
+
+所有本轮进程terminal，goal active。下一步需提高正式前缀重放搜索效率、继续构筑/原模式费用消费者覆盖与保留整任务验证；69敌、全部原要素及最终Unity仍未完成。经验project_experience/actual_prefix_continuation_and_outside_handoffs_2026-10-07.md。
+
+## 第十六次goal迭代：活祖先重放复用与搜索缓存作用域
+
+开头实核无活进程，上一轮实际前缀及Outside分支为实质新能力。新增exact_replay_cursor.py并接入discover，只有同活正式进程的祖先前缀才续后缀，相等前缀复用当前完整响应；回退/兄弟仍原Task根重放，不拷贝玩家/随机状态或公开状态合并。实际搜索step预算只计实际协议提交，复用次数独立统计，不算新轨迹/发动覆盖。
+
+两项实际对照：Tovak原开局伸展/相等/回退/兄弟分支完整响应相等；Goldyx双战/单位/源骰八响应（状态、features、全legal、rawreward、done等）相等，36实际step对85全根step，49省重复，证据tmp/rl_exact_cursor_two_battle_equivalence.json。会话47385正常结束，不外推全训练速度。
+
+优化后两validation真实前缀35秒续搜659/976实际step、172/272复用，仍unknown，无完整见证/无不可解结论；20261007_validation_prefix_live_reuse会话95952正常完成。并发检查与时间限影响调用量，不声称比此前可靠提速比例。原模型、训练和正式规则未改。
+
+之后补签名/作用域：search_signature绑定discover及cursor源码，保存原文件SHA与完整实现签名；非零prefix的unknown不抑制根搜索，prefix长度/digest记录。旧运行属此前签名版本，保留原证据不回填。非法动作before日志调整及单独负例通过（未提交/未增step），2项预算与2项缓存作用域受影响检查通过。最后Console两读0错误tmp/rl_exact_cursor_final_console_20261007.json；最后新增仅测试文件，不涉及新运行代码或场景。
+
+无Unity场景修改/旧库重复/网络传输或用户进程终止，所有本轮进程terminal。goal active；完整保留任务可解池仍空，下一步推进较广原模式费用消费者覆盖与可解构筑生成/验证，全部69敌与原要素、未调参测试及真实Unity仍缺。经验project_experience/exact_live_ancestor_replay_and_cache_scope_2026-10-07.md。
+
+## 第十七次goal迭代：原模式归类及实际缺口驱动候选
+
+开头实核无活进程，上一轮祖先重放优化是实质新能力。本轮新增export_frozen_card_modes.ps1，以只读反射当前冻结DLL BattleCardChoice.For，96行动/高级/法术记录Choice的Enhanced/Option，不改编译DLL/规则或猜red/heal等词；目录SHA与规则SHA记录20261007_frozen_original_card_modes.json。normal/burn仅显式神器模式识别，不推断已通过费用。
+
+新增actual_coverage_gaps.py：实际事件必须与保存checkpoint完整sampler状态相同、规则签名一致，避免拿教师/目录或改计数冒充训练。冻结映射归类62已提交目录模式（不是62完整卡）、8实际单位ID、9本人技能ID、9hero-enemy配对；目录242模式仍180缺口，Choice归类未知0。按实际缺口交集/成本排原train组成，validated/test不借入，成员planned_gain不增加覆盖。费用/材料/分支/原消费者与最终UI仍另验。
+
+来源核对：现有正式契约已指出两ID011/025关联民间Ymirgh、七英雄标准集合26基础，不应为凑目录28配给原英雄。读取既有original_hero_start_source_audit_2026-09-23.md与本地原牌英文图复核；使用PDF技能读取已有tmp/pdfs/tezla_official_rules.pdf（bundled pypdf，无安装下载），并检索WizKids官方规则页，未靠来源猜测修改牌库。将四目录模式来源异常独立保留，其余176模式缺口另列，旧实现/失败及目录计数未删除。报告v1/v2保留，最终20261007_actual_invocation_coverage_gaps_v3.json绑定训练checkpoint及来源审计SHA。
+
+3项原模式非前缀/技能colon、空/未知不算目录覆盖与split、实际checkpoint事件防伪检查通过。按缺口队列选Wolfhawk013→014、Tovak061→062，两原组成各25秒445/244实际调用仍unknown，20261007_discovery_actual_gap_candidates会话7223正常结束；未增加可解池/发动计数或缩小全原目标。新队列20261007_actual_gap_candidate_queue.json保原Task与实际事件源指纹。
+
+Console最终两读0错误tmp/rl_actual_coverage_final_console_20261007.json；未改Unity场景/原规则/模型，无截图上传、下载大依赖、远端推送或用户程序终止。goal active，下一步扩大有真实消费者可解任务、原分支与费用材料证据及独立验证/未调参测试，完整69敌/全部原要素/真实Unity仍未完成。经验project_experience/frozen_native_modes_actual_gap_ranking_2026-10-07.md。
+
+## 第十八次goal迭代：缺口PPO见证、跨Night完整双战与扩池
+
+开头实核无活进程，上一轮真实缺口报告为实质进展。discover_policy_witnesses.py支持显式selected_train_drafts队列，避免默认成本排序重复校准，且train队列不能用作validation；两项排序/分区检查通过，后补源队列/训练池SHA字段用于未来运行不篡改旧源码版本产物。
+
+冻结60局七任务模型按实际欠覆盖两构筑各至多4采样：Wolfhawk013→014四次仍unknown；Tovak061→062第三次47步完整成功，合计7尝试，全部实际原链与有限审计保留，独立完整证书通过。20261007_policy_actual_gap_discovery会话65252正常结束。新任务有items022/023/024、army000/001/002、Tovak00/01；未以入库/见证算训练覆盖。
+
+实际第21步nextTurn跨Day→Night且单位正式重整，GRU继续传递，后续完成第二场和整个Task；20261007_policy_two_group_night_evidence.json绑定原尝试SHA/边界记忆哈希，2完整整组上升沿不是新快照假连续。定向原army.json army001能力0与真实两转移：Day Black/Black、Night Black/Gold分别2标记产生、unit耗竭，晶体/held/source/额度不变，选色是产出并非费用。具体审查20261007_original_altem_mage_gift_review.json，不外推另外能力/费用或下游消费者。
+
+并行七任务完整续训18局632步3整Task成功，累计78局3151步Adam55，约51秒，会话76650正常完成。按当前规则/组成显式7→8扩池，72数组/RNG/旧覆盖计数相等；随后5局199步1整Task，累计83局3350步Adam59，20261007_recurrent_eight_task_training会话40112正常结束。源专家/PPO见证没当教师，validation/test没入池。
+
+实际训练发动下界更新为70模式、11单位、11本人技能、10hero-enemy配对，Choice未知0；20261007_actual_coverage_after_eight_task_training.json绑定新完整checkpoint。新增8模式/3单位/2技能/1配对是已采样提交记录，费用/材料/全部分支/后续消费仍需独立完整覆盖。
+
+最新保存八项类型优先冻结校准3/8、886实际步22030限定检查0异常，Goldyx/Krang和新增Tovak双组仍失败；原较优候选与新失败保留，不据47步随机见证/覆盖增长说最新模型可靠改善。20261007_recurrent_eight_task_frozen_calibration会话50471正常完成，参数/源checkpoint不变。
+
+Console两读0错误tmp/rl_selected_queue_final_console_20261007.json。无Unity场景/原规则修改、旧全库重跑、网络传输或用户程序终止，所有本轮进程terminal。goal active，下一步继续更多原消费者/合法构筑真实使用及保存策略失败诊断、保留验证与未调参测试；完整69敌/全部原要素/最终Unity尚缺。经验project_experience/policy_gap_queue_night_witness_and_real_expansion_2026-10-07.md。
+
+## 第十九次goal迭代：整序列信用诊断及终局奖励配对
+
+开头实核无活进程，上一轮新可解双战/真实覆盖增长为实质进展。源83局八任务保存模型独立seed8201采样2×8=16局完成5任务，651步15325限定检查0异常，仍训练组成校准；20261007_recurrent_eight_task_sampled_calibration会话38427正常结束。
+
+读取真实episode68/73，Krang序列未完成但旧training_reward和11.69/11.31正，显示首组信用仍可能与整任务目标不一致，不修改原失败/规则。新增sequence_training_reward.py可选终局目标：全native kill delta与单组20信用中和（换组计数重置也中和），仅sequenceCompleted上升沿给20，终止失败扣10并替换native no-kill5，其余原处罚保留。raw reward与actor前步raw历史不变；默认旧目标保持，显式迁移才用新奖励，metadata记录目标和新源码SHA，trainer/evaluator/扩池均检查。不是默认偷偷重写既有奖励标准。
+
+从同一个83局3350步Adam59完整检查点配对两支，各2update×6episode×4epoch；12新局462步零整Task成功，累计95局3812步Adam67。全部12原链去除training_reward字段逐JSON相等，仅两部分胜利训练奖励改变；首批无formal胜利两支数学更新相同，第二批才不同。报告20261007_terminal_sequence_reward_pair_data.json；会话46884/34765正常结束。
+
+冻结八任务类型优先两支都4/8（old661步15608/new657步15504限定检查），各源参数/检查点不变，没有证明新目标改善；失败仍为两planning step_limit及两no_legal等。产物20261007_recurrent_reward_existing_frozen_eval、20261007_recurrent_reward_terminal_frozen_eval，会话26184/99665正常完成，新旧候选保留。
+
+3项实际部分失败转负/实际双战正式收尾才付奖励/新目标checkpoint不能静默旧目标恢复检查通过。Console最终两读0错误tmp/rl_terminal_reward_final_console_20261007.json。无Unity场景/原规则改动、全库重复、网络传输或用户程序终止，所有本轮进程terminal。goal active，仍需更多原要素费用材料消费者、69敌实际覆盖、保留验证和未调参测试及最终Unity。经验project_experience/terminal_sequence_reward_actual_pair_2026-10-07.md。
+
+## 第二十次goal迭代：分家族新构筑与费用/数据冻结复核
+
+开头实核无活进程，上一轮奖励配对实际证据为进展。更新终局分支实际缺口72模式/11单位/11技能/11配对，从原train组成按不同家族选未认证队列，不改任务/hero/卡/敌人参数或借验证。冻结95局模型四候选至多4局、共14尝试：Krang units013→014、Braevalar physical017→018/ranged_siege053→054未完整；Krang elemental018在24步成功、独立证书通过。20261007_policy_distinct_family_discovery会话43591正常完成，发现不当教师/发动训练记录。
+
+显式8→9池保持72参数/Adam数组、step67、95局3812步、RNG与旧计数；恢复终局目标继续6局238步1整任务，累计101局4050步Adam71，20261007_recurrent_nine_task_training会话60314正常结束。真实发动下界73目录模式、11单位、12本人技能、12hero-enemy配对（20261007_actual_gaps_after_nine_task_training.json），新增单组构筑不冒称多组泛化或最新冻结模型改善。
+
+定向最近成功47步真实链原basic009强化：印刷蓝费，step12实际blue token1消耗、green源骰数量减1、red标记+2、black不变，crystals/held/普通源额度/extraDice不变，instance1实际手→played，claimed追加Red。step18标记实际过期；没有red后续付款，不记消费者成功；source面值无法独立证明同实体无重掷，no-reroll身份缺口保持。20261007_original_mana_draw_fee_conversion_review.json保具体断言/原来源和完整见证SHA。
+
+复核Loader源代码发现动态File.ReadAllText载入JSON，仅DLL指纹不冻结所有原数据。当前10文件组合SHA bc14de318bd39969d4d5e7ad82fbbf0e9697dfba997939b52b5538b9c2d1cfa3，20261007_current_external_rule_data_fingerprint.json明确当前证据、不追认过去未存指纹。下一步补未来证书/检查点数据签名和实际历史重放迁移，不能据当前文件给旧历史虚构冻结覆盖。
+
+本轮未修改规则/场景/代码文件，不重复旧检查/Console，无下载上传、远端推送或用户程序终止。所有本轮进程terminal，goal active。完整原范围/69敌/费用材料消费者及保留验证、未调参测试、Unity验收仍缺。经验project_experience/distinct_family_discovery_mana_fee_and_external_data_2026-10-07.md。
+
+## 第二十一次goal迭代：动态JSON版本绑定与历史边界
+
+开头实核无活进程，上一轮新构筑与动态数据缺口发现为实质进展。新增original_data_signature.py，对实际10 JSON文件字节SHA组合，meta不纳入。task_feasibility checker3新证书绑定全部当前数据、认证过程中版本不变、增加raw reward精确匹配；旧证书无签名fail closed。九旧成功原链全部当前重放通过，绑定TaskID保持，新产物20261007_nine_task_data_bound_pool.json，会话1075正常结束；不是追认旧历史数据版本。
+
+新增bind_legacy_rule_data.py，旧101局4050步/Adam71模型显式当前绑定：同九Task当前见证、原源码/规则/动作/schema检查；72参数/Adam数组/RNG与真实sampler历史全部相同，旧checkpoint原样保留。新replay.data_binding声明101局前未记录版本、保留legacy_events；20261007_recurrent_current_data_binding/binding.json明确historical_data_version_proved=false。
+
+trainer/evaluator/扩池均核新数据SHA；trainer在每update采样前/更新前/保存前检查版本，不写混版本模型，并保data_binding历史边界。覆盖报告校验模型/当前数据，把旧累计记录与绑定后事件分列。数据变更/旧证书拒绝检查、四项旧实际可解门及受影响冻结模型/缓存/预算/扩池/覆盖检查全部通过。fixture更新引用重放证书，不重写旧失败或历史产物。
+
+新完整绑定恢复一update×3episode×2epoch，102步1整任务，累计104局4152步Adam73，20261007_recurrent_data_bound_training会话8615正常完成。20261007_data_bound_actual_coverage.json新版本事件11模式/5单位/6技能；历史累计73模式/13技能保留但不冒称全是当前数据版本认证。
+
+当前数据组合bc14de318bd39969d4d5e7ad82fbbf0e9697dfba997939b52b5538b9c2d1cfa3；Console最终两读0错误tmp/rl_data_binding_final_console_20261007.json。无Unity场景/原规则/奖励改动、旧全库重跑或网络传输，所有本轮进程terminal，goal active。完整69敌/原模式费用材料消费者、保留验证/未调参测试及Unity仍缺。经验project_experience/runtime_json_binding_current_not_retroactive_2026-10-07.md。
+
+## 第二十二次goal迭代：固定原数据续训与冻结前后配对
+
+开头实核无活进程，上一轮九链重放及数据绑定为实质进展。九任务同数据SHA，从104episode4152steps Adam73恢复终局目标，6update×8episode×4epoch，48新局2002步14整任务、限定审计零异常，约161秒。累计152局6154步Adam97；20261007_data_bound_extended_training会话55845正常结束。无时间观察超时重启，四次进展确认实际输出，未切原规则/奖励超参。
+
+冻结前后同九任务独立seed8401每任务两次：源5/18、758步17887有限检查，训练后7/18、730步17061检查。两次源参数/检查点不变，calibration标记明确，不能证明held-out或统计稳健提升；Goldyx/Wolfhawk仍0/2。20261007_data_bound_pretrain_sampled_eval/posttrain_sampled_eval会话95450/15725正常完成，20261007_extended_training_paired_eval_report.json保完整分英雄/停止原因及源范围。
+
+更新实际覆盖报告20261007_actual_gaps_after_extended_training.json：当前数据绑定事件58模式/8单位/11本人技能，历史累计75模式/13技能保持不同口径，不补写旧101局数据版本。真实费用/材料/各分支/消费者和最终UI仍另验。
+
+实际硬件读Win32_VideoController与nvidia-smi确认RTX4060 Laptop GPU，nvidia-smi memory.total8188MiB约8GiB，WMI截断值不作4GiB判断；当前实现仍CPU_NumPy，无GPU/PyTorch安装或使用/完整范围适足性声明。未操作用户其他程序。
+
+本轮未改代码/场景，复用先前Console和通过检查，无全库重跑、下载上传/推远端。所有本轮进程terminal，goal active。下一步继续更多原要素真实费用消费者、合法任务与保留验证的完整见证及未调参测试，完整69敌和Unity仍未达到。经验project_experience/data_bound_extended_ppo_paired_calibration_2026-10-07.md。
+
+## 第二十三次goal迭代：首项保留证书与独立失败
+
+开头实核无活进程，上一轮受控续训配对为实质证据。冻结152局九任务保存策略，对四个既定validation组成实际13局687步16142限定审计零异常：Goldyx005→006 ranged_siege构筑43步完整胜利，新数据绑定证书通过；三其他unknown。参数/源checkpoint不变，validation不入train，test未触碰。产物20261007_current_data_validation_policy_discovery，会话7421正常结束。
+
+policy筛选的可解子集存在选择偏差，不代表整个验证分布；另seed8601独立冻结4局254步、0完整/1首战、5921有限审计无异常。任务可解但保存策略不稳定，首战不冒充双战成功、失败不判无解。20261007_first_data_bound_withheld_eval会话79479正常结束。
+
+evaluate_recurrent_ppo.py补未来报告feasibility_selection与未解池条目数，旧运行不回填新字段；20261007_withheld_evaluation_selection_scope.json记录只涵盖1/4候选且三未知，validation不是最终未调参test。四项受影响检查通过，Console两读0错误tmp/rl_first_withheld_eval_console_20261007.json。
+
+只读定位SceneAutomation/PveBattleMenus及pve_battle.json，未改场景/用户配置或假称Unity验收。无全库重跑/下载上传/推远端或用户程序终止，所有进程terminal。goal active；全原费用材料消费者、69敌、更大保留验证、未调参测试及真实Unity仍缺。经验project_experience/first_withheld_complete_witness_independent_failure_2026-10-07.md。
+
+## 第二十四次goal迭代：新敌探索及UI字段比较入口
+
+开头实核无活进程，上一轮独立验证失败为实际证据。按实际缺口/未见enemy ID/不同hero选四既定train组成，Wolfhawk013→014、Braevalar017→018、Arythea053→054、Krang069→001，Task/分区不改。冻结152局模型各4尝试仍无完整证书，unknown/原链保留，不加已训练敌人覆盖。20261007_new_enemy_hero_policy_discovery会话50561正常结束，summary.json记实际范围，验证/test不用于补训练。
+
+读取既有PveBattleController.CaptureAutomationState与SceneAutomationStep，新增ui_state_mapping.py共享战斗字段projection和实际capture比较函数，覆盖资源/阶段/手牌/单位/hero等；Outside/nonbattle拒绝，避免混CaptureJourneyState。未伪造UI仅提供期望，所有缺键/不同值出差异，不宣称UI-only选择/素材或物理来源索引已经映射。
+
+两项费用实际片段Blue1→0/Red3/卡离手、缺capture/错值拒绝与Outside范围拒绝检查通过，Console两读0错误tmp/rl_ui_projection_console_20261007.json。实际Unity场景未运行、没有截图通过声称；原规则/观察/model未修改。无旧库重复/下载上传/推远端/用户程序终止，所有进程terminal，goal active。下一步真实UI capture/控制映射以及更广可解构筑/费用消费者/独立测试，完整目标仍未达标。经验project_experience/ui_state_projection_not_scene_acceptance_2026-10-07.md。
+
+## 第二十五次goal迭代：实际Unity桥接与原卡阶段重置
+
+开头实核无训练进程，上一轮接口/新敌失败是实质证据。读取实际MCP工具源码，manage_scene/get_active确认Part1_PveBattle已加载、dirty=false。新增只读PveBattleController.RlAudit.cs与CaptureAutomationState字段，读取真实session/player/context，不改变规则/JSON/观察或模型。标明context.InBattle与battleSessionPresent，独立演练不假称Journey；Pythonprojection兼容实际独立session捕获，Outside仍拒绝。
+
+新增Editor两个菜单和独立rl_ui_bridge/phase_reset配置，调用既有SceneAutomationCommand，未Build或覆盖原pve_battle.json；真实按钮命中EventSystem报告前后状态。三阶段UI点击成功，27共享字段前后162对照零差异，近战两原创伤截图视觉符合；六点击原basic000横置后hand7→6/melee1，重置近战恢复hand7/melee0/realWounds2，324对照零差异。20261007_unity_ui_bridge与20261007_unity_phase_reset报告成功，关键两原截图已view_image阅读。
+
+新增compare_unity_state_report.py实际success/命中/规则snapshot及字段比对，实际报告/损坏UI手牌/缺snapshot/失败点击负例通过，2项projection检查通过。最终Console两读0错误tmp/rl_actual_ui_final_console_20261007.json。第一次refresh wait_ready30秒socket超时，未重启或快速重试；实际Console零错与新菜单存在确认编译就绪，后refresh false返回idle。场景仍原路径isDirty=false，两个自动化正常结束，无Unity.exe命令行/batchmode/包操作。
+
+范围是当前标明非标准演练快照的共享字段/原阶段操作；不是保存PPO策略整个操作验收，更不证明全部原牌/对象身份/随机跨回合。无截图上传/推远端、全库重测或用户程序终止，goal active。下一步完整策略到UI动作映射、原标准构筑连续操作和其他原要素/独立测试缺口继续保留。经验project_experience/actual_unity_rule_ui_bridge_phase_undo_2026-10-07.md。
+
+## 第二十六次goal迭代：原16牌实际UI流程
+
+开头实核无训练进程，上一轮局部UI映射/阶段重置为实质进展。读取HeroStart/Journey正式入口及状态字段，新增独立Editor Run PPO Original Opening与rl_ui_original_opening.json；原菜单/Camp/英雄picker/Tovak/完整16牌战斗试玩/day_1/BeginTurn/Encounter0八真实按钮命中全部断言成功。未改角色deck或随机流、没有手工搭假原玩家，旧pve_battle.json保持。
+
+实际hero.level1/armor2/commandSlots1、skills0/units0、红蓝白绿晶体0、hand5/draw11/total16，正式战术选择/开始回合后同玩家进入Ranged。最终实际formal audit JSON与Unity共享27字段零差异，opening_shared_state_comparison.json记录；关键原截图007_正式进入真实战斗.png视觉一致。hero.standardStart=False是当前按钮原16牌战斗试玩，非标准原版地图，未将false改成true或称原地图已经验。
+
+Unity正常结束，Console两读0错误tmp/rl_standard_deck_ui_final_console_20261007.json，原规则/模型/原JSON没有修改。实际UI尚未由完整保存策略控制，不把入口/27字段通过写为全PPO验收。无旧全库重跑/截图上传/推远端/用户程序终止，goal active；广泛原消费者/69敌/保留验证/未调参测试和完整策略Unity操作继续待验。经验project_experience/actual_original_16_card_ui_entry_2026-10-07.md。
+
+## 第二十七次goal迭代：严格语义到指针映射
+
+开头实核无训练进程，上一轮原16牌UI入口为实质进展。新增semantic_ui_actions.py仅映射中性无参advance（Ranged/Block/Melee）与实际非伤牌sideways（Block/Melee首同ID实体/occurrence0、依据源码首页7张）。非空Input、非零目标/Parts/Option、其他kind/choice/phase和分页全部fail closed，不静默丢参数或改advance。两项重复ID/页界与费用材料/目标/伤牌/不支持kind阶段负例通过。
+
+生成rl_ui_generated_semantics.json并新增独立Editor菜单，四映射点击（两advance/sideways选牌＋确认）加一明确未映射承伤准备。实际五EventSystem点击命中成功，270共享字段对照无差异，hand6/melee1截图视觉一致，20261007_unity_generated_semantics报告成功。非保存策略选定动作，仍未有UI完整5713观察/完整原状态等价，也未将准备动作算映射覆盖。
+
+初次菜单不可用，读取本地RefreshUnity源码后请求scripts compile/wait_ready（Unity6请求compile会不阻塞等ready），Console两读0错误再执行实际成功，无快速重复/重启。最终Console两读0错误tmp/rl_semantic_ui_final_console_20261007.json。原规则/模型/scene/旧验收配置不改，无全库重复/下载上传/远端推送或用户程序终止，自动化正常结束。
+
+goal active，剩余付款/材料/目标/来源/分页/其他kind/跨回合及完整观察映射，广泛原要素/69敌/独立验证和最终策略UI仍缺。经验project_experience/strict_semantic_pointer_mapping_initial_actions_2026-10-07.md。
+
+## 第二十八次goal迭代：真实攻击选择与贡献消费
+
+开头实核无训练进程。新增RLAudit只读可用贡献/来源原ID、敌人与防护、实际UI目标及保留贡献槽；严格语义attack限定无特殊Input/单目标/全部可用来源/无绑定防护。增加真实中性卡牌、单位、技能、弓、恢复、材料上下文谓词，未知或非中性拒绝，避免目标按钮在不同上下文变义。Python三项受影响检查通过，含部分来源、多目标、特殊输入、防护绑定、上下文未知负例。
+
+独立rl_ui_semantic_attack配置与Editor菜单；两advance及一明确未映射承伤准备，三原牌横置六点击与攻击五点击，共14实际命中。第一次CS0246缺DeedCard namespace，补MK.Logic.Data后Console两读0；原失败日志保留。首次实际报告保留；增加中性守卫后受影响场景定向重验，20261007_unity_semantic_attack_neutral成功，756共享字段对照零差异。实际攻击前快照重新调用action_steps，五路径与实际步骤一致；basic000/014/008各1贡献正式消费清空、monster032实际击败、名望0→2、手牌伤牌不变。actual_attack_consumption.json记录原前后状态，最后关键截图已实际view_image，最终Console两读0(tmp/rl_semantic_attack_neutral_final_console_20261007.json)。
+
+动作仍示例而非保存策略选择，当前非标准演练；击败时Melee/won=false，未将局部击杀当完整胜利。原来源ID未证明实体ID守恒；全观察、部分贡献、防护绑定特殊参数/付款与完整连续策略Unity验收仍缺。原RulesDLL/JSON/模型未改变，无旧全库重跑、上传/推远端、Unity直接启动/包操作或用户程序终止。goal active，经验actual_ui_attack_neutral_context_and_consumption_2026-10-07.md与索引已记录。
+
+## 第二十九次goal迭代：欠覆盖新见证与真实续训
+
+上一轮攻击UI是实际进展。本轮先实核没有旧train/discovery进程；从实际保存的152局检查点冻结探索新train-only构筑，保留validation/test独立。四此前未尝试双战构筑16次956步0完整成功，22580有限审计检查；无合法后续5次，其余正式终止，全部unknown，不称初始不可解。四此前未尝试单战构筑8次307步3完整见证，7285检查；Wolfhawk026/Goldyx018/Braevalar014当前规则全前缀重放认证，Arythea022仍unknown。新发现输出20261007_next_distinct_deficit_discovery与unattempted_single_group_discovery。两个活session31544/56076核PID/启动命令与更新后自然terminal，无因观察等待重复启动。
+
+新twelve_task_data_bound_pool保留9旧绑定加3当前证书；显式迁移72参数/Adam数组、Adam97、RNG/历史完全一致，episode152/6154步边界继续，无新访问伪造。训练PID330332/启动11:25:11/session83357实际12updates×4episodes×2epochs，原LR.0002/terminal_sequence/真实序列memory；48新局2214步14完整任务成功，有限审计51910零错误，CPU192.246秒自然退出。保存checkpoint累计200局8368步Adam121；源及新检查点哈希、manifest和progress存twelve_task_training与汇总twelve_task_iteration_summary.json。
+
+actual_gaps_after_twelve_task_training累计78模式11单位17技能15英雄敌人配对；严格当前数据绑定71模式11单位17技能14配对，旧101局未绑定继续分存，不冒称全部原要素/费用材料消费者已验。新见证magic009实际原卡图与原effect核红晶1→0、物理17手→played、远程火焰5生成一致；下步advance失效而非真实攻击消费，强化/消费者/Unity仍缺，new_witness_fireball_base_review.json明确。
+
+同冻结12任务/采样seed8901前后完整4/12→4/12，组胜6→4，分别478/516步11318/12114有限检查；不能称改善或泛化。保留验证Goldyx同seed8601仍0/4、两组胜/190步4468检查，三个未知不被隐去；模型选择证书子集偏差明确，test未使用。保存策略全Unity操作、广原费用消费者/69敌与初始不可解solver等仍缺。全部本轮进程natural terminal；没有规则/模型源码或场景修改，不触发新Unity编译/重复场景，未下载上传/推远端/用户进程终止。goal active；经验distinct_task_witness_expansion_not_policy_improvement_2026-10-07.md及索引更新。
+
+
+## 第三十次goal迭代：新真实失败攻击与冻结解码
+
+上一轮扩池/真实续训是进展，本轮开头实核无旧活进程。新增diagnose_actual_attack_expiry.py：认证任务reset、实际全前缀before/action/after/rawreward精确比对、GRU跨边界完整历史重建并匹配保存选择概率，阶段推进时记录完整legal attack及概率，从同实际前缀正式执行合法最高概率attack。只反事实即时效果，不以攻击池存在猜可解/击杀，不训练教师动作。
+
+Arythea新45步失败17/36/43无合法attack；22唯一attack概率.198079/实际选advance.141848，合法替代真实原021击败、来源消费、仍Melee/won=false，整任务未证明。Goldyx新64步失败19合法attack.588819击败、48无attack。两个损坏before与保存概率负例分别拒绝，检查报告保存；Console两读0(tmp/rl_attack_diagnostic_console_20261007.json)。
+
+同200局实际保存检查点12训练构筑，冻结分层贪心6/12、319步/7517有限检查；联合MAP0/12、298步/6878检查；此前sampled4/12。联合MAP的Arythea实际多nextTurn/advance不打牌，分层成功不代表权重学习或广泛泛化。已认证保留Goldyx分层43步完整双战/993检查通过，是一个固定被见证条件选择构筑。新增discover_policy_witnesses显式mode默认sampled，确定性只允许1次不重复，并将mode保存；实际重复模式参数负例先于加载规则拒绝。其余三既有unknown保留构筑首次新分层解码尝试均无完整见证，不将未知判初始不可解、不回填训练/test。汇总actual_attack_decoder_diagnostic_summary.json与unknown_validation_hierarchical_discovery保存。
+
+所有本轮评估/诊断session自然terminal，无活进程重复重启；最终Console两读0(tmp/rl_attack_decoder_final_console_20261007.json)。不改变原规则/观察/模型/场景，没有全库/旧用例重复、下载上传、推远端或用户程序终止。基本范围仍欠原全部费用/材料/消费者、69敌覆盖、广泛保留验证/untuned test、不可解solver与完整保存策略实际Unity；goal active。经验recurrent_actual_attack_expiry_and_decoder_diagnosis_2026-10-07.md已记录及索引更新。
+
+## 第三十一次goal迭代：欠覆盖七英雄新任务与跨轮见证
+
+上一轮实际诊断/冻结解码是进展；本轮先实核无活RL进程。按最新actual_gaps训练分区/未试任务/英雄均衡七英雄各一新任务，冻结分层探索session25922/PID353064，七次654步4组胜，Tovak017→01859步完整成功跨昼夜，其余六未知；14997有限审计零错，精确原规则前缀认证，不以选择/目录代覆盖。真实12→13 append-only迁移保持72参数/Adam数组、RNG历史、Adam121、episode200/8368步不变。
+
+新真实训练session44524/PID227716启动11:38:12，8updates×8episodes×2epochs，原LR.0002/terminal_sequence；64局2962步25完整成功/28组胜，69795有限检查0error，CPU224.198秒自然terminal，保存264局11330步Adam137。新任务实际采样次数记录；actual_gaps_after_thirteen_task_training累计87模式14单位19技能16配对，严格当前数据绑定85/14/19/16，旧未绑定继续分存。
+
+新Tovak见证step36魔法天赋强化：原图蓝费用支付Blue晶1，追加Green标记1取得原Green magic001，真实供给移除，新增物理39discard，44正式Day→Night后同39draw。本体手→played；之后没有magic001发动，基础/消费者/Unity缺口保留。tovak_magic_talent_real_acquisition_review.json含来源SHA，原图已view_image核读。
+
+冻结同13构筑/分层解码前7/13(378步8895检查)，后5/13(626步15520检查)，具体丢失Tovak新双战、Wolfhawk单战，旧新权重与失败不覆盖。四预先选定validation构筑全结果用新冻结模型2/4（Goldyx/Wolfhawk双战成功，Braevalar/Arythea未知），不是仅成功子集评分，不回填train，不触test。两个方向相反/样本小，不宣称整体改善、模型达标；thirteen_task_iteration_summary.json记录哈希/全尝试。
+
+所有本轮进程正常terminal，核实没有旧活进程重启；无源码/原规则/观察/Unity场景修改，不重复旧编译场景或全库。未下载上传/推远端或终止用户程序。完整原要素、69敌/费用材料消费者、广泛未调参test、初始不可解证明及完整保存策略真实UI仍缺，goal active。经验thirteen_task_cross_round_witness_and_mixed_eval_2026-10-07.md及索引已更新。
+
+## 第三十二次goal迭代：RNN混合开战与真实规划循环失败
+
+上一轮扩池与新检查点/相反评估变化为进展；本轮先实核无活RL。重放Tovak新失败51步完整历史概率/前后状态/rawreward：开战前原基础牌产生movement8，正式fight清零，之后第10步攻击池非空却完整mask无attack，不能猜能击杀。tovak_lost_double_actual_diagnostic.json保留即时证据。
+
+train_recurrent_ppo新增opt-in mixed-combat-start复用已有prepare_training_start，累计nativeepisode奇数以真实合法fight初始化、偶数保留自主开战；原root证书先校验，prefix独立保存不进PPO/reward/actual_events，audit包含prefix。前缀后才初始化actor memory，所有后来正式回合/战斗/昼夜持续记忆。Replay记录课程开关/累计prefix，restore变化须显式change-start-curriculum，manifest详列；异常轨迹保留prefix。当前独立Tovakhelper与直接fight整个协议完全一致，未启用返回原state对象；隐式resume改变课程负例拒绝无新检查点。actual prefix边界逐32局核验、16前缀与首PPO状态相接。Unity Console编译/最终两读0(tmp/rl_recurrent_mixed_prefix_compile/final_console_20261007.json)，原规则/观察/场景不变，无场景验收冒称。
+
+真实session81454/PID354300启动11:48:15，从实际264局检查点完整恢复，8updates×4episodes×2epochs，32新局1546PPO步12完整成功，36659有限检查零错误；16初始化ops独立统计，CPU134.429秒正常terminal。新checkpoint296局12876PPO步Adam153。actual_gaps_after_recurrent_mixed_training累计88模式14部队19技能17配对，费用材料消费者仍独立待验。
+
+冻结未强制开战校准仍5/13，1223步30122有限检查，四step_limit；固定四validation全部256步/0完整成功，失败保留。校准Tovak/Goldyx/Krang反复unitDamage预选2↔102，在AssignDamage各212..243次，选择/撤销不是承伤消费者。保留failed候选与旧真实264局（上轮验证2/4）作为下一实验基线，未伪造恢复、未晋升新权重。recurrent_mixed_start_iteration_summary.json记录两检查点SHA/全结果。
+
+所有session自然terminal，未重启活进程/重复旧全库/下载上传/推远端/终止用户程序。goal active，下一步处理真实承伤规划循环；原全要素/费用消费者、69敌、广泛验证/untuned test、初始不可解证明与完整保存策略Unity仍缺。经验recurrent_formal_start_prefix_and_damage_planning_cycles_2026-10-07.md及索引已更新。
+
+## 第三十三次goal迭代：真实承伤提交与重复规划训练实验
+
+先实核无旧活进程，上一轮真实失败保存/混合课程实现为进展。重放混合失败Tovak前16步真实状态、mask合法动作与保存GRU选择概率，13/14/15推进概率约.4737且实际合法，同前缀提交全部Melee，完整前缀加替代审计通过。102与2是替换同一攻击的三部队/单部队有序预选，非实体发动/伤害消费；JourneyTraining554/560已经观察存在与顺序物理槽，未声称观察缺失。
+
+新增planning_revisit_reward.py，连续unitDamage原公开有序计划集合，首次不同计划不罚、重复配置cost.25，其他动作清段；默认0，原reward/actor前历史raw不变，额外training_planning_penalty分存。train_recurrent_ppo显式cost/目标变更门禁和源SHA，evaluate/expand校验源SHA；原规则/掩码/动作/撤销能力不改。两新单测/隐式目标变更负例通过，历史243预选241重复复算只作诊断不teacher。Console两读零错(tmp/rl_planning_revisit_compile/final_console_20261007.json)，无场景改动/验收冒称。
+
+实际从264局完整检查点恢复session4165/PID348316启动11:57:32，8×4局×2epochs，32新局1500PPO步11完整成功、35290有限审计0错误，CPU133.670秒，保存296局12830步Adam153。每训练reward1500行逐步严格重算一致，7次重复额外受罚，raw单独保留。覆盖累计87模式14单位19技能17配对，不伪继承另一个失败分支的新使用。
+
+冻结分层5/13、1226步30152检查，四长规划循环未消除；固定四validation0/4保持未知。追加同seed9501未强制采样前6/13(609步14351检查)、后4/13(547步12990检查)，小样本不证明代价因果有害或有效。planning_revisit_iteration_summary.json保存两源SHA与失败，候选未晋升，下一基线仍真实264局。所有进程自然terminal，无超时重启/旧全库重跑/下载上传/推远端/用户程序终止。goal active，全部原要素/费用材料消费者、69敌、广泛测试/初始不可解solver/完整策略Unity仍未达标。经验actual_damage_commit_and_training_revisit_cost_2026-10-07.md与索引记录。
+
+## 第三十四次goal迭代：追加欠覆盖家族短课程
+
+上一轮真实提交诊断/失败奖励实验是进展；本轮开头实核无活RL。13池缺block_heal/draw_cycle/mana/control；按当前真实模式缺口/四不同英雄挑未试train六战任务。四分层尝试454步零完整成功（局部组胜3）10434有限检查，仍unknown。准备脚本初次OriginalOpening缺Build已安全get修正，缺queue加载失败未产生真实进程/输出，不作任务结果。
+
+四原六战保留，追加同Build/随机流短课程，原001/002/003敌人，逐组合重新验证train不借validation/test。四分层563步得Norowas魔力20步见证、14029检查；另三unknown首次换随机采样有界四次，实际八尝试464步得Braevalar格挡治疗38步、Arythea抽牌循环44步见证，11365检查；Wolfhawk控制仍未知，不称不可解。三当前正式全前缀认证；家族附加牌未实际发动，见证主要原基础牌/单位，不把家族载入等同所有卡费用消费者通过。
+
+13→16 append-only迁移真实264局检查点，72参数/Adam数组、RNG历史完全一致、Adam137/11330步，无伪造访问。session13412实际2updates×4episodes×2epochs，8新局318步2完整成功7493有限审计零错，CPU65.534秒，保存272局11648步Adam141。三新任务确实各采样2/2/1次；当前数据绑定87模式19单位21技能19配对，累计89模式/19/21/19，旧未绑定分存。actual_gaps_after_sixteen_task_training与missing_family_iteration_summary.json含源SHA/声明范围。
+
+本轮无源码/原规则/观察/场景改动，无旧测试/Console/场景重复；所有discovery/training进程自然terminal，未上传/推远端、下载或终止用户程序。新候选尚未冻结评估，不宣称模型改善；四六战/控制未知、全部原费用材料消费者/69敌、独立广验证/untuned test与完整保存策略Unity仍缺，goal active。经验additive_missing_family_short_curriculum_witnesses_2026-10-07.md和索引记录。
+
+## 第三十五次goal迭代：冻结十六任务与新激励实体
+
+上一轮三见证扩池与8真实新局是进展；开头实核无旧活RL。相同16当前认证任务，对扩池前真实权重与8局后新权重分层冻结评估：前6/16(955步23294有限检查，1step_limit)，后4/16(1973步47911检查，7step_limit)，旧新权重不改/不晋升候选。固定四validation全尝试新1/4，Goldyx成功，三未知；旧264局曾2/4，Wolfhawk成功丢失。全部有限规则审计零错仍不证明全原规则/泛化。sixteen_task_frozen_review_summary.json保存权重SHA/新基线真实sixteen_task_checkpoint_expansion，不伪造恢复。三个eval/discoverysession37483/17630/83233自然terminal，真实较长操作未因观察等待重启。
+
+读取新实际训练episode268激励：第2步手6→8/库9→7，物理12 basic007、13 basic002抽至hand，原技能round-used标记增加。28步同名basic007strong实际来源instance4，不能把ID相同归给12；40步basic002实体13确到played。白1→2下步nextTurn全部失效，后来white付款不属该收入消费者。actual_norowas_inspiration_draw_identity_review.json保留准确范围。
+
+原skill.json/原实现严格最低名望及激励锁条件核读；单人条件独立原依据未证明。浏览官方WizKids/mage-knight链接FAQ（旧hostPDFfetch超时）及官网walkthrough不可读取，不依赖第三方搜索摘要做规则通过；该条件、完整锁期/Unity仍缺，不因未知改规则。旧原skill消费者测试来源定位未重跑旧库。
+
+无本轮源码/场景/原规则/模型修改，故不重复Console/Unity旧验收；无下载上传/远端推送/用户程序终止。源SHA当前264局与各既有manifest吻合，临时检查错误读取optimizer.steps键已更正为header.optimizer_steps，不制造状态异常。goal active，全原要素/费用材料消费者、69敌、广独立测试/初始不可解proof、完整保存策略Unity仍缺。经验sixteen_task_frozen_loss_and_inspiration_identity_2026-10-07.md及索引已记录。
+
+## 第三十六次goal迭代：独立随机流扩池与新冥想牌区
+
+开头实核无训练/探索进程，上一轮冻结退化与实体审查为进展。为16认证train构筑保持英雄/合法Build/敌群，独立hash更新8seed字段，逐组合split仍train。冻结实际264局策略session84654有界27尝试1240步8完整成功29227有限审计0error，8未知保留；当前规则全前缀认证8见证。与各parent相同composition/8seed字段全变/实际root哈希全变，绑定review存，非未见构筑泛化，不冒称所有随机源实际都被消费。
+
+16→24 append-only迁移72参数/Adam数组、RNG/历史一致，Adam137/264局不变。session90726真实4updates×8episodes×2epochs，32新局1291步13完整成功30519有限检查零错，CPU154.022秒自然terminal，保存296局12621步Adam145。八new root全部进入样本共21局；当前数据绑定95模式22单位21技能19配对，累计97模式分存。新增模式包括冥想基础、魔力宣夺基础、多个神器/高级强效，费用/消费者与整个卡验收不混。
+
+同24任务/seed10101采样冻结前9/24(983步23177检查)后7/24(878步20824检查)，候选未晋升，小样本不证明因果。random_stream_expansion_iteration_summary记录真实源/新SHA；下一基线实际twentyfour_task_checkpoint_expansion，不伪恢复，不继承其他失败分支使用。validation/test保持隔离，test未参与。
+
+episode289第43步冥想底部原绿费晶体1、discard物理6/7回draw底、原顶20顺序保持、本体19入played、nextDrawBonus0→2，原图实际view_image核读。55正式轮次1→2/Day→Night bonus2→0/手6，不能据此声称6→8或规则异常，边界义务与后续消费者独立保留待核；增强/Unity未过，hidden audit牌序不送actor。native_meditation_bottom_return_review保留原精确状态转移。
+
+无源码/原规则/观察/场景修改，不重复旧Console/全库/场景测试。全部discovery/training/evaluation自然terminal，未观察超时重启、上传推远端/下载/终止用户程序。goal active，原全要素/69敌/费用材料消费者、更多未知证明、广独立验证/untuned test、完整保存策略Unity仍未达标。经验independent_training_stream_variants_and_meditation_bottom_2026-10-07.md及索引更新。
+
+## 第三十七次goal迭代：全局混合候选实际接入
+
+用户纠正所有候选应全局混合。前一活动turn新增mixed_task_pool草稿后被中断；重新核实无活RL，train/eval补丁前次失败原文件无局部残留，当前完成接入并保留原严格task_feasibility获胜门禁。未知合法探索独立unknown_tasks/status，不标可解，不把PPO失败/超时判无解；训练同模型/同Adam/连续GRU，两个采样层各默认50%概率质量，层内访问/英雄/粗模式缺口加权，全项正概率。原规则/掩码/奖励/场景不变。
+
+主209train候选全部真实reset合法非终止，与24旧证书定义去重后220全局任务（24证书/196未知），admission_failures0；33val/30test不加入。原root/data/schema/catalog/codeSHA绑定，unsupported证明标签拒绝；全220正概率、两层概率质量0.5/0.5、未知不通过eligible获胜证书、分区拒绝两新单测及实际池检查通过。显式迁移72参数/Adam数组、RNG/历史一致，无新访问伪造。
+
+session48954实际2updates×4episodes×2epochs，从真实264局基线恢复，8新局439步，其中6未知2认证，1完整胜利为认证任务，10235有限审计0error，CPU34.551秒，保存272局11769步Adam141。六未知失败保持标签与轨迹，不当初始不可解。实际保存RNG/采样历史离线下一100选择完全复现（未写成真实训练访问）；冻结隔离Goldyx烟测0/1/一组胜后死路74步1701检查，未冒称整任务/广泛泛化，test未用。
+
+代码变化Python新增准入/采样/显式迁移，trainer保存类别/未知次数，evaluator绑定混合sourceSHA并对所有训练定义检查partition；既有cert规则源码没改，原证书不回填新证明。Unity Console请求失败Win10061，当前无Unity.exe进程/原MCP拒绝连接，两次零错门禁待补，未假称通过或直接启动编辑器；纯Python/native通过不替代UI验收。无场景改动或截图上传、下载大依赖、推远端、用户程序终止；所有native进程自然terminal。goal active。global_mixed_known_unknown_training_admission_2026-10-07.md与索引记录；完整原卡7英雄69敌/真实费用消费者/广独立test/初始不可解solver/保存策略Unity仍缺。

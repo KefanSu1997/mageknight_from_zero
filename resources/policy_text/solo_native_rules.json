@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "id": "w",
+      "origin": "authored_summary_of_native_rules_not_printed_card_transcription",
+      "text": "伤牌（Wound）。受伤会将伤牌加入手牌或弃牌堆。标准休息弃掉一张非伤牌和所选手牌伤牌；手中只有伤牌时，缓慢恢复只能弃掉一张伤牌。休息是弃牌，不是移除伤牌。战斗外可以消耗治疗点治疗手牌伤牌；普通手牌伤牌每张消耗一点治疗。",
+      "sources": [
+        "Assets/Logic/Runtime/PlayerDeck.cs",
+        "Assets/Logic/Runtime/RestActions.cs",
+        "Assets/Logic/Runtime/CardEffects/CardHealing.cs"
+      ]
+    }
+  ]
+}

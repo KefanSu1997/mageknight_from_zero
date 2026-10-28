@@ -1,0 +1,30 @@
+{
+  "scope": "投石车三攻城能力、火/冰魔像普通攻挡及元素攻击、两元素实际承伤。新部队物理承伤/缺费/错误阶段拒绝只后台，招募流程与全部组合未覆盖。",
+  "backend": "AutomationOutputs/RulesState/20260918_185232_fb65b4e4",
+  "backendPassedUnique": 19,
+  "backendNew": 18,
+  "backendRegression": 1,
+  "scene": "AutomationOutputs/PveBattle/20260918_185453_ebb04442/report.json",
+  "battles": 11,
+  "steps": 289,
+  "assertions": 872,
+  "visualReviewed": 13,
+  "files": {
+    "AutomationOutputs/PveBattle/20260918_185453_ebb04442/report.json": "c207db3b892383923fc283210605c051ae202b7abf609cd3c93fe8be41ed9250",
+    "AutomationOutputs/PveBattle/20260918_185453_ebb04442/console_final.json": "8d62f369865d478d110ffb57efc54be5aff20c4f4af96e654eba68ad28fb3864",
+    "AutomationOutputs/RulesState/20260918_185232_fb65b4e4/summary.json": "09d9d6a8f4abca66e89b8f90dacbba632d9064d35dfc59931b6c127969695eb5",
+    "AutomationOutputs/PveBattle/20260918_185453_ebb04442/captures/025_发动原能力.png": "0852bd91e6de8b314f8dc89c4349d1b501b42d26d1d088a7e983e8a3e2cfa9e7",
+    "AutomationOutputs/PveBattle/20260918_185453_ebb04442/captures/047_发动原能力.png": "32ccfe14cd327f1622c3fe6288c3a912163ef0dc0b3612061f80712b4ab3f3af",
+    "AutomationOutputs/PveBattle/20260918_185453_ebb04442/captures/059_发动原能力.png": "e63eaec4bab48dfbff06213682c1fed1dae8c8820368797247fdf249c44d4c29",
+    "AutomationOutputs/PveBattle/20260918_185453_ebb04442/captures/087_进入_End.png": "9e4c641abfa9cfa00d72d3c06831917aab5c5b0bacd49cf83836f1cbe4726c7a",
+    "AutomationOutputs/PveBattle/20260918_185453_ebb04442/captures/107_进入_End.png": "e1dd3d124f35dba33f6c6bf1ac8a8c3dc3b2f3618fc27825ceb9b59a17547067",
+    "AutomationOutputs/PveBattle/20260918_185453_ebb04442/captures/125_进入_End.png": "b6099b646b4fbbe30684b549a588c7ac9c440f84029060ce8dc9a40e52d54de9",
+    "AutomationOutputs/PveBattle/20260918_185453_ebb04442/captures/145_进入_End.png": "e1dd3d124f35dba33f6c6bf1ac8a8c3dc3b2f3618fc27825ceb9b59a17547067",
+    "AutomationOutputs/PveBattle/20260918_185453_ebb04442/captures/180_发动原能力.png": "b92bda09109d020d3797d068a75344b43bc4078df09ecf0a05f48a510c35da77",
+    "AutomationOutputs/PveBattle/20260918_185453_ebb04442/captures/215_发动原能力.png": "cc802cb7cb2bd48295467e7dab5e2a72f01ca67f7b52f20da431dce5b066b87e",
+    "AutomationOutputs/PveBattle/20260918_185453_ebb04442/captures/251_进入_Melee.png": "2800ab89e19596d1b433d5a900cbcecfc4d72dfd1763c704284c706241d24596",
+    "AutomationOutputs/PveBattle/20260918_185453_ebb04442/captures/264_进入_End.png": "987bb092e9dc3b8e2a21ebd3225ce00bb16cffdcadce80aa2cb569c0a33e2e48",
+    "AutomationOutputs/PveBattle/20260918_185453_ebb04442/captures/275_进入_Melee.png": "0ba1780901bb33cbd8e60d5800875494de8a70185350dfee4daafa44d35e62d2",
+    "AutomationOutputs/PveBattle/20260918_185453_ebb04442/captures/288_进入_End.png": "13117e74b5f24a31a0d4cbe1d9322fdf49abf0cbc0f4cac962337e66c6585ed0"
+  }
+}

@@ -31,10 +31,19 @@ namespace MK.Logic.Runtime
 
         public int Id { get; init; }
         public int Fame { get; set; }
+        /// <summary>Formal personal turn lifetime; inspiration lock survives context and round replacement.</summary>
+        public bool IsPersonalTurnActive { get; internal set; }
+        public int CompletedPersonalTurns { get; internal set; }
+        public int InspirationBlockedUntilTurnEnd { get; internal set; }
         public int Reputation { get; set; }
         public string Name { get; set; }
+        public string HeroId { get; set; } = string.Empty;
         public int Influence => Reputation; // For test compatibility
         public int Level
+            => ResolvedLevel ?? FameLevel;
+        /// <summary>Continuous games resolve earned levels at turn end; legacy snapshots use FameLevel.</summary>
+        internal int? ResolvedLevel { get; set; }
+        public int FameLevel
         {
             get
             {
@@ -51,6 +60,7 @@ namespace MK.Logic.Runtime
         /// 在每輪選擇戰術後由流程服務設置，回合開始時計算手牌數時會用到。
         /// </summary>
         public int TacticHandBonus { get; set; } = 0;
+        public TacticState Tactic { get; internal set; }
 
         /// <summary>玩家的行動牌牌庫與手牌。</summary>
         public PlayerDeck Deck { get; } = new();
@@ -64,6 +74,7 @@ namespace MK.Logic.Runtime
         /// <see cref="PlayerTurnEngine.EndTurn"/> 會自動返還並清空。
         /// </summary>
         public ManaDie? HeldManaDie { get; set; }
+        public bool ForgoSourceDiceThisTurn { get; internal set; }
 
         /// <summary>玩家在地圖上的當前座標。</summary>
         public AxialCoord Position { get; set; } = new AxialCoord(0, 0);
@@ -85,6 +96,7 @@ namespace MK.Logic.Runtime
 
         internal HashSet<string> SkillsUsedThisTurn { get; } = new();
         internal HashSet<string> SkillsUsedThisRound { get; } = new();
+        public HashSet<string> FlippedSkills { get; } = new();
 
         /// <summary>
         /// 玩家已招募的全部部队。进入新回合时仍然保留，以供战斗和其他逻辑使用。
@@ -101,7 +113,7 @@ namespace MK.Logic.Runtime
             get
             {
                 int slots = 1 + (Level - 1) / 2;
-                return slots + TempCommandSlots + ExtraCommandSlots;
+                return slots + TempCommandSlots + ExtraCommandSlots + (LoyaltySkill != null ? 1 : 0);
             }
         }
 
@@ -113,14 +125,26 @@ namespace MK.Logic.Runtime
 
 
         /// <summary>剩余空闲指挥槽数量。</summary>
-        public int FreeSlots => CommandSlots - Units.Count;
+        public int BannerCommandCount => Units.Count(u => u.BannerEffectId == "items_017" && !u.IsDestroyed);
+        public SkillCard LoyaltySkill { get; internal set; }
+        public UnitState LoyaltyUnit { get; internal set; }
+        public int OrdinaryFreeSlots => CommandSlots - (LoyaltySkill != null ? 1 : 0)
+            - Units.Count(u => !u.IsDestroyed && u.BannerEffectId != "items_017" && !LoyaltyActions.IsBound(this,u));
+        public int FreeSlots => OrdinaryFreeSlots + (LoyaltyActions.SlotAvailable(this) ? 1 : 0);
 
         /// <summary>
         /// 解雇指定部队，释放指挥槽。
         /// </summary>
-        public void Disband(UnitState unit) => Units.Remove(unit);
+        public void Disband(UnitState unit)
+        {
+            LoyaltyActions.ValidateDismiss(this,unit);
+            if (!Units.Remove(unit)) return;
+            unit.Destroy();
+        }
+        internal HashSet<UnitState> BannersReturningAtRoundEnd { get; } = new();
+        internal List<DeedCard> BannersUsedThisRound { get; } = new();
 
-        public int Armor { get; init; } = 2;
+        public int Armor { get; set; } = 2;
         /// <summary>Hand wounds are the actual cards, including cards drawn or discarded this turn.</summary>
         public int Wounds
         {
@@ -161,7 +185,7 @@ namespace MK.Logic.Runtime
         {
             if (count <= 0) return;
             for (int i = 0; i < count; i++)
-                Deck.GainToDiscard(new DeedCard("w", CardType.Wound));
+                Deck.GainWound(true);
         }
 
         /// <summary>
@@ -174,11 +198,7 @@ namespace MK.Logic.Runtime
             if (count <= 0) return;
             for (int i = 0; i < count; i++)
             {
-                var w = new DeedCard("w", CardType.Wound);
-                if (toDiscard)
-                    Deck.GainToDiscard(w);
-                else
-                    Deck.Hand.Add(w);
+                Deck.GainWound(toDiscard);
             }
         }
 
@@ -191,8 +211,13 @@ namespace MK.Logic.Runtime
         /// <summary>傀儡大師保留的敵人標記。</summary>
         public Data.Monster? StoredEnemy { get; set; }
 
+        /// <summary>实际傀儡标记的持久库存及本回合击败候选。</summary>
+        public PuppetTokenState PuppetTokens { get; } = new();
+
         /// <summary>混亂大師當前指向的顏色。</summary>
         public ManaColor? ChaosColor { get; set; }
+        /// <summary>Unused previous personal turn permits one explicit, reward-free rotation.</summary>
+        public bool ChaosUnusedRotationPending { get; internal set; }
 
         /// <summary>本回合是否忽略聲望變化。</summary>
         public bool IgnoreReputationChange { get; set; }

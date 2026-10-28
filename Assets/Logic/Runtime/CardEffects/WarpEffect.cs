@@ -12,11 +12,12 @@ namespace MK.Logic.Runtime.CardEffects
         {
             if (!_enh)
             {
-                ctx.TeleportRange = 2;
+                ctx.SpaceBendingActive = true;
                 ctx.IgnoreRampaging = true;
             }
             else
             {
+                ctx.TimeBendingReturnsPlayed = true;
                 ctx.SkipDraw = true;
                 ctx.ExtraTurn = true;
             }

@@ -1,0 +1,64 @@
+{
+  "scope": "原16牌技能构筑，七英雄三思后行换两张后进入兽人战团；旧小牌库/空手牌草稿及跨英雄重新出战",
+  "backend": "AutomationOutputs/RulesState/20260930_005515_67ff96cf",
+  "backendPassed": 7,
+  "scene": "AutomationOutputs/PveBattle/20260930_005932_7bf3ab9a/report.json",
+  "scenePassed": true,
+  "operations": 87,
+  "assertions": 248,
+  "heroes": [
+    {
+      "hero.id": "Tovak",
+      "hand": "5",
+      "deck.count": "11",
+      "fame": "15"
+    },
+    {
+      "hero.id": "Arythea",
+      "hand": "5",
+      "deck.count": "11",
+      "fame": "15"
+    },
+    {
+      "hero.id": "Goldyx",
+      "hand": "5",
+      "deck.count": "11",
+      "fame": "15"
+    },
+    {
+      "hero.id": "Norowas",
+      "hand": "5",
+      "deck.count": "11",
+      "fame": "15"
+    },
+    {
+      "hero.id": "Wolfhawk",
+      "hand": "5",
+      "deck.count": "11",
+      "fame": "15"
+    },
+    {
+      "hero.id": "Krang",
+      "hand": "5",
+      "deck.count": "11",
+      "fame": "15"
+    },
+    {
+      "hero.id": "Braevalar",
+      "hand": "5",
+      "deck.count": "11",
+      "fame": "15"
+    }
+  ],
+  "console": "tmp/pve_hero_build_shared_final_console.json",
+  "consoleErrors": [
+    0,
+    0
+  ],
+  "capturesReviewed": [
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260930_005932_7bf3ab9a\\captures\\018_正式换2补2 Tovak.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260930_005932_7bf3ab9a\\captures\\020_兽人战团 Tovak.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260930_005932_7bf3ab9a\\captures\\086_兽人战团 Braevalar.png"
+  ],
+  "limits": "仅本次开局/换牌/技能构筑回归，不表示整个游戏全部验收；小牌库演练仍保留真实有限库存"
+}

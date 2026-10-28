@@ -12,18 +12,10 @@ namespace MK.Logic.Runtime.CardEffects
 
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            if (ctx.InBattle) return;
-
-            if (!_once)
-            {
-                ctx.TargetUnit?.Ready();
-            }
-            else
-            {
-                foreach (var u in player.Units)
-                    u.Ready();
-            }
+            if (!_once) throw new System.InvalidOperationException("勇气旌旗必须通过真实手牌入口附着");
+            if (ctx.InBattle) throw new System.InvalidOperationException("战斗中不能焚毁勇气旌旗重整部队");
+            foreach (var unit in player.Units)
+                unit.Ready();
         }
     }
 }
-

@@ -1,0 +1,805 @@
+{
+  "scenePath": "Assets/Scenes/Part1/Part1_PveBattle.unity",
+  "captureInitialView": false,
+  "initialDelaySeconds": 2,
+  "defaultWaitAfterSeconds": 0.3,
+  "maxRunSeconds": 240,
+  "reportPath": "AutomationOutputs/PveBattle/card_modes_20261001_final/report.json",
+  "screenshotsDirectory": "AutomationOutputs/PveBattle/card_modes_20261001_final/captures",
+  "useRunSubfolder": false,
+  "steps": [
+    {
+      "buttonPath": "Canvas/BattleTable/Btn_Menu",
+      "label": "打开战斗菜单",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "真实原牌/牌区与攻击来源；仅补玩家反馈的操作路径"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Btn_Camp",
+      "label": "打开起点配置",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "真实原牌/牌区与攻击来源；仅补玩家反馈的操作路径"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/CampShade/Camp/Btn_Loadout",
+      "label": "选择已有固定资源构筑",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "真实原牌/牌区与攻击来源；仅补玩家反馈的操作路径"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/CampShade/Picker/Btn_NextPage",
+      "label": "原构筑翻页",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "真实原牌/牌区与攻击来源；仅补玩家反馈的操作路径"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/CampShade/Picker/Btn_NextPage",
+      "label": "原构筑翻页",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "真实原牌/牌区与攻击来源；仅补玩家反馈的操作路径"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/CampShade/Picker/Btn_Select_39",
+      "label": "原HornGold，初始红蓝各1，无部队",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "真实原牌/牌区与攻击来源；仅补玩家反馈的操作路径"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/CampShade/Camp/Btn_ChooseCards",
+      "label": "设置原卡",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "真实原牌/牌区与攻击来源；仅补玩家反馈的操作路径"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/CampShade/DeedPicker/Btn_ClearDeeds",
+      "label": "清空待选",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "真实原牌/牌区与攻击来源；仅补玩家反馈的操作路径"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/CampShade/DeedPicker/Btn_ChooseDeed_basic_card_000",
+      "label": "原行军供横置",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "真实原牌/牌区与攻击来源；仅补玩家反馈的操作路径"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/CampShade/DeedPicker/Btn_ChooseDeed_basic_card_002",
+      "label": "原凝结",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": []
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/CampShade/DeedPicker/Btn_DeedNext",
+      "label": "基础第二页",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "真实原牌/牌区与攻击来源；仅补玩家反馈的操作路径"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/CampShade/DeedPicker/Btn_ChooseDeed_basic_card_015",
+      "label": "原晶化",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": []
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/CampShade/DeedPicker/Btn_ChooseDeed_basic_card_021",
+      "label": "原怒火",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "真实原牌/牌区与攻击来源；仅补玩家反馈的操作路径"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/CampShade/DeedPicker/Btn_DoneDeeds",
+      "label": "两张真实原牌",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "真实原牌/牌区与攻击来源；仅补玩家反馈的操作路径"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/CampShade/Camp/Btn_SmallDeckHeroBuild",
+      "label": "合法原技能构筑",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "真实原牌/牌区与攻击来源；仅补玩家反馈的操作路径"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/CampShade/HeroBuild/Btn_Hero_Arythea",
+      "label": "原阿瑞希亚，与炽热剑术归属一致",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "真实原牌/牌区与攻击来源；仅补玩家反馈的操作路径"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/CampShade/HeroBuild/Btn_Level_2",
+      "label": "合法等级2一个技能",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "真实原牌/牌区与攻击来源；仅补玩家反馈的操作路径"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/CampShade/HeroBuild/Btn_Skill_2",
+      "label": "本人原炽热剑术攻击2",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "真实原牌/牌区与攻击来源；仅补玩家反馈的操作路径"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/CampShade/HeroBuild/Btn_Begin",
+      "label": "同一玩家连续旅程",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "真实原牌/牌区与攻击来源；仅补玩家反馈的操作路径"
+        },
+        {
+          "key": "hand",
+          "expected": "4",
+          "rule": "真实原牌/牌区与攻击来源；仅补玩家反馈的操作路径"
+        },
+        {
+          "key": "red",
+          "expected": "1",
+          "rule": "真实原牌/牌区与攻击来源；仅补玩家反馈的操作路径"
+        },
+        {
+          "key": "fame",
+          "expected": "3",
+          "rule": "真实原牌/牌区与攻击来源；仅补玩家反馈的操作路径"
+        },
+        {
+          "key": "hero.id",
+          "expected": "Arythea",
+          "rule": "真实原牌/牌区与攻击来源；仅补玩家反馈的操作路径"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Tactic_day_1/Btn_Tactic_day_1",
+      "label": "原战术",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Btn_BeginTurn",
+      "label": "正式回合",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Btn_JourneyTools",
+      "label": "实际公共源",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        },
+        {
+          "key": "source.available",
+          "expected": "Gold,White,Green",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/JourneyTools/Btn_Source_0",
+      "label": "选择实际金骰",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/JourneyTools/Btn_UseSource",
+      "label": "取出仍是金色",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": false,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        },
+        {
+          "key": "tokens.gold",
+          "expected": "1",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        },
+        {
+          "key": "tokens.red",
+          "expected": "0",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/JourneyTools/Btn_CloseTools",
+      "label": "返回",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Btn_JourneyEncounter_2",
+      "label": "真实双原怪",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Hand/Btn_Card_basic_card_015_0",
+      "label": "晶化默认明确基础",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": false,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        },
+        {
+          "key": "ui.cardMode",
+          "expected": "base",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Inspector/Btn_Choice_base_Red",
+      "label": "基础红色转晶",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Inspector/Btn_Play",
+      "label": "金色在付款时用于红色",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        },
+        {
+          "key": "red",
+          "expected": "2",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        },
+        {
+          "key": "tokens.gold",
+          "expected": "0",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        },
+        {
+          "key": "tokens.red",
+          "expected": "0",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        },
+        {
+          "key": "hand",
+          "expected": "3",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Btn_ResetPhase",
+      "label": "恢复同场实际状态",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        },
+        {
+          "key": "red",
+          "expected": "1",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        },
+        {
+          "key": "tokens.gold",
+          "expected": "1",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        },
+        {
+          "key": "hand",
+          "expected": "4",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Hand/Btn_Card_basic_card_015_0",
+      "label": "选择晶化",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Inspector/Btn_Choice_strong",
+      "label": "先选择强化层",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": false,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        },
+        {
+          "key": "ui.cardMode",
+          "expected": "strong",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Inspector/Btn_Choice_strong_Red",
+      "label": "再选择红晶",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Inspector/Btn_Play",
+      "label": "金色在此用于蓝费，蓝晶保留",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        },
+        {
+          "key": "red",
+          "expected": "2",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        },
+        {
+          "key": "blue",
+          "expected": "1",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        },
+        {
+          "key": "tokens.gold",
+          "expected": "0",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        },
+        {
+          "key": "hand",
+          "expected": "3",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Btn_ResetPhase",
+      "label": "恢复",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Hand/Btn_Card_basic_card_002_0",
+      "label": "凝结默认基础",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": false,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        },
+        {
+          "key": "ui.cardMode",
+          "expected": "base",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Inspector/Btn_Choice_red",
+      "label": "本层红色标记",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Inspector/Btn_Play",
+      "label": "基础凝结不支付强化费用",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        },
+        {
+          "key": "tokens.red",
+          "expected": "1",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        },
+        {
+          "key": "tokens.gold",
+          "expected": "1",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        },
+        {
+          "key": "hand",
+          "expected": "3",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Btn_ResetPhase",
+      "label": "恢复原牌及真实库存",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Inspector/Btn_Next",
+      "label": "正式进入近战",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Inspector/Btn_Next",
+      "label": "正式进入近战",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Inspector/Btn_Next",
+      "label": "正式进入近战",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Hand/Btn_Card_basic_card_002_0",
+      "label": "选择凝结",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Inspector/Btn_Choice_strong",
+      "label": "凝结原强化入口",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        },
+        {
+          "key": "ui.cardMode",
+          "expected": "strong",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Inspector/Btn_Play",
+      "label": "金色用于原绿费",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        },
+        {
+          "key": "tokens.gold",
+          "expected": "0",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Hand/Btn_Card_basic_card_021_0",
+      "label": "原狂怒自动选强化层",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": false,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        },
+        {
+          "key": "ui.cardMode",
+          "expected": "strong",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Inspector/Btn_Play",
+      "label": "实际免费强化4加2，红晶未动",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        },
+        {
+          "key": "melee",
+          "expected": "6",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        },
+        {
+          "key": "red",
+          "expected": "1",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Btn_ResetPhase",
+      "label": "重置近战恢复两原牌与金标",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        },
+        {
+          "key": "tokens.gold",
+          "expected": "1",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        },
+        {
+          "key": "melee",
+          "expected": "0",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Btn_Menu",
+      "label": "菜单",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        }
+      ]
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Btn_Camp",
+      "label": "返回配置，供继续试玩",
+      "waitAfterSeconds": 0.3,
+      "skipScreenshot": true,
+      "after": [
+        {
+          "key": "ui.truncated",
+          "expected": "",
+          "rule": "原卡模式分层、金色延迟按实际原费用消费，未混用基础强化"
+        }
+      ]
+    }
+  ]
+}

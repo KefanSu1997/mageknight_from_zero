@@ -1,0 +1,9 @@
+# Transformer实体汇总接入三层编码与GRU仍须真实PPO门禁
+
+新增 `entity_recurrent_policy.py`，保留现有RecurrentPolicy的完整flat公开观察、上一实际动作embedding32和raw reward/20、原catalog条件头及三层256/256/128编码+GRU256；在编码器内部追加Transformer32维实体汇总。EntityEncoderGRU沿完整时间序列回传GRU、三层编码、注意力各参数，并把实体numeric字段导数scatter回原features坐标。ID/存在性/槽位是离散公开选择，不伪称可微软ID。没有读取State/audit/未来数据，也不因回合/战斗/昼夜手工清记忆。
+
+新增必要测试：真实PPO损失的有限差分覆盖所有13注意力参数族以及共享编码、GRU、原动作头和历史embedding；注意力Q/V、GRU及历史确有非零梯度。零新增编码列暖接入保持旧策略/价值/记忆，逐步带记忆等于整序列，episode_start同时隔离记忆/历史。经过两次序列更新保存、恢复再两次更新，与不中断全部参数/Adam一二阶/RNG/step逐数组精确相同。三测试0.300秒通过。另对公开token numeric scatter的7类坐标有限差分通过，未重复旧注意力/padding或全库检查。
+
+实际迁移半步长1120/63153/Adam337保存检查点：`migrate_entity_recurrent_checkpoint.py`按当前冻结规则/JSON/原图/池/catalog/schema绑定检查，旧24参数族及Adam的原列完整继承，新增编码32列为0，13注意力参数明确独立初始化，新增Adam为0，RNG/实际历史保留。不使用训练RNG初始化新模块。六真实合法fight/四advance/nextTurn状态，完整legal分布、价值和GRU最大差1.67e-16；37参数族共111数组保存恢复精确。证据 `AutomationOutputs/BattleRl/20261008_entity_actor_checkpoint_migration/migration.json`。这是保存actor结构迁移，不是PPO更新、教师轨迹或新覆盖。
+
+普通训练器/冻结reader尚未选择新类和校验新架构SHA，因此不直接把该文件传给旧入口绕过门禁。仍须显式选择、新签名恢复、受影响实际序列训练与同预算冻结对照；初始新增列为0时注意力梯度先为0，要由真实PPO更新打开后确认，不能把module fixture非零梯度冒充实际模型已学实体关系。原技能/费用消费者、独立最终test、全部原要素以及保存policy Unity操作均欠缺。Unity编辑器关闭/无Console接口，两次真实Console仍pending，不以Python编译或NPZ恢复替代。

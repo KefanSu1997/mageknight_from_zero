@@ -1,0 +1,35 @@
+{
+  "basis_version": "original-source-alignment/1",
+  "status": "source_and_protocol_alignment_not_completed_runtime_reproduction",
+  "upstream": {
+    "repository": "https://github.com/WenyiWU0111/RSIGame",
+    "commit": "1214b342fce22e97fe19bfc56be189d06f44634b",
+    "snapshot": "AutomationOutputs/RsiGame/20261021_original_alignment/upstream",
+    "workflow": "AutomationOutputs/RsiGame/20261021_original_alignment/workflow_alignment.json",
+    "literal_templates": "AutomationOutputs/RsiGame/20261021_original_alignment/prompt_catalog.json",
+    "message_construction": "AutomationOutputs/RsiGame/20261021_original_alignment/message_callsites.json"
+  },
+  "method": {
+    "goal_source": "Original task specification and original correctness/completeness/feedback/presentation framework",
+    "preserve_original_prompt_text_and_message_channels": true,
+    "preserve_original_output_parsers_and_postprocessing": true,
+    "preserve_ground_rank_checklist_polish_art_and_monitor_substeps": true,
+    "paper_code_disagreements": "Record explicitly; never silently reconcile into a newly invented method",
+    "custom_uniform_role_schema_enabled": false,
+    "custom_common_system_enabled": false,
+    "custom_ui_cost_objective_enabled": false,
+    "custom_visual_0_to_10_score_enabled": false
+  },
+  "previous_adaptation": {
+    "path": "AutomationConfigs/UiRsi/v0_1",
+    "disposition": "Preserved as superseded product-specific design; not the reproduction baseline"
+  },
+  "models_and_engines": {
+    "original_configuration": "Preserved in upstream/configs; no model calls have run in this alignment stage",
+    "requested_luna_subagent_backend": "Separate controlled replacement after source alignment, not claimed as original-model result reproduction",
+    "unity_port": "Separate engine adaptation after original source workflow is established",
+    "training_internalization": "Separate paper branch, not reproduced by prompt-only Luna calls"
+  },
+  "runtime_reproduction_executed": false,
+  "unity_project_modified": false
+}

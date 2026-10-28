@@ -1,0 +1,11 @@
+# World movement, influence and flight pointer costs
+
+Previous goal turn made authoritative progress:105 measured costs and recovered the terminal existing fight batch. This continuation retains all1,009 Kind pairs, the authorized frozen five-sample plan and original cohorts/weights.
+
+Mapped worldMove to original-map Cell(q,r)/Move controls, worldInfluence to the exact physical hand slot/SidewaysInfluence control, and worldInteract/worldInteractEnd to the actual site panel Begin/End controls. Closing a map/site overlay for the next intent is counted through actual clicks; no native Move/interaction API substitutes for a measured click. Original coordinates and inventory are checked against archived native effects.
+
+First40 fixed world pairs accepted40, passed80 independent snapshots, SHAc8b8ee8494a5d60e1dd32598b01922939dafa9a7e73247b83d20118fcabcaa13. The attached remaining112-case batch accepted102 and retained10 missing original-map fight entry failures; passed204 snapshots, SHA724415f2f8e00d1bb03fa4274eca4b079b9a6e323ed1390c4a3b59edd664a137. Those fight cases stay pending, not certified impossible or assigned zero.
+
+Mapped original hero_skill_pool_005:06 flight through JourneyHand → Support → actual skill slot → UseOutsideSkill → map Cell(q,r) → Move. First59-case attempt had59 retained failures because the mapper omitted opening JourneyHand before Support, and its generic hand exit also needlessly closed that page. Corrected both routes, remeasured the exact same selected IDs through attachment to the same pilot; no sample replacement. Corrected59-case batch accepted54, passed108 snapshots, SHAdf861e4af894037409ccfe14f52baf409b53dc9696491d88e2742fa05863d20c. Five worldFly→fight entry failures remain pending. The all-failed first-attempt file's zero-snapshot verifier result is not successful measurement evidence.
+
+This continuation adds196 measured cases (40+102+54). Final progress:2,435 measured /4,083,480 fully measured groups,542 all-sample resolved groups,106 verified incompatible. All measurement workers exited normally. The owned idle world pilot was fresh-observed and explicitly stopped normally. No game-rule or training-weight/RNG modifications; baseline and goal remain incomplete/active.

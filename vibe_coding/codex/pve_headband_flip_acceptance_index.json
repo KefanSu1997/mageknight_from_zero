@@ -1,0 +1,60 @@
+{
+  "scope": "Original public Krang skills via actual level reward and physical Headband: frenzy flip, ritual green token, disguise flip; formal consumers and turns",
+  "backendEffective": 46,
+  "backendReports": [
+    "20260929_150736_c308fbb6",
+    "20260929_150838_a7efb703",
+    "20260929_150910_e0922ff2"
+  ],
+  "routes": [
+    {
+      "mode": "Frenzy",
+      "run": "20260929_151243_e931c862",
+      "steps": 51,
+      "assertions": 86,
+      "sha256": "c597967c5d81358b8af6a6a489a9ce4325ccf7e591f4fde7922e3f604068a94e",
+      "screenshots": [
+        "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_151243_e931c862\\captures\\044_明确选择本次原选项.png",
+        "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_151243_e931c862\\captures\\047_原狂乱攻击4消费并击杀甲3.png"
+      ]
+    },
+    {
+      "mode": "Ritual",
+      "run": "20260929_151549_1afc5c04",
+      "steps": 55,
+      "assertions": 94,
+      "sha256": "61d11141a7f534690185398263b5be36e47beb6e3024c3785844f3d6819e574d",
+      "screenshots": [
+        "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_151549_1afc5c04\\captures\\041_明确选择本次原选项.png",
+        "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_151549_1afc5c04\\captures\\051_实际支付原地形费用.png"
+      ]
+    },
+    {
+      "mode": "Disguise",
+      "run": "20260929_152125_5a7bacdd",
+      "steps": 70,
+      "assertions": 117,
+      "sha256": "82ba436c4a71c75c4ce5e520e4427736bf11cd9dc4c7db742ce70b016750f3f8",
+      "screenshots": [
+        "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_152125_5a7bacdd\\captures\\046_实际支付原地形费用.png",
+        "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_152125_5a7bacdd\\captures\\058_明确选择本次原选项.png",
+        "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_152125_5a7bacdd\\captures\\062_忽略实际负声誉轨扣减，保留声誉变化.png",
+        "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_152125_5a7bacdd\\captures\\066_治疗首战遗留的真实伤牌.png"
+      ]
+    }
+  ],
+  "steps": 176,
+  "assertions": 297,
+  "visualRepair": {
+    "run": "20260929_152244_33709e1a",
+    "sha256": "ea38120c5c9e17a4281fb5bcc0e81e4e5c43ed2c8ddf9d302609903ba6a381ae",
+    "onlyStep": 44,
+    "replayedPrefix": "0..43 without duplicate assertions/screenshots",
+    "screenshot": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_152244_33709e1a\\captures\\044_明确选择本次原选项.png",
+    "reviewed": true
+  },
+  "limitations": "Combined original-card rule interpretation, no new official FAQ; self-configured five-card builds; no all-copy-matrix claim",
+  "console": "tmp/pve_headband_flip_final_console.json",
+  "fixture": "HornGold exact original bytes restored, seed0",
+  "screenshotsReviewed": true
+}

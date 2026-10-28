@@ -1,0 +1,13 @@
+# 正式整任务奖励实验与正收益部分失败
+
+真实episode68/73：Krang只完成首组、声明序列失败，既有训练回报和仍11.69/11.31。不是规则异常，是训练代理目标仍给部分胜利正信用；不得把首战奖励当完整任务效果。
+
+新增可选TerminalSequenceReward：移除native kill delta（含换组计数重置）及每组End上升沿20信用，仅在实际sequenceCompleted上升沿给20；失败扣10并替换原no-kill terminal5，其他原步数/伤牌/规划/拒绝处罚保留。所有原raw reward独立保存，actor历史仍取raw reward，规则/mask不变。现有回报默认不改，显式--reward-mode terminal_sequence与--change-reward-objective才准许实验迁移；新目标源码SHA写checkpoint，训练/评估/扩池检查器校验，默认恢复不能静默换回旧目标。
+
+同83局3350步Adam59检查点两支各2update×6episode×4epoch，新增12局462步、零完整任务，累计95局3812步Adam67。全部12原操作链（除training_reward字段）相同，仅两条部分胜利训练回报不同；首批无胜利因此更新本来相等，后批才分叉。新目标不是Actor/RNG重初始化，也没有重建状态或teacher数据。
+
+冻结八项类型优先校准两支都4/8：基线661步15608限定检查，终局657步15504检查；保存参数/源checkpoint均不变。暂未证明新目标策略改善或泛化，两支/旧较优模型及失败保留。此前源模型独立seed8201采样16局5完整任务、651步15325检查，也仅训练组成校准。
+
+3项实际正收益部分失败转负、完整双战只在正式任务末支付、实际checkpoint目标切换拒绝检查通过；Console两读0错误tmp/rl_terminal_reward_final_console_20261007.json。证据20261007_terminal_sequence_reward_pair_data.json、20261007_recurrent_reward_pair_existing/terminal、20261007_recurrent_reward_existing_frozen_eval、20261007_recurrent_reward_terminal_frozen_eval、20261007_recurrent_eight_task_sampled_calibration。
+
+仍缺广泛原费用材料消费者、69敌、保留验证及未调参测试和真实Unity。训练回报实验不能冒充这些范围达标。

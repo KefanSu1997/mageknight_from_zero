@@ -1,0 +1,9 @@
+# 魔力开源：原骰身份与可选返还（2026-09-29）
+
+原合作图skill_en_018末行。发动重掷可选、领取额外基本色源骰、owner同色晶与claimant当前token分开，源中同一骰保留真实holder；此技能无owner下回合期限。
+
+正式回合末要先选择该骰是否重掷。不能在清理魔力/发奖励后才发现选择缺失，否则失败回合产生部分提交。PlayerTurnEngine.EndTurn首行预检；ManaSource.ReturnPlayerDice/ReturnAllPlayersDice及单骰Return也拒绝未选。选择按原die+holder登记，归还才删除；不重掷只用于已授权该颗原骰，不扩展到普通骰。
+
+SharedSkillArea.SourceOpening独立partial公开UseSourceOpening、ClaimSourceOpening、PendingSourceOpeningReturns、ChooseSourceOpeningReturn；UI使用实际当前回合ctx，不能给任意owner选择别人的骰。禁骰复用ManaSource.ValidateUse；测试用正式魔法抗拒横置3建立禁止状态，不直接写internal字段。
+
+新增SourceOpeningSharedSkillTests五个case覆盖双玩家主人/领取者分离、普通额度已用仍额外取骰、可选初始重掷、两种返还、回合拒绝无副作用、黑金与禁源拒绝。尚未运行CLI/Unity，由主代理验证，不能记通过。

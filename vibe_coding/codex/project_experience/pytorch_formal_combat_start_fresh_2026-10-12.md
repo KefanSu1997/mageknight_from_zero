@@ -1,0 +1,13 @@
+# 单场训练的正式战斗起点
+
+用户要求策略训练战斗而非学习是否开战，明确授权重新训练。旧Outside起点轨迹最新100局99未进入战斗，结束轮数失败且回报集中-1，EV分母缩小；不能只调critic掩盖目标偏差。
+
+combat_start_env.BattleEnv在正式reset且原初态SHA核验后，从完整合法动作中选择唯一fight，经原规则step进入inBattle=true的非终止状态。无手工构造战斗、无改规则或删合法动作。模型首观察为真实开战后状态，历史清零；fight作为setup单独formal_entry保全原before/action/after，不充当策略动作或奖励。完整trace从策略第一步开始审计。snapshot携带entry版本，restore先重放reset/fight逐项比对，再重放策略轨迹/奖励/最终完整协议和RNG。
+
+训练与parallel_combat_eval共同使用此适配器。train_sb3_combat.py将入口版本和新源码SHA纳manifest，旧Outside续训不兼容；本次fresh，不加载避战权重。旧奖励乘.01和32*128采样、minibatch128、上游RecurrentPPO、稀疏完整合法支持集及异常隔离保留。原4000/1000组成划分不变，旧两隔离task保留训练排除，评估不剔分母。全5000正式开战尚未全部遍历，runtime严格检查不以失败伪造开战。
+
+真实7英雄各取一个原train任务：均经fight进入Ranged；各执行一合法步后snapshot/restore完整current与观察/mask相等，结果H:/MageKnight_RL_Runs/combat_start_gate.json。未据此宣称胜率改善。
+
+旧sparse_resident_100已按用户要求定向停止，最后报告33更新，全部证据保留superseded.json。2026-10-12 16:47:28启动H:/MageKnight_RL_Runs/20261012_combat_start_fresh100，launcher84188/Python110340，fresh100更新，日志combat_start_stdout/stderr.log位于父目录。实际第一更新/轨迹仍须核实，不把启动当完成。
+
+16:50首个有效更新已保存4096步，behavior0001_step4096于16:50:14证明继续第二批。首批采样64.61s/优化16.79s/归档2.03s，behavior0000至0001完整约90s，仅首批达标非长期稳定声明。75已完成轨迹逐一核formal_entry=fight且actor首before等于开战后state，75/75通过；初始采样2胜不是冻结提升证据。首批无audit错误，EV更新后0.464只表示本批拟合。

@@ -1,0 +1,49 @@
+{
+  "scope": "Original Masters white/green to ranged kill, same units formal round, blue stop and red full-block kill with blue Heroes ColdFire8",
+  "run": "20260929_160315_d71d8430",
+  "steps": 107,
+  "assertions": 176,
+  "sha256": "5320f72487db7d923abfcfc4f5745d03f058621f523bc4f76afccaefcb058c3a",
+  "unitIdentityChecks": [
+    {
+      "step": 31,
+      "instances": "army_005:688212976,army_008:732155566,army_2_003:-1851224094"
+    },
+    {
+      "step": 57,
+      "instances": "army_005:688212976,army_008:732155566,army_2_003:-1851224094"
+    },
+    {
+      "step": 66,
+      "instances": "army_005:688212976,army_008:732155566,army_2_003:-1851224094"
+    },
+    {
+      "step": 71,
+      "instances": "army_005:688212976,army_008:732155566,army_2_003:-1851224094"
+    },
+    {
+      "step": 92,
+      "instances": "army_005:688212976,army_008:732155566,army_2_003:-1851224094"
+    },
+    {
+      "step": 96,
+      "instances": "army_005:688212976,army_008:732155566,army_2_003:-1851224094"
+    },
+    {
+      "step": 106,
+      "instances": "army_005:688212976,army_008:732155566,army_2_003:-1851224094"
+    }
+  ],
+  "reviewedScreenshots": [
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_160315_d71d8430\\captures\\057_同大师绿费真实护甲4减到1.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_160315_d71d8430\\captures\\071_等级6手限6，全部实际六牌抽回；原单位正式重整.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_160315_d71d8430\\captures\\092_另付蓝晶1变0，原冰火格挡8.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_160315_d71d8430\\captures\\096_真正防御结算后红能力消灭第二敌，旧伤仍1.png"
+  ],
+  "backendReused": [
+    "20260923_021816_212ab687 PrintedWhiteAndGreen",
+    "20260923_021930_708b3d12 AllFourDifferentAbilities"
+  ],
+  "console": "tmp/pve_blood_masters_final_console.json",
+  "limitations": "Legal custom Lv6 five-card build; white removes actual fortification, no resistance target in this route; other Heroes colours not covered"
+}

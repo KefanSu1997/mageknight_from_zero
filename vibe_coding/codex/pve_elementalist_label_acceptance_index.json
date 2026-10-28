@@ -1,0 +1,33 @@
+{
+  "status": "data_correction_and_display_passed_rewards_incomplete",
+  "ids": [
+    "monster_015",
+    "monster_054",
+    "monster_057"
+  ],
+  "source": "tmp/pdfs/tezla_official_rules.pdf",
+  "sourcePages": [
+    2,
+    3
+  ],
+  "backend": {
+    "xml": "AutomationOutputs/RulesState/20260929_201953_129251ff/results.xml",
+    "passed": 1,
+    "assertions": 37
+  },
+  "scene": {
+    "report": "AutomationOutputs/PveBattle/20260929_202312_1e4dc463/report.json",
+    "sha256": "71e6529f5d6830ae4293f41da99bd83f694b1713db530f0f152277bbfcd57c2f",
+    "operations": 22,
+    "replayed": 21,
+    "newCheckedSteps": 1,
+    "assertions": 6,
+    "screenshot": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_202312_1e4dc463\\captures\\021_原015双元素攻击与抗性保留，原阵营图案不得显示再生；奖励模式另行处理.png",
+    "visualReview": "主代理目视确认原015无再生标签，火3/冰3、护甲4及火冰抗保留。不是奖励测试。"
+  },
+  "compileConsole": "tmp/pve_elementalist_label_compile_console.json",
+  "finalConsole": "tmp/pve_elementalist_label_final_console.json",
+  "remaining": [],
+  "followup": "pve_elusive_defend_acceptance_index.json: 057 Elusive/Defend now implemented, backend and actual scene passed",
+  "factionFollowup": "pve_faction_fame_acceptance_index.json: current Demo enables official Just Fame; historical printed-only evidence retained"
+}

@@ -1,0 +1,53 @@
+{
+  "scope": "原items_016星辰之弓普通真实弃牌/当前阶段名望、焚毁逐笔远程翻倍或攻城/攻城翻倍变远程、同元素与城防、真实消耗和回合期限。",
+  "backendPassed": 16,
+  "backendNew": 7,
+  "backendDirectRegression": 9,
+  "backendRuns": [
+    "AutomationOutputs\\RulesState\\20260918_222953_58bbb7d2",
+    "AutomationOutputs\\RulesState\\20260918_223122_400e43c9"
+  ],
+  "firstFailure": "新用例误要求弃牌堆保持材料选择顺序；改为核对数量及每张真实实例，只补失败一例，原failed报告保留。",
+  "scene": "AutomationOutputs\\PveBattle\\20260918_223337_664a4b31\\report.json",
+  "battles": 6,
+  "steps": 197,
+  "assertions": 515,
+  "regressionScene": "AutomationOutputs\\PveBattle\\20260918_223740_e091acaf\\report.json",
+  "regressionBattles": 1,
+  "regressionSteps": 27,
+  "regressionAssertions": 60,
+  "regressionReason": "PVE资源栏复用正式攻击倍率，直接影响公正之剑翻倍后的显示；只补该条原场景。",
+  "visualReviewed": 19,
+  "consoleErrors": [
+    0,
+    0
+  ],
+  "limitations": "有限PVE覆盖，非所有组合。焚毁真实EndTurn过期、非法选择与外来材料身份拒绝只后台；回合内跨第二场战斗、所有神器/英雄组合、完整招募/轮间和英雄专属立绘未完成。",
+  "files": {
+    "AutomationOutputs/PveBattle/20260918_223337_664a4b31/report.json": "ae3078fe70f676a1542b26631481af9d6e96fb1de34efdf7a3945ca8ad828c8c",
+    "AutomationOutputs/PveBattle/20260918_223337_664a4b31/console_final.json": "8d62f369865d478d110ffb57efc54be5aff20c4f4af96e654eba68ad28fb3864",
+    "AutomationOutputs/PveBattle/20260918_223337_664a4b31/captures/061_真实材料弃置并使用.png": "8a0992e1f96c219f26c2d5add1a65c592434296380a9a65207bbe247e3626ce1",
+    "AutomationOutputs/PveBattle/20260918_223337_664a4b31/captures/068_同阶段后续攻击仍加名望.png": "d7ec9dc94059dc6a94fb2f49364eb6c5619d7389c88b57c4cda265b4b0a558a6",
+    "AutomationOutputs/PveBattle/20260918_223337_664a4b31/captures/072_进入_End.png": "31620c11913a1335195238d19f7d9a7aa4f85ba475140dcfc90d970b3ba459c0",
+    "AutomationOutputs/PveBattle/20260918_223337_664a4b31/captures/076_真实材料弃置并使用.png": "ac0853c3be622f9848d4cd315d9a77519549ee61aab4848cd6327455b8cd340d",
+    "AutomationOutputs/PveBattle/20260918_223337_664a4b31/captures/095_跨阶段不再附加名望.png": "ee08e992a197a6c8ffd0e1b948b67e4abba3038877795195f7cf6a078c050018",
+    "AutomationOutputs/PveBattle/20260918_223337_664a4b31/captures/096_进入_End.png": "09f2ec5ac2d241378dd1a278258c080fde5b5eefe8398458d15309f75dc90e37",
+    "AutomationOutputs/PveBattle/20260918_223337_664a4b31/captures/111_原火焰远程6翻倍.png": "836a3c028af684b8c86c9816a5df9fd49b87f69dd5808bc183a394f949ad508d",
+    "AutomationOutputs/PveBattle/20260918_223337_664a4b31/captures/118_进入_End.png": "48373d70f5f47840b891c0efab357076478a872dfee4ec1d4b4a5c5e8c10392b",
+    "AutomationOutputs/PveBattle/20260918_223337_664a4b31/captures/134_只将第一笔转攻城.png": "9dba1f2102f2a4a9dd2d2877af6605985dd1ef88871c02771397d6c3206a3fc6",
+    "AutomationOutputs/PveBattle/20260918_223337_664a4b31/captures/140_第二笔独立转攻城.png": "eefbcad7f7c36d7760d1f2ff7deba7b62ab47df82caef84262d70fae049d12ec",
+    "AutomationOutputs/PveBattle/20260918_223337_664a4b31/captures/147_进入_End.png": "9f48bf9868a4dcb742816c5a161ff4daecd7fedb2a6b71a783ca68f02118fd36",
+    "AutomationOutputs/PveBattle/20260918_223337_664a4b31/captures/158_攻城翻倍必须转远程.png": "15448dc15bcb5bc0a137599aa5a778c231457b3716361a1ea91f0bbdb68044ae",
+    "AutomationOutputs/PveBattle/20260918_223337_664a4b31/captures/163_保留原攻城不得同时翻倍.png": "feb61901e7a7e30d7e6480a901b10114de7a747fd11e5b19f7d3df98fc56e80b",
+    "AutomationOutputs/PveBattle/20260918_223337_664a4b31/captures/170_进入_End.png": "453a711365aafd220a63efbee96e1c2b9d2ebd7730031bd52ebb4552574b35c1",
+    "AutomationOutputs/PveBattle/20260918_223337_664a4b31/captures/189_寒冰攻城翻倍保持冰元素.png": "4323cd0d998fe17258bde58958339dc6169a0d678e4c57aa54ab3e1bf165a047",
+    "AutomationOutputs/PveBattle/20260918_223337_664a4b31/captures/196_进入_End.png": "6a8c5271cb65a67e714d4d2c3923998ec8188265eb67a37e34ffdb1064cf3aef",
+    "AutomationOutputs/PveBattle/20260918_223740_e091acaf/report.json": "32485647020910644e5b10fb6bf6c7ae4f7815e55b6d02ddaca7928de8671626",
+    "AutomationOutputs/PveBattle/20260918_223740_e091acaf/console_final.json": "8d62f369865d478d110ffb57efc54be5aff20c4f4af96e654eba68ad28fb3864",
+    "AutomationOutputs/PveBattle/20260918_223740_e091acaf/captures/023_统一显示翻倍后攻击4.png": "005e740cfe0dcbd317b9d9663bf780c192506fef9791b9ae91bb29fb216bb63d",
+    "AutomationOutputs/PveBattle/20260918_223740_e091acaf/captures/025_实际攻击与显示4一致.png": "4a4de558e3625ea945058790ba67af46e2ca9f798bf2ec440e4e54951ae9f3e8",
+    "AutomationOutputs/PveBattle/20260918_223740_e091acaf/captures/026_进入_End.png": "0b3272036897b28397a59cc8533c3e3a06de66304a49087936a00eeb8db71037",
+    "AutomationOutputs/RulesState/20260918_222953_58bbb7d2/summary.json": "32915b49d43aec92316d0bff6aa6176622f232171b1708ef006dcfe09bab6e9e",
+    "AutomationOutputs/RulesState/20260918_223122_400e43c9/summary.json": "f778435a68fcd09477eb251fc29f927929c5a96065116feb02bba4427f9f4d70"
+  }
+}

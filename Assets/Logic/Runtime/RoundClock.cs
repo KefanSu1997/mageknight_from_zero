@@ -7,7 +7,7 @@ namespace MK.Logic.Runtime
 {
     /// <summary>
     /// 表示遊戲進行中的日夜與輪次節拍器。
-    /// 在《魔法騎士》裡，一個白晝或黑夜會包含多個輪次，
+    /// 在《魔法騎士》裡，一個白晝或黑夜就是一輪，包含多個玩家回合，
     /// 當白晝和黑夜結束後便算作過去一天。
     /// </summary>
     public sealed class RoundClock

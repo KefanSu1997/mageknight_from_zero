@@ -1,0 +1,11 @@
+# 独立训练随机流与冥想真实牌区
+
+保持16训练构筑的英雄/构筑/敌群不变，用各parentID/字段独立hash赋8随机seed字段；组合split仍train。当前冻结实际264局策略有界27尝试1240步、29227有限检查，8完整见证当前规则重放认证、8仍unknown。八证书与父证书相同composition但8seed字段及实际root哈希都不同，不按仅修改seed文字记真实变化；不是未见构筑泛化，激活的随机因素还须按操作分别核验。
+
+16→24严格append-only迁移保持72参数/Adam/RNG/history，Adam137/264局原边界。32新局1291步13完整成功，30519有限审计零错，CPU154.022秒，八新root全部实际采样共21局，保存296局12621步Adam145。当前绑定95模式22单位21技能19配对，累计97模式分存。随机流扩池增加十个真实模式，不能把构筑目录/首次选中当全部费用消费者。
+
+相同24任务/seed10101冻结采样前9/24后7/24，分别983/878步23177/20824有限检查，小样本不作因果结论，候选不晋升。失败与实际新旧检查点保留，下一基线twentyfour_task_checkpoint_expansion，未伪恢复/移植别分支覆盖。保留验证没有回填训练，test未用。
+
+新训练episode289冥想43步原图/资产核绿费用1，两个真实discard实体6/7回到draw底，原draw顶实体20顺序保持，本体19→played，NextDrawBonus0→2。55步正式昼夜轮次1→2/Day→Night同时bonus2→0且手6；本轮不凭该转移宣称手限6→8或规则异常，边界义务独立待核。增强、后续消费/Unity缺口保留，审计牌序没送actor。
+
+证据AutomationOutputs/BattleRl/20261007_random_stream_expansion_iteration_summary.json、certified_stream_variants_binding_review.json、native_meditation_bottom_return_review.json及发现/训练/评估目录。无源码/规则/场景变化、旧库重复或上传推送；全部本轮进程自然terminal，完整原范围仍未达标。

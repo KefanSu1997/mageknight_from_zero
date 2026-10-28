@@ -1,0 +1,7 @@
+# 真实避战诊断与显式PPO探索
+
+无战斗轨迹不能简单判为缺入口。用相同seed/完整动作Key在冻结正式DLL重放新训练before状态，再检查保存模型合法fight/rest概率；注意实际训练动作可能来自较新权重，不能把旧权重诊断说成实时采样概率。保留失败与策略质量缺口，不屏蔽合法休息、不加教师代打或改变原规则。
+
+探索系数需同时进入PPO损失、类型头和条件分布梯度，并记录manifest/metrics，默认值保持兼容。有限差分检查不同系数与非法参数之外，还用零优势/零critic误差的非均匀策略验证熵更新实际提高类型熵。数学检查只证明探索控制正确，独立完整战斗胜率和Unity仍须另外验证。
+
+活进程冻结当前已加载代码和规则；不能把后来增加的可选参数冒充运行中已生效。下一轮只能在实际旧PID终态确认后恢复。证据：AutomationOutputs/BattleRl/20261004_v49_avoidance_public_state_diagnostic.json、20261004_ppo_entropy_coefficient_check.json；记录vibe_coding/codex/worklog_2026-10-04_ppo_avoidance_entropy_control.md。

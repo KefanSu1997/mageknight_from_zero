@@ -1,0 +1,49 @@
+{
+  "scope": "学习、修行、法术熔炉入口。场景学习基础6影响购牌入弃牌、修行绿费去实际蓝材料取得原盾入手并支付蓝费格挡减甲、熔炉基础以真实绿法术供晶；同玩家正式换轮8牌洗混抽5留3。",
+  "backendPassed": 14,
+  "backendCases": {
+    "MK.Tests.Battles.PveSupplyDeedEntryTests.LearningOptionalPurchasePaysOriginalInfluenceAndPreservesSupply(False)": "20260923_075415_8d6b81d4",
+    "MK.Tests.Battles.PveSupplyDeedEntryTests.LearningOptionalPurchasePaysOriginalInfluenceAndPreservesSupply(True)": "20260923_075415_8d6b81d4",
+    "MK.Tests.Battles.PveSupplyDeedEntryTests.PracticeOriginalSameColorMaterialAndSupplyGoToRealZones(False)": "20260923_075415_8d6b81d4",
+    "MK.Tests.Battles.PveSupplyDeedEntryTests.PracticeOriginalSameColorMaterialAndSupplyGoToRealZones(True)": "20260923_075415_8d6b81d4",
+    "MK.Tests.Battles.PveSupplyDeedEntryTests.PracticeWrongColorForeignOfferAndSelfRejectBeforeGreenFee": "20260923_075415_8d6b81d4",
+    "MK.Tests.Battles.PveSupplyDeedEntryTests.SeedZeroOriginalSupplyForContinuousRoute": "20260923_075415_8d6b81d4",
+    "MK.Tests.Battles.PveSupplyDeedEntryTests.SpellForgeDuplicateAndStaleOfferRejectBeforeBlueFee": "20260923_075415_8d6b81d4",
+    "MK.Tests.Battles.PveSupplyDeedEntryTests.SpellForgeUsesActualDifferentSpellsWithoutTakingThem(False)": "20260923_075415_8d6b81d4",
+    "MK.Tests.Battles.PveSupplyDeedEntryTests.SpellForgeUsesActualDifferentSpellsWithoutTakingThem(True)": "20260923_075415_8d6b81d4",
+    "MK.Tests.Battles.PveCombatDeedEntryTests.DecomposeActualMaterialPaysNextOriginalCardAndStaysRemoved(False)": "20260923_075716_3f14f033",
+    "MK.Tests.Battles.PveCombatDeedEntryTests.DecomposeActualMaterialPaysNextOriginalCardAndStaysRemoved(True)": "20260923_075716_3f14f033",
+    "MK.Tests.Battles.PveCombatDeedEntryTests.PermanentMaterialRejectsSelfWoundForeignBeforeFee(\"advanced_card_020\")": "20260923_075716_3f14f033",
+    "MK.Tests.Battles.PveCombatDeedEntryTests.PermanentMaterialRejectsSelfWoundForeignBeforeFee(\"advanced_card_029\")": "20260923_075716_3f14f033",
+    "MK.Tests.Battles.PveSupplyDeedEntryTests.ContinuousForgeLearningPracticeOriginalGainedShieldWinsBattleAndRoundKeepsZones": "20260923_075716_3f14f033"
+  },
+  "sceneRun": "20260923_075903_0e42207d",
+  "sceneSteps": 72,
+  "sceneAssertions": 110,
+  "reportSha256": "2fd30e3e535f58425dcfb7b8ac5c23167cb66f3eb70984452e0ca11d40767d17",
+  "screenshotsReviewed": 8,
+  "screenshots": [
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_075903_0e42207d\\captures\\026_实际绿色法术供给.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_075903_0e42207d\\captures\\030_学习先获影响力，购牌另行选择.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_075903_0e42207d\\captures\\042_选择原魔力风暴.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_075903_0e42207d\\captures\\043_学习支付6，所选原牌进弃牌，实际供应补位.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_075903_0e42207d\\captures\\048_当前仍在供应的蓝色寒冰之盾.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_075903_0e42207d\\captures\\049_绿晶付款、蓝材料永久去除、同色原盾入手.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_075903_0e42207d\\captures\\061_真实新盾格挡后减甲，英雄无伤.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_075903_0e42207d\\captures\\071_保留新牌和永久移除区，正式抽5留3.png"
+  ],
+  "finalConsole": "tmp/pve_20260923_supply_deeds_final_console.json",
+  "sourceSha256": {
+    "Assets/Logic/Runtime/Battles/PveBattleSession.cs": "8e5c05eadb70111a33e00cca6113f5954573f3a1a358f766db4e391c3f2a43d9",
+    "Assets/Logic/Runtime/Battles/PveDeedInputs.cs": "78d7d84d25f8d4165fede2febe4c400c9624797ce7e27490ac59adaea56c8ad8",
+    "Assets/Logic/Runtime/Battles/PveJourneySession.MaterialArtifacts.cs": "88e0c2f7c32ea3a763a0036870b418e532f4cca29d9aaa907a8378b09aac012f",
+    "Assets/Scripts/Battle/PveBattleController.DeedInputs.cs": "b7d05b5f6daad1e827b06b23def15d2051eed0df1d126c1b3371e164ed3525f0",
+    "Assets/Scripts/Battle/PveBattleController.DeedSupply.cs": "ba04a97941649053668a9cce3a7ee2c68cbd8ecd9525f8b6c67d1608a5af37ba",
+    "Assets/Scripts/Battle/PveBattleController.Journey.cs": "5f3b6f0bc2611a73b0c22a8083d6b7113f92ecfc06c6b9ca9a38a3159502c147",
+    "Assets/Scripts/Battle/PveBattleController.JourneyHand.cs": "bbec3b64902f265c9b79b42cdd11bb7b7cf3da5c052d78d7b5f36eb3211ac864",
+    "Assets/Scripts/Battle/PveBattleController.cs": "65c04d89e597686c1d645bc31395decff8db9e89686251ee543500a571a45e97",
+    "Assets/Tests/RulesState/PveSupplyDeedEntryTests.cs": "8288a5178bbe5d7a93f133ad4c8bceda8379ff233dbd5e88dd98baafb2cc84d8",
+    "tools/build_pve_supply_deeds_acceptance.py": "08c3c441db8109378a61f5114d1be7d4c2def98f3b825a0e530255540002e909"
+  },
+  "limits": "学习强化/修行基础/熔炉强化和战斗内学习购买尚无本Demo场景证据。换轮两张取得牌具体引用守恒为后台断言，场景核对正式换轮总数与永久区；学习取得牌尚未在场景重新抽出并消费。整体目标继续。"
+}

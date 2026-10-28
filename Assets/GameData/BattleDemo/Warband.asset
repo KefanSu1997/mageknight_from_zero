@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee4aa6fca28083944af06e7d1543142e, type: 3}
+  m_Name: Warband
+  m_EditorClassIdentifier: MageKnight.Scripts::MageKnight.Battle.BattleEncounter
+  displayName: "\u517D\u4EBA\u6218\u56E2"
+  originalMonsterJson: {fileID: 4900000, guid: 1195e7de584f2f1428f58a7ec6cd347c, type: 3}
+  enemies:
+  - originalId: monster_006
+    displayName: "\u517D\u4EBA\u6218\u58EB"
+    originalToken: {fileID: 2800000, guid: 29e1ac0c65d83c34d818c41773a4ca44, type: 3}
+  - originalId: monster_007
+    displayName: "\u517D\u4EBA\u72FC\u9A91\u5175"
+    originalToken: {fileID: 2800000, guid: d437fb68f211e6446af4d627ca84b1a8, type: 3}
+  background: {fileID: 2800000, guid: bed1fc9a7d6ba55488af5ef9e294adf9, type: 3}

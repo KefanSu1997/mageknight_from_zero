@@ -1,0 +1,17 @@
+{
+  "status": "implementation_pending_gates",
+  "base": "atomic_entity_text.EntityTextPolicy",
+  "retired": "remote_public_state71 and earlier blue hierarchical lineages",
+  "inherit_blue_weights": false,
+  "requirements": [
+    "Retain full public numerical state and previous action/reward history",
+    "Retain per-entity original text, role, physical slot and public attribute bindings for actor and scalar V critic",
+    "Retain all complete legal candidates and exact numerical action arguments",
+    "Add context-dependent option text grounded in actual card, mode, payment, material and target; do not merely expose raw IDs",
+    "Irreversible hierarchy may organize choices but must preserve complete support and baseline distribution when textual correction is zero",
+    "Preserve dynamics, rewards, split, complete episode boundaries, audit evidence and optimizer/RNG integrity",
+    "Run only on AutoDL; fixed evaluation remains disabled by user",
+    "Verify actual pretrained encoding, real complete-episode CUDA PPO update, save/reload and sampling timing before deployment"
+  ],
+  "scope": "Green-based architecture iteration, not further repair of blue weights. Existing synthetic distribution gates are insufficient for deployment."
+}

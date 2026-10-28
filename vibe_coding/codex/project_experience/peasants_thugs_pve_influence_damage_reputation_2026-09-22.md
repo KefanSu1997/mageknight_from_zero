@@ -1,0 +1,9 @@
+# 农民与暴徒：原影响力支付真实承伤
+
+核对原图Assets/GameData/cards/army_2_006.png、army_2_011.png：农民I级护甲3、攻挡2/影响2/移动2；暴徒I级护甲5、格挡3、攻3或影响4减声誉1，分配伤害先付2影响力。原UnitJsonLoader、CardUnitActions、UnitDamageResolver已有实现，本批没有复制规则或改印刷值。
+
+PveBattleSession仅开放Influence能力的战斗输入，战后交涉仍由交涉场景处理；Movement继续拒绝在战斗发动。PveBattleController在正常战斗及承伤阶段提供原影响力按钮；有暴徒时资源栏显示真实影响力/声誉，部队详情显示印刷承伤费和当前资源。承伤预案不提前扣款，正式Advance调用原战斗结算，费用不足整笔拒绝。
+
+新增可复用BattleLoadout：58Peasants、59Thugs、60Commoners，61出战/13遭遇。后台PveCommonerTests九例分别验证实际攻挡、声誉只扣一次、失败不耗竭/扣资源、农民影响力支付暴徒承伤、自身影响力后耗竭暴徒仍能承伤、伤后不能激活。前五场直接通过，第六场初次仅因ui.unitArtCount把双部队写成1而失败；断言改2并只补这一场。不得把失败报告整体改为成功；通过检查点保留0..155，后续补场单独索引。
+
+本批不把农民地图移动、完整招募交涉、跨战斗或真实轮间流程当作已完成；旧OriginalUnits的20260917_072245_da27af84已有暴徒规则消费者历史，但新PVE仍实际操作验证。详见pve_commoner_acceptance_index.json。截图/日志本地，未推送，不改VPN、不重启电脑。Unity由Hub打开后本地MCP未自启，点击既有Tools/MCP/Start Local Stdio Bridge恢复；未更换包或网络设置。

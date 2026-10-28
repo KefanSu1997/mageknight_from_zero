@@ -77,3 +77,23 @@ __pycache__/
 *.slnx
 /Assets/_Recovery/
 /Assets/_Recovery.meta
+
+# Local RL models, trajectories, metrics and scene mapping evidence.
+/AutomationOutputs/BattleRl/
+/.venv_ui_text/
+/.venv_rl/
+!/tools/BattleRl/BattleRl.csproj
+
+# Generated .NET tool outputs and local scratch data.
+/tools/**/bin/
+/tools/**/obj/
+/tmp/
+
+# These are hand-authored tool project files, not Unity-generated projects.
+!/tools/**/*.csproj
+
+# Automated run evidence stays local (user requested 2026-10-28).
+/AutomationOutputs/
+/AutomationLogs/
+/vibe_coding/codex/checkpoints/*/evidence/
+/vibe_coding/codex/checkpoints/*/evidence_manifest.json

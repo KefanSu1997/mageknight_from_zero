@@ -1,0 +1,146 @@
+{
+  "scope": "奥术伪装翻面/绿费翻回、混乱白影响/红攻击/未用空转、特立独行1/3影响及真实治疗招募；非全部分支",
+  "backendEffectivePasses": 73,
+  "backendRuns": [
+    "20260929_052835_8f50a877",
+    "20260929_052618_3ae45fc7",
+    "20260929_052802_e4be54ce",
+    "20260929_053350_b726bb96"
+  ],
+  "sceneRuns": [
+    {
+      "report": "AutomationOutputs\\PveBattle\\20260929_053556_1dbf988a\\report.json",
+      "sha256": "b662d83e27ae3b682334d25d4b3a004a6b9ecf7d0695eddfa46699842578b05e",
+      "originalStatus": "failed",
+      "acceptedZeroBasedSteps": [
+        0,
+        92
+      ],
+      "checks": 117,
+      "screenshots": [
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_053556_1dbf988a\\captures\\050_原技能实际发动.png",
+          "sha256": "f75adf582f61a2491d22a0bbdb80f758291e5c5bf63b93568a2867fcc5d4d831",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_053556_1dbf988a\\captures\\056_真实影响力消费4.png",
+          "sha256": "fde8a67c098880d1bedaa1555c15586d16bffe1623baaa491df21cc84a83329c",
+          "visuallyInspected": true
+        }
+      ]
+    },
+    {
+      "report": "AutomationOutputs\\PveBattle\\20260929_053731_b7c63988\\report.json",
+      "sha256": "4c92af2e015993673e82dbfdb45ddd734bd2b9356a3cc9b0034fd6fb876e6517",
+      "originalStatus": "failed",
+      "acceptedZeroBasedSteps": [
+        93,
+        94
+      ],
+      "checks": 2,
+      "screenshots": []
+    },
+    {
+      "report": "AutomationOutputs\\PveBattle\\20260929_054314_7b4d8527\\report.json",
+      "sha256": "07b59208d8054b621f83d45764d8deebc2b0d3a4f178d2af4ddb16e8530e6a91",
+      "originalStatus": "success",
+      "acceptedZeroBasedSteps": [
+        95,
+        115
+      ],
+      "checks": 38,
+      "screenshots": [
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_054314_7b4d8527\\captures\\043_原技能实际发动.png",
+          "sha256": "31abb4fd4fba9ffaedd430e57a1092c2b72d38837a52d553e0de80df7e495a8b",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_054314_7b4d8527\\captures\\071_原技能实际发动.png",
+          "sha256": "e3859e8ecc3cf39f280f3c2ebf61948e098b0f88e0fb98ba9ccc322c6da55ef0",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_054314_7b4d8527\\captures\\097_正式轮盘攻击.png",
+          "sha256": "92711f627a798c3c8ea588fbdfcd605eb1d2c6129c3b63176a49b7cfe64c60c0",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_054314_7b4d8527\\captures\\103_原技能与原牌攻击消费.png",
+          "sha256": "02cdefc5e240f35e67f5ab11611bdaf37ca8ddfdfcec41d51c3881a34fa12ce4",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_054314_7b4d8527\\captures\\113_未用混乱的正式回合结束.png",
+          "sha256": "12051589133e17646000ca0026a06f3e1c1f4f1ef223c23f8f6c80e994972b25",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_054314_7b4d8527\\captures\\114_原规则可选空转.png",
+          "sha256": "dd5d18dacf2d99810e43fc0d2bede3a2d6baf6a9050b6eff5c7d5def6a15dac3",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_054314_7b4d8527\\captures\\115_真实第四回合保持轮盘.png",
+          "sha256": "8149ce9039b47338e9b70f53630897c175dcfb8340c2ac27d7b10db0f60d40cf",
+          "visuallyInspected": true
+        }
+      ]
+    },
+    {
+      "report": "AutomationOutputs\\PveBattle\\20260929_054503_7f674277\\report.json",
+      "sha256": "f31d213b7a955c4cf7f30487d106ea6c642d739d8a42f06951b67e0c3b05c17f",
+      "originalStatus": "success",
+      "acceptedZeroBasedSteps": [
+        0,
+        88
+      ],
+      "checks": 116,
+      "screenshots": [
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_054503_7f674277\\captures\\040_实际受伤并击杀.png",
+          "sha256": "ad407e7af32383bf6f6ef7d178204ba83687eb46a2c0972c3f9bda8ac4d2fd7f",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_054503_7f674277\\captures\\048_原技能实际发动.png",
+          "sha256": "38a8254fd24eddc5f0c746d9be49879287168deede296f6dcbd3e35cc829591c",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_054503_7f674277\\captures\\063_治疗真实伤牌.png",
+          "sha256": "d98c05092dca633d3a9ca91d82fe21128e1c8a36335dfcd0e8aeac22d93ee998",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_054503_7f674277\\captures\\086_原影响1与原牌真实招募.png",
+          "sha256": "3436c61c3c81b23be55702f625049295a6ea6366c2573d0fd42c29d4e8dee282",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_054503_7f674277\\captures\\088_连续三回合完成.png",
+          "sha256": "abb6ad67b832b8aa21ee25107b36063ded533337891cb3570fbd11cea4c7a943",
+          "visuallyInspected": true
+        }
+      ]
+    }
+  ],
+  "extraDisplayChecks": 3,
+  "console": "tmp/pve_social_persistent_final_console.json",
+  "remainingGaps": [
+    "新动态持久技能头环普通借用上下文",
+    "忠诚契约及另外10种技能合法入口",
+    "混乱其他颜色消费者本批仅后台",
+    "原七格地图与独立英雄立绘"
+  ],
+  "displaySupplement": {
+    "report": "AutomationOutputs\\PveBattle\\20260929_054816_335a2571\\report.json",
+    "sha256": "73b68cc0af326597e8d1c0af3a4b56bd8de7eb445efa9c9d6cf69934a0695caf",
+    "step": 59,
+    "checks": 1,
+    "screenshot": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_054816_335a2571\\captures\\059_承诺拒绝实际影响招募.png",
+    "screenshotSha256": "b1b49e84b08a3c2072b047ebb333893124de309dc29e6d0f66e278c447319275",
+    "visuallyInspected": true
+  }
+}

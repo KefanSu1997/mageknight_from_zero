@@ -1,0 +1,1029 @@
+{
+  "schema_version": 1,
+  "rubric_version": "combat_focus_v3.2.0",
+  "status": "active_contrast_revision",
+  "language": "zh-CN",
+  "created": "2026-10-23",
+  "source_protocol": "AutomationOutputs/RsiGame/evaluation_iterations/20261023_cycle02/review_v2/protocol.json",
+  "source_judge": "AutomationOutputs/RsiGame/evaluation_iterations/20261023_cycle02/review_v2/system_prompt.txt",
+  "source_proposal": "AutomationConfigs/RsiGame/evaluation/benchmark_v2_proposal.json",
+  "reference_notice": "主代理已实际观察本地杀戮尖塔2部分菜单与普通战斗；详见独立观察记录。带MOD且未验证Wiki/日志，评分要求以用户意见和冻结rubric为准。",
+  "comparability": {
+    "breaking": true,
+    "old_scores_comparable": false,
+    "rule": "保留32 ID仅为追溯；全部须在同一v3、同fixture重新盲评基线与候选。禁止旧分与新分直接加减、排名或拼接曲线。"
+  },
+  "information_contract": {
+    "immediate": "当前合法战术决策所需卡/目标/模式/有效费用/支付来源/资源/敌人威胁/承伤/提交及可用英雄技能与佣兵必须实际可见或在当前战斗直接可发现的实体详情中消费；精确选择与付款值不得迫使查Wiki。手牌、牌组、弃牌、敌人、英雄技能、佣兵、魔力保持可发现可用。",
+    "on_demand": "规则全文、术语、行动目标说明、阶段教程进入可发现可检索可返回的全局Wiki，移走/精简合法且鼓励；不以文本数量或大字号常驻教学奖励。",
+    "log": "日志可默认关闭，完整正式事件须保留并能展开、滚至末行、关闭；展开遮住可交互区域时退出必须明显有效。",
+    "font": "按核心数值/实体标签/辅助说明/知识全文职责判断可读性；不要求每字不小于旧版。整体缩小或拥挤hack导致核心难读为失败。",
+    "phase": "阶段是单一状态指示与情境行动，不作多个选项卡；英雄头像紧凑，普通方框文字按钮不得主导视觉。",
+    "contrast": "核心符号、数字、颜色与状态须从实际明亮天空/树叶/石地/城墙背景稳定分离。仅在纯色设计稿清楚不合格；不得靠黑色长说明板、缩小/隐藏信息或压暗全场解决。小型统一游戏徽章/材质底座允许，须保持符号尺寸、含义和战场主次。"
+  },
+  "registration": {
+    "required_before_capture": [
+      "匿名A/B编码和密封版本映射",
+      "场景/fixture/种子/实体与正式状态",
+      "每场景immediate/on_demand字段与实际显示职责",
+      "正常战斗意图及可选知识查询任务分别列明",
+      "问题/答案/事件/压力清单",
+      "正数可行成本预算和依据（不是全局最优）",
+      "设备/分辨率/构建/计时方法",
+      "必读原图/完整文本证据SHA与范围",
+      "适用硬门禁和输出证据类型"
+    ],
+    "minimum_representative_contexts": [
+      "ranged_single_enemy",
+      "block",
+      "assign_damage",
+      "melee_two_enemies",
+      "three_enemies",
+      "hand_deck_discard",
+      "hero_skill_available_and_consumed",
+      "mercenary_available_and_consumed",
+      "selected_action_payment",
+      "mana_take_consume_return",
+      "phase_transition",
+      "won_result_recall",
+      "end_mixed_recall",
+      "long_card_detail",
+      "wiki_search_read_return",
+      "log_closed_open_scroll_close"
+    ],
+    "pressure_candidates": [
+      "long_ability",
+      "full_hand_or_paging",
+      "multi_target",
+      "scarce_mana",
+      "disabled_action",
+      "rapid_input",
+      "long_log_last_line",
+      "wiki_return_with_active_selection"
+    ],
+    "scope_rule": "采集前展开唯一ID冻结有限N；不要求全游戏无穷分母。未注册分母的条目null；注册清单可按评估目的缩小并明确范围，不能失败后删项。结论仅限预注册场景。"
+  },
+  "evidence_policy": {
+    "missing_reasons": [
+      "missing_dynamic_evidence",
+      "unmeasured_geometry",
+      "missing_scoring_anchor",
+      "missing_raw_image",
+      "unregistered_denominator",
+      "capture_failed",
+      "hash_mismatch",
+      "not_applicable_predeclared",
+      "unmeasured_subdimension"
+    ],
+    "score_null": "未观察到失败且证据不足时score=null；缺证据不补0、1、3、5。已观察失败保留失败，不得被缺件抹去。",
+    "partial": "允许对有明确分母的已审子范围给独立子结果及范围；整体覆盖不足时overall item score=null（8.1/8.2覆盖项除外）。",
+    "observations": "原始值/单位/分母/方法与主观视觉分离；截图不能证明时延、真人表现、实体连续性或正式消费。视觉评分不冒称客观量化。",
+    "anchor_selection": "逐场景依本项锚点评分；存在多问题取满足的最低档；整项取已完整登记单元的最低档，不取均分。比值预算须>0；无预算只报原值。百分比按完整固定分母精确算，不插值。",
+    "geometry": "声称尺寸/面积/对比/比例须实际坐标方法，视觉印象另报；不强制无关几何先测完才允许有范围视觉判断。"
+  },
+  "aggregation": {
+    "overall_numeric_score": null,
+    "unweighted_mean_forbidden": true,
+    "weighted_total_enabled": false,
+    "rule": "32项形成分组画像与逐项配对结论，不输出总分；未来权重需新版本事前冻结。",
+    "gate_order": [
+      "input_invalid",
+      "failed",
+      "unverified",
+      "passed_observed_scope"
+    ],
+    "gate_rule": "任一已观察硬失败→failed，其他高分不能抵消；核心门禁缺证据→unverified。仅全量完成注册范围且适用门禁通过→passed_observed_scope。"
+  },
+  "old_to_new_mapping": [
+    {
+      "old_id": "1.1",
+      "new_id": "1.1",
+      "relationship": "semantic_break",
+      "new_name": "当前决策信息分层",
+      "old_score_reusable": false,
+      "old_name": "必要信息覆盖率",
+      "reason": "v3按战斗主次、信息职责及证据边界重新锚定；ID保留仅为追溯，不复用旧评分。"
+    },
+    {
+      "old_id": "1.2",
+      "new_id": "1.2",
+      "relationship": "semantic_break",
+      "new_name": "可见文字与全文可消费",
+      "old_score_reusable": false,
+      "old_name": "文字截断率",
+      "reason": "v3按战斗主次、信息职责及证据边界重新锚定；ID保留仅为追溯，不复用旧评分。"
+    },
+    {
+      "old_id": "1.3",
+      "new_id": "1.3",
+      "relationship": "versioned_reanchoring",
+      "new_name": "遮挡与叠层",
+      "old_score_reusable": false,
+      "old_name": "遮挡与重叠",
+      "reason": "v3按战斗主次、信息职责及证据边界重新锚定；ID保留仅为追溯，不复用旧评分。"
+    },
+    {
+      "old_id": "1.4",
+      "new_id": "1.4",
+      "relationship": "versioned_reanchoring",
+      "new_name": "实体与战斗上下文连续性",
+      "old_score_reusable": false,
+      "old_name": "跨阶段实体连续性",
+      "reason": "v3按战斗主次、信息职责及证据边界重新锚定；ID保留仅为追溯，不复用旧评分。"
+    },
+    {
+      "old_id": "2.1",
+      "new_id": "2.1",
+      "relationship": "semantic_break",
+      "new_name": "按职责可读性",
+      "old_score_reusable": false,
+      "old_name": "字号与原尺寸阅读",
+      "reason": "v3按战斗主次、信息职责及证据边界重新锚定；ID保留仅为追溯，不复用旧评分。"
+    },
+    {
+      "old_id": "2.2",
+      "new_id": "2.2",
+      "relationship": "versioned_reanchoring",
+      "new_name": "前景背景辨识",
+      "old_score_reusable": false,
+      "old_name": "文字背景对比度",
+      "reason": "v3按战斗主次、信息职责及证据边界重新锚定；ID保留仅为追溯，不复用旧评分。"
+    },
+    {
+      "old_id": "2.3",
+      "new_id": "2.3",
+      "relationship": "versioned_reanchoring",
+      "new_name": "当前决策信息检索",
+      "old_score_reusable": false,
+      "old_name": "信息搜索负担",
+      "reason": "v3按战斗主次、信息职责及证据边界重新锚定；ID保留仅为追溯，不复用旧评分。"
+    },
+    {
+      "old_id": "2.4",
+      "new_id": "2.4",
+      "relationship": "semantic_break",
+      "new_name": "战场主次与空间分组",
+      "old_score_reusable": false,
+      "old_name": "密度与分组",
+      "reason": "v3按战斗主次、信息职责及证据边界重新锚定；ID保留仅为追溯，不复用旧评分。"
+    },
+    {
+      "old_id": "3.1",
+      "new_id": "3.1",
+      "relationship": "versioned_reanchoring",
+      "new_name": "战斗实体插画完整性",
+      "old_score_reusable": false,
+      "old_name": "主体完整性",
+      "reason": "v3按战斗主次、信息职责及证据边界重新锚定；ID保留仅为追溯，不复用旧评分。"
+    },
+    {
+      "old_id": "3.2",
+      "new_id": "3.2",
+      "relationship": "versioned_reanchoring",
+      "new_name": "素材清洁与规则标记分离",
+      "old_score_reusable": false,
+      "old_name": "印刷残留",
+      "reason": "v3按战斗主次、信息职责及证据边界重新锚定；ID保留仅为追溯，不复用旧评分。"
+    },
+    {
+      "old_id": "3.3",
+      "new_id": "3.3",
+      "relationship": "semantic_break",
+      "new_name": "英雄头像空间与实体比例",
+      "old_score_reusable": false,
+      "old_name": "比例与留边",
+      "reason": "v3按战斗主次、信息职责及证据边界重新锚定；ID保留仅为追溯，不复用旧评分。"
+    },
+    {
+      "old_id": "3.4",
+      "new_id": "3.4",
+      "relationship": "semantic_break",
+      "new_name": "控件美感与游戏视觉语言",
+      "old_score_reusable": false,
+      "old_name": "风格与层级",
+      "reason": "v3按战斗主次、信息职责及证据边界重新锚定；ID保留仅为追溯，不复用旧评分。"
+    },
+    {
+      "old_id": "4.1",
+      "new_id": "4.1",
+      "relationship": "semantic_break",
+      "new_name": "单一阶段指示与下一决策",
+      "old_score_reusable": false,
+      "old_name": "下一步可识别",
+      "reason": "v3按战斗主次、信息职责及证据边界重新锚定；ID保留仅为追溯，不复用旧评分。"
+    },
+    {
+      "old_id": "4.2",
+      "new_id": "4.2",
+      "relationship": "versioned_reanchoring",
+      "new_name": "控件可发现与状态",
+      "old_score_reusable": false,
+      "old_name": "可点击与禁用识别",
+      "reason": "v3按战斗主次、信息职责及证据边界重新锚定；ID保留仅为追溯，不复用旧评分。"
+    },
+    {
+      "old_id": "4.3",
+      "new_id": "4.3",
+      "relationship": "semantic_break",
+      "new_name": "全局Wiki检索与返回",
+      "old_score_reusable": false,
+      "old_name": "标签清晰度",
+      "reason": "v3按战斗主次、信息职责及证据边界重新锚定；ID保留仅为追溯，不复用旧评分。"
+    },
+    {
+      "old_id": "4.4",
+      "new_id": "4.4",
+      "relationship": "versioned_reanchoring",
+      "new_name": "选择目标模式与费用解释",
+      "old_score_reusable": false,
+      "old_name": "选择与费用可解释性",
+      "reason": "v3按战斗主次、信息职责及证据边界重新锚定；ID保留仅为追溯，不复用旧评分。"
+    },
+    {
+      "old_id": "5.1",
+      "new_id": "5.1",
+      "relationship": "semantic_break",
+      "new_name": "正常战斗点击负担",
+      "old_score_reusable": false,
+      "old_name": "同意图点击次数",
+      "reason": "v3按战斗主次、信息职责及证据边界重新锚定；ID保留仅为追溯，不复用旧评分。"
+    },
+    {
+      "old_id": "5.2",
+      "new_id": "5.2",
+      "relationship": "semantic_break",
+      "new_name": "正常战斗指针负担",
+      "old_score_reusable": false,
+      "old_name": "鼠标移动距离",
+      "reason": "v3按战斗主次、信息职责及证据边界重新锚定；ID保留仅为追溯，不复用旧评分。"
+    },
+    {
+      "old_id": "5.3",
+      "new_id": "5.3",
+      "relationship": "semantic_break",
+      "new_name": "可选知识查询成本隔离",
+      "old_score_reusable": false,
+      "old_name": "页面与弹层切换",
+      "reason": "v3按战斗主次、信息职责及证据边界重新锚定；ID保留仅为追溯，不复用旧评分。"
+    },
+    {
+      "old_id": "5.4",
+      "new_id": "5.4",
+      "relationship": "semantic_break",
+      "new_name": "连续战术衔接成本",
+      "old_score_reusable": false,
+      "old_name": "A到B衔接代价",
+      "reason": "v3按战斗主次、信息职责及证据边界重新锚定；ID保留仅为追溯，不复用旧评分。"
+    },
+    {
+      "old_id": "6.1",
+      "new_id": "6.1",
+      "relationship": "semantic_break",
+      "new_name": "结果反馈与可回查日志",
+      "old_score_reusable": false,
+      "old_name": "反馈覆盖率",
+      "reason": "v3按战斗主次、信息职责及证据边界重新锚定；ID保留仅为追溯，不复用旧评分。"
+    },
+    {
+      "old_id": "6.2",
+      "new_id": "6.2",
+      "relationship": "versioned_reanchoring",
+      "new_name": "反馈时延",
+      "old_score_reusable": false,
+      "old_name": "反馈延迟",
+      "reason": "v3按战斗主次、信息职责及证据边界重新锚定；ID保留仅为追溯，不复用旧评分。"
+    },
+    {
+      "old_id": "6.3",
+      "new_id": "6.3",
+      "relationship": "versioned_reanchoring",
+      "new_name": "反馈与规则一致",
+      "old_score_reusable": false,
+      "old_name": "反馈真实性",
+      "reason": "v3按战斗主次、信息职责及证据边界重新锚定；ID保留仅为追溯，不复用旧评分。"
+    },
+    {
+      "old_id": "6.4",
+      "new_id": "6.4",
+      "relationship": "semantic_break",
+      "new_name": "日志开关与瞬态不阻塞",
+      "old_score_reusable": false,
+      "old_name": "动画阻塞与持续性",
+      "reason": "v3按战斗主次、信息职责及证据边界重新锚定；ID保留仅为追溯，不复用旧评分。"
+    },
+    {
+      "old_id": "7.1",
+      "new_id": "7.1",
+      "relationship": "versioned_reanchoring",
+      "new_name": "目标模式与付款误选风险",
+      "old_score_reusable": false,
+      "old_name": "误操作暴露",
+      "reason": "v3按战斗主次、信息职责及证据边界重新锚定；ID保留仅为追溯，不复用旧评分。"
+    },
+    {
+      "old_id": "7.2",
+      "new_id": "7.2",
+      "relationship": "versioned_reanchoring",
+      "new_name": "拒绝说明可操作性",
+      "old_score_reusable": false,
+      "old_name": "拒绝说明可操作性",
+      "reason": "v3按战斗主次、信息职责及证据边界重新锚定；ID保留仅为追溯，不复用旧评分。"
+    },
+    {
+      "old_id": "7.3",
+      "new_id": "7.3",
+      "relationship": "versioned_reanchoring",
+      "new_name": "撤销与上下文恢复",
+      "old_score_reusable": false,
+      "old_name": "撤销与恢复成本",
+      "reason": "v3按战斗主次、信息职责及证据边界重新锚定；ID保留仅为追溯，不复用旧评分。"
+    },
+    {
+      "old_id": "7.4",
+      "new_id": "7.4",
+      "relationship": "semantic_break",
+      "new_name": "功能保全与规则资源守恒",
+      "old_score_reusable": false,
+      "old_name": "规则与资源守恒",
+      "reason": "v3按战斗主次、信息职责及证据边界重新锚定；ID保留仅为追溯，不复用旧评分。"
+    },
+    {
+      "old_id": "8.1",
+      "new_id": "8.1",
+      "relationship": "versioned_reanchoring",
+      "new_name": "代表场景证据覆盖",
+      "old_score_reusable": false,
+      "old_name": "代表性场景覆盖",
+      "reason": "v3按战斗主次、信息职责及证据边界重新锚定；ID保留仅为追溯，不复用旧评分。"
+    },
+    {
+      "old_id": "8.2",
+      "new_id": "8.2",
+      "relationship": "versioned_reanchoring",
+      "new_name": "边界压力证据覆盖",
+      "old_score_reusable": false,
+      "old_name": "边界压力覆盖",
+      "reason": "v3按战斗主次、信息职责及证据边界重新锚定；ID保留仅为追溯，不复用旧评分。"
+    },
+    {
+      "old_id": "8.3",
+      "new_id": "8.3",
+      "relationship": "versioned_reanchoring",
+      "new_name": "显示刷新与负载稳定",
+      "old_score_reusable": false,
+      "old_name": "显示与性能稳定性",
+      "reason": "v3按战斗主次、信息职责及证据边界重新锚定；ID保留仅为追溯，不复用旧评分。"
+    },
+    {
+      "old_id": "8.4",
+      "new_id": "8.4",
+      "relationship": "versioned_reanchoring",
+      "new_name": "证据版本与盲审绑定",
+      "old_score_reusable": false,
+      "old_name": "证据与版本绑定",
+      "reason": "v3按战斗主次、信息职责及证据边界重新锚定；ID保留仅为追溯，不复用旧评分。"
+    }
+  ],
+  "items": [
+    {
+      "id": "1.1",
+      "name": "当前决策信息分层",
+      "evidence_types": [
+        "原图",
+        "状态字段注册表"
+      ],
+      "denominator": "当前状态必要决策字段",
+      "hard_gate_or_invalidity": "关键费用/目标/资源/可用技能或佣兵缺失",
+      "anchors": {
+        "1": "必要决策无法完成",
+        "2": "缺关键字段或隐藏可用技能/佣兵",
+        "3": "信息齐全但教学抢占战场",
+        "4": "核心信息清楚，少量次要竞争",
+        "5": "手牌/牌组/弃牌/怪物/技能/佣兵/魔力与当前决策明确；知识说明按需查询"
+      },
+      "score_method": "registered_unit_worst_anchor",
+      "not_available": "证据不足按evidence_policy给null并列精确缺件；预声明不适用需理由，不能事后移除失败。"
+    },
+    {
+      "id": "1.2",
+      "name": "可见文字与全文可消费",
+      "evidence_types": [
+        "原尺寸截图",
+        "展开/滚动轨迹",
+        "文本注册表"
+      ],
+      "denominator": "当前决策文本及注册查询全文",
+      "hard_gate_or_invalidity": "必要文字空白/不可读截断；metadata不算可见",
+      "anchors": {
+        "1": "必要文字空白或无法读取",
+        "2": "重要文字截断且无有效展开",
+        "3": "可展开但阅读/末行定位费力",
+        "4": "全文可达且主体清楚，少量阅读摩擦",
+        "5": "必要文字直接可读；长规则全文按需完整可查并返回"
+      },
+      "score_method": "registered_unit_worst_anchor",
+      "not_available": "证据不足按evidence_policy给null并列精确缺件；预声明不适用需理由，不能事后移除失败。"
+    },
+    {
+      "id": "1.3",
+      "name": "遮挡与叠层",
+      "evidence_types": [
+        "原图",
+        "真实关闭/返回轨迹"
+      ],
+      "denominator": "注册面板和悬浮状态",
+      "hard_gate_or_invalidity": "无法关闭的叠层阻断必要操作",
+      "anchors": {
+        "1": "关键区域被不可恢复遮挡",
+        "2": "多个必要区域相互遮挡",
+        "3": "可恢复但频繁挡住目标",
+        "4": "仅轻微局部遮挡且退出清楚",
+        "5": "必要信息无遮挡；预期详情层可退出恢复原决策"
+      },
+      "score_method": "registered_unit_worst_anchor",
+      "not_available": "证据不足按evidence_policy给null并列精确缺件；预声明不适用需理由，不能事后移除失败。"
+    },
+    {
+      "id": "1.4",
+      "name": "实体与战斗上下文连续性",
+      "evidence_types": [
+        "连续轨迹",
+        "正式物理实体状态"
+      ],
+      "denominator": "注册前后转换",
+      "hard_gate_or_invalidity": "实体错绑/查询返回丢选择或错消费",
+      "anchors": {
+        "1": "物理实体或归属错误",
+        "2": "多个转换丢状态",
+        "3": "身份正确但上下文返回不稳定",
+        "4": "身份正确，仅非关键焦点恢复问题",
+        "5": "卡/怪物/技能/佣兵身份、选择和查询返回上下文均一致"
+      },
+      "score_method": "registered_unit_worst_anchor",
+      "not_available": "证据不足按evidence_policy给null并列精确缺件；预声明不适用需理由，不能事后移除失败。"
+    },
+    {
+      "id": "2.1",
+      "name": "按职责可读性",
+      "evidence_types": [
+        "原尺寸原图",
+        "必要时字形几何"
+      ],
+      "denominator": "注册核心/辅助/知识文字角色",
+      "hard_gate_or_invalidity": "整体缩小/挤压导致必要文字难读",
+      "anchors": {
+        "1": "核心文字无法阅读",
+        "2": "核心费用/状态明显过小或拥挤",
+        "3": "可读但需反复辨认",
+        "4": "核心清楚，辅助局部稍密",
+        "5": "按职责清晰；删除/移走教学合法，不要求每字保持旧字号"
+      },
+      "score_method": "registered_unit_worst_anchor",
+      "not_available": "证据不足按evidence_policy给null并列精确缺件；预声明不适用需理由，不能事后移除失败。"
+    },
+    {
+      "id": "2.2",
+      "name": "符号与数字的背景分离及辨识",
+      "evidence_types": [
+        "原始全画布截图（正常观看比例）",
+        "登记符号/数值/背景/状态矩阵",
+        "实际像素采样或渲染遮罩方法与坐标",
+        "独立subagent逐图辨识与扣分事实"
+      ],
+      "denominator": "预登记核心符号/数字/状态 × 实际背景 × 状态；逐单元保留失败",
+      "hard_gate_or_invalidity": "任一核心符号/数字被背景吞没、禁用/选中/移除无法辨认或对比修复造成信息遮挡，属于硬失败；不得用其他审美高分抵消。",
+      "anchors": {
+        "1": "核心符号或数字无法从背景中找出，不能可靠辨认类别或读数",
+        "2": "多处核心图标/数字需放大、猜测或依靠旧版记忆才能辨认",
+        "3": "实际背景中基本可辨，但亮/暗/复杂纹理至少一类仍干扰；不通过本项提升验收",
+        "4": "登记背景和状态中核心符号轮廓、数值与选择状态清楚，仅非核心局部有轻微干扰",
+        "5": "全部登记背景/状态稳定清楚，符号用途一致、数值不混读；实际像素对照和独立原图审查相互支持"
+      },
+      "score_method": "registered_unit_worst_anchor",
+      "not_available": "证据不足按evidence_policy给null并列精确缺件；预声明不适用需理由，不能事后移除失败。",
+      "contrast_acceptance": {
+        "minimum_visual_score": 4,
+        "core_failure_is_hard_gate": true,
+        "backgrounds": [
+          "bright_sky",
+          "foliage",
+          "stone_ground",
+          "stone_wall"
+        ],
+        "required_states": [
+          "available",
+          "selected",
+          "unavailable_or_removed"
+        ],
+        "engineering_targets": {
+          "symbol_vs_own_mount_luminance_ratio": 3.0,
+          "necessary_numeral_vs_own_mount_luminance_ratio": 4.5
+        },
+        "metric_limit": "工程目标为本项目门槛，不称为真人能力或通用可访问性认证；材质色值、mask/几何或均值对比不能替代实际逐图辨识。未测背景或状态保留unverified，不补通过。"
+      }
+    },
+    {
+      "id": "2.3",
+      "name": "当前决策信息检索",
+      "evidence_types": [
+        "冻结问题答案",
+        "受控读图答题轨迹"
+      ],
+      "denominator": "当前决策问题；知识查询另组",
+      "hard_gate_or_invalidity": "当前必要信息不可达",
+      "anchors": {
+        "1": "正确率<50%",
+        "2": "50%≤正确率<75%",
+        "3": "75%≤正确率<90%",
+        "4": "90%≤正确率<100%",
+        "5": "正确率100%；实际耗时单列，不冒充真人"
+      },
+      "score_method": "registered_unit_worst_anchor",
+      "not_available": "证据不足按evidence_policy给null并列精确缺件；预声明不适用需理由，不能事后移除失败。"
+    },
+    {
+      "id": "2.4",
+      "name": "战场主次与空间分组",
+      "evidence_types": [
+        "原尺寸原图",
+        "区域几何如测量"
+      ],
+      "denominator": "注册战斗视图",
+      "hard_gate_or_invalidity": "密度阻断核心操作",
+      "anchors": {
+        "1": "教程/普通框挤没战场",
+        "2": "战场次于大段说明/大头像",
+        "3": "核心可用但层级竞争明显",
+        "4": "战场主导，少量空间浪费",
+        "5": "核心战斗对象主导视线；相关费用/目标邻近且留白有效"
+      },
+      "score_method": "registered_unit_worst_anchor",
+      "not_available": "证据不足按evidence_policy给null并列精确缺件；预声明不适用需理由，不能事后移除失败。"
+    },
+    {
+      "id": "3.1",
+      "name": "战斗实体插画完整性",
+      "evidence_types": [
+        "原图",
+        "源素材或预声明裁切合同"
+      ],
+      "denominator": "注册实体插画",
+      "hard_gate_or_invalidity": "意外裁掉识别所需主体",
+      "anchors": {
+        "1": "主体无法辨认",
+        "2": "关键头部/武器意外裁切",
+        "3": "可辨认但明显不自然裁切",
+        "4": "仅非关键边缘瑕疵",
+        "5": "主体自然完整或有依据的设计裁切，不以全UV冒充视觉证据"
+      },
+      "score_method": "registered_unit_worst_anchor",
+      "not_available": "证据不足按evidence_policy给null并列精确缺件；预声明不适用需理由，不能事后移除失败。"
+    },
+    {
+      "id": "3.2",
+      "name": "素材清洁与规则标记分离",
+      "evidence_types": [
+        "原图",
+        "素材对照"
+      ],
+      "denominator": "注册插画及规则标记",
+      "hard_gate_or_invalidity": "残留误导规则值",
+      "anchors": {
+        "1": "残留导致错误规则认知",
+        "2": "多处印刷残留压主体",
+        "3": "残留可辨但破坏整体",
+        "4": "少量非误导残留",
+        "5": "插画干净，正式规则标记独立清楚"
+      },
+      "score_method": "registered_unit_worst_anchor",
+      "not_available": "证据不足按evidence_policy给null并列精确缺件；预声明不适用需理由，不能事后移除失败。"
+    },
+    {
+      "id": "3.3",
+      "name": "英雄头像空间与实体比例",
+      "evidence_types": [
+        "原图；面积比例需几何/源图"
+      ],
+      "denominator": "注册战斗视图与实体",
+      "hard_gate_or_invalidity": "头像挤压必要战斗区域或明显实体畸变",
+      "anchors": {
+        "1": "头像支配画面并阻断战斗",
+        "2": "大头像显著挤压手牌/怪物/技能",
+        "3": "头像不阻断但抢占主次",
+        "4": "头像紧凑，仅少量留白/比例问题",
+        "5": "身份一眼可辨且头像克制，战场获得空间；比例自然"
+      },
+      "score_method": "registered_unit_worst_anchor",
+      "not_available": "证据不足按evidence_policy给null并列精确缺件；预声明不适用需理由，不能事后移除失败。"
+    },
+    {
+      "id": "3.4",
+      "name": "控件美感与游戏视觉语言",
+      "evidence_types": [
+        "原尺寸原图",
+        "交互状态组"
+      ],
+      "denominator": "注册战斗视图",
+      "hard_gate_or_invalidity": "装饰导致必要控件不可辨",
+      "anchors": {
+        "1": "普通方框文字堆砌且主次崩溃",
+        "2": "主要视觉仍是通用文字框墙",
+        "3": "部分游戏化但风格零散",
+        "4": "卡/技能/资源有一致视觉，局部仍生硬",
+        "5": "卡牌/资源/技能/目标融入统一游戏语言，美感与可发现性并存"
+      },
+      "score_method": "registered_unit_worst_anchor",
+      "not_available": "证据不足按evidence_policy给null并列精确缺件；预声明不适用需理由，不能事后移除失败。"
+    },
+    {
+      "id": "4.1",
+      "name": "单一阶段指示与下一决策",
+      "evidence_types": [
+        "原图",
+        "阶段推进轨迹",
+        "答案"
+      ],
+      "denominator": "注册阶段状态",
+      "hard_gate_or_invalidity": "阶段歧义误导合法流程",
+      "anchors": {
+        "1": "无法辨认当前阶段或下一步",
+        "2": "多个阶段选项卡制造错误切换期待",
+        "3": "当前阶段可辨但行动重点分散",
+        "4": "明确阶段与主动作，仅次要竞争",
+        "5": "一个清楚的阶段指示与情境主动作，不把阶段做多选项卡"
+      },
+      "score_method": "registered_unit_worst_anchor",
+      "not_available": "证据不足按evidence_policy给null并列精确缺件；预声明不适用需理由，不能事后移除失败。"
+    },
+    {
+      "id": "4.2",
+      "name": "控件可发现与状态",
+      "evidence_types": [
+        "原图",
+        "实际命中/禁用测试"
+      ],
+      "denominator": "注册控件状态",
+      "hard_gate_or_invalidity": "空白按钮/关键入口不可发现或不可点",
+      "anchors": {
+        "1": "关键按钮空白或不可识别",
+        "2": "多个入口/禁用含混",
+        "3": "能找到但要试探",
+        "4": "大多清晰，少量图标歧义",
+        "5": "游戏化控件仍易发现；可点/选中/禁用反馈统一"
+      },
+      "score_method": "registered_unit_worst_anchor",
+      "not_available": "证据不足按evidence_policy给null并列精确缺件；预声明不适用需理由，不能事后移除失败。"
+    },
+    {
+      "id": "4.3",
+      "name": "全局Wiki检索与返回",
+      "evidence_types": [
+        "真实入口→查询→全文→返回轨迹",
+        "词典"
+      ],
+      "denominator": "注册术语/阶段教程/行动目标查询",
+      "hard_gate_or_invalidity": "查询死路/返回丢战斗上下文；必要即时值被藏",
+      "anchors": {
+        "1": "入口或全文不可达",
+        "2": "常用词/规则找不到或回不去",
+        "3": "可查可回但入口/搜索费力",
+        "4": "查询和返回清楚，仅小摩擦",
+        "5": "全局Wiki入口可发现，术语/目标/阶段教程可检索且保上下文返回"
+      },
+      "score_method": "registered_unit_worst_anchor",
+      "not_available": "证据不足按evidence_policy给null并列精确缺件；预声明不适用需理由，不能事后移除失败。"
+    },
+    {
+      "id": "4.4",
+      "name": "选择目标模式与费用解释",
+      "evidence_types": [
+        "原图",
+        "真实付款/目标状态"
+      ],
+      "denominator": "注册支付场景×卡/目标/模式/来源/净费用",
+      "hard_gate_or_invalidity": "展示与实际费用/目标不符",
+      "anchors": {
+        "1": "关键选择/费用错误",
+        "2": "付款或目标难以确定",
+        "3": "能判断但来源层级含混",
+        "4": "明确主要选择，仅次要说明不足",
+        "5": "实际选择/目标/模式/来源/净费直接可辨，细则可查Wiki"
+      },
+      "score_method": "registered_unit_worst_anchor",
+      "not_available": "证据不足按evidence_policy给null并列精确缺件；预声明不适用需理由，不能事后移除失败。"
+    },
+    {
+      "id": "5.1",
+      "name": "正常战斗点击负担",
+      "evidence_types": [
+        "同意图正式消费真实轨迹",
+        "冻结预算"
+      ],
+      "denominator": "注册正常战斗意图",
+      "hard_gate_or_invalidity": "漏正式消费或移走功能以降成本",
+      "anchors": {
+        "1": "任一意图不能完成",
+        "2": "最差成本/预算>2",
+        "3": "1.5<最差比值≤2",
+        "4": "1<最差比值≤1.5",
+        "5": "全部实际点击≤预注册可行预算；不宣称最短"
+      },
+      "score_method": "registered_unit_worst_anchor",
+      "not_available": "证据不足按evidence_policy给null并列精确缺件；预声明不适用需理由，不能事后移除失败。"
+    },
+    {
+      "id": "5.2",
+      "name": "正常战斗指针负担",
+      "evidence_types": [
+        "完整初指针/点击/必要悬浮坐标轨迹",
+        "预算"
+      ],
+      "denominator": "注册正常战斗意图",
+      "hard_gate_or_invalidity": "漏起始段或目标结果不相同则无效",
+      "anchors": {
+        "1": "任一意图不能完成",
+        "2": "最差距离/预算>2",
+        "3": "1.5<最差比值≤2",
+        "4": "1<最差比值≤1.5",
+        "5": "全部px距离≤冻结可行预算；对角线归一另报"
+      },
+      "score_method": "registered_unit_worst_anchor",
+      "not_available": "证据不足按evidence_policy给null并列精确缺件；预声明不适用需理由，不能事后移除失败。"
+    },
+    {
+      "id": "5.3",
+      "name": "可选知识查询成本隔离",
+      "evidence_types": [
+        "正常战斗及可选Wiki任务独立轨迹"
+      ],
+      "denominator": "两套分别冻结的任务清单",
+      "hard_gate_or_invalidity": "必需费用藏Wiki/强制教程阻断战斗",
+      "anchors": {
+        "1": "正常战斗必须反复查教程才能操作",
+        "2": "强制知识面板切换主导流程",
+        "3": "可分流但仍有多余强制打开",
+        "4": "正常战斗流畅，查询局部返回摩擦",
+        "5": "正常战斗与可选查知识分报点击/距离/切换/耗时，不把主动学习成本混进正常战斗"
+      },
+      "score_method": "registered_unit_worst_anchor",
+      "not_available": "证据不足按evidence_policy给null并列精确缺件；预声明不适用需理由，不能事后移除失败。"
+    },
+    {
+      "id": "5.4",
+      "name": "连续战术衔接成本",
+      "evidence_types": [
+        "A正式完成→B消费连续轨迹",
+        "预算"
+      ],
+      "denominator": "注册A→B边界",
+      "hard_gate_or_invalidity": "用reset拼接或共享操作重复计费使比较无效",
+      "anchors": {
+        "1": "任一注册衔接无法完成",
+        "2": "最差边界点击/预算>2",
+        "3": "1.5<最差比值≤2",
+        "4": "1<最差比值≤1.5",
+        "5": "全部边界≤冻结预算且上下文连续，距离/切换另报"
+      },
+      "score_method": "registered_unit_worst_anchor",
+      "not_available": "证据不足按evidence_policy给null并列精确缺件；预声明不适用需理由，不能事后移除失败。"
+    },
+    {
+      "id": "6.1",
+      "name": "结果反馈与可回查日志",
+      "evidence_types": [
+        "选择/成功/拒绝事件轨迹",
+        "日志展开滚动"
+      ],
+      "denominator": "注册应反馈事件及日志事件",
+      "hard_gate_or_invalidity": "必要结果无反馈/日志丢正式事件",
+      "anchors": {
+        "1": "结果无法确认且不可回查",
+        "2": "关键事件缺失或状态不明",
+        "3": "即时反馈有但日志定位困难",
+        "4": "反馈正确可查，少量定位摩擦",
+        "5": "即时决策反馈清楚，完整事件可回查；日志无需常驻"
+      },
+      "score_method": "registered_unit_worst_anchor",
+      "not_available": "证据不足按evidence_policy给null并列精确缺件；预声明不适用需理由，不能事后移除失败。"
+    },
+    {
+      "id": "6.2",
+      "name": "反馈时延",
+      "evidence_types": [
+        "真实输入时戳与有效呈现帧同钟"
+      ],
+      "denominator": "注册反馈事件",
+      "hard_gate_or_invalidity": "错误帧不能算有效反馈",
+      "anchors": {
+        "1": "P95>800ms",
+        "2": "400<P95≤800ms",
+        "3": "200<P95≤400ms",
+        "4": "100<P95≤200ms",
+        "5": "P95≤100ms；工程预算非真人感知认证"
+      },
+      "score_method": "registered_unit_worst_anchor",
+      "not_available": "证据不足按evidence_policy给null并列精确缺件；预声明不适用需理由，不能事后移除失败。"
+    },
+    {
+      "id": "6.3",
+      "name": "反馈与规则一致",
+      "evidence_types": [
+        "事件ID关联的反馈",
+        "正式前后状态"
+      ],
+      "denominator": "注册反馈字段",
+      "hard_gate_or_invalidity": "准备当命中/拒绝报成功/费用虚报",
+      "anchors": {
+        "1": "正确率<75%",
+        "2": "75%≤正确率<90%",
+        "3": "90%≤正确率<95%",
+        "4": "95%≤正确率<100%",
+        "5": "正确率100%；任一规则错误仍硬失败"
+      },
+      "score_method": "registered_unit_worst_anchor",
+      "not_available": "证据不足按evidence_policy给null并列精确缺件；预声明不适用需理由，不能事后移除失败。"
+    },
+    {
+      "id": "6.4",
+      "name": "日志开关与瞬态不阻塞",
+      "evidence_types": [
+        "默认关闭→打开→末行→关闭",
+        "连续反馈帧/命中"
+      ],
+      "denominator": "注册日志及提示序列",
+      "hard_gate_or_invalidity": "日志无法关闭阻断操作/全文不可消费",
+      "anchors": {
+        "1": "默认日志挤压战场且无法关闭",
+        "2": "可开关但遮挡后难退出或丢全文",
+        "3": "可用但明显抢主次/干扰",
+        "4": "默认收起可查可关，轻微叠层摩擦",
+        "5": "默认收起或明确用户选择；事件全文可滚动读完；关闭还原战斗，不阻塞输入"
+      },
+      "score_method": "registered_unit_worst_anchor",
+      "not_available": "证据不足按evidence_policy给null并列精确缺件；预声明不适用需理由，不能事后移除失败。"
+    },
+    {
+      "id": "7.1",
+      "name": "目标模式与付款误选风险",
+      "evidence_types": [
+        "受控视觉辨认",
+        "真实选择测试"
+      ],
+      "denominator": "注册风险点；模型/真人分开",
+      "hard_gate_or_invalidity": "实体混淆导致错消费",
+      "anchors": {
+        "1": "无歧义率<50%",
+        "2": "50%≤无歧义率<75%",
+        "3": "75%≤无歧义率<90%",
+        "4": "90%≤无歧义率<100%",
+        "5": "全部风险点可辨认；实际误操作率另报"
+      },
+      "score_method": "registered_unit_worst_anchor",
+      "not_available": "证据不足按evidence_policy给null并列精确缺件；预声明不适用需理由，不能事后移除失败。"
+    },
+    {
+      "id": "7.2",
+      "name": "拒绝说明可操作性",
+      "evidence_types": [
+        "真实拒绝",
+        "状态",
+        "原因/修正/继续问答"
+      ],
+      "denominator": "注册拒绝题",
+      "hard_gate_or_invalidity": "虚假原因诱导非法消费",
+      "anchors": {
+        "1": "正确题<50%",
+        "2": "50%≤正确题<75%",
+        "3": "75%≤正确题<90%",
+        "4": "90%≤正确题<100%",
+        "5": "全部原因/修正条件/继续入口可正确识别"
+      },
+      "score_method": "registered_unit_worst_anchor",
+      "not_available": "证据不足按evidence_policy给null并列精确缺件；预声明不适用需理由，不能事后移除失败。"
+    },
+    {
+      "id": "7.3",
+      "name": "撤销与上下文恢复",
+      "evidence_types": [
+        "真实错误→撤销/返回→继续轨迹",
+        "预算"
+      ],
+      "denominator": "注册可恢复/合法不可逆任务",
+      "hard_gate_or_invalidity": "未告知错误不可逆损失",
+      "anchors": {
+        "1": "合法恢复路径不能继续",
+        "2": "可恢复最差点击/预算>2",
+        "3": "1.5<最差比值≤2",
+        "4": "1<最差比值≤1.5",
+        "5": "恢复≤预算；合法不可逆动作符合事前提示合同，永久影响单列"
+      },
+      "score_method": "registered_unit_worst_anchor",
+      "not_available": "证据不足按evidence_policy给null并列精确缺件；预声明不适用需理由，不能事后移除失败。"
+    },
+    {
+      "id": "7.4",
+      "name": "功能保全与规则资源守恒",
+      "evidence_types": [
+        "真实UI→正式状态/oracle",
+        "技能佣兵消费"
+      ],
+      "denominator": "注册消费检查点及能力类别",
+      "hard_gate_or_invalidity": "隐藏/禁用可用技能佣兵来美化或任一非法资源实体差异",
+      "anchors": {
+        "1": "有规则错误或核心功能不可用",
+        "2": "多类注册功能不可完成",
+        "3": "功能可完成但有非规则交互缺陷",
+        "4": "全部注册功能保全，轻微反馈问题",
+        "5": "注册手牌/牌组/弃牌/怪物/技能/佣兵/魔力消费一致；不外推全游戏"
+      },
+      "score_method": "registered_unit_worst_anchor",
+      "not_available": "证据不足按evidence_policy给null并列精确缺件；预声明不适用需理由，不能事后移除失败。"
+    },
+    {
+      "id": "8.1",
+      "name": "代表场景证据覆盖",
+      "evidence_types": [
+        "冻结场景清单",
+        "实际原图/状态/轨迹清单"
+      ],
+      "denominator": "预注册有限场景N",
+      "hard_gate_or_invalidity": "覆盖不抵消UI失败",
+      "anchors": {
+        "1": "K/N<50%",
+        "2": "50%≤K/N<75%",
+        "3": "75%≤K/N<90%",
+        "4": "90%≤K/N<100%",
+        "5": "K/N=100%；仅证据覆盖，失败尝试也记执行"
+      },
+      "score_method": "registered_unit_worst_anchor",
+      "not_available": "证据不足按evidence_policy给null并列精确缺件；预声明不适用需理由，不能事后移除失败。"
+    },
+    {
+      "id": "8.2",
+      "name": "边界压力证据覆盖",
+      "evidence_types": [
+        "冻结压力清单",
+        "真实记录"
+      ],
+      "denominator": "预注册压力用例N",
+      "hard_gate_or_invalidity": "压力发现硬失败必须保留",
+      "anchors": {
+        "1": "K/N<50%",
+        "2": "50%≤K/N<75%",
+        "3": "75%≤K/N<90%",
+        "4": "90%≤K/N<100%",
+        "5": "K/N=100%；只结论到已登记压力范围"
+      },
+      "score_method": "registered_unit_worst_anchor",
+      "not_available": "证据不足按evidence_policy给null并列精确缺件；预声明不适用需理由，不能事后移除失败。"
+    },
+    {
+      "id": "8.3",
+      "name": "显示刷新与负载稳定",
+      "evidence_types": [
+        "原图边界",
+        "真实负载帧时序/Console"
+      ],
+      "denominator": "冻结设备/画布/负载序列",
+      "hard_gate_or_invalidity": "崩溃/必要内容越界/状态刷新错乱",
+      "anchors": {
+        "1": "存在崩溃或P95帧时>50ms",
+        "2": "33.4<P95≤50ms",
+        "3": "25<P95≤33.4ms",
+        "4": "16.7<P95≤25ms",
+        "5": "P95≤16.7ms且边界/刷新检查全通过；子维度缺失整体null"
+      },
+      "score_method": "registered_unit_worst_anchor",
+      "not_available": "证据不足按evidence_policy给null并列精确缺件；预声明不适用需理由，不能事后移除失败。"
+    },
+    {
+      "id": "8.4",
+      "name": "证据版本与盲审绑定",
+      "evidence_types": [
+        "冻结manifest SHA",
+        "运行构建映射",
+        "读图台账"
+      ],
+      "denominator": "manifest文件/结果链接N",
+      "hard_gate_or_invalidity": "SHA或运行版本冲突使相关结论无效",
+      "anchors": {
+        "1": "可确认绑定率<50%",
+        "2": "50%≤绑定率<75%",
+        "3": "75%≤绑定率<90%",
+        "4": "90%≤绑定率<100%",
+        "5": "绑定率100%，全部必读原图实际查看，盲码未提前揭示"
+      },
+      "score_method": "registered_unit_worst_anchor",
+      "not_available": "证据不足按evidence_policy给null并列精确缺件；预声明不适用需理由，不能事后移除失败。"
+    }
+  ],
+  "measurement_conventions": {
+    "percentile": "P95=排序后第ceil(0.95*N)值；报告N、中位数、P95/P99和超时/删失。删失跨档无法定界则null。",
+    "budgets": "成本预算采集前固定、正数、附可行路径依据；两侧相同预算，不以候选结果调整；0成本任务独立布尔验收，不除零。",
+    "visual_reliability": "单独judge给主观视觉评分及理由合法；若预注册多judge则各自盲评，保留分歧不得平均掩盖硬失败。",
+    "stability": "8.3性能与显示刷新分开存原值；稳定性全通过为5，非必要小瑕疵1处为4、2至3处为3、更多为2，必要信息错误/崩溃为1并硬失败；主分取稳定性与帧时档较低者。",
+    "contrast": "渲染像素与原图必须绑定；单独统计字形/符号与底座、底座与场景。避免整框平均稀释细线失败；记录最弱样本。几何尺寸和组件颜色不单独证明符号可辨。"
+  },
+  "reference_record": "AutomationOutputs\\RsiGame\\workflow_revisions\\20261023_combat_focus_v3\\local_reference.json",
+  "contrast_revision_date": "2026-10-26"
+}

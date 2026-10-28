@@ -1,0 +1,15 @@
+{
+  "scenePath": "Assets/Scenes/Part1/Part1_PveBattle.unity",
+  "reportPath": "AutomationOutputs/BattleRl/20261007_unity_ui_bridge/report.json",
+  "screenshotsDirectory": "AutomationOutputs/BattleRl/20261007_unity_ui_bridge/captures",
+  "useRunSubfolder": false,
+  "captureInitialView": false,
+  "initialDelaySeconds": 2,
+  "defaultWaitAfterSeconds": 0.4,
+  "maxRunSeconds": 60,
+  "steps": [
+    { "buttonPath": "Canvas/BattleTable/Inspector/Btn_Next", "label": "实际UI远程到格挡", "skipScreenshot": true, "after": [{ "key": "phase", "expected": "Block", "rule": "正式阶段推进与UI状态一致" }] },
+    { "buttonPath": "Canvas/BattleTable/Inspector/Btn_Next", "label": "实际UI格挡到分配伤害", "skipScreenshot": true, "after": [{ "key": "phase", "expected": "AssignDamage", "rule": "正式阶段推进与UI状态一致" }] },
+    { "buttonPath": "Canvas/BattleTable/Inspector/Btn_Next", "label": "实际UI提交承伤到近战", "skipScreenshot": false, "after": [{ "key": "phase", "expected": "Melee", "rule": "正式承伤结算后显示真实玩家状态" }] }
+  ]
+}

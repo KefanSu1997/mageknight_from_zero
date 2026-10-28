@@ -1,0 +1,36 @@
+{
+  "scope": "原army_000阿尔蒂姆守护者：攻击5、格挡8对迅捷翻倍、绿费本回合全体部队所有抗性。",
+  "backend": "AutomationOutputs\\RulesState\\20260918_214621_6d1bc57d",
+  "backendPassed": 13,
+  "scene": "AutomationOutputs\\PveBattle\\20260918_214841_1e1458fd\\report.json",
+  "battles": 7,
+  "steps": 221,
+  "assertions": 555,
+  "visualReviewed": 16,
+  "consoleErrors": [
+    0,
+    0
+  ],
+  "limitations": "场景覆盖普通攻挡/迅捷、原物理/火/冰敌人、源部队自身和队友实际承伤及击杀；冰火承伤、缺费/非法选项、战外使用与真正EndTurn含SkipDraw失效仅后台。原招募/后续回合/所有组合和英雄专属立绘未完成。",
+  "files": {
+    "AutomationOutputs/PveBattle/20260918_214841_1e1458fd/report.json": "01fbb9833de461deae578202a485275d65d3bff4d1d7181b20a318b2da94eaef",
+    "AutomationOutputs/PveBattle/20260918_214841_1e1458fd/console_final.json": "8d62f369865d478d110ffb57efc54be5aff20c4f4af96e654eba68ad28fb3864",
+    "AutomationOutputs/RulesState/20260918_214621_6d1bc57d/summary.json": "81d251916aef9140e1d5c23a2eeb7115cf98684f9c2953f86c2681202a022971",
+    "AutomationOutputs/PveBattle/20260918_214841_1e1458fd/captures/061_原攻击5.png": "82398828c56b88c79f2d08edb35543af52f08a779f59c4c621d9e838149ab531",
+    "AutomationOutputs/PveBattle/20260918_214841_1e1458fd/captures/064_进入_End.png": "611de42db7de54390872276f0a6aba6be16ff64a9355c12abffb041644becd86",
+    "AutomationOutputs/PveBattle/20260918_214841_1e1458fd/captures/070_原格挡8.png": "c4a5815b8737b94255506fbb5b41c85cc506a01055277c18908468db99edf395",
+    "AutomationOutputs/PveBattle/20260918_214841_1e1458fd/captures/081_进入_End.png": "4f44ac9d82928117a859a53d07beb35c223b95a96a97a1dc75ed0f1ac3931656",
+    "AutomationOutputs/PveBattle/20260918_214841_1e1458fd/captures/097_原格挡8.png": "ed16d11e333f8dbdb2eaebd7f3831e9b42f6d89bcc968c991cf4c9ee605b0eb2",
+    "AutomationOutputs/PveBattle/20260918_214841_1e1458fd/captures/099_实际格挡含迅捷倍率.png": "f1cf607077cb22a25348d08e0be2c48adb696774888bf4438f5b85a656ad0f74",
+    "AutomationOutputs/PveBattle/20260918_214841_1e1458fd/captures/108_进入_End.png": "23f60c1414cd93ef91430cab35c445232dc814a2c47c5adc4b1f771113311c6c",
+    "AutomationOutputs/PveBattle/20260918_214841_1e1458fd/captures/118_支付绿魔力获得本回合全抗性.png": "6b659d57211b8d037638a16ca9c083f64f7048898bd09d2bd250ae8762d9ff3b",
+    "AutomationOutputs/PveBattle/20260918_214841_1e1458fd/captures/123_进入_Melee.png": "b1f5a0df2626c9f87d38d8f499853f9e51bf7d3234e7c11638aada525313752e",
+    "AutomationOutputs/PveBattle/20260918_214841_1e1458fd/captures/135_进入_End.png": "4c06b7434ca5d37e563333411f61c09fd5b899cb1dca04e56592fc5f36ccb6e5",
+    "AutomationOutputs/PveBattle/20260918_214841_1e1458fd/captures/153_进入_Melee.png": "2351b8397f81f8227bd2e5d99204efa35e507ccc4eb577fa61c51fc3d4aba7b5",
+    "AutomationOutputs/PveBattle/20260918_214841_1e1458fd/captures/165_进入_End.png": "01de7e89fd936839eeb5699ba5d71986d46f5ff12f621f435a84ce81ae789b1f",
+    "AutomationOutputs/PveBattle/20260918_214841_1e1458fd/captures/178_进入_Melee.png": "179f1acef94eec5030fb3d098742b080083f969b99b358a6e4f618e776350573",
+    "AutomationOutputs/PveBattle/20260918_214841_1e1458fd/captures/190_进入_End.png": "b037fe15696330304a53de8c325b45764750c5d4af717c8208b14063cf13e0ee",
+    "AutomationOutputs/PveBattle/20260918_214841_1e1458fd/captures/208_进入_Melee.png": "b1f5a0df2626c9f87d38d8f499853f9e51bf7d3234e7c11638aada525313752e",
+    "AutomationOutputs/PveBattle/20260918_214841_1e1458fd/captures/220_进入_End.png": "4c06b7434ca5d37e563333411f61c09fd5b899cb1dca04e56592fc5f36ccb6e5"
+  }
+}

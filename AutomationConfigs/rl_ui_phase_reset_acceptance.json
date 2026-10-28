@@ -1,0 +1,18 @@
+{
+  "scenePath": "Assets/Scenes/Part1/Part1_PveBattle.unity",
+  "reportPath": "AutomationOutputs/BattleRl/20261007_unity_phase_reset/report.json",
+  "screenshotsDirectory": "AutomationOutputs/BattleRl/20261007_unity_phase_reset/captures",
+  "useRunSubfolder": false,
+  "captureInitialView": false,
+  "initialDelaySeconds": 2,
+  "defaultWaitAfterSeconds": 0.4,
+  "maxRunSeconds": 60,
+  "steps": [
+    {"buttonPath":"Canvas/BattleTable/Inspector/Btn_Next","label":"远程到格挡","skipScreenshot":true},
+    {"buttonPath":"Canvas/BattleTable/Inspector/Btn_Next","label":"格挡到承伤","skipScreenshot":true},
+    {"buttonPath":"Canvas/BattleTable/Inspector/Btn_Next","label":"承伤到近战","skipScreenshot":true,"after":[{"key":"phase","expected":"Melee","rule":"实际承伤阶段进入近战"}]},
+    {"buttonPath":"Canvas/BattleTable/Hand/Btn_Card_basic_card_000_0","label":"选择实际行进卡","skipScreenshot":true},
+    {"buttonPath":"Canvas/BattleTable/Inspector/Btn_Sideways","label":"横置实际卡获得近战1","skipScreenshot":true,"after":[{"key":"melee","expected":"1","rule":"原横置近战贡献"},{"key":"hand","expected":"6","rule":"同实际卡离手进入已打出"}]},
+    {"buttonPath":"Canvas/BattleTable/Btn_ResetPhase","label":"重置近战恢复原卡和贡献","skipScreenshot":false,"after":[{"key":"melee","expected":"0","rule":"阶段悔棋撤销原贡献"},{"key":"hand","expected":"7","rule":"阶段原手牌恢复"},{"key":"realWounds","expected":"2","rule":"保持阶段开始承伤状态"}]}
+  ]
+}

@@ -16,6 +16,9 @@ namespace MageKnight.Adventure.Content
         public TerrainType terrain;
         public bool revealed = true;
         public RecruitLocation recruitAt;
+        public bool fortifiedSite;
+        public bool dungeon;
+        public PlaceType placeType=PlaceType.Keep;
         public LocationDefinition location;
         public SiteSpec Snapshot() => new(id, displayName, new AxialCoord(q, r), terrain, revealed, recruitAt);
     }

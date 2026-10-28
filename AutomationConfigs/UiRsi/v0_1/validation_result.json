@@ -1,0 +1,10 @@
+{
+  "scope": "Contract structure only; no Unity run, real image review, game modification or promotion.",
+  "valid_synthetic_messages": 13,
+  "rejected_invalid_examples": [
+    "gone_without_evidence",
+    "score_without_frames",
+    "blind_round_leak",
+    "promote_without_evidence"
+  ]
+}

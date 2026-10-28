@@ -1,0 +1,6 @@
+# Install CUDA torch separately from https://download.pytorch.org/whl/cu124
+torch==2.6.0
+stable-baselines3==2.7.0
+sb3-contrib==2.7.0
+gymnasium==1.2.1
+numpy==2.2.6

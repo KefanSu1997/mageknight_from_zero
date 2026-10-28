@@ -1,0 +1,67 @@
+{
+  "contract_version": "ui-rsi/0.1-draft",
+  "execution_enabled": false,
+  "scope": "Prompt and IO alignment only; no optimization run has started.",
+  "source": {
+    "paper": "https://arxiv.org/html/2609.39045v1",
+    "repository": "https://github.com/WenyiWU0111/RSIGame",
+    "repository_commit": "1214b342fce22e97fe19bfc56be189d06f44634b"
+  },
+  "model_policy": {
+    "requested_family": "Luna",
+    "proposed_model_id_in_current_environment": "gpt-6-luna",
+    "roles": ["controller", "explorer", "editor", "verifier", "visual_reviewer", "monitor"],
+    "fresh_context_per_role_call": true,
+    "check_model_and_image_tool_capabilities_before_execution": true,
+    "global_agent_configuration_modified": false
+  },
+  "objective": {
+    "click_reduction_vs_original": 0.30,
+    "mouse_path_reduction_vs_original": 0.20,
+    "canvas": [1920, 1080],
+    "full_canvas_pages_must_not_increase": true,
+    "required_information_loss_allowed": false,
+    "rule_or_payment_semantics_change_allowed": false,
+    "shrink_fonts_cards_or_targets_for_cost_gain_allowed": false
+  },
+  "measurement": {
+    "population_transitions": 850374,
+    "behavior_pair_kinds": 1009,
+    "frequency_source": "Historical RL trajectories; not human frequencies.",
+    "dataset_and_sample_manifest_ref": null,
+    "original_baseline_build_ref": null,
+    "initial_champion_build_ref": null,
+    "cost_fields": ["clicks", "mouse_path_px", "page_visits", "page_switches"],
+    "transition_context_fields": ["last_pointer_position", "open_panels", "page_indices", "retained_selections", "native_state_hash", "full_action_parameters"],
+    "unavailable_completion_cost": null,
+    "unavailable_population_acceptance_policy": "pending_user_definition; retain separate ledger and do not block prompt/IO design",
+    "new_candidate_unreachability_on_baseline_completable_intents": "hard_gate_fail",
+    "generic_route_compiler_available": false,
+    "cost_estimation_does_not_establish": ["latency", "human_misclick_rate", "animation_wait", "subjective_fluency"]
+  },
+  "ownership": {
+    "ui_code_writer": "editor",
+    "unity_runtime_operations": "single_runner_with_exclusive_lock",
+    "raw_evidence_and_hashes": "runner",
+    "cost_arithmetic_and_denominators": "runner",
+    "issue_verdicts": "runner",
+    "checkpoint_promotion_and_stop": "runner",
+    "model_monitor_output": "recommendation_only"
+  },
+  "evidence_requirements": {
+    "artifact_metadata": ["artifact_id", "sha256", "producer", "build_hash", "state_hash", "scenario_id", "captured_at", "evidence_kind"],
+    "nullable_metadata_requires_explicit_reason": true,
+    "input_allowlist_and_output_reference_checks": true,
+    "loaded_assembly_identity_required_for_new_runtime_evidence": true,
+    "evidence_kinds_kept_separate": ["actual_pointer_execution", "native_prefix_restore", "ui_selection_only", "offline_geometry_projection", "source_audit", "model_observation"],
+    "blind_role_artifact_metadata": "Opaque aliases; conceal filenames, build labels and hashes that disclose A/B mapping. Private provenance mapping remains with runner."
+  },
+  "checkpoints": {
+    "archive_every_candidate_including_failures": true,
+    "promotion_policy": null,
+    "stop_policy": null,
+    "policies_must_be_frozen_before_execution": true,
+    "infrastructure_failure_counts_as_saturation": false,
+    "unknown_hard_gate_can_promote": false
+  }
+}

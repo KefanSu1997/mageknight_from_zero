@@ -1,0 +1,7 @@
+# PPO伤牌成本必须跟踪实际物理牌
+
+PlayerState.Wounds是手中伤牌数量。作为长期成本会奖励弃掉旧伤、惩罚重新抽到旧伤，并漏掉直接进弃牌的伤害；独立规则断言通过不证明奖励目标正确。使用个人所有活跃物理伤牌净变化，排除removed、按引用去重，手伤和总伤分别报告。
+
+DeedCard是record，Contains按值比较会把一张已移除的伤牌误等同所有同名伤牌，必须ReferenceEquals。真实同一步可新增多张伤牌并移除一张，不能以removed增加就推定总伤降低。重放要保持全部正式状态与动作一致，并独立核对奖励差值和牌区计数；保留失败，不改旧证据。
+
+记录：`vibe_coding/codex/worklog_2026-10-03_ppo_physical_wound_cost.md`；证据：`AutomationOutputs/BattleRl/20261003_physical_wound_cost_replay.json`、`AutomationOutputs/BattleRl/20261003_physical_wound_actual_removal_replay.json`。

@@ -36,6 +36,19 @@ namespace MageKnight.SceneAutomation.Editor
                 .Where(c => c != null).Select(c => new CardVerificationCatalog.Entry
                 { source = c, artwork = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/GameData/cards/" + c.Id + ".png") }).ToArray();
             if (catalog.cards.Length != 125) throw new InvalidOperationException("Expected 125 canonical deed card assets, got " + catalog.cards.Length);
+            catalog.unitArtwork = MK.Logic.Data.UnitJsonLoader.SupportedIds
+                .Select(id => AssetDatabase.LoadAssetAtPath<Sprite>("Assets/GameData/cards/" + id + ".png")).ToArray();
+            if (catalog.unitArtwork.Any(s => s == null)) throw new InvalidOperationException("原版部队卡面缺失");
+            catalog.originalSkillSheet000 = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/GameData/cards/skill_000.png");
+            if (catalog.originalSkillSheet000 == null) throw new InvalidOperationException("原版技能表缺失");
+            var usedEnemyIds = JsonUtility.FromJson<CardVerificationSuite>(File.ReadAllText(folder + "/cases.json"))
+                .cases.SelectMany(c => c.enemies ?? Array.Empty<CardVerificationEnemy>())
+                .Where(e => e.originalDefinition).Select(e => e.id).ToHashSet();
+            catalog.enemyArtwork = MK.Logic.Data.MonsterJsonLoader.LoadMonsters(Path.GetFullPath("resources/text_json"))
+                .Where(m => m.TokenColor != MK.Logic.Core.EnemyTokenColor.Unknown || m.Id == "monster_017" || usedEnemyIds.Contains(m.Id))
+                .Select(m => new CardVerificationCatalog.EnemyEntry { id = m.Id,
+                    artwork = AssetDatabase.LoadAllAssetsAtPath("Assets/GameData/cards/monster (" + int.Parse(m.Id.Substring(8)) + ").jpg").OfType<Sprite>().FirstOrDefault() }).ToArray();
+            if (catalog.enemyArtwork.Any(e => e.artwork == null)) throw new InvalidOperationException("已核对守军的原素材缺失");
             // The generator can update JSON while Unity is unfocused. Do not
             // run an old imported TextAsset against a new disk configuration.
             AssetDatabase.ImportAsset(folder + "/cases.json", ImportAssetOptions.ForceUpdate);

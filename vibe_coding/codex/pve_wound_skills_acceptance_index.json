@@ -1,0 +1,88 @@
+{
+  "date": "2026-09-29",
+  "newEntries": [
+    "hero_skill_pool_001:08",
+    "hero_skill_pool_003:04",
+    "hero_skill_pool_000:05"
+  ],
+  "backend": {
+    "passed": 19,
+    "runs": [
+      {
+        "id": "20260929_024141_0eaf03f3",
+        "passed": 16
+      },
+      {
+        "id": "20260929_024225_781551cd",
+        "passed": 2
+      },
+      {
+        "id": "20260929_025241_337c32e4",
+        "passed": 1
+      }
+    ]
+  },
+  "scene": {
+    "runs": [
+      {
+        "hero": "Braevalar",
+        "report": "AutomationOutputs/PveBattle/20260929_024758_2f1b8f69/report.json",
+        "sha256": "21c8619248bc68da3f600432669ad1e6d7358d48b0d1e7dc0cfe79ffa3007fe4",
+        "acceptedSteps": [
+          0,
+          53
+        ],
+        "checks": 80,
+        "images": [
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_024758_2f1b8f69\\captures\\022_战斗内去除所选伤，抽实际原牌.png",
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_024758_2f1b8f69\\captures\\032_实际普通攻击4击杀.png",
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_024758_2f1b8f69\\captures\\041_次回合去除真实余伤并抽牌.png",
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_024758_2f1b8f69\\captures\\053_两回合保留真实去向.png"
+        ]
+      },
+      {
+        "hero": "Krang",
+        "report": "AutomationOutputs/PveBattle/20260929_024924_d8accd81/report.json",
+        "sha256": "cc3838bc8eaa48c66ec2743c0c67641fbc37228c0ed831cfb9906221a4b54503",
+        "acceptedSteps": [
+          0,
+          53
+        ],
+        "checks": 80,
+        "images": [
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_024924_d8accd81\\captures\\022_战斗内去除所选伤，抽实际原牌.png",
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_024924_d8accd81\\captures\\032_实际普通攻击4击杀.png",
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_024924_d8accd81\\captures\\041_次回合去除真实余伤并抽牌.png",
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_024924_d8accd81\\captures\\053_两回合保留真实去向.png"
+        ]
+      },
+      {
+        "hero": "Arythea",
+        "report": "AutomationOutputs/PveBattle/20260929_025048_70e7d56c/report.json",
+        "sha256": "c29bdbff839ab9a33f7b181860736d0434b65be6246c085d8dea316a22bd6405",
+        "acceptedSteps": [
+          0,
+          54
+        ],
+        "checks": 79,
+        "images": [
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_025048_70e7d56c\\captures\\029_许可仅一张伤牌横置为2.png",
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_025048_70e7d56c\\captures\\032_一张伤牌横置攻击2.png",
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_025048_70e7d56c\\captures\\037_实际普通攻击4击杀.png",
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_025048_70e7d56c\\captures\\048_痛苦伤牌移动2.png",
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_025048_70e7d56c\\captures\\054_两回合保留真实去向.png"
+        ]
+      }
+    ],
+    "steps": 163,
+    "checks": 239,
+    "reviewedImages": 13
+  },
+  "console": "tmp/pve_20260929_wound_final_console.json",
+  "limits": [
+    "Regeneration: red/blue scene only; other colors and lowest-fame/tie backend only.",
+    "Pain: actual attack/movement scene; block/influence not newly scene-verified.",
+    "Unused pain expiry: backend only; existing scene routes consume permission before EndTurn.",
+    "36/70 skill mappings, not 36 fully verified skills; goal remains active."
+  ]
+}

@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net8.0</TargetFramework><NuGetAudit>false</NuGetAudit><Nullable>annotations</Nullable></PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../Assets/Logic/Runtime/Map/AxialCoord.cs" Link="AxialCoord.cs" />
+    <Compile Include="../../Assets/Logic/Runtime/Map/OriginalTilePlacementRules.cs" Link="OriginalTilePlacementRules.cs" />
+  </ItemGroup>
+</Project>

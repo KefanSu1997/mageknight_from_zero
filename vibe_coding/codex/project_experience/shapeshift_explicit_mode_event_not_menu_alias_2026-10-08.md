@@ -1,0 +1,9 @@
+# 原变换模式不得按普通菜单键猜测
+
+1100真实变换决心基础使用的事件曾写 `card_mode:basic_card_016:base`，但普通BattleCardChoice.For只有attack/block/strong菜单，导致两个unresolved。原统计文件与训练历史保持，不偷偷回填为已通过。
+
+未来变换原卡事件明确写shapeshift_base/shapeshift_strong，由实际动作强化/NextEnhanced及物理本体played确定。统计只对basic原卡这两个显式键直接解释base/strong，不放宽其它未知菜单名。真实1100重算补充结果无unresolved，4受影响检查通过；补充不是旧历史改写。
+
+1104检查点仅task_sampler源码SHA显式迁移，72数组/RNG/全部replay精确保持。10401/10501冻结使用该同权重副本，10301原结果0/33/64476检查零错误仍保留；不因模式统计修正称学习改善。
+
+变换Move/Attack实际产生而未正式消费仍欠验，忠诚指挥招募是消费者而不是频率发动、荧光/飞行需正式地点地图，Unity与Transformer对照仍缺。

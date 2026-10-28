@@ -1,0 +1,47 @@
+{
+  "scope": "正式最少出牌/弃牌、实际回合末弃牌与空牌声明；受影响休息/治疗/换轮路线。多人无牌跳过仅后台。",
+  "backendRuns": [
+    "20260923_053232_b1cf3373",
+    "20260923_053552_a4039126",
+    "20260923_053836_614872de"
+  ],
+  "effectiveBackendPassed": 124,
+  "sceneSegments": [
+    {
+      "run": "20260923_054028_83da69a5",
+      "passedStepRange": "0-41",
+      "passedSteps": 42,
+      "passedAssertions": 90,
+      "overallReportStatus": "failed"
+    },
+    {
+      "run": "20260923_054132_57d55435",
+      "passedStepRange": "42-44",
+      "passedSteps": 3,
+      "passedAssertions": 10,
+      "overallReportStatus": "success"
+    },
+    {
+      "run": "20260923_054236_045401af",
+      "passedStepRange": "0-46",
+      "passedSteps": 47,
+      "passedAssertions": 71,
+      "overallReportStatus": "success"
+    }
+  ],
+  "preservedFailure": "054028在第42步使用不存在的journey.movement字段，报告仍failed；正确字段movement的尾段已补。重放前缀只恢复真实状态，无重复断言/截图。",
+  "screenshotsReviewed": 6,
+  "finalConsole": "tmp/pve_20260923_turn_minimum_final_console.json",
+  "sourceSha256": {
+    "Assets/Logic/Runtime/PlayerDeck.cs": "a15adf5d877bfe488bd5a21491ce21f77cb6a2aebdb536f801ebe9d1b81d420d",
+    "Assets/Logic/Runtime/PlayerTurnEngine.cs": "d158805f3202506b5c07adc31b631ed2c43f608c55dd021628a7ae0813937f3a",
+    "Assets/Logic/Runtime/GameEngine.cs": "d1b7d4d567225638cbd8050748579ce765e7b12112d9877cb55a8cd0bbfbf0d1",
+    "Assets/Logic/Runtime/BannerActions.cs": "c86ecd287ca1fbdfb1917f02f9acda5d33bc13e00dfeee7b07ab44aa02a4a791",
+    "Assets/Logic/Runtime/CardPlayActions.cs": "6ad606d1a91febe225d86054e954b8beb742ea318ec37ff2814143ffb840f4d8",
+    "Assets/Logic/Runtime/Battles/PveJourneySession.cs": "354b4b58a101718385d700a4ef705bc3c004620fc6c766b7e4c9a1908b3f9cae",
+    "Assets/Scripts/Battle/PveBattleController.Journey.cs": "e096f67ad8fd4a90cdb91355c53dcad52aa8cdb11ff013cefed0a26a44d3ae3b",
+    "Assets/Tests/RulesState/TurnMinimumActivityTests.cs": "013f8cf756b7e10c7fdd656768ddeba2954fb68fde9faa5fd876cfa5a2d47b64",
+    "tools/build_pve_turn_minimum_acceptance.py": "5c1dca80a04862b2e902e0571963aac71fdf199df488ae34e52f43fa00048de4",
+    "tools/build_pve_journey_rest_acceptance.py": "bfedd6c80b17b88c7ee356295b6a992572d4b6772d6d5e04dbecfd8eec99eff6"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "scope": "亡君之盾原四模式与同敌多攻击分次格挡；战末/回合清理与错误阶段/外来卡拒绝另有后台证据，未含全部组合。",
+  "backend": "AutomationOutputs/RulesState/20260918_181911_8ed16382",
+  "backendPassedUnique": 10,
+  "backendNew": 6,
+  "backendRegression": 4,
+  "retainedFailure": "AutomationOutputs/RulesState/20260918_181630_9022ea94",
+  "scene": "AutomationOutputs/PveBattle/20260918_182145_cd5816bc/report.json",
+  "battles": 4,
+  "steps": 128,
+  "assertions": 326,
+  "visualReviewed": 9,
+  "files": {
+    "AutomationOutputs/PveBattle/20260918_182145_cd5816bc/report.json": "4e4494aa70fcd32bf2b2a93033c6d261bd4d12e9463cf7053cb5bd3685fc9abd",
+    "AutomationOutputs/PveBattle/20260918_182145_cd5816bc/console_final.json": "8d62f369865d478d110ffb57efc54be5aff20c4f4af96e654eba68ad28fb3864",
+    "AutomationOutputs/RulesState/20260918_181911_8ed16382/summary.json": "982fde630a603ec39393b1ec486a5c954b449e1ef02020c33c4537bf7c276ed1",
+    "AutomationOutputs/PveBattle/20260918_182145_cd5816bc/captures/023_普通单次.png": "b4f0a931dd86b3f2d5392745de65c0c1314f00358c7fc4e329db816cec1cf17e",
+    "AutomationOutputs/PveBattle/20260918_182145_cd5816bc/captures/043_普通分次.png": "3021ed3fe29c218528c316ba17fbfeaf38b556d4392c86d56f2eb7fac6a55f53",
+    "AutomationOutputs/PveBattle/20260918_182145_cd5816bc/captures/074_焚毁单次.png": "8689fcdbc0109e7926a84150f4f5395df192813c26eacc35cf30c15acfb024f7",
+    "AutomationOutputs/PveBattle/20260918_182145_cd5816bc/captures/035_进入_End.png": "96d36b4957c8d153ff37b3c26b868249011640ae1b2f9425474bd10ecacf0028",
+    "AutomationOutputs/PveBattle/20260918_182145_cd5816bc/captures/064_进入_End.png": "7c4d555cd6f576bd8c2285c9cd49f43ad4357bfc55602f913cbaf619feeb9b8d",
+    "AutomationOutputs/PveBattle/20260918_182145_cd5816bc/captures/091_进入_End.png": "1995751170477e99abf86a03fa7c4e60f2a62fc4897338b0b5156359f0ec8e08",
+    "AutomationOutputs/PveBattle/20260918_182145_cd5816bc/captures/103_焚毁分次.png": "b995b31957a910b40f34f830e793aad1292c51583360d9fb67565516acc540a2",
+    "AutomationOutputs/PveBattle/20260918_182145_cd5816bc/captures/110_实际格挡_0_1.png": "6a854b45d937e15266c519243e97b2cb4c50d4f5fb32c4523add63b74b4cf4c4",
+    "AutomationOutputs/PveBattle/20260918_182145_cd5816bc/captures/127_进入_End.png": "1aa806e300812dbfb4cba2e20ce307de491655c98ad9c490934a5b0dc039c7e9"
+  }
+}

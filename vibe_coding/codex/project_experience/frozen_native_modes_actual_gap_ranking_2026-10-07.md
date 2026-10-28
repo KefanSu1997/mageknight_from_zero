@@ -1,0 +1,13 @@
+# 冻结原输入模式映射与实际发动缺口选择
+
+新增export_frozen_card_modes.ps1，直接只读加载当前冻结DLL的BattleCardChoice.For，导出96行动/高级/法术定义的Choice→Enhanced基础/强化，不从red/heal/draw等ID拼写猜模式，不执行新游戏或修改DLL。目录/规则SHA绑定。神器normal/burn沿显式原动作模式识别；模式映射是输入元数据，不是原印刷费用/全部效果通过。
+
+actual_coverage_gaps.py读取实际训练事件，必须与相邻完整checkpoint的replay_state.sampler逐字相同、规则SHA一致；再按冻结模式表归类。只统计已有保守提交事件，不取加载/草案/专家/评估日志。当前62目录模式、8单位ID、9本人技能ID、9英雄敌人配对，未知Choice0；目录242模式尚缺180。分支/费用材料/后续消费及Unity仍独立缺口，不把一个base分支通过当所有base分支通过。
+
+复核既有正式契约与2026-09-23原英雄来源审计，011/025关联民间Ymirgh，不在七原英雄牌库。保留四目录模式为source_eligibility_gaps，不删旧失败/实现、不配给原英雄凑数；其余176缺模式与来源缺口分开。七英雄牌库本轮没有修改。官方Tezla本地PDF复核与本地两英文牌面只作来源核查；已有结论不冒称新发现。
+
+按实际缺口与成本排序原train草案，验证/test不入队列；planned_gain仍只是待见证的成员意图。选取两未解决构筑，Wolfhawk013→014、Tovak061→062，各25秒445/244调用后unknown，未宣称新模式训练覆盖或可解。20261007_discovery_actual_gap_candidates保持原七项可解池。
+
+证据20261007_frozen_original_card_modes.json、20261007_actual_invocation_coverage_gaps_v3.json（前v1/v2原样保留）、20261007_actual_gap_candidate_queue.json。3项非前缀模式/技能colon ID、空/未知事件与分区、checkpoint计数防伪检查通过；Console两读0错误tmp/rl_actual_coverage_final_console_20261007.json。搜索会话7223正常完成。
+
+下一步继续可解构筑及更多原费用/分支消费者的真实证据；此报告是训练分布缺口工具，不是完整范围验收。

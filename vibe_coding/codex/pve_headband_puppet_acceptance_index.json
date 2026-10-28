@@ -1,0 +1,38 @@
+{
+  "scope": "Public original Puppet from real Krang level reward; same battle real enemy keep then consume from physical headband, actual second kill and end-turn unkept cleanup",
+  "steps": 71,
+  "assertions": 119,
+  "segments": [
+    {
+      "run": "20260929_163656_d24e77a9",
+      "start": 0,
+      "end": 36,
+      "assertions": 54,
+      "sha256": "3777db12fbe185804a9c9e524701aebe05c46693bf01d0b9931b2b20fd57f4a7"
+    },
+    {
+      "run": "20260929_163924_1a9788ed",
+      "start": 37,
+      "end": 70,
+      "assertions": 65,
+      "sha256": "a990d2293b9260ce3d099a18300ce2f12ed2c56b1ea85b18e61cf3226e5766ab"
+    }
+  ],
+  "reviewedScreenshots": [
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_163924_1a9788ed\\captures\\055_三张真实横置击杀第一敌.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_163924_1a9788ed\\captures\\061_头环第一次保存实际敌标.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_163924_1a9788ed\\captures\\064_原物理攻击4一半向上取整2.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_163924_1a9788ed\\captures\\068_傀儡2加原横置1真实击杀第二敌.png"
+  ],
+  "backend": "20260929_163331_cc39fb7a 22/22",
+  "limitations": "Single-layer normal borrow; stored block and two-keeps across round backend only this batch; public skill added after earlier kill not retroactive; Chaos ordinary borrow still unimplemented",
+  "fixture": "HornGold exact original bytes restored seed0",
+  "console": {
+    "path": "tmp/pve_puppet_shock_familiar_final_console.json",
+    "errorCounts": [
+      0,
+      0
+    ],
+    "source": "actual Unity read_console"
+  }
+}

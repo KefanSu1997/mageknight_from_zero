@@ -1,0 +1,5 @@
+# Star Bow UI mapping, 2026-10-13
+
+BowChoice maps original available attack index to the visible non-melee bow contribution list, reads actual page indicator, cycles to the actual source, chooses double or siege/retain mode, and returns to the ordinary action view for the next intent. Native AvailableAttacks excludes only melee in Ranged unless allSiege; non-melee order matches the UI BowContributions filter. Exact native before/after comparison remains mandatory.
+
+22 fixed cases attempted, 19 accepted with 38 independently verified native effect snapshots. Three original-ranged retention/reset mode requests are not exposed by the current UI: originally Ranged contributions show Double or Siege, with no option0 restore. Same native action succeeded in three independent exact task/prefix replays and complete effect checks; offline SHA and state verification before incompatibility ingestion passed. No cost zeros/substitute samples. Current baseline: 1,060 measured / 4,083; 193 fully measured groups; 58 verified UI incompatibilities. Full requested 1,009-pair scope remains incomplete.

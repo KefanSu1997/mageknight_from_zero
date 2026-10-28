@@ -1,0 +1,50 @@
+{
+  "scope": "农民/暴徒原攻击与格挡、影响力真实产出及暴徒承伤付款、声誉、重复/受伤拒绝与战斗结算。",
+  "backendPassed": 9,
+  "backend": "AutomationOutputs\\RulesState\\20260922_114901_9917ea05",
+  "battles": 6,
+  "steps": 238,
+  "assertions": 570,
+  "visualReviewed": 12,
+  "consoleErrors": [
+    0,
+    0
+  ],
+  "sceneEvidence": [
+    {
+      "report": "AutomationOutputs\\PveBattle\\20260922_115231_36e7bfbd\\report.json",
+      "overallStatus": "failed",
+      "acceptedSteps": [
+        0,
+        155
+      ],
+      "completedBattles": 5
+    },
+    {
+      "report": "AutomationOutputs\\PveBattle\\20260922_115426_03cb450e\\report.json",
+      "overallStatus": "success",
+      "completedBattles": 1
+    }
+  ],
+  "failure": "第六场卡面数量断言误写1，实际双部队2；原失败保留，仅补第六场。后台与前五场未重跑。",
+  "limitations": "有限PVE接入。农民地图移动、完整招募交涉、跨战斗与真实新轮不在本批场景范围；原卡基本验收121/121历史证据单独保留。",
+  "files": {
+    "AutomationOutputs/RulesState/20260922_114901_9917ea05/summary.json": "08107ecee51dc7ba3fbc5f1869e750502dbe0f1caed1a98cbf5d033b214ad252",
+    "AutomationOutputs/RulesState/20260922_114901_9917ea05/results.xml": "12914d4c30a34aad477b69dbb9dc20772d071014625b8748bf591861ac6a0bba",
+    "AutomationOutputs/PveBattle/20260922_115231_36e7bfbd/report.json": "56357eb95607094d958b8eda78df9acd60889d40d29c494ceb2e3b961616d7f5",
+    "AutomationOutputs/PveBattle/20260922_115426_03cb450e/report.json": "84c40b87cc72727a63824b4a60180f695b32c1d6311616de9208b3a26fae2194",
+    "AutomationOutputs/PveBattle/20260922_115426_03cb450e/console_final.json": "8d62f369865d478d110ffb57efc54be5aff20c4f4af96e654eba68ad28fb3864",
+    "AutomationOutputs/PveBattle/20260922_115231_36e7bfbd/captures/070_原部队攻击.png": "216d3914d9b925e8f8aa06d41f656539407d23796f2d93d379cba799fc0bbb2a",
+    "AutomationOutputs/PveBattle/20260922_115231_36e7bfbd/captures/077_最终结算.png": "1d8e36a9429fea6a5231b60f321db8f360927cdba7ada75007d2ecf65d7b7f03",
+    "AutomationOutputs/PveBattle/20260922_115231_36e7bfbd/captures/083_原部队格挡.png": "a4f199a329312cbd13252c5274c2123f12414a75a4fdb00df631786408a720cf",
+    "AutomationOutputs/PveBattle/20260922_115231_36e7bfbd/captures/097_最终结算.png": "6d061610a43132a36dce4f1c0a7c75d3a9bd93167464ff57fb5692b3a7c7afa7",
+    "AutomationOutputs/PveBattle/20260922_115231_36e7bfbd/captures/111_原部队攻击.png": "721c82e8aff88b3f2e0be166c2c50e455872d8a1131528efc535abadf5336045",
+    "AutomationOutputs/PveBattle/20260922_115231_36e7bfbd/captures/116_最终结算.png": "633e94b8302ae0e677c86655cde50c367d2a349bb513c7b4f411e5c1dbc04d55",
+    "AutomationOutputs/PveBattle/20260922_115231_36e7bfbd/captures/122_原部队格挡.png": "71311e9ebb8feb8df8822e2bf7a443392824a087aeb4b5b83abfee18777cef42",
+    "AutomationOutputs/PveBattle/20260922_115231_36e7bfbd/captures/135_最终结算.png": "dab067ca07c1395e30cf9b98dad99ee2721f4b0d674b7efe517a6378301ac637",
+    "AutomationOutputs/PveBattle/20260922_115231_36e7bfbd/captures/142_暴徒原影响力并扣声誉.png": "1eeabe26f0e6fc8f3e502b2c205cdf1256681f318243447649d1ded865bfc31f",
+    "AutomationOutputs/PveBattle/20260922_115231_36e7bfbd/captures/155_最终结算.png": "e114968396e59bbd8b271c16d5888ab21a31f57d58089d1e61cd6e16fe0b1cc8",
+    "AutomationOutputs/PveBattle/20260922_115426_03cb450e/captures/070_农民原影响力供实际承伤付款.png": "d17c43c13d4d86db3cf2b2e91a879619fb71ec13d6762e6e4c276f700cc56e1a",
+    "AutomationOutputs/PveBattle/20260922_115426_03cb450e/captures/081_最终结算.png": "6eea5ff1d02071b8b1716db78c08e2ff2c5da3309c7e8b2ee204ffc830341a19"
+  }
+}

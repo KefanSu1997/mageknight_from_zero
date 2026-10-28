@@ -1,0 +1,33 @@
+{
+  "scope": "原构筑两战、实际费用及两张伤牌、同牌白昼到黑夜、原午夜冥想；非完整世界/全卡验收",
+  "passedSteps": 52,
+  "passedAssertions": 115,
+  "segments": [
+    {
+      "run": "20260923_032937_77478220",
+      "startInclusive": 0,
+      "endExclusive": 7
+    },
+    {
+      "run": "20260923_033056_61f9f91a",
+      "startInclusive": 7,
+      "endExclusive": 47
+    },
+    {
+      "run": "20260923_033234_e3ce8dc8",
+      "startInclusive": 47,
+      "endExclusive": 52
+    }
+  ],
+  "backend": "AutomationOutputs/RulesState/20260923_032734_31d55eb6",
+  "sourceSha256": {
+    "Assets/Scripts/Battle/PveBattleController.cs": "bc9194e97201515a8b7f793f6ee8a00ae718dfa555b333b0274f934ae2ffd43a",
+    "Assets/Scripts/Battle/PveBattleController.Journey.cs": "06bd85205a5095273c8ee3462079107421057c26cda4756aee9d20ffb0d06e60",
+    "Assets/Scripts/SceneAutomation/Editor/PveBattleMenus.cs": "7b55697466780c0cecccd33d9fea7f4dce8c405e54d56d55ad87ed573301cadf",
+    "Assets/Logic/Runtime/Battles/PveJourneySession.cs": "5134a9e97e7f4ec24c68c97b65de06a6e8d327226e7f510162e0ae6479177bf5",
+    "tools/build_pve_journey_acceptance.py": "eaef160c907a13357a045585d21aa0e2e1d35e8e58c52ed6b4f2ed8eaa3fd2fc"
+  },
+  "finalDisplayRun": "AutomationOutputs/PveBattle/20260923_033546_7784ac10",
+  "finalDisplayAssertions": 2,
+  "finalConsole": "tmp/pve_20260923_journey_complete_console.json"
+}

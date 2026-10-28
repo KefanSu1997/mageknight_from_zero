@@ -1,0 +1,13 @@
+# 双玩家旅程显示准备测试（2026-09-29）
+
+仅新增 Assets/Tests/RulesState/PveJourneyPlayerViewTests.cs，未修改生产代码、未运行CLI或Unity。
+
+fixture：MK.Tests.Battles.PveJourneyPlayerViewTests，共3例。
+
+- ViewFollowsRealTacticOrderAndNextTurnWithoutGrantingControlOrReplacingContext：正式战术顺序可令同伴先行动；PreparePlayerView只预览，不取得回合权限、不替换context；进行中回合保持实际玩家；正式两次EndTurn/BeginTurn后展示下一人，保留同一公共魔力源。
+- PendingTacticViewAdvancesOnlyAfterEachPlayersActualSelection：两位实际玩家分别完成day_2真实牌重抽与day_3真实源骰预留；显示先待选择人，全部完成后回到真实先手；选择未完不能BeginTurn。
+- PreparedRoundViewShowsCompanionsActualUnpaidFamiliarBeforeTactics：正式PrepareRound使同伴原魔宠待维持，显示同伴并阻止选战术；以真实库存魔晶完成维持后回主玩家准备战术，再显示真实先手；单位实体不变。
+
+测试全部通过正式GameEngine/PveJourneySession入口；无internal setter赋值。仅支撑显示选择逻辑的后台覆盖，不代替Unity界面或场景验收。
+
+主代理首次CLI为2/3，待选战术例错误选择随机源中第一个金/黑骰。已只修该夹具，从实际源骰中选择基本色面，遵守魔力掠夺的真实限制；未修改生产规则，本代理未重跑CLI。

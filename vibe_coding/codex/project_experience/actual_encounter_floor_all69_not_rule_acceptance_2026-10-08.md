@@ -1,0 +1,11 @@
+# 原69敌实际遇敌与全规则验收分开
+
+无活RL时新增独立EncounterFloorSampler，不编辑混合准入模块，旧未知admitter SHA与所有定义保持。基于实际fight事件的原enemy ID，将25%质量暂加给首组仍未见原敌任务，75%保原全局混合，每224项始终正概率；只选task不选任何游戏动作，不读隐藏牌序。全部原敌见到后精确回退基础混合（实测array_equal）。默认0/恢复mass与源SHA绑定，变更必须显式change-task-sampling。
+
+新增二检查覆盖全局支持、真实遇敌清覆盖底线/恢复、禁止mass1或非法值；真实224池三缺口根权重增加且全支持正，隐式恢复改变负例拒绝。原规则/掩码/胜利目标/raw及actor历史不改，初始重置不记覆盖。
+
+从848真实checkpoint完整恢复64新局4051步16完整成功、94479有限审计0error，CPU314.466秒，保存912局48488步Adam245。实际episode852Tovak034、862Goldyx040、866Arythea038均正式fight；加此前052，当前69原ID全部实际训练遇到。040单任务胜利独立完整重放认证，34/38未赢不能判无解。当前绑定195模式30单位55技能278配对，全能力/原费用消费者与Unity仍缺，不能说69敌规则验收或都击败。
+
+冻结development33×actor seeds同10301/10401/10501结果2/33、0/33、1/33，总3/99，未超过848模型3/99。不按覆盖达标晋升通用模型，30test仍未用。Console请求Win10061/无Unity进程，代码门禁两零错待补、不伪通过，不直接命令行启动编辑器。
+
+证据AutomationOutputs/BattleRl/20261008_encounter_floor_iteration_summary.json、actual_encounter_floor_checks/69_checks/implicit_rejection、monster040_replayed_certificate.json及训练/冻结目录；PID357696创建04:23:32/session89235与三eval正常terminal，没有活超时重启/上传下载大依赖/远端推送或用户程序终止。

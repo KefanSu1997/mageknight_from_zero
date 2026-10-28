@@ -1,0 +1,45 @@
+{
+  "scope": "Wolfhawk原提神沐浴/提神微风，高蒂克斯原药剂制作；每轮一次、战斗外实际获得治疗点、英雄手牌或真实I/II级部队战伤消费与蓝/白晶体。",
+  "skills": [
+    "hero_skill_pool_004:00",
+    "hero_skill_pool_004:01",
+    "hero_skill_pool_005:01"
+  ],
+  "backend": "AutomationOutputs\\RulesState\\20260918_213044_7c64e8c5",
+  "backendPassed": 14,
+  "scene": "AutomationOutputs\\PveBattle\\20260918_213235_1d880f2d\\report.json",
+  "battles": 6,
+  "steps": 181,
+  "assertions": 534,
+  "visualFollowup": "AutomationOutputs\\PveBattle\\20260918_213851_768b34e1\\report.json",
+  "visualSteps": 66,
+  "visualAssertions": 162,
+  "visualReviewed": 15,
+  "consoleErrors": [
+    0,
+    0
+  ],
+  "limitations": "首场数值全通过，但微风原图标题裁切失败；修UV后仅单条微风显示路径补验。战斗中拒绝、非法选项、晶体溢出、I点不足治疗II级、真实下一回合/下一轮限制仅后台。新技能所得晶体跨战斗消费与全部组合未场景验证。英雄立绘仍通用，非专属。",
+  "files": {
+    "AutomationOutputs/PveBattle/20260918_213235_1d880f2d/report.json": "198c9d526bf7a867ddae2e8d79522a1091238384d5b43034dcf653da41622864",
+    "AutomationOutputs/PveBattle/20260918_213851_768b34e1/report.json": "451c6d4c89ee0b5a8107fb04cd24f2042b8b5ecdb50a3633b8cd31b3384d8b54",
+    "AutomationOutputs/PveBattle/20260918_213851_768b34e1/console_final.json": "8d62f369865d478d110ffb57efc54be5aff20c4f4af96e654eba68ad28fb3864",
+    "AutomationOutputs/PveBattle/20260918_213235_1d880f2d/visual_review.json": "a83053c6cb271f0d78333dacfb0dab5dda0aa48c01de1bf403cb94d01ded9a1e",
+    "AutomationOutputs/RulesState/20260918_213044_7c64e8c5/summary.json": "c3eded5f12ce1a1bbf751da18431dd33a75b13534b759615f2f8040692131950",
+    "AutomationOutputs/PveBattle/20260918_213235_1d880f2d/captures/058_核对原技能牌面.png": "a6978d59b884e83e830dbfd20fbe4c06867bab4e2d7af1aa3de34c927539afdd",
+    "AutomationOutputs/PveBattle/20260918_213235_1d880f2d/captures/060_获得治疗点而非自动治疗.png": "5b150dea07979a1f9fe337a0d93d7aaae18e6ebc548d6a6bb5904a17d85f7a36",
+    "AutomationOutputs/PveBattle/20260918_213235_1d880f2d/captures/063_消费原技能治疗点.png": "c1b7b607cf9ea13587addc81cfdb0a1df8065bdf2e134b4443ea04a211028465",
+    "AutomationOutputs/PveBattle/20260918_213235_1d880f2d/captures/088_消费原技能治疗点.png": "8e5ceb36fb9d823864f91c07892de0fd3813447570713fa2187401cd781927fe",
+    "AutomationOutputs/PveBattle/20260918_213235_1d880f2d/captures/103_核对原技能牌面.png": "11820cf65cacc9edef1c604d964d937a29457a84b7b588a395f693e390cf62fe",
+    "AutomationOutputs/PveBattle/20260918_213235_1d880f2d/captures/105_获得治疗点而非自动治疗.png": "23a44b85457eb8b6e9736db95d4d6e4539ba1acd24db6817f59963e7e470fe21",
+    "AutomationOutputs/PveBattle/20260918_213235_1d880f2d/captures/108_消费原技能治疗点.png": "9ca62628579ce473d1edb1b36a147b51a8b52accd3472d6f3d9cb97d32c932f7",
+    "AutomationOutputs/PveBattle/20260918_213235_1d880f2d/captures/133_消费原技能治疗点.png": "8d1be3a638923d6ab529d095fb02c90d8dbb81227192485befe430bad5b5ce0f",
+    "AutomationOutputs/PveBattle/20260918_213235_1d880f2d/captures/148_核对原技能牌面.png": "bc49c93371a884bcd3d4bce15779012708ca2b050f144a1f1892c5fb1494e99d",
+    "AutomationOutputs/PveBattle/20260918_213235_1d880f2d/captures/150_获得治疗点而非自动治疗.png": "704f55f3a291b7a229097946f4846b9394d82e33b7e6473a28be1ef8addf9f89",
+    "AutomationOutputs/PveBattle/20260918_213235_1d880f2d/captures/154_消费原技能治疗点.png": "96c475c17f132cd259b98e8cfd9c4db750fa3812c5d570fba31115f9b817a283",
+    "AutomationOutputs/PveBattle/20260918_213235_1d880f2d/captures/179_消费原技能治疗点.png": "55e049501e3e5b53e88deb11e60f735f6ef823af841e811e4473805116b86be9",
+    "AutomationOutputs/PveBattle/20260918_213851_768b34e1/captures/059_核对原技能牌面.png": "5da50bf7013d23b5177fdfa409ff512dbe06f2eba90aab5501175f400e10905a",
+    "AutomationOutputs/PveBattle/20260918_213851_768b34e1/captures/061_获得治疗点而非自动治疗.png": "6756a370f484a2b3018ddd75990d2538e1eef94c7aab77289d65a7b64ae54ef2",
+    "AutomationOutputs/PveBattle/20260918_213851_768b34e1/captures/064_消费原技能治疗点.png": "c6de1d5eb2824c80c98819ba50e07e0c253e6a6db4f75ed7c4d5a19c45d76544"
+  }
+}

@@ -1,0 +1,11 @@
+# 数据绑定后受控续训与配对校准
+
+同当前10JSON指纹/九任务从104局4152步/Adam73完整恢复，终局序列奖励不再改动，6update×8episode×4epoch实跑48新局2002步，14完整任务，约161秒；累计152局6154步/Adam97。每轮采样/更新/保存检查数据一致，旧101局缺版本标记持续保留。训练胜利不是冻结策略胜率。
+
+同九任务/独立seed8401、每项两次，训练前保存策略5/18（758步17887有限检查），训练后7/18（730步17061检查），参数及源checkpoint不变。仅训练组成calibration，固定一次seed的小样本不证明统计稳健或held-out泛化；Goldyx/Wolfhawk仍0/2，失败保留。没有重启超时观察或用教师替代采样。
+
+绑定后当前版本实际发动58模式/8单位/11本人技能，历史累计75模式/13技能仍是累计记录，不把缺版本历史当当前原数据认证。费用/材料/全部分支消费者及Unity仍独立缺口。
+
+本机实际Win32与nvidia-smi确认NVIDIA GeForce RTX4060 Laptop GPU，报告8188MiB显存（约8GiB）；WMI AdapterRAM受字段限制不能读作只有4GiB。当前CPU_NumPy未利用该GPU做PPO，不从型号外推完整原范围算力足够，也不把其他GPU负荷当本训练使用。
+
+证据20261007_data_bound_extended_training、20261007_data_bound_pretrain_sampled_eval/posttrain_sampled_eval、20261007_extended_training_paired_eval_report.json、20261007_actual_gaps_after_extended_training.json。所有会话95450/55845/15725正常完成；无代码/场景修改，复用既有通过检查，不无理由重跑。完整69敌/原要素/保留验证/未调参测试及Unity仍未完成。

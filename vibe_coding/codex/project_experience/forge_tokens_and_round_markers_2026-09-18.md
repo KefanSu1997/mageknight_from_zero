@@ -1,0 +1,9 @@
+# 原锻造的晶体、临时魔力与每轮次数
+
+原 skill_017 中白晶/绿晶/红晶锻造都产生蓝晶体与对应颜色魔力，不能将临时魔力伪装成晶体。复用 ManaPool.AddCrystal 的每色3上限与溢出转临时魔力、CardPlayActions/CardUnitActions 的实际token优先支付；正式效果无需重写。
+
+PveBattleSession仅声明原技能输入与阶段，使用SkillActions所有权/OncePerRound频率。消息与技能栏读取真实Frequency，不将所有技能写成“本回合”；战后保留本轮翻面状态。控制器分别显示Crystals/Tokens并输出精确自动化状态。当前头部三行保持原阶段栏清晰，9图无截断。
+
+PveForgeSkillsTests新增8项首次通过：四条完整后台战斗含溢出、三非法选择/外来技能拒绝、真实StartTurn不重置及StartNewRound重置。Unity四场136真实点击373检查首次通过：白标记支付敏捷远程3；绿标记支付凶蛮僧侣攻城4穿城防；蓝晶/红标记支付决心格挡5与狂怒攻击4；蓝晶3时溢出蓝标记先支付，原3蓝晶保持。每场战中及战后重复发动均拒绝。后台报告200652_4ff1ed0b，场景200827_a1b61c82，Console前后双0。
+
+完整轮间场景、战后首次发动、全部组合仍不在本批已完成结论内。全部索引见pve_forge_acceptance_index.json，重放tools/build_pve_forge_acceptance.py；旧已通过范围不重跑。

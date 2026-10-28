@@ -1,0 +1,49 @@
+{
+  "scenePath": "Assets/Scenes/Part1/Part1_PveBattle.unity",
+  "reportPath": "AutomationOutputs/BattleRl/20261007_unity_generated_semantics/report.json",
+  "screenshotsDirectory": "AutomationOutputs/BattleRl/20261007_unity_generated_semantics/captures",
+  "captureInitialView": false,
+  "useRunSubfolder": false,
+  "initialDelaySeconds": 2,
+  "defaultWaitAfterSeconds": 0.4,
+  "maxRunSeconds": 60,
+  "steps": [
+    {
+      "buttonPath": "Canvas/BattleTable/Inspector/Btn_Next",
+      "label": "语义advance · Ranged",
+      "skipScreenshot": true
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Inspector/Btn_Next",
+      "label": "语义advance · Block",
+      "skipScreenshot": true
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Inspector/Btn_Next",
+      "label": "承伤输入单独保留未映射步骤",
+      "skipScreenshot": true
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Hand/Btn_Card_basic_card_000_0",
+      "label": "选择语义动作的实际手牌 basic_card_000",
+      "skipScreenshot": true
+    },
+    {
+      "buttonPath": "Canvas/BattleTable/Inspector/Btn_Sideways",
+      "label": "语义sideways · basic_card_000",
+      "skipScreenshot": false,
+      "after": [
+        {
+          "key": "melee",
+          "expected": "1",
+          "rule": "生成语义动作实际横置贡献"
+        },
+        {
+          "key": "hand",
+          "expected": "6",
+          "rule": "实际卡离手"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+# 七互动技能原入口与公开后续义务
+
+续接独立共享技能适配，补四其余本人入口：魔力强化选色/取消并等待真实付款，魔力霸主选色并消费真实原牌输出，群狼嚎叫原手牌横置及实际开战减甲减攻选择，开放魔力源原骰选择/领取/归还选择。全部复用SharedSkillArea；新增唯一规则侧函数 PendingEnhancementColor 为只读公开选择，预选不算发动。
+
+重要：原SharedSkillArea.PendingSourceOpeningReturns包含RequireActual/RequireCompleted，不能用有校验副作用的入口读取pending状态，否则嚎叫/霸主尚待选择时会无法Observe。状态与候选读取ManaSource已有只读PendingSourceOpeningReturns；实际提交仍经原正式验证。归还动作Parts按真实pending列表槽，不按可用源骰列表（取走后原骰不在其中）。End阶段必须保留归还输入，不能只允许nextTurn。
+
+原七API24真实操作通过，包括魔力强化预选/取消不标使用，蓝原牌付款后原晶体1→1（付1得1）再中央领取蓝标记；霸主白标记付原强影响4，真实增强至8并归还中央标记；嚎叫正式fight产生待选择，原目标护甲/攻击各减1；开放源骰领取白标记/原主白晶体1→2并选择不重掷归还。旧关闭开关四真实操作完整协议一致。来源/实际前后状态保存在20261008_shared_seven_skill_adapter_checks_v2。
+
+观察追加228公开坐标（含中央归属/颜色、选色、嚎叫义务、霸主真实贡献类型/元素与归还骰槽），新schema5941、94008动作。仍未迁移权重/Adam/随机历史或224任务池，不能称PPO训练覆盖或能力提升。痛苦横置/自然移动消费者、多人另一面效果、Unity Console/场景均保持缺口；当前Unity Win10061，后台构建零错误不替代两次Console零错误。

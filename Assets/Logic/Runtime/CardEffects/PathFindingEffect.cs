@@ -17,8 +17,8 @@ namespace MK.Logic.Runtime.CardEffects
                 ctx.MovementPool += 2;
                 foreach (TerrainType t in System.Enum.GetValues(typeof(TerrainType)))
                 {
-                    if (t == TerrainType.Lake) continue;
                     int baseCost = Map.TerrainCost.GetCost(t, ctx.DayPart);
+                    if (baseCost == int.MaxValue) continue;
                     ctx.TerrainCostOverride[t] = System.Math.Max(2, baseCost - 1);
                 }
             }
@@ -27,11 +27,10 @@ namespace MK.Logic.Runtime.CardEffects
                 ctx.MovementPool += 4;
                 foreach (TerrainType t in System.Enum.GetValues(typeof(TerrainType)))
                 {
-                    if (t == TerrainType.Lake) continue;
+                    if (Map.TerrainCost.GetCost(t, ctx.DayPart) == int.MaxValue) continue;
                     ctx.TerrainCostOverride[t] = 2;
                 }
             }
         }
     }
 }
-

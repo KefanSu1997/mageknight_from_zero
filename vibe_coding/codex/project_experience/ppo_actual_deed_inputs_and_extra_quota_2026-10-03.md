@@ -1,0 +1,9 @@
+# PPO 实际原牌输入和源骰额度
+
+加载原牌不足以覆盖效果。需要材料、源骰或颜色的原效果，缺少输入时会被正式预检拒绝，模型不会见到相应效果。为动作提供明确输入，执行时解析到实际自有牌/可用源骰引用，仍由PveDeedInputs与CardManaActions负责正式费用和校验。记录输入及后续消费者，目录与入手不能算发动。
+
+魔力征引强化是白费，不能沿用魔力汲取的蓝费。检查须读原JSON或卡面；查不到合法样例时先核对原费用，不能给免费资源绕过。额外源骰消费者必须允许普通骰已持有时执行，并确认只消耗额外额度、普通骰不变。金骰取用后保持通用，实际付款时再定色。
+
+扩展动作保留旧语义Key与观察前缀，使旧PPO权重对应真实动作。新增编译输出使用独立目录，不覆盖活跃规则进程DLL；manifest记录真正使用的DLL。小批训练零失败只证明接入范围，最终仍须原规则独立审查与真实UI回放。
+
+证据：AutomationOutputs/BattleRl/20261003_actual_deed_input_checks.json（4项8操作111断言）；AutomationOutputs/BattleRl/20261003_actual_inputs_smoke；tmp/rl_actual_inputs_console_20261003.json。

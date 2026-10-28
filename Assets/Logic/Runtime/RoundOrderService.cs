@@ -11,6 +11,9 @@ namespace MK.Logic.Runtime
     public sealed class RoundOrderService
     {
         private readonly LinkedList<PlayerState> _order = new();
+        public bool HasPlayers => _order.Count > 0;
+        public PlayerState PeekNextPlayer() => _order.First?.Value
+            ?? throw new System.InvalidOperationException("尚未选择本轮战术并确定玩家顺序");
 
         /// <summary>
         /// 以玩家選擇的戰術牌初始化順序。
@@ -32,11 +35,10 @@ namespace MK.Logic.Runtime
         /// </summary>
         public PlayerState NextPlayer()
         {
-            var p = _order.First!.Value;
+            var p = PeekNextPlayer();
             _order.RemoveFirst();
             _order.AddLast(p);
             return p;
         }
     }
 }
-

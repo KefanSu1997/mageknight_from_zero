@@ -1,7 +1,6 @@
 {
   "groupNames": [
-    "^MageKnight.Tests.PossessResolutionTests",
-    "^MK.Tests.Cards.CardCombatRulesTests",
-    "^MageKnight.Tests.OriginalUnitDamageTests"
+    "^MageKnight.Tests.CharmRecruitmentTests",
+    "^MK.Tests.Cards.OriginalUnitActivationTests.RecruitmentAtomicallyConsumesRealOfferAndInfluence"
   ]
 }

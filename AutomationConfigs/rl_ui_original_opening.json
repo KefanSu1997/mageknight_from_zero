@@ -1,0 +1,20 @@
+{
+  "scenePath":"Assets/Scenes/Part1/Part1_PveBattle.unity",
+  "reportPath":"AutomationOutputs/BattleRl/20261007_unity_original_opening/report.json",
+  "screenshotsDirectory":"AutomationOutputs/BattleRl/20261007_unity_original_opening/captures",
+  "useRunSubfolder":false,
+  "captureInitialView":false,
+  "initialDelaySeconds":2,
+  "defaultWaitAfterSeconds":0.5,
+  "maxRunSeconds":90,
+  "steps":[
+    {"buttonPath":"Canvas/BattleTable/Btn_Menu","label":"打开真实战斗菜单","skipScreenshot":true},
+    {"buttonPath":"Canvas/BattleTable/Btn_Camp","label":"打开配置","skipScreenshot":true},
+    {"buttonPath":"Canvas/BattleTable/CampShade/Camp/Btn_OriginalHero","label":"原标准英雄入口","skipScreenshot":true},
+    {"buttonPath":"Canvas/BattleTable/CampShade/HeroStart/Btn_Hero_Tovak","label":"选择原Tovak","skipScreenshot":true,"after":[{"key":"hero.preview","expected":"Tovak","rule":"原英雄归属"},{"key":"hero.previewCount","expected":"16","rule":"完整标准牌库不是小牌库"}]},
+    {"buttonPath":"Canvas/BattleTable/CampShade/HeroStart/Btn_BattleHero","label":"完整16牌战斗试玩","skipScreenshot":true,"after":[{"key":"hero.id","expected":"Tovak","rule":"真实玩家为Tovak"},{"key":"hero.level","expected":"1","rule":"原等级1"},{"key":"hero.armor","expected":"2","rule":"原护甲2"},{"key":"hero.skills","expected":"0","rule":"不注入技能"}]},
+    {"buttonPath":"Canvas/BattleTable/Tactic_day_1/Btn_Tactic_day_1","label":"选择原白昼战术1","skipScreenshot":true,"after":[{"key":"journey.tactic","expected":"day_1","rule":"原战术正式选择"}]},
+    {"buttonPath":"Canvas/BattleTable/Btn_BeginTurn","label":"正式开始原回合","skipScreenshot":true,"after":[{"key":"hand","expected":"5","rule":"原牌库正式抽5"},{"key":"deck.count","expected":"11","rule":"原16牌剩11"}]},
+    {"buttonPath":"Canvas/BattleTable/Btn_JourneyEncounter_0","label":"正式进入真实战斗","skipScreenshot":false,"after":[{"key":"phase","expected":"Ranged","rule":"正式进入远程阶段"},{"key":"hero.id","expected":"Tovak","rule":"同原玩家保留"},{"key":"red","expected":"0","rule":"不沿用小牌库红晶"},{"key":"blue","expected":"0","rule":"不沿用小牌库蓝晶"},{"key":"units.count","expected":"0","rule":"不注入部队"}]}
+  ]
+}

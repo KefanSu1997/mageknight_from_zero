@@ -1,0 +1,37 @@
+{
+  "scope": "Original multiplayer Mind Read/Steal shared-device responses, permanent ownership and actual consumers",
+  "steps": 227,
+  "assertions": 357,
+  "segments": [
+    {
+      "run": "20260929_142309_8ff944fb",
+      "start": 0,
+      "endExclusive": 113,
+      "assertions": 173
+    },
+    {
+      "run": "20260929_142505_366395d5",
+      "start": 113,
+      "endExclusive": 114,
+      "assertions": 6
+    },
+    {
+      "run": "20260929_142827_cfe1ad63",
+      "start": 0,
+      "endExclusive": 113,
+      "assertions": 178
+    }
+  ],
+  "reviewedScreenshots": [
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_142309_8ff944fb\\captures\\050_本人确认所选弃牌.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_142309_8ff944fb\\captures\\051_白token支付原费，原效果真实结算各玩家响应.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_142309_8ff944fb\\captures\\102_施法者选择本次原行动000永久偷取.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_142309_8ff944fb\\captures\\111_支付原地形移动费用.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_142827_cfe1ad63\\captures\\049_本人确认无同色展示.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_142827_cfe1ad63\\captures\\050_白token支付原费，原效果真实结算各玩家响应.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_142827_cfe1ad63\\captures\\101_施法者明确放弃偷取.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_142827_cfe1ad63\\captures\\110_支付原地形移动费用.png"
+  ],
+  "finalConsole": "tmp/pve_mind_responses_console_final.json",
+  "backend": "AutomationOutputs/RulesState/20260929_141702_c857f3ba/results.xml"
+}

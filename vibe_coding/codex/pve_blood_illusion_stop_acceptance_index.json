@@ -1,0 +1,54 @@
+{
+  "scope": "Blood Ritual strong independent colours and crystal conversion paid actual movement/Illusionist stop; same unit ready and old wound healed next turn",
+  "steps": 80,
+  "assertions": 133,
+  "segments": [
+    {
+      "run": "20260929_155416_f125ae71",
+      "start": 0,
+      "end": 50,
+      "assertions": 67,
+      "sha256": "02b83068fccc93648bdd77a8fbe930d61ab04df57a775cb4034f99aac7d2664c"
+    },
+    {
+      "run": "20260929_160132_d419382d",
+      "start": 51,
+      "end": 79,
+      "assertions": 66,
+      "sha256": "4547377efd4c1488b4303342c7a7c86d8cbcabc38d4faa843332b86b4c9c3919"
+    }
+  ],
+  "unitIdentityChecks": [
+    {
+      "step": 37,
+      "instances": "army_2_003:1079910076"
+    },
+    {
+      "step": 51,
+      "instances": "army_2_003:1079910076"
+    },
+    {
+      "step": 62,
+      "instances": "army_2_003:1079910076"
+    },
+    {
+      "step": 77,
+      "instances": "army_2_003:1079910076"
+    },
+    {
+      "step": 79,
+      "instances": "army_2_003:1079910076"
+    }
+  ],
+  "reviewedScreenshots": [
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_155416_f125ae71\\captures\\036_可选把本次蓝魔力转库存晶.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_160132_d419382d\\captures\\051_原白费停攻，非格挡.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_160132_d419382d\\captures\\077_原治疗消费真实仪式旧伤.png"
+  ],
+  "backendReused": [
+    "20260923_072400_47a3fe82",
+    "20260923_021816_212ab687"
+  ],
+  "limitations": "Legal custom level4 five-card snapshot, not standard opening deck; failure51 retained",
+  "console": "tmp/pve_blood_masters_final_console.json"
+}

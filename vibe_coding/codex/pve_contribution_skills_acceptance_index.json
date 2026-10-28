@@ -1,0 +1,204 @@
+{
+  "scope": "003:00灵魂向导、004:04百步穿杨、002:06领导真实贡献与连续消费者；有限基本场景，非全技能完成",
+  "backendEffectivePasses": 52,
+  "backendRuns": [
+    "20260929_040049_bf6cd389",
+    "20260929_040250_49fee940"
+  ],
+  "sceneRuns": [
+    {
+      "report": "AutomationOutputs\\PveBattle\\20260929_040803_222fb78e\\report.json",
+      "sha256": "68fc8c864c94a0136d6deed81dc7cb7ee7ce4322865d745497c716d85a18aac6",
+      "acceptedZeroBasedSteps": [
+        0,
+        26
+      ],
+      "checks": 29,
+      "screenshots": []
+    },
+    {
+      "report": "AutomationOutputs\\PveBattle\\20260929_041009_c8d2c8a3\\report.json",
+      "sha256": "45bcb4e87a2b7c32a3350a3e87eb5373bd958d2dbdc5bebd8d71cff9b8ac6920",
+      "acceptedZeroBasedSteps": [
+        27,
+        75
+      ],
+      "checks": 65,
+      "screenshots": [
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_041009_c8d2c8a3\\captures\\034_原地形费用实际消费.png",
+          "sha256": "a09e4239d2f3bb775ddc99d8192a3f95b1d2d31e74526e2b9ab7c2b558369af0",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_041009_c8d2c8a3\\captures\\044_选择真实第一笔元素贡献.png",
+          "sha256": "bdc0d4ca974dfb45aea231bbe92bd7bd6792396107f0174cabd9e8dcf4d6cad0",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_041009_c8d2c8a3\\captures\\045_原技能只加值所选贡献.png",
+          "sha256": "212baf406b59e82db6d23787268f4a38f2f0bd09fa7517f17e5723dc24888340",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_041009_c8d2c8a3\\captures\\058_冰攻击3加物攻2低效1击殺.png",
+          "sha256": "5504b1893185c20eea9d4e1990f4dcc14caee0d759c68260993047999c205101",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_041009_c8d2c8a3\\captures\\060_同玩家正式结束回合.png",
+          "sha256": "9aa2ccccb2ac11f4fb326300f92ffa64a93ead8af5570c5e82a5fd7237c82ce7",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_041009_c8d2c8a3\\captures\\073_原地形费用实际消费.png",
+          "sha256": "5ac59b13f20b0caf68dac2b6847e3bdc23d6e3e1f691f2f2ed076bbda08774db",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_041009_c8d2c8a3\\captures\\075_正式回合清未用格挡许可.png",
+          "sha256": "d93c8b5226faecea117e962131c51d12c7f4d8a74aae0d105ed2753cd7c8e3c5",
+          "visuallyInspected": true
+        }
+      ]
+    },
+    {
+      "report": "AutomationOutputs\\PveBattle\\20260929_041138_9bbe26e8\\report.json",
+      "sha256": "b18fedc6e4620398ccd14b32dc626084d03b67e3cd6964d79745d4f5dc9c12c8",
+      "acceptedZeroBasedSteps": [
+        0,
+        57
+      ],
+      "checks": 67,
+      "screenshots": [
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_041138_9bbe26e8\\captures\\031_选择真实第一笔元素贡献.png",
+          "sha256": "be89503968de28b032b514cfbfd0c5e847d66c50e2cc21e0d2a3a052a07088b0",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_041138_9bbe26e8\\captures\\032_原技能只加值所选贡献.png",
+          "sha256": "b474a9f074d0ba218757f62bf188cce412ee2866e9d6b180e7a4bf378a862989",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_041138_9bbe26e8\\captures\\035_火远程4实际击杀.png",
+          "sha256": "33096340ca690fdc3a1400039116e88b5d5ee1fc49bc3485febe19c751473bc4",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_041138_9bbe26e8\\captures\\040_同玩家正式结束回合.png",
+          "sha256": "161d1fcff32d32841eb9a02b0a7e0b0feabc53e634e79ef0d560f8bd69d16025",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_041138_9bbe26e8\\captures\\051_选择真实第一笔元素贡献.png",
+          "sha256": "89726777c9254b0f488f84026d9cb95cb9ca303003461426a5a74389974ffd9e",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_041138_9bbe26e8\\captures\\052_原技能只加值所选贡献.png",
+          "sha256": "8a81e4e2222013edcc84203b199749e9a5e714e362d05279eff73b4ad2b34640",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_041138_9bbe26e8\\captures\\055_横置原牌攻击3真实击杀.png",
+          "sha256": "0cb7beae54c14a0c99ec3db8eb621e058d6e1c49577c0a209020f45ec29291c9",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_041138_9bbe26e8\\captures\\057_同玩家正式结束回合.png",
+          "sha256": "65b8dae6f3c367279c4430f5527e239c156dee4a76c83457e53edb9d39791bc1",
+          "visuallyInspected": true
+        }
+      ]
+    },
+    {
+      "report": "AutomationOutputs\\PveBattle\\20260929_041444_5c2c94c6\\report.json",
+      "sha256": "4fed9f0c24d5243b360600d4a6bb809a041e9cbcdaeba065dc9aa16b03accb75",
+      "acceptedZeroBasedSteps": [
+        0,
+        74
+      ],
+      "checks": 90,
+      "screenshots": [
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_041444_5c2c94c6\\captures\\034_原地形费用实际消费.png",
+          "sha256": "a09e4239d2f3bb775ddc99d8192a3f95b1d2d31e74526e2b9ab7c2b558369af0",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_041444_5c2c94c6\\captures\\041_同一火法师.png",
+          "sha256": "8770812c470082bb7bf862d62b494064e4c0a93291fa630480b24f2286b52e10",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_041444_5c2c94c6\\captures\\042_原火远程3加领导1.png",
+          "sha256": "9d8aee8ec486c01249d55d87aef1b70276bf00df7c07274cb2fa0e9cea69b14c",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_041444_5c2c94c6\\captures\\049_同玩家正式结束回合.png",
+          "sha256": "aa8d5983d7e42c01d792c6eb8d8d9789c4b236eb96f3a3747e8e0ba3f0c64607",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_041444_5c2c94c6\\captures\\056_真实重整同部队.png",
+          "sha256": "2d4773d3b9bc643ed27d39ee46b74ced7ab92dc199e8b263004b6411f3e85312",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_041444_5c2c94c6\\captures\\070_近战使用原远程仍只加1.png",
+          "sha256": "a59320fcc5785785c5e7afef67f7385ae27168d912fcf01d9fa76515c9de87e6",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_041444_5c2c94c6\\captures\\072_同部队真实第二战击杀.png",
+          "sha256": "2b96d8f5c4dae5dcf84c7dde656efba615d92adc3d6cae78a2cbe16c0562b09d",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_041444_5c2c94c6\\captures\\074_同玩家正式结束回合.png",
+          "sha256": "4379524a812acc19695ef64d0ba30162f3bc66a460bfa7658e5eeddff75bbbd7",
+          "visuallyInspected": true
+        }
+      ]
+    }
+  ],
+  "legalSkillEntries": 48,
+  "missingSkillEntries": 22,
+  "acceptedSteps": 209,
+  "acceptedChecks": 251,
+  "acceptedScreenshots": 23,
+  "console": {
+    "path": "tmp\\pve_20260929_contributions_final_console.json",
+    "sha256": "8d62f369865d478d110ffb57efc54be5aff20c4f4af96e654eba68ad28fb3864"
+  },
+  "source": [
+    {
+      "path": "Assets\\GameData\\BattleDemo\\original_skills.json",
+      "sha256": "9be430b8479edd6e16be99766160e100947a5ae7426b93010bf5de6b4c91c1b8"
+    },
+    {
+      "path": "Assets\\Logic\\Runtime\\ContributionSkillActions.cs",
+      "sha256": "c77544a139cda254ec995f0ba82e9ef3682f51e62e31e34c77cb733648fae72a"
+    },
+    {
+      "path": "Assets\\Logic\\Runtime\\LeadershipActions.cs",
+      "sha256": "41f8b1f0d6747dba178c841cda76bf3b8d0ef044369bf2acc2bb06b4ff0b80d1"
+    },
+    {
+      "path": "Assets\\Logic\\Runtime\\CardContributionSource.cs",
+      "sha256": "ad066f7dfcea8316b2bbce0af7e8922e874dc8972e6bc552c58e83b250ac31d8"
+    },
+    {
+      "path": "tools\\build_pve_contribution_skills_acceptance.py",
+      "sha256": "ddd744f7f15aca8f9d2224c4d53247145ace9e85588d47b47e0fbe9aefaf72ae"
+    }
+  ],
+  "preservedFailure": "20260929_040803_222fb78e step 27: JourneyState未暴露soul.pending；补状态观测字段后从27重放补验，规则未改，失败图不计有效图。",
+  "limits": [
+    "领导冰火/格挡与百步其他牌来源部分仅后台；未声明全部分支场景通过",
+    "英雄共用立绘、自定地图及其余原世界/技能仍有缺口"
+  ]
+}

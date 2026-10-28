@@ -1,0 +1,13 @@
+# 全量成本任务边界与未完成状态
+
+用户明确要求一次性计算全部成本，后续整体优化；此前局部UI案例交付不能当完整成本基线。本轮建立全量需求数据库和不完整导出门禁，尚未完成全量UI复现/成本计算，禁止称任务已完成。
+
+`build_full_ui_cost_workset.py` 流式重读H盘已验证归档，每份原件SHA再次相等，所有867821原规则步保存源episode/ordinal/完整动作字段及before/after SHA；850374同局相邻转移保存双方动作和阶段。不是只做54 Kind/1009 Kind-pair表，实际有4459参数动作、7335动作阶段组合、91158参数/阶段转移组合。SQLite479612928字节，避免内存叠加当前训练，不改训练、布局或规则。
+
+17447原件非空episode包含原训练/集成/历史validation分层，保留cohort，不将保留验证的数据转入训练。13212带declared_task；4190带legacy_seed。45份旧validation只有task_id且缺seed/定义：32从同ID原任务另份episode找到唯一定义，8从原训练pool登记找到，5从原保留验证pool找到。仅恢复候选重置配方，未声称原初状态实际重放或规则版本兼容；所有源、registrySHA、原记录保存在lookup JSON。没有猜seed，训练/验证身份保留。
+
+`check_full_ui_cost_coverage.py` 硬性要求所有steps有匹配动作、合法非负度量、actual_source_sha与validated通过。当前validated_cost_steps不存在，正确返回退出2/incomplete/0全量steps已测；不能把此前随机Demo实例配给这些未复现的原任务，不能填0或输出整体优化基线。
+
+检查发现现有semantic_ui_actions只支持受限advance、sideways和single-target attack；StructuredUiPilot只有Demo开局/指针RPC，没有训练task重置入口。这些是仍需实现的测量基础，不是数学无法计算的成本。后续必须补原任务原生重置、各参数实际UI操作适配、连续UI状态/指针记录，再批量真实复现并校验。缺mapper不等于已证实UI不可达，也不能记无穷大冒充测量完成。
+
+原动作计数/分层和、所有step/转移记录数、参数聚合和、重置配方非空及导出拒绝门禁均通过；两个脚本py_compile通过。当前 `AutomationOutputs/UiFluency/20261012_full_cost_workset/manifest.json` 与 `coverage_check.json` 均明确cost_export_ready=false；workset_verification仅是输入和门禁验收。

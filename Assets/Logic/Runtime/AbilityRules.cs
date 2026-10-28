@@ -43,6 +43,7 @@ namespace MK.Logic.Runtime
             // 針對部隊的處理
             if (target is UnitState u)
             {
+                if (BannerActions.TryIgnoreWound(u)) { wounds = 0; return; }
                 bool poison = src.Abilities.Contains(Ability.Poison) && (ignore == null || !ignore.Contains(Ability.Poison));
                 bool paralyze = src.Abilities.Contains(Ability.Paralyze) && (ignore == null || !ignore.Contains(Ability.Paralyze));
                 if (paralyze)

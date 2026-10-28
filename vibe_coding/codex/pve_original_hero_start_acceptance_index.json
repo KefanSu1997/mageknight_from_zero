@@ -1,0 +1,22 @@
+{
+  "scope": "七英雄原版16张起始牌预览/后台、Braevalar实际随机开局与弃牌补牌/换轮/进入战斗；非七英雄全技能完成",
+  "sceneRun": "20260923_045156_b1d206a5",
+  "passedSteps": 59,
+  "passedAssertions": 139,
+  "backend": "AutomationOutputs/RulesState/20260923_044907_c8f67fd8",
+  "backendPassed": 15,
+  "finalConsole": "tmp/pve_20260923_hero_start_final_console.json",
+  "screenshotsReviewed": 4,
+  "sourceSha256": {
+    "Assets/Logic/Data/OriginalHeroes.cs": "987f6700f4b299d107123df88f71e3c24afd3b495ddecf70c39a95ec3372d782",
+    "Assets/Logic/Runtime/GameState.cs": "01bceea86f1c323a5a03a6720302e7e749707319a5218927d31eb8a58593a3c7",
+    "Assets/Logic/Runtime/Battles/PveJourneySession.cs": "924976e4028eab4612b53b88baab40d0eaed0731537f3f0abd2c6abe81b478bc",
+    "Assets/Scripts/Battle/BattleLoadout.cs": "59f678706190cdc72461d447e343f5c826cd0c0aae104ae877c8ef0cf5cee70f",
+    "Assets/Scripts/Battle/PveBattleController.HeroStart.cs": "1b653ff744dbefd8755605b9acb2cc9dd02c880e20b5cef2413c684ce5cafa0b",
+    "Assets/Scripts/Battle/PveBattleController.cs": "b2dc4c411a85811010abd2ada159e283fa6c8f489106b8e981fed91aab45c6eb",
+    "Assets/Scripts/Battle/PveBattleController.Journey.cs": "3658c1fc2911de677d58d1e331f68c8da5e8cfb56c3289cd1934d9f8a140b2c5",
+    "Assets/Scripts/Battle/PveBattleController.JourneyHand.cs": "f19219a01012fa7a3b420d38d33c0fcde6e0e4f9de3175c1908d84fe540ef36a",
+    "Assets/Tests/RulesState/OriginalHeroJourneyTests.cs": "9cb25b3bc2f5ce004c92fdb4902c9700263279bcfb4a6d0652b17018b8815319",
+    "tools/build_pve_original_hero_start_acceptance.py": "740372e3dfc947e1a1fb8dbff7454f2f85fc9e0382fc11ca6c3b2c8a153be8f0"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "x": 105,
+  "y": 27,
+  "width": 881,
+  "height": 1488,
+  "textureWidth": 1024,
+  "textureHeight": 1536,
+  "source_sha256": "9a61d4920323ce3dd42b48fe02fe7a132410ab5654e3903edd2dc6822938c0c8",
+  "method": "alpha>=64 layout only; original generatedPNG and full UV, separate v5 frame"
+}

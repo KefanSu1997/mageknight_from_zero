@@ -1,0 +1,1460 @@
+{
+  "scope": "original printed core: attacks/armor/resistances/abilities/fame/defend/summon. Excludes names, types, faction extra rewards, token-copy multiplicities and actual consumers/UI.",
+  "entries": [
+    {
+      "id": "monster_001",
+      "armor": 8,
+      "elusive": 0,
+      "fortified": true,
+      "resist": [
+        "Fire"
+      ],
+      "abilities": [
+        "brutal"
+      ],
+      "attacks": [
+        [
+          6,
+          "Fire"
+        ]
+      ],
+      "fame": 8,
+      "summon_count": 0,
+      "defend": 0,
+      "source_image_sha256": "e7f4dae50f5d4fa435f9ded3e934bb395bdd36ce41801220c11602df561febdc"
+    },
+    {
+      "id": "monster_002",
+      "armor": 5,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [],
+      "abilities": [
+        "poison"
+      ],
+      "attacks": [
+        [
+          5,
+          "Physical"
+        ]
+      ],
+      "fame": 4,
+      "summon_count": 0,
+      "defend": 0,
+      "source_image_sha256": "cd0525b2b82d134ade1eb496a2d8d3ab657e73bfba52b19ec07e0e493a79816e"
+    },
+    {
+      "id": "monster_003",
+      "armor": 3,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [
+        "Physical"
+      ],
+      "abilities": [],
+      "attacks": [],
+      "fame": 4,
+      "summon_count": 1,
+      "defend": 0,
+      "source_image_sha256": "209d31775b8932835e468eed7890a9d7005991495208c15aaa33527c872b3b85"
+    },
+    {
+      "id": "monster_004",
+      "armor": 4,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [
+        "Ice",
+        "Physical"
+      ],
+      "abilities": [
+        "paralyze"
+      ],
+      "attacks": [
+        [
+          2,
+          "Ice"
+        ]
+      ],
+      "fame": 5,
+      "summon_count": 0,
+      "defend": 0,
+      "source_image_sha256": "37c43140f652e33940acbc62f3d50444ab0a1a25c2ad603cf94adef5a8d861c9"
+    },
+    {
+      "id": "monster_005",
+      "armor": 5,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [],
+      "abilities": [
+        "poison"
+      ],
+      "attacks": [
+        [
+          3,
+          "Physical"
+        ]
+      ],
+      "fame": 3,
+      "summon_count": 0,
+      "defend": 0,
+      "source_image_sha256": "4d6f0e6a344a291beccdb291f21c53d089de9a8e5fb6fea544f2540a57a28614"
+    },
+    {
+      "id": "monster_006",
+      "armor": 3,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [
+        "Physical"
+      ],
+      "abilities": [
+        "brutal"
+      ],
+      "attacks": [
+        [
+          4,
+          "Physical"
+        ]
+      ],
+      "fame": 4,
+      "summon_count": 0,
+      "defend": 0,
+      "source_image_sha256": "732fd148f0d8ae558654aa5d295c1935835f6946b63428604abd80f7df268f45"
+    },
+    {
+      "id": "monster_007",
+      "armor": 4,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [],
+      "abilities": [
+        "swift"
+      ],
+      "attacks": [
+        [
+          3,
+          "Physical"
+        ]
+      ],
+      "fame": 3,
+      "summon_count": 0,
+      "defend": 0,
+      "source_image_sha256": "e11e7b26a5059524375238d0e5416b8d6a6a3b590d22931a095117784b74af65"
+    },
+    {
+      "id": "monster_008",
+      "armor": 8,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [
+        "Physical"
+      ],
+      "abilities": [
+        "brutal",
+        "poison"
+      ],
+      "attacks": [
+        [
+          4,
+          "ColdFire"
+        ]
+      ],
+      "fame": 8,
+      "summon_count": 0,
+      "defend": 0,
+      "source_image_sha256": "9e0a84a7194e01f31693e5886ffe9e5e736367790b0a0147c6b9e956d64a6ae0"
+    },
+    {
+      "id": "monster_009",
+      "armor": 9,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [],
+      "abilities": [
+        "swift",
+        "poison"
+      ],
+      "attacks": [
+        [
+          5,
+          "Physical"
+        ]
+      ],
+      "fame": 7,
+      "summon_count": 0,
+      "defend": 0,
+      "source_image_sha256": "7ff6eafe747aca59db751c81229e14fda5f46025de26012da2329dfeb748948d"
+    },
+    {
+      "id": "monster_010",
+      "armor": 7,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [
+        "Ice",
+        "Physical"
+      ],
+      "abilities": [
+        "paralyze"
+      ],
+      "attacks": [
+        [
+          6,
+          "Ice"
+        ]
+      ],
+      "fame": 8,
+      "summon_count": 0,
+      "defend": 0,
+      "source_image_sha256": "cf55b4cbe4ad59f8813f05c0cd114b0928534650159b3846ab35765fcbd9f31e"
+    },
+    {
+      "id": "monster_011",
+      "armor": 4,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [],
+      "abilities": [
+        "paralyze"
+      ],
+      "attacks": [
+        [
+          6,
+          "Physical"
+        ]
+      ],
+      "source_image_sha256": "5e74088b1ebceb6e5c1184eab614ceb3d3e5826f0c3cad39245dc8c449c190fa",
+      "fame": 5,
+      "summon_count": 0,
+      "defend": 0
+    },
+    {
+      "id": "monster_012",
+      "armor": 5,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [],
+      "abilities": [],
+      "attacks": [
+        [
+          4,
+          "Fire"
+        ]
+      ],
+      "fame": 3,
+      "summon_count": 0,
+      "defend": 1,
+      "source_image_sha256": "3515c7844b2e02eea4cd464c9e607a3cb861d09e617a5fe208709a5c77c1831c"
+    },
+    {
+      "id": "monster_013",
+      "armor": 4,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [],
+      "abilities": [
+        "vampirism"
+      ],
+      "attacks": [
+        [
+          4,
+          "Physical"
+        ]
+      ],
+      "fame": 2,
+      "summon_count": 0,
+      "defend": 0,
+      "source_image_sha256": "55f620f88e254a54fa05d6ea980688bfad99b0827fb241e405f03aad6dfea8ed"
+    },
+    {
+      "id": "monster_014",
+      "armor": 6,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [
+        "Fire"
+      ],
+      "abilities": [],
+      "attacks": [
+        [
+          7,
+          "Fire"
+        ]
+      ],
+      "source_image_sha256": "7b961acccb90ef9c92d2f9f33a545998dca6f2aaf6b88760bb7b314ca409c044",
+      "fame": 4,
+      "summon_count": 0,
+      "defend": 0
+    },
+    {
+      "id": "monster_015",
+      "armor": 4,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [
+        "Fire",
+        "Ice"
+      ],
+      "abilities": [],
+      "attacks": [
+        [
+          3,
+          "Fire"
+        ],
+        [
+          3,
+          "Ice"
+        ]
+      ],
+      "fame": 3,
+      "summon_count": 0,
+      "defend": 0,
+      "source_image_sha256": "c5ae061217e4b7f376946164c7788bf73ad82ca6972876bf3665926f0d432cd8"
+    },
+    {
+      "id": "monster_016",
+      "armor": 5,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [],
+      "abilities": [
+        "swift"
+      ],
+      "attacks": [
+        [
+          3,
+          "Physical"
+        ]
+      ],
+      "fame": 2,
+      "summon_count": 0,
+      "defend": 0,
+      "source_image_sha256": "a1831547131d7dbaeeb1eaab99c5bdff3aa03dd7de1a04fe6b76ef89a79b21a1"
+    },
+    {
+      "id": "monster_017",
+      "armor": 4,
+      "elusive": 8,
+      "fortified": false,
+      "resist": [],
+      "abilities": [
+        "ignore site fortification",
+        "swift"
+      ],
+      "attacks": [
+        [
+          4,
+          "Physical"
+        ]
+      ],
+      "fame": 3,
+      "summon_count": 0,
+      "defend": 0,
+      "source_image_sha256": "7044fcdf0d31895c8bd9ce4781b7c9605f4677af0b235ad9a8ded2dbe4e880f3"
+    },
+    {
+      "id": "monster_018",
+      "armor": 5,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [
+        "Fire",
+        "Ice"
+      ],
+      "abilities": [
+        "ignore site fortification",
+        "brutal"
+      ],
+      "attacks": [
+        [
+          3,
+          "Physical"
+        ]
+      ],
+      "fame": 3,
+      "summon_count": 0,
+      "defend": 0,
+      "source_image_sha256": "4c76549537a8cd79f78ae92a07ef37a50b8cbac37541bcdaccbe08234c9e8e7c"
+    },
+    {
+      "id": "monster_019",
+      "armor": 5,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [],
+      "abilities": [
+        "brutal"
+      ],
+      "attacks": [
+        [
+          3,
+          "Physical"
+        ]
+      ],
+      "fame": 2,
+      "summon_count": 0,
+      "defend": 0,
+      "source_image_sha256": "f67fa53e19d6b8f197ce3dbdb834ce8568c52c9dbaed0fc6df43fd7922b66a89"
+    },
+    {
+      "id": "monster_020",
+      "armor": 7,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [],
+      "abilities": [
+        "ignore site fortification",
+        "brutal"
+      ],
+      "attacks": [
+        [
+          3,
+          "Physical"
+        ],
+        [
+          3,
+          "Physical"
+        ]
+      ],
+      "fame": 5,
+      "summon_count": 0,
+      "defend": 0,
+      "source_image_sha256": "856542ef9f06cff8e5c02e433fbc140a99d9ae8451847511f6ba0eef64ad4333"
+    },
+    {
+      "id": "monster_021",
+      "armor": 6,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [
+        "Fire"
+      ],
+      "abilities": [
+        "poison",
+        "swift"
+      ],
+      "attacks": [
+        [
+          4,
+          "Physical"
+        ]
+      ],
+      "source_image_sha256": "88f05597c3616d18caef716142839c66c653c654f7c592aa268167928ba9158b",
+      "fame": 5,
+      "summon_count": 0,
+      "defend": 0
+    },
+    {
+      "id": "monster_022",
+      "armor": 4,
+      "elusive": 8,
+      "fortified": false,
+      "resist": [],
+      "abilities": [
+        "magic resist"
+      ],
+      "attacks": [
+        [
+          4,
+          "ColdFire"
+        ]
+      ],
+      "source_image_sha256": "5a91ba7b7c6b715d85934aaa4ecf859defd9aedd664af05ed1a3ed2aab2472f1",
+      "fame": 4,
+      "summon_count": 0,
+      "defend": 0
+    },
+    {
+      "id": "monster_023",
+      "armor": 8,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [
+        "Physical"
+      ],
+      "abilities": [
+        "magic resist"
+      ],
+      "attacks": [],
+      "fame": 9,
+      "summon_count": 2,
+      "defend": 0,
+      "source_image_sha256": "f296f67425ec9759a12851a9ef8f4299faa5cb778340b13c9b0e34f9046f6f7e"
+    },
+    {
+      "id": "monster_024",
+      "armor": 7,
+      "elusive": 14,
+      "fortified": false,
+      "resist": [
+        "Ice"
+      ],
+      "abilities": [
+        "swift"
+      ],
+      "attacks": [
+        [
+          4,
+          "Ice"
+        ]
+      ],
+      "fame": 7,
+      "summon_count": 0,
+      "defend": 0,
+      "source_image_sha256": "2e717ee0e5e58e36fd13fb99573b6343d8cc775c79899d6e1a3f29b071f7cc8e"
+    },
+    {
+      "id": "monster_025",
+      "armor": 7,
+      "elusive": 0,
+      "fortified": true,
+      "resist": [],
+      "abilities": [],
+      "attacks": [
+        [
+          3,
+          "Physical"
+        ]
+      ],
+      "fame": 3,
+      "summon_count": 0,
+      "defend": 0,
+      "source_image_sha256": "45f71c4ed4712f63a0ce94928add094516e9a95c5c3df73d9357c7a9327a2faa"
+    },
+    {
+      "id": "monster_026",
+      "armor": 5,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [
+        "Physical"
+      ],
+      "abilities": [],
+      "attacks": [
+        [
+          2,
+          "Physical"
+        ]
+      ],
+      "fame": 4,
+      "summon_count": 0,
+      "defend": 0,
+      "source_image_sha256": "1db2d0fa6e6252f29488b998793d6d414d5934ae364b5ed7145a80028992e3fd"
+    },
+    {
+      "id": "monster_027",
+      "armor": 5,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [],
+      "abilities": [],
+      "attacks": [
+        [
+          6,
+          "Physical"
+        ]
+      ],
+      "fame": 4,
+      "summon_count": 0,
+      "defend": 0,
+      "source_image_sha256": "03563251ffa6e2aa9e62df96decef35222f836e12f8ffc4dfe20ec75aef10918"
+    },
+    {
+      "id": "monster_028",
+      "armor": 6,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [
+        "Ice"
+      ],
+      "abilities": [],
+      "attacks": [
+        [
+          5,
+          "Ice"
+        ]
+      ],
+      "fame": 5,
+      "summon_count": 0,
+      "defend": 0,
+      "source_image_sha256": "0d372451f18e6cc0f385140bf235b39334a59d0ae39a37be829f513b4f897b2e"
+    },
+    {
+      "id": "monster_029",
+      "armor": 4,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [
+        "Fire",
+        "Physical"
+      ],
+      "abilities": [
+        "brutal"
+      ],
+      "attacks": [
+        [
+          3,
+          "Fire"
+        ]
+      ],
+      "fame": 5,
+      "summon_count": 0,
+      "defend": 0,
+      "source_image_sha256": "568afe7660f6568a76e9cfb05a6bbfed7813abdfcbaa824b34ae7024f5765901"
+    },
+    {
+      "id": "monster_030",
+      "armor": 5,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [
+        "Fire"
+      ],
+      "abilities": [],
+      "attacks": [
+        [
+          6,
+          "Fire"
+        ]
+      ],
+      "fame": 5,
+      "summon_count": 0,
+      "defend": 0,
+      "source_image_sha256": "d50de34e2e1f574a4e1b8029e42198043e1f60bf8fb821fd0aa0d7c668b0a903"
+    },
+    {
+      "id": "monster_031",
+      "armor": 4,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [],
+      "abilities": [],
+      "attacks": [],
+      "fame": 4,
+      "summon_count": 1,
+      "defend": 0,
+      "source_image_sha256": "2cc435fd31091d6b2ae4e1f6d0e6131c3307b49f38499fe54002dbff1d18a951"
+    },
+    {
+      "id": "monster_032",
+      "armor": 3,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [],
+      "abilities": [],
+      "attacks": [
+        [
+          4,
+          "Physical"
+        ]
+      ],
+      "fame": 2,
+      "summon_count": 0,
+      "defend": 0,
+      "source_image_sha256": "f8e8e5b30b1b963133b020c493d3d23a260d5d719bbff57c91003320f593d720"
+    },
+    {
+      "id": "monster_033",
+      "armor": 7,
+      "elusive": 0,
+      "fortified": true,
+      "resist": [
+        "Fire",
+        "Ice",
+        "Physical"
+      ],
+      "abilities": [],
+      "attacks": [
+        [
+          5,
+          "Physical"
+        ]
+      ],
+      "fame": 8,
+      "summon_count": 0,
+      "defend": 0,
+      "source_image_sha256": "223a5ba141490585e55391abfe139353499a3cf5a824706bd1adb854f57d01ae"
+    },
+    {
+      "id": "monster_034",
+      "armor": 7,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [
+        "Fire"
+      ],
+      "abilities": [
+        "swift",
+        "paralyze"
+      ],
+      "attacks": [
+        [
+          3,
+          "Ice"
+        ]
+      ],
+      "fame": 7,
+      "summon_count": 0,
+      "defend": 0,
+      "source_image_sha256": "e0b6047c55c90b916704c61d23d291c4c7b652b55642b67463554e6e11f59c27"
+    },
+    {
+      "id": "monster_035",
+      "armor": 6,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [
+        "Ice"
+      ],
+      "abilities": [
+        "brutal"
+      ],
+      "attacks": [
+        [
+          6,
+          "Fire"
+        ]
+      ],
+      "fame": 7,
+      "summon_count": 0,
+      "defend": 0,
+      "source_image_sha256": "dbaa35ad4e43469d10cc193569360a308c6471650c8c63f5201aa9940fec5ebe"
+    },
+    {
+      "id": "monster_036",
+      "armor": 9,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [
+        "Fire",
+        "Physical"
+      ],
+      "abilities": [],
+      "attacks": [
+        [
+          9,
+          "Fire"
+        ]
+      ],
+      "fame": 8,
+      "summon_count": 0,
+      "defend": 0,
+      "source_image_sha256": "b79c7fa85faa81d180d432c098fd98a0a45ff0688265e27d2e2f8d3fc4cff129"
+    },
+    {
+      "id": "monster_037",
+      "armor": 9,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [
+        "Fire",
+        "Ice"
+      ],
+      "abilities": [
+        "brutal"
+      ],
+      "attacks": [
+        [
+          6,
+          "ColdFire"
+        ]
+      ],
+      "fame": 9,
+      "summon_count": 0,
+      "defend": 0,
+      "source_image_sha256": "db1446574cc2e14f7db7698b7b1e8be7984cb87910766ceb0fb91ec58b50c3d6"
+    },
+    {
+      "id": "monster_038",
+      "armor": 4,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [
+        "Physical"
+      ],
+      "abilities": [],
+      "attacks": [
+        [
+          5,
+          "Physical"
+        ]
+      ],
+      "source_image_sha256": "fbeb504b40f8a0da07c5db19b46e90da7e59b28e1ec333929ec376c8ef848381",
+      "fame": 4,
+      "summon_count": 0,
+      "defend": 0
+    },
+    {
+      "id": "monster_039",
+      "armor": 6,
+      "elusive": 0,
+      "fortified": true,
+      "resist": [],
+      "abilities": [],
+      "attacks": [
+        [
+          6,
+          "Physical"
+        ]
+      ],
+      "source_image_sha256": "6d33cc8c073e44104e1c2110ad8e80a91936d22ae531cc79bce574439ebd891a",
+      "fame": 5,
+      "summon_count": 0,
+      "defend": 0
+    },
+    {
+      "id": "monster_040",
+      "armor": 5,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [],
+      "abilities": [
+        "brutal"
+      ],
+      "attacks": [
+        [
+          5,
+          "Physical"
+        ]
+      ],
+      "source_image_sha256": "ef26829705ec519650aa638e929a20b96b09ad8805854a07a2da12b58e026345",
+      "fame": 4,
+      "summon_count": 0,
+      "defend": 0
+    },
+    {
+      "id": "monster_041",
+      "armor": 5,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [],
+      "abilities": [
+        "swift"
+      ],
+      "attacks": [
+        [
+          7,
+          "Physical"
+        ]
+      ],
+      "source_image_sha256": "86206b195c7810865b1001854212c742695bf7bf1d067d217754b1753ef48c4b",
+      "fame": 5,
+      "summon_count": 0,
+      "defend": 0
+    },
+    {
+      "id": "monster_042",
+      "armor": 9,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [],
+      "abilities": [
+        "paralyze"
+      ],
+      "attacks": [
+        [
+          7,
+          "Physical"
+        ]
+      ],
+      "fame": 6,
+      "summon_count": 0,
+      "defend": 0,
+      "source_image_sha256": "99fb5619175f79f839f18b7c0dcdf71705b0471e61b97ba27bf8485305da4633"
+    },
+    {
+      "id": "monster_043",
+      "armor": 6,
+      "elusive": 8,
+      "fortified": false,
+      "resist": [],
+      "abilities": [
+        "vampirism"
+      ],
+      "attacks": [
+        [
+          8,
+          "Physical"
+        ]
+      ],
+      "fame": 7,
+      "summon_count": 0,
+      "defend": 0,
+      "source_image_sha256": "36e54a665f8cd438597ee09003b542758f1e0cbeada40a13a130aa301a9bcd64"
+    },
+    {
+      "id": "monster_044",
+      "armor": 5,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [
+        "Ice",
+        "Physical"
+      ],
+      "abilities": [
+        "poison"
+      ],
+      "attacks": [
+        [
+          4,
+          "Physical"
+        ]
+      ],
+      "source_image_sha256": "dd8c1b1a944b4da735810686c8990a750ad4b281d0d162bcadf6d8696531a3f3",
+      "fame": 4,
+      "summon_count": 0,
+      "defend": 0
+    },
+    {
+      "id": "monster_045",
+      "armor": 0,
+      "elusive": 5,
+      "fortified": false,
+      "resist": [],
+      "abilities": [
+        "vampirism"
+      ],
+      "attacks": [
+        [
+          5,
+          "Physical"
+        ]
+      ],
+      "source_image_sha256": "bdd73fdc8f142bb4657c755c01107cd7c4c8989c7c8635c496132e7fd9ddddfb",
+      "fame": 4,
+      "summon_count": 0,
+      "defend": 0
+    },
+    {
+      "id": "monster_046",
+      "armor": 6,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [
+        "Fire"
+      ],
+      "abilities": [
+        "brutal",
+        "magic resist"
+      ],
+      "attacks": [
+        [
+          6,
+          "Physical"
+        ]
+      ],
+      "source_image_sha256": "e674289531613ca5ab91e384e84f1fc4109b22bcf49cbb2beff5d99b19fc50de",
+      "fame": 5,
+      "summon_count": 0,
+      "defend": 0
+    },
+    {
+      "id": "monster_047",
+      "armor": 4,
+      "elusive": 8,
+      "fortified": false,
+      "resist": [],
+      "abilities": [
+        "paralyze"
+      ],
+      "attacks": [
+        [
+          4,
+          "Physical"
+        ]
+      ],
+      "source_image_sha256": "de05df1293ed1f123a68f99cf61366f8588aa8c4ac623d184845ab855aa2551d",
+      "fame": 3,
+      "summon_count": 0,
+      "defend": 0
+    },
+    {
+      "id": "monster_048",
+      "armor": 5,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [
+        "Ice"
+      ],
+      "abilities": [
+        "cumbersome"
+      ],
+      "attacks": [
+        [
+          1,
+          "Physical"
+        ],
+        [
+          1,
+          "Physical"
+        ],
+        [
+          1,
+          "Physical"
+        ]
+      ],
+      "fame": 2,
+      "summon_count": 0,
+      "defend": 0,
+      "source_image_sha256": "093004e1faf92d98dfca155cc53d6e4113eb07391247b0c0bc00587e409f0e4b"
+    },
+    {
+      "id": "monster_049",
+      "armor": 5,
+      "elusive": 0,
+      "fortified": true,
+      "resist": [],
+      "abilities": [],
+      "attacks": [],
+      "fame": 3,
+      "summon_count": 1,
+      "defend": 0,
+      "source_image_sha256": "b2ab54687b55d280bedffd753d80e83222fcb2ed60254e6e3a1750265328e330"
+    },
+    {
+      "id": "monster_050",
+      "armor": 4,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [
+        "Fire"
+      ],
+      "abilities": [],
+      "attacks": [
+        [
+          3,
+          "Physical"
+        ]
+      ],
+      "fame": 1,
+      "summon_count": 0,
+      "defend": 0,
+      "source_image_sha256": "7038903cfd9bb6ab47efe4458ce6eacb2ce7ecf1d593b62e83cb39fd00b3dfdd"
+    },
+    {
+      "id": "monster_051",
+      "armor": 7,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [
+        "Physical"
+      ],
+      "abilities": [
+        "brutal"
+      ],
+      "attacks": [
+        [
+          5,
+          "Physical"
+        ]
+      ],
+      "fame": 6,
+      "summon_count": 0,
+      "defend": 0,
+      "source_image_sha256": "be0d8d09cd748e316497eee1a0285ecb6f550a8faafe2827ad484ddadddbd34f"
+    },
+    {
+      "id": "monster_052",
+      "armor": 7,
+      "elusive": 14,
+      "fortified": false,
+      "resist": [
+        "Fire",
+        "Ice"
+      ],
+      "abilities": [],
+      "attacks": [
+        [
+          6,
+          "ColdFire"
+        ]
+      ],
+      "fame": 7,
+      "summon_count": 0,
+      "defend": 0,
+      "source_image_sha256": "75d0bf9ea73acf4984419261bd8f486000a151cbe3e8b70519bee74d7d2ff80b"
+    },
+    {
+      "id": "monster_053",
+      "armor": 5,
+      "elusive": 0,
+      "fortified": true,
+      "resist": [
+        "Physical"
+      ],
+      "abilities": [
+        "brutal",
+        "cumbersome"
+      ],
+      "attacks": [
+        [
+          4,
+          "Physical"
+        ]
+      ],
+      "source_image_sha256": "d2297683148fcf52ac4aeba8940dd790ee660a331355eb13e1f9cbfc6c205d89",
+      "fame": 4,
+      "summon_count": 0,
+      "defend": 0
+    },
+    {
+      "id": "monster_054",
+      "armor": 7,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [
+        "Ice"
+      ],
+      "abilities": [],
+      "attacks": [
+        [
+          6,
+          "Ice"
+        ]
+      ],
+      "source_image_sha256": "a497abddeee4a40d1b0779bb408b1f494879b2eb72ab80c277f6a99558e95f34",
+      "fame": 4,
+      "summon_count": 0,
+      "defend": 0
+    },
+    {
+      "id": "monster_055",
+      "armor": 4,
+      "elusive": 8,
+      "fortified": false,
+      "resist": [
+        "Fire",
+        "Ice"
+      ],
+      "abilities": [
+        "swift"
+      ],
+      "attacks": [
+        [
+          3,
+          "ColdFire"
+        ]
+      ],
+      "source_image_sha256": "c5fcf494770399fbe99a785740d13e4850cdb3e63c1016cee3eb4d49ae27902b",
+      "fame": 4,
+      "summon_count": 0,
+      "defend": 0
+    },
+    {
+      "id": "monster_056",
+      "armor": 4,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [
+        "Fire"
+      ],
+      "abilities": [],
+      "attacks": [
+        [
+          3,
+          "Physical"
+        ]
+      ],
+      "fame": 2,
+      "summon_count": 0,
+      "defend": 2,
+      "source_image_sha256": "e77dbfc79104ca3bc106143ac4479ab622885d281299247fa526cf08d5e7e2a4"
+    },
+    {
+      "id": "monster_057",
+      "armor": 1,
+      "elusive": 2,
+      "fortified": false,
+      "resist": [
+        "Ice"
+      ],
+      "abilities": [],
+      "attacks": [
+        [
+          1,
+          "Ice"
+        ],
+        [
+          1,
+          "Ice"
+        ]
+      ],
+      "fame": 1,
+      "summon_count": 0,
+      "defend": 1,
+      "source_image_sha256": "a18a9720e93cd797500aec07f89af341b51fbc4b02189e5615d32c77bc1fa421"
+    },
+    {
+      "id": "monster_058",
+      "armor": 4,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [],
+      "abilities": [],
+      "attacks": [
+        [
+          1,
+          "Physical"
+        ],
+        [
+          1,
+          "Physical"
+        ]
+      ],
+      "fame": 2,
+      "summon_count": 0,
+      "defend": 0,
+      "source_image_sha256": "7a5b62b9bd0e321d699a0b4f39f6d46b4a344b91f814ca7cd288d1cffb5169d6"
+    },
+    {
+      "id": "monster_059",
+      "armor": 3,
+      "elusive": 6,
+      "fortified": false,
+      "resist": [],
+      "abilities": [
+        "assassination"
+      ],
+      "attacks": [
+        [
+          4,
+          "Physical"
+        ]
+      ],
+      "fame": 3,
+      "summon_count": 0,
+      "defend": 0,
+      "source_image_sha256": "fac8e9550fd490db8a7a687fb6c93fa101dad583e8695b08657bfee93415e11c"
+    },
+    {
+      "id": "monster_060",
+      "armor": 2,
+      "elusive": 0,
+      "fortified": true,
+      "resist": [
+        "Physical"
+      ],
+      "abilities": [
+        "cumbersome"
+      ],
+      "attacks": [
+        [
+          7,
+          "Physical"
+        ]
+      ],
+      "fame": 4,
+      "summon_count": 0,
+      "defend": 0,
+      "source_image_sha256": "467e684e3cabcbd376c24a0325ab42201239f217a9c7b12ffe8e0d12e3180097"
+    },
+    {
+      "id": "monster_061",
+      "armor": 3,
+      "elusive": 6,
+      "fortified": false,
+      "resist": [],
+      "abilities": [
+        "ignore site fortification"
+      ],
+      "attacks": [
+        [
+          5,
+          "Physical"
+        ]
+      ],
+      "fame": 3,
+      "summon_count": 0,
+      "defend": 0,
+      "source_image_sha256": "cace38ac2e63a5229d31c8621c9ea58d74a18e0bd8669186b5098ab57e1d10b8"
+    },
+    {
+      "id": "monster_062",
+      "armor": 5,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [],
+      "abilities": [
+        "swift"
+      ],
+      "attacks": [
+        [
+          3,
+          "Physical"
+        ],
+        [
+          2,
+          "Physical"
+        ]
+      ],
+      "fame": 5,
+      "summon_count": 0,
+      "defend": 0,
+      "source_image_sha256": "38a31d16806569fb9edffffe3ddbc26f92158358bd63cb6147827e15636cb253"
+    },
+    {
+      "id": "monster_063",
+      "armor": 4,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [
+        "Fire"
+      ],
+      "abilities": [],
+      "attacks": [
+        [
+          4,
+          "Physical"
+        ],
+        [
+          2,
+          "Fire"
+        ]
+      ],
+      "fame": 5,
+      "summon_count": 0,
+      "defend": 0,
+      "source_image_sha256": "786546c00ba5666ce595cbcb4aea110c6c3a0c8964f721066c7ef6d475da5ce8"
+    },
+    {
+      "id": "monster_064",
+      "armor": 4,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [
+        "Ice"
+      ],
+      "abilities": [],
+      "attacks": [
+        [
+          3,
+          "Physical"
+        ],
+        [
+          3,
+          "Ice"
+        ]
+      ],
+      "fame": 5,
+      "summon_count": 0,
+      "defend": 0,
+      "source_image_sha256": "cf1d7c3d45b7d50b87477c459c8543bf586811cb9091bb7871cb0562ef81bce5"
+    },
+    {
+      "id": "monster_065",
+      "armor": 6,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [],
+      "abilities": [
+        "magic resist",
+        "assassination",
+        "poison"
+      ],
+      "attacks": [
+        [
+          6,
+          "Physical"
+        ]
+      ],
+      "fame": 5,
+      "summon_count": 0,
+      "defend": 0,
+      "source_image_sha256": "0538290791e9b38e353a0260cfd84ed79861c79dbbaf969a0c4aa1bbc0c30787"
+    },
+    {
+      "id": "monster_066",
+      "armor": 6,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [
+        "Ice"
+      ],
+      "abilities": [],
+      "attacks": [
+        [
+          2,
+          "Physical"
+        ],
+        [
+          2,
+          "Physical"
+        ],
+        [
+          2,
+          "Physical"
+        ]
+      ],
+      "source_image_sha256": "8eb986b0f61a2d626ad80cc3c12d57f10deb8b4954cd3471994ac79804185b85",
+      "fame": 5,
+      "summon_count": 0,
+      "defend": 0
+    },
+    {
+      "id": "monster_067",
+      "armor": 7,
+      "elusive": 0,
+      "fortified": true,
+      "resist": [],
+      "abilities": [
+        "cumbersome"
+      ],
+      "attacks": [
+        [
+          8,
+          "Fire"
+        ]
+      ],
+      "fame": 7,
+      "summon_count": 0,
+      "defend": 0,
+      "source_image_sha256": "e07cd979cf2d41b4adb01c42d8802a7e0296404647ed3fc649bef0e8ae903fa4"
+    },
+    {
+      "id": "monster_068",
+      "armor": 6,
+      "elusive": 0,
+      "fortified": true,
+      "resist": [],
+      "abilities": [
+        "cumbersome"
+      ],
+      "attacks": [
+        [
+          9,
+          "Ice"
+        ]
+      ],
+      "fame": 7,
+      "summon_count": 0,
+      "defend": 0,
+      "source_image_sha256": "438866b4707af9a389c6614828bb0ebdf567213d956373dc56c773768fd4c559"
+    },
+    {
+      "id": "monster_069",
+      "armor": 8,
+      "elusive": 0,
+      "fortified": false,
+      "resist": [
+        "Fire",
+        "Ice"
+      ],
+      "abilities": [
+        "assassination",
+        "paralyze"
+      ],
+      "attacks": [
+        [
+          5,
+          "ColdFire"
+        ]
+      ],
+      "fame": 9,
+      "summon_count": 0,
+      "defend": 0,
+      "source_image_sha256": "be3b92e788b3e0677aa3f7eb71848e21da6f31071022eb8f53d8dc3b972ef552"
+    }
+  ]
+}

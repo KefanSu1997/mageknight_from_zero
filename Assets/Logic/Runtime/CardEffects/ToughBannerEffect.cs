@@ -12,18 +12,10 @@ namespace MK.Logic.Runtime.CardEffects
 
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            if (!_once)
-            {
-                ctx.FirstWoundIgnored = true;
-            }
-            else
-            {
-                if (!ctx.InBattle)
-                {
-                    foreach (var u in player.Units)
-                        u.Heal(int.MaxValue);
-                }
-            }
+            if (!_once) throw new System.InvalidOperationException("强韧旌旗必须通过真实手牌入口附着");
+            if (ctx.InBattle) throw new System.InvalidOperationException("战斗中不能焚毁强韧旌旗治疗部队");
+            foreach (var unit in player.Units)
+                if (!unit.IsDestroyed && unit.Wounds > 0) CardHealing.HealUnit(player,ctx,unit,int.MaxValue);
         }
     }
 }

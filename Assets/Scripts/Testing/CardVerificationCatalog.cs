@@ -13,4 +13,8 @@ public sealed class CardVerificationCatalog : ScriptableObject
 
     public Entry[] cards;
     public TextAsset cases;
+    public Sprite[] unitArtwork;
+    public Sprite originalSkillSheet000;
+    [Serializable] public sealed class EnemyEntry { public string id; public Sprite artwork; }
+    public EnemyEntry[] enemyArtwork;
 }

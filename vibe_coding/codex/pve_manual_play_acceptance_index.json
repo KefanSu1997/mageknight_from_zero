@@ -1,0 +1,44 @@
+{
+  "scope": "manual play feedback: original opening redraw, selected attack sources, targeted UI",
+  "backend": [
+    "AutomationOutputs/RulesState/20260929_233340_e38a1805",
+    "AutomationOutputs/RulesState/20260929_233355_80358625 (8 unchanged cases retained; first combat method superseded)",
+    "AutomationOutputs/RulesState/20260929_234845_5002afb3"
+  ],
+  "scene": [
+    {
+      "run": "20260929_234115_36196f90",
+      "status": "success",
+      "report": "AutomationOutputs/PveBattle/20260929_234115_36196f90/report.json",
+      "sha256": "68ba597493f7e06332817c345af02212e28fddb5346533ccf5507ad55d58f3c2",
+      "operations": 8
+    },
+    {
+      "run": "20260929_234250_95012e6e",
+      "status": "success",
+      "report": "AutomationOutputs/PveBattle/20260929_234250_95012e6e/report.json",
+      "sha256": "341668c535f21b1b0e924e0b0cfcbd2fc7b02d1879a6bd3fc6853c24885ff14a",
+      "operations": 10
+    },
+    {
+      "run": "20260929_235235_657d66a3",
+      "status": "success",
+      "report": "AutomationOutputs/PveBattle/20260929_235235_657d66a3/report.json",
+      "sha256": "560aad0ba802103ca80df434bd5e79d0be118271fbc1d3b55a5d45f7451177e9",
+      "operations": 40
+    },
+    {
+      "run": "20260930_000549_00d62eab",
+      "status": "success",
+      "report": "AutomationOutputs/PveBattle/20260930_000549_00d62eab/report.json",
+      "sha256": "82dc5a2daa4b0ab6a5f6299e0dde5936c310ec9f61f2c06641e9d7e8a61ee9fb",
+      "operations": 42
+    }
+  ],
+  "failedRetained": [
+    "20260929_234428_bd5c96eb",
+    "20260929_235957_616a6d7b"
+  ],
+  "console": "tmp/pve_manual_play_final_console.json",
+  "remotePush": false
+}

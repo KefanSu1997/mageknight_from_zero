@@ -1,0 +1,55 @@
+{
+  "scope": "特立独行逐次影响与禁招募/真实治疗；奥术伪装仅普通2+2影响与真实招募",
+  "backend": {
+    "first": "20260929_100459_9d4fc46a",
+    "firstPassed": 23,
+    "firstFailed": 2,
+    "repair": "20260929_100805_f8b8a812",
+    "repairPassed": 7,
+    "effectivePassed": 30
+  },
+  "scenes": [
+    {
+      "mode": "Lone",
+      "run": "20260929_101151_88767f80",
+      "steps": 72,
+      "assertions": 29,
+      "extraFinalChecks": 5,
+      "report": "AutomationOutputs/PveBattle/20260929_101151_88767f80/report.json",
+      "sha256": "44be159a0e1be0c026e25e27550f6ff2ce6cc02aab45fe40739a71c2ee25d3d4"
+    },
+    {
+      "mode": "Disguise",
+      "run": "20260929_101323_209f8ffa",
+      "steps": 66,
+      "assertions": 104,
+      "extraFinalChecks": 5,
+      "report": "AutomationOutputs/PveBattle/20260929_101323_209f8ffa/report.json",
+      "sha256": "3f5d575eff060fc96c7394344512269321d574f134bf3aa073c79bfdb18b0205"
+    }
+  ],
+  "prefix": {
+    "run": "20260929_100946_efeb0d23",
+    "validThrough": 58,
+    "retainedFailure": 59,
+    "reason": "未关闭真实手牌面板，交涉被遮挡；补正常返回操作，仅59后检查"
+  },
+  "reviewedImages": [
+    "Lone:first56",
+    "Lone:repair63",
+    "Lone:repair69",
+    "Disguise:56",
+    "Disguise:63"
+  ],
+  "console": [
+    "tmp/pve_headband_social_compile_console.json",
+    "tmp/pve_headband_social_final_console.json"
+  ],
+  "unverified": [
+    "奥术伪装翻面借用",
+    "特立独行1/3混选只有后台",
+    "其它动态借用及原地图"
+  ],
+  "fixtureRestored": true,
+  "pushed": false
+}

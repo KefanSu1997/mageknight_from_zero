@@ -1,0 +1,14 @@
+# Complete-episode PPO collection after update40 (2026-10-12)
+
+User required 32 environments, 128 valid full episodes per update and at most128 actions per episode. The former n_steps128 meant4096 transitions, not128 episodes.
+
+complete_episode_collector.py freezes the policy through collection, schedules at most32 independent episodes, retains valid finished episodes, excludes only audited invalid episodes and replaces them until exactly128 valid episodes exist. All accepted sequences are packed consecutively into the upstream recurrent buffer with explicit episode starts, stored actor/critic LSTM states and per-action old values/log probabilities. Upstream SB3 PPO optimizer and sequence minibatching remain unchanged. gamma=1 and lambda=1 produce actual undiscounted episode returns; no terminal bootstrap. Batch-size128 still refers to optimization minibatches, separately from128 episodes.
+
+complete_episode_env.py uses a task-level128-action loss boundary without forging native done/state. Natural terminal at action128 has priority; audit-invalid timeouts are quarantined instead of trained. Evaluation uses the same new horizon; prior20/40 evaluations used the old horizon and are not equivalent comparisons.
+
+Tests: CUDA collector with32 mock environments, varying lengths through128, one injected invalid episode:128 accepted,1 rejected, no invalid terminal reward enters returns, all known returns=-1, upstream optimizer changes parameters. Real native one-action horizon gate verifies timeout loss while native done remains false; this is a boundary gate, not a128-action real rollout claim.
+
+Prior sampled completed training episodes through update40:3022 valid,1 audit invalid,131 valid over128 (4.3355%),1 exactly128, max255,0 wins in over128. This includes valid episodes sampled in a rejected batch; it is not a claim that all were optimized. It excludes unfinished prefixes and fixed evaluation. Details H:/MageKnight_RL_Runs/20261012_combat_fast_eval_100/episode_length_before40.json.
+
+Old fixed eval40 completed124/1000 and old process223988 stopped after summary. New Python218632 launched18:27:15, H:/MageKnight_RL_Runs/20261012_complete128_horizon128_100, restores update40 weights/Adam and sampler RNG/counters; discards old partial episodes from future optimization but retains their old evidence. Starts fresh episode memory at this explicit collection migration. Goal60 more updates to100. New actual update must be verified. Logs complete128_stdout.log/complete128_stderr.log. No claim of improved policy yet.
+`nActual first new update verified: update41,128 valid episodes,7284 transitions,max128 actions,0 rejected. CUDA optimization completed; checkpoint18:30:38 and continuation18:30:47 saved. Collection96.20s, optimization28.90s, archive3.09s; full interval about142s, not under100s. Optimizer n_updates160→164. No stderr errors.

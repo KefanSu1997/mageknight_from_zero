@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "status": "in_implementation_not_accepted",
+  "algorithm": "recurrent_masked_PPO",
+  "encoder_hidden_sizes": [256, 256, 128],
+  "memory": {"type": "GRU", "hidden_size": 256, "reset_only_at_episode_boundary": true},
+  "optimizer_checkpoint_required": true,
+  "task_factors": ["hero", "legal_inventory", "level_and_owned_skills", "original_enemy_group", "day_night", "resources_wounds", "persistent_encounter_sequence"],
+  "coverage_layers": ["original_id_mode_fee_material_consumer", "constrained_pairwise", "critical_three_way", "persistent_sequence"],
+  "sampling_mix": {"coverage_gap": 0.4, "learning_failure": 0.3, "broad_legal_random": 0.2, "retention": 0.1},
+  "victory_pool_admission": "formally_replayed_winning_witness_for_exact_task_goal_or_verified_complete_feasibility_proof",
+  "unknown_tasks": "quarantine_not_proven_impossible",
+  "unsolvable_tasks": "exclude_victory_pool_preserve_evidence_and_original_coverage_gap",
+  "evaluation": {"training_validation_test_separate": true, "legacy_7_14": "diagnostic_validation_only", "test_combinations_not_used_for_tuning": true},
+  "current_gate_supported_goal": "at_least_one_formally_completed_enemy_group",
+  "pending": ["independent_formal_task_reset", "impossibility_solver", "sequence_PPO_runtime", "broader_disjoint_evaluation", "saved_policy_Unity_acceptance"]
+}

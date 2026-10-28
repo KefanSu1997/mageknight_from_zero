@@ -10,6 +10,18 @@ namespace MK.Logic.Runtime
     {
         /// <summary>卡牌静态信息引用。</summary>
         public UnitCard Card { get; init; } = null!;
+        public DeedCard? Banner { get; internal set; }
+        internal PlayerState? BannerOwner { get; set; }
+        internal string? BorrowedBannerId { get; set; }
+        /// <summary>生效旌旗的原定义；Banner始终保存实际附着的物理卡。</summary>
+        public string? BannerEffectId => Banner == null ? null : BorrowedBannerId ?? Banner.Id;
+        public bool CommandBannerFaceDown => BannerEffectId == "items_017" && !IsReady;
+        public bool FortitudeProtectionSelected { get; internal set; }
+        public bool FortitudeBannerSpent => BannerActions.FortitudeSpent(this);
+        public bool CourageBannerSpent => BannerActions.CourageSpent(this);
+        /// <summary>魔宠卡上的颜色标记独立于玩家的可用魔力；新轮须先维持再发动。</summary>
+        public ManaColor? AttunementColor { get; internal set; }
+        public bool NeedsAttunementUpkeep { get; internal set; }
 
         /// <summary>
         /// 建構函式中強制指定卡牌，以取代 C#11 的 <c>required</c> 關鍵字。
@@ -24,7 +36,8 @@ namespace MK.Logic.Runtime
 
         /// <summary>当前是否处于就绪状态。</summary>
         public bool IsReady { get; private set; } = true;
-        public bool CanActivate => IsReady && Wounds == 0 && !IsDestroyed;
+        public bool CanActivate => IsReady && Wounds == 0 && !IsDestroyed
+            && (!Card.RequiresAttunement || AttunementColor.HasValue && !NeedsAttunementUpkeep);
 
         /// <summary>已承受的创伤数量。</summary>
         public int Wounds { get; private set; } = 0;
@@ -74,6 +87,7 @@ namespace MK.Logic.Runtime
         /// <summary>给单位造成伤口，返回实际增加的伤口数。</summary>
         public int AddWounds(int count)
         {
+            if (count > 0 && BannerActions.TryIgnoreWound(this)) return 0;
             int before = Wounds;
             Wounds += count;
             if (Wounds < 0) Wounds = 0;
@@ -93,6 +107,7 @@ namespace MK.Logic.Runtime
         {
             IsDestroyed = true;
             IsReady = false;
+            BannerActions.Release(this);
         }
     }
 }

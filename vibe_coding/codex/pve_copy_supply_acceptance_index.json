@@ -1,0 +1,80 @@
+{
+  "scope": "advanced024/025/030 original copies and shared offered spell entry",
+  "backendPassed": 18,
+  "backendCases": {
+    "MK.Tests.Battles.PveOfferedSpellEntryTests.ActualPermissionPaysOriginalFireballAndKillsWithoutMovingSupplyCard": "20260923_091234_e3d5d8b1",
+    "MK.Tests.Battles.PveOfferedSpellEntryTests.ForgedSupplyReferenceAndMissingPermissionPreserveMoneyAndActualSupply": "20260923_091234_e3d5d8b1",
+    "MK.Tests.Battles.PveOfferedSpellEntryTests.OfferedSacrificeUsesRealMaterialInputAndRestoresCallerScope": "20260923_091234_e3d5d8b1",
+    "MK.Tests.Battles.PveOfferedSpellEntryTests.StrongOfferCastNeedsNightAndBlackThenPaysBothColorsAndActualWound": "20260923_091234_e3d5d8b1",
+    "MK.Tests.Battles.PveOfferedSpellEntryTests.TargetedSpellRejectsInvalidEnemyBeforePaymentThenStopsActualEnemy": "20260923_091234_e3d5d8b1",
+    "MK.Tests.Battles.PveOfferedSpellEntryTests.WrongPhaseAndMissingOriginalFeeKeepGrantedPermission": "20260923_091234_e3d5d8b1",
+    "MK.Tests.Battles.PveCopyDeedEntryTests.BaseBloodlinePaysMatchingColorGainsOriginalCardAndImmediatelyPlaysIt": "20260923_091421_7bed41b2",
+    "MK.Tests.Battles.PveCopyDeedEntryTests.IllegalBorrowedPhaseRejectsHostFeePermanentRemovalAndBloodlineWound": "20260923_091421_7bed41b2",
+    "MK.Tests.Battles.PveCopyDeedEntryTests.LaterCopyMissingFeeKeepsFirstClaimAndCanChooseAnotherLiveSupplyCard": "20260923_091421_7bed41b2",
+    "MK.Tests.Battles.PveCopyDeedEntryTests.MagicTalentDiscardsActualColoredCardAndPermissionPaysOriginalOfferedSpell": "20260923_091421_7bed41b2",
+    "MK.Tests.Battles.PveCopyDeedEntryTests.OverloadDrawsTwoActualCardsThenChoosesHealingAndCannotStartBattleMidEffect": "20260923_091421_7bed41b2",
+    "MK.Tests.Battles.PveCopyDeedEntryTests.PendingCombatCopyCannotAdvanceOrAttackUntilAllThreeOriginalAttacksComplete": "20260923_091421_7bed41b2",
+    "MK.Tests.Battles.PveCopyDeedEntryTests.StrongBloodlineBorrowsActualRangedEffectAndPreservesChosenWoundDestination(False)": "20260923_091421_7bed41b2",
+    "MK.Tests.Battles.PveCopyDeedEntryTests.StrongBloodlineBorrowsActualRangedEffectAndPreservesChosenWoundDestination(True)": "20260923_091421_7bed41b2",
+    "MK.Tests.Battles.PveCopyDeedEntryTests.StrongMagicTalentRequiresTwoBlueForBlueSpellBeforeTakingActualSupply": "20260923_091421_7bed41b2",
+    "MK.Tests.Battles.PveCopyDeedEntryTests.StrongOverloadClaimsFirstSpellThenChoosesDifferentActuallyReplenishedSpell": "20260923_091421_7bed41b2",
+    "MK.Tests.Cards.OverloadContinuationStateTests.ClaimRefillsBeforeNextChoiceAndPaysNewColorOnlyOnce": "20260923_091421_7bed41b2",
+    "MK.Tests.Cards.OverloadContinuationStateTests.DrawThenChooseAgainFromObservedHandWithoutReplayingFirstDraw": "20260923_091421_7bed41b2"
+  },
+  "sceneSteps": 68,
+  "sceneAssertions": 111,
+  "sceneRuns": [
+    {
+      "run": "20260923_091728_7a15bc21",
+      "reportStatus": "success",
+      "acceptedSteps": [
+        0,
+        67
+      ],
+      "reportSha256": "2a9d360672ece0a1b7a063544ed5bd384229f67dca75e95b969105da3d372f71"
+    }
+  ],
+  "screenshotsReviewed": [
+    "AutomationOutputs/PveBattle/20260923_091728_7a15bc21/captures/032_实际蓝色耐力作为天赋材料.png",
+    "AutomationOutputs/PveBattle/20260923_091728_7a15bc21/captures/033_原材料弃牌，生成一次蓝色施法许可.png",
+    "AutomationOutputs/PveBattle/20260923_091728_7a15bc21/captures/038_指定实际存活敌人.png",
+    "AutomationOutputs/PveBattle/20260923_091728_7a15bc21/captures/039_支付蓝晶施放原冰冻，供体不入手不离供应.png",
+    "AutomationOutputs/PveBattle/20260923_091728_7a15bc21/captures/048_真实红晶付款、伤入手、借攻击4且供体保留.png",
+    "AutomationOutputs/PveBattle/20260923_091728_7a15bc21/captures/060_仅先执行一次，供体永久移除且本体只打出一次.png",
+    "AutomationOutputs/PveBattle/20260923_091728_7a15bc21/captures/064_第三次正式完成，释放后续操作.png",
+    "AutomationOutputs/PveBattle/20260923_091728_7a15bc21/captures/065_原治疗点实际移除血脉伤牌.png",
+    "AutomationOutputs/PveBattle/20260923_091728_7a15bc21/captures/067_正式结束第二回合，永久材料不回弃牌.png"
+  ],
+  "console": "tmp/pve_20260923_copy_final_console.json",
+  "mappedDeedIds": 91,
+  "sourceSha256": {
+    "Assets/Logic/Runtime/RepeatedEffectResolution.cs": "4b6d088c18c06a184af142ab65d7cdce0284d303fe61bdd3c542dd837909ddc8",
+    "Assets/Logic/Runtime/CardEffects/OverloadEffect.cs": "205483da5ee795d10570c60b531d002ee10e0023ceed991f7b4d5c35f0aecd0f",
+    "Assets/Logic/Runtime/CardSpellActions.cs": "1902f205459192c47888786760d1fbc11ed3d93ff14577c488e0d243b6d8eca8",
+    "Assets/Logic/Runtime/Battles/PveBattleSession.cs": "4d24f921e212ccea1055dffdfcd198da4bb2b6f1c69651fb604053246c751695",
+    "Assets/Logic/Runtime/Battles/PveJourneySession.cs": "ec4737188da0f87e883754e08a45326eb571a8de6982647d19f4c4132a6163b7",
+    "Assets/Logic/Runtime/Battles/PveJourneySession.OfferedSpells.cs": "560a20c58619814812b572dc5478d23825168d31354a6635b2b70cb74c1b23a0",
+    "Assets/Logic/Runtime/Battles/PveDeedInputs.cs": "29846ef9d4e67e33429f468c7a03a803eda063998e8e3c9a5e50becd9459a329",
+    "Assets/Logic/Runtime/Battles/PveCopyInputs.cs": "10950dab7808f5b38c6ed94f0868ac6b293962b8efd3338bd4657f5df6459dc4",
+    "Assets/Scripts/Battle/PveBattleController.cs": "acb0def43aadd4fb890fc72f74d81282439be7909e06eddafc9b74f623bb06e9",
+    "Assets/Scripts/Battle/PveBattleController.Journey.cs": "4867ac5d50bcbd52b141d0934294c070d8fb3c7f73c3462171b77555055b3e38",
+    "Assets/Scripts/Battle/PveBattleController.DeedInputs.cs": "d7e90d2417a6ac416157f146aa9ded677ad2e907ede0fa7ead5728b1ab73d2e7",
+    "Assets/Scripts/Battle/PveBattleController.CopyInputs.cs": "719502013c3788c2e8e1858625ed2e60d94ddce95cfd5b535ecd7705647590e8",
+    "Assets/Scripts/Battle/PveBattleController.OfferedSpells.cs": "a152ea80f47973016e434ddbbac344b2ab01e69291b8206368a18ac329f88394",
+    "Assets/Tests/RulesState/PveCopyDeedEntryTests.cs": "e2be81af39c4bebfc2a6b957cd1c77dfb734cbb8f06846a69936061e0a90cab8",
+    "Assets/Tests/RulesState/PveOfferedSpellEntryTests.cs": "0667867a2ee9ed1c1cae3f3c452b3f979b503b8e282d2e2e6b4f0fde385a729e",
+    "tools/build_pve_copy_supply_acceptance.py": "b631f5418a504f607a1ded74e2577145bdc9643dcafe85532aa1fe195093bf39"
+  },
+  "pending": [
+    "本批其他基础/强化分支新Demo场景",
+    "复杂供体全部附加输入及多层复制",
+    "复制魔晶力量额外付款颜色与本体实际费用的联动核验",
+    "供应法术多部队及特殊地图消费者",
+    "其余原法术、部队、英雄技能与原世界"
+  ],
+  "notes": [
+    "场景只证明过载基础治疗、天赋基础蓝许可与冰冻停攻、血脉强化反戈伤入手及击杀、正式次回合治疗。",
+    "映射只表示至少一分支，包含历史非官方2；不代表全部原规则通过。",
+    "9关键图查看通过；无需重复全库。整体目标active，未推送上传。"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "scope": "头环借重整旗鼓治疗分支：真实农民承伤→治疗仍耗竭→正式跨轮→原移动消费",
+  "run": "20260929_085709_1a523a2b",
+  "replayedVerifiedPrefix": 75,
+  "newSteps": 37,
+  "assertions": 72,
+  "additionalStateChecks": 7,
+  "screenshotsReviewed": 6,
+  "sha256": "91fd53a35f07f23fbde851e59e4da322b121ca4cc1948bf906cb3f0fccb8dcc5",
+  "backend": "复用pve_headband_targets_acceptance_index.json中的已通过原实现，无重跑",
+  "console": "tmp/pve_headband_rally_heal_console.json",
+  "fixtureRestored": true
+}

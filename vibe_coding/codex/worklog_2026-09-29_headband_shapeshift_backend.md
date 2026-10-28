@@ -1,0 +1,9 @@
+# 头环变换身形后台（待协调验证）
+
+独占修改ShapeshiftActions，新增HeadbandShapeshiftBorrowTests。Play/Borrow复用单一核心，只有所有权/个人次数改为窄物理头环授权；不临时取得技能，不改原卡效果。成功借用不写个人次数；实际强化费、弃牌与NextCardEnhanced仍由CardPlayActions执行一次。finally恢复转换目标/材料，保护物理头环不能当材料。
+
+HasBorrowInput仅尝试真实基本手牌、基础/强化、原固定输出与真实材料，使用原效果validator和额外费用接口、ManaPool只读付款规划；不出牌/付款/回滚。强化许可参与原效果选择与免费费用判断。
+
+三个新增案例覆盖绿费行进转格挡与第二次缺费守恒后基本出牌完成、随机应变实际弃牌/头环保护/无材料可结束及普通后续行进不继承转换、真实专注免费强化只作用第一张且实际格挡消费。推荐直接回归PveShapeshiftSkillTests；测试只调用公开入口与查询，避免Unity程序集internal可见性问题。
+
+按主代理最新协调，未自行CLI/Unity；等待主代理合批新增和直接受影响范围验证，当前不记通过。

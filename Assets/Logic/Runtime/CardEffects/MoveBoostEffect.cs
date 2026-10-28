@@ -3,7 +3,7 @@ namespace MK.Logic.Runtime.CardEffects
     /// <summary>
     /// 永不止步：移動並提升後續移動牌的效果。
     /// </summary>
-    public sealed class MoveBoostEffect : ICardEffect
+    public sealed class MoveBoostEffect : ICardEffect, IFixedCardOutput
     {
         private readonly int _move;
         private readonly bool _all;
@@ -13,9 +13,10 @@ namespace MK.Logic.Runtime.CardEffects
             _all = all;
         }
 
+        public System.Collections.Generic.IReadOnlyList<FixedCardOutput> FixedOutputs => new[] { new FixedCardOutput(0, FixedOutputKind.Movement, _move) };
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            ctx.MovementPool += _move;
+            FixedCardOutputs.Add(ctx, FixedOutputs[0]);
             if (_all)
                 ctx.MoveBonusAll += 1;
             else

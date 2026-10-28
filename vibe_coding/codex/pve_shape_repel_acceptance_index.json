@@ -1,0 +1,184 @@
+{
+  "scope": "001:06变换身形、007:07魔法抗拒主要合法输入与连续消费者；不是全部分支完成",
+  "backendEffectivePasses": 94,
+  "backendRuns": [
+    "20260929_042611_94aec17f",
+    "20260929_042732_8761c929",
+    "20260929_042919_a8ec8e0a"
+  ],
+  "sceneRuns": [
+    {
+      "report": "AutomationOutputs\\PveBattle\\20260929_043048_9c2fe881\\report.json",
+      "sha256": "55c8c36dd08e3e98fbd96ad117ecf8851e3a8a430857544c693e4328d56ae24e",
+      "acceptedZeroBasedSteps": [
+        0,
+        59
+      ],
+      "checks": 81,
+      "screenshots": [
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_043048_9c2fe881\\captures\\031_本回合承诺不取源骰.png",
+          "sha256": "5dc22101fabf6797f280a0ab4d5c1057a90b9816efb4362173c73bf8a16d64a2",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_043048_9c2fe881\\captures\\032_实际横置3与回合限制.png",
+          "sha256": "731764d0f6669398725e5d7c7157b1d91a9bf7f5a9980b7e9bd46629a991ce9a",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_043048_9c2fe881\\captures\\038_真实攻击消费.png",
+          "sha256": "ec2bd5a64a3958f6a91a3808ee4d7fe3db50d31bc7fe2711f43cb8c30842ea0c",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_043048_9c2fe881\\captures\\040_正式结束第一回合.png",
+          "sha256": "6e3e18aab650d5a8a8b1a23efab2951bcb770bd50c79517211850e17b8589ca4",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_043048_9c2fe881\\captures\\044_真实取骰并保留历史.png",
+          "sha256": "78827cec072edaca90b3d37f870711f223cd0abf3db9db78ede34cdff78f9a9b",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_043048_9c2fe881\\captures\\051_已用源骰选择2.png",
+          "sha256": "6213ed7f1b6e42271b0daa3d2b9d73ce3afaf8acd59ff226d6ce259be8325a4a",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_043048_9c2fe881\\captures\\052_横置原牌移动2.png",
+          "sha256": "e8e1e05d5e8d726116b5d200a3880609ee361513ce5d9a826e59475cb9d4f6c1",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_043048_9c2fe881\\captures\\057_支付实际地形费用.png",
+          "sha256": "a09e4239d2f3bb775ddc99d8192a3f95b1d2d31e74526e2b9ab7c2b558369af0",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_043048_9c2fe881\\captures\\059_正式两回合保留牌区.png",
+          "sha256": "f41ac7ba04649aec60e9b3827aa093ab9c66f9cbe2ae9688fa6a140506af9969",
+          "visuallyInspected": true
+        }
+      ]
+    },
+    {
+      "report": "AutomationOutputs\\PveBattle\\20260929_043229_1f8a7c26\\report.json",
+      "sha256": "ebc518f5565c74412ca28c569663d96de0ab9ecdb013812ebe53ef2b9e03345a",
+      "acceptedZeroBasedSteps": [
+        0,
+        81
+      ],
+      "checks": 101,
+      "screenshots": [
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_043229_1f8a7c26\\captures\\030_选择原固定项.png",
+          "sha256": "41803d74a8de73708229dd37895380bae4b2300707f59c22504b8ce78148e856",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_043229_1f8a7c26\\captures\\031_蓝费原移动4转格挡4.png",
+          "sha256": "028acf289abc28394cc934653120b69e6c73000f8159cc15f05fbe0123fac07b",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_043229_1f8a7c26\\captures\\034_真实格挡消费.png",
+          "sha256": "d9f2c9a6b9a852b61adbbf1ea8e5b51e1d1934dd75dced6473ce66f226b2bdb3",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_043229_1f8a7c26\\captures\\044_原攻击4实际击杀.png",
+          "sha256": "8dcda433e0a332ade464fd111a79cb6b92869b7748c3973e4d5eb8e184dab96a",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_043229_1f8a7c26\\captures\\046_同玩家正式结束回合.png",
+          "sha256": "0a5e33ce078ec3e4e82d5185499b1fc543ee0cb06d1e25a66b4b5fa6d8560e0d",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_043229_1f8a7c26\\captures\\056_选择原固定项.png",
+          "sha256": "adb0e524937300438f68abca4e6184952dc96b52e965092505845dc05a2e890b",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_043229_1f8a7c26\\captures\\057_原冰格挡3转冰攻击3.png",
+          "sha256": "c0837e5f8ca652d73fb7a2e790fcaebf8834b07f114d53ac5d3b0ec4e3ba2eec",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_043229_1f8a7c26\\captures\\062_冰3加物理1实际击杀.png",
+          "sha256": "5cc9644a45ae99bbe655d7839d2e7ae5b97f0b7b0c042c67e348b8e55ed86360",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_043229_1f8a7c26\\captures\\064_同玩家正式结束回合.png",
+          "sha256": "343a16cc90d4335c07e41ed581e3ff2d79fefa6454eda4bf0bbf0bd50360511e",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_043229_1f8a7c26\\captures\\073_原行进材料.png",
+          "sha256": "ce05a15bf9da484d567ffc835c2df2465f48cab2c4e9410b48d8fdec33ba32d4",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_043229_1f8a7c26\\captures\\074_实际弃材料且固定攻击转移动3.png",
+          "sha256": "1074e0f23e4191c229c76b6e2a5d4365e644952c9d41b49203ad6a7ae9f3e2d4",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_043229_1f8a7c26\\captures\\079_原森林费用3实际消费.png",
+          "sha256": "5ac59b13f20b0caf68dac2b6847e3bdc23d6e3e1f691f2f2ed076bbda08774db",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_043229_1f8a7c26\\captures\\081_正式三回合守恒.png",
+          "sha256": "2242e36e9fbe69fd2155c191d6cce3ebf255eaff2a8c0af67eb4c51a5d454865",
+          "visuallyInspected": true
+        }
+      ]
+    }
+  ],
+  "acceptedSteps": 142,
+  "acceptedChecks": 182,
+  "acceptedScreenshots": 22,
+  "console": "tmp/pve_20260929_shape_repel_final_console.json",
+  "legalSkillEntries": 50,
+  "missingSkillEntries": 20,
+  "limits": [
+    "变换德鲁伊额外格子地形输入尚待接；部分其他固定项/动态附效仅后台",
+    "魔法抗拒风暴/转换细分组合解释待核；战术保留骰例外仅后台",
+    "共用英雄立绘和自定地图仍是既有局限"
+  ],
+  "source": [
+    {
+      "path": "Assets/GameData/BattleDemo/original_skills.json",
+      "sha256": "9be430b8479edd6e16be99766160e100947a5ae7426b93010bf5de6b4c91c1b8"
+    },
+    {
+      "path": "Assets/Logic/Runtime/ShapeshiftActions.cs",
+      "sha256": "2e0c7a893e71d104ffd5fd92c95c982a70f8f510f2fe3767c3411b0fe68767a3"
+    },
+    {
+      "path": "Assets/Logic/Runtime/SkillActions.cs",
+      "sha256": "580e51e402ed7eb7f64a16b406948c58e089d7680e760d38437f4ce41bb7d11a"
+    },
+    {
+      "path": "Assets/Scripts/Battle/PveBattleController.Shapeshift.cs",
+      "sha256": "3c13a0988e9778f0c6367521d6449627b491fbb0c4c48b161f8299422031d3c6"
+    },
+    {
+      "path": "Assets/Scripts/Battle/PveBattleController.SidewaysSkills.cs",
+      "sha256": "2acf171d69ae56c294bfa897265c8c30c489656aeb04003ea8254947aaa15760"
+    },
+    {
+      "path": "tools/build_pve_magic_repel_acceptance.py",
+      "sha256": "db88dcef7593893dcc46c87f5d795538f260b28c563485f2ca9204f05ac1fe9b"
+    },
+    {
+      "path": "tools/build_pve_shapeshift_acceptance.py",
+      "sha256": "60e1eab321cfd1f05d6678d86d7b3d2d0cb23d4d69a3f105a05262899646451e"
+    }
+  ]
+}

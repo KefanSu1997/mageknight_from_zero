@@ -1,0 +1,41 @@
+"""One legal Arythea journey: actual wound payment, next-turn material, opposite crystal and consumers."""
+import json,sys
+from pathlib import Path
+steps=[]
+def click(path,label,expected=None,capture=False):
+    steps.append(dict(buttonPath='Canvas/BattleTable/'+path,label=label,waitAfterSeconds=.3,skipScreenshot=not capture,after=[dict(key=k,expected=str(v),rule='原魔咒/两极分化只支付当次实际原费用；真实材料与库存、每回合次数、原牌效果及正式后续消费者') for k,v in {'ui.truncated':'',**(expected or {})}.items()]))
+(click('Btn_Menu', '打开战斗菜单'), click('Btn_Camp','合法原构筑'));click('CampShade/Camp/Btn_Loadout','原资源')
+for _ in range(2):click('CampShade/Picker/Btn_NextPage','下一页')
+click('CampShade/Picker/Btn_Select_39','红蓝各一晶')
+click('CampShade/Camp/Btn_ChooseCards','实际原牌');p='CampShade/DeedPicker/';click(p+'Btn_ClearDeeds','清空旧构筑')
+for c in ['000','001','007']:click(p+'Btn_ChooseDeed_basic_card_'+c,'原基础牌')
+click(p+'Btn_DeedNext','下一页')
+for c in ['014','016','021','022']:click(p+'Btn_ChooseDeed_basic_card_'+c,'原基础牌')
+click(p+'Btn_DoneDeeds','确认');click('CampShade/Camp/Btn_SmallDeckHeroBuild','合法原英雄')
+click('CampShade/HeroBuild/Btn_Hero_Arythea','阿瑞希亚');click('CampShade/HeroBuild/Btn_Level_4','合法等级4')
+for s in [6,7]:click('CampShade/HeroBuild/Btn_Skill_'+str(s),'原魔咒与两极分化')
+click('CampShade/HeroBuild/Btn_Begin','同一真实玩家',{'hero.id':'Arythea','hero.skills':2})
+click('Tactic_day_1/Btn_Tactic_day_1','原战术');click('Btn_BeginTurn','正式回合开始')
+click('Btn_JourneyEncounter_4','实际狼骑兵')
+for _ in range(3):click('Inspector/Btn_Next','实际攻击阶段')
+click('Hand/Btn_Card_basic_card_021_0','原狂怒');click('Inspector/Btn_Choice_strong','原强化红费')
+click('Inspector/Btn_ManaPayment','付款技能');click('ManaPayment/Btn_Required_Red','原红费')
+click('ManaPayment/Btn_Next','实际材料下一页');click('ManaPayment/Btn_Material_6','实际新伤材料',{'wounds':1,'skills.used':'False,False'},True)
+click('ManaPayment/Btn_Select','确认输入尚不花费',{'wounds':1,'red':1,'skills.used':'False,False'})
+click('Inspector/Btn_Play','真实弃伤支付强化狂怒',{'wounds':0,'red':1,'tokens.red':0,'skills.used':'True,False','melee':4},True)
+click('Enemy_0/Btn_Target','实际狼骑兵');click('Inspector/Btn_Resolve','原攻击4实际击杀',{'kills':1,'melee':0},True)
+click('Inspector/Btn_Next','战斗结束');click('Inspector/Btn_EndTurn','正式回合结束',{'journey.completedTurns':1});click('Btn_BeginTurn','同一玩家第二回合',{'skills.used':'False,False'})
+click('Btn_JourneyHand','真实保留手牌');click('JourneyHand/Btn_Hand_0','原行进');click('JourneyHand/Btn_OutsideChoice_strong','绿费移动4')
+click('JourneyHand/Btn_ManaPayment','本次魔咒费用');click('ManaPayment/Btn_Required_Green','原绿费');click('ManaPayment/Btn_Material_0','实际宁静材料',capture=True)
+click('ManaPayment/Btn_Select','输入不弃牌');click('JourneyHand/Btn_PlayOutside','真实弃普通牌支付原移动',{'movement':4,'tokens.green':0,'red':1,'blue':1,'skills.used':'True,False'},True)
+click('JourneyHand/Btn_CloseHand','返回');click('Btn_JourneyMap','实际地图');click('JourneyMap/Btn_Hex_forest','实际森林');click('JourneyMap/Btn_Move','实际移动消费3',{'movement':1,'journey.position':'1,0'});click('JourneyMap/Btn_CloseMap','返回')
+click('Btn_JourneyEncounter_0','实际兽人');click('Hand/Btn_Card_basic_card_007_0','原敏捷');click('Inspector/Btn_Choice_strong','白费远程3')
+click('Inspector/Btn_ManaPayment','本次两极费用');click('ManaPayment/Btn_Skill_1','原两极分化');click('ManaPayment/Btn_Required_White','原白费');click('ManaPayment/Btn_Source_Blue','实际蓝晶变换',{'blue':1,'skills.used':'True,False'},True)
+click('ManaPayment/Btn_Select','选择不消费');click('Inspector/Btn_Play','实际蓝晶支付原白费',{'blue':0,'white':0,'tokens.white':0,'skills.used':'True,True','ranged':3},True)
+click('Enemy_0/Btn_Target','实际兽人');click('Inspector/Btn_Resolve','远程3实际击杀',{'kills':1,'ranged':0},True)
+for _ in range(4):click('Inspector/Btn_Next','完成正式剩余战斗阶段')
+click('Inspector/Btn_EndTurn','两回合两战正式连续',{'journey.completedTurns':2,'journey.completedBattles':2,'journey.samePlayer':'True'},True)
+if '--from' in sys.argv:
+    for s in steps[:int(sys.argv[sys.argv.index('--from')+1])]:s['after']=[];s['skipScreenshot']=True
+Path('AutomationConfigs/pve_battle.json').write_text(json.dumps(dict(scenePath='Assets/Scenes/Part1/Part1_PveBattle.unity',captureInitialView=False,initialDelaySeconds=2,defaultWaitAfterSeconds=.3,maxRunSeconds=240,useRunSubfolder=False,steps=steps),ensure_ascii=False,indent=2),encoding='utf-8')
+print(len(steps),'steps',sum(len(s['after']) for s in steps),'checks')

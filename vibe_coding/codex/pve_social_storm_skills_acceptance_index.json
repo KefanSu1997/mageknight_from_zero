@@ -1,0 +1,97 @@
+{
+  "date": "2026-09-29",
+  "scope": "原英雄交涉/风暴6技能合法入口与实际消费者",
+  "backend": {
+    "passed": 23,
+    "retainedFailedFixtureRun": "AutomationOutputs/RulesState/20260929_020834_8e973f3c",
+    "path": "AutomationOutputs/RulesState/20260929_020955_20da8c83"
+  },
+  "skills": [
+    {
+      "id": "hero_skill_pool_000:03",
+      "entry": "integrated",
+      "backend": "passed",
+      "scene": "pending"
+    },
+    {
+      "id": "hero_skill_pool_002:03",
+      "entry": "integrated",
+      "backend": "passed",
+      "scene": "pending"
+    },
+    {
+      "id": "hero_skill_pool_001:02",
+      "entry": "integrated",
+      "backend": "passed",
+      "scene": "指定连续场景分支通过，非全部选色/地点"
+    },
+    {
+      "id": "hero_skill_pool_001:03",
+      "entry": "integrated",
+      "backend": "passed",
+      "scene": "指定连续场景分支通过，非全部选色/地点"
+    },
+    {
+      "id": "hero_skill_pool_001:04",
+      "entry": "integrated",
+      "backend": "passed",
+      "scene": "指定连续场景分支通过，非全部选色/地点"
+    },
+    {
+      "id": "hero_skill_pool_005:05",
+      "entry": "integrated",
+      "backend": "passed",
+      "scene": "pending"
+    }
+  ],
+  "scene": {
+    "effectiveSteps": 85,
+    "runs": [
+      {
+        "report": "AutomationOutputs/PveBattle/20260929_021242_8d1270c5/report.json",
+        "sha256": "0D674A914833707A5580FC65D64EDD22D758CA6A97177C165CE0F1AC59F7AD52",
+        "acceptedStepRange": [
+          0,
+          73
+        ],
+        "checks": 101,
+        "images": [
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_021242_8d1270c5\\captures\\022_保留合法等级与原技能开始.png",
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_021242_8d1270c5\\captures\\029_正式发动原技能.png",
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_021242_8d1270c5\\captures\\046_正式发动原技能.png",
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_021242_8d1270c5\\captures\\054_原费用4真实招募.png",
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_021242_8d1270c5\\captures\\064_正式发动原技能.png"
+        ],
+        "note": "仅复用技能/移动/招募前缀；旧74–84护甲错误不采用"
+      },
+      {
+        "report": "AutomationOutputs/PveBattle/20260929_021712_b7d5dc17/report.json",
+        "sha256": "E6A7D64EC05FC6C29B96BC364583C03D5492C9A97E7C556A34CA259C888025E6",
+        "acceptedStepRange": [
+          74,
+          84
+        ],
+        "checks": 22,
+        "images": [
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_021712_b7d5dc17\\captures\\082_原攻击4真实击杀.png",
+          "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_021712_b7d5dc17\\captures\\084_同英雄两回合保留实际部队与伤牌.png"
+        ],
+        "note": "修复等级6护甲3后补验战斗与实际伤牌"
+      }
+    ],
+    "consoleErrorCounts": [
+      0,
+      0
+    ],
+    "console": "tmp/pve_20260929_social_skills_final_console.json",
+    "effectiveAssertions": 123,
+    "effectiveImages": 7
+  },
+  "limitations": [
+    "秘密谈判、公开谈判、荧光灵运待独立英雄场景",
+    "其余风暴选色、迷醉城防/魔法林地仅后台",
+    "MagicalGlade枚举不等于实际原板块/招募接入",
+    "27/70有技能映射，不等于27技能完整规则通过",
+    "合法已学技能构筑不冒充自然升级过程"
+  ]
+}

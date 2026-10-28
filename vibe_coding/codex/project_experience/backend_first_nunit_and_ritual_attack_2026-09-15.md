@@ -1,0 +1,9 @@
+# 后台先测再场景：同源NUnit与仪式攻击
+
+Assets/Logic没有UnityEngine依赖；可用独立.NET 8入口直接编译正式源码，并使用Unity现有NUnit框架内的NUnitTestAssemblyRunner执行同一份测试。必须显式筛选，失败非零退出，报告标记仅后台状态；之后仍有Unity真实操作、显示和原素材验收。不要从Unity生成的csproj改起，不要另造规则解释器。
+
+本机SDK离线恢复曾试图要求无关桌面/Web引用包；NuGet.Config清空来源并设置EnableTargetingPackDownload=false，使用已有核心包。NUnit使用CountTestCases而非ExploreTests，ITestResult没有TotalCount，汇总Pass/Fail/Skip/Inconclusive；保持任何跳过/不确定非零。
+
+仪式攻击必须由实际材料原卡决定颜色，不能信任option。DeedCard为record，值相等不等于同一张手牌；先按引用确认拥有，再按引用索引移除，非法选择在魔力付费前拒绝。元素与攻城通过CombatPower保留到真实战斗结算。原耐力basic_card_014是蓝色，不能将它当绿色测试材料；绿色行进是basic_card_000。对错误夹具改材料，不改规则数值。
+
+后台通过后仍发现UI说明截断：只精简目标专属夹具的两行布局，保留ui:textFits断言，不为界面修复重跑已过后台测试。仅16个相关场景执行，无全库重测。完整证据和明确未覆盖范围见vibe_coding/codex/worklog_2026-09-15_backend_first_ritual.md。

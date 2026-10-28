@@ -1,0 +1,7 @@
+# Conversion and healing actual UI costs, 2026-10-13
+
+Added conversion panel approach/return and exact One/All controls, explicit original source card IDs advanced_card_006 / advanced_card_018, plus outside and battle healing targets. First batch accepted 39 healing-related pairs (78 native snapshots). After source-card binding repair, conversion batch accepted 29 additional pairs (58 snapshots). Twenty intermediate atomic conversion amounts were independently proved incompatible: actual UI has only One/All, separate formal native replay produces the exact original effect. CombatPowerPool creates distinct contributions for repeated one-point conversions, so repeated clicks are not substituted for one atomic N conversion. Completion cost remains NULL; failed attempts retained.
+
+Three remaining material failures were caused by incorrectly pairing audit-identity-sorted zones.hand with physical hand card types. Material selection now reconstructs physical ordered membership through handOrder → instance map before applying the original per-card filter and UI material slot. Same three fixed IDs replayed successfully, with six independent native effect snapshots. Existing accepted snapshots had full effect checks; their evidence remains unchanged.
+
+Current active five-cap plan: 658 measured / 4,083; 110 fully measured Kind-pair groups; 55 independently verified incompatible samples. All 1,009 requested groups remain in scope. No changes to normal Demo game rules, training policy or live training jobs. Full baseline incomplete.

@@ -1,0 +1,182 @@
+{
+  "scope": "原阿瑞希亚两极000:07白昼黑付基本色、黑夜金付强化法术黑费；原同护符正常产色，正式跨轮和实际战斗消费者",
+  "status": "scene_passed",
+  "run": "20260929_190632_8d1aeca1",
+  "report": "AutomationOutputs/PveBattle/20260929_190632_8d1aeca1/report.json",
+  "sha256": "ed914bd45b6f5e323c561cb7425b9d9e8a277befe6fb7fbfcbf7ec7b0d3f7306",
+  "operations": 89,
+  "assertions": 142,
+  "backend": {
+    "xml": "AutomationOutputs/RulesState/20260929_190011_18c19a2b/results.xml",
+    "sha256": "b4aa93b1f7ad4f2c94b4b297186dba0b51c64e8a98883fe599f938ad08dcd59a",
+    "method": "MK.Tests.Battles.PvePolarizationSpecialJourneyTests.OriginalAmuletDayBlackAndNightGoldPayActualOppositeCostsAcrossFormalRound",
+    "result": "Passed",
+    "batchNote": "该批两方法2/2；本范围仅引用两极一方法，另方法为克朗减甲"
+  },
+  "identityChecks": [
+    {
+      "step": 20,
+      "hero": "Arythea",
+      "samePlayer": "True",
+      "round": "1",
+      "dayPart": "Day",
+      "skillUsed": "False"
+    },
+    {
+      "step": 46,
+      "hero": "Arythea",
+      "samePlayer": "True",
+      "round": "1",
+      "dayPart": "Day",
+      "skillUsed": "True"
+    },
+    {
+      "step": 55,
+      "hero": "Arythea",
+      "samePlayer": "True",
+      "round": "2",
+      "dayPart": "Night",
+      "skillUsed": "True"
+    },
+    {
+      "step": 56,
+      "hero": "Arythea",
+      "samePlayer": "True",
+      "round": "2",
+      "dayPart": "Night",
+      "skillUsed": "False"
+    },
+    {
+      "step": 58,
+      "hero": "Arythea",
+      "samePlayer": "True",
+      "round": "2",
+      "dayPart": "Night",
+      "skillUsed": "False"
+    },
+    {
+      "step": 81,
+      "hero": "Arythea",
+      "samePlayer": "True",
+      "round": "2",
+      "dayPart": "Night",
+      "skillUsed": "True"
+    },
+    {
+      "step": 83,
+      "hero": "Arythea",
+      "samePlayer": "True",
+      "round": "2",
+      "dayPart": "Night",
+      "skillUsed": "True"
+    },
+    {
+      "step": 88,
+      "hero": "Arythea",
+      "samePlayer": "True",
+      "round": "2",
+      "dayPart": "Night",
+      "skillUsed": "True"
+    }
+  ],
+  "actualCosts": [
+    {
+      "step": 46,
+      "dayPart": "Day",
+      "originalCard": "basic_card_007",
+      "required": "White",
+      "actualSource": "Black token from actual items_015 normal",
+      "sourceBefore": 1,
+      "sourceAfter": 0,
+      "redUnchanged": 1,
+      "blueUnchanged": 1,
+      "ranged": [
+        0,
+        3
+      ],
+      "skillUsed": [
+        "False",
+        "True"
+      ]
+    },
+    {
+      "step": 81,
+      "dayPart": "Night",
+      "originalCard": "magic_009 strong",
+      "required": "Black plus original Red",
+      "actualSource": "Gold token from same original amulet after formal round",
+      "gold": [
+        1,
+        0
+      ],
+      "redCrystal": [
+        1,
+        0
+      ],
+      "blackToken": [
+        0,
+        0
+      ],
+      "siege": [
+        0,
+        8
+      ],
+      "wounds": [
+        0,
+        1
+      ],
+      "skillUsed": [
+        "False",
+        "True"
+      ]
+    }
+  ],
+  "roundFlow": {
+    "steps": [
+      55,
+      56,
+      58
+    ],
+    "round": [
+      1,
+      2
+    ],
+    "dayPart": [
+      "Day",
+      "Night"
+    ],
+    "handAfterPrepare": 5,
+    "skillUsedAfterPrepare": false,
+    "note": "场景通过samePlayer/实际牌区及正式轮次证明连续；同护符物理引用另由后台SameAs核对，不虚构场景未观察的牌实例字段"
+  },
+  "reviewedScreenshots": [
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_190632_8d1aeca1\\captures\\046_正式整笔原费用支付并标记技能本回合已用.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_190632_8d1aeca1\\captures\\081_正式整笔原费用支付并标记技能本回合已用.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_190632_8d1aeca1\\captures\\083_原强化火焰攻城8实际击杀且保留自伤.png"
+  ],
+  "visualReview": "主代理逐图目视原素材、费用池、攻城8/真伤1/击杀正常",
+  "final": {
+    "step": 88,
+    "completedTurns": 2,
+    "completedBattles": 2,
+    "fame": 20,
+    "hand": 1,
+    "discard": 5,
+    "wounds": 1,
+    "red": 0,
+    "blue": 1
+  },
+  "finalConsole": {
+    "path": "tmp/pve_special_primary_final_console.json",
+    "sha256": "8d62f369865d478d110ffb57efc54be5aff20c4f4af96e654eba68ad28fb3864",
+    "errorCounts": [
+      0,
+      0
+    ]
+  },
+  "limitations": [
+    "合法五牌自定构筑，非标准16牌开局",
+    "本次使用真实神器产生库存色，不把旧TurnTo源骰测试冒充场景；实际源骰领取分支未在本场景复验",
+    "共享hero ledger由主代理单独汇总；不宣称整英雄或全部技能已完成"
+  ]
+}

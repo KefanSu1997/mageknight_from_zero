@@ -12,7 +12,12 @@ namespace MageKnight.SceneAutomation.Editor
     public static class UnitVerificationMenu
     {
         [MenuItem("Tools/Mage Knight/Original Cards/Run Units")]
-        public static void Run()
+        public static void Run() => RunConfig("AutomationConfigs/AllOriginalCards/units.json");
+
+        [MenuItem("Tools/Mage Knight/Original Cards/Run Focused Units")]
+        public static void RunFocused() => RunConfig("AutomationConfigs/AllOriginalCards/units_focused.json");
+
+        private static void RunConfig(string configPath)
         {
             if (EditorApplication.isPlaying) throw new InvalidOperationException("请先退出运行模式");
             const string data = "Assets/Resources/CardVerification/unit_cases.json";
@@ -31,6 +36,15 @@ namespace MageKnight.SceneAutomation.Editor
                 EditorSceneManager.SaveScene(scene, path); EditorSceneManager.CloseScene(scene, true);
                 if (original.IsValid()) SceneManager.SetActiveScene(original);
             }
+            // Refresh original artwork when newly audited units join the catalog.
+            var updateScene = SceneManager.GetSceneByPath(path);
+            bool wasLoaded = updateScene.IsValid() && updateScene.isLoaded;
+            if (!wasLoaded) updateScene = EditorSceneManager.OpenScene(path,OpenSceneMode.Additive);
+            var existing = updateScene.GetRootGameObjects().SelectMany(g=>g.GetComponentsInChildren<UnitVerificationController>()).Single();
+            existing.artwork = UnitJsonLoader.SupportedIds.Select(id=>AssetDatabase.LoadAssetAtPath<Sprite>("Assets/GameData/cards/"+id+".png")).ToArray();
+            if (existing.artwork.Any(s=>s==null)) throw new InvalidOperationException("原部队图片缺失");
+            EditorSceneManager.SaveScene(updateScene,path);
+            if (!wasLoaded) EditorSceneManager.CloseScene(updateScene,true);
             foreach (string generated in new[] { path, path + ".meta", data + ".meta" })
             {
                 if (!File.Exists(generated)) continue;
@@ -42,7 +56,7 @@ namespace MageKnight.SceneAutomation.Editor
             GameViewResolutionUtility.TrySetFixedResolution(1920, 1080, "OriginalCards_1920x1080");
             string root = "AutomationOutputs/OriginalUnits/" + DateTime.Now.ToString("yyyyMMdd_HHmmss") + "_" + Guid.NewGuid().ToString("N").Substring(0, 8);
             Directory.CreateDirectory(root);
-            var request = JsonUtility.FromJson<SceneAutomationRequest>(File.ReadAllText("AutomationConfigs/AllOriginalCards/units.json"));
+            var request = JsonUtility.FromJson<SceneAutomationRequest>(File.ReadAllText(configPath));
             request.reportPath = root + "/report.json"; request.screenshotsDirectory = root + "/captures";
             string config = root + "/request.json"; File.WriteAllText(config, JsonUtility.ToJson(request, true));
             SceneAutomationCommand.RunFromProjectRelativeConfig(config);

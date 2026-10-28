@@ -1,0 +1,43 @@
+{
+  "status": "source candidate only",
+  "assets": [
+    {
+      "source": "AutomationOutputs/RsiGame/experiments/20261021_mageknight_unity_30/art_candidates/user_crop_rejection_v1/monster_032_illustration_v2.png",
+      "status": "candidate integrated in source; Unity import and visual acceptance unverified",
+      "asset": "Assets/Resources/UI/EnemyIllustrations/r13/monster_032.png",
+      "sha256": "0D856BB128B8E34EC91CC51F12EE8114DB567F44E6D437BE6B05DAB990687C88",
+      "id": "monster_032"
+    },
+    {
+      "source": "AutomationOutputs/RsiGame/experiments/20261021_mageknight_unity_30/art_candidates/user_crop_rejection_v1/monster_049_illustration_v1.png",
+      "status": "candidate integrated in source; Unity import and visual acceptance unverified",
+      "asset": "Assets/Resources/UI/EnemyIllustrations/r13/monster_049.png",
+      "sha256": "E6A192F2DD8530D993B31134E9B9338660237F06E1BEC008B14537860F74336B",
+      "id": "monster_049"
+    },
+    {
+      "source": "AutomationOutputs/RsiGame/experiments/20261021_mageknight_unity_30/art_candidates/three_enemy_fixture_v1/monster_037_illustration_v2.png",
+      "status": "candidate integrated in source; Unity import and visual acceptance unverified",
+      "asset": "Assets/Resources/UI/EnemyIllustrations/r13/monster_037.png",
+      "sha256": "9BC6CF3A0709F68DEB0E7666C0A27A2D61175B868780D7461B660B14F34F0520",
+      "id": "monster_037"
+    },
+    {
+      "source": "AutomationOutputs/RsiGame/experiments/20261021_mageknight_unity_30/art_candidates/three_enemy_fixture_v1/monster_065_illustration_v1.png",
+      "status": "candidate integrated in source; Unity import and visual acceptance unverified",
+      "asset": "Assets/Resources/UI/EnemyIllustrations/r13/monster_065.png",
+      "sha256": "6EA166A997831B869F09A0BE08B3FCA0C803948C01419009D9FBAA9FB44DB25A",
+      "id": "monster_065"
+    },
+    {
+      "source": "AutomationOutputs/RsiGame/experiments/20261021_mageknight_unity_30/art_candidates/three_enemy_fixture_v1/monster_068_illustration_v1.png",
+      "status": "candidate integrated in source; Unity import and visual acceptance unverified",
+      "asset": "Assets/Resources/UI/EnemyIllustrations/r13/monster_068.png",
+      "sha256": "3F1B72DA1A25C140E70DC671F563E215EC9A12FD4E4AA99A86999C8B70159792",
+      "id": "monster_068"
+    }
+  ],
+  "selection": "Actually inspected all seven candidate PNGs and provenance. 032v2 and 037v2 improve safe margin compared with v1; 049v1 has limited upper margin; 065 rear companion naturally occluded; all whole images displayed without crop.",
+  "limitations": "These five IDs only. Other IDs use complete original token fit, not a new illustration. Full-body completions are presentation interpretation; no rules or formal attributes edited.",
+  "generation": "Existing built-in image_gen candidates reused unchanged; prompts, originals, rejected versions and per-ID manifests retained under experiment/art_candidates"
+}

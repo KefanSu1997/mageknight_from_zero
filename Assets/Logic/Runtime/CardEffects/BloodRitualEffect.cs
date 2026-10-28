@@ -1,54 +1,63 @@
+using System;
+using System.Linq;
 using MK.Logic.Core;
 
 namespace MK.Logic.Runtime.CardEffects
 {
-    /// <summary>
-    /// 鮮血儀式：自我受創獲取魔力，強化時可轉換為水晶。
-    /// option 指定標記顏色索引 0-5。
-    /// </summary>
-    public sealed class BloodRitualEffect : ICardEffect
+    /// <summary>Take a real wound; choose each token and optionally crystallize one basic-color mana.</summary>
+    public sealed class BloodRitualEffect : ICardEffect, ICardEffectValidator, ICardContextualManaCost
     {
         private readonly bool _enh;
         public BloodRitualEffect(bool enhanced) => _enh = enhanced;
 
+        public void Validate(PlayerState player, ActionContext ctx, int option)
+        {
+            if (option < 0 || option > 5)
+                throw new InvalidOperationException("鲜血仪式必须选择有效魔力颜色");
+            if (!_enh) return;
+            if (ctx.BloodRitualColors.Count != 0 &&
+                (ctx.BloodRitualColors.Count != 3 || ctx.BloodRitualColors.Any(c => (int)c < 0 || (int)c > 5)))
+                throw new InvalidOperationException("鲜血仪式强化必须分别选择三枚魔力颜色");
+            if (ctx.BloodRitualCrystalColor is ManaColor crystal && ((int)crystal < 0 || (int)crystal > 3))
+                throw new InvalidOperationException("鲜血仪式只能转换红蓝绿白魔晶");
+        }
+
+        private ManaColor[] Tokens(ActionContext ctx, int option) =>
+            ctx.BloodRitualColors.Count == 0
+                ? new[] { (ManaColor)option, (ManaColor)option, (ManaColor)option }
+                : ctx.BloodRitualColors.ToArray();
+
+        public ManaColor[] GetAdditionalManaCost(PlayerState player, ActionContext ctx, int option)
+        {
+            // A color not produced by this card must be affordable together with the printed fee.
+            if (_enh && ctx.BloodRitualCrystalColor is ManaColor color && !Tokens(ctx, option).Contains(color))
+                return new[] { color };
+            return Array.Empty<ManaColor>();
+        }
+
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            var color = (ManaColor)System.Math.Clamp(option, 0, 5);
+            Validate(player, ctx, option);
             player.Wounds += 1;
-
             if (!_enh)
             {
                 player.Mana.AddCrystal(ManaColor.Red, 1);
-                player.Mana.AddToken(color, 1);
+                player.Mana.AddToken((ManaColor)option, 1);
             }
             else
             {
-                for (int i = 0; i < 3; i++)
-                    player.Mana.AddToken(color, 1);
-
-                // 嘗試支付同色魔力換取晶體
-                if (color <= ManaColor.White &&
-                    PayColor(player, color))
+                var tokens = Tokens(ctx, option);
+                foreach (var color in tokens) player.Mana.AddToken(color, 1);
+                if (ctx.BloodRitualCrystalColor is ManaColor crystal)
                 {
-                    player.Mana.AddCrystal(color, 1);
+                    // New mana is paid here; any other color was paid atomically above.
+                    if (tokens.Contains(crystal) && !player.Mana.TryPayExactColors(new[] { crystal }, ctx, player))
+                        throw new InvalidOperationException("鲜血仪式新产生的转晶魔力不足");
+                    player.Mana.AddCrystal(crystal, 1);
                 }
             }
-        }
-
-        private static bool PayColor(PlayerState player, ManaColor color)
-        {
-            if (player.Mana.Tokens.TryGetValue(color, out int t) && t > 0)
-            {
-                if (--t == 0) player.Mana.Tokens.Remove(color); else player.Mana.Tokens[color] = t;
-                return true;
-            }
-            if (player.Mana.Crystals.TryGetValue(color, out int c) && c > 0)
-            {
-                if (--c == 0) player.Mana.Crystals.Remove(color); else player.Mana.Crystals[color] = c;
-                return true;
-            }
-            return false;
+            ctx.BloodRitualColors.Clear();
+            ctx.BloodRitualCrystalColor = null;
         }
     }
 }
-

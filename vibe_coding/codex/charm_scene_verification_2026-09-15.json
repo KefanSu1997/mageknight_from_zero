@@ -1,0 +1,247 @@
+{
+  "asOf": "2026-09-15",
+  "scope": "33 focused cases only; partial is NOT full-card acceptance",
+  "latestCounts": {
+    "partial": 26,
+    "passed": 7
+  },
+  "checks": 622,
+  "runs": [
+    {
+      "run": "20260915_011309_22987088",
+      "effectsSha256": "e015243ea79b2f7d3437e37ae994ee7d1514bde9df8118891a3b3b7320e7b32d",
+      "reportSha256": "a514631bd10aee69ce01a5d94e55bc06462c2f4ef260f8ae6eb5c9a92e35b25f",
+      "suiteSha256": "0e03fe0853ed50b811aac8da212d1062a09ad948169cbadc72c5115d30516f9d"
+    },
+    {
+      "run": "20260915_012016_42584824",
+      "effectsSha256": "908f04bf4471c256608d6b24ba4b1b3869b2a25c9626c628e31a88e73e9416b5",
+      "reportSha256": "777c4bf01b2ba92e8eb97b4e48fba34a867b39a7a83c474cdda8bfc2bd194dd1",
+      "suiteSha256": "b7061a0ace426902ed535d2c8897ad2c59a90b9e6ea08d82d60fe89ae63381dc"
+    }
+  ],
+  "cases": {
+    "magic_021_00": {
+      "status": "partial",
+      "checks": 9,
+      "allChecksMatch": true,
+      "source": "AutomationOutputs\\AllOriginalCards\\20260915_011309_22987088\\magic\\effects.json"
+    },
+    "magic_021_01": {
+      "status": "partial",
+      "checks": 11,
+      "allChecksMatch": true,
+      "source": "AutomationOutputs\\AllOriginalCards\\20260915_011309_22987088\\magic\\effects.json"
+    },
+    "magic_021_22": {
+      "status": "partial",
+      "checks": 11,
+      "allChecksMatch": true,
+      "source": "AutomationOutputs\\AllOriginalCards\\20260915_011309_22987088\\magic\\effects.json"
+    },
+    "magic_021_23": {
+      "status": "partial",
+      "checks": 12,
+      "allChecksMatch": true,
+      "source": "AutomationOutputs\\AllOriginalCards\\20260915_011309_22987088\\magic\\effects.json"
+    },
+    "magic_021_24": {
+      "status": "partial",
+      "checks": 11,
+      "allChecksMatch": true,
+      "source": "AutomationOutputs\\AllOriginalCards\\20260915_011309_22987088\\magic\\effects.json"
+    },
+    "magic_021_25": {
+      "status": "partial",
+      "checks": 12,
+      "allChecksMatch": true,
+      "source": "AutomationOutputs\\AllOriginalCards\\20260915_011309_22987088\\magic\\effects.json"
+    },
+    "magic_021_26": {
+      "status": "partial",
+      "checks": 11,
+      "allChecksMatch": true,
+      "source": "AutomationOutputs\\AllOriginalCards\\20260915_011309_22987088\\magic\\effects.json"
+    },
+    "magic_021_27": {
+      "status": "partial",
+      "checks": 12,
+      "allChecksMatch": true,
+      "source": "AutomationOutputs\\AllOriginalCards\\20260915_011309_22987088\\magic\\effects.json"
+    },
+    "magic_021_28": {
+      "status": "partial",
+      "checks": 11,
+      "allChecksMatch": true,
+      "source": "AutomationOutputs\\AllOriginalCards\\20260915_011309_22987088\\magic\\effects.json"
+    },
+    "magic_021_29": {
+      "status": "partial",
+      "checks": 11,
+      "allChecksMatch": true,
+      "source": "AutomationOutputs\\AllOriginalCards\\20260915_011309_22987088\\magic\\effects.json"
+    },
+    "magic_021_30": {
+      "status": "partial",
+      "checks": 14,
+      "allChecksMatch": true,
+      "source": "AutomationOutputs\\AllOriginalCards\\20260915_011309_22987088\\magic\\effects.json"
+    },
+    "magic_021_31": {
+      "status": "partial",
+      "checks": 14,
+      "allChecksMatch": true,
+      "source": "AutomationOutputs\\AllOriginalCards\\20260915_011309_22987088\\magic\\effects.json"
+    },
+    "magic_021_32": {
+      "status": "passed",
+      "checks": 30,
+      "allChecksMatch": true,
+      "source": "AutomationOutputs\\AllOriginalCards\\20260915_011309_22987088\\magic\\effects.json"
+    },
+    "magic_021_33": {
+      "status": "passed",
+      "checks": 30,
+      "allChecksMatch": true,
+      "source": "AutomationOutputs\\AllOriginalCards\\20260915_011309_22987088\\magic\\effects.json"
+    },
+    "magic_021_34": {
+      "status": "passed",
+      "checks": 30,
+      "allChecksMatch": true,
+      "source": "AutomationOutputs\\AllOriginalCards\\20260915_011309_22987088\\magic\\effects.json"
+    },
+    "magic_021_35": {
+      "status": "passed",
+      "checks": 30,
+      "allChecksMatch": true,
+      "source": "AutomationOutputs\\AllOriginalCards\\20260915_011309_22987088\\magic\\effects.json"
+    },
+    "magic_021_36": {
+      "status": "passed",
+      "checks": 30,
+      "allChecksMatch": true,
+      "source": "AutomationOutputs\\AllOriginalCards\\20260915_011309_22987088\\magic\\effects.json"
+    },
+    "magic_021_37": {
+      "status": "passed",
+      "checks": 30,
+      "allChecksMatch": true,
+      "source": "AutomationOutputs\\AllOriginalCards\\20260915_011309_22987088\\magic\\effects.json"
+    },
+    "magic_021_38": {
+      "status": "partial",
+      "checks": 11,
+      "allChecksMatch": true,
+      "source": "AutomationOutputs\\AllOriginalCards\\20260915_011309_22987088\\magic\\effects.json"
+    },
+    "magic_021_39": {
+      "status": "passed",
+      "checks": 30,
+      "allChecksMatch": true,
+      "source": "AutomationOutputs\\AllOriginalCards\\20260915_011309_22987088\\magic\\effects.json"
+    },
+    "magic_021_40": {
+      "status": "partial",
+      "checks": 12,
+      "allChecksMatch": true,
+      "source": "AutomationOutputs\\AllOriginalCards\\20260915_011309_22987088\\magic\\effects.json"
+    },
+    "magic_021_41": {
+      "status": "partial",
+      "checks": 20,
+      "allChecksMatch": true,
+      "source": "AutomationOutputs\\AllOriginalCards\\20260915_011309_22987088\\magic\\effects.json"
+    },
+    "magic_021_42": {
+      "status": "partial",
+      "checks": 25,
+      "allChecksMatch": true,
+      "source": "AutomationOutputs\\AllOriginalCards\\20260915_011309_22987088\\magic\\effects.json"
+    },
+    "magic_021_43": {
+      "status": "partial",
+      "checks": 24,
+      "allChecksMatch": true,
+      "source": "AutomationOutputs\\AllOriginalCards\\20260915_011309_22987088\\magic\\effects.json"
+    },
+    "magic_021_44": {
+      "status": "partial",
+      "checks": 24,
+      "allChecksMatch": true,
+      "source": "AutomationOutputs\\AllOriginalCards\\20260915_011309_22987088\\magic\\effects.json"
+    },
+    "magic_021_45": {
+      "status": "partial",
+      "checks": 19,
+      "allChecksMatch": true,
+      "source": "AutomationOutputs\\AllOriginalCards\\20260915_011309_22987088\\magic\\effects.json"
+    },
+    "magic_021_46": {
+      "status": "partial",
+      "checks": 18,
+      "allChecksMatch": true,
+      "source": "AutomationOutputs\\AllOriginalCards\\20260915_011309_22987088\\magic\\effects.json"
+    },
+    "magic_021_47": {
+      "status": "partial",
+      "checks": 19,
+      "allChecksMatch": true,
+      "source": "AutomationOutputs\\AllOriginalCards\\20260915_011309_22987088\\magic\\effects.json"
+    },
+    "magic_021_48": {
+      "status": "partial",
+      "checks": 17,
+      "allChecksMatch": true,
+      "source": "AutomationOutputs\\AllOriginalCards\\20260915_011309_22987088\\magic\\effects.json"
+    },
+    "magic_021_49": {
+      "status": "partial",
+      "checks": 18,
+      "allChecksMatch": true,
+      "source": "AutomationOutputs\\AllOriginalCards\\20260915_011309_22987088\\magic\\effects.json"
+    },
+    "magic_021_50": {
+      "status": "partial",
+      "checks": 24,
+      "allChecksMatch": true,
+      "source": "AutomationOutputs\\AllOriginalCards\\20260915_011309_22987088\\magic\\effects.json"
+    },
+    "magic_021_51": {
+      "status": "partial",
+      "checks": 19,
+      "allChecksMatch": true,
+      "source": "AutomationOutputs\\AllOriginalCards\\20260915_011309_22987088\\magic\\effects.json"
+    },
+    "magic_021_52": {
+      "status": "partial",
+      "checks": 23,
+      "allChecksMatch": true,
+      "source": "AutomationOutputs\\AllOriginalCards\\20260915_012016_42584824\\magic\\effects.json"
+    }
+  },
+  "compileChecks": [
+    {
+      "at": "2026-09-15T01:20:13.349718",
+      "result": {
+        "status": "success",
+        "result": {
+          "success": true,
+          "message": "Retrieved 0 log entries.",
+          "data": []
+        }
+      }
+    },
+    {
+      "at": "2026-09-15T01:20:13.356060",
+      "result": {
+        "status": "success",
+        "result": {
+          "success": true,
+          "message": "Retrieved 0 log entries.",
+          "data": []
+        }
+      }
+    }
+  ]
+}

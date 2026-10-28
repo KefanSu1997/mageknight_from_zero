@@ -1,0 +1,61 @@
+{
+  "scope": "灵动基础/强化、外交普通/冰/火、宁静时光基础/强化后台；场景灵动强化远程/近攻、外交冰格挡、宁静基础治疗。",
+  "backendPassed": 9,
+  "backendCases": {
+    "MK.Tests.Battles.PveConversionEntryTests.AgilitySpendsSharedMovementAndActualAttackBeforeNextTurnExpiry(False)": "20260923_080828_2ea9e221",
+    "MK.Tests.Battles.PveConversionEntryTests.AgilitySpendsSharedMovementAndActualAttackBeforeNextTurnExpiry(True)": "20260923_080828_2ea9e221",
+    "MK.Tests.Battles.PveConversionEntryTests.ContinuousOriginalCrystalAgilityDiplomacyBattleAndNextTurnHealing": "20260923_080828_2ea9e221",
+    "MK.Tests.Battles.PveConversionEntryTests.DiplomacyConsumesActualInfluenceAsTypedBlock(\"strong_ice\",Ice)": "20260923_080828_2ea9e221",
+    "MK.Tests.Battles.PveConversionEntryTests.DiplomacyConsumesActualInfluenceAsTypedBlock(\"strong_fire\",Fire)": "20260923_080828_2ea9e221",
+    "MK.Tests.Battles.PveConversionEntryTests.PeacefulReadyUsesActualUnitLevelAndDoesNotHealItsWound": "20260923_080828_2ea9e221",
+    "MK.Tests.Battles.PveConversionEntryTests.DiplomacyConsumesActualInfluenceAsTypedBlock(\"base\",Physical)": "20260923_080902_f8177230",
+    "MK.Tests.Battles.PveConversionEntryTests.PeacefulHealingSpendsInfluenceAndExcludesBattleAndMovement(False)": "20260923_080902_f8177230",
+    "MK.Tests.Battles.PveConversionEntryTests.PeacefulHealingSpendsInfluenceAndExcludesBattleAndMovement(True)": "20260923_080902_f8177230"
+  },
+  "sceneRun": "20260923_081031_839be624",
+  "sceneSteps": 82,
+  "sceneAssertions": 129,
+  "reportSha256": "ccaf636541e0cfed1e2991edec55d94264a061e65c5649d6d917e2b7a44a44c9",
+  "screenshotsReviewed": 7,
+  "screenshots": [
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_081031_839be624\\captures\\037_按原卡进行资源转换.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_081031_839be624\\captures\\038_移动2换远程1.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_081031_839be624\\captures\\047_影响4换寒冰格挡4.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_081031_839be624\\captures\\052_真实第二攻击造成两张伤牌.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_081031_839be624\\captures\\072_宁静时光原规则及真实资源.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_081031_839be624\\captures\\078_治疗第二张真实伤牌.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260923_081031_839be624\\captures\\081_正式结束第二回合.png"
+  ],
+  "console": "tmp/pve_20260923_conversion_final_console.json",
+  "sourceSha256": {
+    "Assets/Logic/Runtime/Battles/PveBattleSession.cs": "79f64678937fbf60bdf99d0e5d5812906a3430df54fa66c02198b5cf9426c231",
+    "Assets/Logic/Runtime/Battles/PveJourneySession.Interaction.cs": "4b9ff26690ec842236acdf7ec2248f9ffbfeafd7a9252cb6bf6dd31a155e72de",
+    "Assets/Scripts/Battle/PveBattleController.Conversions.cs": "d01c99209b84938040a1793a60fd3c9e15fa564770f719f325bd73dfbed42b4b",
+    "Assets/Scripts/Battle/PveBattleController.cs": "21cbca02713aa4ceebfb560e136a335d5843bb446f5981f3a74c4b0b1c2e1f8a",
+    "Assets/Scripts/Battle/PveBattleController.Journey.cs": "3a84d54c83a6d7aebf938e52de4ea947ab7d038d6a0e11aee945d84d01f13c07",
+    "Assets/Scripts/Battle/PveBattleController.JourneyHand.cs": "6e499054eaf998352d7a7538d1d54e2a8195947b2746771a6f8bfce1366af396",
+    "Assets/Scripts/Battle/PveBattleController.JourneySupport.cs": "476cce918b06abeede467ca5a1b8751282dd171f987da76595c55947ad478991",
+    "Assets/Tests/RulesState/PveConversionEntryTests.cs": "7c5cf7687d01bf54b872fde042c239de03835624b09efd82e13eab7cb9c19abd",
+    "tools/build_pve_conversion_acceptance.py": "ee5444861c96e4b8731897ae59dc39e64f3d7e9ec1c5df3e7f34e6767d0bdd56"
+  },
+  "pending": [
+    "灵动基础转换新Demo场景",
+    "外交基础和火焰新Demo场景及元素攻击消费者",
+    "宁静时光强化真实部队重整场景"
+  ],
+  "notes": [
+    "首次9例6通过，3空库回合夹具失败仅补3。原失败报告保留。",
+    "历史场景标签中护甲误4，实际原图/后台/场景为3；basic008应为承诺。生成器文字修正，不改旧报告。",
+    "总体目标仍active；入库分支不是全卡全规则通过。"
+  ],
+  "correction_20260929": {
+    "reason": "Old outside-battle Agility sequence illegally carried movement across movement/action boundary; original evidence retained, affected sequence superseded.",
+    "replacementRun": "20260929_071942_05d69b10",
+    "verifiedRange": [
+      31,
+      79
+    ],
+    "assertions": 95,
+    "index": "vibe_coding/codex/pve_shared_skills_foundation_index.json"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "scope": "原巫师免费远程3、原斥候移动2/攻城1，同玩家两单位正式跨轮连续实际消费者",
+  "status": "scene_passed",
+  "run": "20260929_181557_d1629d33",
+  "report": "AutomationOutputs/PveBattle/20260929_181557_d1629d33/report.json",
+  "sha256": "3469300042887d4ef4a1288f67f490b9fd17f10038b214166b102614e1a00590",
+  "totalOperations": 92,
+  "unassertedSetupOperations": 19,
+  "assertedOperations": 73,
+  "consumerRouteOperations": 67,
+  "assertedSetupOperations": 6,
+  "newAssertions": 141,
+  "countingNote": "0–18共19起点重放无断言不计新增；19–24共6仅布局检查，25–91共67路线操作。73有断言步骤不冒充73能力消费者。",
+  "unitIdentityChecks": [
+    {
+      "step": 25,
+      "instances": "army_014:-1030767852,army_2_009:-491793980",
+      "samePlayer": "True",
+      "ready": "True,True"
+    },
+    {
+      "step": 61,
+      "instances": "army_014:-1030767852,army_2_009:-491793980",
+      "samePlayer": "True",
+      "ready": "False,False"
+    },
+    {
+      "step": 64,
+      "instances": "army_014:-1030767852,army_2_009:-491793980",
+      "samePlayer": "True",
+      "ready": "True,True"
+    },
+    {
+      "step": 91,
+      "instances": "army_014:-1030767852,army_2_009:-491793980",
+      "samePlayer": "True",
+      "ready": "True,False"
+    }
+  ],
+  "consumers": [
+    {
+      "unitId": "army_2_009",
+      "mode": "移动2",
+      "steps": [
+        32,
+        37
+      ],
+      "result": "真实原移动2付平原2到0,1，斥候耗竭"
+    },
+    {
+      "unitId": "army_014",
+      "mode": "免费远程3",
+      "steps": [
+        54,
+        56
+      ],
+      "result": "原032甲3被免费远程3单独击杀，名望15到17"
+    },
+    {
+      "unitId": "army_2_009",
+      "mode": "攻城1",
+      "steps": [
+        80,
+        86
+      ],
+      "result": "同斥候正式跨轮重整，攻城1与蓝费利斧3合计4恰杀甲4狼骑；名望21、蓝0、声誉0"
+    }
+  ],
+  "reviewedScreenshots": [
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_181557_d1629d33\\captures\\037_斥候移动2支付真实平原费用2.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_181557_d1629d33\\captures\\056_仅巫师免费远程3真正击杀.png",
+    "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_181557_d1629d33\\captures\\086_攻城1加真实蓝费远程3击杀；原强化利斧名望+1.png"
+  ],
+  "visualReview": "主代理已逐图目视37/56/86，正常；本索引代理仅核报告身份状态",
+  "backendReused": [
+    "AutomationOutputs/RulesState/20260923_021816_212ab687/results.xml: OriginalSorcererModesPayTheirOwnFeesAndFeedRealRangedAttack(0,\"monster_032\",2)",
+    "AutomationOutputs/RulesState/20260923_030209_f193d1c4/results.xml: PrintedSiegeAddsOneToActualOriginalRangedAttack (仅此Passed方法，原整批存在失败)",
+    "AutomationOutputs/RulesState/20260923_100318_20787bba/results.xml: OriginalMovementEntersSharedPoolAndMovesSamePlayer(\"army_2_009\",2,3)"
+  ],
+  "console": {
+    "status": "two reads, zero errors",
+    "path": "tmp/pve_primary_delta_final_console.json"
+  },
+  "limitations": [
+    "合法Lv4五原牌自定构筑，非标准16牌开局/自然招募",
+    "既有演练地图与敌群，不替代斥候原两格探索",
+    "未覆盖勇者突袭附费/精英招募翻倍、魔宠其他基础分支；不宣称全规则完成"
+  ],
+  "statusCorrection": "21:20仅修正文档状态；实际双零证据早已存在，不是新验收、不增加通过数。"
+}

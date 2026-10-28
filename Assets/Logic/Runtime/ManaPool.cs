@@ -15,42 +15,62 @@ namespace MK.Logic.Runtime
         /// <summary>僅本回合可用的法力標記。</summary>
         public Dictionary<ManaColor, int> Tokens { get; } = new();
 
-        /// <summary>
-        /// Pay already-selected mana colors atomically, tokens before crystals.
-        /// Wild source dice must first be converted to the selected color by the source flow.
-        /// </summary>
+        /// <summary>Preview exactly the same transaction, including its skill and source color.</summary>
+        public bool TryPreviewExactColors(IEnumerable<ManaColor> colors, ActionContext context,
+            out Dictionary<ManaColor, int> remainingCrystals)
+        {
+            bool paid = Plan(colors, context, out var tokens, out var crystals, out _, out _);
+            remainingCrystals = paid ? crystals : new Dictionary<ManaColor, int>(Crystals);
+            return paid;
+        }
+
+        private bool Plan(IEnumerable<ManaColor> colors, ActionContext context,
+            out Dictionary<ManaColor, int> tokens, out Dictionary<ManaColor, int> crystals,
+            out List<ManaColor> effective, out ManaSkillPayment skill)
+        {
+            tokens = new Dictionary<ManaColor, int>(Tokens);
+            crystals = new Dictionary<ManaColor, int>(Crystals);
+            effective = new List<ManaColor>(colors);
+            skill = context.ManaSkillPayment;
+            if (skill != null && skill.Consumed) skill = null;
+            var costs = new List<ManaColor>(effective);
+            foreach (var color in costs)
+                if (!System.Enum.IsDefined(typeof(ManaColor), color)) return false;
+            // An empty/nonmatching original cost rejects before any effect can mutate the game.
+            if (skill != null && !skill.ReplaceCost(costs, context)) return false;
+            foreach (var color in costs)
+            {
+                if (context.InfiniteMana.Contains(color)) continue;
+                if (tokens.GetValueOrDefault(color) > 0) tokens[color]--;
+                else if (color.IsBasic() && (context.DayPart == DayPart.Day || context.AllowGoldAtNight || context.GoldManaWild)
+                    && tokens.GetValueOrDefault(ManaColor.Gold) > 0) tokens[ManaColor.Gold]--;
+                else if (crystals.GetValueOrDefault(color) > 0) crystals[color]--;
+                else return false;
+            }
+            return true;
+        }
+
         public bool TryPayExactColors(IEnumerable<ManaColor> colors, ActionContext context, PlayerState owner = null)
         {
-            var needs = new Dictionary<ManaColor, int>();
-            foreach (var color in colors)
+            if (context.ManaSkillPayment != null && owner != null && !ReferenceEquals(owner, context.ManaSkillPayment.Owner))
+                throw new System.InvalidOperationException("魔力技能付款不能转交其他玩家");
+            if (!Plan(colors, context, out var tokens, out var crystals, out var effective, out var skill)) return false;
+            var paid = effective.FindAll(color => !context.InfiniteMana.Contains(color));
+            context.SharedSkills?.ValidateManaPayment(owner ?? skill?.Owner, context, paid);
+            // All resources, source quota, material identity and skill uses were checked before this commit.
+            skill?.Commit(context);
+            foreach (var pair in Crystals)
             {
-                if (!System.Enum.IsDefined(typeof(ManaColor), color)) return false;
-                if (!context.InfiniteMana.Contains(color))
-                    needs[color] = needs.GetValueOrDefault(color) + 1;
+                int spent = pair.Value - crystals.GetValueOrDefault(pair.Key);
+                if (spent > 0) context.SpentCrystals[pair.Key] = context.SpentCrystals.GetValueOrDefault(pair.Key) + spent;
             }
-            foreach (var need in needs)
-                if (Tokens.GetValueOrDefault(need.Key) + Crystals.GetValueOrDefault(need.Key) < need.Value)
-                    return false;
-
-            // Nothing changes until every color, including repeated costs, is affordable.
-            foreach (var need in needs)
-            {
-                int tokens = System.Math.Min(Tokens.GetValueOrDefault(need.Key), need.Value);
-                int crystals = need.Value - tokens;
-                if (tokens > 0)
-                {
-                    Tokens[need.Key] -= tokens;
-                    if (Tokens[need.Key] == 0) Tokens.Remove(need.Key);
-                }
-                if (crystals == 0) continue;
-                Crystals[need.Key] -= crystals;
-                context.SpentCrystals[need.Key] = context.SpentCrystals.GetValueOrDefault(need.Key) + crystals;
-                if (owner != null && owner.ManaCurseColor == need.Key && !owner.ManaCurseTriggered)
-                {
-                    owner.Wounds++;
-                    owner.ManaCurseTriggered = true;
-                }
-            }
+            Tokens.Clear();
+            foreach (var pair in tokens) if (pair.Value > 0) Tokens[pair.Key] = pair.Value;
+            Crystals.Clear();
+            foreach (var pair in crystals) Crystals[pair.Key] = pair.Value;
+            foreach (var color in effective)
+                if (!context.InfiniteMana.Contains(color)) NotifyManaSpent(owner ?? skill?.Owner, color, 1);
+            context.SharedSkills?.OnManaPaid(owner ?? skill?.Owner, context, paid);
             return true;
         }
 
@@ -78,15 +98,19 @@ namespace MK.Logic.Runtime
                 if (tokenHave == 0) Tokens.Remove(color); else Tokens[color] = tokenHave;
 
                 Crystals.TryGetValue(color, out int crystalHave);
-                if (owner != null && owner.ManaCurseColor == color && !owner.ManaCurseTriggered && need > 0)
-                {
-                    owner.Wounds += 1;
-                    owner.ManaCurseTriggered = true;
-                }
                 if (crystalHave < need) return false;
                 Crystals[color] = crystalHave - need;
+                NotifyManaSpent(owner, color, pair.Value);
             }
             return true;
+        }
+
+        private static void NotifyManaSpent(PlayerState owner, ManaColor color, int amount)
+        {
+            if (amount <= 0 || owner == null || owner.ManaCurseColor != color || owner.ManaCurseTriggered)
+                return;
+            owner.Wounds += 1;
+            owner.ManaCurseTriggered = true;
         }
 
         /// <summary>向法力標記池新增指定顏色。</summary>

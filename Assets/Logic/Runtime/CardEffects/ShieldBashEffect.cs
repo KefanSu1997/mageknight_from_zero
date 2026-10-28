@@ -10,16 +10,7 @@ namespace MK.Logic.Runtime.CardEffects
 
         public void Execute(PlayerState player, ActionContext ctx, int option = 0)
         {
-            if (_enh)
-            {
-                ctx.BlockPool += 5;
-                ctx.SwiftBlockBonus += 5;
-            }
-            else
-            {
-                ctx.BlockPool += 3;
-                ctx.SwiftBlockBonus += 3;
-            }
+            ctx.CombatPower.AddBlock(_enh ? 5 : 3, doubleAgainstSwift: true, reduceArmorByExcess: _enh);
         }
     }
 }

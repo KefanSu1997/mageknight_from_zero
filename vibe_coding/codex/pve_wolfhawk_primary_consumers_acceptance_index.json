@@ -1,0 +1,230 @@
+{
+  "status": "scene_passed",
+  "scope": "Wolfhawk本人004:08名望激励、004:05防御物抗移除、004:06嘲讽降攻的有限主要消费者",
+  "generator": "tools/build_pve_wolfhawk_primary_consumers_acceptance.py",
+  "backend": {
+    "report": "AutomationOutputs/RulesState/20260929_190314_453b101e/results.xml",
+    "sha256": "c284bca7521f5ca4f2b4533dd7e5aa504412854e80dfe76615c5cef73436fcf2",
+    "passed": 1,
+    "failed": 0,
+    "assertions": 43,
+    "method": "MK.Tests.Battles.PveWolfhawkPrimaryConsumersJourneyTests.FameInspirationDrawThenInsightPhysicalResistanceAndTauntActualDamage",
+    "status": "passed"
+  },
+  "preservedFailure": {
+    "report": "AutomationOutputs/RulesState/20260929_190137_8cc30dbd/results.xml",
+    "sha256": "b1572ee2d749645f71d2b597fd6816f49eb5a53021303eebeb5f3d5b51875b8d",
+    "reason": "Test incorrectly expected once-per-round Insight to reset next turn",
+    "correction": "Original skill.json says once per round; retain used marker next personal turn; no production/rules changes"
+  },
+  "scene": {
+    "status": "passed",
+    "effectiveSteps": 59,
+    "effectiveAssertions": 113,
+    "segments": [
+      {
+        "report": "AutomationOutputs/PveBattle/20260929_190823_4f5c6d5e/report.json",
+        "sha256": "400350759965ed3a90f6cba71475c024b976a0592a298dce9cdff429aa78146d",
+        "originalStatus": "failed",
+        "acceptedZeroBasedRange": [
+          0,
+          41
+        ],
+        "steps": 42,
+        "assertions": 74
+      },
+      {
+        "report": "AutomationOutputs/PveBattle/20260929_191109_d43b4195/report.json",
+        "sha256": "4b48dc9ff1d782bab0d4b415c89c0c2c0dffb23af8bb567f2dae3c6ae0d3f926",
+        "originalStatus": "success",
+        "acceptedZeroBasedRange": [
+          42,
+          58
+        ],
+        "steps": 17,
+        "assertions": 39,
+        "replayedPrefix": [
+          0,
+          41
+        ],
+        "replayAssertionsCounted": 0
+      }
+    ],
+    "screenshots": [
+      {
+        "step": 18,
+        "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_190823_4f5c6d5e\\captures\\018_真实抽2并名望35到36，不是魔力奖励.png",
+        "visualReview": "parent_confirmed_pass"
+      },
+      {
+        "step": 26,
+        "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_190823_4f5c6d5e\\captures\\026_实际移除同敌防御能力.png",
+        "visualReview": "parent_confirmed_pass"
+      },
+      {
+        "step": 35,
+        "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_190823_4f5c6d5e\\captures\\035_物理4完整消费击杀甲4；原物抗若在只生效2.png",
+        "visualReview": "parent_confirmed_pass"
+      },
+      {
+        "step": 49,
+        "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_191109_d43b4195\\captures\\049_原护甲3承攻击3只加一伤，旧伤仍在.png",
+        "visualReview": "parent_confirmed_pass"
+      },
+      {
+        "step": 58,
+        "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_191109_d43b4195\\captures\\058_两回合两战，同玩家原16牌加两张实际伤守恒.png",
+        "visualReview": "parent_confirmed_pass"
+      }
+    ],
+    "preservedFailure": {
+      "report": "AutomationOutputs/PveBattle/20260929_190823_4f5c6d5e/report.json",
+      "step": 42,
+      "button": "Canvas/BattleTable/Skills/Btn_Skill_1",
+      "reason": "Button not found",
+      "correction": "Parent added existing Btn_NextSkill before selection; replay0..41 without new evidence, then suffix only",
+      "scope": "automation visible-page navigation only; no production or rule change"
+    }
+  },
+  "finalConsole": {
+    "path": "tmp/pve_special_primary_final_console.json",
+    "sha256": "8d62f369865d478d110ffb57efc54be5aff20c4f4af96e654eba68ad28fb3864",
+    "errorCounts": [
+      0,
+      0
+    ]
+  },
+  "expectedConsumers": [
+    "Lv6 own skill slots 5/6/8; original16 seeded deck and two real turns",
+    "Fame Inspiration 35 to36 draws actual second Fury; actual attack2 consumed next turn",
+    "Original IceLich004 physical resistance ignored, Ice resistance retained; red crystal Fury4 kills armor4",
+    "Original032 attack4 to3 causes one actual wound versus armor3; old wound persists",
+    "SamePlayer,2 turns,2 battles,fame43,hand7/deck8/discard3,total18,red0blue1"
+  ],
+  "evidenceReuse": [
+    "vibe_coding/codex/pve_flip_insight_acceptance_index.json",
+    "vibe_coding/codex/pve_enemy_attack_skills_acceptance_index.json",
+    "vibe_coding/codex/pve_recovery_inspiration_acceptance_index.json"
+  ],
+  "worklog": "vibe_coding/codex/worklog_2026-09-29_wolfhawk_primary_consumers_route.md",
+  "actualSuffixConsumers": [
+    {
+      "step": 46,
+      "label": "同敌真实攻击4降低到3",
+      "report": "AutomationOutputs/PveBattle/20260929_191109_d43b4195/report.json",
+      "observed": {
+        "fame": "41",
+        "wounds": "1",
+        "hand": "8",
+        "red": "0",
+        "blue": "1",
+        "melee": "0",
+        "deck.count": "8",
+        "hand.ids": "basic_card_014,basic_card_000,basic_card_007,basic_card_023,basic_card_009,basic_card_021,basic_card_002,w",
+        "hero.id": "Wolfhawk",
+        "enemies.attacks": "3",
+        "skills.used": "True,True,True",
+        "journey.discardCount": "1",
+        "journey.completedTurns": "1",
+        "journey.completedBattles": "1",
+        "journey.samePlayer": "True",
+        "hero.skills": "3",
+        "hero.deckTotal": "17"
+      }
+    },
+    {
+      "step": 49,
+      "label": "原护甲3承攻击3只加一伤，旧伤仍在",
+      "report": "AutomationOutputs/PveBattle/20260929_191109_d43b4195/report.json",
+      "observed": {
+        "fame": "41",
+        "wounds": "2",
+        "hand": "9",
+        "red": "0",
+        "blue": "1",
+        "melee": "0",
+        "deck.count": "8",
+        "hand.ids": "basic_card_014,basic_card_000,basic_card_007,basic_card_023,basic_card_009,basic_card_021,basic_card_002,w,w",
+        "hero.id": "Wolfhawk",
+        "enemies.attacks": "3",
+        "skills.used": "True,True,True",
+        "journey.discardCount": "1",
+        "journey.completedTurns": "1",
+        "journey.completedBattles": "1",
+        "journey.samePlayer": "True",
+        "hero.skills": "3",
+        "hero.deckTotal": "18"
+      }
+    },
+    {
+      "step": 52,
+      "label": "实际消费激励新抽牌",
+      "report": "AutomationOutputs/PveBattle/20260929_191109_d43b4195/report.json",
+      "observed": {
+        "fame": "41",
+        "wounds": "2",
+        "hand": "8",
+        "red": "0",
+        "blue": "1",
+        "melee": "2",
+        "deck.count": "8",
+        "hand.ids": "basic_card_014,basic_card_000,basic_card_007,basic_card_023,basic_card_009,basic_card_002,w,w",
+        "hero.id": "Wolfhawk",
+        "enemies.attacks": "3",
+        "skills.used": "True,True,True",
+        "journey.discardCount": "1",
+        "journey.completedTurns": "1",
+        "journey.completedBattles": "1",
+        "journey.samePlayer": "True",
+        "hero.skills": "3",
+        "hero.deckTotal": "18"
+      }
+    },
+    {
+      "step": 56,
+      "label": "真实攻击3击杀原032",
+      "report": "AutomationOutputs/PveBattle/20260929_191109_d43b4195/report.json",
+      "observed": {
+        "fame": "43",
+        "wounds": "2",
+        "hand": "7",
+        "red": "0",
+        "blue": "1",
+        "melee": "0",
+        "deck.count": "8",
+        "hand.ids": "basic_card_014,basic_card_007,basic_card_023,basic_card_009,basic_card_002,w,w",
+        "hero.id": "Wolfhawk",
+        "enemies.attacks": "3",
+        "skills.used": "True,True,True",
+        "journey.discardCount": "1",
+        "journey.completedTurns": "1",
+        "journey.completedBattles": "1",
+        "journey.samePlayer": "True",
+        "hero.skills": "3",
+        "hero.deckTotal": "18"
+      }
+    },
+    {
+      "step": 58,
+      "label": "两回合两战，同玩家原16牌加两张实际伤守恒",
+      "report": "AutomationOutputs/PveBattle/20260929_191109_d43b4195/report.json",
+      "observed": {
+        "journey.discardCount": "3",
+        "wounds": "2",
+        "journey.completedTurns": "2",
+        "journey.completedBattles": "2",
+        "journey.samePlayer": "True",
+        "hand": "7",
+        "deck.count": "8",
+        "hero.id": "Wolfhawk",
+        "hero.skills": "3",
+        "hero.deckTotal": "18",
+        "hand.ids": "basic_card_014,basic_card_007,basic_card_023,basic_card_009,basic_card_002,w,w",
+        "skills.used": "True,True,True",
+        "fame": "43",
+        "red": "0",
+        "blue": "1"
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+# 头环翻面分支共享入口
+
+本轮将狂乱/萨满仪式/伪装的本次分支在效果开始前确定。原牌规则组合解释见headband_flip_branch_rule_decision_2026-09-29.md；不宣称找到额外官方FAQ。后续若有相反正式特例，定向更新。
+
+生产后台UseFlipSkill使用原Effect/HeroSocialSkillRules相同核心，borrowed仅隔离个人标记副作用；普通狂乱2+2与普通伪装2+2作为完整一次头环确认，翻面分支只一次。仪式实际ManualFlip允许一次，非两个token。旧HeadbandEffect识别新typed入口并在变更前拒绝旧generic循环，修复狂乱先+4翻面后抛错风险。旧分次伪装普通接口保留但不能中途混入翻面分支。
+
+UI新增HeadbandFlip面板，原图/原文、明确次数、实际六色或两分支按钮；战斗与旅程都绘制，同一头环确认后进入已打出。已有分次pending继续旧面板，避免重开成新头环。
+
+后台有效46（新20+旧26），见worklog_2026-09-29_headband_flip_backend.md。三首次失败为仪式ManualFlip实际枚举不符与普通伪装招聘夹具负声誉，保留原失败并仅补失败3；另2守恒例独立通过。Unity编译后实际Console双0见tmp/pve_headband_flip_compile.json。集中三条五原牌真实升级/公共供给连续场景运行中，不提前记通过。HornGold各mode临时seed需逐次精确restore。
+
+
+15:24最终：三条路线176操作297断言全部通过：Frenzy 151243_e931c862 51/86，Ritual 151549_1afc5c04 55/94，Disguise 152125_5a7bacdd 70/117。8张主线关键图已目视；Frenzy旧文案“两份攻击”改为“攻击在本次近战中使用”，仅152244_33709e1a重放前44步并补第44步一断言一图，未重复消费者。负声誉-1保留、影响5不扣减→支付3治疗首战伤2至1、正式回合末许可清除均通过。最终Console两次0错误 tmp/pve_headband_flip_final_console.json。HornGold三次精确恢复原字节seed0；无运行测试，无push。见pve_headband_flip_acceptance_index.json。
+
+此批解决狂乱部分提交风险和仪式/伪装翻面入口；普通狂乱option0本批仅后台，普通伪装沿用旧场景。原牌组合解释与正式专项FAQ区分，详见规则决策文档。傀儡/混乱借用仍待；下一优先是remaining_primary_modes_2026-09-29.md所列学习强化/修行基础/熔炉强化/实际取得风暴消费者连续路线，不重跑全卡与无关复制组合。整体目标未完成。

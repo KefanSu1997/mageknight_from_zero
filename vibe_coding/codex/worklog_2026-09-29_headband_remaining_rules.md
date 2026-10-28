@@ -1,0 +1,13 @@
+# 头环特殊借用复核及剩余主消费者
+
+前轮有效证据索引入库属实际进展。本轮依据当前源码重新核实剩余路径，没有重跑已通过库。
+
+## 已确认源码风险
+
+HeadbandEffect.Execute按Frequency.OncePerTurn循环两次。BattleFrenzyEffect.Execute(option=1)第一次增加攻击4并写player.FlippedSkills，第二次Validate因翻面抛错；CardPlayActions.PlayArtifact在effect.Execute之后才把物理牌放入已打出区。因此该路径存在部分结算、头环仍在手牌的风险。当前仅源码证据，尚未新增运行复现，不声称已修。
+
+DuelActions只有一个Enemy/Skill/AttackGranted/RewardResolved状态；不能为支持头环随意改成两不同目标。PuppetMasterActions只替实际持有者捕获战果，借用时临时添加所有权无法合法补回真实标记历史。HeroSocialSkillRules只开放伪装普通影响，不支持借用翻面。
+
+## 执行决定
+
+先核正式特殊说明，社区汇编仅作线索，不以猜测数值改规则。子代理headband_remaining_rule_audit只读审计并记录来源层次；无大文件下载。并行准备自有傀儡格挡、决斗部队影响失奖两种已明确原规则的连续场景；后者由persistent_primary_scene_gap准备独立生成器，主代理独占Unity。后台旧证据可复用，仅为实际变化/失败补测。

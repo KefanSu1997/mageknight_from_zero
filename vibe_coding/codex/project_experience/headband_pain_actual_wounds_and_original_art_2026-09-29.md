@@ -1,0 +1,7 @@
+# 痛苦之力真实伤牌消费及原图比例
+
+头环双用痛苦之力不能只重复赋SidewaysWoundValue=2。每次选当前手牌中的一个真实伤实例，经原Effect建立临时许可，再正式PlaySideways进入已打出区；finally恢复原有个人许可。首次成功提交物理头环，第二次选择从当前真实手牌重建，保留独立次数。
+
+场景使用实际战伤、真实升级公共供应，消费移动并检查正式回合弃牌。临时修改重放seed后必须等待Unity资产刷新，再运行场景，否则磁盘值与加载值不同；失败保留，只补失败及后段。
+
+仓库卡牌图集中没有伤牌不等于没有原素材。中文快速规则PDF第4页含完整原伤牌，可从内嵌图直接裁出，保存来源SHA256及像素范围，禁止重绘冒充原图。Resources默认普通纹理的nPOTScale=1会把254×361变为256×256；即使Image.preserveAspect为true仍已变形，须设0并实际看场景截图。相关脚本tools/extract_original_wound_art.py，验收worklog_2026-09-29_headband_pain_wound_art.md。

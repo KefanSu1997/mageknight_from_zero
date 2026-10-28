@@ -1,0 +1,39 @@
+{
+  "scope": "头环借用两极分化的正式部队付款及与原手牌混用；实际招募后续战斗消费",
+  "backend": {
+    "run": "20260929_105241_57b4a9f6",
+    "passed": 14,
+    "newUnitSessionCases": 7
+  },
+  "scene": {
+    "run": "20260929_105814_5e7c1610",
+    "steps": 77,
+    "assertions": 58,
+    "reusedPrefixThrough": 45,
+    "extraStateChecks": 10,
+    "sha256": "b9cd8b7abea5a6f97e2212677def911cdb2c1af8162615413395407cea01b9b5",
+    "report": "AutomationOutputs/PveBattle/20260929_105814_5e7c1610/report.json"
+  },
+  "retainedFailure": {
+    "run": "20260929_105636_28557a89",
+    "step": 46,
+    "reason": "战外快照无source.units字段，改验实际供应移除，战内再验证原单位ID；生产不改"
+  },
+  "reviewedImages": [
+    62,
+    64,
+    74
+  ],
+  "console": [
+    "tmp/pve_headband_unit_payment_compile_console.json",
+    "tmp/pve_headband_unit_payment_final_console.json"
+  ],
+  "unverified": [
+    "战外单位付款UI已接，后台通过，尚待合法恢复连续场景",
+    "部队魔咒/格挡只有后台新证据",
+    "大师特殊付款/供应能力/神器内部付款未接",
+    "有候选但无法支付时的完整只读合法输入判定未补"
+  ],
+  "fixtureRestored": true,
+  "pushed": false
+}

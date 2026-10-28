@@ -1,0 +1,144 @@
+{
+  "scope": "005:07通用力量、007:06漫不经心实际原牌及原费用横置；有限基本场景，不是全卡/全技能完成",
+  "backendEffectivePasses": 25,
+  "backendRuns": [
+    "20260929_034025_46126f3d",
+    "20260929_034100_75b9af40",
+    "20260929_034322_6708b12f (only passing session method)",
+    "20260929_034438_933643c3",
+    "20260929_035003_1f9befd7"
+  ],
+  "sceneRuns": [
+    {
+      "report": "AutomationOutputs/PveBattle/20260929_034624_6f887715/report.json",
+      "sha256": "60925f3cc74a81938274d9c2db57c183158ac124707b8bc288d6d716e4f6e81c",
+      "acceptedZeroBasedSteps": [
+        0,
+        41
+      ],
+      "checks": 50,
+      "screenshots": [
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_034624_6f887715\\captures\\030_真实红色狂怒.png",
+          "sha256": "f6e20fad3b0fc9628faff4ff14428ce552d0ebc13087acaa9fa4370ae0c97ad1",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_034624_6f887715\\captures\\031_一次实际横置与费用.png",
+          "sha256": "68ca36a9afd244453d83f623d3fd4a614f16846e53af427b4ce61d9b91d9faac",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_034624_6f887715\\captures\\034_原攻击实际击杀.png",
+          "sha256": "a8fa20a7b87eb25b21cde656247f55eb5dab644539bfbc99b8a041d24e76516b",
+          "visuallyInspected": true
+        }
+      ]
+    },
+    {
+      "report": "AutomationOutputs/PveBattle/20260929_034847_7333d515/report.json",
+      "sha256": "e345567b7f1bfa17c4b993a11a099488a26caa1ee2ef19fac9e4ad96a2304aad",
+      "acceptedZeroBasedSteps": [
+        42,
+        51
+      ],
+      "checks": 16,
+      "screenshots": [
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_034847_7333d515\\captures\\042_实际蓝色耐力.png",
+          "sha256": "d102eac5564583107ff172bcf273180cd9b4c7c2c84fa725b4956544f7420bb4",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_034847_7333d515\\captures\\044_同色行动4移动.png",
+          "sha256": "350c7856cb19164b451639660d1cbdc8cb8685d6d2fde3ed0c54ba53a0a49aa9",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_034847_7333d515\\captures\\049_实际地形费用2.png",
+          "sha256": "0fb6ac3e3b7990371061b5e9b3e48cf357fb6679e83a06d7d7c286b9249503f2",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_034847_7333d515\\captures\\051_连续两回合保留牌区.png",
+          "sha256": "5124b5f2ceb5bbe6474420111f46cec5374d35cde001cef2f1a03ff3ae60f641",
+          "visuallyInspected": true
+        }
+      ]
+    },
+    {
+      "report": "AutomationOutputs/PveBattle/20260929_035113_2221cd4f/report.json",
+      "sha256": "f99a64ab533b646d7194305ec4ec9aba16f8ed66456a7ba5280bbb228fe037b0",
+      "acceptedZeroBasedSteps": [
+        0,
+        54
+      ],
+      "checks": 70,
+      "screenshots": [
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_035113_2221cd4f\\captures\\031_真实基础行动.png",
+          "sha256": "b8ec275663debf81634b2f3120a21b8689ac8780889437f49e603d5107f602b3",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_035113_2221cd4f\\captures\\032_一次实际横置与费用.png",
+          "sha256": "1410bd95d6d9f339ac76c7ac63405f564c66b8aa3ee58540b15a2a65fa5a3b71",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_035113_2221cd4f\\captures\\038_原攻击实际击杀.png",
+          "sha256": "3d2f6203b72865b0b71b58e647e25439b0f95205e7bd7d839bce8a76f4fb1af3",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_035113_2221cd4f\\captures\\046_实际高级行动.png",
+          "sha256": "417cc2b0f5351d8497bd020af8331c60e652f5777713cc8a1d466a61a394d1ae",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_035113_2221cd4f\\captures\\047_高级行动3移动.png",
+          "sha256": "e9cd0f5a9a5e7df2ae9cf6945ede92429de1987ca2b2f234a2a8bc066cac07aa",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_035113_2221cd4f\\captures\\052_实际地形费用2.png",
+          "sha256": "08c17f2dbeb8e794edbbdd02c08127a96ce423a6c93ddd2dfd31824bff5fcbd5",
+          "visuallyInspected": true
+        },
+        {
+          "path": "D:\\study_and_work\\unity-MK-test\\MageKnight_from_zero\\AutomationOutputs\\PveBattle\\20260929_035113_2221cd4f\\captures\\054_连续两回合保留牌区.png",
+          "sha256": "f41ac7ba04649aec60e9b3827aa093ab9c66f9cbe2ae9688fa6a140506af9969",
+          "visuallyInspected": true
+        }
+      ]
+    }
+  ],
+  "effectiveSteps": 107,
+  "effectiveChecks": 136,
+  "effectiveKeyImages": 14,
+  "console": "tmp/pve_20260929_sideways_final_console.json",
+  "consoleSha256": "8d62f369865d478d110ffb57efc54be5aff20c4f4af96e654eba68ad28fb3864",
+  "sourceHashes": {
+    "Assets/Logic/Runtime/SkillActions.cs": "d7cfbbd081adf3cf4f3eef53c2ab0c7a8fb3c639fc2a81e080de378952275b9b",
+    "Assets/Logic/Runtime/ActionSystem.cs": "6dec4bbfa12a72e1f3a8696667aebfe5adb6d5257398bd50e79d60b4d63483ac",
+    "Assets/Logic/Runtime/CardEffects/HeroSkillEffects.cs": "b833df1623f3e100691f3476e0ae82621bea8a257ea42af23f727d62faa607ff",
+    "Assets/Logic/Runtime/Battles/PveBattleSession.cs": "436cb1e0a27eec35f5ad4b8836e00b215a5e3436835a81fc5d2b849eefae795f",
+    "Assets/Logic/Runtime/Battles/PveJourneySession.cs": "bd4037fb741b5d66ea974f249e613f877400018afc3e1ff38dad41cd3b524ba8",
+    "Assets/Scripts/Battle/PveBattleController.SidewaysSkills.cs": "1a803f8a188b048420335d3a87fa5878c8e360accbcf4651670a4cec3d5bab96",
+    "Assets/Scripts/Battle/PveBattleController.cs": "71008cdc226274a42b86610fbb24a3c2f7f3d7961ef86a12905463039c056c11",
+    "Assets/Scripts/Battle/PveBattleController.Journey.cs": "99af01849c30ccbd0258568f801140cc5e92b98244110af7b9ba5d2a82838674",
+    "Assets/Scripts/Battle/PveBattleController.JourneySupport.cs": "d4fc0fb5eb87f3d7a86ca91089215d0f6e65004ca1f84ca84e86587d4531d86c",
+    "Assets/Tests/RulesState/PveSidewaysSkillTests.cs": "ca48fb79d14c6a12d257ca8eb7238823507b3e99f710e7b0ce78b6b0a8cefaea",
+    "tools/build_pve_sideways_skills_acceptance.py": "6327daf55a45cbaee13d3181ca9d45341850125b4c3a0bfca2df4c4b7c3fa7d9"
+  },
+  "failuresRetained": [
+    "034322 empty hand/deck next turn fixture; corrected with real retained card",
+    "034624 scene step44: basic001 is green Serenity, blue mana correctly gives3. select actual blue basic014 Stamina from step42."
+  ],
+  "limits": [
+    "格挡/影响、异色与法术/神器类别主要后台覆盖，未声明全分支场景通过",
+    "伤牌许可组合和金黑费用后续扩展",
+    "自定地图与共用英雄美术仍未完成原世界/独立素材目标",
+    "英雄45/70有合法入口，25仍待；不等于45全部验收完成"
+  ]
+}

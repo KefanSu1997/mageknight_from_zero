@@ -1,0 +1,46 @@
+{
+  "0": {
+    "episodes": 1000,
+    "wins": 61
+  },
+  "20": {
+    "episodes": 1000,
+    "wins": 116
+  },
+  "40": {
+    "episodes": 1000,
+    "wins": 163
+  },
+  "60": {
+    "episodes": 1000,
+    "wins": 232
+  },
+  "80": {
+    "episodes": 1000,
+    "wins": 310
+  },
+  "100": {
+    "episodes": 1000,
+    "wins": 334
+  },
+  "120": {
+    "episodes": 1000,
+    "wins": 391
+  },
+  "140": {
+    "episodes": 1000,
+    "wins": 404
+  },
+  "160": {
+    "episodes": 1000,
+    "wins": 419
+  },
+  "180": {
+    "episodes": 1000,
+    "wins": 406
+  },
+  "200": {
+    "episodes": 1000,
+    "wins": 392
+  }
+}

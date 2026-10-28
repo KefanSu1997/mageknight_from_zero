@@ -70,7 +70,7 @@
     "influence_cost": "3",
     "armor": "2",
     "resistances": "",
-    "recruit_location": "村庄",
+    "recruit_location": "村庄,修道院",
     "abilities": [
       {
         "mana_cost": "绿",
@@ -81,7 +81,7 @@
         "effect": "重整一支1或2级部队。"
       },
       {
-        "mana_cost": "绿",
+        "mana_cost": "None",
         "effect": "获得一个绿色魔力标记。"
       }
     ],
@@ -101,11 +101,11 @@
     "level": "II",
     "influence_cost": "7",
     "armor": "2",
-    "resistances": "",
-    "recruit_location": "魔法塔",
+    "resistances": "物理",
+    "recruit_location": "魔法塔、修道院",
     "abilities": [
       {
-        "mana_cost": "黑",
+        "mana_cost": "None",
         "effect": "影响力4。"
       },
       {
@@ -113,7 +113,7 @@
         "effect": "本次战斗中无城防的目标敌人不攻击。"
       },
       {
-        "mana_cost": "白",
+        "mana_cost": "None",
         "effect": "获得一颗白色魔晶，放入物品栏。"
       }
     ],
@@ -125,6 +125,7 @@
   },
   {
     "id": "army_2_004",
+    "interaction_recruit_only": true,
     "set": "army_2",
     "set_idx": 4,
     "image": "cards\\army_2_004.png",
@@ -134,22 +135,22 @@
     "influence_cost": "6",
     "armor": "5",
     "resistances": "",
-    "recruit_location": "高地",
+    "recruit_location": "魔法塔、修道院、魔法空地",
     "abilities": [
       {
-        "mana_cost": "红",
+        "mana_cost": "None",
         "effect": "攻击3 (红 +2)"
       },
       {
-        "mana_cost": "蓝",
+        "mana_cost": "None",
         "effect": "格挡4 (蓝 +3)"
       },
       {
-        "mana_cost": "白",
+        "mana_cost": "None",
         "effect": "移动力或影响力3 (白 +2)"
       },
       {
-        "mana_cost": "绿",
+        "mana_cost": "None",
         "effect": "治疗2 (绿 +1)"
       },
       {
@@ -290,7 +291,7 @@
     "influence_cost": "4",
     "armor": "2",
     "resistances": "",
-    "recruit_location": "城市",
+    "recruit_location": "村庄、要塞、魔法塔、修道院、城市",
     "abilities": [
       {
         "mana_cost": "None",
@@ -354,7 +355,9 @@
     "influence_cost": "5",
     "armor": "5",
     "resistances": "",
-    "recruit_location": "城市",
+    "recruit_location": "村庄,城堡",
+    "damage_influence_cost": 2,
+    "reverse_recruit_reputation": true,
     "abilities": [
       {
         "mana_cost": "None",

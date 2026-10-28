@@ -1,0 +1,8 @@
+# 2026-09-29 合作共享技能首批后台
+
+原英文图审计：tmp/shared_skills_rules_audit_20260929.md。
+新增SharedSkillArea：一个GameEngine对应一个中央区，真实owner/skill/token引用；实际当前回合/context校验；痛苦仪式0至2真实手伤去除与一伤横置3原子领取；风雨平复最低1的独立累加减费；自然复仇调用共用敌攻击槽/笨重消费者及下个owner回合到期。
+新增SharedSkillAreaTests 7个定向测试，覆盖真实双玩家领取、owner领取、失败守恒、手伤实例、非治疗、跨回合期限。未运行CLI/Unity，由主代理统一必要验证。GameEngine钩子、MovementService及ActionContext字段、Unity入口由主代理实现。
+已知缺口：痛苦仪式战内移动用途目前尚未接笨重/灵动真实消费者；其它四共享技能未在本文件完成；原技能图未重述中央轮末清理通用条款，不冒充完整原书校对。未修改既有验收结论。
+
+统一CLI发现7个共享行为测试均失败于RequireUse。根因是loader只读根total_description，而六项09合作规则存于side1_skill.total_description；007:09仍在根。此前仅看side1文字就误判断运行时Frequency，本记录纠正：首次实测前均为Unspecified。现仅对已知原互动技能根文字为空时回退合作side1，再走原频率解析，未放宽RequireUse。增加7项原合作元数据测试，构筑改为不同玩家Id、符合技能归属的英雄和Fame3。待主代理必要范围重跑，未自行运行CLI。

@@ -1,0 +1,26 @@
+{
+  "source": "resources/rulebook/rulebook_chinese_quick_start.PDF",
+  "source_sha256": "3fb2b980e9a16942e1581e5bf0676047c7e513b88dd2321acc5242f1a7b3ba2f",
+  "page_one_based": 4,
+  "embedded_image": "Im0.jpg",
+  "embedded_image_sha256": "4dfc1d6f8c49d96a4dd31ad67441aa3fdf2def838dfae9121246dfa3947fd237",
+  "embedded_image_dimensions": [
+    2508,
+    3353
+  ],
+  "crop_xyxy_top_left_exclusive": [
+    1672,
+    1335,
+    1926,
+    1696
+  ],
+  "operation": "Crop original embedded JPEG pixels; RGB PNG; no redraw, resampling or generated content",
+  "output": "Assets/Resources/Adventure/Art/original_wound.png",
+  "output_dimensions": [
+    254,
+    361
+  ],
+  "output_sha256": "ac52305b2fc618c7fc322f41ddacc91b625f833cd4c5301e172dac71467dfc81",
+  "reproduce": "python tools/extract_original_wound_art.py",
+  "visual_source": "Page 4, right column, complete card beneath 创伤卡牌 heading"
+}

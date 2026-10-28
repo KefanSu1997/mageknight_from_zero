@@ -1,0 +1,13 @@
+# 阶段分支保留与原开局真实见证
+
+原有限搜索按动作优先级只保留前四，可能全是格挡/横置参数；advance被挤掉，后续保留攻击牌的近战路径也可能因短期伤牌成本被beam剪除。新增合法阶段handoff分支和按实际阶段/敌群索引保留有限前沿多样性，不合并隐藏状态、不改规则/mask，也不宣称穷举。两项针对分支/beam检查与两项受影响预算检查通过。
+
+新自动搜索仍未找到两原开局见证：Tovak979调用、Wolfhawk928调用各35秒unknown。实际定向专家路径检验：Tovak原16牌/002，fight→跳过远程/格挡→真实承伤→原021/027基础攻击及007横置→正式攻击/End/EndTurn，10步完整成功；Wolfhawk保留原手牌，经实际合法横置贡献和正式攻击/收尾，12步成功。独立当前规则重放证书通过，221/264限定规则审计零异常。不是自动搜索成功，也不是教师训练；仍保留旧unknown及困难中期任务。
+
+原毒巫师002印刷攻击物理5/护甲5/毒素，与任务原数据对应；避开格挡保留攻击资源的路径合法，不能因为搜索偏格挡失败判初始无解。tmp/prove_original_tovak_handoff.py与tmp/prove_original_wolfhawk_handoff.py只走实际合法入口，失败也保前后状态，无自造卡/原参数更改。
+
+聚合20261007_seven_hero_certified_pool.json，7任务7英雄；已被新证书解决的旧尝试留historical_attempts，未解决4尝试留quarantine，源产物不改写。5→7追加迁移保留72数组、Adam40、RNG、56局2409步及旧计数。随后真实PPO两新英雄各2局110步，完整任务0，2512限定检查无异常；累计60局2519步/Adam43。七英雄实际采样训练已见，不代表7英雄均会赢或全部原要素/构筑覆盖。
+
+证据20261007_discovery_phase_diverse_openings、20261007_original_*_handoff_witness、20261007_original_handoff_witness_audits.json、20261007_recurrent_seven_hero_migration、20261007_recurrent_seven_hero_training。Console最终两读0错误tmp/rl_phase_diverse_final_console_20261007.json；所有本轮进程正常结束。
+
+剩余：原全部模式费用材料消费者、69敌与更多合法库存、保留组成可解验证/未调参测试、跨昼夜成功与真实Unity验收。原开局两证书是扩展的一部分，不替代困难中期/多组目标。

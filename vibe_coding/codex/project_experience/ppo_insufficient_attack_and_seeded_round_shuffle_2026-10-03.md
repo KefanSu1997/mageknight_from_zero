@@ -1,0 +1,11 @@
+# 轨迹原规则审查发现攻击不足消费及不可重放洗牌
+
+v6轨迹 audit_10240_1.json（seed100479）第36操作：两张原狂怒2、两张原牌横置1，共物理6，攻击原monster_004护甲4、物抗。实际减半后3，击杀0，贡献被清空。规则书第9页6/6a明确不足无效果且可继续补牌/改目标/取回牌。旧断言只检查“选择的贡献被消费”，因此零失败没有覆盖原规则正确性。
+
+CardCombatActions.Attack现在先预览真实Defend分配、抗性和有效护甲，强度不足时拒绝；不消费贡献，不应用防御加甲，不发奖励。对Ranged/Melee、实际贡献身份、补充后成功攻击、防御预选、奖励来源分别定向检查。旧测试ForbiddenRangedTargetPreservesPowerButLowAttackSpendsIt的预期与原规则冲突，保留旧失败XML后改为保留原引用并改选无抗目标成功的断言。两条斧奖励测试改为明确选择后续普通斧贡献；首条结束旧战斗并建立新战斗上下文，避免复用已击败索引。
+
+实际场景 AutomationOutputs/PveBattle/20261003_154942_1e24be4e/report.json：46操作76断言成功。截图037显示不足提示与近战7保留，042/044确认重新分配后分杀两名原032。不是新多敌模型全部UI验收。
+
+按旧种子复现该轨迹时发现，旧PlayerDeck.ShuffleFromDiscard使用新Random/Shared而非训练种子，过轮牌序无法精确复现。增加可注入Random，正式GameEngine/PveJourneySession持有独立轮末随机源；RL按seed创建，UI已有replayEffectRandom配置同样传战术/跨轮种子。默认正常游戏仍随机。SeededJourneyRoundShuffleTests实际从原16牌白昼到夜间，检验同种子同牌序、不同轮末种子异序和原引用守恒。
+
+旧跨轮证据仍保留，不能声称旧种子已精确复现故障前缀。新版本v8必须重新审查并重放。原有不受控随机造成的指标不可当作可重放验收。记录：vibe_coding/codex/worklog_2026-10-03_ppo_multi_enemy.md；失败证据 AutomationOutputs/BattleRl/20261003_insufficient_attack_failure.json。

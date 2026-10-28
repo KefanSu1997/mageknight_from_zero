@@ -1,0 +1,23 @@
+{
+  "scope": "勇气旌旗普通仅附旗部队与焚毁全部部队；实际战后健康/受伤各两分支，战中使用/重复次数拒绝。重整不治疗，原实例附着或永久移除。完整轮间次数重置、后续新战斗及全部组合未在此场景验证。",
+  "backend": "AutomationOutputs/RulesState/20260918_195103_540bf4cf",
+  "backendPassedUnique": 5,
+  "scene": "AutomationOutputs/PveBattle/20260918_195330_42819bf4/report.json",
+  "battles": 4,
+  "steps": 139,
+  "assertions": 342,
+  "visualReviewed": 8,
+  "files": {
+    "AutomationOutputs/PveBattle/20260918_195330_42819bf4/report.json": "9d42eb2481f720cd73a9f477d31c20c542fd0ceb2f9acb28c17cf78c1f868fc4",
+    "AutomationOutputs/PveBattle/20260918_195330_42819bf4/console_final.json": "8d62f369865d478d110ffb57efc54be5aff20c4f4af96e654eba68ad28fb3864",
+    "AutomationOutputs/RulesState/20260918_195103_540bf4cf/summary.json": "cca5c881493f6c691356e1b0e526ffe837d10a635ea04bb1e8e6cd660ef3e7fb",
+    "AutomationOutputs/PveBattle/20260918_195330_42819bf4/captures/052_进入_End.png": "3d4def7c400f79741986c47afdf1e6b67d647faf71a31bf1c0c1a383d88a19c1",
+    "AutomationOutputs/PveBattle/20260918_195330_42819bf4/captures/054_战后重整附旗部队.png": "a9827f7d40aa2427a39b55c75ec5ace2af89250367fac45d4c42d6c6e8a9ad33",
+    "AutomationOutputs/PveBattle/20260918_195330_42819bf4/captures/081_战后重整附旗部队.png": "44b6c71830ae94f2bbb6bae178e8a51e7e51b07d8f83c8f550320b4d62c51601",
+    "AutomationOutputs/PveBattle/20260918_195330_42819bf4/captures/087_战中焚毁拒绝.png": "416ad1bfcc0be816cc365914ba28ea19f1ee615cdaac00106a2d3b3313e085c9",
+    "AutomationOutputs/PveBattle/20260918_195330_42819bf4/captures/110_核对两支部队就绪与伤牌.png": "49881eadbffbcd148c30f26d4db5f98a1479953fc6e25e3137b1265c8c1d75a2",
+    "AutomationOutputs/PveBattle/20260918_195330_42819bf4/captures/131_进入_End.png": "0a4d3afc5c07b7dde2459e82eb0fcb70a85470c25099c4eb9d7c0ba92d21e7d4",
+    "AutomationOutputs/PveBattle/20260918_195330_42819bf4/captures/135_焚毁真实神器重整全部部队.png": "8aee294c39765db34cfdf215889007bb5b17ad04376deeff90a9d4ea9bb49881",
+    "AutomationOutputs/PveBattle/20260918_195330_42819bf4/captures/138_核对两支部队就绪与伤牌.png": "163ea1fca7f036ad16bcba63b1a88c567508c8898641107eeea66873bc982d68"
+  }
+}

@@ -14,7 +14,7 @@ namespace MK.Logic.Runtime
         /// <summary>从玩家队列中移除一支部队。</summary>
         public static void DismissUnit(PlayerState player, UnitState unit)
         {
-            player.Units.Remove(unit);
+            player.Disband(unit);
         }
     }
 }

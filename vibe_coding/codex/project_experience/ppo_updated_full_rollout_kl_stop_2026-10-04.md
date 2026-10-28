@@ -1,0 +1,11 @@
+# PPO每轮更新后按完整rollout测量策略变化
+
+原trainer每轮只拿最后一个minibatch且更新前的有符号mean(oldlog-newlog)与0.03阈值比较。它既不能代表更新后的参数，也可能因为有限样本出现负值，不能据此认为完整策略没有改变。
+
+train_ppo.py新增rollout_kl_legal，在每轮所有minibatch更新后，按冻结rollout全部样本的实际状态/原合法集合和原选中动作，使用新策略log_ratio计算mean(expm1(log_ratio)-log_ratio)。此量逐项非负，在旧策略取样下期望为KL(old||new)。按合法并集投影，128个状态一块限制内存；测量仍覆盖全部样本。保持原0.03阈值、PPO损失、梯度、学习率和完整Adam不变，只修正停止判断所用的证据。非法选择拒绝，参数字典finally恢复。
+
+实际v57 checkpoint4096、3个真实原状态及257个冻结状态的检查6项通过：策略不变为零、与独立完整分布公式一致、仅价值头变化不影响策略KL、负有符号估计仍有正策略变化、全部分块结果相同、非法动作拒绝。证据AutomationOutputs/BattleRl/20261004_updated_full_rollout_kl_review.json。有符号值-0.45637时实际非负测量0.12531，不能把负值当作可以继续更新的依据。
+
+测试初次只给分层策略单一动作类型内的tuple常数偏置，条件softmax抵消后策略根本未改变，错误要求正KL；应改变真实kind门才能作为策略变化负例。这是检查夹具问题，不改变数学预期。
+
+Python编译通过，实际Console连续两次零错误tmp/rl_updated_rollout_kl_console_20261004.json。当前活v57尚未使用该修正；没有新训练质量证明，不宣称它解决0/7评估或全部覆盖。后续必须以实际训练、独立构筑评估及Unity保存策略回放验收。

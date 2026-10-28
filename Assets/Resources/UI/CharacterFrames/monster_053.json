@@ -1,0 +1,11 @@
+{
+  "id": "monster_053",
+  "x": 145,
+  "y": 159,
+  "width": 995,
+  "height": 1015,
+  "textureWidth": 1254,
+  "textureHeight": 1254,
+  "source_sha256": "876f3ea7c27316bf9a93424ee6342dd3f2540dbab3cd56f2d8d255d39b26ce72",
+  "method": "alpha>=64 layout bounds only; full UV and original unedited PNG retained"
+}

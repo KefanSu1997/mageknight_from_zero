@@ -29,6 +29,10 @@ namespace MK.Logic.Runtime
             state = new PlaceState { Type = type };
             switch (type)
             {
+                case PlaceType.Keep:
+                case PlaceType.MageTower:
+                    state.Enemy = _global.Enemies.Draw(EnemyTokenSupply.GuardColor(type));
+                    break;
                 case PlaceType.OrcRampaging:
                     state = new PlaceState
                     {

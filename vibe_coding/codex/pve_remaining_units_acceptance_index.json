@@ -1,0 +1,21 @@
+{
+  "scope": "仅补魔像普通攻挡/火焰格挡与烈焰枪手普通攻挡；沿用前批冰挡/火焰远程。未包含招募或全组合。",
+  "backend": "AutomationOutputs/RulesState/20260918_180556_10b7d988",
+  "backendPassedUnique": 7,
+  "scene": "AutomationOutputs/PveBattle/20260918_180816_cda81c32/report.json",
+  "battles": 5,
+  "steps": 132,
+  "assertions": 370,
+  "visualReviewed": 6,
+  "files": {
+    "AutomationOutputs/PveBattle/20260918_180816_cda81c32/report.json": "e7d986f0edfb43fcdb8fe955518c71a7aa65fee43f6ab774ef167d634cf94ec0",
+    "AutomationOutputs/PveBattle/20260918_180816_cda81c32/console_final.json": "8d62f369865d478d110ffb57efc54be5aff20c4f4af96e654eba68ad28fb3864",
+    "AutomationOutputs/RulesState/20260918_180556_10b7d988/summary.json": "d954fb92a78806b750aef9c0f0479390714d3d446c1be95d52578f258ff0a695",
+    "AutomationOutputs/PveBattle/20260918_180816_cda81c32/captures/037_进入_End.png": "16f4577329fd04ba25946c66a2a566b6ed38aa047f81993f3ba621a0d53e4c55",
+    "AutomationOutputs/PveBattle/20260918_180816_cda81c32/captures/058_进入_End.png": "08aa6992fd5931c2bc97d26376a713b90fd89abbdf3b5d2dcaffd6424999f060",
+    "AutomationOutputs/PveBattle/20260918_180816_cda81c32/captures/071_魔像_火焰格挡.png": "6a7fcd1c77a84f554f2eb220f0f1599bea44e0bed6bd7570b6727fa5de4ce3ed",
+    "AutomationOutputs/PveBattle/20260918_180816_cda81c32/captures/088_进入_End.png": "86bf628db4ea2042bf43e599dbacfa2053675c952f0f21719ec1770b1e9e2a19",
+    "AutomationOutputs/PveBattle/20260918_180816_cda81c32/captures/113_进入_End.png": "7040e99a79e473077e7832c370abac71dc01b78135ad2eeca468d97436c58614",
+    "AutomationOutputs/PveBattle/20260918_180816_cda81c32/captures/131_进入_End.png": "20122434222e7cbef11f0585a06930d6fa461a401a2081c8b57080b53e462fd4"
+  }
+}

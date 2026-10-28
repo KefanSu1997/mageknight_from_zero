@@ -1,0 +1,15 @@
+# 原冥想的牌库顺序与下次抽牌实际消费者
+
+## 修改
+
+v44 PID234892活进程继续使用冻结v41正式DLL及启动时Python审计；不覆盖其DLL，不重启、不冒充新观察已用于当前训练。为下轮补足先前明确留下的证据缺口，JourneyTraining.State增加auditDrawOrder物理ID顺序和auditNextDrawBonus。它们只在保存的真实审计状态中，不进入Features或策略输入，不泄露未来牌序给actor。
+
+trajectory_audit在宝典借用magic002分支，有新观察时检查所选顶/底端、取回实体、原牌库剩余顺序完全保持，以及下次抽牌奖励恰好+2。旧轨迹没有这些字段时明确留adapter_gap；不删除旧失败或虚构顺序证据。
+
+## 验证
+
+编译新DLL tmp/battle_rl_v45_ordered_draw_audit/BattleRl.dll，0警告0错误。原失败seed64001的85步用旧/新DLL配对执行，每步所有原状态、Features与合法动作相同；新审计2018检查无错误。错误放端、扰乱原牌序、遗漏奖励三个负例均触发具体新断言。
+
+实际同种子同先行休息对照：不借用时正式nextTurn手牌6；冥想顶放/底放后分别正式nextTurn手牌8，奖励均已消费清零，不是只验证计数生成。证据 AutomationOutputs/BattleRl/20261004_tome_ordered_draw_and_bonus_consumers.json；新DLL SHA256 87d8e6ac2b1476b8dfaeb218fe93a94cfea630d612c43a463fe264724ecd6f51。
+
+Unity refresh idle，Console两次error=0，tmp/rl_tome_ordered_audit_console_20261004.json。没有修改Unity场景；保存模型UI验收、强效手选、其余宝典借用效果和完整训练范围仍未完成。
