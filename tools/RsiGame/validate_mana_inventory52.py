@@ -9,7 +9,7 @@ from structured_ui_ppo import state
 ROOT=Path(__file__).resolve().parents[2]
 BASE=ROOT/'AutomationOutputs/RsiGame/ui_iterations/20261024_embedded_battle_v1'
 COLORS=['Red','Blue','Green','White','Gold','Black']
-def inspect(record):
+def inspect(record, unavailable_label='不可存'):
     e=record['evaluation'];native=json.loads(state(record['observation'])['audit.costNativeState'])
     assert (e['screenWidth'],e['screenHeight'])==(1920,1080)
     rows=[]
@@ -21,7 +21,7 @@ def inspect(record):
         expected='∞' if color in infinite else str(native['tokens'].get(color,0))
         crystals=native['crystals'].get(color,0)
         assert tok['fullText']==expected,(color,tok['fullText'],expected)
-        assert gem['fullText']==('不可存' if color in ['Gold','Black'] and crystals==0 else str(crystals))
+        assert gem['fullText']==(unavailable_label if color in ['Gold','Black'] and crystals==0 else str(crystals))
         for t in [tok,gem]:
             assert t['fontSize']>=26 and not t['isTextOverflowing']
             required={i for i,ch in enumerate(t['fullText']) if not ch.isspace()}
@@ -32,11 +32,12 @@ def inspect(record):
         rows.append(dict(color=color,mana=expected,crystals=gem['fullText'],glyphs=glyphs))
     return rows
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument('--out',type=Path,required=True);parser.add_argument('--live',type=Path,required=True);args=parser.parse_args()
+    parser=argparse.ArgumentParser();parser.add_argument('--out',type=Path,required=True);parser.add_argument('--live',type=Path,required=True);parser.add_argument('--unavailable-label',default='不可存');args=parser.parse_args()
+    inspect_now=lambda record:inspect(record,unavailable_label=args.unavailable_label)
     out=args.out.resolve();c=Collector(out/'readers',args.live.resolve());fixture=json.loads((BASE/'attempt34/validation_corrected/setups/three_enemies.json').read_text())['fixture']
     c.prepare(fixture);dismiss_hover(c);native=state(c.observation)['audit.costNativeState'];rows=[]
     for color in COLORS:
-        path='Canvas/BattleTable/ManaInventory_'+color;c.rpc('hover_info',path=path,expectedVersion=c.observation['version']);r=c.snapshot(color+'_hover');inspect(r)
+        path='Canvas/BattleTable/ManaInventory_'+color;c.rpc('hover_info',path=path,expectedVersion=c.observation['version']);r=c.snapshot(color+'_hover');inspect_now(r)
         body=next(t for t in r['evaluation']['texts'] if t['path'].endswith('/BattleHoverInfo/Body'))
         assert body['fontSize']>=22 and not body['isTextOverflowing']
         required={i for i,ch in enumerate(body['fullText']) if not ch.isspace()}
@@ -50,10 +51,10 @@ def main():
     consumers=[]
     for mode in ['normal','burn']:
         c=Collector(out/mode,args.live.resolve());c.prepare(ring);dismiss_hover(c)
-        before=json.loads(state(c.observation)['audit.costNativeState']);r=c.snapshot('mixed_inventory_before');inspect(r)
+        before=json.loads(state(c.observation)['audit.costNativeState']);r=c.snapshot('mixed_inventory_before');inspect_now(r)
         c.click('Btn_Card_items_004_0');dismiss_hover(c)
         if mode=='burn':c.click('Btn_ArtifactBurn');dismiss_hover(c)
-        c.snapshot('ring_selected');c.click('Btn_ArtifactPlay');dismiss_hover(c);r=c.snapshot('ring_consumed');after=json.loads(state(c.observation)['audit.costNativeState']);values=inspect(r)
+        c.snapshot('ring_selected');c.click('Btn_ArtifactPlay');dismiss_hover(c);r=c.snapshot('ring_consumed');after=json.loads(state(c.observation)['audit.costNativeState']);values=inspect_now(r)
         assert before['hand'].count('items_004')-after['hand'].count('items_004')==1
         if mode=='normal':
             # Red crystal stock is already3. The native extra crystal overflows

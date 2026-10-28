@@ -112,7 +112,8 @@ namespace MageKnight.Battle
                 text.gameObject.SetActive(false);
             }
             var manaCue=_root.Find("ManaHoverCue");if(manaCue!=null)manaCue.gameObject.SetActive(false);
-            FieldFact(_root,"FieldFact_ManaLegend","Rule","","魔力与晶体",StatusText()+"\n临时魔力与可储存晶体是不同库存；悬浮各色查看真实值。",582,0,44);
+            // The inventory's own six information surfaces retain the complete
+            // distinction; do not add a seventh framed book icon above them.
             CompactUnitCommands();
             foreach (var text in _root.GetComponentsInChildren<TMP_Text>()) EmbossFieldText(text);
             InstallRuneMounts();
@@ -223,20 +224,12 @@ namespace MageKnight.Battle
                 mark.color=RuneInk;
                 foreach(var text in parent.GetComponentsInChildren<TMP_Text>())RuneText(text);
             }
-            foreach(string name in new[]{"ManaTokenLegend","ManaCrystalLegend"})
-            {
-                var t=_root.Find(name)?.GetComponent<TMP_Text>();if(t==null)continue;
-                var r=t.rectTransform;RuneMount(r.parent,name+"RuneMount",r.anchoredPosition.x,-r.anchoredPosition.y,r.rect.width,r.rect.height,t.transform.GetSiblingIndex());RuneText(t);
-            }
             foreach(var evidence in _root.GetComponentsInChildren<BattleUnitCommandEvidence>())
             {var caption=evidence.GetComponentInChildren<TMP_Text>();if(caption!=null)RuneText(caption);}
             foreach(var slot in _root.GetComponentsInChildren<RectTransform>().Where(t=>t.name.StartsWith("ManaInventory_",StringComparison.Ordinal)).ToArray())
             {
-                foreach(var gem in slot.GetComponentsInChildren<BattleResourceGlyph>())gem.runeMounted=true;
-                RuneMount(slot,"TokenRuneMount",-2,34,94,36,0);
-                RuneMount(slot,"CrystalRuneMount",-2,70,94,36,0);
-                RuneMount(slot,"ColorRuneMount",18,0,56,32,0);
-                foreach(var text in slot.GetComponentsInChildren<TMP_Text>())RuneText(text);
+                foreach(var text in slot.GetComponentsInChildren<TMP_Text>())
+                {text.color=W.Cream;EmbossFieldText(text);}
             }
             foreach(var gem in _root.GetComponentsInChildren<BattleResourceGlyph>().Where(g=>g.name=="FeeGem"))gem.runeMounted=true;
             foreach(var glyph in _root.GetComponentsInChildren<Graphic>().Where(g=>g is BattlePartyStateGlyph||g is BattleUtilityGlyph).ToArray())

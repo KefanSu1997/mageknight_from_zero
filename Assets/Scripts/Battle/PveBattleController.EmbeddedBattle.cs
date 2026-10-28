@@ -102,7 +102,7 @@ namespace MageKnight.Battle
             var phase = _root.Find("PhaseTrack");
             if (phase != null)
             {
-                QuietGraphics(phase); Place(phase, 700, 112, 470, 46);
+                QuietGraphics(phase); Place(phase, 700, 145, 470, 46);
                 phase.Find("PhaseDecision")?.gameObject.SetActive(false);
                 Place(_phaseLabel.transform, 0, 0, 470, 45);
                 _phaseLabel.text = PhaseIndicatorName(_battle.Phase); _phaseLabel.fontSize = 26;
@@ -594,12 +594,21 @@ namespace MageKnight.Battle
                 || b.name == "Btn_Courage" || b.name == "Btn_HealWound";
             if (decision)
             {
-                string heading = _selected != null ? CardName(_selected) : _selectedSkill?.Id ?? _selectedUnit?.Card.NameCn ?? PhaseIndicatorName(_battle.Phase);
-                var title = W.Text(content, "ContextTitle", heading, 8, 0, 330, 44, 26, W.Gold);
+                bool resultView = _battle.Phase == Phase.End && _selected == null && _selectedSkill == null && _selectedUnit == null && !_recovery && !_bowPanel;
+                string heading = _selected != null ? CardName(_selected) : _selectedSkill?.Id ?? _selectedUnit?.Card.NameCn
+                    ?? (resultView ? (_battle.Won ? "战斗胜利" : "战斗结束 · 未获胜") : PhaseIndicatorName(_battle.Phase));
+                var title = W.Text(content, "ContextTitle", heading, 8, 0, 330, resultView ? 52 : 44, resultView ? 30 : 26, resultView ? W.Cream : W.Gold);
                 var hit = title.gameObject.AddComponent<CanvasGroup>(); hit.blocksRaycasts = false;
                 var info = W.Panel(content, "ContextInfoHover", 0, 0, 352, 45, Color.clear);
                 info.GetComponent<Image>().raycastTarget = true; HoverInfo(info.gameObject, heading, details);
-                y = 52;
+                y = resultView ? 62 : 52;
+                if(resultView)
+                {
+                    W.Text(content,"ResultDefeated",$"已击败 {_battle.Context.DefeatedEnemyIndices.Count} / {_battle.Enemies.Count}",8,y,330,48,28,W.Cream);
+                    W.Text(content,"ResultResources",$"名望 {_battle.Player.Fame} · 手牌创伤 {_battle.Player.Wounds}",8,y+52,330,44,24,W.Cream);
+                    W.Text(content,"ResultContinuation",_journey==null?"奖励已结算，可再次挑战。":"可先战后恢复，再结束回合补牌。",8,y+105,330,80,22,W.Cream);
+                    y+=195;
+                }
                 // Keep exact short decision text beside the selected skill's
                 // confirm choices. Longer original rules use the full reader;
                 // never invent or truncate a numerical/conditional summary.

@@ -8,17 +8,29 @@ namespace MageKnight.Battle
 {
     public sealed partial class PveBattleController
     {
+        private Sprite _manaReliquarySprite;
         private void DrawEmbeddedManaInventory()
         {
-            // One borderless HUD material behind the whole inventory, not a
-            // plate per color. Values stay legible over bright clouds/stone.
-            var backing=W.Rect(_root,"ManaInventoryShade",516,0,696,110);
-            backing.gameObject.AddComponent<CanvasRenderer>();
-            var shade=backing.gameObject.AddComponent<BattleLabelBacking>();
-            shade.color=new Color32(15,32,29,220);shade.raycastTarget=false;
-            W.Text(_root,"ManaHoverCue","悬浮释义",535,0,95,35,22,W.Gold,TextAlignmentOptions.Right);
-            W.Text(_root,"ManaTokenLegend","魔力",535,35,95,35,22,W.Cream,TextAlignmentOptions.Right);
-            W.Text(_root,"ManaCrystalLegend","晶体",535,70,95,35,22,W.Cream,TextAlignmentOptions.Right);
+            // A single illustrated inventory object, never a button per value.
+            // The UI sprite has a declared authored region; all character/card
+            // illustrations remain separate and retain their complete UVs.
+            var art=Resources.Load<Texture2D>("UI/CombatChrome/illustrated_v1/mana_reliquary");
+            if(art!=null)
+            {
+                if(_manaReliquarySprite==null || _manaReliquarySprite.texture!=art)
+                {
+                    float sx=art.width/2172f,sy=art.height/724f;
+                    _manaReliquarySprite=Sprite.Create(art,new Rect(39*sx,188*sy,2095*sx,410*sy),new Vector2(.5f,.5f),100,0,
+                        SpriteMeshType.FullRect,new Vector4(260*sx,110*sy,260*sx,140*sy));
+                    _manaReliquarySprite.name="ManaReliquaryIllustratedRegion";
+                    _manaReliquarySprite.hideFlags=HideFlags.DontSave;
+                }
+                var image=W.Rect(_root,"ManaReliquary",520,0,720,155).gameObject.AddComponent<Image>();
+                image.sprite=_manaReliquarySprite;image.type=Image.Type.Sliced;
+                image.pixelsPerUnitMultiplier=4*art.height/724f;image.raycastTarget=false;
+            }
+            W.Text(_root,"ManaTokenLegend","魔力",578,50,66,44,22,W.Cream);
+            W.Text(_root,"ManaCrystalLegend","晶体",578,84,66,44,22,W.Cream);
             var colors=new[]{ManaColor.Red,ManaColor.Blue,ManaColor.Green,ManaColor.White,ManaColor.Gold,ManaColor.Black};
             var tints=new Color[]{new Color32(222,94,76,255),new Color32(91,166,226,255),new Color32(112,182,115,255),
                 new Color32(224,230,216,255),W.Gold,new Color32(66,61,73,255)};
@@ -27,24 +39,24 @@ namespace MageKnight.Battle
                 var mana=colors[i];bool basic=i<4;
                 // A transparent information hit surface; neither row pays or
                 // reserves resources. Formal payment remains in native actions.
-                var slot=W.Rect(_root,"ManaInventory_"+mana,650+92*i,0,92,110);
+                var slot=W.Rect(_root,"ManaInventory_"+mana,650+92*i,0,92,140);
                 slot.gameObject.AddComponent<Image>().color=Color.clear;
-                W.Text(slot,"ManaColorIdentity",ManaShort(mana),0,0,92,35,22,W.Cream,TextAlignmentOptions.Center);
-                var token=W.Rect(slot,"ManaTokenSigil",0,38,30,30).gameObject.AddComponent<BattleResourceGlyph>();
+                W.Text(slot,"ManaColorIdentity",ManaShort(mana),0,25,92,40,22,W.Cream,TextAlignmentOptions.Center);
+                var token=W.Rect(slot,"ManaTokenSigil",0,60,30,30).gameObject.AddComponent<BattleResourceGlyph>();
                 token.element=i;token.color=tints[i];token.raycastTarget=false;
                 if(basic || Crystal(mana)>0)
                 {
-                    var crystal=W.Rect(slot,"ManaCrystalGem",0,73,30,30).gameObject.AddComponent<BattleResourceGlyph>();
+                    var crystal=W.Rect(slot,"ManaCrystalGem",0,94,30,30).gameObject.AddComponent<BattleResourceGlyph>();
                     crystal.element=i;crystal.crystal=true;crystal.color=tints[i];crystal.raycastTarget=false;
                 }
-                W.Text(slot,"ManaTokenAmount",ManaDisplay(mana),34,29,58,44,26,W.Cream,TextAlignmentOptions.Left).fontStyle=FontStyles.Bold;
+                W.Text(slot,"ManaTokenAmount",ManaDisplay(mana),34,50,58,44,26,W.Cream,TextAlignmentOptions.Left).fontStyle=FontStyles.Bold;
                 bool cannotStore=!basic&&Crystal(mana)==0;
-                string stored=cannotStore?"不可存":Crystal(mana).ToString();
-                W.Text(slot,"ManaCrystalAmount",stored,cannotStore?0:34,64,cannotStore?92:58,44,26,W.Cream,TextAlignmentOptions.Left).fontStyle=FontStyles.Bold;
+                string stored=cannotStore?"×":Crystal(mana).ToString();
+                W.Text(slot,"ManaCrystalAmount",stored,34,84,58,44,26,W.Cream,TextAlignmentOptions.Left).fontStyle=FontStyles.Bold;
                 string stock=basic?"库存晶体 "+Crystal(mana)+"。同色最多储存3颗，超出转为魔力。":"此色不能储存为晶体。";
                 string temporal=_battle.Context.InfiniteMana.Contains(mana)?"本回合该色魔力无尽；回合结束失效。":"当前魔力 "+ManaDisplay(mana)+"；回合结束清空。";
                 HoverInfo(slot.gameObject,ColorName(mana)+" · 魔力与晶体",
-                    "上行符印："+temporal+"\n下行棱晶："+stock+
+                    "上行符印："+temporal+"\n下行棱晶："+stock+"\n叉号表示该色不能存为晶体。"+
                     "\n金色与黑色的替代/时段限制、实际付款来源由原规则判定；查看数量不会消费资源。");
                 var help=slot.GetComponent<BattleHoverInfo>();help.compactGuidance=true;help.bodyFontSize=22;
             }

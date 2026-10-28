@@ -162,7 +162,7 @@ namespace MageKnight.SceneAutomation
             }
             foreach (var graphic in FindObjectsByType<Graphic>(FindObjectsSortMode.None))
                 if ((graphic is MageKnight.Battle.BattleFieldMark || graphic is MageKnight.Battle.BattleRuneMount || graphic is MageKnight.Battle.BattleLabelBacking
-                    || graphic.name == "CompactHeaderShade" || graphic.name == "ManaInventoryShade" || graphic.name == "PhaseBackdrop"
+                    || graphic.name == "CompactHeaderShade" || graphic.name == "ManaInventoryShade" || graphic.name == "ManaReliquary" || graphic.name == "PhaseBackdrop"
                     || graphic.name == "HeroCaptionShade" || graphic.name == "CaptionShade" || graphic.name == "ResourceReadability"
                     || graphic.name == "UtilityIconShade" || graphic.name == "ActionReadability" || graphic.name == "ThreatBadge"
                     || graphic.name == "BattleHoverInfo" || graphic.name == "ActorHoverFocus" || graphic.name == "HelpBadge"
