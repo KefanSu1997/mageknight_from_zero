@@ -97,3 +97,6 @@ __pycache__/
 /AutomationLogs/
 /vibe_coding/codex/checkpoints/*/evidence/
 /vibe_coding/codex/checkpoints/*/evidence_manifest.json
+
+# Manual/automated capture output; keep local alongside other run evidence.
+/Assets/Screenshots/
