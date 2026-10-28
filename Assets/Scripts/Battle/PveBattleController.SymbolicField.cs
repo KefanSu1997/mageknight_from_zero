@@ -115,9 +115,11 @@ namespace MageKnight.Battle
             // The inventory's own six information surfaces retain the complete
             // distinction; do not add a seventh framed book icon above them.
             CompactUnitCommands();
+            InstallReadonlyFolios66();
             foreach (var text in _root.GetComponentsInChildren<TMP_Text>()) EmbossFieldText(text);
             InstallRuneMounts();
             InstallCardChoiceMounts();
+            RestyleActionDock66();
         }
 
         private void InstallCardChoiceMounts()
@@ -219,7 +221,15 @@ namespace MageKnight.Battle
             {
                 var parent=mark.transform.parent as RectTransform;
                 if(parent==null)continue;
-                if(mark.name=="InactiveRuleSlash"){mark.color=((Color)new Color32(150,46,31,255)).linear;continue;}
+                bool clothed=parent.GetComponent<BattleReadonlyFolio66>()!=null;
+                if(mark.name=="InactiveRuleSlash"){mark.color=clothed?new Color32(245,126,103,255):((Color)new Color32(150,46,31,255)).linear;continue;}
+                if(clothed)
+                {
+                    mark.color=mark.mark=="Fire"||mark.mark=="FireResist"?new Color32(244,168,125,255)
+                        :mark.mark=="Ice"||mark.mark=="IceResist"?new Color32(157,218,244,255):W.Cream;
+                    foreach(var t in parent.GetComponentsInChildren<TMP_Text>()){t.color=W.Cream;EmbossFieldText(t);}
+                    continue;
+                }
                 RuneMount(parent,"RuneMount",0,0,parent.rect.width,parent.rect.height,0);
                 mark.color=RuneInk;
                 foreach(var text in parent.GetComponentsInChildren<TMP_Text>())RuneText(text);
@@ -235,6 +245,11 @@ namespace MageKnight.Battle
             foreach(var glyph in _root.GetComponentsInChildren<Graphic>().Where(g=>g is BattlePartyStateGlyph||g is BattleUtilityGlyph).ToArray())
             {
                 var r=glyph.rectTransform;var parent=r.parent;
+                if(parent.GetComponent<BattleReadonlyFolio66>()!=null)
+                {
+                    foreach(var t in parent.GetComponentsInChildren<TMP_Text>()){t.color=W.Cream;EmbossFieldText(t);}
+                    continue;
+                }
                 bool fact=parent.name.StartsWith("Unit",StringComparison.Ordinal)&&parent.name.EndsWith("Fact",StringComparison.Ordinal);
                 if(fact)
                 {

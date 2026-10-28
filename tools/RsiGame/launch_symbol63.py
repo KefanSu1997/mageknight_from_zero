@@ -20,6 +20,7 @@ def main():
  out=a.out.resolve() if a.out else OUT
  out.mkdir(parents=True,exist_ok=True)
  src=[ROOT/'Assets/Scripts/Battle'/n for n in ['PveBattleController.EmbeddedBattle.cs','PveBattleController.SymbolicField.cs','PveBattleController.BattlefieldReadability.cs','PveBattleController.CombatKnowledge.cs','PveBattleController.ManaInventory.cs']]+[ROOT/'Assets/Scripts/SceneAutomation/StructuredUiPilot.Evaluation.cs']
+ src += [p for p in [ROOT/'Assets/Scripts/Battle/PveBattleController.FieldFolios66.cs',ROOT/'Assets/Scripts/Battle/PveBattleController.ActionDock66.cs'] if p.is_file()]
  for _ in range(20):
   s=status()
   if not s['isCompiling'] and Path(s['runtimeAssemblyPath']).stat().st_mtime>=max(p.stat().st_mtime for p in src):break
