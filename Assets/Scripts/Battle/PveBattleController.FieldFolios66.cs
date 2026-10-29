@@ -50,11 +50,33 @@ namespace MageKnight.Battle
             var pools = _root.Cast<Transform>().Where(t => t.name.StartsWith("FieldFact_Pool_", StringComparison.Ordinal)).ToArray();
             if (pools.Length > 0)
             {
-                // Keep the complete four-ally roster clear of the shared pool.
-                foreach (var p in pools) ((RectTransform)p).anchoredPosition += new Vector2(100, 0);
-                float left = pools.Min(p => ((RectTransform)p).anchoredPosition.x);
-                StatusFolio66(_root, "CombatPoolFolio66", left - 8, 699, pools.Length * 98 + 16, 42, pools.Min(p => p.GetSiblingIndex()));
+                if (_battle.Player.Units.Count > 4)
+                {
+                    foreach (var field in pools) ((RectTransform)field).anchoredPosition += new Vector2(100, 0);
+                    float left = pools.Min(field => ((RectTransform)field).anchoredPosition.x);
+                    StatusFolio66(_root, "CombatPoolFolio66", left - 8, 699, pools.Length * 98 + 16, 42,
+                        pools.Min(field => field.GetSiblingIndex()));
+                    foreach (var field in pools) MarkReadonlyFolio66(field);
+                }
+                else
+                {
+                // Keep the live counters together below the hero statistics.
+                int columns = pools.Length <= 4 ? 2 : 3;
+                for (int i = 0; i < pools.Length; i++)
+                    ((RectTransform)pools[i]).anchoredPosition = new Vector2(38 + i % columns * 98, -(160 + i / columns * 42));
+                StatusFolio66(_root, "CombatPoolFolio66", 30, 126, columns * 98 + 16, 120, pools.Min(p => p.GetSiblingIndex()));
+                // Hero identity, inspection and skills remain on the full actor
+                // and explicit skill button. Retire the redundant floating crown
+                // so it does not collide with the new resource group.
+                var crest = _root.Find("Btn_HeroActor/HeroLeadershipCrest");
+                if (crest != null) crest.gameObject.SetActive(false);
+                var heading = _root.Find("CombatPoolHeading66")?.GetComponent<TMP_Text>()
+                    ?? W.Text(_root, "CombatPoolHeading66", "战斗资源", 38, 128, 294, 30, 21, W.Cream);
+                heading.raycastTarget = false;
                 foreach (var p in pools) MarkReadonlyFolio66(p);
+                var modifier = _root.Find("FieldFact_PoolModifier") as RectTransform;
+                if (modifier != null) modifier.anchoredPosition = new Vector2(344, -160);
+                }
             }
             var phase = _root.Find("PhaseTrack");
             if (phase != null)
@@ -103,16 +125,42 @@ namespace MageKnight.Battle
             }
             foreach (var actor in _root.GetComponentsInChildren<Button>().Where(b => b.name.StartsWith("Btn_UnitActor_", StringComparison.Ordinal)))
             {
-                var identity = actor.transform.Find("Identity")?.GetComponent<TMP_Text>();
-                bool twoLines = identity != null && identity.text.Contains("\n");
-                if (!twoLines)
+                // Multirow figures retain the previous layout: an overhead
+                // lane for a y109 actor would otherwise leave the canvas.
+                if (_battle.Player.Units.Count > 4)
                 {
-                    if (identity != null) Place(identity.transform, 0, 222, 145, 40);
-                    Place(actor.transform.Find("ReadinessSymbol"), 23, 264, 30, 30);
-                    Place(actor.transform.Find("WoundSymbol"), 72, 264, 28, 30);
-                    Place(actor.transform.Find("WoundCount"), 102, 259, 35, 40);
+                    var caption = actor.transform.Find("Identity")?.GetComponent<TMP_Text>();
+                    bool twoLines = caption != null && caption.text.Contains("\n");
+                    if (!twoLines)
+                    {
+                        if (caption != null) Place(caption.transform, 0, 222, 145, 40);
+                        Place(actor.transform.Find("ReadinessSymbol"), 23, 264, 30, 30);
+                        Place(actor.transform.Find("WoundSymbol"), 72, 264, 28, 30);
+                        Place(actor.transform.Find("WoundCount"), 102, 259, 35, 40);
+                    }
+                    StatusFolio66(actor.transform, "UnitIdentityFolio66", -4, 219, 153, twoLines ? 100 : 80);
+                    MarkReadonlyFolio66(actor.transform);
+                    continue;
                 }
-                StatusFolio66(actor.transform, "UnitIdentityFolio66", -4, 219, 153, twoLines ? 100 : 80);
+                // Give each ally a separate overhead identity lane. Keep the
+                // complete figure and native actor button at their world pose.
+                bool four = _battle.Player.Units.Count == 4;
+                float laneWidth = four ? 127 : 145;
+                var identity = actor.transform.Find("Identity")?.GetComponent<TMP_Text>();
+                if (identity != null)
+                {
+                    if (four && !identity.text.Contains("\n") && identity.text.Length > 5)
+                        identity.text = identity.text.Insert(4, "\n");
+                    Place(identity.transform, 4, -119, laneWidth - 8, 60);
+                    identity.textWrappingMode = TextWrappingModes.Normal;
+                    identity.raycastTarget = false;
+                }
+                Place(actor.transform.Find("ReadinessSymbol"), 12, -55, 30, 30);
+                Place(actor.transform.Find("WoundSymbol"), 52, -55, 28, 30);
+                Place(actor.transform.Find("WoundCount"), 82, -60, 35, 40);
+                var wounds = actor.transform.Find("WoundCount")?.GetComponent<TMP_Text>();
+                if (wounds != null) wounds.raycastTarget = false;
+                StatusFolio66(actor.transform, "UnitIdentityFolio66", 0, -125, laneWidth, 104);
                 MarkReadonlyFolio66(actor.transform);
             }
             foreach (var fact in _root.GetComponentsInChildren<RectTransform>().Where(t => t.name.StartsWith("Unit", StringComparison.Ordinal) && t.name.EndsWith("Fact", StringComparison.Ordinal)))
